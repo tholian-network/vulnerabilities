@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CVE Editor</title>
+
+		<!-- Editor Design -->
+		<link rel="stylesheet" href="/editor/design/index.css">
+		<script type="module" src="/editor/design/index.mjs" defer></script>
+		<script type="module" src="/editor/source/index.mjs" defer></script>
+	</head>
+	<body>
+		<header>
+			<fieldset>
+				<input name="search" type="text" placeholder="Search for CVE ID, Keywords, Product, Vendor ...">
+				<select name="state" title="CVE State">
+					<option value="unedited" selected>💩 Unedited</option>
+					<option value="edited">✏️ Edited</option>
+					<option value="confirmed">✔️ Confirmed</option>
+					<option value="disputed">🔥 Disputed</option>
+					<option value="rejected">🛑 Rejected</option>
+					<option value="invalid">❌ Invalid</option>
+				</select>
+				<samp>0 CVEs</samp>
+				<nav></nav>
+			</fieldset>
+		</header>
+		<main>
+			<table>
+				<thead>
+					<tr>
+						<th>&nbsp;</th>
+						<th>ID</th>
+						<th>Description</th>
+						<th>Hardware</th>
+						<th>Software</th>
+						<th>References</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="6">Selected CVEs are loading...<br>(Please enable JavaScript)</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+		<footer>
+			<button id="save">Save Changes</button>
+		</footer>
+	</body>
+</html>

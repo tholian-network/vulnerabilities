@@ -1,0 +1,22 @@
+{
+	"name": "AVG-1440",
+	"packages": [
+		"thunderbird"
+	],
+	"status": "Fixed",
+	"severity": "Critical",
+	"type": "arbitrary code execution",
+	"affected": "78.6.0-3",
+	"fixed": "78.6.1-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2020-16044"
+	],
+	"advisories": [
+		"ASA-202101-17"
+	],
+	"references": [
+		"https://www.mozilla.org/en-US/security/advisories/mfsa2021-02/"
+	],
+	"notes": "In general, this flaw cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but is potentially a risk in browser or browser-like contexts."
+}

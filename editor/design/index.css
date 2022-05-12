@@ -1,0 +1,662 @@
+
+::selection {
+	color: var(--element-select-color);
+	border-radius: 4px;
+	background: var(--element-select-background);
+	cursor: text;
+}
+
+::-moz-selection {
+	color: var(--element-select-color);
+	border-radius: 4px;
+	background: var(--element-select-background);
+	cursor: text;
+}
+
+::-webkit-scrollbar {
+	width: 16px;
+	border: 0px solid transparent;
+	background: var(--scrollbar-default-background);
+}
+
+::-webkit-scrollbar-thumb {
+	width: 16px;
+	border: 0px solid transparent;
+	border-radius: 2px;
+	background: var(--scrollbar-default-color);
+}
+
+* {
+	scrollbar-color: var(--scrollbar-default-color) var(--scrollbar-default-background);
+	scrollbar-width: auto;
+}
+
+
+
+@font-face {
+	font-family: 'crystalline';
+	src: url('crystalline-light.woff') format('woff');
+	font-variant: normal;
+	font-weight: 250;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'crystalline';
+	src: url('crystalline-regular.woff') format('woff');
+	font-variant: normal;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'crystalline';
+	src: url('crystalline-medium.woff') format('woff');
+	font-variant: normal;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'crystalline';
+	src: url('crystalline-bold.woff') format('woff');
+	font-variant: normal;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'vera-mono';
+	src: url('vera-mono.woff') format('woff');
+	font-variant: normal;
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+body {
+
+	margin: 0px;
+	padding: 0px;
+
+	color: #ffffff;
+	background: #000000;
+
+	--layout-default-color: #ffffff;
+	--layout-default-background: #000000;
+
+	--layout-focus-color: #ffffff;
+	--layout-focus-background: rgba(255,255,255,0.20);
+
+	--link-default-color: #22ccff;
+	--link-default-background: transparent;
+
+	--link-focus-color: #22ccff;
+	--link-focus-background: rgba(255,255,255,0.20);
+
+	--element-default-color: #aaaaaa;
+	--element-default-background: transparent;
+
+	--element-disable-color: #888888;
+	--element-disable-background: transparent;
+
+	--element-invalid-color: #ff2222;
+	--element-invalid-background: rgba(255, 34, 34, 0.20);
+
+	--element-focus-color: #ffffff;
+	--element-focus-background: rgba(255,255,255,0.20);
+
+	--element-active-color: #ffffff;
+	--element-active-background: rgba(255,255,255,0.10);
+
+	--element-select-color: #22ccff;
+	--element-select-background: rgba(51,153,255,0.20);
+
+	--scrollbar-default-color: #ffffff;
+	--scrollbar-default-background: transparent;
+
+	--surface-default-color: #666666;
+	--surface-default-background: rgba(255, 255, 255, 0.10);
+	--surface-default-foreground: #1a1a1a;
+
+}
+
+
+
+/*
+ * LAYOUT
+ */
+
+body > header {
+	display: block;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: auto;
+	left: 0px;
+	margin: 0px;
+	padding: 8px;
+	width: 100%;
+	height: auto;
+	background: var(--surface-default-foreground);
+	box-sizing: border-box;
+	z-index: 1024;
+}
+
+body > header input[name="search"] {
+	display: inline-block;
+	width: calc(100% - 160px - 200px);
+	line-height: 32px;
+	vertical-align: middle;
+}
+
+body > header select[name="state"] {
+	display: inline-block;
+	width: 160px;
+	line-height: 32px;
+	vertical-align: middle;
+}
+
+body > header samp {
+	display: inline-block;
+	width: 200px;
+	height: 32px;
+	margin: 0px;
+	padding: 0px 4px 0px 4px;
+	line-height: 32px;
+	color: var(--element-default-color);
+	font-family: 'vera-mono';
+	font-size: 16px;
+	font-weight: 400;
+	text-align: right;
+	text-overflow: clip;
+	white-space: pre;
+	background: var(--element-default-background);
+	vertical-align: middle;
+	transition: 200ms all ease-out;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	user-select: none;
+}
+
+body > header nav {
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	transition: 200ms all ease-out;
+	user-select: none;
+}
+
+body > header nav:empty {
+	height: 0px;
+	transition: 200ms all ease-out;
+}
+
+body > header nav button {
+	width: 32px;
+	font-size: 16px;
+	margin: 0px 16px 0px 0px;
+}
+
+body > header nav button:last-of-type {
+	margin: 0px;
+}
+
+
+
+body > main {
+	display: block;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	scroll-behavior: smooth;
+	z-index: 0;
+}
+
+body > header + main {
+	top: 80px;
+}
+
+body > footer {
+	display: none;
+	position: fixed;
+	top: auto;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 8px;
+	font-family: 'vera-mono';
+	font-size: 16px;
+	line-height: 32px;
+	text-align: right;
+	color: var(--layout-default-color);
+	background: var(--surface-default-foreground);
+	z-index: 1024;
+}
+
+body > footer.visible {
+	display: block;
+}
+
+
+
+body > main table {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	min-width: 1920px;
+	margin: 32px 0px 32px 0px;
+	padding: 0px;
+}
+
+body > main table thead tr th {
+	line-height: 32px;
+	font-family: 'crystalline';
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+body > main table tbody tr:nth-of-type(2) {
+	background: rgba(255,255,255,0.1);
+}
+
+body > main table tbody tr td[colspan] {
+	padding: 1em;
+	line-height: 32px;
+	font-family: 'crystalline';
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+}
+
+body > main table tbody tr td {
+	font-family: 'vera-mono';
+	font-size: 16px;
+	text-align: center;
+}
+
+body > main table thead tr th:nth-of-type(1),
+body > main table tbody tr td:nth-of-type(1) {
+	width: 32px;
+	min-height: 32px;
+}
+
+body > main table thead tr th:nth-of-type(2),
+body > main table tbody tr td:nth-of-type(2) {
+	width: 12em;
+	text-align: center;
+}
+
+body > main table tbody tr td:nth-of-type(3) textarea,
+body > main table tbody tr td:nth-of-type(3) textarea:focus {
+	white-space: normal;
+}
+
+body > main table tbody tr td textarea {
+	width: 100%;
+	white-space: nowrap;
+	transition: 0ms all ease-out;
+}
+
+body > main table tbody tr td textarea[wrap="soft"]:focus {
+	display: block;
+	position: relative;
+	width: calc(100% + 256px);
+	top: -1px;
+	right: -128px;
+	bottom: 0px;
+	left: -128px;
+	background: #333333;
+	white-space: normal;
+}
+
+body > main table tbody tr td:nth-of-type(7) textarea[wrap="off"]:focus {
+	display: block;
+	position: relative;
+	width: calc(100% + 256px);
+	top: -1px;
+	right: 0px;
+	bottom: 0px;
+	left: -256px;
+	background: #333333;
+	white-space: normal;
+}
+
+
+
+/*
+ * ELEMENTS
+ */
+
+a {
+	padding: 0px 2px;
+	font-family: 'vera-mono';
+	color: var(--link-default-color);
+	border: 1px solid transparent;
+	border-bottom: 1px solid var(--link-default-color);
+	border-radius: 2px;
+	background: var(--link-default-background);
+	box-sizing: border-box;
+	text-decoration: none;
+	transition: 200ms all ease-out;
+	vertical-align: bottom;
+	outline: none;
+	cursor: pointer;
+}
+
+a[disabled],
+a[disabled]:hover {
+	color: var(--element-disable-color);
+	border: 1px solid transparent;
+	border-bottom: 1px solid var(--element-disable-color);
+	background: var(--element-disable-background);
+	pointer-events: none;
+	user-select: none;
+	cursor: not-allowed;
+}
+
+a:focus,
+a:hover {
+	color: var(--link-focus-color);
+	border: 1px solid var(--link-focus-color);
+	background: var(--link-focus-background);
+	outline: none;
+}
+
+button {
+	display: inline-block;
+	min-width: 32px;
+	margin: 0px;
+	padding: 0px 4px;
+	line-height: 32px;
+	height: 32px;
+	color: var(--element-default-color);
+	font-size: 24px;
+	text-align: center;
+	background: var(--element-default-background);
+	border: 1px solid var(--element-default-color);
+	border-radius: 4px;
+	box-sizing: border-box;
+	transition: 200ms all ease-out;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	vertical-align: middle;
+	outline: none;
+	cursor: pointer;
+}
+
+button[disabled],
+button[disabled]:hover {
+	color: var(--element-disable-color);
+	border: 1px solid var(--element-disable-color);
+	background: var(--element-disable-background);
+	cursor: not-allowed;
+}
+
+button:focus,
+button:hover {
+	color: var(--element-focus-color);
+	border: 1px solid var(--element-focus-color);
+	background: var(--element-focus-background);
+	outline: none;
+}
+
+button::-moz-focus-inner {
+	border: 0px solid transparent;
+}
+
+fieldset {
+	margin: 0px;
+	padding: 0px;
+	border: 0px solid transparent;
+}
+
+input[type="checkbox"] {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin: 0px;
+	padding: 0px 4px 0px 4px;
+	line-height: 32px;
+	color: var(--layout-default-color);
+	font-family: 'vera-mono';
+	font-size: 16px;
+	text-align: center;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	vertical-align: middle;
+	transition: 200ms all ease-out;
+	box-sizing: border-box;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+input[type="checkbox"]:before {
+	content: '✔️';
+	color: transparent;
+}
+
+input[type="checkbox"]:checked:before {
+	content: '✔️';
+	color: var(--layout-default-color);
+}
+
+input[type="checkbox"][disabled],
+input[type="checkbox"][disabled]:hover {
+	color: var(--layout-default-color);
+	background: var(--element-disable-background);
+	border: 1px solid transparent;
+	cursor: not-allowed;
+}
+
+input[type="checkbox"]:focus,
+input[type="checkbox"]:hover {
+	color: var(--element-focus-color);
+	background: var(--element-focus-background);
+	border: 1px solid var(--element-focus-color);
+	outline: none;
+}
+
+input[type="number"],
+input[type="password"],
+input[type="text"] {
+	display: inline-block;
+	height: 32px;
+	margin: 0px;
+	padding: 0px 4px 0px 4px;
+	line-height: 32px;
+	color: var(--layout-default-color);
+	font-family: 'vera-mono';
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
+	background: var(--element-default-background);
+	border: 1px solid transparent;
+	border-radius: 4px;
+	vertical-align: middle;
+	transition: 200ms all ease-out;
+	box-sizing: border-box;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	cursor: text;
+}
+
+input[type="number"][disabled],
+input[type="number"][disabled]:hover,
+input[type="password"][disabled],
+input[type="password"][disabled]:hover,
+input[type="text"][disabled],
+input[type="text"][disabled]:hover {
+	color: var(--layout-default-color);
+	border: 1px solid transparent;
+	background: var(--element-disable-background);
+	cursor: not-allowed;
+}
+
+input[type="number"]:focus,
+input[type="number"]:hover,
+input[type="password"]:focus,
+input[type="password"]:hover,
+input[type="text"]:focus,
+input[type="text"]:hover {
+	color: var(--element-focus-color);
+	border: 1px solid var(--element-focus-color);
+	background: var(--element-focus-background);
+	outline: none;
+}
+
+input[type="number"]::selection,
+input[type="password"]::selection,
+input[type="text"]::selection {
+	color: var(--element-select-color);
+	background: var(--element-select-background);
+	cursor: text;
+}
+
+input[type="number"].invalid,
+input[type="number"].invalid:focus,
+input[type="number"].invalid:hover,
+input[type="password"].invalid,
+input[type="password"].invalid:focus,
+input[type="password"].invalid:hover,
+input[type="text"].invalid,
+input[type="text"].invalid:focus,
+input[type="text"].invalid:hover {
+	color: var(--element-invalid-color);
+	border: 1px solid var(--element-invalid-color);
+	background: var(--element-invalid-background);
+}
+
+select {
+	display: inline-block;
+	height: 32px;
+	margin: 0px;
+	padding: 0px 4px;
+	line-height: 32px;
+	color: var(--element-default-color);
+	font-family: 'vera-mono';
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
+	background: var(--element-default-background);
+	border: 1px solid transparent;
+	border-radius: 4px;
+	vertical-align: middle;
+	transition: 200ms all ease-out;
+	box-sizing: border-box;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	cursor: pointer;
+}
+
+select[disabled],
+select[disabled]:hover {
+	color: var(--element-disable-color);
+	border: 1px solid transparent;
+	background: var(--element-disable-background);
+	cursor: not-allowed;
+}
+
+select:focus,
+select:hover {
+	color: var(--element-focus-color);
+	border: 1px solid var(--element-focus-color);
+	background: var(--element-focus-background);
+	outline: none;
+}
+
+option {
+	margin: 0px;
+	padding: 0px;
+	color: var(--layout-default-color);
+	background: var(--layout-default-background);
+	border: 1px solid var(--surface-default-color);
+}
+
+textarea {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px 4px;
+	min-height: 8em;
+	line-height: 32px;
+	color: var(--layout-default-color);
+	font-family: 'vera-mono';
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
+	background: var(--element-default-background);
+	border: 1px solid transparent;
+	border-radius: 4px;
+	box-sizing: border-box;
+	transition: 200ms all ease-out;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	cursor: text;
+}
+
+textarea.invalid,
+textarea.invalid:focus,
+textarea.invalid:hover {
+	color: var(--element-invalid-color);
+	border: 1px solid var(--element-invalid-color);
+	background: var(--element-invalid-background);
+}
+
+textarea[disabled],
+textarea[disabled]:hover {
+	color: var(--layout-default-color);
+	border: 1px solid transparent;
+	background: var(--element-disable-background);
+	cursor: not-allowed;
+}
+
+textarea:focus,
+textarea:hover {
+	color: var(--element-focus-color);
+	border: 1px solid var(--element-focus-color);
+	background: var(--element-focus-background);
+	outline: none;
+}
+
+textarea::selection {
+	color: var(--element-select-color);
+	background: var(--element-select-background);
+	cursor: text;
+}
+
+
+
+@media (max-height: 800px) {
+
+	body > header,
+	body > main,
+	body > footer {
+		position: static;
+		top: unset;
+		right: unset;
+		bottom: unset;
+		left: unset;
+		z-index: unset;
+	}
+
+}
+

@@ -1,0 +1,23 @@
+{
+	"name": "AVG-2270",
+	"packages": [
+		"thunderbird"
+	],
+	"status": "Fixed",
+	"severity": "High",
+	"type": "arbitrary code execution",
+	"affected": "78.12.0-1",
+	"fixed": "78.13.0-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2021-29989",
+		"CVE-2021-29988",
+		"CVE-2021-29986",
+		"CVE-2021-29985",
+		"CVE-2021-29984",
+		"CVE-2021-29980"
+	],
+	"advisories": [],
+	"references": [],
+	"notes": "In general, these flaws cannot be exploited through email because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts."
+}

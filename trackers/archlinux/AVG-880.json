@@ -1,0 +1,20 @@
+{
+	"name": "AVG-880",
+	"packages": [
+		"flatpak"
+	],
+	"status": "Fixed",
+	"severity": "High",
+	"type": "privilege escalation",
+	"affected": "1.2.2-1",
+	"fixed": "1.2.3-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2019-5736"
+	],
+	"advisories": [
+		"ASA-201902-20"
+	],
+	"references": [],
+	"notes": "This mostly does not affect flatpak since the flatpak sandbox is not run with root permissions. However, there is one case (running the apply_extra script for system installs) where this happens, so the 1.2.3 release contains a fix for that."
+}

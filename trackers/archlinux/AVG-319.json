@@ -1,0 +1,21 @@
+{
+	"name": "AVG-319",
+	"packages": [
+		"openvpn"
+	],
+	"status": "Not affected",
+	"severity": "Medium",
+	"type": "denial of service",
+	"affected": "2.4.2-1",
+	"fixed": "2.4.3-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2017-7522"
+	],
+	"advisories": [],
+	"references": [
+		"https://community.openvpn.net/openvpn/wiki/VulnerabilitiesFixedInOpenVPN243",
+		"https://guidovranken.wordpress.com/2017/06/21/the-openvpn-post-audit-bug-bonanza/"
+	],
+	"notes": "Not impacted by CVE-2017-7522 because we don't build openvpn against mbed."
+}

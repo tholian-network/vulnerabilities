@@ -1,0 +1,23 @@
+{
+	"name": "AVG-18",
+	"packages": [
+		"crypto++"
+	],
+	"status": "Fixed",
+	"severity": "Medium",
+	"type": "information disclosure",
+	"affected": "5.6.4-2",
+	"fixed": "5.6.5-1",
+	"ticket": "51331",
+	"issues": [
+		"CVE-2016-7420"
+	],
+	"advisories": [
+		"ASA-201610-8"
+	],
+	"references": [
+		"https://github.com/weidai11/cryptopp/issues/277",
+		"http://www.openwall.com/lists/oss-security/2016/09/15/12"
+	],
+	"notes": "5.6.4-2: Apparently we weren't vulnerable in the first place, but this commit made us vulnerable two days after the disclosure: https://git.archlinux.org/svntogit/packages.git/commit/trunk?h=packages/crypto%2b%2b&id=fc4dd81f39589eeb5bdb927587c0fbd2b41d47df\n\n5.6.5-1: Fixed in 5.6.5 because they replaced assert() with CRYPTOPP_ASSERT(), which is not enabled by default even if -DNDEBUG is not set."
+}

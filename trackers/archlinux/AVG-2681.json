@@ -1,0 +1,24 @@
+{
+	"name": "AVG-2681",
+	"packages": [
+		"linux-zen"
+	],
+	"status": "Fixed",
+	"severity": "Medium",
+	"type": "information disclosure",
+	"affected": "5.16.13.zen1-1",
+	"fixed": "5.16.14.zen1-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2022-0002",
+		"CVE-2022-0001"
+	],
+	"advisories": [],
+	"references": [
+		"https://github.com/archlinux/svntogit-packages/commit/4cf329bb800a68f2bc8f1b0920c65258c2392dc8",
+		"https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00598.html",
+		"https://www.intel.com/content/www/us/en/developer/articles/technical/software-security-guidance/technical-documentation/branch-history-injection.html",
+		"https://www.openwall.com/lists/oss-security/2022/03/18/2"
+	],
+	"notes": "haven't yet checked what other \"managed runtimes in privileged modes\" the SA might be refering to"
+}

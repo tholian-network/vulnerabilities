@@ -1,0 +1,23 @@
+{
+	"name": "AVG-452",
+	"packages": [
+		"wpa_supplicant"
+	],
+	"status": "Not affected",
+	"severity": "High",
+	"type": "man-in-the-middle",
+	"affected": "1:2.6-10",
+	"fixed": null,
+	"ticket": null,
+	"issues": [
+		"CVE-2017-13084"
+	],
+	"advisories": [],
+	"references": [
+		"https://w1.fi/security/2017-1/wpa-packet-number-reuse-with-replayed-messages.txt",
+		"https://papers.mathyvanhoef.com/ccs2017.pdf",
+		"https://www.kb.cert.org/vuls/id/228519",
+		"https://www.krackattacks.com/"
+	],
+	"notes": "PeerKey implementation in wpa_supplicant is not fully functional and the actual installation of the key into the driver does not work. As such, this item is not applicable in practice. \r\nFurthermore, the PeerKey handshake for IEEE 802.11e DLS is obsolete and not known to have been deployed."
+}

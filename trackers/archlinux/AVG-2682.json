@@ -1,0 +1,24 @@
+{
+	"name": "AVG-2682",
+	"packages": [
+		"linux-hardened"
+	],
+	"status": "Fixed",
+	"severity": "Medium",
+	"type": "information disclosure",
+	"affected": "5.12.19.hardened1-1",
+	"fixed": "5.13.13.hardened1-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2022-0002",
+		"CVE-2022-0001"
+	],
+	"advisories": [],
+	"references": [
+		"https://github.com/archlinux/svntogit-packages/commit/88822ee46e0b1bdfadd8977341505c9f6541b006",
+		"https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00598.html",
+		"https://www.intel.com/content/www/us/en/developer/articles/technical/software-security-guidance/technical-documentation/branch-history-injection.html",
+		"https://www.openwall.com/lists/oss-security/2022/03/18/2"
+	],
+	"notes": "haven't yet checked what other \"managed runtimes in privileged modes\" the SA might be refering to\r\n\r\nbut unless there are any I think this is one of those cases where the fix was so long ago, nobody cares about the ASA anymore"
+}

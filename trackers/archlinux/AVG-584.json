@@ -1,0 +1,22 @@
+{
+	"name": "AVG-584",
+	"packages": [
+		"nvidia-dkms"
+	],
+	"status": "Fixed",
+	"severity": "High",
+	"type": "access restriction bypass",
+	"affected": "340.104-20",
+	"fixed": "390.25-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2017-5754",
+		"CVE-2017-5753",
+		"CVE-2017-5715"
+	],
+	"advisories": [],
+	"references": [
+		"https://nvidia.custhelp.com/app/answers/detail/a_id/4611"
+	],
+	"notes": "Driver was switched to a branch that fixes meltdown/spectre (390.xx), and the fix landed since 390.12"
+}
