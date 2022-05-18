@@ -1,0 +1,20 @@
+{
+	"name": "AVG-2719",
+	"packages": [
+		"postgresql"
+	],
+	"status": "Fixed",
+	"severity": "High",
+	"type": "privilege escalation",
+	"affected": "14.2-1",
+	"fixed": "14.3-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2022-1552"
+	],
+	"advisories": [],
+	"references": [
+		"https://www.postgresql.org/about/news/postgresql-143-137-1211-1116-and-1021-released-2449/"
+	],
+	"notes": "If you have any GiST indexes on columns using the ltree data type, you will need to reindex them after upgrading."
+}

@@ -55,6 +55,17 @@ const Updater = function(settings) {
 	Emitter.call(this);
 
 
+	this.on('connect', () => {
+
+		let action = this._settings.action || null;
+		if (action === 'update') {
+			this.update();
+		} else if (action === 'merge') {
+			this.merge();
+		}
+
+	});
+
 	// Can't update if CVEList is not available
 	this.trackers[0].on('error', () => {
 		this.disconnect();
@@ -171,24 +182,48 @@ Updater.prototype = Object.assign({}, Emitter.prototype, {
 
 	},
 
+	merge: function() {
+
+		if (this.__state.connected === true) {
+
+			let merging = this.trackers.length - 1;
+
+			this.trackers.slice(1).forEach((tracker) => {
+
+				tracker.once('merge', () => {
+
+					merging--;
+
+					if (merging === 0) {
+						this.emit('merge');
+					}
+
+				});
+
+				tracker.merge();
+
+			});
+
+		}
+
+
+		return false;
+
+	},
+
 	update: function() {
 
 		if (this.__state.connected === true) {
 
 			let cvelist = this.trackers[0];
 
-			cvelist.once('update', (results) => {
-
-				Object.keys(results).forEach((state) => {
-					console.log(state.charAt(0).toUpperCase() + state.substr(1) + ' CVEs: ' + results[state].length);
-				});
-
+			cvelist.once('update', () => {
 
 				let updating = this.trackers.length - 1;
 
 				this.trackers.slice(1).forEach((tracker) => {
 
-					tracker.once('update', (/* results */) => {
+					tracker.once('update', () => {
 
 						updating--;
 
@@ -198,14 +233,13 @@ Updater.prototype = Object.assign({}, Emitter.prototype, {
 
 					});
 
-					tracker.update(results);
+					tracker.update();
 
 				});
 
 			});
 
 			cvelist.update();
-
 
 			return true;
 

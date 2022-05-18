@@ -11,6 +11,8 @@ const action = (() => {
 
 	if (/^([update]{6})$/g.test(value) === true) {
 		return 'update';
+	} else if (/^([merge]{5})$/g.test(value) === true) {
+		return 'merge';
 	}
 
 	return 'help';

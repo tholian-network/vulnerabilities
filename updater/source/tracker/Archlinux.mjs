@@ -7,6 +7,15 @@ import { Webscraper                                    } from '../../source/Webs
 
 
 
+const SEVERITY = [
+	'critical',
+	'high',
+	'medium',
+	'low'
+];
+
+
+
 const toIdentifier = function(name) {
 
 	if (name.startsWith('CVE-') === true) {
@@ -43,13 +52,13 @@ const download_avg = function(avg_id, callback) {
 		) {
 
 			this.filesystem.write('/' + avg_id + '.json', avg_details);
-			this.__state[avg_id] = avg_details;
+			this.__state['avg'][avg_id] = avg_details;
 
-			callback(true);
+			callback(avg_details);
 
 		} else {
 
-			callback(false);
+			callback(null);
 
 		}
 
@@ -69,13 +78,13 @@ const download_cve = function(cve_id, callback) {
 		) {
 
 			this.filesystem.write('/' + cve_id + '.json', cve_details);
-			this.__state[cve_id] = cve_details;
+			this.__state['cve'][cve_id] = cve_details;
 
-			callback(true);
+			callback(cve_details);
 
 		} else {
 
-			callback(false);
+			callback(null);
 
 		}
 
@@ -85,61 +94,190 @@ const download_cve = function(cve_id, callback) {
 
 const merge = function(vulnerability, data) {
 
-	// TODO: Merge vulnerability with downstream Issue data
+	if (
+		isObject(data) === true
+		&& isString(data['description']) === true
+		&& isArray(data['groups']) === true
+		&& isArray(data['references']) === true
+		&& isString(data['severity']) === true
+	) {
 
-};
+		if (isString(data['description']) === true) {
 
-const update_vulnerabilities = function() {
-
-	let results = {
-		published: [],
-		disputed:  [],
-		rejected:  [],
-		invalid:   []
-	};
-
-	this.filesystem.index('/', 'CVE-*.json').sort().map((path) => {
-
-		let id   = toIdentifier(path.split('/').pop());
-		let data = this.filesystem.read(path);
-
-		if (id !== null && data !== null) {
-			return {
-				'id':   id,
-				'data': data
-			};
-		}
-
-		return null;
-
-	}).filter((entry) => {
-		return entry !== null;
-	}).forEach((entry) => {
-
-		let vulnerability = this.vulnerabilities.get(entry['id']);
-		if (vulnerability['_is_edited'] === false) {
-
-			merge(vulnerability, entry['data']);
-
-			if (vulnerability['state'] === 'published') {
-				results['published'].push(vulnerability);
-			} else if (vulnerability['state'] === 'disputed') {
-				results['disputed'].push(vulnerability);
-			} else if (vulnerability['state'] === 'rejected') {
-				results['rejected'].push(vulnerability);
-			} else if (vulnerability['state'] === 'invalid') {
-				results['invalid'].push(vulnerability);
+			let description = data['description'].trim();
+			if (vulnerability['description'].includes(description) === false) {
+				vulnerability['description'] += '\n\n' + description;
 			}
 
-			this.vulnerabilities.update(vulnerability);
+		}
+
+		if (isArray(data['groups']) === true) {
+
+			data['groups'].forEach((avg_id) => {
+
+				let avg = this.__state['avg'][avg_id] || null;
+
+				if (
+					isObject(avg) === true
+					&& isString(avg['affected']) === true
+					&& isString(avg['status']) === true
+					&& isArray(avg['packages']) === true
+					&& isArray(avg['references']) === true
+				) {
+
+					if (avg['status'] === 'Fixed') {
+
+						if (isString(avg['fixed']) === true) {
+
+							avg['packages'].forEach((name) => {
+
+								let software = {
+									name:    'archlinux/' + name,
+									version: '< ' + avg['fixed'].trim()
+								};
+
+								let other = vulnerability['software'].find((s) => {
+									return s['name'] === software['name'] && s['version'] === software['version'];
+								}) || null;
+
+								if (other === null) {
+									vulnerability['software'].push(software);
+								}
+
+							});
+
+						}
+
+					} else if (avg['status'] === 'Vulnerable') {
+
+						if (isString(avg['affected']) === true) {
+
+							avg['packages'].forEach((name) => {
+
+								let software = {
+									name:    'archlinux/' + name,
+									version: avg['affected'].trim()
+								};
+
+								let other = vulnerability['software'].find((s) => {
+									return s['name'] === software['name'] && s['version'] === software['version'];
+								}) || null;
+
+								if (other === null) {
+									vulnerability['software'].push(software);
+								}
+
+							});
+
+						}
+
+					} else if (avg['status'] === 'Not affected') {
+
+						if (isString(avg['fixed']) === true) {
+
+							avg['packages'].forEach((name) => {
+
+								let software = {
+									name:    'archlinux/' + name,
+									version: '< ' + avg['fixed'].trim()
+								};
+
+								let other = vulnerability['software'].find((s) => {
+									return s['name'] === software['name'] && s['version'] === software['version'];
+								}) || null;
+
+								if (other === null) {
+									vulnerability['software'].push(software);
+								}
+
+							});
+
+						}
+
+					} else if (avg['status'] === 'Unknown') {
+
+						if (isString(avg['fixed']) === true) {
+
+							avg['packages'].forEach((name) => {
+
+								let software = {
+									name:    'archlinux/' + name,
+									version: '< ' + avg['fixed'].trim()
+								};
+
+								let other = vulnerability['software'].find((s) => {
+									return s['name'] === software['name'] && s['version'] === software['version'];
+								}) || null;
+
+								if (other === null) {
+									vulnerability['software'].push(software);
+								}
+
+							});
+
+						} else if (isString(avg['affected']) === true) {
+
+							avg['packages'].forEach((name) => {
+
+								let software = {
+									name:    'archlinux/' + name,
+									version: avg['affected'].trim()
+								};
+
+								let other = vulnerability['software'].find((s) => {
+									return s['name'] === software['name'] && s['version'] === software['version'];
+								}) || null;
+
+								if (other === null) {
+									vulnerability['software'].push(software);
+								}
+
+							});
+
+						}
+
+					}
+
+					if (isArray(avg['references']) === true) {
+
+						avg['references'].map((url) => url.trim()).forEach((url) => {
+
+							if (vulnerability['references'].includes(url) === false) {
+								vulnerability['references'].push(url);
+							}
+
+						});
+
+					}
+
+				}
+
+			});
 
 		}
 
-	});
+		if (isArray(data['references']) === true) {
 
-	setTimeout(() => {
-		this.emit('update', [ results ]);
-	}, 0);
+			data['references'].map((url) => url.trim()).forEach((url) => {
+
+				if (vulnerability['references'].includes(url) === false) {
+					vulnerability['references'].push(url);
+				}
+
+			});
+
+		}
+
+		if (isString(data['severity']) === true) {
+
+			let severity = data['severity'].toLowerCase();
+			if (SEVERITY.includes(severity) === true) {
+				vulnerability['severity'] = severity;
+			}
+
+		}
+
+	}
 
 };
 
@@ -176,8 +314,8 @@ Archlinux.prototype = Object.assign({}, Emitter.prototype, {
 
 	connect: function() {
 
-		this.__state.avg = {};
-		this.__state.cve = {};
+		this.__state['avg'] = {};
+		this.__state['cve'] = {};
 
 		this.filesystem.index('/', 'AVG-*.json').forEach((path) => {
 
@@ -186,7 +324,7 @@ Archlinux.prototype = Object.assign({}, Emitter.prototype, {
 				isObject(avg) === true
 				&& isString(avg['name']) === true
 			) {
-				this.__state[avg['name']] = avg;
+				this.__state['avg'][avg['name']] = avg;
 			}
 
 		});
@@ -198,7 +336,7 @@ Archlinux.prototype = Object.assign({}, Emitter.prototype, {
 				isObject(cve) === true
 				&& isString(cve['name']) === true
 			) {
-				this.__state[cve['name']] = cve;
+				this.__state['cve'][cve['name']] = cve;
 			}
 
 		});
@@ -215,7 +353,51 @@ Archlinux.prototype = Object.assign({}, Emitter.prototype, {
 
 	},
 
+	merge: function() {
+
+		console.clear();
+		console.info('Archlinux: Merging ...');
+
+		this.filesystem.index('/', 'CVE-*.json').sort().map((path) => {
+
+			let id   = toIdentifier(path.split('/').pop());
+			let data = this.filesystem.read(path);
+
+			if (id !== null && data !== null) {
+				return {
+					'id':   id,
+					'data': data
+				};
+			}
+
+			return null;
+
+		}).filter((entry) => {
+			return entry !== null;
+		}).forEach((entry) => {
+
+			console.log('Archlinux: "' + entry['id'] + '"');
+
+			let vulnerability = this.vulnerabilities.get(entry['id']);
+			if (vulnerability['_is_edited'] === false) {
+
+				merge.call(this, vulnerability, entry['data']);
+
+				this.vulnerabilities.update(vulnerability);
+
+			}
+
+		});
+
+		setTimeout(() => {
+			this.emit('merge');
+		}, 0);
+
+	},
+
 	update: function() {
+
+		console.info('Archlinux: Update');
 
 		this.webscraper.request('https://security.archlinux.org/all.json', (data) => {
 
@@ -224,25 +406,47 @@ Archlinux.prototype = Object.assign({}, Emitter.prototype, {
 				this.filesystem.write('/all.json', data);
 
 
-				let downloads = 0;
+				let avg_downloads = [];
+				let cve_downloads = [];
+
+
+				Object.values(this.__state['cve']).forEach((cve) => {
+
+					if (isArray(cve['groups']) === true) {
+
+						cve['groups'].forEach((avg_id) => {
+
+							let avg_details = this.__state['avg'][avg_id] || null;
+							if (avg_details === null) {
+
+								if (avg_downloads.includes(avg_id) === false) {
+									avg_downloads.push(avg_id);
+								}
+
+							}
+
+						});
+
+					}
+
+				});
+
 
 				data.forEach((avg) => {
 
-					let avg_details = this.__state[avg['name']] || null;
+					let avg_details = this.__state['avg'][avg['name']] || null;
 					if (isObject(avg_details) === true) {
 
 						if (isArray(avg_details['issues']) === true) {
 
 							avg_details['issues'].forEach((cve_id) => {
 
-								let cve_details = this.__state[cve_id] || null;
+								let cve_details = this.__state['cve'][cve_id] || null;
 								if (cve_details === null) {
 
-									downloads++;
-
-									download_cve.call(this, cve_id, () => {
-										downloads--;
-									});
+									if (cve_downloads.includes(cve_id) === false) {
+										cve_downloads.push(cve_id);
+									}
 
 								}
 
@@ -252,49 +456,115 @@ Archlinux.prototype = Object.assign({}, Emitter.prototype, {
 
 					} else {
 
-						downloads++;
-
-						download_avg.call(this, avg['name'], (avg_details) => {
-
-							if (
-								isObject(avg_details) === true
-								&& isArray(avg_details['issues']) === true
-							) {
-
-								avg_details['issues'].forEach((cve_id) => {
-
-									let cve_details = this.__state[cve_id] || null;
-									if (cve_details === null) {
-
-										downloads++;
-
-										download_cve.call(this, cve_id, () => {
-											downloads--;
-										});
-
-									}
-
-								});
-
-							}
-
-							downloads--;
-
-						});
+						if (avg_downloads.includes(avg['name']) === false) {
+							avg_downloads.push(avg['name']);
+						}
 
 					}
 
 				});
 
 
+				avg_downloads.forEach((avg_id) => {
+
+					download_avg.call(this, avg_id, (avg_details) => {
+
+						if (
+							isObject(avg_details) === true
+							&& isArray(avg_details['issues']) === true
+						) {
+
+							avg_details['issues'].forEach((cve_id) => {
+
+								let cve_details = this.__state['cve'][cve_id] || null;
+								if (cve_details === null) {
+
+									if (cve_downloads.includes(cve_id) === false) {
+
+										download_cve.call(this, cve_id, () => {
+
+											let index = cve_downloads.indexOf(cve_id);
+											if (index !== -1) {
+												cve_downloads.splice(index, 1);
+											}
+
+										});
+
+										cve_downloads.push(cve_id);
+
+									}
+
+								}
+
+							});
+
+						}
+
+						let index = avg_downloads.indexOf(avg_id);
+						if (index !== -1) {
+							avg_downloads.splice(index, 1);
+						}
+
+					});
+
+				});
+
+				cve_downloads.forEach((cve_id) => {
+
+					download_cve.call(this, cve_id, (cve_details) => {
+
+						if (isArray(cve_details['groups']) === true) {
+
+							cve_details['groups'].forEach((avg_id) => {
+
+								let avg_details = this.__state['avg'][avg_id] || null;
+								if (avg_details === null) {
+
+									if (avg_downloads.includes(avg_id) === false) {
+
+										download_avg.call(this, avg_id, () => {
+
+											let index = avg_downloads.indexOf(avg_id);
+											if (index !== -1) {
+												avg_downloads.splice(index, 1);
+											}
+
+										});
+
+										avg_downloads.push(avg_id);
+
+									}
+
+								}
+
+							});
+
+						}
+
+						let index = cve_downloads.indexOf(cve_id);
+						if (index !== -1) {
+							cve_downloads.splice(index, 1);
+						}
+
+					});
+
+				});
+
+
+				console.log('Archlinux: Approximately ' + (avg_downloads.length + cve_downloads.length) + ' remaining downloads!');
+
 				let interval = setInterval(() => {
 
-					if (downloads === 0) {
+					if (avg_downloads.length === 0 && cve_downloads.length === 0) {
 
 						clearInterval(interval);
 						interval = null;
 
-						update_vulnerabilities.call(this);
+						this.once('merge', () => {
+							this.emit('update');
+						});
+
+						this.merge();
 
 					}
 

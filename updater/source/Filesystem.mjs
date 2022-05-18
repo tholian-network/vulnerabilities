@@ -293,7 +293,7 @@ Filesystem.prototype = {
 					let result = false;
 
 					try {
-						fs.writeFileSync(path, buffer);
+						fs.writeFileSync(this.root + path, buffer);
 						result = true;
 					} catch (err) {
 						result = false;
@@ -311,7 +311,7 @@ Filesystem.prototype = {
 				let result = false;
 
 				try {
-					fs.writeFileSync(path, buffer);
+					fs.writeFileSync(this.root + path, buffer);
 					result = true;
 				} catch (err) {
 					result = false;

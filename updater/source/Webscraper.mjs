@@ -29,12 +29,36 @@ const request_interval = function() {
 			active.push(todo);
 
 
-			let request = https.request(todo['url'], (response) => {
+			console.log('Webscraper: Requesting "' + todo['url'] + '" ...');
+
+			let request = https.request(todo['url'], {
+				headers: {
+					'Accept-Encoding': 'identity',
+					'Accept-Language': 'en-US,en;q=0.9',
+					'User-Agent':      'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36'
+				}
+			}, (response) => {
 
 				let chunks = [];
 
 				response.on('data', (chunk) => {
 					chunks.push(chunk);
+				});
+
+				response.on('error', () => {
+
+					let index1 = active.indexOf(todo);
+					if (index1 !== -1) {
+						active.splice(index1, 1);
+					}
+
+					let index2 = requests.indexOf(request);
+					if (index2 !== -1) {
+						requests.splice(index2, 1);
+					}
+
+					todo['callback'](null);
+
 				});
 
 				response.on('end', () => {
@@ -95,26 +119,26 @@ const request_interval = function() {
 
 				});
 
-				request.on('error', () => {
+			});
 
-					let index1 = active.indexOf(todo);
-					if (index1 !== -1) {
-						active.splice(index1, 1);
-					}
+			request.on('error', () => {
 
-					let index2 = requests.indexOf(request);
-					if (index2 !== -1) {
-						requests.splice(index2, 1);
-					}
+				let index1 = active.indexOf(todo);
+				if (index1 !== -1) {
+					active.splice(index1, 1);
+				}
 
-					todo['callback'](null);
+				let index2 = requests.indexOf(request);
+				if (index2 !== -1) {
+					requests.splice(index2, 1);
+				}
 
-				});
-
-				requests.push(request);
-				request.end();
+				todo['callback'](null);
 
 			});
+
+			requests.push(request);
+			request.end();
 
 		});
 

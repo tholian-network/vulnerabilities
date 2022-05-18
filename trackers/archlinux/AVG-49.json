@@ -1,0 +1,20 @@
+{
+	"name": "AVG-49",
+	"packages": [
+		"linux-grsec"
+	],
+	"status": "Fixed",
+	"severity": "High",
+	"type": "privilege escalation",
+	"affected": "1:4.7.8.r201610161720-1",
+	"fixed": "1:4.7.10.r201610222037-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2016-5195"
+	],
+	"advisories": [
+		"ASA-201610-16"
+	],
+	"references": [],
+	"notes": "This is fixed on commit 30712aff8011b67be3e7e31ea079cfc9d3effef4, which was applied on 4.7.9 of linux-stable."
+}

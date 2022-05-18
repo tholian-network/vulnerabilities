@@ -39,6 +39,7 @@ const isVulnerability = function(vulnerability) {
 		&& isArray(vulnerability['hardware']) === true
 		&& isArray(vulnerability['software']) === true
 		&& isArray(vulnerability['references']) === true
+		&& (isString(vulnerability['severity']) === true || vulnerability['severity'] === null)
 		&& isString(vulnerability['state']) === true
 		&& isBoolean(vulnerability['_is_edited']) === true
 	) {
@@ -58,6 +59,7 @@ const create = function(identifier) {
 		'hardware':    [],
 		'software':    [],
 		'references':  [],
+		'severity':    null,
 		'state':       'invalid',
 		'_is_edited':  false
 	};

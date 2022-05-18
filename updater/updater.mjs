@@ -21,7 +21,8 @@ const show_help = () => {
 	console.log('');
 	console.log('    Action     | Description                                    ');
 	console.log('    -----------|------------------------------------------------');
-	console.log('    update     | Updates vulnerabilities from Security Trackers.');
+	console.log('    update     | Updates vulnerabilities from online Security Tracker data.');
+	console.log('    merge      | Merges vulnerabilities from local Security Tracker data.');
 	console.log('');
 	console.log('Available Flags:');
 	console.log('');
@@ -48,11 +49,21 @@ if (ENVIRONMENT.action === 'update') {
 		debug:    ENVIRONMENT.flags.debug    || false
 	});
 
-	updater.once('connect', () => {
-		updater.update();
+	updater.on('disconnect', (result) => {
+		process.exit(result === true ? 0 : 1);
 	});
 
-	updater.on('disconnect', (result) => {
+	updater.connect();
+
+} else if (ENVIRONMENT.action === 'merge') {
+
+	let updater = new Updater({
+		action:   'merge',
+		database: ENVIRONMENT.flags.database || null,
+		debug:    ENVIRONMENT.flags.debug    || false
+	});
+
+	updater.once('disconnect', (result) => {
 		process.exit(result === true ? 0 : 1);
 	});
 

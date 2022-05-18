@@ -352,76 +352,88 @@ CVEList.prototype = Object.assign({}, Emitter.prototype, {
 
 	},
 
+	merge: function() {
+
+		console.clear();
+		console.info('CVEList: Merging ...');
+
+		this.filesystem.index('/review_set').forEach((year) => {
+
+			this.filesystem.index(year).sort().forEach((prefix) => {
+
+				this.filesystem.index(prefix, 'CVE-*.json').sort().map((path) => {
+
+					let id   = toIdentifier(path.split('/').pop());
+					let data = this.filesystem.read(path);
+
+					if (id !== null && data !== null) {
+						return {
+							'id':   id,
+							'data': data
+						};
+					}
+
+					return null;
+
+				}).filter((entry) => {
+					return entry !== null;
+				}).forEach((entry) => {
+
+					console.log('CVEList: "' + entry['id'] + '"');
+
+					let vulnerability = this.vulnerabilities.get(entry['id']);
+					if (
+						vulnerability['_is_edited'] === false
+						&& STATE.includes(vulnerability['state']) === true
+					) {
+
+						merge.call(this, vulnerability, entry['data']);
+
+						this.vulnerabilities.update(vulnerability);
+
+					}
+
+				});
+
+			});
+
+		});
+
+		setTimeout(() => {
+
+			console.clear();
+			console.info('CVEList: Merge complete.');
+
+			this.emit('merge');
+
+		}, 0);
+
+	},
+
 	update: function() {
+
+		console.clear();
+		console.info('CVEList: Updating ...');
 
 		update.call(this, (result) => {
 
 			if (result === true) {
 
-				let results = {
-					published: [],
-					disputed:  [],
-					rejected:  [],
-					invalid:   []
-				};
+				this.once('merge', () => {
 
-				this.filesystem.index('/review_set').forEach((year) => {
+					console.clear();
+					console.info('CVEList: Update complete.');
 
-					this.filesystem.index(year).sort().forEach((prefix) => {
-
-						this.filesystem.index(prefix, 'CVE-*.json').sort().map((path) => {
-
-							let id   = toIdentifier(path.split('/').pop());
-							let data = this.filesystem.read(path);
-
-							if (id !== null && data !== null) {
-								return {
-									'id':   id,
-									'data': data
-								};
-							}
-
-							return null;
-
-						}).filter((entry) => {
-							return entry !== null;
-						}).forEach((entry) => {
-
-							let vulnerability = this.vulnerabilities.get(entry['id']);
-							if (
-								vulnerability['_is_edited'] === false
-								&& STATE.includes(vulnerability['state']) === true
-							) {
-
-								merge(vulnerability, entry['data']);
-
-								if (vulnerability['state'] === 'published') {
-									results['published'].push(vulnerability);
-								} else if (vulnerability['state'] === 'disputed') {
-									results['disputed'].push(vulnerability);
-								} else if (vulnerability['state'] === 'rejected') {
-									results['rejected'].push(vulnerability);
-								} else if (vulnerability['state'] === 'invalid') {
-									results['invalid'].push(vulnerability);
-								}
-
-								this.vulnerabilities.update(vulnerability);
-
-							}
-
-						});
-
-					});
+					this.emit('update');
 
 				});
 
-				setTimeout(() => {
-					this.emit('update', [ results ]);
-				}, 0);
+				this.merge();
 
 			} else {
 
-				console.error('CVEList: Cannot clone repository from GitHub');
+				console.error('CVEList: Cannot synchronize with GitHub repository');
+
 				this.emit('error');
 
 			}
