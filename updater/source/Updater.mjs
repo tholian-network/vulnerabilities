@@ -5,12 +5,20 @@ import { console, Emitter, isObject, isString } from '../extern/base.mjs';
 import { ENVIRONMENT                          } from '../source/ENVIRONMENT.mjs';
 import { Vulnerabilities                      } from '../source/Vulnerabilities.mjs';
 import { Archlinux                            } from '../source/tracker/Archlinux.mjs';
-// import { Debian                               } from '../source/tracker/Debian.mjs';
+import { CVEList                              } from '../source/tracker/CVEList.mjs';
+import { Debian                               } from '../source/tracker/Debian.mjs';
 // import { Ubuntu                               } from '../source/tracker/Ubuntu.mjs';
 // import { Microsoft                            } from '../source/tracker/Microsoft.mjs';
-import { CVEList                              } from '../source/tracker/CVEList.mjs';
 
 
+
+const CONSTRUCTORS = [
+	CVEList,
+	Archlinux,
+	Debian
+];
+
+const TRACKERS = CONSTRUCTORS.map((Constructor) => Constructor.prototype[Symbol.toStringTag]);
 
 export const isUpdater = function(obj) {
 	return Object.prototype.toString.call(obj) === '[object Updater]';
@@ -23,11 +31,37 @@ const Updater = function(settings) {
 	settings = isObject(settings) ? settings : {};
 
 
-	this._settings = Object.freeze(Object.assign({
+	this._settings = Object.assign({
 		action:   null,
 		database: ENVIRONMENT.root + '/vulnerabilities',
-		debug:    false
-	}, settings));
+		debug:    false,
+		trackers: TRACKERS
+	}, settings);
+
+	if (this._settings.trackers.length > 0) {
+
+		this._settings.trackers = this._settings.trackers.map((search) => {
+
+			let found = null;
+
+			for (let t = 0, tl = TRACKERS.length; t < tl; t++) {
+
+				if (TRACKERS[t].toLowerCase() === search.toLowerCase()) {
+					found = TRACKERS[t];
+					break;
+				}
+
+			}
+
+			console.log(search, found);
+
+			return found;
+
+		}).filter((name) => name !== null);
+
+	}
+
+	Object.freeze(this._settings);
 
 
 	console.clear();
@@ -39,17 +73,24 @@ const Updater = function(settings) {
 		database: this._settings.database
 	});
 
-	this.trackers = [
-		new CVEList(this.vulnerabilities),
-		new Archlinux(this.vulnerabilities),
-		// new Debian(this.vulnerabilities),
-		// new Ubuntu(this.vulnerabilities),
-		// new Microsoft(this.vulnerabilities)
-	];
+	this.trackers = [];
 
 	this.__state = {
 		connected: false
 	};
+
+
+	if (this._settings.trackers.length > 0) {
+
+		TRACKERS.forEach((name, c) => {
+
+			if (this._settings.trackers.includes(name) === true) {
+				this.trackers.push(new CONSTRUCTORS[c](this.vulnerabilities));
+			}
+
+		});
+
+	}
 
 
 	Emitter.call(this);
@@ -65,12 +106,6 @@ const Updater = function(settings) {
 		}
 
 	});
-
-	// Can't update if CVEList is not available
-	this.trackers[0].on('error', () => {
-		this.disconnect();
-	});
-
 
 	process.on('SIGINT', () => {
 		this.disconnect();
@@ -96,6 +131,7 @@ const Updater = function(settings) {
 
 
 Updater.isUpdater = isUpdater;
+Updater.TRACKERS  = TRACKERS;
 
 
 Updater.prototype = Object.assign({}, Emitter.prototype, {
@@ -186,23 +222,33 @@ Updater.prototype = Object.assign({}, Emitter.prototype, {
 
 		if (this.__state.connected === true) {
 
-			let merging = this.trackers.length - 1;
+			let trackers = this.trackers.filter((tracker) => {
+				return tracker[Symbol.toStringTag] !== 'CVEList';
+			});
 
-			this.trackers.slice(1).forEach((tracker) => {
+			if (trackers.length > 0) {
 
-				tracker.once('merge', () => {
+				let merging = trackers.length;
 
-					merging--;
+				trackers.forEach((tracker) => {
 
-					if (merging === 0) {
-						this.emit('merge');
-					}
+					tracker.once('merge', () => {
+
+						merging--;
+
+						if (merging === 0) {
+							this.emit('merge');
+						}
+
+					});
+
+					tracker.merge();
 
 				});
 
-				tracker.merge();
+				return true;
 
-			});
+			}
 
 		}
 
@@ -215,13 +261,43 @@ Updater.prototype = Object.assign({}, Emitter.prototype, {
 
 		if (this.__state.connected === true) {
 
-			let cvelist = this.trackers[0];
+			let cvelist = this.trackers.find((tracker) => {
+				return tracker[Symbol.toStringTag] === 'CVEList';
+			}) || null;
 
-			cvelist.once('update', () => {
+			if (cvelist !== null) {
+
+				let trackers = this.trackers.filter((tracker) => tracker !== cvelist);
+
+				cvelist.once('update', () => {
+
+					let updating = trackers.length - 1;
+
+					trackers.forEach((tracker) => {
+
+						tracker.once('update', () => {
+
+							updating--;
+
+							if (updating === 0) {
+								this.emit('update');
+							}
+
+						});
+
+						tracker.update();
+
+					});
+
+				});
+
+				cvelist.update();
+
+			} else {
 
 				let updating = this.trackers.length - 1;
 
-				this.trackers.slice(1).forEach((tracker) => {
+				this.trackers.forEach((tracker) => {
 
 					tracker.once('update', () => {
 
@@ -237,9 +313,7 @@ Updater.prototype = Object.assign({}, Emitter.prototype, {
 
 				});
 
-			});
-
-			cvelist.update();
+			}
 
 			return true;
 

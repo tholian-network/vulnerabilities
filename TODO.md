@@ -11,7 +11,7 @@
 - [ ] Alma Linux
 - [ ] Alpine Linux
 - [ ] Amazon Linux
-- [ ] Arch Linux
+- [x] Arch Linux
 - [ ] CentOS Stream
 - [ ] Debian Linux
 - [ ] PhotonOS

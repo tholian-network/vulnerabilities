@@ -16,6 +16,35 @@ const SEVERITY = [
 
 
 
+const findSoftware = function(software) {
+
+	if (isArray(this) === true) {
+
+		let found = null;
+
+		for (let t = 0, tl = this.length; t < tl; t++) {
+
+			let other = this[t];
+
+			if (
+				other['name'] === software['name']
+				&& other['platform'] === software['platform']
+				&& other['version'] === software['version']
+			) {
+				found = other;
+				break;
+			}
+
+		}
+
+		return found;
+
+	}
+
+	return null;
+
+};
+
 const toIdentifier = function(name) {
 
 	if (name.startsWith('CVE-') === true) {
@@ -132,14 +161,12 @@ const merge = function(vulnerability, data) {
 							avg['packages'].forEach((name) => {
 
 								let software = {
-									name:    'archlinux/' + name,
-									version: '< ' + avg['fixed'].trim()
+									name:     name,
+									platform: 'archlinux',
+									version:  '< ' + avg['fixed'].trim()
 								};
 
-								let other = vulnerability['software'].find((s) => {
-									return s['name'] === software['name'] && s['version'] === software['version'];
-								}) || null;
-
+								let other = findSoftware.call(vulnerability['software'], software);
 								if (other === null) {
 									vulnerability['software'].push(software);
 								}
@@ -155,14 +182,12 @@ const merge = function(vulnerability, data) {
 							avg['packages'].forEach((name) => {
 
 								let software = {
-									name:    'archlinux/' + name,
-									version: avg['affected'].trim()
+									name:     name,
+									platform: 'archlinux',
+									version:  '*'
 								};
 
-								let other = vulnerability['software'].find((s) => {
-									return s['name'] === software['name'] && s['version'] === software['version'];
-								}) || null;
-
+								let other = findSoftware.call(vulnerability['software'], software);
 								if (other === null) {
 									vulnerability['software'].push(software);
 								}
@@ -178,14 +203,12 @@ const merge = function(vulnerability, data) {
 							avg['packages'].forEach((name) => {
 
 								let software = {
-									name:    'archlinux/' + name,
-									version: '< ' + avg['fixed'].trim()
+									name:     name,
+									platform: 'archlinux',
+									version:  '< ' + avg['fixed'].trim()
 								};
 
-								let other = vulnerability['software'].find((s) => {
-									return s['name'] === software['name'] && s['version'] === software['version'];
-								}) || null;
-
+								let other = findSoftware.call(vulnerability['software'], software);
 								if (other === null) {
 									vulnerability['software'].push(software);
 								}
@@ -201,14 +224,12 @@ const merge = function(vulnerability, data) {
 							avg['packages'].forEach((name) => {
 
 								let software = {
-									name:    'archlinux/' + name,
-									version: '< ' + avg['fixed'].trim()
+									name:     name,
+									platform: 'archlinux',
+									version:  '< ' + avg['fixed'].trim()
 								};
 
-								let other = vulnerability['software'].find((s) => {
-									return s['name'] === software['name'] && s['version'] === software['version'];
-								}) || null;
-
+								let other = findSoftware.call(vulnerability['software'], software);
 								if (other === null) {
 									vulnerability['software'].push(software);
 								}
@@ -220,14 +241,12 @@ const merge = function(vulnerability, data) {
 							avg['packages'].forEach((name) => {
 
 								let software = {
-									name:    'archlinux/' + name,
-									version: avg['affected'].trim()
+									name:     name,
+									platform: 'archlinux',
+									version:  avg['affected'].trim()
 								};
 
-								let other = vulnerability['software'].find((s) => {
-									return s['name'] === software['name'] && s['version'] === software['version'];
-								}) || null;
-
+								let other = findSoftware.call(vulnerability['software'], software);
 								if (other === null) {
 									vulnerability['software'].push(software);
 								}
@@ -355,8 +374,7 @@ Archlinux.prototype = Object.assign({}, Emitter.prototype, {
 
 	merge: function() {
 
-		console.clear();
-		console.info('Archlinux: Merging ...');
+		console.info('Archlinux: Merge');
 
 		this.filesystem.index('/', 'CVE-*.json').sort().map((path) => {
 

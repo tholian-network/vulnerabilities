@@ -2,8 +2,8 @@
 import { Buffer } from 'buffer';
 import fs         from 'fs';
 
-import { console, isArray, isObject, isString } from '../extern/base.mjs';
-import { ENVIRONMENT                          } from '../source/ENVIRONMENT.mjs';
+import { console, isArray, isBuffer, isObject, isString } from '../extern/base.mjs';
+import { ENVIRONMENT                                    } from '../source/ENVIRONMENT.mjs';
 
 
 
@@ -275,10 +275,7 @@ Filesystem.prototype = {
 
 		if (path !== null) {
 
-			if (
-				isArray(data) === true
-				|| isObject(data) === true
-			) {
+			if (isArray(data) === true || isObject(data) === true) {
 
 				let buffer = null;
 
@@ -303,9 +300,20 @@ Filesystem.prototype = {
 
 				}
 
-			} else if (
-				isString(data) === true
-			) {
+			} else if (isBuffer(data) === true) {
+
+				let result = false;
+
+				try {
+					fs.writeFileSync(this.root + path, data);
+					result = true;
+				} catch (err) {
+					result = false;
+				}
+
+				return result;
+
+			} else if (isString(data) === true) {
 
 				let buffer = Buffer.from(data, 'utf8');
 				let result = false;

@@ -26,14 +26,17 @@ const show_help = () => {
 	console.log('');
 	console.log('Available Flags:');
 	console.log('');
-	console.log('    Flag       | Default | Values          | Description                                                      ');
-	console.log('    -----------|---------|-----------------|------------------------------------------------------------------');
-	console.log('    --debug    | false   | true, false     | Enable/Disable debugging messages. Defaulted with false.         ');
-	console.log('    --database | null    | "(Folder Path)" | Overrides the Vulnerabilities database path. Defaulted with null.');
+	console.log('    Flag       | Default | Values           | Description                                                                   ');
+	console.log('    -----------|---------|------------------|-------------------------------------------------------------------------------');
+	console.log('    --debug    | false   | true, false      | Enable/Disable debugging messages. Defaulted with false.                      ');
+	console.log('    --database | null    | "(Folder Path)"  | Overrides the Vulnerabilities database path. Defaulted with null.             ');
+	console.log('    --trackers | ()      | "(Tracker Name)" | If set, uses the comma-separated list of Security Trackers. Defaulted with ().');
 	console.log('');
 	console.log('Examples:');
 	console.log('');
 	console.log('    updater update;');
+	console.log('    updater merge --trackers="Debian,Archlinux"');
+	console.log('');
 	console.log('    updater update --debug=true --database=/tmp/vulnerabilities;');
 	console.log('');
 
@@ -46,7 +49,8 @@ if (ENVIRONMENT.action === 'update') {
 	let updater = new Updater({
 		action:   'update',
 		database: ENVIRONMENT.flags.database || null,
-		debug:    ENVIRONMENT.flags.debug    || false
+		debug:    ENVIRONMENT.flags.debug    || false,
+		trackers: ENVIRONMENT.flags.trackers || []
 	});
 
 	updater.on('disconnect', (result) => {
@@ -60,7 +64,8 @@ if (ENVIRONMENT.action === 'update') {
 	let updater = new Updater({
 		action:   'merge',
 		database: ENVIRONMENT.flags.database || null,
-		debug:    ENVIRONMENT.flags.debug    || false
+		debug:    ENVIRONMENT.flags.debug    || false,
+		trackers: ENVIRONMENT.flags.trackers || []
 	});
 
 	updater.once('disconnect', (result) => {

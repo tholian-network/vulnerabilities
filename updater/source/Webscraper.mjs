@@ -57,7 +57,7 @@ const request_interval = function() {
 						requests.splice(index2, 1);
 					}
 
-					todo['callback'](null);
+					todo['callback'](null, null);
 
 				});
 
@@ -80,7 +80,7 @@ const request_interval = function() {
 							active.splice(index, 1);
 						}
 
-						todo['callback'](data);
+						todo['callback'](data, buffer);
 
 					} else if (type === 'xml') {
 
@@ -99,9 +99,11 @@ const request_interval = function() {
 							requests.splice(index2, 1);
 						}
 
-						todo['callback'](data);
+						todo['callback'](data, buffer);
 
 					} else {
+
+						let buffer = Buffer.concat(chunks);
 
 						let index1 = active.indexOf(todo);
 						if (index1 !== -1) {
@@ -113,7 +115,7 @@ const request_interval = function() {
 							requests.splice(index2, 1);
 						}
 
-						todo['callback'](null);
+						todo['callback'](null, buffer);
 
 					}
 
@@ -133,7 +135,7 @@ const request_interval = function() {
 					requests.splice(index2, 1);
 				}
 
-				todo['callback'](null);
+				todo['callback'](null, null);
 
 			});
 
