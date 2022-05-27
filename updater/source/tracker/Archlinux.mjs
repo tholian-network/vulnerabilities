@@ -1,9 +1,9 @@
 
-import { console, Emitter, isArray, isObject, isString } from '../../extern/base.mjs';
-import { ENVIRONMENT                                   } from '../../source/ENVIRONMENT.mjs';
-import { Filesystem                                    } from '../../source/Filesystem.mjs';
-import { isVulnerabilities, Vulnerabilities            } from '../../source/Vulnerabilities.mjs';
-import { Webscraper                                    } from '../../source/Webscraper.mjs';
+import { console, Emitter, isArray, isObject, isString        } from '../../extern/base.mjs';
+import { ENVIRONMENT                                          } from '../../source/ENVIRONMENT.mjs';
+import { Filesystem                                           } from '../../source/Filesystem.mjs';
+import { isVulnerabilities, Vulnerabilities, containsSoftware } from '../../source/Vulnerabilities.mjs';
+import { Webscraper                                           } from '../../source/Webscraper.mjs';
 
 
 
@@ -15,59 +15,6 @@ const SEVERITY = [
 ];
 
 
-
-const findSoftware = function(software) {
-
-	if (isArray(this) === true) {
-
-		let found = null;
-
-		for (let t = 0, tl = this.length; t < tl; t++) {
-
-			let other = this[t];
-
-			if (
-				other['name'] === software['name']
-				&& other['platform'] === software['platform']
-				&& other['version'] === software['version']
-			) {
-				found = other;
-				break;
-			}
-
-		}
-
-		return found;
-
-	}
-
-	return null;
-
-};
-
-const toIdentifier = function(name) {
-
-	if (name.startsWith('CVE-') === true) {
-
-		if (name.endsWith('.json') === true) {
-			name = name.substr(0, name.length - 5);
-		}
-
-		let check = name.split('-');
-		if (
-			check.length === 3
-			&& check[0] === 'CVE'
-			&& /^([0-9]{4})$/g.test(check[1]) === true
-			&& /^([0-9]+)$/g.test(check[2]) === true
-		) {
-			return check.slice(0, 3).join('-');
-		}
-
-	}
-
-	return null;
-
-};
 
 const download_avg = function(avg_id, callback) {
 
@@ -166,8 +113,7 @@ const merge = function(vulnerability, data) {
 									version:  '< ' + avg['fixed'].trim()
 								};
 
-								let other = findSoftware.call(vulnerability['software'], software);
-								if (other === null) {
+								if (containsSoftware(vulnerability['software'], software) === false) {
 									vulnerability['software'].push(software);
 								}
 
@@ -187,8 +133,7 @@ const merge = function(vulnerability, data) {
 									version:  '*'
 								};
 
-								let other = findSoftware.call(vulnerability['software'], software);
-								if (other === null) {
+								if (containsSoftware(vulnerability['software'], software) === false) {
 									vulnerability['software'].push(software);
 								}
 
@@ -208,8 +153,7 @@ const merge = function(vulnerability, data) {
 									version:  '< ' + avg['fixed'].trim()
 								};
 
-								let other = findSoftware.call(vulnerability['software'], software);
-								if (other === null) {
+								if (containsSoftware(vulnerability['software'], software) === false) {
 									vulnerability['software'].push(software);
 								}
 
@@ -229,8 +173,7 @@ const merge = function(vulnerability, data) {
 									version:  '< ' + avg['fixed'].trim()
 								};
 
-								let other = findSoftware.call(vulnerability['software'], software);
-								if (other === null) {
+								if (containsSoftware(vulnerability['software'], software) === false) {
 									vulnerability['software'].push(software);
 								}
 
@@ -246,8 +189,7 @@ const merge = function(vulnerability, data) {
 									version:  avg['affected'].trim()
 								};
 
-								let other = findSoftware.call(vulnerability['software'], software);
-								if (other === null) {
+								if (containsSoftware(vulnerability['software'], software) === false) {
 									vulnerability['software'].push(software);
 								}
 
@@ -360,7 +302,10 @@ Archlinux.prototype = Object.assign({}, Emitter.prototype, {
 
 		});
 
-		this.emit('connect');
+
+		setTimeout(() => {
+			this.emit('connect');
+		}, 0);
 
 	},
 
@@ -368,7 +313,10 @@ Archlinux.prototype = Object.assign({}, Emitter.prototype, {
 
 		this.webscraper.destroy();
 
-		this.emit('disconnect');
+
+		setTimeout(() => {
+			this.emit('disconnect');
+		}, 0);
 
 	},
 
@@ -376,27 +324,10 @@ Archlinux.prototype = Object.assign({}, Emitter.prototype, {
 
 		console.info('Archlinux: Merge');
 
-		this.filesystem.index('/', 'CVE-*.json').sort().map((path) => {
 
-			let id   = toIdentifier(path.split('/').pop());
-			let data = this.filesystem.read(path);
+		Object.values(this.__state['cve']).forEach((entry) => {
 
-			if (id !== null && data !== null) {
-				return {
-					'id':   id,
-					'data': data
-				};
-			}
-
-			return null;
-
-		}).filter((entry) => {
-			return entry !== null;
-		}).forEach((entry) => {
-
-			console.log('Archlinux: "' + entry['id'] + '"');
-
-			let vulnerability = this.vulnerabilities.get(entry['id']);
+			let vulnerability = this.vulnerabilities.get(entry['name']);
 			if (vulnerability['_is_edited'] === false) {
 
 				merge.call(this, vulnerability, entry['data']);
@@ -407,8 +338,13 @@ Archlinux.prototype = Object.assign({}, Emitter.prototype, {
 
 		});
 
+
 		setTimeout(() => {
+
+			console.info('Archlinux: Merge complete.');
+
 			this.emit('merge');
+
 		}, 0);
 
 	},
@@ -416,6 +352,7 @@ Archlinux.prototype = Object.assign({}, Emitter.prototype, {
 	update: function() {
 
 		console.info('Archlinux: Update');
+
 
 		this.webscraper.request('https://security.archlinux.org/all.json', (data) => {
 
@@ -569,7 +506,11 @@ Archlinux.prototype = Object.assign({}, Emitter.prototype, {
 				});
 
 
-				console.log('Archlinux: Approximately ' + (avg_downloads.length + cve_downloads.length) + ' remaining downloads!');
+				if (avg_downloads.length > 0 || cve_downloads.length > 0) {
+					console.log('Archlinux: Approximately ' + (avg_downloads.length + cve_downloads.length) + ' remaining downloads!');
+				} else {
+					console.log('Archlinux: No remaining downloads!');
+				}
 
 				let interval = setInterval(() => {
 

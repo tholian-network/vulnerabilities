@@ -5,7 +5,8 @@ import { console, Emitter, isObject, isString } from '../extern/base.mjs';
 import { ENVIRONMENT                          } from '../source/ENVIRONMENT.mjs';
 import { Vulnerabilities                      } from '../source/Vulnerabilities.mjs';
 import { Archlinux                            } from '../source/tracker/Archlinux.mjs';
-import { CVEList                              } from '../source/tracker/CVEList.mjs';
+import { CVE                                  } from '../source/tracker/CVE.mjs';
+import { CISA                                 } from '../source/tracker/CISA.mjs';
 import { Debian                               } from '../source/tracker/Debian.mjs';
 // import { Ubuntu                               } from '../source/tracker/Ubuntu.mjs';
 // import { Microsoft                            } from '../source/tracker/Microsoft.mjs';
@@ -13,7 +14,8 @@ import { Debian                               } from '../source/tracker/Debian.m
 
 
 const CONSTRUCTORS = [
-	CVEList,
+	CVE,
+	CISA,
 	Archlinux,
 	Debian
 ];
@@ -38,7 +40,11 @@ const Updater = function(settings) {
 		trackers: TRACKERS
 	}, settings);
 
-	if (this._settings.trackers.length > 0) {
+	if (this._settings.trackers.length === 0) {
+
+		this._settings.trackers = TRACKERS.slice();
+
+	} else if (this._settings.trackers.length > 0) {
 
 		this._settings.trackers = this._settings.trackers.map((search) => {
 
@@ -52,8 +58,6 @@ const Updater = function(settings) {
 				}
 
 			}
-
-			console.log(search, found);
 
 			return found;
 
@@ -96,16 +100,52 @@ const Updater = function(settings) {
 	Emitter.call(this);
 
 
+	this.on('merge', () => {
+		console.info('Updater: Merge complete.');
+	});
+
+	this.on('update', () => {
+		console.info('Updater: Update complete.');
+	});
+
 	this.on('connect', () => {
+
+		console.info('Updater: Connect complete.');
 
 		let action = this._settings.action || null;
 		if (action === 'update') {
+
+			this.once('update', () => {
+				this.disconnect();
+			});
+
 			this.update();
+
 		} else if (action === 'merge') {
+
+			this.once('merge', () => {
+				this.disconnect();
+			});
+
 			this.merge();
+
 		}
 
 	});
+
+	this.on('disconnect', () => {
+
+		let action = this._settings.action || null;
+		if (action === 'update') {
+			this.vulnerabilities.disconnect();
+		} else if (action === 'merge') {
+			this.vulnerabilities.disconnect();
+		}
+
+		console.info('Updater: Disconnect complete.');
+
+	});
+
 
 	process.on('SIGINT', () => {
 		this.disconnect();
@@ -141,6 +181,9 @@ Updater.prototype = Object.assign({}, Emitter.prototype, {
 	connect: function() {
 
 		if (this.__state.connected === false) {
+
+			console.info('Updater: Connect');
+
 
 			let connecting = this.trackers.length;
 
@@ -222,8 +265,11 @@ Updater.prototype = Object.assign({}, Emitter.prototype, {
 
 		if (this.__state.connected === true) {
 
+			console.info('Updater: Merge');
+
+
 			let trackers = this.trackers.filter((tracker) => {
-				return tracker[Symbol.toStringTag] !== 'CVEList';
+				return tracker[Symbol.toStringTag] !== 'CVE';
 			});
 
 			if (trackers.length > 0) {
@@ -261,15 +307,18 @@ Updater.prototype = Object.assign({}, Emitter.prototype, {
 
 		if (this.__state.connected === true) {
 
-			let cvelist = this.trackers.find((tracker) => {
-				return tracker[Symbol.toStringTag] === 'CVEList';
+			console.info('Updater: Update');
+
+
+			let cve = this.trackers.find((tracker) => {
+				return tracker[Symbol.toStringTag] === 'CVE';
 			}) || null;
 
-			if (cvelist !== null) {
+			if (cve !== null) {
 
-				let trackers = this.trackers.filter((tracker) => tracker !== cvelist);
+				let trackers = this.trackers.filter((tracker) => tracker !== cve);
 
-				cvelist.once('update', () => {
+				cve.once('update', () => {
 
 					let updating = trackers.length - 1;
 
@@ -291,11 +340,11 @@ Updater.prototype = Object.assign({}, Emitter.prototype, {
 
 				});
 
-				cvelist.update();
+				cve.update();
 
 			} else {
 
-				let updating = this.trackers.length - 1;
+				let updating = this.trackers.length;
 
 				this.trackers.forEach((tracker) => {
 

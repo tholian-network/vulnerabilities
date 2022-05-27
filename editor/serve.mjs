@@ -74,7 +74,7 @@ const SERVER = http.createServer((request, response) => {
 
 	} else if (
 		method === 'POST'
-		&& url.startsWith('/vulnerabilities-fixed/')
+		&& url.startsWith('/vulnerabilities/')
 	) {
 
 		// TODO: Implement update mechanism for fetch() from Editor
@@ -84,7 +84,6 @@ const SERVER = http.createServer((request, response) => {
 		&& (
 			url.startsWith('/editor/')
 			|| url.startsWith('/vulnerabilities/')
-			|| url.startsWith('/vulnerabilities-fixed/')
 		)
 	) {
 
@@ -133,5 +132,5 @@ const SERVER = http.createServer((request, response) => {
 
 SERVER.listen(8080);
 
-console.info('Visit CVE Editor at http://localhost:8080/');
+console.info('Visit Web Editor at http://localhost:8080/');
 

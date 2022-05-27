@@ -16,18 +16,18 @@
 		"advisories": []
 	},
 	{
-		"name": "AVG-2669",
+		"name": "AVG-2736",
 		"packages": [
-			"linux-hardened"
+			"maven"
 		],
 		"status": "Unknown",
-		"severity": "High",
-		"type": "privilege escalation",
-		"affected": "5.15.14-1",
-		"fixed": "5.15.15-1",
+		"severity": "Critical",
+		"type": "arbitrary command execution",
+		"affected": "3.3.2-1",
+		"fixed": "3.3.3-1",
 		"ticket": null,
 		"issues": [
-			"CVE-2022-23222"
+			"CVE-2022-29599"
 		],
 		"advisories": []
 	},
@@ -92,6 +92,7 @@
 			"CVE-2022-1016",
 			"CVE-2022-1015",
 			"CVE-2022-0168",
+			"CVE-2021-44879",
 			"CVE-2021-4197"
 		],
 		"advisories": []
@@ -290,6 +291,38 @@
 		"advisories": []
 	},
 	{
+		"name": "AVG-2731",
+		"packages": [
+			"lib32-openssl-1.0"
+		],
+		"status": "Vulnerable",
+		"severity": "Medium",
+		"type": "unknown",
+		"affected": "1.0.2.zd-1",
+		"fixed": "1.0.2.ze-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-1292"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2730",
+		"packages": [
+			"openssl-1.0"
+		],
+		"status": "Vulnerable",
+		"severity": "Medium",
+		"type": "unknown",
+		"affected": "1.0.2.zd-1",
+		"fixed": "1.0.2.ze-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-1292"
+		],
+		"advisories": []
+	},
+	{
 		"name": "AVG-2721",
 		"packages": [
 			"libtiff"
@@ -419,31 +452,6 @@
 		"ticket": null,
 		"issues": [
 			"CVE-2020-16156"
-		],
-		"advisories": []
-	},
-	{
-		"name": "AVG-1741",
-		"packages": [
-			"linux-lts"
-		],
-		"status": "Vulnerable",
-		"severity": "Medium",
-		"type": "multiple issues",
-		"affected": "5.10.85-1",
-		"fixed": null,
-		"ticket": null,
-		"issues": [
-			"CVE-2021-43976",
-			"CVE-2021-4095",
-			"CVE-2021-4028",
-			"CVE-2021-4023",
-			"CVE-2021-3847",
-			"CVE-2021-3759",
-			"CVE-2021-3752",
-			"CVE-2021-3669",
-			"CVE-2021-30178",
-			"CVE-2021-29648"
 		],
 		"advisories": []
 	},
@@ -2022,6 +2030,276 @@
 		"ticket": null,
 		"issues": [
 			"CVE-2017-11331"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2741",
+		"packages": [
+			"linux-zen"
+		],
+		"status": "Testing",
+		"severity": "Unknown",
+		"type": "unknown",
+		"affected": "5.17.9.zen1-1",
+		"fixed": "5.17.10.zen1-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-21499"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2740",
+		"packages": [
+			"linux"
+		],
+		"status": "Testing",
+		"severity": "Unknown",
+		"type": "unknown",
+		"affected": "5.17.9.arch1-1",
+		"fixed": "5.17.10.arch1-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-21499"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2746",
+		"packages": [
+			"linux-zen"
+		],
+		"status": "Testing",
+		"severity": "High",
+		"type": "privilege escalation",
+		"affected": "5.17.9.zen1-1",
+		"fixed": "5.17.10.zen1-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-1729"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2744",
+		"packages": [
+			"linux"
+		],
+		"status": "Testing",
+		"severity": "High",
+		"type": "privilege escalation",
+		"affected": "5.17.9-1",
+		"fixed": "5.17.10-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-1729"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2743",
+		"packages": [
+			"linux-lts"
+		],
+		"status": "Fixed",
+		"severity": "Unknown",
+		"type": "unknown",
+		"affected": "5.15.41-1",
+		"fixed": "5.15.42-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-21499"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2742",
+		"packages": [
+			"linux-hardened"
+		],
+		"status": "Fixed",
+		"severity": "Unknown",
+		"type": "unknown",
+		"affected": "5.17.9.hardened1-1",
+		"fixed": "5.17.10.hardened1-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-21499"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2737",
+		"packages": [
+			"gnome-remote-desktop"
+		],
+		"status": "Not affected",
+		"severity": "Unknown",
+		"type": "unknown",
+		"affected": "42.1-1",
+		"fixed": "42.1.1-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-1736"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2735",
+		"packages": [
+			"nvidia-open-dkms",
+			"nvidia-open"
+		],
+		"status": "Fixed",
+		"severity": "Unknown",
+		"type": "unknown",
+		"affected": "510.73.04-1",
+		"fixed": "510.73.05-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-28192",
+			"CVE-2022-28191",
+			"CVE-2022-28185",
+			"CVE-2022-28184",
+			"CVE-2022-28183",
+			"CVE-2022-28181"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2734",
+		"packages": [
+			"nvidia-lts"
+		],
+		"status": "Fixed",
+		"severity": "Unknown",
+		"type": "unknown",
+		"affected": "510.73.04-1",
+		"fixed": "510.73.05-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-28192",
+			"CVE-2022-28191",
+			"CVE-2022-28185",
+			"CVE-2022-28184",
+			"CVE-2022-28183",
+			"CVE-2022-28181"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2733",
+		"packages": [
+			"nvidia-dkms"
+		],
+		"status": "Fixed",
+		"severity": "Unknown",
+		"type": "unknown",
+		"affected": "510.73.04-1",
+		"fixed": "510.73.05-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-28192",
+			"CVE-2022-28191",
+			"CVE-2022-28185",
+			"CVE-2022-28184",
+			"CVE-2022-28183",
+			"CVE-2022-28181"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2732",
+		"packages": [
+			"nvidia"
+		],
+		"status": "Fixed",
+		"severity": "Unknown",
+		"type": "unknown",
+		"affected": "510.73.04-1",
+		"fixed": "510.73.05-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-28192",
+			"CVE-2022-28191",
+			"CVE-2022-28185",
+			"CVE-2022-28184",
+			"CVE-2022-28183",
+			"CVE-2022-28181"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2739",
+		"packages": [
+			"chromium"
+		],
+		"status": "Fixed",
+		"severity": "Critical",
+		"type": "multiple issues",
+		"affected": "101.0.4951.54-1",
+		"fixed": "102.0.5005.61-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-1876",
+			"CVE-2022-1875",
+			"CVE-2022-1874",
+			"CVE-2022-1873",
+			"CVE-2022-1872",
+			"CVE-2022-1871",
+			"CVE-2022-1870",
+			"CVE-2022-1869",
+			"CVE-2022-1868",
+			"CVE-2022-1867",
+			"CVE-2022-1866",
+			"CVE-2022-1865",
+			"CVE-2022-1864",
+			"CVE-2022-1863",
+			"CVE-2022-1862",
+			"CVE-2022-1861",
+			"CVE-2022-1860",
+			"CVE-2022-1859",
+			"CVE-2022-1858",
+			"CVE-2022-1857",
+			"CVE-2022-1856",
+			"CVE-2022-1855",
+			"CVE-2022-1854",
+			"CVE-2022-1853"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2729",
+		"packages": [
+			"thunderbird"
+		],
+		"status": "Fixed",
+		"severity": "Critical",
+		"type": "arbitrary code execution",
+		"affected": "91.9.0-1",
+		"fixed": "91.9.1-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-1802",
+			"CVE-2022-1529"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2728",
+		"packages": [
+			"firefox"
+		],
+		"status": "Fixed",
+		"severity": "Critical",
+		"type": "arbitrary code execution",
+		"affected": "100.0.1-1",
+		"fixed": "100.0.2-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-1802",
+			"CVE-2022-1529"
 		],
 		"advisories": []
 	},
@@ -4286,6 +4564,7 @@
 			"CVE-2019-17666"
 		],
 		"advisories": [
+			"ASA-201911-12",
 			"ASA-201911-12"
 		]
 	},
@@ -4304,7 +4583,6 @@
 			"CVE-2019-17666"
 		],
 		"advisories": [
-			"ASA-201911-11",
 			"ASA-201911-11"
 		]
 	},
@@ -4323,6 +4601,7 @@
 			"CVE-2019-17666"
 		],
 		"advisories": [
+			"ASA-201911-10",
 			"ASA-201911-10"
 		]
 	},
@@ -4489,6 +4768,7 @@
 			"CVE-2019-11043"
 		],
 		"advisories": [
+			"ASA-201910-14",
 			"ASA-201910-14"
 		]
 	},
@@ -5562,7 +5842,6 @@
 			"CVE-2018-15686"
 		],
 		"advisories": [
-			"ASA-201811-11",
 			"ASA-201811-11"
 		]
 	},
@@ -7302,7 +7581,6 @@
 			"CVE-2017-9445"
 		],
 		"advisories": [
-			"ASA-201707-2",
 			"ASA-201707-2"
 		]
 	},
@@ -8775,6 +9053,89 @@
 		"advisories": [
 			"ASA-201701-1"
 		]
+	},
+	{
+		"name": "AVG-2747",
+		"packages": [
+			"linux-hardened"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "privilege escalation",
+		"affected": "5.17.9.hardened1-1",
+		"fixed": "5.17.10.hardened1-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-1729"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2745",
+		"packages": [
+			"linux-lts"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "privilege escalation",
+		"affected": "5.15.41-1",
+		"fixed": "5.15.42-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-1729"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2669",
+		"packages": [
+			"linux-hardened"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "privilege escalation",
+		"affected": "5.15.14.hardened1-1",
+		"fixed": "5.15.15.hardened1-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-23222"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2738",
+		"packages": [
+			"gvim",
+			"vim"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "multiple issues",
+		"affected": "8.2.4150-1",
+		"fixed": "8.2.4151-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-0318",
+			"CVE-2022-0261",
+			"CVE-2021-4192"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2727",
+		"packages": [
+			"bind"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "incorrect calculation",
+		"affected": "9.18.2-1",
+		"fixed": "9.18.3-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-1183"
+		],
+		"advisories": []
 	},
 	{
 		"name": "AVG-2726",
@@ -12630,6 +12991,7 @@
 			"CVE-2021-33909"
 		],
 		"advisories": [
+			"ASA-202107-49",
 			"ASA-202107-49"
 		]
 	},
@@ -12651,6 +13013,7 @@
 			"CVE-2021-33909"
 		],
 		"advisories": [
+			"ASA-202107-48",
 			"ASA-202107-48"
 		]
 	},
@@ -12917,7 +13280,6 @@
 			"CVE-2021-33909"
 		],
 		"advisories": [
-			"ASA-202107-51",
 			"ASA-202107-51"
 		]
 	},
@@ -13239,6 +13601,7 @@
 			"CVE-2021-32678"
 		],
 		"advisories": [
+			"ASA-202107-22",
 			"ASA-202107-22"
 		]
 	},
@@ -14717,26 +15080,6 @@
 		"advisories": []
 	},
 	{
-		"name": "AVG-1842",
-		"packages": [
-			"nimble"
-		],
-		"status": "Fixed",
-		"severity": "High",
-		"type": "multiple issues",
-		"affected": "1:0.12.0-1",
-		"fixed": "1:0.13.1-1",
-		"ticket": null,
-		"issues": [
-			"CVE-2021-21374",
-			"CVE-2021-21373",
-			"CVE-2021-21372"
-		],
-		"advisories": [
-			"ASA-202104-6"
-		]
-	},
-	{
 		"name": "AVG-1877",
 		"packages": [
 			"chromium"
@@ -15456,26 +15799,6 @@
 		],
 		"advisories": [
 			"ASA-202103-19"
-		]
-	},
-	{
-		"name": "AVG-1701",
-		"packages": [
-			"dotnet-sdk-3.1",
-			"dotnet-runtime-3.1"
-		],
-		"status": "Fixed",
-		"severity": "High",
-		"type": "arbitrary code execution",
-		"affected": "3.1.12.sdk112-3",
-		"fixed": "3.1.13.sdk113-1",
-		"ticket": null,
-		"issues": [
-			"CVE-2021-26701"
-		],
-		"advisories": [
-			"ASA-202103-22",
-			"ASA-202103-23"
 		]
 	},
 	{
@@ -17270,7 +17593,6 @@
 			"CVE-2020-12351"
 		],
 		"advisories": [
-			"ASA-202010-4",
 			"ASA-202010-4"
 		]
 	},
@@ -17291,6 +17613,7 @@
 			"CVE-2020-12351"
 		],
 		"advisories": [
+			"ASA-202010-3",
 			"ASA-202010-3"
 		]
 	},
@@ -17311,6 +17634,7 @@
 			"CVE-2020-12351"
 		],
 		"advisories": [
+			"ASA-202010-2",
 			"ASA-202010-2"
 		]
 	},
@@ -18475,6 +18799,7 @@
 			"CVE-2020-8835"
 		],
 		"advisories": [
+			"ASA-202004-4",
 			"ASA-202004-4"
 		]
 	},
@@ -18493,7 +18818,6 @@
 			"CVE-2020-8835"
 		],
 		"advisories": [
-			"ASA-202004-3",
 			"ASA-202004-3"
 		]
 	},
@@ -18593,6 +18917,7 @@
 			"CVE-2020-2732"
 		],
 		"advisories": [
+			"ASA-202003-6",
 			"ASA-202003-6"
 		]
 	},
@@ -18670,7 +18995,6 @@
 			"CVE-2020-1712"
 		],
 		"advisories": [
-			"ASA-202002-8",
 			"ASA-202002-8"
 		]
 	},
@@ -19487,6 +19811,7 @@
 			"CVE-2019-11477"
 		],
 		"advisories": [
+			"ASA-201906-15",
 			"ASA-201906-15"
 		]
 	},
@@ -19507,7 +19832,6 @@
 			"CVE-2019-11477"
 		],
 		"advisories": [
-			"ASA-201906-14",
 			"ASA-201906-14"
 		]
 	},
@@ -19528,6 +19852,7 @@
 			"CVE-2019-11477"
 		],
 		"advisories": [
+			"ASA-201906-13",
 			"ASA-201906-13"
 		]
 	},
@@ -19833,6 +20158,7 @@
 			"CVE-2019-11683"
 		],
 		"advisories": [
+			"ASA-201905-4",
 			"ASA-201905-4"
 		]
 	},
@@ -19869,6 +20195,7 @@
 			"CVE-2019-11683"
 		],
 		"advisories": [
+			"ASA-201905-2",
 			"ASA-201905-2"
 		]
 	},
@@ -20210,7 +20537,6 @@
 			"CVE-2019-6454"
 		],
 		"advisories": [
-			"ASA-201902-24",
 			"ASA-201902-24"
 		]
 	},
@@ -20750,7 +21076,6 @@
 			"CVE-2018-16864"
 		],
 		"advisories": [
-			"ASA-201901-9",
 			"ASA-201901-9"
 		]
 	},
@@ -21539,6 +21864,7 @@
 			"CVE-2018-5390"
 		],
 		"advisories": [
+			"ASA-201808-6",
 			"ASA-201808-6"
 		]
 	},
@@ -21557,7 +21883,6 @@
 			"CVE-2018-5390"
 		],
 		"advisories": [
-			"ASA-201808-5",
 			"ASA-201808-5"
 		]
 	},
@@ -21576,6 +21901,7 @@
 			"CVE-2018-5390"
 		],
 		"advisories": [
+			"ASA-201808-4",
 			"ASA-201808-4"
 		]
 	},
@@ -22898,7 +23224,6 @@
 			"CVE-2017-5754"
 		],
 		"advisories": [
-			"ASA-201801-6",
 			"ASA-201801-6"
 		]
 	},
@@ -23009,6 +23334,7 @@
 			"CVE-2017-16995"
 		],
 		"advisories": [
+			"ASA-201801-3",
 			"ASA-201801-3"
 		]
 	},
@@ -23137,7 +23463,6 @@
 			"CVE-2017-16995"
 		],
 		"advisories": [
-			"ASA-201801-2",
 			"ASA-201801-2"
 		]
 	},
@@ -23246,6 +23571,7 @@
 			"CVE-2017-16995"
 		],
 		"advisories": [
+			"ASA-201801-1",
 			"ASA-201801-1"
 		]
 	},
@@ -24063,6 +24389,7 @@
 			"CVE-2017-5123"
 		],
 		"advisories": [
+			"ASA-201710-24",
 			"ASA-201710-24"
 		]
 	},
@@ -24081,6 +24408,7 @@
 			"CVE-2017-5123"
 		],
 		"advisories": [
+			"ASA-201710-26",
 			"ASA-201710-26"
 		]
 	},
@@ -24234,6 +24562,7 @@
 			"CVE-2017-6266"
 		],
 		"advisories": [
+			"ASA-201709-22",
 			"ASA-201709-22"
 		]
 	},
@@ -24378,6 +24707,7 @@
 			"CVE-2017-1000251"
 		],
 		"advisories": [
+			"ASA-201709-12",
 			"ASA-201709-12"
 		]
 	},
@@ -24396,7 +24726,6 @@
 			"CVE-2017-1000251"
 		],
 		"advisories": [
-			"ASA-201709-8",
 			"ASA-201709-8"
 		]
 	},
@@ -24415,6 +24744,7 @@
 			"CVE-2017-1000251"
 		],
 		"advisories": [
+			"ASA-201709-9",
 			"ASA-201709-9"
 		]
 	},
@@ -24797,6 +25127,7 @@
 			"CVE-2017-1000364"
 		],
 		"advisories": [
+			"ASA-201706-30",
 			"ASA-201706-30"
 		]
 	},
@@ -24871,6 +25202,7 @@
 			"CVE-2017-1000364"
 		],
 		"advisories": [
+			"ASA-201706-31",
 			"ASA-201706-31"
 		]
 	},
@@ -25679,6 +26011,7 @@
 			"CVE-2017-2636"
 		],
 		"advisories": [
+			"ASA-201703-13",
 			"ASA-201703-13"
 		]
 	},
@@ -25697,7 +26030,6 @@
 			"CVE-2017-2636"
 		],
 		"advisories": [
-			"ASA-201703-6",
 			"ASA-201703-6"
 		]
 	},
@@ -25716,6 +26048,7 @@
 			"CVE-2017-2636"
 		],
 		"advisories": [
+			"ASA-201703-8",
 			"ASA-201703-8"
 		]
 	},
@@ -25825,6 +26158,7 @@
 			"CVE-2016-10088"
 		],
 		"advisories": [
+			"ASA-201702-18",
 			"ASA-201702-18"
 		]
 	},
@@ -25846,6 +26180,7 @@
 			"CVE-2016-10088"
 		],
 		"advisories": [
+			"ASA-201702-17",
 			"ASA-201702-17"
 		]
 	},
@@ -26234,6 +26569,7 @@
 			"CVE-2016-9935"
 		],
 		"advisories": [
+			"ASA-201701-28",
 			"ASA-201701-28"
 		]
 	},
@@ -26268,6 +26604,7 @@
 			"CVE-2016-9919"
 		],
 		"advisories": [
+			"ASA-201612-14",
 			"ASA-201612-14"
 		]
 	},
@@ -26286,6 +26623,7 @@
 			"CVE-2016-9919"
 		],
 		"advisories": [
+			"ASA-201612-10",
 			"ASA-201612-10"
 		]
 	},
@@ -26304,6 +26642,7 @@
 			"CVE-2016-8655"
 		],
 		"advisories": [
+			"ASA-201612-8",
 			"ASA-201612-8"
 		]
 	},
@@ -26322,7 +26661,6 @@
 			"CVE-2016-8655"
 		],
 		"advisories": [
-			"ASA-201612-7",
 			"ASA-201612-7"
 		]
 	},
@@ -26341,6 +26679,7 @@
 			"CVE-2016-8655"
 		],
 		"advisories": [
+			"ASA-201612-6",
 			"ASA-201612-6"
 		]
 	},
@@ -26757,6 +27096,7 @@
 			"CVE-2016-6911"
 		],
 		"advisories": [
+			"ASA-201611-19",
 			"ASA-201611-19"
 		]
 	},
@@ -26815,7 +27155,6 @@
 			"CVE-2016-5195"
 		],
 		"advisories": [
-			"ASA-201610-11",
 			"ASA-201610-11"
 		]
 	},
@@ -26834,6 +27173,7 @@
 			"CVE-2016-5195"
 		],
 		"advisories": [
+			"ASA-201610-14",
 			"ASA-201610-14"
 		]
 	},
@@ -26909,7 +27249,6 @@
 			"CVE-2016-7795"
 		],
 		"advisories": [
-			"ASA-201610-2",
 			"ASA-201610-2"
 		]
 	},
@@ -27096,6 +27435,49 @@
 		"advisories": [
 			"ASA-201612-21"
 		]
+	},
+	{
+		"name": "AVG-2748",
+		"packages": [
+			"radare2"
+		],
+		"status": "Fixed",
+		"severity": "Medium",
+		"type": "unknown",
+		"affected": "5.5-1",
+		"fixed": "5.6-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-0419",
+			"CVE-2021-44975",
+			"CVE-2021-44974"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-1741",
+		"packages": [
+			"linux-lts"
+		],
+		"status": "Fixed",
+		"severity": "Medium",
+		"type": "multiple issues",
+		"affected": "5.10.85-1",
+		"fixed": "5.15.2-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2021-43976",
+			"CVE-2021-4095",
+			"CVE-2021-4028",
+			"CVE-2021-4023",
+			"CVE-2021-3847",
+			"CVE-2021-3759",
+			"CVE-2021-3752",
+			"CVE-2021-3669",
+			"CVE-2021-30178",
+			"CVE-2021-29648"
+		],
+		"advisories": []
 	},
 	{
 		"name": "AVG-2706",
@@ -28486,25 +28868,6 @@
 		"issues": [
 			"CVE-2021-43332",
 			"CVE-2021-43331"
-		],
-		"advisories": []
-	},
-	{
-		"name": "AVG-2278",
-		"packages": [
-			"dotnet-sdk-3.1",
-			"dotnet-runtime-3.1"
-		],
-		"status": "Fixed",
-		"severity": "Medium",
-		"type": "multiple issues",
-		"affected": "3.1.17.sdk117-1",
-		"fixed": "3.1.20.sdk120-1",
-		"ticket": null,
-		"issues": [
-			"CVE-2021-34532",
-			"CVE-2021-34485",
-			"CVE-2021-26423"
 		],
 		"advisories": []
 	},
@@ -31447,7 +31810,6 @@
 			"CVE-2021-33910"
 		],
 		"advisories": [
-			"ASA-202107-57",
 			"ASA-202107-57"
 		]
 	},
@@ -31872,6 +32234,7 @@
 			"CVE-2021-21704"
 		],
 		"advisories": [
+			"ASA-202107-15",
 			"ASA-202107-15"
 		]
 	},
@@ -32365,24 +32728,6 @@
 			"CVE-2021-29968"
 		],
 		"advisories": []
-	},
-	{
-		"name": "AVG-2047",
-		"packages": [
-			"aspnet-runtime-3.1"
-		],
-		"status": "Fixed",
-		"severity": "Medium",
-		"type": "denial of service",
-		"affected": "3.1.15.sdk115-1",
-		"fixed": "3.1.16.sdk116-1",
-		"ticket": null,
-		"issues": [
-			"CVE-2021-31957"
-		],
-		"advisories": [
-			"ASA-202106-38"
-		]
 	},
 	{
 		"name": "AVG-2046",
@@ -33618,26 +33963,6 @@
 		]
 	},
 	{
-		"name": "AVG-1945",
-		"packages": [
-			"dotnet-sdk-3.1",
-			"dotnet-runtime-3.1"
-		],
-		"status": "Fixed",
-		"severity": "Medium",
-		"type": "privilege escalation",
-		"affected": "3.1.14.sdk114-1",
-		"fixed": "3.1.15.sdk115-1",
-		"ticket": null,
-		"issues": [
-			"CVE-2021-31204"
-		],
-		"advisories": [
-			"ASA-202105-22",
-			"ASA-202105-23"
-		]
-	},
-	{
 		"name": "AVG-1899",
 		"packages": [
 			"djvulibre"
@@ -34035,6 +34360,7 @@
 			"CVE-2021-2154"
 		],
 		"advisories": [
+			"ASA-202105-14",
 			"ASA-202105-14"
 		]
 	},
@@ -37244,6 +37570,7 @@
 			"CVE-2021-21702"
 		],
 		"advisories": [
+			"ASA-202102-15",
 			"ASA-202102-15"
 		]
 	},
@@ -37400,6 +37727,7 @@
 			"CVE-2021-3347"
 		],
 		"advisories": [
+			"ASA-202102-23",
 			"ASA-202102-23"
 		]
 	},
@@ -37434,6 +37762,7 @@
 			"CVE-2020-36193"
 		],
 		"advisories": [
+			"ASA-202102-7",
 			"ASA-202102-7"
 		]
 	},
@@ -37661,6 +37990,7 @@
 			"CVE-2020-28374"
 		],
 		"advisories": [
+			"ASA-202101-31",
 			"ASA-202101-31"
 		]
 	},
@@ -37679,6 +38009,7 @@
 			"CVE-2020-28374"
 		],
 		"advisories": [
+			"ASA-202101-33",
 			"ASA-202101-33"
 		]
 	},
@@ -37697,7 +38028,6 @@
 			"CVE-2020-28374"
 		],
 		"advisories": [
-			"ASA-202101-30",
 			"ASA-202101-30"
 		]
 	},
@@ -37875,6 +38205,7 @@
 			"CVE-2020-7071"
 		],
 		"advisories": [
+			"ASA-202101-9",
 			"ASA-202101-9"
 		]
 	},
@@ -39662,7 +39993,6 @@
 			"CVE-2019-15718"
 		],
 		"advisories": [
-			"ASA-201910-3",
 			"ASA-201910-3"
 		]
 	},
@@ -41316,7 +41646,6 @@
 			"CVE-2018-16866"
 		],
 		"advisories": [
-			"ASA-201901-4",
 			"ASA-201901-4"
 		]
 	},
@@ -42861,7 +43190,6 @@
 			"CVE-2017-9217"
 		],
 		"advisories": [
-			"ASA-201707-5",
 			"ASA-201707-5"
 		]
 	},
@@ -43905,6 +44233,7 @@
 			"CVE-2017-2583"
 		],
 		"advisories": [
+			"ASA-201701-38",
 			"ASA-201701-38"
 		]
 	},
@@ -43923,7 +44252,6 @@
 			"CVE-2017-2583"
 		],
 		"advisories": [
-			"ASA-201701-35",
 			"ASA-201701-35"
 		]
 	},
@@ -43942,6 +44270,7 @@
 			"CVE-2017-2583"
 		],
 		"advisories": [
+			"ASA-201701-32",
 			"ASA-201701-32"
 		]
 	},
@@ -44819,22 +45148,6 @@
 		"advisories": []
 	},
 	{
-		"name": "AVG-2643",
-		"packages": [
-			"dotnet-runtime-3.1"
-		],
-		"status": "Not affected",
-		"severity": "Low",
-		"type": "privilege escalation",
-		"affected": "3.1.20.sdk120-1",
-		"fixed": null,
-		"ticket": null,
-		"issues": [
-			"CVE-2021-43877"
-		],
-		"advisories": []
-	},
-	{
 		"name": "AVG-2642",
 		"packages": [
 			"dotnet-runtime"
@@ -45597,6 +45910,7 @@
 			"CVE-2021-32707"
 		],
 		"advisories": [
+			"ASA-202107-41",
 			"ASA-202107-41"
 		]
 	},
@@ -45669,7 +45983,6 @@
 			"CVE-2020-13529"
 		],
 		"advisories": [
-			"ASA-202107-29",
 			"ASA-202107-29"
 		]
 	},
@@ -45989,7 +46302,6 @@
 			"CVE-2021-25737"
 		],
 		"advisories": [
-			"ASA-202106-29",
 			"ASA-202106-29"
 		]
 	},
@@ -47391,7 +47703,6 @@
 			"CVE-2018-18445"
 		],
 		"advisories": [
-			"ASA-201811-2",
 			"ASA-201811-2"
 		]
 	},
@@ -47448,6 +47759,7 @@
 			"CVE-2018-18445"
 		],
 		"advisories": [
+			"ASA-201811-1",
 			"ASA-201811-1"
 		]
 	},

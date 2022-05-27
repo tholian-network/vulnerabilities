@@ -10,19 +10,76 @@ export const isVulnerabilities = function(obj) {
 };
 
 
+export const containsSoftware = function(software, entry) {
+
+	if (
+		isArray(software) === true
+		&& isObject(entry) === true
+	) {
+
+		let found = null;
+
+		for (let s = 0, sl = software.length; s < sl; s++) {
+
+			let other = software[s];
+			if (
+				isObject(other) === true
+				&& other['name'] === software['name']
+				&& other['platform'] === software['platform']
+				&& other['version'] === software['version']
+			) {
+				found = other;
+				break;
+			}
+
+		}
+
+		if (found !== null) {
+			return true;
+		}
+
+	}
+
+	return false;
+
+};
+
+
 
 const isIdentifier = function(identifier) {
 
-	if (identifier.startsWith('CVE-') === true) {
+	if (isString(identifier) === true) {
 
-		let check = identifier.split('-');
-		if (
-			check.length === 3
-			&& check[0] === 'CVE'
-			&& /^([0-9]{4})$/g.test(check[1]) === true
-			&& /^([0-9]+)$/g.test(check[2]) === true
-		) {
-			return true;
+		if (identifier.startsWith('CVE-') === true) {
+
+			let check = identifier.split('-');
+			if (
+				check.length === 3
+				&& check[0] === 'CVE'
+				&& /^([0-9]{4})$/g.test(check[1]) === true
+				&& /^([0-9]+)$/g.test(check[2]) === true
+			) {
+				return true;
+			}
+
+		} else if (identifier.startsWith('DSA-') === true) {
+
+			let check = identifier.split('-');
+			if (
+				(
+					check.length === 2
+					&& check[0] === 'DSA'
+					&& /^([0-9]{3,5})$/g.test(check[1]) === true
+				) || (
+					check.length === 3
+					&& check[0] === 'DSA'
+					&& /^([0-9]{3,5})$/g.test(check[1]) === true
+					&& /^([0-9]{1})$/g.test(check[2]) === true
+				)
+			) {
+				return true;
+			}
+
 		}
 
 	}
@@ -78,7 +135,7 @@ const Vulnerabilities = function(settings) {
 	});
 
 	this.__state = {
-		updated:         [],
+		modified:        [],
 		vulnerabilities: {}
 	};
 
@@ -116,6 +173,8 @@ Vulnerabilities.prototype = {
 
 	disconnect: function() {
 
+		console.log(this.__state['modified'].length);
+
 		// TODO: Write everything to filesystem
 		// Validate each entry
 		// - collect disputed for /editor/data/disputed.json
@@ -126,7 +185,7 @@ Vulnerabilities.prototype = {
 
 	get: function(identifier) {
 
-		identifier = isIdentifier(identifier) ? identifier : null;
+		identifier = isString(identifier) ? identifier : null;
 
 
 		if (identifier !== null) {
@@ -156,8 +215,8 @@ Vulnerabilities.prototype = {
 
 			this.__state.vulnerabilities[identifier] = vulnerability;
 
-			if (this.__state.updated.includes(identifier) === false) {
-				this.__state.updated.push(identifier);
+			if (this.__state['modified'].includes(identifier) === false) {
+				this.__state['modified'].push(identifier);
 			}
 
 			return true;
