@@ -40,11 +40,7 @@ const Updater = function(settings) {
 		trackers: TRACKERS
 	}, settings);
 
-	if (this._settings.trackers.length === 0) {
-
-		this._settings.trackers = TRACKERS.slice();
-
-	} else if (this._settings.trackers.length > 0) {
+	if (this._settings.trackers.length > 0) {
 
 		this._settings.trackers = this._settings.trackers.map((search) => {
 

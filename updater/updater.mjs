@@ -50,7 +50,7 @@ if (ENVIRONMENT.action === 'update') {
 		action:   'update',
 		database: ENVIRONMENT.flags.database || null,
 		debug:    ENVIRONMENT.flags.debug    || false,
-		trackers: ENVIRONMENT.flags.trackers || []
+		trackers: ENVIRONMENT.flags.trackers.length > 0 ? ENVIRONMENT.flags.trackers : Updater.TRACKERS
 	});
 
 	updater.on('disconnect', (result) => {
@@ -65,7 +65,7 @@ if (ENVIRONMENT.action === 'update') {
 		action:   'merge',
 		database: ENVIRONMENT.flags.database || null,
 		debug:    ENVIRONMENT.flags.debug    || false,
-		trackers: ENVIRONMENT.flags.trackers || []
+		trackers: ENVIRONMENT.flags.trackers.length > 0 ? ENVIRONMENT.flags.trackers : Updater.TRACKERS
 	});
 
 	updater.once('disconnect', (result) => {
