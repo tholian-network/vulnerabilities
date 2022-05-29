@@ -137,9 +137,8 @@ const merge = function(vulnerability, data) {
 
 			let descriptions = data['containers']['cna']['descriptions'].filter((desc) => desc['lang'] === 'en');
 			if (descriptions.length > 0) {
-				vulnerability['description'] = descriptions.map((desc) => {
-					return desc['value'].trim();
-				}).join('\n');
+				vulnerability['description'] = descriptions.map((desc) => desc['value'].trim()).join('\n');
+				vulnerability['description'] = vulnerability['description'].trim();
 			}
 
 		}
@@ -172,6 +171,7 @@ const merge = function(vulnerability, data) {
 
 			if (affected_description.length > 0 && vulnerability['description'].includes(affected_description) === false) {
 				vulnerability['description'] += '\n\n' + affected_description;
+				vulnerability['description']  = vulnerability['description'].trim();
 				vulnerability['state']        = 'invalid';
 			}
 

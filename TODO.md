@@ -29,9 +29,8 @@
 
 ## Updater Incomplete
 
-- [ ] Implement `Vulnerabilities.prototype.disconnect()` method to persist entries.
-- [ ] Implement `Vulnerabilities.prototype.update()` method to store modified entries.
 - [ ] Implement XML Support in `Webscraper` to be able to download odata-based tracker data directly via their schemas (Thanks, Microsoft and SAP!).
+- [ ] Implement Vulnerability classification of `valid`, `invalid`, `disputed` and `rejected`
 
 **Editor**:
 

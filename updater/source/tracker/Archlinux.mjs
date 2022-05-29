@@ -83,6 +83,7 @@ const merge = function(vulnerability, data) {
 			let description = data['description'].trim();
 			if (vulnerability['description'].includes(description) === false) {
 				vulnerability['description'] += '\n\n' + description;
+				vulnerability['description']  = vulnerability['description'].trim();
 			}
 
 		}
@@ -330,7 +331,12 @@ Archlinux.prototype = Object.assign({}, Emitter.prototype, {
 			let vulnerability = this.vulnerabilities.get(entry['name']);
 			if (vulnerability['_is_edited'] === false) {
 
-				merge.call(this, vulnerability, entry['data']);
+				if (vulnerability['id'] === 'CVE-2021-44229') {
+					console.log(vulnerability);
+					console.log(entry);
+				}
+
+				merge.call(this, vulnerability, entry);
 
 				this.vulnerabilities.update(vulnerability);
 

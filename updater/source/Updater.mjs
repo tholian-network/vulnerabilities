@@ -96,14 +96,6 @@ const Updater = function(settings) {
 	Emitter.call(this);
 
 
-	this.on('merge', () => {
-		console.info('Updater: Merge complete.');
-	});
-
-	this.on('update', () => {
-		console.info('Updater: Update complete.');
-	});
-
 	this.on('connect', () => {
 
 		console.info('Updater: Connect complete.');
@@ -127,6 +119,14 @@ const Updater = function(settings) {
 
 		}
 
+	});
+
+	this.on('merge', () => {
+		console.info('Updater: Merge complete.');
+	});
+
+	this.on('update', () => {
+		console.info('Updater: Update complete.');
 	});
 
 	this.on('disconnect', () => {
@@ -179,6 +179,9 @@ Updater.prototype = Object.assign({}, Emitter.prototype, {
 		if (this.__state.connected === false) {
 
 			console.info('Updater: Connect');
+
+
+			this.vulnerabilities.connect();
 
 
 			let connecting = this.trackers.length;

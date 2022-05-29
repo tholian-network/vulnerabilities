@@ -90,8 +90,6 @@ CISA.prototype = Object.assign({}, Emitter.prototype, {
 
 		Object.values(this.__state['vulnerabilities']).forEach((entry) => {
 
-			console.log('CISA: "' + entry['cveID'] + '"');
-
 			let vulnerability = this.vulnerabilities.get(entry['cveID']);
 			if (vulnerability['_is_edited'] === false) {
 

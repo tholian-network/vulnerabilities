@@ -1,7 +1,7 @@
 
-import { isArray, isBoolean, isObject, isString } from '../extern/base.mjs';
-import { ENVIRONMENT                            } from '../source/ENVIRONMENT.mjs';
-import { Filesystem                             } from '../source/Filesystem.mjs';
+import { console, isArray, isBoolean, isObject, isString } from '../extern/base.mjs';
+import { ENVIRONMENT                                     } from '../source/ENVIRONMENT.mjs';
+import { Filesystem                                      } from '../source/Filesystem.mjs';
 
 
 
@@ -93,6 +93,7 @@ const isVulnerability = function(vulnerability) {
 	if (
 		isObject(vulnerability) === true
 		&& isIdentifier(vulnerability['id']) === true
+		&& isString(vulnerability['description']) === true
 		&& isArray(vulnerability['hardware']) === true
 		&& isArray(vulnerability['software']) === true
 		&& isArray(vulnerability['references']) === true
@@ -105,21 +106,6 @@ const isVulnerability = function(vulnerability) {
 
 
 	return false;
-
-};
-
-const create = function(identifier) {
-
-	return {
-		'id':          identifier,
-		'description': '',
-		'hardware':    [],
-		'software':    [],
-		'references':  [],
-		'severity':    null,
-		'state':       'invalid',
-		'_is_edited':  false
-	};
 
 };
 
@@ -162,18 +148,34 @@ Vulnerabilities.prototype = {
 
 			let vulnerability = this.filesystem.read(path);
 			if (isVulnerability(vulnerability) === true) {
-				this.__state[vulnerability['id']] = vulnerability;
+				this.__state['vulnerabilities'][vulnerability['id']] = vulnerability;
 			}
 
 		});
-
-		this.emit('connect');
 
 	},
 
 	disconnect: function() {
 
-		console.log(this.__state['modified'].length);
+		if (this.__state['modified'].length > 0) {
+
+			this.__state['modified'].forEach((identifier) => {
+
+				let vulnerability = this.__state['vulnerabilities'][identifier];
+				if (isString(vulnerability['id']) === true) {
+					this.filesystem.write('/' + vulnerability['id'] + '.json', vulnerability);
+				}
+
+			});
+
+			console.info('Vulnerabilities: Updated ' + this.__state['modified'].length + ' Vulnerabilities.');
+
+		} else {
+
+			console.info('Vulnerabilities: Updated 0 Vulnerabilities.');
+
+		}
+
 
 		// TODO: Write everything to filesystem
 		// Validate each entry
@@ -190,9 +192,20 @@ Vulnerabilities.prototype = {
 
 		if (identifier !== null) {
 
-			let vulnerability = this.__state.vulnerabilities[identifier] || null;
+			let vulnerability = this.__state['vulnerabilities'][identifier] || null;
 			if (vulnerability === null) {
-				vulnerability = create(identifier);
+
+				vulnerability = {
+					'id':          identifier,
+					'description': '',
+					'hardware':    [],
+					'software':    [],
+					'references':  [],
+					'severity':    null,
+					'state':       'invalid',
+					'_is_edited':  false
+				};
+
 			}
 
 			return vulnerability;
@@ -200,7 +213,16 @@ Vulnerabilities.prototype = {
 		}
 
 
-		return create(null);
+		return {
+			'id':          null,
+			'description': '',
+			'hardware':    [],
+			'software':    [],
+			'references':  [],
+			'severity':    null,
+			'state':       'invalid',
+			'_is_edited':  false
+		};
 
 	},
 
@@ -213,7 +235,7 @@ Vulnerabilities.prototype = {
 
 			let identifier = vulnerability['id'];
 
-			this.__state.vulnerabilities[identifier] = vulnerability;
+			this.__state['vulnerabilities'][identifier] = vulnerability;
 
 			if (this.__state['modified'].includes(identifier) === false) {
 				this.__state['modified'].push(identifier);
