@@ -44,8 +44,6 @@ export const containsSoftware = function(software, entry) {
 
 };
 
-
-
 const isIdentifier = function(identifier) {
 
 	if (isString(identifier) === true) {
@@ -109,6 +107,37 @@ const isVulnerability = function(vulnerability) {
 
 };
 
+const updateVulnerability = function(vulnerability) {
+
+	let state = vulnerability['state'];
+
+	if (vulnerability['severity'] !== null) {
+
+		if (vulnerability['description'].length > 0) {
+
+			if (vulnerability['software'].length > 0 || vulnerability['hardware'].length > 0) {
+				state = 'published';
+			} else {
+				state = 'invalid';
+			}
+
+		} else {
+			state = 'invalid';
+		}
+
+	}
+
+	if (
+		vulnerability['state'] !== 'disputed'
+		&& vulnerability['state'] !== 'rejected'
+	) {
+		vulnerability['state'] = state;
+	}
+
+	return vulnerability['state'];
+
+};
+
 
 
 const Vulnerabilities = function(settings) {
@@ -121,8 +150,14 @@ const Vulnerabilities = function(settings) {
 	});
 
 	this.__state = {
-		modified:        [],
-		vulnerabilities: {}
+		'editor':          {
+			'disputed':  [],
+			'invalid':   [],
+			'published': [],
+			'rejected':  []
+		},
+		'modified':        [],
+		'vulnerabilities': {}
 	};
 
 
@@ -169,6 +204,52 @@ Vulnerabilities.prototype = {
 			});
 
 			console.info('Vulnerabilities: Updated ' + this.__state['modified'].length + ' Vulnerabilities.');
+
+
+			this.__state['editor']['disputed']  = [];
+			this.__state['editor']['invalid']   = [];
+			this.__state['editor']['published'] = [];
+			this.__state['editor']['rejected']  = [];
+
+			for (let identifier in this.__state['vulnerabilities']) {
+
+				let vulnerability = this.__state['vulnerabilities'][identifier];
+
+				updateVulnerability(vulnerability);
+
+				let state = vulnerability['state'];
+				if (state === 'disputed') {
+					this.filesystem.write('/' + identifier + '.json', vulnerability);
+					this.__state['editor']['disputed'].push(identifier);
+				} else if (state === 'invalid') {
+					this.filesystem.write('/' + identifier + '.json', vulnerability);
+					this.__state['editor']['invalid'].push(identifier);
+				} else if (state === 'published') {
+					// Do not write already published and unmodified vulnerabilities
+					this.__state['editor']['published'].push(identifier);
+				} else if (state === 'rejected') {
+					this.filesystem.write('/' + identifier + '.json', vulnerability);
+					this.__state['editor']['rejected'].push(identifier);
+				}
+
+			}
+
+
+			let filesystem = new Filesystem({
+				root: ENVIRONMENT.root + '/editor/data'
+			});
+
+			console.log('Vulnerabilities: Statistics');
+
+			console.error('> ' + this.__state['editor']['invalid'].length   + ' invalid');
+			console.warn('> '  + this.__state['editor']['rejected'].length  + ' rejected');
+			console.log('> '   + this.__state['editor']['disputed'].length  + ' disputed');
+			console.info('> '  + this.__state['editor']['published'].length + ' published');
+
+			filesystem.write('/disputed.json',  this.__state['editor']['disputed'].sort());
+			filesystem.write('/invalid.json',   this.__state['editor']['invalid'].sort());
+			filesystem.write('/published.json', this.__state['editor']['published'].sort());
+			filesystem.write('/rejected.json',  this.__state['editor']['rejected'].sort());
 
 		} else {
 

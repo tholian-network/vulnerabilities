@@ -74,6 +74,7 @@ const toVersions = function(data) {
 
 			if (
 				entry['versionType'] === 'custom'
+				&& isString(entry['lessThanOrEqual']) === true
 				&& entry['lessThanOrEqual'] !== 'n/a'
 				&& entry['lessThanOrEqual'] !== 'unspecified'
 			) {
@@ -82,6 +83,7 @@ const toVersions = function(data) {
 
 			} else if (
 				entry['versionType'] === 'custom'
+				&& isString(entry['lessThan']) === true
 				&& entry['lessThan'] !== 'n/a'
 				&& entry['lessThan'] !== 'unspecified'
 			) {
@@ -90,6 +92,7 @@ const toVersions = function(data) {
 
 			} else if (
 				entry['versionType'] === 'custom'
+				&& isString(entry['version']) === true
 				&& entry['version'] !== 'n/a'
 				&& entry['version'] !== 'unspecified'
 			) {
@@ -97,7 +100,8 @@ const toVersions = function(data) {
 				versions.push(entry['version']);
 
 			} else if (
-				entry['version'] !== 'n/a'
+				isString(entry['version']) === true
+				&& entry['version'] !== 'n/a'
 				&& entry['version'] !== 'unspecified'
 			) {
 
@@ -235,7 +239,7 @@ const merge = function(vulnerability, data) {
 
 		DISPUTED.forEach((string) => {
 
-			if (vulnerability['description'].toLowerCase().includes(string) === true) {
+			if (vulnerability['description'].toLowerCase().includes(string.toLowerCase()) === true) {
 
 				if (vulnerability['state'] === 'published') {
 					vulnerability['state'] = 'disputed';
@@ -312,10 +316,6 @@ const CVE = function(vulnerabilities) {
 		root: ENVIRONMENT.root + '/trackers/cve'
 	});
 
-	this.__state = {
-		cve: {}
-	};
-
 
 	Emitter.call(this);
 
@@ -329,13 +329,18 @@ CVE.prototype = Object.assign({}, Emitter.prototype, {
 	connect: function() {
 
 		// Don't cache CVE files due to their corrupted state
-		this.emit('connect');
+
+		setTimeout(() => {
+			this.emit('connect');
+		}, 0);
 
 	},
 
 	disconnect: function() {
 
-		this.emit('disconnect');
+		setTimeout(() => {
+			this.emit('disconnect');
+		}, 0);
 
 	},
 
@@ -364,8 +369,6 @@ CVE.prototype = Object.assign({}, Emitter.prototype, {
 				}).filter((entry) => {
 					return entry !== null;
 				}).forEach((entry) => {
-
-					console.log('CVE: "' + entry['id'] + '"');
 
 					let vulnerability = this.vulnerabilities.get(entry['id']);
 					if (

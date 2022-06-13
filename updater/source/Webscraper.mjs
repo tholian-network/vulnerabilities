@@ -33,6 +33,7 @@ const request_interval = function() {
 
 			let request = https.request(todo['url'], {
 				headers: {
+					'Accept':          'application/json, text/plain;q=0.9, */*;q=0.8',
 					'Accept-Encoding': 'identity',
 					'Accept-Language': 'en-US,en;q=0.9',
 					'User-Agent':      'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36'
@@ -63,7 +64,38 @@ const request_interval = function() {
 
 				response.on('end', () => {
 
-					let type = todo['url'].split('/').pop().split('.').pop();
+					let type = null;
+
+					let file = todo['url'].split('/').pop();
+					if (file.includes('.') === true) {
+
+						if (file.endsWith('.json') === true) {
+							type = 'json';
+						} else if (file.endsWith('.xml') === true) {
+							type = 'xml';
+						} else if (file.endsWith('.xhtml') === true) {
+							type = 'xml';
+						}
+
+					}
+
+					let content_type = response.headers['content-type'] || null;
+					if (content_type !== null) {
+
+						if (content_type === 'application/json') {
+							type = 'json';
+						} else if (content_type === 'application/ld+json') {
+							type === 'json';
+						} else if (content_type === 'application/xhtml+xml') {
+							type = 'xml';
+						} else if (content_type === 'application/xml') {
+							type = 'xml';
+						} else if (content_type === 'text/xml') {
+							type = 'xml';
+						}
+
+					}
+
 					if (type === 'json') {
 
 						let buffer = Buffer.concat(chunks);

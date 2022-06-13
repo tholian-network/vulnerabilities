@@ -140,7 +140,11 @@ CISA.prototype = Object.assign({}, Emitter.prototype, {
 
 
 				this.once('merge', () => {
+
+					console.info('CISA: Update complete.');
+
 					this.emit('update');
+
 				});
 
 				this.merge();

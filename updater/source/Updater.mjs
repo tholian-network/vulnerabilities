@@ -4,6 +4,7 @@ import process from 'process';
 import { console, Emitter, isObject, isString } from '../extern/base.mjs';
 import { ENVIRONMENT                          } from '../source/ENVIRONMENT.mjs';
 import { Vulnerabilities                      } from '../source/Vulnerabilities.mjs';
+import { Alpine                               } from '../source/tracker/Alpine.mjs';
 import { Archlinux                            } from '../source/tracker/Archlinux.mjs';
 import { CVE                                  } from '../source/tracker/CVE.mjs';
 import { CISA                                 } from '../source/tracker/CISA.mjs';
@@ -16,6 +17,7 @@ import { Debian                               } from '../source/tracker/Debian.m
 const CONSTRUCTORS = [
 	CVE,
 	CISA,
+	Alpine,
 	Archlinux,
 	Debian
 ];

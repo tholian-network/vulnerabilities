@@ -259,8 +259,8 @@ const Archlinux = function(vulnerabilities) {
 
 
 	this.__state = {
-		avg: {},
-		cve: {}
+		'avg': {},
+		'cve': {}
 	};
 
 
@@ -330,11 +330,6 @@ Archlinux.prototype = Object.assign({}, Emitter.prototype, {
 
 			let vulnerability = this.vulnerabilities.get(entry['name']);
 			if (vulnerability['_is_edited'] === false) {
-
-				if (vulnerability['id'] === 'CVE-2021-44229') {
-					console.log(vulnerability);
-					console.log(entry);
-				}
 
 				merge.call(this, vulnerability, entry);
 
@@ -526,7 +521,11 @@ Archlinux.prototype = Object.assign({}, Emitter.prototype, {
 						interval = null;
 
 						this.once('merge', () => {
+
+							console.info('Archlinux: Update complete.');
+
 							this.emit('update');
+
 						});
 
 						this.merge();

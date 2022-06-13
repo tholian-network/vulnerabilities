@@ -64,6 +64,46 @@
 		"advisories": []
 	},
 	{
+		"name": "AVG-2762",
+		"packages": [
+			"grub"
+		],
+		"status": "Vulnerable",
+		"severity": "High",
+		"type": "multiple issues",
+		"affected": "2:2.06-5",
+		"fixed": null,
+		"ticket": null,
+		"issues": [
+			"CVE-2022-28737",
+			"CVE-2022-28736",
+			"CVE-2022-28735",
+			"CVE-2022-28734",
+			"CVE-2022-28733",
+			"CVE-2021-3697",
+			"CVE-2021-3696",
+			"CVE-2021-3695"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2750",
+		"packages": [
+			"subversion"
+		],
+		"status": "Vulnerable",
+		"severity": "High",
+		"type": "multiple issues",
+		"affected": "1.14.1-6",
+		"fixed": "1.14.2-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-24070",
+			"CVE-2021-28544"
+		],
+		"advisories": []
+	},
+	{
 		"name": "AVG-2701",
 		"packages": [
 			"linux-lts"
@@ -111,54 +151,6 @@
 		"issues": [
 			"CVE-2021-25746",
 			"CVE-2021-25745"
-		],
-		"advisories": []
-	},
-	{
-		"name": "AVG-2649",
-		"packages": [
-			"webkit2gtk"
-		],
-		"status": "Vulnerable",
-		"severity": "High",
-		"type": "arbitrary code execution",
-		"affected": "2.34.5-1",
-		"fixed": null,
-		"ticket": null,
-		"issues": [
-			"CVE-2022-22620"
-		],
-		"advisories": []
-	},
-	{
-		"name": "AVG-2651",
-		"packages": [
-			"webkit2gtk-5.0"
-		],
-		"status": "Vulnerable",
-		"severity": "High",
-		"type": "arbitrary code execution",
-		"affected": "2.34.5-1",
-		"fixed": null,
-		"ticket": null,
-		"issues": [
-			"CVE-2022-22620"
-		],
-		"advisories": []
-	},
-	{
-		"name": "AVG-2650",
-		"packages": [
-			"webkit2gtk-4.1"
-		],
-		"status": "Vulnerable",
-		"severity": "High",
-		"type": "arbitrary code execution",
-		"affected": "2.34.5-1",
-		"fixed": null,
-		"ticket": null,
-		"issues": [
-			"CVE-2022-22620"
 		],
 		"advisories": []
 	},
@@ -274,8 +266,8 @@
 	{
 		"name": "AVG-2190",
 		"packages": [
-			"jre8-openjdk-headless",
-			"jdk8-openjdk"
+			"jdk8-openjdk",
+			"jre8-openjdk-headless"
 		],
 		"status": "Vulnerable",
 		"severity": "High",
@@ -956,22 +948,6 @@
 		"issues": [
 			"CVE-2020-28598",
 			"CVE-2020-28594"
-		],
-		"advisories": []
-	},
-	{
-		"name": "AVG-2273",
-		"packages": [
-			"trojita"
-		],
-		"status": "Vulnerable",
-		"severity": "Medium",
-		"type": "man-in-the-middle",
-		"affected": "0.7-5",
-		"fixed": null,
-		"ticket": null,
-		"issues": [
-			"CVE-2021-38372"
 		],
 		"advisories": []
 	},
@@ -1806,10 +1782,10 @@
 	{
 		"name": "AVG-1915",
 		"packages": [
-			"kube-proxy",
-			"kubelet",
 			"kube-scheduler",
+			"kubelet",
 			"kube-controller-manager",
+			"kube-proxy",
 			"kube-apiserver"
 		],
 		"status": "Vulnerable",
@@ -2034,66 +2010,59 @@
 		"advisories": []
 	},
 	{
-		"name": "AVG-2741",
+		"name": "AVG-2763",
 		"packages": [
-			"linux-zen"
+			"apache"
 		],
 		"status": "Testing",
+		"severity": "Medium",
+		"type": "multiple issues",
+		"affected": "2.4.53-1",
+		"fixed": "2.4.54-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-31813",
+			"CVE-2022-30556",
+			"CVE-2022-30522",
+			"CVE-2022-29404",
+			"CVE-2022-28615",
+			"CVE-2022-28614",
+			"CVE-2022-26377"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2755",
+		"packages": [
+			"containerd"
+		],
+		"status": "Fixed",
+		"severity": "Unknown",
+		"type": "denial of service",
+		"affected": "1.6.5-1",
+		"fixed": "1.6.6-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-31030"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2749",
+		"packages": [
+			"ntfs-3g"
+		],
+		"status": "Fixed",
 		"severity": "Unknown",
 		"type": "unknown",
-		"affected": "5.17.9.zen1-1",
-		"fixed": "5.17.10.zen1-1",
+		"affected": "2021.8.22-1",
+		"fixed": "2022.5.17-1",
 		"ticket": null,
 		"issues": [
-			"CVE-2022-21499"
-		],
-		"advisories": []
-	},
-	{
-		"name": "AVG-2740",
-		"packages": [
-			"linux"
-		],
-		"status": "Testing",
-		"severity": "Unknown",
-		"type": "unknown",
-		"affected": "5.17.9.arch1-1",
-		"fixed": "5.17.10.arch1-1",
-		"ticket": null,
-		"issues": [
-			"CVE-2022-21499"
-		],
-		"advisories": []
-	},
-	{
-		"name": "AVG-2746",
-		"packages": [
-			"linux-zen"
-		],
-		"status": "Testing",
-		"severity": "High",
-		"type": "privilege escalation",
-		"affected": "5.17.9.zen1-1",
-		"fixed": "5.17.10.zen1-1",
-		"ticket": null,
-		"issues": [
-			"CVE-2022-1729"
-		],
-		"advisories": []
-	},
-	{
-		"name": "AVG-2744",
-		"packages": [
-			"linux"
-		],
-		"status": "Testing",
-		"severity": "High",
-		"type": "privilege escalation",
-		"affected": "5.17.9-1",
-		"fixed": "5.17.10-1",
-		"ticket": null,
-		"issues": [
-			"CVE-2022-1729"
+			"CVE-2022-30789",
+			"CVE-2022-30788",
+			"CVE-2022-30786",
+			"CVE-2022-30784"
 		],
 		"advisories": []
 	},
@@ -2123,6 +2092,38 @@
 		"type": "unknown",
 		"affected": "5.17.9.hardened1-1",
 		"fixed": "5.17.10.hardened1-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-21499"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2741",
+		"packages": [
+			"linux-zen"
+		],
+		"status": "Fixed",
+		"severity": "Unknown",
+		"type": "unknown",
+		"affected": "5.17.9.zen1-1",
+		"fixed": "5.17.10.zen1-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-21499"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2740",
+		"packages": [
+			"linux"
+		],
+		"status": "Fixed",
+		"severity": "Unknown",
+		"type": "unknown",
+		"affected": "5.17.9.arch1-1",
+		"fixed": "5.17.10.arch1-1",
 		"ticket": null,
 		"issues": [
 			"CVE-2022-21499"
@@ -2227,6 +2228,23 @@
 			"CVE-2022-28184",
 			"CVE-2022-28183",
 			"CVE-2022-28181"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2756",
+		"packages": [
+			"freerdp"
+		],
+		"status": "Fixed",
+		"severity": "Critical",
+		"type": "authentication bypass",
+		"affected": "2:2.6.1-3",
+		"fixed": "2:2.7.0-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-24883",
+			"CVE-2022-24882"
 		],
 		"advisories": []
 	},
@@ -2620,6 +2638,7 @@
 			"CVE-2021-42013"
 		],
 		"advisories": [
+			"ASA-202110-1",
 			"ASA-202110-1"
 		]
 	},
@@ -3065,7 +3084,6 @@
 			"CVE-2021-29274"
 		],
 		"advisories": [
-			"ASA-202105-1",
 			"ASA-202105-1"
 		]
 	},
@@ -3444,6 +3462,7 @@
 			"CVE-2021-23239"
 		],
 		"advisories": [
+			"ASA-202101-25",
 			"ASA-202101-25"
 		]
 	},
@@ -4564,7 +4583,6 @@
 			"CVE-2019-17666"
 		],
 		"advisories": [
-			"ASA-201911-12",
 			"ASA-201911-12"
 		]
 	},
@@ -4601,7 +4619,6 @@
 			"CVE-2019-17666"
 		],
 		"advisories": [
-			"ASA-201911-10",
 			"ASA-201911-10"
 		]
 	},
@@ -5214,6 +5231,7 @@
 			"CVE-2019-0196"
 		],
 		"advisories": [
+			"ASA-201904-3",
 			"ASA-201904-3"
 		]
 	},
@@ -6108,8 +6126,8 @@
 	{
 		"name": "AVG-708",
 		"packages": [
-			"wireshark-cli",
-			"wireshark-qt"
+			"wireshark-qt",
+			"wireshark-cli"
 		],
 		"status": "Fixed",
 		"severity": "Critical",
@@ -7499,6 +7517,7 @@
 			"CVE-2017-9788"
 		],
 		"advisories": [
+			"ASA-201707-15",
 			"ASA-201707-15"
 		]
 	},
@@ -9055,6 +9074,243 @@
 		]
 	},
 	{
+		"name": "AVG-2761",
+		"packages": [
+			"thunderbird"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "multiple issues",
+		"affected": "91.9.1-1",
+		"fixed": "91.10-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-31747",
+			"CVE-2022-31742",
+			"CVE-2022-31741",
+			"CVE-2022-31738",
+			"CVE-2022-31737",
+			"CVE-2022-31736",
+			"CVE-2022-1834"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2760",
+		"packages": [
+			"firefox"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "multiple issues",
+		"affected": "100.0.2-1",
+		"fixed": "101.0-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-31748",
+			"CVE-2022-31747",
+			"CVE-2022-31745",
+			"CVE-2022-31744",
+			"CVE-2022-31743",
+			"CVE-2022-31742",
+			"CVE-2022-31741",
+			"CVE-2022-31738",
+			"CVE-2022-31737",
+			"CVE-2022-31736",
+			"CVE-2022-1919"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2759",
+		"packages": [
+			"wpewebkit"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "arbitrary code execution",
+		"affected": "2.36.2-1",
+		"fixed": "2.36.3-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-30294",
+			"CVE-2022-30293",
+			"CVE-2022-26719",
+			"CVE-2022-26717",
+			"CVE-2022-26716",
+			"CVE-2022-26709",
+			"CVE-2022-26700"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2758",
+		"packages": [
+			"webkit2gtk"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "arbitrary code execution",
+		"affected": "2.36.2-1",
+		"fixed": "2.36.3-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-30294",
+			"CVE-2022-30293",
+			"CVE-2022-26719",
+			"CVE-2022-26717",
+			"CVE-2022-26716",
+			"CVE-2022-26709",
+			"CVE-2022-26700"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2757",
+		"packages": [
+			"ruby"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "multiple issues",
+		"affected": "3.0.3-1",
+		"fixed": "3.0.4-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-28739",
+			"CVE-2022-28738"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2754",
+		"packages": [
+			"linux-lts"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "multiple issues",
+		"affected": "5.15.44-1",
+		"fixed": "5.15.45-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-1975",
+			"CVE-2022-1974",
+			"CVE-2022-1972",
+			"CVE-2022-1966",
+			"CVE-2022-1734"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2752",
+		"packages": [
+			"linux-hardened"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "multiple issues",
+		"affected": "5.17.12.hardened2-2",
+		"fixed": "5.17.13.hardened1-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-1975",
+			"CVE-2022-1974",
+			"CVE-2022-1972",
+			"CVE-2022-1966",
+			"CVE-2022-1734"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2753",
+		"packages": [
+			"linux-zen"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "multiple issues",
+		"affected": "5.18.1.zen1-1",
+		"fixed": "5.18.2.zen1-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-1975",
+			"CVE-2022-1974",
+			"CVE-2022-1972",
+			"CVE-2022-1966",
+			"CVE-2022-1734"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2751",
+		"packages": [
+			"linux"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "multiple issues",
+		"affected": "5.18.1-1",
+		"fixed": "5.18.2-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-1975",
+			"CVE-2022-1974",
+			"CVE-2022-1972",
+			"CVE-2022-1966",
+			"CVE-2022-1734"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2649",
+		"packages": [
+			"webkit2gtk"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "arbitrary code execution",
+		"affected": "2.34.5-1",
+		"fixed": "2.34.6-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-22620"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2650",
+		"packages": [
+			"webkit2gtk-4.1"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "arbitrary code execution",
+		"affected": "2.34.5-1",
+		"fixed": "2.34.6-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-22620"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2651",
+		"packages": [
+			"webkit2gtk-5.0"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "arbitrary code execution",
+		"affected": "2.34.5-1",
+		"fixed": "2.34.6-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-22620"
+		],
+		"advisories": []
+	},
+	{
 		"name": "AVG-2747",
 		"packages": [
 			"linux-hardened"
@@ -9071,6 +9327,22 @@
 		"advisories": []
 	},
 	{
+		"name": "AVG-2746",
+		"packages": [
+			"linux-zen"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "privilege escalation",
+		"affected": "5.17.9.zen1-1",
+		"fixed": "5.17.10.zen1-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-1729"
+		],
+		"advisories": []
+	},
+	{
 		"name": "AVG-2745",
 		"packages": [
 			"linux-lts"
@@ -9080,6 +9352,22 @@
 		"type": "privilege escalation",
 		"affected": "5.15.41-1",
 		"fixed": "5.15.42-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-1729"
+		],
+		"advisories": []
+	},
+	{
+		"name": "AVG-2744",
+		"packages": [
+			"linux"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "privilege escalation",
+		"affected": "5.17.9-1",
+		"fixed": "5.17.10-1",
 		"ticket": null,
 		"issues": [
 			"CVE-2022-1729"
@@ -9105,8 +9393,8 @@
 	{
 		"name": "AVG-2738",
 		"packages": [
-			"gvim",
-			"vim"
+			"vim",
+			"gvim"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -9646,9 +9934,9 @@
 	{
 		"name": "AVG-2689",
 		"packages": [
+			"jdk8-openjdk",
 			"jre8-openjdk",
-			"jre8-openjdk-headless",
-			"jdk8-openjdk"
+			"jre8-openjdk-headless"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -9668,8 +9956,8 @@
 	{
 		"name": "AVG-2688",
 		"packages": [
-			"jre11-openjdk",
 			"jdk11-openjdk",
+			"jre11-openjdk",
 			"jre11-openjdk-headless"
 		],
 		"status": "Fixed",
@@ -9691,8 +9979,8 @@
 		"name": "AVG-2687",
 		"packages": [
 			"jre17-openjdk",
-			"jdk17-openjdk",
-			"jre17-openjdk-headless"
+			"jre17-openjdk-headless",
+			"jdk17-openjdk"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -9713,9 +10001,9 @@
 	{
 		"name": "AVG-2686",
 		"packages": [
+			"jre-openjdk-headless",
 			"jdk-openjdk",
-			"jre-openjdk",
-			"jre-openjdk-headless"
+			"jre-openjdk"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -10003,8 +10291,8 @@
 	{
 		"name": "AVG-2662",
 		"packages": [
-			"gvim",
-			"vim"
+			"vim",
+			"gvim"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -11339,8 +11627,8 @@
 	{
 		"name": "AVG-2482",
 		"packages": [
-			"jre8-openjdk-headless",
-			"jdk8-openjdk"
+			"jdk8-openjdk",
+			"jre8-openjdk-headless"
 		],
 		"status": "Not affected",
 		"severity": "High",
@@ -11589,27 +11877,6 @@
 		"advisories": []
 	},
 	{
-		"name": "AVG-2285",
-		"packages": [
-			"nodejs-lts-erbium"
-		],
-		"status": "Fixed",
-		"severity": "High",
-		"type": "multiple issues",
-		"affected": "12.22.4-2",
-		"fixed": "12.22.7-1",
-		"ticket": "72412",
-		"issues": [
-			"CVE-2021-22960",
-			"CVE-2021-22959",
-			"CVE-2021-22940",
-			"CVE-2021-22939"
-		],
-		"advisories": [
-			"ASA-202110-6"
-		]
-	},
-	{
 		"name": "AVG-2284",
 		"packages": [
 			"nodejs-lts-fermium"
@@ -11671,25 +11938,6 @@
 		"severity": "High",
 		"type": "multiple issues",
 		"affected": "14.17.4-1",
-		"fixed": null,
-		"ticket": null,
-		"issues": [
-			"CVE-2021-39135",
-			"CVE-2021-39134",
-			"CVE-2021-37712",
-			"CVE-2021-37701"
-		],
-		"advisories": []
-	},
-	{
-		"name": "AVG-2339",
-		"packages": [
-			"nodejs-lts-erbium"
-		],
-		"status": "Not affected",
-		"severity": "High",
-		"type": "multiple issues",
-		"affected": "12.22.4-2",
 		"fixed": null,
 		"ticket": null,
 		"issues": [
@@ -12318,8 +12566,8 @@
 	{
 		"name": "AVG-2377",
 		"packages": [
-			"element-web",
-			"element-desktop"
+			"element-desktop",
+			"element-web"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -12634,22 +12882,6 @@
 		"advisories": []
 	},
 	{
-		"name": "AVG-2288",
-		"packages": [
-			"nodejs-lts-erbium"
-		],
-		"status": "Not affected",
-		"severity": "High",
-		"type": "insufficient validation",
-		"affected": "12.22.4-2",
-		"fixed": null,
-		"ticket": null,
-		"issues": [
-			"CVE-2021-22931"
-		],
-		"advisories": []
-	},
-	{
 		"name": "AVG-2287",
 		"packages": [
 			"nodejs-lts-fermium"
@@ -12902,24 +13134,6 @@
 		]
 	},
 	{
-		"name": "AVG-2241",
-		"packages": [
-			"nodejs-lts-erbium"
-		],
-		"status": "Fixed",
-		"severity": "High",
-		"type": "arbitrary code execution",
-		"affected": "12.22.3-1",
-		"fixed": "12.22.4-1",
-		"ticket": null,
-		"issues": [
-			"CVE-2021-22930"
-		],
-		"advisories": [
-			"ASA-202108-3"
-		]
-	},
-	{
 		"name": "AVG-2240",
 		"packages": [
 			"nodejs-lts-fermium"
@@ -12991,7 +13205,6 @@
 			"CVE-2021-33909"
 		],
 		"advisories": [
-			"ASA-202107-49",
 			"ASA-202107-49"
 		]
 	},
@@ -13013,7 +13226,6 @@
 			"CVE-2021-33909"
 		],
 		"advisories": [
-			"ASA-202107-48",
 			"ASA-202107-48"
 		]
 	},
@@ -13184,8 +13396,8 @@
 	{
 		"name": "AVG-2188",
 		"packages": [
-			"jre-openjdk",
-			"jre-openjdk-headless"
+			"jre-openjdk-headless",
+			"jre-openjdk"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -13322,8 +13534,8 @@
 	{
 		"name": "AVG-2189",
 		"packages": [
-			"jre11-openjdk-headless",
-			"jdk11-openjdk"
+			"jdk11-openjdk",
+			"jre11-openjdk-headless"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -13380,26 +13592,6 @@
 		],
 		"advisories": [
 			"ASA-202107-32"
-		]
-	},
-	{
-		"name": "AVG-2128",
-		"packages": [
-			"nodejs-lts-erbium"
-		],
-		"status": "Fixed",
-		"severity": "High",
-		"type": "multiple issues",
-		"affected": "12.22.0-2",
-		"fixed": "12.22.3-1",
-		"ticket": null,
-		"issues": [
-			"CVE-2021-27290",
-			"CVE-2021-23362",
-			"CVE-2021-22918"
-		],
-		"advisories": [
-			"ASA-202107-33"
 		]
 	},
 	{
@@ -13601,7 +13793,6 @@
 			"CVE-2021-32678"
 		],
 		"advisories": [
-			"ASA-202107-22",
 			"ASA-202107-22"
 		]
 	},
@@ -13988,6 +14179,7 @@
 			"CVE-2021-31618"
 		],
 		"advisories": [
+			"ASA-202106-23",
 			"ASA-202106-23"
 		]
 	},
@@ -14564,6 +14756,7 @@
 			"CVE-2021-20288"
 		],
 		"advisories": [
+			"ASA-202105-3",
 			"ASA-202105-3"
 		]
 	},
@@ -15804,8 +15997,8 @@
 	{
 		"name": "AVG-1698",
 		"packages": [
-			"dotnet-sdk",
-			"dotnet-runtime"
+			"dotnet-runtime",
+			"dotnet-sdk"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -15863,8 +16056,8 @@
 	{
 		"name": "AVG-1449",
 		"packages": [
-			"dotnet-sdk",
-			"dotnet-runtime"
+			"dotnet-runtime",
+			"dotnet-sdk"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -16902,25 +17095,6 @@
 		]
 	},
 	{
-		"name": "AVG-1402",
-		"packages": [
-			"nodejs-lts-erbium"
-		],
-		"status": "Fixed",
-		"severity": "High",
-		"type": "multiple issues",
-		"affected": "12.20.0-2",
-		"fixed": "12.20.1-1",
-		"ticket": null,
-		"issues": [
-			"CVE-2020-8287",
-			"CVE-2020-8265"
-		],
-		"advisories": [
-			"ASA-202101-14"
-		]
-	},
-	{
 		"name": "AVG-1401",
 		"packages": [
 			"nodejs-lts-fermium"
@@ -16957,22 +17131,6 @@
 		"advisories": [
 			"ASA-202101-16"
 		]
-	},
-	{
-		"name": "AVG-1406",
-		"packages": [
-			"nodejs-lts-erbium"
-		],
-		"status": "Not affected",
-		"severity": "High",
-		"type": "denial of service",
-		"affected": "12.20.0-2",
-		"fixed": null,
-		"ticket": null,
-		"issues": [
-			"CVE-2020-1971"
-		],
-		"advisories": []
 	},
 	{
 		"name": "AVG-1405",
@@ -17330,6 +17488,7 @@
 			"CVE-2020-10753"
 		],
 		"advisories": [
+			"ASA-202011-22",
 			"ASA-202011-22"
 		]
 	},
@@ -17613,7 +17772,6 @@
 			"CVE-2020-12351"
 		],
 		"advisories": [
-			"ASA-202010-3",
 			"ASA-202010-3"
 		]
 	},
@@ -17634,7 +17792,6 @@
 			"CVE-2020-12351"
 		],
 		"advisories": [
-			"ASA-202010-2",
 			"ASA-202010-2"
 		]
 	},
@@ -17671,6 +17828,7 @@
 			"CVE-2020-25829"
 		],
 		"advisories": [
+			"ASA-202010-6",
 			"ASA-202010-6"
 		]
 	},
@@ -18799,7 +18957,6 @@
 			"CVE-2020-8835"
 		],
 		"advisories": [
-			"ASA-202004-4",
 			"ASA-202004-4"
 		]
 	},
@@ -18917,7 +19074,6 @@
 			"CVE-2020-2732"
 		],
 		"advisories": [
-			"ASA-202003-6",
 			"ASA-202003-6"
 		]
 	},
@@ -19031,6 +19187,7 @@
 			"CVE-2019-18634"
 		],
 		"advisories": [
+			"ASA-202002-2",
 			"ASA-202002-2"
 		]
 	},
@@ -19049,6 +19206,7 @@
 			"CVE-2019-18218"
 		],
 		"advisories": [
+			"ASA-202001-2",
 			"ASA-202001-2"
 		]
 	},
@@ -19363,6 +19521,7 @@
 			"CVE-2019-14287"
 		],
 		"advisories": [
+			"ASA-201910-9",
 			"ASA-201910-9"
 		]
 	},
@@ -19612,6 +19771,7 @@
 			"CVE-2019-9848"
 		],
 		"advisories": [
+			"ASA-201908-9",
 			"ASA-201908-9"
 		]
 	},
@@ -19811,7 +19971,6 @@
 			"CVE-2019-11477"
 		],
 		"advisories": [
-			"ASA-201906-15",
 			"ASA-201906-15"
 		]
 	},
@@ -19852,7 +20011,6 @@
 			"CVE-2019-11477"
 		],
 		"advisories": [
-			"ASA-201906-13",
 			"ASA-201906-13"
 		]
 	},
@@ -19926,7 +20084,6 @@
 			"CVE-2019-9636"
 		],
 		"advisories": [
-			"ASA-201906-17",
 			"ASA-201906-17"
 		]
 	},
@@ -20158,7 +20315,6 @@
 			"CVE-2019-11683"
 		],
 		"advisories": [
-			"ASA-201905-4",
 			"ASA-201905-4"
 		]
 	},
@@ -20195,7 +20351,6 @@
 			"CVE-2019-11683"
 		],
 		"advisories": [
-			"ASA-201905-2",
 			"ASA-201905-2"
 		]
 	},
@@ -20372,6 +20527,7 @@
 			"CVE-2019-3871"
 		],
 		"advisories": [
+			"ASA-201903-13",
 			"ASA-201903-13"
 		]
 	},
@@ -20519,6 +20675,7 @@
 			"CVE-2019-8904"
 		],
 		"advisories": [
+			"ASA-201903-5",
 			"ASA-201903-5"
 		]
 	},
@@ -21039,6 +21196,7 @@
 			"CVE-2018-17189"
 		],
 		"advisories": [
+			"ASA-201901-14",
 			"ASA-201901-14"
 		]
 	},
@@ -21864,7 +22022,6 @@
 			"CVE-2018-5390"
 		],
 		"advisories": [
-			"ASA-201808-6",
 			"ASA-201808-6"
 		]
 	},
@@ -21901,7 +22058,6 @@
 			"CVE-2018-5390"
 		],
 		"advisories": [
-			"ASA-201808-4",
 			"ASA-201808-4"
 		]
 	},
@@ -21954,6 +22110,7 @@
 			"CVE-2018-1999023"
 		],
 		"advisories": [
+			"ASA-201807-15",
 			"ASA-201807-15"
 		]
 	},
@@ -22045,6 +22202,7 @@
 			"CVE-2018-14055"
 		],
 		"advisories": [
+			"ASA-201807-11",
 			"ASA-201807-11"
 		]
 	},
@@ -22522,6 +22680,7 @@
 			"CVE-2018-1046"
 		],
 		"advisories": [
+			"ASA-201805-1",
 			"ASA-201805-1"
 		]
 	},
@@ -23025,8 +23184,8 @@
 	{
 		"name": "AVG-599",
 		"packages": [
-			"mupdf-gl",
 			"libmupdf",
+			"mupdf-gl",
 			"mupdf-tools",
 			"mupdf"
 		],
@@ -23049,8 +23208,8 @@
 	{
 		"name": "AVG-590",
 		"packages": [
-			"glibc",
-			"lib32-glibc"
+			"lib32-glibc",
+			"glibc"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -23334,7 +23493,6 @@
 			"CVE-2017-16995"
 		],
 		"advisories": [
-			"ASA-201801-3",
 			"ASA-201801-3"
 		]
 	},
@@ -23571,7 +23729,6 @@
 			"CVE-2017-16995"
 		],
 		"advisories": [
-			"ASA-201801-1",
 			"ASA-201801-1"
 		]
 	},
@@ -24181,8 +24338,8 @@
 	{
 		"name": "AVG-460",
 		"packages": [
-			"glibc",
-			"lib32-glibc"
+			"lib32-glibc",
+			"glibc"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -24202,8 +24359,8 @@
 	{
 		"name": "AVG-458",
 		"packages": [
-			"mupdf-gl",
 			"libmupdf",
+			"mupdf-gl",
 			"mupdf-tools",
 			"mupdf"
 		],
@@ -24389,7 +24546,6 @@
 			"CVE-2017-5123"
 		],
 		"advisories": [
-			"ASA-201710-24",
 			"ASA-201710-24"
 		]
 	},
@@ -24408,7 +24564,6 @@
 			"CVE-2017-5123"
 		],
 		"advisories": [
-			"ASA-201710-26",
 			"ASA-201710-26"
 		]
 	},
@@ -24562,7 +24717,6 @@
 			"CVE-2017-6266"
 		],
 		"advisories": [
-			"ASA-201709-22",
 			"ASA-201709-22"
 		]
 	},
@@ -24653,6 +24807,7 @@
 			"CVE-2017-9798"
 		],
 		"advisories": [
+			"ASA-201709-15",
 			"ASA-201709-15"
 		]
 	},
@@ -24707,7 +24862,6 @@
 			"CVE-2017-1000251"
 		],
 		"advisories": [
-			"ASA-201709-12",
 			"ASA-201709-12"
 		]
 	},
@@ -24744,7 +24898,6 @@
 			"CVE-2017-1000251"
 		],
 		"advisories": [
-			"ASA-201709-9",
 			"ASA-201709-9"
 		]
 	},
@@ -24875,8 +25028,8 @@
 	{
 		"name": "AVG-347",
 		"packages": [
-			"gvim",
-			"vim"
+			"vim",
+			"gvim"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -25127,7 +25280,6 @@
 			"CVE-2017-1000364"
 		],
 		"advisories": [
-			"ASA-201706-30",
 			"ASA-201706-30"
 		]
 	},
@@ -25166,6 +25318,7 @@
 			"CVE-2017-3167"
 		],
 		"advisories": [
+			"ASA-201706-34",
 			"ASA-201706-34"
 		]
 	},
@@ -25202,7 +25355,6 @@
 			"CVE-2017-1000364"
 		],
 		"advisories": [
-			"ASA-201706-31",
 			"ASA-201706-31"
 		]
 	},
@@ -25521,6 +25673,7 @@
 			"CVE-2017-8422"
 		],
 		"advisories": [
+			"ASA-201705-12",
 			"ASA-201705-12"
 		]
 	},
@@ -26011,7 +26164,6 @@
 			"CVE-2017-2636"
 		],
 		"advisories": [
-			"ASA-201703-13",
 			"ASA-201703-13"
 		]
 	},
@@ -26048,7 +26200,6 @@
 			"CVE-2017-2636"
 		],
 		"advisories": [
-			"ASA-201703-8",
 			"ASA-201703-8"
 		]
 	},
@@ -26158,7 +26309,6 @@
 			"CVE-2016-10088"
 		],
 		"advisories": [
-			"ASA-201702-18",
 			"ASA-201702-18"
 		]
 	},
@@ -26180,7 +26330,6 @@
 			"CVE-2016-10088"
 		],
 		"advisories": [
-			"ASA-201702-17",
 			"ASA-201702-17"
 		]
 	},
@@ -26604,7 +26753,6 @@
 			"CVE-2016-9919"
 		],
 		"advisories": [
-			"ASA-201612-14",
 			"ASA-201612-14"
 		]
 	},
@@ -26623,7 +26771,6 @@
 			"CVE-2016-9919"
 		],
 		"advisories": [
-			"ASA-201612-10",
 			"ASA-201612-10"
 		]
 	},
@@ -26642,7 +26789,6 @@
 			"CVE-2016-8655"
 		],
 		"advisories": [
-			"ASA-201612-8",
 			"ASA-201612-8"
 		]
 	},
@@ -26679,7 +26825,6 @@
 			"CVE-2016-8655"
 		],
 		"advisories": [
-			"ASA-201612-6",
 			"ASA-201612-6"
 		]
 	},
@@ -26842,8 +26987,8 @@
 	{
 		"name": "AVG-78",
 		"packages": [
-			"wireshark-cli",
-			"wireshark-qt"
+			"wireshark-qt",
+			"wireshark-cli"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -27173,7 +27318,6 @@
 			"CVE-2016-5195"
 		],
 		"advisories": [
-			"ASA-201610-14",
 			"ASA-201610-14"
 		]
 	},
@@ -27943,8 +28087,8 @@
 	{
 		"name": "AVG-2479",
 		"packages": [
-			"jre8-openjdk-headless",
-			"jdk8-openjdk"
+			"jdk8-openjdk",
+			"jre8-openjdk-headless"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -28838,8 +28982,8 @@
 	{
 		"name": "AVG-2277",
 		"packages": [
-			"dotnet-sdk",
-			"dotnet-runtime"
+			"dotnet-runtime",
+			"dotnet-sdk"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -28974,8 +29118,8 @@
 	{
 		"name": "AVG-2478",
 		"packages": [
-			"jre11-openjdk-headless",
-			"jdk11-openjdk"
+			"jdk11-openjdk",
+			"jre11-openjdk-headless"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -29000,8 +29144,8 @@
 	{
 		"name": "AVG-2477",
 		"packages": [
-			"jdk-openjdk",
-			"jre-openjdk-headless"
+			"jre-openjdk-headless",
+			"jdk-openjdk"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -30074,8 +30218,8 @@
 	{
 		"name": "AVG-2390",
 		"packages": [
-			"gvim",
-			"vim"
+			"vim",
+			"gvim"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -30392,8 +30536,8 @@
 	{
 		"name": "AVG-2364",
 		"packages": [
-			"gvim",
-			"vim"
+			"vim",
+			"gvim"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -31449,6 +31593,7 @@
 			"CVE-2021-36754"
 		],
 		"advisories": [
+			"ASA-202107-73",
 			"ASA-202107-73"
 		]
 	},
@@ -32196,7 +32341,6 @@
 			"CVE-2021-21704"
 		],
 		"advisories": [
-			"ASA-202107-16",
 			"ASA-202107-16"
 		]
 	},
@@ -32323,8 +32467,8 @@
 	{
 		"name": "AVG-1847",
 		"packages": [
-			"jdk-openjdk",
-			"jre-openjdk-headless"
+			"jre-openjdk-headless",
+			"jdk-openjdk"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -33535,7 +33679,6 @@
 			"CVE-2021-22116"
 		],
 		"advisories": [
-			"ASA-202106-17",
 			"ASA-202106-17"
 		]
 	},
@@ -34007,8 +34150,8 @@
 	{
 		"name": "AVG-1944",
 		"packages": [
-			"dotnet-sdk",
-			"dotnet-runtime"
+			"dotnet-runtime",
+			"dotnet-sdk"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -34313,8 +34456,8 @@
 	{
 		"name": "AVG-1849",
 		"packages": [
-			"jre8-openjdk-headless",
-			"jdk8-openjdk"
+			"jdk8-openjdk",
+			"jre8-openjdk-headless"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -34330,8 +34473,8 @@
 	{
 		"name": "AVG-1848",
 		"packages": [
-			"jre11-openjdk-headless",
-			"jdk11-openjdk"
+			"jdk11-openjdk",
+			"jre11-openjdk-headless"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -34360,7 +34503,6 @@
 			"CVE-2021-2154"
 		],
 		"advisories": [
-			"ASA-202105-14",
 			"ASA-202105-14"
 		]
 	},
@@ -36185,23 +36327,6 @@
 		"advisories": []
 	},
 	{
-		"name": "AVG-1607",
-		"packages": [
-			"nodejs-lts-erbium"
-		],
-		"status": "Fixed",
-		"severity": "Medium",
-		"type": "denial of service",
-		"affected": "12.20.1-1",
-		"fixed": "12.21.0-1",
-		"ticket": null,
-		"issues": [
-			"CVE-2021-22884",
-			"CVE-2021-22883"
-		],
-		"advisories": []
-	},
-	{
 		"name": "AVG-1606",
 		"packages": [
 			"nodejs-lts-fermium"
@@ -36932,7 +37057,6 @@
 			"CVE-2021-23336"
 		],
 		"advisories": [
-			"ASA-202102-37",
 			"ASA-202102-37"
 		]
 	},
@@ -37551,7 +37675,6 @@
 			"CVE-2021-21702"
 		],
 		"advisories": [
-			"ASA-202102-14",
 			"ASA-202102-14"
 		]
 	},
@@ -37577,8 +37700,8 @@
 	{
 		"name": "AVG-1324",
 		"packages": [
-			"glibc",
-			"lib32-glibc"
+			"lib32-glibc",
+			"glibc"
 		],
 		"status": "Not affected",
 		"severity": "Medium",
@@ -37727,7 +37850,6 @@
 			"CVE-2021-3347"
 		],
 		"advisories": [
-			"ASA-202102-23",
 			"ASA-202102-23"
 		]
 	},
@@ -37762,7 +37884,6 @@
 			"CVE-2020-36193"
 		],
 		"advisories": [
-			"ASA-202102-7",
 			"ASA-202102-7"
 		]
 	},
@@ -37990,7 +38111,6 @@
 			"CVE-2020-28374"
 		],
 		"advisories": [
-			"ASA-202101-31",
 			"ASA-202101-31"
 		]
 	},
@@ -38009,7 +38129,6 @@
 			"CVE-2020-28374"
 		],
 		"advisories": [
-			"ASA-202101-33",
 			"ASA-202101-33"
 		]
 	},
@@ -38876,6 +38995,7 @@
 			"CVE-2020-27783"
 		],
 		"advisories": [
+			"ASA-202012-1",
 			"ASA-202012-1"
 		]
 	},
@@ -39574,6 +39694,7 @@
 			"CVE-2020-10995"
 		],
 		"advisories": [
+			"ASA-202005-10",
 			"ASA-202005-10"
 		]
 	},
@@ -40578,6 +40699,7 @@
 			"CVE-2019-3806"
 		],
 		"advisories": [
+			"ASA-201901-13",
 			"ASA-201901-13"
 		]
 	},
@@ -40737,6 +40859,7 @@
 			"CVE-2018-16855"
 		],
 		"advisories": [
+			"ASA-201811-21",
 			"ASA-201811-21"
 		]
 	},
@@ -40868,6 +40991,7 @@
 			"CVE-2018-10851"
 		],
 		"advisories": [
+			"ASA-201811-13",
 			"ASA-201811-13"
 		]
 	},
@@ -40887,6 +41011,7 @@
 			"CVE-2018-10851"
 		],
 		"advisories": [
+			"ASA-201811-12",
 			"ASA-201811-12"
 		]
 	},
@@ -40982,8 +41107,8 @@
 	{
 		"name": "AVG-766",
 		"packages": [
-			"bitcoin-qt",
-			"bitcoin-daemon"
+			"bitcoin-daemon",
+			"bitcoin-qt"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -41085,6 +41210,7 @@
 			"CVE-2018-1333"
 		],
 		"advisories": [
+			"ASA-201807-12",
 			"ASA-201807-12"
 		]
 	},
@@ -41293,6 +41419,7 @@
 			"CVE-2017-15710"
 		],
 		"advisories": [
+			"ASA-201804-4",
 			"ASA-201804-4"
 		]
 	},
@@ -41490,8 +41617,8 @@
 	{
 		"name": "AVG-635",
 		"packages": [
-			"gvim",
-			"vim"
+			"vim",
+			"gvim"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -42240,6 +42367,7 @@
 			"CVE-2017-15090"
 		],
 		"advisories": [
+			"ASA-201711-31",
 			"ASA-201711-31"
 		]
 	},
@@ -43597,6 +43725,7 @@
 			"CVE-2017-1000367"
 		],
 		"advisories": [
+			"ASA-201705-25",
 			"ASA-201705-25"
 		]
 	},
@@ -44145,8 +44274,8 @@
 	{
 		"name": "AVG-174",
 		"packages": [
-			"gvim",
-			"vim"
+			"vim",
+			"gvim"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -44233,7 +44362,6 @@
 			"CVE-2017-2583"
 		],
 		"advisories": [
-			"ASA-201701-38",
 			"ASA-201701-38"
 		]
 	},
@@ -44270,7 +44398,6 @@
 			"CVE-2017-2583"
 		],
 		"advisories": [
-			"ASA-201701-32",
 			"ASA-201701-32"
 		]
 	},
@@ -44291,6 +44418,7 @@
 			"CVE-2016-7068"
 		],
 		"advisories": [
+			"ASA-201701-30",
 			"ASA-201701-30"
 		]
 	},
@@ -44313,6 +44441,7 @@
 			"CVE-2016-2120"
 		],
 		"advisories": [
+			"ASA-201701-29",
 			"ASA-201701-29"
 		]
 	},
@@ -44674,6 +44803,7 @@
 			"CVE-2016-7966"
 		],
 		"advisories": [
+			"ASA-201610-4",
 			"ASA-201610-4"
 		]
 	},
@@ -44951,8 +45081,8 @@
 	{
 		"name": "AVG-2572",
 		"packages": [
-			"gvim",
-			"vim"
+			"vim",
+			"gvim"
 		],
 		"status": "Fixed",
 		"severity": "Low",
@@ -45255,8 +45385,8 @@
 	{
 		"name": "AVG-2472",
 		"packages": [
-			"gvim",
-			"vim"
+			"vim",
+			"gvim"
 		],
 		"status": "Fixed",
 		"severity": "Low",
@@ -45910,7 +46040,6 @@
 			"CVE-2021-32707"
 		],
 		"advisories": [
-			"ASA-202107-41",
 			"ASA-202107-41"
 		]
 	},
@@ -45948,7 +46077,6 @@
 			"CVE-2021-32718"
 		],
 		"advisories": [
-			"ASA-202107-17",
 			"ASA-202107-17"
 		]
 	},
@@ -46774,22 +46902,6 @@
 		"advisories": []
 	},
 	{
-		"name": "AVG-1610",
-		"packages": [
-			"nodejs-lts-erbium"
-		],
-		"status": "Not affected",
-		"severity": "Low",
-		"type": "incorrect calculation",
-		"affected": "12.20.1-1",
-		"fixed": null,
-		"ticket": null,
-		"issues": [
-			"CVE-2021-23840"
-		],
-		"advisories": []
-	},
-	{
 		"name": "AVG-1609",
 		"packages": [
 			"nodejs-lts-fermium"
@@ -46924,8 +47036,8 @@
 	{
 		"name": "AVG-1320",
 		"packages": [
-			"glibc",
-			"lib32-glibc"
+			"lib32-glibc",
+			"glibc"
 		],
 		"status": "Fixed",
 		"severity": "Low",
@@ -47459,6 +47571,7 @@
 			"CVE-2020-1927"
 		],
 		"advisories": [
+			"ASA-202004-14",
 			"ASA-202004-14"
 		]
 	},
@@ -47759,7 +47872,6 @@
 			"CVE-2018-18445"
 		],
 		"advisories": [
-			"ASA-201811-1",
 			"ASA-201811-1"
 		]
 	},
@@ -48028,6 +48140,7 @@
 			"CVE-2017-15091"
 		],
 		"advisories": [
+			"ASA-201711-30",
 			"ASA-201711-30"
 		]
 	},

@@ -1,0 +1,25 @@
+{
+	"name": "AVG-2749",
+	"packages": [
+		"ntfs-3g"
+	],
+	"status": "Fixed",
+	"severity": "Unknown",
+	"type": "unknown",
+	"affected": "2021.8.22-1",
+	"fixed": "2022.5.17-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2022-30789",
+		"CVE-2022-30788",
+		"CVE-2022-30786",
+		"CVE-2022-30784"
+	],
+	"advisories": [],
+	"references": [
+		"https://github.com/tuxera/ntfs-3g/security/advisories/GHSA-xchm-ph5h-hw4x",
+		"https://github.com/tuxera/ntfs-3g/security/advisories/GHSA-6mv4-4v73-xw58",
+		"https://www.openwall.com/lists/oss-security/2022/05/26/1"
+	],
+	"notes": "didn't add CVE-2021-46790 (CVSS 9.8) because `ntfsck` is not provided by `ntfs-3g`, although I yet have to check wether it was present in the previous version or removed when it was deprecated\r\n\r\nTODO: look up wether ntfs-3g is built with the internal libfuse or not as it determines wether the second advisory applies"
+}
