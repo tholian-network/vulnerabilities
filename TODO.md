@@ -10,8 +10,12 @@
 
 # Platform-specific Trackers
 
-- [ ] Alma Linux
 - [ ] Alpine Linux
+
+  Vulnerabilities and fixes are located at `https://secdb.alpinelinux.org/`.
+  Branch metadata is located at `https://security.alpinelinux.org/branch/edge-main`.
+
+- [ ] Alma Linux
 - [ ] Amazon Linux
 - [x] Arch Linux
 - [ ] CentOS Stream
@@ -27,12 +31,12 @@
   CVE API at `https://access.redhat.com/hydra/rest/securitydata/cve/<CVE-ID>.json`
 
 
-## Updater Incomplete
+## Updater
 
 - [ ] Implement XML Support in `Webscraper` to be able to download odata-based tracker data directly via their schemas (Thanks, Microsoft and SAP!).
 - [ ] Implement Vulnerability classification of `valid`, `invalid`, `disputed` and `rejected`
 
-**Editor**:
+## Editor:
 
 - [ ] Frontend: Implement the Save Functionality using `fetch()` and `POST`.
 - [ ] Backend: Implement `POST /vulnerabilities/CVE-YYYY-NNNNN.json` and update `/api/editor/index.json` (from previous state to `edited`).
