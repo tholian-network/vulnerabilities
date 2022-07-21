@@ -252,8 +252,8 @@
 	{
 		"name": "AVG-2190",
 		"packages": [
-			"jre8-openjdk-headless",
-			"jdk8-openjdk"
+			"jdk8-openjdk",
+			"jre8-openjdk-headless"
 		],
 		"status": "Vulnerable",
 		"severity": "High",
@@ -1784,11 +1784,11 @@
 	{
 		"name": "AVG-1915",
 		"packages": [
+			"kube-proxy",
 			"kubelet",
 			"kube-controller-manager",
-			"kube-proxy",
-			"kube-apiserver",
-			"kube-scheduler"
+			"kube-scheduler",
+			"kube-apiserver"
 		],
 		"status": "Vulnerable",
 		"severity": "Low",
@@ -2042,23 +2042,6 @@
 		"issues": [
 			"CVE-2022-31626",
 			"CVE-2022-31625"
-		],
-		"advisories": []
-	},
-	{
-		"name": "AVG-2766",
-		"packages": [
-			"liblouis"
-		],
-		"status": "Fixed",
-		"severity": "Unknown",
-		"type": "unknown",
-		"affected": "3.21.0-1",
-		"fixed": "3.22.0-1",
-		"ticket": null,
-		"issues": [
-			"CVE-2022-31783",
-			"CVE-2022-26981"
 		],
 		"advisories": []
 	},
@@ -6165,8 +6148,8 @@
 	{
 		"name": "AVG-708",
 		"packages": [
-			"wireshark-qt",
-			"wireshark-cli"
+			"wireshark-cli",
+			"wireshark-qt"
 		],
 		"status": "Fixed",
 		"severity": "Critical",
@@ -6610,8 +6593,8 @@
 	{
 		"name": "AVG-604",
 		"packages": [
-			"libunrar",
-			"unrar"
+			"unrar",
+			"libunrar"
 		],
 		"status": "Fixed",
 		"severity": "Critical",
@@ -9145,6 +9128,23 @@
 		"advisories": []
 	},
 	{
+		"name": "AVG-2766",
+		"packages": [
+			"liblouis"
+		],
+		"status": "Fixed",
+		"severity": "High",
+		"type": "arbitrary code execution",
+		"affected": "3.21.0-1",
+		"fixed": "3.22.0-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-31783",
+			"CVE-2022-26981"
+		],
+		"advisories": []
+	},
+	{
 		"name": "AVG-2761",
 		"packages": [
 			"thunderbird"
@@ -10005,9 +10005,9 @@
 	{
 		"name": "AVG-2689",
 		"packages": [
-			"jre8-openjdk",
+			"jdk8-openjdk",
 			"jre8-openjdk-headless",
-			"jdk8-openjdk"
+			"jre8-openjdk"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -10028,8 +10028,8 @@
 		"name": "AVG-2688",
 		"packages": [
 			"jdk11-openjdk",
-			"jre11-openjdk-headless",
-			"jre11-openjdk"
+			"jre11-openjdk",
+			"jre11-openjdk-headless"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -10050,8 +10050,8 @@
 		"name": "AVG-2687",
 		"packages": [
 			"jre17-openjdk-headless",
-			"jre17-openjdk",
-			"jdk17-openjdk"
+			"jdk17-openjdk",
+			"jre17-openjdk"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -10072,9 +10072,9 @@
 	{
 		"name": "AVG-2686",
 		"packages": [
+			"jdk-openjdk",
 			"jre-openjdk-headless",
-			"jre-openjdk",
-			"jdk-openjdk"
+			"jre-openjdk"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -11698,8 +11698,8 @@
 	{
 		"name": "AVG-2482",
 		"packages": [
-			"jre8-openjdk-headless",
-			"jdk8-openjdk"
+			"jdk8-openjdk",
+			"jre8-openjdk-headless"
 		],
 		"status": "Not affected",
 		"severity": "High",
@@ -12637,8 +12637,8 @@
 	{
 		"name": "AVG-2377",
 		"packages": [
-			"element-web",
-			"element-desktop"
+			"element-desktop",
+			"element-web"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -12856,8 +12856,8 @@
 	{
 		"name": "AVG-2192",
 		"packages": [
-			"gradle",
-			"gradle-src"
+			"gradle-src",
+			"gradle"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -13902,7 +13902,6 @@
 			"CVE-2021-31810"
 		],
 		"advisories": [
-			"ASA-202107-23",
 			"ASA-202107-23"
 		]
 	},
@@ -14998,8 +14997,8 @@
 	{
 		"name": "AVG-1809",
 		"packages": [
-			"gradle",
-			"gradle-src"
+			"gradle-src",
+			"gradle"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -16067,8 +16066,8 @@
 	{
 		"name": "AVG-1698",
 		"packages": [
-			"dotnet-sdk",
-			"dotnet-runtime"
+			"dotnet-runtime",
+			"dotnet-sdk"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -16126,8 +16125,8 @@
 	{
 		"name": "AVG-1449",
 		"packages": [
-			"dotnet-sdk",
-			"dotnet-runtime"
+			"dotnet-runtime",
+			"dotnet-sdk"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -17576,6 +17575,7 @@
 			"CVE-2020-26890"
 		],
 		"advisories": [
+			"ASA-202011-23",
 			"ASA-202011-23"
 		]
 	},
@@ -17879,6 +17879,7 @@
 			"CVE-2020-26891"
 		],
 		"advisories": [
+			"ASA-202011-4",
 			"ASA-202011-4"
 		]
 	},
@@ -18429,7 +18430,6 @@
 			"CVE-2020-13871"
 		],
 		"advisories": [
-			"ASA-202006-11",
 			"ASA-202006-11"
 		]
 	},
@@ -19570,6 +19570,7 @@
 			"CVE-2019-18182"
 		],
 		"advisories": [
+			"ASA-201910-13",
 			"ASA-201910-13"
 		]
 	},
@@ -20662,6 +20663,7 @@
 			"CVE-2019-9686"
 		],
 		"advisories": [
+			"ASA-201903-7",
 			"ASA-201903-7"
 		]
 	},
@@ -21277,6 +21279,7 @@
 			"CVE-2019-5885"
 		],
 		"advisories": [
+			"ASA-201901-12",
 			"ASA-201901-12"
 		]
 	},
@@ -23245,10 +23248,10 @@
 	{
 		"name": "AVG-599",
 		"packages": [
-			"mupdf-tools",
 			"mupdf-gl",
-			"libmupdf",
-			"mupdf"
+			"mupdf-tools",
+			"mupdf",
+			"libmupdf"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -23269,8 +23272,8 @@
 	{
 		"name": "AVG-590",
 		"packages": [
-			"lib32-glibc",
-			"glibc"
+			"glibc",
+			"lib32-glibc"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -24399,8 +24402,8 @@
 	{
 		"name": "AVG-460",
 		"packages": [
-			"lib32-glibc",
-			"glibc"
+			"glibc",
+			"lib32-glibc"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -24420,10 +24423,10 @@
 	{
 		"name": "AVG-458",
 		"packages": [
-			"mupdf-tools",
 			"mupdf-gl",
-			"libmupdf",
-			"mupdf"
+			"mupdf-tools",
+			"mupdf",
+			"libmupdf"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -24976,7 +24979,6 @@
 			"CVE-2017-12858"
 		],
 		"advisories": [
-			"ASA-201711-13",
 			"ASA-201711-13"
 		]
 	},
@@ -27045,8 +27047,8 @@
 	{
 		"name": "AVG-78",
 		"packages": [
-			"wireshark-qt",
-			"wireshark-cli"
+			"wireshark-cli",
+			"wireshark-qt"
 		],
 		"status": "Fixed",
 		"severity": "High",
@@ -27638,6 +27640,22 @@
 		]
 	},
 	{
+		"name": "AVG-2771",
+		"packages": [
+			"curl"
+		],
+		"status": "Fixed",
+		"severity": "Medium",
+		"type": "denial of service",
+		"affected": "7.83.1-1",
+		"fixed": "7.84.0-1",
+		"ticket": null,
+		"issues": [
+			"CVE-2022-32205"
+		],
+		"advisories": []
+	},
+	{
 		"name": "AVG-2763",
 		"packages": [
 			"apache"
@@ -28166,8 +28184,8 @@
 	{
 		"name": "AVG-2479",
 		"packages": [
-			"jre8-openjdk-headless",
-			"jdk8-openjdk"
+			"jdk8-openjdk",
+			"jre8-openjdk-headless"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -29061,8 +29079,8 @@
 	{
 		"name": "AVG-2277",
 		"packages": [
-			"dotnet-sdk",
-			"dotnet-runtime"
+			"dotnet-runtime",
+			"dotnet-sdk"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -29223,8 +29241,8 @@
 	{
 		"name": "AVG-2477",
 		"packages": [
-			"jre-openjdk-headless",
-			"jdk-openjdk"
+			"jdk-openjdk",
+			"jre-openjdk-headless"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -32544,8 +32562,8 @@
 	{
 		"name": "AVG-1847",
 		"packages": [
-			"jre-openjdk-headless",
-			"jdk-openjdk"
+			"jdk-openjdk",
+			"jre-openjdk-headless"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -33652,7 +33670,6 @@
 			"CVE-2020-36327"
 		],
 		"advisories": [
-			"ASA-202106-14",
 			"ASA-202106-14"
 		]
 	},
@@ -34228,8 +34245,8 @@
 	{
 		"name": "AVG-1944",
 		"packages": [
-			"dotnet-sdk",
-			"dotnet-runtime"
+			"dotnet-runtime",
+			"dotnet-sdk"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -34293,6 +34310,7 @@
 			"CVE-2021-29471"
 		],
 		"advisories": [
+			"ASA-202105-19",
 			"ASA-202105-19"
 		]
 	},
@@ -34534,8 +34552,8 @@
 	{
 		"name": "AVG-1849",
 		"packages": [
-			"jre8-openjdk-headless",
-			"jdk8-openjdk"
+			"jdk8-openjdk",
+			"jre8-openjdk-headless"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -35121,8 +35139,8 @@
 	{
 		"name": "AVG-1778",
 		"packages": [
-			"syncthing",
-			"syncthing-relaysrv"
+			"syncthing-relaysrv",
+			"syncthing"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -37777,8 +37795,8 @@
 	{
 		"name": "AVG-1324",
 		"packages": [
-			"lib32-glibc",
-			"glibc"
+			"glibc",
+			"lib32-glibc"
 		],
 		"status": "Not affected",
 		"severity": "Medium",
@@ -40171,7 +40189,6 @@
 			"CVE-2019-15845"
 		],
 		"advisories": [
-			"ASA-201910-2",
 			"ASA-201910-2"
 		]
 	},
@@ -40330,8 +40347,8 @@
 	{
 		"name": "AVG-1019",
 		"packages": [
-			"postgresql",
-			"postgresql-libs"
+			"postgresql-libs",
+			"postgresql"
 		],
 		"status": "Fixed",
 		"severity": "Medium",
@@ -45232,8 +45249,8 @@
 	{
 		"name": "AVG-2547",
 		"packages": [
-			"postgresql",
-			"postgresql-libs"
+			"postgresql-libs",
+			"postgresql"
 		],
 		"status": "Fixed",
 		"severity": "Low",
@@ -47101,8 +47118,8 @@
 	{
 		"name": "AVG-1320",
 		"packages": [
-			"lib32-glibc",
-			"glibc"
+			"glibc",
+			"lib32-glibc"
 		],
 		"status": "Fixed",
 		"severity": "Low",

@@ -24,9 +24,9 @@ export const containsSoftware = function(software, entry) {
 			let other = software[s];
 			if (
 				isObject(other) === true
-				&& other['name'] === software['name']
-				&& other['platform'] === software['platform']
-				&& other['version'] === software['version']
+				&& other['name'] === entry['name']
+				&& other['platform'] === entry['platform']
+				&& other['version'] === entry['version']
 			) {
 				found = other;
 				break;
