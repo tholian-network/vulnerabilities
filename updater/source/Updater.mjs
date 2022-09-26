@@ -9,6 +9,7 @@ import { Archlinux                            } from '../source/tracker/Archlinu
 import { CVE                                  } from '../source/tracker/CVE.mjs';
 import { CISA                                 } from '../source/tracker/CISA.mjs';
 import { Debian                               } from '../source/tracker/Debian.mjs';
+import { Almalinux                               } from '../source/tracker/Almalinux.mjs';
 // import { Ubuntu                               } from '../source/tracker/Ubuntu.mjs';
 // import { Microsoft                            } from '../source/tracker/Microsoft.mjs';
 
@@ -19,7 +20,8 @@ const CONSTRUCTORS = [
 	CISA,
 	Alpine,
 	Archlinux,
-	Debian
+	Debian,
+	Almalinux
 ];
 
 const TRACKERS = CONSTRUCTORS.map((Constructor) => Constructor.prototype[Symbol.toStringTag]);
