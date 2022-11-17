@@ -1,10 +1,10 @@
 
 import child_process from 'child_process';
 
-import { console, Emitter, isArray, isObject, isString } from '../../extern/base.mjs';
-import { ENVIRONMENT                                   } from '../../source/ENVIRONMENT.mjs';
-import { Filesystem                                    } from '../../source/Filesystem.mjs';
-import { isVulnerabilities, Vulnerabilities            } from '../../source/Vulnerabilities.mjs';
+import { console, Emitter, isArray, isNumber, isObject, isString } from '../../extern/base.mjs';
+import { ENVIRONMENT                                             } from '../../source/ENVIRONMENT.mjs';
+import { Filesystem                                              } from '../../source/Filesystem.mjs';
+import { isVulnerabilities, Vulnerabilities                      } from '../../source/Vulnerabilities.mjs';
 
 
 
@@ -83,69 +83,155 @@ const VERSIONS_IGNORE = [
 
 const VERSIONS_GRAMMAR = [
 
-	// TODO: Prior to 8.17 and 9.09
+	{ op: '<=', value: 0, syntax: [ '*', 'and', 'below', 'versions'                       ] },
+	{ op: '<=', value: 0, syntax: [ '*', 'and', 'below'                                   ] },
+	{ op: '<=', value: 0, syntax: [ '*', 'and', 'earlier', 'without', 'hotfix', 'applied' ] },
+	{ op: '<=', value: 0, syntax: [ '*', 'and', 'earlier', 'unsupported', 'versions'      ] },
+	{ op: '<=', value: 0, syntax: [ '*', 'and', 'earlier', 'versions'                     ] },
+	{ op: '<=', value: 0, syntax: [ '*', 'and', 'earlier', 'version'                      ] },
+	{ op: '<=', value: 0, syntax: [ '*', 'and', 'earlier'                                 ] },
+	{ op: '<=', value: 0, syntax: [ '*', 'or',  'earlier'                                 ] },
+	{ op: '<=', value: 0, syntax: [ '*', 'and', 'previous', 'versions'                    ] },
+	{ op: '<=', value: 0, syntax: [ '*', 'and', 'previous', 'version'                     ] },
+	{ op: '<=', value: 0, syntax: [ '*', 'and', 'previous'                                ] },
+	{ op: '<=', value: 0, syntax: [ '*', 'and', 'prior', 'versions'                       ] },
+	{ op: '<=', value: 0, syntax: [ '*', 'and', 'prior', 'version'                        ] },
+	{ op: '<=', value: 0, syntax: [ '*', 'and', 'prior'                                   ] },
+	{ op: '>=', value: 0, syntax: [ '*', 'and', 'later', 'versions'                       ] },
+	{ op: '>=', value: 0, syntax: [ '*', 'and', 'later', 'version'                        ] },
+	{ op: '>=', value: 0, syntax: [ '*', 'and', 'later'                                   ] },
+	{ op: '>=', value: 0, syntax: [ '*', 'and', 'after', 'versions'                       ] },
+	{ op: '>=', value: 0, syntax: [ '*', 'and', 'after', 'version'                        ] },
+	{ op: '>=', value: 0, syntax: [ '*', 'and', 'after'                                   ] },
 
-	{ op: '<=', prefix: null, suffix: ' and below versions'                 },
-	{ op: '<=', prefix: null, suffix: ' and earlier without hotfix applied' },
-	{ op: '<=', prefix: null, suffix: ' and earlier unsupported versions'   },
-	{ op: '<=', prefix: null, suffix: ' and earlier versions'               },
-	{ op: '<=', prefix: null, suffix: ' and earlier version'                },
-	{ op: '<=', prefix: null, suffix: ' and earlier'                        },
-	{ op: '<=', prefix: null, suffix: ' or earlier'                         },
-	{ op: '<=', prefix: null, suffix: ' and prior versions'                 },
-	{ op: '<=', prefix: null, suffix: ' and prior version'                  },
-	{ op: '<=', prefix: null, suffix: ' and prior'                          },
+	{ op: '<=', value: 3, syntax: [ 'all', 'versions', '<=', '*'                          ] },
+	{ op: '<',  value: 3, syntax: [ 'all', 'versions', '<', '*'                           ] },
+	{ op: '>=', value: 3, syntax: [ 'all', 'versions', '>=', '*'                          ] },
+	{ op: '>',  value: 3, syntax: [ 'all', 'versions', '>', '*'                           ] },
+	{ op: '<',  value: 5, syntax: [ 'all', 'versions', 'prior', 'to', 'version', '*'      ] },
+	{ op: '<',  value: 4, syntax: [ 'all', 'versions', 'prior', 'to', '*'                 ] },
+	{ op: '<',  value: 3, syntax: [ 'all', 'versions', 'before', '*'                      ] },
 
-	{ op: '>=', prefix: null, suffix: ' and later versions'                 },
-	{ op: '>=', prefix: null, suffix: ' and later version'                  },
-	{ op: '>=', prefix: null, suffix: ' and later'                          },
-	{ op: '>=', prefix: null, suffix: ' and after versions'                 },
-	{ op: '>=', prefix: null, suffix: ' and after version'                  },
-	{ op: '>=', prefix: null, suffix: ' and after'                          },
+	{ op: '<',  value: 3, syntax: [ '*', 'before', 'version', '*'                         ] },
+	{ op: '<',  value: 2, syntax: [ 'before', 'version', '*'                              ] },
+	{ op: '<',  value: 1, syntax: [ 'before', '*'                                         ] },
+	{ op: '<',  value: 2, syntax: [ '*', 'before', '*'                                    ] },
+	{ op: '<',  value: 3, syntax: [ 'fixed', 'in', 'version', '*'                         ] },
+	{ op: '<',  value: 2, syntax: [ 'fixed', 'in', '*'                                    ] },
+	{ op: '<',  value: 3, syntax: [ 'earlier', 'than', 'version', '*'                     ] },
+	{ op: '<',  value: 2, syntax: [ 'earlier', 'than', '*'                                ] },
+	{ op: '<',  value: 2, syntax: [ 'earlier', 'than', '*', 'versions'                    ] },
+	{ op: '<',  value: 2, syntax: [ 'earlier', 'than', '*', 'version'                     ] },
+	{ op: '<',  value: 3, syntax: [ 'earlier', 'versions', 'than', '*'                    ] },
 
-	{ op: '<=', prefix: 'all versions <= ',               suffix: null      },
-	{ op: '<',  prefix: 'all versions < ',                suffix: null      },
-	{ op: '>=', prefix: 'all versions >= ',               suffix: null      },
-	{ op: '>',  prefix: 'all versions > ',                suffix: null      },
+	{ op: '<',  value: 2, syntax: [ 'versions', 'below', '*'                              ] },
+	{ op: '<',  value: 3, syntax: [ 'versions', 'earlier', 'before', '*'                  ] },
+	{ op: '<',  value: 3, syntax: [ 'versions', 'earlier', 'than', '*'                    ] },
+	{ op: '<',  value: 3, syntax: [ 'versions', 'prior', 'to', '*'                        ] },
+	{ op: '<',  value: 3, syntax: [ 'versions', '*', 'to', '*'                            ] },
 
-	{ op: '<',  prefix: 'all versions prior to version ', suffix: null      },
-	{ op: '<',  prefix: 'all versions prior to ',         suffix: null      },
-	{ op: '<',  prefix: 'before ',                        suffix: null      },
-	{ op: '<',  prefix: 'fixed in version ',              suffix: null      },
-	{ op: '<',  prefix: 'fixed in ',                      suffix: null      },
-	{ op: '<',  prefix: 'versions earlier than ',         suffix: null      },
-	{ op: '<',  prefix: 'versions earlier before ',       suffix: null      },
-	{ op: '<',  prefix: 'earlier versions than ',         suffix: null      },
-	{ op: '<',  prefix: 'prior to ',                      suffix: null      },
-	{ op: '<',  prefix: 'prior to version ',              suffix: null      },
-	{ op: '<',  prefix: 'through ',                       suffix: null      },
-	{ op: '<',  prefix: 'up to and including ',           suffix: null      },
-	{ op: '<',  prefix: 'versions below ',                suffix: null      },
-	{ op: '<',  prefix: 'versions prior to ',             suffix: null      },
+	{ op: '<=', value: 3, syntax: [ 'affected', 'versions', 'through', '*'                ] },
+	{ op: '<',  value: 3, syntax: [ 'versions', 'prior', 'to', '*'                        ] },
+	{ op: '<',  value: 3, syntax: [ 'prior', 'to', 'version', '*'                         ] },
+	{ op: '<',  value: 2, syntax: [ 'prior', 'to', '*'                                    ] },
+	{ op: '<',  value: 1, syntax: [ 'prior', '*'                                          ] },
+	{ op: '<=', value: 2, syntax: [ '*', 'through', '*'                                   ] },
+	{ op: '<=', value: 3, syntax: [ '*', 'through', 'version', '*'                        ] },
+	{ op: '<=', value: 3, syntax: [ 'through', '*', 'and', '*'                            ] },
+	{ op: '<=', value: 1, syntax: [ 'through', '*'                                        ] },
+	{ op: '<=', value: 2, syntax: [ '*', 'to', '*', 'inclusive'                           ] },
+	{ op: '<=', value: 2, syntax: [ '*', 'to', '*'                                        ] },
+	{ op: '<=', value: 4, syntax: [ 'up', 'to', 'and', 'including', '*'                   ] },
+	{ op: '=',  value: 1, syntax: [ '=', '*'                                              ] },
+	{ op: '>',  value: 1, syntax: [ '=>', '*'                                             ] },
+	{ op: '<=', value: 1, syntax: [ '=<', '*'                                             ] },
+	{ op: '<=', value: 1, syntax: [ '<=', '*'                                             ] },
 
-	{ op: '<',  prefix: 'earlier than ', suffix: ' versions' }
+
+	// XXX: Windows Version Syntax
+
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1', 'for', '32-bit',      'Systems', 'Service', 'Pack', '1', '(Core', 'installation)' ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1', 'for', 'x64-based',   'Systems', 'Service', 'Pack', '1', '(Core', 'installation)' ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1', 'for', 'ARM64-based', 'Systems', 'Service', 'Pack', '1', '(Core', 'installation)' ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1', 'for', '32-bit',      'Systems', 'Service', 'Pack', '1'                           ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1', 'for', 'x64-based',   'Systems', 'Service', 'Pack', '1'                           ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1', 'for', 'ARM64-based', 'Systems', 'Service', 'Pack', '1'                           ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1', 'for', '32-bit',      'Systems', 'Service', 'Pack', '2', '(Core', 'installation)' ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1', 'for', 'x64-based',   'Systems', 'Service', 'Pack', '2', '(Core', 'installation)' ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1', 'for', 'ARM64-based', 'Systems', 'Service', 'Pack', '2', '(Core', 'installation)' ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1', 'for', '32-bit',      'Systems', 'Service', 'Pack', '2'                           ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1', 'for', 'x64-based',   'Systems', 'Service', 'Pack', '2'                           ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1', 'for', 'ARM64-based', 'Systems', 'Service', 'Pack', '2'                           ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1', 'for', '32-bit',      'Systems', '(Core', 'installation)'                         ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1', 'for', 'x64-based',   'Systems', '(Core', 'installation)'                         ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1', 'for', 'ARM64-based', 'Systems', '(Core', 'installation)'                         ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1', 'for', '32-bit',      'Systems'                                                   ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1', 'for', 'x64-based',   'Systems'                                                   ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1', 'for', 'ARM64-based', 'Systems'                                                   ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R1'                                                                                    ] },
+
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2', 'for', '32-bit',      'Systems', 'Service', 'Pack', '1', '(Core', 'installation)' ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2', 'for', 'x64-based',   'Systems', 'Service', 'Pack', '1', '(Core', 'installation)' ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2', 'for', 'ARM64-based', 'Systems', 'Service', 'Pack', '1', '(Core', 'installation)' ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2', 'for', '32-bit',      'Systems', 'Service', 'Pack', '1'                           ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2', 'for', 'x64-based',   'Systems', 'Service', 'Pack', '1'                           ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2', 'for', 'ARM64-based', 'Systems', 'Service', 'Pack', '1'                           ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2', 'for', '32-bit',      'Systems', 'Service', 'Pack', '2', '(Core', 'installation)' ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2', 'for', 'x64-based',   'Systems', 'Service', 'Pack', '2', '(Core', 'installation)' ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2', 'for', 'ARM64-based', 'Systems', 'Service', 'Pack', '2', '(Core', 'installation)' ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2', 'for', '32-bit',      'Systems', 'Service', 'Pack', '2'                           ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2', 'for', 'x64-based',   'Systems', 'Service', 'Pack', '2'                           ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2', 'for', 'ARM64-based', 'Systems', 'Service', 'Pack', '2'                           ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2', 'for', '32-bit',      'Systems', '(Core', 'installation)'                         ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2', 'for', 'x64-based',   'Systems', '(Core', 'installation)'                         ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2', 'for', 'ARM64-based', 'Systems', '(Core', 'installation)'                         ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2', 'for', '32-bit',      'Systems'                                                   ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2', 'for', 'x64-based',   'Systems'                                                   ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2', 'for', 'ARM64-based', 'Systems'                                                   ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'R2'                                                                                    ] },
+
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', '32-bit',      'Systems', 'Service', 'Pack', '1', '(Core', 'installation)'       ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', 'x64-based',   'Systems', 'Service', 'Pack', '1', '(Core', 'installation)'       ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', 'ARM64-based', 'Systems', 'Service', 'Pack', '1', '(Core', 'installation)'       ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', '32-bit',      'Systems', 'Service', 'Pack', '1'                                 ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', 'x64-based',   'Systems', 'Service', 'Pack', '1'                                 ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', 'ARM64-based', 'Systems', 'Service', 'Pack', '1'                                 ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', '32-bit',      'Systems', 'Service', 'Pack', '2', '(Core', 'installation)'       ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', 'x64-based',   'Systems', 'Service', 'Pack', '2', '(Core', 'installation)'       ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', 'ARM64-based', 'Systems', 'Service', 'Pack', '2', '(Core', 'installation)'       ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', '32-bit',      'Systems', 'Service', 'Pack', '2'                                 ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', 'x64-based',   'Systems', 'Service', 'Pack', '2'                                 ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', 'ARM64-based', 'Systems', 'Service', 'Pack', '2'                                 ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', '32-bit',      'Systems', '(Core', 'installation)'                               ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', 'x64-based',   'Systems', '(Core', 'installation)'                               ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', 'ARM64-based', 'Systems', '(Core', 'installation)'                               ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', '32-bit',      'Systems'                                                         ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', 'x64-based',   'Systems'                                                         ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', 'ARM64-based', 'Systems'                                                         ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'Service', 'Pack', '2'                                                                  ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'Service', 'Pack', '1'                                                                  ] },
+	{ op: '=',  value: 0,           syntax: [ '*', '(Core', 'installation)'                                                                ] },
+
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ '*', 'RT'                                                                                    ] },
+	{ op: '=',  value: [ 1, 0 ],    syntax: [ 'RT', '*',                                                                                   ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ 'Server', '*', 'Service', 'Pack', '2'                                                        ] },
+	{ op: '=',  value: [ 0, 1 ],    syntax: [ 'Server', '*', 'Service', 'Pack', '1'                                                        ] },
+
+	{ op: '=',  value: [ 0, 1, 2 ], syntax: [ '10', 'Version', '*', 'for', '32-bit',      'Systems'                                        ] },
+	{ op: '=',  value: [ 0, 1, 2 ], syntax: [ '10', 'Version', '*', 'for', 'x64-based',   'Systems'                                        ] },
+	{ op: '=',  value: [ 0, 1, 2 ], syntax: [ '10', 'Version', '*', 'for', 'ARM64-based', 'Systems'                                        ] },
+
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', '32-bit', 'editions'                                                             ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', '64-bit', 'editions'                                                             ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', '32-bit', 'systems'                                                              ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', '64-bit', 'systems'                                                              ] },
+	{ op: '=',  value: 0,           syntax: [ '*', 'for', 'x64-based', 'systems'                                                           ] },
+	{ op: '=',  value: 0,           syntax: [ '*', '(32-bit', 'edition)'                                                                   ] },
+	{ op: '=',  value: 0,           syntax: [ '*', '(64-bit', 'edition)'                                                                   ] },
+	{ op: '=',  value: 0,           syntax: [ '*', '(on-prem)', 'and', 'SaaS'                                                              ] },
+	{ op: '=',  value: 1,           syntax: [ 'Version', '*'                                                                               ] },
 
 ];
-
-const VERSIONS_SYNTAX = [
-
-	{ op: '>', version: 'prefix', prefix: /^([Vv]?)([0-9.]+)$/g,       midfix: ' to ',             suffix: /^([Vv]?)([0-9.]+)\+$/g     },
-
-	{ op: '<', version: 'suffix', prefix: /^([Vv]?)([0-9A-Za-z.]+)$/g, midfix: ' before version ', suffix: /^([Vv]?)([0-9A-Za-z.]+)$/g },
-	{ op: '<', version: 'suffix', prefix: /^([Vv]?)([0-9.]+)$/g,       midfix: ' before version ', suffix: /^([Vv]?)([0-9.]+)$/g       },
-	{ op: '<', version: 'suffix', prefix: /^([Vv]?)([0-9A-Za-z.]+)$/g, midfix: ' before ',         suffix: /^([Vv]?)([0-9A-Za-z.]+)$/g },
-	{ op: '<', version: 'suffix', prefix: /^([Vv]?)([0-9.]+)$/g,       midfix: ' before ',         suffix: /^([Vv]?)([0-9.]+)$/g       },
-	{ op: '<', version: 'suffix', prefix: /^([Vv]?)([0-9A-Za-z.]+)$/g, midfix: ' through ',        suffix: /^([Vv]?)([0-9A-Za-z.]+)$/g },
-	{ op: '<', version: 'suffix', prefix: /^([Vv]?)([0-9.]+)$/g,       midfix: ' through ',        suffix: /^([Vv]?)([0-9.]+)$/g       },
-	{ op: '<', version: 'suffix', prefix: /^([Vv]?)([0-9A-Za-z.]+)$/g, midfix: ' to ',             suffix: /^([Vv]?)([0-9A-Za-z.]+)$/g },
-	{ op: '<', version: 'suffix', prefix: /^([Vv]?)([0-9.]+)$/g,       midfix: ' to ',             suffix: /^([Vv]?)([0-9.]+)$/g       },
-	{ op: '<', version: 'suffix', prefix: /^([Vv]?)([0-9XYZxyz.]+)$/g, midfix: ' before version ', suffix: /^([Vv]?)([0-9A-Za-z.]+)$/g },
-	{ op: '<', version: 'suffix', prefix: /^([Vv]?)([0-9XYZxyz.]+)$/g, midfix: ' before ',         suffix: /^([Vv]?)([0-9.]+)$/g       },
-	{ op: '<', version: 'suffix', prefix: /^([Vv]?)([0-9XYZxyz.]+)$/g, midfix: ' through ',        suffix: /^([Vv]?)([0-9.]+)$/g       },
-	{ op: '<', version: 'suffix', prefix: /^([Vv]?)([0-9XYZxyz.]+)$/g, midfix: ' to ',             suffix: /^([Vv]?)([0-9.]+)$/g       },
-
-];
-
 
 
 
@@ -232,106 +318,59 @@ const toVersion = function(data) {
 			data = data.substr(0, data.length - 1).trim();
 		}
 
-		let fuzzy = data.toLowerCase();
 
 		for (let g = 0; g < VERSIONS_GRAMMAR.length; g++) {
 
+			let chunks  = data.trim().split(' ');
 			let grammar = VERSIONS_GRAMMAR[g];
-			if (isString(grammar.prefix) === true && isString(grammar.suffix) === true) {
 
-				if (fuzzy.startsWith(grammar.prefix) === true && fuzzy.endsWith(grammar.suffix) === true) {
+			if (chunks.length === grammar.syntax.length) {
 
-					let tmp1 = data.substr(grammar.prefix.length).trim();
-					let tmp2 = tmp1.substr(0, tmp1.length - grammar.suffix.length).trim();
+				let matches = [];
 
-					version = grammar.op + ' ' + tmp2;
-					break;
+				for (let s = 0; s < grammar.syntax.length; s++) {
 
-				}
+					let syntax = grammar.syntax[s];
 
-			} else if (isString(grammar.prefix) === true && grammar.suffix === null) {
-
-				if (fuzzy.startsWith(grammar.prefix) === true) {
-
-					let tmp1 = data.substr(grammar.prefix.length).trim();
-
-					version = grammar.op + ' ' + tmp1;
-					break;
-
-				}
-
-			} else if (grammar.prefix === null && isString(grammar.suffix) === true) {
-
-				if (fuzzy.endsWith(grammar.suffix) === true) {
-
-					let tmp1 = data.substr(0, data.length - grammar.suffix.length).trim();
-
-					version = grammar.op + ' ' + tmp1;
-					break;
-
-				}
-
-			}
-
-		}
-
-		data    = '2.0 to 2.1.4+';
-		version = null;
-
-		if (version === null) {
-
-			for (let s = 0; s < VERSIONS_SYNTAX.length; s++) {
-
-				let syntax = VERSIONS_SYNTAX[s];
-
-				if (data.includes(syntax.midfix) === true) {
-
-					let tmp = data.split(syntax.midfix);
-					console.warn(tmp);
-					if (tmp.length === 2) {
-
-						if (syntax.prefix.test(tmp[0]) === true) {
-							console.info(tmp[0], syntax.prefix, ' -> ', syntax.prefix.test(tmp[0]));
-						} else {
-							console.error(tmp[0], syntax.prefix, ' -> ', syntax.prefix.test(tmp[0]));
-						}
-
-						if (syntax.suffix.test(tmp[1]) === true) {
-							console.info(tmp[1], syntax.suffix, ' -> ', syntax.suffix.test(tmp[1]));
-						} else {
-							console.error(tmp[1], syntax.suffix, ' -> ', syntax.suffix.test(tmp[1]));
-						}
-
-
-						if (
-							syntax.prefix.test(tmp[0]) === true
-							&& syntax.suffix.test(tmp[1]) === true
-						) {
-
-							if (syntax.version === 'prefix') {
-								version = syntax.op + ' ' + tmp[0];
-								break;
-							} else if (syntax.version === 'suffix') {
-								version = syntax.op + ' ' + tmp[1];
-								break;
-							}
-
-						}
-
+					if (syntax === '*') {
+						matches.push(true);
+					} else if (syntax.toLowerCase() === chunks[s].toLowerCase()) {
+						matches.push(true);
+					} else {
+						matches.push(false);
 					}
 
 				}
 
+				if (matches.length === chunks.length && matches.includes(false) === false) {
+
+					if (isArray(grammar.value) === true) {
+
+						if (grammar.op === '=') {
+							version = grammar.value.map((v) => chunks[v]).join(' ');
+						} else {
+							version = grammar.op + ' ' + grammar.value.map((v) => chunks[v]).join(' ');
+						}
+
+					} else if (isNumber(grammar.value) === true) {
+
+						if (grammar.op === '=') {
+							version = chunks[grammar.value];
+						} else {
+							version = grammar.op + ' ' + chunks[grammar.value];
+						}
+
+					}
+
+					break;
+
+				}
+
 			}
 
 		}
 
-		console.log(data, version);
-
-
 		if (version === null) {
-
-			process.exit();
 
 			if (data.startsWith('<=') === true) {
 				version = '<= ' + data.substr(2).trim();
@@ -341,12 +380,17 @@ const toVersion = function(data) {
 				version = '>= ' + data.substr(2).trim();
 			} else if (data.startsWith('>') === true) {
 				version = '> ' + data.substr(1).trim();
-			} else if (/^([Vv]?)([0-9.]+)$/g.test(data) === true) {
+			} else if (/^([Vv]?)([0-9.]+) - ([Vv]?)([0-9.]+)$/.test(data) === true) {
+				version = '<= ' + data.split('-').pop().trim();
+			} else if (/^([Vv]?)([0-9.]+)-([Vv]?)([0-9.]+)$/.test(data) === true) {
+				version = '<= ' + data.split('-').pop().trim();
+			} else if (/^([Vv]?)([0-9.]+)$/.test(data) === true) {
 				version = data.trim();
-			} else if (/^([Vv]?)([0-9A-Za-z.]+)$/g.test(data) === true) {
+			} else if (/^([Vv]?)([0-9A-Za-z.]+)$/.test(data) === true) {
 				version = data.trim();
 			} else {
-				console.log(data);
+				// XXX: Well, can't parse everything
+				version = data.trim();
 			}
 
 		}
