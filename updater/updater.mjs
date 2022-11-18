@@ -19,10 +19,11 @@ const show_help = () => {
 	console.log('');
 	console.log('Available Actions:');
 	console.log('');
-	console.log('    Action     | Description                                    ');
-	console.log('    -----------|------------------------------------------------');
+	console.log('    Action     | Description                                               ');
+	console.log('    -----------|-----------------------------------------------------------');
 	console.log('    update     | Updates vulnerabilities from online Security Tracker data.');
-	console.log('    merge      | Merges vulnerabilities from local Security Tracker data.');
+	console.log('    merge      | Merges vulnerabilities from local Security Tracker data.  ');
+	console.log('    clean      | Cleans invalid vulnerabilities from local data.           ');
 	console.log('');
 	console.log('Available Flags:');
 	console.log('');
@@ -66,6 +67,21 @@ if (ENVIRONMENT.action === 'update') {
 		database: ENVIRONMENT.flags.database || null,
 		debug:    ENVIRONMENT.flags.debug    || false,
 		trackers: ENVIRONMENT.flags.trackers.length > 0 ? ENVIRONMENT.flags.trackers : Updater.TRACKERS
+	});
+
+	updater.once('disconnect', (result) => {
+		process.exit(result === true ? 0 : 1);
+	});
+
+	updater.connect();
+
+} else if (ENVIRONMENT.action === 'clean') {
+
+	let updater = new Updater({
+		action:   'clean',
+		database: ENVIRONMENT.flags.database || null,
+		debug:    ENVIRONMENT.flags.debug    || false,
+		trackers: []
 	});
 
 	updater.once('disconnect', (result) => {

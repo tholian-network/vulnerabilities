@@ -86,6 +86,37 @@ const isIdentifier = function(identifier) {
 
 };
 
+const isValid = function(vulnerability) {
+
+	if (
+		isObject(vulnerability) === true
+		&& isIdentifier(vulnerability['id']) === true
+		&& isString(vulnerability['description']) === true
+		&& isArray(vulnerability['hardware']) === true
+		&& isArray(vulnerability['software']) === true
+		&& isArray(vulnerability['references']) === true
+		&& (isString(vulnerability['severity']) === true || vulnerability['severity'] === null)
+		&& isString(vulnerability['state']) === true
+		&& isBoolean(vulnerability['_is_edited']) === true
+	) {
+
+		if (
+			vulnerability['description'].length > 0
+			|| vulnerability['hardware'].length > 0
+			|| vulnerability['software'].length > 0
+			|| vulnerability['references'].length > 0
+			|| vulnerability['state'] !== 'invalid'
+		) {
+			return true;
+		}
+
+	}
+
+
+	return false;
+
+};
+
 const isVulnerability = function(vulnerability) {
 
 	if (
@@ -156,7 +187,8 @@ const Vulnerabilities = function(settings) {
 			'published': [],
 			'rejected':  []
 		},
-		'modified':        [],
+		'removed':         [],
+		'updated':         [],
 		'vulnerabilities': {}
 	};
 
@@ -192,9 +224,9 @@ Vulnerabilities.prototype = {
 
 	disconnect: function() {
 
-		if (this.__state['modified'].length > 0) {
+		if (this.__state['updated'].length > 0) {
 
-			this.__state['modified'].forEach((identifier) => {
+			this.__state['updated'].forEach((identifier) => {
 
 				let vulnerability = this.__state['vulnerabilities'][identifier];
 				if (isString(vulnerability['id']) === true) {
@@ -203,7 +235,7 @@ Vulnerabilities.prototype = {
 
 			});
 
-			console.info('Vulnerabilities: Updated ' + this.__state['modified'].length + ' Vulnerabilities.');
+			console.info('Vulnerabilities: Updated ' + this.__state['updated'].length + ' Vulnerabilities.');
 
 
 			this.__state['editor']['disputed']  = [];
@@ -257,6 +289,20 @@ Vulnerabilities.prototype = {
 
 		}
 
+		if (this.__state['removed'].length > 0) {
+
+			this.__state['removed'].forEach((identifier) => {
+				this.filesystem.remove('/' + identifier + '.json');
+			});
+
+			console.info('Vulnerabilities: Removed ' + this.__state['removed'].length + ' Vulnerabilities.');
+
+		} else {
+
+			console.info('Vulnerabilities: Removed 0 Vulnerabilities.');
+
+		}
+
 
 		// TODO: Write everything to filesystem
 		// Validate each entry
@@ -307,6 +353,24 @@ Vulnerabilities.prototype = {
 
 	},
 
+	clean: function() {
+
+		for (let identifier in this.__state['vulnerabilities']) {
+
+			let vulnerability = this.__state['vulnerabilities'][identifier];
+
+			if (isValid(vulnerability) === false) {
+
+				if (this.__state['removed'].includes(identifier) === false) {
+					this.__state['removed'].push(identifier);
+				}
+
+			}
+
+		}
+
+	},
+
 	update: function(vulnerability) {
 
 		vulnerability = isVulnerability(vulnerability) ? vulnerability : null;
@@ -318,8 +382,8 @@ Vulnerabilities.prototype = {
 
 			this.__state['vulnerabilities'][identifier] = vulnerability;
 
-			if (this.__state['modified'].includes(identifier) === false) {
-				this.__state['modified'].push(identifier);
+			if (this.__state['updated'].includes(identifier) === false) {
+				this.__state['updated'].push(identifier);
 			}
 
 			return true;

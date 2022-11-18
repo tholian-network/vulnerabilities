@@ -14,10 +14,12 @@ const action = (() => {
 
 	let value = Array.from(process.argv).slice(2).filter((v) => v.startsWith('--') === false).shift() || '';
 
-	if (/^([update]{6})$/g.test(value) === true) {
-		return 'update';
-	} else if (/^([merge]{5})$/g.test(value) === true) {
+	if (/^([clean]{5})$/.test(value) === true) {
+		return 'clean';
+	} else if (/^([merge]{5})$/.test(value) === true) {
 		return 'merge';
+	} else if (/^([update]{6})$/.test(value) === true) {
+		return 'update';
 	}
 
 	return 'help';

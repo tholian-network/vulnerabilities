@@ -103,13 +103,13 @@ const Updater = function(settings) {
 		console.info('Updater: Connect complete.');
 
 		let action = this._settings.action || null;
-		if (action === 'update') {
+		if (action === 'clean') {
 
-			this.once('update', () => {
+			this.once('clean', () => {
 				this.disconnect();
 			});
 
-			this.update();
+			this.clean();
 
 		} else if (action === 'merge') {
 
@@ -119,8 +119,20 @@ const Updater = function(settings) {
 
 			this.merge();
 
+		} else if (action === 'update') {
+
+			this.once('update', () => {
+				this.disconnect();
+			});
+
+			this.update();
+
 		}
 
+	});
+
+	this.on('clean', () => {
+		console.info('Updater: Clean complete.');
 	});
 
 	this.on('merge', () => {
@@ -134,9 +146,11 @@ const Updater = function(settings) {
 	this.on('disconnect', () => {
 
 		let action = this._settings.action || null;
-		if (action === 'update') {
+		if (action === 'clean') {
 			this.vulnerabilities.disconnect();
 		} else if (action === 'merge') {
+			this.vulnerabilities.disconnect();
+		} else if (action === 'update') {
 			this.vulnerabilities.disconnect();
 		}
 
@@ -186,26 +200,35 @@ Updater.prototype = Object.assign({}, Emitter.prototype, {
 			this.vulnerabilities.connect();
 
 
-			let connecting = this.trackers.length;
+			if (this.trackers.length > 0) {
 
-			this.trackers.forEach((tracker) => {
+				let connecting = this.trackers.length;
 
-				tracker.once('connect', () => {
+				this.trackers.forEach((tracker) => {
 
-					connecting--;
+					tracker.once('connect', () => {
 
-					if (connecting === 0) {
+						connecting--;
 
-						this.__state.connected = true;
-						this.emit('connect');
+						if (connecting === 0) {
 
-					}
+							this.__state.connected = true;
+							this.emit('connect');
+
+						}
+
+					});
+
+					tracker.connect();
 
 				});
 
-				tracker.connect();
+			} else {
 
-			});
+				this.__state.connected = true;
+				this.emit('connect');
+
+			}
 
 
 			return true;
@@ -254,6 +277,24 @@ Updater.prototype = Object.assign({}, Emitter.prototype, {
 			if (this.__state.connected === true) {
 				return true;
 			}
+
+		}
+
+
+		return false;
+
+	},
+
+	clean: function() {
+
+		if (this.__state.connected === true) {
+
+			console.info('Updater: Clean');
+
+			this.vulnerabilities.clean();
+			this.emit('clean');
+
+			return true;
 
 		}
 
