@@ -79,7 +79,20 @@ Alpine.prototype = Object.assign({}, Emitter.prototype, {
 
 				this.webscraper.request('https://security.alpinelinux.org/branch/' + branch, (data) => {
 
-					console.log(data);
+					this.filesystem.write('/' + branch + '.json', data);
+
+					if (
+						isObject(data) === true
+						&& isArray(data.items) === true
+					) {
+
+						data.items.forEach((vulnerability) => {
+
+							console.log(vulnerability);
+
+						});
+
+					}
 
 					// TODO: Implement me
 					// process.exit();
