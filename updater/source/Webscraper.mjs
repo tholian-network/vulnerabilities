@@ -1,6 +1,7 @@
 
 import { Buffer } from 'buffer';
 import https      from 'https';
+import process    from 'process';
 
 import { console, isFunction, isObject, isString } from '../extern/base.mjs';
 
@@ -31,14 +32,21 @@ const request_interval = function() {
 
 			console.log('Webscraper: Requesting "' + todo['url'] + '" ...');
 
-			let request = https.request(todo['url'], {
+			let options = {
 				headers: {
 					'Accept':          'application/json, text/plain;q=0.9, */*;q=0.8',
 					'Accept-Encoding': 'identity',
 					'Accept-Language': 'en-US,en;q=0.9',
 					'User-Agent':      'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36'
 				}
-			}, (response) => {
+			};
+
+			if (this._settings.insecure === true) {
+				process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
+				options.rejectUnauthorized                  = false;
+			}
+
+			let request = https.request(todo['url'], options, (response) => {
 
 				let chunks = [];
 
@@ -47,6 +55,8 @@ const request_interval = function() {
 				});
 
 				response.on('error', () => {
+
+					// TODO: --debug mode for intranet usage (with intercepted TLS/SSL)
 
 					let index1 = active.indexOf(todo);
 					if (index1 !== -1) {
@@ -193,8 +203,13 @@ const Webscraper = function(settings) {
 
 
 	this._settings = Object.freeze(Object.assign({}, {
-		limit: 10 // requests per second
+		insecure: false,
+		limit:    10 // requests per second
 	}, settings));
+
+	if (this._settings.insecure === true) {
+		console.warn('Webscraper: Insecure Flag is set, ignoring invalid TLS certificates!');
+	}
 
 	this.__state = {
 		active:   [],

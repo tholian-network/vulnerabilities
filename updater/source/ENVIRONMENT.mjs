@@ -31,6 +31,7 @@ const flags = (() => {
 	let flags = {
 		database: null,
 		debug:    false,
+		insecure: false,
 		trackers: []
 	};
 

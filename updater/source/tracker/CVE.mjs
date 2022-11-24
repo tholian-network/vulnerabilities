@@ -4,6 +4,7 @@ import child_process from 'child_process';
 import { console, Emitter, isArray, isNumber, isObject, isString } from '../../extern/base.mjs';
 import { ENVIRONMENT                                             } from '../../source/ENVIRONMENT.mjs';
 import { Filesystem                                              } from '../../source/Filesystem.mjs';
+import { isUpdater                                               } from '../../source/Updater.mjs';
 import { isVulnerabilities, Vulnerabilities                      } from '../../source/Vulnerabilities.mjs';
 
 
@@ -872,13 +873,26 @@ const merge = function(vulnerability, data) {
 
 const update = function(callback) {
 
+	// TODO: this.updater._settings.insecure should lead to git -c http.sslVerify = false
+	//
+
 	if (this.filesystem.exists('/.git') === true) {
 
-		let handle = child_process.spawn('git', [
+		let args = [
 			'pull',
 			'origin',
 			'master'
-		], {
+		];
+
+		if (this.updater !== null) {
+
+			if (this.updater._settings.insecure === true) {
+				args.splice(0, 0, '-c', 'http.sslVerify=false');
+			}
+
+		}
+
+		let handle = child_process.spawn('git', args, {
 			cwd: this.filesystem.root
 		});
 
@@ -896,14 +910,24 @@ const update = function(callback) {
 
 	} else {
 
-		let handle = child_process.spawn('git', [
+		let args = [
 			'clone',
 			'--depth=1',
 			'--single-branch',
 			'--branch=master',
 			'https://github.com/CVEProject/cvelist',
 			this.filesystem.root
-		], {
+		];
+
+		if (this.updater !== null) {
+
+			if (this.updater._settings.insecure === true) {
+				args.splice(0, 0, '-c', 'http.sslVerify=false');
+			}
+
+		}
+
+		let handle = child_process.spawn('git', args, {
 			cwd: this.filesystem.root
 		});
 
@@ -925,9 +949,10 @@ const update = function(callback) {
 
 
 
-const CVE = function(vulnerabilities) {
+const CVE = function(vulnerabilities, updater) {
 
 	this.vulnerabilities = isVulnerabilities(vulnerabilities) ? vulnerabilities : new Vulnerabilities();
+	this.updater         = isUpdater(updater)                 ? updater         : null;
 
 	this.filesystem = new Filesystem({
 		root: ENVIRONMENT.root + '/trackers/cve'

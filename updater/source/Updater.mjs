@@ -39,6 +39,7 @@ const Updater = function(settings) {
 		action:   null,
 		database: ENVIRONMENT.root + '/vulnerabilities',
 		debug:    false,
+		insecure: false,
 		trackers: TRACKERS
 	}, settings);
 
@@ -87,7 +88,7 @@ const Updater = function(settings) {
 		TRACKERS.forEach((name, c) => {
 
 			if (this._settings.trackers.includes(name) === true) {
-				this.trackers.push(new CONSTRUCTORS[c](this.vulnerabilities));
+				this.trackers.push(new CONSTRUCTORS[c](this.vulnerabilities, this));
 			}
 
 		});

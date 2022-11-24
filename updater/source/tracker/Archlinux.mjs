@@ -2,6 +2,7 @@
 import { console, Emitter, isArray, isObject, isString        } from '../../extern/base.mjs';
 import { ENVIRONMENT                                          } from '../../source/ENVIRONMENT.mjs';
 import { Filesystem                                           } from '../../source/Filesystem.mjs';
+import { isUpdater                                            } from '../../source/Updater.mjs';
 import { isVulnerabilities, Vulnerabilities, containsSoftware } from '../../source/Vulnerabilities.mjs';
 import { Webscraper                                           } from '../../source/Webscraper.mjs';
 
@@ -245,16 +246,18 @@ const merge = function(vulnerability, data) {
 
 
 
-const Archlinux = function(vulnerabilities) {
+const Archlinux = function(vulnerabilities, updater) {
 
 	this.vulnerabilities = isVulnerabilities(vulnerabilities) ? vulnerabilities : new Vulnerabilities();
+	this.updater         = isUpdater(updater)                 ? updater         : null;
 
 	this.filesystem = new Filesystem({
 		root: ENVIRONMENT.root + '/trackers/archlinux'
 	});
 
 	this.webscraper = new Webscraper({
-		limit: 5
+		limit:    5,
+		insecure: this.updater !== null ? this.updater._settings.insecure : false
 	});
 
 

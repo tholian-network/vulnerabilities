@@ -66,6 +66,9 @@ Alpine.prototype = Object.assign({}, Emitter.prototype, {
 	},
 
 	merge: function() {
+
+		// TODO: Merge with local filesystem cache
+
 	},
 
 	update: function() {

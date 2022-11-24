@@ -17,6 +17,10 @@ const show_help = () => {
 	console.log('');
 	console.log('Usage: updater [Action] [--Flag=Value...]');
 	console.log('');
+	console.log('Usage Notes:');
+	console.log('');
+	console.log('    If you need to use --insecure, fire your IT department instead of using this flag in production.');
+	console.log('');
 	console.log('Available Actions:');
 	console.log('');
 	console.log('    Action     | Description                                               ');
@@ -32,6 +36,8 @@ const show_help = () => {
 	console.log('    --debug    | false   | true, false      | Enable/Disable debugging messages. Defaulted with false.                      ');
 	console.log('    --database | null    | "(Folder Path)"  | Overrides the Vulnerabilities database path. Defaulted with null.             ');
 	console.log('    --trackers | ()      | "(Tracker Name)" | If set, uses the comma-separated list of Security Trackers. Defaulted with ().');
+	console.log('    -----------|---------|------------------|-------------------------------------------------------------------------------');
+	console.log('    --insecure | false   | true, false      | If set, assumes an SSL-intercepted network and accepts any Snakeoil CA certs. ');
 	console.log('');
 	console.log('Examples:');
 	console.log('');
@@ -51,6 +57,7 @@ if (ENVIRONMENT.action === 'update') {
 		action:   'update',
 		database: ENVIRONMENT.flags.database || null,
 		debug:    ENVIRONMENT.flags.debug    || false,
+		insecure: ENVIRONMENT.flags.insecure || false,
 		trackers: ENVIRONMENT.flags.trackers.length > 0 ? ENVIRONMENT.flags.trackers : Updater.TRACKERS
 	});
 

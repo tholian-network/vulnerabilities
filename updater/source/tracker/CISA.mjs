@@ -2,6 +2,7 @@
 import { console, Emitter, isArray, isNumber, isObject, isString } from '../../extern/base.mjs';
 import { ENVIRONMENT                                             } from '../../source/ENVIRONMENT.mjs';
 import { Filesystem                                              } from '../../source/Filesystem.mjs';
+import { isUpdater                                               } from '../../source/Updater.mjs';
 import { isVulnerabilities, Vulnerabilities                      } from '../../source/Vulnerabilities.mjs';
 import { Webscraper                                              } from '../../source/Webscraper.mjs';
 
@@ -32,16 +33,18 @@ const merge = function(vulnerability, data) {
 
 
 
-const CISA = function(vulnerabilities) {
+const CISA = function(vulnerabilities, updater) {
 
 	this.vulnerabilities = isVulnerabilities(vulnerabilities) ? vulnerabilities : new Vulnerabilities();
+	this.updater         = isUpdater(updater)                 ? updater         : null;
 
 	this.filesystem = new Filesystem({
 		root: ENVIRONMENT.root + '/trackers/cisa'
 	});
 
 	this.webscraper = new Webscraper({
-		limit: 5
+		limit:    5,
+		insecure: this.updater !== null ? this.updater._settings.insecure : false
 	});
 
 
@@ -71,6 +74,18 @@ CISA.prototype = Object.assign({}, Emitter.prototype, {
 			});
 
 		}
+
+		this.filesystem.index('/', 'CVE-*.json').forEach((path) => {
+
+			let entry = this.filesystem.read(path);
+			if (
+				isObject(entry) === true
+				&& isString(entry['cveID']) === true
+			) {
+				this.__state['vulnerabilities'][entry['cveID']] = entry;
+			}
+
+		});
 
 		this.emit('connect');
 
@@ -133,7 +148,10 @@ CISA.prototype = Object.assign({}, Emitter.prototype, {
 				data['vulnerabilities'].forEach((entry) => {
 
 					if (isObject(entry) === true) {
+
+						this.filesystem.write('/' + entry['cveID'] + '.json', entry);
 						this.__state['vulnerabilities'][entry['cveID']] = entry;
+
 					}
 
 				});
