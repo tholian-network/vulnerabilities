@@ -2,6 +2,7 @@
 import { Buffer } from 'buffer';
 import https      from 'https';
 import process    from 'process';
+import zlib       from 'zlib';
 
 import { console, isFunction, isObject, isString } from '../extern/base.mjs';
 
@@ -94,13 +95,23 @@ const request_interval = function() {
 
 						if (content_type === 'application/json') {
 							type = 'json';
+						} else if (content_type.startsWith('application/json;') === true) {
+							type = 'json';
 						} else if (content_type === 'application/ld+json') {
-							type === 'json';
+							type = 'json';
+						} else if (content_type.startsWith('application/ld+json;') === true) {
+							type = 'json';
 						} else if (content_type === 'application/xhtml+xml') {
+							type = 'xml';
+						} else if (content_type.startsWith('application/xhtml+xml;') === true) {
 							type = 'xml';
 						} else if (content_type === 'application/xml') {
 							type = 'xml';
+						} else if (content_type.startsWith('application/xml;') === true) {
+							type = 'xml';
 						} else if (content_type === 'text/xml') {
+							type = 'xml';
+						} else if (content_type.startsWith('text/xml;') === true) {
 							type = 'xml';
 						}
 
@@ -110,6 +121,17 @@ const request_interval = function() {
 
 						let buffer = Buffer.concat(chunks);
 						let data   = null;
+
+						let content_encoding = response.headers['content-encoding'] || null;
+						if (content_encoding === 'gzip') {
+
+							try {
+								buffer = zlib.gunzipSync(buffer);
+							} catch (err) {
+								// Do Nothing
+							}
+
+						}
 
 						try {
 							data = JSON.parse(buffer.toString('utf8'));
