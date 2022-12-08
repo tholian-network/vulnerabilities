@@ -1,0 +1,28 @@
+{
+	"name": "AVG-2752",
+	"packages": [
+		"linux-hardened"
+	],
+	"status": "Fixed",
+	"severity": "High",
+	"type": "multiple issues",
+	"affected": "5.17.12.hardened2-2",
+	"fixed": "5.17.13.hardened1-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2022-1975",
+		"CVE-2022-1974",
+		"CVE-2022-1972",
+		"CVE-2022-1966",
+		"CVE-2022-1734"
+	],
+	"advisories": [],
+	"references": [
+		"https://github.com/torvalds/linux/commit/d8db0465bcc4d4b54ecfb67b820ed26eb1440da7",
+		"https://github.com/torvalds/linux/commit/88f3e3d243d701586239c5b69356ec2b1fd05f1",
+		"https://github.com/torvalds/linux/commit/63a545103b77091f2309b44a8975cdf255bb99b2",
+		"https://github.com/torvalds/linux/commit/8b58d6e565d83443c51b3fc076bd4472674aca0c",
+		"https://github.com/torvalds/linux/commit/f4bfbac45121c8638db5eacb1ebbb61ee956c668"
+	],
+	"notes": "TODO: check wether CVE-2022-1462, CVE-2022-1786 and CVE-2022-1852 belong here"
+}

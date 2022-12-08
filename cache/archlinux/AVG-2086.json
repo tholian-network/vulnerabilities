@@ -1,0 +1,20 @@
+{
+	"name": "AVG-2086",
+	"packages": [
+		"libesmtp"
+	],
+	"status": "Not affected",
+	"severity": "High",
+	"type": "arbitrary code execution",
+	"affected": "1.0.6-7",
+	"fixed": "1.1.0-1",
+	"ticket": "71292",
+	"issues": [
+		"CVE-2019-19977"
+	],
+	"advisories": [],
+	"references": [
+		"https://github.com/libesmtp/libESMTP/blob/3d36c4125a7fe5bd770929761dfb9269defb1f5b/configure.ac#L390"
+	],
+	"notes": "The libesmtp 1.0.6-7 Arch Linux package was built without the --enable-ntlm configuration option, so the vulnerable NTLM authentication support was not enabled."
+}

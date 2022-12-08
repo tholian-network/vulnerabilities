@@ -1,0 +1,21 @@
+{
+	"name": "AVG-1324",
+	"packages": [
+		"glibc",
+		"lib32-glibc"
+	],
+	"status": "Not affected",
+	"severity": "Medium",
+	"type": "arbitrary code execution",
+	"affected": "2.32-5",
+	"fixed": null,
+	"ticket": null,
+	"issues": [
+		"CVE-2020-29573"
+	],
+	"advisories": [],
+	"references": [
+		"https://sourceware.org/bugzilla/show_bug.cgi?id=26649"
+	],
+	"notes": "With GCC 10 and glibc 2.32, this behavior is not visible because __builtin_isnan is used, which avoids calling __mpn_extract_long_double in this case."
+}

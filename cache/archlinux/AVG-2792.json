@@ -1,0 +1,21 @@
+{
+	"name": "AVG-2792",
+	"packages": [
+		"webkit2gtk-5.0"
+	],
+	"status": "Fixed",
+	"severity": "Critical",
+	"type": "multiple issues",
+	"affected": "2.36.4-2",
+	"fixed": "2.36.5-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2022-32816",
+		"CVE-2022-32792"
+	],
+	"advisories": [],
+	"references": [
+		"https://webkitgtk.org/security/WSA-2022-0007.html"
+	],
+	"notes": "Our WebKit2GTK and WPE WebKit versions are not affected by the 'CVE-2022-2294' vulnerability because our packages are not built using the 'USE_LIBWEBRTC' CMake option."
+}

@@ -1,0 +1,22 @@
+{
+	"name": "AVG-528",
+	"packages": [
+		"libcurl-compat"
+	],
+	"status": "Not affected",
+	"severity": "High",
+	"type": "arbitrary code execution",
+	"affected": "7.56.1-1",
+	"fixed": "7.57.0-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2017-8818",
+		"CVE-2017-8816"
+	],
+	"advisories": [],
+	"references": [
+		"https://curl.haxx.se/docs/adv_2017-11e7.html",
+		"https://curl.haxx.se/docs/adv_2017-af0a.html"
+	],
+	"notes": "only affects 32-bit variants"
+}

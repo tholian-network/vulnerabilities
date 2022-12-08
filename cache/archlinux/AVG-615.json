@@ -1,0 +1,21 @@
+{
+	"name": "AVG-615",
+	"packages": [
+		"systemd"
+	],
+	"status": "Fixed",
+	"severity": "Medium",
+	"type": "multiple issues",
+	"affected": "239.2-1",
+	"fixed": "240.0-3",
+	"ticket": null,
+	"issues": [
+		"CVE-2018-16866",
+		"CVE-2018-6954"
+	],
+	"advisories": [
+		"ASA-201901-4"
+	],
+	"references": [],
+	"notes": "Looks like the real fix for this issue has been merged and will make it to 240 (https://github.com/systemd/systemd/pull/8822)."
+}

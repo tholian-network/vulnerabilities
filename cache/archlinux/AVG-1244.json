@@ -1,0 +1,21 @@
+{
+	"name": "AVG-1244",
+	"packages": [
+		"linux"
+	],
+	"status": "Fixed",
+	"severity": "High",
+	"type": "arbitrary code execution",
+	"affected": "5.9.7.arch1-1",
+	"fixed": "5.10.2.arch1-1",
+	"ticket": "68257",
+	"issues": [
+		"CVE-2020-16119"
+	],
+	"advisories": [],
+	"references": [
+		"https://www.openwall.com/lists/oss-security/2020/10/13/7",
+		"https://lore.kernel.org/netdev/20201013171849.236025-1-kleber.souza@canonical.com/T/"
+	],
+	"notes": "DCCP support disabled"
+}

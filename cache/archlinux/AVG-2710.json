@@ -1,0 +1,27 @@
+{
+	"name": "AVG-2710",
+	"packages": [
+		"thunderbird"
+	],
+	"status": "Fixed",
+	"severity": "High",
+	"type": "multiple issues",
+	"affected": "91.8.1-1",
+	"fixed": "91.9-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2022-29917",
+		"CVE-2022-29916",
+		"CVE-2022-29914",
+		"CVE-2022-29913",
+		"CVE-2022-29912",
+		"CVE-2022-29911",
+		"CVE-2022-29909",
+		"CVE-2022-1520"
+	],
+	"advisories": [],
+	"references": [
+		"https://www.mozilla.org/en-US/security/advisories/mfsa2022-18/"
+	],
+	"notes": "\"In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.\""
+}

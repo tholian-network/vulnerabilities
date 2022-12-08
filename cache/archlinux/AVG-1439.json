@@ -1,0 +1,30 @@
+{
+	"name": "AVG-1439",
+	"packages": [
+		"python2-pillow"
+	],
+	"status": "Unknown",
+	"severity": "Medium",
+	"type": "multiple issues",
+	"affected": "6.2.1-3",
+	"fixed": null,
+	"ticket": null,
+	"issues": [
+		"CVE-2021-27923",
+		"CVE-2021-27922",
+		"CVE-2021-27921",
+		"CVE-2021-25293",
+		"CVE-2021-25292",
+		"CVE-2021-25291",
+		"CVE-2021-25290",
+		"CVE-2021-25289",
+		"CVE-2020-35655",
+		"CVE-2020-35654",
+		"CVE-2020-35653"
+	],
+	"advisories": [],
+	"references": [
+		"https://pillow.readthedocs.io/en/stable/releasenotes/8.1.0.html#security"
+	],
+	"notes": "python-pillow 7.0.0 dropped support for the end of life Python 2.7, so these issues are unlikely to be fixed in this legacy version of python-pillow, which is retained only for compatibility reasons."
+}

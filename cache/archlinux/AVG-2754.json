@@ -1,0 +1,30 @@
+{
+	"name": "AVG-2754",
+	"packages": [
+		"linux-lts"
+	],
+	"status": "Fixed",
+	"severity": "High",
+	"type": "multiple issues",
+	"affected": "5.15.44-1",
+	"fixed": "5.15.45-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2022-2318",
+		"CVE-2022-1975",
+		"CVE-2022-1974",
+		"CVE-2022-1972",
+		"CVE-2022-1966",
+		"CVE-2022-1734"
+	],
+	"advisories": [],
+	"references": [
+		"https://github.com/torvalds/linux/commit/f692bcffd1f2ce5488d24fbcb8eab5f351abf79d",
+		"https://github.com/torvalds/linux/commit/89ef50fe03a55feccf5681c237673a2f98161161",
+		"https://github.com/torvalds/linux/commit/a2168fb3128a576d0175443403c15dcf8bf128f6",
+		"https://github.com/torvalds/linux/commit/7bd81a05d48942ef2c48630e5e7963b187e95727",
+		"https://github.com/torvalds/linux/commit/b8f2b836e7d0a553b886654e8b3925a85862d2eb",
+		"https://github.com/torvalds/linux/commit/9cc02ede696272c5271a401e4f27c262359bc2f6"
+	],
+	"notes": "TODO: check wether CVE-2022-1462, CVE-2022-1786 and CVE-2022-1852 belong here"
+}

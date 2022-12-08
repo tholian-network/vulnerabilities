@@ -1,0 +1,21 @@
+{
+	"name": "AVG-827",
+	"packages": [
+		"lib32-cairo"
+	],
+	"status": "Fixed",
+	"severity": "Critical",
+	"type": "arbitrary code execution",
+	"affected": "1.16.0-1",
+	"fixed": "1.16.0-2",
+	"ticket": null,
+	"issues": [
+		"CVE-2018-19876"
+	],
+	"advisories": [],
+	"references": [
+		"https://seclists.org/oss-sec/2018/q4/205",
+		"https://gitlab.freedesktop.org/cairo/cairo/merge_requests/5.patch"
+	],
+	"notes": "Fixed on 1.16.0-2 by backporting the patch"
+}

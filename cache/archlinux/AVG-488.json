@@ -1,0 +1,20 @@
+{
+	"name": "AVG-488",
+	"packages": [
+		"postgresql-old-upgrade"
+	],
+	"status": "Not affected",
+	"severity": "High",
+	"type": "privilege escalation",
+	"affected": "9.6.5-1",
+	"fixed": "9.6.6-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2017-12172"
+	],
+	"advisories": [],
+	"references": [
+		"https://www.postgresql.org/about/news/1801/"
+	],
+	"notes": "Arch Linux is not using the vulnerable upstream startup script or any other setup mechanism that is suffering from the mentioned issue."
+}

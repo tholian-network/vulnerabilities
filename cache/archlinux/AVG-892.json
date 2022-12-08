@@ -1,0 +1,20 @@
+{
+	"name": "AVG-892",
+	"packages": [
+		"docker"
+	],
+	"status": "Not affected",
+	"severity": "High",
+	"type": "privilege escalation",
+	"affected": "1:18.09.1-2",
+	"fixed": "1:18.09.2-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2019-5736"
+	],
+	"advisories": [],
+	"references": [
+		"https://git.archlinux.org/svntogit/community.git/commit/trunk?h=packages/docker&id=d5f0c91102be0296e2142e473804e915a3a885b3"
+	],
+	"notes": "Not affected directly as runc is devendored since 1:18.09.0-2"
+}

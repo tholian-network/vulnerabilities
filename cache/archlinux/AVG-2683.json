@@ -1,0 +1,21 @@
+{
+	"name": "AVG-2683",
+	"packages": [
+		"linux-lts"
+	],
+	"status": "Vulnerable",
+	"severity": "Medium",
+	"type": "information disclosure",
+	"affected": "5.15.34-1",
+	"fixed": null,
+	"ticket": null,
+	"issues": [
+		"CVE-2022-0002",
+		"CVE-2022-0001"
+	],
+	"advisories": [],
+	"references": [
+		"https://github.com/archlinux/svntogit-packages/blame/d96bdc5c11620530162da604d86290ae8b6ea99a/trunk/config#L119"
+	],
+	"notes": "haven't yet checked what other \"managed runtimes in privileged modes\" the SA might be refering to"
+}

@@ -1,0 +1,21 @@
+{
+	"name": "AVG-659",
+	"packages": [
+		"firefox"
+	],
+	"status": "Not affected",
+	"severity": "Critical",
+	"type": "arbitrary code execution",
+	"affected": "59.0-2",
+	"fixed": "59.0.1-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2018-5147"
+	],
+	"advisories": [],
+	"references": [
+		"https://www.mozilla.org/en-US/security/advisories/mfsa2018-08/#CVE-2018-5146",
+		"https://bugzilla.mozilla.org/show_bug.cgi?id=1446062"
+	],
+	"notes": "The libtremor library has the same flaw as CVE-2018-5146. This library is only used by Firefox in place of libvorbis on Android and ARM platforms."
+}

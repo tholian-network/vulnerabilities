@@ -1,0 +1,18 @@
+{
+	"name": "AVG-2581",
+	"packages": [
+		"matrix-synapse"
+	],
+	"status": "Fixed",
+	"severity": "Medium",
+	"type": "directory traversal",
+	"affected": "1.47.0-1",
+	"fixed": "1.47.1-1",
+	"ticket": null,
+	"issues": [
+		"CVE-2021-41281"
+	],
+	"advisories": [],
+	"references": [],
+	"notes": "A hardened systemd config is deployed in the Arch Linux package by default, which considerably limits the paths that Synapse has write access to."
+}

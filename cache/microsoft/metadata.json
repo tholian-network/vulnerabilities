@@ -1,0 +1,6689 @@
+{
+	"@odata.context": "https://api.msrc.microsoft.com/sug/v2.0/en-US/$metadata#metadata",
+	"@odata.count": 1,
+	"value": [
+		{
+			"id": "15a6d099-0000-0000-292b-8b2e00000000",
+			"metadata": {
+				"schemaName": "affectedProduct",
+				"displayName": "Affected Product",
+				"properties": [
+					{
+						"schemaName": "impact",
+						"displayName": "Impact",
+						"propertyValues": [
+							{
+								"displayName": "Remote Code Execution",
+								"value": "100000005",
+								"order": 10
+							},
+							{
+								"displayName": "Elevation of Privilege",
+								"value": "100000002",
+								"order": 20
+							},
+							{
+								"displayName": "Denial of Service",
+								"value": "100000001",
+								"order": 30
+							},
+							{
+								"displayName": "Security Feature Bypass",
+								"value": "100000007",
+								"order": 40
+							},
+							{
+								"displayName": "Information Disclosure",
+								"value": "100000003",
+								"order": 50
+							},
+							{
+								"displayName": "Repudiation",
+								"value": "100000006",
+								"order": 60
+							},
+							{
+								"displayName": "Tampering",
+								"value": "100000009",
+								"order": 70
+							},
+							{
+								"displayName": "Spoofing",
+								"value": "100000008",
+								"order": 80
+							},
+							{
+								"displayName": "Defense in Depth",
+								"value": "100000000",
+								"order": 90
+							},
+							{
+								"displayName": "Not a Vulnerability",
+								"value": "100000004",
+								"order": 100
+							},
+							{
+								"displayName": "None",
+								"value": "0",
+								"order": 110
+							}
+						]
+					},
+					{
+						"schemaName": "severity",
+						"displayName": "Severity",
+						"propertyValues": [
+							{
+								"displayName": "Critical",
+								"value": "100000000",
+								"order": 10
+							},
+							{
+								"displayName": "Important",
+								"value": "100000001",
+								"order": 20
+							},
+							{
+								"displayName": "Moderate",
+								"value": "100000002",
+								"order": 30
+							},
+							{
+								"displayName": "Low",
+								"value": "100000003",
+								"order": 40
+							},
+							{
+								"displayName": "None",
+								"value": "100000004",
+								"order": 50
+							}
+						]
+					},
+					{
+						"schemaName": "productFamily",
+						"displayName": "Product Family",
+						"propertyValues": [
+							{
+								"displayName": "Browser",
+								"value": "100000001",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office",
+								"value": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows",
+								"value": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "ESU",
+								"value": "100000013",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Developer Tools",
+								"value": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Device",
+								"value": "100000011",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Apps",
+								"value": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Other",
+								"value": "100000000",
+								"isSelectable": true
+							},
+							{
+								"displayName": "SQL Server",
+								"value": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics",
+								"value": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Open Source Software",
+								"value": "100000003",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Exchange Server",
+								"value": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "System Center",
+								"value": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure",
+								"value": "100000005",
+								"isSelectable": true
+							}
+						]
+					},
+					{
+						"schemaName": "productId",
+						"displayName": "Product",
+						"propertyValues": [
+							{
+								"displayName": "ChakraCore",
+								"value": "11447",
+								"order": 0,
+								"groupName": "100000001",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Word 2016 (32-bit edition)",
+								"value": "10746",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Word 2016 (64-bit edition)",
+								"value": "10747",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 2016 Click-to-Run (C2R) for 32-bit editions",
+								"value": "10905",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 2016 Click-to-Run (C2R) for 64-bit editions",
+								"value": "10906",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 2010 Service Pack 2 (32-bit editions)",
+								"value": "10521",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 2010 Service Pack 2 (64-bit editions)",
+								"value": "10522",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Skype for Business 2016 (32-bit)",
+								"value": "10770",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Skype for Business 2016 (64-bit)",
+								"value": "10771",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Lync 2013 Service Pack 1 (32-bit)",
+								"value": "10628",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Lync 2013 Service Pack 1 (64-bit)",
+								"value": "10630",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Access 2013 Service Pack 1 (32-bit editions)",
+								"value": "10796",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Access 2013 Service Pack 1 (64-bit editions)",
+								"value": "10797",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Word 2010 Service Pack 2 (32-bit editions)",
+								"value": "10513",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Word 2010 Service Pack 2 (64-bit editions)",
+								"value": "10514",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Word 2013 RT Service Pack 1",
+								"value": "10606",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Word 2013 Service Pack 1 (32-bit editions)",
+								"value": "10604",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Word 2013 Service Pack 1 (64-bit editions)",
+								"value": "10605",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Access 2016 (32-bit edition)",
+								"value": "10751",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Access 2016 (64-bit edition)",
+								"value": "10752",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1703 for 32-bit Systems",
+								"value": "10951",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1703 for x64-based Systems",
+								"value": "10952",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1803 for 32-bit Systems",
+								"value": "11497",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1803 for x64-based Systems",
+								"value": "11498",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server, version 1803  (Server Core Installation)",
+								"value": "11499",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1709 for 32-bit Systems",
+								"value": "11453",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1709 for x64-based Systems",
+								"value": "11454",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 for 32-bit Systems",
+								"value": "10729",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 for x64-based Systems",
+								"value": "10735",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1607 for 32-bit Systems",
+								"value": "10852",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1607 for x64-based Systems",
+								"value": "10853",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2016",
+								"value": "10816",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2016  (Server Core installation)",
+								"value": "10855",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 8.1 for 32-bit systems",
+								"value": "10481",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 8.1 for x64-based systems",
+								"value": "10482",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows RT 8.1",
+								"value": "10484",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2012",
+								"value": "10378",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2012 (Server Core installation)",
+								"value": "10379",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2012 R2",
+								"value": "10483",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2012 R2 (Server Core installation)",
+								"value": "10543",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 7 for 32-bit Systems Service Pack 1",
+								"value": "10047",
+								"order": 0,
+								"groupName": "100000013",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 7 for x64-based Systems Service Pack 1",
+								"value": "10048",
+								"order": 0,
+								"groupName": "100000013",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2008 for 32-bit Systems Service Pack 2",
+								"value": "9312",
+								"order": 0,
+								"groupName": "100000013",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation)",
+								"value": "10287",
+								"order": 0,
+								"groupName": "100000013",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2008 for Itanium-Based Systems Service Pack 2",
+								"value": "9311",
+								"order": 0,
+								"groupName": "100000013",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2008 for x64-based Systems Service Pack 2",
+								"value": "9318",
+								"order": 0,
+								"groupName": "100000013",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)",
+								"value": "9344",
+								"order": 0,
+								"groupName": "100000013",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2008 R2 for Itanium-Based Systems Service Pack 1",
+								"value": "10050",
+								"order": 0,
+								"groupName": "100000013",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2008 R2 for x64-based Systems Service Pack 1",
+								"value": "10051",
+								"order": 0,
+								"groupName": "100000013",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)",
+								"value": "10049",
+								"order": 0,
+								"groupName": "100000013",
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET Core 1.0",
+								"value": "11463",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET Core 1.1",
+								"value": "11464",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET Core 2.0",
+								"value": "11465",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "ASP.NET Core 2.0",
+								"value": "11460",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "ASP.NET Core 1.1",
+								"value": "11461",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "ASP.NET Core 1.0",
+								"value": "11462",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Enterprise Server 2016",
+								"value": "10950",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Enterprise Server 2013 Service Pack 1",
+								"value": "11099",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Project Server 2010 Service Pack 2",
+								"value": "10502",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Project Server 2013 Service Pack 1 (64-bit edition)",
+								"value": "10614",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Foundation 2010 Service Pack 2",
+								"value": "10505",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Foundation 2013 Service Pack 1",
+								"value": "10612",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Server 2010 Service Pack 2",
+								"value": "10495",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Server 2013 Service Pack 1",
+								"value": "10607",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 2016 for Mac",
+								"value": "10734",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office Compatibility Pack Service Pack 3",
+								"value": "4497",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office Word Viewer",
+								"value": "1160",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft PowerPoint Viewer",
+								"value": "256",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server, version 1709  (Server Core Installation)",
+								"value": "11466",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "PowerShell Core 6.0",
+								"value": "11550",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "PowerShell Core 6.1",
+								"value": "11551",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Expression Blend 3 Service Pack 1",
+								"value": "11557",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Expression Blend 2 Service Pack 2",
+								"value": "11558",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2010 Service Pack 1",
+								"value": "10098",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2012 Update 5",
+								"value": "10326",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2013 Update 5",
+								"value": "10566",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2015 Update 3",
+								"value": "10577",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2017",
+								"value": "11505",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2017 version 15.7.5",
+								"value": "11531",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Excel Viewer",
+								"value": "10903",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Research JavaScript Cryptography Library V1.4",
+								"value": "11539",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET Framework 4.7.2 Developer Pack",
+								"value": "11545",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Expression Blend 4 Service Pack 3",
+								"value": "11546",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Wireless Display Adapter V2 Software Version 2.0.8350",
+								"value": "11536",
+								"order": 0,
+								"groupName": "100000011",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Wireless Display Adapter V2 Software Version 2.0.8365",
+								"value": "11537",
+								"order": 0,
+								"groupName": "100000011",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Wireless Display Adapter V2 Software Version 2.0.8372",
+								"value": "11538",
+								"order": 0,
+								"groupName": "100000011",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Web Customizations for Active Directory Federation Services",
+								"value": "11540",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "PowerShell Editor Services",
+								"value": "11541",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "PowerShell Extension for Visual Studio Code",
+								"value": "11542",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Mail, Calendar, and People in Windows 8.1 App Store",
+								"value": "11547",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.7.2",
+								"value": "11513",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.6/4.6.1/4.6.2",
+								"value": "11518",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 3.5",
+								"value": "2472",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.6",
+								"value": "10728",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 3.0 Service Pack 2",
+								"value": "9195",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 3.5.1",
+								"value": "9495",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.5.2",
+								"value": "10636",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Internet Explorer 10",
+								"value": "10555",
+								"order": 0,
+								"groupName": "100000001",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Edge (EdgeHTML-based)",
+								"value": "10724",
+								"order": 0,
+								"groupName": "100000001",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Internet Explorer 11",
+								"value": "10486",
+								"order": 0,
+								"groupName": "100000001",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Internet Explorer 9",
+								"value": "10336",
+								"order": 0,
+								"groupName": "100000013",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 2.0 Service Pack 2",
+								"value": "9292",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Adobe Flash Player",
+								"value": "10384",
+								"order": 0,
+								"groupName": "100000000",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.6/4.6.1/4.6.2/4.7/4.7.1/4.7.2",
+								"value": "11529",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.6.2/4.7/4.7.1/4.7.2",
+								"value": "11532",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.7/4.7.1/4.7.2",
+								"value": "11534",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.7.1/4.7.2",
+								"value": "11535",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "ASP.NET MVC 5.2",
+								"value": "11543",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "ASP.NET Web Pages 3.2.3",
+								"value": "11544",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Server 2019",
+								"value": "11585",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1803 for ARM64-based Systems",
+								"value": "11563",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1809 for 32-bit Systems",
+								"value": "11568",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1809 for x64-based Systems",
+								"value": "11569",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1809 for ARM64-based Systems",
+								"value": "11570",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2019",
+								"value": "11571",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1909 for 32-bit Systems",
+								"value": "11712",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1909 for x64-based Systems",
+								"value": "11713",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1909 for ARM64-based Systems",
+								"value": "11714",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1709 for ARM64-based Systems",
+								"value": "11583",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1903 for 32-bit Systems",
+								"value": "11644",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1903 for x64-based Systems",
+								"value": "11645",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1903 for ARM64-based Systems",
+								"value": "11646",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 2004 for 32-bit Systems",
+								"value": "11766",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 2004 for ARM64-based Systems",
+								"value": "11767",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 2004 for x64-based Systems",
+								"value": "11768",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server, version 2004 (Server Core installation)",
+								"value": "11769",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2019  (Server Core installation)",
+								"value": "11572",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server, version 1909 (Server Core installation)",
+								"value": "11715",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server, version 1903 (Server Core installation)",
+								"value": "11647",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "SQL Server 2017 Reporting Services",
+								"value": "11717",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "SQL Server 2019 Reporting Services",
+								"value": "11718",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 2019 for 32-bit editions",
+								"value": "11573",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 2019 for 64-bit editions",
+								"value": "11574",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 2019 for Mac",
+								"value": "11575",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft 365 Apps for Enterprise for 32-bit Systems",
+								"value": "11762",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft 365 Apps for Enterprise for 64-bit Systems",
+								"value": "11763",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 2016 (32-bit edition)",
+								"value": "10753",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 2016 (64-bit edition)",
+								"value": "10754",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 2013 RT Service Pack 1",
+								"value": "10603",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 2013 Service Pack 1 (32-bit editions)",
+								"value": "10601",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 2013 Service Pack 1 (64-bit editions)",
+								"value": "10602",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Excel 2016 (32-bit edition)",
+								"value": "10739",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Excel 2016 (64-bit edition)",
+								"value": "10740",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Excel 2010 Service Pack 2 (32-bit editions)",
+								"value": "10489",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Excel 2010 Service Pack 2 (64-bit editions)",
+								"value": "10490",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Excel 2013 RT Service Pack 1",
+								"value": "10656",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Excel 2013 Service Pack 1 (32-bit editions)",
+								"value": "10654",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Excel 2013 Service Pack 1 (64-bit editions)",
+								"value": "10655",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2019 version 16.7 (includes 16.0 – 16.6)",
+								"value": "11785",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2017 version 15.9 (includes 15.0 - 15.8)",
+								"value": "11600",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2019 version 16.0",
+								"value": "11658",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2019 version 16.4 (includes 16.0 - 16.3)",
+								"value": "11720",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 (on-premises) version 9.0",
+								"value": "11664",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 (on-premises) version 8.2",
+								"value": "11663",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "ASP.NET Core 2.1",
+								"value": "11564",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "ASP.NET Core 3.1",
+								"value": "11728",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Dynamics 365 for Finance and Operations",
+								"value": "11786",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Visual Studio Code",
+								"value": "11622",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Edge (Chromium-based)",
+								"value": "11655",
+								"order": 0,
+								"groupName": "100000001",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office Online Server",
+								"value": "11605",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office Web Apps 2010 Service Pack 2",
+								"value": "10525",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "OneDrive for Windows",
+								"value": "11752",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "xamarin.forms",
+								"value": "11787",
+								"order": 0,
+								"groupName": "100000003",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2019 Cumulative Update 5",
+								"value": "11788",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2019 Cumulative Update 6",
+								"value": "11789",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 16",
+								"value": "11790",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 17",
+								"value": "11791",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2019 Cumulative Update 7",
+								"value": "11792",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 18",
+								"value": "11793",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Server 2010 Service Pack 2",
+								"value": "10120",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1809 for HoloLens",
+								"value": "11673",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Bing Search for Android",
+								"value": "11771",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2019 version 16.6 (includes 16.0 - 16.5)",
+								"value": "11776",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio Code Live Share extension",
+								"value": "11734",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Forefront Endpoint Protection 2010",
+								"value": "11431",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft System Center Endpoint Protection",
+								"value": "11432",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft System Center 2012 R2 Endpoint Protection",
+								"value": "11504",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Security Essentials",
+								"value": "10013",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft System Center 2012 Endpoint Protection",
+								"value": "10331",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Project 2013 Service Pack 1 (32-bit editions)",
+								"value": "10800",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Project 2013 Service Pack 1 (64-bit editions)",
+								"value": "10801",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Project 2016 (32-bit edition)",
+								"value": "10760",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Project 2016 (64-bit edition)",
+								"value": "10761",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Project 2010 Service Pack 2 (32-bit editions)",
+								"value": "10500",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Project 2010 Service Pack 2 (64-bit editions)",
+								"value": "10501",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure DevOps Server 2019.0.1",
+								"value": "11675",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure DevOps Server 2019 Update 1",
+								"value": "11701",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure DevOps Server 2019 Update 1.1",
+								"value": "11735",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Word for Android",
+								"value": "11772",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "System Center 2016 Operations Manager",
+								"value": "11774",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "NuGetGallery",
+								"value": "11777",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 2004 for HoloLens",
+								"value": "11779",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1903 for HoloLens",
+								"value": "11778",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Edge (Chromium-based) in IE Mode",
+								"value": "11770",
+								"order": 0,
+								"groupName": "100000001",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Defender",
+								"value": "251",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Excel Viewer 2007 Service Pack 3",
+								"value": "10279",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Lync for Mac 2011",
+								"value": "10139",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft.Data.OData",
+								"value": "11562",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "System.IO.Pipelines",
+								"value": "11566",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "C SDK for Azure IoT",
+								"value": "11502",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET Core 2.1",
+								"value": "11565",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "ASP.NET Core 2.2",
+								"value": "11610",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Word 2016 for Mac",
+								"value": "10670",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Live Meeting 2007 Console",
+								"value": "10290",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Vista Service Pack 2",
+								"value": "4393",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Vista x64 Edition Service Pack 2",
+								"value": "9316",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1511 for 32-bit Systems",
+								"value": "10789",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1511 for x64-based Systems",
+								"value": "10788",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office Web Apps Server 2013 Service Pack 1",
+								"value": "10611",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Word for Mac 2011",
+								"value": "10025",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 2007 Service Pack 3",
+								"value": "10150",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Lync Basic 2013 Service Pack 1 (32-bit)",
+								"value": "10629",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Lync Basic 2013 Service Pack 1 (64-bit)",
+								"value": "10631",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Lync 2010 Attendee (admin level install)",
+								"value": "10268",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Lync 2010 (32-bit)",
+								"value": "10069",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Lync 2010 Attendee (user level install)",
+								"value": "10295",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Lync 2010 (64-bit)",
+								"value": "10303",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Skype for Business 2016 Basic (32-bit)",
+								"value": "10772",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Skype for Business 2016 Basic (64-bit)",
+								"value": "10773",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Word 2007 Service Pack 3",
+								"value": "10162",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Excel 2007 Service Pack 3",
+								"value": "10152",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.6/4.6.1",
+								"value": "10807",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Word Automation Services",
+								"value": "9432",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Excel Services",
+								"value": "9171",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2017 version 15.6.6",
+								"value": "11507",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016",
+								"value": "10804",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2013",
+								"value": "10431",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Intune Endpoint Protection",
+								"value": "10334",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Excel  2016 Click-to-Run (C2R) for 32-bit editions",
+								"value": "10902",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Excel  2016 Click-to-Run (C2R) for 64-bit editions",
+								"value": "10925",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Wireless Keyboard 850",
+								"value": "11500",
+								"order": 0,
+								"groupName": "100000011",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Outlook for Mac 2011",
+								"value": "10028",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office Compatibility Pack Service Pack 2",
+								"value": "9307",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Excel Web App 2010 Service Pack 2",
+								"value": "10516",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Office Online Server",
+								"value": "10836",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Outlook 2013 Service Pack 1 (32-bit editions)",
+								"value": "10810",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Outlook 2013 Service Pack 1 (64-bit editions)",
+								"value": "10811",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft OneNote 2010 Service Pack 2 (32-bit editions)",
+								"value": "10791",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft OneNote 2010 Service Pack 2 (64-bit editions)",
+								"value": "10792",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft OneNote 2007 Service Pack 3",
+								"value": "10155",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Silverlight 5 Developer Runtime when installed on Microsoft Windows (32-bit)",
+								"value": "10453",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Silverlight 5 Developer Runtime when installed on Microsoft Windows (x64-based)",
+								"value": "10452",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Silverlight 5 when installed on Microsoft Windows (32-bit)",
+								"value": "10451",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Silverlight 5 when installed on Microsoft Windows (x64-based)",
+								"value": "10099",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Mono Framework Version 4.8.1.0",
+								"value": "10960",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Mono Framework Version 5.0.0.48",
+								"value": "10961",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Outlook 2007 Service Pack 3",
+								"value": "10156",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Outlook 2010 Service Pack 2 (32-bit editions)",
+								"value": "10527",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Outlook 2010 Service Pack 2 (64-bit editions)",
+								"value": "10528",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Outlook 2016 (32-bit edition)",
+								"value": "10765",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Outlook 2016 (64-bit edition)",
+								"value": "10766",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.6.2",
+								"value": "10900",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.6.1",
+								"value": "10808",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.7",
+								"value": "10957",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Admin Center",
+								"value": "11629",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2019",
+								"value": "11591",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2013 Cumulative Update 22",
+								"value": "11619",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 12",
+								"value": "11620",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2019 Cumulative Update 1",
+								"value": "11621",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 11",
+								"value": "11601",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2010 Service Pack 3",
+								"value": "10476",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Office 365 ProPlus for 32-bit Systems",
+								"value": "11577",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Office 365 ProPlus for 64-bit Systems",
+								"value": "11578",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure DevOps Server 2019",
+								"value": "11649",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Team Foundation Server 2018 Update 3.2",
+								"value": "11616",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Team Foundation Server 2017 Update 3.1",
+								"value": "11594",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Team Foundation Server 2018 Update 1.2",
+								"value": "11614",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Team Foundation Server 2015 Update 4.2",
+								"value": "11651",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Open Enclave SDK",
+								"value": "11652",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft PowerPoint 2016 (32-bit edition)",
+								"value": "10741",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft PowerPoint 2016 (64-bit edition)",
+								"value": "10742",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visio 2016 (32-bit edition)",
+								"value": "10743",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visio 2016 (64-bit edition)",
+								"value": "10744",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Publisher 2016 (32-bit edition)",
+								"value": "10749",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Publisher 2016 (64-bit edition)",
+								"value": "10750",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft PowerPoint 2010 Service Pack 2 (32-bit editions)",
+								"value": "10498",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft PowerPoint 2010 Service Pack 2 (64-bit editions)",
+								"value": "10499",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visio 2010 Service Pack 2 (32-bit editions)",
+								"value": "10508",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visio 2010 Service Pack 2 (64-bit editions)",
+								"value": "10509",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visio 2013 Service Pack 1 (64-bit editions)",
+								"value": "10726",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Publisher 2013 Service Pack 1 (32-bit editions)",
+								"value": "10609",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Publisher 2013 Service Pack 1 (64-bit editions)",
+								"value": "10610",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft PowerPoint 2013 RT Service Pack 1",
+								"value": "10694",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Defender antimalware platform",
+								"value": "11744",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics NAV 2016",
+								"value": "11602",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics NAV 2017",
+								"value": "11603",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics NAV 2018",
+								"value": "11746",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics NAV 2015",
+								"value": "11747",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 BC On Premise",
+								"value": "11749",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Dynamics 365 Business Central 2019 Spring Update",
+								"value": "11750",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics NAV 2013",
+								"value": "11748",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Dynamics 365 Business Central 2019 Release Wave 2 (On-Premise)",
+								"value": "11751",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft AutoUpdate for Mac",
+								"value": "10949",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft RMS Sharing for Mac",
+								"value": "11753",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Remote Desktop for Mac",
+								"value": "11754",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2019 version 16.5",
+								"value": "11756",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Paint 3D",
+								"value": "11758",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "3D Viewer",
+								"value": "11760",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Access 2010 Service Pack 2 (32-bit editions)",
+								"value": "10487",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Access 2010 Service Pack 2 (64-bit editions)",
+								"value": "10488",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft PowerPoint 2013 Service Pack 1 (32-bit editions)",
+								"value": "10692",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Outlook 2013 RT Service Pack 1",
+								"value": "10407",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft PowerPoint 2013 Service Pack 1 (64-bit editions)",
+								"value": "10693",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visio 2013 Service Pack 1 (32-bit editions)",
+								"value": "10725",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Publisher 2010 Service Pack 2 (64-bit editions)",
+								"value": "10504",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Publisher 2010 Service Pack 2 (32-bit editions)",
+								"value": "10503",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Business Productivity Servers 2010 Service Pack 2",
+								"value": "10545",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office Web Apps 2013 Service Pack 1",
+								"value": "10608",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Your Phone Companion App for Android",
+								"value": "11755",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Dynamics 365 Server, version 9.0 (on-premises)",
+								"value": "11757",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "OpenSSL 1.1.1g",
+								"value": "11759",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft OneNote 2013 Service Pack 1 (32-bit editions)",
+								"value": "10793",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft OneNote 2013 Service Pack 1 (64-bit editions)",
+								"value": "10794",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft OneNote 2016 (32-bit edition)",
+								"value": "10762",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft OneNote 2016 (64-bit edition)",
+								"value": "10763",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft OneNote for Mac 2016",
+								"value": "10674",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft OneNote 2013 RT Service Pack 1",
+								"value": "10795",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Xamarin.iOS",
+								"value": "11438",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2016 for x64-based Systems Service Pack 1 (GDR)",
+								"value": "11439",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2016 for x64-based Systems Service Pack 1 (CU)",
+								"value": "11445",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2012 for 32-bit Systems Service Pack 3  (GDR)",
+								"value": "10931",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2012 for 32-bit Systems Service Pack 3 (CU)",
+								"value": "10932",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2012 for x64-based Systems Service Pack 3 (GDR)",
+								"value": "10934",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2012 for x64-based Systems Service Pack 3 (CU)",
+								"value": "10935",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2014 Service Pack 1 for 32-bit Systems (GDR)",
+								"value": "10936",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2014 Service Pack 1 for 32-bit Systems (CU)",
+								"value": "10937",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2014 Service Pack 1 for x64-based Systems (GDR)",
+								"value": "10938",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2014 Service Pack 1 for x64-based Systems (CU)",
+								"value": "10939",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2014 Service Pack 2 for 32-bit Systems (GDR)",
+								"value": "10940",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2014 Service Pack 2 for 32-bit Systems (CU)",
+								"value": "10941",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2014 Service Pack 2 for x64-based Systems (CU)",
+								"value": "10942",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2014 Service Pack 2 for x64-based Systems (GDR)",
+								"value": "10943",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2016 for x64-based Systems (GDR)",
+								"value": "10946",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2016 for x64-based Systems (CU)",
+								"value": "10947",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Outlook 2016 Click-to-Run (C2R) for 32-bit editions",
+								"value": "10909",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Outlook 2016 Click-to-Run (C2R) for 64-bit editions",
+								"value": "10910",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2016 for x64-based Systems Service Pack 2 (CU)",
+								"value": "11554",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2016 for x64-based Systems Service Pack 2 (GDR)",
+								"value": "11555",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2017 version 15.8",
+								"value": "11556",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2017 for x64-based Systems (GDR)",
+								"value": "11478",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2017 for x64-based Systems (CU)",
+								"value": "11479",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 9",
+								"value": "11508",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2013 Cumulative Update 20",
+								"value": "11509",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2013 Cumulative Update 21",
+								"value": "11527",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 10",
+								"value": "11548",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2010 Service Pack 3 Update Rollup 23",
+								"value": "11549",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Online",
+								"value": "10133",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 365",
+								"value": "10134",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2019 version 16.2",
+								"value": "11692",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "ADAL.NET",
+								"value": "11697",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Outlook.com",
+								"value": "11653",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "None Available",
+								"value": "9237",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Outlook for iOS",
+								"value": "11685",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Nuget 5.2.0",
+								"value": "11696",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 2013 Click-to-Run (C2R) for 32-bit editions",
+								"value": "11441",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 2013 Click-to-Run (C2R) for 64-bit editions",
+								"value": "11442",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "SQL Server Management Studio 18.6",
+								"value": "11784",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.8",
+								"value": "11650",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 3.5 AND 4.8",
+								"value": "11676",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 3.5 AND 4.7.2",
+								"value": "11677",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 3.5 AND 4.6.2/4.7/4.7.1/4.7.2",
+								"value": "11723",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 3.5 AND 4.6/4.6.1/4.6.2",
+								"value": "11764",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 3.5 AND 4.7.1/4.7.2",
+								"value": "11725",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Excel 2016 for Mac",
+								"value": "10672",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Excel for Mac 2011",
+								"value": "10027",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office for Mac 2011",
+								"value": "10024",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Windows Hyperlink Object Library",
+								"value": "10948",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 6",
+								"value": "11450",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 7",
+								"value": "11469",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2013 Cumulative Update 17",
+								"value": "11449",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2013 Cumulative Update 18",
+								"value": "11470",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics NAV 2013 R2",
+								"value": "11612",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Azure Pack Rollup 13.1",
+								"value": "11604",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 3.5 Service Pack 1",
+								"value": "7683",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2017 version 15.0",
+								"value": "11657",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Authentication Library (MSAL) for Android",
+								"value": "11716",
+								"order": 0,
+								"groupName": "100000003",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Power BI Report Server",
+								"value": "11719",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio Live Share extension",
+								"value": "11721",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Skype for Business Server 2019  CU2",
+								"value": "11722",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Windows XP Service Pack 3",
+								"value": "3700",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Identity Manager 2016 Service Pack 1",
+								"value": "11491",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET Core 2.2",
+								"value": "11608",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "PowerShell Core 6.2",
+								"value": "11617",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Java SDK for Azure IoT",
+								"value": "11503",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 (on-premises) version 8",
+								"value": "11598",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2010 Service Pack 3 Update Rollup 26",
+								"value": "11618",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2012 for 32-bit Systems Service Pack 4 (QFE)",
+								"value": "11476",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2012 for x64-based Systems Service Pack 4 (QFE)",
+								"value": "11477",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2014 Service Pack 3 for x64-based Systems (GDR)",
+								"value": "11667",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2014 Service Pack 3 for x64-based Systems (CU)",
+								"value": "11668",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2014 Service Pack 3 for 32-bit Systems (GDR)",
+								"value": "11671",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2014 Service Pack 3 for 32-bit Systems (CU)",
+								"value": "11672",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2013 Cumulative Update 23",
+								"value": "11682",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2019 Cumulative Update 3",
+								"value": "11704",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 14",
+								"value": "11705",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 15",
+								"value": "11732",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Malicious Software Removal Tool 32-bit",
+								"value": "11738",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2019 Cumulative Update 4",
+								"value": "11731",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2010 Service Pack 3 Update Rollup 30",
+								"value": "11733",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Malicious Software Removal Tool 64-bit",
+								"value": "11737",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Surface Hub",
+								"value": "11739",
+								"order": 0,
+								"groupName": "100000011",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Enterprise Server 2016",
+								"value": "999017",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2008 R2 for 32-Bit Systems Service Pack 3 (QFE)",
+								"value": "11486",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2008 R2 for x64-Based Systems Service Pack 3 (QFE)",
+								"value": "11487",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2008 for x64-Based Systems Service Pack 4 (QFE)",
+								"value": "11488",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office Online Server 2016",
+								"value": "10748",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2008 for 32-bit Systems Service Pack 4 (QFE)",
+								"value": "11474",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "PowerShell Core 6.0.0",
+								"value": "11489",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1607 for HoloLens",
+								"value": "11490",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.6/4.6.1/4.6.2/4.7",
+								"value": "11451",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.7.1",
+								"value": "11483",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.6.2/4.7",
+								"value": "11437",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office Web Apps Server 2010 Service Pack 2",
+								"value": "10649",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2010 Service Pack 3 Update Rollup 25",
+								"value": "11606",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Lync Server 2013 July 2018 Update",
+								"value": "11633",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Skype 8.35 when installed on Android Devices",
+								"value": "11611",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Skype for Business Server 2015 CU 8",
+								"value": "11613",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "ASP.NET Core 3.0",
+								"value": "11698",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET Core 3.0",
+								"value": "11661",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "OneDrive for Android",
+								"value": "11726",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET Core 3.1",
+								"value": "11730",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "PowerShell 7.0",
+								"value": "11745",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Dynamics 365 Field Service (on-premises) v7 series",
+								"value": "11727",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET Core 3.0",
+								"value": "11729",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Server 2016",
+								"value": "10917",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Outlook 2013 RT Service Pack 1",
+								"value": "10812",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "VBScript 5.7",
+								"value": "9414",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "JScript 5.8",
+								"value": "9343",
+								"order": 0,
+								"groupName": "100000001",
+								"isSelectable": true
+							},
+							{
+								"displayName": "VBScript 5.8",
+								"value": "9415",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2013 Service Pack 1",
+								"value": "10650",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2013 Cumulative Update 16",
+								"value": "11434",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 5",
+								"value": "11436",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Enterprise Server 2013",
+								"value": "10835",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 2010 Click-to-Run (C2R) for 32-bit editions",
+								"value": "11443",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office 2010 Click-to-Run (C2R) for 64-bit editions",
+								"value": "11444",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Team Foundation Server 2012 Update 4",
+								"value": "10927",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Team Foundation Server 2013 Update 5",
+								"value": "10928",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Azure Kubernetes Service",
+								"value": "11669",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure IoT Edge",
+								"value": "11582",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Outlook for Android",
+								"value": "10685",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2019 version 16.1",
+								"value": "11678",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 13",
+								"value": "11681",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2019 Cumulative Update 2",
+								"value": "11680",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Mail and Calendar",
+								"value": "11683",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016",
+								"value": "11526",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Team Foundation Server 2010 SP1 (x86)",
+								"value": "11690",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Team Foundation Server 2010 SP1 (x64)",
+								"value": "11691",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Automation",
+								"value": "11656",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft.IdentityModel 7.0.0",
+								"value": "11687",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Remote Desktop for Android",
+								"value": "11693",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Remote Desktop for IoS",
+								"value": "11694",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Lync Server 2013",
+								"value": "10428",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Bond 9.0.1",
+								"value": "11780",
+								"order": 0,
+								"groupName": "100000003",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Storage Explorer",
+								"value": "11781",
+								"order": 0,
+								"groupName": "100000003",
+								"isSelectable": true
+							},
+							{
+								"displayName": "TypeScript",
+								"value": "11782",
+								"order": 0,
+								"groupName": "100000003",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio Code ESLint extension",
+								"value": "11783",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2013 Cumulative Update 12",
+								"value": "10837",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 1",
+								"value": "10838",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2013 Cumulative Update 11",
+								"value": "10803",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visio 2007 Service Pack 3",
+								"value": "10161",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visio Viewer 2010 (64-bit Edition)",
+								"value": "10264",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visio Viewer 2010 (32-bit Edition)",
+								"value": "10101",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visio Viewer 2007 Service Pack 3",
+								"value": "10839",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2007 Service Pack 3",
+								"value": "10004",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft PowerPoint 2016 for Mac",
+								"value": "10673",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft PowerPoint for Mac 2011",
+								"value": "10026",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft PowerPoint 2007 Service Pack 3",
+								"value": "10157",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Server 2007 Service Pack 3 (32-bit editions)",
+								"value": "10308",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Live Meeting 2007 Add-in",
+								"value": "10956",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office Web Apps 2010",
+								"value": "10055",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Outlook 2016 for Mac",
+								"value": "10768",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Endpoint Protection",
+								"value": "11430",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Forefront Endpoint Protection",
+								"value": "10330",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Lync Server 2010",
+								"value": "10066",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "None affected",
+								"value": "11679",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2013 Cumulative Update 14",
+								"value": "10953",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 3",
+								"value": "10954",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft XML Core Services 3.0",
+								"value": "7177",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 8",
+								"value": "11492",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2013 Cumulative Update 19",
+								"value": "11493",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2010 Service Pack 3 Update Rollup 20",
+								"value": "11496",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Word 2013 (32-bit editions)",
+								"value": "10323",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Word 2013 (64-bit editions)",
+								"value": "10324",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "UbuntuServer:18.04-LTS",
+								"value": "11631",
+								"order": 0,
+								"groupName": "100000003",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Skype for Business Server 2015 March 2019 Update",
+								"value": "11632",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Nuget 4.8.2",
+								"value": "11639",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Nuget 4.7.2",
+								"value": "11638",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Mono Framework Version 5.20.0",
+								"value": "11642",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Mono Framework Version 5.18.0.223",
+								"value": "11641",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Nuget 4.5.2",
+								"value": "11636",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Nuget 4.4.2",
+								"value": "11635",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Nuget 4.6.3",
+								"value": "11637",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Nuget 4.3.1",
+								"value": "11634",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Nuget 4.9.4",
+								"value": "11640",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Linux Guest Agent",
+								"value": "11643",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Visual Studio 2017 for Mac",
+								"value": "10959",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET Core SDK 1.1",
+								"value": "11624",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET Core SDK 2.1.500",
+								"value": "11625",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET Core SDK 2.2.100",
+								"value": "11626",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Application Inspector",
+								"value": "11740",
+								"order": 0,
+								"groupName": "100000003",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Remote Desktop Connection Manager 2.7",
+								"value": "11741",
+								"order": 0,
+								"groupName": "100000000",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Service Fabric",
+								"value": "11743",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2008 for 32-bit Systems (Server Core installation)",
+								"value": "10285",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2008 for x64-based Systems (Server Core installation)",
+								"value": "9188",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Forefront Security for SharePoint Service Pack 3",
+								"value": "10010",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Surface Laptop",
+								"value": "11521",
+								"order": 0,
+								"groupName": "100000011",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Surface Pro with Advanced LTE Model 1807",
+								"value": "11524",
+								"order": 0,
+								"groupName": "100000011",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Surface Studio",
+								"value": "11457",
+								"order": 0,
+								"groupName": "100000011",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Surface Book",
+								"value": "10824",
+								"order": 0,
+								"groupName": "100000011",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Surface Pro 4",
+								"value": "10820",
+								"order": 0,
+								"groupName": "100000011",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Surface Pro Model 1796",
+								"value": "11523",
+								"order": 0,
+								"groupName": "100000011",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Surface Pro 3",
+								"value": "10819",
+								"order": 0,
+								"groupName": "100000011",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Surface Book 2",
+								"value": "11520",
+								"order": 0,
+								"groupName": "100000011",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2010 Service Pack 3 Update Rollup 24",
+								"value": "11567",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Infopath 2013 Service Pack 1 (32-bit edition)",
+								"value": "10798",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Infopath 2013 Service Pack 1 (64-bit edition)",
+								"value": "10799",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "C# SDK for Azure IoT",
+								"value": "11501",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2010 Service Pack 3 Update Rollup 21",
+								"value": "11510",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Host Compute Service Shim",
+								"value": "11514",
+								"order": 0,
+								"groupName": "100000003",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.6.2/4.7/4.7.1",
+								"value": "11511",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.7/4.7.1",
+								"value": "11512",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.6/4.6.1/4.6.2/4.7/4.7.1",
+								"value": "11515",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Nuget 5.0.2",
+								"value": "11660",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Azure Active Directory Connect",
+								"value": "11662",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics CRM 2015 (on-premises) version 7.0",
+								"value": "11665",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET 5.0",
+								"value": "11761",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2012 for 32-bit Systems Service Pack 2 (GDR)",
+								"value": "10704",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2012 for 32-bit Systems Service Pack 2 (CU)",
+								"value": "10930",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2012 for x64-based Systems Service Pack 2 (GDR)",
+								"value": "10705",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2012 for x64-based Systems Service Pack 2 (CU)",
+								"value": "10933",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure App Service on Azure Stack",
+								"value": "11590",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2010",
+								"value": "1762",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Team Foundation Server 2018 Update 1.1",
+								"value": "11595",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Team Foundation Server 2018 Update 3",
+								"value": "11596",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Team Foundation Server 2018 Updated 3.1",
+								"value": "11597",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft.PowerShell.Archive 1.2.2.0",
+								"value": "11599",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Stack",
+								"value": "11710",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2019 version 16.3",
+								"value": "11711",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Silverlight 5 Developer Runtime when installed on Apple Mac OS (Intel-based)",
+								"value": "10450",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Silverlight 5 when installed on Apple Mac OS (Intel-based)",
+								"value": "10100",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft PowerPoint Viewer 2007",
+								"value": "1541",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "PowerPoint Viewer 2010 32-bit edition",
+								"value": "11452",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "SQL Server Management Studio 17.9",
+								"value": "11579",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Hub Device Client SDK for Azure IoT",
+								"value": "11581",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Yammer Desktop App",
+								"value": "11584",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "SQL Server Management Studio 18.3",
+								"value": "11702",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Mobile",
+								"value": "11703",
+								"order": 0,
+								"groupName": "100000011",
+								"isSelectable": true
+							},
+							{
+								"displayName": "SQL Server Management Studio 18.3.1",
+								"value": "11706",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Update Assistant",
+								"value": "11707",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Azure Pack Web Sites V2",
+								"value": "11708",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2013 Cumulative Update 13",
+								"value": "10896",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 2",
+								"value": "10897",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visio 2016 Click-to-Run (C2R) for 32-bit editions",
+								"value": "10918",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visio 2016 Click-to-Run (C2R) for 64-bit editions",
+								"value": "10919",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Excel Automation Services",
+								"value": "10898",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Excel Web App 2013 Service Pack 1",
+								"value": "10767",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Publisher 2007 Service Pack 3",
+								"value": "10159",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Outlook 2013 (32-bit editions)",
+								"value": "10317",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Outlook 2013 (64-bit editions)",
+								"value": "10318",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Rome SDK 1.4.1",
+								"value": "11699",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Yammer for Android",
+								"value": "11700",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Dynamics 365 Commerce",
+								"value": "11794",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Functions",
+								"value": "11795",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "PowerShellGet 2.2.5",
+								"value": "11798",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Network Watcher Agent virtual machine extension for Linux",
+								"value": "11799",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Dynamics 365 Commerce version 10.0.12",
+								"value": "11810",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Dynamics 365 Commerce version 10.0.13",
+								"value": "11811",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Dynamics 365 Commerce version 10.0.14",
+								"value": "11812",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Dynamics 365 Commerce version 10.0.15",
+								"value": "11813",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Dynamics 365 Commerce version 10.0.16",
+								"value": "11814",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 20H2 for x64-based Systems",
+								"value": "11800",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 20H2 for 32-bit Systems",
+								"value": "11801",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 20H2 for ARM64-based Systems",
+								"value": "11802",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server, version 20H2 (Server Core Installation)",
+								"value": "11803",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Sphere",
+								"value": "11796",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Raw Image Extension",
+								"value": "11804",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Teams",
+								"value": "11686",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "HEIF Image Extension",
+								"value": "11805",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "AV1 Video Extension",
+								"value": "11807",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "HEVC Video Extensions",
+								"value": "11808",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "WebP Image Extension",
+								"value": "11806",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2019 version 16.8",
+								"value": "11809",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2010 Service Pack 3 Update Rollup 31",
+								"value": "11816",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure SDK for Java",
+								"value": "11817",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure DevOps Server 2020",
+								"value": "11818",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Visual Studio Code Remote - SSH Extension",
+								"value": "11819",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Visual Studio Code Language Support for Java Extension",
+								"value": "11826",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Edge for Android",
+								"value": "11815",
+								"order": 0,
+								"groupName": "100000001",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Visual Studio Code TS-Lint Extension",
+								"value": "11820",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "None affected",
+								"value": "11827",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "azure-c-shared-utility",
+								"value": "11828",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure-c-shared-utility Release LTS_07_2020_Ref02",
+								"value": "11829",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure-c-shared-utility Release LTS_02_2020_Ref02",
+								"value": "11830",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "azure-uamqp-c",
+								"value": "11831",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "azure-umqtt-c",
+								"value": "11832",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "azure-uhttp-c",
+								"value": "11833",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "azure-utpm-c",
+								"value": "11834",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "azure-uamqp-c Release LTS_07_2020_Ref02",
+								"value": "11835",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "azure-umqtt-c Release LTS_07_2020_Ref02",
+								"value": "11836",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "azure-uhttp-c Release LTS_07_2020_Ref02",
+								"value": "11837",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "azure-utpm-c Release LTS_07_2020_Ref02",
+								"value": "11838",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "azure-uamqp-c Release LTS_02_2020_Ref02",
+								"value": "11839",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "azure-umqtt-c Release LTS_02_2020_Ref02",
+								"value": "11840",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "azure-uhttp-c Release LTS_02_2020_Ref02",
+								"value": "11841",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "azure-utpm-c Release LTS_02_2020_Ref02",
+								"value": "11842",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "C SDK for Azure IoT Release LTS_07_2020_Ref02",
+								"value": "11843",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "C SDK for Azure IoT Release LTS_02_2020_Ref02",
+								"value": "11844",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2014 Service Pack 3 for x64-based Systems (CU 4)",
+								"value": "11825",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2017 for x64-based Systems (CU 22)",
+								"value": "11823",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2016 Service Pack 2 for x64-based Systems (CU 15)",
+								"value": "11824",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2019 for x64-based Systems (CU 8)",
+								"value": "11822",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2019 for x64-based Systems (GDR)",
+								"value": "11821",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "ASP.NET Core 5.0",
+								"value": "11846",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Bot Framework SDK for .NET Framework",
+								"value": "11845",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Bot Framework SDK for JavaScript",
+								"value": "11847",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Bot Framework SDK for Python",
+								"value": "11848",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Remote Desktop client for Windows Desktop",
+								"value": "11849",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Remote Desktop",
+								"value": "11850",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Package Manager Configurations",
+								"value": "11855",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2019 Cumulative Update 8",
+								"value": "11857",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 19",
+								"value": "11856",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Teams for iOS",
+								"value": "11858",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 Business Central 2020 Release Wave 1",
+								"value": "11860",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 Business Central 2020 Release Wave 2",
+								"value": "11859",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Visual Studio Code - npm-script Extension",
+								"value": "11861",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "azure-iot-cli-extension",
+								"value": "11851",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "PsExec",
+								"value": "11853",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "System Center 2019 Operations Manager",
+								"value": "11854",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.6.2/4.7/4.7.1/4.7.2",
+								"value": "11863",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.7.2",
+								"value": "11862",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "PowerShell Core 7.1",
+								"value": "11864",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "PowerShell Core 7.0",
+								"value": "11865",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Visual Studio 2019 for Mac",
+								"value": "11874",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Mono 6.12.0",
+								"value": "11875",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Python extension for Visual Studio Code",
+								"value": "11873",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2019 version 16.8 (includes 16.0 - 16.7)",
+								"value": "11871",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2019 version 16.9 (includes 16.0 - 16.8)",
+								"value": "11872",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Service Fabric",
+								"value": "11867",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Spring Cloud",
+								"value": "11869",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Container Instance",
+								"value": "11866",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Kubernetes Service",
+								"value": "11870",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Quantum Development Kit for Visual Studio Code",
+								"value": "11876",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Power BI Report Server version 15.0.1103.234",
+								"value": "11877",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Power BI Report Server version 15.0.1104.300",
+								"value": "11878",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Visual Studio Code - Java Extension Pack",
+								"value": "11879",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Visual Studio Code  Remote - Containers Extension",
+								"value": "11880",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Visual Studio Code - Kubernetes Tools",
+								"value": "11882",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure DevOps Server 2020.0.1",
+								"value": "11881",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "@azure/ms-rest-nodeauth",
+								"value": "11883",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "VP9 Video Extensions",
+								"value": "11884",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Visual Studio Code - Maven for Java Extension",
+								"value": "11885",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Visual Studio Code - GitHub Pull Requests and Issues Extension",
+								"value": "11886",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 20",
+								"value": "11888",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2019 Cumulative Update 9",
+								"value": "11887",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Web Media Extensions",
+								"value": "11889",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "common_utils.py",
+								"value": "11890",
+								"order": 0,
+								"groupName": "100000003",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Accessibility Insights for Web",
+								"value": "11891",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Skype for Business Server 2015 CU11",
+								"value": "11894",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Lync Server 2013 CU10",
+								"value": "11892",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Skype for Business Server 2019 CU5",
+								"value": "11893",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Visual Studio 2019 for Mac version 8.9",
+								"value": "11895",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 21H1 for x64-based Systems",
+								"value": "11896",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 21H1 for ARM64-based Systems",
+								"value": "11897",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 21H1 for 32-bit Systems",
+								"value": "11898",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2019 version 16.10 (includes 16.0 - 16.9)",
+								"value": "11900",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Visual Studio 2019 for Mac version 8.10",
+								"value": "11901",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Intune management extension",
+								"value": "11899",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Malware Protection Engine",
+								"value": "11902",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET Education Bundle SDK Install Tool",
+								"value": "11909",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET Install Tool for Extension Authors",
+								"value": "11910",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 21",
+								"value": "11906",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2019 Cumulative Update 10",
+								"value": "11908",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 Business Central 2020 Release Wave 1 - Update 16.14",
+								"value": "11911",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 Business Central 2020 Release Wave 2 - Update 17.8",
+								"value": "11913",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 Business Central 2021 Release Wave 1 - Update 18.3",
+								"value": "11912",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Versions Under Investigation",
+								"value": "11914",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Power BI Desktop",
+								"value": "11915",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Remote Desktop Connection Manager v2.82",
+								"value": "11918",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Azure Active Directory Connect 1.6.4.0",
+								"value": "11920",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 (on-premises) version 9.1",
+								"value": "11921",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure CycleCloud 7.9.10",
+								"value": "11904",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure CycleCloud 8.2.0",
+								"value": "11905",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 Business Central 2020 Release Wave 2 - Update 17.9",
+								"value": "11916",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 Business Central 2020 Release Wave 1 - Update 16.15",
+								"value": "11917",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Azure Active Directory Connect 2.0.3.0",
+								"value": "11919",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Active Directory Connect Provisioning Agent",
+								"value": "11922",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "PowerShell 7.1",
+								"value": "11925",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2022",
+								"value": "11923",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2022 (Server Core installation)",
+								"value": "11924",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "MPEG-2 Video Extension",
+								"value": "11936",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Open Management Infrastructure",
+								"value": "11933",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2019 version 16.11 (includes 16.0 - 16.10)",
+								"value": "11935",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 Business Central 2020 Release Wave 2 – Update 17.10",
+								"value": "11938",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 Business Central 2021 Release Wave 1 - Update 18.5",
+								"value": "11939",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Accessibility Insights for Android Service - v2.0.0",
+								"value": "11940",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Accessibility Insights for Android",
+								"value": "11941",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Diagnostics (LAD)",
+								"value": "11946",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "System Center Operations Manager (SCOM)",
+								"value": "11942",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Automation State Configuration, DSC Extension",
+								"value": "11943",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Automation Update Management",
+								"value": "11944",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Log Analytics Agent",
+								"value": "11945",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Container Monitoring Solution",
+								"value": "11947",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Security Center",
+								"value": "11948",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Sentinel",
+								"value": "11949",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Stack Hub",
+								"value": "11950",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 11 for x64-based Systems",
+								"value": "11926",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 11 for ARM64-based Systems",
+								"value": "11927",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office LTSC 2021 for 64-bit editions",
+								"value": "11952",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office LTSC 2021 for 32-bit editions",
+								"value": "11953",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Office LTSC for Mac 2021",
+								"value": "11951",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 Customer Engagement V9.1",
+								"value": "11955",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 Customer Engagement V9.0",
+								"value": "11954",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2019 Cumulative Update 11",
+								"value": "11957",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 22",
+								"value": "11956",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "System Center 2012 R2 Operations Manager",
+								"value": "11959",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "FSLogix",
+								"value": "11960",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure RTOS",
+								"value": "11962",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 21H2 for 32-bit Systems",
+								"value": "11929",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 21H2 for ARM64-based Systems",
+								"value": "11930",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 21H2 for x64-based Systems",
+								"value": "11931",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Server Subscription Edition",
+								"value": "11961",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Active Directory",
+								"value": "11963",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Site Recovery",
+								"value": "11964",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Migrate",
+								"value": "11965",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Edge for iOS",
+								"value": "11966",
+								"order": 0,
+								"groupName": "100000001",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Visual Studio Code WSL Extension",
+								"value": "11974",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2022 version 17.0",
+								"value": "11969",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "SharePoint Server Subscription Edition Language Pack",
+								"value": "11972",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "App Installer",
+								"value": "11981",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Defender for IoT",
+								"value": "11967",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "ASP.NET Core 6.0",
+								"value": "11968",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "PowerShell 7.2",
+								"value": "11970",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft 4K Wireless Display Adapter",
+								"value": "11971",
+								"order": 0,
+								"groupName": "100000011",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Office app",
+								"value": "11973",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft BizTalk ESB Toolkit 2.2",
+								"value": "11978",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft BizTalk ESB Toolkit 2.4",
+								"value": "11980",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft BizTalk ESB Toolkit 2.3",
+								"value": "11979",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Cosmos DB Kafka Connector",
+								"value": "11990",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Events Hub Extension",
+								"value": "11991",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Minecraft Java Edition",
+								"value": "11992",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Arc-enabled Data Services",
+								"value": "11993",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Databricks",
+								"value": "11994",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure VMWare",
+								"value": "11995",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "SQL Server 2019 Big Data Clusters",
+								"value": "11996",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Team Foundation Server",
+								"value": "11997",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure DevOps",
+								"value": "11998",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure DevOps Server",
+								"value": "11999",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Data Lake Store Java client SDK",
+								"value": "12000",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Data Lake Store Java tool",
+								"value": "12001",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Application Insights Java SDK",
+								"value": "12002",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Dynamics 365 Sales",
+								"value": "11958",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2022 Azure Edition Core Hotpatch",
+								"value": "0",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "HEVC Video Extension",
+								"value": "12010",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Data Explorer",
+								"value": "12004",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics GP",
+								"value": "12005",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "SQL Server 2019 for Linux Containers",
+								"value": "12006",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Teams for Android",
+								"value": "12007",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Teams Admin Center",
+								"value": "12008",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET 6.0",
+								"value": "12009",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "PowerBI-client JS SDK",
+								"value": "12011",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2022 version 17.1",
+								"value": "12020",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Intune Company Portal for iOS",
+								"value": "12012",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Defender for Endpoint for Linux",
+								"value": "12015",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Defender for Endpoint for Mac",
+								"value": "12014",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Skype Extension for Chrome",
+								"value": "12016",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Site Recovery VMWare to Azure",
+								"value": "12018",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Defender for Endpoint for Android",
+								"value": "12019",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Defender for Endpoint for Windows",
+								"value": "12013",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Defender for Endpoint EDR sensor",
+								"value": "12021",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Defender for Endpoint for iOS",
+								"value": "12023",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Upgrade Assistant",
+								"value": "12027",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft On-Premises Data Gateway",
+								"value": "12022",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure SDK for .Net",
+								"value": "12024",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Skype for Business Server 2015 CU12",
+								"value": "12025",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Skype for Business Server 2019 CU6",
+								"value": "12026",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "YARP 1.0",
+								"value": "12029",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "YARP 1.1RC",
+								"value": "12030",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Excel for Android",
+								"value": "12031",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft PowerPoint for Android",
+								"value": "12032",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Word Mobile",
+								"value": "12033",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Excel Mobile",
+								"value": "12034",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft PowerPoint Mobile",
+								"value": "12035",
+								"order": 0,
+								"groupName": "100000007",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Power BI Report Server version 1.11.8091.10468",
+								"value": "12036",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Power BI Report Server version 1.12.7977.29537",
+								"value": "12037",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Self-hosted Integration Runtime",
+								"value": "12042",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Synapse",
+								"value": "12041",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Data Factory",
+								"value": "12040",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2016 Cumulative Update 23",
+								"value": "12039",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Exchange Server 2019 Cumulative Update 12",
+								"value": "12038",
+								"order": 0,
+								"groupName": "100000004",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Endpoint Configuration Manager",
+								"value": "12028",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Visual Studio 2022 for Mac version 17.0",
+								"value": "12052",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Photos",
+								"value": "12050",
+								"order": 0,
+								"groupName": "100000012",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2019 for x64-based Systems (CU 16)",
+								"value": "12045",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2017 for x64-based Systems (CU 29)",
+								"value": "12046",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2016 for x64-based Systems Service Pack 2 (CU 17)",
+								"value": "12047",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2016 for x64-based Systems Service Pack 3 (GDR)",
+								"value": "12048",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2022 version 17.2",
+								"value": "12051",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "NuGet.exe",
+								"value": "12044",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SQL Server 2016 for x64-based Systems Service Pack 3 Azure Connectivity Pack",
+								"value": "12053",
+								"order": 0,
+								"groupName": "100000008",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Real Time Operating System GUIX",
+								"value": "12055",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "System Center Operations Manager (SCOM) 2022",
+								"value": "12058",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "System Center Operations Manager (SCOM) 2019",
+								"value": "12057",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "System Center Operations Manager (SCOM) 2016",
+								"value": "12056",
+								"order": 0,
+								"groupName": "100000009",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Storage Blobs client library for .NET",
+								"value": "12060",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Storage Queues client library for .NET",
+								"value": "12063",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Storage Blobs client library for Java",
+								"value": "12064",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Storage Queues client library for Python",
+								"value": "12065",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Storage Blobs client library for Python",
+								"value": "12062",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Arc Jumpstart",
+								"value": "12067",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Batch",
+								"value": "12059",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Guest Configuration",
+								"value": "12080",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Visual Studio 2022 for Mac version 17.3",
+								"value": "12082",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2022 version 17.3",
+								"value": "12081",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics CRM (on-premises) 9.0",
+								"value": "12084",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics CRM (on-premises) 9.1",
+								"value": "12083",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure ARC",
+								"value": "12068",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 3.5 AND 4.8.1",
+								"value": "12079",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.8.1",
+								"value": "12078",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure StorSimple 8000 Series",
+								"value": "12071",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 11 Version 22H2 for ARM64-based Systems",
+								"value": "12085",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 11 Version 22H2 for x64-based Systems",
+								"value": "12086",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Service Fabric Explorer",
+								"value": "12088",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Arc-enabled Kubernetes cluster 1.8.11",
+								"value": "12092",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Arc-enabled Kubernetes cluster 1.7.18",
+								"value": "12091",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Arc-enabled Kubernetes cluster 1.5.8",
+								"value": "12089",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Arc-enabled Kubernetes cluster 1.6.19",
+								"value": "12090",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure Stack Edge",
+								"value": "12093",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Jupyter Extension for Visual Studio Code",
+								"value": "12094",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 22H2 for x64-based Systems",
+								"value": "12097",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 22H2 for ARM64-based Systems",
+								"value": "12098",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 22H2 for 32-bit Systems",
+								"value": "12099",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server, version 22H2 (Server Core Installation)",
+								"value": "12100",
+								"order": 0,
+								"groupName": "100000010",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure CycleCloud 8",
+								"value": "12102",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure CLI",
+								"value": "12103",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure CycleCloud 7",
+								"value": "12104",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Sysmon",
+								"value": "12114",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Subsystem for Linux (WSL2)",
+								"value": "12069",
+								"order": 0,
+								"groupName": "100000003",
+								"isSelectable": true
+							},
+							{
+								"displayName": "vcpkg",
+								"value": "12116",
+								"order": 0,
+								"groupName": "100000003",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure SDK for C++",
+								"value": "12117",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Nuget 2.1.2",
+								"value": "12120",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Nuget 4.8.5",
+								"value": "12119",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 Business Central 2022 Release Wave 1",
+								"value": "12122",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Azure EFLOW",
+								"value": "12118",
+								"order": 0,
+								"groupName": "100000005",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 4.6.2",
+								"value": "12115",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 Business Central 2022 Release Wave 2",
+								"value": "12109",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Dynamics 365 Business Central 2021 Release Wave 2",
+								"value": "12123",
+								"order": 0,
+								"groupName": "100000006",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft .NET Framework 3.5 and 4.6.2",
+								"value": "12128",
+								"order": 0,
+								"groupName": "100000002",
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Edge (Chromium-based) Updater",
+								"value": "12101",
+								"order": 0,
+								"groupName": "100000001",
+								"isSelectable": true
+							}
+						]
+					},
+					{
+						"schemaName": "platformId",
+						"displayName": "Platform",
+						"propertyValues": [
+							{
+								"displayName": "Windows 10 Version 1803 for 32-bit Systems",
+								"value": "11497",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1803 for x64-based Systems",
+								"value": "11498",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server, version 1803  (Server Core Installation)",
+								"value": "11499",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 for 32-bit Systems",
+								"value": "10729",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 for x64-based Systems",
+								"value": "10735",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2008 for 32-bit Systems Service Pack 2",
+								"value": "9312",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2008 for x64-based Systems Service Pack 2",
+								"value": "9318",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2008 for Itanium-Based Systems Service Pack 2",
+								"value": "9311",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1703 for 32-bit Systems",
+								"value": "10951",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1703 for x64-based Systems",
+								"value": "10952",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1709 for 32-bit Systems",
+								"value": "11453",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1709 for x64-based Systems",
+								"value": "11454",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server, version 1709  (Server Core Installation)",
+								"value": "11466",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1607 for 32-bit Systems",
+								"value": "10852",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1607 for x64-based Systems",
+								"value": "10853",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2016",
+								"value": "10816",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2016  (Server Core installation)",
+								"value": "10855",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 8.1 for 32-bit systems",
+								"value": "10481",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 8.1 for x64-based systems",
+								"value": "10482",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2012",
+								"value": "10378",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2012 (Server Core installation)",
+								"value": "10379",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2012 R2",
+								"value": "10483",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2012 R2 (Server Core installation)",
+								"value": "10543",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 7 for 32-bit Systems Service Pack 1",
+								"value": "10047",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 7 for x64-based Systems Service Pack 1",
+								"value": "10048",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2008 R2 for Itanium-Based Systems Service Pack 1",
+								"value": "10050",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2008 R2 for x64-based Systems Service Pack 1",
+								"value": "10051",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)",
+								"value": "10049",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows RT 8.1",
+								"value": "10484",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2013 Update 5",
+								"value": "10566",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Visual Studio 2015 Update 3",
+								"value": "10577",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1803 for ARM64-based Systems",
+								"value": "11563",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1809 for 32-bit Systems",
+								"value": "11568",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1809 for x64-based Systems",
+								"value": "11569",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1809 for ARM64-based Systems",
+								"value": "11570",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2019",
+								"value": "11571",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1909 for 32-bit Systems",
+								"value": "11712",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1909 for x64-based Systems",
+								"value": "11713",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1909 for ARM64-based Systems",
+								"value": "11714",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1709 for ARM64-based Systems",
+								"value": "11583",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1903 for 32-bit Systems",
+								"value": "11644",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1903 for x64-based Systems",
+								"value": "11645",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1903 for ARM64-based Systems",
+								"value": "11646",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 2004 for 32-bit Systems",
+								"value": "11766",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 2004 for ARM64-based Systems",
+								"value": "11767",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 2004 for x64-based Systems",
+								"value": "11768",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server, version 1909 (Server Core installation)",
+								"value": "11715",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2019  (Server Core installation)",
+								"value": "11572",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server, version 1903 (Server Core installation)",
+								"value": "11647",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation)",
+								"value": "10287",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Vista Service Pack 2",
+								"value": "4393",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Vista x64 Edition Service Pack 2",
+								"value": "9316",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1511 for 32-bit Systems",
+								"value": "10789",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1511 for x64-based Systems",
+								"value": "10788",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Server 2013 Service Pack 1",
+								"value": "10607",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Server 2010 Service Pack 2",
+								"value": "10495",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Server 2007 Service Pack 3 (32-bit editions)",
+								"value": "10308",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Server 2007 Service Pack 3 (64-bit editions)",
+								"value": "10307",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Sharepoint Server 2010 Service Pack 2 Bad",
+								"value": "999008",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Enterprise Server 2013 Service Pack 1",
+								"value": "11099",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Server 2010 Service Pack 2",
+								"value": "10120",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server, version 2004 (Server Core installation)",
+								"value": "11769",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)",
+								"value": "9344",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Word Automation Services",
+								"value": "9432",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "ChakraCore",
+								"value": "11447",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft SharePoint Server 2007 Service Pack 3 (64-bit edition) Bad",
+								"value": "999007",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET Core 1.0",
+								"value": "11463",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET Core 1.1",
+								"value": "11464",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET Core 2.1",
+								"value": "11565",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": ".NET Core 2.2",
+								"value": "11608",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 7 for 32-bit Systems",
+								"value": "9303",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Microsoft Windows Server 2003 x64 Edition Service Pack 2",
+								"value": "5867",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 20H2 for 32-bit Systems",
+								"value": "11801",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 20H2 for x64-based Systems",
+								"value": "11800",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 20H2 for ARM64-based Systems",
+								"value": "11802",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server, version 20H2 (Server Core Installation)",
+								"value": "11803",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 21H1 for 32-bit Systems",
+								"value": "11898",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 21H1 for ARM64-based Systems",
+								"value": "11897",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 11 for ARM64-based Systems",
+								"value": "11927",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 21H1 for x64-based Systems",
+								"value": "11896",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 11 for x64-based Systems",
+								"value": "11926",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 21H2 for 32-bit Systems",
+								"value": "11929",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 21H2 for ARM64-based Systems",
+								"value": "11930",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2022",
+								"value": "11923",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2022 (Server Core installation)",
+								"value": "11924",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows Server 2022 Azure Edition Core Hotpatch",
+								"value": "0",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 21H2 for x64-based Systems",
+								"value": "11931",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 1809 for HoloLens",
+								"value": "11673",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 11 Version 22H2 for x64-based Systems",
+								"value": "12086",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 22H2 for x64-based Systems",
+								"value": "12097",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 22H2 for ARM64-based Systems",
+								"value": "12098",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 10 Version 22H2 for 32-bit Systems",
+								"value": "12099",
+								"order": 0,
+								"isSelectable": true
+							},
+							{
+								"displayName": "Windows 11 Version 22H2 for ARM64-based Systems",
+								"value": "12085",
+								"order": 0,
+								"isSelectable": true
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}
