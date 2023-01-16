@@ -1,0 +1,41 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5274",
+		"synopsis": "gnome-control-center bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gnome-control-center is now available for Rocky Linux 8.",
+		"description": "The gnome-control-center package contains configuration utilities for the GNOME desktop, which allow to configure accessibility options, desktop fonts, keyboard and mouse properties, sound setup, desktop theme and background, user interface properties, screen resolution, and other settings.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2022:5274",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5274",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gnome-control-center-0:3.28.2-33.el8_6.1.aarch64.rpm",
+					"gnome-control-center-0:3.28.2-33.el8_6.1.src.rpm",
+					"gnome-control-center-0:3.28.2-33.el8_6.1.x86_64.rpm",
+					"gnome-control-center-debuginfo-0:3.28.2-33.el8_6.1.aarch64.rpm",
+					"gnome-control-center-debuginfo-0:3.28.2-33.el8_6.1.x86_64.rpm",
+					"gnome-control-center-debugsource-0:3.28.2-33.el8_6.1.aarch64.rpm",
+					"gnome-control-center-debugsource-0:3.28.2-33.el8_6.1.x86_64.rpm",
+					"gnome-control-center-filesystem-0:3.28.2-33.el8_6.1.noarch.rpm"
+				]
+			}
+		}
+	}
+}

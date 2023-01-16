@@ -1,0 +1,74 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1864",
+		"synopsis": "crash bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for crash is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1853751",
+				"description": "symbol_search() extreme performance degradation if symbol not found",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1853751"
+			},
+			{
+				"ticket": "1952888",
+				"description": "ps command only outputting ~130 procs/min",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1952888"
+			},
+			{
+				"ticket": "2023570",
+				"description": "Rebase crash-utility to upstream version(crash-7.3.1)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2023570"
+			},
+			{
+				"ticket": "2037546",
+				"description": "The crash ?timer -r? command does not print all the per-CPU clocks in RHEL 8.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2037546"
+			},
+			{
+				"ticket": "2038447",
+				"description": "crash segfault with \"bt -a\" on aarch64 even with latest upstream",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2038447"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1864",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1864",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"crash-0:7.3.1-5.el8.aarch64.rpm",
+					"crash-0:7.3.1-5.el8.src.rpm",
+					"crash-0:7.3.1-5.el8.x86_64.rpm",
+					"crash-debuginfo-0:7.3.1-5.el8.aarch64.rpm",
+					"crash-debuginfo-0:7.3.1-5.el8.x86_64.rpm",
+					"crash-debugsource-0:7.3.1-5.el8.aarch64.rpm",
+					"crash-debugsource-0:7.3.1-5.el8.x86_64.rpm",
+					"crash-devel-0:7.3.1-5.el8.aarch64.rpm",
+					"crash-devel-0:7.3.1-5.el8.i686.rpm",
+					"crash-devel-0:7.3.1-5.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

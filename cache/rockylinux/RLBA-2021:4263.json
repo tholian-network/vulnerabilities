@@ -1,0 +1,62 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4263",
+		"synopsis": "new packages: gcc-toolset-11-valgrind",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "New gcc-toolset-11-valgrind packages are now available for Rocky Linux 8.",
+		"description": "GCC Toolset is a compiler toolset that provides recent versions of development tools. GCC Toolset is an Application Stream packaged as a Software Collection.\nThis enhancement update adds the gcc-toolset-11-valgrind packages to Rocky Linux 8.\nFor instructions on usage, see Using GCC Toolset linked from the References section. Components and specifics of this version are documented in the GCC Toolset 11 chapter.\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1937340",
+				"description": "gcc-toolset-10-valgrind erroneously reports z15 support",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1937340"
+			},
+			{
+				"ticket": "1957226",
+				"description": "Rebase valgrind for GTS11",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1957226"
+			},
+			{
+				"ticket": "1967081",
+				"description": "incorrect pkgconfig virtual provides in devel packages",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1967081"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4263",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4263",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gcc-toolset-11-valgrind-1:3.17.0-6.el8.aarch64.rpm",
+					"gcc-toolset-11-valgrind-1:3.17.0-6.el8.i686.rpm",
+					"gcc-toolset-11-valgrind-1:3.17.0-6.el8.src.rpm",
+					"gcc-toolset-11-valgrind-1:3.17.0-6.el8.x86_64.rpm",
+					"gcc-toolset-11-valgrind-debuginfo-1:3.17.0-6.el8.aarch64.rpm",
+					"gcc-toolset-11-valgrind-debuginfo-1:3.17.0-6.el8.i686.rpm",
+					"gcc-toolset-11-valgrind-debuginfo-1:3.17.0-6.el8.x86_64.rpm",
+					"gcc-toolset-11-valgrind-devel-1:3.17.0-6.el8.aarch64.rpm",
+					"gcc-toolset-11-valgrind-devel-1:3.17.0-6.el8.i686.rpm",
+					"gcc-toolset-11-valgrind-devel-1:3.17.0-6.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

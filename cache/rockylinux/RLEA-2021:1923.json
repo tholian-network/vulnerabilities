@@ -1,0 +1,44 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:1923",
+		"synopsis": "python-rpm-macros bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for python-rpm-macros is now available for Rocky Enterprise Software Foundation EnterpriseLinux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1892797",
+				"description": "python-rpm-macros: Backport new macros from Fedora",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1892797"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:1923",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:1923",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"python3-rpm-macros-0:3-41.el8.noarch.rpm",
+					"python-rpm-macros-0:3-41.el8.noarch.rpm",
+					"python-rpm-macros-0:3-41.el8.src.rpm",
+					"python-srpm-macros-0:3-41.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

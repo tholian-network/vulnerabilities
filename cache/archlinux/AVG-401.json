@@ -1,0 +1,21 @@
+{
+  "name": "AVG-401",
+  "packages": [
+    "newsbeuter"
+  ],
+  "status": "Fixed",
+  "severity": "High",
+  "type": "arbitrary command execution",
+  "affected": "2.9-7",
+  "fixed": "2.9-8",
+  "ticket": null,
+  "issues": [
+    "CVE-2017-14500",
+    "CVE-2017-12904"
+  ],
+  "advisories": [
+    "ASA-201709-11"
+  ],
+  "references": [],
+  "notes": "2.9-7 did not properly apply the patch file for CVE-2017-12904"
+}

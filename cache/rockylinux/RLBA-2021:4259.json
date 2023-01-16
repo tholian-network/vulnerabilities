@@ -1,0 +1,56 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4259",
+		"synopsis": "new packages: gcc-toolset-11-dyninst",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "New gcc-toolset-11-dyninst packages are now available for Rocky Linux 8.",
+		"description": "GCC Toolset is a compiler toolset that provides recent versions of development tools. GCC Toolset is an Application Stream packaged as a Software Collection.\nThis enhancement update adds the gcc-toolset-11-dyninst packages to Rocky Linux 8.\nFor instructions on usage, see Using GCC Toolset linked from the References section. Components and specifics of this version are documented in the GCC Toolset 11 chapter.\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1957942",
+				"description": "Rebase dyninst for GTS11",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1957942"
+			},
+			{
+				"ticket": "1993317",
+				"description": "please, fix bz1965455 in gcc-toolset-11-dyninst-11.0.0-1.el8 also",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1993317"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4259",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4259",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gcc-toolset-11-dyninst-0:11.0.0-2.el8.aarch64.rpm",
+					"gcc-toolset-11-dyninst-0:11.0.0-2.el8.i686.rpm",
+					"gcc-toolset-11-dyninst-0:11.0.0-2.el8.src.rpm",
+					"gcc-toolset-11-dyninst-0:11.0.0-2.el8.x86_64.rpm",
+					"gcc-toolset-11-dyninst-debuginfo-0:11.0.0-2.el8.aarch64.rpm",
+					"gcc-toolset-11-dyninst-debuginfo-0:11.0.0-2.el8.i686.rpm",
+					"gcc-toolset-11-dyninst-debuginfo-0:11.0.0-2.el8.x86_64.rpm",
+					"gcc-toolset-11-dyninst-devel-0:11.0.0-2.el8.aarch64.rpm",
+					"gcc-toolset-11-dyninst-devel-0:11.0.0-2.el8.i686.rpm",
+					"gcc-toolset-11-dyninst-devel-0:11.0.0-2.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

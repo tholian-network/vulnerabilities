@@ -1,0 +1,57 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1968",
+		"synopsis": "Moderate: libsndfile security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for libsndfile is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "libsndfile is a C library for reading and writing files containing sampled sound, such as AIFF, AU, or WAV. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2027690",
+				"description": "CVE-2021-4156 libsndfile: heap out-of-bounds read in src/flac.c in flac_buffer_copy",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2027690"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-4156",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-4156.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-125"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libsndfile-0:1.0.28-12.el8.aarch64.rpm",
+					"libsndfile-0:1.0.28-12.el8.i686.rpm",
+					"libsndfile-0:1.0.28-12.el8.src.rpm",
+					"libsndfile-0:1.0.28-12.el8.x86_64.rpm",
+					"libsndfile-debuginfo-0:1.0.28-12.el8.aarch64.rpm",
+					"libsndfile-debuginfo-0:1.0.28-12.el8.i686.rpm",
+					"libsndfile-debuginfo-0:1.0.28-12.el8.x86_64.rpm",
+					"libsndfile-debugsource-0:1.0.28-12.el8.aarch64.rpm",
+					"libsndfile-debugsource-0:1.0.28-12.el8.i686.rpm",
+					"libsndfile-debugsource-0:1.0.28-12.el8.x86_64.rpm",
+					"libsndfile-devel-0:1.0.28-12.el8.aarch64.rpm",
+					"libsndfile-devel-0:1.0.28-12.el8.i686.rpm",
+					"libsndfile-devel-0:1.0.28-12.el8.x86_64.rpm",
+					"libsndfile-utils-0:1.0.28-12.el8.aarch64.rpm",
+					"libsndfile-utils-0:1.0.28-12.el8.x86_64.rpm",
+					"libsndfile-utils-debuginfo-0:1.0.28-12.el8.aarch64.rpm",
+					"libsndfile-utils-debuginfo-0:1.0.28-12.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

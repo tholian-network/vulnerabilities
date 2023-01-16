@@ -1,0 +1,136 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2100",
+		"synopsis": "util-linux bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for util-linux is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1894192",
+				"description": "Update or backport setpriv --pdeathsig",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1894192"
+			},
+			{
+				"ticket": "2011602",
+				"description": "logger from util-linux incorrectly handles long messages",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2011602"
+			},
+			{
+				"ticket": "2026511",
+				"description": "blkid fails to complete when targeting  non-block devices",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2026511"
+			},
+			{
+				"ticket": "2033566",
+				"description": "Complete Linux-PAM compliance for forked child in su and login",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2033566"
+			},
+			{
+				"ticket": "2041498",
+				"description": "incorrect partition size calculation for BLKPG_* ioctls",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2041498"
+			},
+			{
+				"ticket": "2058176",
+				"description": "losetup Retry LOOP_SET_STATUS64 on EAGAIN",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2058176"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2100",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2100",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libblkid-0:2.32.1-35.el8.aarch64.rpm",
+					"libblkid-0:2.32.1-35.el8.i686.rpm",
+					"libblkid-0:2.32.1-35.el8.x86_64.rpm",
+					"libblkid-debuginfo-0:2.32.1-35.el8.aarch64.rpm",
+					"libblkid-debuginfo-0:2.32.1-35.el8.i686.rpm",
+					"libblkid-debuginfo-0:2.32.1-35.el8.x86_64.rpm",
+					"libblkid-devel-0:2.32.1-35.el8.aarch64.rpm",
+					"libblkid-devel-0:2.32.1-35.el8.i686.rpm",
+					"libblkid-devel-0:2.32.1-35.el8.x86_64.rpm",
+					"libfdisk-0:2.32.1-35.el8.aarch64.rpm",
+					"libfdisk-0:2.32.1-35.el8.i686.rpm",
+					"libfdisk-0:2.32.1-35.el8.x86_64.rpm",
+					"libfdisk-debuginfo-0:2.32.1-35.el8.aarch64.rpm",
+					"libfdisk-debuginfo-0:2.32.1-35.el8.i686.rpm",
+					"libfdisk-debuginfo-0:2.32.1-35.el8.x86_64.rpm",
+					"libfdisk-devel-0:2.32.1-35.el8.aarch64.rpm",
+					"libfdisk-devel-0:2.32.1-35.el8.i686.rpm",
+					"libfdisk-devel-0:2.32.1-35.el8.x86_64.rpm",
+					"libmount-0:2.32.1-35.el8.aarch64.rpm",
+					"libmount-0:2.32.1-35.el8.i686.rpm",
+					"libmount-0:2.32.1-35.el8.x86_64.rpm",
+					"libmount-debuginfo-0:2.32.1-35.el8.aarch64.rpm",
+					"libmount-debuginfo-0:2.32.1-35.el8.i686.rpm",
+					"libmount-debuginfo-0:2.32.1-35.el8.x86_64.rpm",
+					"libmount-devel-0:2.32.1-35.el8.aarch64.rpm",
+					"libmount-devel-0:2.32.1-35.el8.i686.rpm",
+					"libmount-devel-0:2.32.1-35.el8.x86_64.rpm",
+					"libsmartcols-0:2.32.1-35.el8.aarch64.rpm",
+					"libsmartcols-0:2.32.1-35.el8.i686.rpm",
+					"libsmartcols-0:2.32.1-35.el8.x86_64.rpm",
+					"libsmartcols-debuginfo-0:2.32.1-35.el8.aarch64.rpm",
+					"libsmartcols-debuginfo-0:2.32.1-35.el8.i686.rpm",
+					"libsmartcols-debuginfo-0:2.32.1-35.el8.x86_64.rpm",
+					"libsmartcols-devel-0:2.32.1-35.el8.aarch64.rpm",
+					"libsmartcols-devel-0:2.32.1-35.el8.i686.rpm",
+					"libsmartcols-devel-0:2.32.1-35.el8.x86_64.rpm",
+					"libuuid-0:2.32.1-35.el8.aarch64.rpm",
+					"libuuid-0:2.32.1-35.el8.i686.rpm",
+					"libuuid-0:2.32.1-35.el8.x86_64.rpm",
+					"libuuid-debuginfo-0:2.32.1-35.el8.aarch64.rpm",
+					"libuuid-debuginfo-0:2.32.1-35.el8.i686.rpm",
+					"libuuid-debuginfo-0:2.32.1-35.el8.x86_64.rpm",
+					"libuuid-devel-0:2.32.1-35.el8.aarch64.rpm",
+					"libuuid-devel-0:2.32.1-35.el8.i686.rpm",
+					"libuuid-devel-0:2.32.1-35.el8.x86_64.rpm",
+					"python3-libmount-0:2.32.1-35.el8.aarch64.rpm",
+					"python3-libmount-0:2.32.1-35.el8.x86_64.rpm",
+					"python3-libmount-debuginfo-0:2.32.1-35.el8.aarch64.rpm",
+					"python3-libmount-debuginfo-0:2.32.1-35.el8.x86_64.rpm",
+					"util-linux-0:2.32.1-35.el8.aarch64.rpm",
+					"util-linux-0:2.32.1-35.el8.src.rpm",
+					"util-linux-0:2.32.1-35.el8.x86_64.rpm",
+					"util-linux-debuginfo-0:2.32.1-35.el8.aarch64.rpm",
+					"util-linux-debuginfo-0:2.32.1-35.el8.i686.rpm",
+					"util-linux-debuginfo-0:2.32.1-35.el8.x86_64.rpm",
+					"util-linux-debugsource-0:2.32.1-35.el8.aarch64.rpm",
+					"util-linux-debugsource-0:2.32.1-35.el8.i686.rpm",
+					"util-linux-debugsource-0:2.32.1-35.el8.x86_64.rpm",
+					"util-linux-user-0:2.32.1-35.el8.aarch64.rpm",
+					"util-linux-user-0:2.32.1-35.el8.x86_64.rpm",
+					"util-linux-user-debuginfo-0:2.32.1-35.el8.aarch64.rpm",
+					"util-linux-user-debuginfo-0:2.32.1-35.el8.x86_64.rpm",
+					"uuidd-0:2.32.1-35.el8.aarch64.rpm",
+					"uuidd-0:2.32.1-35.el8.x86_64.rpm",
+					"uuidd-debuginfo-0:2.32.1-35.el8.aarch64.rpm",
+					"uuidd-debuginfo-0:2.32.1-35.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

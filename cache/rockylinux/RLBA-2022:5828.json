@@ -1,0 +1,48 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5828",
+		"synopsis": "rhel-system-roles bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for rhel-system-roles is now available for Rocky Linux 8.",
+		"description": "The rhel-system-roles package includes a collection of Ansible roles and modules that provide a stable and consistent configuration interface for managing multiple versions of Rocky Linux.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2098226",
+				"description": "storage role raid_level \"striped\" is not supported [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2098226"
+			},
+			{
+				"ticket": "2098227",
+				"description": "storage role cannot set mount_options for volumes [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2098227"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:5828",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5828",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-08-02T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"rhel-system-roles-0:1.16.2-1.el8_6.3.noarch.rpm",
+					"rhel-system-roles-0:1.16.2-1.el8_6.3.src.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,80 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4622",
+		"synopsis": "Important: freerdp security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for freerdp is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "FreeRDP is a free implementation of the Remote Desktop Protocol (RDP), released under the Apache license. The xfreerdp client can connect to RDP servers such as Microsoft Windows machines, xrdp, and VirtualBox.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2016403",
+				"description": "CVE-2021-41159 freerdp: improper client input validation for gateway connections allows to overwrite memory",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016403"
+			},
+			{
+				"ticket": "2016412",
+				"description": "CVE-2021-41160 freerdp: improper region checks in all clients allow out of bound write to memory",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016412"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-41159",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-41159.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-787"
+			},
+			{
+				"name": "CVE-2021-41160",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-41160.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-787"
+			}
+		],
+		"publishedAt": "2021-11-11T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"freerdp-2:2.2.0-7.el8_5.aarch64.rpm",
+					"freerdp-2:2.2.0-7.el8_5.src.rpm",
+					"freerdp-2:2.2.0-7.el8_5.x86_64.rpm",
+					"freerdp-debuginfo-2:2.2.0-7.el8_5.aarch64.rpm",
+					"freerdp-debuginfo-2:2.2.0-7.el8_5.i686.rpm",
+					"freerdp-debuginfo-2:2.2.0-7.el8_5.x86_64.rpm",
+					"freerdp-debugsource-2:2.2.0-7.el8_5.aarch64.rpm",
+					"freerdp-debugsource-2:2.2.0-7.el8_5.x86_64.rpm",
+					"freerdp-devel-2:2.2.0-7.el8_5.aarch64.rpm",
+					"freerdp-devel-2:2.2.0-7.el8_5.i686.rpm",
+					"freerdp-devel-2:2.2.0-7.el8_5.x86_64.rpm",
+					"freerdp-libs-2:2.2.0-7.el8_5.aarch64.rpm",
+					"freerdp-libs-2:2.2.0-7.el8_5.i686.rpm",
+					"freerdp-libs-2:2.2.0-7.el8_5.x86_64.rpm",
+					"freerdp-libs-debuginfo-2:2.2.0-7.el8_5.aarch64.rpm",
+					"freerdp-libs-debuginfo-2:2.2.0-7.el8_5.i686.rpm",
+					"freerdp-libs-debuginfo-2:2.2.0-7.el8_5.x86_64.rpm",
+					"libwinpr-2:2.2.0-7.el8_5.aarch64.rpm",
+					"libwinpr-2:2.2.0-7.el8_5.i686.rpm",
+					"libwinpr-2:2.2.0-7.el8_5.x86_64.rpm",
+					"libwinpr-debuginfo-2:2.2.0-7.el8_5.aarch64.rpm",
+					"libwinpr-debuginfo-2:2.2.0-7.el8_5.i686.rpm",
+					"libwinpr-debuginfo-2:2.2.0-7.el8_5.x86_64.rpm",
+					"libwinpr-devel-2:2.2.0-7.el8_5.aarch64.rpm",
+					"libwinpr-devel-2:2.2.0-7.el8_5.i686.rpm",
+					"libwinpr-devel-2:2.2.0-7.el8_5.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

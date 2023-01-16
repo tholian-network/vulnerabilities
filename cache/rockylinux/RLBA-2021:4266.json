@@ -1,0 +1,42 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4266",
+		"synopsis": "cldr-emoji-annotation bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for cldr-emoji-annotation is now available for Rocky Enterprise Software Foundation EnterpriseLinux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1897540",
+				"description": "[rhel8] rebase cldr-emoji-annotation to 39 from Fedora 34",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1897540"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4266",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4266",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cldr-emoji-annotation-0:39-2.el8.noarch.rpm",
+					"cldr-emoji-annotation-0:39-2.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1839",
+		"synopsis": "dnsmasq bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for dnsmasq is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1998448",
+				"description": "edk2 OVMF continues to request DHCPv6 address despite receiving option: 13 status  1 address in use",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1998448"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1839",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1839",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"dnsmasq-0:2.79-21.el8_6.1.aarch64.rpm",
+					"dnsmasq-0:2.79-21.el8_6.1.src.rpm",
+					"dnsmasq-0:2.79-21.el8_6.1.x86_64.rpm",
+					"dnsmasq-debuginfo-0:2.79-21.el8_6.1.aarch64.rpm",
+					"dnsmasq-debuginfo-0:2.79-21.el8_6.1.x86_64.rpm",
+					"dnsmasq-debugsource-0:2.79-21.el8_6.1.aarch64.rpm",
+					"dnsmasq-debugsource-0:2.79-21.el8_6.1.x86_64.rpm",
+					"dnsmasq-utils-0:2.79-21.el8_6.1.aarch64.rpm",
+					"dnsmasq-utils-0:2.79-21.el8_6.1.x86_64.rpm",
+					"dnsmasq-utils-debuginfo-0:2.79-21.el8_6.1.aarch64.rpm",
+					"dnsmasq-utils-debuginfo-0:2.79-21.el8_6.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

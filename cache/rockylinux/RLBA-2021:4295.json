@@ -1,0 +1,53 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4295",
+		"synopsis": "openslp bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for openslp is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1965649",
+				"description": "slptool produces no output due to missing /etc/slp.spi file",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1965649"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4295",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4295",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"openslp-0:2.0.0-19.el8.aarch64.rpm",
+					"openslp-0:2.0.0-19.el8.i686.rpm",
+					"openslp-0:2.0.0-19.el8.src.rpm",
+					"openslp-0:2.0.0-19.el8.x86_64.rpm",
+					"openslp-debuginfo-0:2.0.0-19.el8.aarch64.rpm",
+					"openslp-debuginfo-0:2.0.0-19.el8.i686.rpm",
+					"openslp-debuginfo-0:2.0.0-19.el8.x86_64.rpm",
+					"openslp-debugsource-0:2.0.0-19.el8.aarch64.rpm",
+					"openslp-debugsource-0:2.0.0-19.el8.i686.rpm",
+					"openslp-debugsource-0:2.0.0-19.el8.x86_64.rpm",
+					"openslp-devel-0:2.0.0-19.el8.aarch64.rpm",
+					"openslp-devel-0:2.0.0-19.el8.i686.rpm",
+					"openslp-devel-0:2.0.0-19.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

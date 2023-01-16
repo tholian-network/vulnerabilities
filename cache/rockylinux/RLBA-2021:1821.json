@@ -1,0 +1,90 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1821",
+		"synopsis": "spice-gtk bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for spice-gtk is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1418663",
+				"description": "virt-viewer exited during repeated migration with large c/p transfer taking place",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1418663"
+			},
+			{
+				"ticket": "1839104",
+				"description": "Covscan fixes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1839104"
+			},
+			{
+				"ticket": "1867564",
+				"description": "remote-viewer segment fault when connect to a being migrated VM",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1867564"
+			},
+			{
+				"ticket": "1874740",
+				"description": "usb redirection using spice-usbredir-redirect-on-connect option doesn't take effect",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1874740"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1821",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1821",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"spice-glib-0:0.38-6.el8.aarch64.rpm",
+					"spice-glib-0:0.38-6.el8.i686.rpm",
+					"spice-glib-0:0.38-6.el8.x86_64.rpm",
+					"spice-glib-debuginfo-0:0.38-6.el8.aarch64.rpm",
+					"spice-glib-debuginfo-0:0.38-6.el8.i686.rpm",
+					"spice-glib-debuginfo-0:0.38-6.el8.x86_64.rpm",
+					"spice-glib-devel-0:0.38-6.el8.aarch64.rpm",
+					"spice-glib-devel-0:0.38-6.el8.i686.rpm",
+					"spice-glib-devel-0:0.38-6.el8.x86_64.rpm",
+					"spice-gtk-0:0.38-6.el8.aarch64.rpm",
+					"spice-gtk-0:0.38-6.el8.src.rpm",
+					"spice-gtk-0:0.38-6.el8.x86_64.rpm",
+					"spice-gtk3-0:0.38-6.el8.aarch64.rpm",
+					"spice-gtk3-0:0.38-6.el8.i686.rpm",
+					"spice-gtk3-0:0.38-6.el8.x86_64.rpm",
+					"spice-gtk3-debuginfo-0:0.38-6.el8.aarch64.rpm",
+					"spice-gtk3-debuginfo-0:0.38-6.el8.i686.rpm",
+					"spice-gtk3-debuginfo-0:0.38-6.el8.x86_64.rpm",
+					"spice-gtk3-devel-0:0.38-6.el8.aarch64.rpm",
+					"spice-gtk3-devel-0:0.38-6.el8.i686.rpm",
+					"spice-gtk3-devel-0:0.38-6.el8.x86_64.rpm",
+					"spice-gtk3-vala-0:0.38-6.el8.aarch64.rpm",
+					"spice-gtk3-vala-0:0.38-6.el8.x86_64.rpm",
+					"spice-gtk-debuginfo-0:0.38-6.el8.aarch64.rpm",
+					"spice-gtk-debuginfo-0:0.38-6.el8.i686.rpm",
+					"spice-gtk-debuginfo-0:0.38-6.el8.x86_64.rpm",
+					"spice-gtk-debugsource-0:0.38-6.el8.aarch64.rpm",
+					"spice-gtk-debugsource-0:0.38-6.el8.x86_64.rpm",
+					"spice-gtk-tools-0:0.38-6.el8.aarch64.rpm",
+					"spice-gtk-tools-0:0.38-6.el8.x86_64.rpm",
+					"spice-gtk-tools-debuginfo-0:0.38-6.el8.aarch64.rpm",
+					"spice-gtk-tools-debuginfo-0:0.38-6.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

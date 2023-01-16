@@ -1,0 +1,147 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:1978",
+		"synopsis": "pcs bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for pcs is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1384485",
+				"description": "pcs should validate resource/stonith agents metadata upon reading",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1384485"
+			},
+			{
+				"ticket": "1533090",
+				"description": "fix displaying fencing levels",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1533090"
+			},
+			{
+				"ticket": "1936833",
+				"description": "Support version 1.1 of the OCF Resource Agent API standard",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1936833"
+			},
+			{
+				"ticket": "1968088",
+				"description": "Misleading error message from pcs quorum unblock if wait_for_all=0",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1968088"
+			},
+			{
+				"ticket": "1970508",
+				"description": "New web UI - add more functionalities to the cluster management",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1970508"
+			},
+			{
+				"ticket": "1997011",
+				"description": "Repair issues with constraints in new web UI",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1997011"
+			},
+			{
+				"ticket": "2003066",
+				"description": "update-scsi-devices command unfence a node without quorum [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2003066"
+			},
+			{
+				"ticket": "2003068",
+				"description": "[RFE] Provide add/remove syntax for command `pcs stonith update-scsi-devices` [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2003068"
+			},
+			{
+				"ticket": "2012128",
+				"description": "pcs rebase bz for 8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012128"
+			},
+			{
+				"ticket": "2017311",
+				"description": "New web UI - add cluster setup",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2017311"
+			},
+			{
+				"ticket": "2017312",
+				"description": "New web UI - add permission management",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2017312"
+			},
+			{
+				"ticket": "2022463",
+				"description": "Enabling sbd before starting the cluster sets an incorrect `validate-with` value in /var/lib/pacemaker/cib/cib.xml",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2022463"
+			},
+			{
+				"ticket": "2024543",
+				"description": "New web UI: Fence Device data can not be loaded because of prefix \"stonith:\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2024543"
+			},
+			{
+				"ticket": "2028902",
+				"description": "corosync-qdevice not being automatically enabled when declaring a quorum device in RHEL 8.5 cluster",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028902"
+			},
+			{
+				"ticket": "2032997",
+				"description": "When a fence-scsi storage device becomes unavailable, pcs cannot remove it from configuration and add a running one",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2032997"
+			},
+			{
+				"ticket": "2036633",
+				"description": "Error: Agent 'ocf:linbit:drbd' is not installed or does not provide valid metadata: Element content failed to validate content, line 117, use --force to override",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2036633"
+			},
+			{
+				"ticket": "2047983",
+				"description": "pcs_snmp_agent fails to get cluster status due to uninitialized constant PCS_INTERNAL",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2047983"
+			},
+			{
+				"ticket": "2050274",
+				"description": "Pcs should process agents not conforming to OCF schema in the same way as before",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2050274"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2022:1978",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:1978",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"pcs-0:0.10.12-6.el8_6.2.aarch64.rpm",
+					"pcs-0:0.10.12-6.el8_6.2.src.rpm",
+					"pcs-0:0.10.12-6.el8_6.2.x86_64.rpm",
+					"pcs-snmp-0:0.10.12-6.el8_6.2.aarch64.rpm",
+					"pcs-snmp-0:0.10.12-6.el8_6.2.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

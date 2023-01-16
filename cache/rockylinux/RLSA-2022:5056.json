@@ -1,0 +1,71 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:5056",
+		"synopsis": "Important: cups security and bug fix update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for cups is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The Common UNIX Printing System (CUPS) provides a portable printing layer for Linux, UNIX, and similar operating systems.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2084321",
+				"description": "CVE-2022-26691 cups: authorization bypass when using \"local\" authorization",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2084321"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-26691",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-26691.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:L",
+				"cvss3BaseScore": "8.1",
+				"cwe": "CWE-288"
+			}
+		],
+		"publishedAt": "2022-06-15T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cups-1:2.2.6-45.el8_6.2.aarch64.rpm",
+					"cups-1:2.2.6-45.el8_6.2.src.rpm",
+					"cups-1:2.2.6-45.el8_6.2.x86_64.rpm",
+					"cups-client-1:2.2.6-45.el8_6.2.aarch64.rpm",
+					"cups-client-1:2.2.6-45.el8_6.2.x86_64.rpm",
+					"cups-client-debuginfo-1:2.2.6-45.el8_6.2.aarch64.rpm",
+					"cups-client-debuginfo-1:2.2.6-45.el8_6.2.x86_64.rpm",
+					"cups-debuginfo-1:2.2.6-45.el8_6.2.aarch64.rpm",
+					"cups-debuginfo-1:2.2.6-45.el8_6.2.i686.rpm",
+					"cups-debuginfo-1:2.2.6-45.el8_6.2.x86_64.rpm",
+					"cups-debugsource-1:2.2.6-45.el8_6.2.aarch64.rpm",
+					"cups-debugsource-1:2.2.6-45.el8_6.2.i686.rpm",
+					"cups-debugsource-1:2.2.6-45.el8_6.2.x86_64.rpm",
+					"cups-devel-1:2.2.6-45.el8_6.2.aarch64.rpm",
+					"cups-devel-1:2.2.6-45.el8_6.2.i686.rpm",
+					"cups-devel-1:2.2.6-45.el8_6.2.x86_64.rpm",
+					"cups-filesystem-1:2.2.6-45.el8_6.2.noarch.rpm",
+					"cups-ipptool-1:2.2.6-45.el8_6.2.aarch64.rpm",
+					"cups-ipptool-1:2.2.6-45.el8_6.2.x86_64.rpm",
+					"cups-ipptool-debuginfo-1:2.2.6-45.el8_6.2.aarch64.rpm",
+					"cups-ipptool-debuginfo-1:2.2.6-45.el8_6.2.x86_64.rpm",
+					"cups-libs-1:2.2.6-45.el8_6.2.aarch64.rpm",
+					"cups-libs-1:2.2.6-45.el8_6.2.i686.rpm",
+					"cups-libs-1:2.2.6-45.el8_6.2.x86_64.rpm",
+					"cups-libs-debuginfo-1:2.2.6-45.el8_6.2.aarch64.rpm",
+					"cups-libs-debuginfo-1:2.2.6-45.el8_6.2.i686.rpm",
+					"cups-libs-debuginfo-1:2.2.6-45.el8_6.2.x86_64.rpm",
+					"cups-lpd-1:2.2.6-45.el8_6.2.aarch64.rpm",
+					"cups-lpd-1:2.2.6-45.el8_6.2.x86_64.rpm",
+					"cups-lpd-debuginfo-1:2.2.6-45.el8_6.2.aarch64.rpm",
+					"cups-lpd-debuginfo-1:2.2.6-45.el8_6.2.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

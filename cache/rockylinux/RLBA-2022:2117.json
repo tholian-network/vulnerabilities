@@ -1,0 +1,78 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2117",
+		"synopsis": "gpgme bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gpgme is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1953905",
+				"description": "Provide pkgconfig config and Provides for gpgme",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1953905"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2117",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2117",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gpgme-0:1.13.1-11.el8.aarch64.rpm",
+					"gpgme-0:1.13.1-11.el8.i686.rpm",
+					"gpgme-0:1.13.1-11.el8.src.rpm",
+					"gpgme-0:1.13.1-11.el8.x86_64.rpm",
+					"gpgme-debuginfo-0:1.13.1-11.el8.aarch64.rpm",
+					"gpgme-debuginfo-0:1.13.1-11.el8.i686.rpm",
+					"gpgme-debuginfo-0:1.13.1-11.el8.x86_64.rpm",
+					"gpgme-debugsource-0:1.13.1-11.el8.aarch64.rpm",
+					"gpgme-debugsource-0:1.13.1-11.el8.i686.rpm",
+					"gpgme-debugsource-0:1.13.1-11.el8.x86_64.rpm",
+					"gpgme-devel-0:1.13.1-11.el8.aarch64.rpm",
+					"gpgme-devel-0:1.13.1-11.el8.i686.rpm",
+					"gpgme-devel-0:1.13.1-11.el8.x86_64.rpm",
+					"gpgme-devel-debuginfo-0:1.13.1-11.el8.aarch64.rpm",
+					"gpgme-devel-debuginfo-0:1.13.1-11.el8.i686.rpm",
+					"gpgme-devel-debuginfo-0:1.13.1-11.el8.x86_64.rpm",
+					"gpgmepp-0:1.13.1-11.el8.aarch64.rpm",
+					"gpgmepp-0:1.13.1-11.el8.i686.rpm",
+					"gpgmepp-0:1.13.1-11.el8.x86_64.rpm",
+					"gpgmepp-debuginfo-0:1.13.1-11.el8.aarch64.rpm",
+					"gpgmepp-debuginfo-0:1.13.1-11.el8.i686.rpm",
+					"gpgmepp-debuginfo-0:1.13.1-11.el8.x86_64.rpm",
+					"gpgmepp-devel-0:1.13.1-11.el8.aarch64.rpm",
+					"gpgmepp-devel-0:1.13.1-11.el8.i686.rpm",
+					"gpgmepp-devel-0:1.13.1-11.el8.x86_64.rpm",
+					"python3-gpg-0:1.13.1-11.el8.aarch64.rpm",
+					"python3-gpg-0:1.13.1-11.el8.x86_64.rpm",
+					"python3-gpg-debuginfo-0:1.13.1-11.el8.aarch64.rpm",
+					"python3-gpg-debuginfo-0:1.13.1-11.el8.x86_64.rpm",
+					"qgpgme-0:1.13.1-11.el8.aarch64.rpm",
+					"qgpgme-0:1.13.1-11.el8.i686.rpm",
+					"qgpgme-0:1.13.1-11.el8.x86_64.rpm",
+					"qgpgme-debuginfo-0:1.13.1-11.el8.aarch64.rpm",
+					"qgpgme-debuginfo-0:1.13.1-11.el8.i686.rpm",
+					"qgpgme-debuginfo-0:1.13.1-11.el8.x86_64.rpm",
+					"qgpgme-devel-0:1.13.1-11.el8.aarch64.rpm",
+					"qgpgme-devel-0:1.13.1-11.el8.i686.rpm",
+					"qgpgme-devel-0:1.13.1-11.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:2010",
+		"synopsis": "mcelog bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for mcelog is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHEA-2022:2010",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:2010",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mcelog-3:179-1.el8.src.rpm",
+					"mcelog-3:179-1.el8.x86_64.rpm",
+					"mcelog-debuginfo-3:179-1.el8.x86_64.rpm",
+					"mcelog-debugsource-3:179-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

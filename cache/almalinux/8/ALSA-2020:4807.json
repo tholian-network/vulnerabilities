@@ -1,0 +1,45 @@
+{
+	"updateinfo_id": "ALSA-2020:4807",
+	"fromstr": "packager@almalinux.org",
+	"title": "Moderate: prometheus-jmx-exporter security update",
+	"type": "security",
+	"release": "0",
+	"version": "2",
+	"status": "final",
+	"severity": "Moderate",
+	"summary": "An update for prometheus-jmx-exporter is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+	"pushcount": "2",
+	"pkglist": {
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"packages": [
+			{
+				"src": "prometheus-jmx-exporter-0.12.0-6.el8.src.rpm",
+				"name": "prometheus-jmx-exporter",
+				"epoch": "0",
+				"version": "0.12.0",
+				"release": "6.el8",
+				"arch": "noarch",
+				"filename": "prometheus-jmx-exporter-0.12.0-6.el8.noarch.rpm",
+				"sum": "16e1d2dcc84c2d7ba3714a3e979d31f3d04e856ad41f1d0b022098aef2d12b0f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "Prometheus JMX Exporter is a JMX to Prometheus exporter: a collector that can be configured to scrape and expose MBeans of a JMX target.\n\nSecurity Fix(es):\n\n* snakeyaml: Billion laughs attack via alias feature (CVE-2017-18640)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
+	"references": [
+		{
+			"id": "CVE-2017-18640",
+			"title": "CVE-2017-18640",
+			"type": "cve",
+			"href": "https://vulners.com/cve/CVE-2017-18640"
+		}
+	],
+	"issued_date": {
+		"$date": 1604407073000
+	},
+	"updated_date": {
+		"$date": 1636712456000
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4461",
+		"synopsis": "filesystem bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for filesystem is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1912155",
+				"description": "Fail to update filesystem inside systemd-nspawn container",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1912155"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4461",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4461",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"filesystem-0:3.8-6.el8.aarch64.rpm",
+					"filesystem-0:3.8-6.el8.src.rpm",
+					"filesystem-0:3.8-6.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

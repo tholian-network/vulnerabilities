@@ -1,0 +1,51 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1902",
+		"synopsis": "greenboot bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for greenboot is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "105872",
+				"description": "Greenboot to configure systemd hardware watchdog support",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=105872"
+			},
+			{
+				"ticket": "1920063",
+				"description": "[RFE] - allow configuration of number of greenboot boot attempts",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1920063"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1902",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1902",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"greenboot-0:0.14.0-3.el8.aarch64.rpm",
+					"greenboot-0:0.14.0-3.el8.src.rpm",
+					"greenboot-0:0.14.0-3.el8.x86_64.rpm",
+					"greenboot-default-health-checks-0:0.14.0-3.el8.aarch64.rpm",
+					"greenboot-default-health-checks-0:0.14.0-3.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

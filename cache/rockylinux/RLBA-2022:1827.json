@@ -1,0 +1,53 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1827",
+		"synopsis": "librdkafka bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for librdkafka is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1842817",
+				"description": "rpmlint reports crypto-policy-non-compliance-openssl",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1842817"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1827",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1827",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"librdkafka-0:0.11.4-3.el8.aarch64.rpm",
+					"librdkafka-0:0.11.4-3.el8.i686.rpm",
+					"librdkafka-0:0.11.4-3.el8.src.rpm",
+					"librdkafka-0:0.11.4-3.el8.x86_64.rpm",
+					"librdkafka-debuginfo-0:0.11.4-3.el8.aarch64.rpm",
+					"librdkafka-debuginfo-0:0.11.4-3.el8.i686.rpm",
+					"librdkafka-debuginfo-0:0.11.4-3.el8.x86_64.rpm",
+					"librdkafka-debugsource-0:0.11.4-3.el8.aarch64.rpm",
+					"librdkafka-debugsource-0:0.11.4-3.el8.i686.rpm",
+					"librdkafka-debugsource-0:0.11.4-3.el8.x86_64.rpm",
+					"librdkafka-devel-0:0.11.4-3.el8.aarch64.rpm",
+					"librdkafka-devel-0:0.11.4-3.el8.i686.rpm",
+					"librdkafka-devel-0:0.11.4-3.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

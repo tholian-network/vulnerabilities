@@ -1,0 +1,42 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1942",
+		"synopsis": "oscap-anaconda-addon bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for oscap-anaconda-addon is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2017356",
+				"description": "[oscap-anaconda-addon] RHEL 8.6 Tier 0 Localization",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2017356"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1942",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1942",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"oscap-anaconda-addon-0:1.2.1-5.el8.noarch.rpm",
+					"oscap-anaconda-addon-0:1.2.1-5.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

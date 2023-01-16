@@ -1,0 +1,48 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1787",
+		"synopsis": "lorax-templates-rhel bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for lorax-templates-rhel is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2016807",
+				"description": "The grub.cfg.in file, provided by the lorax package for ppc64, has wrong path to initrd.img and to vmlinuz",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016807"
+			},
+			{
+				"ticket": "2035050",
+				"description": "SFTP transfers not allowed by sshd configuration in Anaconda environment",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2035050"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1787",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1787",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"lorax-templates-rhel-0:8.6-3.el8.noarch.rpm",
+					"lorax-templates-rhel-0:8.6-3.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

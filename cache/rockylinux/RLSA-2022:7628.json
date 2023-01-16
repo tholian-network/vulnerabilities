@@ -1,0 +1,118 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7628",
+		"synopsis": "Moderate: php:7.4 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the php:7.4 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "PHP is an HTML-embedded scripting language commonly used with the Apache HTTP Server.\nThe following packages have been upgraded to a later upstream version: php (7.4.30), php-pear (1.10.13). (BZ#2055422)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1988558",
+				"description": "CVE-2021-32610 php-pear: Directory traversal vulnerability",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1988558"
+			},
+			{
+				"ticket": "2026045",
+				"description": "CVE-2021-21707 php: Special character breaks path in xml parsing",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2026045"
+			},
+			{
+				"ticket": "2055422",
+				"description": "pecl upgrade fails unexpectedly",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2055422"
+			},
+			{
+				"ticket": "2055879",
+				"description": "CVE-2021-21708 php: Use after free due to php_filter_float() failing for ints",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2055879"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-21707",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-21707.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-20"
+			},
+			{
+				"name": "CVE-2021-21708",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-21708.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "9.8",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-32610",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-32610.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+				"cvss3BaseScore": "7.4",
+				"cwe": "CWE-22"
+			}
+		],
+		"publishedAt": "2022-11-13T07:50:16.913520Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"apcu-panel-0:5.1.18-1.module+el8.6.0+789+2130c178.noarch.rpm",
+					"libzip-0:1.6.1-1.module+el8.6.0+789+2130c178.aarch64.rpm",
+					"libzip-0:1.6.1-1.module+el8.6.0+789+2130c178.src.rpm",
+					"libzip-0:1.6.1-1.module+el8.6.0+789+2130c178.x86_64.rpm",
+					"libzip-debuginfo-0:1.6.1-1.module+el8.6.0+789+2130c178.aarch64.rpm",
+					"libzip-debuginfo-0:1.6.1-1.module+el8.6.0+789+2130c178.x86_64.rpm",
+					"libzip-debugsource-0:1.6.1-1.module+el8.6.0+789+2130c178.aarch64.rpm",
+					"libzip-debugsource-0:1.6.1-1.module+el8.6.0+789+2130c178.x86_64.rpm",
+					"libzip-devel-0:1.6.1-1.module+el8.6.0+789+2130c178.aarch64.rpm",
+					"libzip-devel-0:1.6.1-1.module+el8.6.0+789+2130c178.x86_64.rpm",
+					"libzip-tools-0:1.6.1-1.module+el8.6.0+789+2130c178.aarch64.rpm",
+					"libzip-tools-0:1.6.1-1.module+el8.6.0+789+2130c178.x86_64.rpm",
+					"libzip-tools-debuginfo-0:1.6.1-1.module+el8.6.0+789+2130c178.aarch64.rpm",
+					"libzip-tools-debuginfo-0:1.6.1-1.module+el8.6.0+789+2130c178.x86_64.rpm",
+					"php-pecl-apcu-0:5.1.18-1.module+el8.6.0+789+2130c178.aarch64.rpm",
+					"php-pecl-apcu-0:5.1.18-1.module+el8.6.0+789+2130c178.src.rpm",
+					"php-pecl-apcu-0:5.1.18-1.module+el8.6.0+789+2130c178.x86_64.rpm",
+					"php-pecl-apcu-debuginfo-0:5.1.18-1.module+el8.6.0+789+2130c178.aarch64.rpm",
+					"php-pecl-apcu-debuginfo-0:5.1.18-1.module+el8.6.0+789+2130c178.x86_64.rpm",
+					"php-pecl-apcu-debugsource-0:5.1.18-1.module+el8.6.0+789+2130c178.aarch64.rpm",
+					"php-pecl-apcu-debugsource-0:5.1.18-1.module+el8.6.0+789+2130c178.x86_64.rpm",
+					"php-pecl-apcu-devel-0:5.1.18-1.module+el8.6.0+789+2130c178.aarch64.rpm",
+					"php-pecl-apcu-devel-0:5.1.18-1.module+el8.6.0+789+2130c178.x86_64.rpm",
+					"php-pecl-rrd-0:2.0.1-1.module+el8.6.0+789+2130c178.aarch64.rpm",
+					"php-pecl-rrd-0:2.0.1-1.module+el8.6.0+789+2130c178.src.rpm",
+					"php-pecl-rrd-0:2.0.1-1.module+el8.6.0+789+2130c178.x86_64.rpm",
+					"php-pecl-rrd-debuginfo-0:2.0.1-1.module+el8.6.0+789+2130c178.aarch64.rpm",
+					"php-pecl-rrd-debuginfo-0:2.0.1-1.module+el8.6.0+789+2130c178.x86_64.rpm",
+					"php-pecl-rrd-debugsource-0:2.0.1-1.module+el8.6.0+789+2130c178.aarch64.rpm",
+					"php-pecl-rrd-debugsource-0:2.0.1-1.module+el8.6.0+789+2130c178.x86_64.rpm",
+					"php-pecl-xdebug-0:2.9.5-1.module+el8.4.0+415+e936cba3.aarch64.rpm",
+					"php-pecl-xdebug-0:2.9.5-1.module+el8.4.0+415+e936cba3.src.rpm",
+					"php-pecl-xdebug-0:2.9.5-1.module+el8.4.0+415+e936cba3.x86_64.rpm",
+					"php-pecl-xdebug-debuginfo-0:2.9.5-1.module+el8.4.0+415+e936cba3.aarch64.rpm",
+					"php-pecl-xdebug-debuginfo-0:2.9.5-1.module+el8.4.0+415+e936cba3.x86_64.rpm",
+					"php-pecl-xdebug-debugsource-0:2.9.5-1.module+el8.4.0+415+e936cba3.aarch64.rpm",
+					"php-pecl-xdebug-debugsource-0:2.9.5-1.module+el8.4.0+415+e936cba3.x86_64.rpm",
+					"php-pecl-zip-0:1.18.2-1.module+el8.6.0+789+2130c178.aarch64.rpm",
+					"php-pecl-zip-0:1.18.2-1.module+el8.6.0+789+2130c178.src.rpm",
+					"php-pecl-zip-0:1.18.2-1.module+el8.6.0+789+2130c178.x86_64.rpm",
+					"php-pecl-zip-debuginfo-0:1.18.2-1.module+el8.6.0+789+2130c178.aarch64.rpm",
+					"php-pecl-zip-debuginfo-0:1.18.2-1.module+el8.6.0+789+2130c178.x86_64.rpm",
+					"php-pecl-zip-debugsource-0:1.18.2-1.module+el8.6.0+789+2130c178.aarch64.rpm",
+					"php-pecl-zip-debugsource-0:1.18.2-1.module+el8.6.0+789+2130c178.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

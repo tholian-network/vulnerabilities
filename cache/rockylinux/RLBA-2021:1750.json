@@ -1,0 +1,51 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1750",
+		"synopsis": "gcc-toolset-10 bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gcc-toolset-10 is now available for Rocky Linux 8.",
+		"description": "GCC Toolset is a compiler toolset that provides recent versions of development tools. GCC Toolset is an Application Stream packaged as a Software Collection.\nFor instructions on usage, see Using GCC Toolset linked from the References section. Components and specifics of this version are documented in the GCC Toolset 10 chapter.\nFor detailed changes in this release, see the Rocky Linux 8.4 Release Notes.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1878889",
+				"description": "Update metapackage to GTS 10.1",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1878889"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1750",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1750",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gcc-toolset-10-0:10.1-0.el8.aarch64.rpm",
+					"gcc-toolset-10-0:10.1-0.el8.src.rpm",
+					"gcc-toolset-10-0:10.1-0.el8.x86_64.rpm",
+					"gcc-toolset-10-build-0:10.1-0.el8.aarch64.rpm",
+					"gcc-toolset-10-build-0:10.1-0.el8.x86_64.rpm",
+					"gcc-toolset-10-perftools-0:10.1-0.el8.aarch64.rpm",
+					"gcc-toolset-10-perftools-0:10.1-0.el8.x86_64.rpm",
+					"gcc-toolset-10-runtime-0:10.1-0.el8.aarch64.rpm",
+					"gcc-toolset-10-runtime-0:10.1-0.el8.x86_64.rpm",
+					"gcc-toolset-10-toolchain-0:10.1-0.el8.aarch64.rpm",
+					"gcc-toolset-10-toolchain-0:10.1-0.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

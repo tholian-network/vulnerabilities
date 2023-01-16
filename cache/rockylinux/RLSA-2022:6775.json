@@ -1,0 +1,56 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:6775",
+		"synopsis": "Important: squid:4 security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for the squid:4 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Squid is a high-performance proxy caching server for web clients, supporting FTP, Gopher, and HTTP data objects.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2129771",
+				"description": "CVE-2022-41318 squid: buffer-over-read in SSPI and SMB authentication",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2129771"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-41318",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-41318.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:L/A:H",
+				"cvss3BaseScore": "8.9",
+				"cwe": "CWE-126"
+			}
+		],
+		"publishedAt": "2022-10-13T13:00:54.040597Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libecap-0:1.0.1-2.module+el8.4.0+404+316a0dc5.aarch64.rpm",
+					"libecap-0:1.0.1-2.module+el8.4.0+404+316a0dc5.src.rpm",
+					"libecap-0:1.0.1-2.module+el8.4.0+404+316a0dc5.x86_64.rpm",
+					"libecap-debuginfo-0:1.0.1-2.module+el8.4.0+404+316a0dc5.aarch64.rpm",
+					"libecap-debuginfo-0:1.0.1-2.module+el8.4.0+404+316a0dc5.x86_64.rpm",
+					"libecap-debugsource-0:1.0.1-2.module+el8.4.0+404+316a0dc5.aarch64.rpm",
+					"libecap-debugsource-0:1.0.1-2.module+el8.4.0+404+316a0dc5.x86_64.rpm",
+					"libecap-devel-0:1.0.1-2.module+el8.4.0+404+316a0dc5.aarch64.rpm",
+					"libecap-devel-0:1.0.1-2.module+el8.4.0+404+316a0dc5.x86_64.rpm",
+					"squid-7:4.15-3.module+el8.6.0+1044+67ab5d0a.2.aarch64.rpm",
+					"squid-7:4.15-3.module+el8.6.0+1044+67ab5d0a.2.src.rpm",
+					"squid-7:4.15-3.module+el8.6.0+1044+67ab5d0a.2.x86_64.rpm",
+					"squid-debuginfo-7:4.15-3.module+el8.6.0+1044+67ab5d0a.2.aarch64.rpm",
+					"squid-debuginfo-7:4.15-3.module+el8.6.0+1044+67ab5d0a.2.x86_64.rpm",
+					"squid-debugsource-7:4.15-3.module+el8.6.0+1044+67ab5d0a.2.aarch64.rpm",
+					"squid-debugsource-7:4.15-3.module+el8.6.0+1044+67ab5d0a.2.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

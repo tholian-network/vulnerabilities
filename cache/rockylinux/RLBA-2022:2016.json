@@ -1,0 +1,62 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2016",
+		"synopsis": "linux-firmware bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for linux-firmware is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2000879",
+				"description": "Certain amdgpu firmware files cause random hangs with AMD Picasso / Raven Ridge APUs",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000879"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2016",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2016",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": true,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"iwl1000-firmware-1:39.31.5.1-107.el8.1.noarch.rpm",
+					"iwl100-firmware-0:39.31.5.1-107.el8.1.noarch.rpm",
+					"iwl105-firmware-0:18.168.6.1-107.el8.1.noarch.rpm",
+					"iwl135-firmware-0:18.168.6.1-107.el8.1.noarch.rpm",
+					"iwl2000-firmware-0:18.168.6.1-107.el8.1.noarch.rpm",
+					"iwl2030-firmware-0:18.168.6.1-107.el8.1.noarch.rpm",
+					"iwl3160-firmware-1:25.30.13.0-107.el8.1.noarch.rpm",
+					"iwl3945-firmware-0:15.32.2.9-107.el8.1.noarch.rpm",
+					"iwl4965-firmware-0:228.61.2.24-107.el8.1.noarch.rpm",
+					"iwl5000-firmware-0:8.83.5.1_1-107.el8.1.noarch.rpm",
+					"iwl5150-firmware-0:8.24.2.2-107.el8.1.noarch.rpm",
+					"iwl6000-firmware-0:9.221.4.1-107.el8.1.noarch.rpm",
+					"iwl6000g2a-firmware-0:18.168.6.1-107.el8.1.noarch.rpm",
+					"iwl6000g2b-firmware-0:18.168.6.1-107.el8.1.noarch.rpm",
+					"iwl6050-firmware-0:41.28.5.1-107.el8.1.noarch.rpm",
+					"iwl7260-firmware-1:25.30.13.0-107.el8.1.noarch.rpm",
+					"libertas-sd8686-firmware-0:20220210-107.git6342082c.el8.noarch.rpm",
+					"libertas-sd8787-firmware-0:20220210-107.git6342082c.el8.noarch.rpm",
+					"libertas-usb8388-firmware-2:20220210-107.git6342082c.el8.noarch.rpm",
+					"libertas-usb8388-olpc-firmware-0:20220210-107.git6342082c.el8.noarch.rpm",
+					"linux-firmware-0:20220210-107.git6342082c.el8.noarch.rpm",
+					"linux-firmware-0:20220210-107.git6342082c.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

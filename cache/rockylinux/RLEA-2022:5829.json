@@ -1,0 +1,102 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:5829",
+		"synopsis": "fence-agents bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for fence-agents is now available for Rocky Linux 8.",
+		"description": "The fence-agents packages provide a collection of scripts for handling remote power management for cluster devices. They allow failed or unreachable nodes to be forcibly restarted and removed from the cluster.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2092460",
+				"description": "[IBM 8 FEAT]: Add proxy option to IBM Cloud VPC fence agent [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2092460"
+			},
+			{
+				"ticket": "2100152",
+				"description": "fence_ibm_powervs: add support for proxy, private API servers and get token via API key [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2100152"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2022:5829",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:5829",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-08-02T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"fence-agents-0:4.2.1-89.el8_6.3.src.rpm",
+					"fence-agents-aliyun-0:4.2.1-89.el8_6.3.x86_64.rpm",
+					"fence-agents-aliyun-debuginfo-0:4.2.1-89.el8_6.3.x86_64.rpm",
+					"fence-agents-all-0:4.2.1-89.el8_6.3.aarch64.rpm",
+					"fence-agents-all-0:4.2.1-89.el8_6.3.x86_64.rpm",
+					"fence-agents-amt-ws-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-apc-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-apc-snmp-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-aws-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-azure-arm-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-bladecenter-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-brocade-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-cisco-mds-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-cisco-ucs-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-common-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-compute-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-debuginfo-0:4.2.1-89.el8_6.3.aarch64.rpm",
+					"fence-agents-debuginfo-0:4.2.1-89.el8_6.3.x86_64.rpm",
+					"fence-agents-drac5-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-eaton-snmp-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-emerson-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-eps-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-gce-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-heuristics-ping-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-hpblade-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-ibmblade-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-ibm-powervs-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-ifmib-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-ilo2-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-ilo-moonshot-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-ilo-mp-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-ilo-ssh-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-intelmodular-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-ipdu-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-ipmilan-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-kdump-0:4.2.1-89.el8_6.3.aarch64.rpm",
+					"fence-agents-kdump-0:4.2.1-89.el8_6.3.x86_64.rpm",
+					"fence-agents-kdump-debuginfo-0:4.2.1-89.el8_6.3.aarch64.rpm",
+					"fence-agents-kdump-debuginfo-0:4.2.1-89.el8_6.3.x86_64.rpm",
+					"fence-agents-kubevirt-0:4.2.1-89.el8_6.3.aarch64.rpm",
+					"fence-agents-kubevirt-0:4.2.1-89.el8_6.3.x86_64.rpm",
+					"fence-agents-kubevirt-debuginfo-0:4.2.1-89.el8_6.3.aarch64.rpm",
+					"fence-agents-kubevirt-debuginfo-0:4.2.1-89.el8_6.3.x86_64.rpm",
+					"fence-agents-lpar-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-mpath-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-redfish-0:4.2.1-89.el8_6.3.aarch64.rpm",
+					"fence-agents-redfish-0:4.2.1-89.el8_6.3.x86_64.rpm",
+					"fence-agents-rhevm-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-rsa-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-rsb-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-sbd-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-scsi-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-virsh-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-vmware-rest-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-vmware-soap-0:4.2.1-89.el8_6.3.noarch.rpm",
+					"fence-agents-wti-0:4.2.1-89.el8_6.3.noarch.rpm"
+				]
+			}
+		}
+	}
+}

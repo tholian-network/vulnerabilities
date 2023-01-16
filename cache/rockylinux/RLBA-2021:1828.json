@@ -1,0 +1,40 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1828",
+		"synopsis": "cscope bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for cscope is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2021:1828",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1828",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cscope-0:15.9-9.el8.aarch64.rpm",
+					"cscope-0:15.9-9.el8.src.rpm",
+					"cscope-0:15.9-9.el8.x86_64.rpm",
+					"cscope-debuginfo-0:15.9-9.el8.aarch64.rpm",
+					"cscope-debuginfo-0:15.9-9.el8.x86_64.rpm",
+					"cscope-debugsource-0:15.9-9.el8.aarch64.rpm",
+					"cscope-debugsource-0:15.9-9.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

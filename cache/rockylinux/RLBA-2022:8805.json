@@ -1,0 +1,72 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:8805",
+		"synopsis": "net-snmp bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for net-snmp is now available for Rocky Linux 8.6 Extended Update Support.",
+		"description": "The net-snmp packages provide various libraries and tools for the Simple Network Management Protocol (SNMP), including an SNMP library, an extensible agent, tools for requesting or setting information from SNMP agents, tools for generating and handling SNMP traps, a version of the netstat command which uses SNMP, and a Tk/Perl Management Information Base (MIB) browser.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2134765",
+				"description": "backport two memory leak fixes in snmplib - missed for RHEL 8 [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2134765"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:8805",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:8805",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2023-01-14T01:54:51.350158Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"net-snmp-1:5.8-25.el8_7.1.aarch64.rpm",
+					"net-snmp-1:5.8-25.el8_7.1.src.rpm",
+					"net-snmp-1:5.8-25.el8_7.1.x86_64.rpm",
+					"net-snmp-agent-libs-1:5.8-25.el8_7.1.aarch64.rpm",
+					"net-snmp-agent-libs-1:5.8-25.el8_7.1.i686.rpm",
+					"net-snmp-agent-libs-1:5.8-25.el8_7.1.x86_64.rpm",
+					"net-snmp-agent-libs-debuginfo-1:5.8-25.el8_7.1.aarch64.rpm",
+					"net-snmp-agent-libs-debuginfo-1:5.8-25.el8_7.1.i686.rpm",
+					"net-snmp-agent-libs-debuginfo-1:5.8-25.el8_7.1.x86_64.rpm",
+					"net-snmp-debuginfo-1:5.8-25.el8_7.1.aarch64.rpm",
+					"net-snmp-debuginfo-1:5.8-25.el8_7.1.i686.rpm",
+					"net-snmp-debuginfo-1:5.8-25.el8_7.1.x86_64.rpm",
+					"net-snmp-debugsource-1:5.8-25.el8_7.1.aarch64.rpm",
+					"net-snmp-debugsource-1:5.8-25.el8_7.1.i686.rpm",
+					"net-snmp-debugsource-1:5.8-25.el8_7.1.x86_64.rpm",
+					"net-snmp-devel-1:5.8-25.el8_7.1.aarch64.rpm",
+					"net-snmp-devel-1:5.8-25.el8_7.1.i686.rpm",
+					"net-snmp-devel-1:5.8-25.el8_7.1.x86_64.rpm",
+					"net-snmp-libs-1:5.8-25.el8_7.1.aarch64.rpm",
+					"net-snmp-libs-1:5.8-25.el8_7.1.i686.rpm",
+					"net-snmp-libs-1:5.8-25.el8_7.1.x86_64.rpm",
+					"net-snmp-libs-debuginfo-1:5.8-25.el8_7.1.aarch64.rpm",
+					"net-snmp-libs-debuginfo-1:5.8-25.el8_7.1.i686.rpm",
+					"net-snmp-libs-debuginfo-1:5.8-25.el8_7.1.x86_64.rpm",
+					"net-snmp-perl-1:5.8-25.el8_7.1.aarch64.rpm",
+					"net-snmp-perl-1:5.8-25.el8_7.1.x86_64.rpm",
+					"net-snmp-perl-debuginfo-1:5.8-25.el8_7.1.aarch64.rpm",
+					"net-snmp-perl-debuginfo-1:5.8-25.el8_7.1.x86_64.rpm",
+					"net-snmp-utils-1:5.8-25.el8_7.1.aarch64.rpm",
+					"net-snmp-utils-1:5.8-25.el8_7.1.x86_64.rpm",
+					"net-snmp-utils-debuginfo-1:5.8-25.el8_7.1.aarch64.rpm",
+					"net-snmp-utils-debuginfo-1:5.8-25.el8_7.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

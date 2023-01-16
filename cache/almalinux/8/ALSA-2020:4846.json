@@ -1,0 +1,57 @@
+{
+	"updateinfo_id": "ALSA-2020:4846",
+	"fromstr": "packager@almalinux.org",
+	"title": "Moderate: mingw-expat security update",
+	"type": "security",
+	"release": "0",
+	"version": "2",
+	"status": "final",
+	"severity": "Moderate",
+	"summary": "An update for mingw-expat is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+	"pushcount": "5",
+	"pkglist": {
+		"name": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
+		"shortname": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
+		"packages": [
+			{
+				"src": "mingw-expat-2.2.4-5.el8.src.rpm",
+				"name": "mingw64-expat",
+				"epoch": "0",
+				"version": "2.2.4",
+				"release": "5.el8",
+				"arch": "noarch",
+				"filename": "mingw64-expat-2.2.4-5.el8.noarch.rpm",
+				"sum": "72a7869e3be8b7d1c37339276f2a4667ae71370e37dd08b8269fd6c94ed75938",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mingw-expat-2.2.4-5.el8.src.rpm",
+				"name": "mingw32-expat",
+				"epoch": "0",
+				"version": "2.2.4",
+				"release": "5.el8",
+				"arch": "noarch",
+				"filename": "mingw32-expat-2.2.4-5.el8.noarch.rpm",
+				"sum": "8ebcaf58985e573250c60c722c601493e71796b0231356a1190b3841b65e3189",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "Expat is a C library for parsing XML documents. The mingw-expat packages provide a port of the Expat library for MinGW. \n\nSecurity Fix(es):\n\n* expat: large number of colons in input makes parser consume high amount of resources, leading to DoS (CVE-2018-20843)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
+	"references": [
+		{
+			"id": "CVE-2018-20843",
+			"title": "CVE-2018-20843",
+			"type": "cve",
+			"href": "https://vulners.com/cve/CVE-2018-20843"
+		}
+	],
+	"issued_date": {
+		"$date": 1604407263000
+	},
+	"updated_date": {
+		"$date": 1628672040000
+	}
+}

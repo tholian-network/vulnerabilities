@@ -1,0 +1,56 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4371",
+		"synopsis": "libxcrypt bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libxcrypt is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1899716",
+				"description": "password hash created using python crypt works in RHEL 6 and 7 but fails in RHEL 8",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1899716"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4371",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4371",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libxcrypt-0:4.1.1-6.el8.aarch64.rpm",
+					"libxcrypt-0:4.1.1-6.el8.i686.rpm",
+					"libxcrypt-0:4.1.1-6.el8.src.rpm",
+					"libxcrypt-0:4.1.1-6.el8.x86_64.rpm",
+					"libxcrypt-debuginfo-0:4.1.1-6.el8.aarch64.rpm",
+					"libxcrypt-debuginfo-0:4.1.1-6.el8.i686.rpm",
+					"libxcrypt-debuginfo-0:4.1.1-6.el8.x86_64.rpm",
+					"libxcrypt-debugsource-0:4.1.1-6.el8.aarch64.rpm",
+					"libxcrypt-debugsource-0:4.1.1-6.el8.i686.rpm",
+					"libxcrypt-debugsource-0:4.1.1-6.el8.x86_64.rpm",
+					"libxcrypt-devel-0:4.1.1-6.el8.aarch64.rpm",
+					"libxcrypt-devel-0:4.1.1-6.el8.i686.rpm",
+					"libxcrypt-devel-0:4.1.1-6.el8.x86_64.rpm",
+					"libxcrypt-static-0:4.1.1-6.el8.aarch64.rpm",
+					"libxcrypt-static-0:4.1.1-6.el8.i686.rpm",
+					"libxcrypt-static-0:4.1.1-6.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

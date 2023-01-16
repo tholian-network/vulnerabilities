@@ -1,0 +1,99 @@
+{
+	"updateinfo_id": "ALSA-2022:8226",
+	"fromstr": "packager@almalinux.org",
+	"title": "Moderate: python-lxml security update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Moderate",
+	"summary": "python-lxml security update",
+	"pushcount": "1",
+	"pkglist": {
+		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"packages": [
+			{
+				"src": "python-lxml-4.6.5-3.el9.src.rpm",
+				"name": "python3-lxml",
+				"epoch": "0",
+				"version": "4.6.5",
+				"release": "3.el9",
+				"arch": "aarch64",
+				"filename": "python3-lxml-4.6.5-3.el9.aarch64.rpm",
+				"sum": "5edbd97d408fbd3a5561da8efa817fb4b7d3c44a8f15c1d4f129c1c5f049581e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python-lxml-4.6.5-3.el9.src.rpm",
+				"name": "python3-lxml",
+				"epoch": "0",
+				"version": "4.6.5",
+				"release": "3.el9",
+				"arch": "x86_64",
+				"filename": "python3-lxml-4.6.5-3.el9.x86_64.rpm",
+				"sum": "8757b7d22e766770b3a70f35f0cd398efb434b3f2ba0541145193949a250b151",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python-lxml-4.6.5-3.el9.src.rpm",
+				"name": "python3-lxml",
+				"epoch": "0",
+				"version": "4.6.5",
+				"release": "3.el9",
+				"arch": "s390x",
+				"filename": "python3-lxml-4.6.5-3.el9.s390x.rpm",
+				"sum": "4be38e54a35ae769b182e7280d56329ccf3e493aeed55c871e6edb511646d089",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python-lxml-4.6.5-3.el9.src.rpm",
+				"name": "python3-lxml",
+				"epoch": "0",
+				"version": "4.6.5",
+				"release": "3.el9",
+				"arch": "ppc64le",
+				"filename": "python3-lxml-4.6.5-3.el9.ppc64le.rpm",
+				"sum": "78b53f81af6d7a244eadcfdaaee0d3cc2922f7b1f8931c7513a0739d7f28d2f3",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "lxml is an XML processing library providing access to libxml2 and libxslt libraries using the Python ElementTree API. \n\nSecurity Fix(es):\n\n* lxml: NULL Pointer Dereference in lxml (CVE-2022-2309)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
+	"references": [
+		{
+			"id": "RHSA-2022:8226",
+			"title": "RHSA-2022:8226",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:8226"
+		},
+		{
+			"id": "CVE-2022-2309",
+			"title": "CVE-2022-2309",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-2309"
+		},
+		{
+			"id": "2107571",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107571"
+		},
+		{
+			"id": "ALSA-2022:8226",
+			"title": "ALSA-2022:8226",
+			"type": "self",
+			"href": "https://errata.almalinux.org/9/ALSA-2022-8226.html"
+		}
+	],
+	"issued_date": {
+		"$date": 1668470400000
+	},
+	"updated_date": {
+		"$date": 1668734722000
+	}
+}

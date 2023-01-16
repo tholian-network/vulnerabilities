@@ -1,0 +1,45 @@
+{
+	"updateinfo_id": "ALSA-2020:0903",
+	"fromstr": "packager@almalinux.org",
+	"title": "Important: zsh security update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Important",
+	"summary": "An update for zsh is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+	"pushcount": "2",
+	"pkglist": {
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"packages": [
+			{
+				"src": "zsh-5.5.1-6.el8_1.2.src.rpm",
+				"name": "zsh-html",
+				"epoch": "0",
+				"version": "5.5.1",
+				"release": "6.el8_1.2",
+				"arch": "noarch",
+				"filename": "zsh-html-5.5.1-6.el8_1.2.noarch.rpm",
+				"sum": "777f30348d22b72fc2836456ba23902a7960d086329ad71ee19ceed8bf4632c0",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "The zsh shell is a command interpreter usable as an interactive login shell and as a shell script command processor. Zsh resembles the ksh shell (the Korn shell), but includes many enhancements. Zsh supports command-line editing, built-in spelling correction, programmable command completion, shell functions (with autoloading), a history mechanism, and more.\n\nSecurity Fix(es):\n\n* zsh: insecure dropping of privileges when unsetting PRIVILEGED option (CVE-2019-20044)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+	"references": [
+		{
+			"id": "CVE-2019-20044",
+			"title": "CVE-2019-20044",
+			"type": "cve",
+			"href": "https://vulners.com/cve/CVE-2019-20044"
+		}
+	],
+	"issued_date": {
+		"$date": 1584614702000
+	},
+	"updated_date": {
+		"$date": 1636712455000
+	}
+}

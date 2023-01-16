@@ -1,0 +1,85 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2104",
+		"synopsis": "e2fsprogs bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for e2fsprogs is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1947449",
+				"description": "[RFE] Request to make the following package available from RHEL and upstream repositories: libss-devel",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1947449"
+			},
+			{
+				"ticket": "2054129",
+				"description": "Anaconda hangs on INSTALLATION SUMMARY screen due to corrupted EXT4 filesystem.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2054129"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2104",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2104",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"e2fsprogs-0:1.45.6-4.el8.aarch64.rpm",
+					"e2fsprogs-0:1.45.6-4.el8.src.rpm",
+					"e2fsprogs-0:1.45.6-4.el8.x86_64.rpm",
+					"e2fsprogs-debuginfo-0:1.45.6-4.el8.aarch64.rpm",
+					"e2fsprogs-debuginfo-0:1.45.6-4.el8.i686.rpm",
+					"e2fsprogs-debuginfo-0:1.45.6-4.el8.x86_64.rpm",
+					"e2fsprogs-debugsource-0:1.45.6-4.el8.aarch64.rpm",
+					"e2fsprogs-debugsource-0:1.45.6-4.el8.i686.rpm",
+					"e2fsprogs-debugsource-0:1.45.6-4.el8.x86_64.rpm",
+					"e2fsprogs-devel-0:1.45.6-4.el8.aarch64.rpm",
+					"e2fsprogs-devel-0:1.45.6-4.el8.i686.rpm",
+					"e2fsprogs-devel-0:1.45.6-4.el8.x86_64.rpm",
+					"e2fsprogs-libs-0:1.45.6-4.el8.aarch64.rpm",
+					"e2fsprogs-libs-0:1.45.6-4.el8.i686.rpm",
+					"e2fsprogs-libs-0:1.45.6-4.el8.x86_64.rpm",
+					"e2fsprogs-libs-debuginfo-0:1.45.6-4.el8.aarch64.rpm",
+					"e2fsprogs-libs-debuginfo-0:1.45.6-4.el8.i686.rpm",
+					"e2fsprogs-libs-debuginfo-0:1.45.6-4.el8.x86_64.rpm",
+					"e2fsprogs-static-0:1.45.6-4.el8.aarch64.rpm",
+					"e2fsprogs-static-0:1.45.6-4.el8.i686.rpm",
+					"e2fsprogs-static-0:1.45.6-4.el8.x86_64.rpm",
+					"libcom_err-0:1.45.6-4.el8.aarch64.rpm",
+					"libcom_err-0:1.45.6-4.el8.i686.rpm",
+					"libcom_err-0:1.45.6-4.el8.x86_64.rpm",
+					"libcom_err-debuginfo-0:1.45.6-4.el8.aarch64.rpm",
+					"libcom_err-debuginfo-0:1.45.6-4.el8.i686.rpm",
+					"libcom_err-debuginfo-0:1.45.6-4.el8.x86_64.rpm",
+					"libcom_err-devel-0:1.45.6-4.el8.aarch64.rpm",
+					"libcom_err-devel-0:1.45.6-4.el8.i686.rpm",
+					"libcom_err-devel-0:1.45.6-4.el8.x86_64.rpm",
+					"libss-0:1.45.6-4.el8.aarch64.rpm",
+					"libss-0:1.45.6-4.el8.i686.rpm",
+					"libss-0:1.45.6-4.el8.x86_64.rpm",
+					"libss-debuginfo-0:1.45.6-4.el8.aarch64.rpm",
+					"libss-debuginfo-0:1.45.6-4.el8.i686.rpm",
+					"libss-debuginfo-0:1.45.6-4.el8.x86_64.rpm",
+					"libss-devel-0:1.45.6-4.el8.aarch64.rpm",
+					"libss-devel-0:1.45.6-4.el8.i686.rpm",
+					"libss-devel-0:1.45.6-4.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4446",
+		"synopsis": "iscsi-initiator-utils bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for iscsi-initiator-utils is now available for Rocky Enterprise Software Foundation EnterpriseLinux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1755907",
+				"description": "[RHEL 8.5] iscsi-initiator-utils verify rpm fail as /var/lock/iscsi mode differs",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1755907"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4446",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4446",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"iscsi-initiator-utils-0:6.2.1.4-4.git095f59c.el8.aarch64.rpm",
+					"iscsi-initiator-utils-0:6.2.1.4-4.git095f59c.el8.i686.rpm",
+					"iscsi-initiator-utils-0:6.2.1.4-4.git095f59c.el8.src.rpm",
+					"iscsi-initiator-utils-0:6.2.1.4-4.git095f59c.el8.x86_64.rpm",
+					"iscsi-initiator-utils-debuginfo-0:6.2.1.4-4.git095f59c.el8.aarch64.rpm",
+					"iscsi-initiator-utils-debuginfo-0:6.2.1.4-4.git095f59c.el8.i686.rpm",
+					"iscsi-initiator-utils-debuginfo-0:6.2.1.4-4.git095f59c.el8.x86_64.rpm",
+					"iscsi-initiator-utils-debugsource-0:6.2.1.4-4.git095f59c.el8.aarch64.rpm",
+					"iscsi-initiator-utils-debugsource-0:6.2.1.4-4.git095f59c.el8.i686.rpm",
+					"iscsi-initiator-utils-debugsource-0:6.2.1.4-4.git095f59c.el8.x86_64.rpm",
+					"iscsi-initiator-utils-devel-0:6.2.1.4-4.git095f59c.el8.aarch64.rpm",
+					"iscsi-initiator-utils-devel-0:6.2.1.4-4.git095f59c.el8.i686.rpm",
+					"iscsi-initiator-utils-devel-0:6.2.1.4-4.git095f59c.el8.x86_64.rpm",
+					"iscsi-initiator-utils-iscsiuio-0:6.2.1.4-4.git095f59c.el8.aarch64.rpm",
+					"iscsi-initiator-utils-iscsiuio-0:6.2.1.4-4.git095f59c.el8.x86_64.rpm",
+					"iscsi-initiator-utils-iscsiuio-debuginfo-0:6.2.1.4-4.git095f59c.el8.aarch64.rpm",
+					"iscsi-initiator-utils-iscsiuio-debuginfo-0:6.2.1.4-4.git095f59c.el8.x86_64.rpm",
+					"python3-iscsi-initiator-utils-0:6.2.1.4-4.git095f59c.el8.aarch64.rpm",
+					"python3-iscsi-initiator-utils-0:6.2.1.4-4.git095f59c.el8.x86_64.rpm",
+					"python3-iscsi-initiator-utils-debuginfo-0:6.2.1.4-4.git095f59c.el8.aarch64.rpm",
+					"python3-iscsi-initiator-utils-debuginfo-0:6.2.1.4-4.git095f59c.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

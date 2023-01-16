@@ -1,0 +1,473 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7457",
+		"synopsis": "Moderate: container-tools:rhel8 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the container-tools:rhel8 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The container-tools module contains tools for working with containers, notably podman, buildah, skopeo, and runc.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1820551",
+				"description": "Automatically starting a container on boot is not possible through cockpit WebUI",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1820551"
+			},
+			{
+				"ticket": "1941727",
+				"description": "Module meta data is wrong",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1941727"
+			},
+			{
+				"ticket": "1945929",
+				"description": "Every podman run invocation generates two \"Couldn't stat device /dev/char/10:200: No such file or directory\" lines in the journal",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1945929"
+			},
+			{
+				"ticket": "1974423",
+				"description": "No equivalent buildah bud argument to docker build --ssh",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1974423"
+			},
+			{
+				"ticket": "1995656",
+				"description": "CVE-2021-36221 golang: net/http/httputil: panic due to racy read of persistConn after handler panic",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1995656"
+			},
+			{
+				"ticket": "1996050",
+				"description": "[RFE] podman to create a rootless container that attempts to publish ports from a host with static IPv6 address.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1996050"
+			},
+			{
+				"ticket": "2005866",
+				"description": "Udica was rebased prematurely",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2005866"
+			},
+			{
+				"ticket": "2009264",
+				"description": "Cannot get logs with --follow",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2009264"
+			},
+			{
+				"ticket": "2009346",
+				"description": "Podman name resolution not working as expected",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2009346"
+			},
+			{
+				"ticket": "2024938",
+				"description": "CVE-2021-41190 opencontainers: OCI manifest and index parsing confusion",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2024938"
+			},
+			{
+				"ticket": "2027662",
+				"description": "Udica crashes when processing inspect file without capabilities",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2027662"
+			},
+			{
+				"ticket": "2028408",
+				"description": "Podman healthcheck fails if the command contains unicode characters.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028408"
+			},
+			{
+				"ticket": "2030195",
+				"description": "Add restart-sec option to systemd generate",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2030195"
+			},
+			{
+				"ticket": "2039045",
+				"description": "/etc/containers/registries.conf missing registry.redhat.io terms-based registry definition",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2039045"
+			},
+			{
+				"ticket": "2052697",
+				"description": "Inconsistency in how the podman service behaves depending on whether it is providing API via UNIX or TCP socket.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2052697"
+			},
+			{
+				"ticket": "2053990",
+				"description": "runc has unversioned dependency on libseccomp",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2053990"
+			},
+			{
+				"ticket": "2055313",
+				"description": "Creating a pod uses bad infra_image registry in podman",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2055313"
+			},
+			{
+				"ticket": "2059666",
+				"description": "There is no man page for Containerfile provided by containers-common",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2059666"
+			},
+			{
+				"ticket": "2062697",
+				"description": "[cockpit-podman] RHEL 8.7 Tier 0 Localization",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2062697"
+			},
+			{
+				"ticket": "2064702",
+				"description": "CVE-2022-27191 golang: crash in a golang.org/x/crypto/ssh server",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064702"
+			},
+			{
+				"ticket": "2066145",
+				"description": "The results showed significant difference between with and without --no-stream option for podman stats",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2066145"
+			},
+			{
+				"ticket": "2068006",
+				"description": "CentOS Stream 8 podman: symbol lookup error: podman: undefined symbol: seccomp_notify_fd [rhel-8.7.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2068006"
+			},
+			{
+				"ticket": "2072452",
+				"description": "error during chown: storage-chown-by-maps: lgetxattr usr/bin/ping: value too large for defined data type",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2072452"
+			},
+			{
+				"ticket": "2073958",
+				"description": "Podman v3.4.2 regression with hosts file breaks getHostAddress() call",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2073958"
+			},
+			{
+				"ticket": "2078925",
+				"description": "podman command crash with segment fault in rootless user mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2078925"
+			},
+			{
+				"ticket": "2079759",
+				"description": "skopeo segfaults after rebuild with golang-1.18",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2079759"
+			},
+			{
+				"ticket": "2079761",
+				"description": "podman fails to build with golang-1.18",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2079761"
+			},
+			{
+				"ticket": "2081836",
+				"description": "networking is broken when building containers due to missing container networking package dependencies",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2081836"
+			},
+			{
+				"ticket": "2083570",
+				"description": "symlinks doesn't work on volumes under podman when SELINUX is enabled",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2083570"
+			},
+			{
+				"ticket": "2083997",
+				"description": "catatonit not found when starting pod (podman 4.0 under RHEL 8.6)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2083997"
+			},
+			{
+				"ticket": "2085361",
+				"description": "CVE-2022-1708 cri-o: memory exhaustion on the node when access to the kube api",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2085361"
+			},
+			{
+				"ticket": "2086398",
+				"description": "CVE-2022-29162 runc: incorrect handling of inheritable capabilities",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2086398"
+			},
+			{
+				"ticket": "2086757",
+				"description": "Error: plugin type=\"bridge\" failed (add): failed to find plugin \"bridge\" in path",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2086757"
+			},
+			{
+				"ticket": "2090609",
+				"description": "ERRO[0009] Error forwarding signal 18 to container using rootless user with timeout+sleep in the podman run command",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2090609"
+			},
+			{
+				"ticket": "2090920",
+				"description": "Podman load keeps stale files in TMPDIR",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2090920"
+			},
+			{
+				"ticket": "2093079",
+				"description": "Podman does not detect volume from the volume plugin, unlike docker",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2093079"
+			},
+			{
+				"ticket": "2094610",
+				"description": "Healthcheck does not get executed if --interval not specified in Dockerfile",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2094610"
+			},
+			{
+				"ticket": "2094875",
+				"description": "podman not being able to mount devices during podman build",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2094875"
+			},
+			{
+				"ticket": "2095097",
+				"description": "[RFE] Podman copying the entries of /etc/hosts in the container",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2095097"
+			},
+			{
+				"ticket": "2096264",
+				"description": "podman images --format incompatibility with docker",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2096264"
+			},
+			{
+				"ticket": "2097865",
+				"description": "Removing podman-2:4.0.2-6.module+el8.6.0+14877+f643d2d6.x86_64 does not remove podman socket if sudo systemctl enable podman.socket has been run prior to yum remove podman",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2097865"
+			},
+			{
+				"ticket": "2100740",
+				"description": "podman can not force remove paused container",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2100740"
+			},
+			{
+				"ticket": "2102140",
+				"description": "ADD Dockerfile reference is not validating HTTP status code [rhel8]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2102140"
+			},
+			{
+				"ticket": "2102361",
+				"description": "Mostly-confined containers which create their own user and mount namespaces can't mount overlay filesystems",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2102361"
+			},
+			{
+				"ticket": "2102381",
+				"description": "podman image failed with ERRO[0000] Unmounting /home/maor/.local/share/containers/storage/overlay/XX/merged: invalid argument",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2102381"
+			},
+			{
+				"ticket": "2113941",
+				"description": "podman did not set selinux labels to symbolic links",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2113941"
+			},
+			{
+				"ticket": "2117699",
+				"description": "podman 4.2 version bump",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2117699"
+			},
+			{
+				"ticket": "2117928",
+				"description": "Error: runc: exec failed: unable to start container process: open /dev/pts/0: operation not permitted: OCI permission denied",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2117928"
+			},
+			{
+				"ticket": "2118231",
+				"description": "mount through procfd: operation not permitted: OCI permission denied",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2118231"
+			},
+			{
+				"ticket": "2119072",
+				"description": "podman gating test issues in RHEL8.7",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2119072"
+			},
+			{
+				"ticket": "2120651",
+				"description": "Add beta keys to default-policy.json",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2120651"
+			},
+			{
+				"ticket": "2121453",
+				"description": "CVE-2022-2990 buildah: possible information disclosure and modification",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2121453"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-41190",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-41190.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:L/A:N",
+				"cvss3BaseScore": "5.0",
+				"cwe": "CWE-843"
+			},
+			{
+				"name": "CVE-2022-1708",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1708.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.8",
+				"cwe": "CWE-400-\u003eCWE-770"
+			},
+			{
+				"name": "CVE-2022-27191",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27191.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-327"
+			},
+			{
+				"name": "CVE-2022-29162",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-29162.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+				"cvss3BaseScore": "5.6",
+				"cwe": "CWE-276"
+			},
+			{
+				"name": "CVE-2022-2990",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-2990.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N",
+				"cvss3BaseScore": "3.6",
+				"cwe": "CWE-842"
+			}
+		],
+		"publishedAt": "2022-11-13T07:55:49.626183Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cockpit-podman-0:53-1.module+el8.7.0+1078+e72fcd4f.noarch.rpm",
+					"cockpit-podman-0:53-1.module+el8.7.0+1078+e72fcd4f.src.rpm",
+					"conmon-2:2.1.4-1.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"conmon-2:2.1.4-1.module+el8.7.0+1077+0e4f03d4.src.rpm",
+					"conmon-2:2.1.4-1.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"conmon-3:2.1.4-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"conmon-3:2.1.4-1.module+el8.7.0+1078+e72fcd4f.src.rpm",
+					"conmon-3:2.1.4-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"conmon-debuginfo-2:2.1.4-1.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"conmon-debuginfo-2:2.1.4-1.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"conmon-debuginfo-3:2.1.4-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"conmon-debuginfo-3:2.1.4-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"conmon-debugsource-2:2.1.4-1.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"conmon-debugsource-2:2.1.4-1.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"conmon-debugsource-3:2.1.4-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"conmon-debugsource-3:2.1.4-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"containernetworking-plugins-1:1.1.1-3.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"containernetworking-plugins-1:1.1.1-3.module+el8.7.0+1078+e72fcd4f.src.rpm",
+					"containernetworking-plugins-1:1.1.1-3.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"containernetworking-plugins-debuginfo-1:1.1.1-3.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"containernetworking-plugins-debuginfo-1:1.1.1-3.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"containernetworking-plugins-debugsource-1:1.1.1-3.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"containernetworking-plugins-debugsource-1:1.1.1-3.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"crit-0:3.15-3.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"crit-0:3.15-3.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"criu-0:3.15-3.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"criu-0:3.15-3.module+el8.7.0+1078+e72fcd4f.src.rpm",
+					"criu-0:3.15-3.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"criu-debuginfo-0:3.15-3.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"criu-debuginfo-0:3.15-3.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"criu-debugsource-0:3.15-3.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"criu-debugsource-0:3.15-3.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"criu-devel-0:3.15-3.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"criu-devel-0:3.15-3.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"criu-libs-0:3.15-3.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"criu-libs-0:3.15-3.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"criu-libs-debuginfo-0:3.15-3.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"criu-libs-debuginfo-0:3.15-3.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"crun-0:1.5-1.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"crun-0:1.5-1.module+el8.7.0+1077+0e4f03d4.src.rpm",
+					"crun-0:1.5-1.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"crun-0:1.5-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"crun-0:1.5-1.module+el8.7.0+1078+e72fcd4f.src.rpm",
+					"crun-0:1.5-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"crun-debuginfo-0:1.5-1.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"crun-debuginfo-0:1.5-1.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"crun-debuginfo-0:1.5-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"crun-debuginfo-0:1.5-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"crun-debugsource-0:1.5-1.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"crun-debugsource-0:1.5-1.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"crun-debugsource-0:1.5-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"crun-debugsource-0:1.5-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"libslirp-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"libslirp-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.src.rpm",
+					"libslirp-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"libslirp-debuginfo-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"libslirp-debuginfo-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"libslirp-debugsource-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"libslirp-debugsource-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"libslirp-devel-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"libslirp-devel-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"oci-seccomp-bpf-hook-0:1.2.6-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"oci-seccomp-bpf-hook-0:1.2.6-1.module+el8.7.0+1078+e72fcd4f.src.rpm",
+					"oci-seccomp-bpf-hook-0:1.2.6-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"oci-seccomp-bpf-hook-debuginfo-0:1.2.6-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"oci-seccomp-bpf-hook-debuginfo-0:1.2.6-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"oci-seccomp-bpf-hook-debugsource-0:1.2.6-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"oci-seccomp-bpf-hook-debugsource-0:1.2.6-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"python3-criu-0:3.15-3.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"python3-criu-0:3.15-3.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"runc-1:1.1.4-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"runc-1:1.1.4-1.module+el8.7.0+1078+e72fcd4f.src.rpm",
+					"runc-1:1.1.4-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"runc-debuginfo-1:1.1.4-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"runc-debuginfo-1:1.1.4-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"runc-debugsource-1:1.1.4-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"runc-debugsource-1:1.1.4-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"slirp4netns-0:1.2.0-2.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"slirp4netns-0:1.2.0-2.module+el8.7.0+1078+e72fcd4f.src.rpm",
+					"slirp4netns-0:1.2.0-2.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"slirp4netns-debuginfo-0:1.2.0-2.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"slirp4netns-debuginfo-0:1.2.0-2.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"slirp4netns-debugsource-0:1.2.0-2.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"slirp4netns-debugsource-0:1.2.0-2.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"toolbox-0:0.0.99.3-0.6.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"toolbox-0:0.0.99.3-0.6.module+el8.7.0+1078+e72fcd4f.src.rpm",
+					"toolbox-0:0.0.99.3-0.6.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"toolbox-debuginfo-0:0.0.99.3-0.6.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"toolbox-debuginfo-0:0.0.99.3-0.6.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"toolbox-debugsource-0:0.0.99.3-0.6.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"toolbox-debugsource-0:0.0.99.3-0.6.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"toolbox-tests-0:0.0.99.3-0.6.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"toolbox-tests-0:0.0.99.3-0.6.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"udica-0:0.2.6-3.module+el8.7.0+1078+e72fcd4f.noarch.rpm",
+					"udica-0:0.2.6-3.module+el8.7.0+1078+e72fcd4f.src.rpm"
+				]
+			}
+		}
+	}
+}

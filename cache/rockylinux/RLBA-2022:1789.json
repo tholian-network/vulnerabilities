@@ -1,0 +1,71 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1789",
+		"synopsis": "certmonger bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for certmonger is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1577570",
+				"description": "Certmonger SCEP renewal should not use old challenges",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1577570"
+			},
+			{
+				"ticket": "1881500",
+				"description": "Certmonger segfault after cert renewal request",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1881500"
+			},
+			{
+				"ticket": "1940261",
+				"description": "[RFE] Include certificate NotBefore date in output of the 'getcert list' command",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1940261"
+			},
+			{
+				"ticket": "2001079",
+				"description": "Certmonger certificates stuck in NEED_GUIDANCE",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001079"
+			},
+			{
+				"ticket": "2012258",
+				"description": "certmonger creates CSRs with invalid DER syntax for X509v3 extensions with critical=FALSE",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012258"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1789",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1789",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"certmonger-0:0.79.13-5.el8.aarch64.rpm",
+					"certmonger-0:0.79.13-5.el8.src.rpm",
+					"certmonger-0:0.79.13-5.el8.x86_64.rpm",
+					"certmonger-debuginfo-0:0.79.13-5.el8.aarch64.rpm",
+					"certmonger-debuginfo-0:0.79.13-5.el8.x86_64.rpm",
+					"certmonger-debugsource-0:0.79.13-5.el8.aarch64.rpm",
+					"certmonger-debugsource-0:0.79.13-5.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

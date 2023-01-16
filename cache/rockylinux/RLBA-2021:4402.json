@@ -1,0 +1,59 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4402",
+		"synopsis": "opencsd bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for opencsd is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1961191",
+				"description": "opencsd probably needs another rebuild",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1961191"
+			},
+			{
+				"ticket": "1986330",
+				"description": "opencsd fail Execshield test",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986330"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4402",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4402",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"opencsd-0:1.0.0-4.el8.aarch64.rpm",
+					"opencsd-0:1.0.0-4.el8.i686.rpm",
+					"opencsd-0:1.0.0-4.el8.src.rpm",
+					"opencsd-0:1.0.0-4.el8.x86_64.rpm",
+					"opencsd-debuginfo-0:1.0.0-4.el8.aarch64.rpm",
+					"opencsd-debuginfo-0:1.0.0-4.el8.i686.rpm",
+					"opencsd-debuginfo-0:1.0.0-4.el8.x86_64.rpm",
+					"opencsd-debugsource-0:1.0.0-4.el8.aarch64.rpm",
+					"opencsd-debugsource-0:1.0.0-4.el8.i686.rpm",
+					"opencsd-debugsource-0:1.0.0-4.el8.x86_64.rpm",
+					"opencsd-devel-0:1.0.0-4.el8.aarch64.rpm",
+					"opencsd-devel-0:1.0.0-4.el8.i686.rpm",
+					"opencsd-devel-0:1.0.0-4.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

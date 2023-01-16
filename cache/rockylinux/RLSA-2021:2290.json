@@ -1,0 +1,69 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:2290",
+		"synopsis": "Important: nginx:1.16 security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for the nginx:1.16 module is now available for Rocky Linux 8, Rocky Linux 8.1 Extended Update Support, and Rocky Linux 8.2 Extended Update Support.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "nginx is a web and proxy server supporting HTTP and other protocols, with a focus on high concurrency, performance, and low memory usage. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1963121",
+				"description": "CVE-2021-23017 nginx: Off-by-one in ngx_resolver_copy() when labels are followed by a pointer to a root domain name",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1963121"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-23017",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-23017.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.1",
+				"cwe": "CWE-193"
+			}
+		],
+		"publishedAt": "2021-06-08T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nginx-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.aarch64.rpm",
+					"nginx-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.src.rpm",
+					"nginx-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.x86_64.rpm",
+					"nginx-all-modules-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.noarch.rpm",
+					"nginx-debuginfo-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.aarch64.rpm",
+					"nginx-debuginfo-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.x86_64.rpm",
+					"nginx-debugsource-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.aarch64.rpm",
+					"nginx-debugsource-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.x86_64.rpm",
+					"nginx-filesystem-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.noarch.rpm",
+					"nginx-mod-http-image-filter-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.aarch64.rpm",
+					"nginx-mod-http-image-filter-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.x86_64.rpm",
+					"nginx-mod-http-image-filter-debuginfo-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.aarch64.rpm",
+					"nginx-mod-http-image-filter-debuginfo-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.x86_64.rpm",
+					"nginx-mod-http-perl-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.aarch64.rpm",
+					"nginx-mod-http-perl-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.x86_64.rpm",
+					"nginx-mod-http-perl-debuginfo-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.aarch64.rpm",
+					"nginx-mod-http-perl-debuginfo-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.x86_64.rpm",
+					"nginx-mod-http-xslt-filter-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.aarch64.rpm",
+					"nginx-mod-http-xslt-filter-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.x86_64.rpm",
+					"nginx-mod-http-xslt-filter-debuginfo-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.aarch64.rpm",
+					"nginx-mod-http-xslt-filter-debuginfo-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.x86_64.rpm",
+					"nginx-mod-mail-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.aarch64.rpm",
+					"nginx-mod-mail-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.x86_64.rpm",
+					"nginx-mod-mail-debuginfo-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.aarch64.rpm",
+					"nginx-mod-mail-debuginfo-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.x86_64.rpm",
+					"nginx-mod-stream-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.aarch64.rpm",
+					"nginx-mod-stream-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.x86_64.rpm",
+					"nginx-mod-stream-debuginfo-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.aarch64.rpm",
+					"nginx-mod-stream-debuginfo-1:1.16.1-2.module+el8.4.0+543+efbf198b.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

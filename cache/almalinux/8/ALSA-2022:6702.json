@@ -1,0 +1,159 @@
+{
+	"updateinfo_id": "ALSA-2022:6702",
+	"fromstr": "packager@almalinux.org",
+	"title": "Important: firefox security update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Important",
+	"summary": "firefox security update",
+	"pushcount": "1",
+	"pkglist": {
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_6_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_6_default",
+		"packages": [
+			{
+				"src": "firefox-102.3.0-6.el8_6.alma.src.rpm",
+				"name": "firefox",
+				"epoch": "0",
+				"version": "102.3.0",
+				"release": "6.el8_6.alma",
+				"arch": "x86_64",
+				"filename": "firefox-102.3.0-6.el8_6.alma.x86_64.rpm",
+				"sum": "bf39ed7035eedbe1963428fdd360399c3d3a5d0d3ebd62f9630c804a2f2232fe",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "firefox-102.3.0-6.el8_6.alma.src.rpm",
+				"name": "firefox",
+				"epoch": "0",
+				"version": "102.3.0",
+				"release": "6.el8_6.alma",
+				"arch": "aarch64",
+				"filename": "firefox-102.3.0-6.el8_6.alma.aarch64.rpm",
+				"sum": "750a5f93483ec7c963225c85469fee35630e1c666ba75b2ba8eee00009d2bfc2",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "firefox-102.3.0-6.el8_6.alma.src.rpm",
+				"name": "firefox",
+				"epoch": "0",
+				"version": "102.3.0",
+				"release": "6.el8_6.alma",
+				"arch": "s390x",
+				"filename": "firefox-102.3.0-6.el8_6.alma.s390x.rpm",
+				"sum": "6ae19617ffac718b3e35afb2559157787dbc42edf89410339dad618eeb67d977",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "firefox-102.3.0-6.el8_6.alma.src.rpm",
+				"name": "firefox",
+				"epoch": "0",
+				"version": "102.3.0",
+				"release": "6.el8_6.alma",
+				"arch": "ppc64le",
+				"filename": "firefox-102.3.0-6.el8_6.alma.ppc64le.rpm",
+				"sum": "2ee9b1545d07a5406af855e9948647816cbfeee2e4304d7e59ce93525d8ca845",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "Mozilla Firefox is an open-source web browser, designed for standards compliance, performance, and portability.\n\nThis update upgrades Firefox to version 102.3.0 ESR.\n\nSecurity Fix(es):\n\n* Mozilla: Bypassing FeaturePolicy restrictions on transient pages (CVE-2022-40959)\n* Mozilla: Data-race when parsing non-UTF-8 URLs in threads (CVE-2022-40960)\n* Mozilla: Memory safety bugs fixed in Firefox 105 and Firefox ESR 102.3 (CVE-2022-40962)\n* Mozilla: Bypassing Secure Context restriction for cookies with __Host and __Secure prefix (CVE-2022-40958)\n* Mozilla: Content-Security-Policy base-uri bypass (CVE-2022-40956)\n* Mozilla: Incoherent instruction cache when building WASM on ARM64 (CVE-2022-40957)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+	"references": [
+		{
+			"id": "RHSA-2022:6702",
+			"title": "RHSA-2022:6702",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:6702"
+		},
+		{
+			"id": "CVE-2022-40956",
+			"title": "CVE-2022-40956",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-40956"
+		},
+		{
+			"id": "CVE-2022-40957",
+			"title": "CVE-2022-40957",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-40957"
+		},
+		{
+			"id": "CVE-2022-40958",
+			"title": "CVE-2022-40958",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-40958"
+		},
+		{
+			"id": "CVE-2022-40959",
+			"title": "CVE-2022-40959",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-40959"
+		},
+		{
+			"id": "CVE-2022-40960",
+			"title": "CVE-2022-40960",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-40960"
+		},
+		{
+			"id": "CVE-2022-40962",
+			"title": "CVE-2022-40962",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-40962"
+		},
+		{
+			"id": "2128792",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2128792"
+		},
+		{
+			"id": "2128793",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2128793"
+		},
+		{
+			"id": "2128794",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2128794"
+		},
+		{
+			"id": "2128795",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2128795"
+		},
+		{
+			"id": "2128796",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2128796"
+		},
+		{
+			"id": "2128797",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2128797"
+		},
+		{
+			"id": "ALSA-2022:6702",
+			"title": "ALSA-2022:6702",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-6702.html"
+		}
+	],
+	"issued_date": {
+		"$date": 1664150400000
+	},
+	"updated_date": {
+		"$date": 1665758939000
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:4242",
+		"synopsis": "new packages: gcc-toolset-11-dwz",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "New gcc-toolset-11-dwz packages are now available for Rocky Linux 8.",
+		"description": "GCC Toolset is a compiler toolset that provides recent versions of development tools. GCC Toolset is an Application Stream packaged as a Software Collection.\nThis enhancement update adds the gcc-toolset-11-dwz packages to Rocky Linux 8.\nFor instructions on usage, see Using GCC Toolset linked from the References section. Components and specifics of this version are documented in the GCC Toolset 11 chapter.\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1841830",
+				"description": "Update gcc-toolset-11-dwz from upstream to 0.14",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1841830"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:4242",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:4242",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gcc-toolset-11-dwz-0:0.14-2.el8.aarch64.rpm",
+					"gcc-toolset-11-dwz-0:0.14-2.el8.src.rpm",
+					"gcc-toolset-11-dwz-0:0.14-2.el8.x86_64.rpm",
+					"gcc-toolset-11-dwz-debuginfo-0:0.14-2.el8.aarch64.rpm",
+					"gcc-toolset-11-dwz-debuginfo-0:0.14-2.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

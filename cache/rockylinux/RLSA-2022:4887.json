@@ -1,0 +1,145 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:4887",
+		"synopsis": "Important: thunderbird security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for thunderbird is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Mozilla Thunderbird is a standalone mail and newsgroup client.\nThis update upgrades Thunderbird to version 91.10.0.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2092018",
+				"description": "CVE-2022-31736 Mozilla: Cross-Origin resource's length leaked",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2092018"
+			},
+			{
+				"ticket": "2092019",
+				"description": "CVE-2022-31737 Mozilla: Heap buffer overflow in WebGL",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2092019"
+			},
+			{
+				"ticket": "2092021",
+				"description": "CVE-2022-31738 Mozilla: Browser window spoof using fullscreen mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2092021"
+			},
+			{
+				"ticket": "2092023",
+				"description": "CVE-2022-31740 Mozilla: Register allocation problem in WASM on arm64",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2092023"
+			},
+			{
+				"ticket": "2092024",
+				"description": "CVE-2022-31741 Mozilla: Uninitialized variable leads to invalid memory read",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2092024"
+			},
+			{
+				"ticket": "2092025",
+				"description": "CVE-2022-31742 Mozilla: Querying a WebAuthn token with a large number of allowCredential entries may have leaked cross-origin information",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2092025"
+			},
+			{
+				"ticket": "2092026",
+				"description": "CVE-2022-31747 Mozilla: Memory safety bugs fixed in Firefox 101 and Firefox ESR 91.10",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2092026"
+			},
+			{
+				"ticket": "2092416",
+				"description": "CVE-2022-1834 Mozilla: Braille space character caused incorrect sender email to be shown for a digitally signed email",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2092416"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-1834",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1834.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-349"
+			},
+			{
+				"name": "CVE-2022-31736",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-31736.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-829"
+			},
+			{
+				"name": "CVE-2022-31737",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-31737.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-120"
+			},
+			{
+				"name": "CVE-2022-31738",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-31738.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-1021"
+			},
+			{
+				"name": "CVE-2022-31740",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-31740.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-770"
+			},
+			{
+				"name": "CVE-2022-31741",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-31741.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-457"
+			},
+			{
+				"name": "CVE-2022-31742",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-31742.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-829"
+			},
+			{
+				"name": "CVE-2022-31747",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-31747.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-120"
+			}
+		],
+		"publishedAt": "2022-06-02T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"thunderbird-0:91.10.0-1.el8_6.aarch64.rpm",
+					"thunderbird-0:91.10.0-1.el8_6.src.rpm",
+					"thunderbird-0:91.10.0-1.el8_6.x86_64.rpm",
+					"thunderbird-debuginfo-0:91.10.0-1.el8_6.aarch64.rpm",
+					"thunderbird-debuginfo-0:91.10.0-1.el8_6.x86_64.rpm",
+					"thunderbird-debugsource-0:91.10.0-1.el8_6.aarch64.rpm",
+					"thunderbird-debugsource-0:91.10.0-1.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

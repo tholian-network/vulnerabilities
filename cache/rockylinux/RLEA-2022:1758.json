@@ -1,0 +1,51 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:1758",
+		"synopsis": "network-manager-applet bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for network-manager-applet is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2001638",
+				"description": "Rebase network-manager-applet to 1.24.0 in RHEL 8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001638"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2022:1758",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:1758",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"network-manager-applet-0:1.24.0-4.el8.aarch64.rpm",
+					"network-manager-applet-0:1.24.0-4.el8.src.rpm",
+					"network-manager-applet-0:1.24.0-4.el8.x86_64.rpm",
+					"network-manager-applet-debuginfo-0:1.24.0-4.el8.aarch64.rpm",
+					"network-manager-applet-debuginfo-0:1.24.0-4.el8.x86_64.rpm",
+					"network-manager-applet-debugsource-0:1.24.0-4.el8.aarch64.rpm",
+					"network-manager-applet-debugsource-0:1.24.0-4.el8.x86_64.rpm",
+					"nm-connection-editor-0:1.24.0-4.el8.aarch64.rpm",
+					"nm-connection-editor-0:1.24.0-4.el8.x86_64.rpm",
+					"nm-connection-editor-debuginfo-0:1.24.0-4.el8.aarch64.rpm",
+					"nm-connection-editor-debuginfo-0:1.24.0-4.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

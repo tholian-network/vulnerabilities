@@ -1,0 +1,159 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:5470",
+		"synopsis": "Important: thunderbird security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for thunderbird is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Mozilla Thunderbird is a standalone mail and newsgroup client.\nThis update upgrades Thunderbird to version 91.11.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2102161",
+				"description": "CVE-2022-34479 Mozilla: A popup window could be resized in a way to overlay the address bar with web content",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2102161"
+			},
+			{
+				"ticket": "2102162",
+				"description": "CVE-2022-34470 Mozilla: Use-after-free in nsSHistory",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2102162"
+			},
+			{
+				"ticket": "2102163",
+				"description": "CVE-2022-34468 Mozilla: CSP sandbox header without `allow-scripts` can be bypassed via retargeted javascript: URI",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2102163"
+			},
+			{
+				"ticket": "2102164",
+				"description": "CVE-2022-34481 Mozilla: Potential integer overflow in ReplaceElementsAt",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2102164"
+			},
+			{
+				"ticket": "2102165",
+				"description": "CVE-2022-31744 Mozilla: CSP bypass enabling stylesheet injection",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2102165"
+			},
+			{
+				"ticket": "2102166",
+				"description": "CVE-2022-34472 Mozilla: Unavailable PAC file resulted in OCSP requests being blocked",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2102166"
+			},
+			{
+				"ticket": "2102168",
+				"description": "CVE-2022-2200 Mozilla: Undesired attributes could be set as part of prototype pollution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2102168"
+			},
+			{
+				"ticket": "2102169",
+				"description": "CVE-2022-34484 Mozilla: Memory safety bugs fixed in Firefox 102 and Firefox ESR 91.11",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2102169"
+			},
+			{
+				"ticket": "2102204",
+				"description": "CVE-2022-2226 Mozilla: An email with a mismatching OpenPGP signature date was accepted as valid",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2102204"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-2200",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-2200.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-1321"
+			},
+			{
+				"name": "CVE-2022-2226",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-2226.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-357"
+			},
+			{
+				"name": "CVE-2022-31744",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-31744.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-79"
+			},
+			{
+				"name": "CVE-2022-34468",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-34468.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-79"
+			},
+			{
+				"name": "CVE-2022-34470",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-34470.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2022-34472",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-34472.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-393"
+			},
+			{
+				"name": "CVE-2022-34479",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-34479.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-1021"
+			},
+			{
+				"name": "CVE-2022-34481",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-34481.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-190"
+			},
+			{
+				"name": "CVE-2022-34484",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-34484.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-120"
+			}
+		],
+		"publishedAt": "2022-06-30T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"thunderbird-0:91.11.0-2.el8_6.aarch64.rpm",
+					"thunderbird-0:91.11.0-2.el8_6.src.rpm",
+					"thunderbird-0:91.11.0-2.el8_6.x86_64.rpm",
+					"thunderbird-debuginfo-0:91.11.0-2.el8_6.aarch64.rpm",
+					"thunderbird-debuginfo-0:91.11.0-2.el8_6.x86_64.rpm",
+					"thunderbird-debugsource-0:91.11.0-2.el8_6.aarch64.rpm",
+					"thunderbird-debugsource-0:91.11.0-2.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

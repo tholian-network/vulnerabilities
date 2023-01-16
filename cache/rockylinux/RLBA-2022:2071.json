@@ -1,0 +1,71 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2071",
+		"synopsis": "dbus bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for dbus is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1940067",
+				"description": "With dbus 1.12.8-12.el8_3 ssh session executing single command hang",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1940067"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2071",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2071",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"dbus-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-1:1.12.8-18.el8_6.1.src.rpm",
+					"dbus-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-common-1:1.12.8-18.el8_6.1.noarch.rpm",
+					"dbus-daemon-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-daemon-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-daemon-debuginfo-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-daemon-debuginfo-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-debuginfo-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-debuginfo-1:1.12.8-18.el8_6.1.i686.rpm",
+					"dbus-debuginfo-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-debugsource-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-debugsource-1:1.12.8-18.el8_6.1.i686.rpm",
+					"dbus-debugsource-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-devel-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-devel-1:1.12.8-18.el8_6.1.i686.rpm",
+					"dbus-devel-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-libs-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-libs-1:1.12.8-18.el8_6.1.i686.rpm",
+					"dbus-libs-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-libs-debuginfo-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-libs-debuginfo-1:1.12.8-18.el8_6.1.i686.rpm",
+					"dbus-libs-debuginfo-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-tools-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-tools-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-tools-debuginfo-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-tools-debuginfo-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-x11-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-x11-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-x11-debuginfo-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-x11-debuginfo-1:1.12.8-18.el8_6.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

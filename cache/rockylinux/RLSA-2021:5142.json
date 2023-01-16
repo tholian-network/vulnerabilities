@@ -1,0 +1,55 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:5142",
+		"synopsis": "Moderate: idm:DL1 security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the idm:DL1 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Rocky Enterprise Software Foundation Identity Management (IdM) is a centralized authentication, identity management, and authorization solution for both traditional and cloud-based enterprise environments. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2019732",
+				"description": "CVE-2020-25719 samba: Samba AD DC did not always rely on the SID and PAC in Kerberos tickets",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2019732"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-25719",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-25719.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.2",
+				"cwe": "CWE-287"
+			}
+		],
+		"publishedAt": "2021-12-15T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"python3-jwcrypto-0:0.5.0-1.module+el8.4.0+430+1dcf16bb.noarch.rpm",
+					"python3-kdcproxy-0:0.4-5.module+el8.3.0+244+0b2ae752.noarch.rpm",
+					"python3-pyusb-0:1.0.0-9.module+el8.4.0+430+1dcf16bb.noarch.rpm",
+					"python3-yubico-0:1.3.2-9.module+el8.4.0+430+1dcf16bb.noarch.rpm",
+					"python-jwcrypto-0:0.5.0-1.module+el8.4.0+430+1dcf16bb.src.rpm",
+					"python-kdcproxy-0:0.4-5.module+el8.3.0+244+0b2ae752.src.rpm",
+					"python-yubico-0:1.3.2-9.module+el8.4.0+430+1dcf16bb.src.rpm",
+					"pyusb-0:1.0.0-9.module+el8.4.0+430+1dcf16bb.src.rpm",
+					"slapi-nis-0:0.56.6-4.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"slapi-nis-0:0.56.6-4.module+el8.6.0+796+128eec25.src.rpm",
+					"slapi-nis-0:0.56.6-4.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"slapi-nis-debuginfo-0:0.56.6-4.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"slapi-nis-debuginfo-0:0.56.6-4.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"slapi-nis-debugsource-0:0.56.6-4.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"slapi-nis-debugsource-0:0.56.6-4.module+el8.6.0+796+128eec25.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

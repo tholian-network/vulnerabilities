@@ -1,0 +1,49 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:4340",
+		"synopsis": "spice-client-win bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for spice-client-win is now available for Rocky Enterprise Software Foundation EnterpriseLinux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1918877",
+				"description": "[mingw] RFE: Cannot change CD with ISO in RHV Data domain",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1918877"
+			},
+			{
+				"ticket": "1997058",
+				"description": "Rebuild spice-client-win for RHEL-8.5",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1997058"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:4340",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:4340",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"spice-client-win-0:8.5-5.el8.src.rpm",
+					"spice-client-win-x64-0:8.5-5.el8.noarch.rpm",
+					"spice-client-win-x86-0:8.5-5.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

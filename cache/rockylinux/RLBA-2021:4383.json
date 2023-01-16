@@ -1,0 +1,48 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4383",
+		"synopsis": "nvmetcli bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for nvmetcli is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1660229",
+				"description": "configfs typo in nvmetcli man page",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1660229"
+			},
+			{
+				"ticket": "1948469",
+				"description": "RHEL8.5: Rebase nvmetcli to the latest upstream version",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1948469"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4383",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4383",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nvmetcli-0:0.7-3.el8.noarch.rpm",
+					"nvmetcli-0:0.7-3.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

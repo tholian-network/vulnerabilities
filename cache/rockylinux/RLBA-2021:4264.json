@@ -1,0 +1,48 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4264",
+		"synopsis": "cloud-utils-growpart bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for cloud-utils-growpart is now available for Rocky Enterprise Software Foundation EnterpriseLinux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1885992",
+				"description": "[RHEL-8] growpart doesn't work when LANG=cs_CZ.UTF-8",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1885992"
+			},
+			{
+				"ticket": "1933768",
+				"description": "cloud-utils-growpart:  Wrong parsing of sfdisk output in french locale",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1933768"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4264",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4264",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cloud-utils-growpart-0:0.31-3.el8.noarch.rpm",
+					"cloud-utils-growpart-0:0.31-3.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

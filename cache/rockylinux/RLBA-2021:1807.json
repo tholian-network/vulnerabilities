@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1807",
+		"synopsis": "gcc-toolset-10-dyninst bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gcc-toolset-10-dyninst is now available for Rocky Linux 8.",
+		"description": "GCC Toolset is a compiler toolset that provides recent versions of development tools. GCC Toolset is an Application Stream packaged as a Software Collection.\nFor instructions on usage, see Using GCC Toolset linked from the References section. Components and specifics of this version are documented in the GCC Toolset 10 chapter.\nFor detailed changes in this release, see the Rocky Linux 8.4 Release Notes.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1892007",
+				"description": "rebase dyninst for rhel 8.4 GTS",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1892007"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1807",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1807",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gcc-toolset-10-dyninst-0:10.2.1-2.el8.aarch64.rpm",
+					"gcc-toolset-10-dyninst-0:10.2.1-2.el8.src.rpm",
+					"gcc-toolset-10-dyninst-0:10.2.1-2.el8.x86_64.rpm",
+					"gcc-toolset-10-dyninst-debuginfo-0:10.2.1-2.el8.aarch64.rpm",
+					"gcc-toolset-10-dyninst-debuginfo-0:10.2.1-2.el8.x86_64.rpm",
+					"gcc-toolset-10-dyninst-devel-0:10.2.1-2.el8.aarch64.rpm",
+					"gcc-toolset-10-dyninst-devel-0:10.2.1-2.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

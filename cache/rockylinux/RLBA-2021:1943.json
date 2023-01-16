@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1943",
+		"synopsis": "crash-trace-command bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for crash-trace-command is now available for Rocky Enterprise Software Foundation EnterpriseLinux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1925907",
+				"description": "[RHEL-8.4] crash-trace-command: fails to load trace.so that '/usr/lib64/crash/extensions/trace.so: no commands registered: shared object unloaded '",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1925907"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1943",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1943",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"crash-trace-command-0:2.0-18.el8.aarch64.rpm",
+					"crash-trace-command-0:2.0-18.el8.src.rpm",
+					"crash-trace-command-0:2.0-18.el8.x86_64.rpm",
+					"crash-trace-command-debuginfo-0:2.0-18.el8.aarch64.rpm",
+					"crash-trace-command-debuginfo-0:2.0-18.el8.x86_64.rpm",
+					"crash-trace-command-debugsource-0:2.0-18.el8.aarch64.rpm",
+					"crash-trace-command-debugsource-0:2.0-18.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

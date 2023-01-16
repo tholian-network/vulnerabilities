@@ -1,0 +1,45 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:1831",
+		"synopsis": "gcc-toolset-10-strace bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gcc-toolset-10-strace is now available for Rocky Linux 8.",
+		"description": "GCC Toolset is a compiler toolset that provides recent versions of development tools. GCC Toolset is an Application Stream packaged as a Software Collection.\nFor instructions on usage, see Using GCC Toolset linked from the References section. Components and specifics of this version are documented in the GCC Toolset 10 chapter.\nFor detailed changes in this release, see the Rocky Linux 8.4 Release Notes.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1790836",
+				"description": "[RHEL 8] gcc-toolset-9 strace gets confused by PID namespaces",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1790836"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:1831",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:1831",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gcc-toolset-10-strace-0:5.7-2.el8.aarch64.rpm",
+					"gcc-toolset-10-strace-0:5.7-2.el8.src.rpm",
+					"gcc-toolset-10-strace-0:5.7-2.el8.x86_64.rpm",
+					"gcc-toolset-10-strace-debuginfo-0:5.7-2.el8.aarch64.rpm",
+					"gcc-toolset-10-strace-debuginfo-0:5.7-2.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

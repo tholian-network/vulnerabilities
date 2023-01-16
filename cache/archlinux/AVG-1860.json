@@ -1,19 +1,19 @@
 {
-	"name": "AVG-1860",
-	"packages": [
-		"vault"
-	],
-	"status": "Fixed",
-	"severity": "Medium",
-	"type": "certificate verification bypass",
-	"affected": "1.7.0-1",
-	"fixed": "1.7.1-2",
-	"ticket": null,
-	"issues": [
-		"CVE-2021-29653",
-		"CVE-2021-27400"
-	],
-	"advisories": [],
-	"references": [],
-	"notes": "The Arch Linux package vault 1.7.1-1 was actually still upstream version 1.7.0 because only $pkgver, but not the commit hash was bumped by accident. This is fixed in version 1.7.1-2 of the Arch Linux package."
+  "name": "AVG-1860",
+  "packages": [
+    "vault"
+  ],
+  "status": "Fixed",
+  "severity": "Medium",
+  "type": "certificate verification bypass",
+  "affected": "1.7.0-1",
+  "fixed": "1.7.1-2",
+  "ticket": null,
+  "issues": [
+    "CVE-2021-29653",
+    "CVE-2021-27400"
+  ],
+  "advisories": [],
+  "references": [],
+  "notes": "The Arch Linux package vault 1.7.1-1 was actually still upstream version 1.7.0 because only $pkgver, but not the commit hash was bumped by accident. This is fixed in version 1.7.1-2 of the Arch Linux package."
 }

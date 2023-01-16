@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4216",
+		"synopsis": "xorg-x11-font-utils bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for xorg-x11-font-utils is now available for Rocky Enterprise Software Foundation EnterpriseLinux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1831118",
+				"description": "[xorg-x11-font-utils] fonttosfnt fails to convert PCF files to format OTF or TTF",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1831118"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4216",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4216",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"xorg-x11-font-utils-1:7.5-41.el8.aarch64.rpm",
+					"xorg-x11-font-utils-1:7.5-41.el8.src.rpm",
+					"xorg-x11-font-utils-1:7.5-41.el8.x86_64.rpm",
+					"xorg-x11-font-utils-debuginfo-1:7.5-41.el8.aarch64.rpm",
+					"xorg-x11-font-utils-debuginfo-1:7.5-41.el8.x86_64.rpm",
+					"xorg-x11-font-utils-debugsource-1:7.5-41.el8.aarch64.rpm",
+					"xorg-x11-font-utils-debugsource-1:7.5-41.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

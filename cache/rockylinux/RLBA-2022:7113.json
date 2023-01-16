@@ -1,0 +1,59 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:7113",
+		"synopsis": "cockpit bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for cockpit is now available for Rocky Linux 8.",
+		"description": "Cockpit enables users to administer GNU/Linux servers using a web browser. It offers network configuration, log inspection, diagnostic reports, SELinux troubleshooting, interactive command-line sessions, and more.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2129055",
+				"description": "Login  fails with \"This web browser is too old\" with upcoming Firefox and Chromium browsers [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2129055"
+			},
+			{
+				"ticket": "2129058",
+				"description": "Cockpit locking out users with strict password policies [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2129058"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:7113",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:7113",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-11-07T19:38:29.084827Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cockpit-0:264.2-1.el8_6.aarch64.rpm",
+					"cockpit-0:264.2-1.el8_6.src.rpm",
+					"cockpit-0:264.2-1.el8_6.x86_64.rpm",
+					"cockpit-bridge-0:264.2-1.el8_6.aarch64.rpm",
+					"cockpit-bridge-0:264.2-1.el8_6.x86_64.rpm",
+					"cockpit-debuginfo-0:264.2-1.el8_6.aarch64.rpm",
+					"cockpit-debuginfo-0:264.2-1.el8_6.x86_64.rpm",
+					"cockpit-debugsource-0:264.2-1.el8_6.aarch64.rpm",
+					"cockpit-debugsource-0:264.2-1.el8_6.x86_64.rpm",
+					"cockpit-doc-0:264.2-1.el8_6.noarch.rpm",
+					"cockpit-system-0:264.2-1.el8_6.noarch.rpm",
+					"cockpit-ws-0:264.2-1.el8_6.aarch64.rpm",
+					"cockpit-ws-0:264.2-1.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

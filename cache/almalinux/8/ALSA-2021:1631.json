@@ -1,0 +1,51 @@
+{
+	"updateinfo_id": "ALSA-2021:1631",
+	"fromstr": "packager@almalinux.org",
+	"title": "Moderate: python-urllib3 security update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Moderate",
+	"summary": "An update for python-urllib3 is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+	"pushcount": "3",
+	"pkglist": {
+		"name": "almalinux-8-for-x86_64-baseos-rpms__8_0_default",
+		"shortname": "almalinux-8-for-x86_64-baseos-rpms__8_0_default",
+		"packages": [
+			{
+				"src": "python-urllib3-1.24.2-5.el8.src.rpm",
+				"name": "python3-urllib3",
+				"epoch": "0",
+				"version": "1.24.2",
+				"release": "5.el8",
+				"arch": "noarch",
+				"filename": "python3-urllib3-1.24.2-5.el8.noarch.rpm",
+				"sum": "e1175a41eea32abfee3fdeabc1e1a5fbdd3d5b73de08c3bf4be6323a60a61c64",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "The python-urllib3 package provides the Python HTTP module with connection pooling and file POST abilities.\n\nSecurity Fix(es):\n\n* python-urllib3: CRLF injection via HTTP request method (CVE-2020-26137)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
+	"references": [
+		{
+			"id": "ALSA-2021-1631",
+			"title": "ALSA-2021-1631",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-1631.html"
+		},
+		{
+			"id": "CVE-2020-26137",
+			"title": "CVE-2020-26137",
+			"type": "cve",
+			"href": "https://vulners.com/cve/CVE-2020-26137"
+		}
+	],
+	"issued_date": {
+		"$date": 1621316547000
+	},
+	"updated_date": {
+		"$date": 1621316535000
+	}
+}

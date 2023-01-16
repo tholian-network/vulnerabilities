@@ -1,0 +1,36 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5831",
+		"synopsis": "WALinuxAgent bug fix update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for WALinuxAgent is now available in the Extras channel of Rocky Linux 8.",
+		"description": "The Windows Azure Linux Agent supports provisioning and running Linux virtual machines in the Microsoft Windows Azure cloud.\nUsers of Windows Azure Linux Agent are advised to upgrade to this updated package. The package should be installed on Linux disk images that are built to run in the Windows Azure environment.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2022:5831",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5831",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-08-02T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"WALinuxAgent-0:2.3.0.2-2.el8_6.2.rocky.0.noarch.rpm",
+					"WALinuxAgent-0:2.3.0.2-2.el8_6.2.rocky.0.src.rpm",
+					"WALinuxAgent-udev-0:2.3.0.2-2.el8_6.2.rocky.0.noarch.rpm"
+				]
+			}
+		}
+	}
+}

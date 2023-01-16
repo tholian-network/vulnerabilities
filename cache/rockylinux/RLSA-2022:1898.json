@@ -1,0 +1,90 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1898",
+		"synopsis": "Moderate: fapolicyd security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for fapolicyd is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Fapolicyd (File Access Policy Daemon) implements application whitelisting to decide file access rights. Applications that are known via a reputation source are allowed access while unknown applications are not. The daemon makes use of the kernel\u0026#39;s fanotify interface to determine file access rights.\nThe following packages have been upgraded to a later upstream version: fapolicyd (1.1). (BZ#1939379)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1939379",
+				"description": "Rebase FAPOLICYD to the latest upstream version",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1939379"
+			},
+			{
+				"ticket": "1989272",
+				"description": "ftype of libc.so is wrongly identified as application/x-executable",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1989272"
+			},
+			{
+				"ticket": "1997414",
+				"description": "fapolicyd-dnf-plugin reports as '\u003cinvalid\u003e' in plugins list",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1997414"
+			},
+			{
+				"ticket": "2014445",
+				"description": "SELinux DSP module is wrongly defined in SPEC",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2014445"
+			},
+			{
+				"ticket": "2051485",
+				"description": "fapolicyd prevents yum from updating the system if it is update as well",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2051485"
+			},
+			{
+				"ticket": "2054741",
+				"description": "Introduce rules.d feature",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2054741"
+			},
+			{
+				"ticket": "2066300",
+				"description": "Fapolicyd denies access to /usr/lib64/ld-2.28.so",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2066300"
+			},
+			{
+				"ticket": "2068171",
+				"description": "CVE-2022-1117 fapolicyd: fapolicyd wrongly prepares ld.so path",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2068171"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-1117",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1117.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.4",
+				"cwe": "CWE-552"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"fapolicyd-0:1.1-6.el8_6.1.aarch64.rpm",
+					"fapolicyd-0:1.1-6.el8_6.1.src.rpm",
+					"fapolicyd-0:1.1-6.el8_6.1.x86_64.rpm",
+					"fapolicyd-debuginfo-0:1.1-6.el8_6.1.aarch64.rpm",
+					"fapolicyd-debuginfo-0:1.1-6.el8_6.1.x86_64.rpm",
+					"fapolicyd-debugsource-0:1.1-6.el8_6.1.aarch64.rpm",
+					"fapolicyd-debugsource-0:1.1-6.el8_6.1.x86_64.rpm",
+					"fapolicyd-selinux-0:1.1-6.el8_6.1.noarch.rpm"
+				]
+			}
+		}
+	}
+}

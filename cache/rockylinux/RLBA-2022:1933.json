@@ -1,0 +1,60 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1933",
+		"synopsis": "qt5-qtwayland bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for qt5-qtwayland is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2021761",
+				"description": "Backport fixes from upstream KDE/5.15lts branch",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2021761"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1933",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1933",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"qt5-qtwayland-0:5.15.2-3.el8.0.1.aarch64.rpm",
+					"qt5-qtwayland-0:5.15.2-3.el8.0.1.i686.rpm",
+					"qt5-qtwayland-0:5.15.2-3.el8.0.1.src.rpm",
+					"qt5-qtwayland-0:5.15.2-3.el8.0.1.x86_64.rpm",
+					"qt5-qtwayland-debuginfo-0:5.15.2-3.el8.0.1.aarch64.rpm",
+					"qt5-qtwayland-debuginfo-0:5.15.2-3.el8.0.1.i686.rpm",
+					"qt5-qtwayland-debuginfo-0:5.15.2-3.el8.0.1.x86_64.rpm",
+					"qt5-qtwayland-debugsource-0:5.15.2-3.el8.0.1.aarch64.rpm",
+					"qt5-qtwayland-debugsource-0:5.15.2-3.el8.0.1.i686.rpm",
+					"qt5-qtwayland-debugsource-0:5.15.2-3.el8.0.1.x86_64.rpm",
+					"qt5-qtwayland-devel-0:5.15.2-3.el8.0.1.aarch64.rpm",
+					"qt5-qtwayland-devel-0:5.15.2-3.el8.0.1.i686.rpm",
+					"qt5-qtwayland-devel-0:5.15.2-3.el8.0.1.x86_64.rpm",
+					"qt5-qtwayland-devel-debuginfo-0:5.15.2-3.el8.0.1.aarch64.rpm",
+					"qt5-qtwayland-devel-debuginfo-0:5.15.2-3.el8.0.1.i686.rpm",
+					"qt5-qtwayland-devel-debuginfo-0:5.15.2-3.el8.0.1.x86_64.rpm",
+					"qt5-qtwayland-examples-0:5.15.2-3.el8.0.1.aarch64.rpm",
+					"qt5-qtwayland-examples-0:5.15.2-3.el8.0.1.x86_64.rpm",
+					"qt5-qtwayland-examples-debuginfo-0:5.15.2-3.el8.0.1.aarch64.rpm",
+					"qt5-qtwayland-examples-debuginfo-0:5.15.2-3.el8.0.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

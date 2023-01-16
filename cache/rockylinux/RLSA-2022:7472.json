@@ -1,0 +1,394 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7472",
+		"synopsis": "Low: virt:rhel and virt-devel:rhel security, bug fix, and enhancement update",
+		"severity": "SEVERITY_LOW",
+		"topic": "An update for the virt:rhel and virt-devel:rhel modules is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Kernel-based Virtual Machine (KVM) offers a full virtualization solution for Linux on numerous hardware platforms. The virt:rhel module contains packages which provide user-space components used to run virtual machines using KVM. The packages also provide APIs for managing and interacting with the virtualized systems.\nThe following packages have been upgraded to a later upstream version: qemu-kvm (6.2.0). (BZ#2066828)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1519071",
+				"description": "Fail to rebuild the reference count tables of qcow2 image on host block devices (e.g. LVs)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1519071"
+			},
+			{
+				"ticket": "1851227",
+				"description": "When doing a cpu-baseline between skylake and cascadelake, cascadelake is selected as baseline.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1851227"
+			},
+			{
+				"ticket": "1951118",
+				"description": "CVE-2021-3507 QEMU: fdc: heap buffer overflow in DMA read data transfers",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951118"
+			},
+			{
+				"ticket": "1985827",
+				"description": "Start or remove VM failure even v2v has already finished",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1985827"
+			},
+			{
+				"ticket": "2028823",
+				"description": "assertion failed at parse_ova.ml when ova directory ends with '/'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028823"
+			},
+			{
+				"ticket": "2029980",
+				"description": "Failed assertion in IDE emulation with Ceph backend",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2029980"
+			},
+			{
+				"ticket": "2051332",
+				"description": "supermin should ignore +debug kernels when choosing a kernel to boot",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2051332"
+			},
+			{
+				"ticket": "2056491",
+				"description": "CVE-2022-23645 swtpm: Unchecked header size indicator against expected size",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2056491"
+			},
+			{
+				"ticket": "2060843",
+				"description": "[virtual network][vDPA] qemu crash after hot unplug vdpa device [rhel-8.7.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2060843"
+			},
+			{
+				"ticket": "2062610",
+				"description": "Do operation to disk will hang in the guest of target host after hotplugging and migrating [rhel-8.7.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2062610"
+			},
+			{
+				"ticket": "2062611",
+				"description": "Guest can not start with SLIC acpi table [rhel-8.7.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2062611"
+			},
+			{
+				"ticket": "2063883",
+				"description": "CVE-2022-0897 libvirt: missing locking in nwfilterConnectNumOfNWFilters can lead to denial of service",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2063883"
+			},
+			{
+				"ticket": "2066828",
+				"description": "rebase seabios to 1.16 release",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2066828"
+			},
+			{
+				"ticket": "2067118",
+				"description": "qemu crash after execute blockdev-reopen with  iothread",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2067118"
+			},
+			{
+				"ticket": "2067126",
+				"description": "Allow memory prealloc from multiple threads",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2067126"
+			},
+			{
+				"ticket": "2069946",
+				"description": "PXE boot crash qemu when using multiqueue vDPA",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2069946"
+			},
+			{
+				"ticket": "2070417",
+				"description": "Windows guest hangs after updating and restarting from the guest OS [rhel-8.7.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2070417"
+			},
+			{
+				"ticket": "2071070",
+				"description": "s390x/css: fix PMCW invalid mask",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2071070"
+			},
+			{
+				"ticket": "2072049",
+				"description": "Pull  MSG_ZEROCOPY on QEMU Live Migration Patches into RHEL 8",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2072049"
+			},
+			{
+				"ticket": "2072377",
+				"description": "Fix build warnings that occur when installing the keymap files",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2072377"
+			},
+			{
+				"ticket": "2072932",
+				"description": "Qemu coredump when refreshing block limits on an actively used iothread block device [rhel.8.7]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2072932"
+			},
+			{
+				"ticket": "2073012",
+				"description": "Guest whose os is installed multiple disks but boot partition is installed on single disk can't boot into OS on RHEL 8 [rhel-8.7.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2073012"
+			},
+			{
+				"ticket": "2075424",
+				"description": "virt-customize fails with \"error: Fatal glibc error: CPU does not support x86-64-v2\" with TCG mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2075424"
+			},
+			{
+				"ticket": "2079582",
+				"description": "[libvirt] virtiofsd: Allow option --thread-pool-size=X",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2079582"
+			},
+			{
+				"ticket": "2083884",
+				"description": "qemu reboot problem with seabios 1.16.0 [rhel.8.7]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2083884"
+			},
+			{
+				"ticket": "2084566",
+				"description": "Disable 5-level page tables when using -cpu max",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2084566"
+			},
+			{
+				"ticket": "2089433",
+				"description": "[RFE] RFE backport allow enabling ZEROCOPY live migration to libvirt on RHEL8",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2089433"
+			},
+			{
+				"ticket": "2089623",
+				"description": "Virt-v2v can't convert rhel8.6 guest from VMware on rhel8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2089623"
+			},
+			{
+				"ticket": "2091597",
+				"description": "updates fail when libguestfs-benchmarking is installed",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2091597"
+			},
+			{
+				"ticket": "2092756",
+				"description": "[RFE] RFE backport allow enabling ZEROCOPY live migration to libvirt-python on RHEL8 to be consumed by VDSM",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2092756"
+			},
+			{
+				"ticket": "2095758",
+				"description": "Regression in 'startupPolicy' behaviour for disks backed by a block device",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2095758"
+			},
+			{
+				"ticket": "2097209",
+				"description": "[virtiofs] mount virtiofs failed: SELinux: (dev virtiofs, type virtiofs) getxattr errno 111",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2097209"
+			},
+			{
+				"ticket": "2097652",
+				"description": "The migration port is not released if use it again for recovering postcopy migration",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2097652"
+			},
+			{
+				"ticket": "2097947",
+				"description": "Not able to install windows 11 OS with vTPM in spec (RHEL 8.7)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2097947"
+			},
+			{
+				"ticket": "2100508",
+				"description": "Test for available issuercert before creating CA",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2100508"
+			},
+			{
+				"ticket": "2100862",
+				"description": "CVE-2022-2211 libguestfs: Buffer overflow in get_keys leads to DoS",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2100862"
+			},
+			{
+				"ticket": "2101575",
+				"description": "libvirt: SELinux labels are not set on UNIX sockets",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2101575"
+			},
+			{
+				"ticket": "2101787",
+				"description": "[rhel.8.7] Loading a kernel/initrd is sometimes very slow",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2101787"
+			},
+			{
+				"ticket": "2107954",
+				"description": "Unclear error message output when poweroff vm during postcopy migration.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2107954"
+			},
+			{
+				"ticket": "2110203",
+				"description": "zerocopy capability can be enabled when set migrate capabilities with multifd and compress/xbzrle together",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2110203"
+			},
+			{
+				"ticket": "2111433",
+				"description": "Failed to restore vm after creating a snapshot for a booting vm with vtpm device",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2111433"
+			},
+			{
+				"ticket": "2112296",
+				"description": "virtio-blk: Can't boot fresh installation from used 512 cluster_size image under certain conditions",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2112296"
+			},
+			{
+				"ticket": "2120279",
+				"description": "Wrong max_sectors_kb and Maximum transfer length on the pass-through device [rhel-8.7]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2120279"
+			},
+			{
+				"ticket": "2127109",
+				"description": "Some packages in rhel 8.7 virt:rhel module are older than the ones in rhel 8.6.z",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2127109"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-3507",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3507.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:N/A:L",
+				"cvss3BaseScore": "4.6",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2022-0897",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0897.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.0",
+				"cwe": "CWE-667"
+			},
+			{
+				"name": "CVE-2022-2211",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-2211.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2022-23645",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-23645.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-125"
+			}
+		],
+		"publishedAt": "2022-11-13T07:53:54.336436Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nbdkit-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-0:1.24.0-4.module+el8.6.0+847+b490afdd.src.rpm",
+					"nbdkit-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-bash-completion-0:1.24.0-4.module+el8.6.0+847+b490afdd.noarch.rpm",
+					"nbdkit-basic-filters-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-basic-filters-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-basic-filters-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-basic-filters-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-basic-plugins-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-basic-plugins-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-basic-plugins-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-basic-plugins-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-curl-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-curl-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-curl-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-curl-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-debugsource-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-debugsource-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-devel-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-devel-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-example-plugins-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-example-plugins-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-example-plugins-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-example-plugins-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-gzip-filter-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-gzip-filter-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-gzip-filter-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-gzip-filter-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-gzip-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-gzip-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-gzip-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-gzip-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-linuxdisk-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-linuxdisk-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-linuxdisk-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-linuxdisk-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-nbd-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-nbd-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-nbd-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-nbd-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-python-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-python-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-python-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-python-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-server-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-server-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-server-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-server-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-ssh-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-ssh-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-ssh-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-ssh-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-tar-filter-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-tar-filter-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-tar-filter-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-tar-filter-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-tar-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-tar-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-tar-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-tar-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-tmpdisk-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-tmpdisk-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-tmpdisk-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-tmpdisk-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-vddk-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-vddk-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-xz-filter-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-xz-filter-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-xz-filter-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-xz-filter-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

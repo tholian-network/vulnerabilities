@@ -1,0 +1,71 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1950",
+		"synopsis": "Moderate: dovecot security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for dovecot is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Dovecot is an IMAP server for Linux and other UNIX-like systems, written primarily with security in mind. It also contains a small POP3 server, and supports e-mail in either the maildir or mbox format. The SQL drivers and authentication plug-ins are provided as subpackages. \nThe following packages have been upgraded to a later upstream version: dovecot (2.3.16). (BZ#1980014)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1973610",
+				"description": "CVE-2021-33515 dovecot: plaintext commands injection",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1973610"
+			},
+			{
+				"ticket": "1974508",
+				"description": "Dovecot 2.3.8 regression -  can not replicate using dsync",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1974508"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-33515",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-33515.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N",
+				"cvss3BaseScore": "4.2",
+				"cwe": "CWE-77"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"dovecot-1:2.3.16-2.el8.aarch64.rpm",
+					"dovecot-1:2.3.16-2.el8.i686.rpm",
+					"dovecot-1:2.3.16-2.el8.src.rpm",
+					"dovecot-1:2.3.16-2.el8.x86_64.rpm",
+					"dovecot-debuginfo-1:2.3.16-2.el8.aarch64.rpm",
+					"dovecot-debuginfo-1:2.3.16-2.el8.i686.rpm",
+					"dovecot-debuginfo-1:2.3.16-2.el8.x86_64.rpm",
+					"dovecot-debugsource-1:2.3.16-2.el8.aarch64.rpm",
+					"dovecot-debugsource-1:2.3.16-2.el8.i686.rpm",
+					"dovecot-debugsource-1:2.3.16-2.el8.x86_64.rpm",
+					"dovecot-devel-1:2.3.16-2.el8.aarch64.rpm",
+					"dovecot-devel-1:2.3.16-2.el8.i686.rpm",
+					"dovecot-devel-1:2.3.16-2.el8.x86_64.rpm",
+					"dovecot-mysql-1:2.3.16-2.el8.aarch64.rpm",
+					"dovecot-mysql-1:2.3.16-2.el8.x86_64.rpm",
+					"dovecot-mysql-debuginfo-1:2.3.16-2.el8.aarch64.rpm",
+					"dovecot-mysql-debuginfo-1:2.3.16-2.el8.x86_64.rpm",
+					"dovecot-pgsql-1:2.3.16-2.el8.aarch64.rpm",
+					"dovecot-pgsql-1:2.3.16-2.el8.x86_64.rpm",
+					"dovecot-pgsql-debuginfo-1:2.3.16-2.el8.aarch64.rpm",
+					"dovecot-pgsql-debuginfo-1:2.3.16-2.el8.x86_64.rpm",
+					"dovecot-pigeonhole-1:2.3.16-2.el8.aarch64.rpm",
+					"dovecot-pigeonhole-1:2.3.16-2.el8.x86_64.rpm",
+					"dovecot-pigeonhole-debuginfo-1:2.3.16-2.el8.aarch64.rpm",
+					"dovecot-pigeonhole-debuginfo-1:2.3.16-2.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

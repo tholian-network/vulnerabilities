@@ -1,0 +1,52 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4307",
+		"synopsis": "ipmitool bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for ipmitool is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1951480",
+				"description": "\"ipmitool sol activate\" crashes constantly",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951480"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4307",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4307",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"exchange-bmc-os-info-0:1.8.18-18.el8.noarch.rpm",
+					"ipmievd-0:1.8.18-18.el8.aarch64.rpm",
+					"ipmievd-0:1.8.18-18.el8.x86_64.rpm",
+					"ipmievd-debuginfo-0:1.8.18-18.el8.aarch64.rpm",
+					"ipmievd-debuginfo-0:1.8.18-18.el8.x86_64.rpm",
+					"ipmitool-0:1.8.18-18.el8.aarch64.rpm",
+					"ipmitool-0:1.8.18-18.el8.src.rpm",
+					"ipmitool-0:1.8.18-18.el8.x86_64.rpm",
+					"ipmitool-debuginfo-0:1.8.18-18.el8.aarch64.rpm",
+					"ipmitool-debuginfo-0:1.8.18-18.el8.x86_64.rpm",
+					"ipmitool-debugsource-0:1.8.18-18.el8.aarch64.rpm",
+					"ipmitool-debugsource-0:1.8.18-18.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

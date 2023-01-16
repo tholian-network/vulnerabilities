@@ -1,0 +1,52 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:6439",
+		"synopsis": "Moderate: booth security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for booth is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The Booth cluster ticket manager is a component to bridge high availability clusters spanning multiple sites, in particular, to provide decision inputs to local Pacemaker cluster resource managers. It operates as a distributed consensus-based service, presumably on a separate physical network. Tickets facilitated by a Booth formation are the units of authorization that can be bound to certain resources. This will ensure that the resources are run at only one (granted) site at a time.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2109251",
+				"description": "CVE-2022-2553 booth: authfile directive in booth config file is completely ignored.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2109251"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-2553",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-2553.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-287"
+			}
+		],
+		"publishedAt": "2022-09-23T19:45:06.777532Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"booth-0:1.0-199.1.ac1d34c.git.el8_6.1.aarch64.rpm",
+					"booth-0:1.0-199.1.ac1d34c.git.el8_6.1.src.rpm",
+					"booth-0:1.0-199.1.ac1d34c.git.el8_6.1.x86_64.rpm",
+					"booth-arbitrator-0:1.0-199.1.ac1d34c.git.el8_6.1.noarch.rpm",
+					"booth-core-0:1.0-199.1.ac1d34c.git.el8_6.1.aarch64.rpm",
+					"booth-core-0:1.0-199.1.ac1d34c.git.el8_6.1.x86_64.rpm",
+					"booth-core-debuginfo-0:1.0-199.1.ac1d34c.git.el8_6.1.aarch64.rpm",
+					"booth-core-debuginfo-0:1.0-199.1.ac1d34c.git.el8_6.1.x86_64.rpm",
+					"booth-debugsource-0:1.0-199.1.ac1d34c.git.el8_6.1.aarch64.rpm",
+					"booth-debugsource-0:1.0-199.1.ac1d34c.git.el8_6.1.x86_64.rpm",
+					"booth-site-0:1.0-199.1.ac1d34c.git.el8_6.1.noarch.rpm",
+					"booth-test-0:1.0-199.1.ac1d34c.git.el8_6.1.noarch.rpm"
+				]
+			}
+		}
+	}
+}

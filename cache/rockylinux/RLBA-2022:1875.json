@@ -1,0 +1,44 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1875",
+		"synopsis": "adwaita-icon-theme bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for adwaita-icon-theme is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1977443",
+				"description": "Ship adwaita-icon-theme-devel in CRB",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1977443"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1875",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1875",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"adwaita-cursor-theme-0:3.28.0-3.el8.noarch.rpm",
+					"adwaita-icon-theme-0:3.28.0-3.el8.noarch.rpm",
+					"adwaita-icon-theme-0:3.28.0-3.el8.src.rpm",
+					"adwaita-icon-theme-devel-0:3.28.0-3.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

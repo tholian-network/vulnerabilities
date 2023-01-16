@@ -1,0 +1,61 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2065",
+		"synopsis": "libtirpc bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libtirpc is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1940341",
+				"description": "rpcbind sockets remain ESTABLISHED indefinitely after port scan.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1940341"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2065",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2065",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-46828",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-46828.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-400"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libtirpc-0:1.1.4-6.el8.aarch64.rpm",
+					"libtirpc-0:1.1.4-6.el8.i686.rpm",
+					"libtirpc-0:1.1.4-6.el8.src.rpm",
+					"libtirpc-0:1.1.4-6.el8.x86_64.rpm",
+					"libtirpc-debuginfo-0:1.1.4-6.el8.aarch64.rpm",
+					"libtirpc-debuginfo-0:1.1.4-6.el8.i686.rpm",
+					"libtirpc-debuginfo-0:1.1.4-6.el8.x86_64.rpm",
+					"libtirpc-debugsource-0:1.1.4-6.el8.aarch64.rpm",
+					"libtirpc-debugsource-0:1.1.4-6.el8.i686.rpm",
+					"libtirpc-debugsource-0:1.1.4-6.el8.x86_64.rpm",
+					"libtirpc-devel-0:1.1.4-6.el8.aarch64.rpm",
+					"libtirpc-devel-0:1.1.4-6.el8.i686.rpm",
+					"libtirpc-devel-0:1.1.4-6.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

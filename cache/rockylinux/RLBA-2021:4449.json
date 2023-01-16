@@ -1,0 +1,67 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4449",
+		"synopsis": "openldap bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for openldap is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1814674",
+				"description": "if the certificate contains CN=[ip address] the connection to openldap server is rejected",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1814674"
+			},
+			{
+				"ticket": "1909037",
+				"description": "got undefined symbol: EVP_md2, version OPENSSL_1_1_0 after upgrading from openldap-2.4.46-11 to openldap-2.4.46-15",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1909037"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4449",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4449",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"openldap-0:2.4.46-18.el8.aarch64.rpm",
+					"openldap-0:2.4.46-18.el8.i686.rpm",
+					"openldap-0:2.4.46-18.el8.src.rpm",
+					"openldap-0:2.4.46-18.el8.x86_64.rpm",
+					"openldap-clients-0:2.4.46-18.el8.aarch64.rpm",
+					"openldap-clients-0:2.4.46-18.el8.x86_64.rpm",
+					"openldap-clients-debuginfo-0:2.4.46-18.el8.aarch64.rpm",
+					"openldap-clients-debuginfo-0:2.4.46-18.el8.x86_64.rpm",
+					"openldap-debuginfo-0:2.4.46-18.el8.aarch64.rpm",
+					"openldap-debuginfo-0:2.4.46-18.el8.i686.rpm",
+					"openldap-debuginfo-0:2.4.46-18.el8.x86_64.rpm",
+					"openldap-debugsource-0:2.4.46-18.el8.aarch64.rpm",
+					"openldap-debugsource-0:2.4.46-18.el8.i686.rpm",
+					"openldap-debugsource-0:2.4.46-18.el8.x86_64.rpm",
+					"openldap-devel-0:2.4.46-18.el8.aarch64.rpm",
+					"openldap-devel-0:2.4.46-18.el8.i686.rpm",
+					"openldap-devel-0:2.4.46-18.el8.x86_64.rpm",
+					"openldap-servers-0:2.4.46-18.el8.aarch64.rpm",
+					"openldap-servers-0:2.4.46-18.el8.x86_64.rpm",
+					"openldap-servers-debuginfo-0:2.4.46-18.el8.aarch64.rpm",
+					"openldap-servers-debuginfo-0:2.4.46-18.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

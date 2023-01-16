@@ -1,0 +1,242 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4251",
+		"synopsis": "Moderate: openjpeg2 security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for openjpeg2 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "OpenJPEG is an open source library for reading and writing image files in JPEG2000 format.\nThe following packages have been upgraded to a later upstream version: openjpeg2 (2.4.0).\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1536552",
+				"description": "CVE-2018-5727 openjpeg: integer overflow in opj_t1_encode_cblks in src/lib/openjp2/t1.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1536552"
+			},
+			{
+				"ticket": "1537758",
+				"description": "CVE-2018-5785 openjpeg: integer overflow in opj_j2k_setup_encoder function in openjp2/j2k.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1537758"
+			},
+			{
+				"ticket": "1728505",
+				"description": "CVE-2018-20845 openjpeg: division-by-zero in functions pi_next_pcrl, pi_next_cprl, and pi_next_rpcl in openmj2/pi.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1728505"
+			},
+			{
+				"ticket": "1728509",
+				"description": "CVE-2018-20847 openjpeg: integer overflow in function opj_get_encoding_parameters in openjp2/pi.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1728509"
+			},
+			{
+				"ticket": "1732270",
+				"description": "CVE-2019-12973 openjpeg: denial of service in function opj_t1_encode_cblks in openjp2/t1.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1732270"
+			},
+			{
+				"ticket": "1852869",
+				"description": "CVE-2020-15389 openjpeg: use-after-free and double-free via a mix of valid and invalid files in a directory operated on by the decompressor",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1852869"
+			},
+			{
+				"ticket": "1901998",
+				"description": "CVE-2020-27814 openjpeg: heap-buffer-overflow in lib/openjp2/mqc.c could result in DoS",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1901998"
+			},
+			{
+				"ticket": "1905723",
+				"description": "CVE-2020-27824 openjpeg: global-buffer-overflow read in opj_dwt_calc_explicit_stepsizes()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1905723"
+			},
+			{
+				"ticket": "1905762",
+				"description": "CVE-2020-27823 openjpeg: heap-buffer-overflow write in opj_tcd_dc_level_shift_encode()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1905762"
+			},
+			{
+				"ticket": "1907513",
+				"description": "CVE-2020-27842 openjpeg: null pointer dereference in opj_tgt_reset function in lib/openjp2/tgt.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1907513"
+			},
+			{
+				"ticket": "1907516",
+				"description": "CVE-2020-27843 openjpeg: out-of-bounds read in opj_t2_encode_packet function in openjp2/t2.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1907516"
+			},
+			{
+				"ticket": "1907523",
+				"description": "CVE-2020-27845 openjpeg: heap-based buffer overflow in functions opj_pi_next_rlcp, opj_pi_next_rpcl and opj_pi_next_lrcp in openjp2/pi.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1907523"
+			},
+			{
+				"ticket": "1950101",
+				"description": "CVE-2021-29338 openjpeg: out-of-bounds write due to an integer overflow in opj_compress.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1950101"
+			},
+			{
+				"ticket": "1957616",
+				"description": "CVE-2021-3575 openjpeg: heap-buffer-overflow in color.c may lead to DoS or arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1957616"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2018-20845",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2018-20845.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-369"
+			},
+			{
+				"name": "CVE-2018-20847",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2018-20847.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "4.0",
+				"cwe": "CWE-190"
+			},
+			{
+				"name": "CVE-2018-5727",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2018-5727.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "4.3",
+				"cwe": "CWE-190"
+			},
+			{
+				"name": "CVE-2018-5785",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2018-5785.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "3.3",
+				"cwe": "CWE-190"
+			},
+			{
+				"name": "CVE-2019-12973",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2019-12973.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "3.3",
+				"cwe": "CWE-20"
+			},
+			{
+				"name": "CVE-2020-15389",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-15389.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-20-\u003eCWE-416"
+			},
+			{
+				"name": "CVE-2020-27814",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-27814.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-122"
+			},
+			{
+				"name": "CVE-2020-27823",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-27823.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-20-\u003eCWE-120-\u003eCWE-787"
+			},
+			{
+				"name": "CVE-2020-27824",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-27824.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-20-\u003eCWE-120-\u003eCWE-125"
+			},
+			{
+				"name": "CVE-2020-27842",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-27842.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2020-27843",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-27843.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2020-27845",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-27845.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2021-29338",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-29338.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:H",
+				"cvss3BaseScore": "6.2",
+				"cwe": "CWE-190-\u003eCWE-787"
+			},
+			{
+				"name": "CVE-2021-3575",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3575.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-787"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"openjpeg2-0:2.4.0-4.el8.aarch64.rpm",
+					"openjpeg2-0:2.4.0-4.el8.i686.rpm",
+					"openjpeg2-0:2.4.0-4.el8.src.rpm",
+					"openjpeg2-0:2.4.0-4.el8.x86_64.rpm",
+					"openjpeg2-debuginfo-0:2.4.0-4.el8.aarch64.rpm",
+					"openjpeg2-debuginfo-0:2.4.0-4.el8.i686.rpm",
+					"openjpeg2-debuginfo-0:2.4.0-4.el8.x86_64.rpm",
+					"openjpeg2-debugsource-0:2.4.0-4.el8.aarch64.rpm",
+					"openjpeg2-debugsource-0:2.4.0-4.el8.i686.rpm",
+					"openjpeg2-debugsource-0:2.4.0-4.el8.x86_64.rpm",
+					"openjpeg2-devel-0:2.4.0-4.el8.aarch64.rpm",
+					"openjpeg2-devel-0:2.4.0-4.el8.i686.rpm",
+					"openjpeg2-devel-0:2.4.0-4.el8.x86_64.rpm",
+					"openjpeg2-devel-docs-0:2.4.0-4.el8.noarch.rpm",
+					"openjpeg2-tools-0:2.4.0-4.el8.aarch64.rpm",
+					"openjpeg2-tools-0:2.4.0-4.el8.i686.rpm",
+					"openjpeg2-tools-0:2.4.0-4.el8.x86_64.rpm",
+					"openjpeg2-tools-debuginfo-0:2.4.0-4.el8.aarch64.rpm",
+					"openjpeg2-tools-debuginfo-0:2.4.0-4.el8.i686.rpm",
+					"openjpeg2-tools-debuginfo-0:2.4.0-4.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

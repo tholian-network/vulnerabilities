@@ -1,0 +1,1554 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1759",
+		"synopsis": "Moderate: virt:rhel and virt-devel:rhel security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the virt:rhel and virt-devel:rhel modules is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Kernel-based Virtual Machine (KVM) offers a full virtualization solution for Linux on numerous hardware platforms. The virt:rhel module contains packages which provide user-space components used to run virtual machines using KVM. The packages also provide APIs for managing and interacting with the virtualized systems.\nThe following packages have been upgraded to a later upstream version: qemu-kvm (6.2.0), libvirt (8.0.0), libvirt-python (8.0.0), perl-Sys-Virt (8.0.0), seabios (1.15.0), libtpms (0.9.1). (BZ#1997410, BZ#2012802, BZ#2012806, BZ#2012813, BZ#2018392, BZ#2027716, BZ#2029355)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1510237",
+				"description": "Libvirt should use ovs-vsctl for setting QoS for TAPs plugged into ovs.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1510237"
+			},
+			{
+				"ticket": "1677608",
+				"description": "Libvirt cannot get disk info of the guest with sata disk installed on VMware",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1677608"
+			},
+			{
+				"ticket": "1689202",
+				"description": "RFE: check limit on number of SEV guests",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1689202"
+			},
+			{
+				"ticket": "1738392",
+				"description": "Libvirt cannot get disk info of the guest installed on vmware when disk Minor device number \u003e15",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1738392"
+			},
+			{
+				"ticket": "1743098",
+				"description": "QEMU core dumped after unplug balloon device under q35 with Win2019 guest",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1743098"
+			},
+			{
+				"ticket": "1806857",
+				"description": "\"An error occurred, but the cause is unknown\" raised when starting VM with non-existed numa node in \u003cnumatune\u003e",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1806857"
+			},
+			{
+				"ticket": "1810863",
+				"description": "virtlogd does not start while staring virtqemud service",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1810863"
+			},
+			{
+				"ticket": "1836094",
+				"description": "virt-inspector fails to display the applications of RHEL 9 and OpenSUSE Tumbleweed (using sqlite rpmdb)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1836094"
+			},
+			{
+				"ticket": "1845468",
+				"description": "[backport] libvirt crashes when stopping daemon after virsh command",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1845468"
+			},
+			{
+				"ticket": "1852762",
+				"description": "[RHEL8.6]Error message need update when boot guest with '-M pc -cpu Icelake-Server,+intel-pt'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1852762"
+			},
+			{
+				"ticket": "1867087",
+				"description": "Forward-port 'blockdev-reopen' enablement upstream",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1867087"
+			},
+			{
+				"ticket": "1919210",
+				"description": "CVE-2021-20196 QEMU: block: fdc: null pointer dereference may lead to guest crash",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1919210"
+			},
+			{
+				"ticket": "1924972",
+				"description": "Guest whose os is installed multiple disks but boot partition is installed on single disk can't boot into OS on RHEL 8",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1924972"
+			},
+			{
+				"ticket": "1926508",
+				"description": "[RFE] network: allow configuring dhcp lease time",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1926508"
+			},
+			{
+				"ticket": "1942275",
+				"description": "Can not restore guest from a block device",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1942275"
+			},
+			{
+				"ticket": "1943203",
+				"description": "Virt-v2v should set video type as qxl after converting win10, win2016 and win2019 to local",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1943203"
+			},
+			{
+				"ticket": "1953389",
+				"description": "libvirt qemu capabilities cache not invalidated after TSX enable/disable.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1953389"
+			},
+			{
+				"ticket": "1965140",
+				"description": "RFE: Support to define automatically start mdev device after reboot by 'virsh nodedev-define'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1965140"
+			},
+			{
+				"ticket": "1965589",
+				"description": "Taint message generated during vm running is not preserved during libvirtd restart",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1965589"
+			},
+			{
+				"ticket": "1965638",
+				"description": "Guest kernel panic when booting with qemu-6.0.50 using custom libvirt XML",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1965638"
+			},
+			{
+				"ticket": "1972515",
+				"description": "Windows Installation blocked on 4k disk when using blk+raw+iothread",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1972515"
+			},
+			{
+				"ticket": "1975489",
+				"description": "CVE-2021-3622 hivex: stack overflow due to recursive call of _get_children()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1975489"
+			},
+			{
+				"ticket": "1975840",
+				"description": "Windows guest hangs after updating and restarting from the guest OS",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1975840"
+			},
+			{
+				"ticket": "1978574",
+				"description": "allocpages fails silently on arch without NUMA (s390x)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1978574"
+			},
+			{
+				"ticket": "1981782",
+				"description": "qemu segfault after the 2rd postcopy live migration with vhost-user",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1981782"
+			},
+			{
+				"ticket": "1982993",
+				"description": "migrate failed on no-socket protocol when open multifd",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1982993"
+			},
+			{
+				"ticket": "1983684",
+				"description": "Wrong socket address in qemu while using 'tight=on'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1983684"
+			},
+			{
+				"ticket": "1984721",
+				"description": "Unclear error message while hotplugging the same chardev",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1984721"
+			},
+			{
+				"ticket": "1985451",
+				"description": "Remove downstream-only commit allowing x-blockdev-reopen for libvirt when rebasing to qemu-6.1+",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1985451"
+			},
+			{
+				"ticket": "1988104",
+				"description": "[AMD 8.6 bugs] Support protection keys in an AMD EPYC-Milan VM",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1988104"
+			},
+			{
+				"ticket": "1988986",
+				"description": "[WRB][QEMU6.1]hotplug and hot-unplug all can not plug/un-plug the virtio device successfully",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1988986"
+			},
+			{
+				"ticket": "1989338",
+				"description": "[Upstream] QEMU core dumped if launch with '-smp , maxcpus=4'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1989338"
+			},
+			{
+				"ticket": "1989520",
+				"description": "Reduce container size that uses libguestfs-tools",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1989520"
+			},
+			{
+				"ticket": "1990135",
+				"description": "Fix data corruption in nbdkit-cow-filter and nbdkit-cache-filter",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1990135"
+			},
+			{
+				"ticket": "1994695",
+				"description": "CVE-2021-3716 nbdkit: NBD_OPT_STRUCTURED_REPLY injection on STARTTLS",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1994695"
+			},
+			{
+				"ticket": "1995865",
+				"description": "Wrong backing-fmt in QMP command when do push mode incremental backup for luks encrypted qcow2 disk",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1995865"
+			},
+			{
+				"ticket": "1996530",
+				"description": "There Is ' VFIO_MAP_DMA failed' Info in HMP When Rebooting Guest After Installation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1996530"
+			},
+			{
+				"ticket": "1997410",
+				"description": "Rebase to QEMU 6.1.0",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1997410"
+			},
+			{
+				"ticket": "1998514",
+				"description": "CVE-2021-3748 QEMU: virtio-net: heap use-after-free in virtio_net_receive_rcu",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1998514"
+			},
+			{
+				"ticket": "1998947",
+				"description": "Add machine type compatibility update for 6.1 rebase [aarch64]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1998947"
+			},
+			{
+				"ticket": "1998949",
+				"description": "Add machine type compatibility update for 6.1 rebase [ppc64le]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1998949"
+			},
+			{
+				"ticket": "1998950",
+				"description": "Add machine type compatibility update for 6.1 rebase [s390x]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1998950"
+			},
+			{
+				"ticket": "2000225",
+				"description": "Initial rebase for virt:rhel components based on AV",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000225"
+			},
+			{
+				"ticket": "2001525",
+				"description": "[WRB][virtual network][qemu-6.1.50-1]Can not boot up guest with 14 devices via pcie-root-port",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001525"
+			},
+			{
+				"ticket": "2001608",
+				"description": "CVE-2021-33285 ntfs-3g: Out-of-bounds heap buffer access in ntfs_get_attribute_value() due to incorrect check of bytes_in_use value in MFT records",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001608"
+			},
+			{
+				"ticket": "2001609",
+				"description": "CVE-2021-33286 ntfs-3g: Heap buffer overflow triggered by a specially crafted Unicode string",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001609"
+			},
+			{
+				"ticket": "2001613",
+				"description": "CVE-2021-33287 ntfs-3g: Heap buffer overflow in ntfs_attr_pread_i() triggered by specially crafted NTFS attributes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001613"
+			},
+			{
+				"ticket": "2001616",
+				"description": "CVE-2021-33289 ntfs-3g: Heap buffer overflow triggered by a specially crafted MFT section",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001616"
+			},
+			{
+				"ticket": "2001619",
+				"description": "CVE-2021-35266 ntfs-3g: Heap buffer overflow triggered by a specially crafted NTFS inode pathname",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001619"
+			},
+			{
+				"ticket": "2001621",
+				"description": "CVE-2021-35267 ntfs-3g: Stack buffer overflow triggered when correcting differences between MFT and MFTMirror sections",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001621"
+			},
+			{
+				"ticket": "2001623",
+				"description": "CVE-2021-35268 ntfs-3g: Heap buffer overflow in ntfs_inode_real_open() triggered by a specially crafted NTFS inode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001623"
+			},
+			{
+				"ticket": "2001645",
+				"description": "CVE-2021-35269 ntfs-3g: Heap buffer overflow in ntfs_attr_setup_flag() triggered by a specially crafted NTFS attribute from MFT",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001645"
+			},
+			{
+				"ticket": "2001649",
+				"description": "CVE-2021-39251 ntfs-3g: NULL pointer dereference in ntfs_extent_inode_open()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001649"
+			},
+			{
+				"ticket": "2001650",
+				"description": "CVE-2021-39252 ntfs-3g: Out-of-bounds read in ntfs_ie_lookup()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001650"
+			},
+			{
+				"ticket": "2001651",
+				"description": "CVE-2021-39253 ntfs-3g: Out-of-bounds read in ntfs_runlists_merge_i()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001651"
+			},
+			{
+				"ticket": "2001652",
+				"description": "CVE-2021-39254 ntfs-3g: Integer overflow in memmove() leading to heap buffer overflow in ntfs_attr_record_resize()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001652"
+			},
+			{
+				"ticket": "2001653",
+				"description": "CVE-2021-39255 ntfs-3g: Out-of-bounds read ntfs_attr_find_in_attrdef() triggered by an invalid attribute",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001653"
+			},
+			{
+				"ticket": "2001654",
+				"description": "CVE-2021-39256 ntfs-3g: Heap buffer overflow in ntfs_inode_lookup_by_name()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001654"
+			},
+			{
+				"ticket": "2001656",
+				"description": "CVE-2021-39257 ntfs-3g: Endless recursion from ntfs_attr_pwrite() triggered by an unallocated bitmap",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001656"
+			},
+			{
+				"ticket": "2001658",
+				"description": "CVE-2021-39258 ntfs-3g: Out-of-bounds reads in ntfs_attr_find() and ntfs_external_attr_find()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001658"
+			},
+			{
+				"ticket": "2001659",
+				"description": "CVE-2021-39259 ntfs-3g: Out-of-bounds access in ntfs_inode_lookup_by_name() caused by an unsanitized attribute length",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001659"
+			},
+			{
+				"ticket": "2001661",
+				"description": "CVE-2021-39260 ntfs-3g: Out-of-bounds access in ntfs_inode_sync_standard_information()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001661"
+			},
+			{
+				"ticket": "2001662",
+				"description": "CVE-2021-39261 ntfs-3g: Heap buffer overflow in ntfs_compressed_pwrite()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001662"
+			},
+			{
+				"ticket": "2001665",
+				"description": "CVE-2021-39262 ntfs-3g: Out-of-bounds access in ntfs_decompress()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001665"
+			},
+			{
+				"ticket": "2001667",
+				"description": "CVE-2021-39263 ntfs-3g: Heap buffer overflow in ntfs_get_attribute_value() caused by an unsanitized attribute",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001667"
+			},
+			{
+				"ticket": "2002607",
+				"description": "CVE-2021-4145 virt:rhel/qemu-kvm: QEMU: NULL pointer dereference in mirror_wait_on_conflicts() in block/mirror.c [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2002607"
+			},
+			{
+				"ticket": "2002694",
+				"description": "remove qemu-kiwi rpm from qemu-kvm sources in rhel-8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2002694"
+			},
+			{
+				"ticket": "2002907",
+				"description": "Unexpectedly failed when managedsave the guest which has qxl video device",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2002907"
+			},
+			{
+				"ticket": "2003071",
+				"description": "qemu-kvm scsi: change default passthrough timeout to non-infinite [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2003071"
+			},
+			{
+				"ticket": "2003679",
+				"description": "qemu-kvm crashes after I use virt-viewer/virt-manager connect to a vnc vm which listening on unix socket",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2003679"
+			},
+			{
+				"ticket": "2004416",
+				"description": "fails to revert snapshot of a VM [balloon/page-poison]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2004416"
+			},
+			{
+				"ticket": "2004812",
+				"description": "[WRB][QEMU-6.1.50]Hit error \"Driver 'copy-before-write' is not whitelisted\" when execute \"blockdev-backup\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2004812"
+			},
+			{
+				"ticket": "2007129",
+				"description": "pcie hotplug emulation has various problems due to insufficient state tracking",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2007129"
+			},
+			{
+				"ticket": "2009236",
+				"description": "Qemu coredump when backup with x-perf",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2009236"
+			},
+			{
+				"ticket": "2012385",
+				"description": "virt-host-validate: Detetion results of AMD SEV is not expected",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012385"
+			},
+			{
+				"ticket": "2012802",
+				"description": "Rebase libvirt in RHEL 8.6.0",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012802"
+			},
+			{
+				"ticket": "2012806",
+				"description": "Rebase libvirt-python in RHEL 8.6.0",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012806"
+			},
+			{
+				"ticket": "2012813",
+				"description": "Rebase perl-Sys-Virt in RHEL 8.6.0",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012813"
+			},
+			{
+				"ticket": "2013916",
+				"description": "virt-sparsify fails with the error: Backing file specified without backing format",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013916"
+			},
+			{
+				"ticket": "2017928",
+				"description": "[incremental_backup] Expose scratch disk allocation (wr_highest_offset) in the API",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2017928"
+			},
+			{
+				"ticket": "2018173",
+				"description": "There is nbdkit curl error info if convert a guest from VMware without vddk by administrator account",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2018173"
+			},
+			{
+				"ticket": "2018392",
+				"description": "[rebase] update seabios to nov '21 release",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2018392"
+			},
+			{
+				"ticket": "2020630",
+				"description": "qemu crash when rebooting VM with vhost-vdpa port",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2020630"
+			},
+			{
+				"ticket": "2021778",
+				"description": "Qemu core dump when do full backup during system reset",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2021778"
+			},
+			{
+				"ticket": "2022604",
+				"description": "Update machine type compatibility for QEMU 6.2.0 update [x86_64][RHEL-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2022604"
+			},
+			{
+				"ticket": "2022606",
+				"description": "Update machine type compatibility for QEMU 6.2.0 update [s390x][RHEL-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2022606"
+			},
+			{
+				"ticket": "2022607",
+				"description": "Update machine type compatibility for QEMU 6.2.0 update [aarch64][RHEL-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2022607"
+			},
+			{
+				"ticket": "2022608",
+				"description": "Update machine type compatibility for QEMU 6.2.0 update [ppc64le][RHEL-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2022608"
+			},
+			{
+				"ticket": "2023279",
+				"description": "Correct regexps used to fix schtasks command when the ShortDatePattern uses dots instead of / (eg. yy.M.d)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2023279"
+			},
+			{
+				"ticket": "2024326",
+				"description": "CVE-2021-3975 libvirt: segmentation fault during VM shutdown can lead to vdsm hang",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2024326"
+			},
+			{
+				"ticket": "2024419",
+				"description": "virsh update-device guest --live --config: Operation not supported: cannot modify field 'address' of the disk",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2024419"
+			},
+			{
+				"ticket": "2025769",
+				"description": "virt-v2v fails with the error: Backing file specified without backing format",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2025769"
+			},
+			{
+				"ticket": "2026834",
+				"description": "[ppc64le]Hardly install a rhel8.6 guest with iso by manual",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2026834"
+			},
+			{
+				"ticket": "2027208",
+				"description": "[virtual network][vDPA] qemu crash after hot unplug vdpa device",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2027208"
+			},
+			{
+				"ticket": "2027716",
+				"description": "Rebase to QEMU 6.2.0 [rhel.8.6]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2027716"
+			},
+			{
+				"ticket": "2029355",
+				"description": "Rebase libtpms to at least 0.9.1 for 8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2029355"
+			},
+			{
+				"ticket": "2029380",
+				"description": "Incompatibilities between 8.5 virsh and libvirtd from virt:av",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2029380"
+			},
+			{
+				"ticket": "2029582",
+				"description": "[8.6] machine types: 6.2: Fix prefer_sockets",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2029582"
+			},
+			{
+				"ticket": "2029612",
+				"description": "Rebase swtpm to at least 0.7.0 for rhel-8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2029612"
+			},
+			{
+				"ticket": "2029647",
+				"description": "The flag Sys::Virt::NWFilterBinding::CREATE_VALIDATE does not work",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2029647"
+			},
+			{
+				"ticket": "2030119",
+				"description": "[aarch64]: virsh xml operation slow down on libvirt-7.10.0-1",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2030119"
+			},
+			{
+				"ticket": "2030435",
+				"description": "Libvirt does not report SEV metadata needed to calculate guest measurement",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2030435"
+			},
+			{
+				"ticket": "2030437",
+				"description": "Error using NULL monitor when querying launch security info for shutoff guest",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2030437"
+			},
+			{
+				"ticket": "2030438",
+				"description": "virDomainGetLaunchSecurityInfo and virNodeGetSEVInfo are not exposed in virsh",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2030438"
+			},
+			{
+				"ticket": "2031035",
+				"description": "Add rhel-8.6.0 machine types for RHEL 8.6 [x86]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2031035"
+			},
+			{
+				"ticket": "2031039",
+				"description": "Add rhel-8.6.0 machine types for RHEL 8.6 [aarch64]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2031039"
+			},
+			{
+				"ticket": "2031041",
+				"description": "Add rhel-8.6.0 machine types for RHEL 8.6 [ppc64le]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2031041"
+			},
+			{
+				"ticket": "2033279",
+				"description": "[wrb][qemu-kvm 6.2] The hot-unplugged device can not be hot-plugged back",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2033279"
+			},
+			{
+				"ticket": "2034602",
+				"description": "CVE-2021-4145 QEMU: NULL pointer dereference in mirror_wait_on_conflicts() in block/mirror.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2034602"
+			},
+			{
+				"ticket": "2035002",
+				"description": "CVE-2021-4158 QEMU: NULL pointer dereference in pci_write() in hw/acpi/pcihp.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2035002"
+			},
+			{
+				"ticket": "2035177",
+				"description": "v2v conversion is failed with PCI: slot 2 function 0 not available for virtio-scsi-pci, in use by virtio-net-pci [code=1 int1=-1]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2035177"
+			},
+			{
+				"ticket": "2035185",
+				"description": "Qemu core dump when start guest with nbd node or do block jobs to nbd node",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2035185"
+			},
+			{
+				"ticket": "2035237",
+				"description": "devices not removed from the definition after hot-unplug when JSON syntax for -device is used",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2035237"
+			},
+			{
+				"ticket": "2035714",
+				"description": "libvirtd crashed when start-\u003ereload-\u003erestart libvirtd",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2035714"
+			},
+			{
+				"ticket": "2036178",
+				"description": "Qemu core dumped when do block-stream to a snapshot node on non-enough space storage",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2036178"
+			},
+			{
+				"ticket": "2037135",
+				"description": "Booting from Local Snapshot Core Dumped Whose Backing File Is Based on RBD",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2037135"
+			},
+			{
+				"ticket": "2041480",
+				"description": "[incremental_backup] Inconsistent block status reply in qemu-nbd",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2041480"
+			},
+			{
+				"ticket": "2041610",
+				"description": "virt-install: \"ERROR internal error: cannot parse process status data for pid\" on guest reboot",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2041610"
+			},
+			{
+				"ticket": "2043584",
+				"description": "Snapshot-revert failed with 'cause is unknown' error",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2043584"
+			},
+			{
+				"ticket": "2045945",
+				"description": "Can't build nbdkit packages from src nbdkit-1.24.0-3.module+el8.6.0 package",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2045945"
+			},
+			{
+				"ticket": "2046172",
+				"description": "Possible hang or crash of libvirtd/virtqemud when starting a VM and device mapper is not available",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2046172"
+			},
+			{
+				"ticket": "2050324",
+				"description": "CVE-2022-0485 libnbd: nbdcopy: missing error handling may create corrupted destination image",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2050324"
+			},
+			{
+				"ticket": "2050697",
+				"description": "Libvirt does not validate domain XML on migration",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2050697"
+			},
+			{
+				"ticket": "2050702",
+				"description": "Libvirt can't start a guest if virtio-mem/virtio-pmem is on PCI bus != 0",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2050702"
+			},
+			{
+				"ticket": "2054597",
+				"description": "Do operation to disk will hang in the guest of target host after hotplugging and migrating",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2054597"
+			},
+			{
+				"ticket": "2059311",
+				"description": "Guest can not start with SLIC acpi table",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2059311"
+			},
+			{
+				"ticket": "2065314",
+				"description": "Demote netcat to Recommends",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2065314"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-20196",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20196.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:L",
+				"cvss3BaseScore": "3.2",
+				"cwe": "CWE-476"
+			},
+			{
+				"name": "CVE-2021-33285",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-33285.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-33286",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-33286.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-33287",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-33287.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-33289",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-33289.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-35266",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35266.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-35267",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35267.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-35268",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35268.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-35269",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35269.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-3622",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3622.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "4.3",
+				"cwe": "CWE-400"
+			},
+			{
+				"name": "CVE-2021-3716",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3716.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "3.5",
+				"cwe": "CWE-924"
+			},
+			{
+				"name": "CVE-2021-3748",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3748.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-39251",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-39251.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-39252",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-39252.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-39253",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-39253.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-39254",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-39254.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-39255",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-39255.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-39256",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-39256.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-39257",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-39257.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-39258",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-39258.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-39259",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-39259.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-39260",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-39260.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-39261",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-39261.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-39262",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-39262.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-39263",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-39263.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-3975",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3975.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-4145",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-4145.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.6",
+				"cwe": "CWE-476"
+			},
+			{
+				"name": "CVE-2021-4158",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-4158.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.0",
+				"cwe": "CWE-476"
+			},
+			{
+				"name": "CVE-2022-0485",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0485.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+				"cvss3BaseScore": "4.8",
+				"cwe": "CWE-252"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"hivex-0:1.3.18-23.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"hivex-0:1.3.18-23.module+el8.6.0+847+b490afdd.i686.rpm",
+					"hivex-0:1.3.18-23.module+el8.6.0+847+b490afdd.src.rpm",
+					"hivex-0:1.3.18-23.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"hivex-debuginfo-0:1.3.18-23.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"hivex-debuginfo-0:1.3.18-23.module+el8.6.0+847+b490afdd.i686.rpm",
+					"hivex-debuginfo-0:1.3.18-23.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"hivex-debugsource-0:1.3.18-23.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"hivex-debugsource-0:1.3.18-23.module+el8.6.0+847+b490afdd.i686.rpm",
+					"hivex-debugsource-0:1.3.18-23.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"hivex-devel-0:1.3.18-23.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"hivex-devel-0:1.3.18-23.module+el8.6.0+847+b490afdd.i686.rpm",
+					"hivex-devel-0:1.3.18-23.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libguestfs-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"libguestfs-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.src.rpm",
+					"libguestfs-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"libguestfs-appliance-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"libguestfs-appliance-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"libguestfs-bash-completion-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.noarch.rpm",
+					"libguestfs-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"libguestfs-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"libguestfs-debugsource-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"libguestfs-debugsource-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"libguestfs-devel-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"libguestfs-devel-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"libguestfs-gfs2-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"libguestfs-gfs2-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"libguestfs-gobject-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"libguestfs-gobject-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"libguestfs-gobject-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"libguestfs-gobject-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"libguestfs-gobject-devel-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"libguestfs-gobject-devel-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"libguestfs-inspect-icons-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.noarch.rpm",
+					"libguestfs-java-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"libguestfs-java-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"libguestfs-java-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"libguestfs-java-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"libguestfs-java-devel-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"libguestfs-java-devel-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"libguestfs-javadoc-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.noarch.rpm",
+					"libguestfs-man-pages-ja-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.noarch.rpm",
+					"libguestfs-man-pages-uk-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.noarch.rpm",
+					"libguestfs-rescue-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"libguestfs-rescue-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"libguestfs-rsync-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"libguestfs-rsync-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"libguestfs-tools-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.noarch.rpm",
+					"libguestfs-tools-c-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"libguestfs-tools-c-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"libguestfs-tools-c-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"libguestfs-tools-c-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"libguestfs-winsupport-0:8.6-1.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libguestfs-winsupport-0:8.6-1.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libguestfs-winsupport-0:8.6-1.module+el8.6.0+847+b490afdd.src.rpm",
+					"libguestfs-winsupport-0:8.6-1.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libguestfs-xfs-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"libguestfs-xfs-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"libiscsi-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-0:1.18.0-8.module+el8.6.0+847+b490afdd.src.rpm",
+					"libiscsi-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-debugsource-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-debugsource-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-debugsource-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-devel-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-devel-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-devel-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-utils-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-utils-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-utils-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-utils-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-utils-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-utils-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libnbd-0:1.6.0-5.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libnbd-0:1.6.0-5.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libnbd-0:1.6.0-5.module+el8.6.0+847+b490afdd.src.rpm",
+					"libnbd-0:1.6.0-5.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libnbd-bash-completion-0:1.6.0-5.module+el8.6.0+847+b490afdd.noarch.rpm",
+					"libnbd-debuginfo-0:1.6.0-5.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libnbd-debuginfo-0:1.6.0-5.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libnbd-debuginfo-0:1.6.0-5.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libnbd-debugsource-0:1.6.0-5.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libnbd-debugsource-0:1.6.0-5.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libnbd-debugsource-0:1.6.0-5.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libnbd-devel-0:1.6.0-5.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libnbd-devel-0:1.6.0-5.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libnbd-devel-0:1.6.0-5.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libtpms-0:0.9.1-0.20211126git1ff6fe1f43.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libtpms-0:0.9.1-0.20211126git1ff6fe1f43.module+el8.6.0+847+b490afdd.src.rpm",
+					"libtpms-0:0.9.1-0.20211126git1ff6fe1f43.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libtpms-debuginfo-0:0.9.1-0.20211126git1ff6fe1f43.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libtpms-debuginfo-0:0.9.1-0.20211126git1ff6fe1f43.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libtpms-debugsource-0:0.9.1-0.20211126git1ff6fe1f43.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libtpms-debugsource-0:0.9.1-0.20211126git1ff6fe1f43.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libtpms-devel-0:0.9.1-0.20211126git1ff6fe1f43.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libtpms-devel-0:0.9.1-0.20211126git1ff6fe1f43.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libvirt-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.src.rpm",
+					"libvirt-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-client-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-client-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-client-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-client-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-client-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-client-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-config-network-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-config-network-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-config-network-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-config-nwfilter-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-config-nwfilter-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-config-nwfilter-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-interface-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-interface-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-interface-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-interface-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-interface-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-interface-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-network-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-network-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-network-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-network-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-network-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-network-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-nodedev-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-nodedev-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-nodedev-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-nodedev-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-nodedev-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-nodedev-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-nwfilter-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-nwfilter-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-nwfilter-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-nwfilter-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-nwfilter-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-nwfilter-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-qemu-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-qemu-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-qemu-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-qemu-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-secret-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-secret-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-secret-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-secret-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-secret-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-secret-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-storage-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-core-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-core-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-storage-core-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-core-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-core-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-storage-core-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-disk-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-disk-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-storage-disk-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-disk-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-disk-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-storage-disk-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-gluster-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-gluster-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-gluster-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-gluster-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-iscsi-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-iscsi-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-storage-iscsi-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-iscsi-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-iscsi-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-storage-iscsi-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-iscsi-direct-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-iscsi-direct-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-storage-iscsi-direct-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-iscsi-direct-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-iscsi-direct-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-storage-iscsi-direct-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-logical-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-logical-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-storage-logical-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-logical-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-logical-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-storage-logical-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-mpath-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-mpath-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-storage-mpath-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-mpath-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-mpath-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-storage-mpath-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-rbd-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-rbd-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-rbd-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-rbd-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-scsi-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-scsi-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-storage-scsi-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-driver-storage-scsi-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-driver-storage-scsi-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-daemon-driver-storage-scsi-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-daemon-kvm-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-daemon-kvm-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-dbus-0:1.3.0-2.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libvirt-dbus-0:1.3.0-2.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libvirt-dbus-0:1.3.0-2.module+el8.6.0+847+b490afdd.src.rpm",
+					"libvirt-dbus-0:1.3.0-2.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libvirt-dbus-debuginfo-0:1.3.0-2.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libvirt-dbus-debuginfo-0:1.3.0-2.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libvirt-dbus-debuginfo-0:1.3.0-2.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libvirt-dbus-debugsource-0:1.3.0-2.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libvirt-dbus-debugsource-0:1.3.0-2.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libvirt-dbus-debugsource-0:1.3.0-2.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libvirt-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-debugsource-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-debugsource-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-debugsource-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-devel-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-devel-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-devel-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-docs-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-docs-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-docs-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-libs-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-libs-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-libs-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-libs-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-libs-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-libs-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-lock-sanlock-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-lock-sanlock-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-lock-sanlock-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-lock-sanlock-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-nss-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-nss-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-nss-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-nss-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-nss-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-nss-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-python-0:8.0.0-1.1.module+el8.6.0+1000+18e3b59f.src.rpm",
+					"libvirt-python-debugsource-0:8.0.0-1.1.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-python-debugsource-0:8.0.0-1.1.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-python-debugsource-0:8.0.0-1.1.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-wireshark-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-wireshark-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-wireshark-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"libvirt-wireshark-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"libvirt-wireshark-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"libvirt-wireshark-debuginfo-0:8.0.0-5.4.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"lua-guestfs-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"lua-guestfs-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"lua-guestfs-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"lua-guestfs-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"nbdfuse-0:1.6.0-5.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdfuse-0:1.6.0-5.module+el8.6.0+847+b490afdd.i686.rpm",
+					"nbdfuse-0:1.6.0-5.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdfuse-debuginfo-0:1.6.0-5.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdfuse-debuginfo-0:1.6.0-5.module+el8.6.0+847+b490afdd.i686.rpm",
+					"nbdfuse-debuginfo-0:1.6.0-5.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-0:1.24.0-4.module+el8.6.0+847+b490afdd.src.rpm",
+					"nbdkit-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-bash-completion-0:1.24.0-4.module+el8.6.0+847+b490afdd.noarch.rpm",
+					"nbdkit-basic-filters-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-basic-filters-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-basic-filters-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-basic-filters-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-basic-plugins-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-basic-plugins-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-basic-plugins-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-basic-plugins-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-curl-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-curl-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-curl-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-curl-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-debugsource-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-debugsource-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-devel-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-devel-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-example-plugins-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-example-plugins-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-example-plugins-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-example-plugins-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-gzip-filter-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-gzip-filter-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-gzip-filter-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-gzip-filter-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-gzip-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-gzip-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-gzip-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-gzip-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-linuxdisk-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-linuxdisk-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-linuxdisk-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-linuxdisk-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-nbd-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-nbd-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-nbd-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-nbd-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-python-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-python-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-python-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-python-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-server-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-server-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-server-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-server-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-ssh-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-ssh-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-ssh-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-ssh-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-tar-filter-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-tar-filter-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-tar-filter-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-tar-filter-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-tar-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-tar-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-tar-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-tar-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-tmpdisk-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-tmpdisk-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-tmpdisk-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-tmpdisk-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-vddk-plugin-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-vddk-plugin-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-xz-filter-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-xz-filter-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"nbdkit-xz-filter-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"nbdkit-xz-filter-debuginfo-0:1.24.0-4.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-0:0.2.8-12.module+el8.6.0+847+b490afdd.src.rpm",
+					"netcf-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-debugsource-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-debugsource-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-debugsource-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-devel-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-devel-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-devel-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-libs-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-libs-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-libs-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-libs-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-libs-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-libs-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"ocaml-hivex-0:1.3.18-23.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"ocaml-hivex-0:1.3.18-23.module+el8.6.0+847+b490afdd.i686.rpm",
+					"ocaml-hivex-0:1.3.18-23.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"ocaml-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"ocaml-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+847+b490afdd.i686.rpm",
+					"ocaml-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"ocaml-hivex-devel-0:1.3.18-23.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"ocaml-hivex-devel-0:1.3.18-23.module+el8.6.0+847+b490afdd.i686.rpm",
+					"ocaml-hivex-devel-0:1.3.18-23.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"ocaml-libguestfs-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"ocaml-libguestfs-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"ocaml-libguestfs-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"ocaml-libguestfs-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"ocaml-libguestfs-devel-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"ocaml-libguestfs-devel-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"ocaml-libnbd-0:1.6.0-5.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"ocaml-libnbd-0:1.6.0-5.module+el8.6.0+847+b490afdd.i686.rpm",
+					"ocaml-libnbd-0:1.6.0-5.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"ocaml-libnbd-debuginfo-0:1.6.0-5.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"ocaml-libnbd-debuginfo-0:1.6.0-5.module+el8.6.0+847+b490afdd.i686.rpm",
+					"ocaml-libnbd-debuginfo-0:1.6.0-5.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"ocaml-libnbd-devel-0:1.6.0-5.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"ocaml-libnbd-devel-0:1.6.0-5.module+el8.6.0+847+b490afdd.i686.rpm",
+					"ocaml-libnbd-devel-0:1.6.0-5.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"perl-hivex-0:1.3.18-23.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"perl-hivex-0:1.3.18-23.module+el8.6.0+847+b490afdd.i686.rpm",
+					"perl-hivex-0:1.3.18-23.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"perl-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"perl-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+847+b490afdd.i686.rpm",
+					"perl-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"perl-Sys-Guestfs-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"perl-Sys-Guestfs-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"perl-Sys-Guestfs-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"perl-Sys-Guestfs-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"perl-Sys-Virt-0:8.0.0-1.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"perl-Sys-Virt-0:8.0.0-1.module+el8.6.0+847+b490afdd.i686.rpm",
+					"perl-Sys-Virt-0:8.0.0-1.module+el8.6.0+847+b490afdd.src.rpm",
+					"perl-Sys-Virt-0:8.0.0-1.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"perl-Sys-Virt-debuginfo-0:8.0.0-1.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"perl-Sys-Virt-debuginfo-0:8.0.0-1.module+el8.6.0+847+b490afdd.i686.rpm",
+					"perl-Sys-Virt-debuginfo-0:8.0.0-1.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"perl-Sys-Virt-debugsource-0:8.0.0-1.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"perl-Sys-Virt-debugsource-0:8.0.0-1.module+el8.6.0+847+b490afdd.i686.rpm",
+					"perl-Sys-Virt-debugsource-0:8.0.0-1.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"python3-hivex-0:1.3.18-23.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"python3-hivex-0:1.3.18-23.module+el8.6.0+847+b490afdd.i686.rpm",
+					"python3-hivex-0:1.3.18-23.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"python3-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"python3-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+847+b490afdd.i686.rpm",
+					"python3-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"python3-libguestfs-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"python3-libguestfs-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"python3-libguestfs-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"python3-libguestfs-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"python3-libnbd-0:1.6.0-5.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"python3-libnbd-0:1.6.0-5.module+el8.6.0+847+b490afdd.i686.rpm",
+					"python3-libnbd-0:1.6.0-5.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"python3-libnbd-debuginfo-0:1.6.0-5.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"python3-libnbd-debuginfo-0:1.6.0-5.module+el8.6.0+847+b490afdd.i686.rpm",
+					"python3-libnbd-debuginfo-0:1.6.0-5.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"python3-libvirt-0:8.0.0-1.1.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"python3-libvirt-0:8.0.0-1.1.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"python3-libvirt-0:8.0.0-1.1.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"python3-libvirt-debuginfo-0:8.0.0-1.1.module+el8.6.0+1000+18e3b59f.aarch64.rpm",
+					"python3-libvirt-debuginfo-0:8.0.0-1.1.module+el8.6.0+1000+18e3b59f.i686.rpm",
+					"python3-libvirt-debuginfo-0:8.0.0-1.1.module+el8.6.0+1000+18e3b59f.x86_64.rpm",
+					"qemu-guest-agent-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-guest-agent-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-guest-agent-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-guest-agent-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-img-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-img-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-img-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-img-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-kvm-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.src.rpm",
+					"qemu-kvm-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-block-curl-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-kvm-block-curl-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-block-curl-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-kvm-block-curl-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-block-gluster-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-block-gluster-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-block-iscsi-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-kvm-block-iscsi-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-block-iscsi-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-kvm-block-iscsi-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-block-rbd-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-kvm-block-rbd-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-block-rbd-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-kvm-block-rbd-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-block-ssh-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-kvm-block-ssh-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-block-ssh-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-kvm-block-ssh-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-common-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-kvm-common-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-common-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-kvm-common-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-core-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-kvm-core-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-core-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-kvm-core-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-kvm-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-debugsource-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-kvm-debugsource-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-docs-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-kvm-docs-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-hw-usbredir-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-hw-usbredir-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-tests-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.aarch64.rpm",
+					"qemu-kvm-tests-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-ui-opengl-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-ui-opengl-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-ui-spice-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"qemu-kvm-ui-spice-debuginfo-15:6.2.0-11.module+el8.6.0+1000+18e3b59f.5.x86_64.rpm",
+					"ruby-hivex-0:1.3.18-23.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"ruby-hivex-0:1.3.18-23.module+el8.6.0+847+b490afdd.i686.rpm",
+					"ruby-hivex-0:1.3.18-23.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"ruby-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"ruby-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+847+b490afdd.i686.rpm",
+					"ruby-hivex-debuginfo-0:1.3.18-23.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"ruby-libguestfs-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"ruby-libguestfs-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"ruby-libguestfs-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"ruby-libguestfs-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"seabios-0:1.15.0-2.module+el8.6.0+847+b490afdd.src.rpm",
+					"seabios-0:1.15.0-2.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"seabios-bin-0:1.15.0-2.module+el8.6.0+847+b490afdd.noarch.rpm",
+					"seavgabios-bin-0:1.15.0-2.module+el8.6.0+847+b490afdd.noarch.rpm",
+					"sgabios-1:0.20170427git-3.module+el8.6.0+847+b490afdd.i686.rpm",
+					"sgabios-1:0.20170427git-3.module+el8.6.0+847+b490afdd.src.rpm",
+					"sgabios-1:0.20170427git-3.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"sgabios-bin-1:0.20170427git-3.module+el8.6.0+847+b490afdd.noarch.rpm",
+					"supermin-0:5.2.1-1.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"supermin-0:5.2.1-1.module+el8.6.0+847+b490afdd.src.rpm",
+					"supermin-0:5.2.1-1.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"supermin-debuginfo-0:5.2.1-1.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"supermin-debuginfo-0:5.2.1-1.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"supermin-debugsource-0:5.2.1-1.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"supermin-debugsource-0:5.2.1-1.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"supermin-devel-0:5.2.1-1.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"supermin-devel-0:5.2.1-1.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"swtpm-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"swtpm-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.src.rpm",
+					"swtpm-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"swtpm-debuginfo-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"swtpm-debuginfo-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"swtpm-debugsource-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"swtpm-debugsource-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"swtpm-devel-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"swtpm-devel-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"swtpm-libs-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"swtpm-libs-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"swtpm-libs-debuginfo-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"swtpm-libs-debuginfo-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"swtpm-tools-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"swtpm-tools-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"swtpm-tools-debuginfo-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"swtpm-tools-debuginfo-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"swtpm-tools-pkcs11-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"swtpm-tools-pkcs11-0:0.7.0-1.20211109gitb79fd91.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"virt-dib-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"virt-dib-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"virt-dib-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.aarch64.rpm",
+					"virt-dib-debuginfo-1:1.44.0-5.module+el8.6.0+847+b490afdd.rocky.x86_64.rpm",
+					"virt-v2v-1:1.42.0-18.module+el8.6.0+847+b490afdd.src.rpm",
+					"virt-v2v-1:1.42.0-18.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"virt-v2v-bash-completion-1:1.42.0-18.module+el8.6.0+847+b490afdd.noarch.rpm",
+					"virt-v2v-debuginfo-1:1.42.0-18.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"virt-v2v-debugsource-1:1.42.0-18.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"virt-v2v-man-pages-ja-1:1.42.0-18.module+el8.6.0+847+b490afdd.noarch.rpm",
+					"virt-v2v-man-pages-uk-1:1.42.0-18.module+el8.6.0+847+b490afdd.noarch.rpm"
+				]
+			}
+		}
+	}
+}

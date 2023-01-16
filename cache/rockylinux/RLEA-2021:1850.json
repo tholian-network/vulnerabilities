@@ -1,0 +1,53 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:1850",
+		"synopsis": "jbig2dec bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for jbig2dec is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1886011",
+				"description": "Please rebase jbig2dec to 0.16",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1886011"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:1850",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:1850",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"jbig2dec-0:0.16-1.el8.src.rpm",
+					"jbig2dec-debuginfo-0:0.16-1.el8.aarch64.rpm",
+					"jbig2dec-debuginfo-0:0.16-1.el8.i686.rpm",
+					"jbig2dec-debuginfo-0:0.16-1.el8.x86_64.rpm",
+					"jbig2dec-devel-0:0.16-1.el8.aarch64.rpm",
+					"jbig2dec-devel-0:0.16-1.el8.i686.rpm",
+					"jbig2dec-devel-0:0.16-1.el8.x86_64.rpm",
+					"jbig2dec-libs-0:0.16-1.el8.aarch64.rpm",
+					"jbig2dec-libs-0:0.16-1.el8.i686.rpm",
+					"jbig2dec-libs-0:0.16-1.el8.x86_64.rpm",
+					"jbig2dec-libs-debuginfo-0:0.16-1.el8.aarch64.rpm",
+					"jbig2dec-libs-debuginfo-0:0.16-1.el8.i686.rpm",
+					"jbig2dec-libs-debuginfo-0:0.16-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

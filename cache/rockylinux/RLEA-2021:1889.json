@@ -1,0 +1,80 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:1889",
+		"synopsis": "libfprint bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libfprint is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1888181",
+				"description": "Rebase libfprint/fprintd for RHEL 8.4",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1888181"
+			},
+			{
+				"ticket": "1907766",
+				"description": "fprintd-1.90.8-1.el8 fails to build with --nocheck",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1907766"
+			},
+			{
+				"ticket": "1907954",
+				"description": "fingerprint login is inconsistent after using a wrong finger",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1907954"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:1889",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:1889",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"fprintd-0:1.90.9-2.el8.aarch64.rpm",
+					"fprintd-0:1.90.9-2.el8.src.rpm",
+					"fprintd-0:1.90.9-2.el8.x86_64.rpm",
+					"fprintd-debuginfo-0:1.90.9-2.el8.aarch64.rpm",
+					"fprintd-debuginfo-0:1.90.9-2.el8.i686.rpm",
+					"fprintd-debuginfo-0:1.90.9-2.el8.x86_64.rpm",
+					"fprintd-debugsource-0:1.90.9-2.el8.aarch64.rpm",
+					"fprintd-debugsource-0:1.90.9-2.el8.x86_64.rpm",
+					"fprintd-devel-0:1.90.9-2.el8.noarch.rpm",
+					"fprintd-pam-0:1.90.9-2.el8.aarch64.rpm",
+					"fprintd-pam-0:1.90.9-2.el8.i686.rpm",
+					"fprintd-pam-0:1.90.9-2.el8.x86_64.rpm",
+					"fprintd-pam-debuginfo-0:1.90.9-2.el8.aarch64.rpm",
+					"fprintd-pam-debuginfo-0:1.90.9-2.el8.i686.rpm",
+					"fprintd-pam-debuginfo-0:1.90.9-2.el8.x86_64.rpm",
+					"libfprint-0:1.90.7-1.el8.aarch64.rpm",
+					"libfprint-0:1.90.7-1.el8.i686.rpm",
+					"libfprint-0:1.90.7-1.el8.src.rpm",
+					"libfprint-0:1.90.7-1.el8.x86_64.rpm",
+					"libfprint-debuginfo-0:1.90.7-1.el8.aarch64.rpm",
+					"libfprint-debuginfo-0:1.90.7-1.el8.i686.rpm",
+					"libfprint-debuginfo-0:1.90.7-1.el8.x86_64.rpm",
+					"libfprint-debugsource-0:1.90.7-1.el8.aarch64.rpm",
+					"libfprint-debugsource-0:1.90.7-1.el8.i686.rpm",
+					"libfprint-debugsource-0:1.90.7-1.el8.x86_64.rpm",
+					"libfprint-devel-0:1.90.7-1.el8.aarch64.rpm",
+					"libfprint-devel-0:1.90.7-1.el8.i686.rpm",
+					"libfprint-devel-0:1.90.7-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

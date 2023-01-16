@@ -1,0 +1,142 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:5171",
+		"synopsis": "Moderate: nodejs:16 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the nodejs:16 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Node.js is a software development platform for building fast and scalable network applications in the JavaScript programming language. \nThe following packages have been upgraded to a later upstream version: nodejs (16.13.1), nodejs-nodemon (2.0.15). (BZ#2027610)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1907444",
+				"description": "CVE-2020-7788 nodejs-ini: Prototype pollution via malicious INI file",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1907444"
+			},
+			{
+				"ticket": "1945459",
+				"description": "CVE-2020-28469 nodejs-glob-parent: Regular expression denial of service",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1945459"
+			},
+			{
+				"ticket": "1964461",
+				"description": "CVE-2021-33502 normalize-url: ReDoS for data URLs",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1964461"
+			},
+			{
+				"ticket": "2007557",
+				"description": "CVE-2021-3807 nodejs-ansi-regex: Regular expression denial of service (ReDoS) matching ANSI escape codes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2007557"
+			},
+			{
+				"ticket": "2014057",
+				"description": "CVE-2021-22959 llhttp: HTTP Request Smuggling due to spaces in headers",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2014057"
+			},
+			{
+				"ticket": "2014059",
+				"description": "CVE-2021-22960 llhttp: HTTP Request Smuggling when parsing the body of chunked requests",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2014059"
+			},
+			{
+				"ticket": "2024702",
+				"description": "CVE-2021-3918 nodejs-json-schema: Prototype pollution vulnerability",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2024702"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-28469",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-28469.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-400"
+			},
+			{
+				"name": "CVE-2020-7788",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-7788.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+				"cvss3BaseScore": "7.3",
+				"cwe": "CWE-400"
+			},
+			{
+				"name": "CVE-2021-22959",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22959.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-444"
+			},
+			{
+				"name": "CVE-2021-22960",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22960.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-444"
+			},
+			{
+				"name": "CVE-2021-33502",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-33502.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-400"
+			},
+			{
+				"name": "CVE-2021-3807",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3807.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-400"
+			},
+			{
+				"name": "CVE-2021-3918",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3918.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "9.8",
+				"cwe": "CWE-915"
+			}
+		],
+		"publishedAt": "2021-12-15T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nodejs-1:16.13.1-3.module+el8.5.0+721+4c107270.aarch64.rpm",
+					"nodejs-1:16.13.1-3.module+el8.5.0+721+4c107270.src.rpm",
+					"nodejs-1:16.13.1-3.module+el8.5.0+721+4c107270.x86_64.rpm",
+					"nodejs-debuginfo-1:16.13.1-3.module+el8.5.0+721+4c107270.aarch64.rpm",
+					"nodejs-debuginfo-1:16.13.1-3.module+el8.5.0+721+4c107270.x86_64.rpm",
+					"nodejs-debugsource-1:16.13.1-3.module+el8.5.0+721+4c107270.aarch64.rpm",
+					"nodejs-debugsource-1:16.13.1-3.module+el8.5.0+721+4c107270.x86_64.rpm",
+					"nodejs-devel-1:16.13.1-3.module+el8.5.0+721+4c107270.aarch64.rpm",
+					"nodejs-devel-1:16.13.1-3.module+el8.5.0+721+4c107270.x86_64.rpm",
+					"nodejs-docs-1:16.13.1-3.module+el8.5.0+721+4c107270.noarch.rpm",
+					"nodejs-full-i18n-1:16.13.1-3.module+el8.5.0+721+4c107270.aarch64.rpm",
+					"nodejs-full-i18n-1:16.13.1-3.module+el8.5.0+721+4c107270.x86_64.rpm",
+					"nodejs-nodemon-0:2.0.15-1.module+el8.6.0+978+59f26232.noarch.rpm",
+					"nodejs-nodemon-0:2.0.15-1.module+el8.6.0+978+59f26232.src.rpm",
+					"nodejs-packaging-0:25-1.module+el8.5.0+702+221f14e6.noarch.rpm",
+					"nodejs-packaging-0:25-1.module+el8.5.0+702+221f14e6.src.rpm",
+					"npm-1:8.1.2-1.16.13.1.3.module+el8.5.0+721+4c107270.aarch64.rpm",
+					"npm-1:8.1.2-1.16.13.1.3.module+el8.5.0+721+4c107270.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

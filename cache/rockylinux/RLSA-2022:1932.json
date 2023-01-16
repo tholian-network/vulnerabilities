@@ -1,0 +1,45 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1932",
+		"synopsis": "Moderate: python-lxml security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for python-lxml is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "lxml is an XML processing library providing access to libxml2 and libxslt libraries using the Python ElementTree API. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2032569",
+				"description": "CVE-2021-43818 python-lxml: HTML Cleaner allows crafted and SVG embedded scripts to pass through",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2032569"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-43818",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-43818.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L",
+				"cvss3BaseScore": "8.8",
+				"cwe": "(CWE-77|CWE-79)"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"python3-lxml-0:4.2.3-4.el8.aarch64.rpm",
+					"python3-lxml-0:4.2.3-4.el8.x86_64.rpm",
+					"python3-lxml-debuginfo-0:4.2.3-4.el8.aarch64.rpm",
+					"python3-lxml-debuginfo-0:4.2.3-4.el8.x86_64.rpm",
+					"python-lxml-0:4.2.3-4.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

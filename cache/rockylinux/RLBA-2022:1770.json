@@ -1,0 +1,71 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1770",
+		"synopsis": "evince bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for evince is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1927704",
+				"description": "Unable to open the password protected document after cancellation of \"Enter password\" dialog",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1927704"
+			},
+			{
+				"ticket": "2008310",
+				"description": "Clicking within text fields to move cursor deselects text field",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2008310"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1770",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1770",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"evince-0:3.28.4-16.el8.aarch64.rpm",
+					"evince-0:3.28.4-16.el8.src.rpm",
+					"evince-0:3.28.4-16.el8.x86_64.rpm",
+					"evince-browser-plugin-0:3.28.4-16.el8.aarch64.rpm",
+					"evince-browser-plugin-0:3.28.4-16.el8.x86_64.rpm",
+					"evince-browser-plugin-debuginfo-0:3.28.4-16.el8.aarch64.rpm",
+					"evince-browser-plugin-debuginfo-0:3.28.4-16.el8.x86_64.rpm",
+					"evince-debuginfo-0:3.28.4-16.el8.aarch64.rpm",
+					"evince-debuginfo-0:3.28.4-16.el8.i686.rpm",
+					"evince-debuginfo-0:3.28.4-16.el8.x86_64.rpm",
+					"evince-debugsource-0:3.28.4-16.el8.aarch64.rpm",
+					"evince-debugsource-0:3.28.4-16.el8.x86_64.rpm",
+					"evince-devel-0:3.28.4-16.el8.aarch64.rpm",
+					"evince-devel-0:3.28.4-16.el8.i686.rpm",
+					"evince-devel-0:3.28.4-16.el8.x86_64.rpm",
+					"evince-libs-0:3.28.4-16.el8.aarch64.rpm",
+					"evince-libs-0:3.28.4-16.el8.i686.rpm",
+					"evince-libs-0:3.28.4-16.el8.x86_64.rpm",
+					"evince-libs-debuginfo-0:3.28.4-16.el8.aarch64.rpm",
+					"evince-libs-debuginfo-0:3.28.4-16.el8.i686.rpm",
+					"evince-libs-debuginfo-0:3.28.4-16.el8.x86_64.rpm",
+					"evince-nautilus-0:3.28.4-16.el8.aarch64.rpm",
+					"evince-nautilus-0:3.28.4-16.el8.x86_64.rpm",
+					"evince-nautilus-debuginfo-0:3.28.4-16.el8.aarch64.rpm",
+					"evince-nautilus-debuginfo-0:3.28.4-16.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

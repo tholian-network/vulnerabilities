@@ -1,0 +1,48 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4255",
+		"synopsis": "copy-jdk-configs bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for copy-jdk-configs is now available for Rocky Enterprise Software Foundation EnterpriseLinux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1953923",
+				"description": "rebase copy-jdk-configs",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1953923"
+			},
+			{
+				"ticket": "1965305",
+				"description": "copy-jdk-configs script uses find and xargs but RPM does not depend on them",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1965305"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4255",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4255",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"copy-jdk-configs-0:4.0-2.el8.noarch.rpm",
+					"copy-jdk-configs-0:4.0-2.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,98 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1765",
+		"synopsis": "brltty bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for brltty is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1765611",
+				"description": "Can't install brltty.i686 on RHEL 8.1",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1765611"
+			},
+			{
+				"ticket": "1854905",
+				"description": "brltty fails to build on Red Hat Enterprise Linux 8.3.0: asoundlib.h: No such file or directory",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1854905"
+			},
+			{
+				"ticket": "1889636",
+				"description": "rpm -V reports errors for brlapi",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1889636"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1765",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1765",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"brlapi-0:0.6.7-32.el8.aarch64.rpm",
+					"brlapi-0:0.6.7-32.el8.i686.rpm",
+					"brlapi-0:0.6.7-32.el8.x86_64.rpm",
+					"brlapi-debuginfo-0:0.6.7-32.el8.aarch64.rpm",
+					"brlapi-debuginfo-0:0.6.7-32.el8.i686.rpm",
+					"brlapi-debuginfo-0:0.6.7-32.el8.x86_64.rpm",
+					"brlapi-devel-0:0.6.7-32.el8.aarch64.rpm",
+					"brlapi-devel-0:0.6.7-32.el8.i686.rpm",
+					"brlapi-devel-0:0.6.7-32.el8.x86_64.rpm",
+					"brlapi-java-0:0.6.7-32.el8.aarch64.rpm",
+					"brlapi-java-0:0.6.7-32.el8.x86_64.rpm",
+					"brlapi-java-debuginfo-0:0.6.7-32.el8.aarch64.rpm",
+					"brlapi-java-debuginfo-0:0.6.7-32.el8.x86_64.rpm",
+					"brltty-0:5.6-32.el8.aarch64.rpm",
+					"brltty-0:5.6-32.el8.i686.rpm",
+					"brltty-0:5.6-32.el8.src.rpm",
+					"brltty-0:5.6-32.el8.x86_64.rpm",
+					"brltty-at-spi2-0:5.6-32.el8.aarch64.rpm",
+					"brltty-at-spi2-0:5.6-32.el8.x86_64.rpm",
+					"brltty-at-spi2-debuginfo-0:5.6-32.el8.aarch64.rpm",
+					"brltty-at-spi2-debuginfo-0:5.6-32.el8.x86_64.rpm",
+					"brltty-debuginfo-0:5.6-32.el8.aarch64.rpm",
+					"brltty-debuginfo-0:5.6-32.el8.i686.rpm",
+					"brltty-debuginfo-0:5.6-32.el8.x86_64.rpm",
+					"brltty-debugsource-0:5.6-32.el8.aarch64.rpm",
+					"brltty-debugsource-0:5.6-32.el8.i686.rpm",
+					"brltty-debugsource-0:5.6-32.el8.x86_64.rpm",
+					"brltty-docs-0:5.6-32.el8.noarch.rpm",
+					"brltty-dracut-0:5.6-32.el8.aarch64.rpm",
+					"brltty-dracut-0:5.6-32.el8.x86_64.rpm",
+					"brltty-espeak-ng-0:5.6-32.el8.aarch64.rpm",
+					"brltty-espeak-ng-0:5.6-32.el8.x86_64.rpm",
+					"brltty-espeak-ng-debuginfo-0:5.6-32.el8.aarch64.rpm",
+					"brltty-espeak-ng-debuginfo-0:5.6-32.el8.x86_64.rpm",
+					"brltty-xw-0:5.6-32.el8.aarch64.rpm",
+					"brltty-xw-0:5.6-32.el8.x86_64.rpm",
+					"brltty-xw-debuginfo-0:5.6-32.el8.aarch64.rpm",
+					"brltty-xw-debuginfo-0:5.6-32.el8.x86_64.rpm",
+					"python3-brlapi-0:0.6.7-32.el8.aarch64.rpm",
+					"python3-brlapi-0:0.6.7-32.el8.x86_64.rpm",
+					"python3-brlapi-debuginfo-0:0.6.7-32.el8.aarch64.rpm",
+					"python3-brlapi-debuginfo-0:0.6.7-32.el8.x86_64.rpm",
+					"tcl-brlapi-0:0.6.7-32.el8.aarch64.rpm",
+					"tcl-brlapi-0:0.6.7-32.el8.x86_64.rpm",
+					"tcl-brlapi-debuginfo-0:0.6.7-32.el8.aarch64.rpm",
+					"tcl-brlapi-debuginfo-0:0.6.7-32.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

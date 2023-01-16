@@ -1,0 +1,61 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5816",
+		"synopsis": "libdnf bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libdnf is now available for Rocky Linux 8.",
+		"description": "A library providing simplified C and Python API to the libsolv package dependency solver.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2095764",
+				"description": "Performing security update from RHEL 8.5 to RHEL 8.6 causes dependency errors. [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2095764"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:5816",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5816",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-08-02T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libdnf-0:0.63.0-8.1.el8_6.aarch64.rpm",
+					"libdnf-0:0.63.0-8.1.el8_6.i686.rpm",
+					"libdnf-0:0.63.0-8.1.el8_6.src.rpm",
+					"libdnf-0:0.63.0-8.1.el8_6.x86_64.rpm",
+					"libdnf-debuginfo-0:0.63.0-8.1.el8_6.aarch64.rpm",
+					"libdnf-debuginfo-0:0.63.0-8.1.el8_6.i686.rpm",
+					"libdnf-debuginfo-0:0.63.0-8.1.el8_6.x86_64.rpm",
+					"libdnf-debugsource-0:0.63.0-8.1.el8_6.aarch64.rpm",
+					"libdnf-debugsource-0:0.63.0-8.1.el8_6.i686.rpm",
+					"libdnf-debugsource-0:0.63.0-8.1.el8_6.x86_64.rpm",
+					"libdnf-devel-0:0.63.0-8.1.el8_6.aarch64.rpm",
+					"libdnf-devel-0:0.63.0-8.1.el8_6.i686.rpm",
+					"libdnf-devel-0:0.63.0-8.1.el8_6.x86_64.rpm",
+					"python3-hawkey-0:0.63.0-8.1.el8_6.aarch64.rpm",
+					"python3-hawkey-0:0.63.0-8.1.el8_6.x86_64.rpm",
+					"python3-hawkey-debuginfo-0:0.63.0-8.1.el8_6.aarch64.rpm",
+					"python3-hawkey-debuginfo-0:0.63.0-8.1.el8_6.x86_64.rpm",
+					"python3-libdnf-0:0.63.0-8.1.el8_6.aarch64.rpm",
+					"python3-libdnf-0:0.63.0-8.1.el8_6.x86_64.rpm",
+					"python3-libdnf-debuginfo-0:0.63.0-8.1.el8_6.aarch64.rpm",
+					"python3-libdnf-debuginfo-0:0.63.0-8.1.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

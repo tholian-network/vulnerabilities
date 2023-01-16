@@ -1,0 +1,99 @@
+{
+	"updateinfo_id": "ALSA-2022:8022",
+	"fromstr": "packager@almalinux.org",
+	"title": "Moderate: qt5 security and bug fix update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Moderate",
+	"summary": "qt5 security and bug fix update",
+	"pushcount": "1",
+	"pkglist": {
+		"name": "almalinux-9-for-i686-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-i686-appstream-rpms__9_1_default",
+		"packages": [
+			{
+				"src": "qt5-5.15.3-1.el9.src.rpm",
+				"name": "qt5",
+				"epoch": "0",
+				"version": "5.15.3",
+				"release": "1.el9",
+				"arch": "noarch",
+				"filename": "qt5-5.15.3-1.el9.noarch.rpm",
+				"sum": "157264758e66fa294f4e8fc848664c03237961fe8272d6bbcddd4c87ecbced95",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "qt5-5.15.3-1.el9.src.rpm",
+				"name": "qt5-srpm-macros",
+				"epoch": "0",
+				"version": "5.15.3",
+				"release": "1.el9",
+				"arch": "noarch",
+				"filename": "qt5-srpm-macros-5.15.3-1.el9.noarch.rpm",
+				"sum": "268bac6491abd68d7e65589de21a8e350d1b1bcbb01a9dde4b0bc6660431a11f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "qt5-5.15.3-1.el9.src.rpm",
+				"name": "qt5-rpm-macros",
+				"epoch": "0",
+				"version": "5.15.3",
+				"release": "1.el9",
+				"arch": "noarch",
+				"filename": "qt5-rpm-macros-5.15.3-1.el9.noarch.rpm",
+				"sum": "406cf593d00751d08056abf83db867e73108cbce98d2dd78713ac925b39a9fe4",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "qt5-5.15.3-1.el9.src.rpm",
+				"name": "qt5-devel",
+				"epoch": "0",
+				"version": "5.15.3",
+				"release": "1.el9",
+				"arch": "noarch",
+				"filename": "qt5-devel-5.15.3-1.el9.noarch.rpm",
+				"sum": "9ebc6c52b9d1433612ea6bf67d160c769264f1496832e938e054352bab4405f7",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "The Qt5 libraries packages provide Qt 5, version 5 of the Qt cross-platform application framework.\n\nSecurity Fix(es):\n\n* qt: QProcess could execute a binary from the current working directory when not found in the PATH (CVE-2022-25255)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
+	"references": [
+		{
+			"id": "RHSA-2022:8022",
+			"title": "RHSA-2022:8022",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:8022"
+		},
+		{
+			"id": "CVE-2022-25255",
+			"title": "CVE-2022-25255",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-25255"
+		},
+		{
+			"id": "2055505",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2055505"
+		},
+		{
+			"id": "ALSA-2022:8022",
+			"title": "ALSA-2022:8022",
+			"type": "self",
+			"href": "https://errata.almalinux.org/9/ALSA-2022-8022.html"
+		}
+	],
+	"issued_date": {
+		"$date": 1668470400000
+	},
+	"updated_date": {
+		"$date": 1668747741000
+	}
+}

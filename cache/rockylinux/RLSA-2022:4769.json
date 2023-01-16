@@ -1,0 +1,61 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:4769",
+		"synopsis": "Critical: thunderbird security update",
+		"severity": "SEVERITY_CRITICAL",
+		"topic": "An update for thunderbird is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Mozilla Thunderbird is a standalone mail and newsgroup client.\nThis update upgrades Thunderbird to version 91.9.1.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2089217",
+				"description": "CVE-2022-1802 Mozilla: Prototype pollution in Top-Level Await implementation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2089217"
+			},
+			{
+				"ticket": "2089218",
+				"description": "CVE-2022-1529 Mozilla: Untrusted input used in JavaScript object indexing, leading to prototype pollution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2089218"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-1529",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1529.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-843"
+			},
+			{
+				"name": "CVE-2022-1802",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1802.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-843"
+			}
+		],
+		"publishedAt": "2022-05-27T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"thunderbird-0:91.9.1-1.el8_6.aarch64.rpm",
+					"thunderbird-0:91.9.1-1.el8_6.src.rpm",
+					"thunderbird-0:91.9.1-1.el8_6.x86_64.rpm",
+					"thunderbird-debuginfo-0:91.9.1-1.el8_6.aarch64.rpm",
+					"thunderbird-debuginfo-0:91.9.1-1.el8_6.x86_64.rpm",
+					"thunderbird-debugsource-0:91.9.1-1.el8_6.aarch64.rpm",
+					"thunderbird-debugsource-0:91.9.1-1.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1760",
+		"synopsis": "libmpc bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libmpc is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1835193",
+				"description": "[RFE]: update to version 1.0.3",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1835193"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1760",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1760",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libmpc-0:1.1.0-9.1.el8.aarch64.rpm",
+					"libmpc-0:1.1.0-9.1.el8.i686.rpm",
+					"libmpc-0:1.1.0-9.1.el8.src.rpm",
+					"libmpc-0:1.1.0-9.1.el8.x86_64.rpm",
+					"libmpc-debuginfo-0:1.1.0-9.1.el8.aarch64.rpm",
+					"libmpc-debuginfo-0:1.1.0-9.1.el8.i686.rpm",
+					"libmpc-debuginfo-0:1.1.0-9.1.el8.x86_64.rpm",
+					"libmpc-debugsource-0:1.1.0-9.1.el8.aarch64.rpm",
+					"libmpc-debugsource-0:1.1.0-9.1.el8.i686.rpm",
+					"libmpc-debugsource-0:1.1.0-9.1.el8.x86_64.rpm",
+					"libmpc-devel-0:1.1.0-9.1.el8.aarch64.rpm",
+					"libmpc-devel-0:1.1.0-9.1.el8.i686.rpm",
+					"libmpc-devel-0:1.1.0-9.1.el8.x86_64.rpm",
+					"libmpc-doc-0:1.1.0-9.1.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

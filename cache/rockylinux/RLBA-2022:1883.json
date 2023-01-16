@@ -1,0 +1,90 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1883",
+		"synopsis": "ostree and rpm-ostree bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for ostree and rpm-ostree is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2027788",
+				"description": "backport https://github.com/ostreedev/ostree/pull/2453",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2027788"
+			},
+			{
+				"ticket": "2032593",
+				"description": "Rebase to 2021.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2032593"
+			},
+			{
+				"ticket": "2032594",
+				"description": "Rebase to 2021.14 or newer",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2032594"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1883",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1883",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"ostree-0:2022.1-2.el8.aarch64.rpm",
+					"ostree-0:2022.1-2.el8.i686.rpm",
+					"ostree-0:2022.1-2.el8.src.rpm",
+					"ostree-0:2022.1-2.el8.x86_64.rpm",
+					"ostree-debuginfo-0:2022.1-2.el8.aarch64.rpm",
+					"ostree-debuginfo-0:2022.1-2.el8.i686.rpm",
+					"ostree-debuginfo-0:2022.1-2.el8.x86_64.rpm",
+					"ostree-debugsource-0:2022.1-2.el8.aarch64.rpm",
+					"ostree-debugsource-0:2022.1-2.el8.i686.rpm",
+					"ostree-debugsource-0:2022.1-2.el8.x86_64.rpm",
+					"ostree-devel-0:2022.1-2.el8.aarch64.rpm",
+					"ostree-devel-0:2022.1-2.el8.i686.rpm",
+					"ostree-devel-0:2022.1-2.el8.x86_64.rpm",
+					"ostree-grub2-0:2022.1-2.el8.aarch64.rpm",
+					"ostree-grub2-0:2022.1-2.el8.x86_64.rpm",
+					"ostree-libs-0:2022.1-2.el8.aarch64.rpm",
+					"ostree-libs-0:2022.1-2.el8.i686.rpm",
+					"ostree-libs-0:2022.1-2.el8.x86_64.rpm",
+					"ostree-libs-debuginfo-0:2022.1-2.el8.aarch64.rpm",
+					"ostree-libs-debuginfo-0:2022.1-2.el8.i686.rpm",
+					"ostree-libs-debuginfo-0:2022.1-2.el8.x86_64.rpm",
+					"rpm-ostree-0:2022.2-2.el8.aarch64.rpm",
+					"rpm-ostree-0:2022.2-2.el8.src.rpm",
+					"rpm-ostree-0:2022.2-2.el8.x86_64.rpm",
+					"rpm-ostree-debuginfo-0:2022.2-2.el8.aarch64.rpm",
+					"rpm-ostree-debuginfo-0:2022.2-2.el8.i686.rpm",
+					"rpm-ostree-debuginfo-0:2022.2-2.el8.x86_64.rpm",
+					"rpm-ostree-debugsource-0:2022.2-2.el8.aarch64.rpm",
+					"rpm-ostree-debugsource-0:2022.2-2.el8.x86_64.rpm",
+					"rpm-ostree-devel-0:2022.2-2.el8.aarch64.rpm",
+					"rpm-ostree-devel-0:2022.2-2.el8.i686.rpm",
+					"rpm-ostree-devel-0:2022.2-2.el8.x86_64.rpm",
+					"rpm-ostree-libs-0:2022.2-2.el8.aarch64.rpm",
+					"rpm-ostree-libs-0:2022.2-2.el8.i686.rpm",
+					"rpm-ostree-libs-0:2022.2-2.el8.x86_64.rpm",
+					"rpm-ostree-libs-debuginfo-0:2022.2-2.el8.aarch64.rpm",
+					"rpm-ostree-libs-debuginfo-0:2022.2-2.el8.i686.rpm",
+					"rpm-ostree-libs-debuginfo-0:2022.2-2.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

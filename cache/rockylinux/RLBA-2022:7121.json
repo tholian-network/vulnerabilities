@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:7121",
+		"synopsis": "linuxptp bug fix update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for linuxptp is now available for Rocky Linux 8.6Extended Update Support.",
+		"description": "The linuxptp packages provide Precision Time Protocol (PTP) implementation\nfor Linux according to IEEE standard 1588 for Linux. The dual design goals\nare to provide a robust implementation of the standard and to use the most\nrelevant and modern Application Programming Interfaces (API) offered by the\nLinux kernel.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2123277",
+				"description": "Reading of PHC fails and phc2sys exits [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2123277"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:7121",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:7121",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-11-07T19:38:54.101545Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"linuxptp-0:3.1.1-2.el8_6.1.aarch64.rpm",
+					"linuxptp-0:3.1.1-2.el8_6.1.src.rpm",
+					"linuxptp-0:3.1.1-2.el8_6.1.x86_64.rpm",
+					"linuxptp-debuginfo-0:3.1.1-2.el8_6.1.aarch64.rpm",
+					"linuxptp-debuginfo-0:3.1.1-2.el8_6.1.x86_64.rpm",
+					"linuxptp-debugsource-0:3.1.1-2.el8_6.1.aarch64.rpm",
+					"linuxptp-debugsource-0:3.1.1-2.el8_6.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

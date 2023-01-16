@@ -1,0 +1,48 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1784",
+		"synopsis": "js-d3-flame-graph bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for js-d3-flame-graph is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1920973",
+				"description": "adjusting flamegraph color scheme for accessibility",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1920973"
+			},
+			{
+				"ticket": "1993194",
+				"description": "Rebase of js-d3-flame-graph in RHEL 8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1993194"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1784",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1784",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"js-d3-flame-graph-0:4.0.7-1.el8.noarch.rpm",
+					"js-d3-flame-graph-0:4.0.7-1.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

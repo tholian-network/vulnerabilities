@@ -1,0 +1,62 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2075",
+		"synopsis": "libtalloc bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libtalloc is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2013601",
+				"description": "Rebase libtalloc to the version required by Samba",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013601"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2075",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2075",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libtalloc-0:2.3.3-1.el8.aarch64.rpm",
+					"libtalloc-0:2.3.3-1.el8.i686.rpm",
+					"libtalloc-0:2.3.3-1.el8.src.rpm",
+					"libtalloc-0:2.3.3-1.el8.x86_64.rpm",
+					"libtalloc-debuginfo-0:2.3.3-1.el8.aarch64.rpm",
+					"libtalloc-debuginfo-0:2.3.3-1.el8.i686.rpm",
+					"libtalloc-debuginfo-0:2.3.3-1.el8.x86_64.rpm",
+					"libtalloc-debugsource-0:2.3.3-1.el8.aarch64.rpm",
+					"libtalloc-debugsource-0:2.3.3-1.el8.i686.rpm",
+					"libtalloc-debugsource-0:2.3.3-1.el8.x86_64.rpm",
+					"libtalloc-devel-0:2.3.3-1.el8.aarch64.rpm",
+					"libtalloc-devel-0:2.3.3-1.el8.i686.rpm",
+					"libtalloc-devel-0:2.3.3-1.el8.x86_64.rpm",
+					"python3-talloc-0:2.3.3-1.el8.aarch64.rpm",
+					"python3-talloc-0:2.3.3-1.el8.i686.rpm",
+					"python3-talloc-0:2.3.3-1.el8.x86_64.rpm",
+					"python3-talloc-debuginfo-0:2.3.3-1.el8.aarch64.rpm",
+					"python3-talloc-debuginfo-0:2.3.3-1.el8.i686.rpm",
+					"python3-talloc-debuginfo-0:2.3.3-1.el8.x86_64.rpm",
+					"python3-talloc-devel-0:2.3.3-1.el8.aarch64.rpm",
+					"python3-talloc-devel-0:2.3.3-1.el8.i686.rpm",
+					"python3-talloc-devel-0:2.3.3-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

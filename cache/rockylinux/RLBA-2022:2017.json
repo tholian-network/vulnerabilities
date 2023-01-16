@@ -1,0 +1,60 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2017",
+		"synopsis": "tuna bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for tuna is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1886804",
+				"description": "Tuna options --isolate, --include change affinities of IRQs and this is not mentioned in manual",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1886804"
+			},
+			{
+				"ticket": "2012241",
+				"description": "tuna: Add distinction between --spread and --move to error message",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012241"
+			},
+			{
+				"ticket": "2012306",
+				"description": "[RHEL-8.6] Rebase tuna to the latest upstream",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012306"
+			},
+			{
+				"ticket": "2018285",
+				"description": "RHEL8 traceback in fv_cpu_pinning test on some aarch64 systems",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2018285"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2017",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2017",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"tuna-0:0.17-1.el8.noarch.rpm",
+					"tuna-0:0.17-1.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

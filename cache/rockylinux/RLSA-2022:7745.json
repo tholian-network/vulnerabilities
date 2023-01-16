@@ -1,0 +1,85 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7745",
+		"synopsis": "Moderate: freetype security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for freetype is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "FreeType is a free, high-quality, portable font engine that can open and manage font files. FreeType loads, hints, and renders individual glyphs efficiently.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2077985",
+				"description": "CVE-2022-27406 Freetype: Segmentation violation via FT_Request_Size",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2077985"
+			},
+			{
+				"ticket": "2077989",
+				"description": "CVE-2022-27404 FreeType: Buffer overflow in sfnt_init_face",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2077989"
+			},
+			{
+				"ticket": "2077991",
+				"description": "CVE-2022-27405 FreeType: Segmentation violation via FNT_Size_Request",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2077991"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-27404",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27404.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:H",
+				"cvss3BaseScore": "7.6",
+				"cwe": "CWE-787"
+			},
+			{
+				"name": "CVE-2022-27405",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27405.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+				"cvss3BaseScore": "7.1",
+				"cwe": "CWE-824"
+			},
+			{
+				"name": "CVE-2022-27406",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27406.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+				"cvss3BaseScore": "7.1",
+				"cwe": "CWE-824"
+			}
+		],
+		"publishedAt": "2022-11-13T07:51:47.557090Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"freetype-0:2.9.1-9.el8.aarch64.rpm",
+					"freetype-0:2.9.1-9.el8.i686.rpm",
+					"freetype-0:2.9.1-9.el8.src.rpm",
+					"freetype-0:2.9.1-9.el8.x86_64.rpm",
+					"freetype-debuginfo-0:2.9.1-9.el8.aarch64.rpm",
+					"freetype-debuginfo-0:2.9.1-9.el8.i686.rpm",
+					"freetype-debuginfo-0:2.9.1-9.el8.x86_64.rpm",
+					"freetype-debugsource-0:2.9.1-9.el8.aarch64.rpm",
+					"freetype-debugsource-0:2.9.1-9.el8.i686.rpm",
+					"freetype-debugsource-0:2.9.1-9.el8.x86_64.rpm",
+					"freetype-demos-0:2.9.1-9.el8.aarch64.rpm",
+					"freetype-demos-0:2.9.1-9.el8.x86_64.rpm",
+					"freetype-demos-debuginfo-0:2.9.1-9.el8.aarch64.rpm",
+					"freetype-demos-debuginfo-0:2.9.1-9.el8.x86_64.rpm",
+					"freetype-devel-0:2.9.1-9.el8.aarch64.rpm",
+					"freetype-devel-0:2.9.1-9.el8.i686.rpm",
+					"freetype-devel-0:2.9.1-9.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

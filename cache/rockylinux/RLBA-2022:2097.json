@@ -1,0 +1,76 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2097",
+		"synopsis": "cryptsetup bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for cryptsetup is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2021815",
+				"description": "Please rebuild with json-c-0.13.1-3",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2021815"
+			},
+			{
+				"ticket": "2058009",
+				"description": "While online reencrypt is started, test-passphrase exits with exit code 1",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2058009"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2097",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2097",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cryptsetup-0:2.3.7-2.el8.aarch64.rpm",
+					"cryptsetup-0:2.3.7-2.el8.src.rpm",
+					"cryptsetup-0:2.3.7-2.el8.x86_64.rpm",
+					"cryptsetup-debuginfo-0:2.3.7-2.el8.aarch64.rpm",
+					"cryptsetup-debuginfo-0:2.3.7-2.el8.i686.rpm",
+					"cryptsetup-debuginfo-0:2.3.7-2.el8.x86_64.rpm",
+					"cryptsetup-debugsource-0:2.3.7-2.el8.aarch64.rpm",
+					"cryptsetup-debugsource-0:2.3.7-2.el8.i686.rpm",
+					"cryptsetup-debugsource-0:2.3.7-2.el8.x86_64.rpm",
+					"cryptsetup-devel-0:2.3.7-2.el8.aarch64.rpm",
+					"cryptsetup-devel-0:2.3.7-2.el8.i686.rpm",
+					"cryptsetup-devel-0:2.3.7-2.el8.x86_64.rpm",
+					"cryptsetup-libs-0:2.3.7-2.el8.aarch64.rpm",
+					"cryptsetup-libs-0:2.3.7-2.el8.i686.rpm",
+					"cryptsetup-libs-0:2.3.7-2.el8.x86_64.rpm",
+					"cryptsetup-libs-debuginfo-0:2.3.7-2.el8.aarch64.rpm",
+					"cryptsetup-libs-debuginfo-0:2.3.7-2.el8.i686.rpm",
+					"cryptsetup-libs-debuginfo-0:2.3.7-2.el8.x86_64.rpm",
+					"cryptsetup-reencrypt-0:2.3.7-2.el8.aarch64.rpm",
+					"cryptsetup-reencrypt-0:2.3.7-2.el8.x86_64.rpm",
+					"cryptsetup-reencrypt-debuginfo-0:2.3.7-2.el8.aarch64.rpm",
+					"cryptsetup-reencrypt-debuginfo-0:2.3.7-2.el8.x86_64.rpm",
+					"integritysetup-0:2.3.7-2.el8.aarch64.rpm",
+					"integritysetup-0:2.3.7-2.el8.x86_64.rpm",
+					"integritysetup-debuginfo-0:2.3.7-2.el8.aarch64.rpm",
+					"integritysetup-debuginfo-0:2.3.7-2.el8.x86_64.rpm",
+					"veritysetup-0:2.3.7-2.el8.aarch64.rpm",
+					"veritysetup-0:2.3.7-2.el8.x86_64.rpm",
+					"veritysetup-debuginfo-0:2.3.7-2.el8.aarch64.rpm",
+					"veritysetup-debuginfo-0:2.3.7-2.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

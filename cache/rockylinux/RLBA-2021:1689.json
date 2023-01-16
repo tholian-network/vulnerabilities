@@ -1,0 +1,59 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1689",
+		"synopsis": "librepo bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for librepo is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1859495",
+				"description": "dnf doesn't work with pkcs11 client certificate and key",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1859495"
+			},
+			{
+				"ticket": "1895119",
+				"description": "[RFE] Request to make the following packages available from RHEL and upstream repositories: libdnf-devel librepo-devel librhsm-devel",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1895119"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1689",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1689",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"librhsm-0:0.0.3-4.el8.aarch64.rpm",
+					"librhsm-0:0.0.3-4.el8.i686.rpm",
+					"librhsm-0:0.0.3-4.el8.src.rpm",
+					"librhsm-0:0.0.3-4.el8.x86_64.rpm",
+					"librhsm-debuginfo-0:0.0.3-4.el8.aarch64.rpm",
+					"librhsm-debuginfo-0:0.0.3-4.el8.i686.rpm",
+					"librhsm-debuginfo-0:0.0.3-4.el8.x86_64.rpm",
+					"librhsm-debugsource-0:0.0.3-4.el8.aarch64.rpm",
+					"librhsm-debugsource-0:0.0.3-4.el8.i686.rpm",
+					"librhsm-debugsource-0:0.0.3-4.el8.x86_64.rpm",
+					"librhsm-devel-0:0.0.3-4.el8.aarch64.rpm",
+					"librhsm-devel-0:0.0.3-4.el8.i686.rpm",
+					"librhsm-devel-0:0.0.3-4.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

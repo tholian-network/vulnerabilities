@@ -1,0 +1,119 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7469",
+		"synopsis": "Moderate: container-tools:4.0 security and bug fix update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the container-tools:4.0 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The container-tools module contains tools for working with containers, notably podman, buildah, skopeo, and runc.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2064702",
+				"description": "CVE-2022-27191 golang: crash in a golang.org/x/crypto/ssh server",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064702"
+			},
+			{
+				"ticket": "2076617",
+				"description": "Udica crashes when processing inspect file without capabilities",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2076617"
+			},
+			{
+				"ticket": "2085361",
+				"description": "CVE-2022-1708 cri-o: memory exhaustion on the node when access to the kube api",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2085361"
+			},
+			{
+				"ticket": "2086398",
+				"description": "CVE-2022-29162 runc: incorrect handling of inheritable capabilities",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2086398"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-1708",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1708.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.8",
+				"cwe": "CWE-400-\u003eCWE-770"
+			},
+			{
+				"name": "CVE-2022-27191",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27191.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-327"
+			},
+			{
+				"name": "CVE-2022-29162",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-29162.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+				"cvss3BaseScore": "5.6",
+				"cwe": "CWE-276"
+			}
+		],
+		"publishedAt": "2022-11-13T07:55:11.190601Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cockpit-podman-0:46-1.module+el8.7.0+1077+0e4f03d4.noarch.rpm",
+					"cockpit-podman-0:46-1.module+el8.7.0+1077+0e4f03d4.src.rpm",
+					"conmon-2:2.1.4-1.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"conmon-2:2.1.4-1.module+el8.7.0+1077+0e4f03d4.src.rpm",
+					"conmon-2:2.1.4-1.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"conmon-debuginfo-2:2.1.4-1.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"conmon-debuginfo-2:2.1.4-1.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"conmon-debugsource-2:2.1.4-1.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"conmon-debugsource-2:2.1.4-1.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"crun-0:1.5-1.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"crun-0:1.5-1.module+el8.7.0+1077+0e4f03d4.src.rpm",
+					"crun-0:1.5-1.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"crun-debuginfo-0:1.5-1.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"crun-debuginfo-0:1.5-1.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"crun-debugsource-0:1.5-1.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"crun-debugsource-0:1.5-1.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"libslirp-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"libslirp-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.src.rpm",
+					"libslirp-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"libslirp-debuginfo-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"libslirp-debuginfo-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"libslirp-debugsource-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"libslirp-debugsource-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"libslirp-devel-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"libslirp-devel-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"python3-podman-0:4.0.0-1.module+el8.7.0+1077+0e4f03d4.noarch.rpm",
+					"python-podman-0:4.0.0-1.module+el8.7.0+1077+0e4f03d4.src.rpm",
+					"slirp4netns-0:1.1.8-2.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"slirp4netns-0:1.1.8-2.module+el8.7.0+1077+0e4f03d4.src.rpm",
+					"slirp4netns-0:1.1.8-2.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"slirp4netns-debuginfo-0:1.1.8-2.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"slirp4netns-debuginfo-0:1.1.8-2.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"slirp4netns-debugsource-0:1.1.8-2.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"slirp4netns-debugsource-0:1.1.8-2.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"toolbox-0:0.0.99.3-0.5.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"toolbox-0:0.0.99.3-0.5.module+el8.7.0+1077+0e4f03d4.src.rpm",
+					"toolbox-0:0.0.99.3-0.5.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"toolbox-debuginfo-0:0.0.99.3-0.5.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"toolbox-debuginfo-0:0.0.99.3-0.5.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"toolbox-debugsource-0:0.0.99.3-0.5.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"toolbox-debugsource-0:0.0.99.3-0.5.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"toolbox-tests-0:0.0.99.3-0.5.module+el8.7.0+1077+0e4f03d4.aarch64.rpm",
+					"toolbox-tests-0:0.0.99.3-0.5.module+el8.7.0+1077+0e4f03d4.x86_64.rpm",
+					"udica-0:0.2.6-3.module+el8.7.0+1078+e72fcd4f.noarch.rpm",
+					"udica-0:0.2.6-3.module+el8.7.0+1078+e72fcd4f.src.rpm"
+				]
+			}
+		}
+	}
+}

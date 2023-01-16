@@ -1,0 +1,44 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:5597",
+		"synopsis": "Important: pandoc security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for pandoc is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Pandoc is a markdown/markup conversion tool. The version of pandoc in RHEL 8 CRB uses cmark-gfm (GitHub\u0026#39;s extended version of the C reference implementation of CommonMark) for parts of its conversion. The update, fixes CVE-2022-24724: an integer overflow in cmark-gfm\u0026#39;s table row parsing which may lead to heap memory corruption when parsing tables with more than UINT16_MAX columns.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2060662",
+				"description": "CVE-2022-24724 cmark-gfm: possible RCE due to integer overflow",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2060662"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-24724",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-24724.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-190"
+			}
+		],
+		"publishedAt": "2022-07-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"pandoc-0:2.0.6-6.el8_6.aarch64.rpm",
+					"pandoc-0:2.0.6-6.el8_6.src.rpm",
+					"pandoc-0:2.0.6-6.el8_6.x86_64.rpm",
+					"pandoc-common-0:2.0.6-6.el8_6.noarch.rpm"
+				]
+			}
+		}
+	}
+}

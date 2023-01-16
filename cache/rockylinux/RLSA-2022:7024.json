@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7024",
+		"synopsis": "Important: firefox security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for firefox is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Mozilla Firefox is an open-source web browser, designed for standards compliance, performance, and portability.\nThis update upgrades Firefox to version 102.3.0 ESR.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2130769",
+				"description": "CVE-2022-40674 expat: a use-after-free in the doContent function in xmlparse.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2130769"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-40674",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40674.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "9.8",
+				"cwe": "CWE-416"
+			}
+		],
+		"publishedAt": "2022-10-19T03:49:58.555280Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"firefox-0:102.3.0-7.el8_6.aarch64.rpm",
+					"firefox-0:102.3.0-7.el8_6.src.rpm",
+					"firefox-0:102.3.0-7.el8_6.x86_64.rpm",
+					"firefox-debuginfo-0:102.3.0-7.el8_6.aarch64.rpm",
+					"firefox-debuginfo-0:102.3.0-7.el8_6.x86_64.rpm",
+					"firefox-debugsource-0:102.3.0-7.el8_6.aarch64.rpm",
+					"firefox-debugsource-0:102.3.0-7.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

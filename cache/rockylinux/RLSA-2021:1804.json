@@ -1,0 +1,233 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:1804",
+		"synopsis": "Moderate: userspace graphics, xorg-x11, and mesa security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the userspace graphics, including X.Org, and Mesa is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "X.Org is an open-source implementation of the X Window System. It provides the basic low-level functionality that full-fledged graphical user interfaces are designed upon.\nMesa provides a 3D graphics API that is compatible with Open Graphics Library (OpenGL). It also provides hardware-accelerated drivers for many popular graphics chips.\nThe following packages have been upgraded to a later upstream version: egl-wayland (1.1.5), libdrm (2.4.103), libglvnd (1.3.2), libinput (1.16.3), libwacom (1.6), mesa (20.3.3), xorg-x11-server (1.20.10). (BZ#1878160, BZ#1886648, BZ#1887654, BZ#1887655)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1826141",
+				"description": "egl-wayland: does not rebuild with mesa-19.3.0-3.rc4.el8",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1826141"
+			},
+			{
+				"ticket": "1854920",
+				"description": "enable build on s390x",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1854920"
+			},
+			{
+				"ticket": "1856738",
+				"description": "Bug in xf86-video-intel (xorg-x11-drv-intel) prevents iris driver from working properly when DRI2 and intel DDX driver are in use",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1856738"
+			},
+			{
+				"ticket": "1862241",
+				"description": "CVE-2020-14345 xorg-x11-server: Out-of-bounds access in XkbSetNames function",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1862241"
+			},
+			{
+				"ticket": "1862246",
+				"description": "CVE-2020-14346 xorg-x11-server: Integer underflow in the X input extension protocol",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1862246"
+			},
+			{
+				"ticket": "1862255",
+				"description": "CVE-2020-14344 libX11: Heap overflow in the X input method client",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1862255"
+			},
+			{
+				"ticket": "1862258",
+				"description": "CVE-2020-14347 xorg-x11-server: Leak of uninitialized heap memory from the X server to clients in AllocatePixmap of dix/pixmap.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1862258"
+			},
+			{
+				"ticket": "1863142",
+				"description": "Xorg server does not support X11 SECURITY extension",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1863142"
+			},
+			{
+				"ticket": "1869139",
+				"description": "CVE-2020-14360 xorg-x11-server: Out-of-bounds access in XkbSetMap function",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1869139"
+			},
+			{
+				"ticket": "1869142",
+				"description": "CVE-2020-14361 xorg-x11-server: XkbSelectEvents integer underflow privilege escalation vulnerability",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1869142"
+			},
+			{
+				"ticket": "1869144",
+				"description": "CVE-2020-14362 xorg-x11-server: XRecordRegisterClients integer underflow privilege escalation vulnerability",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1869144"
+			},
+			{
+				"ticket": "1872473",
+				"description": "CVE-2020-14363 libX11: integer overflow leads to double free in locale handling",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1872473"
+			},
+			{
+				"ticket": "1878160",
+				"description": "Rebase Libwacom in RHEL 8.4",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1878160"
+			},
+			{
+				"ticket": "1886644",
+				"description": "Rebuild libX11 to pick up new xorgproto symbols",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1886644"
+			},
+			{
+				"ticket": "1886648",
+				"description": "Rebase libinput in 8.4",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1886648"
+			},
+			{
+				"ticket": "1887276",
+				"description": "CVE-2020-25712 xorg-x11-server: XkbSetDeviceInfo heap-based buffer overflow privilege escalation vulnerability",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1887276"
+			},
+			{
+				"ticket": "1887654",
+				"description": "Rebase libdrm in 8.4",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1887654"
+			},
+			{
+				"ticket": "1887655",
+				"description": "Rebase mesa in 8.4",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1887655"
+			},
+			{
+				"ticket": "1891871",
+				"description": "xserver update in RHEL 8.4",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1891871"
+			},
+			{
+				"ticket": "1896442",
+				"description": "rendering issue with intel  gpu",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1896442"
+			},
+			{
+				"ticket": "1897439",
+				"description": "rebase libglvnd to 1.3.2 for RHEL 8.4",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1897439"
+			},
+			{
+				"ticket": "1914411",
+				"description": "Lenovo: Upstream libwacom fix for P15",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1914411"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-14344",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14344.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "6.7",
+				"cwe": "CWE-190"
+			},
+			{
+				"name": "CVE-2020-14345",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14345.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2020-14346",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14346.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-191"
+			},
+			{
+				"name": "CVE-2020-14347",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14347.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-665"
+			},
+			{
+				"name": "CVE-2020-14360",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14360.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2020-14361",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14361.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-191"
+			},
+			{
+				"name": "CVE-2020-14362",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14362.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-191"
+			},
+			{
+				"name": "CVE-2020-14363",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14363.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-190-\u003eCWE-416"
+			},
+			{
+				"name": "CVE-2020-25712",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-25712.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-122"
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"xorg-x11-drivers-0:7.7-30.el8.aarch64.rpm",
+					"xorg-x11-drivers-0:7.7-30.el8.src.rpm",
+					"xorg-x11-drivers-0:7.7-30.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

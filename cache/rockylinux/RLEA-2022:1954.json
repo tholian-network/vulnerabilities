@@ -1,0 +1,82 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:1954",
+		"synopsis": "perl:5.32 metadata for the RHEL 8 module matrix (1/4)",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "This advisory provides perl:5.32-related metadata required by the RHEL 8 module matrix, part 1/4.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2055125",
+				"description": "perl:5.32 context gap-filling module builds, level 1/4",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2055125"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2022:1954",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:1954",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"perl-App-cpanminus-0:1.7044-5.module+el8.6.0+961+8164b543.noarch.rpm",
+					"perl-App-cpanminus-0:1.7044-5.module+el8.6.0+961+8164b543.src.rpm",
+					"perl-CPAN-DistnameInfo-0:0.12-13.module+el8.6.0+961+8164b543.noarch.rpm",
+					"perl-CPAN-DistnameInfo-0:0.12-13.module+el8.6.0+961+8164b543.src.rpm",
+					"perl-CPAN-Meta-Check-0:0.014-6.module+el8.6.0+961+8164b543.noarch.rpm",
+					"perl-CPAN-Meta-Check-0:0.014-6.module+el8.6.0+961+8164b543.src.rpm",
+					"perl-DBD-MySQL-0:4.046-3.module+el8.6.0+904+ef468285.aarch64.rpm",
+					"perl-DBD-MySQL-0:4.046-3.module+el8.6.0+904+ef468285.src.rpm",
+					"perl-DBD-MySQL-0:4.046-3.module+el8.6.0+904+ef468285.x86_64.rpm",
+					"perl-DBD-MySQL-debuginfo-0:4.046-3.module+el8.6.0+904+ef468285.aarch64.rpm",
+					"perl-DBD-MySQL-debuginfo-0:4.046-3.module+el8.6.0+904+ef468285.x86_64.rpm",
+					"perl-DBD-MySQL-debugsource-0:4.046-3.module+el8.6.0+904+ef468285.aarch64.rpm",
+					"perl-DBD-MySQL-debugsource-0:4.046-3.module+el8.6.0+904+ef468285.x86_64.rpm",
+					"perl-DBD-Pg-0:3.7.4-4.module+el8.6.0+900+c436f5d0.aarch64.rpm",
+					"perl-DBD-Pg-0:3.7.4-4.module+el8.6.0+900+c436f5d0.src.rpm",
+					"perl-DBD-Pg-0:3.7.4-4.module+el8.6.0+900+c436f5d0.x86_64.rpm",
+					"perl-DBD-Pg-debuginfo-0:3.7.4-4.module+el8.6.0+900+c436f5d0.aarch64.rpm",
+					"perl-DBD-Pg-debuginfo-0:3.7.4-4.module+el8.6.0+900+c436f5d0.x86_64.rpm",
+					"perl-DBD-Pg-debugsource-0:3.7.4-4.module+el8.6.0+900+c436f5d0.aarch64.rpm",
+					"perl-DBD-Pg-debugsource-0:3.7.4-4.module+el8.6.0+900+c436f5d0.x86_64.rpm",
+					"perl-DBD-SQLite-0:1.58-2.module+el8.6.0+896+cac283ec.aarch64.rpm",
+					"perl-DBD-SQLite-0:1.58-2.module+el8.6.0+896+cac283ec.src.rpm",
+					"perl-DBD-SQLite-0:1.58-2.module+el8.6.0+896+cac283ec.x86_64.rpm",
+					"perl-DBD-SQLite-debuginfo-0:1.58-2.module+el8.6.0+896+cac283ec.aarch64.rpm",
+					"perl-DBD-SQLite-debuginfo-0:1.58-2.module+el8.6.0+896+cac283ec.x86_64.rpm",
+					"perl-DBD-SQLite-debugsource-0:1.58-2.module+el8.6.0+896+cac283ec.aarch64.rpm",
+					"perl-DBD-SQLite-debugsource-0:1.58-2.module+el8.6.0+896+cac283ec.x86_64.rpm",
+					"perl-FCGI-1:0.78-11.module+el8.6.0+916+2b7f97e1.aarch64.rpm",
+					"perl-FCGI-1:0.78-11.module+el8.6.0+916+2b7f97e1.src.rpm",
+					"perl-FCGI-1:0.78-11.module+el8.6.0+916+2b7f97e1.x86_64.rpm",
+					"perl-FCGI-debuginfo-1:0.78-11.module+el8.6.0+916+2b7f97e1.aarch64.rpm",
+					"perl-FCGI-debuginfo-1:0.78-11.module+el8.6.0+916+2b7f97e1.x86_64.rpm",
+					"perl-FCGI-debugsource-1:0.78-11.module+el8.6.0+916+2b7f97e1.aarch64.rpm",
+					"perl-FCGI-debugsource-1:0.78-11.module+el8.6.0+916+2b7f97e1.x86_64.rpm",
+					"perl-File-pushd-0:1.014-6.module+el8.6.0+961+8164b543.noarch.rpm",
+					"perl-File-pushd-0:1.014-6.module+el8.6.0+961+8164b543.src.rpm",
+					"perl-Module-CPANfile-0:1.1002-7.module+el8.6.0+961+8164b543.noarch.rpm",
+					"perl-Module-CPANfile-0:1.1002-7.module+el8.6.0+961+8164b543.src.rpm",
+					"perl-Parse-PMFile-0:0.41-7.module+el8.6.0+961+8164b543.noarch.rpm",
+					"perl-Parse-PMFile-0:0.41-7.module+el8.6.0+961+8164b543.src.rpm",
+					"perl-String-ShellQuote-0:1.04-24.module+el8.6.0+961+8164b543.noarch.rpm",
+					"perl-String-ShellQuote-0:1.04-24.module+el8.6.0+961+8164b543.src.rpm"
+				]
+			}
+		}
+	}
+}

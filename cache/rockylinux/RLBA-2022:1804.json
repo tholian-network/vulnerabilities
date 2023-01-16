@@ -1,0 +1,59 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1804",
+		"synopsis": "osbuild bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for osbuild is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2010261",
+				"description": "Rebase osbuild for 8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2010261"
+			},
+			{
+				"ticket": "2017512",
+				"description": "osbuild should explicitly depend on python 3.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2017512"
+			},
+			{
+				"ticket": "2036971",
+				"description": "[image-installer] Kickstart doesn't end with a new line",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2036971"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1804",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1804",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"osbuild-0:53-2.el8.rocky.0.1.noarch.rpm",
+					"osbuild-0:53-2.el8.rocky.0.1.src.rpm",
+					"osbuild-luks2-0:53-2.el8.rocky.0.1.noarch.rpm",
+					"osbuild-lvm2-0:53-2.el8.rocky.0.1.noarch.rpm",
+					"osbuild-ostree-0:53-2.el8.rocky.0.1.noarch.rpm",
+					"osbuild-selinux-0:53-2.el8.rocky.0.1.noarch.rpm",
+					"python3-osbuild-0:53-2.el8.rocky.0.1.noarch.rpm"
+				]
+			}
+		}
+	}
+}

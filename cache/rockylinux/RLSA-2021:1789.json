@@ -1,0 +1,54 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:1789",
+		"synopsis": "Moderate: gssdp and gupnp security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for gssdp and gupnp is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "GUPnP is an object-oriented open source framework for creating UPnP devices and control points, written in C using GObject and libsoup. The GUPnP API is intended to be easy to use, efficient and flexible.\nGSSDP implements resource discovery and announcement over SSDP and is part of gUPnP. \nThe following packages have been upgraded to a later upstream version: gssdp (1.0.5), gupnp (1.0.6). (BZ#1846589, BZ#1861928)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1846006",
+				"description": "CVE-2020-12695 hostapd: UPnP SUBSCRIBE misbehavior in WPS AP",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1846006"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-12695",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-12695.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-20-\u003e(CWE-400|CWE-918)"
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gssdp-0:1.0.5-1.el8.aarch64.rpm",
+					"gssdp-0:1.0.5-1.el8.i686.rpm",
+					"gssdp-0:1.0.5-1.el8.src.rpm",
+					"gssdp-0:1.0.5-1.el8.x86_64.rpm",
+					"gssdp-debuginfo-0:1.0.5-1.el8.aarch64.rpm",
+					"gssdp-debuginfo-0:1.0.5-1.el8.i686.rpm",
+					"gssdp-debuginfo-0:1.0.5-1.el8.x86_64.rpm",
+					"gssdp-debugsource-0:1.0.5-1.el8.aarch64.rpm",
+					"gssdp-debugsource-0:1.0.5-1.el8.i686.rpm",
+					"gssdp-debugsource-0:1.0.5-1.el8.x86_64.rpm",
+					"gssdp-devel-0:1.0.5-1.el8.aarch64.rpm",
+					"gssdp-devel-0:1.0.5-1.el8.i686.rpm",
+					"gssdp-devel-0:1.0.5-1.el8.x86_64.rpm",
+					"gssdp-docs-0:1.0.5-1.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

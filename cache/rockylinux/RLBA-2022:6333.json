@@ -1,0 +1,107 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:6333",
+		"synopsis": "java-11-openjdk bug fix update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for java-11-openjdk is now available for Rocky Enterprise Software Foundation EnterpriseLinux 8.",
+		"description": "The java-11-openjdk packages provide the OpenJDK 11 Java Runtime\nEnvironment and the OpenJDK 11 Java Software Development Kit.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2121184",
+				"description": "Update to 11.0.16.1 Interim Release to Fix Regression in C2 JIT compiler [rhel-8] [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2121184"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:6333",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:6333",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-09-08T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"java-11-openjdk-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-1:11.0.16.1.1-1.el8_6.src.rpm",
+					"java-11-openjdk-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-debuginfo-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-debuginfo-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-debugsource-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-debugsource-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-demo-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-demo-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-demo-fastdebug-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-demo-fastdebug-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-demo-slowdebug-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-demo-slowdebug-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-devel-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-devel-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-devel-debuginfo-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-devel-debuginfo-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-devel-fastdebug-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-devel-fastdebug-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-devel-fastdebug-debuginfo-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-devel-fastdebug-debuginfo-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-devel-slowdebug-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-devel-slowdebug-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-devel-slowdebug-debuginfo-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-devel-slowdebug-debuginfo-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-fastdebug-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-fastdebug-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-fastdebug-debuginfo-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-fastdebug-debuginfo-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-headless-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-headless-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-headless-debuginfo-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-headless-debuginfo-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-headless-fastdebug-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-headless-fastdebug-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-headless-fastdebug-debuginfo-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-headless-fastdebug-debuginfo-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-headless-slowdebug-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-headless-slowdebug-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-headless-slowdebug-debuginfo-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-headless-slowdebug-debuginfo-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-javadoc-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-javadoc-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-javadoc-zip-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-javadoc-zip-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-jmods-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-jmods-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-jmods-fastdebug-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-jmods-fastdebug-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-jmods-slowdebug-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-jmods-slowdebug-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-slowdebug-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-slowdebug-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-slowdebug-debuginfo-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-slowdebug-debuginfo-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-src-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-src-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-src-fastdebug-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-src-fastdebug-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-src-slowdebug-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-src-slowdebug-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-static-libs-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-static-libs-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-static-libs-fastdebug-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-static-libs-fastdebug-1:11.0.16.1.1-1.el8_6.x86_64.rpm",
+					"java-11-openjdk-static-libs-slowdebug-1:11.0.16.1.1-1.el8_6.aarch64.rpm",
+					"java-11-openjdk-static-libs-slowdebug-1:11.0.16.1.1-1.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

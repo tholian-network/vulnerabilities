@@ -1,0 +1,40 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2083",
+		"synopsis": "gssproxy bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gssproxy is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2022:2083",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2083",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gssproxy-0:0.8.0-20.el8.aarch64.rpm",
+					"gssproxy-0:0.8.0-20.el8.src.rpm",
+					"gssproxy-0:0.8.0-20.el8.x86_64.rpm",
+					"gssproxy-debuginfo-0:0.8.0-20.el8.aarch64.rpm",
+					"gssproxy-debuginfo-0:0.8.0-20.el8.x86_64.rpm",
+					"gssproxy-debugsource-0:0.8.0-20.el8.aarch64.rpm",
+					"gssproxy-debugsource-0:0.8.0-20.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

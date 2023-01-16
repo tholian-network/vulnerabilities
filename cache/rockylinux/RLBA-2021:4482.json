@@ -1,0 +1,66 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4482",
+		"synopsis": "authselect bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for authselect is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1949070",
+				"description": "'try_first_pass' option no longer works on some PAM modules in RHEL8",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1949070"
+			},
+			{
+				"ticket": "1970408",
+				"description": "[authselect][RHEL 8.5 Localization][zh_CN, ja, ko, fr] - Need to localize the description of --debug option in authselect show",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1970408"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4482",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4482",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"authselect-0:1.2.2-3.el8.aarch64.rpm",
+					"authselect-0:1.2.2-3.el8.src.rpm",
+					"authselect-0:1.2.2-3.el8.x86_64.rpm",
+					"authselect-compat-0:1.2.2-3.el8.aarch64.rpm",
+					"authselect-compat-0:1.2.2-3.el8.x86_64.rpm",
+					"authselect-debuginfo-0:1.2.2-3.el8.aarch64.rpm",
+					"authselect-debuginfo-0:1.2.2-3.el8.i686.rpm",
+					"authselect-debuginfo-0:1.2.2-3.el8.x86_64.rpm",
+					"authselect-debugsource-0:1.2.2-3.el8.aarch64.rpm",
+					"authselect-debugsource-0:1.2.2-3.el8.i686.rpm",
+					"authselect-debugsource-0:1.2.2-3.el8.x86_64.rpm",
+					"authselect-devel-0:1.2.2-3.el8.aarch64.rpm",
+					"authselect-devel-0:1.2.2-3.el8.i686.rpm",
+					"authselect-devel-0:1.2.2-3.el8.x86_64.rpm",
+					"authselect-libs-0:1.2.2-3.el8.aarch64.rpm",
+					"authselect-libs-0:1.2.2-3.el8.i686.rpm",
+					"authselect-libs-0:1.2.2-3.el8.x86_64.rpm",
+					"authselect-libs-debuginfo-0:1.2.2-3.el8.aarch64.rpm",
+					"authselect-libs-debuginfo-0:1.2.2-3.el8.i686.rpm",
+					"authselect-libs-debuginfo-0:1.2.2-3.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

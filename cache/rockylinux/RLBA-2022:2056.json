@@ -1,0 +1,61 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2056",
+		"synopsis": "fwupd bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for fwupd is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1976408",
+				"description": "Please put fwupd-devel in RHEL8 CRB",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1976408"
+			},
+			{
+				"ticket": "2037294",
+				"description": "fwupd regression / Failed to insert 'ipmi_si': No such device",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2037294"
+			},
+			{
+				"ticket": "2038258",
+				"description": "json-glib version too old in fwupd",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2038258"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2056",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2056",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"fwupd-0:1.7.4-2.el8.rocky.0.2.aarch64.rpm",
+					"fwupd-0:1.7.4-2.el8.rocky.0.2.src.rpm",
+					"fwupd-0:1.7.4-2.el8.rocky.0.2.x86_64.rpm",
+					"fwupd-debuginfo-0:1.7.4-2.el8.rocky.0.2.aarch64.rpm",
+					"fwupd-debuginfo-0:1.7.4-2.el8.rocky.0.2.x86_64.rpm",
+					"fwupd-debugsource-0:1.7.4-2.el8.rocky.0.2.aarch64.rpm",
+					"fwupd-debugsource-0:1.7.4-2.el8.rocky.0.2.x86_64.rpm",
+					"fwupd-devel-0:1.7.4-2.el8.rocky.0.2.aarch64.rpm",
+					"fwupd-devel-0:1.7.4-2.el8.rocky.0.2.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

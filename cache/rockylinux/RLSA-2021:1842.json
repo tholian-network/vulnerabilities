@@ -1,0 +1,67 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:1842",
+		"synopsis": "Moderate: raptor2 security and bug fix update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for raptor2 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Raptor is the RDF Parser Toolkit for Redland that provides a set of standalone RDF parsers, generating triples from RDF/XML or N-Triples. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1896120",
+				"description": "CVE-2017-18926 raptor: heap-based buffer overflows due to an error in calculating the maximum nspace declarations for the XML writer",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1896120"
+			},
+			{
+				"ticket": "1900685",
+				"description": "CVE-2020-25713 raptor2: malformed input file can lead to a segfault due to an out of bounds array access in raptor_xml_writer_start_element_common",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1900685"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2017-18926",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2017-18926.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:H",
+				"cvss3BaseScore": "7.1",
+				"cwe": "CWE-122"
+			},
+			{
+				"name": "CVE-2020-25713",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-25713.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-20-\u003eCWE-122-\u003eCWE-125"
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"raptor2-0:2.0.15-16.el8.aarch64.rpm",
+					"raptor2-0:2.0.15-16.el8.i686.rpm",
+					"raptor2-0:2.0.15-16.el8.src.rpm",
+					"raptor2-0:2.0.15-16.el8.x86_64.rpm",
+					"raptor2-debuginfo-0:2.0.15-16.el8.aarch64.rpm",
+					"raptor2-debuginfo-0:2.0.15-16.el8.i686.rpm",
+					"raptor2-debuginfo-0:2.0.15-16.el8.x86_64.rpm",
+					"raptor2-debugsource-0:2.0.15-16.el8.aarch64.rpm",
+					"raptor2-debugsource-0:2.0.15-16.el8.i686.rpm",
+					"raptor2-debugsource-0:2.0.15-16.el8.x86_64.rpm",
+					"raptor2-devel-0:2.0.15-16.el8.aarch64.rpm",
+					"raptor2-devel-0:2.0.15-16.el8.i686.rpm",
+					"raptor2-devel-0:2.0.15-16.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

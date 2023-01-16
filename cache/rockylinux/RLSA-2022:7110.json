@@ -1,0 +1,171 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7110",
+		"synopsis": "Important: kernel security, bug fix, and enhancement update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for kernel is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The kernel packages contain the Linux kernel, the core of any Linux operating system.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2039448",
+				"description": "CVE-2022-0494 kernel: information leak in  scsi_ioctl()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2039448"
+			},
+			{
+				"ticket": "2066819",
+				"description": "CVE-2022-1353 Kernel: A kernel-info-leak issue in pfkey_register",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2066819"
+			},
+			{
+				"ticket": "2090226",
+				"description": "CVE-2022-23816 CVE-2022-29900 hw: cpu: AMD: RetBleed Arbitrary Speculative Code Execution with Return Instructions",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2090226"
+			},
+			{
+				"ticket": "2103148",
+				"description": "CVE-2022-29901 hw: cpu: Intel: RetBleed Arbitrary Speculative Code Execution with Return Instructions",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2103148"
+			},
+			{
+				"ticket": "2103153",
+				"description": "CVE-2022-23825 hw: cpu: AMD:  Branch Type Confusion (non-retbleed)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2103153"
+			},
+			{
+				"ticket": "2114849",
+				"description": "CVE-2022-2588 kernel: a use-after-free in cls_route filter implementation may lead to privilege escalation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2114849"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-0494",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0494.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "4.4",
+				"cwe": "CWE-200-\u003eCWE-212"
+			},
+			{
+				"name": "CVE-2022-1353",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1353.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:H",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-212"
+			},
+			{
+				"name": "CVE-2022-23816",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-23816.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+				"cvss3BaseScore": "5.6",
+				"cwe": "CWE-200"
+			},
+			{
+				"name": "CVE-2022-23825",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-23825.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+				"cvss3BaseScore": "5.6",
+				"cwe": "CWE-200"
+			},
+			{
+				"name": "CVE-2022-2588",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-2588.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2022-29900",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-29900.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+				"cvss3BaseScore": "5.6",
+				"cwe": "CWE-200"
+			},
+			{
+				"name": "CVE-2022-29901",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-29901.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+				"cvss3BaseScore": "5.6",
+				"cwe": "CWE-200"
+			}
+		],
+		"publishedAt": "2022-11-01T05:28:12.437866Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"bpftool-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"bpftool-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"bpftool-debuginfo-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"bpftool-debuginfo-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-0:4.18.0-372.32.1.el8_6.src.rpm",
+					"kernel-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-abi-stablelists-0:4.18.0-372.32.1.el8_6.noarch.rpm",
+					"kernel-core-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-core-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-cross-headers-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-cross-headers-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-debug-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-debug-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-debug-core-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-debug-core-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-debug-debuginfo-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-debug-debuginfo-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-debug-devel-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-debug-devel-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-debuginfo-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-debuginfo-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-debuginfo-common-aarch64-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-debuginfo-common-x86_64-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-debug-modules-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-debug-modules-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-debug-modules-extra-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-debug-modules-extra-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-devel-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-devel-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-doc-0:4.18.0-372.32.1.el8_6.noarch.rpm",
+					"kernel-headers-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-headers-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-modules-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-modules-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-modules-extra-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-modules-extra-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-tools-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-tools-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-tools-debuginfo-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-tools-debuginfo-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-tools-libs-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-tools-libs-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"kernel-tools-libs-devel-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"kernel-tools-libs-devel-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"perf-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"perf-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"perf-debuginfo-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"perf-debuginfo-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"python3-perf-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"python3-perf-0:4.18.0-372.32.1.el8_6.x86_64.rpm",
+					"python3-perf-debuginfo-0:4.18.0-372.32.1.el8_6.aarch64.rpm",
+					"python3-perf-debuginfo-0:4.18.0-372.32.1.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

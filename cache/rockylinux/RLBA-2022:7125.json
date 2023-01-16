@@ -1,0 +1,42 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:7125",
+		"synopsis": "virt-who bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for virt-who is now available for Rocky Linux 8.",
+		"description": "The virt-who service collects information about the connection between the hypervisor and its virtual guests that are present in the system and provides the subscription manager with a mapping file containing the hypervisor-guest pairs. The service periodically queries the hypervisor to report its guests and changes the mapping file accordingly, making sure that the information stored in the subscription manager is accurate.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2124813",
+				"description": "virt-who reporting always the same VM's when using with Nutanix Prism Central [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2124813"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:7125",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:7125",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-11-07T19:40:51.964831Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"virt-who-0:1.30.12-2.el8_6.noarch.rpm",
+					"virt-who-0:1.30.12-2.el8_6.src.rpm"
+				]
+			}
+		}
+	}
+}

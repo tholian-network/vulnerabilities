@@ -1,0 +1,45 @@
+{
+	"updateinfo_id": "ALSA-2020:4619",
+	"fromstr": "packager@almalinux.org",
+	"title": "Moderate: frr security and bug fix update",
+	"type": "security",
+	"release": "0",
+	"version": "2",
+	"status": "final",
+	"severity": "Moderate",
+	"summary": "An update for frr is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+	"pushcount": "3",
+	"pkglist": {
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"packages": [
+			{
+				"src": "frr-7.0-10.el8.src.rpm",
+				"name": "frr-contrib",
+				"epoch": "0",
+				"version": "7.0",
+				"release": "10.el8",
+				"arch": "x86_64",
+				"filename": "frr-contrib-7.0-10.el8.x86_64.rpm",
+				"sum": "c8f6eecb11da0a47475876b5e33a171189164247bfa3675436d886e9b1e693a9",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "FRRouting is free software that manages TCP/IP based routing protocols. It supports BGP4, OSPFv2, OSPFv3, ISIS, RIP, RIPng, PIM, NHRP, PBR, EIGRP and BFD. \n\nSecurity Fix(es):\n\n* frr: default permission issue eases information leaks (CVE-2020-12831)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
+	"references": [
+		{
+			"id": "CVE-2020-12831",
+			"title": "CVE-2020-12831",
+			"type": "cve",
+			"href": "https://vulners.com/cve/CVE-2020-12831"
+		}
+	],
+	"issued_date": {
+		"$date": 1604406063000
+	},
+	"updated_date": {
+		"$date": 1636712455000
+	}
+}

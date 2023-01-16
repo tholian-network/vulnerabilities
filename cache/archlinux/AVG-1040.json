@@ -1,27 +1,27 @@
 {
-	"name": "AVG-1040",
-	"packages": [
-		"ruby2.5"
-	],
-	"status": "Fixed",
-	"severity": "Medium",
-	"type": "multiple issues",
-	"affected": "2.5.6-1",
-	"fixed": "2.5.7-1",
-	"ticket": "63977",
-	"issues": [
-		"CVE-2019-16255",
-		"CVE-2019-16254",
-		"CVE-2019-16201",
-		"CVE-2019-15845",
-		"CVE-2015-9251",
-		"CVE-2012-6708"
-	],
-	"advisories": [
-		"ASA-201910-5"
-	],
-	"references": [
-		"https://www.ruby-lang.org/en/news/2019/10/01/ruby-2-5-7-released/"
-	],
-	"notes": "RDoc is a static documentation generation tool, patching the tool itself is insufficient to mitigate these vulnerabilities. Documentations generated with previous versions have to be re-generated with newer RDoc."
+  "name": "AVG-1040",
+  "packages": [
+    "ruby2.5"
+  ],
+  "status": "Fixed",
+  "severity": "Medium",
+  "type": "multiple issues",
+  "affected": "2.5.6-1",
+  "fixed": "2.5.7-1",
+  "ticket": "63977",
+  "issues": [
+    "CVE-2019-16255",
+    "CVE-2019-16254",
+    "CVE-2019-16201",
+    "CVE-2019-15845",
+    "CVE-2015-9251",
+    "CVE-2012-6708"
+  ],
+  "advisories": [
+    "ASA-201910-5"
+  ],
+  "references": [
+    "https://www.ruby-lang.org/en/news/2019/10/01/ruby-2-5-7-released/"
+  ],
+  "notes": "RDoc is a static documentation generation tool, patching the tool itself is insufficient to mitigate these vulnerabilities. Documentations generated with previous versions have to be re-generated with newer RDoc."
 }

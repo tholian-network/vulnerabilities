@@ -1,0 +1,169 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7585",
+		"synopsis": "Moderate: libtiff security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for libtiff is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The libtiff packages contain a library of functions for manipulating Tagged Image File Format (TIFF) files.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2042603",
+				"description": "CVE-2022-22844 libtiff: out-of-bounds read in _TIFFmemcpy() in tif_unix.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2042603"
+			},
+			{
+				"ticket": "2054494",
+				"description": "CVE-2022-0561 libtiff: Denial of Service via crafted TIFF file",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2054494"
+			},
+			{
+				"ticket": "2054495",
+				"description": "CVE-2022-0562 libtiff: Null source pointer lead to Denial of Service via crafted TIFF file",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2054495"
+			},
+			{
+				"ticket": "2064145",
+				"description": "CVE-2022-0908 tiff: Null source pointer passed as an argument to memcpy in TIFFFetchNormalTag() in tif_dirread.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064145"
+			},
+			{
+				"ticket": "2064146",
+				"description": "CVE-2022-0909 tiff: Divide By Zero error in tiffcrop",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064146"
+			},
+			{
+				"ticket": "2064148",
+				"description": "CVE-2022-0924 libtiff: Out-of-bounds Read error in tiffcp",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064148"
+			},
+			{
+				"ticket": "2064406",
+				"description": "CVE-2022-0865 libtiff: reachable assertion",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064406"
+			},
+			{
+				"ticket": "2064411",
+				"description": "CVE-2022-0891 libtiff: heap buffer overflow in extractImageSection",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064411"
+			},
+			{
+				"ticket": "2074415",
+				"description": "CVE-2022-1355 libtiff: stack-buffer-overflow in tiffcp.c in main()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2074415"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-0561",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0561.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-476"
+			},
+			{
+				"name": "CVE-2022-0562",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0562.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-476"
+			},
+			{
+				"name": "CVE-2022-0865",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0865.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.2",
+				"cwe": "CWE-617"
+			},
+			{
+				"name": "CVE-2022-0891",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0891.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-120"
+			},
+			{
+				"name": "CVE-2022-0908",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0908.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-476"
+			},
+			{
+				"name": "CVE-2022-0909",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0909.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-369"
+			},
+			{
+				"name": "CVE-2022-0924",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0924.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2022-1355",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1355.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:H",
+				"cvss3BaseScore": "6.6",
+				"cwe": "CWE-119-\u003eCWE-121"
+			},
+			{
+				"name": "CVE-2022-22844",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-22844.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-125"
+			}
+		],
+		"publishedAt": "2022-11-13T07:51:44.535908Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libtiff-0:4.0.9-23.el8.aarch64.rpm",
+					"libtiff-0:4.0.9-23.el8.i686.rpm",
+					"libtiff-0:4.0.9-23.el8.src.rpm",
+					"libtiff-0:4.0.9-23.el8.x86_64.rpm",
+					"libtiff-debuginfo-0:4.0.9-23.el8.aarch64.rpm",
+					"libtiff-debuginfo-0:4.0.9-23.el8.i686.rpm",
+					"libtiff-debuginfo-0:4.0.9-23.el8.x86_64.rpm",
+					"libtiff-debugsource-0:4.0.9-23.el8.aarch64.rpm",
+					"libtiff-debugsource-0:4.0.9-23.el8.i686.rpm",
+					"libtiff-debugsource-0:4.0.9-23.el8.x86_64.rpm",
+					"libtiff-devel-0:4.0.9-23.el8.aarch64.rpm",
+					"libtiff-devel-0:4.0.9-23.el8.i686.rpm",
+					"libtiff-devel-0:4.0.9-23.el8.x86_64.rpm",
+					"libtiff-tools-0:4.0.9-23.el8.aarch64.rpm",
+					"libtiff-tools-0:4.0.9-23.el8.x86_64.rpm",
+					"libtiff-tools-debuginfo-0:4.0.9-23.el8.aarch64.rpm",
+					"libtiff-tools-debuginfo-0:4.0.9-23.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

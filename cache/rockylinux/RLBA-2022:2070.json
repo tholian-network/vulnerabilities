@@ -1,0 +1,335 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2070",
+		"synopsis": "sssd bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for sssd is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1636002",
+				"description": "socket-activated services start as the sssd user and then are unable to read the confdb",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1636002"
+			},
+			{
+				"ticket": "1859315",
+				"description": "sssd does not use kerberos port that is set.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1859315"
+			},
+			{
+				"ticket": "1917970",
+				"description": "proxy provider: secondary group is showing in sssd cache after group is removed",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1917970"
+			},
+			{
+				"ticket": "1952569",
+				"description": "SSSD should use \"hidden\" temporary file in its krb locator",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1952569"
+			},
+			{
+				"ticket": "1961182",
+				"description": "Passwordless (GSSAPI) SSH not working due to missing \"includedir /var/lib/sss/pubconf/krb5.include.d\" directive in /etc/krb5.conf",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1961182"
+			},
+			{
+				"ticket": "1968340",
+				"description": "'exclude_groups' option provided in SSSD for session recording (tlog) doesn't work as expected",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1968340"
+			},
+			{
+				"ticket": "2004406",
+				"description": "IPA clients fail to resolve override group names.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2004406"
+			},
+			{
+				"ticket": "2008829",
+				"description": "sssd_be segfault due to empty forest root name",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2008829"
+			},
+			{
+				"ticket": "2011216",
+				"description": "Rebase SSSD for RHEL 8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2011216"
+			},
+			{
+				"ticket": "2012122",
+				"description": "tps tests fail with cross dependency on sssd debuginfo package: removal of 'sssd-libwbclient-debuginfo' is missing",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012122"
+			},
+			{
+				"ticket": "2012263",
+				"description": "pam responder does not call initgroups to refresh the user entry",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012263"
+			},
+			{
+				"ticket": "2012308",
+				"description": "Add client certificate validation D-Bus API (dependency of cockpit CVE-2021-3698 fix)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012308"
+			},
+			{
+				"ticket": "2012327",
+				"description": "Groups are missing while performing id lookup as SSSD switching to offline mode due to the wrong domain name in the ldap-pings(netlogon).",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012327"
+			},
+			{
+				"ticket": "2013006",
+				"description": "[RFE] support subid ranges managed by FreeIPA",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013006"
+			},
+			{
+				"ticket": "2013028",
+				"description": "[RFE] Health and Support Analyzer: Add sssctl sub-command to select and display a single request from the logs",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013028"
+			},
+			{
+				"ticket": "2013218",
+				"description": "autofs lookups for unknown mounts are delayed for 50s",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013218"
+			},
+			{
+				"ticket": "2013259",
+				"description": "[RHEL8] Add tevent chain ID logic into responders",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013259"
+			},
+			{
+				"ticket": "2013260",
+				"description": "[RHEL8] Add ability to parse child log files",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013260"
+			},
+			{
+				"ticket": "2013294",
+				"description": "Lookup with fully-qualified name does not work with 'cache_first = True'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013294"
+			},
+			{
+				"ticket": "2013297",
+				"description": "disabled root ad domain causes subdomains to be marked offline",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013297"
+			},
+			{
+				"ticket": "2015070",
+				"description": "Consistency in defaults between OpenSSH and SSSD",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2015070"
+			},
+			{
+				"ticket": "2017301",
+				"description": "[sssd] RHEL 8.6 Tier 0 Localization",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2017301"
+			},
+			{
+				"ticket": "2018432",
+				"description": "2.5.x based SSSD adds more AD domains than it should based on the configuration file (not trusted and from a different forest)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2018432"
+			},
+			{
+				"ticket": "2021196",
+				"description": "Make backtrace less \"chatty\" (avoid duplicate backtraces)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2021196"
+			},
+			{
+				"ticket": "2030386",
+				"description": "sssd-kcm has requirement on krb5 symbol \"krb5_unmarshal_credentials\" only available in latest RHEL8.5 krb5 libraries",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2030386"
+			},
+			{
+				"ticket": "2035245",
+				"description": "AD Domain in the AD Forest Missing after sssd latest update",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2035245"
+			},
+			{
+				"ticket": "2039892",
+				"description": "2.6.2 regression: Daemon crashes when resolving AD user names",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2039892"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2070",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2070",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libipa_hbac-0:2.6.2-3.el8.aarch64.rpm",
+					"libipa_hbac-0:2.6.2-3.el8.i686.rpm",
+					"libipa_hbac-0:2.6.2-3.el8.x86_64.rpm",
+					"libipa_hbac-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"libipa_hbac-debuginfo-0:2.6.2-3.el8.i686.rpm",
+					"libipa_hbac-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"libipa_hbac-devel-0:2.6.2-3.el8.aarch64.rpm",
+					"libipa_hbac-devel-0:2.6.2-3.el8.i686.rpm",
+					"libipa_hbac-devel-0:2.6.2-3.el8.x86_64.rpm",
+					"libsss_autofs-0:2.6.2-3.el8.aarch64.rpm",
+					"libsss_autofs-0:2.6.2-3.el8.x86_64.rpm",
+					"libsss_autofs-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"libsss_autofs-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"libsss_certmap-0:2.6.2-3.el8.aarch64.rpm",
+					"libsss_certmap-0:2.6.2-3.el8.i686.rpm",
+					"libsss_certmap-0:2.6.2-3.el8.x86_64.rpm",
+					"libsss_certmap-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"libsss_certmap-debuginfo-0:2.6.2-3.el8.i686.rpm",
+					"libsss_certmap-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"libsss_certmap-devel-0:2.6.2-3.el8.aarch64.rpm",
+					"libsss_certmap-devel-0:2.6.2-3.el8.i686.rpm",
+					"libsss_certmap-devel-0:2.6.2-3.el8.x86_64.rpm",
+					"libsss_idmap-0:2.6.2-3.el8.aarch64.rpm",
+					"libsss_idmap-0:2.6.2-3.el8.i686.rpm",
+					"libsss_idmap-0:2.6.2-3.el8.x86_64.rpm",
+					"libsss_idmap-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"libsss_idmap-debuginfo-0:2.6.2-3.el8.i686.rpm",
+					"libsss_idmap-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"libsss_idmap-devel-0:2.6.2-3.el8.aarch64.rpm",
+					"libsss_idmap-devel-0:2.6.2-3.el8.i686.rpm",
+					"libsss_idmap-devel-0:2.6.2-3.el8.x86_64.rpm",
+					"libsss_nss_idmap-0:2.6.2-3.el8.aarch64.rpm",
+					"libsss_nss_idmap-0:2.6.2-3.el8.i686.rpm",
+					"libsss_nss_idmap-0:2.6.2-3.el8.x86_64.rpm",
+					"libsss_nss_idmap-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"libsss_nss_idmap-debuginfo-0:2.6.2-3.el8.i686.rpm",
+					"libsss_nss_idmap-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"libsss_nss_idmap-devel-0:2.6.2-3.el8.aarch64.rpm",
+					"libsss_nss_idmap-devel-0:2.6.2-3.el8.i686.rpm",
+					"libsss_nss_idmap-devel-0:2.6.2-3.el8.x86_64.rpm",
+					"libsss_simpleifp-0:2.6.2-3.el8.aarch64.rpm",
+					"libsss_simpleifp-0:2.6.2-3.el8.i686.rpm",
+					"libsss_simpleifp-0:2.6.2-3.el8.x86_64.rpm",
+					"libsss_simpleifp-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"libsss_simpleifp-debuginfo-0:2.6.2-3.el8.i686.rpm",
+					"libsss_simpleifp-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"libsss_simpleifp-devel-0:2.6.2-3.el8.aarch64.rpm",
+					"libsss_simpleifp-devel-0:2.6.2-3.el8.i686.rpm",
+					"libsss_simpleifp-devel-0:2.6.2-3.el8.x86_64.rpm",
+					"libsss_sudo-0:2.6.2-3.el8.aarch64.rpm",
+					"libsss_sudo-0:2.6.2-3.el8.x86_64.rpm",
+					"libsss_sudo-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"libsss_sudo-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"python3-libipa_hbac-0:2.6.2-3.el8.aarch64.rpm",
+					"python3-libipa_hbac-0:2.6.2-3.el8.x86_64.rpm",
+					"python3-libipa_hbac-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"python3-libipa_hbac-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"python3-libsss_nss_idmap-0:2.6.2-3.el8.aarch64.rpm",
+					"python3-libsss_nss_idmap-0:2.6.2-3.el8.x86_64.rpm",
+					"python3-libsss_nss_idmap-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"python3-libsss_nss_idmap-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"python3-sss-0:2.6.2-3.el8.aarch64.rpm",
+					"python3-sss-0:2.6.2-3.el8.x86_64.rpm",
+					"python3-sssdconfig-0:2.6.2-3.el8.noarch.rpm",
+					"python3-sss-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"python3-sss-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"python3-sss-murmur-0:2.6.2-3.el8.aarch64.rpm",
+					"python3-sss-murmur-0:2.6.2-3.el8.x86_64.rpm",
+					"python3-sss-murmur-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"python3-sss-murmur-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-0:2.6.2-3.el8.src.rpm",
+					"sssd-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-ad-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-ad-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-ad-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-ad-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-client-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-client-0:2.6.2-3.el8.i686.rpm",
+					"sssd-client-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-client-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-client-debuginfo-0:2.6.2-3.el8.i686.rpm",
+					"sssd-client-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-common-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-common-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-common-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-common-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-common-pac-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-common-pac-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-common-pac-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-common-pac-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-dbus-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-dbus-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-dbus-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-dbus-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-debuginfo-0:2.6.2-3.el8.i686.rpm",
+					"sssd-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-debugsource-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-debugsource-0:2.6.2-3.el8.i686.rpm",
+					"sssd-debugsource-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-ipa-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-ipa-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-ipa-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-ipa-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-kcm-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-kcm-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-kcm-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-kcm-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-krb5-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-krb5-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-krb5-common-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-krb5-common-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-krb5-common-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-krb5-common-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-krb5-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-krb5-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-ldap-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-ldap-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-ldap-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-ldap-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-nfs-idmap-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-nfs-idmap-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-nfs-idmap-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-nfs-idmap-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-polkit-rules-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-polkit-rules-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-proxy-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-proxy-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-proxy-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-proxy-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-tools-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-tools-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-tools-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-tools-debuginfo-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-winbind-idmap-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-winbind-idmap-0:2.6.2-3.el8.x86_64.rpm",
+					"sssd-winbind-idmap-debuginfo-0:2.6.2-3.el8.aarch64.rpm",
+					"sssd-winbind-idmap-debuginfo-0:2.6.2-3.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

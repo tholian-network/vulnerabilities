@@ -1,0 +1,61 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1966",
+		"synopsis": "rear bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for rear is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2032266",
+				"description": "non needed dependencies set in s390x package",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2032266"
+			},
+			{
+				"ticket": "2035939",
+				"description": "Enable ignoring some network interfaces or IP addresses when creating the rescue ISO",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2035939"
+			},
+			{
+				"ticket": "2049091",
+				"description": "ReaR can exclude still wanted multipath devices",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2049091"
+			},
+			{
+				"ticket": "2055340",
+				"description": "rear mkrescue run leaves behind a temporary directory",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2055340"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1966",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1966",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"rear-0:2.6-4.el8.aarch64.rpm",
+					"rear-0:2.6-4.el8.src.rpm",
+					"rear-0:2.6-4.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

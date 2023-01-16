@@ -1,0 +1,40 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4445",
+		"synopsis": "fcoe-utils bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for fcoe-utils is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2021:4445",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4445",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"fcoe-utils-0:1.0.33-4.git848bcc6.el8.aarch64.rpm",
+					"fcoe-utils-0:1.0.33-4.git848bcc6.el8.src.rpm",
+					"fcoe-utils-0:1.0.33-4.git848bcc6.el8.x86_64.rpm",
+					"fcoe-utils-debuginfo-0:1.0.33-4.git848bcc6.el8.aarch64.rpm",
+					"fcoe-utils-debuginfo-0:1.0.33-4.git848bcc6.el8.x86_64.rpm",
+					"fcoe-utils-debugsource-0:1.0.33-4.git848bcc6.el8.aarch64.rpm",
+					"fcoe-utils-debugsource-0:1.0.33-4.git848bcc6.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

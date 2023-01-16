@@ -1,0 +1,82 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1792",
+		"synopsis": "Moderate: flatpak security and bug fix update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for flatpak is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Flatpak is a system for building, distributing, and running sandboxed desktop applications on Linux.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1980438",
+				"description": "[BZ] Disable gvfs plugins when listing flatpak installations",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1980438"
+			},
+			{
+				"ticket": "2010533",
+				"description": "Update to 1.8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2010533"
+			},
+			{
+				"ticket": "2041590",
+				"description": "CVE-2021-43860 flatpak: Permissions granted to applications can be hidden from the user at install time",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2041590"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-43860",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-43860.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+				"cvss3BaseScore": "8.2",
+				"cwe": "CWE-276"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"flatpak-0:1.8.7-1.el8.aarch64.rpm",
+					"flatpak-0:1.8.7-1.el8.i686.rpm",
+					"flatpak-0:1.8.7-1.el8.src.rpm",
+					"flatpak-0:1.8.7-1.el8.x86_64.rpm",
+					"flatpak-debuginfo-0:1.8.7-1.el8.aarch64.rpm",
+					"flatpak-debuginfo-0:1.8.7-1.el8.i686.rpm",
+					"flatpak-debuginfo-0:1.8.7-1.el8.x86_64.rpm",
+					"flatpak-debugsource-0:1.8.7-1.el8.aarch64.rpm",
+					"flatpak-debugsource-0:1.8.7-1.el8.i686.rpm",
+					"flatpak-debugsource-0:1.8.7-1.el8.x86_64.rpm",
+					"flatpak-devel-0:1.8.7-1.el8.aarch64.rpm",
+					"flatpak-devel-0:1.8.7-1.el8.i686.rpm",
+					"flatpak-devel-0:1.8.7-1.el8.x86_64.rpm",
+					"flatpak-libs-0:1.8.7-1.el8.aarch64.rpm",
+					"flatpak-libs-0:1.8.7-1.el8.i686.rpm",
+					"flatpak-libs-0:1.8.7-1.el8.x86_64.rpm",
+					"flatpak-libs-debuginfo-0:1.8.7-1.el8.aarch64.rpm",
+					"flatpak-libs-debuginfo-0:1.8.7-1.el8.i686.rpm",
+					"flatpak-libs-debuginfo-0:1.8.7-1.el8.x86_64.rpm",
+					"flatpak-selinux-0:1.8.7-1.el8.noarch.rpm",
+					"flatpak-session-helper-0:1.8.7-1.el8.aarch64.rpm",
+					"flatpak-session-helper-0:1.8.7-1.el8.i686.rpm",
+					"flatpak-session-helper-0:1.8.7-1.el8.x86_64.rpm",
+					"flatpak-session-helper-debuginfo-0:1.8.7-1.el8.aarch64.rpm",
+					"flatpak-session-helper-debuginfo-0:1.8.7-1.el8.i686.rpm",
+					"flatpak-session-helper-debuginfo-0:1.8.7-1.el8.x86_64.rpm",
+					"flatpak-tests-0:1.8.7-1.el8.aarch64.rpm",
+					"flatpak-tests-0:1.8.7-1.el8.x86_64.rpm",
+					"flatpak-tests-debuginfo-0:1.8.7-1.el8.aarch64.rpm",
+					"flatpak-tests-debuginfo-0:1.8.7-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

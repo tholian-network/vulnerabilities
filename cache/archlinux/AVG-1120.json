@@ -1,20 +1,20 @@
 {
-	"name": "AVG-1120",
-	"packages": [
-		"linux-hardened"
-	],
-	"status": "Fixed",
-	"severity": "High",
-	"type": "privilege escalation",
-	"affected": "5.5.13.a-1",
-	"fixed": "5.5.13.b-1",
-	"ticket": null,
-	"issues": [
-		"CVE-2020-8835"
-	],
-	"advisories": [
-		"ASA-202004-2"
-	],
-	"references": [],
-	"notes": "Unprivileged bpf is disabled in linux-hardened by default therefor this issues only affects users who explicitly turned kernel.unprivileged_bpf_disabled off."
+  "name": "AVG-1120",
+  "packages": [
+    "linux-hardened"
+  ],
+  "status": "Fixed",
+  "severity": "High",
+  "type": "privilege escalation",
+  "affected": "5.5.13.a-1",
+  "fixed": "5.5.13.b-1",
+  "ticket": null,
+  "issues": [
+    "CVE-2020-8835"
+  ],
+  "advisories": [
+    "ASA-202004-2"
+  ],
+  "references": [],
+  "notes": "Unprivileged bpf is disabled in linux-hardened by default therefor this issues only affects users who explicitly turned kernel.unprivileged_bpf_disabled off."
 }

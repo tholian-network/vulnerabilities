@@ -1,0 +1,68 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7192",
+		"synopsis": "Important: device-mapper-multipath security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for device-mapper-multipath is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The device-mapper-multipath packages provide tools that use the device-mapper multipath kernel module to manage multipath devices.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2133988",
+				"description": "CVE-2022-41974 device-mapper-multipath: Authorization bypass, multipathd daemon listens for client connections on an abstract Unix socket",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2133988"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-41974",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-41974.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.4",
+				"cwe": "CWE-285"
+			}
+		],
+		"publishedAt": "2022-11-01T05:27:31.639213Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"device-mapper-multipath-0:0.8.4-22.el8_6.2.aarch64.rpm",
+					"device-mapper-multipath-0:0.8.4-22.el8_6.2.src.rpm",
+					"device-mapper-multipath-0:0.8.4-22.el8_6.2.x86_64.rpm",
+					"device-mapper-multipath-debuginfo-0:0.8.4-22.el8_6.2.aarch64.rpm",
+					"device-mapper-multipath-debuginfo-0:0.8.4-22.el8_6.2.i686.rpm",
+					"device-mapper-multipath-debuginfo-0:0.8.4-22.el8_6.2.x86_64.rpm",
+					"device-mapper-multipath-debugsource-0:0.8.4-22.el8_6.2.aarch64.rpm",
+					"device-mapper-multipath-debugsource-0:0.8.4-22.el8_6.2.i686.rpm",
+					"device-mapper-multipath-debugsource-0:0.8.4-22.el8_6.2.x86_64.rpm",
+					"device-mapper-multipath-devel-0:0.8.4-22.el8_6.2.aarch64.rpm",
+					"device-mapper-multipath-devel-0:0.8.4-22.el8_6.2.i686.rpm",
+					"device-mapper-multipath-devel-0:0.8.4-22.el8_6.2.x86_64.rpm",
+					"device-mapper-multipath-libs-0:0.8.4-22.el8_6.2.aarch64.rpm",
+					"device-mapper-multipath-libs-0:0.8.4-22.el8_6.2.i686.rpm",
+					"device-mapper-multipath-libs-0:0.8.4-22.el8_6.2.x86_64.rpm",
+					"device-mapper-multipath-libs-debuginfo-0:0.8.4-22.el8_6.2.aarch64.rpm",
+					"device-mapper-multipath-libs-debuginfo-0:0.8.4-22.el8_6.2.i686.rpm",
+					"device-mapper-multipath-libs-debuginfo-0:0.8.4-22.el8_6.2.x86_64.rpm",
+					"kpartx-0:0.8.4-22.el8_6.2.aarch64.rpm",
+					"kpartx-0:0.8.4-22.el8_6.2.x86_64.rpm",
+					"kpartx-debuginfo-0:0.8.4-22.el8_6.2.aarch64.rpm",
+					"kpartx-debuginfo-0:0.8.4-22.el8_6.2.x86_64.rpm",
+					"libdmmp-0:0.8.4-22.el8_6.2.aarch64.rpm",
+					"libdmmp-0:0.8.4-22.el8_6.2.i686.rpm",
+					"libdmmp-0:0.8.4-22.el8_6.2.x86_64.rpm",
+					"libdmmp-debuginfo-0:0.8.4-22.el8_6.2.aarch64.rpm",
+					"libdmmp-debuginfo-0:0.8.4-22.el8_6.2.i686.rpm",
+					"libdmmp-debuginfo-0:0.8.4-22.el8_6.2.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

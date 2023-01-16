@@ -1,0 +1,53 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1591",
+		"synopsis": "libxslt bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libxslt is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1860467",
+				"description": "\"Unexpected RVT flag (nil)\"  being reported xsltproc",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1860467"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1591",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1591",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libxslt-0:1.1.32-6.el8.aarch64.rpm",
+					"libxslt-0:1.1.32-6.el8.i686.rpm",
+					"libxslt-0:1.1.32-6.el8.src.rpm",
+					"libxslt-0:1.1.32-6.el8.x86_64.rpm",
+					"libxslt-debuginfo-0:1.1.32-6.el8.aarch64.rpm",
+					"libxslt-debuginfo-0:1.1.32-6.el8.i686.rpm",
+					"libxslt-debuginfo-0:1.1.32-6.el8.x86_64.rpm",
+					"libxslt-debugsource-0:1.1.32-6.el8.aarch64.rpm",
+					"libxslt-debugsource-0:1.1.32-6.el8.i686.rpm",
+					"libxslt-debugsource-0:1.1.32-6.el8.x86_64.rpm",
+					"libxslt-devel-0:1.1.32-6.el8.aarch64.rpm",
+					"libxslt-devel-0:1.1.32-6.el8.i686.rpm",
+					"libxslt-devel-0:1.1.32-6.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

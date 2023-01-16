@@ -1,0 +1,71 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5328",
+		"synopsis": "nmstate bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for nmstate is now available for Rocky Linux 8.",
+		"description": "Nmstate is a library with an accompanying command line tool that manages host\nnetworking settings in a declarative manner and aimed to satisfy enterprise\nneeds to manage host networking through a northbound declarative API and multi\nprovider support on the southbound.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2080528",
+				"description": "base-iface field at OVS vxlan port is empty [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2080528"
+			},
+			{
+				"ticket": "2080530",
+				"description": "Impossible to reset linux-bridge vlan-filtering with vlan: {} [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2080530"
+			},
+			{
+				"ticket": "2088373",
+				"description": "nmstate - disable multicast-router for linux bridge [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2088373"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:5328",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5328",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nmstate-0:1.2.1-3.el8_6.aarch64.rpm",
+					"nmstate-0:1.2.1-3.el8_6.src.rpm",
+					"nmstate-0:1.2.1-3.el8_6.x86_64.rpm",
+					"nmstate-debuginfo-0:1.2.1-3.el8_6.aarch64.rpm",
+					"nmstate-debuginfo-0:1.2.1-3.el8_6.i686.rpm",
+					"nmstate-debuginfo-0:1.2.1-3.el8_6.x86_64.rpm",
+					"nmstate-debugsource-0:1.2.1-3.el8_6.aarch64.rpm",
+					"nmstate-debugsource-0:1.2.1-3.el8_6.x86_64.rpm",
+					"nmstate-devel-0:1.2.1-3.el8_6.aarch64.rpm",
+					"nmstate-devel-0:1.2.1-3.el8_6.i686.rpm",
+					"nmstate-devel-0:1.2.1-3.el8_6.x86_64.rpm",
+					"nmstate-libs-0:1.2.1-3.el8_6.aarch64.rpm",
+					"nmstate-libs-0:1.2.1-3.el8_6.i686.rpm",
+					"nmstate-libs-0:1.2.1-3.el8_6.x86_64.rpm",
+					"nmstate-libs-debuginfo-0:1.2.1-3.el8_6.aarch64.rpm",
+					"nmstate-libs-debuginfo-0:1.2.1-3.el8_6.i686.rpm",
+					"nmstate-libs-debuginfo-0:1.2.1-3.el8_6.x86_64.rpm",
+					"nmstate-plugin-ovsdb-0:1.2.1-3.el8_6.noarch.rpm",
+					"python3-libnmstate-0:1.2.1-3.el8_6.noarch.rpm"
+				]
+			}
+		}
+	}
+}

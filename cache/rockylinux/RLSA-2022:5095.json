@@ -1,0 +1,175 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:5095",
+		"synopsis": "Important: grub2, mokutil, shim, and shim-unsigned-x64 security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for grub2, mokutil, shim, and shim-unsigned-x64 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The grub2 packages provide version 2 of the Grand Unified Boot Loader (GRUB), a highly configurable and customizable boot loader with modular architecture. The packages support a variety of kernel formats, file systems, computer architectures, and hardware devices.\nThe shim package contains a first-stage UEFI boot loader that handles chaining to a trusted full boot loader under secure boot environments.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1991685",
+				"description": "CVE-2021-3695 grub2: Crafted PNG grayscale images may lead to out-of-bounds write in heap",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1991685"
+			},
+			{
+				"ticket": "1991686",
+				"description": "CVE-2021-3696 grub2: Crafted PNG image may lead to out-of-bound write during huffman table handling",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1991686"
+			},
+			{
+				"ticket": "1991687",
+				"description": "CVE-2021-3697 grub2: Crafted JPEG image can lead to buffer underflow write in the heap",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1991687"
+			},
+			{
+				"ticket": "2083339",
+				"description": "CVE-2022-28733 grub2: Integer underflow in grub_net_recv_ip4_packets",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2083339"
+			},
+			{
+				"ticket": "2090463",
+				"description": "CVE-2022-28734 grub2: Out-of-bound write when handling split HTTP headers",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2090463"
+			},
+			{
+				"ticket": "2090857",
+				"description": "CVE-2022-28735 grub2: shim_lock verifier allows non-kernel files to be loaded",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2090857"
+			},
+			{
+				"ticket": "2090899",
+				"description": "CVE-2022-28737 shim: Buffer overflow when loading crafted EFI images",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2090899"
+			},
+			{
+				"ticket": "2092613",
+				"description": "CVE-2022-28736 grub2: use-after-free in grub_cmd_chainloader()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2092613"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-3695",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3695.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-787"
+			},
+			{
+				"name": "CVE-2021-3696",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3696.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:L/I:L/A:L",
+				"cvss3BaseScore": "5.0",
+				"cwe": "CWE-787"
+			},
+			{
+				"name": "CVE-2021-3697",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3697.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-787"
+			},
+			{
+				"name": "CVE-2022-28733",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-28733.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.1",
+				"cwe": "CWE-191"
+			},
+			{
+				"name": "CVE-2022-28734",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-28734.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:H",
+				"cvss3BaseScore": "7.0",
+				"cwe": "CWE-787"
+			},
+			{
+				"name": "CVE-2022-28735",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-28735.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "6.7",
+				"cwe": "CWE-829"
+			},
+			{
+				"name": "CVE-2022-28736",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-28736.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "6.4",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2022-28737",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-28737.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-120"
+			}
+		],
+		"publishedAt": "2022-06-16T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"grub2-1:2.02-123.el8_6.8.rocky.0.2.src.rpm",
+					"grub2-common-1:2.02-123.el8_6.8.rocky.0.2.noarch.rpm",
+					"grub2-debuginfo-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-debuginfo-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-debugsource-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-debugsource-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-efi-aa64-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-efi-aa64-cdboot-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-efi-aa64-modules-1:2.02-123.el8_6.8.rocky.0.2.noarch.rpm",
+					"grub2-efi-ia32-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-efi-ia32-cdboot-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-efi-ia32-modules-1:2.02-123.el8_6.8.rocky.0.2.noarch.rpm",
+					"grub2-efi-x64-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-efi-x64-cdboot-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-efi-x64-modules-1:2.02-123.el8_6.8.rocky.0.2.noarch.rpm",
+					"grub2-pc-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-pc-modules-1:2.02-123.el8_6.8.rocky.0.2.noarch.rpm",
+					"grub2-tools-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-tools-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-tools-debuginfo-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-tools-debuginfo-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-tools-efi-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-tools-efi-debuginfo-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-tools-extra-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-tools-extra-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-tools-extra-debuginfo-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-tools-extra-debuginfo-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-tools-minimal-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-tools-minimal-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-tools-minimal-debuginfo-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-tools-minimal-debuginfo-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"shim-0:15.6-1.el8.src.rpm",
+					"shim-aa64-0:15.6-1.el8.aarch64.rpm",
+					"shim-ia32-0:15.6-1.el8.x86_64.rpm",
+					"shim-unsigned-x64-0:15.6-1.el8.src.rpm",
+					"shim-unsigned-x64-0:15.6-1.el8.x86_64.rpm",
+					"shim-x64-0:15.6-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5318",
+		"synopsis": "dracut bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for dracut is now available for Rocky Linux 8.",
+		"description": "The dracut packages contain an event-driven initial RAM file system (initramfs) generator infrastructure based on the udev device manager. The virtual file system, initramfs, is loaded together with the kernel at boot time and initializes the system, so it can read and boot from the root partition.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2022:5318",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5318",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"dracut-0:049-202.git20220511.el8_6.aarch64.rpm",
+					"dracut-0:049-202.git20220511.el8_6.src.rpm",
+					"dracut-0:049-202.git20220511.el8_6.x86_64.rpm",
+					"dracut-caps-0:049-202.git20220511.el8_6.aarch64.rpm",
+					"dracut-caps-0:049-202.git20220511.el8_6.x86_64.rpm",
+					"dracut-config-generic-0:049-202.git20220511.el8_6.aarch64.rpm",
+					"dracut-config-generic-0:049-202.git20220511.el8_6.x86_64.rpm",
+					"dracut-config-rescue-0:049-202.git20220511.el8_6.aarch64.rpm",
+					"dracut-config-rescue-0:049-202.git20220511.el8_6.x86_64.rpm",
+					"dracut-debuginfo-0:049-202.git20220511.el8_6.aarch64.rpm",
+					"dracut-debuginfo-0:049-202.git20220511.el8_6.x86_64.rpm",
+					"dracut-debugsource-0:049-202.git20220511.el8_6.aarch64.rpm",
+					"dracut-debugsource-0:049-202.git20220511.el8_6.x86_64.rpm",
+					"dracut-live-0:049-202.git20220511.el8_6.aarch64.rpm",
+					"dracut-live-0:049-202.git20220511.el8_6.x86_64.rpm",
+					"dracut-network-0:049-202.git20220511.el8_6.aarch64.rpm",
+					"dracut-network-0:049-202.git20220511.el8_6.x86_64.rpm",
+					"dracut-squash-0:049-202.git20220511.el8_6.aarch64.rpm",
+					"dracut-squash-0:049-202.git20220511.el8_6.x86_64.rpm",
+					"dracut-tools-0:049-202.git20220511.el8_6.aarch64.rpm",
+					"dracut-tools-0:049-202.git20220511.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

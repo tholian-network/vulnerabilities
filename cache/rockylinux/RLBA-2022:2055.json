@@ -1,0 +1,87 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2055",
+		"synopsis": "elfutils bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for elfutils is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2008624",
+				"description": "routine rebase of elfutils for rhel 8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2008624"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2055",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2055",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"elfutils-0:0.186-1.el8.aarch64.rpm",
+					"elfutils-0:0.186-1.el8.src.rpm",
+					"elfutils-0:0.186-1.el8.x86_64.rpm",
+					"elfutils-debuginfo-0:0.186-1.el8.aarch64.rpm",
+					"elfutils-debuginfo-0:0.186-1.el8.i686.rpm",
+					"elfutils-debuginfo-0:0.186-1.el8.x86_64.rpm",
+					"elfutils-debuginfod-0:0.186-1.el8.aarch64.rpm",
+					"elfutils-debuginfod-0:0.186-1.el8.x86_64.rpm",
+					"elfutils-debuginfod-client-0:0.186-1.el8.aarch64.rpm",
+					"elfutils-debuginfod-client-0:0.186-1.el8.i686.rpm",
+					"elfutils-debuginfod-client-0:0.186-1.el8.x86_64.rpm",
+					"elfutils-debuginfod-client-debuginfo-0:0.186-1.el8.aarch64.rpm",
+					"elfutils-debuginfod-client-debuginfo-0:0.186-1.el8.i686.rpm",
+					"elfutils-debuginfod-client-debuginfo-0:0.186-1.el8.x86_64.rpm",
+					"elfutils-debuginfod-client-devel-0:0.186-1.el8.aarch64.rpm",
+					"elfutils-debuginfod-client-devel-0:0.186-1.el8.i686.rpm",
+					"elfutils-debuginfod-client-devel-0:0.186-1.el8.x86_64.rpm",
+					"elfutils-debuginfod-debuginfo-0:0.186-1.el8.aarch64.rpm",
+					"elfutils-debuginfod-debuginfo-0:0.186-1.el8.x86_64.rpm",
+					"elfutils-debugsource-0:0.186-1.el8.aarch64.rpm",
+					"elfutils-debugsource-0:0.186-1.el8.i686.rpm",
+					"elfutils-debugsource-0:0.186-1.el8.x86_64.rpm",
+					"elfutils-default-yama-scope-0:0.186-1.el8.noarch.rpm",
+					"elfutils-devel-0:0.186-1.el8.aarch64.rpm",
+					"elfutils-devel-0:0.186-1.el8.i686.rpm",
+					"elfutils-devel-0:0.186-1.el8.x86_64.rpm",
+					"elfutils-devel-static-0:0.186-1.el8.aarch64.rpm",
+					"elfutils-devel-static-0:0.186-1.el8.i686.rpm",
+					"elfutils-devel-static-0:0.186-1.el8.x86_64.rpm",
+					"elfutils-libelf-0:0.186-1.el8.aarch64.rpm",
+					"elfutils-libelf-0:0.186-1.el8.i686.rpm",
+					"elfutils-libelf-0:0.186-1.el8.x86_64.rpm",
+					"elfutils-libelf-debuginfo-0:0.186-1.el8.aarch64.rpm",
+					"elfutils-libelf-debuginfo-0:0.186-1.el8.i686.rpm",
+					"elfutils-libelf-debuginfo-0:0.186-1.el8.x86_64.rpm",
+					"elfutils-libelf-devel-0:0.186-1.el8.aarch64.rpm",
+					"elfutils-libelf-devel-0:0.186-1.el8.i686.rpm",
+					"elfutils-libelf-devel-0:0.186-1.el8.x86_64.rpm",
+					"elfutils-libelf-devel-static-0:0.186-1.el8.aarch64.rpm",
+					"elfutils-libelf-devel-static-0:0.186-1.el8.i686.rpm",
+					"elfutils-libelf-devel-static-0:0.186-1.el8.x86_64.rpm",
+					"elfutils-libs-0:0.186-1.el8.aarch64.rpm",
+					"elfutils-libs-0:0.186-1.el8.i686.rpm",
+					"elfutils-libs-0:0.186-1.el8.x86_64.rpm",
+					"elfutils-libs-debuginfo-0:0.186-1.el8.aarch64.rpm",
+					"elfutils-libs-debuginfo-0:0.186-1.el8.i686.rpm",
+					"elfutils-libs-debuginfo-0:0.186-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

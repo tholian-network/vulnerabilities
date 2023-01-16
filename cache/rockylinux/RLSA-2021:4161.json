@@ -1,0 +1,42 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4161",
+		"synopsis": "Moderate: python-jinja2 security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for python-jinja2 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The python-jinja2 package contains Jinja2, a template engine written in pure Python. Jinja2 provides a Django inspired non-XML syntax but supports inline expressions and an optional sandboxed environment. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1928707",
+				"description": "CVE-2020-28493 python-jinja2: ReDoS vulnerability in the urlize filter",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1928707"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-28493",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-28493.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-20-\u003eCWE-400"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"python3-jinja2-0:2.10.1-3.el8.noarch.rpm",
+					"python-jinja2-0:2.10.1-3.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

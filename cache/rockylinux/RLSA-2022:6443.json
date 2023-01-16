@@ -1,0 +1,360 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:6443",
+		"synopsis": "Moderate: mariadb:10.3 security and bug fix update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the mariadb:10.3 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "MariaDB is a multi-user, multi-threaded SQL database server that is binary compatible with MySQL. \nThe following packages have been upgraded to a later upstream version: mariadb (10.3.35), galera (25.3.35).\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2049302",
+				"description": "CVE-2021-46659 mariadb: Crash executing query with VIEW, aggregate and subquery",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2049302"
+			},
+			{
+				"ticket": "2050017",
+				"description": "CVE-2021-46661 mariadb: MariaDB allows an application crash in find_field_in_tables and find_order_in_list via an unused common table expression (CTE)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2050017"
+			},
+			{
+				"ticket": "2050022",
+				"description": "CVE-2021-46663 mariadb: MariaDB through 10.5.13 allows a ha_maria::extra application crash via certain SELECT statements",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2050022"
+			},
+			{
+				"ticket": "2050024",
+				"description": "CVE-2021-46664 mariadb: MariaDB through 10.5.9 allows an application crash in sub_select_postjoin_aggr for a NULL value of aggr",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2050024"
+			},
+			{
+				"ticket": "2050026",
+				"description": "CVE-2021-46665 mariadb: MariaDB through 10.5.9 allows a sql_parse.cc application crash because of incorrect used_tables expectations",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2050026"
+			},
+			{
+				"ticket": "2050032",
+				"description": "CVE-2021-46668 mariadb: MariaDB through 10.5.9 allows an application crash via certain long SELECT DISTINCT statements",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2050032"
+			},
+			{
+				"ticket": "2050034",
+				"description": "CVE-2021-46669 mariadb: MariaDB through 10.5.9 allows attackers to trigger a convert_const_to_int use-after-free when the BIGINT data type is used",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2050034"
+			},
+			{
+				"ticket": "2068211",
+				"description": "CVE-2022-24052 mariadb: CONNECT storage engine heap-based buffer overflow",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2068211"
+			},
+			{
+				"ticket": "2068233",
+				"description": "CVE-2022-24051 mariadb: lack of proper validation of a user-supplied string before using it as a format specifier",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2068233"
+			},
+			{
+				"ticket": "2068234",
+				"description": "CVE-2022-24048 mariadb: lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2068234"
+			},
+			{
+				"ticket": "2069833",
+				"description": "CVE-2022-24050 mariadb: lack of validating the existence of an object prior to performing operations on the object",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2069833"
+			},
+			{
+				"ticket": "2074817",
+				"description": "CVE-2022-27376 mariadb: assertion failure in Item_args::walk_arg",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2074817"
+			},
+			{
+				"ticket": "2074947",
+				"description": "CVE-2022-27377 mariadb: use-after-poison when complex conversion is involved in blob",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2074947"
+			},
+			{
+				"ticket": "2074949",
+				"description": "CVE-2022-27378 mariadb: server crash in create_tmp_table::finalize",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2074949"
+			},
+			{
+				"ticket": "2074951",
+				"description": "CVE-2022-27379 mariadb: server crash in component arg_comparator::compare_real_fixed",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2074951"
+			},
+			{
+				"ticket": "2074966",
+				"description": "CVE-2022-27380 mariadb: server crash at my_decimal::operator=",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2074966"
+			},
+			{
+				"ticket": "2074981",
+				"description": "CVE-2022-27381 mariadb: server crash at Field::set_default via specially crafted SQL statements",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2074981"
+			},
+			{
+				"ticket": "2074996",
+				"description": "CVE-2022-27383 mariadb: use-after-poison in my_strcasecmp_8bit() of ctype-simple.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2074996"
+			},
+			{
+				"ticket": "2074999",
+				"description": "CVE-2022-27384 mariadb: crash via component Item_subselect::init_expr_cache_tracker",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2074999"
+			},
+			{
+				"ticket": "2075005",
+				"description": "CVE-2022-27386 mariadb: server crashes in query_arena::set_query_arena upon SELECT from view",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2075005"
+			},
+			{
+				"ticket": "2075006",
+				"description": "CVE-2022-27387 mariadb: assertion failures in decimal_bin_size",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2075006"
+			},
+			{
+				"ticket": "2075691",
+				"description": "CVE-2022-27445 mariadb: assertion failure in compare_order_elements",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2075691"
+			},
+			{
+				"ticket": "2075693",
+				"description": "CVE-2022-27447 mariadb: use-after-poison in Binary_string::free_buffer",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2075693"
+			},
+			{
+				"ticket": "2075694",
+				"description": "CVE-2022-27448 mariadb: crash in multi-update and implicit grouping",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2075694"
+			},
+			{
+				"ticket": "2075695",
+				"description": "CVE-2022-27449 mariadb: assertion failure in sql/item_func.cc",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2075695"
+			},
+			{
+				"ticket": "2075697",
+				"description": "CVE-2022-27456 mariadb: assertion failure in VDec::VDec at /sql/sql_type.cc",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2075697"
+			},
+			{
+				"ticket": "2075700",
+				"description": "CVE-2022-27458 mariadb: use-after-poison in Binary_string::free_buffer",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2075700"
+			},
+			{
+				"ticket": "2076145",
+				"description": "CVE-2022-27452 mariadb: assertion failure in sql/item_cmpfunc.cc",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2076145"
+			},
+			{
+				"ticket": "2082644",
+				"description": "CVE-2022-21427 mysql: Server: FTS unspecified vulnerability (CPU Apr 2022)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2082644"
+			},
+			{
+				"ticket": "2092354",
+				"description": "CVE-2022-31622 mariadb: improper locking due to the unreleased lock in extra/mariabackup/ds_compress.cc",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2092354"
+			},
+			{
+				"ticket": "2092360",
+				"description": "CVE-2022-31623 mariadb: improper locking due to the unreleased lock in extra/mariabackup/ds_compress.cc",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2092360"
+			},
+			{
+				"ticket": "2104425",
+				"description": "CVE-2022-32083 mariadb: server crash at Item_subselect::init_expr_cache_tracker",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2104425"
+			},
+			{
+				"ticket": "2104431",
+				"description": "CVE-2022-32085 mariadb: server crash in Item_func_in::cleanup/Item::cleanup_processor",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2104431"
+			},
+			{
+				"ticket": "2104434",
+				"description": "CVE-2022-32087 mariadb: server crash in Item_args::walk_args",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2104434"
+			},
+			{
+				"ticket": "2106008",
+				"description": "CVE-2022-32088 mariadb: segmentation fault in Exec_time_tracker::get_loops/Filesort_tracker::report_use/filesort",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2106008"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-21427",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21427.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2022-32083",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32083.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-229"
+			},
+			{
+				"name": "CVE-2022-32085",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32085.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-229"
+			},
+			{
+				"name": "CVE-2022-32087",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32087.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-229"
+			},
+			{
+				"name": "CVE-2022-32088",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32088.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-229"
+			}
+		],
+		"publishedAt": "2022-09-23T19:45:00.262046Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"galera-0:25.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"galera-0:25.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"galera-0:25.3.35-1.module+el8.6.0+1005+cdf19c22.src.rpm",
+					"galera-0:25.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"galera-debuginfo-0:25.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"galera-debuginfo-0:25.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"galera-debuginfo-0:25.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"galera-debugsource-0:25.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"galera-debugsource-0:25.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"galera-debugsource-0:25.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"Judy-0:1.0.5-18.module+el8.4.0+431+26aaed18.aarch64.rpm",
+					"Judy-0:1.0.5-18.module+el8.4.0+431+26aaed18.src.rpm",
+					"Judy-0:1.0.5-18.module+el8.4.0+431+26aaed18.x86_64.rpm",
+					"Judy-debuginfo-0:1.0.5-18.module+el8.4.0+431+26aaed18.aarch64.rpm",
+					"Judy-debuginfo-0:1.0.5-18.module+el8.4.0+431+26aaed18.x86_64.rpm",
+					"Judy-debugsource-0:1.0.5-18.module+el8.4.0+431+26aaed18.aarch64.rpm",
+					"Judy-debugsource-0:1.0.5-18.module+el8.4.0+431+26aaed18.x86_64.rpm",
+					"mariadb-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.src.rpm",
+					"mariadb-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-backup-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-backup-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-backup-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-backup-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-backup-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-backup-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-common-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-common-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-common-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-debugsource-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-debugsource-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-debugsource-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-devel-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-devel-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-devel-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-embedded-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-embedded-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-embedded-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-embedded-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-embedded-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-embedded-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-embedded-devel-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-embedded-devel-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-embedded-devel-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-errmsg-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-errmsg-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-errmsg-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-gssapi-server-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-gssapi-server-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-gssapi-server-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-gssapi-server-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-gssapi-server-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-gssapi-server-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-oqgraph-engine-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-oqgraph-engine-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-oqgraph-engine-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-oqgraph-engine-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-oqgraph-engine-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-oqgraph-engine-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-server-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-server-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-server-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-server-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-server-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-server-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-server-galera-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-server-galera-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-server-galera-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-server-utils-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-server-utils-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-server-utils-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-server-utils-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-server-utils-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-server-utils-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-test-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-test-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-test-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm",
+					"mariadb-test-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.aarch64.rpm",
+					"mariadb-test-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.i686.rpm",
+					"mariadb-test-debuginfo-3:10.3.35-1.module+el8.6.0+1005+cdf19c22.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

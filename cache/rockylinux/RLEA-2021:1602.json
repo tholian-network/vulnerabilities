@@ -1,0 +1,43 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:1602",
+		"synopsis": "python-rtslib bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for python-rtslib is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1889325",
+				"description": "RHEL8.4: Update the rtslib package",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1889325"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:1602",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:1602",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"python3-rtslib-0:2.1.74-1.el8.noarch.rpm",
+					"python-rtslib-0:2.1.74-1.el8.src.rpm",
+					"target-restore-0:2.1.74-1.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

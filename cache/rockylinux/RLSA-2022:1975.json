@@ -1,0 +1,544 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1975",
+		"synopsis": "Important: kernel-rt security and bug fix update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for kernel-rt is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The kernel-rt packages provide the Real Time Linux Kernel, which enables fine-tuning for systems with extremely high determinism requirements.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1901726",
+				"description": "CVE-2020-27820 kernel: use-after-free in nouveau kernel module",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1901726"
+			},
+			{
+				"ticket": "1903578",
+				"description": "kernnel-rt-debug: do not call blocking ops when !TASK_RUNNING; state=1 set at [\u003c0000000050e86018\u003e] handle_userfault+0x530/0x1820",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1903578"
+			},
+			{
+				"ticket": "1905749",
+				"description": "kernel-rt-debug: BUG: sleeping function called from invalid context at kernel/locking/rtmutex.c:968",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1905749"
+			},
+			{
+				"ticket": "1919791",
+				"description": "CVE-2020-0404 kernel: avoid cyclic entity chains due to malformed USB descriptors",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1919791"
+			},
+			{
+				"ticket": "1946684",
+				"description": "CVE-2021-29154 kernel: Local privilege escalation due to incorrect BPF JIT branch displacement computation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1946684"
+			},
+			{
+				"ticket": "1951739",
+				"description": "CVE-2021-42739 kernel: Heap buffer overflow in firedtv driver",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951739"
+			},
+			{
+				"ticket": "1974079",
+				"description": "CVE-2021-3612 kernel: joydev: zero size passed to joydev_handle_JSIOCSBTNMAP()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1974079"
+			},
+			{
+				"ticket": "1985353",
+				"description": "CVE-2021-37159 kernel: use-after-free in hso_free_net_device() in drivers/net/usb/hso.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1985353"
+			},
+			{
+				"ticket": "1986473",
+				"description": "CVE-2021-3669 kernel: reading /proc/sysvipc/shm does not scale with large shared memory segment counts",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986473"
+			},
+			{
+				"ticket": "1997467",
+				"description": "CVE-2021-3764 kernel: DoS in ccp_run_aes_gcm_cmd() function",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1997467"
+			},
+			{
+				"ticket": "1997961",
+				"description": "CVE-2021-3743 kernel: out-of-bound Read in qrtr_endpoint_post in net/qrtr/qrtr.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1997961"
+			},
+			{
+				"ticket": "1999544",
+				"description": "CVE-2021-3752 kernel: possible use-after-free in bluetooth module",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1999544"
+			},
+			{
+				"ticket": "1999675",
+				"description": "CVE-2021-3759 kernel: unaccounted ipc objects in Linux kernel lead to breaking memcg limits and DoS attacks",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1999675"
+			},
+			{
+				"ticket": "2000627",
+				"description": "CVE-2021-3744 kernel: crypto: ccp - fix resource leaks in ccp_run_aes_gcm_cmd()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000627"
+			},
+			{
+				"ticket": "2000694",
+				"description": "CVE-2021-3772 kernel: sctp: Invalid chunks may be used to remotely remove existing associations",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000694"
+			},
+			{
+				"ticket": "2004949",
+				"description": "CVE-2021-3773 kernel: lack of port sanity checking in natd and netfilter leads to exploit of OpenVPN clients",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2004949"
+			},
+			{
+				"ticket": "2010463",
+				"description": "CVE-2021-41864 kernel: eBPF multiplication integer overflow in prealloc_elems_and_freelist() in kernel/bpf/stackmap.c leads to out-of-bounds write",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2010463"
+			},
+			{
+				"ticket": "2013180",
+				"description": "CVE-2021-43389 kernel: an array-index-out-bounds in detach_capi_ctr in drivers/isdn/capi/kcapi.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013180"
+			},
+			{
+				"ticket": "2014230",
+				"description": "CVE-2021-20322 kernel: new DNS Cache Poisoning Attack based on ICMP fragment needed packets replies",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2014230"
+			},
+			{
+				"ticket": "2016169",
+				"description": "CVE-2020-13974 kernel: integer overflow in k_ascii() in drivers/tty/vt/keyboard.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016169"
+			},
+			{
+				"ticket": "2018205",
+				"description": "CVE-2021-0941 kernel: out-of-bounds read in bpf_skb_change_head() of filter.c due to a use-after-free",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2018205"
+			},
+			{
+				"ticket": "2025003",
+				"description": "CVE-2021-43976 kernel: mwifiex_usb_recv() in drivers/net/wireless/marvell/mwifiex/usb.c allows an attacker to cause DoS via crafted USB device",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2025003"
+			},
+			{
+				"ticket": "2025726",
+				"description": "CVE-2021-4002 kernel: possible leak or coruption of data residing on hugetlbfs",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2025726"
+			},
+			{
+				"ticket": "2027239",
+				"description": "CVE-2021-4037 kernel: security regression for CVE-2018-13405",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2027239"
+			},
+			{
+				"ticket": "2029923",
+				"description": "CVE-2021-4083 kernel: fget: check that the fd still exists after getting a ref to it",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2029923"
+			},
+			{
+				"ticket": "2030747",
+				"description": "CVE-2021-44733 kernel: use-after-free in the TEE subsystem",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2030747"
+			},
+			{
+				"ticket": "2034342",
+				"description": "CVE-2021-4157 kernel: Buffer overwrite in decode_nfs_fh function",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2034342"
+			},
+			{
+				"ticket": "2035652",
+				"description": "CVE-2021-4197 kernel: cgroup: Use open-time creds and namespace for migration perm checks",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2035652"
+			},
+			{
+				"ticket": "2036934",
+				"description": "CVE-2021-4203 kernel: Race condition in races in sk_peer_pid and sk_peer_cred accesses",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2036934"
+			},
+			{
+				"ticket": "2037019",
+				"description": "CVE-2022-0286 kernel: Local denial of service in bond_ipsec_add_sa",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2037019"
+			},
+			{
+				"ticket": "2039911",
+				"description": "CVE-2021-45485 kernel: information leak in the IPv6 implementation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2039911"
+			},
+			{
+				"ticket": "2039914",
+				"description": "CVE-2021-45486 kernel: information leak in the IPv4 implementation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2039914"
+			},
+			{
+				"ticket": "2042822",
+				"description": "CVE-2022-0322 kernel: DoS in sctp_addto_chunk in net/sctp/sm_make_chunk.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2042822"
+			},
+			{
+				"ticket": "2061700",
+				"description": "CVE-2021-26401 hw: cpu: LFENCE/JMP Mitigation Update for CVE-2017-5715",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2061700"
+			},
+			{
+				"ticket": "2061712",
+				"description": "CVE-2022-0001 hw: cpu: intel: Branch History Injection (BHI)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2061712"
+			},
+			{
+				"ticket": "2061721",
+				"description": "CVE-2022-0002 hw: cpu: intel: Intra-Mode BTI",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2061721"
+			},
+			{
+				"ticket": "2064855",
+				"description": "CVE-2022-1011 kernel: FUSE allows UAF reads of write() buffers, allowing theft of (partial) /etc/shadow hashes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064855"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-0404",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-0404.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-284"
+			},
+			{
+				"name": "CVE-2020-13974",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-13974.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-190"
+			},
+			{
+				"name": "CVE-2020-27820",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-27820.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.1",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-0941",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-0941.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "6.7",
+				"cwe": "CWE-416-\u003eCWE-125"
+			},
+			{
+				"name": "CVE-2021-20322",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20322.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+				"cvss3BaseScore": "7.4",
+				"cwe": "CWE-330"
+			},
+			{
+				"name": "CVE-2021-26401",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-26401.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "4.7",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-29154",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-29154.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.0",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-3612",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3612.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-20-\u003eCWE-119"
+			},
+			{
+				"name": "CVE-2021-3669",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3669.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-400"
+			},
+			{
+				"name": "CVE-2021-37159",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-37159.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:P/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "6.4",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-3743",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3743.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.2",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2021-3744",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3744.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-401"
+			},
+			{
+				"name": "CVE-2021-3752",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3752.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.0",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-3759",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3759.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-400"
+			},
+			{
+				"name": "CVE-2021-3764",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3764.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-401"
+			},
+			{
+				"name": "CVE-2021-3772",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3772.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.9",
+				"cwe": "CWE-354"
+			},
+			{
+				"name": "CVE-2021-3773",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3773.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "5.9",
+				"cwe": "CWE-200"
+			},
+			{
+				"name": "CVE-2021-4002",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-4002.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+				"cvss3BaseScore": "5.1",
+				"cwe": "CWE-459"
+			},
+			{
+				"name": "CVE-2021-4037",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-4037.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+				"cvss3BaseScore": "4.4",
+				"cwe": "CWE-284"
+			},
+			{
+				"name": "CVE-2021-4083",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-4083.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.4",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-4157",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-4157.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:A/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:H",
+				"cvss3BaseScore": "5.9",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-41864",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-41864.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-190-\u003eCWE-787"
+			},
+			{
+				"name": "CVE-2021-4197",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-4197.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+				"cvss3BaseScore": "6.3",
+				"cwe": "CWE-287"
+			},
+			{
+				"name": "CVE-2021-4203",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-4203.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:L/A:L",
+				"cvss3BaseScore": "5.8",
+				"cwe": "CWE-362-\u003eCWE-416"
+			},
+			{
+				"name": "CVE-2021-42739",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-42739.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "6.7",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-43389",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-43389.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-129-\u003eCWE-125"
+			},
+			{
+				"name": "CVE-2021-43976",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-43976.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.6",
+				"cwe": "CWE-459"
+			},
+			{
+				"name": "CVE-2021-44733",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-44733.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.4",
+				"cwe": "CWE-908"
+			},
+			{
+				"name": "CVE-2021-45485",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-45485.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-327"
+			},
+			{
+				"name": "CVE-2021-45486",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-45486.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "3.5",
+				"cwe": "CWE-330-\u003eCWE-200"
+			},
+			{
+				"name": "CVE-2022-0001",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0001.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "4.7",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2022-0002",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0002.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "4.7",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2022-0286",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0286.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.1",
+				"cwe": "CWE-476"
+			},
+			{
+				"name": "CVE-2022-0322",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0322.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-681"
+			},
+			{
+				"name": "CVE-2022-1011",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1011.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.0",
+				"cwe": "CWE-416"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"kernel-rt-0:4.18.0-372.9.1.rt7.166.el8.src.rpm",
+					"kernel-rt-0:4.18.0-372.9.1.rt7.166.el8.x86_64.rpm",
+					"kernel-rt-core-0:4.18.0-372.9.1.rt7.166.el8.x86_64.rpm",
+					"kernel-rt-debug-0:4.18.0-372.9.1.rt7.166.el8.x86_64.rpm",
+					"kernel-rt-debug-core-0:4.18.0-372.9.1.rt7.166.el8.x86_64.rpm",
+					"kernel-rt-debug-debuginfo-0:4.18.0-372.9.1.rt7.166.el8.x86_64.rpm",
+					"kernel-rt-debug-devel-0:4.18.0-372.9.1.rt7.166.el8.x86_64.rpm",
+					"kernel-rt-debuginfo-0:4.18.0-372.9.1.rt7.166.el8.x86_64.rpm",
+					"kernel-rt-debuginfo-common-x86_64-0:4.18.0-372.9.1.rt7.166.el8.x86_64.rpm",
+					"kernel-rt-debug-kvm-0:4.18.0-372.9.1.rt7.166.el8.x86_64.rpm",
+					"kernel-rt-debug-modules-0:4.18.0-372.9.1.rt7.166.el8.x86_64.rpm",
+					"kernel-rt-debug-modules-extra-0:4.18.0-372.9.1.rt7.166.el8.x86_64.rpm",
+					"kernel-rt-devel-0:4.18.0-372.9.1.rt7.166.el8.x86_64.rpm",
+					"kernel-rt-kvm-0:4.18.0-372.9.1.rt7.166.el8.x86_64.rpm",
+					"kernel-rt-modules-0:4.18.0-372.9.1.rt7.166.el8.x86_64.rpm",
+					"kernel-rt-modules-extra-0:4.18.0-372.9.1.rt7.166.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

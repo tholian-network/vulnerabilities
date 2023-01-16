@@ -1,0 +1,77 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2053",
+		"synopsis": "kexec-tools bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for kexec-tools is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1883753",
+				"description": "[RHEL8.6] Makedumpfile gets estimated vmcore size with specified options",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1883753"
+			},
+			{
+				"ticket": "1919073",
+				"description": "[RHEL-8.4] kdump on nfsv3 dump target is not stable enough",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1919073"
+			},
+			{
+				"ticket": "1935632",
+				"description": "[RHEL-8.4][ Document ]  Improve document content  --- recommended to use the device uuid name in  kdump_post /kdump_pre script",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1935632"
+			},
+			{
+				"ticket": "2021066",
+				"description": "[RHEL8.6] Rebase makedumpfile to latest version",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2021066"
+			},
+			{
+				"ticket": "2026102",
+				"description": "Could not find a registered notification tool with the specified command ('/usr/lib/kdump/kdump-migrate-action.sh').",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2026102"
+			},
+			{
+				"ticket": "2028844",
+				"description": "zstd for makedumpfile is not on",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028844"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2053",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2053",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"kexec-tools-0:2.0.20-68.el8.aarch64.rpm",
+					"kexec-tools-0:2.0.20-68.el8.src.rpm",
+					"kexec-tools-0:2.0.20-68.el8.x86_64.rpm",
+					"kexec-tools-debuginfo-0:2.0.20-68.el8.aarch64.rpm",
+					"kexec-tools-debuginfo-0:2.0.20-68.el8.x86_64.rpm",
+					"kexec-tools-debugsource-0:2.0.20-68.el8.aarch64.rpm",
+					"kexec-tools-debugsource-0:2.0.20-68.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

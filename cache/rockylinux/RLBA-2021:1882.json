@@ -1,0 +1,42 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1882",
+		"synopsis": "inkscape:0.92.3 bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for the inkscape:0.92.3 module is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1889800",
+				"description": "Rebuild Inkscape due to rebase of poppler",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1889800"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1882",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1882",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"python2-scour-0:0.35-9.module+el8.4.0+533+773bb730.noarch.rpm",
+					"python-scour-0:0.35-9.module+el8.4.0+533+773bb730.src.rpm"
+				]
+			}
+		}
+	}
+}

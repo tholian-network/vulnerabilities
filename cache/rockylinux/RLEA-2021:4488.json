@@ -1,0 +1,72 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:4488",
+		"synopsis": "hwloc bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for hwloc is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1979150",
+				"description": "hwloc 2.2.0 rebase requires hwloc 1.11 compat package for old binaries",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1979150"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:4488",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:4488",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"compat-hwloc1-0:2.2.0-3.el8.aarch64.rpm",
+					"compat-hwloc1-0:2.2.0-3.el8.i686.rpm",
+					"compat-hwloc1-0:2.2.0-3.el8.x86_64.rpm",
+					"compat-hwloc1-debuginfo-0:2.2.0-3.el8.aarch64.rpm",
+					"compat-hwloc1-debuginfo-0:2.2.0-3.el8.i686.rpm",
+					"compat-hwloc1-debuginfo-0:2.2.0-3.el8.x86_64.rpm",
+					"hwloc-0:2.2.0-3.el8.aarch64.rpm",
+					"hwloc-0:2.2.0-3.el8.src.rpm",
+					"hwloc-0:2.2.0-3.el8.x86_64.rpm",
+					"hwloc-debuginfo-0:2.2.0-3.el8.aarch64.rpm",
+					"hwloc-debuginfo-0:2.2.0-3.el8.i686.rpm",
+					"hwloc-debuginfo-0:2.2.0-3.el8.x86_64.rpm",
+					"hwloc-debugsource-0:2.2.0-3.el8.aarch64.rpm",
+					"hwloc-debugsource-0:2.2.0-3.el8.i686.rpm",
+					"hwloc-debugsource-0:2.2.0-3.el8.x86_64.rpm",
+					"hwloc-devel-0:2.2.0-3.el8.aarch64.rpm",
+					"hwloc-devel-0:2.2.0-3.el8.i686.rpm",
+					"hwloc-devel-0:2.2.0-3.el8.x86_64.rpm",
+					"hwloc-gui-0:2.2.0-3.el8.aarch64.rpm",
+					"hwloc-gui-0:2.2.0-3.el8.x86_64.rpm",
+					"hwloc-gui-debuginfo-0:2.2.0-3.el8.aarch64.rpm",
+					"hwloc-gui-debuginfo-0:2.2.0-3.el8.x86_64.rpm",
+					"hwloc-libs-0:2.2.0-3.el8.aarch64.rpm",
+					"hwloc-libs-0:2.2.0-3.el8.i686.rpm",
+					"hwloc-libs-0:2.2.0-3.el8.x86_64.rpm",
+					"hwloc-libs-debuginfo-0:2.2.0-3.el8.aarch64.rpm",
+					"hwloc-libs-debuginfo-0:2.2.0-3.el8.i686.rpm",
+					"hwloc-libs-debuginfo-0:2.2.0-3.el8.x86_64.rpm",
+					"hwloc-plugins-0:2.2.0-3.el8.aarch64.rpm",
+					"hwloc-plugins-0:2.2.0-3.el8.x86_64.rpm",
+					"hwloc-plugins-debuginfo-0:2.2.0-3.el8.aarch64.rpm",
+					"hwloc-plugins-debuginfo-0:2.2.0-3.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

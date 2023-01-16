@@ -1,0 +1,57 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4190",
+		"synopsis": "wireshark bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for wireshark is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1934617",
+				"description": "[RFE] better MPTCP dissection support",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1934617"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4190",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4190",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"wireshark-1:2.6.2-14.el8.aarch64.rpm",
+					"wireshark-1:2.6.2-14.el8.src.rpm",
+					"wireshark-1:2.6.2-14.el8.x86_64.rpm",
+					"wireshark-cli-1:2.6.2-14.el8.aarch64.rpm",
+					"wireshark-cli-1:2.6.2-14.el8.i686.rpm",
+					"wireshark-cli-1:2.6.2-14.el8.x86_64.rpm",
+					"wireshark-cli-debuginfo-1:2.6.2-14.el8.aarch64.rpm",
+					"wireshark-cli-debuginfo-1:2.6.2-14.el8.i686.rpm",
+					"wireshark-cli-debuginfo-1:2.6.2-14.el8.x86_64.rpm",
+					"wireshark-debuginfo-1:2.6.2-14.el8.aarch64.rpm",
+					"wireshark-debuginfo-1:2.6.2-14.el8.i686.rpm",
+					"wireshark-debuginfo-1:2.6.2-14.el8.x86_64.rpm",
+					"wireshark-debugsource-1:2.6.2-14.el8.aarch64.rpm",
+					"wireshark-debugsource-1:2.6.2-14.el8.x86_64.rpm",
+					"wireshark-devel-1:2.6.2-14.el8.aarch64.rpm",
+					"wireshark-devel-1:2.6.2-14.el8.i686.rpm",
+					"wireshark-devel-1:2.6.2-14.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

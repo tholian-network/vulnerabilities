@@ -1,0 +1,78 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1822",
+		"synopsis": "ibus bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for ibus is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2008074",
+				"description": "[RHEL8] On Wayland, ibus emoji selection and input does not work as expected",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2008074"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1822",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1822",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"ibus-0:1.5.19-14.el8_5.aarch64.rpm",
+					"ibus-0:1.5.19-14.el8_5.src.rpm",
+					"ibus-0:1.5.19-14.el8_5.x86_64.rpm",
+					"ibus-debuginfo-0:1.5.19-14.el8_5.aarch64.rpm",
+					"ibus-debuginfo-0:1.5.19-14.el8_5.i686.rpm",
+					"ibus-debuginfo-0:1.5.19-14.el8_5.x86_64.rpm",
+					"ibus-debugsource-0:1.5.19-14.el8_5.aarch64.rpm",
+					"ibus-debugsource-0:1.5.19-14.el8_5.x86_64.rpm",
+					"ibus-desktop-testing-0:1.5.19-14.el8_5.noarch.rpm",
+					"ibus-devel-0:1.5.19-14.el8_5.aarch64.rpm",
+					"ibus-devel-0:1.5.19-14.el8_5.i686.rpm",
+					"ibus-devel-0:1.5.19-14.el8_5.x86_64.rpm",
+					"ibus-devel-docs-0:1.5.19-14.el8_5.noarch.rpm",
+					"ibus-gtk2-0:1.5.19-14.el8_5.aarch64.rpm",
+					"ibus-gtk2-0:1.5.19-14.el8_5.i686.rpm",
+					"ibus-gtk2-0:1.5.19-14.el8_5.x86_64.rpm",
+					"ibus-gtk2-debuginfo-0:1.5.19-14.el8_5.aarch64.rpm",
+					"ibus-gtk2-debuginfo-0:1.5.19-14.el8_5.i686.rpm",
+					"ibus-gtk2-debuginfo-0:1.5.19-14.el8_5.x86_64.rpm",
+					"ibus-gtk3-0:1.5.19-14.el8_5.aarch64.rpm",
+					"ibus-gtk3-0:1.5.19-14.el8_5.x86_64.rpm",
+					"ibus-gtk3-debuginfo-0:1.5.19-14.el8_5.aarch64.rpm",
+					"ibus-gtk3-debuginfo-0:1.5.19-14.el8_5.x86_64.rpm",
+					"ibus-libs-0:1.5.19-14.el8_5.aarch64.rpm",
+					"ibus-libs-0:1.5.19-14.el8_5.i686.rpm",
+					"ibus-libs-0:1.5.19-14.el8_5.x86_64.rpm",
+					"ibus-libs-debuginfo-0:1.5.19-14.el8_5.aarch64.rpm",
+					"ibus-libs-debuginfo-0:1.5.19-14.el8_5.i686.rpm",
+					"ibus-libs-debuginfo-0:1.5.19-14.el8_5.x86_64.rpm",
+					"ibus-setup-0:1.5.19-14.el8_5.noarch.rpm",
+					"ibus-tests-0:1.5.19-14.el8_5.aarch64.rpm",
+					"ibus-tests-0:1.5.19-14.el8_5.x86_64.rpm",
+					"ibus-tests-debuginfo-0:1.5.19-14.el8_5.aarch64.rpm",
+					"ibus-tests-debuginfo-0:1.5.19-14.el8_5.x86_64.rpm",
+					"ibus-wayland-0:1.5.19-14.el8_5.aarch64.rpm",
+					"ibus-wayland-0:1.5.19-14.el8_5.x86_64.rpm",
+					"ibus-wayland-debuginfo-0:1.5.19-14.el8_5.aarch64.rpm",
+					"ibus-wayland-debuginfo-0:1.5.19-14.el8_5.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

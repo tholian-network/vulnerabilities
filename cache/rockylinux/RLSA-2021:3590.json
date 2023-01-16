@@ -1,0 +1,2039 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:3590",
+		"synopsis": "Moderate: mysql:8.0 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the mysql:8.0 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "MySQL is a multi-user, multi-threaded SQL database server. It consists of the MySQL server daemon (mysqld) and many client programs and libraries.\nThe following packages have been upgraded to a later upstream version: mysql (8.0.26). (BZ#1996693)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1890737",
+				"description": "CVE-2020-14672 mysql: Server: Stored Procedure unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890737"
+			},
+			{
+				"ticket": "1890738",
+				"description": "CVE-2020-14765 mysql: Server: FTS unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890738"
+			},
+			{
+				"ticket": "1890739",
+				"description": "CVE-2020-14769 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890739"
+			},
+			{
+				"ticket": "1890742",
+				"description": "CVE-2020-14773 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890742"
+			},
+			{
+				"ticket": "1890743",
+				"description": "CVE-2020-14776 mysql: InnoDB unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890743"
+			},
+			{
+				"ticket": "1890744",
+				"description": "CVE-2020-14777 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890744"
+			},
+			{
+				"ticket": "1890745",
+				"description": "CVE-2020-14785 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890745"
+			},
+			{
+				"ticket": "1890746",
+				"description": "CVE-2020-14786 mysql: Server: PS unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890746"
+			},
+			{
+				"ticket": "1890747",
+				"description": "CVE-2020-14789 mysql: Server: FTS unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890747"
+			},
+			{
+				"ticket": "1890748",
+				"description": "CVE-2020-14790 mysql: Server: PS unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890748"
+			},
+			{
+				"ticket": "1890749",
+				"description": "CVE-2020-14791 mysql: InnoDB unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890749"
+			},
+			{
+				"ticket": "1890750",
+				"description": "CVE-2020-14793 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890750"
+			},
+			{
+				"ticket": "1890751",
+				"description": "CVE-2020-14794 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890751"
+			},
+			{
+				"ticket": "1890753",
+				"description": "CVE-2020-14800 mysql: Server: Security: Encryption unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890753"
+			},
+			{
+				"ticket": "1890754",
+				"description": "CVE-2020-14804 mysql: Server: FTS unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890754"
+			},
+			{
+				"ticket": "1890755",
+				"description": "CVE-2020-14809 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890755"
+			},
+			{
+				"ticket": "1890756",
+				"description": "CVE-2020-14812 mysql: Server: Locking unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890756"
+			},
+			{
+				"ticket": "1890757",
+				"description": "CVE-2020-14814 mysql: Server: DML unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890757"
+			},
+			{
+				"ticket": "1890758",
+				"description": "CVE-2020-14821 mysql: InnoDB unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890758"
+			},
+			{
+				"ticket": "1890760",
+				"description": "CVE-2020-14828 mysql: Server: DML unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890760"
+			},
+			{
+				"ticket": "1890761",
+				"description": "CVE-2020-14829 mysql: InnoDB unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890761"
+			},
+			{
+				"ticket": "1890762",
+				"description": "CVE-2020-14830 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890762"
+			},
+			{
+				"ticket": "1890763",
+				"description": "CVE-2020-14836 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890763"
+			},
+			{
+				"ticket": "1890764",
+				"description": "CVE-2020-14837 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890764"
+			},
+			{
+				"ticket": "1890765",
+				"description": "CVE-2020-14838 mysql: Server: Security: Privileges unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890765"
+			},
+			{
+				"ticket": "1890766",
+				"description": "CVE-2020-14839 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890766"
+			},
+			{
+				"ticket": "1890767",
+				"description": "CVE-2020-14844 mysql: Server: PS unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890767"
+			},
+			{
+				"ticket": "1890768",
+				"description": "CVE-2020-14845 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890768"
+			},
+			{
+				"ticket": "1890769",
+				"description": "CVE-2020-14846 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890769"
+			},
+			{
+				"ticket": "1890770",
+				"description": "CVE-2020-14848 mysql: InnoDB unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890770"
+			},
+			{
+				"ticket": "1890771",
+				"description": "CVE-2020-14852 mysql: Server: Charsets unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890771"
+			},
+			{
+				"ticket": "1890772",
+				"description": "CVE-2020-14860 mysql: Server: Security: Roles unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890772"
+			},
+			{
+				"ticket": "1890773",
+				"description": "CVE-2020-14861 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890773"
+			},
+			{
+				"ticket": "1890774",
+				"description": "CVE-2020-14866 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890774"
+			},
+			{
+				"ticket": "1890775",
+				"description": "CVE-2020-14867 mysql: Server: DDL unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890775"
+			},
+			{
+				"ticket": "1890776",
+				"description": "CVE-2020-14868 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890776"
+			},
+			{
+				"ticket": "1890778",
+				"description": "CVE-2020-14870 mysql: Server: X Plugin unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890778"
+			},
+			{
+				"ticket": "1890779",
+				"description": "CVE-2020-14873 mysql: Server: Logging unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890779"
+			},
+			{
+				"ticket": "1890781",
+				"description": "CVE-2020-14888 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890781"
+			},
+			{
+				"ticket": "1890782",
+				"description": "CVE-2020-14891 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890782"
+			},
+			{
+				"ticket": "1890783",
+				"description": "CVE-2020-14893 mysql: Server: Optimizer unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890783"
+			},
+			{
+				"ticket": "1890784",
+				"description": "CVE-2020-14775 mysql: InnoDB unspecified vulnerability (CPU Oct 2020)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890784"
+			},
+			{
+				"ticket": "1922379",
+				"description": "CVE-2021-2001 mysql: Server: Optimizer unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922379"
+			},
+			{
+				"ticket": "1922380",
+				"description": "CVE-2021-2002 mysql: Server: Replication unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922380"
+			},
+			{
+				"ticket": "1922383",
+				"description": "CVE-2021-2010 mysql: C API unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922383"
+			},
+			{
+				"ticket": "1922384",
+				"description": "CVE-2021-2011 mysql: C API unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922384"
+			},
+			{
+				"ticket": "1922388",
+				"description": "CVE-2021-2021 mysql: Server: Optimizer unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922388"
+			},
+			{
+				"ticket": "1922389",
+				"description": "CVE-2021-2022 mysql: InnoDB unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922389"
+			},
+			{
+				"ticket": "1922390",
+				"description": "CVE-2021-2024 mysql: Server: Optimizer unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922390"
+			},
+			{
+				"ticket": "1922391",
+				"description": "CVE-2021-2028 mysql: InnoDB unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922391"
+			},
+			{
+				"ticket": "1922392",
+				"description": "CVE-2021-2030 mysql: Server: Optimizer unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922392"
+			},
+			{
+				"ticket": "1922393",
+				"description": "CVE-2021-2031 mysql: Server: Optimizer unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922393"
+			},
+			{
+				"ticket": "1922394",
+				"description": "CVE-2021-2032 mysql: Information Schema unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922394"
+			},
+			{
+				"ticket": "1922395",
+				"description": "CVE-2021-2036 mysql: Server: Optimizer unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922395"
+			},
+			{
+				"ticket": "1922396",
+				"description": "CVE-2021-2038 mysql: Server: Components Services unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922396"
+			},
+			{
+				"ticket": "1922397",
+				"description": "CVE-2021-2042 mysql: InnoDB unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922397"
+			},
+			{
+				"ticket": "1922398",
+				"description": "CVE-2021-2046 mysql: Server: Stored Procedure unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922398"
+			},
+			{
+				"ticket": "1922399",
+				"description": "CVE-2021-2048 mysql: InnoDB unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922399"
+			},
+			{
+				"ticket": "1922400",
+				"description": "CVE-2021-2055 mysql: Server: Optimizer unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922400"
+			},
+			{
+				"ticket": "1922401",
+				"description": "CVE-2021-2058 mysql: Server: Locking unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922401"
+			},
+			{
+				"ticket": "1922402",
+				"description": "CVE-2021-2060 mysql: Server: Optimizer unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922402"
+			},
+			{
+				"ticket": "1922403",
+				"description": "CVE-2021-2061 mysql: Server: DDL unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922403"
+			},
+			{
+				"ticket": "1922404",
+				"description": "CVE-2021-2065 mysql: Server: Optimizer unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922404"
+			},
+			{
+				"ticket": "1922405",
+				"description": "CVE-2021-2070 mysql: Server: Optimizer unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922405"
+			},
+			{
+				"ticket": "1922406",
+				"description": "CVE-2021-2072 mysql: Server: Stored Procedure unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922406"
+			},
+			{
+				"ticket": "1922407",
+				"description": "CVE-2021-2076 mysql: Server: Optimizer unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922407"
+			},
+			{
+				"ticket": "1922408",
+				"description": "CVE-2021-2087 mysql: Server: DML unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922408"
+			},
+			{
+				"ticket": "1922410",
+				"description": "CVE-2021-2088 mysql: Server: DML unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922410"
+			},
+			{
+				"ticket": "1922411",
+				"description": "CVE-2021-2122 mysql: Server: DDL unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922411"
+			},
+			{
+				"ticket": "1922416",
+				"description": "CVE-2021-2081 mysql: Server: Stored Procedure unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922416"
+			},
+			{
+				"ticket": "1922419",
+				"description": "CVE-2021-2056 mysql: Server: DML unspecified vulnerability (CPU Jan 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922419"
+			},
+			{
+				"ticket": "1951751",
+				"description": "CVE-2021-2146 mysql: Server: Options unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951751"
+			},
+			{
+				"ticket": "1951754",
+				"description": "CVE-2021-2164 mysql: Server: Optimizer unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951754"
+			},
+			{
+				"ticket": "1951755",
+				"description": "CVE-2021-2166 mysql: Server: DML unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951755"
+			},
+			{
+				"ticket": "1951756",
+				"description": "CVE-2021-2169 mysql: Server: Optimizer unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951756"
+			},
+			{
+				"ticket": "1951757",
+				"description": "CVE-2021-2170 mysql: Server: Optimizer unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951757"
+			},
+			{
+				"ticket": "1951758",
+				"description": "CVE-2021-2171 mysql: Server: Replication unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951758"
+			},
+			{
+				"ticket": "1951759",
+				"description": "CVE-2021-2172 mysql: Server: DML unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951759"
+			},
+			{
+				"ticket": "1951760",
+				"description": "CVE-2021-2178 mysql: Server: Replication unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951760"
+			},
+			{
+				"ticket": "1951761",
+				"description": "CVE-2021-2179 mysql: Server: Group Replication Plugin unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951761"
+			},
+			{
+				"ticket": "1951762",
+				"description": "CVE-2021-2180 mysql: InnoDB unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951762"
+			},
+			{
+				"ticket": "1951763",
+				"description": "CVE-2021-2193 mysql: Server: Optimizer unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951763"
+			},
+			{
+				"ticket": "1951764",
+				"description": "CVE-2021-2194 mysql: InnoDB unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951764"
+			},
+			{
+				"ticket": "1951765",
+				"description": "CVE-2021-2196 mysql: Server: DML unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951765"
+			},
+			{
+				"ticket": "1951766",
+				"description": "CVE-2021-2201 mysql: Server: Partition unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951766"
+			},
+			{
+				"ticket": "1951767",
+				"description": "CVE-2021-2202 mysql: Server: Replication unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951767"
+			},
+			{
+				"ticket": "1951768",
+				"description": "CVE-2021-2203 mysql: Server: Optimizer unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951768"
+			},
+			{
+				"ticket": "1951769",
+				"description": "CVE-2021-2208 mysql: Server: Partition unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951769"
+			},
+			{
+				"ticket": "1951770",
+				"description": "CVE-2021-2212 mysql: Server: Optimizer unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951770"
+			},
+			{
+				"ticket": "1951771",
+				"description": "CVE-2021-2213 mysql: Server: Optimizer unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951771"
+			},
+			{
+				"ticket": "1951772",
+				"description": "CVE-2021-2215 mysql: Server: Stored Procedure unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951772"
+			},
+			{
+				"ticket": "1951773",
+				"description": "CVE-2021-2217 mysql: Server: Stored Procedure unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951773"
+			},
+			{
+				"ticket": "1951774",
+				"description": "CVE-2021-2226 mysql: Server: Information Schema unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951774"
+			},
+			{
+				"ticket": "1951775",
+				"description": "CVE-2021-2230 mysql: Server: Optimizer unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951775"
+			},
+			{
+				"ticket": "1951776",
+				"description": "CVE-2021-2232 mysql: Server: Group Replication Plugin unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951776"
+			},
+			{
+				"ticket": "1951777",
+				"description": "CVE-2021-2278 mysql: Server: Optimizer unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951777"
+			},
+			{
+				"ticket": "1951778",
+				"description": "CVE-2021-2293 mysql: Server: Stored Procedure unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951778"
+			},
+			{
+				"ticket": "1951779",
+				"description": "CVE-2021-2298 mysql: Server: Optimizer unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951779"
+			},
+			{
+				"ticket": "1951780",
+				"description": "CVE-2021-2299 mysql: Server: Optimizer unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951780"
+			},
+			{
+				"ticket": "1951781",
+				"description": "CVE-2021-2300 mysql: Server: DML unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951781"
+			},
+			{
+				"ticket": "1951782",
+				"description": "CVE-2021-2301 mysql: Server: Information Schema unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951782"
+			},
+			{
+				"ticket": "1951783",
+				"description": "CVE-2021-2304 mysql: Server: Stored Procedure unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951783"
+			},
+			{
+				"ticket": "1951784",
+				"description": "CVE-2021-2305 mysql: Server: DML unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951784"
+			},
+			{
+				"ticket": "1951785",
+				"description": "CVE-2021-2307 mysql: Server: Packaging unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951785"
+			},
+			{
+				"ticket": "1951786",
+				"description": "CVE-2021-2308 mysql: Server: Information Schema unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951786"
+			},
+			{
+				"ticket": "1952802",
+				"description": "CVE-2021-2174 mysql: InnoDB unspecified vulnerability (CPU Apr 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1952802"
+			},
+			{
+				"ticket": "1992279",
+				"description": "CVE-2021-2340 mysql: Server: Memcached unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992279"
+			},
+			{
+				"ticket": "1992280",
+				"description": "CVE-2021-2339 mysql: Server: DDL unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992280"
+			},
+			{
+				"ticket": "1992294",
+				"description": "CVE-2021-2342 mysql: Server: Optimizer unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992294"
+			},
+			{
+				"ticket": "1992297",
+				"description": "CVE-2021-2352 mysql: Server: DDL unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992297"
+			},
+			{
+				"ticket": "1992298",
+				"description": "CVE-2021-2354 mysql: Server: Federated unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992298"
+			},
+			{
+				"ticket": "1992299",
+				"description": "CVE-2021-2356 mysql: Server: Replication unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992299"
+			},
+			{
+				"ticket": "1992300",
+				"description": "CVE-2021-2357 mysql: Server: Optimizer unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992300"
+			},
+			{
+				"ticket": "1992301",
+				"description": "CVE-2021-2367 mysql: Server: Optimizer unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992301"
+			},
+			{
+				"ticket": "1992302",
+				"description": "CVE-2021-2370 mysql: Server: DML unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992302"
+			},
+			{
+				"ticket": "1992303",
+				"description": "CVE-2021-2372 mysql: InnoDB unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992303"
+			},
+			{
+				"ticket": "1992304",
+				"description": "CVE-2021-2374 mysql: InnoDB unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992304"
+			},
+			{
+				"ticket": "1992305",
+				"description": "CVE-2021-2383 mysql: Server: Optimizer unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992305"
+			},
+			{
+				"ticket": "1992306",
+				"description": "CVE-2021-2384 mysql: Server: Optimizer unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992306"
+			},
+			{
+				"ticket": "1992307",
+				"description": "CVE-2021-2385 mysql: Server: Replication unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992307"
+			},
+			{
+				"ticket": "1992308",
+				"description": "CVE-2021-2387 mysql: Server: Optimizer unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992308"
+			},
+			{
+				"ticket": "1992309",
+				"description": "CVE-2021-2389 mysql: InnoDB unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992309"
+			},
+			{
+				"ticket": "1992310",
+				"description": "CVE-2021-2390 mysql: InnoDB unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992310"
+			},
+			{
+				"ticket": "1992311",
+				"description": "CVE-2021-2399 mysql: Server: DDL unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992311"
+			},
+			{
+				"ticket": "1992312",
+				"description": "CVE-2021-2402 mysql: Server: Locking unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992312"
+			},
+			{
+				"ticket": "1992313",
+				"description": "CVE-2021-2410 mysql: Server: Optimizer unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992313"
+			},
+			{
+				"ticket": "1992314",
+				"description": "CVE-2021-2412 mysql: Server: Optimizer unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992314"
+			},
+			{
+				"ticket": "1992315",
+				"description": "CVE-2021-2417 mysql: Server: GIS unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992315"
+			},
+			{
+				"ticket": "1992316",
+				"description": "CVE-2021-2418 mysql: Server: Optimizer unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992316"
+			},
+			{
+				"ticket": "1992317",
+				"description": "CVE-2021-2422 mysql: Server: PS unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992317"
+			},
+			{
+				"ticket": "1992318",
+				"description": "CVE-2021-2424 mysql: Server: Stored Procedure unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992318"
+			},
+			{
+				"ticket": "1992319",
+				"description": "CVE-2021-2425 mysql: Server: Optimizer unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992319"
+			},
+			{
+				"ticket": "1992320",
+				"description": "CVE-2021-2426 mysql: Server: Optimizer unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992320"
+			},
+			{
+				"ticket": "1992321",
+				"description": "CVE-2021-2427 mysql: Server: Optimizer unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992321"
+			},
+			{
+				"ticket": "1992322",
+				"description": "CVE-2021-2429 mysql: InnoDB unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992322"
+			},
+			{
+				"ticket": "1992323",
+				"description": "CVE-2021-2437 mysql: Server: Optimizer unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992323"
+			},
+			{
+				"ticket": "1992324",
+				"description": "CVE-2021-2440 mysql: Server: DML unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992324"
+			},
+			{
+				"ticket": "1992325",
+				"description": "CVE-2021-2441 mysql: Server: Optimizer unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992325"
+			},
+			{
+				"ticket": "1992326",
+				"description": "CVE-2021-2444 mysql: Server: Optimizer unspecified vulnerability (CPU Jul 2021)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992326"
+			},
+			{
+				"ticket": "1996693",
+				"description": "Tracker: MySQL rebase to the latest version (8.0.26) [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1996693"
+			},
+			{
+				"ticket": "1996699",
+				"description": "Segfault and possible DoS with a crafted query [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1996699"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-14672",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14672.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14765",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14765.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14769",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14769.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14773",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14773.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14775",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14775.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14776",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14776.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14777",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14777.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14785",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14785.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14786",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14786.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14789",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14789.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14790",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14790.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14791",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14791.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "2.2",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14793",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14793.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14794",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14794.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14800",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14800.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14804",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14804.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14809",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14809.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14812",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14812.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14814",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14814.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14821",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14821.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14828",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14828.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.2",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14829",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14829.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14830",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14830.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14836",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14836.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14837",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14837.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14838",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14838.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "4.3",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14839",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14839.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14844",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14844.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14845",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14845.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14846",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14846.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14848",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14848.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14852",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14852.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14860",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14860.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N",
+				"cvss3BaseScore": "2.7",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14861",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14861.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14866",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14866.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14867",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14867.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.4",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14868",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14868.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14870",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14870.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14873",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14873.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.4",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14888",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14888.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14891",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14891.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-14893",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14893.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2001",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2001.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2002",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2002.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2010",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2010.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:L",
+				"cvss3BaseScore": "4.2",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2011",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2011.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2021",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2021.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2022",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2022.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.4",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2024",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2024.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2028",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2028.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2030",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2030.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2031",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2031.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2032",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2032.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "4.3",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2036",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2036.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2038",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2038.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.4",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2042",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2042.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "2.3",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2046",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2046.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.8",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2048",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2048.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:L/A:H",
+				"cvss3BaseScore": "5.0",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2055",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2055.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2056",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2056.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.4",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2058",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2058.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2060",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2060.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2061",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2061.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.4",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2065",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2065.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2070",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2070.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2072",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2072.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2076",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2076.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2081",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2081.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2087",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2087.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.4",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2088",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2088.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.4",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2122",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2122.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2146",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2146.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2164",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2164.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2166",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2166.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2169",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2169.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2170",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2170.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2171",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2171.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.4",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2172",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2172.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2174",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2174.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.4",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2178",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2178.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2179",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2179.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2180",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2180.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2193",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2193.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2194",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2194.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2196",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2196.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2201",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2201.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2202",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2202.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2203",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2203.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2208",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2208.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2212",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2212.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2213",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2213.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2215",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2215.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2217",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2217.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2226",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2226.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2230",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2230.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2232",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2232.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "1.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2278",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2278.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2293",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2293.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2298",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2298.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2299",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2299.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2300",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2300.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2301",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2301.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "2.7",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2304",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2304.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2305",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2305.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2307",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2307.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2308",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2308.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "2.7",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2339",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2339.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2340",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2340.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "2.7",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2342",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2342.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2352",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2352.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2354",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2354.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2356",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2356.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:H",
+				"cvss3BaseScore": "5.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2357",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2357.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2367",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2367.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2370",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2370.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2372",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2372.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.4",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2374",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2374.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "4.1",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2383",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2383.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2384",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2384.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2385",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2385.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:L/A:H",
+				"cvss3BaseScore": "5.0",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2387",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2387.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2389",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2389.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2390",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2390.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2399",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2399.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2402",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2402.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2410",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2410.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2412",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2412.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2417",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2417.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:H",
+				"cvss3BaseScore": "6.0",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2418",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2418.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2422",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2422.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2424",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2424.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2425",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2425.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2426",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2426.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2427",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2427.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2429",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2429.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2437",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2437.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2440",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2440.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2441",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2441.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-2444",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2444.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-35537",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35537.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-35629",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35629.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "4.9",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-09-21T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mecab-0:0.996-1.module+el8.3.0+242+87d3366a.9.aarch64.rpm",
+					"mecab-0:0.996-1.module+el8.3.0+242+87d3366a.9.src.rpm",
+					"mecab-0:0.996-1.module+el8.3.0+242+87d3366a.9.x86_64.rpm",
+					"mecab-debuginfo-0:0.996-1.module+el8.3.0+242+87d3366a.9.aarch64.rpm",
+					"mecab-debuginfo-0:0.996-1.module+el8.3.0+242+87d3366a.9.x86_64.rpm",
+					"mecab-debugsource-0:0.996-1.module+el8.3.0+242+87d3366a.9.aarch64.rpm",
+					"mecab-debugsource-0:0.996-1.module+el8.3.0+242+87d3366a.9.x86_64.rpm",
+					"mecab-ipadic-0:2.7.0.20070801-16.module+el8.3.0+242+87d3366a.aarch64.rpm",
+					"mecab-ipadic-0:2.7.0.20070801-16.module+el8.3.0+242+87d3366a.src.rpm",
+					"mecab-ipadic-0:2.7.0.20070801-16.module+el8.3.0+242+87d3366a.x86_64.rpm",
+					"mecab-ipadic-EUCJP-0:2.7.0.20070801-16.module+el8.3.0+242+87d3366a.aarch64.rpm",
+					"mecab-ipadic-EUCJP-0:2.7.0.20070801-16.module+el8.3.0+242+87d3366a.x86_64.rpm",
+					"mysql-0:8.0.26-1.module+el8.4.0+652+6de068a7.aarch64.rpm",
+					"mysql-0:8.0.26-1.module+el8.4.0+652+6de068a7.src.rpm",
+					"mysql-0:8.0.26-1.module+el8.4.0+652+6de068a7.x86_64.rpm",
+					"mysql-common-0:8.0.26-1.module+el8.4.0+652+6de068a7.aarch64.rpm",
+					"mysql-common-0:8.0.26-1.module+el8.4.0+652+6de068a7.x86_64.rpm",
+					"mysql-debuginfo-0:8.0.26-1.module+el8.4.0+652+6de068a7.aarch64.rpm",
+					"mysql-debuginfo-0:8.0.26-1.module+el8.4.0+652+6de068a7.x86_64.rpm",
+					"mysql-debugsource-0:8.0.26-1.module+el8.4.0+652+6de068a7.aarch64.rpm",
+					"mysql-debugsource-0:8.0.26-1.module+el8.4.0+652+6de068a7.x86_64.rpm",
+					"mysql-devel-0:8.0.26-1.module+el8.4.0+652+6de068a7.aarch64.rpm",
+					"mysql-devel-0:8.0.26-1.module+el8.4.0+652+6de068a7.x86_64.rpm",
+					"mysql-devel-debuginfo-0:8.0.26-1.module+el8.4.0+652+6de068a7.aarch64.rpm",
+					"mysql-devel-debuginfo-0:8.0.26-1.module+el8.4.0+652+6de068a7.x86_64.rpm",
+					"mysql-errmsg-0:8.0.26-1.module+el8.4.0+652+6de068a7.aarch64.rpm",
+					"mysql-errmsg-0:8.0.26-1.module+el8.4.0+652+6de068a7.x86_64.rpm",
+					"mysql-libs-0:8.0.26-1.module+el8.4.0+652+6de068a7.aarch64.rpm",
+					"mysql-libs-0:8.0.26-1.module+el8.4.0+652+6de068a7.x86_64.rpm",
+					"mysql-libs-debuginfo-0:8.0.26-1.module+el8.4.0+652+6de068a7.aarch64.rpm",
+					"mysql-libs-debuginfo-0:8.0.26-1.module+el8.4.0+652+6de068a7.x86_64.rpm",
+					"mysql-server-0:8.0.26-1.module+el8.4.0+652+6de068a7.aarch64.rpm",
+					"mysql-server-0:8.0.26-1.module+el8.4.0+652+6de068a7.x86_64.rpm",
+					"mysql-server-debuginfo-0:8.0.26-1.module+el8.4.0+652+6de068a7.aarch64.rpm",
+					"mysql-server-debuginfo-0:8.0.26-1.module+el8.4.0+652+6de068a7.x86_64.rpm",
+					"mysql-test-0:8.0.26-1.module+el8.4.0+652+6de068a7.aarch64.rpm",
+					"mysql-test-0:8.0.26-1.module+el8.4.0+652+6de068a7.x86_64.rpm",
+					"mysql-test-debuginfo-0:8.0.26-1.module+el8.4.0+652+6de068a7.aarch64.rpm",
+					"mysql-test-debuginfo-0:8.0.26-1.module+el8.4.0+652+6de068a7.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

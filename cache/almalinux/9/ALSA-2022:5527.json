@@ -1,0 +1,99 @@
+{
+	"updateinfo_id": "ALSA-2022:5527",
+	"fromstr": "packager@almalinux.org",
+	"title": "Important: squid security update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Important",
+	"summary": "An update for squid is now available for AlmaLinux 9.",
+	"pushcount": "1",
+	"pkglist": {
+		"name": "almalinux-9-for-aarch64-appstream-rpms__9_default",
+		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_default",
+		"packages": [
+			{
+				"src": "squid-5.2-1.el9_0.1.src.rpm",
+				"name": "squid",
+				"epoch": "7",
+				"version": "5.2",
+				"release": "1.el9_0.1",
+				"arch": "aarch64",
+				"filename": "squid-5.2-1.el9_0.1.aarch64.rpm",
+				"sum": "61debed15088bbd352f8fea33ceb0ac11ce4f7374c1c0d924a08e6648da2368e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "squid-5.2-1.el9_0.1.src.rpm",
+				"name": "squid",
+				"epoch": "7",
+				"version": "5.2",
+				"release": "1.el9_0.1",
+				"arch": "x86_64",
+				"filename": "squid-5.2-1.el9_0.1.x86_64.rpm",
+				"sum": "bcbc9f5fa02d1924f595c20ec89b62034ca0adafbe3c41aad4a2c83f9a2ce6f2",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "squid-5.2-1.el9_0.1.src.rpm",
+				"name": "squid",
+				"epoch": "7",
+				"version": "5.2",
+				"release": "1.el9_0.1",
+				"arch": "s390x",
+				"filename": "squid-5.2-1.el9_0.1.s390x.rpm",
+				"sum": "7df384b54cb6fd1394e05d220d400324b307abe46cf75b19119b576f4ab68400",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "squid-5.2-1.el9_0.1.src.rpm",
+				"name": "squid",
+				"epoch": "7",
+				"version": "5.2",
+				"release": "1.el9_0.1",
+				"arch": "ppc64le",
+				"filename": "squid-5.2-1.el9_0.1.ppc64le.rpm",
+				"sum": "4e3d724ca6edd8a7ee2d98db54677747b7215095c39581d1d08516bb0be06a11",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "Squid is a high-performance proxy caching server for web clients, supporting FTP, Gopher, and HTTP data objects.\nSecurity Fix(es):\n* squid: DoS when processing gopher server responses (CVE-2021-46784)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+	"references": [
+		{
+			"id": "RHSA-2022:5527",
+			"title": "",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5527"
+		},
+		{
+			"id": "CVE-2021-46784",
+			"title": "",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2021-46784"
+		},
+		{
+			"id": "2100721",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2100721"
+		},
+		{
+			"id": "ALSA-2022:5527",
+			"title": "ALSA-2022:5527",
+			"type": "self",
+			"href": "https://errata.almalinux.org/9/ALSA-2022-5527.html"
+		}
+	],
+	"issued_date": {
+		"$date": 1657152000000
+	},
+	"updated_date": {
+		"$date": 1658423047000
+	}
+}

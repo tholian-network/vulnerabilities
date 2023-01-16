@@ -1,0 +1,50 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:5326",
+		"synopsis": "Low: compat-openssl10 security update",
+		"severity": "SEVERITY_LOW",
+		"topic": "An update for compat-openssl10 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "OpenSSL is a toolkit that implements the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols, as well as a full-strength general-purpose cryptography library. compat-openssl10 provides the legacy 1.0 version of OpenSSL for use with older binaries.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2062202",
+				"description": "CVE-2022-0778 openssl: Infinite loop in BN_mod_sqrt() reachable when parsing certificates",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2062202"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-0778",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0778.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-835"
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"compat-openssl10-1:1.0.2o-4.el8_6.aarch64.rpm",
+					"compat-openssl10-1:1.0.2o-4.el8_6.i686.rpm",
+					"compat-openssl10-1:1.0.2o-4.el8_6.src.rpm",
+					"compat-openssl10-1:1.0.2o-4.el8_6.x86_64.rpm",
+					"compat-openssl10-debuginfo-1:1.0.2o-4.el8_6.aarch64.rpm",
+					"compat-openssl10-debuginfo-1:1.0.2o-4.el8_6.i686.rpm",
+					"compat-openssl10-debuginfo-1:1.0.2o-4.el8_6.x86_64.rpm",
+					"compat-openssl10-debugsource-1:1.0.2o-4.el8_6.aarch64.rpm",
+					"compat-openssl10-debugsource-1:1.0.2o-4.el8_6.i686.rpm",
+					"compat-openssl10-debugsource-1:1.0.2o-4.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

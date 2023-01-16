@@ -1,0 +1,64 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1842",
+		"synopsis": "Moderate: exiv2 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for exiv2 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Exiv2 is a C++ library to access image metadata, supporting read and write access to the Exif, IPTC and XMP metadata, Exif MakerNote support, extract and delete methods for Exif thumbnails, classes to access Ifd, and support for various image formats.\nThe following packages have been upgraded to a later upstream version: exiv2 (0.27.5). (BZ#2018422)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2002678",
+				"description": "CVE-2020-18898 exiv2: stack exhaustion issue in the printIFDStructure function may lead to DoS",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2002678"
+			},
+			{
+				"ticket": "2018422",
+				"description": "Rebase Exiv2 to 0.27.5",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2018422"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-18898",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-18898.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-787"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"exiv2-0:0.27.5-2.el8.aarch64.rpm",
+					"exiv2-0:0.27.5-2.el8.src.rpm",
+					"exiv2-0:0.27.5-2.el8.x86_64.rpm",
+					"exiv2-debuginfo-0:0.27.5-2.el8.aarch64.rpm",
+					"exiv2-debuginfo-0:0.27.5-2.el8.i686.rpm",
+					"exiv2-debuginfo-0:0.27.5-2.el8.x86_64.rpm",
+					"exiv2-debugsource-0:0.27.5-2.el8.aarch64.rpm",
+					"exiv2-debugsource-0:0.27.5-2.el8.x86_64.rpm",
+					"exiv2-devel-0:0.27.5-2.el8.aarch64.rpm",
+					"exiv2-devel-0:0.27.5-2.el8.i686.rpm",
+					"exiv2-devel-0:0.27.5-2.el8.x86_64.rpm",
+					"exiv2-doc-0:0.27.5-2.el8.noarch.rpm",
+					"exiv2-libs-0:0.27.5-2.el8.aarch64.rpm",
+					"exiv2-libs-0:0.27.5-2.el8.i686.rpm",
+					"exiv2-libs-0:0.27.5-2.el8.x86_64.rpm",
+					"exiv2-libs-debuginfo-0:0.27.5-2.el8.aarch64.rpm",
+					"exiv2-libs-debuginfo-0:0.27.5-2.el8.i686.rpm",
+					"exiv2-libs-debuginfo-0:0.27.5-2.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

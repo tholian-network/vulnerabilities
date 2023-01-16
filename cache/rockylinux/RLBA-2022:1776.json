@@ -1,0 +1,54 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1776",
+		"synopsis": "cloud-init bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for cloud-init is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1862933",
+				"description": "cloud-init fails with ValueError: need more than 1 value to unpack[rhel-8]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1862933"
+			},
+			{
+				"ticket": "2021538",
+				"description": "cloud-init.service fails to start after package update",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2021538"
+			},
+			{
+				"ticket": "2046540",
+				"description": "cloud-init writes route6-$DEVICE config with a HEX netmask. ip route does not like : Error: inet6 prefix is expected rather than \"fd00:fd00:fd00::/ffff:ffff:ffff:ffff::\".",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2046540"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1776",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1776",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cloud-init-0:21.1-15.el8_6.3.noarch.rpm",
+					"cloud-init-0:21.1-15.el8_6.3.src.rpm"
+				]
+			}
+		}
+	}
+}

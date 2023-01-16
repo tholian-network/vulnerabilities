@@ -1,0 +1,36 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5323",
+		"synopsis": "alsa-sof-firmware bug fix update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An udpate for alsa-sof-firmware is now available for Rocky Linux 8.",
+		"description": "The alsa-sof-firmware package contains the firmware binaries for the Sound Open Firmware project.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2022:5323",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5323",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": true,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"alsa-sof-firmware-0:1.9.3-4.el8_6.noarch.rpm",
+					"alsa-sof-firmware-0:1.9.3-4.el8_6.src.rpm",
+					"alsa-sof-firmware-debug-0:1.9.3-4.el8_6.noarch.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,69 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7105",
+		"synopsis": "Moderate: gnutls security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for gnutls is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The gnutls packages provide the GNU Transport Layer Security (GnuTLS) library, which implements cryptographic algorithms and protocols such as SSL, TLS, and DTLS.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2108977",
+				"description": "CVE-2022-2509 gnutls: Double free during gnutls_pkcs7_verify",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2108977"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-2509",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-2509.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-11-01T05:27:58.859756Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gnutls-0:3.6.16-5.el8_6.aarch64.rpm",
+					"gnutls-0:3.6.16-5.el8_6.i686.rpm",
+					"gnutls-0:3.6.16-5.el8_6.src.rpm",
+					"gnutls-0:3.6.16-5.el8_6.x86_64.rpm",
+					"gnutls-c++-0:3.6.16-5.el8_6.aarch64.rpm",
+					"gnutls-c++-0:3.6.16-5.el8_6.i686.rpm",
+					"gnutls-c++-0:3.6.16-5.el8_6.x86_64.rpm",
+					"gnutls-c++-debuginfo-0:3.6.16-5.el8_6.aarch64.rpm",
+					"gnutls-c++-debuginfo-0:3.6.16-5.el8_6.i686.rpm",
+					"gnutls-c++-debuginfo-0:3.6.16-5.el8_6.x86_64.rpm",
+					"gnutls-dane-0:3.6.16-5.el8_6.aarch64.rpm",
+					"gnutls-dane-0:3.6.16-5.el8_6.i686.rpm",
+					"gnutls-dane-0:3.6.16-5.el8_6.x86_64.rpm",
+					"gnutls-dane-debuginfo-0:3.6.16-5.el8_6.aarch64.rpm",
+					"gnutls-dane-debuginfo-0:3.6.16-5.el8_6.i686.rpm",
+					"gnutls-dane-debuginfo-0:3.6.16-5.el8_6.x86_64.rpm",
+					"gnutls-debuginfo-0:3.6.16-5.el8_6.aarch64.rpm",
+					"gnutls-debuginfo-0:3.6.16-5.el8_6.i686.rpm",
+					"gnutls-debuginfo-0:3.6.16-5.el8_6.x86_64.rpm",
+					"gnutls-debugsource-0:3.6.16-5.el8_6.aarch64.rpm",
+					"gnutls-debugsource-0:3.6.16-5.el8_6.i686.rpm",
+					"gnutls-debugsource-0:3.6.16-5.el8_6.x86_64.rpm",
+					"gnutls-devel-0:3.6.16-5.el8_6.aarch64.rpm",
+					"gnutls-devel-0:3.6.16-5.el8_6.i686.rpm",
+					"gnutls-devel-0:3.6.16-5.el8_6.x86_64.rpm",
+					"gnutls-utils-0:3.6.16-5.el8_6.aarch64.rpm",
+					"gnutls-utils-0:3.6.16-5.el8_6.x86_64.rpm",
+					"gnutls-utils-debuginfo-0:3.6.16-5.el8_6.aarch64.rpm",
+					"gnutls-utils-debuginfo-0:3.6.16-5.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

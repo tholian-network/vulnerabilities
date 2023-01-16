@@ -1,0 +1,71 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5817",
+		"synopsis": "dbus bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for dbus is now available for Rocky Linux 8.",
+		"description": "D-Bus is a system for sending messages between applications. It is used both for the system-wide message bus service, and as a per-user-login-session messaging facility.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2097784",
+				"description": "gio process invoked from /usr/libexec/dbus-1/dbus-kill-process-with-session never quits [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2097784"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:5817",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5817",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-08-02T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"dbus-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-1:1.12.8-18.el8_6.1.src.rpm",
+					"dbus-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-common-1:1.12.8-18.el8_6.1.noarch.rpm",
+					"dbus-daemon-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-daemon-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-daemon-debuginfo-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-daemon-debuginfo-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-debuginfo-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-debuginfo-1:1.12.8-18.el8_6.1.i686.rpm",
+					"dbus-debuginfo-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-debugsource-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-debugsource-1:1.12.8-18.el8_6.1.i686.rpm",
+					"dbus-debugsource-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-devel-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-devel-1:1.12.8-18.el8_6.1.i686.rpm",
+					"dbus-devel-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-libs-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-libs-1:1.12.8-18.el8_6.1.i686.rpm",
+					"dbus-libs-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-libs-debuginfo-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-libs-debuginfo-1:1.12.8-18.el8_6.1.i686.rpm",
+					"dbus-libs-debuginfo-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-tools-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-tools-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-tools-debuginfo-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-tools-debuginfo-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-x11-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-x11-1:1.12.8-18.el8_6.1.x86_64.rpm",
+					"dbus-x11-debuginfo-1:1.12.8-18.el8_6.1.aarch64.rpm",
+					"dbus-x11-debuginfo-1:1.12.8-18.el8_6.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

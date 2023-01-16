@@ -1,0 +1,51 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4442",
+		"synopsis": "lshw bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for lshw is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1955250",
+				"description": "Missing memory information",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1955250"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4442",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4442",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"lshw-0:B.02.19.2-6.el8.aarch64.rpm",
+					"lshw-0:B.02.19.2-6.el8.src.rpm",
+					"lshw-0:B.02.19.2-6.el8.x86_64.rpm",
+					"lshw-debuginfo-0:B.02.19.2-6.el8.aarch64.rpm",
+					"lshw-debuginfo-0:B.02.19.2-6.el8.x86_64.rpm",
+					"lshw-debugsource-0:B.02.19.2-6.el8.aarch64.rpm",
+					"lshw-debugsource-0:B.02.19.2-6.el8.x86_64.rpm",
+					"lshw-gui-0:B.02.19.2-6.el8.aarch64.rpm",
+					"lshw-gui-0:B.02.19.2-6.el8.x86_64.rpm",
+					"lshw-gui-debuginfo-0:B.02.19.2-6.el8.aarch64.rpm",
+					"lshw-gui-debuginfo-0:B.02.19.2-6.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

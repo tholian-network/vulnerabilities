@@ -1,0 +1,67 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1866",
+		"synopsis": "createrepo_c bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for createrepo_c is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1992209",
+				"description": "createrepo --update removes the module.yaml from the repodata if \"modules.yaml\" is not in the directory",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992209"
+			},
+			{
+				"ticket": "2062299",
+				"description": "Revert unwanted API for parsing main metadata together that is being added",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2062299"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1866",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1866",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"createrepo_c-0:0.17.7-5.el8.aarch64.rpm",
+					"createrepo_c-0:0.17.7-5.el8.src.rpm",
+					"createrepo_c-0:0.17.7-5.el8.x86_64.rpm",
+					"createrepo_c-debuginfo-0:0.17.7-5.el8.aarch64.rpm",
+					"createrepo_c-debuginfo-0:0.17.7-5.el8.i686.rpm",
+					"createrepo_c-debuginfo-0:0.17.7-5.el8.x86_64.rpm",
+					"createrepo_c-debugsource-0:0.17.7-5.el8.aarch64.rpm",
+					"createrepo_c-debugsource-0:0.17.7-5.el8.x86_64.rpm",
+					"createrepo_c-devel-0:0.17.7-5.el8.aarch64.rpm",
+					"createrepo_c-devel-0:0.17.7-5.el8.i686.rpm",
+					"createrepo_c-devel-0:0.17.7-5.el8.x86_64.rpm",
+					"createrepo_c-libs-0:0.17.7-5.el8.aarch64.rpm",
+					"createrepo_c-libs-0:0.17.7-5.el8.i686.rpm",
+					"createrepo_c-libs-0:0.17.7-5.el8.x86_64.rpm",
+					"createrepo_c-libs-debuginfo-0:0.17.7-5.el8.aarch64.rpm",
+					"createrepo_c-libs-debuginfo-0:0.17.7-5.el8.i686.rpm",
+					"createrepo_c-libs-debuginfo-0:0.17.7-5.el8.x86_64.rpm",
+					"python3-createrepo_c-0:0.17.7-5.el8.aarch64.rpm",
+					"python3-createrepo_c-0:0.17.7-5.el8.x86_64.rpm",
+					"python3-createrepo_c-debuginfo-0:0.17.7-5.el8.aarch64.rpm",
+					"python3-createrepo_c-debuginfo-0:0.17.7-5.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

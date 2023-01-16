@@ -1,0 +1,119 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:2110",
+		"synopsis": "Low: grub2 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_LOW",
+		"topic": "An update for grub2 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The grub2 packages provide version 2 of the Grand Unified Boot Loader (GRUB), a highly configurable and customizable boot loader with modular architecture. The packages support a variety of kernel formats, file systems, computer architectures, and hardware devices.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1809246",
+				"description": "[RFE] GRUB does not consider information from proxy dhcp server",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1809246"
+			},
+			{
+				"ticket": "1899903",
+				"description": "grub2-mkconfig is never run on kernel upgrade even if GRUB_ENABLE_BLSCFG=false",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1899903"
+			},
+			{
+				"ticket": "1914575",
+				"description": "grub-boot-success.service should not be started inside systemd-nspawn container",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1914575"
+			},
+			{
+				"ticket": "2016269",
+				"description": "RPM grub2-tools-minimal is shipping prelink config files although prelink is absent in rhel8",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016269"
+			},
+			{
+				"ticket": "2020927",
+				"description": "GRUB_TERMINAL_INPUT=at_keyboard makes grub stay on boot menu instead of starting the timeout",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2020927"
+			},
+			{
+				"ticket": "2024170",
+				"description": "CVE-2021-3981 grub2: Incorrect permission in grub.cfg allow unprivileged user to read the file content",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2024170"
+			},
+			{
+				"ticket": "2048904",
+				"description": "Cannot EFI chainload onto local disk when EFI partition is in Software Raid",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2048904"
+			},
+			{
+				"ticket": "2061252",
+				"description": "grub on OpenFirmware : search --hint-ieee1275= does not work",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2061252"
+			},
+			{
+				"ticket": "2069157",
+				"description": "grub2 signed by Red Hat Test Certificate",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2069157"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-3981",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3981.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "3.3",
+				"cwe": "CWE-276"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"grub2-1:2.02-123.el8_6.8.rocky.0.2.src.rpm",
+					"grub2-common-1:2.02-123.el8_6.8.rocky.0.2.noarch.rpm",
+					"grub2-debuginfo-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-debuginfo-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-debugsource-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-debugsource-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-efi-aa64-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-efi-aa64-cdboot-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-efi-aa64-modules-1:2.02-123.el8_6.8.rocky.0.2.noarch.rpm",
+					"grub2-efi-ia32-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-efi-ia32-cdboot-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-efi-ia32-modules-1:2.02-123.el8_6.8.rocky.0.2.noarch.rpm",
+					"grub2-efi-x64-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-efi-x64-cdboot-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-efi-x64-modules-1:2.02-123.el8_6.8.rocky.0.2.noarch.rpm",
+					"grub2-pc-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-pc-modules-1:2.02-123.el8_6.8.rocky.0.2.noarch.rpm",
+					"grub2-tools-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-tools-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-tools-debuginfo-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-tools-debuginfo-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-tools-efi-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-tools-efi-debuginfo-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-tools-extra-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-tools-extra-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-tools-extra-debuginfo-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-tools-extra-debuginfo-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-tools-minimal-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-tools-minimal-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm",
+					"grub2-tools-minimal-debuginfo-1:2.02-123.el8_6.8.rocky.0.2.aarch64.rpm",
+					"grub2-tools-minimal-debuginfo-1:2.02-123.el8_6.8.rocky.0.2.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:1881",
+		"synopsis": "nispor bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for nispor is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1996619",
+				"description": "[Rebase] Rebase Nispor to last stable release",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1996619"
+			},
+			{
+				"ticket": "2026621",
+				"description": "VLAN filtering cannot be configured with Intel X710",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2026621"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2022:1881",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:1881",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nispor-0:1.2.3-1.el8.aarch64.rpm",
+					"nispor-0:1.2.3-1.el8.i686.rpm",
+					"nispor-0:1.2.3-1.el8.src.rpm",
+					"nispor-0:1.2.3-1.el8.x86_64.rpm",
+					"nispor-debuginfo-0:1.2.3-1.el8.aarch64.rpm",
+					"nispor-debuginfo-0:1.2.3-1.el8.i686.rpm",
+					"nispor-debuginfo-0:1.2.3-1.el8.x86_64.rpm",
+					"nispor-debugsource-0:1.2.3-1.el8.aarch64.rpm",
+					"nispor-debugsource-0:1.2.3-1.el8.i686.rpm",
+					"nispor-debugsource-0:1.2.3-1.el8.x86_64.rpm",
+					"nispor-devel-0:1.2.3-1.el8.aarch64.rpm",
+					"nispor-devel-0:1.2.3-1.el8.i686.rpm",
+					"nispor-devel-0:1.2.3-1.el8.x86_64.rpm",
+					"python3-nispor-0:1.2.3-1.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

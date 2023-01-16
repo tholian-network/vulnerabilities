@@ -1,0 +1,42 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:4152",
+		"synopsis": "modulemd-tools bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for modulemd-tools is now available for Rocky Linux8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1801747",
+				"description": "[RFE] Create module YAML file based from a given set of RPM artifacts",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1801747"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:4152",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:4152",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"modulemd-tools-0:0.7-6.el8.noarch.rpm",
+					"modulemd-tools-0:0.7-6.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

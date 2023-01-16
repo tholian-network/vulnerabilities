@@ -1,0 +1,40 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4443",
+		"synopsis": "python-cryptography bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for python-cryptography is now available for Rocky Enterprise Software Foundation EnterpriseLinux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2021:4443",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4443",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"python3-cryptography-0:3.2.1-5.el8.aarch64.rpm",
+					"python3-cryptography-0:3.2.1-5.el8.x86_64.rpm",
+					"python3-cryptography-debuginfo-0:3.2.1-5.el8.aarch64.rpm",
+					"python3-cryptography-debuginfo-0:3.2.1-5.el8.x86_64.rpm",
+					"python-cryptography-0:3.2.1-5.el8.src.rpm",
+					"python-cryptography-debugsource-0:3.2.1-5.el8.aarch64.rpm",
+					"python-cryptography-debugsource-0:3.2.1-5.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

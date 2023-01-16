@@ -1,0 +1,325 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:1884",
+		"synopsis": "idm:client and idm:DL1 bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for the idm:client and idm:DL1 modules is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1731484",
+				"description": "support for SHA384withRSA signing algo missing",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1731484"
+			},
+			{
+				"ticket": "1740702",
+				"description": "IdM should call into Dogtag to dynamically update the security domain info",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1740702"
+			},
+			{
+				"ticket": "1776687",
+				"description": "ipa-healthcheck command takes some extra time to complete when dirsrv instance is stopped.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1776687"
+			},
+			{
+				"ticket": "1921007",
+				"description": "ipa-server-install : No such file or directory: '/etc/authselect/user-nsswitch.conf'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1921007"
+			},
+			{
+				"ticket": "1959752",
+				"description": "ipa-advise unconditionally uses modutil to load opensc module",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1959752"
+			},
+			{
+				"ticket": "1978747",
+				"description": "[regression] IPA server in debug mode fails to run because time.perf_counter_ns is Python 3.7+",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1978747"
+			},
+			{
+				"ticket": "1981322",
+				"description": "[RFE] Add support for managing subuids and subgids in FreeIPA",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1981322"
+			},
+			{
+				"ticket": "1983060",
+				"description": "ipa-healthcheck complains about pki.server.healthcheck errors even CA is not configured on the replica.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1983060"
+			},
+			{
+				"ticket": "1985069",
+				"description": "Cannot remove First master server with KRA after the server hard disk failed ( destructed)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1985069"
+			},
+			{
+				"ticket": "1986052",
+				"description": "fix automountlocation-tofiles output",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986052"
+			},
+			{
+				"ticket": "2000917",
+				"description": "RHEL 8.5 IPA Replica setup fails against a RHEL 7.9 IPA server [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000917"
+			},
+			{
+				"ticket": "2000919",
+				"description": "Dirsrv memory leak [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000919"
+			},
+			{
+				"ticket": "2001500",
+				"description": "reinstalling samba client causes winbindd coredump",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001500"
+			},
+			{
+				"ticket": "2002718",
+				"description": "AVC denied  { read } comm=\"ipa-custodia\" on aarch64 during installation of ipa-server [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2002718"
+			},
+			{
+				"ticket": "2002729",
+				"description": "extdom: LDAP_INVALID_SYNTAX returned instead of LDAP_NO_SUCH_OBJECT [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2002729"
+			},
+			{
+				"ticket": "2004165",
+				"description": "ipa migrate-ds command fails to warn when compat plugin is enabled [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2004165"
+			},
+			{
+				"ticket": "2004166",
+				"description": "Backport latest test fixes in python3-ipatests [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2004166"
+			},
+			{
+				"ticket": "2004992",
+				"description": "ipa cert-request replaces user certificate instead of adding [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2004992"
+			},
+			{
+				"ticket": "2006017",
+				"description": "Regression in ipa-and-similar test suite during test runs",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2006017"
+			},
+			{
+				"ticket": "2009114",
+				"description": "IDM Web UI creates invalid PTR records",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2009114"
+			},
+			{
+				"ticket": "2015607",
+				"description": "[Rebase] Rebase ipa to latest 4.9.x release RHEL8",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2015607"
+			},
+			{
+				"ticket": "2022483",
+				"description": "Unable to join RHEL 8.5 Replica to RHEL 7.9 Master for migration purposes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2022483"
+			},
+			{
+				"ticket": "2022762",
+				"description": "bind-dyndb-ldap: BIND 9.11 rebase changes libdns, rebuild is required",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2022762"
+			},
+			{
+				"ticket": "2026732",
+				"description": "Missing bind-pkcs11-utils causing failures in OpenDNSSec in RHEL9 ; the fix affects RHEL8",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2026732"
+			},
+			{
+				"ticket": "2031825",
+				"description": "Changing default pac type to 'nfs:NONE and MS-PAC' doesnot display error 'ipa: ERROR: no modifications to be performed'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2031825"
+			},
+			{
+				"ticket": "2032738",
+				"description": "IPA LDAP  plugin ipa-cldap memory leak",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2032738"
+			},
+			{
+				"ticket": "2032806",
+				"description": "Error replacing a replica with CentOS Stream 9",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2032806"
+			},
+			{
+				"ticket": "2033342",
+				"description": "User can't log in after ipa-user-mod --user-auth-type=hardened",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2033342"
+			},
+			{
+				"ticket": "2041995",
+				"description": "ipa-healthcheck: Source 'pki.server.healthcheck.clones.connectivity_and_data' not found",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2041995"
+			},
+			{
+				"ticket": "2048509",
+				"description": "[rhel-8.6.0] Backport latest test fixes in python3-ipatests",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2048509"
+			},
+			{
+				"ticket": "2048558",
+				"description": "ipa-join tests are failing due to changes in expected output",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2048558"
+			},
+			{
+				"ticket": "2049167",
+				"description": "KRA GetStatus service blocked by IPA proxy",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2049167"
+			},
+			{
+				"ticket": "2051575",
+				"description": "Enable ipa-ccache-sweep.timer during server installation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2051575"
+			},
+			{
+				"ticket": "2053024",
+				"description": "[rhel-8.6] Backport latest test fixes in python3-ipatests",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2053024"
+			},
+			{
+				"ticket": "2055316",
+				"description": "ipa-healthcheck: pki sources are not available when IPA is not configured with a CA",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2055316"
+			},
+			{
+				"ticket": "2057505",
+				"description": "[rhel-8.6] Backport latest test fixes in python3-ipatests",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2057505"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2022:1884",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:1884",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"bind-dyndb-ldap-0:11.6-3.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"bind-dyndb-ldap-0:11.6-3.module+el8.6.0+796+128eec25.src.rpm",
+					"bind-dyndb-ldap-0:11.6-3.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"bind-dyndb-ldap-debuginfo-0:11.6-3.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"bind-dyndb-ldap-debuginfo-0:11.6-3.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"bind-dyndb-ldap-debugsource-0:11.6-3.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"bind-dyndb-ldap-debugsource-0:11.6-3.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"ipa-0:4.9.8-6.module+el8.6.0+797+07647629.src.rpm",
+					"ipa-0:4.9.8-7.module+el8.6.0+796+128eec25.src.rpm",
+					"ipa-client-0:4.9.8-6.module+el8.6.0+797+07647629.aarch64.rpm",
+					"ipa-client-0:4.9.8-6.module+el8.6.0+797+07647629.x86_64.rpm",
+					"ipa-client-0:4.9.8-7.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"ipa-client-0:4.9.8-7.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"ipa-client-common-0:4.9.8-6.module+el8.6.0+797+07647629.noarch.rpm",
+					"ipa-client-common-0:4.9.8-7.module+el8.6.0+796+128eec25.noarch.rpm",
+					"ipa-client-debuginfo-0:4.9.8-6.module+el8.6.0+797+07647629.aarch64.rpm",
+					"ipa-client-debuginfo-0:4.9.8-6.module+el8.6.0+797+07647629.x86_64.rpm",
+					"ipa-client-debuginfo-0:4.9.8-7.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"ipa-client-debuginfo-0:4.9.8-7.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"ipa-client-epn-0:4.9.8-6.module+el8.6.0+797+07647629.aarch64.rpm",
+					"ipa-client-epn-0:4.9.8-6.module+el8.6.0+797+07647629.x86_64.rpm",
+					"ipa-client-epn-0:4.9.8-7.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"ipa-client-epn-0:4.9.8-7.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"ipa-client-samba-0:4.9.8-6.module+el8.6.0+797+07647629.aarch64.rpm",
+					"ipa-client-samba-0:4.9.8-6.module+el8.6.0+797+07647629.x86_64.rpm",
+					"ipa-client-samba-0:4.9.8-7.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"ipa-client-samba-0:4.9.8-7.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"ipa-common-0:4.9.8-6.module+el8.6.0+797+07647629.noarch.rpm",
+					"ipa-common-0:4.9.8-7.module+el8.6.0+796+128eec25.noarch.rpm",
+					"ipa-debuginfo-0:4.9.8-6.module+el8.6.0+797+07647629.aarch64.rpm",
+					"ipa-debuginfo-0:4.9.8-6.module+el8.6.0+797+07647629.x86_64.rpm",
+					"ipa-debuginfo-0:4.9.8-7.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"ipa-debuginfo-0:4.9.8-7.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"ipa-debugsource-0:4.9.8-6.module+el8.6.0+797+07647629.aarch64.rpm",
+					"ipa-debugsource-0:4.9.8-6.module+el8.6.0+797+07647629.x86_64.rpm",
+					"ipa-debugsource-0:4.9.8-7.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"ipa-debugsource-0:4.9.8-7.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"ipa-healthcheck-0:0.7-10.module+el8.6.0+796+128eec25.noarch.rpm",
+					"ipa-healthcheck-0:0.7-10.module+el8.6.0+796+128eec25.src.rpm",
+					"ipa-healthcheck-core-0:0.7-10.module+el8.6.0+796+128eec25.noarch.rpm",
+					"ipa-python-compat-0:4.9.8-6.module+el8.6.0+797+07647629.noarch.rpm",
+					"ipa-python-compat-0:4.9.8-7.module+el8.6.0+796+128eec25.noarch.rpm",
+					"ipa-selinux-0:4.9.8-6.module+el8.6.0+797+07647629.noarch.rpm",
+					"ipa-selinux-0:4.9.8-7.module+el8.6.0+796+128eec25.noarch.rpm",
+					"ipa-server-0:4.9.8-7.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"ipa-server-0:4.9.8-7.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"ipa-server-common-0:4.9.8-7.module+el8.6.0+796+128eec25.noarch.rpm",
+					"ipa-server-debuginfo-0:4.9.8-7.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"ipa-server-debuginfo-0:4.9.8-7.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"ipa-server-dns-0:4.9.8-7.module+el8.6.0+796+128eec25.noarch.rpm",
+					"ipa-server-trust-ad-0:4.9.8-7.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"ipa-server-trust-ad-0:4.9.8-7.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"ipa-server-trust-ad-debuginfo-0:4.9.8-7.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"ipa-server-trust-ad-debuginfo-0:4.9.8-7.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"python3-ipaclient-0:4.9.8-6.module+el8.6.0+797+07647629.noarch.rpm",
+					"python3-ipaclient-0:4.9.8-7.module+el8.6.0+796+128eec25.noarch.rpm",
+					"python3-ipalib-0:4.9.8-6.module+el8.6.0+797+07647629.noarch.rpm",
+					"python3-ipalib-0:4.9.8-7.module+el8.6.0+796+128eec25.noarch.rpm",
+					"python3-ipaserver-0:4.9.8-7.module+el8.6.0+796+128eec25.noarch.rpm",
+					"python3-ipatests-0:4.9.8-7.module+el8.6.0+796+128eec25.noarch.rpm",
+					"python3-jwcrypto-0:0.5.0-1.module+el8.4.0+430+1dcf16bb.noarch.rpm",
+					"python3-kdcproxy-0:0.4-5.module+el8.3.0+244+0b2ae752.noarch.rpm",
+					"python3-pyusb-0:1.0.0-9.module+el8.4.0+430+1dcf16bb.noarch.rpm",
+					"python3-yubico-0:1.3.2-9.module+el8.4.0+430+1dcf16bb.noarch.rpm",
+					"python-jwcrypto-0:0.5.0-1.module+el8.4.0+430+1dcf16bb.src.rpm",
+					"python-kdcproxy-0:0.4-5.module+el8.3.0+244+0b2ae752.src.rpm",
+					"python-yubico-0:1.3.2-9.module+el8.4.0+430+1dcf16bb.src.rpm",
+					"pyusb-0:1.0.0-9.module+el8.4.0+430+1dcf16bb.src.rpm",
+					"slapi-nis-0:0.56.6-4.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"slapi-nis-0:0.56.6-4.module+el8.6.0+796+128eec25.src.rpm",
+					"slapi-nis-0:0.56.6-4.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"slapi-nis-debuginfo-0:0.56.6-4.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"slapi-nis-debuginfo-0:0.56.6-4.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"slapi-nis-debugsource-0:0.56.6-4.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"slapi-nis-debugsource-0:0.56.6-4.module+el8.6.0+796+128eec25.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

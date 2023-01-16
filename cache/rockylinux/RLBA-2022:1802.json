@@ -1,0 +1,73 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1802",
+		"synopsis": "gcc-toolset-11-elfutils bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gcc-toolset-11-elfutils is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2000942",
+				"description": "gcc-toolset-11-elfutils-devel depends on elfutils-libelf-devel",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000942"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1802",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1802",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gcc-toolset-11-elfutils-0:0.185-5.el8.aarch64.rpm",
+					"gcc-toolset-11-elfutils-0:0.185-5.el8.src.rpm",
+					"gcc-toolset-11-elfutils-0:0.185-5.el8.x86_64.rpm",
+					"gcc-toolset-11-elfutils-debuginfo-0:0.185-5.el8.aarch64.rpm",
+					"gcc-toolset-11-elfutils-debuginfo-0:0.185-5.el8.i686.rpm",
+					"gcc-toolset-11-elfutils-debuginfo-0:0.185-5.el8.x86_64.rpm",
+					"gcc-toolset-11-elfutils-debuginfod-client-0:0.185-5.el8.aarch64.rpm",
+					"gcc-toolset-11-elfutils-debuginfod-client-0:0.185-5.el8.i686.rpm",
+					"gcc-toolset-11-elfutils-debuginfod-client-0:0.185-5.el8.x86_64.rpm",
+					"gcc-toolset-11-elfutils-debuginfod-client-debuginfo-0:0.185-5.el8.aarch64.rpm",
+					"gcc-toolset-11-elfutils-debuginfod-client-debuginfo-0:0.185-5.el8.i686.rpm",
+					"gcc-toolset-11-elfutils-debuginfod-client-debuginfo-0:0.185-5.el8.x86_64.rpm",
+					"gcc-toolset-11-elfutils-debuginfod-client-devel-0:0.185-5.el8.aarch64.rpm",
+					"gcc-toolset-11-elfutils-debuginfod-client-devel-0:0.185-5.el8.i686.rpm",
+					"gcc-toolset-11-elfutils-debuginfod-client-devel-0:0.185-5.el8.x86_64.rpm",
+					"gcc-toolset-11-elfutils-devel-0:0.185-5.el8.aarch64.rpm",
+					"gcc-toolset-11-elfutils-devel-0:0.185-5.el8.i686.rpm",
+					"gcc-toolset-11-elfutils-devel-0:0.185-5.el8.x86_64.rpm",
+					"gcc-toolset-11-elfutils-libelf-0:0.185-5.el8.aarch64.rpm",
+					"gcc-toolset-11-elfutils-libelf-0:0.185-5.el8.i686.rpm",
+					"gcc-toolset-11-elfutils-libelf-0:0.185-5.el8.x86_64.rpm",
+					"gcc-toolset-11-elfutils-libelf-debuginfo-0:0.185-5.el8.aarch64.rpm",
+					"gcc-toolset-11-elfutils-libelf-debuginfo-0:0.185-5.el8.i686.rpm",
+					"gcc-toolset-11-elfutils-libelf-debuginfo-0:0.185-5.el8.x86_64.rpm",
+					"gcc-toolset-11-elfutils-libelf-devel-0:0.185-5.el8.aarch64.rpm",
+					"gcc-toolset-11-elfutils-libelf-devel-0:0.185-5.el8.i686.rpm",
+					"gcc-toolset-11-elfutils-libelf-devel-0:0.185-5.el8.x86_64.rpm",
+					"gcc-toolset-11-elfutils-libs-0:0.185-5.el8.aarch64.rpm",
+					"gcc-toolset-11-elfutils-libs-0:0.185-5.el8.i686.rpm",
+					"gcc-toolset-11-elfutils-libs-0:0.185-5.el8.x86_64.rpm",
+					"gcc-toolset-11-elfutils-libs-debuginfo-0:0.185-5.el8.aarch64.rpm",
+					"gcc-toolset-11-elfutils-libs-debuginfo-0:0.185-5.el8.i686.rpm",
+					"gcc-toolset-11-elfutils-libs-debuginfo-0:0.185-5.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

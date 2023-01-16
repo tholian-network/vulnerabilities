@@ -1,0 +1,49 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1959",
+		"synopsis": "scl-utils bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for scl-utils is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1967686",
+				"description": "SIGINT not passed to scl based process when using sudo",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1967686"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1959",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1959",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"scl-utils-1:2.0.2-15.el8.aarch64.rpm",
+					"scl-utils-1:2.0.2-15.el8.src.rpm",
+					"scl-utils-1:2.0.2-15.el8.x86_64.rpm",
+					"scl-utils-build-1:2.0.2-15.el8.aarch64.rpm",
+					"scl-utils-build-1:2.0.2-15.el8.x86_64.rpm",
+					"scl-utils-debuginfo-1:2.0.2-15.el8.aarch64.rpm",
+					"scl-utils-debuginfo-1:2.0.2-15.el8.x86_64.rpm",
+					"scl-utils-debugsource-1:2.0.2-15.el8.aarch64.rpm",
+					"scl-utils-debugsource-1:2.0.2-15.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,342 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1995",
+		"synopsis": "selinux-policy bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for selinux-policy is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1860443",
+				"description": "AVC denial init_t home_bin_t when systemd ExecStart executable in user's home bin directory",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1860443"
+			},
+			{
+				"ticket": "1861968",
+				"description": "container.if duplicate definition errors when building policy module",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1861968"
+			},
+			{
+				"ticket": "1872245",
+				"description": "[VMware][RHEL 8] vmtools is not able to install rpms",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1872245"
+			},
+			{
+				"ticket": "1879585",
+				"description": "Stratis device paths move from /stratis to /dev/stratis",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1879585"
+			},
+			{
+				"ticket": "1905441",
+				"description": "AVC denials recorded for fsetid while running unbound with local socket, though it (unbound-control) still works!",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1905441"
+			},
+			{
+				"ticket": "1917879",
+				"description": "Cannot sudo passwordless from staff_u/sysadm_u when using pam_ssh_agent_auth",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1917879"
+			},
+			{
+				"ticket": "1919122",
+				"description": "Permission denied+AVC seen when executing \"sudo authconfig\" as a confined user (staff_u or sysadm_u)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1919122"
+			},
+			{
+				"ticket": "1920521",
+				"description": "Please add selinux rules to allow postfix executables log into file",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1920521"
+			},
+			{
+				"ticket": "1920883",
+				"description": "Policy is lacking entrypoint on user_tmp_t for sudoing from confined users",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1920883"
+			},
+			{
+				"ticket": "1924038",
+				"description": "SELinux policy for FreeRADIUS blocks DHCP server, DHCP client, VMPS and BDF roles",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1924038"
+			},
+			{
+				"ticket": "1943572",
+				"description": "confined sysadm user cannot update a user's password using \"sudo passwd ...\" command",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1943572"
+			},
+			{
+				"ticket": "1949493",
+				"description": "AVC denied for chronyd socket",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1949493"
+			},
+			{
+				"ticket": "1949871",
+				"description": "SELinux is preventing /usr/libexec/platform-python3.6 from add_name access on the directory /var/log/hawkey.log",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1949871"
+			},
+			{
+				"ticket": "1965251",
+				"description": "Confined sysadm users cannot execute sosreport command",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1965251"
+			},
+			{
+				"ticket": "1966945",
+				"description": "AVC \"signull\" seen for confined users when executing \"sudo\" command",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1966945"
+			},
+			{
+				"ticket": "1985000",
+				"description": "selinux is preventing the execution of lvmlockctl during sanlock device failure testing",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1985000"
+			},
+			{
+				"ticket": "1986076",
+				"description": "Add SELinux policy for NetworkManager's nm-sudo service",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986076"
+			},
+			{
+				"ticket": "1988339",
+				"description": "HTTP script cannot send mails due to sendmail not being able to read on stdin",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1988339"
+			},
+			{
+				"ticket": "1991029",
+				"description": "SELinux is preventing /usr/sbin/lldpd from {search and create} access on the directory /var/agentx/master.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1991029"
+			},
+			{
+				"ticket": "1991443",
+				"description": "[RHEL 8.4] Backport container-selinux policy to allow spc_t domains to set bpf rules on any domain",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1991443"
+			},
+			{
+				"ticket": "2000488",
+				"description": "Confined sysadm users cannot execute \"realm list\" command",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000488"
+			},
+			{
+				"ticket": "2001599",
+				"description": "map AVC denial for /usr/libexec/certmonger/dogtag-ipa-renew-agent-submit",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001599"
+			},
+			{
+				"ticket": "2004990",
+				"description": "SELinux policy for the DBus daemon prevents the Anaconda installer from calling the subscription manager DBus service [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2004990"
+			},
+			{
+				"ticket": "2009769",
+				"description": "DBus unable to send_msg to cloud-init when \"sudo\" or \"su\" is used in cloud-init \"user-data\" scripts",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2009769"
+			},
+			{
+				"ticket": "2010873",
+				"description": "Additional rules for keepalived PING_CHECK",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2010873"
+			},
+			{
+				"ticket": "2013749",
+				"description": "sudo cannot execute systemctl command properly",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013749"
+			},
+			{
+				"ticket": "2015539",
+				"description": "login produces an AVC checking /sys/fs/cgroup when fingerprint is configured",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2015539"
+			},
+			{
+				"ticket": "2021835",
+				"description": ".autorelabel does not work anymore in RHEL8.4 if a file required by systemd is unlabelled (/etc/localtime)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2021835"
+			},
+			{
+				"ticket": "2025445",
+				"description": "AVC prevents ping -I from running in UBI 8 container",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2025445"
+			},
+			{
+				"ticket": "2026598",
+				"description": "Confined users cannot execute kerberos commands (\"kinit\", \"klist\", ...)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2026598"
+			},
+			{
+				"ticket": "2027740",
+				"description": "smbcontrol fails in SELinux Enforcing mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2027740"
+			},
+			{
+				"ticket": "2028379",
+				"description": "lldpd with option to use tcp is not allowed to create a tcp socket",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028379"
+			},
+			{
+				"ticket": "2029873",
+				"description": "SELinux prevents the rhsm-service process from working with /memfd:libffi",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2029873"
+			},
+			{
+				"ticket": "2030156",
+				"description": "SELinux denials { setgid } are triggered by sss_cache",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2030156"
+			},
+			{
+				"ticket": "2031065",
+				"description": "Confined users mapped to \"sysadm_u\" cannot execute \"systemd-run\" command",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2031065"
+			},
+			{
+				"ticket": "2031853",
+				"description": "[RfE] The insights client should not run as unconfined process",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2031853"
+			},
+			{
+				"ticket": "2033873",
+				"description": "smbcontrol fails in SELinux Enforcing mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2033873"
+			},
+			{
+				"ticket": "2038955",
+				"description": "FR cannot create a TCP socket (avc:  denied  { name_connect } for pid  comm=\"radiusd\" dest=1813 )",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2038955"
+			},
+			{
+				"ticket": "2039458",
+				"description": "efivarfs_t label on /sys/firmware/efi instead of /sys/firmware/efi/efivars",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2039458"
+			},
+			{
+				"ticket": "2040214",
+				"description": "SELinux prevents xdm_t process from talking to timedatex_t process via D-bus",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2040214"
+			},
+			{
+				"ticket": "2041447",
+				"description": "SELinux denials with shorewall6-lite service",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2041447"
+			},
+			{
+				"ticket": "2043599",
+				"description": "postfix cannot use certs stored in dovecot certs directory",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2043599"
+			},
+			{
+				"ticket": "2044048",
+				"description": "\"wpa_cli status\" timed out after updating the selinux packages",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2044048"
+			},
+			{
+				"ticket": "2046481",
+				"description": "Running systemctl status of user triggered AVC denials",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2046481"
+			},
+			{
+				"ticket": "2048514",
+				"description": "udev can't create /dev/stratis/poolname/fsname links any more: vc:  denied  { associate } for  comm=\"systemd-udevd\" name=\"stratis\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2048514"
+			},
+			{
+				"ticket": "2049481",
+				"description": "ocf:heartbeat:CTDB resource start is blocked by selinux",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2049481"
+			},
+			{
+				"ticket": "2049730",
+				"description": "Add missing policy rules for latest alsactl",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2049730"
+			},
+			{
+				"ticket": "2053457",
+				"description": "sysadm_passwd_t requires to execute sss_cache",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2053457"
+			},
+			{
+				"ticket": "2054718",
+				"description": "SELinux prevents the chage process from executing the sss_cache program",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2054718"
+			},
+			{
+				"ticket": "2064284",
+				"description": "SELinux is preventing hostapd from 'sendto' accesses on the unix_dgram_socket /tmp/wpa_ctrl_439937-1.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064284"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1995",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1995",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"selinux-policy-0:3.14.3-95.el8_6.4.noarch.rpm",
+					"selinux-policy-0:3.14.3-95.el8_6.4.src.rpm",
+					"selinux-policy-devel-0:3.14.3-95.el8_6.4.noarch.rpm",
+					"selinux-policy-doc-0:3.14.3-95.el8_6.4.noarch.rpm",
+					"selinux-policy-minimum-0:3.14.3-95.el8_6.4.noarch.rpm",
+					"selinux-policy-mls-0:3.14.3-95.el8_6.4.noarch.rpm",
+					"selinux-policy-sandbox-0:3.14.3-95.el8_6.4.noarch.rpm",
+					"selinux-policy-targeted-0:3.14.3-95.el8_6.4.noarch.rpm"
+				]
+			}
+		}
+	}
+}

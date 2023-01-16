@@ -1,0 +1,87 @@
+{
+	"updateinfo_id": "ALSA-2022:5717",
+	"fromstr": "packager@almalinux.org",
+	"title": "Important: grafana security update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Important",
+	"summary": "An update for grafana is now available for AlmaLinux 8.",
+	"pushcount": "1",
+	"pkglist": {
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_6_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_6_default",
+		"packages": [
+			{
+				"src": "grafana-7.5.11-3.el8_6.src.rpm",
+				"name": "grafana",
+				"epoch": "0",
+				"version": "7.5.11",
+				"release": "3.el8_6",
+				"arch": "x86_64",
+				"filename": "grafana-7.5.11-3.el8_6.x86_64.rpm",
+				"sum": "fea82bbfd29af7f539c017fde4a9e0e9324ff638bfce0638d828fd60a529a4b5",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "grafana-7.5.11-3.el8_6.src.rpm",
+				"name": "grafana",
+				"epoch": "0",
+				"version": "7.5.11",
+				"release": "3.el8_6",
+				"arch": "aarch64",
+				"filename": "grafana-7.5.11-3.el8_6.aarch64.rpm",
+				"sum": "62d51b1e56a398f6e0a48dda94f94009e53e2e5f4135ca334adb798fd49c011b",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "grafana-7.5.11-3.el8_6.src.rpm",
+				"name": "grafana",
+				"epoch": "0",
+				"version": "7.5.11",
+				"release": "3.el8_6",
+				"arch": "ppc64le",
+				"filename": "grafana-7.5.11-3.el8_6.ppc64le.rpm",
+				"sum": "9a237c4cd786a7e2cb6d6e593a40448e5c535ba9376975044b6089a13971486b",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "Grafana is an open source, feature rich metrics dashboard and graph editor for\nGraphite, InfluxDB \u0026 OpenTSDB.\nSecurity Fix(es):\n* grafana: OAuth account takeover (CVE-2022-31107)\nFor more details about the security issue(s), including the impact, a CVSS\nscore, acknowledgments, and other related information, refer to the CVE page(s)\nlisted in the References section.",
+	"references": [
+		{
+			"id": "RHSA-2022:5717",
+			"title": "",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5717"
+		},
+		{
+			"id": "CVE-2022-31107",
+			"title": "",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-31107"
+		},
+		{
+			"id": "2104367",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2104367"
+		},
+		{
+			"id": "ALSA-2022:5717",
+			"title": "ALSA-2022:5717",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-5717.html"
+		}
+	],
+	"issued_date": {
+		"$date": 1658793600000
+	},
+	"updated_date": {
+		"$date": 1659000812000
+	}
+}

@@ -1,0 +1,165 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7822",
+		"synopsis": "Low: container-tools:rhel8 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_LOW",
+		"topic": "An update for the container-tools:rhel8 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The container-tools module contains tools for working with containers, notably podman, buildah, skopeo, and runc.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2121445",
+				"description": "CVE-2022-2989 podman: possible information disclosure and modification",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2121445"
+			},
+			{
+				"ticket": "2121453",
+				"description": "CVE-2022-2990 buildah: possible information disclosure and modification",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2121453"
+			},
+			{
+				"ticket": "2125644",
+				"description": "podman creates lock file in /etc/cni/net.d/cni.lock instead of /run/lock/ [rhel-8.7.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2125644"
+			},
+			{
+				"ticket": "2125645",
+				"description": "(podman image trust) does not support the new trust type \"sigstoreSigned \" [rhel-8.7.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2125645"
+			},
+			{
+				"ticket": "2125647",
+				"description": "podman kill may deadlock [rhel-8.7.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2125647"
+			},
+			{
+				"ticket": "2125648",
+				"description": "Error: runc: exec failed: unable to start container process: open /dev/pts/0: operation not permitted: OCI permission denied [RHEL 8.7] [rhel-8.7.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2125648"
+			},
+			{
+				"ticket": "2125686",
+				"description": "containers-common-1-44 is missing RPM-GPG-KEY-redhat-beta [RHEL 8.7] [rhel-8.7.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2125686"
+			},
+			{
+				"ticket": "2129767",
+				"description": "ADD Dockerfile reference is not validating HTTP status code [rhel8-8.7.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2129767"
+			},
+			{
+				"ticket": "2130234",
+				"description": "Two aardvark-dns instances trying to use the same port on the same interface. [rhel-8.7.0.z] (netavark)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2130234"
+			},
+			{
+				"ticket": "2130236",
+				"description": "containers config.json gets empty after sudden power loss [rhel-8.7.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2130236"
+			},
+			{
+				"ticket": "2130911",
+				"description": "[RFE]Podman support to perform custom actions on unhealthy containers [rhel-8.7.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2130911"
+			},
+			{
+				"ticket": "2132360",
+				"description": "[RFE] python-podman: Podman support to perform custom actions on unhealthy containers [rhel-8.7.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2132360"
+			},
+			{
+				"ticket": "2132412",
+				"description": "PANIC podman API service endpoint handler panic [rhel-8.7.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2132412"
+			},
+			{
+				"ticket": "2132992",
+				"description": "Podman volume plugin timeout should be configurable [rhel-8.7.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2132992"
+			},
+			{
+				"ticket": "2133390",
+				"description": "Podman container got global IPv6 address unexpectedly even when macvlan network is created for pure IPv4 network [rhel-8.7.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2133390"
+			},
+			{
+				"ticket": "2136406",
+				"description": "Skopeo  push image to redhat quay with sigstore was failed [rhel-8.7.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2136406"
+			},
+			{
+				"ticket": "2136433",
+				"description": "Podman push image to redhat quay with sigstore was failed [rhel-8.7.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2136433"
+			},
+			{
+				"ticket": "2136438",
+				"description": "Buildah  push image to redhat quay with sigstore was failed [rhel-8.7.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2136438"
+			},
+			{
+				"ticket": "2137295",
+				"description": "Two aardvark-dns instances trying to use the same port on the same interface. [rhel-8.8] (aardvark-dns) [rhel-8.7.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2137295"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-2989",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-2989.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N",
+				"cvss3BaseScore": "3.6",
+				"cwe": "CWE-842"
+			},
+			{
+				"name": "CVE-2022-2990",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-2990.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N",
+				"cvss3BaseScore": "3.6",
+				"cwe": "CWE-842"
+			}
+		],
+		"publishedAt": "2022-11-13T07:54:28.182242Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libslirp-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"libslirp-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.src.rpm",
+					"libslirp-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"libslirp-debuginfo-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"libslirp-debuginfo-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"libslirp-debugsource-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"libslirp-debugsource-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm",
+					"libslirp-devel-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.aarch64.rpm",
+					"libslirp-devel-0:4.4.0-1.module+el8.7.0+1078+e72fcd4f.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

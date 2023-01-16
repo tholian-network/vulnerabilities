@@ -1,0 +1,103 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:6164",
+		"synopsis": "Important: thunderbird security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for thunderbird is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Mozilla Thunderbird is a standalone mail and newsgroup client.\nThis update upgrades Thunderbird to version 91.13.0.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2120673",
+				"description": "CVE-2022-38472 Mozilla: Address bar spoofing via XSLT error handling",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2120673"
+			},
+			{
+				"ticket": "2120674",
+				"description": "CVE-2022-38473 Mozilla: Cross-origin XSLT Documents would have inherited the parent's permissions",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2120674"
+			},
+			{
+				"ticket": "2120678",
+				"description": "CVE-2022-38476 Mozilla: Data race and potential use-after-free in PK11_ChangePW",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2120678"
+			},
+			{
+				"ticket": "2120695",
+				"description": "CVE-2022-38477 Mozilla: Memory safety bugs fixed in Firefox 104 and Firefox ESR 102.2",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2120695"
+			},
+			{
+				"ticket": "2120696",
+				"description": "CVE-2022-38478 Mozilla: Memory safety bugs fixed in Firefox 104, Firefox ESR 102.2, and Firefox ESR 91.13",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2120696"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-38472",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-38472.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-356"
+			},
+			{
+				"name": "CVE-2022-38473",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-38473.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-1021"
+			},
+			{
+				"name": "CVE-2022-38476",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-38476.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "4.3",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2022-38477",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-38477.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-120"
+			},
+			{
+				"name": "CVE-2022-38478",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-38478.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-120"
+			}
+		],
+		"publishedAt": "2022-08-24T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"thunderbird-0:91.13.0-1.el8_6.aarch64.rpm",
+					"thunderbird-0:91.13.0-1.el8_6.src.rpm",
+					"thunderbird-0:91.13.0-1.el8_6.x86_64.rpm",
+					"thunderbird-debuginfo-0:91.13.0-1.el8_6.aarch64.rpm",
+					"thunderbird-debuginfo-0:91.13.0-1.el8_6.x86_64.rpm",
+					"thunderbird-debugsource-0:91.13.0-1.el8_6.aarch64.rpm",
+					"thunderbird-debugsource-0:91.13.0-1.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

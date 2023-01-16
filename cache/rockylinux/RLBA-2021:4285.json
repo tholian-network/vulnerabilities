@@ -1,0 +1,58 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4285",
+		"synopsis": "libvoikko bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libvoikko is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1975295",
+				"description": "add libvoikko-devel package",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1975295"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4285",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4285",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libvoikko-0:4.1.1-3.el8.aarch64.rpm",
+					"libvoikko-0:4.1.1-3.el8.i686.rpm",
+					"libvoikko-0:4.1.1-3.el8.src.rpm",
+					"libvoikko-0:4.1.1-3.el8.x86_64.rpm",
+					"libvoikko-debuginfo-0:4.1.1-3.el8.aarch64.rpm",
+					"libvoikko-debuginfo-0:4.1.1-3.el8.i686.rpm",
+					"libvoikko-debuginfo-0:4.1.1-3.el8.x86_64.rpm",
+					"libvoikko-debugsource-0:4.1.1-3.el8.aarch64.rpm",
+					"libvoikko-debugsource-0:4.1.1-3.el8.i686.rpm",
+					"libvoikko-debugsource-0:4.1.1-3.el8.x86_64.rpm",
+					"libvoikko-devel-0:4.1.1-3.el8.aarch64.rpm",
+					"libvoikko-devel-0:4.1.1-3.el8.i686.rpm",
+					"libvoikko-devel-0:4.1.1-3.el8.x86_64.rpm",
+					"python3-libvoikko-0:4.1.1-3.el8.noarch.rpm",
+					"voikko-tools-0:4.1.1-3.el8.aarch64.rpm",
+					"voikko-tools-0:4.1.1-3.el8.x86_64.rpm",
+					"voikko-tools-debuginfo-0:4.1.1-3.el8.aarch64.rpm",
+					"voikko-tools-debuginfo-0:4.1.1-3.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7558",
+		"synopsis": "Low: wavpack security update",
+		"severity": "SEVERITY_LOW",
+		"topic": "An update for wavpack is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "WavPack is a completely open audio compression format providing lossless, high-quality lossy and a unique hybrid compression mode. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2064457",
+				"description": "CVE-2021-44269 wavpack: Heap out-of-bounds read in WavpackPackSamples()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064457"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-44269",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-44269.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "3.5",
+				"cwe": "CWE-125"
+			}
+		],
+		"publishedAt": "2022-11-13T07:48:59.613876Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"wavpack-0:5.1.0-16.el8.aarch64.rpm",
+					"wavpack-0:5.1.0-16.el8.i686.rpm",
+					"wavpack-0:5.1.0-16.el8.src.rpm",
+					"wavpack-0:5.1.0-16.el8.x86_64.rpm",
+					"wavpack-debuginfo-0:5.1.0-16.el8.aarch64.rpm",
+					"wavpack-debuginfo-0:5.1.0-16.el8.i686.rpm",
+					"wavpack-debuginfo-0:5.1.0-16.el8.x86_64.rpm",
+					"wavpack-debugsource-0:5.1.0-16.el8.aarch64.rpm",
+					"wavpack-debugsource-0:5.1.0-16.el8.i686.rpm",
+					"wavpack-debugsource-0:5.1.0-16.el8.x86_64.rpm",
+					"wavpack-devel-0:5.1.0-16.el8.aarch64.rpm",
+					"wavpack-devel-0:5.1.0-16.el8.i686.rpm",
+					"wavpack-devel-0:5.1.0-16.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

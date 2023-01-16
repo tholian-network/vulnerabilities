@@ -1,0 +1,131 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:1968",
+		"synopsis": "Moderate: mingw packages security and bug fix update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for mingw-binutils, mingw-bzip2, mingw-filesystem, and mingw-sqlite is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "MinGW is a free and open source software development environment to create Microsoft Windows applications.\nThe following packages have been upgraded to a later upstream version: mingw-sqlite (3.26.0.0). (BZ#1845475)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1768986",
+				"description": "CVE-2019-16168 sqlite: Division by zero in whereLoopAddBtreeIndex in sqlite3.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1768986"
+			},
+			{
+				"ticket": "1841223",
+				"description": "CVE-2020-13434 sqlite: integer overflow in sqlite3_str_vappendf function in printf.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1841223"
+			},
+			{
+				"ticket": "1841562",
+				"description": "CVE-2020-13630 sqlite: Use-after-free in fts3EvalNextRow in ext/fts3/fts3.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1841562"
+			},
+			{
+				"ticket": "1841568",
+				"description": "CVE-2020-13631 sqlite: Virtual table can be renamed into the name of one of its shadow tables",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1841568"
+			},
+			{
+				"ticket": "1841574",
+				"description": "CVE-2020-13632 sqlite: NULL pointer dereference in ext/fts3/fts3_snippet.c via a crafted matchinfo() query",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1841574"
+			},
+			{
+				"ticket": "1918306",
+				"description": "Do not use __global_cflags for %mingw{32,64}_meson in macros.mingw{32,64}",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1918306"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2019-16168",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2019-16168.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-369"
+			},
+			{
+				"name": "CVE-2020-13434",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-13434.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-190-\u003eCWE-121"
+			},
+			{
+				"name": "CVE-2020-13630",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-13630.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.0",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2020-13631",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-13631.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-20"
+			},
+			{
+				"name": "CVE-2020-13632",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-13632.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-476"
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mingw32-binutils-0:2.30-3.el8.aarch64.rpm",
+					"mingw32-binutils-0:2.30-3.el8.x86_64.rpm",
+					"mingw32-binutils-debuginfo-0:2.30-3.el8.aarch64.rpm",
+					"mingw32-binutils-debuginfo-0:2.30-3.el8.x86_64.rpm",
+					"mingw32-bzip2-0:1.0.6-14.el8.noarch.rpm",
+					"mingw32-bzip2-debuginfo-0:1.0.6-14.el8.noarch.rpm",
+					"mingw32-bzip2-static-0:1.0.6-14.el8.noarch.rpm",
+					"mingw32-sqlite-0:3.26.0.0-1.el8.noarch.rpm",
+					"mingw32-sqlite-debuginfo-0:3.26.0.0-1.el8.noarch.rpm",
+					"mingw32-sqlite-static-0:3.26.0.0-1.el8.noarch.rpm",
+					"mingw64-binutils-0:2.30-3.el8.aarch64.rpm",
+					"mingw64-binutils-0:2.30-3.el8.x86_64.rpm",
+					"mingw64-binutils-debuginfo-0:2.30-3.el8.aarch64.rpm",
+					"mingw64-binutils-debuginfo-0:2.30-3.el8.x86_64.rpm",
+					"mingw64-bzip2-0:1.0.6-14.el8.noarch.rpm",
+					"mingw64-bzip2-debuginfo-0:1.0.6-14.el8.noarch.rpm",
+					"mingw64-bzip2-static-0:1.0.6-14.el8.noarch.rpm",
+					"mingw64-sqlite-0:3.26.0.0-1.el8.noarch.rpm",
+					"mingw64-sqlite-debuginfo-0:3.26.0.0-1.el8.noarch.rpm",
+					"mingw64-sqlite-static-0:3.26.0.0-1.el8.noarch.rpm",
+					"mingw-binutils-0:2.30-3.el8.src.rpm",
+					"mingw-binutils-debuginfo-0:2.30-3.el8.aarch64.rpm",
+					"mingw-binutils-debuginfo-0:2.30-3.el8.x86_64.rpm",
+					"mingw-binutils-generic-0:2.30-3.el8.aarch64.rpm",
+					"mingw-binutils-generic-0:2.30-3.el8.x86_64.rpm",
+					"mingw-binutils-generic-debuginfo-0:2.30-3.el8.aarch64.rpm",
+					"mingw-binutils-generic-debuginfo-0:2.30-3.el8.x86_64.rpm",
+					"mingw-bzip2-0:1.0.6-14.el8.src.rpm",
+					"mingw-sqlite-0:3.26.0.0-1.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

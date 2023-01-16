@@ -1,0 +1,85 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2107",
+		"synopsis": "fuse bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for fuse is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1881557",
+				"description": "Fuse3 does not support pre-mounting",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1881557"
+			},
+			{
+				"ticket": "2047237",
+				"description": "Rebase fuse-3 to 3.3",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2047237"
+			},
+			{
+				"ticket": "2057062",
+				"description": "fuse: fix minor errors resulting from rebase",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2057062"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2107",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2107",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"fuse-0:2.9.7-15.el8.aarch64.rpm",
+					"fuse-0:2.9.7-15.el8.src.rpm",
+					"fuse-0:2.9.7-15.el8.x86_64.rpm",
+					"fuse3-0:3.3.0-15.el8.aarch64.rpm",
+					"fuse3-0:3.3.0-15.el8.x86_64.rpm",
+					"fuse3-debuginfo-0:3.3.0-15.el8.aarch64.rpm",
+					"fuse3-debuginfo-0:3.3.0-15.el8.x86_64.rpm",
+					"fuse3-devel-0:3.3.0-15.el8.aarch64.rpm",
+					"fuse3-devel-0:3.3.0-15.el8.i686.rpm",
+					"fuse3-devel-0:3.3.0-15.el8.x86_64.rpm",
+					"fuse3-libs-0:3.3.0-15.el8.aarch64.rpm",
+					"fuse3-libs-0:3.3.0-15.el8.i686.rpm",
+					"fuse3-libs-0:3.3.0-15.el8.x86_64.rpm",
+					"fuse3-libs-debuginfo-0:3.3.0-15.el8.aarch64.rpm",
+					"fuse3-libs-debuginfo-0:3.3.0-15.el8.i686.rpm",
+					"fuse3-libs-debuginfo-0:3.3.0-15.el8.x86_64.rpm",
+					"fuse-common-0:3.3.0-15.el8.aarch64.rpm",
+					"fuse-common-0:3.3.0-15.el8.x86_64.rpm",
+					"fuse-debuginfo-0:2.9.7-15.el8.aarch64.rpm",
+					"fuse-debuginfo-0:2.9.7-15.el8.i686.rpm",
+					"fuse-debuginfo-0:2.9.7-15.el8.x86_64.rpm",
+					"fuse-debugsource-0:2.9.7-15.el8.aarch64.rpm",
+					"fuse-debugsource-0:2.9.7-15.el8.i686.rpm",
+					"fuse-debugsource-0:2.9.7-15.el8.x86_64.rpm",
+					"fuse-devel-0:2.9.7-15.el8.aarch64.rpm",
+					"fuse-devel-0:2.9.7-15.el8.i686.rpm",
+					"fuse-devel-0:2.9.7-15.el8.x86_64.rpm",
+					"fuse-libs-0:2.9.7-15.el8.aarch64.rpm",
+					"fuse-libs-0:2.9.7-15.el8.i686.rpm",
+					"fuse-libs-0:2.9.7-15.el8.x86_64.rpm",
+					"fuse-libs-debuginfo-0:2.9.7-15.el8.aarch64.rpm",
+					"fuse-libs-debuginfo-0:2.9.7-15.el8.i686.rpm",
+					"fuse-libs-debuginfo-0:2.9.7-15.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

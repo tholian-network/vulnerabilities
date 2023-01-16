@@ -1,0 +1,121 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:2008",
+		"synopsis": "Moderate: cockpit security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for cockpit is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Cockpit enables users to administer GNU/Linux servers using a web browser. It offers network configuration, log inspection, diagnostic reports, SELinux troubleshooting, interactive command-line sessions, and more.\nThe following packages have been upgraded to a later upstream version: cockpit (264.1). (BZ#1984902, BZ#1992620, BZ#2004041, BZ#2008208)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1792270",
+				"description": "[RFE] Display \"User Services\" tab in Services panel",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1792270"
+			},
+			{
+				"ticket": "1980688",
+				"description": "CVE-2021-3660 cockpit: pages vulnerable to clickjacking",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1980688"
+			},
+			{
+				"ticket": "1992149",
+				"description": "CVE-2021-3698 cockpit: authenticates with revoked certificates",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992149"
+			},
+			{
+				"ticket": "2004041",
+				"description": "kdump configuration wizard must ask for path for NFS",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2004041"
+			},
+			{
+				"ticket": "2008208",
+				"description": "TestServices.testLogs is failing on retries, breaks reverse dependencies gating tests",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2008208"
+			},
+			{
+				"ticket": "2016998",
+				"description": "[cockpit] RHEL 8.6 Tier 0 Localization",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016998"
+			},
+			{
+				"ticket": "2018382",
+				"description": "[cockpit 8.5] [ja_JP] Few strings not localized on Overview page",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2018382"
+			},
+			{
+				"ticket": "2018384",
+				"description": "[cockpit 8.5] [ja_JP, zh_CN] Few strings not localized on Networking Page",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2018384"
+			},
+			{
+				"ticket": "2018417",
+				"description": "[cockpit 8.5] [zh_CN] Few strings not localized on Diagnostic Reports Page",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2018417"
+			},
+			{
+				"ticket": "2029982",
+				"description": "Cockpit 251 Administrative Access MFA Prompt Window Broken",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2029982"
+			},
+			{
+				"ticket": "2056386",
+				"description": "Failed to configure IPv4 and IPv6 types in Bond: NM always rolls back to previous checkpoint",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2056386"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-3660",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3660.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+				"cvss3BaseScore": "4.3",
+				"cwe": "CWE-1021"
+			},
+			{
+				"name": "CVE-2021-3698",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3698.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-295"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cockpit-0:264.1-1.el8.aarch64.rpm",
+					"cockpit-0:264.1-1.el8.src.rpm",
+					"cockpit-0:264.1-1.el8.x86_64.rpm",
+					"cockpit-bridge-0:264.1-1.el8.aarch64.rpm",
+					"cockpit-bridge-0:264.1-1.el8.x86_64.rpm",
+					"cockpit-debuginfo-0:264.1-1.el8.aarch64.rpm",
+					"cockpit-debuginfo-0:264.1-1.el8.x86_64.rpm",
+					"cockpit-debugsource-0:264.1-1.el8.aarch64.rpm",
+					"cockpit-debugsource-0:264.1-1.el8.x86_64.rpm",
+					"cockpit-doc-0:264.1-1.el8.noarch.rpm",
+					"cockpit-system-0:264.1-1.el8.noarch.rpm",
+					"cockpit-ws-0:264.1-1.el8.aarch64.rpm",
+					"cockpit-ws-0:264.1-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

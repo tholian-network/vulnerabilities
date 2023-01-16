@@ -1,0 +1,45 @@
+{
+	"updateinfo_id": "ALSA-2021:4368",
+	"fromstr": "packager@almalinux.org",
+	"title": "Moderate: openssh security update",
+	"type": "security",
+	"release": "0",
+	"version": "2",
+	"status": "final",
+	"severity": "Moderate",
+	"summary": "An update for openssh is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+	"pushcount": "4",
+	"pkglist": {
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"packages": [
+			{
+				"src": "openssh-8.0p1-10.el8.src.rpm",
+				"name": "openssh-askpass",
+				"epoch": "0",
+				"version": "8.0p1",
+				"release": "10.el8",
+				"arch": "x86_64",
+				"filename": "openssh-askpass-8.0p1-10.el8.x86_64.rpm",
+				"sum": "896744b10c1ca0d49f6e1ed7c68ff0c9570cdf3e6c2ce738103b306dde736510",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "OpenSSH is an SSH protocol implementation supported by a number of Linux, UNIX, and similar operating systems. It includes the core files necessary for both the OpenSSH client and server.\n\nSecurity Fix(es):\n\n* openssh: Observable discrepancy leading to an information leak in the algorithm negotiation (CVE-2020-14145)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
+	"references": [
+		{
+			"id": "CVE-2020-14145",
+			"title": "CVE-2020-14145",
+			"type": "cve",
+			"href": "https://vulners.com/cve/CVE-2020-14145"
+		}
+	],
+	"issued_date": {
+		"$date": 1636449101000
+	},
+	"updated_date": {
+		"$date": 1636712456000
+	}
+}

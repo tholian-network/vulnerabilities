@@ -1,0 +1,45 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5715",
+		"synopsis": "ansible-core bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "Updated ansible-core packages that fix several bugs and add various enhancements are now available.",
+		"description": "fix facts delegation loop overwrite",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2109263",
+				"description": "Using set_fact with delegate_to and delegate_facts; true creates unpredicatable results",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2109263"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:5715",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5715",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-07-26T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"ansible-core-0:2.12.2-4.el8_6.rocky.0.1.aarch64.rpm",
+					"ansible-core-0:2.12.2-4.el8_6.rocky.0.1.src.rpm",
+					"ansible-core-0:2.12.2-4.el8_6.rocky.0.1.x86_64.rpm",
+					"ansible-test-0:2.12.2-4.el8_6.rocky.0.1.aarch64.rpm",
+					"ansible-test-0:2.12.2-4.el8_6.rocky.0.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

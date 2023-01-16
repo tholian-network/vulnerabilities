@@ -1,0 +1,78 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:6159",
+		"synopsis": "Moderate: curl security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for curl is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The curl packages provide the libcurl library and the curl utility for downloading files from servers using various protocols, including HTTP, FTP, and LDAP.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2099300",
+				"description": "CVE-2022-32206 curl: HTTP compression denial of service",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2099300"
+			},
+			{
+				"ticket": "2099306",
+				"description": "CVE-2022-32208 curl: FTP-KRB bad message verification",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2099306"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-32206",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32206.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-770"
+			},
+			{
+				"name": "CVE-2022-32208",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32208.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-924"
+			}
+		],
+		"publishedAt": "2022-08-24T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"curl-0:7.61.1-22.el8_6.4.aarch64.rpm",
+					"curl-0:7.61.1-22.el8_6.4.src.rpm",
+					"curl-0:7.61.1-22.el8_6.4.x86_64.rpm",
+					"curl-debuginfo-0:7.61.1-22.el8_6.4.aarch64.rpm",
+					"curl-debuginfo-0:7.61.1-22.el8_6.4.i686.rpm",
+					"curl-debuginfo-0:7.61.1-22.el8_6.4.x86_64.rpm",
+					"curl-debugsource-0:7.61.1-22.el8_6.4.aarch64.rpm",
+					"curl-debugsource-0:7.61.1-22.el8_6.4.i686.rpm",
+					"curl-debugsource-0:7.61.1-22.el8_6.4.x86_64.rpm",
+					"libcurl-0:7.61.1-22.el8_6.4.aarch64.rpm",
+					"libcurl-0:7.61.1-22.el8_6.4.i686.rpm",
+					"libcurl-0:7.61.1-22.el8_6.4.x86_64.rpm",
+					"libcurl-debuginfo-0:7.61.1-22.el8_6.4.aarch64.rpm",
+					"libcurl-debuginfo-0:7.61.1-22.el8_6.4.i686.rpm",
+					"libcurl-debuginfo-0:7.61.1-22.el8_6.4.x86_64.rpm",
+					"libcurl-devel-0:7.61.1-22.el8_6.4.aarch64.rpm",
+					"libcurl-devel-0:7.61.1-22.el8_6.4.i686.rpm",
+					"libcurl-devel-0:7.61.1-22.el8_6.4.x86_64.rpm",
+					"libcurl-minimal-0:7.61.1-22.el8_6.4.aarch64.rpm",
+					"libcurl-minimal-0:7.61.1-22.el8_6.4.i686.rpm",
+					"libcurl-minimal-0:7.61.1-22.el8_6.4.x86_64.rpm",
+					"libcurl-minimal-debuginfo-0:7.61.1-22.el8_6.4.aarch64.rpm",
+					"libcurl-minimal-debuginfo-0:7.61.1-22.el8_6.4.i686.rpm",
+					"libcurl-minimal-debuginfo-0:7.61.1-22.el8_6.4.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

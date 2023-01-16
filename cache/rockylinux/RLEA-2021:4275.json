@@ -1,0 +1,61 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:4275",
+		"synopsis": "postgresql:12 bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for the postgresql:12 module is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1981518",
+				"description": "postgresql:12/postgresql - Database upgrade fails when TLS cert is specified",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1981518"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:4275",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:4275",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"pgaudit-0:1.4.0-5.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"pgaudit-0:1.4.0-5.module+el8.5.0+686+20453ecc.src.rpm",
+					"pgaudit-0:1.4.0-5.module+el8.5.0+686+20453ecc.x86_64.rpm",
+					"pgaudit-debuginfo-0:1.4.0-5.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"pgaudit-debuginfo-0:1.4.0-5.module+el8.5.0+686+20453ecc.x86_64.rpm",
+					"pgaudit-debugsource-0:1.4.0-5.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"pgaudit-debugsource-0:1.4.0-5.module+el8.5.0+686+20453ecc.x86_64.rpm",
+					"pg_repack-0:1.4.6-3.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"pg_repack-0:1.4.6-3.module+el8.5.0+686+20453ecc.src.rpm",
+					"pg_repack-0:1.4.6-3.module+el8.5.0+686+20453ecc.x86_64.rpm",
+					"pg_repack-debuginfo-0:1.4.6-3.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"pg_repack-debuginfo-0:1.4.6-3.module+el8.5.0+686+20453ecc.x86_64.rpm",
+					"pg_repack-debugsource-0:1.4.6-3.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"pg_repack-debugsource-0:1.4.6-3.module+el8.5.0+686+20453ecc.x86_64.rpm",
+					"postgres-decoderbufs-0:0.10.0-2.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"postgres-decoderbufs-0:0.10.0-2.module+el8.5.0+686+20453ecc.src.rpm",
+					"postgres-decoderbufs-0:0.10.0-2.module+el8.5.0+686+20453ecc.x86_64.rpm",
+					"postgres-decoderbufs-debuginfo-0:0.10.0-2.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"postgres-decoderbufs-debuginfo-0:0.10.0-2.module+el8.5.0+686+20453ecc.x86_64.rpm",
+					"postgres-decoderbufs-debugsource-0:0.10.0-2.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"postgres-decoderbufs-debugsource-0:0.10.0-2.module+el8.5.0+686+20453ecc.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1948",
+		"synopsis": "edk2 bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for edk2 is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2018386",
+				"description": "[rebase] update edk2 to nov '21 release (edk2-stable202111xx)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2018386"
+			},
+			{
+				"ticket": "2027297",
+				"description": "Remove the customized boot splash logo patch",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2027297"
+			},
+			{
+				"ticket": "2041754",
+				"description": "Mark SEV launch secret area as reserved",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2041754"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1948",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1948",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"edk2-0:20220126gitbb1bba3d77-2.el8.src.rpm",
+					"edk2-aarch64-0:20220126gitbb1bba3d77-2.el8.noarch.rpm",
+					"edk2-debugsource-0:20220126gitbb1bba3d77-2.el8.aarch64.rpm",
+					"edk2-debugsource-0:20220126gitbb1bba3d77-2.el8.x86_64.rpm",
+					"edk2-ovmf-0:20220126gitbb1bba3d77-2.el8.noarch.rpm",
+					"edk2-tools-0:20220126gitbb1bba3d77-2.el8.aarch64.rpm",
+					"edk2-tools-0:20220126gitbb1bba3d77-2.el8.x86_64.rpm",
+					"edk2-tools-debuginfo-0:20220126gitbb1bba3d77-2.el8.aarch64.rpm",
+					"edk2-tools-debuginfo-0:20220126gitbb1bba3d77-2.el8.x86_64.rpm",
+					"edk2-tools-doc-0:20220126gitbb1bba3d77-2.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

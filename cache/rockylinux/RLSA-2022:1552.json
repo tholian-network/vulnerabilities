@@ -1,0 +1,62 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1552",
+		"synopsis": "Moderate: vim security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for vim is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact ofModerate. A Common Vulnerability Scoring System (CVSS) base score, which gives adetailed severity rating, is available for each vulnerability from the CVElink(s) in the References section.",
+		"description": "Vim (Vi IMproved) is an updated and improved version of the vi editor.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2073013",
+				"description": "CVE-2022-1154 vim: use after free in utf_ptr2char",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2073013"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-1154",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1154.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-416"
+			}
+		],
+		"publishedAt": "2022-04-26T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"vim-2:8.0.1763-16.el8_5.13.src.rpm",
+					"vim-common-2:8.0.1763-16.el8_5.13.aarch64.rpm",
+					"vim-common-2:8.0.1763-16.el8_5.13.x86_64.rpm",
+					"vim-common-debuginfo-2:8.0.1763-16.el8_5.13.aarch64.rpm",
+					"vim-common-debuginfo-2:8.0.1763-16.el8_5.13.x86_64.rpm",
+					"vim-debuginfo-2:8.0.1763-16.el8_5.13.aarch64.rpm",
+					"vim-debuginfo-2:8.0.1763-16.el8_5.13.x86_64.rpm",
+					"vim-debugsource-2:8.0.1763-16.el8_5.13.aarch64.rpm",
+					"vim-debugsource-2:8.0.1763-16.el8_5.13.x86_64.rpm",
+					"vim-enhanced-2:8.0.1763-16.el8_5.13.aarch64.rpm",
+					"vim-enhanced-2:8.0.1763-16.el8_5.13.x86_64.rpm",
+					"vim-enhanced-debuginfo-2:8.0.1763-16.el8_5.13.aarch64.rpm",
+					"vim-enhanced-debuginfo-2:8.0.1763-16.el8_5.13.x86_64.rpm",
+					"vim-filesystem-2:8.0.1763-16.el8_5.13.noarch.rpm",
+					"vim-minimal-2:8.0.1763-16.el8_5.13.aarch64.rpm",
+					"vim-minimal-2:8.0.1763-16.el8_5.13.x86_64.rpm",
+					"vim-minimal-debuginfo-2:8.0.1763-16.el8_5.13.aarch64.rpm",
+					"vim-minimal-debuginfo-2:8.0.1763-16.el8_5.13.x86_64.rpm",
+					"vim-X11-2:8.0.1763-16.el8_5.13.aarch64.rpm",
+					"vim-X11-2:8.0.1763-16.el8_5.13.x86_64.rpm",
+					"vim-X11-debuginfo-2:8.0.1763-16.el8_5.13.aarch64.rpm",
+					"vim-X11-debuginfo-2:8.0.1763-16.el8_5.13.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,65 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1858",
+		"synopsis": "sendmail bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for sendmail is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1730804",
+				"description": "some ghost files change permissions or owner or group during installation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1730804"
+			},
+			{
+				"ticket": "1868041",
+				"description": "Enable sendmail to stop using STARTTLS after a certain amount of previous failures",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1868041"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1858",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1858",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"sendmail-0:8.15.2-34.el8.aarch64.rpm",
+					"sendmail-0:8.15.2-34.el8.src.rpm",
+					"sendmail-0:8.15.2-34.el8.x86_64.rpm",
+					"sendmail-cf-0:8.15.2-34.el8.noarch.rpm",
+					"sendmail-debuginfo-0:8.15.2-34.el8.aarch64.rpm",
+					"sendmail-debuginfo-0:8.15.2-34.el8.i686.rpm",
+					"sendmail-debuginfo-0:8.15.2-34.el8.x86_64.rpm",
+					"sendmail-debugsource-0:8.15.2-34.el8.aarch64.rpm",
+					"sendmail-debugsource-0:8.15.2-34.el8.x86_64.rpm",
+					"sendmail-doc-0:8.15.2-34.el8.noarch.rpm",
+					"sendmail-milter-0:8.15.2-34.el8.aarch64.rpm",
+					"sendmail-milter-0:8.15.2-34.el8.i686.rpm",
+					"sendmail-milter-0:8.15.2-34.el8.x86_64.rpm",
+					"sendmail-milter-debuginfo-0:8.15.2-34.el8.aarch64.rpm",
+					"sendmail-milter-debuginfo-0:8.15.2-34.el8.i686.rpm",
+					"sendmail-milter-debuginfo-0:8.15.2-34.el8.x86_64.rpm",
+					"sendmail-milter-devel-0:8.15.2-34.el8.aarch64.rpm",
+					"sendmail-milter-devel-0:8.15.2-34.el8.i686.rpm",
+					"sendmail-milter-devel-0:8.15.2-34.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

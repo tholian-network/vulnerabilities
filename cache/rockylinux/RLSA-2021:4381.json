@@ -1,0 +1,699 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4381",
+		"synopsis": "Moderate: GNOME security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for GNOME is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "GNOME is the default desktop environment of Rocky Linux.\nThe following packages have been upgraded to a later upstream version: gdm (40.0), webkit2gtk3 (2.32.3). (BZ#1909300)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1651378",
+				"description": "[RFE] Provide a mechanism for persistently showing the security level of a machine at login time",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1651378"
+			},
+			{
+				"ticket": "1770302",
+				"description": "disable show text in GDM login/lock screen (patched in RHEL 7.8)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1770302"
+			},
+			{
+				"ticket": "1791478",
+				"description": "Cannot completely disable odrs (Gnome Ratings) from the Software application in Gnome Desktop",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1791478"
+			},
+			{
+				"ticket": "1813727",
+				"description": "Files copied from NFS4 to Desktop can't be opened",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1813727"
+			},
+			{
+				"ticket": "1854679",
+				"description": "[RFE] Disable left edge gesture",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1854679"
+			},
+			{
+				"ticket": "1873297",
+				"description": "Gnome-software coredumps when run as root in terminal",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1873297"
+			},
+			{
+				"ticket": "1873488",
+				"description": "GTK3 prints errors with overlay scrollbar disabled",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1873488"
+			},
+			{
+				"ticket": "1888404",
+				"description": "Updates page hides ongoing updates on refresh",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1888404"
+			},
+			{
+				"ticket": "1894613",
+				"description": "[RFE] Re-inclusion of workspace renaming in GNOME 3.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1894613"
+			},
+			{
+				"ticket": "1897932",
+				"description": "JS ERROR: Error: Extension point conflict: there is already a status indicator for role ...",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1897932"
+			},
+			{
+				"ticket": "1904139",
+				"description": "Automatic Logout Feature not working",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1904139"
+			},
+			{
+				"ticket": "1905000",
+				"description": "Desktop refresh broken after unlock",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1905000"
+			},
+			{
+				"ticket": "1909300",
+				"description": "gdm isn't killing the login screen on login after all, should rebase to latest release",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1909300"
+			},
+			{
+				"ticket": "1914925",
+				"description": "RFE: add patch to set grub boot_success flag on shutdown/reboot",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1914925"
+			},
+			{
+				"ticket": "1924725",
+				"description": "[Wayland] Double-touch desktop icons fails sometimes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1924725"
+			},
+			{
+				"ticket": "1925640",
+				"description": "CVE-2020-36241 gnome-autoar: Directory traversal via directory symbolic links pointing outside of the destination directory",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1925640"
+			},
+			{
+				"ticket": "1928794",
+				"description": "CVE-2020-24870 LibRaw: Stack buffer overflow in LibRaw::identify_process_dng_fields() in identify.cpp",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1928794"
+			},
+			{
+				"ticket": "1928886",
+				"description": "CVE-2020-13558 webkitgtk: Use-after-free in AudioSourceProviderGStreamer leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1928886"
+			},
+			{
+				"ticket": "1935261",
+				"description": "[RFE] Enable connecting to WiFI and VPN connections at the GDM login",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1935261"
+			},
+			{
+				"ticket": "1937416",
+				"description": "Rebase WebKitGTK to 2.32",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1937416"
+			},
+			{
+				"ticket": "1937866",
+				"description": "Unable to disable onscreen keyboard in touch screen machine [rhel-8.5.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1937866"
+			},
+			{
+				"ticket": "1938937",
+				"description": "Mutter: mouse click doesn't work when using 10-bit graphic monitor [rhel-8.5.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1938937"
+			},
+			{
+				"ticket": "1940026",
+				"description": "CVE-2021-28650 gnome-autoar: Directory traversal via directory symbolic links pointing outside of the destination directory (incomplete CVE-2020-36241 fix)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1940026"
+			},
+			{
+				"ticket": "1944323",
+				"description": "CVE-2020-27918 webkitgtk: Use-after-free leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1944323"
+			},
+			{
+				"ticket": "1944329",
+				"description": "CVE-2020-29623 webkitgtk: User may be unable to fully delete browsing history",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1944329"
+			},
+			{
+				"ticket": "1944333",
+				"description": "CVE-2021-1765 webkitgtk: IFrame sandboxing policy violation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1944333"
+			},
+			{
+				"ticket": "1944337",
+				"description": "CVE-2021-1789 webkitgtk: Type confusion issue leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1944337"
+			},
+			{
+				"ticket": "1944340",
+				"description": "CVE-2021-1799 webkitgtk: Access to restricted ports on arbitrary servers via port redirection",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1944340"
+			},
+			{
+				"ticket": "1944343",
+				"description": "CVE-2021-1801 webkitgtk: IFrame sandboxing policy violation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1944343"
+			},
+			{
+				"ticket": "1944350",
+				"description": "CVE-2021-1870 webkitgtk: Logic issue leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1944350"
+			},
+			{
+				"ticket": "1944859",
+				"description": "CVE-2021-1788 webkitgtk: Use-after-free leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1944859"
+			},
+			{
+				"ticket": "1944862",
+				"description": "CVE-2021-1844 webkitgtk: Memory corruption issue leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1944862"
+			},
+			{
+				"ticket": "1944867",
+				"description": "CVE-2021-1871 webkitgtk: Logic issue leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1944867"
+			},
+			{
+				"ticket": "1949176",
+				"description": "GNOME Shell on Wayland does not generate xauth data, needed for X forwarding over SSH",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1949176"
+			},
+			{
+				"ticket": "1951086",
+				"description": "Disable the Facebook provider",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951086"
+			},
+			{
+				"ticket": "1952136",
+				"description": "Disable the Foursquare provider",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1952136"
+			},
+			{
+				"ticket": "1955754",
+				"description": "gnome-session kiosk-session support still isn't up to muster",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1955754"
+			},
+			{
+				"ticket": "1957705",
+				"description": "RFE: make gnome-calculator internet access attemps configurable system-wide",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1957705"
+			},
+			{
+				"ticket": "1960705",
+				"description": "Vino nonfunctional in FIPS mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1960705"
+			},
+			{
+				"ticket": "1962049",
+				"description": "[Hyper-V][RHEL8.5]gdm: Guest with 1 vcpu start GUI failed on Hyper-V",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1962049"
+			},
+			{
+				"ticket": "1971507",
+				"description": "gnome-shell JS ERROR Error calling onComplete: TypeError this._dialog.actor is undefined _hideLockScreenComplete updateTweens",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1971507"
+			},
+			{
+				"ticket": "1971534",
+				"description": "gnome-shell[2343]: gsignal.c:2642: instance '0x5583c61f9280' has no handler with id '23831'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1971534"
+			},
+			{
+				"ticket": "1972545",
+				"description": "flatpak: Prefer runtime from the same origin as the application",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1972545"
+			},
+			{
+				"ticket": "1978287",
+				"description": "gnome-shell to  include / Documented - PolicyKit-authentication-agent",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1978287"
+			},
+			{
+				"ticket": "1978505",
+				"description": "Gnome Software development package is missing important header files.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1978505"
+			},
+			{
+				"ticket": "1978612",
+				"description": "pt_BR translations for \"Register System\" panel",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1978612"
+			},
+			{
+				"ticket": "1980441",
+				"description": "CVE-2021-21806 webkitgtk: Use-after-free in fireEventListeners leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1980441"
+			},
+			{
+				"ticket": "1980661",
+				"description": "\"Screen Lock disabled\" notification appears on first login after disabling gdm and notification pop-up.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1980661"
+			},
+			{
+				"ticket": "1981420",
+				"description": "Improve style of overview close buttons",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1981420"
+			},
+			{
+				"ticket": "1986863",
+				"description": "CVE-2021-21775 webkitgtk: Use-after-free in ImageLoader dispatchPendingErrorEvent leading to information leak and possibly code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986863"
+			},
+			{
+				"ticket": "1986866",
+				"description": "CVE-2021-21779 webkitgtk: Use-after-free in WebCore::GraphicsContext leading to information leak and possibly code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986866"
+			},
+			{
+				"ticket": "1986872",
+				"description": "CVE-2021-30663 webkitgtk: Integer overflow leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986872"
+			},
+			{
+				"ticket": "1986874",
+				"description": "CVE-2021-30665 webkitgtk: Memory corruption leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986874"
+			},
+			{
+				"ticket": "1986879",
+				"description": "CVE-2021-30682 webkitgtk: Logic issue leading to leak of sensitive user information",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986879"
+			},
+			{
+				"ticket": "1986881",
+				"description": "CVE-2021-30689 webkitgtk: Logic issue leading to universal cross site scripting attack",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986881"
+			},
+			{
+				"ticket": "1986883",
+				"description": "CVE-2021-30720 webkitgtk: Logic issue allowing access to restricted ports on arbitrary servers",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986883"
+			},
+			{
+				"ticket": "1986886",
+				"description": "CVE-2021-30734 webkitgtk: Memory corruptions leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986886"
+			},
+			{
+				"ticket": "1986888",
+				"description": "CVE-2021-30744 webkitgtk: Cross-origin issue with iframe elements leading to universal cross site scripting attack",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986888"
+			},
+			{
+				"ticket": "1986890",
+				"description": "CVE-2021-30749 webkitgtk: Memory corruptions leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986890"
+			},
+			{
+				"ticket": "1986892",
+				"description": "CVE-2021-30758 webkitgtk: Type confusion leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986892"
+			},
+			{
+				"ticket": "1986900",
+				"description": "CVE-2021-30795 webkitgtk: Use-after-free leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986900"
+			},
+			{
+				"ticket": "1986902",
+				"description": "CVE-2021-30797 webkitgtk: Insufficient checks leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986902"
+			},
+			{
+				"ticket": "1986906",
+				"description": "CVE-2021-30799 webkitgtk: Memory corruptions leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986906"
+			},
+			{
+				"ticket": "1987233",
+				"description": "[RHEL8.5]Login screen shows dots when entering username",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1987233"
+			},
+			{
+				"ticket": "1989035",
+				"description": "terminal don't redraw if partially off screen",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1989035"
+			},
+			{
+				"ticket": "1998989",
+				"description": "[RHEL8.5] [Hyper-V]Cannot display GUI after installed RHEL8.5 recent build",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1998989"
+			},
+			{
+				"ticket": "1999120",
+				"description": "Gnome file manager crashes Xwayland/Desktop on drag/drop of files",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1999120"
+			},
+			{
+				"ticket": "2004170",
+				"description": "Unable to login to session via xdmcp",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2004170"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-13558",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-13558.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2020-24870",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-24870.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.1",
+				"cwe": "CWE-120"
+			},
+			{
+				"name": "CVE-2020-27918",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-27918.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2020-29623",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-29623.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "3.3",
+				"cwe": "CWE-459"
+			},
+			{
+				"name": "CVE-2020-36241",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-36241.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:L",
+				"cvss3BaseScore": "3.9",
+				"cwe": "CWE-22"
+			},
+			{
+				"name": "CVE-2021-1765",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-1765.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-863"
+			},
+			{
+				"name": "CVE-2021-1788",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-1788.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-1789",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-1789.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-843"
+			},
+			{
+				"name": "CVE-2021-1799",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-1799.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-200"
+			},
+			{
+				"name": "CVE-2021-1801",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-1801.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-863"
+			},
+			{
+				"name": "CVE-2021-1844",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-1844.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-1870",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-1870.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "9.8",
+				"cwe": "CWE-20"
+			},
+			{
+				"name": "CVE-2021-1871",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-1871.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "9.8",
+				"cwe": "CWE-20"
+			},
+			{
+				"name": "CVE-2021-21775",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-21775.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-21779",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-21779.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-21806",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-21806.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-28650",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-28650.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:L",
+				"cvss3BaseScore": "3.9",
+				"cwe": "CWE-22"
+			},
+			{
+				"name": "CVE-2021-30663",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30663.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-190"
+			},
+			{
+				"name": "CVE-2021-30665",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30665.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-20"
+			},
+			{
+				"name": "CVE-2021-30682",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30682.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-200"
+			},
+			{
+				"name": "CVE-2021-30689",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30689.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+				"cvss3BaseScore": "8.1",
+				"cwe": "CWE-79"
+			},
+			{
+				"name": "CVE-2021-30720",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30720.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+				"cvss3BaseScore": "9.3",
+				"cwe": "CWE-20"
+			},
+			{
+				"name": "CVE-2021-30734",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30734.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-20"
+			},
+			{
+				"name": "CVE-2021-30744",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30744.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+				"cvss3BaseScore": "8.1",
+				"cwe": "CWE-20-\u003eCWE-79"
+			},
+			{
+				"name": "CVE-2021-30749",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30749.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-20"
+			},
+			{
+				"name": "CVE-2021-30758",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30758.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-843"
+			},
+			{
+				"name": "CVE-2021-30795",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30795.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-20"
+			},
+			{
+				"name": "CVE-2021-30797",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30797.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-20"
+			},
+			{
+				"name": "CVE-2021-30799",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30799.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-20"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gnome-autoar-0:0.2.3-2.el8.aarch64.rpm",
+					"gnome-autoar-0:0.2.3-2.el8.i686.rpm",
+					"gnome-autoar-0:0.2.3-2.el8.src.rpm",
+					"gnome-autoar-0:0.2.3-2.el8.x86_64.rpm",
+					"gnome-autoar-debuginfo-0:0.2.3-2.el8.aarch64.rpm",
+					"gnome-autoar-debuginfo-0:0.2.3-2.el8.i686.rpm",
+					"gnome-autoar-debuginfo-0:0.2.3-2.el8.x86_64.rpm",
+					"gnome-autoar-debugsource-0:0.2.3-2.el8.aarch64.rpm",
+					"gnome-autoar-debugsource-0:0.2.3-2.el8.i686.rpm",
+					"gnome-autoar-debugsource-0:0.2.3-2.el8.x86_64.rpm",
+					"gnome-autoar-devel-0:0.2.3-2.el8.aarch64.rpm",
+					"gnome-autoar-devel-0:0.2.3-2.el8.i686.rpm",
+					"gnome-autoar-devel-0:0.2.3-2.el8.x86_64.rpm",
+					"LibRaw-0:0.19.5-3.el8.aarch64.rpm",
+					"LibRaw-0:0.19.5-3.el8.i686.rpm",
+					"LibRaw-0:0.19.5-3.el8.src.rpm",
+					"LibRaw-0:0.19.5-3.el8.x86_64.rpm",
+					"LibRaw-debuginfo-0:0.19.5-3.el8.aarch64.rpm",
+					"LibRaw-debuginfo-0:0.19.5-3.el8.i686.rpm",
+					"LibRaw-debuginfo-0:0.19.5-3.el8.x86_64.rpm",
+					"LibRaw-debugsource-0:0.19.5-3.el8.aarch64.rpm",
+					"LibRaw-debugsource-0:0.19.5-3.el8.i686.rpm",
+					"LibRaw-debugsource-0:0.19.5-3.el8.x86_64.rpm",
+					"LibRaw-devel-0:0.19.5-3.el8.aarch64.rpm",
+					"LibRaw-devel-0:0.19.5-3.el8.i686.rpm",
+					"LibRaw-devel-0:0.19.5-3.el8.x86_64.rpm",
+					"LibRaw-samples-0:0.19.5-3.el8.aarch64.rpm",
+					"LibRaw-samples-0:0.19.5-3.el8.x86_64.rpm",
+					"LibRaw-samples-debuginfo-0:0.19.5-3.el8.aarch64.rpm",
+					"LibRaw-samples-debuginfo-0:0.19.5-3.el8.x86_64.rpm",
+					"LibRaw-static-0:0.19.5-3.el8.aarch64.rpm",
+					"LibRaw-static-0:0.19.5-3.el8.i686.rpm",
+					"LibRaw-static-0:0.19.5-3.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

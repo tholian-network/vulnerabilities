@@ -1,0 +1,126 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1780",
+		"synopsis": "anaconda bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for anaconda is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1824422",
+				"description": "Registration to CDN can't be persisted if use rhsm in text mode with liveimg payload",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1824422"
+			},
+			{
+				"ticket": "1968574",
+				"description": "Improve post registration UX in Simple Content Access mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1968574"
+			},
+			{
+				"ticket": "1975349",
+				"description": "Make the installer environment hostname set for %post section from kickstart stable",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1975349"
+			},
+			{
+				"ticket": "1981807",
+				"description": "RHVH 4.4.3 anaconda UI proceeds to begin installation without root password provided",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1981807"
+			},
+			{
+				"ticket": "1990145",
+				"description": "(some) NIC options don't convey when we import them via an %include",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1990145"
+			},
+			{
+				"ticket": "2002722",
+				"description": "Anaconda prints an incorrect advice when ksdevice= is used on the kernel command line [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2002722"
+			},
+			{
+				"ticket": "2003692",
+				"description": "[RFE] anaconda: Add product config for AlmaLinux",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2003692"
+			},
+			{
+				"ticket": "2016918",
+				"description": "[anaconda] RHEL 8.6 Tier 0 Localization",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016918"
+			},
+			{
+				"ticket": "2018301",
+				"description": "Kickstart network --mtu option is ignored if the command is added via %include",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2018301"
+			},
+			{
+				"ticket": "2057475",
+				"description": "[RFE] /var/tmp on RHV should be on its own partition",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2057475"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1780",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1780",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"anaconda-0:33.16.6.7-1.el8.rocky.0.4.aarch64.rpm",
+					"anaconda-0:33.16.6.7-1.el8.rocky.0.4.src.rpm",
+					"anaconda-0:33.16.6.7-1.el8.rocky.0.4.x86_64.rpm",
+					"anaconda-core-0:33.16.6.7-1.el8.rocky.0.4.aarch64.rpm",
+					"anaconda-core-0:33.16.6.7-1.el8.rocky.0.4.x86_64.rpm",
+					"anaconda-core-debuginfo-0:33.16.6.7-1.el8.rocky.0.4.aarch64.rpm",
+					"anaconda-core-debuginfo-0:33.16.6.7-1.el8.rocky.0.4.x86_64.rpm",
+					"anaconda-debuginfo-0:33.16.6.7-1.el8.rocky.0.4.aarch64.rpm",
+					"anaconda-debuginfo-0:33.16.6.7-1.el8.rocky.0.4.i686.rpm",
+					"anaconda-debuginfo-0:33.16.6.7-1.el8.rocky.0.4.x86_64.rpm",
+					"anaconda-debugsource-0:33.16.6.7-1.el8.rocky.0.4.aarch64.rpm",
+					"anaconda-debugsource-0:33.16.6.7-1.el8.rocky.0.4.x86_64.rpm",
+					"anaconda-dracut-0:33.16.6.7-1.el8.rocky.0.4.aarch64.rpm",
+					"anaconda-dracut-0:33.16.6.7-1.el8.rocky.0.4.x86_64.rpm",
+					"anaconda-dracut-debuginfo-0:33.16.6.7-1.el8.rocky.0.4.aarch64.rpm",
+					"anaconda-dracut-debuginfo-0:33.16.6.7-1.el8.rocky.0.4.x86_64.rpm",
+					"anaconda-gui-0:33.16.6.7-1.el8.rocky.0.4.aarch64.rpm",
+					"anaconda-gui-0:33.16.6.7-1.el8.rocky.0.4.x86_64.rpm",
+					"anaconda-install-env-deps-0:33.16.6.7-1.el8.rocky.0.4.aarch64.rpm",
+					"anaconda-install-env-deps-0:33.16.6.7-1.el8.rocky.0.4.x86_64.rpm",
+					"anaconda-live-0:33.16.6.7-1.el8.rocky.0.4.aarch64.rpm",
+					"anaconda-live-0:33.16.6.7-1.el8.rocky.0.4.x86_64.rpm",
+					"anaconda-tui-0:33.16.6.7-1.el8.rocky.0.4.aarch64.rpm",
+					"anaconda-tui-0:33.16.6.7-1.el8.rocky.0.4.x86_64.rpm",
+					"anaconda-widgets-0:33.16.6.7-1.el8.rocky.0.4.aarch64.rpm",
+					"anaconda-widgets-0:33.16.6.7-1.el8.rocky.0.4.i686.rpm",
+					"anaconda-widgets-0:33.16.6.7-1.el8.rocky.0.4.x86_64.rpm",
+					"anaconda-widgets-debuginfo-0:33.16.6.7-1.el8.rocky.0.4.aarch64.rpm",
+					"anaconda-widgets-debuginfo-0:33.16.6.7-1.el8.rocky.0.4.i686.rpm",
+					"anaconda-widgets-debuginfo-0:33.16.6.7-1.el8.rocky.0.4.x86_64.rpm",
+					"anaconda-widgets-devel-debuginfo-0:33.16.6.7-1.el8.rocky.0.4.aarch64.rpm",
+					"anaconda-widgets-devel-debuginfo-0:33.16.6.7-1.el8.rocky.0.4.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

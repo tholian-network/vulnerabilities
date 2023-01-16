@@ -1,0 +1,92 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5820",
+		"synopsis": "lvm2 bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for lvm2 is now available for Rocky Linux 8.",
+		"description": "The lvm2 packages include complete support for handling read and write operations on physical volumes, creating volume groups from one or more physical volumes, and creating one or more logical volumes in volume groups.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2100133",
+				"description": "lvm ignores multipath blacklist configuration [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2100133"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:5820",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5820",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-08-02T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cmirror-8:2.03.14-3.el8_6.2.x86_64.rpm",
+					"cmirror-debuginfo-8:2.03.14-3.el8_6.2.x86_64.rpm",
+					"cmirror-standalone-8:2.03.14-3.el8_6.2.x86_64.rpm",
+					"device-mapper-8:1.02.181-3.el8_6.2.aarch64.rpm",
+					"device-mapper-8:1.02.181-3.el8_6.2.x86_64.rpm",
+					"device-mapper-debuginfo-8:1.02.181-3.el8_6.2.aarch64.rpm",
+					"device-mapper-debuginfo-8:1.02.181-3.el8_6.2.x86_64.rpm",
+					"device-mapper-devel-8:1.02.181-3.el8_6.2.aarch64.rpm",
+					"device-mapper-devel-8:1.02.181-3.el8_6.2.i686.rpm",
+					"device-mapper-devel-8:1.02.181-3.el8_6.2.x86_64.rpm",
+					"device-mapper-event-8:1.02.181-3.el8_6.2.aarch64.rpm",
+					"device-mapper-event-8:1.02.181-3.el8_6.2.x86_64.rpm",
+					"device-mapper-event-debuginfo-8:1.02.181-3.el8_6.2.aarch64.rpm",
+					"device-mapper-event-debuginfo-8:1.02.181-3.el8_6.2.x86_64.rpm",
+					"device-mapper-event-devel-8:1.02.181-3.el8_6.2.aarch64.rpm",
+					"device-mapper-event-devel-8:1.02.181-3.el8_6.2.i686.rpm",
+					"device-mapper-event-devel-8:1.02.181-3.el8_6.2.x86_64.rpm",
+					"device-mapper-event-libs-8:1.02.181-3.el8_6.2.aarch64.rpm",
+					"device-mapper-event-libs-8:1.02.181-3.el8_6.2.i686.rpm",
+					"device-mapper-event-libs-8:1.02.181-3.el8_6.2.x86_64.rpm",
+					"device-mapper-event-libs-debuginfo-8:1.02.181-3.el8_6.2.aarch64.rpm",
+					"device-mapper-event-libs-debuginfo-8:1.02.181-3.el8_6.2.i686.rpm",
+					"device-mapper-event-libs-debuginfo-8:1.02.181-3.el8_6.2.x86_64.rpm",
+					"device-mapper-libs-8:1.02.181-3.el8_6.2.aarch64.rpm",
+					"device-mapper-libs-8:1.02.181-3.el8_6.2.i686.rpm",
+					"device-mapper-libs-8:1.02.181-3.el8_6.2.x86_64.rpm",
+					"device-mapper-libs-debuginfo-8:1.02.181-3.el8_6.2.aarch64.rpm",
+					"device-mapper-libs-debuginfo-8:1.02.181-3.el8_6.2.i686.rpm",
+					"device-mapper-libs-debuginfo-8:1.02.181-3.el8_6.2.x86_64.rpm",
+					"lvm2-8:2.03.14-3.el8_6.2.aarch64.rpm",
+					"lvm2-8:2.03.14-3.el8_6.2.src.rpm",
+					"lvm2-8:2.03.14-3.el8_6.2.x86_64.rpm",
+					"lvm2-dbusd-8:2.03.14-3.el8_6.2.noarch.rpm",
+					"lvm2-debuginfo-8:2.03.14-3.el8_6.2.aarch64.rpm",
+					"lvm2-debuginfo-8:2.03.14-3.el8_6.2.i686.rpm",
+					"lvm2-debuginfo-8:2.03.14-3.el8_6.2.x86_64.rpm",
+					"lvm2-debugsource-8:2.03.14-3.el8_6.2.aarch64.rpm",
+					"lvm2-debugsource-8:2.03.14-3.el8_6.2.i686.rpm",
+					"lvm2-debugsource-8:2.03.14-3.el8_6.2.x86_64.rpm",
+					"lvm2-devel-8:2.03.14-3.el8_6.2.aarch64.rpm",
+					"lvm2-devel-8:2.03.14-3.el8_6.2.i686.rpm",
+					"lvm2-devel-8:2.03.14-3.el8_6.2.x86_64.rpm",
+					"lvm2-libs-8:2.03.14-3.el8_6.2.aarch64.rpm",
+					"lvm2-libs-8:2.03.14-3.el8_6.2.i686.rpm",
+					"lvm2-libs-8:2.03.14-3.el8_6.2.x86_64.rpm",
+					"lvm2-libs-debuginfo-8:2.03.14-3.el8_6.2.aarch64.rpm",
+					"lvm2-libs-debuginfo-8:2.03.14-3.el8_6.2.i686.rpm",
+					"lvm2-libs-debuginfo-8:2.03.14-3.el8_6.2.x86_64.rpm",
+					"lvm2-lockd-8:2.03.14-3.el8_6.2.aarch64.rpm",
+					"lvm2-lockd-8:2.03.14-3.el8_6.2.x86_64.rpm",
+					"lvm2-lockd-debuginfo-8:2.03.14-3.el8_6.2.aarch64.rpm",
+					"lvm2-lockd-debuginfo-8:2.03.14-3.el8_6.2.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,93 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:6436",
+		"synopsis": "kronosnet bug fix update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for kronosnet is now available for Rocky Linux 8.",
+		"description": "Kronosnet (knet) is a network abstraction layer designed for High Availability use cases.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2112924",
+				"description": "node randomly not rejoining cluster after a pcs cluster stop/start [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2112924"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:6436",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:6436",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-09-13T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"kronosnet-0:1.22-2.el8_6.src.rpm",
+					"kronosnet-debugsource-0:1.22-2.el8_6.aarch64.rpm",
+					"kronosnet-debugsource-0:1.22-2.el8_6.i686.rpm",
+					"kronosnet-debugsource-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-0:1.22-2.el8_6.i686.rpm",
+					"libknet1-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-compress-bzip2-plugin-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-compress-bzip2-plugin-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-compress-bzip2-plugin-debuginfo-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-compress-bzip2-plugin-debuginfo-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-compress-lz4-plugin-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-compress-lz4-plugin-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-compress-lz4-plugin-debuginfo-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-compress-lz4-plugin-debuginfo-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-compress-lzma-plugin-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-compress-lzma-plugin-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-compress-lzma-plugin-debuginfo-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-compress-lzma-plugin-debuginfo-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-compress-lzo2-plugin-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-compress-lzo2-plugin-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-compress-lzo2-plugin-debuginfo-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-compress-lzo2-plugin-debuginfo-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-compress-plugins-all-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-compress-plugins-all-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-compress-zlib-plugin-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-compress-zlib-plugin-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-compress-zlib-plugin-debuginfo-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-compress-zlib-plugin-debuginfo-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-crypto-nss-plugin-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-crypto-nss-plugin-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-crypto-nss-plugin-debuginfo-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-crypto-nss-plugin-debuginfo-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-crypto-openssl-plugin-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-crypto-openssl-plugin-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-crypto-openssl-plugin-debuginfo-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-crypto-openssl-plugin-debuginfo-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-crypto-plugins-all-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-crypto-plugins-all-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-debuginfo-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-debuginfo-0:1.22-2.el8_6.i686.rpm",
+					"libknet1-debuginfo-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-devel-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-devel-0:1.22-2.el8_6.i686.rpm",
+					"libknet1-devel-0:1.22-2.el8_6.x86_64.rpm",
+					"libknet1-plugins-all-0:1.22-2.el8_6.aarch64.rpm",
+					"libknet1-plugins-all-0:1.22-2.el8_6.x86_64.rpm",
+					"libnozzle1-0:1.22-2.el8_6.aarch64.rpm",
+					"libnozzle1-0:1.22-2.el8_6.i686.rpm",
+					"libnozzle1-0:1.22-2.el8_6.x86_64.rpm",
+					"libnozzle1-debuginfo-0:1.22-2.el8_6.aarch64.rpm",
+					"libnozzle1-debuginfo-0:1.22-2.el8_6.i686.rpm",
+					"libnozzle1-debuginfo-0:1.22-2.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,105 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:7115",
+		"synopsis": "rpm bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for rpm is now available for Rocky Linux 8.",
+		"description": "The RPM Package Manager (RPM) is a command-line driven package management system capable of installing, uninstalling, verifying, querying, and updating software packages.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2124523",
+				"description": "rpm-plugin-fapolicyd breaks system upgrade, leaving yum in hung state [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2124523"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:7115",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:7115",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-11-07T19:38:47.610862Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"python3-rpm-0:4.14.3-24.el8_6.aarch64.rpm",
+					"python3-rpm-0:4.14.3-24.el8_6.x86_64.rpm",
+					"python3-rpm-debuginfo-0:4.14.3-24.el8_6.aarch64.rpm",
+					"python3-rpm-debuginfo-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-0:4.14.3-24.el8_6.src.rpm",
+					"rpm-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-apidocs-0:4.14.3-24.el8_6.noarch.rpm",
+					"rpm-build-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-build-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-build-debuginfo-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-build-debuginfo-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-build-libs-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-build-libs-0:4.14.3-24.el8_6.i686.rpm",
+					"rpm-build-libs-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-build-libs-debuginfo-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-build-libs-debuginfo-0:4.14.3-24.el8_6.i686.rpm",
+					"rpm-build-libs-debuginfo-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-cron-0:4.14.3-24.el8_6.noarch.rpm",
+					"rpm-debuginfo-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-debuginfo-0:4.14.3-24.el8_6.i686.rpm",
+					"rpm-debuginfo-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-debugsource-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-debugsource-0:4.14.3-24.el8_6.i686.rpm",
+					"rpm-debugsource-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-devel-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-devel-0:4.14.3-24.el8_6.i686.rpm",
+					"rpm-devel-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-devel-debuginfo-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-devel-debuginfo-0:4.14.3-24.el8_6.i686.rpm",
+					"rpm-devel-debuginfo-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-libs-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-libs-0:4.14.3-24.el8_6.i686.rpm",
+					"rpm-libs-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-libs-debuginfo-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-libs-debuginfo-0:4.14.3-24.el8_6.i686.rpm",
+					"rpm-libs-debuginfo-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-plugin-fapolicyd-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-plugin-fapolicyd-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-plugin-fapolicyd-debuginfo-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-plugin-fapolicyd-debuginfo-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-plugin-ima-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-plugin-ima-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-plugin-ima-debuginfo-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-plugin-ima-debuginfo-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-plugin-prioreset-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-plugin-prioreset-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-plugin-prioreset-debuginfo-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-plugin-prioreset-debuginfo-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-plugin-selinux-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-plugin-selinux-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-plugin-selinux-debuginfo-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-plugin-selinux-debuginfo-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-plugin-syslog-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-plugin-syslog-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-plugin-syslog-debuginfo-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-plugin-syslog-debuginfo-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-plugin-systemd-inhibit-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-plugin-systemd-inhibit-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-plugin-systemd-inhibit-debuginfo-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-plugin-systemd-inhibit-debuginfo-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-sign-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-sign-0:4.14.3-24.el8_6.x86_64.rpm",
+					"rpm-sign-debuginfo-0:4.14.3-24.el8_6.aarch64.rpm",
+					"rpm-sign-debuginfo-0:4.14.3-24.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

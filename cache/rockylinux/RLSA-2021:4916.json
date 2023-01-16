@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4916",
+		"synopsis": "Important: mailman:2.1 security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for the mailman:2.1 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Mailman is a program used to help manage e-mail discussion lists.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2026862",
+				"description": "CVE-2021-44227 mailman: CSRF token bypass allows to perform CSRF attacks and admin takeover",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2026862"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-44227",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-44227.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.0",
+				"cwe": "CWE-352"
+			}
+		],
+		"publishedAt": "2021-12-02T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mailman-3:2.1.29-12.module+el8.5.0+717+27fd1ba7.2.aarch64.rpm",
+					"mailman-3:2.1.29-12.module+el8.5.0+717+27fd1ba7.2.src.rpm",
+					"mailman-3:2.1.29-12.module+el8.5.0+717+27fd1ba7.2.x86_64.rpm",
+					"mailman-debuginfo-3:2.1.29-12.module+el8.5.0+717+27fd1ba7.2.aarch64.rpm",
+					"mailman-debuginfo-3:2.1.29-12.module+el8.5.0+717+27fd1ba7.2.x86_64.rpm",
+					"mailman-debugsource-3:2.1.29-12.module+el8.5.0+717+27fd1ba7.2.aarch64.rpm",
+					"mailman-debugsource-3:2.1.29-12.module+el8.5.0+717+27fd1ba7.2.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

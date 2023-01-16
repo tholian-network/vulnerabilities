@@ -1,0 +1,57 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2145",
+		"synopsis": "osbuild-composer bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for osbuild-composer is now available for Rocky Linux 8.",
+		"description": "The osbuild-composer package is a service for building customized OS artifacts, such as virtual machine (VM) images and OSTree commits. Apart from building images for local usage, it can also upload images directly to cloud. The package is compatible with composer-cli and cockpit-composer clients.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2079804",
+				"description": "Building RHEL 8.6 with filesystem customisations will lead to incorrect LVM layout [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2079804"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2145",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2145",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"osbuild-composer-0:46.3-1.el8_6.rocky.0.2.aarch64.rpm",
+					"osbuild-composer-0:46.3-1.el8_6.rocky.0.2.src.rpm",
+					"osbuild-composer-0:46.3-1.el8_6.rocky.0.2.x86_64.rpm",
+					"osbuild-composer-core-0:46.3-1.el8_6.rocky.0.2.aarch64.rpm",
+					"osbuild-composer-core-0:46.3-1.el8_6.rocky.0.2.x86_64.rpm",
+					"osbuild-composer-core-debuginfo-0:46.3-1.el8_6.rocky.0.2.aarch64.rpm",
+					"osbuild-composer-core-debuginfo-0:46.3-1.el8_6.rocky.0.2.x86_64.rpm",
+					"osbuild-composer-debuginfo-0:46.3-1.el8_6.rocky.0.2.aarch64.rpm",
+					"osbuild-composer-debuginfo-0:46.3-1.el8_6.rocky.0.2.x86_64.rpm",
+					"osbuild-composer-debugsource-0:46.3-1.el8_6.rocky.0.2.aarch64.rpm",
+					"osbuild-composer-debugsource-0:46.3-1.el8_6.rocky.0.2.x86_64.rpm",
+					"osbuild-composer-dnf-json-0:46.3-1.el8_6.rocky.0.2.aarch64.rpm",
+					"osbuild-composer-dnf-json-0:46.3-1.el8_6.rocky.0.2.x86_64.rpm",
+					"osbuild-composer-worker-0:46.3-1.el8_6.rocky.0.2.aarch64.rpm",
+					"osbuild-composer-worker-0:46.3-1.el8_6.rocky.0.2.x86_64.rpm",
+					"osbuild-composer-worker-debuginfo-0:46.3-1.el8_6.rocky.0.2.aarch64.rpm",
+					"osbuild-composer-worker-debuginfo-0:46.3-1.el8_6.rocky.0.2.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,74 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1806",
+		"synopsis": "cockpit-appstream bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for cockpit-appstream is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1862779",
+				"description": "In ppc64le there will an error which is 'SATA is not supported with this QEMU binary' when attaching/detaching disks",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1862779"
+			},
+			{
+				"ticket": "1868594",
+				"description": "[machines] 'Unattended' is not available for 'Local Install Media'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1868594"
+			},
+			{
+				"ticket": "2031678",
+				"description": "[machines] In s390x, the VM is not disappear after deleting with checking the checkbox of its disk",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2031678"
+			},
+			{
+				"ticket": "2033603",
+				"description": "[machines] \"Immediately start VM\" will be checked automatically after clickig \"x\" of \"Operating system\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2033603"
+			},
+			{
+				"ticket": "2060292",
+				"description": "[cockpit-appstream] RHEL 8.6 Tier 0 Localization",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2060292"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1806",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1806",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cockpit-appstream-0:264.1-1.el8.src.rpm",
+					"cockpit-appstream-debugsource-0:264.1-1.el8.aarch64.rpm",
+					"cockpit-appstream-debugsource-0:264.1-1.el8.x86_64.rpm",
+					"cockpit-machines-0:264.1-1.el8.noarch.rpm",
+					"cockpit-packagekit-0:264.1-1.el8.noarch.rpm",
+					"cockpit-pcp-0:264.1-1.el8.aarch64.rpm",
+					"cockpit-pcp-0:264.1-1.el8.x86_64.rpm",
+					"cockpit-storaged-0:264.1-1.el8.noarch.rpm",
+					"cockpit-tests-0:264.1-1.el8.aarch64.rpm",
+					"cockpit-tests-0:264.1-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1546",
+		"synopsis": "Moderate: polkit security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for polkit is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The polkit packages provide a component for controlling system-wide privileges. This component provides a uniform and organized way for non-privileged processes to communicate with privileged ones.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2007534",
+				"description": "CVE-2021-4115 polkit: file descriptor leak allows an unprivileged user to cause a crash",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2007534"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-4115",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-4115.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.2",
+				"cwe": "CWE-403"
+			}
+		],
+		"publishedAt": "2022-04-26T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"polkit-0:0.115-13.el8_5.2.aarch64.rpm",
+					"polkit-0:0.115-13.el8_5.2.src.rpm",
+					"polkit-0:0.115-13.el8_5.2.x86_64.rpm",
+					"polkit-debuginfo-0:0.115-13.el8_5.2.aarch64.rpm",
+					"polkit-debuginfo-0:0.115-13.el8_5.2.i686.rpm",
+					"polkit-debuginfo-0:0.115-13.el8_5.2.x86_64.rpm",
+					"polkit-debugsource-0:0.115-13.el8_5.2.aarch64.rpm",
+					"polkit-debugsource-0:0.115-13.el8_5.2.i686.rpm",
+					"polkit-debugsource-0:0.115-13.el8_5.2.x86_64.rpm",
+					"polkit-devel-0:0.115-13.el8_5.2.aarch64.rpm",
+					"polkit-devel-0:0.115-13.el8_5.2.i686.rpm",
+					"polkit-devel-0:0.115-13.el8_5.2.x86_64.rpm",
+					"polkit-docs-0:0.115-13.el8_5.2.noarch.rpm",
+					"polkit-libs-0:0.115-13.el8_5.2.aarch64.rpm",
+					"polkit-libs-0:0.115-13.el8_5.2.i686.rpm",
+					"polkit-libs-0:0.115-13.el8_5.2.x86_64.rpm",
+					"polkit-libs-debuginfo-0:0.115-13.el8_5.2.aarch64.rpm",
+					"polkit-libs-debuginfo-0:0.115-13.el8_5.2.i686.rpm",
+					"polkit-libs-debuginfo-0:0.115-13.el8_5.2.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

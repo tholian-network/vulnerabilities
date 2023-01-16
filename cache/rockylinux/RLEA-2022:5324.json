@@ -1,0 +1,73 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:5324",
+		"synopsis": "pacemaker enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for pacemaker is now available for Rocky Linux 8.",
+		"description": "The Pacemaker cluster resource manager is a collection of technologies\nworking together to maintain data integrity and application availability in\nthe event of failures.\nThe new feature should not be configured until all nodes in the cluster are running a pacemaker version that supports it. Users who do not intend to use the new feature do not need to apply the update.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2062848",
+				"description": "Add new multiple-active option for \"stop unexpected instances\" [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2062848"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2022:5324",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:5324",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"pacemaker-0:2.1.2-4.el8_6.2.aarch64.rpm",
+					"pacemaker-0:2.1.2-4.el8_6.2.src.rpm",
+					"pacemaker-0:2.1.2-4.el8_6.2.x86_64.rpm",
+					"pacemaker-cli-0:2.1.2-4.el8_6.2.aarch64.rpm",
+					"pacemaker-cli-0:2.1.2-4.el8_6.2.x86_64.rpm",
+					"pacemaker-cli-debuginfo-0:2.1.2-4.el8_6.2.aarch64.rpm",
+					"pacemaker-cli-debuginfo-0:2.1.2-4.el8_6.2.x86_64.rpm",
+					"pacemaker-cluster-libs-0:2.1.2-4.el8_6.2.aarch64.rpm",
+					"pacemaker-cluster-libs-0:2.1.2-4.el8_6.2.i686.rpm",
+					"pacemaker-cluster-libs-0:2.1.2-4.el8_6.2.x86_64.rpm",
+					"pacemaker-cluster-libs-debuginfo-0:2.1.2-4.el8_6.2.aarch64.rpm",
+					"pacemaker-cluster-libs-debuginfo-0:2.1.2-4.el8_6.2.i686.rpm",
+					"pacemaker-cluster-libs-debuginfo-0:2.1.2-4.el8_6.2.x86_64.rpm",
+					"pacemaker-cts-0:2.1.2-4.el8_6.2.noarch.rpm",
+					"pacemaker-debuginfo-0:2.1.2-4.el8_6.2.aarch64.rpm",
+					"pacemaker-debuginfo-0:2.1.2-4.el8_6.2.i686.rpm",
+					"pacemaker-debuginfo-0:2.1.2-4.el8_6.2.x86_64.rpm",
+					"pacemaker-doc-0:2.1.2-4.el8_6.2.noarch.rpm",
+					"pacemaker-libs-0:2.1.2-4.el8_6.2.aarch64.rpm",
+					"pacemaker-libs-0:2.1.2-4.el8_6.2.i686.rpm",
+					"pacemaker-libs-0:2.1.2-4.el8_6.2.x86_64.rpm",
+					"pacemaker-libs-debuginfo-0:2.1.2-4.el8_6.2.aarch64.rpm",
+					"pacemaker-libs-debuginfo-0:2.1.2-4.el8_6.2.i686.rpm",
+					"pacemaker-libs-debuginfo-0:2.1.2-4.el8_6.2.x86_64.rpm",
+					"pacemaker-libs-devel-0:2.1.2-4.el8_6.2.aarch64.rpm",
+					"pacemaker-libs-devel-0:2.1.2-4.el8_6.2.i686.rpm",
+					"pacemaker-libs-devel-0:2.1.2-4.el8_6.2.x86_64.rpm",
+					"pacemaker-nagios-plugins-metadata-0:2.1.2-4.el8_6.2.noarch.rpm",
+					"pacemaker-remote-0:2.1.2-4.el8_6.2.aarch64.rpm",
+					"pacemaker-remote-0:2.1.2-4.el8_6.2.x86_64.rpm",
+					"pacemaker-remote-debuginfo-0:2.1.2-4.el8_6.2.aarch64.rpm",
+					"pacemaker-remote-debuginfo-0:2.1.2-4.el8_6.2.x86_64.rpm",
+					"pacemaker-schemas-0:2.1.2-4.el8_6.2.noarch.rpm"
+				]
+			}
+		}
+	}
+}

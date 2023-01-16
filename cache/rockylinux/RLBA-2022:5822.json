@@ -1,0 +1,48 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5822",
+		"synopsis": "fapolicyd bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for fapolicyd is now available for Rocky Linux 8.",
+		"description": "The fapolicyd software framework introduces a form of application whitelisting and blacklisting based on a user-defined policy. The application whitelisting feature provides one of the most efficient ways to prevent running untrusted and possibly malicious applications on the system.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2084548",
+				"description": "Faulty handling of static applications [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2084548"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:5822",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5822",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-08-02T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"fapolicyd-0:1.1-6.el8_6.1.aarch64.rpm",
+					"fapolicyd-0:1.1-6.el8_6.1.src.rpm",
+					"fapolicyd-0:1.1-6.el8_6.1.x86_64.rpm",
+					"fapolicyd-debuginfo-0:1.1-6.el8_6.1.aarch64.rpm",
+					"fapolicyd-debuginfo-0:1.1-6.el8_6.1.x86_64.rpm",
+					"fapolicyd-debugsource-0:1.1-6.el8_6.1.aarch64.rpm",
+					"fapolicyd-debugsource-0:1.1-6.el8_6.1.x86_64.rpm",
+					"fapolicyd-selinux-0:1.1-6.el8_6.1.noarch.rpm"
+				]
+			}
+		}
+	}
+}

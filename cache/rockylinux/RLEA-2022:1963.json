@@ -1,0 +1,41 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:1963",
+		"synopsis": "new module: log4j:2",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "A new log4j:2 module is now available for Rocky Linux 8.",
+		"description": "This enhancement update adds the log4j:2 module to Rocky Linux 8.\n(BZ#1937468)\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHEA-2022:1963",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:1963",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"disruptor-0:3.4.4-2.module+el8.6.0+895+381d2531.noarch.rpm",
+					"disruptor-0:3.4.4-2.module+el8.6.0+895+381d2531.src.rpm",
+					"jctools-0:3.3.0-3.module+el8.6.0+895+381d2531.noarch.rpm",
+					"jctools-0:3.3.0-3.module+el8.6.0+895+381d2531.src.rpm",
+					"log4j-0:2.17.1-4.module+el8.6.0+895+381d2531.noarch.rpm",
+					"log4j-0:2.17.1-4.module+el8.6.0+895+381d2531.src.rpm",
+					"log4j-jcl-0:2.17.1-4.module+el8.6.0+895+381d2531.noarch.rpm",
+					"log4j-slf4j-0:2.17.1-4.module+el8.6.0+895+381d2531.noarch.rpm"
+				]
+			}
+		}
+	}
+}

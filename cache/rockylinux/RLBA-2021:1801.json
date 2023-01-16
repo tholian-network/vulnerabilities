@@ -1,0 +1,55 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1801",
+		"synopsis": "libgpod bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libgpod is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1657264",
+				"description": "tmpfiles snippet needs updated path",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1657264"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1801",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1801",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libgpod-0:0.8.3-24.el8.aarch64.rpm",
+					"libgpod-0:0.8.3-24.el8.i686.rpm",
+					"libgpod-0:0.8.3-24.el8.src.rpm",
+					"libgpod-0:0.8.3-24.el8.x86_64.rpm",
+					"libgpod-debuginfo-0:0.8.3-24.el8.aarch64.rpm",
+					"libgpod-debuginfo-0:0.8.3-24.el8.i686.rpm",
+					"libgpod-debuginfo-0:0.8.3-24.el8.x86_64.rpm",
+					"libgpod-debugsource-0:0.8.3-24.el8.aarch64.rpm",
+					"libgpod-debugsource-0:0.8.3-24.el8.i686.rpm",
+					"libgpod-debugsource-0:0.8.3-24.el8.x86_64.rpm",
+					"libgpod-devel-0:0.8.3-24.el8.aarch64.rpm",
+					"libgpod-devel-0:0.8.3-24.el8.i686.rpm",
+					"libgpod-devel-0:0.8.3-24.el8.x86_64.rpm",
+					"libgpod-doc-0:0.8.3-24.el8.aarch64.rpm",
+					"libgpod-doc-0:0.8.3-24.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

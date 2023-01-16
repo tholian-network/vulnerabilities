@@ -1,0 +1,58 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2063",
+		"synopsis": "firewalld bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for firewalld is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1917766",
+				"description": "firewalld with nftables while processing rich rules fails to parse ipv4 address if specified with netmask",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1917766"
+			},
+			{
+				"ticket": "1945833",
+				"description": "LogDenied=unicast is configured in firewalld.conf, but icmp echo-request accepted log is shown in /var/log/messages",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1945833"
+			},
+			{
+				"ticket": "2014383",
+				"description": "Saving same ip in multiple zones by editing the file, followed by \"firewall-cmd --reload\" breaks the system connectivity.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2014383"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2063",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2063",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"firewall-applet-0:0.9.3-13.el8.noarch.rpm",
+					"firewall-config-0:0.9.3-13.el8.noarch.rpm",
+					"firewalld-0:0.9.3-13.el8.noarch.rpm",
+					"firewalld-0:0.9.3-13.el8.src.rpm",
+					"firewalld-filesystem-0:0.9.3-13.el8.noarch.rpm",
+					"python3-firewall-0:0.9.3-13.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

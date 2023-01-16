@@ -1,0 +1,69 @@
+{
+	"updateinfo_id": "ALSA-2022:4776",
+	"fromstr": "packager@almalinux.org",
+	"title": "Critical: firefox security update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Critical",
+	"summary": "An update for firefox is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+	"pushcount": "2",
+	"pkglist": {
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"packages": [
+			{
+				"src": "firefox-91.9.1-1.el8_6.alma.src.rpm",
+				"name": "firefox",
+				"epoch": "0",
+				"version": "91.9.1",
+				"release": "1.el8_6.alma",
+				"arch": "x86_64",
+				"filename": "firefox-91.9.1-1.el8_6.alma.x86_64.rpm",
+				"sum": "b1726a988c33140ce294ab405de3afc0c06240c9d5ba36ae47862c27879e3585",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "firefox-91.9.1-1.el8_6.alma.src.rpm",
+				"name": "firefox",
+				"epoch": "0",
+				"version": "91.9.1",
+				"release": "1.el8_6.alma",
+				"arch": "ppc64le",
+				"filename": "firefox-91.9.1-1.el8_6.alma.ppc64le.rpm",
+				"sum": "1735572e20f18adce26dd01c31a76a4b7a5ef3b256a618745edad1fa273c81ea",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "Mozilla Firefox is an open-source web browser, designed for standards compliance, performance, and portability.\n\nThis update upgrades Firefox to version 91.9.1 ESR.\n\nSecurity Fix(es):\n\n* Mozilla: Untrusted input used in JavaScript object indexing, leading to prototype pollution (CVE-2022-1529)\n\n* Mozilla: Prototype pollution in Top-Level Await implementation (CVE-2022-1802)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+	"references": [
+		{
+			"id": "ALSA-2022-4776",
+			"title": "ALSA-2022-4776",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-4776.html"
+		},
+		{
+			"id": "CVE-2022-1529",
+			"title": "CVE-2022-1529",
+			"type": "cve",
+			"href": "https://vulners.com/cve/CVE-2022-1529"
+		},
+		{
+			"id": "CVE-2022-1802",
+			"title": "CVE-2022-1802",
+			"type": "cve",
+			"href": "https://vulners.com/cve/CVE-2022-1802"
+		}
+	],
+	"issued_date": {
+		"$date": 1653676088000
+	},
+	"updated_date": {
+		"$date": 1653676088000
+	}
+}

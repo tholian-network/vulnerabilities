@@ -1,0 +1,66 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:2031",
+		"synopsis": "Low: libssh security, bug fix, and enhancement update",
+		"severity": "SEVERITY_LOW",
+		"topic": "An update for libssh is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "libssh is a library which implements the SSH protocol. It can be used to implement client and server applications.\nThe following packages have been upgraded to a later upstream version: libssh (0.9.6). (BZ#1896651)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1896651",
+				"description": "Update for libssh-0.9.0-4.el8.x86_64 as it has bug. Rebase to libssh-0-9-6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1896651"
+			},
+			{
+				"ticket": "1978810",
+				"description": "CVE-2021-3634 libssh: possible heap-based buffer overflow when rekeying",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1978810"
+			},
+			{
+				"ticket": "2020159",
+				"description": "CI/gating - replace STI tests",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2020159"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-3634",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3634.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "3.5",
+				"cwe": "CWE-787"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libssh-0:0.9.6-3.el8.aarch64.rpm",
+					"libssh-0:0.9.6-3.el8.i686.rpm",
+					"libssh-0:0.9.6-3.el8.src.rpm",
+					"libssh-0:0.9.6-3.el8.x86_64.rpm",
+					"libssh-config-0:0.9.6-3.el8.noarch.rpm",
+					"libssh-debuginfo-0:0.9.6-3.el8.aarch64.rpm",
+					"libssh-debuginfo-0:0.9.6-3.el8.i686.rpm",
+					"libssh-debuginfo-0:0.9.6-3.el8.x86_64.rpm",
+					"libssh-debugsource-0:0.9.6-3.el8.aarch64.rpm",
+					"libssh-debugsource-0:0.9.6-3.el8.i686.rpm",
+					"libssh-debugsource-0:0.9.6-3.el8.x86_64.rpm",
+					"libssh-devel-0:0.9.6-3.el8.aarch64.rpm",
+					"libssh-devel-0:0.9.6-3.el8.i686.rpm",
+					"libssh-devel-0:0.9.6-3.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

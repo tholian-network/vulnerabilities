@@ -1,0 +1,35 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:4200",
+		"synopsis": "new module: nodejs:16",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "A new nodejs:16 module is now available for Rocky Linux 8.",
+		"description": "This enhancement update adds the nodejs:16 module to Rocky Linux 8 as a Technology Preview. A future update will provide a Long Term Support (LTS) version of Node.js 16, which will be fully supported. (BZ#1953991)\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.\nFor information on Rocky Enterprise Software Foundation scope of support for Technology Preview features, see Technology Preview Features Support Scope.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHEA-2021:4200",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:4200",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nodejs-packaging-0:25-1.module+el8.5.0+702+221f14e6.noarch.rpm",
+					"nodejs-packaging-0:25-1.module+el8.5.0+702+221f14e6.src.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,55 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1833",
+		"synopsis": "inkscape:0.92.3 bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for the inkscape:0.92.3 module is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1997106",
+				"description": "inkscape segfault due to out of bounds access",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1997106"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1833",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1833",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"inkscape-0:0.92.3-16.module+el8.6.0+805+841d2db4.aarch64.rpm",
+					"inkscape-0:0.92.3-16.module+el8.6.0+805+841d2db4.src.rpm",
+					"inkscape-0:0.92.3-16.module+el8.6.0+805+841d2db4.x86_64.rpm",
+					"inkscape-debuginfo-0:0.92.3-16.module+el8.6.0+805+841d2db4.aarch64.rpm",
+					"inkscape-debuginfo-0:0.92.3-16.module+el8.6.0+805+841d2db4.x86_64.rpm",
+					"inkscape-debugsource-0:0.92.3-16.module+el8.6.0+805+841d2db4.aarch64.rpm",
+					"inkscape-debugsource-0:0.92.3-16.module+el8.6.0+805+841d2db4.x86_64.rpm",
+					"inkscape-docs-0:0.92.3-16.module+el8.6.0+805+841d2db4.aarch64.rpm",
+					"inkscape-docs-0:0.92.3-16.module+el8.6.0+805+841d2db4.x86_64.rpm",
+					"inkscape-view-0:0.92.3-16.module+el8.6.0+805+841d2db4.aarch64.rpm",
+					"inkscape-view-0:0.92.3-16.module+el8.6.0+805+841d2db4.x86_64.rpm",
+					"inkscape-view-debuginfo-0:0.92.3-16.module+el8.6.0+805+841d2db4.aarch64.rpm",
+					"inkscape-view-debuginfo-0:0.92.3-16.module+el8.6.0+805+841d2db4.x86_64.rpm",
+					"python2-scour-0:0.35-9.module+el8.4.0+533+773bb730.noarch.rpm",
+					"python-scour-0:0.35-9.module+el8.4.0+533+773bb730.src.rpm"
+				]
+			}
+		}
+	}
+}

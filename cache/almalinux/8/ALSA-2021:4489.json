@@ -1,0 +1,57 @@
+{
+	"updateinfo_id": "ALSA-2021:4489",
+	"fromstr": "packager@almalinux.org",
+	"title": "Low: rpm security, bug fix, and enhancement update",
+	"type": "security",
+	"release": "0",
+	"version": "2",
+	"status": "final",
+	"severity": "Low",
+	"summary": "An update for rpm is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+	"pushcount": "2",
+	"pkglist": {
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"packages": [
+			{
+				"src": "rpm-4.14.3-19.el8.src.rpm",
+				"name": "rpm-build",
+				"epoch": "0",
+				"version": "4.14.3",
+				"release": "19.el8",
+				"arch": "x86_64",
+				"filename": "rpm-build-4.14.3-19.el8.x86_64.rpm",
+				"sum": "b6b59440661ba48e54754d66d98b7217912221d4fe01343fede926c51d214d1b",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rpm-4.14.3-19.el8.src.rpm",
+				"name": "rpm-plugin-fapolicyd",
+				"epoch": "0",
+				"version": "4.14.3",
+				"release": "19.el8",
+				"arch": "x86_64",
+				"filename": "rpm-plugin-fapolicyd-4.14.3-19.el8.x86_64.rpm",
+				"sum": "ea73522baf95462d210fe97daa8a7d81ba456c312fcb66f917c9f3304893f159",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "The RPM Package Manager (RPM) is a command-line driven package management system capable of installing, uninstalling, verifying, querying, and updating software packages.\n\nSecurity Fix(es):\n\n* rpm: missing length checks in hdrblobInit() (CVE-2021-20266)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
+	"references": [
+		{
+			"id": "CVE-2021-20266",
+			"title": "CVE-2021-20266",
+			"type": "cve",
+			"href": "https://vulners.com/cve/CVE-2021-20266"
+		}
+	],
+	"issued_date": {
+		"$date": 1636450353000
+	},
+	"updated_date": {
+		"$date": 1636712456000
+	}
+}

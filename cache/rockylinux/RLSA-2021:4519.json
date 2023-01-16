@@ -1,0 +1,67 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4519",
+		"synopsis": "Moderate: autotrace security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for autotrace is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "AutoTrace is a program for converting bitmaps to vector graphics.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1945031",
+				"description": "CVE-2019-19005 autotrace: bitmap double free in main.c allows attackers to cause an unspecified impact",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1945031"
+			},
+			{
+				"ticket": "1945033",
+				"description": "CVE-2019-19004 autotrace: integer overflow in input-bmp.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1945033"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2019-19004",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2019-19004.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "3.3",
+				"cwe": "CWE-190"
+			},
+			{
+				"name": "CVE-2019-19005",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2019-19005.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"autotrace-0:0.31.1-53.el8.aarch64.rpm",
+					"autotrace-0:0.31.1-53.el8.i686.rpm",
+					"autotrace-0:0.31.1-53.el8.src.rpm",
+					"autotrace-0:0.31.1-53.el8.x86_64.rpm",
+					"autotrace-debuginfo-0:0.31.1-53.el8.aarch64.rpm",
+					"autotrace-debuginfo-0:0.31.1-53.el8.i686.rpm",
+					"autotrace-debuginfo-0:0.31.1-53.el8.x86_64.rpm",
+					"autotrace-debugsource-0:0.31.1-53.el8.aarch64.rpm",
+					"autotrace-debugsource-0:0.31.1-53.el8.i686.rpm",
+					"autotrace-debugsource-0:0.31.1-53.el8.x86_64.rpm",
+					"autotrace-devel-0:0.31.1-53.el8.aarch64.rpm",
+					"autotrace-devel-0:0.31.1-53.el8.i686.rpm",
+					"autotrace-devel-0:0.31.1-53.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

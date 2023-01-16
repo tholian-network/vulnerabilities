@@ -1,0 +1,81 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7730",
+		"synopsis": "Moderate: libldb security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for libldb is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The libldb packages provide an extensible library that implements an LDAP-like API to access remote LDAP servers, or use local TDB databases.\nThe following packages have been upgraded to a later upstream version: libldb (2.5.2). (BZ#2077484)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2077484",
+				"description": "Rebase libldb to the version required by Samba",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2077484"
+			},
+			{
+				"ticket": "2108215",
+				"description": "CVE-2022-32746 samba: AD users can induce a use-after-free in the server process with an LDAP add or modify request",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2108215"
+			},
+			{
+				"ticket": "2108998",
+				"description": "python3-ldb-devel sub-package is missing from CRB",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2108998"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-32746",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32746.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L",
+				"cvss3BaseScore": "5.4",
+				"cwe": "CWE-416"
+			}
+		],
+		"publishedAt": "2022-11-13T07:54:11.979709Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"ldb-tools-0:2.5.2-2.el8.aarch64.rpm",
+					"ldb-tools-0:2.5.2-2.el8.x86_64.rpm",
+					"ldb-tools-debuginfo-0:2.5.2-2.el8.aarch64.rpm",
+					"ldb-tools-debuginfo-0:2.5.2-2.el8.x86_64.rpm",
+					"libldb-0:2.5.2-2.el8.aarch64.rpm",
+					"libldb-0:2.5.2-2.el8.i686.rpm",
+					"libldb-0:2.5.2-2.el8.src.rpm",
+					"libldb-0:2.5.2-2.el8.x86_64.rpm",
+					"libldb-debuginfo-0:2.5.2-2.el8.aarch64.rpm",
+					"libldb-debuginfo-0:2.5.2-2.el8.i686.rpm",
+					"libldb-debuginfo-0:2.5.2-2.el8.x86_64.rpm",
+					"libldb-debugsource-0:2.5.2-2.el8.aarch64.rpm",
+					"libldb-debugsource-0:2.5.2-2.el8.i686.rpm",
+					"libldb-debugsource-0:2.5.2-2.el8.x86_64.rpm",
+					"libldb-devel-0:2.5.2-2.el8.aarch64.rpm",
+					"libldb-devel-0:2.5.2-2.el8.i686.rpm",
+					"libldb-devel-0:2.5.2-2.el8.x86_64.rpm",
+					"python3-ldb-0:2.5.2-2.el8.aarch64.rpm",
+					"python3-ldb-0:2.5.2-2.el8.i686.rpm",
+					"python3-ldb-0:2.5.2-2.el8.x86_64.rpm",
+					"python3-ldb-debuginfo-0:2.5.2-2.el8.aarch64.rpm",
+					"python3-ldb-debuginfo-0:2.5.2-2.el8.i686.rpm",
+					"python3-ldb-debuginfo-0:2.5.2-2.el8.x86_64.rpm",
+					"python3-ldb-devel-0:2.5.2-2.el8.aarch64.rpm",
+					"python3-ldb-devel-0:2.5.2-2.el8.i686.rpm",
+					"python3-ldb-devel-0:2.5.2-2.el8.x86_64.rpm",
+					"python-ldb-devel-common-0:2.5.2-2.el8.aarch64.rpm",
+					"python-ldb-devel-common-0:2.5.2-2.el8.i686.rpm",
+					"python-ldb-devel-common-0:2.5.2-2.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

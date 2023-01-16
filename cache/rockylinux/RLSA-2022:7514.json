@@ -1,0 +1,81 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7514",
+		"synopsis": "Moderate: fribidi security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for fribidi is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "FriBidi is a library to handle bidirectional scripts (for example Hebrew, Arabic), so that the display is done in the proper way, while the text data itself is always written in logical order.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2047890",
+				"description": "CVE-2022-25308 fribidi: Stack based buffer overflow",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2047890"
+			},
+			{
+				"ticket": "2047896",
+				"description": "CVE-2022-25309 fribidi: Heap-buffer-overflow in fribidi_cap_rtl_to_unicode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2047896"
+			},
+			{
+				"ticket": "2047923",
+				"description": "CVE-2022-25310 fribidi: SEGV in fribidi_remove_bidi_marks",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2047923"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-25308",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-25308.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.0",
+				"cwe": "CWE-121"
+			},
+			{
+				"name": "CVE-2022-25309",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-25309.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:H",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-122"
+			},
+			{
+				"name": "CVE-2022-25310",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-25310.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-119"
+			}
+		],
+		"publishedAt": "2022-11-13T07:49:01.007787Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"fribidi-0:1.0.4-9.el8.aarch64.rpm",
+					"fribidi-0:1.0.4-9.el8.i686.rpm",
+					"fribidi-0:1.0.4-9.el8.src.rpm",
+					"fribidi-0:1.0.4-9.el8.x86_64.rpm",
+					"fribidi-debuginfo-0:1.0.4-9.el8.aarch64.rpm",
+					"fribidi-debuginfo-0:1.0.4-9.el8.i686.rpm",
+					"fribidi-debuginfo-0:1.0.4-9.el8.x86_64.rpm",
+					"fribidi-debugsource-0:1.0.4-9.el8.aarch64.rpm",
+					"fribidi-debugsource-0:1.0.4-9.el8.i686.rpm",
+					"fribidi-debugsource-0:1.0.4-9.el8.x86_64.rpm",
+					"fribidi-devel-0:1.0.4-9.el8.aarch64.rpm",
+					"fribidi-devel-0:1.0.4-9.el8.i686.rpm",
+					"fribidi-devel-0:1.0.4-9.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,71 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2084",
+		"synopsis": "autofs bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for autofs is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2023740",
+				"description": "autofs: send FAIL cmd/ioctl mess when encountering problems with mount trigger",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2023740"
+			},
+			{
+				"ticket": "2025509",
+				"description": "Autofs auto.smb awk script fails on shares with dollar signs",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2025509"
+			},
+			{
+				"ticket": "2025963",
+				"description": "autofs service has not proper limits set to be able to handle many mounts",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2025963"
+			},
+			{
+				"ticket": "2033552",
+				"description": "Using -hosts option does not work after upgrading from 8.4 to 8.5",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2033552"
+			},
+			{
+				"ticket": "2052122",
+				"description": "autofs attempts unmount on directory in use",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2052122"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2084",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2084",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"autofs-1:5.1.4-82.el8.aarch64.rpm",
+					"autofs-1:5.1.4-82.el8.src.rpm",
+					"autofs-1:5.1.4-82.el8.x86_64.rpm",
+					"autofs-debuginfo-1:5.1.4-82.el8.aarch64.rpm",
+					"autofs-debuginfo-1:5.1.4-82.el8.x86_64.rpm",
+					"autofs-debugsource-1:5.1.4-82.el8.aarch64.rpm",
+					"autofs-debugsource-1:5.1.4-82.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

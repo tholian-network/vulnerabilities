@@ -1,0 +1,51 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2118",
+		"synopsis": "texinfo bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for texinfo is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2022201",
+				"description": "Docker build fails due to ca-certificates",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2022201"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2118",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2118",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"info-0:6.5-7.el8.aarch64.rpm",
+					"info-0:6.5-7.el8.x86_64.rpm",
+					"info-debuginfo-0:6.5-7.el8.aarch64.rpm",
+					"info-debuginfo-0:6.5-7.el8.x86_64.rpm",
+					"texinfo-0:6.5-7.el8.aarch64.rpm",
+					"texinfo-0:6.5-7.el8.src.rpm",
+					"texinfo-0:6.5-7.el8.x86_64.rpm",
+					"texinfo-debugsource-0:6.5-7.el8.aarch64.rpm",
+					"texinfo-debugsource-0:6.5-7.el8.x86_64.rpm",
+					"texinfo-tex-0:6.5-7.el8.aarch64.rpm",
+					"texinfo-tex-0:6.5-7.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

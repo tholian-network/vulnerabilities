@@ -1,21 +1,21 @@
 {
-	"name": "AVG-587",
-	"packages": [
-		"nrpe"
-	],
-	"status": "Fixed",
-	"severity": "High",
-	"type": "arbitrary command execution",
-	"affected": "3.2.1-2",
-	"fixed": "3.2.1-3",
-	"ticket": "57120",
-	"issues": [
-		"CVE-2014-2913",
-		"CVE-2013-1362"
-	],
-	"advisories": [
-		"ASA-201801-14"
-	],
-	"references": [],
-	"notes": "Fixed by compiling nrpc without the --enable-command-args option."
+  "name": "AVG-587",
+  "packages": [
+    "nrpe"
+  ],
+  "status": "Fixed",
+  "severity": "High",
+  "type": "arbitrary command execution",
+  "affected": "3.2.1-2",
+  "fixed": "3.2.1-3",
+  "ticket": "57120",
+  "issues": [
+    "CVE-2014-2913",
+    "CVE-2013-1362"
+  ],
+  "advisories": [
+    "ASA-201801-14"
+  ],
+  "references": [],
+  "notes": "Fixed by compiling nrpc without the --enable-command-args option."
 }

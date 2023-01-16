@@ -1,0 +1,62 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4353",
+		"synopsis": "lm_sensors bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for lm_sensors is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1781192",
+				"description": "lm_sensors service should not fail in VM environment",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1781192"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4353",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4353",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"lm_sensors-0:3.4.0-23.20180522git70f7e08.el8.aarch64.rpm",
+					"lm_sensors-0:3.4.0-23.20180522git70f7e08.el8.src.rpm",
+					"lm_sensors-0:3.4.0-23.20180522git70f7e08.el8.x86_64.rpm",
+					"lm_sensors-debuginfo-0:3.4.0-23.20180522git70f7e08.el8.aarch64.rpm",
+					"lm_sensors-debuginfo-0:3.4.0-23.20180522git70f7e08.el8.i686.rpm",
+					"lm_sensors-debuginfo-0:3.4.0-23.20180522git70f7e08.el8.x86_64.rpm",
+					"lm_sensors-debugsource-0:3.4.0-23.20180522git70f7e08.el8.aarch64.rpm",
+					"lm_sensors-debugsource-0:3.4.0-23.20180522git70f7e08.el8.i686.rpm",
+					"lm_sensors-debugsource-0:3.4.0-23.20180522git70f7e08.el8.x86_64.rpm",
+					"lm_sensors-devel-0:3.4.0-23.20180522git70f7e08.el8.aarch64.rpm",
+					"lm_sensors-devel-0:3.4.0-23.20180522git70f7e08.el8.i686.rpm",
+					"lm_sensors-devel-0:3.4.0-23.20180522git70f7e08.el8.x86_64.rpm",
+					"lm_sensors-libs-0:3.4.0-23.20180522git70f7e08.el8.aarch64.rpm",
+					"lm_sensors-libs-0:3.4.0-23.20180522git70f7e08.el8.i686.rpm",
+					"lm_sensors-libs-0:3.4.0-23.20180522git70f7e08.el8.x86_64.rpm",
+					"lm_sensors-libs-debuginfo-0:3.4.0-23.20180522git70f7e08.el8.aarch64.rpm",
+					"lm_sensors-libs-debuginfo-0:3.4.0-23.20180522git70f7e08.el8.i686.rpm",
+					"lm_sensors-libs-debuginfo-0:3.4.0-23.20180522git70f7e08.el8.x86_64.rpm",
+					"lm_sensors-sensord-0:3.4.0-23.20180522git70f7e08.el8.aarch64.rpm",
+					"lm_sensors-sensord-0:3.4.0-23.20180522git70f7e08.el8.x86_64.rpm",
+					"lm_sensors-sensord-debuginfo-0:3.4.0-23.20180522git70f7e08.el8.aarch64.rpm",
+					"lm_sensors-sensord-debuginfo-0:3.4.0-23.20180522git70f7e08.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

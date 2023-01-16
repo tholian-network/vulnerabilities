@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:7124",
+		"synopsis": "wsmancli bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for wsmancli is now available for Rocky Linux 8.",
+		"description": "The wsmancli packages provide a command-line interface for system management using the Web Services Management (WS-Management) protocol.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2124890",
+				"description": "wsmancli: Improve handling of HTTP 401 Unauthorized [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2124890"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:7124",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:7124",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-11-07T19:40:51.733315Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"wsmancli-0:2.6.0-10.el8_6.aarch64.rpm",
+					"wsmancli-0:2.6.0-10.el8_6.src.rpm",
+					"wsmancli-0:2.6.0-10.el8_6.x86_64.rpm",
+					"wsmancli-debuginfo-0:2.6.0-10.el8_6.aarch64.rpm",
+					"wsmancli-debuginfo-0:2.6.0-10.el8_6.x86_64.rpm",
+					"wsmancli-debugsource-0:2.6.0-10.el8_6.aarch64.rpm",
+					"wsmancli-debugsource-0:2.6.0-10.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4163",
+		"synopsis": "mariadb-connector-odbc bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for mariadb-connector-odbc is now available for Rocky Enterprise Software FoundationEnterprise Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1922105",
+				"description": "Add mariadb-connector-odbc version 3.1.12 in RHEL 8.x",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922105"
+			},
+			{
+				"ticket": "1944692",
+				"description": "Incompatibility between pyodbc and mariadb-connector-odbc/mariadb-server",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1944692"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4163",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4163",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mariadb-connector-odbc-0:3.1.12-1.el8.aarch64.rpm",
+					"mariadb-connector-odbc-0:3.1.12-1.el8.src.rpm",
+					"mariadb-connector-odbc-0:3.1.12-1.el8.x86_64.rpm",
+					"mariadb-connector-odbc-debuginfo-0:3.1.12-1.el8.aarch64.rpm",
+					"mariadb-connector-odbc-debuginfo-0:3.1.12-1.el8.x86_64.rpm",
+					"mariadb-connector-odbc-debugsource-0:3.1.12-1.el8.aarch64.rpm",
+					"mariadb-connector-odbc-debugsource-0:3.1.12-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

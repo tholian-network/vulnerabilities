@@ -1,0 +1,67 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:7130",
+		"synopsis": "ansible-freeipa bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for ansible-freeipa is now available for Rocky Linux 8.",
+		"description": "The ansible-freeipa package provides Ansible roles and playbooks to install and uninstall FreeIPA servers, replicas and clients also modules for management.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2132967",
+				"description": "Creating a POSIX trust agreement using 'range_type: ipa-ad-trust-posix' in ansible playbook is not honoring  'range_type' [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2132967"
+			},
+			{
+				"ticket": "2132970",
+				"description": "[ansible-freeipa] Installers: configure sid generation in server/replica installer [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2132970"
+			},
+			{
+				"ticket": "2132975",
+				"description": "[ansible-freeipa] ipaserver: Add missing idstart check [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2132975"
+			},
+			{
+				"ticket": "2132989",
+				"description": "ansible-freeipa Replica Install Setup DNS fails [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2132989"
+			},
+			{
+				"ticket": "2132995",
+				"description": "ipaconfig does not support SID and netbios attributes. [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2132995"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:7130",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:7130",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-11-07T19:41:21.798652Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"ansible-freeipa-0:1.6.3-2.el8_6.noarch.rpm",
+					"ansible-freeipa-0:1.6.3-2.el8_6.src.rpm",
+					"ansible-freeipa-tests-0:1.6.3-2.el8_6.noarch.rpm"
+				]
+			}
+		}
+	}
+}

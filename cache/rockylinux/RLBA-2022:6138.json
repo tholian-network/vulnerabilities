@@ -1,0 +1,73 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:6138",
+		"synopsis": "tzdata bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for tzdata is now available for Rocky Linux 6 Extended Lifecycle Support, Rocky Linux 7.3 Advanced Update Support, Rocky Linux 7.4 Advanced Update Support, Rocky Linux 7.6 Advanced Update Support, Rocky Linux 7.6 Update Services for SAP Solutions, Rocky Linux 7.6 Telco Extended Update Support, Rocky Linux 7.7 Advanced Update Support, Rocky Linux 7.7 Update Services for SAP Solutions, Rocky Linux 7.7 Telco Extended Update Support, Rocky Linux 7, Rocky Linux 8.1 Update Services for SAP Solutions, Rocky Linux 8.2 Extended Update Support, Rocky Linux 8.4 Extended Update Support, Rocky Linux 8, and Rocky Linux 9.",
+		"description": "The tzdata packages contain data files with rules for various time zones.\nThe tzdata packages have been updated to version 2022c, which addresses recent\ntime zone changes. Notably:",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2117170",
+				"description": "Update to tzdata-2022b and tzdata-2022c when available: September DST change for Chile",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2117170"
+			},
+			{
+				"ticket": "2117323",
+				"description": "Update to tzdata-2022b and tzdata-2022c when available: September DST change for Chile",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2117323"
+			},
+			{
+				"ticket": "2117737",
+				"description": "Update to tzdata-2022b and tzdata-2022c when available: September DST change for Chile [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2117737"
+			},
+			{
+				"ticket": "2117739",
+				"description": "Update to tzdata-2022b and tzdata-2022c when available: September DST change for Chile [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2117739"
+			},
+			{
+				"ticket": "2117740",
+				"description": "Update to tzdata-2022b and tzdata-2022c when available: September DST change for Chile [rhel-8.2.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2117740"
+			},
+			{
+				"ticket": "2117741",
+				"description": "Update to tzdata-2022b and tzdata-2022c when available: September DST change for Chile [rhel-8.1.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2117741"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:6138",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:6138",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-08-23T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"tzdata-0:2022c-1.el8.noarch.rpm",
+					"tzdata-0:2022c-1.el8.src.rpm",
+					"tzdata-java-0:2022c-1.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

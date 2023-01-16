@@ -1,0 +1,98 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5320",
+		"synopsis": "NetworkManager bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for NetworkManager is now available for Rocky Linux 8.",
+		"description": "NetworkManager is a system network service that manages network devices and connections, attempting to keep active network connectivity when available. Its capabilities include managing Ethernet, wireless, mobile broadband (WWAN), and PPPoE devices, as well as providing VPN integration with a variety of different VPN services.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2090280",
+				"description": "NetworkManager 1.36.0 loses DHCP lease and doesn't try again [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2090280"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:5320",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5320",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"NetworkManager-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-1:1.36.0-7.el8_6.src.rpm",
+					"NetworkManager-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-adsl-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-adsl-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-adsl-debuginfo-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-adsl-debuginfo-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-bluetooth-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-bluetooth-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-bluetooth-debuginfo-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-bluetooth-debuginfo-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-cloud-setup-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-cloud-setup-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-cloud-setup-debuginfo-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-cloud-setup-debuginfo-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-config-connectivity-redhat-1:1.36.0-7.el8_6.noarch.rpm",
+					"NetworkManager-config-server-1:1.36.0-7.el8_6.noarch.rpm",
+					"NetworkManager-debuginfo-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-debuginfo-1:1.36.0-7.el8_6.i686.rpm",
+					"NetworkManager-debuginfo-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-debugsource-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-debugsource-1:1.36.0-7.el8_6.i686.rpm",
+					"NetworkManager-debugsource-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-dispatcher-routing-rules-1:1.36.0-7.el8_6.noarch.rpm",
+					"NetworkManager-initscripts-updown-1:1.36.0-7.el8_6.noarch.rpm",
+					"NetworkManager-libnm-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-libnm-1:1.36.0-7.el8_6.i686.rpm",
+					"NetworkManager-libnm-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-libnm-debuginfo-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-libnm-debuginfo-1:1.36.0-7.el8_6.i686.rpm",
+					"NetworkManager-libnm-debuginfo-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-libnm-devel-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-libnm-devel-1:1.36.0-7.el8_6.i686.rpm",
+					"NetworkManager-libnm-devel-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-ovs-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-ovs-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-ovs-debuginfo-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-ovs-debuginfo-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-ppp-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-ppp-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-ppp-debuginfo-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-ppp-debuginfo-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-team-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-team-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-team-debuginfo-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-team-debuginfo-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-tui-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-tui-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-tui-debuginfo-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-tui-debuginfo-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-wifi-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-wifi-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-wifi-debuginfo-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-wifi-debuginfo-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-wwan-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-wwan-1:1.36.0-7.el8_6.x86_64.rpm",
+					"NetworkManager-wwan-debuginfo-1:1.36.0-7.el8_6.aarch64.rpm",
+					"NetworkManager-wwan-debuginfo-1:1.36.0-7.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

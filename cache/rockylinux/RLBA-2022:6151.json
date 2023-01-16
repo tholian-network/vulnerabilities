@@ -1,0 +1,48 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:6151",
+		"synopsis": "selinux-policy bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for selinux-policy is now available for Rocky Linux 8.",
+		"description": "The selinux-policy packages contain the rules that govern how confined processes run on the system.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2103606",
+				"description": "After upgrading system to RHEL 8.6, insights-client fails to run when it's triggered via systemd [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2103606"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:6151",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:6151",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-08-24T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"selinux-policy-0:3.14.3-95.el8_6.4.noarch.rpm",
+					"selinux-policy-0:3.14.3-95.el8_6.4.src.rpm",
+					"selinux-policy-devel-0:3.14.3-95.el8_6.4.noarch.rpm",
+					"selinux-policy-doc-0:3.14.3-95.el8_6.4.noarch.rpm",
+					"selinux-policy-minimum-0:3.14.3-95.el8_6.4.noarch.rpm",
+					"selinux-policy-mls-0:3.14.3-95.el8_6.4.noarch.rpm",
+					"selinux-policy-sandbox-0:3.14.3-95.el8_6.4.noarch.rpm",
+					"selinux-policy-targeted-0:3.14.3-95.el8_6.4.noarch.rpm"
+				]
+			}
+		}
+	}
+}

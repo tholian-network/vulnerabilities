@@ -1,0 +1,209 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4160",
+		"synopsis": "Moderate: python39:3.9 and python39-devel:3.9 security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the python39:3.9 and python39-devel:3.9 modules is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Python is an interpreted, interactive, object-oriented programming language, which includes modules, classes, exceptions, very high level dynamic data types and dynamic typing. Python supports interfaces to many system calls and libraries, as well as to various windowing systems.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1935913",
+				"description": "CVE-2021-3426 python: Information disclosure via pydoc",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1935913"
+			},
+			{
+				"ticket": "1941534",
+				"description": "CVE-2021-28957 python-lxml: Missing input sanitization for formaction HTML5 attributes may lead to XSS",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1941534"
+			},
+			{
+				"ticket": "1957458",
+				"description": "CVE-2021-29921 python-ipaddress: Improper input validation of octal strings",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1957458"
+			},
+			{
+				"ticket": "1962856",
+				"description": "CVE-2021-3572 python-pip: Incorrect handling of unicode separators in git references",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1962856"
+			},
+			{
+				"ticket": "1968074",
+				"description": "CVE-2021-33503 python-urllib3: ReDoS in the parsing of authority part of URL",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1968074"
+			},
+			{
+				"ticket": "1995162",
+				"description": "CVE-2021-3737 python: urllib: HTTP client possible infinite loop on a 100 Continue response",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1995162"
+			},
+			{
+				"ticket": "1995234",
+				"description": "CVE-2021-3733 python: urllib: Regular expression DoS in AbstractBasicAuthHandler",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1995234"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-28957",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-28957.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-79"
+			},
+			{
+				"name": "CVE-2021-29921",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-29921.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+				"cvss3BaseScore": "9.1",
+				"cwe": "CWE-20"
+			},
+			{
+				"name": "CVE-2021-33503",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-33503.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-835"
+			},
+			{
+				"name": "CVE-2021-3426",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3426.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "5.7",
+				"cwe": "CWE-200"
+			},
+			{
+				"name": "CVE-2021-3572",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3572.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "4.5",
+				"cwe": "CWE-20"
+			},
+			{
+				"name": "CVE-2021-3733",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3733.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-400"
+			},
+			{
+				"name": "CVE-2021-3737",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3737.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-835-\u003eCWE-400"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mod_wsgi-0:4.7.1-4.module+el8.4.0+574+843c4898.src.rpm",
+					"numpy-0:1.19.4-3.module+el8.5.0+673+10283621.src.rpm",
+					"numpy-debugsource-0:1.19.4-3.module+el8.5.0+673+10283621.aarch64.rpm",
+					"numpy-debugsource-0:1.19.4-3.module+el8.5.0+673+10283621.x86_64.rpm",
+					"python39-cffi-0:1.14.3-2.module+el8.4.0+574+843c4898.aarch64.rpm",
+					"python39-cffi-0:1.14.3-2.module+el8.4.0+574+843c4898.x86_64.rpm",
+					"python39-cffi-debuginfo-0:1.14.3-2.module+el8.4.0+574+843c4898.aarch64.rpm",
+					"python39-cffi-debuginfo-0:1.14.3-2.module+el8.4.0+574+843c4898.x86_64.rpm",
+					"python39-chardet-0:3.0.4-19.module+el8.4.0+574+843c4898.noarch.rpm",
+					"python39-cryptography-0:3.3.1-2.module+el8.5.0+673+10283621.aarch64.rpm",
+					"python39-cryptography-0:3.3.1-2.module+el8.5.0+673+10283621.x86_64.rpm",
+					"python39-cryptography-debuginfo-0:3.3.1-2.module+el8.5.0+673+10283621.aarch64.rpm",
+					"python39-cryptography-debuginfo-0:3.3.1-2.module+el8.5.0+673+10283621.x86_64.rpm",
+					"python39-idna-0:2.10-3.module+el8.4.0+574+843c4898.noarch.rpm",
+					"python39-mod_wsgi-0:4.7.1-4.module+el8.4.0+574+843c4898.aarch64.rpm",
+					"python39-mod_wsgi-0:4.7.1-4.module+el8.4.0+574+843c4898.x86_64.rpm",
+					"python39-numpy-0:1.19.4-3.module+el8.5.0+673+10283621.aarch64.rpm",
+					"python39-numpy-0:1.19.4-3.module+el8.5.0+673+10283621.x86_64.rpm",
+					"python39-numpy-debuginfo-0:1.19.4-3.module+el8.5.0+673+10283621.aarch64.rpm",
+					"python39-numpy-debuginfo-0:1.19.4-3.module+el8.5.0+673+10283621.x86_64.rpm",
+					"python39-numpy-doc-0:1.19.4-3.module+el8.5.0+673+10283621.noarch.rpm",
+					"python39-numpy-f2py-0:1.19.4-3.module+el8.5.0+673+10283621.aarch64.rpm",
+					"python39-numpy-f2py-0:1.19.4-3.module+el8.5.0+673+10283621.x86_64.rpm",
+					"python39-ply-0:3.11-10.module+el8.4.0+574+843c4898.noarch.rpm",
+					"python39-psutil-0:5.8.0-4.module+el8.5.0+673+10283621.aarch64.rpm",
+					"python39-psutil-0:5.8.0-4.module+el8.5.0+673+10283621.x86_64.rpm",
+					"python39-psutil-debuginfo-0:5.8.0-4.module+el8.5.0+673+10283621.aarch64.rpm",
+					"python39-psutil-debuginfo-0:5.8.0-4.module+el8.5.0+673+10283621.x86_64.rpm",
+					"python39-psycopg2-0:2.8.6-2.module+el8.6.0+795+de4edbcc.aarch64.rpm",
+					"python39-psycopg2-0:2.8.6-2.module+el8.6.0+795+de4edbcc.x86_64.rpm",
+					"python39-psycopg2-debuginfo-0:2.8.6-2.module+el8.6.0+795+de4edbcc.aarch64.rpm",
+					"python39-psycopg2-debuginfo-0:2.8.6-2.module+el8.6.0+795+de4edbcc.x86_64.rpm",
+					"python39-psycopg2-doc-0:2.8.6-2.module+el8.6.0+795+de4edbcc.aarch64.rpm",
+					"python39-psycopg2-doc-0:2.8.6-2.module+el8.6.0+795+de4edbcc.x86_64.rpm",
+					"python39-psycopg2-tests-0:2.8.6-2.module+el8.6.0+795+de4edbcc.aarch64.rpm",
+					"python39-psycopg2-tests-0:2.8.6-2.module+el8.6.0+795+de4edbcc.x86_64.rpm",
+					"python39-pycparser-0:2.20-3.module+el8.4.0+574+843c4898.noarch.rpm",
+					"python39-PyMySQL-0:0.10.1-2.module+el8.5.0+673+10283621.noarch.rpm",
+					"python39-pysocks-0:1.7.1-4.module+el8.4.0+574+843c4898.noarch.rpm",
+					"python39-pyyaml-0:5.4.1-1.module+el8.5.0+673+10283621.aarch64.rpm",
+					"python39-pyyaml-0:5.4.1-1.module+el8.5.0+673+10283621.x86_64.rpm",
+					"python39-pyyaml-debuginfo-0:5.4.1-1.module+el8.5.0+673+10283621.aarch64.rpm",
+					"python39-pyyaml-debuginfo-0:5.4.1-1.module+el8.5.0+673+10283621.x86_64.rpm",
+					"python39-requests-0:2.25.0-2.module+el8.4.0+574+843c4898.noarch.rpm",
+					"python39-scipy-0:1.5.4-3.module+el8.5.0+673+10283621.aarch64.rpm",
+					"python39-scipy-0:1.5.4-3.module+el8.5.0+673+10283621.x86_64.rpm",
+					"python39-scipy-debuginfo-0:1.5.4-3.module+el8.5.0+673+10283621.aarch64.rpm",
+					"python39-scipy-debuginfo-0:1.5.4-3.module+el8.5.0+673+10283621.x86_64.rpm",
+					"python39-setuptools-0:50.3.2-4.module+el8.5.0+673+10283621.noarch.rpm",
+					"python39-setuptools-wheel-0:50.3.2-4.module+el8.5.0+673+10283621.noarch.rpm",
+					"python39-six-0:1.15.0-3.module+el8.4.0+574+843c4898.noarch.rpm",
+					"python39-toml-0:0.10.1-5.module+el8.4.0+574+843c4898.noarch.rpm",
+					"python39-urllib3-0:1.25.10-4.module+el8.5.0+673+10283621.noarch.rpm",
+					"python39-wheel-1:0.35.1-4.module+el8.5.0+673+10283621.noarch.rpm",
+					"python39-wheel-wheel-1:0.35.1-4.module+el8.5.0+673+10283621.noarch.rpm",
+					"python3x-setuptools-0:50.3.2-4.module+el8.5.0+673+10283621.src.rpm",
+					"python3x-six-0:1.15.0-3.module+el8.4.0+574+843c4898.src.rpm",
+					"python-cffi-0:1.14.3-2.module+el8.4.0+574+843c4898.src.rpm",
+					"python-cffi-debugsource-0:1.14.3-2.module+el8.4.0+574+843c4898.aarch64.rpm",
+					"python-cffi-debugsource-0:1.14.3-2.module+el8.4.0+574+843c4898.x86_64.rpm",
+					"python-chardet-0:3.0.4-19.module+el8.4.0+574+843c4898.src.rpm",
+					"python-cryptography-0:3.3.1-2.module+el8.5.0+673+10283621.src.rpm",
+					"python-cryptography-debugsource-0:3.3.1-2.module+el8.5.0+673+10283621.aarch64.rpm",
+					"python-cryptography-debugsource-0:3.3.1-2.module+el8.5.0+673+10283621.x86_64.rpm",
+					"python-idna-0:2.10-3.module+el8.4.0+574+843c4898.src.rpm",
+					"python-ply-0:3.11-10.module+el8.4.0+574+843c4898.src.rpm",
+					"python-psutil-0:5.8.0-4.module+el8.5.0+673+10283621.src.rpm",
+					"python-psutil-debugsource-0:5.8.0-4.module+el8.5.0+673+10283621.aarch64.rpm",
+					"python-psutil-debugsource-0:5.8.0-4.module+el8.5.0+673+10283621.x86_64.rpm",
+					"python-psycopg2-0:2.8.6-2.module+el8.6.0+795+de4edbcc.src.rpm",
+					"python-psycopg2-debugsource-0:2.8.6-2.module+el8.6.0+795+de4edbcc.aarch64.rpm",
+					"python-psycopg2-debugsource-0:2.8.6-2.module+el8.6.0+795+de4edbcc.x86_64.rpm",
+					"python-pycparser-0:2.20-3.module+el8.4.0+574+843c4898.src.rpm",
+					"python-PyMySQL-0:0.10.1-2.module+el8.5.0+673+10283621.src.rpm",
+					"python-pysocks-0:1.7.1-4.module+el8.4.0+574+843c4898.src.rpm",
+					"python-requests-0:2.25.0-2.module+el8.4.0+574+843c4898.src.rpm",
+					"python-toml-0:0.10.1-5.module+el8.4.0+574+843c4898.src.rpm",
+					"python-urllib3-0:1.25.10-4.module+el8.5.0+673+10283621.src.rpm",
+					"python-wheel-1:0.35.1-4.module+el8.5.0+673+10283621.src.rpm",
+					"PyYAML-0:5.4.1-1.module+el8.5.0+673+10283621.src.rpm",
+					"PyYAML-debugsource-0:5.4.1-1.module+el8.5.0+673+10283621.aarch64.rpm",
+					"PyYAML-debugsource-0:5.4.1-1.module+el8.5.0+673+10283621.x86_64.rpm",
+					"scipy-0:1.5.4-3.module+el8.5.0+673+10283621.src.rpm",
+					"scipy-debugsource-0:1.5.4-3.module+el8.5.0+673+10283621.aarch64.rpm",
+					"scipy-debugsource-0:1.5.4-3.module+el8.5.0+673+10283621.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

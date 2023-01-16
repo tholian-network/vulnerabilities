@@ -1,0 +1,161 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4412",
+		"synopsis": "RDMA stack bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for RDMA stack is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1924665",
+				"description": "Unexpected shifting elfdepargs --filter-private",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1924665"
+			},
+			{
+				"ticket": "1928631",
+				"description": "wrapper scripts and symlinks belong to devel package, build-id belong to debug package",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1928631"
+			},
+			{
+				"ticket": "1945997",
+				"description": "[RHEL8.4] core dump due to segmentation. fault while running \"/usr/sbin/dump_fts\" command",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1945997"
+			},
+			{
+				"ticket": "1946606",
+				"description": "dracut rdma module missing install rdma-ndd binary",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1946606"
+			},
+			{
+				"ticket": "1960071",
+				"description": "[RHEL-8.5][RDMA] update OFI testsuite",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1960071"
+			},
+			{
+				"ticket": "1960073",
+				"description": "[RHEL-8.5][RDMA] update mvapich2-2.3.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1960073"
+			},
+			{
+				"ticket": "1960074",
+				"description": "[RHEL-8.5][RDMA] update perftest-4.5-0.2",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1960074"
+			},
+			{
+				"ticket": "1960076",
+				"description": "[RHEL-8.5][RDMA] update mpich-3.4.1",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1960076"
+			},
+			{
+				"ticket": "1960078",
+				"description": "[RHEL-8.5][RDMA] update OSU Micro-Benchmarks 5.7.1",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1960078"
+			},
+			{
+				"ticket": "1961961",
+				"description": "[RHEL-8.5][RDMA] update opensm",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1961961"
+			},
+			{
+				"ticket": "1971771",
+				"description": "[RHEL8.5] all openmpi tests fail with PML error on all RDMA HCAs - MLX4, MLX5, BNXT, CXGB4, HFI OPA",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1971771"
+			},
+			{
+				"ticket": "1974780",
+				"description": "Require environment(modules)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1974780"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4412",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4412",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mvapich2-0:2.3.6-1.el8.aarch64.rpm",
+					"mvapich2-0:2.3.6-1.el8.i686.rpm",
+					"mvapich2-0:2.3.6-1.el8.src.rpm",
+					"mvapich2-0:2.3.6-1.el8.x86_64.rpm",
+					"mvapich2-debuginfo-0:2.3.6-1.el8.aarch64.rpm",
+					"mvapich2-debuginfo-0:2.3.6-1.el8.i686.rpm",
+					"mvapich2-debuginfo-0:2.3.6-1.el8.x86_64.rpm",
+					"mvapich2-debugsource-0:2.3.6-1.el8.aarch64.rpm",
+					"mvapich2-debugsource-0:2.3.6-1.el8.i686.rpm",
+					"mvapich2-debugsource-0:2.3.6-1.el8.x86_64.rpm",
+					"mvapich2-devel-0:2.3.6-1.el8.aarch64.rpm",
+					"mvapich2-devel-0:2.3.6-1.el8.i686.rpm",
+					"mvapich2-devel-0:2.3.6-1.el8.x86_64.rpm",
+					"mvapich2-doc-0:2.3.6-1.el8.noarch.rpm",
+					"mvapich2-psm2-0:2.3.6-1.el8.x86_64.rpm",
+					"mvapich2-psm2-debuginfo-0:2.3.6-1.el8.x86_64.rpm",
+					"mvapich2-psm2-devel-0:2.3.6-1.el8.x86_64.rpm",
+					"opa-fm-1:10.11.0.2.1-1.el8.rocky.src.rpm",
+					"opa-fm-1:10.11.0.2.1-1.el8.rocky.x86_64.rpm",
+					"opa-fm-debuginfo-1:10.11.0.2.1-1.el8.rocky.x86_64.rpm",
+					"opa-fm-debugsource-1:10.11.0.2.1-1.el8.rocky.x86_64.rpm",
+					"opensm-0:3.3.24-1.el8.aarch64.rpm",
+					"opensm-0:3.3.24-1.el8.src.rpm",
+					"opensm-0:3.3.24-1.el8.x86_64.rpm",
+					"opensm-debuginfo-0:3.3.24-1.el8.aarch64.rpm",
+					"opensm-debuginfo-0:3.3.24-1.el8.i686.rpm",
+					"opensm-debuginfo-0:3.3.24-1.el8.x86_64.rpm",
+					"opensm-debugsource-0:3.3.24-1.el8.aarch64.rpm",
+					"opensm-debugsource-0:3.3.24-1.el8.i686.rpm",
+					"opensm-debugsource-0:3.3.24-1.el8.x86_64.rpm",
+					"opensm-devel-0:3.3.24-1.el8.aarch64.rpm",
+					"opensm-devel-0:3.3.24-1.el8.i686.rpm",
+					"opensm-devel-0:3.3.24-1.el8.x86_64.rpm",
+					"opensm-libs-0:3.3.24-1.el8.aarch64.rpm",
+					"opensm-libs-0:3.3.24-1.el8.i686.rpm",
+					"opensm-libs-0:3.3.24-1.el8.x86_64.rpm",
+					"opensm-libs-debuginfo-0:3.3.24-1.el8.aarch64.rpm",
+					"opensm-libs-debuginfo-0:3.3.24-1.el8.i686.rpm",
+					"opensm-libs-debuginfo-0:3.3.24-1.el8.x86_64.rpm",
+					"perftest-0:4.5-12.el8.aarch64.rpm",
+					"perftest-0:4.5-12.el8.src.rpm",
+					"perftest-0:4.5-12.el8.x86_64.rpm",
+					"perftest-debuginfo-0:4.5-12.el8.aarch64.rpm",
+					"perftest-debuginfo-0:4.5-12.el8.x86_64.rpm",
+					"perftest-debugsource-0:4.5-12.el8.aarch64.rpm",
+					"perftest-debugsource-0:4.5-12.el8.x86_64.rpm",
+					"qperf-0:0.4.11-2.el8.aarch64.rpm",
+					"qperf-0:0.4.11-2.el8.src.rpm",
+					"qperf-0:0.4.11-2.el8.x86_64.rpm",
+					"qperf-debuginfo-0:0.4.11-2.el8.aarch64.rpm",
+					"qperf-debuginfo-0:0.4.11-2.el8.x86_64.rpm",
+					"qperf-debugsource-0:0.4.11-2.el8.aarch64.rpm",
+					"qperf-debugsource-0:0.4.11-2.el8.x86_64.rpm",
+					"rpm-mpi-hooks-0:8-2.el8.noarch.rpm",
+					"rpm-mpi-hooks-0:8-2.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

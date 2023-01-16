@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4212",
+		"synopsis": "mailman bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for mailman is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1907323",
+				"description": "Unable to unsubscribe from a mail list using a mail command with a multipart message",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1907323"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4212",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4212",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mailman-3:2.1.29-12.module+el8.5.0+717+27fd1ba7.2.aarch64.rpm",
+					"mailman-3:2.1.29-12.module+el8.5.0+717+27fd1ba7.2.src.rpm",
+					"mailman-3:2.1.29-12.module+el8.5.0+717+27fd1ba7.2.x86_64.rpm",
+					"mailman-debuginfo-3:2.1.29-12.module+el8.5.0+717+27fd1ba7.2.aarch64.rpm",
+					"mailman-debuginfo-3:2.1.29-12.module+el8.5.0+717+27fd1ba7.2.x86_64.rpm",
+					"mailman-debugsource-3:2.1.29-12.module+el8.5.0+717+27fd1ba7.2.aarch64.rpm",
+					"mailman-debugsource-3:2.1.29-12.module+el8.5.0+717+27fd1ba7.2.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

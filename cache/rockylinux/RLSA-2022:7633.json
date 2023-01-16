@@ -1,0 +1,63 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7633",
+		"synopsis": "Moderate: dnsmasq security and bug fix update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for dnsmasq is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The dnsmasq packages contain Dnsmasq, a lightweight DNS (Domain Name Server) forwarder and DHCP (Dynamic Host Configuration Protocol) server.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2049691",
+				"description": "Malformed DHCPv6 NTP option",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2049691"
+			},
+			{
+				"ticket": "2057075",
+				"description": "CVE-2022-0934 dnsmasq: Heap use after free in dhcp6_no_relay",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2057075"
+			},
+			{
+				"ticket": "2120357",
+				"description": "dnsmasq high CPU usage in 4.11 spoke deployment or after 4.10.21 to 4.11.0-rc.1 upgrade on an SNO node [rhel8]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2120357"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-0934",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0934.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-416"
+			}
+		],
+		"publishedAt": "2022-11-13T07:51:40.900378Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"dnsmasq-0:2.79-24.el8.aarch64.rpm",
+					"dnsmasq-0:2.79-24.el8.src.rpm",
+					"dnsmasq-0:2.79-24.el8.x86_64.rpm",
+					"dnsmasq-debuginfo-0:2.79-24.el8.aarch64.rpm",
+					"dnsmasq-debuginfo-0:2.79-24.el8.x86_64.rpm",
+					"dnsmasq-debugsource-0:2.79-24.el8.aarch64.rpm",
+					"dnsmasq-debugsource-0:2.79-24.el8.x86_64.rpm",
+					"dnsmasq-utils-0:2.79-24.el8.aarch64.rpm",
+					"dnsmasq-utils-0:2.79-24.el8.x86_64.rpm",
+					"dnsmasq-utils-debuginfo-0:2.79-24.el8.aarch64.rpm",
+					"dnsmasq-utils-debuginfo-0:2.79-24.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

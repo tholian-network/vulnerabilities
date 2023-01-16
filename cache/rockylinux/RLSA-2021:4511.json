@@ -1,0 +1,98 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4511",
+		"synopsis": "Moderate: curl security and bug fix update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for curl is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The curl packages provide the libcurl library and the curl utility for downloading files from servers using various protocols, including HTTP, FTP, and LDAP.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1941964",
+				"description": "CVE-2021-22876 curl: Leak of authentication credentials in URL via automatic Referer",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1941964"
+			},
+			{
+				"ticket": "1947493",
+				"description": "Why there is a difference between curl --head output on the RHEL7 and RHEL8.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1947493"
+			},
+			{
+				"ticket": "1964887",
+				"description": "CVE-2021-22898 curl: TELNET stack contents disclosure",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1964887"
+			},
+			{
+				"ticket": "1970902",
+				"description": "CVE-2021-22925 curl: Incorrect fix for CVE-2021-22898 TELNET stack contents disclosure",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1970902"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-22876",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22876.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "3.7",
+				"cwe": "CWE-200"
+			},
+			{
+				"name": "CVE-2021-22898",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22898.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "3.1",
+				"cwe": "CWE-908"
+			},
+			{
+				"name": "CVE-2021-22925",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22925.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "3.1",
+				"cwe": "CWE-908"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"curl-0:7.61.1-22.el8_6.4.aarch64.rpm",
+					"curl-0:7.61.1-22.el8_6.4.src.rpm",
+					"curl-0:7.61.1-22.el8_6.4.x86_64.rpm",
+					"curl-debuginfo-0:7.61.1-22.el8_6.4.aarch64.rpm",
+					"curl-debuginfo-0:7.61.1-22.el8_6.4.i686.rpm",
+					"curl-debuginfo-0:7.61.1-22.el8_6.4.x86_64.rpm",
+					"curl-debugsource-0:7.61.1-22.el8_6.4.aarch64.rpm",
+					"curl-debugsource-0:7.61.1-22.el8_6.4.i686.rpm",
+					"curl-debugsource-0:7.61.1-22.el8_6.4.x86_64.rpm",
+					"libcurl-0:7.61.1-22.el8_6.4.aarch64.rpm",
+					"libcurl-0:7.61.1-22.el8_6.4.i686.rpm",
+					"libcurl-0:7.61.1-22.el8_6.4.x86_64.rpm",
+					"libcurl-debuginfo-0:7.61.1-22.el8_6.4.aarch64.rpm",
+					"libcurl-debuginfo-0:7.61.1-22.el8_6.4.i686.rpm",
+					"libcurl-debuginfo-0:7.61.1-22.el8_6.4.x86_64.rpm",
+					"libcurl-devel-0:7.61.1-22.el8_6.4.aarch64.rpm",
+					"libcurl-devel-0:7.61.1-22.el8_6.4.i686.rpm",
+					"libcurl-devel-0:7.61.1-22.el8_6.4.x86_64.rpm",
+					"libcurl-minimal-0:7.61.1-22.el8_6.4.aarch64.rpm",
+					"libcurl-minimal-0:7.61.1-22.el8_6.4.i686.rpm",
+					"libcurl-minimal-0:7.61.1-22.el8_6.4.x86_64.rpm",
+					"libcurl-minimal-debuginfo-0:7.61.1-22.el8_6.4.aarch64.rpm",
+					"libcurl-minimal-debuginfo-0:7.61.1-22.el8_6.4.i686.rpm",
+					"libcurl-minimal-debuginfo-0:7.61.1-22.el8_6.4.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

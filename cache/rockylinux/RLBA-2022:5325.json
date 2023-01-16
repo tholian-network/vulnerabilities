@@ -1,0 +1,49 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5325",
+		"synopsis": "postgresql-odbc bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for postgresql-odbc is now available for Rocky Linux 8.",
+		"description": "The postgresql-odbc package includes the driver needed for applications to access a PostgreSQL system via ODBC (Open Database Connectivity).",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2080179",
+				"description": "postgresql-server-13 doesn't work with postgresql-odbc-10 [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2080179"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:5325",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5325",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"postgresql-odbc-0:10.03.0000-3.el8_6.aarch64.rpm",
+					"postgresql-odbc-0:10.03.0000-3.el8_6.src.rpm",
+					"postgresql-odbc-0:10.03.0000-3.el8_6.x86_64.rpm",
+					"postgresql-odbc-debuginfo-0:10.03.0000-3.el8_6.aarch64.rpm",
+					"postgresql-odbc-debuginfo-0:10.03.0000-3.el8_6.x86_64.rpm",
+					"postgresql-odbc-debugsource-0:10.03.0000-3.el8_6.aarch64.rpm",
+					"postgresql-odbc-debugsource-0:10.03.0000-3.el8_6.x86_64.rpm",
+					"postgresql-odbc-tests-0:10.03.0000-3.el8_6.aarch64.rpm",
+					"postgresql-odbc-tests-0:10.03.0000-3.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,107 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:3572",
+		"synopsis": "Moderate: nss and nspr security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for nss and nspr is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Network Security Services (NSS) is a set of libraries designed to support the cross-platform development of security-enabled client and server applications.\nNetscape Portable Runtime (NSPR) provides platform independence for non-GUI operating system facilities.\nThe following packages have been upgraded to a later upstream version: nss (3.67.0), nspr (4.32.0). (BZ#1967980)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1887319",
+				"description": "CVE-2020-25648 nss: TLS 1.3 CCS flood remote DoS Attack",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1887319"
+			},
+			{
+				"ticket": "1967980",
+				"description": "Need to rebase to NSS 3.66 for Firefox 91 Release [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1967980"
+			},
+			{
+				"ticket": "1976250",
+				"description": "pkix_Build_GatherCerts() bug causes sporadic libreswan/IKE certificate validation errors [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1976250"
+			},
+			{
+				"ticket": "1976253",
+				"description": "time bomb in nss 3.57.1-17.el8_3, test cert expired [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1976253"
+			},
+			{
+				"ticket": "1976255",
+				"description": "SHA-1 signatures in CertificateVerify are accepted in FIPS mode [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1976255"
+			},
+			{
+				"ticket": "1976257",
+				"description": "Document that modutil creates \"sql\" database by default, even when \"sql:\" prefix is not specified [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1976257"
+			},
+			{
+				"ticket": "1976258",
+				"description": "Strict prototype error when trying to compile nss code that includes blapi.h [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1976258"
+			},
+			{
+				"ticket": "1977412",
+				"description": "8025 error code when creating subCAs [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1977412"
+			},
+			{
+				"ticket": "1978443",
+				"description": "NSS cannot use SQL databases created by specific versions of NSS [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1978443"
+			},
+			{
+				"ticket": "1996774",
+				"description": "Need to rebase to NSPR 4.32 for Firefox 91 Release",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1996774"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-25648",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-25648.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-770"
+			}
+		],
+		"publishedAt": "2021-09-21T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nspr-0:4.32.0-1.el8_4.aarch64.rpm",
+					"nspr-0:4.32.0-1.el8_4.i686.rpm",
+					"nspr-0:4.32.0-1.el8_4.src.rpm",
+					"nspr-0:4.32.0-1.el8_4.x86_64.rpm",
+					"nspr-debuginfo-0:4.32.0-1.el8_4.aarch64.rpm",
+					"nspr-debuginfo-0:4.32.0-1.el8_4.i686.rpm",
+					"nspr-debuginfo-0:4.32.0-1.el8_4.x86_64.rpm",
+					"nspr-debugsource-0:4.32.0-1.el8_4.aarch64.rpm",
+					"nspr-debugsource-0:4.32.0-1.el8_4.i686.rpm",
+					"nspr-debugsource-0:4.32.0-1.el8_4.x86_64.rpm",
+					"nspr-devel-0:4.32.0-1.el8_4.aarch64.rpm",
+					"nspr-devel-0:4.32.0-1.el8_4.i686.rpm",
+					"nspr-devel-0:4.32.0-1.el8_4.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

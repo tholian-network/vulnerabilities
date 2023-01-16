@@ -1,0 +1,62 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1961",
+		"synopsis": "Moderate: cairo and pixman security and bug fix update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for cairo and pixman is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Cairo is a 2D graphics library designed to provide high-quality display and print output.\nPixman is a pixel manipulation library for the X Window System and Cairo.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1898396",
+				"description": "CVE-2020-35492 cairo: libreoffice slideshow aborts with stack smashing in cairo's composite_boxes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1898396"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-35492",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-35492.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-121"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cairo-0:1.15.12-6.el8.aarch64.rpm",
+					"cairo-0:1.15.12-6.el8.i686.rpm",
+					"cairo-0:1.15.12-6.el8.src.rpm",
+					"cairo-0:1.15.12-6.el8.x86_64.rpm",
+					"cairo-debuginfo-0:1.15.12-6.el8.aarch64.rpm",
+					"cairo-debuginfo-0:1.15.12-6.el8.i686.rpm",
+					"cairo-debuginfo-0:1.15.12-6.el8.x86_64.rpm",
+					"cairo-debugsource-0:1.15.12-6.el8.aarch64.rpm",
+					"cairo-debugsource-0:1.15.12-6.el8.i686.rpm",
+					"cairo-debugsource-0:1.15.12-6.el8.x86_64.rpm",
+					"cairo-devel-0:1.15.12-6.el8.aarch64.rpm",
+					"cairo-devel-0:1.15.12-6.el8.i686.rpm",
+					"cairo-devel-0:1.15.12-6.el8.x86_64.rpm",
+					"cairo-gobject-0:1.15.12-6.el8.aarch64.rpm",
+					"cairo-gobject-0:1.15.12-6.el8.i686.rpm",
+					"cairo-gobject-0:1.15.12-6.el8.x86_64.rpm",
+					"cairo-gobject-debuginfo-0:1.15.12-6.el8.aarch64.rpm",
+					"cairo-gobject-debuginfo-0:1.15.12-6.el8.i686.rpm",
+					"cairo-gobject-debuginfo-0:1.15.12-6.el8.x86_64.rpm",
+					"cairo-gobject-devel-0:1.15.12-6.el8.aarch64.rpm",
+					"cairo-gobject-devel-0:1.15.12-6.el8.i686.rpm",
+					"cairo-gobject-devel-0:1.15.12-6.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

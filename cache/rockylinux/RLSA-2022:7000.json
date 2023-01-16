@@ -1,0 +1,177 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7000",
+		"synopsis": "Moderate: java-17-openjdk security and bug fix update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for java-17-openjdk is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The java-17-openjdk packages provide the OpenJDK 17 Java Runtime Environment and the OpenJDK 17 Java Software Development Kit.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2133745",
+				"description": "CVE-2022-21619 OpenJDK: improper handling of long NTLM client hostnames (Security, 8286526)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2133745"
+			},
+			{
+				"ticket": "2133753",
+				"description": "CVE-2022-21626 OpenJDK: excessive memory allocation in X.509 certificate parsing (Security, 8286533)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2133753"
+			},
+			{
+				"ticket": "2133765",
+				"description": "CVE-2022-21624 OpenJDK: insufficient randomization of JNDI DNS port numbers (JNDI, 8286910)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2133765"
+			},
+			{
+				"ticket": "2133769",
+				"description": "CVE-2022-21628 OpenJDK: HttpServer no connection count limit (Lightweight HTTP Server, 8286918)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2133769"
+			},
+			{
+				"ticket": "2133776",
+				"description": "CVE-2022-39399 OpenJDK: missing SNI caching in HTTP/2 (Networking, 8289366)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2133776"
+			},
+			{
+				"ticket": "2133817",
+				"description": "CVE-2022-21618 OpenJDK: improper MultiByte conversion can lead to buffer overflow (JGSS, 8286077)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2133817"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-21618",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21618.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-120"
+			},
+			{
+				"name": "CVE-2022-21619",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21619.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+				"cvss3BaseScore": "3.7",
+				"cwe": "CWE-192"
+			},
+			{
+				"name": "CVE-2022-21624",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21624.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+				"cvss3BaseScore": "3.7",
+				"cwe": "CWE-330"
+			},
+			{
+				"name": "CVE-2022-21626",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21626.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-400"
+			},
+			{
+				"name": "CVE-2022-21628",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21628.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-770"
+			},
+			{
+				"name": "CVE-2022-39399",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-39399.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+				"cvss3BaseScore": "3.7",
+				"cwe": "CWE-290"
+			}
+		],
+		"publishedAt": "2022-10-21T06:37:38.636038Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"java-17-openjdk-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-1:17.0.5.0.8-2.el8_6.src.rpm",
+					"java-17-openjdk-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-debuginfo-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-debuginfo-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-debugsource-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-debugsource-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-demo-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-demo-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-demo-fastdebug-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-demo-fastdebug-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-demo-slowdebug-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-demo-slowdebug-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-devel-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-devel-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-devel-debuginfo-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-devel-debuginfo-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-devel-fastdebug-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-devel-fastdebug-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-devel-fastdebug-debuginfo-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-devel-fastdebug-debuginfo-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-devel-slowdebug-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-devel-slowdebug-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-devel-slowdebug-debuginfo-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-devel-slowdebug-debuginfo-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-fastdebug-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-fastdebug-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-fastdebug-debuginfo-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-fastdebug-debuginfo-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-headless-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-headless-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-headless-debuginfo-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-headless-debuginfo-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-headless-fastdebug-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-headless-fastdebug-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-headless-fastdebug-debuginfo-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-headless-fastdebug-debuginfo-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-headless-slowdebug-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-headless-slowdebug-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-headless-slowdebug-debuginfo-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-headless-slowdebug-debuginfo-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-javadoc-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-javadoc-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-javadoc-zip-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-javadoc-zip-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-jmods-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-jmods-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-jmods-fastdebug-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-jmods-fastdebug-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-jmods-slowdebug-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-jmods-slowdebug-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-slowdebug-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-slowdebug-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-slowdebug-debuginfo-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-slowdebug-debuginfo-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-src-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-src-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-src-fastdebug-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-src-fastdebug-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-src-slowdebug-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-src-slowdebug-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-static-libs-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-static-libs-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-static-libs-fastdebug-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-static-libs-fastdebug-1:17.0.5.0.8-2.el8_6.x86_64.rpm",
+					"java-17-openjdk-static-libs-slowdebug-1:17.0.5.0.8-2.el8_6.aarch64.rpm",
+					"java-17-openjdk-static-libs-slowdebug-1:17.0.5.0.8-2.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

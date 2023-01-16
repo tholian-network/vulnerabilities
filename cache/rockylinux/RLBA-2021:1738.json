@@ -1,0 +1,45 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1738",
+		"synopsis": "booth bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for booth is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2021:1738",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1738",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"booth-0:1.0-199.1.ac1d34c.git.el8_6.1.aarch64.rpm",
+					"booth-0:1.0-199.1.ac1d34c.git.el8_6.1.src.rpm",
+					"booth-0:1.0-199.1.ac1d34c.git.el8_6.1.x86_64.rpm",
+					"booth-arbitrator-0:1.0-199.1.ac1d34c.git.el8_6.1.noarch.rpm",
+					"booth-core-0:1.0-199.1.ac1d34c.git.el8_6.1.aarch64.rpm",
+					"booth-core-0:1.0-199.1.ac1d34c.git.el8_6.1.x86_64.rpm",
+					"booth-core-debuginfo-0:1.0-199.1.ac1d34c.git.el8_6.1.aarch64.rpm",
+					"booth-core-debuginfo-0:1.0-199.1.ac1d34c.git.el8_6.1.x86_64.rpm",
+					"booth-debugsource-0:1.0-199.1.ac1d34c.git.el8_6.1.aarch64.rpm",
+					"booth-debugsource-0:1.0-199.1.ac1d34c.git.el8_6.1.x86_64.rpm",
+					"booth-site-0:1.0-199.1.ac1d34c.git.el8_6.1.noarch.rpm",
+					"booth-test-0:1.0-199.1.ac1d34c.git.el8_6.1.noarch.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,89 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2068",
+		"synopsis": "policycoreutils bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for policycoreutils is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1731501",
+				"description": "[RFE] add possibility to check sum of loaded module",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1731501"
+			},
+			{
+				"ticket": "1926511",
+				"description": "restorecon ENOENT policy error is unclear",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1926511"
+			},
+			{
+				"ticket": "2003048",
+				"description": "[policycoreutils] RHEL 8.5 Tier 0 Localization [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2003048"
+			},
+			{
+				"ticket": "2049189",
+				"description": "Backport SELinux policy store rebuild optimization",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2049189"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2068",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2068",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"policycoreutils-0:2.9-19.el8.aarch64.rpm",
+					"policycoreutils-0:2.9-19.el8.src.rpm",
+					"policycoreutils-0:2.9-19.el8.x86_64.rpm",
+					"policycoreutils-dbus-0:2.9-19.el8.noarch.rpm",
+					"policycoreutils-debuginfo-0:2.9-19.el8.aarch64.rpm",
+					"policycoreutils-debuginfo-0:2.9-19.el8.i686.rpm",
+					"policycoreutils-debuginfo-0:2.9-19.el8.x86_64.rpm",
+					"policycoreutils-debugsource-0:2.9-19.el8.aarch64.rpm",
+					"policycoreutils-debugsource-0:2.9-19.el8.i686.rpm",
+					"policycoreutils-debugsource-0:2.9-19.el8.x86_64.rpm",
+					"policycoreutils-devel-0:2.9-19.el8.aarch64.rpm",
+					"policycoreutils-devel-0:2.9-19.el8.i686.rpm",
+					"policycoreutils-devel-0:2.9-19.el8.x86_64.rpm",
+					"policycoreutils-devel-debuginfo-0:2.9-19.el8.aarch64.rpm",
+					"policycoreutils-devel-debuginfo-0:2.9-19.el8.i686.rpm",
+					"policycoreutils-devel-debuginfo-0:2.9-19.el8.x86_64.rpm",
+					"policycoreutils-gui-0:2.9-19.el8.noarch.rpm",
+					"policycoreutils-newrole-0:2.9-19.el8.aarch64.rpm",
+					"policycoreutils-newrole-0:2.9-19.el8.x86_64.rpm",
+					"policycoreutils-newrole-debuginfo-0:2.9-19.el8.aarch64.rpm",
+					"policycoreutils-newrole-debuginfo-0:2.9-19.el8.x86_64.rpm",
+					"policycoreutils-python-utils-0:2.9-19.el8.noarch.rpm",
+					"policycoreutils-restorecond-0:2.9-19.el8.aarch64.rpm",
+					"policycoreutils-restorecond-0:2.9-19.el8.x86_64.rpm",
+					"policycoreutils-restorecond-debuginfo-0:2.9-19.el8.aarch64.rpm",
+					"policycoreutils-restorecond-debuginfo-0:2.9-19.el8.x86_64.rpm",
+					"policycoreutils-sandbox-0:2.9-19.el8.aarch64.rpm",
+					"policycoreutils-sandbox-0:2.9-19.el8.x86_64.rpm",
+					"policycoreutils-sandbox-debuginfo-0:2.9-19.el8.aarch64.rpm",
+					"policycoreutils-sandbox-debuginfo-0:2.9-19.el8.x86_64.rpm",
+					"python3-policycoreutils-0:2.9-19.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

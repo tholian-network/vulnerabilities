@@ -1,0 +1,57 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1921",
+		"synopsis": "ansible-core bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for ansible-core is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2042575",
+				"description": "ansible-core should not have Provides: ansible",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2042575"
+			},
+			{
+				"ticket": "2049735",
+				"description": "Update ansible-core to 2.12.2",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2049735"
+			},
+			{
+				"ticket": "2061513",
+				"description": "ansible-core should conflict with the ansible package",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2061513"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1921",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1921",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"ansible-core-0:2.12.2-3.1.el8.rocky.0.1.aarch64.rpm",
+					"ansible-core-0:2.12.2-3.1.el8.rocky.0.1.src.rpm",
+					"ansible-core-0:2.12.2-3.1.el8.rocky.0.1.x86_64.rpm",
+					"ansible-test-0:2.12.2-3.1.el8.rocky.0.1.aarch64.rpm",
+					"ansible-test-0:2.12.2-3.1.el8.rocky.0.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

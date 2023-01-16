@@ -1,0 +1,85 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7720",
+		"synopsis": "Moderate: e2fsprogs security and bug fix update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for e2fsprogs is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The e2fsprogs packages provide a number of utilities for creating, checking, modifying, and correcting the ext2, ext3, and ext4 file systems.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2069726",
+				"description": "CVE-2022-1304 e2fsprogs: out-of-bounds read/write via crafted filesystem",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2069726"
+			},
+			{
+				"ticket": "2083621",
+				"description": "e2fsprogs: Update for RHEL8.7",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2083621"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-1304",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1304.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:H",
+				"cvss3BaseScore": "5.8",
+				"cwe": "(CWE-125|CWE-787)"
+			}
+		],
+		"publishedAt": "2022-11-13T07:51:39.272291Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"e2fsprogs-0:1.45.6-5.el8.aarch64.rpm",
+					"e2fsprogs-0:1.45.6-5.el8.src.rpm",
+					"e2fsprogs-0:1.45.6-5.el8.x86_64.rpm",
+					"e2fsprogs-debuginfo-0:1.45.6-5.el8.aarch64.rpm",
+					"e2fsprogs-debuginfo-0:1.45.6-5.el8.i686.rpm",
+					"e2fsprogs-debuginfo-0:1.45.6-5.el8.x86_64.rpm",
+					"e2fsprogs-debugsource-0:1.45.6-5.el8.aarch64.rpm",
+					"e2fsprogs-debugsource-0:1.45.6-5.el8.i686.rpm",
+					"e2fsprogs-debugsource-0:1.45.6-5.el8.x86_64.rpm",
+					"e2fsprogs-devel-0:1.45.6-5.el8.aarch64.rpm",
+					"e2fsprogs-devel-0:1.45.6-5.el8.i686.rpm",
+					"e2fsprogs-devel-0:1.45.6-5.el8.x86_64.rpm",
+					"e2fsprogs-libs-0:1.45.6-5.el8.aarch64.rpm",
+					"e2fsprogs-libs-0:1.45.6-5.el8.i686.rpm",
+					"e2fsprogs-libs-0:1.45.6-5.el8.x86_64.rpm",
+					"e2fsprogs-libs-debuginfo-0:1.45.6-5.el8.aarch64.rpm",
+					"e2fsprogs-libs-debuginfo-0:1.45.6-5.el8.i686.rpm",
+					"e2fsprogs-libs-debuginfo-0:1.45.6-5.el8.x86_64.rpm",
+					"e2fsprogs-static-0:1.45.6-5.el8.aarch64.rpm",
+					"e2fsprogs-static-0:1.45.6-5.el8.i686.rpm",
+					"e2fsprogs-static-0:1.45.6-5.el8.x86_64.rpm",
+					"libcom_err-0:1.45.6-5.el8.aarch64.rpm",
+					"libcom_err-0:1.45.6-5.el8.i686.rpm",
+					"libcom_err-0:1.45.6-5.el8.x86_64.rpm",
+					"libcom_err-debuginfo-0:1.45.6-5.el8.aarch64.rpm",
+					"libcom_err-debuginfo-0:1.45.6-5.el8.i686.rpm",
+					"libcom_err-debuginfo-0:1.45.6-5.el8.x86_64.rpm",
+					"libcom_err-devel-0:1.45.6-5.el8.aarch64.rpm",
+					"libcom_err-devel-0:1.45.6-5.el8.i686.rpm",
+					"libcom_err-devel-0:1.45.6-5.el8.x86_64.rpm",
+					"libss-0:1.45.6-5.el8.aarch64.rpm",
+					"libss-0:1.45.6-5.el8.i686.rpm",
+					"libss-0:1.45.6-5.el8.x86_64.rpm",
+					"libss-debuginfo-0:1.45.6-5.el8.aarch64.rpm",
+					"libss-debuginfo-0:1.45.6-5.el8.i686.rpm",
+					"libss-debuginfo-0:1.45.6-5.el8.x86_64.rpm",
+					"libss-devel-0:1.45.6-5.el8.aarch64.rpm",
+					"libss-devel-0:1.45.6-5.el8.i686.rpm",
+					"libss-devel-0:1.45.6-5.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

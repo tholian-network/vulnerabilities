@@ -1,0 +1,1654 @@
+{
+	"advisories": [
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:7129",
+			"synopsis": "Moderate: git-lfs security and bug fix update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for git-lfs is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Git Large File Storage (LFS) replaces large files such as audio samples, videos, datasets, and graphics with text pointers inside Git, while storing the file contents on a remote server.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-27664",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27664.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-400"
+				},
+				{
+					"name": "CVE-2022-32189",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32189.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-400"
+				}
+			],
+			"publishedAt": "2022-10-31T21:11:46.168906Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:7119",
+			"synopsis": "Moderate: mysql:8.0 security, bug fix, and enhancement update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for the mysql:8.0 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "MySQL is a multi-user, multi-threaded SQL database server. It consists of the MySQL server daemon (mysqld) and many client programs and libraries.\nThe following packages have been upgraded to a later upstream version: mysql (8.0.30).\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2021-2478",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2478.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2479",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2479.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2481",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2481.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35546",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35546.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35575",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35575.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35577",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35577.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35591",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35591.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35596",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35596.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35597",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35597.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35602",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35602.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "5.0",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35607",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35607.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35608",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35608.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "5.3",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35610",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35610.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "7.1",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35612",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35612.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "5.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35622",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35622.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35623",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35623.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N",
+					"cvss3BaseScore": "2.7",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35624",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35624.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35625",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35625.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N",
+					"cvss3BaseScore": "2.7",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35626",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35626.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35627",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35627.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35628",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35628.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35630",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35630.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35631",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35631.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35632",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35632.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.4",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35633",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35633.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L",
+					"cvss3BaseScore": "2.7",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35634",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35634.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35635",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35635.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35636",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35636.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35637",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35637.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35638",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35638.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35639",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35639.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35640",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35640.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N",
+					"cvss3BaseScore": "2.7",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35641",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35641.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35642",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35642.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35643",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35643.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35644",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35644.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35645",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35645.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35646",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35646.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35647",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35647.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35648",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35648.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21245",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21245.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+					"cvss3BaseScore": "4.3",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21249",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21249.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L",
+					"cvss3BaseScore": "2.7",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21253",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21253.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21254",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21254.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "5.3",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21256",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21256.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21264",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21264.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21265",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21265.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:L",
+					"cvss3BaseScore": "3.8",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21270",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21270.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21278",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21278.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "7.1",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21297",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21297.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21301",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21301.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "5.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21302",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21302.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "5.3",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21303",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21303.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21304",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21304.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21339",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21339.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21342",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21342.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21344",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21344.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21348",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21348.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21351",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21351.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "7.1",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21352",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21352.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:H/A:H",
+					"cvss3BaseScore": "5.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21358",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21358.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21362",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21362.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21367",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21367.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "5.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21368",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21368.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L",
+					"cvss3BaseScore": "4.7",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21370",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21370.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21372",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21372.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L",
+					"cvss3BaseScore": "2.7",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21374",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21374.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21378",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21378.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "5.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21379",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21379.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21412",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21412.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21413",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21413.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21414",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21414.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21415",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21415.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21417",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21417.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21418",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21418.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "5.0",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21423",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21423.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L",
+					"cvss3BaseScore": "2.7",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21425",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21425.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "5.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21435",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21435.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21436",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21436.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21437",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21437.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21438",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21438.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21440",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21440.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "5.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21444",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21444.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.4",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21452",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21452.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21454",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21454.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21455",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21455.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21457",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21457.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+					"cvss3BaseScore": "5.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21459",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21459.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "5.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21460",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21460.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+					"cvss3BaseScore": "4.4",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21462",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21462.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21478",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21478.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "5.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21479",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21479.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:H",
+					"cvss3BaseScore": "5.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21509",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21509.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "5.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21515",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21515.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21517",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21517.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21522",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21522.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.4",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21525",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21525.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21526",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21526.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21527",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21527.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "5.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21528",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21528.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "5.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21529",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21529.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21530",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21530.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21531",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21531.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21534",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21534.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21537",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21537.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21538",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21538.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L",
+					"cvss3BaseScore": "3.1",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21539",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21539.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L",
+					"cvss3BaseScore": "5.0",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21547",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21547.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21553",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21553.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21556",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21556.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-21569",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21569.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2022-10-31T21:11:45.194647Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:7012",
+			"synopsis": "Moderate: java-11-openjdk security and bug fix update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for java-11-openjdk is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "The java-11-openjdk packages provide the OpenJDK 11 Java Runtime Environment and the OpenJDK 11 Java Software Development Kit.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-21618",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21618.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+					"cvss3BaseScore": "5.3",
+					"cwe": "CWE-120"
+				},
+				{
+					"name": "CVE-2022-21619",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21619.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+					"cvss3BaseScore": "3.7",
+					"cwe": "CWE-192"
+				},
+				{
+					"name": "CVE-2022-21624",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21624.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+					"cvss3BaseScore": "3.7",
+					"cwe": "CWE-330"
+				},
+				{
+					"name": "CVE-2022-21626",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21626.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+					"cvss3BaseScore": "5.3",
+					"cwe": "CWE-400"
+				},
+				{
+					"name": "CVE-2022-21628",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21628.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+					"cvss3BaseScore": "5.3",
+					"cwe": "CWE-770"
+				},
+				{
+					"name": "CVE-2022-39399",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-39399.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+					"cvss3BaseScore": "3.7",
+					"cwe": "CWE-290"
+				}
+			],
+			"publishedAt": "2022-10-21T06:37:54.147410Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:7000",
+			"synopsis": "Moderate: java-17-openjdk security and bug fix update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for java-17-openjdk is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "The java-17-openjdk packages provide the OpenJDK 17 Java Runtime Environment and the OpenJDK 17 Java Software Development Kit.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-21618",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21618.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+					"cvss3BaseScore": "5.3",
+					"cwe": "CWE-120"
+				},
+				{
+					"name": "CVE-2022-21619",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21619.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+					"cvss3BaseScore": "3.7",
+					"cwe": "CWE-192"
+				},
+				{
+					"name": "CVE-2022-21624",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21624.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+					"cvss3BaseScore": "3.7",
+					"cwe": "CWE-330"
+				},
+				{
+					"name": "CVE-2022-21626",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21626.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+					"cvss3BaseScore": "5.3",
+					"cwe": "CWE-400"
+				},
+				{
+					"name": "CVE-2022-21628",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21628.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+					"cvss3BaseScore": "5.3",
+					"cwe": "CWE-770"
+				},
+				{
+					"name": "CVE-2022-39399",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-39399.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+					"cvss3BaseScore": "3.7",
+					"cwe": "CWE-290"
+				}
+			],
+			"publishedAt": "2022-10-21T06:37:38.636038Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:7006",
+			"synopsis": "Moderate: java-1.8.0-openjdk security update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for java-1.8.0-openjdk is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "The java-1.8.0-openjdk packages provide the OpenJDK 8 Java Runtime Environment and the OpenJDK 8 Java Software Development Kit.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-21619",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21619.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+					"cvss3BaseScore": "3.7",
+					"cwe": "CWE-192"
+				},
+				{
+					"name": "CVE-2022-21624",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21624.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+					"cvss3BaseScore": "3.7",
+					"cwe": "CWE-330"
+				},
+				{
+					"name": "CVE-2022-21626",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21626.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+					"cvss3BaseScore": "5.3",
+					"cwe": "CWE-400"
+				},
+				{
+					"name": "CVE-2022-21628",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21628.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+					"cvss3BaseScore": "5.3",
+					"cwe": "CWE-770"
+				}
+			],
+			"publishedAt": "2022-10-21T06:37:27.358559Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:7023",
+			"synopsis": "Important: thunderbird security update",
+			"severity": "SEVERITY_IMPORTANT",
+			"topic": "An update for thunderbird is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Mozilla Thunderbird is a standalone mail and newsgroup client.\nThis update upgrades Thunderbird to version 102.3.0.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-40674",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40674.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "9.8",
+					"cwe": "CWE-416"
+				}
+			],
+			"publishedAt": "2022-10-19T03:49:59.485754Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:7024",
+			"synopsis": "Important: firefox security update",
+			"severity": "SEVERITY_IMPORTANT",
+			"topic": "An update for firefox is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Mozilla Firefox is an open-source web browser, designed for standards compliance, performance, and portability.\nThis update upgrades Firefox to version 102.3.0 ESR.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-40674",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40674.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "9.8",
+					"cwe": "CWE-416"
+				}
+			],
+			"publishedAt": "2022-10-19T03:49:58.555280Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6912",
+			"synopsis": "Moderate: .NET Core 3.1 security and bugfix update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for .NET Core 3.1 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": ".NET is a managed-software framework. It implements a subset of the .NET framework APIs and several new APIs, and it includes a CLR implementation.\nNew versions of .NET that address a security vulnerability are now available. The updated versions are .NET SDK  3.1.424  and .NET Runtime 3.1.30.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-41032",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-41032.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "7.8",
+					"cwe": "CWE-524"
+				}
+			],
+			"publishedAt": "2022-10-17T21:19:36.720307Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6911",
+			"synopsis": "Moderate: .NET 6.0 security and bugfix update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for .NET 6.0 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": ".NET is a managed-software framework. It implements a subset of the .NET framework APIs and several new APIs, and it includes a CLR implementation.\nNew versions of .NET that address a security vulnerability are now available. The updated versions are .NET SDK  6.0.110 and .NET Runtime 6.0.10.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-41032",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-41032.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "7.8",
+					"cwe": "CWE-524"
+				}
+			],
+			"publishedAt": "2022-10-17T21:19:34.365454Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6964",
+			"synopsis": "Important: nodejs:16 security update",
+			"severity": "SEVERITY_IMPORTANT",
+			"topic": "An update for the nodejs:16 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Node.js is a software development platform for building fast and scalable network applications in the JavaScript programming language. \nThe following packages have been upgraded to a later upstream version: nodejs 16.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-35255",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-35255.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-330"
+				},
+				{
+					"name": "CVE-2022-35256",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-35256.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+					"cvss3BaseScore": "6.5",
+					"cwe": "CWE-444"
+				}
+			],
+			"publishedAt": "2022-10-17T21:19:28.700576Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:1766",
+			"synopsis": "Moderate: libreoffice security, bug fix, and enhancement update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for libreoffice is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "LibreOffice is an open source, community-developed office productivity suite. It includes key desktop applications, such as a word processor, a spreadsheet, a presentation manager, a formula editor, and a drawing program. LibreOffice replaces OpenOffice and provides a similar but enhanced and extended office suite.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2021-25633",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-25633.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+					"cvss3BaseScore": "7.1",
+					"cwe": "CWE-295"
+				},
+				{
+					"name": "CVE-2021-25634",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-25634.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+					"cvss3BaseScore": "7.1",
+					"cwe": "CWE-295"
+				},
+				{
+					"name": "CVE-2021-25635",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-25635.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+					"cvss3BaseScore": "6.3",
+					"cwe": "CWE-295"
+				}
+			],
+			"publishedAt": "2022-10-17T21:19:24.281149Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_BUGFIX",
+			"shortCode": "RL",
+			"name": "RLBA-2022:6827",
+			"synopsis": "tzdata bug fix and enhancement update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "An update for tzdata is now available for Rocky Linux 6 Extended Lifecycle Support, Rocky Linux 7.3 Advanced Update Support, Rocky Linux 7.4 Advanced Update Support, Rocky Linux 7.6 Advanced Update Support, Rocky Linux 7.6 Update Services for SAP Solutions, Rocky Linux 7.6 Telco Extended Update Support, Rocky Linux 7.7 Advanced Update Support, Rocky Linux 7.7 Update Services for SAP Solutions, Rocky Linux 7.7 Telco Extended Update Support, Rocky Linux 7, Rocky Linux 8.1 Update Services for SAP Solutions, Rocky Linux 8.2 Advanced Mission Critical Update Support, Rocky Linux 8.2 Update Services for SAP Solutions, Rocky Linux 8.2 Extended Update Support, Rocky Linux 8.2 Telco Extended Update Support, Rocky Linux 8.4 Extended Update Support, Rocky Linux 8, and Rocky Linux 9.",
+			"description": "The tzdata packages contain data files with rules for various time zones.\nThe tzdata packages have been updated to version 2022d, which addresses recent\ntime zone changes. Notably: ",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHBA-2022:6827",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHBA-2022:6827",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2022-10-13T13:00:56.870373Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6878",
+			"synopsis": "Important: expat security update",
+			"severity": "SEVERITY_IMPORTANT",
+			"topic": "An update for expat is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Expat is a C library for parsing XML documents.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-40674",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40674.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "9.8",
+					"cwe": "CWE-416"
+				}
+			],
+			"publishedAt": "2022-10-13T13:00:56.579190Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6820",
+			"synopsis": "Moderate: prometheus-jmx-exporter security update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for prometheus-jmx-exporter is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Prometheus JMX Exporter is a JMX to Prometheus exporter: a collector that can be configured to scrape and expose MBeans of a JMX target.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-25857",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-25857.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-400"
+				}
+			],
+			"publishedAt": "2022-10-13T13:00:54.728282Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6775",
+			"synopsis": "Important: squid:4 security update",
+			"severity": "SEVERITY_IMPORTANT",
+			"topic": "An update for the squid:4 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Squid is a high-performance proxy caching server for web clients, supporting FTP, Gopher, and HTTP data objects.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-41318",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-41318.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:L/A:H",
+					"cvss3BaseScore": "8.9",
+					"cwe": "CWE-126"
+				}
+			],
+			"publishedAt": "2022-10-13T13:00:54.040597Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6708",
+			"synopsis": "Important: thunderbird security update",
+			"severity": "SEVERITY_IMPORTANT",
+			"topic": "An update for thunderbird is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Mozilla Thunderbird is a standalone mail and newsgroup client.\nThis update upgrades Thunderbird to version 102.3.0.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-3032",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-3032.json",
+					"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+					"cvss3BaseScore": "6.1",
+					"cwe": "CWE-1021"
+				},
+				{
+					"name": "CVE-2022-3033",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-3033.json",
+					"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-200"
+				},
+				{
+					"name": "CVE-2022-3034",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-3034.json",
+					"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+					"cvss3BaseScore": "6.1",
+					"cwe": "CWE-449"
+				},
+				{
+					"name": "CVE-2022-36059",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-36059.json",
+					"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+					"cvss3BaseScore": "6.1",
+					"cwe": "CWE-440"
+				},
+				{
+					"name": "CVE-2022-40956",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40956.json",
+					"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+					"cvss3BaseScore": "6.1",
+					"cwe": "CWE-1021"
+				},
+				{
+					"name": "CVE-2022-40957",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40957.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:L",
+					"cvss3BaseScore": "5.8",
+					"cwe": "CWE-240"
+				},
+				{
+					"name": "CVE-2022-40958",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40958.json",
+					"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+					"cvss3BaseScore": "6.1",
+					"cwe": "CWE-784"
+				},
+				{
+					"name": "CVE-2022-40959",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40959.json",
+					"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-1021"
+				},
+				{
+					"name": "CVE-2022-40960",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40960.json",
+					"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-416"
+				},
+				{
+					"name": "CVE-2022-40962",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40962.json",
+					"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-120"
+				}
+			],
+			"publishedAt": "2022-10-13T13:00:50.023690Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6702",
+			"synopsis": "Important: firefox security update",
+			"severity": "SEVERITY_IMPORTANT",
+			"topic": "An update for firefox is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Mozilla Firefox is an open-source web browser, designed for standards compliance, performance, and portability.\nThis update upgrades Firefox to version 102.3.0 ESR.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-40956",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40956.json",
+					"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+					"cvss3BaseScore": "6.1",
+					"cwe": "CWE-1021"
+				},
+				{
+					"name": "CVE-2022-40957",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40957.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:L",
+					"cvss3BaseScore": "5.8",
+					"cwe": "CWE-240"
+				},
+				{
+					"name": "CVE-2022-40958",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40958.json",
+					"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+					"cvss3BaseScore": "6.1",
+					"cwe": "CWE-784"
+				},
+				{
+					"name": "CVE-2022-40959",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40959.json",
+					"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-1021"
+				},
+				{
+					"name": "CVE-2022-40960",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40960.json",
+					"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-416"
+				},
+				{
+					"name": "CVE-2022-40962",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40962.json",
+					"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-120"
+				}
+			],
+			"publishedAt": "2022-10-13T13:00:49.116181Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6781",
+			"synopsis": "Important: bind9.16 security update",
+			"severity": "SEVERITY_IMPORTANT",
+			"topic": "An update for bind9.16 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "The Berkeley Internet Name Domain (BIND) is an implementation of the Domain Name System (DNS) protocols. BIND includes a DNS server (named); a resolver library (routines for applications to use when interfacing with DNS); and tools for verifying that the DNS server is operating correctly.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-3080",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-3080.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-20"
+				},
+				{
+					"name": "CVE-2022-38177",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-38177.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-401"
+				},
+				{
+					"name": "CVE-2022-38178",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-38178.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-401"
+				}
+			],
+			"publishedAt": "2022-10-13T13:00:48.250631Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6778",
+			"synopsis": "Important: bind security update",
+			"severity": "SEVERITY_IMPORTANT",
+			"topic": "An update for bind is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "The Berkeley Internet Name Domain (BIND) is an implementation of the Domain Name System (DNS) protocols. BIND includes a DNS server (named); a resolver library (routines for applications to use when interfacing with DNS); and tools for verifying that the DNS server is operating correctly.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-38177",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-38177.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-401"
+				},
+				{
+					"name": "CVE-2022-38178",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-38178.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-401"
+				}
+			],
+			"publishedAt": "2022-10-13T13:00:42.577224Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		}
+	],
+	"total": "19",
+	"size": 100,
+	"page": 0,
+	"lastUpdated": "2023-01-16T04:00:00.369210Z"
+}

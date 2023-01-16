@@ -1,0 +1,73 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4483",
+		"synopsis": "OpenIPMI bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for OpenIPMI is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1990072",
+				"description": "collectd-ipmi causes core dump",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1990072"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4483",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4483",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"OpenIPMI-0:2.0.31-3.el8.aarch64.rpm",
+					"OpenIPMI-0:2.0.31-3.el8.i686.rpm",
+					"OpenIPMI-0:2.0.31-3.el8.src.rpm",
+					"OpenIPMI-0:2.0.31-3.el8.x86_64.rpm",
+					"OpenIPMI-debuginfo-0:2.0.31-3.el8.aarch64.rpm",
+					"OpenIPMI-debuginfo-0:2.0.31-3.el8.i686.rpm",
+					"OpenIPMI-debuginfo-0:2.0.31-3.el8.x86_64.rpm",
+					"OpenIPMI-debugsource-0:2.0.31-3.el8.aarch64.rpm",
+					"OpenIPMI-debugsource-0:2.0.31-3.el8.i686.rpm",
+					"OpenIPMI-debugsource-0:2.0.31-3.el8.x86_64.rpm",
+					"OpenIPMI-devel-0:2.0.31-3.el8.aarch64.rpm",
+					"OpenIPMI-devel-0:2.0.31-3.el8.i686.rpm",
+					"OpenIPMI-devel-0:2.0.31-3.el8.x86_64.rpm",
+					"OpenIPMI-lanserv-0:2.0.31-3.el8.aarch64.rpm",
+					"OpenIPMI-lanserv-0:2.0.31-3.el8.i686.rpm",
+					"OpenIPMI-lanserv-0:2.0.31-3.el8.x86_64.rpm",
+					"OpenIPMI-lanserv-debuginfo-0:2.0.31-3.el8.aarch64.rpm",
+					"OpenIPMI-lanserv-debuginfo-0:2.0.31-3.el8.i686.rpm",
+					"OpenIPMI-lanserv-debuginfo-0:2.0.31-3.el8.x86_64.rpm",
+					"OpenIPMI-libs-0:2.0.31-3.el8.aarch64.rpm",
+					"OpenIPMI-libs-0:2.0.31-3.el8.i686.rpm",
+					"OpenIPMI-libs-0:2.0.31-3.el8.x86_64.rpm",
+					"OpenIPMI-libs-debuginfo-0:2.0.31-3.el8.aarch64.rpm",
+					"OpenIPMI-libs-debuginfo-0:2.0.31-3.el8.i686.rpm",
+					"OpenIPMI-libs-debuginfo-0:2.0.31-3.el8.x86_64.rpm",
+					"OpenIPMI-perl-0:2.0.31-3.el8.aarch64.rpm",
+					"OpenIPMI-perl-0:2.0.31-3.el8.x86_64.rpm",
+					"OpenIPMI-perl-debuginfo-0:2.0.31-3.el8.aarch64.rpm",
+					"OpenIPMI-perl-debuginfo-0:2.0.31-3.el8.x86_64.rpm",
+					"python3-openipmi-0:2.0.31-3.el8.aarch64.rpm",
+					"python3-openipmi-0:2.0.31-3.el8.x86_64.rpm",
+					"python3-openipmi-debuginfo-0:2.0.31-3.el8.aarch64.rpm",
+					"python3-openipmi-debuginfo-0:2.0.31-3.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

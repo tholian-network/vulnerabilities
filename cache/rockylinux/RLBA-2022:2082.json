@@ -1,0 +1,123 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2082",
+		"synopsis": "rpm bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for rpm is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1900662",
+				"description": "rpm --setperms applies permissions on %ghost symlink to a regular file making it world readable/writable/executable",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1900662"
+			},
+			{
+				"ticket": "1940895",
+				"description": "[RFE] When files are in \"(replaced)\" status (in 'rpm -V output), they cannot query their history using the 'rpm --dbpath \u003cdb\u003e -qf \u003cfile\u003e' command, and need to be able to do this",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1940895"
+			},
+			{
+				"ticket": "2019540",
+				"description": "Backport find-debuginfo.sh macroization",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2019540"
+			},
+			{
+				"ticket": "2023693",
+				"description": "rpm seems to be calling wrong transfiletriggers",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2023693"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2082",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2082",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"python3-rpm-0:4.14.3-23.el8.aarch64.rpm",
+					"python3-rpm-0:4.14.3-23.el8.x86_64.rpm",
+					"python3-rpm-debuginfo-0:4.14.3-23.el8.aarch64.rpm",
+					"python3-rpm-debuginfo-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-0:4.14.3-23.el8.src.rpm",
+					"rpm-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-apidocs-0:4.14.3-23.el8.noarch.rpm",
+					"rpm-build-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-build-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-build-debuginfo-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-build-debuginfo-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-build-libs-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-build-libs-0:4.14.3-23.el8.i686.rpm",
+					"rpm-build-libs-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-build-libs-debuginfo-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-build-libs-debuginfo-0:4.14.3-23.el8.i686.rpm",
+					"rpm-build-libs-debuginfo-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-cron-0:4.14.3-23.el8.noarch.rpm",
+					"rpm-debuginfo-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-debuginfo-0:4.14.3-23.el8.i686.rpm",
+					"rpm-debuginfo-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-debugsource-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-debugsource-0:4.14.3-23.el8.i686.rpm",
+					"rpm-debugsource-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-devel-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-devel-0:4.14.3-23.el8.i686.rpm",
+					"rpm-devel-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-devel-debuginfo-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-devel-debuginfo-0:4.14.3-23.el8.i686.rpm",
+					"rpm-devel-debuginfo-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-libs-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-libs-0:4.14.3-23.el8.i686.rpm",
+					"rpm-libs-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-libs-debuginfo-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-libs-debuginfo-0:4.14.3-23.el8.i686.rpm",
+					"rpm-libs-debuginfo-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-plugin-fapolicyd-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-plugin-fapolicyd-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-plugin-fapolicyd-debuginfo-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-plugin-fapolicyd-debuginfo-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-plugin-ima-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-plugin-ima-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-plugin-ima-debuginfo-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-plugin-ima-debuginfo-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-plugin-prioreset-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-plugin-prioreset-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-plugin-prioreset-debuginfo-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-plugin-prioreset-debuginfo-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-plugin-selinux-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-plugin-selinux-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-plugin-selinux-debuginfo-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-plugin-selinux-debuginfo-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-plugin-syslog-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-plugin-syslog-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-plugin-syslog-debuginfo-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-plugin-syslog-debuginfo-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-plugin-systemd-inhibit-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-plugin-systemd-inhibit-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-plugin-systemd-inhibit-debuginfo-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-plugin-systemd-inhibit-debuginfo-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-sign-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-sign-0:4.14.3-23.el8.x86_64.rpm",
+					"rpm-sign-debuginfo-0:4.14.3-23.el8.aarch64.rpm",
+					"rpm-sign-debuginfo-0:4.14.3-23.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

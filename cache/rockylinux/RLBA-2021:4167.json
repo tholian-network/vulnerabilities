@@ -1,0 +1,65 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4167",
+		"synopsis": "socat bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for socat is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1805132",
+				"description": "socat does not recognize IP addresses of the SAN extensions in ssl mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1805132"
+			},
+			{
+				"ticket": "1870279",
+				"description": "Transfer via socat fails with openssl enabled",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1870279"
+			},
+			{
+				"ticket": "1914989",
+				"description": "Socat udp4-recvfrom cause endless loop error when target is not vaild",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1914989"
+			},
+			{
+				"ticket": "1947338",
+				"description": "rebase socat to 1.7.4.1",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1947338"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4167",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4167",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"socat-0:1.7.4.1-1.el8.aarch64.rpm",
+					"socat-0:1.7.4.1-1.el8.src.rpm",
+					"socat-0:1.7.4.1-1.el8.x86_64.rpm",
+					"socat-debuginfo-0:1.7.4.1-1.el8.aarch64.rpm",
+					"socat-debuginfo-0:1.7.4.1-1.el8.x86_64.rpm",
+					"socat-debugsource-0:1.7.4.1-1.el8.aarch64.rpm",
+					"socat-debugsource-0:1.7.4.1-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

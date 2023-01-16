@@ -1,0 +1,36 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1032",
+		"synopsis": "tzdata bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "Updated tzdata packages that add various enhancements are now available for RedHat Enterprise Linux 6 Extended Lifecycle Support, Rocky Linux 7.3 Advanced Update Support, Rocky Linux 7.4 Advanced Update Support, Rocky Linux, 7.6 Advanced Update Support, Rocky Linux 7.6 Update Services forSAP Solutions, Rocky Linux 7.6 Telco Extended Update Support, Enterprise Linux 7.7 Advanced Update Support, Rocky Linux 7.7 Update Services for SAP Solutions, Rocky Linux 7.7 Telco Extended Update Support, Rocky Linux 7, Rocky Linux 8.2 Extended Update Support, Rocky Linux 8.4 Extended Update Support, and Rocky Linux 8.",
+		"description": "The tzdata packages contain data files with rules for various time zones.\nThe tzdata packages have been updated to version 2022a, which addresses recent\ntime zone changes. Notably:",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2022:1032",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1032",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-03-23T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"tzdata-0:2022a-1.el8.noarch.rpm",
+					"tzdata-0:2022a-1.el8.src.rpm",
+					"tzdata-java-0:2022a-1.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

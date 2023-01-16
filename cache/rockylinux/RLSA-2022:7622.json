@@ -1,0 +1,111 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7622",
+		"synopsis": "Moderate: unbound security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for unbound is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The unbound packages provide a validating, recursive, and caching DNS or DNSSEC resolver. \nThe following packages have been upgraded to a later upstream version: unbound (1.16.2). (BZ#2027735)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1959468",
+				"description": "unbound-keygen needs to be stoped",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1959468"
+			},
+			{
+				"ticket": "2018806",
+				"description": "unbound-keygen requires openssl [rhel8]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2018806"
+			},
+			{
+				"ticket": "2023549",
+				"description": "unbound support for RFC 8767",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2023549"
+			},
+			{
+				"ticket": "2027735",
+				"description": "[RFE] Rebase unbound to latest stable release",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2027735"
+			},
+			{
+				"ticket": "2038251",
+				"description": "AVC denials recorded for fsetid while running unbound with local socket, though it (unbound-control) still works!",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2038251"
+			},
+			{
+				"ticket": "2081958",
+				"description": "chroot functionality isn't available in unbound-1.7.3 in RHEL8",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2081958"
+			},
+			{
+				"ticket": "2116725",
+				"description": "CVE-2022-30698 unbound:  the novel ghost domain where malicious users to trigger continued resolvability of malicious domain names",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2116725"
+			},
+			{
+				"ticket": "2116729",
+				"description": "CVE-2022-30699 unbound: novel ghost domain attack where malicious users to trigger continued resolvability of malicious domain names",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2116729"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-30698",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-30698.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-613"
+			},
+			{
+				"name": "CVE-2022-30699",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-30699.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-613"
+			}
+		],
+		"publishedAt": "2022-11-13T07:55:53.334040Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"python3-unbound-0:1.16.2-2.el8.aarch64.rpm",
+					"python3-unbound-0:1.16.2-2.el8.x86_64.rpm",
+					"python3-unbound-debuginfo-0:1.16.2-2.el8.aarch64.rpm",
+					"python3-unbound-debuginfo-0:1.16.2-2.el8.x86_64.rpm",
+					"unbound-0:1.16.2-2.el8.aarch64.rpm",
+					"unbound-0:1.16.2-2.el8.src.rpm",
+					"unbound-0:1.16.2-2.el8.x86_64.rpm",
+					"unbound-debuginfo-0:1.16.2-2.el8.aarch64.rpm",
+					"unbound-debuginfo-0:1.16.2-2.el8.i686.rpm",
+					"unbound-debuginfo-0:1.16.2-2.el8.x86_64.rpm",
+					"unbound-debugsource-0:1.16.2-2.el8.aarch64.rpm",
+					"unbound-debugsource-0:1.16.2-2.el8.x86_64.rpm",
+					"unbound-devel-0:1.16.2-2.el8.aarch64.rpm",
+					"unbound-devel-0:1.16.2-2.el8.i686.rpm",
+					"unbound-devel-0:1.16.2-2.el8.x86_64.rpm",
+					"unbound-libs-0:1.16.2-2.el8.aarch64.rpm",
+					"unbound-libs-0:1.16.2-2.el8.i686.rpm",
+					"unbound-libs-0:1.16.2-2.el8.x86_64.rpm",
+					"unbound-libs-debuginfo-0:1.16.2-2.el8.aarch64.rpm",
+					"unbound-libs-debuginfo-0:1.16.2-2.el8.i686.rpm",
+					"unbound-libs-debuginfo-0:1.16.2-2.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

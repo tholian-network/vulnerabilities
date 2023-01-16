@@ -1,0 +1,155 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:1772",
+		"synopsis": "nmstate bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for nmstate is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1911241",
+				"description": "better deal with ipv6 address in dns config",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1911241"
+			},
+			{
+				"ticket": "1911397",
+				"description": "cannot reapply route rules without priority",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1911397"
+			},
+			{
+				"ticket": "1914772",
+				"description": "changing auto-route-table-id won't take effect directly",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1914772"
+			},
+			{
+				"ticket": "1941450",
+				"description": "if veth peer is link up, fail to add/create a veth to vrf",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1941450"
+			},
+			{
+				"ticket": "1973973",
+				"description": "nmstate reports irrelevant error message when 'veth' key doesn't include",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1973973"
+			},
+			{
+				"ticket": "1978156",
+				"description": "failed when apply the same one sr-iov state for the 2nd time",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1978156"
+			},
+			{
+				"ticket": "1984277",
+				"description": "[RFE] Allow user to change DNS search only and preserving existing DNS nameservers",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1984277"
+			},
+			{
+				"ticket": "1992415",
+				"description": "linux bridge mtu changed to 1499 after rollback on NmstateVerificationError",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992415"
+			},
+			{
+				"ticket": "1996618",
+				"description": "[Rebase] Rebase nmstate to last stable release",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1996618"
+			},
+			{
+				"ticket": "2003976",
+				"description": "[RFE] Support OVS-DPDK in nmstate",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2003976"
+			},
+			{
+				"ticket": "2004006",
+				"description": "[RFE] Support for VLAN and QOS ID in SRIOV-VF via nmstate",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2004006"
+			},
+			{
+				"ticket": "2005323",
+				"description": "Support copy-mac-from for OVS interface",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2005323"
+			},
+			{
+				"ticket": "2019457",
+				"description": "nmstate changes names of existing ovs-bridge ports when attaching a veth",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2019457"
+			},
+			{
+				"ticket": "2020255",
+				"description": "Nmstate rust should support linux bridge interface",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2020255"
+			},
+			{
+				"ticket": "2028417",
+				"description": "Support route in nmstate-rust",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028417"
+			},
+			{
+				"ticket": "2040305",
+				"description": "Nmstate rust should support ovsdb actions",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2040305"
+			},
+			{
+				"ticket": "2048988",
+				"description": "NNCP deployment fails on applying ipv6 routes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2048988"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2022:1772",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:1772",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nmstate-0:1.2.1-1.el8.aarch64.rpm",
+					"nmstate-0:1.2.1-1.el8.src.rpm",
+					"nmstate-0:1.2.1-1.el8.x86_64.rpm",
+					"nmstate-debuginfo-0:1.2.1-1.el8.aarch64.rpm",
+					"nmstate-debuginfo-0:1.2.1-1.el8.i686.rpm",
+					"nmstate-debuginfo-0:1.2.1-1.el8.x86_64.rpm",
+					"nmstate-debugsource-0:1.2.1-1.el8.aarch64.rpm",
+					"nmstate-debugsource-0:1.2.1-1.el8.x86_64.rpm",
+					"nmstate-devel-0:1.2.1-1.el8.aarch64.rpm",
+					"nmstate-devel-0:1.2.1-1.el8.i686.rpm",
+					"nmstate-devel-0:1.2.1-1.el8.x86_64.rpm",
+					"nmstate-libs-0:1.2.1-1.el8.aarch64.rpm",
+					"nmstate-libs-0:1.2.1-1.el8.i686.rpm",
+					"nmstate-libs-0:1.2.1-1.el8.x86_64.rpm",
+					"nmstate-libs-debuginfo-0:1.2.1-1.el8.aarch64.rpm",
+					"nmstate-libs-debuginfo-0:1.2.1-1.el8.i686.rpm",
+					"nmstate-libs-debuginfo-0:1.2.1-1.el8.x86_64.rpm",
+					"nmstate-plugin-ovsdb-0:1.2.1-1.el8.noarch.rpm",
+					"python3-libnmstate-0:1.2.1-1.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

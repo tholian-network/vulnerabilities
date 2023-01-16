@@ -1,0 +1,40 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1876",
+		"synopsis": "qatlib bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for qatlib is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2022:1876",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1876",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"qatlib-0:21.11.0-1.el8.src.rpm",
+					"qatlib-0:21.11.0-1.el8.x86_64.rpm",
+					"qatlib-debuginfo-0:21.11.0-1.el8.x86_64.rpm",
+					"qatlib-debugsource-0:21.11.0-1.el8.x86_64.rpm",
+					"qatlib-devel-0:21.11.0-1.el8.x86_64.rpm",
+					"qatlib-tests-0:21.11.0-1.el8.x86_64.rpm",
+					"qatlib-tests-debuginfo-0:21.11.0-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

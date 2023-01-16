@@ -1,0 +1,298 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:1796",
+		"synopsis": "Moderate: container-tools:rhel8 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the container-tools:rhel8 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The container-tools module contains tools for working with containers, notably podman, buildah, skopeo, and runc.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1707078",
+				"description": "Image signature only has one docker registry reference, would like the ability to have two hostnames sign them.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1707078"
+			},
+			{
+				"ticket": "1724946",
+				"description": "Can not verify signed image signature in OCP 4",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1724946"
+			},
+			{
+				"ticket": "1726442",
+				"description": "SIGTERM from systemd to containers|conmon on shutdown causes unexpected results",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1726442"
+			},
+			{
+				"ticket": "1763007",
+				"description": "--log-opt for podman run does not work as expected",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1763007"
+			},
+			{
+				"ticket": "1770037",
+				"description": "(podman sign) does not handle multi-arch images",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1770037"
+			},
+			{
+				"ticket": "1798278",
+				"description": "subscription-manager recommends drags in too much into RHCOS",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1798278"
+			},
+			{
+				"ticket": "1811773",
+				"description": "[RFE] cockpit-podman ability to set selinux contexts for volumes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1811773"
+			},
+			{
+				"ticket": "1838233",
+				"description": "address coverity warnings",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1838233"
+			},
+			{
+				"ticket": "1841485",
+				"description": "podman exec is fragile in the presence of signals",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1841485"
+			},
+			{
+				"ticket": "1844199",
+				"description": "[RFE] Add remapIdentity suggestion to simplify policy configuration",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1844199"
+			},
+			{
+				"ticket": "1853455",
+				"description": "podman ignores infra_command option from containers.conf",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1853455"
+			},
+			{
+				"ticket": "1860176",
+				"description": "OCI Runtime kata-runtime is in use by a container, but is not available",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1860176"
+			},
+			{
+				"ticket": "1867892",
+				"description": "running containerized buildah leads to error",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1867892"
+			},
+			{
+				"ticket": "1881894",
+				"description": "podman-remote: dial unix ///run/podman/podman.sock: connect: no such file or directory",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1881894"
+			},
+			{
+				"ticket": "1897282",
+				"description": "podman-wait requiring units for interval when it is documented as optional",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1897282"
+			},
+			{
+				"ticket": "1897594",
+				"description": "update description and summary for container-tools module for 8.3.0",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1897594"
+			},
+			{
+				"ticket": "1902979",
+				"description": "podman run fails to update  /etc/hosts when --uidmap is provided",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1902979"
+			},
+			{
+				"ticket": "1903813",
+				"description": "[RFE] Ship preconfigured /etc/containers/registries.d/ files with containers-common",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1903813"
+			},
+			{
+				"ticket": "1904549",
+				"description": "POST to /networks/create with docker compatible API results in panic",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1904549"
+			},
+			{
+				"ticket": "1908883",
+				"description": "CVE-2020-29652 golang: crypto/ssh: crafted authentication request can lead to nil pointer dereference",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1908883"
+			},
+			{
+				"ticket": "1915383",
+				"description": "Podman \"--format\" does not support \"join\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1915383"
+			},
+			{
+				"ticket": "1918554",
+				"description": "error bind mounting /dev from host into mount namespace: mkdir /var/tmp/buildah396339746/mnt/rootfs/dev: operation not permitted",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1918554"
+			},
+			{
+				"ticket": "1919050",
+				"description": "CVE-2021-20199 podman: Remote traffic to rootless containers is seen as orginating from localhost",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1919050"
+			},
+			{
+				"ticket": "1921128",
+				"description": "[gss][podman]Getting the error while starting container \"Error: readlink /var/lib/containers/storage/overlay/l/XXX no such file or directory\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1921128"
+			},
+			{
+				"ticket": "1923986",
+				"description": "podman: Installation instructions for rootless podman do not work",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1923986"
+			},
+			{
+				"ticket": "1924146",
+				"description": "RFE Bind mounting host volume using Podman REST API",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1924146"
+			},
+			{
+				"ticket": "1931545",
+				"description": "podman 3.0.1 ships with a v2 go module",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1931545"
+			},
+			{
+				"ticket": "1931785",
+				"description": "shortname for ubi8-minimal leads to \"Repo not found\" error",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1931785"
+			},
+			{
+				"ticket": "1932083",
+				"description": "Podman will pull image for rootless CNI",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1932083"
+			},
+			{
+				"ticket": "1935376",
+				"description": "Regression: Overlay mounts is broken on existing directories.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1935376"
+			},
+			{
+				"ticket": "1935922",
+				"description": "Unable to run multi-stage builds with rootless buildah container",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1935922"
+			},
+			{
+				"ticket": "1936927",
+				"description": "regressions cp command in Podman v3.0",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1936927"
+			},
+			{
+				"ticket": "1937487",
+				"description": "Podman socket failing to connect with long uid",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1937487"
+			},
+			{
+				"ticket": "1938234",
+				"description": "Variety of errors during rootless container image creation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1938234"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-29652",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-29652.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-476"
+			},
+			{
+				"name": "CVE-2021-20199",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20199.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "5.9",
+				"cwe": "CWE-346"
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cockpit-podman-0:29-2.module+el8.6.0+973+7a06b91e.noarch.rpm",
+					"cockpit-podman-0:29-2.module+el8.6.0+973+7a06b91e.src.rpm",
+					"conmon-2:2.0.26-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"conmon-2:2.0.26-1.module+el8.6.0+973+7a06b91e.src.rpm",
+					"conmon-2:2.0.26-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"conmon-debuginfo-2:2.0.26-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"conmon-debuginfo-2:2.0.26-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"conmon-debugsource-2:2.0.26-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"conmon-debugsource-2:2.0.26-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"containernetworking-plugins-0:0.9.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"containernetworking-plugins-0:0.9.1-1.module+el8.6.0+973+7a06b91e.src.rpm",
+					"containernetworking-plugins-0:0.9.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"containernetworking-plugins-debuginfo-0:0.9.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"containernetworking-plugins-debuginfo-0:0.9.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"containernetworking-plugins-debugsource-0:0.9.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"containernetworking-plugins-debugsource-0:0.9.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"crit-0:3.15-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"crit-0:3.15-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"criu-0:3.15-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"criu-0:3.15-1.module+el8.6.0+973+7a06b91e.src.rpm",
+					"criu-0:3.15-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"criu-debuginfo-0:3.15-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"criu-debuginfo-0:3.15-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"criu-debugsource-0:3.15-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"criu-debugsource-0:3.15-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"fuse-overlayfs-0:1.4.0-2.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"fuse-overlayfs-0:1.4.0-2.module+el8.6.0+973+7a06b91e.src.rpm",
+					"fuse-overlayfs-0:1.4.0-2.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"fuse-overlayfs-debuginfo-0:1.4.0-2.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"fuse-overlayfs-debuginfo-0:1.4.0-2.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"fuse-overlayfs-debugsource-0:1.4.0-2.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"fuse-overlayfs-debugsource-0:1.4.0-2.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"libslirp-0:4.3.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"libslirp-0:4.3.1-1.module+el8.6.0+973+7a06b91e.src.rpm",
+					"libslirp-0:4.3.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"libslirp-debuginfo-0:4.3.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"libslirp-debuginfo-0:4.3.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"libslirp-debugsource-0:4.3.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"libslirp-debugsource-0:4.3.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"libslirp-devel-0:4.3.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"libslirp-devel-0:4.3.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"python3-criu-0:3.15-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"python3-criu-0:3.15-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"slirp4netns-0:1.1.8-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"slirp4netns-0:1.1.8-1.module+el8.6.0+973+7a06b91e.src.rpm",
+					"slirp4netns-0:1.1.8-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"slirp4netns-debuginfo-0:1.1.8-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"slirp4netns-debuginfo-0:1.1.8-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"slirp4netns-debugsource-0:1.1.8-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"slirp4netns-debugsource-0:1.1.8-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"udica-0:0.2.4-1.module+el8.6.0+973+7a06b91e.noarch.rpm",
+					"udica-0:0.2.4-1.module+el8.6.0+973+7a06b91e.src.rpm"
+				]
+			}
+		}
+	}
+}

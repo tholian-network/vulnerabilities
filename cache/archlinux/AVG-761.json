@@ -1,18 +1,18 @@
 {
-	"name": "AVG-761",
-	"packages": [
-		"linux-zen"
-	],
-	"status": "Fixed",
-	"severity": "High",
-	"type": "denial of service",
-	"affected": "4.18.zen1-1",
-	"fixed": "4.19.1.zen1-1",
-	"ticket": null,
-	"issues": [
-		"CVE-2018-5391"
-	],
-	"advisories": [],
-	"references": [],
-	"notes": "Fixed in commits:\r\n  5d407b071dc3 ip: frags: fix crash in ip_do_fragment()\r\n  d5c7c9f88e76 Merge remote-tracking branch 'algodev/bfq-mq' into HEAD\r\n  a4fd284a1f8f ip: process in-order fragments efficiently\r\n  353c9cb36087 ip: add helpers to process in-order fragments faster.\r\n  70837ffe3085 ipv4: frags: precedence bug in ip_expire()\r\n  fa0f527358bd ip: use rb trees for IP frag queue.\r\n  7969e5c40dfd ip: discard IPv4 datagrams with overlapping segments.\r\n  89b1698c93a9 Merge ra.kernel.org:/pub/scm/linux/kernel/git/davem/net"
+  "name": "AVG-761",
+  "packages": [
+    "linux-zen"
+  ],
+  "status": "Fixed",
+  "severity": "High",
+  "type": "denial of service",
+  "affected": "4.18.zen1-1",
+  "fixed": "4.19.1.zen1-1",
+  "ticket": null,
+  "issues": [
+    "CVE-2018-5391"
+  ],
+  "advisories": [],
+  "references": [],
+  "notes": "Fixed in commits:\r\n  5d407b071dc3 ip: frags: fix crash in ip_do_fragment()\r\n  d5c7c9f88e76 Merge remote-tracking branch 'algodev/bfq-mq' into HEAD\r\n  a4fd284a1f8f ip: process in-order fragments efficiently\r\n  353c9cb36087 ip: add helpers to process in-order fragments faster.\r\n  70837ffe3085 ipv4: frags: precedence bug in ip_expire()\r\n  fa0f527358bd ip: use rb trees for IP frag queue.\r\n  7969e5c40dfd ip: discard IPv4 datagrams with overlapping segments.\r\n  89b1698c93a9 Merge ra.kernel.org:/pub/scm/linux/kernel/git/davem/net"
 }

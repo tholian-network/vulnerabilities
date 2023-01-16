@@ -1,0 +1,45 @@
+{
+	"updateinfo_id": "ALSA-2021:4315",
+	"fromstr": "packager@almalinux.org",
+	"title": "Moderate: spamassassin security update",
+	"type": "security",
+	"release": "0",
+	"version": "2",
+	"status": "final",
+	"severity": "Moderate",
+	"summary": "An update for spamassassin is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+	"pushcount": "3",
+	"pkglist": {
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"packages": [
+			{
+				"src": "spamassassin-3.4.4-4.el8.src.rpm",
+				"name": "spamassassin",
+				"epoch": "0",
+				"version": "3.4.4",
+				"release": "4.el8",
+				"arch": "x86_64",
+				"filename": "spamassassin-3.4.4-4.el8.x86_64.rpm",
+				"sum": "fb71ffcfd371f4f5bc68047b4b8615ccb7b031cffdfc85e00062fee1366e0c62",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "The SpamAssassin tool provides a way to reduce unsolicited commercial email (spam) from incoming email.\n\nSecurity Fix(es):\n\n* spamassassin: Malicious rule configuration files can be configured to run system commands (CVE-2020-1946)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
+	"references": [
+		{
+			"id": "CVE-2020-1946",
+			"title": "CVE-2020-1946",
+			"type": "cve",
+			"href": "https://vulners.com/cve/CVE-2020-1946"
+		}
+	],
+	"issued_date": {
+		"$date": 1636448333000
+	},
+	"updated_date": {
+		"$date": 1636712456000
+	}
+}

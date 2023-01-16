@@ -1,0 +1,60 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1870",
+		"synopsis": "gnome-control-center bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gnome-control-center is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1893650",
+				"description": "The \"Maximize\" button of \"Displays\" window can not be used at screen resolution 800x600 and below",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1893650"
+			},
+			{
+				"ticket": "1938323",
+				"description": "Wifi settings panel causes gnome-control-panel to hang",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1938323"
+			},
+			{
+				"ticket": "1938944",
+				"description": "Unable to save 802.1x passwords for wired connections",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1938944"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1870",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1870",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gnome-control-center-0:3.28.2-33.el8_6.1.aarch64.rpm",
+					"gnome-control-center-0:3.28.2-33.el8_6.1.src.rpm",
+					"gnome-control-center-0:3.28.2-33.el8_6.1.x86_64.rpm",
+					"gnome-control-center-debuginfo-0:3.28.2-33.el8_6.1.aarch64.rpm",
+					"gnome-control-center-debuginfo-0:3.28.2-33.el8_6.1.x86_64.rpm",
+					"gnome-control-center-debugsource-0:3.28.2-33.el8_6.1.aarch64.rpm",
+					"gnome-control-center-debugsource-0:3.28.2-33.el8_6.1.x86_64.rpm",
+					"gnome-control-center-filesystem-0:3.28.2-33.el8_6.1.noarch.rpm"
+				]
+			}
+		}
+	}
+}

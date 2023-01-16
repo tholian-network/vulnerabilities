@@ -1,0 +1,151 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1885",
+		"synopsis": "pacemaker bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for pacemaker is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1082146",
+				"description": "Adding 'delay' parameter of fencing for single node in a two node cluster with a shared fence device in RHEL7 cluster with pacemaker.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1082146"
+			},
+			{
+				"ticket": "1281463",
+				"description": "cluster properties metadata do not specify allowed values for enum properties",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1281463"
+			},
+			{
+				"ticket": "1346014",
+				"description": "debug-* actions don't work with all resource classes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1346014"
+			},
+			{
+				"ticket": "1376538",
+				"description": "fencing: No allowance for spaces in pcmk_host_map values",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1376538"
+			},
+			{
+				"ticket": "1384420",
+				"description": "Id of acl group cannot be same as id of any other element in CIB",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1384420"
+			},
+			{
+				"ticket": "1506372",
+				"description": "resource probe return codes other than OCF_NOT_RUNNING all reported as error",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1506372"
+			},
+			{
+				"ticket": "2003151",
+				"description": "Pacemaker lists 'service' agents ending in '@' but is unable to provide metadata for them",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2003151"
+			},
+			{
+				"ticket": "2011973",
+				"description": "Rebase pacemaker on upstream 2.1.2 release",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2011973"
+			},
+			{
+				"ticket": "2027006",
+				"description": "pacemaker-2.1 fails to start without corosync-3.1.5 due to undefined symbol: corosync_cfg_trackstart",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2027006"
+			},
+			{
+				"ticket": "2027370",
+				"description": "Resource ocf:pacemaker:Stateful does not comply with the ocf 1.1 standard",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2027370"
+			},
+			{
+				"ticket": "2032027",
+				"description": "Fencing history shows incorrect date \u0026 time",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2032027"
+			},
+			{
+				"ticket": "2039675",
+				"description": "pacemaker coredump with ocf:heartbeat:mysql resource",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2039675"
+			},
+			{
+				"ticket": "2042550",
+				"description": "pacemaker.service fails to start if enabling corosync CFG shutdown tracker returns CS_ERR_TRY_AGAIN",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2042550"
+			},
+			{
+				"ticket": "2046446",
+				"description": "Removing pacemaker_remote node ends up in fence action on the remote node",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2046446"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1885",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1885",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"pacemaker-0:2.1.2-4.el8_6.3.aarch64.rpm",
+					"pacemaker-0:2.1.2-4.el8_6.3.src.rpm",
+					"pacemaker-0:2.1.2-4.el8_6.3.x86_64.rpm",
+					"pacemaker-cli-0:2.1.2-4.el8_6.3.aarch64.rpm",
+					"pacemaker-cli-0:2.1.2-4.el8_6.3.x86_64.rpm",
+					"pacemaker-cli-debuginfo-0:2.1.2-4.el8_6.3.aarch64.rpm",
+					"pacemaker-cli-debuginfo-0:2.1.2-4.el8_6.3.x86_64.rpm",
+					"pacemaker-cluster-libs-0:2.1.2-4.el8_6.3.aarch64.rpm",
+					"pacemaker-cluster-libs-0:2.1.2-4.el8_6.3.i686.rpm",
+					"pacemaker-cluster-libs-0:2.1.2-4.el8_6.3.x86_64.rpm",
+					"pacemaker-cluster-libs-debuginfo-0:2.1.2-4.el8_6.3.aarch64.rpm",
+					"pacemaker-cluster-libs-debuginfo-0:2.1.2-4.el8_6.3.i686.rpm",
+					"pacemaker-cluster-libs-debuginfo-0:2.1.2-4.el8_6.3.x86_64.rpm",
+					"pacemaker-cts-0:2.1.2-4.el8_6.3.noarch.rpm",
+					"pacemaker-debuginfo-0:2.1.2-4.el8_6.3.aarch64.rpm",
+					"pacemaker-debuginfo-0:2.1.2-4.el8_6.3.i686.rpm",
+					"pacemaker-debuginfo-0:2.1.2-4.el8_6.3.x86_64.rpm",
+					"pacemaker-doc-0:2.1.2-4.el8_6.3.noarch.rpm",
+					"pacemaker-libs-0:2.1.2-4.el8_6.3.aarch64.rpm",
+					"pacemaker-libs-0:2.1.2-4.el8_6.3.i686.rpm",
+					"pacemaker-libs-0:2.1.2-4.el8_6.3.x86_64.rpm",
+					"pacemaker-libs-debuginfo-0:2.1.2-4.el8_6.3.aarch64.rpm",
+					"pacemaker-libs-debuginfo-0:2.1.2-4.el8_6.3.i686.rpm",
+					"pacemaker-libs-debuginfo-0:2.1.2-4.el8_6.3.x86_64.rpm",
+					"pacemaker-libs-devel-0:2.1.2-4.el8_6.3.aarch64.rpm",
+					"pacemaker-libs-devel-0:2.1.2-4.el8_6.3.i686.rpm",
+					"pacemaker-libs-devel-0:2.1.2-4.el8_6.3.x86_64.rpm",
+					"pacemaker-nagios-plugins-metadata-0:2.1.2-4.el8_6.3.noarch.rpm",
+					"pacemaker-remote-0:2.1.2-4.el8_6.3.aarch64.rpm",
+					"pacemaker-remote-0:2.1.2-4.el8_6.3.x86_64.rpm",
+					"pacemaker-remote-debuginfo-0:2.1.2-4.el8_6.3.aarch64.rpm",
+					"pacemaker-remote-debuginfo-0:2.1.2-4.el8_6.3.x86_64.rpm",
+					"pacemaker-schemas-0:2.1.2-4.el8_6.3.noarch.rpm"
+				]
+			}
+		}
+	}
+}

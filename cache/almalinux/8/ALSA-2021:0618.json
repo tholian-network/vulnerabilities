@@ -1,0 +1,75 @@
+{
+	"updateinfo_id": "ALSA-2021:0618",
+	"fromstr": "packager@almalinux.org",
+	"title": "Important: stunnel security update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Important",
+	"summary": "An update for stunnel is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+	"pushcount": "2",
+	"pkglist": {
+		"name": "almalinux-8-for-x86_64-baseos-rpms__8_0_default",
+		"shortname": "almalinux-8-for-x86_64-baseos-rpms__8_0_default",
+		"packages": [
+			{
+				"src": "stunnel-5.56-5.el8_3.src.rpm",
+				"name": "stunnel",
+				"epoch": "0",
+				"version": "5.56",
+				"release": "5.el8_3",
+				"arch": "x86_64",
+				"filename": "stunnel-5.56-5.el8_3.x86_64.rpm",
+				"sum": "295addea8fd6fe24287019dc5df1c8f7447bb1ea70ece97d3d90593a60d729b1",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "stunnel-5.56-5.el8_3.src.rpm",
+				"name": "stunnel",
+				"epoch": "0",
+				"version": "5.56",
+				"release": "5.el8_3",
+				"arch": "aarch64",
+				"filename": "stunnel-5.56-5.el8_3.aarch64.rpm",
+				"sum": "6eaea66353dc6f84761790f750ddfd9f0bb97076f8a213f00fffd3c2a9e24987",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "stunnel-5.56-5.el8_3.src.rpm",
+				"name": "stunnel",
+				"epoch": "0",
+				"version": "5.56",
+				"release": "5.el8_3",
+				"arch": "ppc64le",
+				"filename": "stunnel-5.56-5.el8_3.ppc64le.rpm",
+				"sum": "73fe4042513e319e51050c417a1ca9f18e975eff8b399785d8677d44f1107d55",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "Stunnel is a wrapper for network connections. It can be used to tunnel an unencrypted network connection over an encrypted connection (encrypted using SSL or TLS) or to provide an encrypted means of connecting to services that do not natively support encryption.\n\nSecurity Fix(es):\n\n* stunnel: client certificate not correctly verified when redirect and verifyChain options are used (CVE-2021-20230)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+	"references": [
+		{
+			"id": "ALSA-2021-0618",
+			"title": "ALSA-2021-0618",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-0618.html"
+		},
+		{
+			"id": "CVE-2021-20230",
+			"title": "CVE-2021-20230",
+			"type": "cve",
+			"href": "https://vulners.com/cve/CVE-2021-20230"
+		}
+	],
+	"issued_date": {
+		"$date": 1613987697000
+	},
+	"updated_date": {
+		"$date": 1613987697000
+	}
+}

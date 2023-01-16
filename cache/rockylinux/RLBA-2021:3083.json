@@ -1,0 +1,50 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:3083",
+		"synopsis": "gcc-toolset-10-valgrind bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gcc-toolset-10-valgrind is now available for Rocky Linux 8.",
+		"description": "GCC Toolset is a compiler toolset that provides recent versions of development tools. GCC Toolset is an Application Stream packaged as a Software Collection.\nBug fix(es):\nFor instructions on usage, see Using GCC Toolset linked from the References section. Components and specifics of this version are documented in the GCC Toolset 10 chapter.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1968378",
+				"description": "incorrect pkgconfig virtual provides in devel packages [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1968378"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:3083",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:3083",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-08-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gcc-toolset-10-valgrind-1:3.16.0-6.el8_4.aarch64.rpm",
+					"gcc-toolset-10-valgrind-1:3.16.0-6.el8_4.i686.rpm",
+					"gcc-toolset-10-valgrind-1:3.16.0-6.el8_4.src.rpm",
+					"gcc-toolset-10-valgrind-1:3.16.0-6.el8_4.x86_64.rpm",
+					"gcc-toolset-10-valgrind-debuginfo-1:3.16.0-6.el8_4.aarch64.rpm",
+					"gcc-toolset-10-valgrind-debuginfo-1:3.16.0-6.el8_4.i686.rpm",
+					"gcc-toolset-10-valgrind-debuginfo-1:3.16.0-6.el8_4.x86_64.rpm",
+					"gcc-toolset-10-valgrind-devel-1:3.16.0-6.el8_4.aarch64.rpm",
+					"gcc-toolset-10-valgrind-devel-1:3.16.0-6.el8_4.i686.rpm",
+					"gcc-toolset-10-valgrind-devel-1:3.16.0-6.el8_4.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

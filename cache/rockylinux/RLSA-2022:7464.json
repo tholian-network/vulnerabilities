@@ -1,0 +1,69 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7464",
+		"synopsis": "Moderate: protobuf security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for protobuf is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The protobuf packages provide Protocol Buffers, Google\u0026#39;s data interchange format. Protocol Buffers can encode structured data in an efficient yet extensible format, and provide a flexible, efficient, and automated mechanism for serializing structured data.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2049429",
+				"description": "CVE-2021-22570 protobuf: Incorrect parsing of nullchar in the proto symbol leads to Nullptr dereference",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2049429"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-22570",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22570.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-476"
+			}
+		],
+		"publishedAt": "2022-11-13T07:49:06.266809Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"protobuf-0:3.5.0-15.el8.aarch64.rpm",
+					"protobuf-0:3.5.0-15.el8.i686.rpm",
+					"protobuf-0:3.5.0-15.el8.src.rpm",
+					"protobuf-0:3.5.0-15.el8.x86_64.rpm",
+					"protobuf-compiler-0:3.5.0-15.el8.aarch64.rpm",
+					"protobuf-compiler-0:3.5.0-15.el8.i686.rpm",
+					"protobuf-compiler-0:3.5.0-15.el8.x86_64.rpm",
+					"protobuf-compiler-debuginfo-0:3.5.0-15.el8.aarch64.rpm",
+					"protobuf-compiler-debuginfo-0:3.5.0-15.el8.i686.rpm",
+					"protobuf-compiler-debuginfo-0:3.5.0-15.el8.x86_64.rpm",
+					"protobuf-debuginfo-0:3.5.0-15.el8.aarch64.rpm",
+					"protobuf-debuginfo-0:3.5.0-15.el8.i686.rpm",
+					"protobuf-debuginfo-0:3.5.0-15.el8.x86_64.rpm",
+					"protobuf-debugsource-0:3.5.0-15.el8.aarch64.rpm",
+					"protobuf-debugsource-0:3.5.0-15.el8.i686.rpm",
+					"protobuf-debugsource-0:3.5.0-15.el8.x86_64.rpm",
+					"protobuf-devel-0:3.5.0-15.el8.aarch64.rpm",
+					"protobuf-devel-0:3.5.0-15.el8.i686.rpm",
+					"protobuf-devel-0:3.5.0-15.el8.x86_64.rpm",
+					"protobuf-lite-0:3.5.0-15.el8.aarch64.rpm",
+					"protobuf-lite-0:3.5.0-15.el8.i686.rpm",
+					"protobuf-lite-0:3.5.0-15.el8.x86_64.rpm",
+					"protobuf-lite-debuginfo-0:3.5.0-15.el8.aarch64.rpm",
+					"protobuf-lite-debuginfo-0:3.5.0-15.el8.i686.rpm",
+					"protobuf-lite-debuginfo-0:3.5.0-15.el8.x86_64.rpm",
+					"protobuf-lite-devel-0:3.5.0-15.el8.aarch64.rpm",
+					"protobuf-lite-devel-0:3.5.0-15.el8.i686.rpm",
+					"protobuf-lite-devel-0:3.5.0-15.el8.x86_64.rpm",
+					"python3-protobuf-0:3.5.0-15.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

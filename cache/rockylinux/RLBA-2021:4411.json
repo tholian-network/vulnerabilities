@@ -1,0 +1,53 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4411",
+		"synopsis": "tpm2-tss bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for tpm2-tss is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1940861",
+				"description": "tpm2-tss missing Requires(pre): shadow-utils",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1940861"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4411",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4411",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"tpm2-tss-0:2.3.2-4.el8.aarch64.rpm",
+					"tpm2-tss-0:2.3.2-4.el8.i686.rpm",
+					"tpm2-tss-0:2.3.2-4.el8.src.rpm",
+					"tpm2-tss-0:2.3.2-4.el8.x86_64.rpm",
+					"tpm2-tss-debuginfo-0:2.3.2-4.el8.aarch64.rpm",
+					"tpm2-tss-debuginfo-0:2.3.2-4.el8.i686.rpm",
+					"tpm2-tss-debuginfo-0:2.3.2-4.el8.x86_64.rpm",
+					"tpm2-tss-debugsource-0:2.3.2-4.el8.aarch64.rpm",
+					"tpm2-tss-debugsource-0:2.3.2-4.el8.i686.rpm",
+					"tpm2-tss-debugsource-0:2.3.2-4.el8.x86_64.rpm",
+					"tpm2-tss-devel-0:2.3.2-4.el8.aarch64.rpm",
+					"tpm2-tss-devel-0:2.3.2-4.el8.i686.rpm",
+					"tpm2-tss-devel-0:2.3.2-4.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

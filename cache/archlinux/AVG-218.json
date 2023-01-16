@@ -1,21 +1,21 @@
 {
-	"name": "AVG-218",
-	"packages": [
-		"mupdf"
-	],
-	"status": "Not affected",
-	"severity": "High",
-	"type": "arbitrary code execution",
-	"affected": "1.10_a-2",
-	"fixed": null,
-	"ticket": null,
-	"issues": [
-		"CVE-2017-6060"
-	],
-	"advisories": [],
-	"references": [
-		"https://bugs.ghostscript.com/show_bug.cgi?id=697551",
-		"https://blogs.gentoo.org/ago/2017/02/17/mupdf-mujstest-stack-based-buffer-overflow-in-main-jstest_main-c/"
-	],
-	"notes": "The jstest binary is not included in the file package, therefor this issue does not affect the mupdf package even if jstest_main.c is compiled during build time."
+  "name": "AVG-218",
+  "packages": [
+    "mupdf"
+  ],
+  "status": "Not affected",
+  "severity": "High",
+  "type": "arbitrary code execution",
+  "affected": "1.10_a-2",
+  "fixed": null,
+  "ticket": null,
+  "issues": [
+    "CVE-2017-6060"
+  ],
+  "advisories": [],
+  "references": [
+    "https://bugs.ghostscript.com/show_bug.cgi?id=697551",
+    "https://blogs.gentoo.org/ago/2017/02/17/mupdf-mujstest-stack-based-buffer-overflow-in-main-jstest_main-c/"
+  ],
+  "notes": "The jstest binary is not included in the file package, therefor this issue does not affect the mupdf package even if jstest_main.c is compiled during build time."
 }

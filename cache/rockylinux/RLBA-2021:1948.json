@@ -1,0 +1,44 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1948",
+		"synopsis": "ibus-table bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for ibus-table is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1929102",
+				"description": "New CI tests subpackage ibus-table-tests of ibus-table needs  to be added",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1929102"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1948",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1948",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"ibus-table-0:1.9.18-6.el8.noarch.rpm",
+					"ibus-table-0:1.9.18-6.el8.src.rpm",
+					"ibus-table-devel-0:1.9.18-6.el8.noarch.rpm",
+					"ibus-table-tests-0:1.9.18-6.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

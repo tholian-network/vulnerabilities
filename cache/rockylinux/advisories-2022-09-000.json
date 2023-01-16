@@ -1,0 +1,750 @@
+{
+	"advisories": [
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6460",
+			"synopsis": "Moderate: kernel security, bug fix, and enhancement update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for kernel is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "The kernel packages contain the Linux kernel, the core of any Linux operating system.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-21123",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21123.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+					"cvss3BaseScore": "6.1",
+					"cwe": "CWE-459"
+				},
+				{
+					"name": "CVE-2022-21125",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21125.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+					"cvss3BaseScore": "5.5",
+					"cwe": "CWE-459"
+				},
+				{
+					"name": "CVE-2022-21166",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21166.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+					"cvss3BaseScore": "5.5",
+					"cwe": "CWE-459"
+				}
+			],
+			"publishedAt": "2022-09-23T19:45:24.660607Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6437",
+			"synopsis": "Moderate: kernel-rt security and bug fix update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for kernel-rt is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "The kernel-rt packages provide the Real Time Linux Kernel, which enables fine-tuning for systems with extremely high determinism requirements.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-21123",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21123.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+					"cvss3BaseScore": "6.1",
+					"cwe": "CWE-459"
+				},
+				{
+					"name": "CVE-2022-21125",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21125.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+					"cvss3BaseScore": "5.5",
+					"cwe": "CWE-459"
+				},
+				{
+					"name": "CVE-2022-21166",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21166.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+					"cvss3BaseScore": "5.5",
+					"cwe": "CWE-459"
+				}
+			],
+			"publishedAt": "2022-09-23T19:45:15.173495Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6357",
+			"synopsis": "Important: open-vm-tools security update",
+			"severity": "SEVERITY_IMPORTANT",
+			"topic": "An update for open-vm-tools is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "The Open Virtual Machine Tools are the open source implementation of the VMware Tools. They are a set of guest operating system virtualization components that enhance performance and user experience of virtual machines.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-31676",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-31676.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "7.0",
+					"cwe": "CWE-250"
+				}
+			],
+			"publishedAt": "2022-09-23T19:45:11.687518Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6463",
+			"synopsis": "Moderate: gnupg2 security update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for gnupg2 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "The GNU Privacy Guard (GnuPG or GPG) is a tool for encrypting data and creating digital signatures, compliant with OpenPGP and S/MIME standards.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-34903",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-34903.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+					"cvss3BaseScore": "5.9",
+					"cwe": "CWE-347"
+				}
+			],
+			"publishedAt": "2022-09-23T19:45:08.754264Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6439",
+			"synopsis": "Moderate: booth security update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for booth is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "The Booth cluster ticket manager is a component to bridge high availability clusters spanning multiple sites, in particular, to provide decision inputs to local Pacemaker cluster resource managers. It operates as a distributed consensus-based service, presumably on a separate physical network. Tickets facilitated by a Booth formation are the units of authorization that can be bound to certain resources. This will ensure that the resources are run at only one (granted) site at a time.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-2553",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-2553.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+					"cvss3BaseScore": "6.5",
+					"cwe": "CWE-287"
+				}
+			],
+			"publishedAt": "2022-09-23T19:45:06.777532Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6540",
+			"synopsis": "Moderate: webkit2gtk3 security update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for webkit2gtk3 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "WebKitGTK is the port of the portable web rendering engine WebKit to the GTK platform.\nThe following packages have been upgraded to a later upstream version: webkit2gtk3 (2.36.7).\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-32893",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32893.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "8.8",
+					"cwe": "CWE-20-\u003eCWE-787"
+				}
+			],
+			"publishedAt": "2022-09-23T19:45:04.315532Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6443",
+			"synopsis": "Moderate: mariadb:10.3 security and bug fix update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for the mariadb:10.3 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "MariaDB is a multi-user, multi-threaded SQL database server that is binary compatible with MySQL. \nThe following packages have been upgraded to a later upstream version: mariadb (10.3.35), galera (25.3.35).\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-21427",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21427.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2022-32083",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32083.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": "CWE-229"
+				},
+				{
+					"name": "CVE-2022-32085",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32085.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": "CWE-229"
+				},
+				{
+					"name": "CVE-2022-32087",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32087.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": "CWE-229"
+				},
+				{
+					"name": "CVE-2022-32088",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32088.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": "CWE-229"
+				}
+			],
+			"publishedAt": "2022-09-23T19:45:00.262046Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6448",
+			"synopsis": "Moderate: nodejs:14 security and bug fix update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for the nodejs:14 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Node.js is a software development platform for building fast and scalable network applications in the JavaScript programming language. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-32212",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32212.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-703"
+				},
+				{
+					"name": "CVE-2022-32213",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32213.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+					"cvss3BaseScore": "6.5",
+					"cwe": "CWE-444"
+				},
+				{
+					"name": "CVE-2022-32214",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32214.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+					"cvss3BaseScore": "6.5",
+					"cwe": "CWE-444"
+				},
+				{
+					"name": "CVE-2022-32215",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32215.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+					"cvss3BaseScore": "6.5",
+					"cwe": "CWE-444"
+				},
+				{
+					"name": "CVE-2022-33987",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-33987.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+					"cvss3BaseScore": "5.3",
+					"cwe": "CWE-601"
+				}
+			],
+			"publishedAt": "2022-09-23T19:44:43.298057Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6449",
+			"synopsis": "Moderate: nodejs:16 security and bug fix update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for the nodejs:16 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Node.js is a software development platform for building fast and scalable network applications in the JavaScript programming language. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-32212",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32212.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-703"
+				},
+				{
+					"name": "CVE-2022-32213",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32213.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+					"cvss3BaseScore": "6.5",
+					"cwe": "CWE-444"
+				},
+				{
+					"name": "CVE-2022-32214",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32214.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+					"cvss3BaseScore": "6.5",
+					"cwe": "CWE-444"
+				},
+				{
+					"name": "CVE-2022-32215",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32215.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+					"cvss3BaseScore": "6.5",
+					"cwe": "CWE-444"
+				},
+				{
+					"name": "CVE-2022-33987",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-33987.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+					"cvss3BaseScore": "5.3",
+					"cwe": "CWE-601"
+				}
+			],
+			"publishedAt": "2022-09-23T19:44:38.628624Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6542",
+			"synopsis": "Moderate: php:7.4 security update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for the php:7.4 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "PHP is an HTML-embedded scripting language commonly used with the Apache HTTP Server.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2020-28948",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-28948.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "7.8",
+					"cwe": "CWE-502"
+				},
+				{
+					"name": "CVE-2020-28949",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-28949.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N",
+					"cvss3BaseScore": "5.0",
+					"cwe": "CWE-20"
+				},
+				{
+					"name": "CVE-2020-36193",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-36193.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-22"
+				}
+			],
+			"publishedAt": "2022-09-23T19:44:34.195622Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6450",
+			"synopsis": "Moderate: ruby:3.0 security, bug fix, and enhancement update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for the ruby:3.0 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Ruby is an extensible, interpreted, object-oriented, scripting language. It has features to process text files and to perform system management tasks.\nThe following packages have been upgraded to a later upstream version: ruby (3.0.4). (BZ#2109431)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-28738",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-28738.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+					"cvss3BaseScore": "7.7",
+					"cwe": "CWE-415"
+				}
+			],
+			"publishedAt": "2022-09-23T19:43:52.091929Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6539",
+			"synopsis": "Moderate: .NET 6.0 security and bugfix update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for .NET 6.0 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": ".NET is a managed-software framework. It implements a subset of the .NET framework APIs and several new APIs, and it includes a CLR implementation.\nNew versions of .NET that address a security vulnerability are now available. The updated versions are .NET SDK 6.0.109 and .NET Runtime 6.0.9.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-38013",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-38013.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-400"
+				}
+			],
+			"publishedAt": "2022-09-23T19:43:36.713700Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:6523",
+			"synopsis": "Moderate: .NET Core 3.1 security and bugfix update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for .NET Core 3.1 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": ".NET is a managed-software framework. It implements a subset of the .NET framework APIs and several new APIs, and it includes a CLR implementation.\nNew versions of .NET that address a security vulnerability are now available. The updated versions are .NET SDK 3.1.423 and .NET Runtime 3.1.29.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-38013",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-38013.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-400"
+				}
+			],
+			"publishedAt": "2022-09-23T19:43:31.331651Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_BUGFIX",
+			"shortCode": "RL",
+			"name": "RLBA-2022:6466",
+			"synopsis": "systemd bug fix and enhancement update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "Au update for systemd is now available for Rocky Linux 8.",
+			"description": "The systemd packages contain systemd, a system and service manager for Linux, compatible with the SysV and LSB init scripts. It provides aggressive parallelism capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, and keeps track of processes using Linux cgroups. In addition, it supports snapshotting and restoring of the system state, maintains mount and automount points, and implements an elaborate transactional dependency-based service control logic. It can also work as a drop-in replacement for sysvinit.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHBA-2022:6466",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHBA-2022:6466",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2022-09-13T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_BUGFIX",
+			"shortCode": "RL",
+			"name": "RLBA-2022:6436",
+			"synopsis": "kronosnet bug fix update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "An update for kronosnet is now available for Rocky Linux 8.",
+			"description": "Kronosnet (knet) is a network abstraction layer designed for High Availability use cases.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHBA-2022:6436",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHBA-2022:6436",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2022-09-13T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_BUGFIX",
+			"shortCode": "RL",
+			"name": "RLBA-2022:6442",
+			"synopsis": "nmstate bug fix and enhancement update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "An update for nmstate is now available for Rocky Linux 8.",
+			"description": "Nmstate is a library with an accompanying command line tool that manages host networking settings in a declarative manner and aimed to satisfy enterprise\nneeds to manage host networking through a northbound declarative API and multi provider support on the southbound.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHBA-2022:6442",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHBA-2022:6442",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2022-09-13T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_BUGFIX",
+			"shortCode": "RL",
+			"name": "RLBA-2022:6295",
+			"synopsis": "java-1.8.0-openjdk bug fix update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "An update for java-1.8.0-openjdk is now available for Rocky Enterprise Software Foundation EnterpriseLinux 8.",
+			"description": "The java-1.8.0-openjdk packages provide the OpenJDK 8 Java Runtime\nEnvironment and the OpenJDK 8 Java Software Development Kit.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHBA-2022:6295",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHBA-2022:6295",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2022-09-13T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_ENHANCEMENT",
+			"shortCode": "RL",
+			"name": "RLEA-2022:6453",
+			"synopsis": "container-tools:3.0 bug fix update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "An update for the container-tools:3.0 module is now available for Rocky Linux 8.",
+			"description": "The container-tools module contains tools for working with containers, notably podman, buildah, skopeo, and runc.\nBug Fix:",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHEA-2022:6453",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHEA-2022:6453",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2022-09-13T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_ENHANCEMENT",
+			"shortCode": "RL",
+			"name": "RLEA-2022:6454",
+			"synopsis": "container-tools:4.0 bug fix update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "An update for the container-tools:4.0 module is now available for Rocky Linux 8.",
+			"description": "The container-tools module contains tools for working with containers, notably podman, buildah, skopeo, and runc.\nBug Fix:",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHEA-2022:6454",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHEA-2022:6454",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2022-09-13T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_BUGFIX",
+			"shortCode": "RL",
+			"name": "RLBA-2022:6458",
+			"synopsis": "iproute bug fix and enhacement update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "An update for iproute is now available for Rocky Linux 8.",
+			"description": "The iproute packages contain networking utilities, such as ip and rtmon, designed to use the advanced networking capabilities of the Linux kernel.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHBA-2022:6458",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHBA-2022:6458",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2022-09-13T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_BUGFIX",
+			"shortCode": "RL",
+			"name": "RLBA-2022:6459",
+			"synopsis": "ca-certificates bug fix and enhancement update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "An update for ca-certificates is now available for Rocky Linux 8.",
+			"description": "The ca-certificates package contains a set of Certificate Authority (CA) certificates chosen by the Mozilla Foundation for use with the Internet Public Key Infrastructure (PKI).",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHBA-2022:6459",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHBA-2022:6459",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2022-09-13T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_BUGFIX",
+			"shortCode": "RL",
+			"name": "RLBA-2022:6461",
+			"synopsis": "pam bug fix and enhancement update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "An update for pam is now available for Rocky Linux 8.",
+			"description": "Pluggable Authentication Modules (PAM) provide a system to set up authentication policies without the need to recompile programs to handle authentication.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHBA-2022:6461",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHBA-2022:6461",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2022-09-13T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_BUGFIX",
+			"shortCode": "RL",
+			"name": "RLBA-2022:6333",
+			"synopsis": "java-11-openjdk bug fix update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "An update for java-11-openjdk is now available for Rocky Enterprise Software Foundation EnterpriseLinux 8.",
+			"description": "The java-11-openjdk packages provide the OpenJDK 11 Java Runtime\nEnvironment and the OpenJDK 11 Java Software Development Kit.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHBA-2022:6333",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHBA-2022:6333",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2022-09-08T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		}
+	],
+	"total": "23",
+	"size": 100,
+	"page": 0,
+	"lastUpdated": "2023-01-16T04:00:00.369210Z"
+}

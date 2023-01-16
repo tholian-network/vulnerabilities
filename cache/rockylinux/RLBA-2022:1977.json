@@ -1,0 +1,66 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1977",
+		"synopsis": "rteval bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for rteval is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1872776",
+				"description": "Run stress-ng from rteval without other load modules",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1872776"
+			},
+			{
+				"ticket": "2012284",
+				"description": "rteval and cyclictest cpu selection issue.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012284"
+			},
+			{
+				"ticket": "2012285",
+				"description": "RFE:  add threshold option for early exit from test run if threshold exceeded",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012285"
+			},
+			{
+				"ticket": "2012291",
+				"description": "[RHEL-8.6] Rebase rteval to latest upstream",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012291"
+			},
+			{
+				"ticket": "2046321",
+				"description": "Increase the default number of buckets from 2000 to 3500",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2046321"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1977",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1977",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"rteval-0:3.3-6.el8.noarch.rpm",
+					"rteval-0:3.3-6.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

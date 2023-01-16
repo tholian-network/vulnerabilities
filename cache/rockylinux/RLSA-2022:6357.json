@@ -1,0 +1,59 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:6357",
+		"synopsis": "Important: open-vm-tools security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for open-vm-tools is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The Open Virtual Machine Tools are the open source implementation of the VMware Tools. They are a set of guest operating system virtualization components that enhance performance and user experience of virtual machines.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2118714",
+				"description": "CVE-2022-31676 open-vm-tools: local root privilege escalation in the virtual machine",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2118714"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-31676",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-31676.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.0",
+				"cwe": "CWE-250"
+			}
+		],
+		"publishedAt": "2022-09-23T19:45:11.687518Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"open-vm-tools-0:11.3.5-1.el8_6.1.aarch64.rpm",
+					"open-vm-tools-0:11.3.5-1.el8_6.1.src.rpm",
+					"open-vm-tools-0:11.3.5-1.el8_6.1.x86_64.rpm",
+					"open-vm-tools-debuginfo-0:11.3.5-1.el8_6.1.aarch64.rpm",
+					"open-vm-tools-debuginfo-0:11.3.5-1.el8_6.1.x86_64.rpm",
+					"open-vm-tools-debugsource-0:11.3.5-1.el8_6.1.aarch64.rpm",
+					"open-vm-tools-debugsource-0:11.3.5-1.el8_6.1.x86_64.rpm",
+					"open-vm-tools-desktop-0:11.3.5-1.el8_6.1.aarch64.rpm",
+					"open-vm-tools-desktop-0:11.3.5-1.el8_6.1.x86_64.rpm",
+					"open-vm-tools-desktop-debuginfo-0:11.3.5-1.el8_6.1.aarch64.rpm",
+					"open-vm-tools-desktop-debuginfo-0:11.3.5-1.el8_6.1.x86_64.rpm",
+					"open-vm-tools-devel-0:11.3.5-1.el8_6.1.x86_64.rpm",
+					"open-vm-tools-sdmp-0:11.3.5-1.el8_6.1.aarch64.rpm",
+					"open-vm-tools-sdmp-0:11.3.5-1.el8_6.1.x86_64.rpm",
+					"open-vm-tools-sdmp-debuginfo-0:11.3.5-1.el8_6.1.aarch64.rpm",
+					"open-vm-tools-sdmp-debuginfo-0:11.3.5-1.el8_6.1.x86_64.rpm",
+					"open-vm-tools-test-0:11.3.5-1.el8_6.1.x86_64.rpm",
+					"open-vm-tools-test-debuginfo-0:11.3.5-1.el8_6.1.aarch64.rpm",
+					"open-vm-tools-test-debuginfo-0:11.3.5-1.el8_6.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

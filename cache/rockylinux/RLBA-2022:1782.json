@@ -1,0 +1,69 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1782",
+		"synopsis": "evolution-data-server bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for evolution-data-server is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1938533",
+				"description": "secret-monitor: Turn runtime warnings into debug prints",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1938533"
+			},
+			{
+				"ticket": "2008217",
+				"description": "Camel: Understand non-standard \"Content-Transfer-Encoding: uuencode\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2008217"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1782",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1782",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"evolution-data-server-0:3.28.5-19.el8_6.1.aarch64.rpm",
+					"evolution-data-server-0:3.28.5-19.el8_6.1.i686.rpm",
+					"evolution-data-server-0:3.28.5-19.el8_6.1.src.rpm",
+					"evolution-data-server-0:3.28.5-19.el8_6.1.x86_64.rpm",
+					"evolution-data-server-debuginfo-0:3.28.5-19.el8_6.1.aarch64.rpm",
+					"evolution-data-server-debuginfo-0:3.28.5-19.el8_6.1.i686.rpm",
+					"evolution-data-server-debuginfo-0:3.28.5-19.el8_6.1.x86_64.rpm",
+					"evolution-data-server-debugsource-0:3.28.5-19.el8_6.1.aarch64.rpm",
+					"evolution-data-server-debugsource-0:3.28.5-19.el8_6.1.i686.rpm",
+					"evolution-data-server-debugsource-0:3.28.5-19.el8_6.1.x86_64.rpm",
+					"evolution-data-server-devel-0:3.28.5-19.el8_6.1.aarch64.rpm",
+					"evolution-data-server-devel-0:3.28.5-19.el8_6.1.i686.rpm",
+					"evolution-data-server-devel-0:3.28.5-19.el8_6.1.x86_64.rpm",
+					"evolution-data-server-doc-0:3.28.5-19.el8_6.1.noarch.rpm",
+					"evolution-data-server-langpacks-0:3.28.5-19.el8_6.1.noarch.rpm",
+					"evolution-data-server-perl-0:3.28.5-19.el8_6.1.aarch64.rpm",
+					"evolution-data-server-perl-0:3.28.5-19.el8_6.1.x86_64.rpm",
+					"evolution-data-server-tests-0:3.28.5-19.el8_6.1.aarch64.rpm",
+					"evolution-data-server-tests-0:3.28.5-19.el8_6.1.i686.rpm",
+					"evolution-data-server-tests-0:3.28.5-19.el8_6.1.x86_64.rpm",
+					"evolution-data-server-tests-debuginfo-0:3.28.5-19.el8_6.1.aarch64.rpm",
+					"evolution-data-server-tests-debuginfo-0:3.28.5-19.el8_6.1.i686.rpm",
+					"evolution-data-server-tests-debuginfo-0:3.28.5-19.el8_6.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

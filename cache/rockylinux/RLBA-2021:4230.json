@@ -1,0 +1,301 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4230",
+		"synopsis": "ipa bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for ipa is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1777764",
+				"description": "[RFE ]ipactl status returns incorrect exit code issue when a service listed in ipactl is stopped",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1777764"
+			},
+			{
+				"ticket": "1779984",
+				"description": "The ipa-cert-fix command failed. [Errno 2] No such file or directory: '/etc/pki/pki-tomcat/certs/27-renewed.crt'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1779984"
+			},
+			{
+				"ticket": "1780020",
+				"description": "[RFE] ipa-healthcheck should verify owner/perms for important logs in \"/var/log\" in the ipahealthcheck.ipa.files source",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1780020"
+			},
+			{
+				"ticket": "1780062",
+				"description": "[RFE] When IPA system is healthy, ipa-healthcheck --failures-only should display proper message instead of empty list",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1780062"
+			},
+			{
+				"ticket": "1780317",
+				"description": "ipa-cert-fix:  False Positive Status for cert renewal.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1780317"
+			},
+			{
+				"ticket": "1781107",
+				"description": "[RFE] ipa-healthcheck tool can include check to see if the system is FIPS enabled or not.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1781107"
+			},
+			{
+				"ticket": "1798033",
+				"description": "IPA WebUI About window should use commercial name",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1798033"
+			},
+			{
+				"ticket": "1810149",
+				"description": "ipa-server-certinstall of IPA-issued certificate will fail",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1810149"
+			},
+			{
+				"ticket": "1835853",
+				"description": "No user authentication type in web ui",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1835853"
+			},
+			{
+				"ticket": "1854557",
+				"description": "[RFE] ipa-client-install forces nsupdate to bind with gssapi",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1854557"
+			},
+			{
+				"ticket": "1886837",
+				"description": "Revise PKINIT upgrade code",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1886837"
+			},
+			{
+				"ticket": "1894781",
+				"description": "add a validation test to verify the KRA_AGENT_DN exist is fix_kra_people_entry.py",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1894781"
+			},
+			{
+				"ticket": "1903250",
+				"description": "backtrace using ipa-replica-manage",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1903250"
+			},
+			{
+				"ticket": "1912556",
+				"description": "Incorrect DNSKEY created when DNSSEC enabled for zone",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1912556"
+			},
+			{
+				"ticket": "1928854",
+				"description": "ipa-server-install ignores --zonemgr parameter",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1928854"
+			},
+			{
+				"ticket": "1934196",
+				"description": "Sync ipatests from upstream to RHEL packages for FreeIPA 4.9 branch",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1934196"
+			},
+			{
+				"ticket": "1934991",
+				"description": "ACME fails to generate a cert on migrated RHEL8.4 server",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1934991"
+			},
+			{
+				"ticket": "1937856",
+				"description": "Switch ipa-client to use the JSON API",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1937856"
+			},
+			{
+				"ticket": "1940503",
+				"description": "ipa-client-install displays false message 'sudo binary does not seem to be present on this system' [rhel-8.5.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1940503"
+			},
+			{
+				"ticket": "1943151",
+				"description": "ipa-server-install/ipa-client-install displays debug message on the console.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1943151"
+			},
+			{
+				"ticket": "1945038",
+				"description": "[Rebase] Rebase FreeIPA to a recent upstream release",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1945038"
+			},
+			{
+				"ticket": "1950914",
+				"description": "ipa-otpd fails with \"Input/output error: IO error received on bind socket\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1950914"
+			},
+			{
+				"ticket": "1951511",
+				"description": "[RFE] - IDM - Allow specifying permanent logging settings for BIND",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951511"
+			},
+			{
+				"ticket": "1953656",
+				"description": "Cache LDAP data within a request",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1953656"
+			},
+			{
+				"ticket": "1957768",
+				"description": "ipa-server-upgrade is failing while upgrading rhel8.3 to rhel8.4",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1957768"
+			},
+			{
+				"ticket": "1958909",
+				"description": "With base object  scope,  ldapsearch against compat tree  does not return any data on Rhel8 IPA servers.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1958909"
+			},
+			{
+				"ticket": "1967325",
+				"description": "API returns the misleading error \"Insufficient Access\" if run as non-admin",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1967325"
+			},
+			{
+				"ticket": "1967906",
+				"description": "Dirsrv memory leak",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1967906"
+			},
+			{
+				"ticket": "1973023",
+				"description": "CA_less ipa-server-install fails if CA cert subject contains non ascii chars",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1973023"
+			},
+			{
+				"ticket": "1973273",
+				"description": "[man page] contradiction in ipa-server-upgrade command's man page and usage",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1973273"
+			},
+			{
+				"ticket": "1974822",
+				"description": "[regression] IPA server in debug mode fails to run because time.perf_counter_ns is Python 3.7+",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1974822"
+			},
+			{
+				"ticket": "1976286",
+				"description": "ansible-freeipa automember test fails with `automember_add_condition: testgroup: 'objectclass'` due to ldap cache",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1976286"
+			},
+			{
+				"ticket": "1979605",
+				"description": "Unable to set ipaUserAuthType with stageuser-add",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1979605"
+			},
+			{
+				"ticket": "1979625",
+				"description": "Add checks to prevent assigning authentication indicators to internal IPA services",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1979625"
+			},
+			{
+				"ticket": "1982211",
+				"description": "ipa-trust-add fails with \"not enough quota\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1982211"
+			},
+			{
+				"ticket": "1982956",
+				"description": "ipatests: NAMED_CRYPTO_POLICY_FILE not defined for RHEL",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1982956"
+			},
+			{
+				"ticket": "1998129",
+				"description": "AVC denied  { read } comm=\"ipa-custodia\" on aarch64 during installation of ipa-server",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1998129"
+			},
+			{
+				"ticket": "1999142",
+				"description": "RHEL 8.5 IPA Replica setup fails against a RHEL 7.9 IPA server",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1999142"
+			},
+			{
+				"ticket": "1999893",
+				"description": "ipa cert-request replaces user certificate instead of adding",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1999893"
+			},
+			{
+				"ticket": "1999992",
+				"description": "ipa migrate-ds command fails to warn when compat plugin is enabled",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1999992"
+			},
+			{
+				"ticket": "2000263",
+				"description": "extdom: LDAP_INVALID_SYNTAX returned instead of LDAP_NO_SUCH_OBJECT",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000263"
+			},
+			{
+				"ticket": "2000553",
+				"description": "Backport latest test fixes in python3-ipatests",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000553"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4230",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4230",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"python3-jwcrypto-0:0.5.0-1.module+el8.4.0+430+1dcf16bb.noarch.rpm",
+					"python3-kdcproxy-0:0.4-5.module+el8.3.0+244+0b2ae752.noarch.rpm",
+					"python3-pyusb-0:1.0.0-9.module+el8.4.0+430+1dcf16bb.noarch.rpm",
+					"python3-yubico-0:1.3.2-9.module+el8.4.0+430+1dcf16bb.noarch.rpm",
+					"python-jwcrypto-0:0.5.0-1.module+el8.4.0+430+1dcf16bb.src.rpm",
+					"python-kdcproxy-0:0.4-5.module+el8.3.0+244+0b2ae752.src.rpm",
+					"python-yubico-0:1.3.2-9.module+el8.4.0+430+1dcf16bb.src.rpm",
+					"pyusb-0:1.0.0-9.module+el8.4.0+430+1dcf16bb.src.rpm",
+					"slapi-nis-0:0.56.6-4.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"slapi-nis-0:0.56.6-4.module+el8.6.0+796+128eec25.src.rpm",
+					"slapi-nis-0:0.56.6-4.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"slapi-nis-debuginfo-0:0.56.6-4.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"slapi-nis-debuginfo-0:0.56.6-4.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"slapi-nis-debugsource-0:0.56.6-4.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"slapi-nis-debugsource-0:0.56.6-4.module+el8.6.0+796+128eec25.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

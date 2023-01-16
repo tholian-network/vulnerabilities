@@ -1,0 +1,81 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:6206",
+		"synopsis": "Important: systemd security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for systemd is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The systemd packages contain systemd, a system and service manager for Linux, compatible with the SysV and LSB init scripts. It provides aggressive parallelism capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, and keeps track of processes using Linux cgroups. In addition, it supports snapshotting and restoring of the system state, maintains mount and automount points, and implements an elaborate transactional dependency-based service control logic. It can also work as a drop-in replacement for sysvinit.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2109926",
+				"description": "CVE-2022-2526 systemd-resolved: use-after-free when dealing with DnsStream in resolved-dns-stream.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2109926"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-2526",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-2526.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "9.8",
+				"cwe": "CWE-416"
+			}
+		],
+		"publishedAt": "2022-08-29T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"systemd-0:239-58.el8_6.4.aarch64.rpm",
+					"systemd-0:239-58.el8_6.4.i686.rpm",
+					"systemd-0:239-58.el8_6.4.src.rpm",
+					"systemd-0:239-58.el8_6.4.x86_64.rpm",
+					"systemd-container-0:239-58.el8_6.4.aarch64.rpm",
+					"systemd-container-0:239-58.el8_6.4.i686.rpm",
+					"systemd-container-0:239-58.el8_6.4.x86_64.rpm",
+					"systemd-container-debuginfo-0:239-58.el8_6.4.aarch64.rpm",
+					"systemd-container-debuginfo-0:239-58.el8_6.4.i686.rpm",
+					"systemd-container-debuginfo-0:239-58.el8_6.4.x86_64.rpm",
+					"systemd-debuginfo-0:239-58.el8_6.4.aarch64.rpm",
+					"systemd-debuginfo-0:239-58.el8_6.4.i686.rpm",
+					"systemd-debuginfo-0:239-58.el8_6.4.x86_64.rpm",
+					"systemd-debugsource-0:239-58.el8_6.4.aarch64.rpm",
+					"systemd-debugsource-0:239-58.el8_6.4.i686.rpm",
+					"systemd-debugsource-0:239-58.el8_6.4.x86_64.rpm",
+					"systemd-devel-0:239-58.el8_6.4.aarch64.rpm",
+					"systemd-devel-0:239-58.el8_6.4.i686.rpm",
+					"systemd-devel-0:239-58.el8_6.4.x86_64.rpm",
+					"systemd-journal-remote-0:239-58.el8_6.4.aarch64.rpm",
+					"systemd-journal-remote-0:239-58.el8_6.4.x86_64.rpm",
+					"systemd-journal-remote-debuginfo-0:239-58.el8_6.4.aarch64.rpm",
+					"systemd-journal-remote-debuginfo-0:239-58.el8_6.4.x86_64.rpm",
+					"systemd-libs-0:239-58.el8_6.4.aarch64.rpm",
+					"systemd-libs-0:239-58.el8_6.4.i686.rpm",
+					"systemd-libs-0:239-58.el8_6.4.x86_64.rpm",
+					"systemd-libs-debuginfo-0:239-58.el8_6.4.aarch64.rpm",
+					"systemd-libs-debuginfo-0:239-58.el8_6.4.i686.rpm",
+					"systemd-libs-debuginfo-0:239-58.el8_6.4.x86_64.rpm",
+					"systemd-pam-0:239-58.el8_6.4.aarch64.rpm",
+					"systemd-pam-0:239-58.el8_6.4.x86_64.rpm",
+					"systemd-pam-debuginfo-0:239-58.el8_6.4.aarch64.rpm",
+					"systemd-pam-debuginfo-0:239-58.el8_6.4.x86_64.rpm",
+					"systemd-tests-0:239-58.el8_6.4.aarch64.rpm",
+					"systemd-tests-0:239-58.el8_6.4.x86_64.rpm",
+					"systemd-tests-debuginfo-0:239-58.el8_6.4.aarch64.rpm",
+					"systemd-tests-debuginfo-0:239-58.el8_6.4.x86_64.rpm",
+					"systemd-udev-0:239-58.el8_6.4.aarch64.rpm",
+					"systemd-udev-0:239-58.el8_6.4.x86_64.rpm",
+					"systemd-udev-debuginfo-0:239-58.el8_6.4.aarch64.rpm",
+					"systemd-udev-debuginfo-0:239-58.el8_6.4.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

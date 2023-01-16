@@ -1,0 +1,61 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:8785",
+		"synopsis": "tzdata bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for tzdata is now available for Rocky Linux 6 Extended Lifecycle Support, Rocky Linux 7.3 Advanced Update Support, Rocky Linux 7.4 Advanced Update Support, Rocky Linux 7.6 Advanced Update Support, Rocky Linux 7.7 Advanced Update Support, Rocky Linux 7.7 Update Services for SAP Solutions, Rocky Linux 7.7 Telco Extended Update Support, Rocky Linux 7, Rocky Linux 8.1 Update Services for SAP Solutions, Rocky Linux 8.2 Advanced Update Support, Rocky Linux 8.2 Update Services for SAP Solutions, Rocky Linux 8.2 Telecommunications Update Service, Rocky Linux 8.4 Extended Update Support, Rocky Linux 8.6 Extended Update Support, Rocky Linux 8, Rocky Linux 9.0 Extended Update Support, and Rocky Linux 9.",
+		"description": "The tzdata packages contain data files with rules for various time zones.\nThe tzdata packages have been updated to version 2022g, which addresses recent\ntime zone changes. Notably:",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2149413",
+				"description": "Update to tzdata-2022g - including changes for northern Chihuahua [rhel-7.9.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2149413"
+			},
+			{
+				"ticket": "2149414",
+				"description": "Update to tzdata-2022g - including changes for northern Chihuahua [rhel-6.10-els]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2149414"
+			},
+			{
+				"ticket": "2149476",
+				"description": "Update to tzdata-2022g - including changes for northern Chihuahua [rhel-9.1.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2149476"
+			},
+			{
+				"ticket": "2149479",
+				"description": "Update to tzdata-2022g - including changes for northern Chihuahua [rhel-8.7.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2149479"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:8785",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:8785",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-12-07T14:05:24.108535Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"tzdata-0:2022g-1.el8.noarch.rpm",
+					"tzdata-0:2022g-1.el8.src.rpm",
+					"tzdata-java-0:2022g-1.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

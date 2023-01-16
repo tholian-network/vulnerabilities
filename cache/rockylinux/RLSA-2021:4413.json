@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4413",
+		"synopsis": "Moderate: tpm2-tools security and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for tpm2-tools is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The tpm2-tools packages add a set of utilities for management and utilization of Trusted Platform Module (TPM) 2.0 devices from user space.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1964427",
+				"description": "CVE-2021-3565 tpm2-tools: fixed AES wrapping key in tpm2_import",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1964427"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-3565",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3565.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "4.4",
+				"cwe": "CWE-665-\u003eCWE-200"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"tpm2-tools-0:4.1.1-5.el8.aarch64.rpm",
+					"tpm2-tools-0:4.1.1-5.el8.src.rpm",
+					"tpm2-tools-0:4.1.1-5.el8.x86_64.rpm",
+					"tpm2-tools-debuginfo-0:4.1.1-5.el8.aarch64.rpm",
+					"tpm2-tools-debuginfo-0:4.1.1-5.el8.x86_64.rpm",
+					"tpm2-tools-debugsource-0:4.1.1-5.el8.aarch64.rpm",
+					"tpm2-tools-debugsource-0:4.1.1-5.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

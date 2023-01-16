@@ -1,0 +1,330 @@
+{
+	"advisories": [
+		{
+			"type": "TYPE_BUGFIX",
+			"shortCode": "RL",
+			"name": "RLBA-2021:3240",
+			"synopsis": ".NET Core 2.1 bugfix update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "An update for .NET Core 2.1 is now available for Rocky Linux.",
+			"description": ".NET Core is a managed-software framework. It implements a subset of the .NET\nframework APIs and several new APIs, and it includes a CLR implementation.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHBA-2021:3240",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHBA-2021:3240",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2021-08-20T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_BUGFIX",
+			"shortCode": "RL",
+			"name": "RLBA-2021:3083",
+			"synopsis": "gcc-toolset-10-valgrind bug fix and enhancement update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "An update for gcc-toolset-10-valgrind is now available for Rocky Linux 8.",
+			"description": "GCC Toolset is a compiler toolset that provides recent versions of development tools. GCC Toolset is an Application Stream packaged as a Software Collection.\nBug fix(es):\nFor instructions on usage, see Using GCC Toolset linked from the References section. Components and specifics of this version are documented in the GCC Toolset 10 chapter.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHBA-2021:3083",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHBA-2021:3083",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2021-08-10T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_BUGFIX",
+			"shortCode": "RL",
+			"name": "RLBA-2021:3070",
+			"synopsis": "container-tools:rhel8 security, bug fix, and enhancement update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "An update for the container-tools:rhel8 module is now available for Rocky Linux 8.",
+			"description": "The container-tools module contains tools for working with containers, notably podman, buildah, skopeo, and runc.\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHBA-2021:3070",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHBA-2021:3070",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2021-08-10T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_BUGFIX",
+			"shortCode": "RL",
+			"name": "RLBA-2021:3049",
+			"synopsis": "pcsc-lite bug fix and enhancement update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "An update for pcsc-lite is now available for Rocky Linux 8.",
+			"description": "PC/SC Lite provides a Windows SCard compatible interface for communicating\nwith smart cards, smart card readers, and other security tokens.\nBug Fixes:\nchannel creation (BZ#1972569)\nchannel creation (pcsc-lite-ccid) (BZ#1973405)",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHBA-2021:3049",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHBA-2021:3049",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2021-08-10T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2021:3075",
+			"synopsis": "Low: libuv security update",
+			"severity": "SEVERITY_LOW",
+			"topic": "An update for libuv is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "libuv is a multi-platform support library with a focus on asynchronous I/O. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2021-22918",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22918.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+					"cvss3BaseScore": "5.3",
+					"cwe": "CWE-125"
+				}
+			],
+			"publishedAt": "2021-08-10T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2021:3074",
+			"synopsis": "Moderate: nodejs:14 security, bug fix, and enhancement update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for the nodejs:14 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Node.js is a software development platform for building fast and scalable network applications in the JavaScript programming language. \nThe following packages have been upgraded to a later upstream version: nodejs (14.17.3). (BZ#1978203)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2021-22918",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22918.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+					"cvss3BaseScore": "5.3",
+					"cwe": "CWE-125"
+				},
+				{
+					"name": "CVE-2021-23362",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-23362.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+					"cvss3BaseScore": "5.3",
+					"cwe": "CWE-400"
+				},
+				{
+					"name": "CVE-2021-27290",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-27290.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-400"
+				}
+			],
+			"publishedAt": "2021-08-10T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2021:3073",
+			"synopsis": "Moderate: nodejs:12 security, bug fix, and enhancement update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for the nodejs:12 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Node.js is a software development platform for building fast and scalable network applications in the JavaScript programming language. \nThe following packages have been upgraded to a later upstream version: nodejs (12.22.3). (BZ#1978201)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2021-22918",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22918.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+					"cvss3BaseScore": "5.3",
+					"cwe": "CWE-125"
+				},
+				{
+					"name": "CVE-2021-23362",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-23362.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+					"cvss3BaseScore": "5.3",
+					"cwe": "CWE-400"
+				},
+				{
+					"name": "CVE-2021-27290",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-27290.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-400"
+				}
+			],
+			"publishedAt": "2021-08-10T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2021:3061",
+			"synopsis": "Moderate: virt:rhel and virt-devel:rhel security and bug fix update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for the virt:rhel and virt-devel:rhel modules is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Kernel-based Virtual Machine (KVM) offers a full virtualization solution for Linux on numerous hardware platforms. The virt:rhel module contains packages which provide user-space components used to run virtual machines using KVM. The packages also provide APIs for managing and interacting with the virtualized systems.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2020-13754",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-13754.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:L/I:L/A:L",
+					"cvss3BaseScore": "5.0",
+					"cwe": "CWE-125-\u003eCWE-787"
+				},
+				{
+					"name": "CVE-2020-27617",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-27617.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:L",
+					"cvss3BaseScore": "3.8",
+					"cwe": "CWE-617"
+				},
+				{
+					"name": "CVE-2021-20221",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20221.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:N/I:N/A:L",
+					"cvss3BaseScore": "2.5",
+					"cwe": "CWE-125-\u003eCWE-787"
+				},
+				{
+					"name": "CVE-2021-3416",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3416.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:L",
+					"cvss3BaseScore": "3.2",
+					"cwe": "CWE-835"
+				},
+				{
+					"name": "CVE-2021-3504",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3504.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:L",
+					"cvss3BaseScore": "5.4",
+					"cwe": "CWE-125"
+				}
+			],
+			"publishedAt": "2021-08-10T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2021:3020",
+			"synopsis": "Important: ruby:2.7 security update",
+			"severity": "SEVERITY_IMPORTANT",
+			"topic": "An update for the ruby:2.7 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Ruby is an extensible, interpreted, object-oriented, scripting language. It has features to process text files and to perform system management tasks.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2020-36327",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-36327.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "8.8",
+					"cwe": "CWE-494"
+				},
+				{
+					"name": "CVE-2021-31799",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-31799.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "7.0",
+					"cwe": "CWE-77"
+				},
+				{
+					"name": "CVE-2021-31810",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-31810.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+					"cvss3BaseScore": "5.4",
+					"cwe": "CWE-200"
+				},
+				{
+					"name": "CVE-2021-32066",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-32066.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+					"cvss3BaseScore": "7.4",
+					"cwe": "CWE-319"
+				}
+			],
+			"publishedAt": "2021-08-05T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		}
+	],
+	"total": "9",
+	"size": 100,
+	"page": 0,
+	"lastUpdated": "2023-01-16T04:00:00.369210Z"
+}

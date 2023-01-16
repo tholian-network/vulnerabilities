@@ -1,0 +1,42 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:3240",
+		"synopsis": ".NET Core 2.1 bugfix update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for .NET Core 2.1 is now available for Rocky Linux.",
+		"description": ".NET Core is a managed-software framework. It implements a subset of the .NET\nframework APIs and several new APIs, and it includes a CLR implementation.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2021:3240",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:3240",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-08-20T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"dotnet-0:2.1.526-1.el8_4.rocky.src.rpm",
+					"dotnet-debuginfo-0:2.1.526-1.el8_4.rocky.x86_64.rpm",
+					"dotnet-host-fxr-2.1-0:2.1.30-1.el8_4.rocky.x86_64.rpm",
+					"dotnet-host-fxr-2.1-debuginfo-0:2.1.30-1.el8_4.rocky.x86_64.rpm",
+					"dotnet-runtime-2.1-0:2.1.30-1.el8_4.rocky.x86_64.rpm",
+					"dotnet-runtime-2.1-debuginfo-0:2.1.30-1.el8_4.rocky.x86_64.rpm",
+					"dotnet-sdk-2.1-0:2.1.526-1.el8_4.rocky.x86_64.rpm",
+					"dotnet-sdk-2.1.5xx-0:2.1.526-1.el8_4.rocky.x86_64.rpm",
+					"dotnet-sdk-2.1.5xx-debuginfo-0:2.1.526-1.el8_4.rocky.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

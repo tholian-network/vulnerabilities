@@ -1,0 +1,53 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1923",
+		"synopsis": "gnome-session bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gnome-session is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1877997",
+				"description": "[Hyper-V][RHEL8.4] 'gnome-session: libEGL warning: DRI2: failed to authenticate' is output in every boot",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1877997"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1923",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1923",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gnome-session-0:3.28.1-14.el8.aarch64.rpm",
+					"gnome-session-0:3.28.1-14.el8.src.rpm",
+					"gnome-session-0:3.28.1-14.el8.x86_64.rpm",
+					"gnome-session-debuginfo-0:3.28.1-14.el8.aarch64.rpm",
+					"gnome-session-debuginfo-0:3.28.1-14.el8.x86_64.rpm",
+					"gnome-session-debugsource-0:3.28.1-14.el8.aarch64.rpm",
+					"gnome-session-debugsource-0:3.28.1-14.el8.x86_64.rpm",
+					"gnome-session-kiosk-session-0:3.28.1-14.el8.aarch64.rpm",
+					"gnome-session-kiosk-session-0:3.28.1-14.el8.x86_64.rpm",
+					"gnome-session-wayland-session-0:3.28.1-14.el8.aarch64.rpm",
+					"gnome-session-wayland-session-0:3.28.1-14.el8.x86_64.rpm",
+					"gnome-session-xsession-0:3.28.1-14.el8.aarch64.rpm",
+					"gnome-session-xsession-0:3.28.1-14.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

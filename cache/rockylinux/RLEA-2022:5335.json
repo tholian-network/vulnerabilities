@@ -1,0 +1,89 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:5335",
+		"synopsis": "papi bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for papi is now available for Rocky Linux 8.",
+		"description": "PAPI (Performance Application Programming Interface) is a software library that provides a specification of cross-platform interfaces to hardware performance counters on modern microprocessors. These counters exist as a small set of registers that count events, which are occurrences of specific signals related to a processor\u0026#39;s function. Monitoring these events allows developers to track performance-related events, such as cache misses, instructions retired, and clock cycles, to better understand the performance issues of the software. PAPI uses libpfm to select the performance monitoring events for the various processors.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2088283",
+				"description": "[RHEL8][RFE] Support of AMD Rome \u0026 Milan [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2088283"
+			},
+			{
+				"ticket": "2088284",
+				"description": "[RFE] Support of PAPI library for AMD Rome \u0026 Milan [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2088284"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2022:5335",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:5335",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libpfm-0:4.10.1-4.el8_6.1.aarch64.rpm",
+					"libpfm-0:4.10.1-4.el8_6.1.i686.rpm",
+					"libpfm-0:4.10.1-4.el8_6.1.src.rpm",
+					"libpfm-0:4.10.1-4.el8_6.1.x86_64.rpm",
+					"libpfm-debuginfo-0:4.10.1-4.el8_6.1.aarch64.rpm",
+					"libpfm-debuginfo-0:4.10.1-4.el8_6.1.i686.rpm",
+					"libpfm-debuginfo-0:4.10.1-4.el8_6.1.x86_64.rpm",
+					"libpfm-debugsource-0:4.10.1-4.el8_6.1.aarch64.rpm",
+					"libpfm-debugsource-0:4.10.1-4.el8_6.1.i686.rpm",
+					"libpfm-debugsource-0:4.10.1-4.el8_6.1.x86_64.rpm",
+					"libpfm-devel-0:4.10.1-4.el8_6.1.aarch64.rpm",
+					"libpfm-devel-0:4.10.1-4.el8_6.1.i686.rpm",
+					"libpfm-devel-0:4.10.1-4.el8_6.1.x86_64.rpm",
+					"libpfm-static-0:4.10.1-4.el8_6.1.aarch64.rpm",
+					"libpfm-static-0:4.10.1-4.el8_6.1.i686.rpm",
+					"libpfm-static-0:4.10.1-4.el8_6.1.x86_64.rpm",
+					"papi-0:5.6.0-14.el8_6.1.aarch64.rpm",
+					"papi-0:5.6.0-14.el8_6.1.i686.rpm",
+					"papi-0:5.6.0-14.el8_6.1.src.rpm",
+					"papi-0:5.6.0-14.el8_6.1.x86_64.rpm",
+					"papi-debuginfo-0:5.6.0-14.el8_6.1.aarch64.rpm",
+					"papi-debuginfo-0:5.6.0-14.el8_6.1.i686.rpm",
+					"papi-debuginfo-0:5.6.0-14.el8_6.1.x86_64.rpm",
+					"papi-debugsource-0:5.6.0-14.el8_6.1.aarch64.rpm",
+					"papi-debugsource-0:5.6.0-14.el8_6.1.i686.rpm",
+					"papi-debugsource-0:5.6.0-14.el8_6.1.x86_64.rpm",
+					"papi-devel-0:5.6.0-14.el8_6.1.aarch64.rpm",
+					"papi-devel-0:5.6.0-14.el8_6.1.i686.rpm",
+					"papi-devel-0:5.6.0-14.el8_6.1.x86_64.rpm",
+					"papi-libs-0:5.6.0-14.el8_6.1.aarch64.rpm",
+					"papi-libs-0:5.6.0-14.el8_6.1.i686.rpm",
+					"papi-libs-0:5.6.0-14.el8_6.1.x86_64.rpm",
+					"papi-libs-debuginfo-0:5.6.0-14.el8_6.1.aarch64.rpm",
+					"papi-libs-debuginfo-0:5.6.0-14.el8_6.1.i686.rpm",
+					"papi-libs-debuginfo-0:5.6.0-14.el8_6.1.x86_64.rpm",
+					"papi-testsuite-0:5.6.0-14.el8_6.1.aarch64.rpm",
+					"papi-testsuite-0:5.6.0-14.el8_6.1.x86_64.rpm",
+					"papi-testsuite-debuginfo-0:5.6.0-14.el8_6.1.aarch64.rpm",
+					"papi-testsuite-debuginfo-0:5.6.0-14.el8_6.1.x86_64.rpm",
+					"python3-libpfm-0:4.10.1-4.el8_6.1.aarch64.rpm",
+					"python3-libpfm-0:4.10.1-4.el8_6.1.x86_64.rpm",
+					"python3-libpfm-debuginfo-0:4.10.1-4.el8_6.1.aarch64.rpm",
+					"python3-libpfm-debuginfo-0:4.10.1-4.el8_6.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

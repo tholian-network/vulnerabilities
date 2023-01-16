@@ -1,0 +1,59 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1914",
+		"synopsis": "libosinfo bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libosinfo is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1902720",
+				"description": "HOME=/root osinfo-query os fails with Error loading OS data: Unexpected file type",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1902720"
+			},
+			{
+				"ticket": "2053272",
+				"description": "work around g_file_query_info() succeeding on such files for which the underlying lstat() fails with EACCES",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2053272"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1914",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1914",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libosinfo-0:1.9.0-3.el8.aarch64.rpm",
+					"libosinfo-0:1.9.0-3.el8.i686.rpm",
+					"libosinfo-0:1.9.0-3.el8.src.rpm",
+					"libosinfo-0:1.9.0-3.el8.x86_64.rpm",
+					"libosinfo-debuginfo-0:1.9.0-3.el8.aarch64.rpm",
+					"libosinfo-debuginfo-0:1.9.0-3.el8.i686.rpm",
+					"libosinfo-debuginfo-0:1.9.0-3.el8.x86_64.rpm",
+					"libosinfo-debugsource-0:1.9.0-3.el8.aarch64.rpm",
+					"libosinfo-debugsource-0:1.9.0-3.el8.i686.rpm",
+					"libosinfo-debugsource-0:1.9.0-3.el8.x86_64.rpm",
+					"libosinfo-devel-0:1.9.0-3.el8.aarch64.rpm",
+					"libosinfo-devel-0:1.9.0-3.el8.i686.rpm",
+					"libosinfo-devel-0:1.9.0-3.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

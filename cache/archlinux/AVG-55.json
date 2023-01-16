@@ -1,28 +1,28 @@
 {
-	"name": "AVG-55",
-	"packages": [
-		"memcached"
-	],
-	"status": "Fixed",
-	"severity": "Critical",
-	"type": "arbitrary code execution",
-	"affected": "1.4.31-1",
-	"fixed": "1.4.32-1",
-	"ticket": null,
-	"issues": [
-		"CVE-2016-8706",
-		"CVE-2016-8705",
-		"CVE-2016-8704"
-	],
-	"advisories": [
-		"ASA-201611-1"
-	],
-	"references": [
-		"https://github.com/memcached/memcached/wiki/ReleaseNotes1433",
-		"http://blog.talosintel.com/2016/10/memcached-vulnerabilities.html",
-		"http://www.talosintelligence.com/reports/TALOS-2016-0219/",
-		"http://www.talosintelligence.com/reports/TALOS-2016-0220/",
-		"http://www.talosintelligence.com/reports/TALOS-2016-0221/"
-	],
-	"notes": "\"If you do not use the binary protocol at all, a workaround is to start memcached with -B ascii - otherwise you will need the patch in this release.\""
+  "name": "AVG-55",
+  "packages": [
+    "memcached"
+  ],
+  "status": "Fixed",
+  "severity": "Critical",
+  "type": "arbitrary code execution",
+  "affected": "1.4.31-1",
+  "fixed": "1.4.32-1",
+  "ticket": null,
+  "issues": [
+    "CVE-2016-8706",
+    "CVE-2016-8705",
+    "CVE-2016-8704"
+  ],
+  "advisories": [
+    "ASA-201611-1"
+  ],
+  "references": [
+    "https://github.com/memcached/memcached/wiki/ReleaseNotes1433",
+    "http://blog.talosintel.com/2016/10/memcached-vulnerabilities.html",
+    "http://www.talosintelligence.com/reports/TALOS-2016-0219/",
+    "http://www.talosintelligence.com/reports/TALOS-2016-0220/",
+    "http://www.talosintelligence.com/reports/TALOS-2016-0221/"
+  ],
+  "notes": "\"If you do not use the binary protocol at all, a workaround is to start memcached with -B ascii - otherwise you will need the patch in this release.\""
 }

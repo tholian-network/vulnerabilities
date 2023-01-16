@@ -1,0 +1,51 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:1925",
+		"synopsis": "xdp-tools bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for xdp-tools is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2012852",
+				"description": "xdp-tools update for RHEL 8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012852"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2022:1925",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:1925",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libxdp-0:1.2.1-1.el8.aarch64.rpm",
+					"libxdp-0:1.2.1-1.el8.i686.rpm",
+					"libxdp-0:1.2.1-1.el8.x86_64.rpm",
+					"libxdp-devel-0:1.2.1-1.el8.aarch64.rpm",
+					"libxdp-devel-0:1.2.1-1.el8.i686.rpm",
+					"libxdp-devel-0:1.2.1-1.el8.x86_64.rpm",
+					"libxdp-static-0:1.2.1-1.el8.aarch64.rpm",
+					"libxdp-static-0:1.2.1-1.el8.i686.rpm",
+					"libxdp-static-0:1.2.1-1.el8.x86_64.rpm",
+					"xdp-tools-0:1.2.1-1.el8.src.rpm",
+					"xdp-tools-0:1.2.1-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

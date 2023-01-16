@@ -1,0 +1,51 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1740",
+		"synopsis": "corosync-qdevice bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for corosync-qdevice is now available for Rocky Enterprise Software Foundation EnterpriseLinux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1752386",
+				"description": "Rebase Corosync-qdevice to 3.0.1",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1752386"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1740",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1740",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"corosync-qdevice-0:3.0.1-1.el8.aarch64.rpm",
+					"corosync-qdevice-0:3.0.1-1.el8.src.rpm",
+					"corosync-qdevice-0:3.0.1-1.el8.x86_64.rpm",
+					"corosync-qdevice-debuginfo-0:3.0.1-1.el8.aarch64.rpm",
+					"corosync-qdevice-debuginfo-0:3.0.1-1.el8.x86_64.rpm",
+					"corosync-qdevice-debugsource-0:3.0.1-1.el8.aarch64.rpm",
+					"corosync-qdevice-debugsource-0:3.0.1-1.el8.x86_64.rpm",
+					"corosync-qnetd-0:3.0.1-1.el8.aarch64.rpm",
+					"corosync-qnetd-0:3.0.1-1.el8.x86_64.rpm",
+					"corosync-qnetd-debuginfo-0:3.0.1-1.el8.aarch64.rpm",
+					"corosync-qnetd-debuginfo-0:3.0.1-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

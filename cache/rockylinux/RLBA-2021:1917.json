@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1917",
+		"synopsis": "tang bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for tang is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1828558",
+				"description": "tangd exit code for random get request leaves tangd@.service in failed state",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1828558"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1917",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1917",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"tang-0:7-6.el8.aarch64.rpm",
+					"tang-0:7-6.el8.src.rpm",
+					"tang-0:7-6.el8.x86_64.rpm",
+					"tang-debuginfo-0:7-6.el8.aarch64.rpm",
+					"tang-debuginfo-0:7-6.el8.x86_64.rpm",
+					"tang-debugsource-0:7-6.el8.aarch64.rpm",
+					"tang-debugsource-0:7-6.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1660",
+		"synopsis": "tpm2-abrmd bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for tpm2-abrmd is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1855177",
+				"description": "[Lenovo 8.4 FEAT] tpm2-abrmd - Update the to latest upstream version",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1855177"
+			},
+			{
+				"ticket": "1898384",
+				"description": "Update tpm2-abrmd-selinux package",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1898384"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1660",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1660",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"tpm2-abrmd-0:2.3.3-2.el8.aarch64.rpm",
+					"tpm2-abrmd-0:2.3.3-2.el8.i686.rpm",
+					"tpm2-abrmd-0:2.3.3-2.el8.src.rpm",
+					"tpm2-abrmd-0:2.3.3-2.el8.x86_64.rpm",
+					"tpm2-abrmd-debuginfo-0:2.3.3-2.el8.aarch64.rpm",
+					"tpm2-abrmd-debuginfo-0:2.3.3-2.el8.i686.rpm",
+					"tpm2-abrmd-debuginfo-0:2.3.3-2.el8.x86_64.rpm",
+					"tpm2-abrmd-debugsource-0:2.3.3-2.el8.aarch64.rpm",
+					"tpm2-abrmd-debugsource-0:2.3.3-2.el8.i686.rpm",
+					"tpm2-abrmd-debugsource-0:2.3.3-2.el8.x86_64.rpm",
+					"tpm2-abrmd-devel-0:2.3.3-2.el8.aarch64.rpm",
+					"tpm2-abrmd-devel-0:2.3.3-2.el8.i686.rpm",
+					"tpm2-abrmd-devel-0:2.3.3-2.el8.x86_64.rpm",
+					"tpm2-abrmd-selinux-0:2.3.1-1.el8.noarch.rpm",
+					"tpm2-abrmd-selinux-0:2.3.1-1.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

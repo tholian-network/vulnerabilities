@@ -1,0 +1,59 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1814",
+		"synopsis": "Low: gnome-shell security and bug fix update",
+		"severity": "SEVERITY_LOW",
+		"topic": "An update for gnome-shell is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "GNOME Shell acts as a compositing manager for the desktop, and displays both application windows and other objects. It provides core interface functions like switching windows, launching applications, and notifications. It takes advantage of the capabilities of modern graphics hardware and introduces innovative user interface concepts. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1868418",
+				"description": "CVE-2020-17489 gnome-shell: Password from logged-out user may be shown on login screen",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1868418"
+			},
+			{
+				"ticket": "2000918",
+				"description": "Enabled extensions appear on lock screen [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000918"
+			},
+			{
+				"ticket": "2025940",
+				"description": "[Bug] gnome-shell errors in syslog",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2025940"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-17489",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-17489.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:P/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "4.3",
+				"cwe": "CWE-200"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gnome-shell-0:3.32.2-44.el8.aarch64.rpm",
+					"gnome-shell-0:3.32.2-44.el8.src.rpm",
+					"gnome-shell-0:3.32.2-44.el8.x86_64.rpm",
+					"gnome-shell-debuginfo-0:3.32.2-44.el8.aarch64.rpm",
+					"gnome-shell-debuginfo-0:3.32.2-44.el8.x86_64.rpm",
+					"gnome-shell-debugsource-0:3.32.2-44.el8.aarch64.rpm",
+					"gnome-shell-debugsource-0:3.32.2-44.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

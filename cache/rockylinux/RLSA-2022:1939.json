@@ -1,0 +1,62 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1939",
+		"synopsis": "Moderate: squid:4 security and bug fix update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the squid:4 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Squid is a high-performance proxy caching server for web clients, supporting FTP, Gopher, and HTTP data objects.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1939939",
+				"description": "CVE-2021-28116 squid: out-of-bounds read in WCCP protocol data may lead to information disclosure",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1939939"
+			},
+			{
+				"ticket": "2006121",
+				"description": "SQUID shortens FTP Link wrong that contains a semi-colon and as a result is not able to download zip file.CODE 404 TO CLIENT)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2006121"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-28116",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-28116.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-125-\u003eCWE-200"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libecap-0:1.0.1-2.module+el8.4.0+404+316a0dc5.aarch64.rpm",
+					"libecap-0:1.0.1-2.module+el8.4.0+404+316a0dc5.src.rpm",
+					"libecap-0:1.0.1-2.module+el8.4.0+404+316a0dc5.x86_64.rpm",
+					"libecap-debuginfo-0:1.0.1-2.module+el8.4.0+404+316a0dc5.aarch64.rpm",
+					"libecap-debuginfo-0:1.0.1-2.module+el8.4.0+404+316a0dc5.x86_64.rpm",
+					"libecap-debugsource-0:1.0.1-2.module+el8.4.0+404+316a0dc5.aarch64.rpm",
+					"libecap-debugsource-0:1.0.1-2.module+el8.4.0+404+316a0dc5.x86_64.rpm",
+					"libecap-devel-0:1.0.1-2.module+el8.4.0+404+316a0dc5.aarch64.rpm",
+					"libecap-devel-0:1.0.1-2.module+el8.4.0+404+316a0dc5.x86_64.rpm",
+					"squid-7:4.15-3.module+el8.6.0+991+e278114b.1.aarch64.rpm",
+					"squid-7:4.15-3.module+el8.6.0+991+e278114b.1.src.rpm",
+					"squid-7:4.15-3.module+el8.6.0+991+e278114b.1.x86_64.rpm",
+					"squid-debuginfo-7:4.15-3.module+el8.6.0+991+e278114b.1.aarch64.rpm",
+					"squid-debuginfo-7:4.15-3.module+el8.6.0+991+e278114b.1.x86_64.rpm",
+					"squid-debugsource-7:4.15-3.module+el8.6.0+991+e278114b.1.aarch64.rpm",
+					"squid-debugsource-7:4.15-3.module+el8.6.0+991+e278114b.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

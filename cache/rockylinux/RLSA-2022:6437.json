@@ -1,0 +1,84 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:6437",
+		"synopsis": "Moderate: kernel-rt security and bug fix update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for kernel-rt is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The kernel-rt packages provide the Real Time Linux Kernel, which enables fine-tuning for systems with extremely high determinism requirements.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2090237",
+				"description": "CVE-2022-21123 hw: cpu: Incomplete cleanup of multi-core shared buffers (aka SBDR)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2090237"
+			},
+			{
+				"ticket": "2090240",
+				"description": "CVE-2022-21125 hw: cpu: Incomplete cleanup of microarchitectural fill buffers (aka SBDS)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2090240"
+			},
+			{
+				"ticket": "2090241",
+				"description": "CVE-2022-21166 hw: cpu: Incomplete cleanup in specific special register write operations (aka DRPW)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2090241"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-21123",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21123.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-459"
+			},
+			{
+				"name": "CVE-2022-21125",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21125.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-459"
+			},
+			{
+				"name": "CVE-2022-21166",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21166.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-459"
+			}
+		],
+		"publishedAt": "2022-09-23T19:45:15.173495Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"kernel-rt-0:4.18.0-372.26.1.rt7.183.el8_6.src.rpm",
+					"kernel-rt-0:4.18.0-372.26.1.rt7.183.el8_6.x86_64.rpm",
+					"kernel-rt-core-0:4.18.0-372.26.1.rt7.183.el8_6.x86_64.rpm",
+					"kernel-rt-debug-0:4.18.0-372.26.1.rt7.183.el8_6.x86_64.rpm",
+					"kernel-rt-debug-core-0:4.18.0-372.26.1.rt7.183.el8_6.x86_64.rpm",
+					"kernel-rt-debug-debuginfo-0:4.18.0-372.26.1.rt7.183.el8_6.x86_64.rpm",
+					"kernel-rt-debug-devel-0:4.18.0-372.26.1.rt7.183.el8_6.x86_64.rpm",
+					"kernel-rt-debuginfo-0:4.18.0-372.26.1.rt7.183.el8_6.x86_64.rpm",
+					"kernel-rt-debuginfo-common-x86_64-0:4.18.0-372.26.1.rt7.183.el8_6.x86_64.rpm",
+					"kernel-rt-debug-kvm-0:4.18.0-372.26.1.rt7.183.el8_6.x86_64.rpm",
+					"kernel-rt-debug-modules-0:4.18.0-372.26.1.rt7.183.el8_6.x86_64.rpm",
+					"kernel-rt-debug-modules-extra-0:4.18.0-372.26.1.rt7.183.el8_6.x86_64.rpm",
+					"kernel-rt-devel-0:4.18.0-372.26.1.rt7.183.el8_6.x86_64.rpm",
+					"kernel-rt-kvm-0:4.18.0-372.26.1.rt7.183.el8_6.x86_64.rpm",
+					"kernel-rt-modules-0:4.18.0-372.26.1.rt7.183.el8_6.x86_64.rpm",
+					"kernel-rt-modules-extra-0:4.18.0-372.26.1.rt7.183.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

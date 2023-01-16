@@ -1,0 +1,55 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1933",
+		"synopsis": "mod_auth_openidc:2.3  bug fix update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for the mod_auth_openidc:2.3 module is now available for Rocky Linux 8.",
+		"description": "The mod_auth_openidc is an OpenID Connect authentication module for Apache HTTP Server. It enables an Apache HTTP Server to operate as an OpenID Connect Relying Party and/or OAuth 2.0 Resource Server. \nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1823756",
+				"description": "Backport SameSite=None cookie from mod_auth_openidc upstream to support latest browsers [rhel-8]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1823756"
+			},
+			{
+				"ticket": "1897992",
+				"description": "OIDCStateInputHeaders \u0026 OIDCStateMaxNumberOfCookies in existing mod_auth_openidc version",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1897992"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1933",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1933",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cjose-0:0.6.1-2.module+el8.3.0+129+2feafa46.aarch64.rpm",
+					"cjose-0:0.6.1-2.module+el8.3.0+129+2feafa46.src.rpm",
+					"cjose-0:0.6.1-2.module+el8.3.0+129+2feafa46.x86_64.rpm",
+					"cjose-debuginfo-0:0.6.1-2.module+el8.3.0+129+2feafa46.aarch64.rpm",
+					"cjose-debuginfo-0:0.6.1-2.module+el8.3.0+129+2feafa46.x86_64.rpm",
+					"cjose-debugsource-0:0.6.1-2.module+el8.3.0+129+2feafa46.aarch64.rpm",
+					"cjose-debugsource-0:0.6.1-2.module+el8.3.0+129+2feafa46.x86_64.rpm",
+					"cjose-devel-0:0.6.1-2.module+el8.3.0+129+2feafa46.aarch64.rpm",
+					"cjose-devel-0:0.6.1-2.module+el8.3.0+129+2feafa46.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1837",
+		"synopsis": "rt-tests bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for rt-tests is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2000974",
+				"description": "cyclictest -F results in \"cyclictest: invalid option -- 'F'\" yet -F is still in the help output. The long option --fifo is working",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000974"
+			},
+			{
+				"ticket": "2012292",
+				"description": "[RHEL-8.6] Rebase rt-tests to the latest upstream",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012292"
+			},
+			{
+				"ticket": "2024957",
+				"description": "Access Vector Cache ( AVC ) denial post mount of /sys/fs/cgroup/cpuset  [rt-8]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2024957"
+			},
+			{
+				"ticket": "2050242",
+				"description": "cyclictest: Ignore inherited affinity when applying new affinity",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2050242"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1837",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1837",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"rt-tests-0:2.3-2.el8.src.rpm",
+					"rt-tests-0:2.3-2.el8.x86_64.rpm",
+					"rt-tests-debuginfo-0:2.3-2.el8.x86_64.rpm",
+					"rt-tests-debugsource-0:2.3-2.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

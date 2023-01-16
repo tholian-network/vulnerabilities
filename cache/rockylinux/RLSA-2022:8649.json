@@ -1,0 +1,54 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:8649",
+		"synopsis": "Important: varnish:6 security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for the varnish:6 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Varnish Cache is a high-performance HTTP accelerator. It stores web pages in memory so web servers don\u0026#39;t have to create the same web page over and over again, giving the website a significant speed up.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2141844",
+				"description": "CVE-2022-45060 varnish: Request Forgery Vulnerability",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2141844"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-45060",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-45060.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-918"
+			}
+		],
+		"publishedAt": "2022-12-07T14:05:33.016078Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"varnish-0:6.0.8-2.module+el8.7.0+1094+66cdd070.1.aarch64.rpm",
+					"varnish-0:6.0.8-2.module+el8.7.0+1094+66cdd070.1.src.rpm",
+					"varnish-0:6.0.8-2.module+el8.7.0+1094+66cdd070.1.x86_64.rpm",
+					"varnish-devel-0:6.0.8-2.module+el8.7.0+1094+66cdd070.1.aarch64.rpm",
+					"varnish-devel-0:6.0.8-2.module+el8.7.0+1094+66cdd070.1.x86_64.rpm",
+					"varnish-docs-0:6.0.8-2.module+el8.7.0+1094+66cdd070.1.aarch64.rpm",
+					"varnish-docs-0:6.0.8-2.module+el8.7.0+1094+66cdd070.1.x86_64.rpm",
+					"varnish-modules-0:0.15.0-6.module+el8.5.0+677+2a78a869.aarch64.rpm",
+					"varnish-modules-0:0.15.0-6.module+el8.5.0+677+2a78a869.src.rpm",
+					"varnish-modules-0:0.15.0-6.module+el8.5.0+677+2a78a869.x86_64.rpm",
+					"varnish-modules-debuginfo-0:0.15.0-6.module+el8.5.0+677+2a78a869.aarch64.rpm",
+					"varnish-modules-debuginfo-0:0.15.0-6.module+el8.5.0+677+2a78a869.x86_64.rpm",
+					"varnish-modules-debugsource-0:0.15.0-6.module+el8.5.0+677+2a78a869.aarch64.rpm",
+					"varnish-modules-debugsource-0:0.15.0-6.module+el8.5.0+677+2a78a869.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

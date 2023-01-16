@@ -1,0 +1,81 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:6466",
+		"synopsis": "systemd bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "Au update for systemd is now available for Rocky Linux 8.",
+		"description": "The systemd packages contain systemd, a system and service manager for Linux, compatible with the SysV and LSB init scripts. It provides aggressive parallelism capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, and keeps track of processes using Linux cgroups. In addition, it supports snapshotting and restoring of the system state, maintains mount and automount points, and implements an elaborate transactional dependency-based service control logic. It can also work as a drop-in replacement for sysvinit.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2116892",
+				"description": "systemd leaks pipes when executing Type=exec services [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2116892"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:6466",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:6466",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-09-13T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"systemd-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-0:239-58.el8_6.7.i686.rpm",
+					"systemd-0:239-58.el8_6.7.src.rpm",
+					"systemd-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-container-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-container-0:239-58.el8_6.7.i686.rpm",
+					"systemd-container-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-container-debuginfo-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-container-debuginfo-0:239-58.el8_6.7.i686.rpm",
+					"systemd-container-debuginfo-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-debuginfo-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-debuginfo-0:239-58.el8_6.7.i686.rpm",
+					"systemd-debuginfo-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-debugsource-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-debugsource-0:239-58.el8_6.7.i686.rpm",
+					"systemd-debugsource-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-devel-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-devel-0:239-58.el8_6.7.i686.rpm",
+					"systemd-devel-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-journal-remote-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-journal-remote-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-journal-remote-debuginfo-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-journal-remote-debuginfo-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-libs-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-libs-0:239-58.el8_6.7.i686.rpm",
+					"systemd-libs-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-libs-debuginfo-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-libs-debuginfo-0:239-58.el8_6.7.i686.rpm",
+					"systemd-libs-debuginfo-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-pam-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-pam-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-pam-debuginfo-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-pam-debuginfo-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-tests-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-tests-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-tests-debuginfo-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-tests-debuginfo-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-udev-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-udev-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-udev-debuginfo-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-udev-debuginfo-0:239-58.el8_6.7.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

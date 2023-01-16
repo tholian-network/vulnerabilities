@@ -1,0 +1,104 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1771",
+		"synopsis": "gdm bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gdm is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1878119",
+				"description": "Actual permissions/ownership of files owned by gdm package diverge from RPM records.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1878119"
+			},
+			{
+				"ticket": "1969846",
+				"description": "module-rescue-stream is obsolete and should no longer be loaded [RHEL-8.4]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1969846"
+			},
+			{
+				"ticket": "1977133",
+				"description": "Ship gdm-devel in CRB",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1977133"
+			},
+			{
+				"ticket": "1988958",
+				"description": "Cannot switch from GUI(X) to CUI.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1988958"
+			},
+			{
+				"ticket": "2000904",
+				"description": "[RHEL8.5] [Hyper-V]Cannot display GUI after installed RHEL8.5 recent build [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000904"
+			},
+			{
+				"ticket": "2005011",
+				"description": "Unable to login to session via xdmcp [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2005011"
+			},
+			{
+				"ticket": "2009045",
+				"description": "Selecting Xorg doesn't work as when you login you still end up with Wayland",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2009045"
+			},
+			{
+				"ticket": "2025768",
+				"description": "\"DisallowTCP=false\" option is not being used by /etc/gdm/custom.conf file",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2025768"
+			},
+			{
+				"ticket": "2032180",
+				"description": "gdm crashed in ensure_display_for_seat(), can't login to the GUI",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2032180"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1771",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1771",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gdm-1:40.0-23.el8_6.1.aarch64.rpm",
+					"gdm-1:40.0-23.el8_6.1.i686.rpm",
+					"gdm-1:40.0-23.el8_6.1.src.rpm",
+					"gdm-1:40.0-23.el8_6.1.x86_64.rpm",
+					"gdm-debuginfo-1:40.0-23.el8_6.1.aarch64.rpm",
+					"gdm-debuginfo-1:40.0-23.el8_6.1.i686.rpm",
+					"gdm-debuginfo-1:40.0-23.el8_6.1.x86_64.rpm",
+					"gdm-debugsource-1:40.0-23.el8_6.1.aarch64.rpm",
+					"gdm-debugsource-1:40.0-23.el8_6.1.i686.rpm",
+					"gdm-debugsource-1:40.0-23.el8_6.1.x86_64.rpm",
+					"gdm-devel-1:40.0-23.el8_6.1.aarch64.rpm",
+					"gdm-devel-1:40.0-23.el8_6.1.i686.rpm",
+					"gdm-devel-1:40.0-23.el8_6.1.x86_64.rpm",
+					"gdm-pam-extensions-devel-1:40.0-23.el8_6.1.aarch64.rpm",
+					"gdm-pam-extensions-devel-1:40.0-23.el8_6.1.i686.rpm",
+					"gdm-pam-extensions-devel-1:40.0-23.el8_6.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

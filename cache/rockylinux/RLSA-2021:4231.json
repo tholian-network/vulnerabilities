@@ -1,0 +1,151 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4231",
+		"synopsis": "Moderate: libwebp security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for libwebp is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The libwebp packages provide a library and tools for the WebP graphics format. WebP is an image format with a lossy compression of digital photographic images. WebP consists of a codec based on the VP8 format, and a container based on the Resource Interchange File Format (RIFF). Webmasters, web developers and browser developers can use WebP to compress, archive, and distribute digital images more efficiently.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1956853",
+				"description": "CVE-2020-36330 libwebp: out-of-bounds read in ChunkVerifyAndAssign() in mux/muxread.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1956853"
+			},
+			{
+				"ticket": "1956856",
+				"description": "CVE-2020-36331 libwebp: out-of-bounds read in ChunkAssignData() in mux/muxinternal.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1956856"
+			},
+			{
+				"ticket": "1956868",
+				"description": "CVE-2020-36332 libwebp: excessive memory allocation when reading a file",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1956868"
+			},
+			{
+				"ticket": "1956917",
+				"description": "CVE-2018-25009 libwebp: out-of-bounds read in WebPMuxCreateInternal",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1956917"
+			},
+			{
+				"ticket": "1956918",
+				"description": "CVE-2018-25010 libwebp: out-of-bounds read in ApplyFilter()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1956918"
+			},
+			{
+				"ticket": "1956922",
+				"description": "CVE-2018-25012 libwebp: out-of-bounds read in WebPMuxCreateInternal()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1956922"
+			},
+			{
+				"ticket": "1956926",
+				"description": "CVE-2018-25013 libwebp: out-of-bounds read in ShiftBytes()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1956926"
+			},
+			{
+				"ticket": "1956927",
+				"description": "CVE-2018-25014 libwebp: use of uninitialized value in ReadSymbol()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1956927"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2018-25009",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2018-25009.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+				"cvss3BaseScore": "9.1",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2018-25010",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2018-25010.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+				"cvss3BaseScore": "9.1",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2018-25012",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2018-25012.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+				"cvss3BaseScore": "9.1",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2018-25013",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2018-25013.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+				"cvss3BaseScore": "9.1",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2018-25014",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2018-25014.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "9.8",
+				"cwe": "CWE-908"
+			},
+			{
+				"name": "CVE-2020-36330",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-36330.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+				"cvss3BaseScore": "9.1",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2020-36331",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-36331.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+				"cvss3BaseScore": "9.1",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2020-36332",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-36332.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-20-\u003eCWE-400"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libwebp-0:1.0.0-5.el8.aarch64.rpm",
+					"libwebp-0:1.0.0-5.el8.i686.rpm",
+					"libwebp-0:1.0.0-5.el8.src.rpm",
+					"libwebp-0:1.0.0-5.el8.x86_64.rpm",
+					"libwebp-debuginfo-0:1.0.0-5.el8.aarch64.rpm",
+					"libwebp-debuginfo-0:1.0.0-5.el8.i686.rpm",
+					"libwebp-debuginfo-0:1.0.0-5.el8.x86_64.rpm",
+					"libwebp-debugsource-0:1.0.0-5.el8.aarch64.rpm",
+					"libwebp-debugsource-0:1.0.0-5.el8.i686.rpm",
+					"libwebp-debugsource-0:1.0.0-5.el8.x86_64.rpm",
+					"libwebp-devel-0:1.0.0-5.el8.aarch64.rpm",
+					"libwebp-devel-0:1.0.0-5.el8.i686.rpm",
+					"libwebp-devel-0:1.0.0-5.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

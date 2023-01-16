@@ -1,0 +1,58 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:2575",
+		"synopsis": "Moderate: lz4 security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for lz4 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The lz4 packages provide support for LZ4, a very fast, lossless compression algorithm that provides compression speeds of 400 MB/s per core and scales with multicore CPUs. It also features an extremely fast decoder that reaches speeds of multiple GB/s per core and typically reaches RAM speed limits on multicore systems.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1954559",
+				"description": "CVE-2021-3520 lz4: memory corruption due to an integer overflow bug caused by memmove argument",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1954559"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-3520",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3520.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+				"cvss3BaseScore": "8.6",
+				"cwe": "CWE-190-\u003eCWE-787"
+			}
+		],
+		"publishedAt": "2021-06-29T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"lz4-0:1.8.3-3.el8_4.aarch64.rpm",
+					"lz4-0:1.8.3-3.el8_4.src.rpm",
+					"lz4-0:1.8.3-3.el8_4.x86_64.rpm",
+					"lz4-debuginfo-0:1.8.3-3.el8_4.aarch64.rpm",
+					"lz4-debuginfo-0:1.8.3-3.el8_4.i686.rpm",
+					"lz4-debuginfo-0:1.8.3-3.el8_4.x86_64.rpm",
+					"lz4-debugsource-0:1.8.3-3.el8_4.aarch64.rpm",
+					"lz4-debugsource-0:1.8.3-3.el8_4.i686.rpm",
+					"lz4-debugsource-0:1.8.3-3.el8_4.x86_64.rpm",
+					"lz4-devel-0:1.8.3-3.el8_4.aarch64.rpm",
+					"lz4-devel-0:1.8.3-3.el8_4.i686.rpm",
+					"lz4-devel-0:1.8.3-3.el8_4.x86_64.rpm",
+					"lz4-libs-0:1.8.3-3.el8_4.aarch64.rpm",
+					"lz4-libs-0:1.8.3-3.el8_4.i686.rpm",
+					"lz4-libs-0:1.8.3-3.el8_4.x86_64.rpm",
+					"lz4-libs-debuginfo-0:1.8.3-3.el8_4.aarch64.rpm",
+					"lz4-libs-debuginfo-0:1.8.3-3.el8_4.i686.rpm",
+					"lz4-libs-debuginfo-0:1.8.3-3.el8_4.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

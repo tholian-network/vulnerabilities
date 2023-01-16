@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:1707",
+		"synopsis": "bolt bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for bolt is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1889827",
+				"description": "Adapt for Ice lake and Tiger lake changes: fix accumulation of stale domains and generation detection",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1889827"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:1707",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:1707",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"bolt-0:0.9.1-1.el8.aarch64.rpm",
+					"bolt-0:0.9.1-1.el8.src.rpm",
+					"bolt-0:0.9.1-1.el8.x86_64.rpm",
+					"bolt-debuginfo-0:0.9.1-1.el8.aarch64.rpm",
+					"bolt-debuginfo-0:0.9.1-1.el8.x86_64.rpm",
+					"bolt-debugsource-0:0.9.1-1.el8.aarch64.rpm",
+					"bolt-debugsource-0:0.9.1-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

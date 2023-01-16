@@ -1,0 +1,102 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7624",
+		"synopsis": "Moderate: php:8.0 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the php:8.0 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "PHP is an HTML-embedded scripting language commonly used with the Apache HTTP Server.\nThe following packages have been upgraded to a later upstream version: php (8.0.20). (BZ#2100876)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2055879",
+				"description": "CVE-2021-21708 php: Use after free due to php_filter_float() failing for ints",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2055879"
+			},
+			{
+				"ticket": "2098521",
+				"description": "CVE-2022-31625 php: Uninitialized array in pg_query_params() leading to RCE",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2098521"
+			},
+			{
+				"ticket": "2100876",
+				"description": "php:8.0 rebase to 8.0.20",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2100876"
+			},
+			{
+				"ticket": "2112814",
+				"description": "php:8.0  snmp3 Calls Using authPriv or authNoPriv Immediately Return False Without Error Message",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2112814"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-21708",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-21708.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "9.8",
+				"cwe": "CWE-416"
+			}
+		],
+		"publishedAt": "2022-11-13T07:49:41.051371Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"apcu-panel-0:5.1.20-1.module+el8.6.0+790+fc63e43f.noarch.rpm",
+					"libzip-0:1.7.3-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"libzip-0:1.7.3-1.module+el8.6.0+790+fc63e43f.src.rpm",
+					"libzip-0:1.7.3-1.module+el8.6.0+790+fc63e43f.x86_64.rpm",
+					"libzip-debuginfo-0:1.7.3-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"libzip-debuginfo-0:1.7.3-1.module+el8.6.0+790+fc63e43f.x86_64.rpm",
+					"libzip-debugsource-0:1.7.3-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"libzip-debugsource-0:1.7.3-1.module+el8.6.0+790+fc63e43f.x86_64.rpm",
+					"libzip-devel-0:1.7.3-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"libzip-devel-0:1.7.3-1.module+el8.6.0+790+fc63e43f.x86_64.rpm",
+					"libzip-tools-0:1.7.3-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"libzip-tools-0:1.7.3-1.module+el8.6.0+790+fc63e43f.x86_64.rpm",
+					"libzip-tools-debuginfo-0:1.7.3-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"libzip-tools-debuginfo-0:1.7.3-1.module+el8.6.0+790+fc63e43f.x86_64.rpm",
+					"php-pecl-apcu-0:5.1.20-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"php-pecl-apcu-0:5.1.20-1.module+el8.6.0+790+fc63e43f.src.rpm",
+					"php-pecl-apcu-0:5.1.20-1.module+el8.6.0+790+fc63e43f.x86_64.rpm",
+					"php-pecl-apcu-debuginfo-0:5.1.20-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"php-pecl-apcu-debuginfo-0:5.1.20-1.module+el8.6.0+790+fc63e43f.x86_64.rpm",
+					"php-pecl-apcu-debugsource-0:5.1.20-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"php-pecl-apcu-debugsource-0:5.1.20-1.module+el8.6.0+790+fc63e43f.x86_64.rpm",
+					"php-pecl-apcu-devel-0:5.1.20-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"php-pecl-apcu-devel-0:5.1.20-1.module+el8.6.0+790+fc63e43f.x86_64.rpm",
+					"php-pecl-rrd-0:2.0.3-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"php-pecl-rrd-0:2.0.3-1.module+el8.6.0+790+fc63e43f.src.rpm",
+					"php-pecl-rrd-0:2.0.3-1.module+el8.6.0+790+fc63e43f.x86_64.rpm",
+					"php-pecl-rrd-debuginfo-0:2.0.3-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"php-pecl-rrd-debuginfo-0:2.0.3-1.module+el8.6.0+790+fc63e43f.x86_64.rpm",
+					"php-pecl-rrd-debugsource-0:2.0.3-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"php-pecl-rrd-debugsource-0:2.0.3-1.module+el8.6.0+790+fc63e43f.x86_64.rpm",
+					"php-pecl-xdebug3-0:3.1.2-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"php-pecl-xdebug3-0:3.1.2-1.module+el8.6.0+790+fc63e43f.src.rpm",
+					"php-pecl-xdebug3-0:3.1.2-1.module+el8.6.0+790+fc63e43f.x86_64.rpm",
+					"php-pecl-xdebug3-debuginfo-0:3.1.2-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"php-pecl-xdebug3-debuginfo-0:3.1.2-1.module+el8.6.0+790+fc63e43f.x86_64.rpm",
+					"php-pecl-xdebug3-debugsource-0:3.1.2-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"php-pecl-xdebug3-debugsource-0:3.1.2-1.module+el8.6.0+790+fc63e43f.x86_64.rpm",
+					"php-pecl-zip-0:1.19.2-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"php-pecl-zip-0:1.19.2-1.module+el8.6.0+790+fc63e43f.src.rpm",
+					"php-pecl-zip-0:1.19.2-1.module+el8.6.0+790+fc63e43f.x86_64.rpm",
+					"php-pecl-zip-debuginfo-0:1.19.2-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"php-pecl-zip-debuginfo-0:1.19.2-1.module+el8.6.0+790+fc63e43f.x86_64.rpm",
+					"php-pecl-zip-debugsource-0:1.19.2-1.module+el8.6.0+790+fc63e43f.aarch64.rpm",
+					"php-pecl-zip-debugsource-0:1.19.2-1.module+el8.6.0+790+fc63e43f.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

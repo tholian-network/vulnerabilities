@@ -1,0 +1,91 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:4805",
+		"synopsis": "Important: postgresql:10 security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for the postgresql:10 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "PostgreSQL is an advanced object-relational database management system (DBMS).\nThe following packages have been upgraded to a later upstream version: postgresql (10.21).\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2081126",
+				"description": "CVE-2022-1552 postgresql: Autovacuum, REINDEX, and others omit \"security restricted operation\" sandbox",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2081126"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-1552",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1552.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-459-\u003eCWE-89"
+			}
+		],
+		"publishedAt": "2022-05-30T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"postgresql-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-0:10.21-2.module+el8.6.0+977+ab6e685c.src.rpm",
+					"postgresql-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-contrib-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-contrib-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-contrib-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-contrib-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-debugsource-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-debugsource-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-docs-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-docs-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-docs-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-docs-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-plperl-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-plperl-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-plperl-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-plperl-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-plpython3-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-plpython3-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-plpython3-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-plpython3-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-pltcl-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-pltcl-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-pltcl-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-pltcl-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-server-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-server-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-server-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-server-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-server-devel-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-server-devel-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-server-devel-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-server-devel-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-static-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-static-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-test-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-test-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-test-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-test-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-test-rpm-macros-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-test-rpm-macros-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-upgrade-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-upgrade-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-upgrade-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-upgrade-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-upgrade-devel-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-upgrade-devel-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm",
+					"postgresql-upgrade-devel-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.aarch64.rpm",
+					"postgresql-upgrade-devel-debuginfo-0:10.21-2.module+el8.6.0+977+ab6e685c.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

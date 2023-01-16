@@ -1,0 +1,74 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:3661",
+		"synopsis": "container-tools:rhel8 bug fix update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for the container-tools:rhel8 module is now available for Rocky Linux 8.",
+		"description": "The container-tools module contains tools for working with containers, notably podman, buildah, skopeo, and runc.\nBug Fix:",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2005053",
+				"description": "[8.4.0.z] kubelet service fail to load EnvironmentFile due to SELinux denial (Re-opened) [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2005053"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:3661",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:3661",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-09-23T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"containernetworking-plugins-0:0.9.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"containernetworking-plugins-0:0.9.1-1.module+el8.6.0+973+7a06b91e.src.rpm",
+					"containernetworking-plugins-0:0.9.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"containernetworking-plugins-debuginfo-0:0.9.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"containernetworking-plugins-debuginfo-0:0.9.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"containernetworking-plugins-debugsource-0:0.9.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"containernetworking-plugins-debugsource-0:0.9.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"crit-0:3.15-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"crit-0:3.15-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"criu-0:3.15-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"criu-0:3.15-1.module+el8.6.0+973+7a06b91e.src.rpm",
+					"criu-0:3.15-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"criu-debuginfo-0:3.15-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"criu-debuginfo-0:3.15-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"criu-debugsource-0:3.15-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"criu-debugsource-0:3.15-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"libslirp-0:4.3.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"libslirp-0:4.3.1-1.module+el8.6.0+973+7a06b91e.src.rpm",
+					"libslirp-0:4.3.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"libslirp-debuginfo-0:4.3.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"libslirp-debuginfo-0:4.3.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"libslirp-debugsource-0:4.3.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"libslirp-debugsource-0:4.3.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"libslirp-devel-0:4.3.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"libslirp-devel-0:4.3.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"python3-criu-0:3.15-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"python3-criu-0:3.15-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"slirp4netns-0:1.1.8-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"slirp4netns-0:1.1.8-1.module+el8.6.0+973+7a06b91e.src.rpm",
+					"slirp4netns-0:1.1.8-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"slirp4netns-debuginfo-0:1.1.8-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"slirp4netns-debuginfo-0:1.1.8-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"slirp4netns-debugsource-0:1.1.8-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"slirp4netns-debugsource-0:1.1.8-1.module+el8.6.0+973+7a06b91e.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

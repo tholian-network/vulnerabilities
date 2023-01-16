@@ -1,0 +1,59 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4325",
+		"synopsis": "Moderate: lasso security and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for lasso is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The lasso packages provide the Lasso library that implements the Liberty Alliance Single Sign-On standards, including the SAML and SAML2 specifications. It allows handling of the whole life-cycle of SAML-based federations and provides bindings for multiple languages.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1829785",
+				"description": "[RFE] lasso-devel is not shipped with AppStream. Solution: Add the RPM to CRB.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1829785"
+			},
+			{
+				"ticket": "1940089",
+				"description": "CVE-2021-28091 lasso: XML signature wrapping vulnerability when parsing SAML responses",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1940089"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-28091",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-28091.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-347-\u003eCWE-345"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"lasso-0:2.6.0-12.el8.aarch64.rpm",
+					"lasso-0:2.6.0-12.el8.i686.rpm",
+					"lasso-0:2.6.0-12.el8.src.rpm",
+					"lasso-0:2.6.0-12.el8.x86_64.rpm",
+					"lasso-debuginfo-0:2.6.0-12.el8.aarch64.rpm",
+					"lasso-debuginfo-0:2.6.0-12.el8.i686.rpm",
+					"lasso-debuginfo-0:2.6.0-12.el8.x86_64.rpm",
+					"lasso-debugsource-0:2.6.0-12.el8.aarch64.rpm",
+					"lasso-debugsource-0:2.6.0-12.el8.i686.rpm",
+					"lasso-debugsource-0:2.6.0-12.el8.x86_64.rpm",
+					"lasso-devel-0:2.6.0-12.el8.aarch64.rpm",
+					"lasso-devel-0:2.6.0-12.el8.i686.rpm",
+					"lasso-devel-0:2.6.0-12.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

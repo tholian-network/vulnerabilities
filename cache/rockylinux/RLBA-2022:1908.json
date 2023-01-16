@@ -1,0 +1,59 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1908",
+		"synopsis": "alsa-utils bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for alsa-utils is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2016974",
+				"description": "Update alsa-utils to upstream for RHEL 8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016974"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1908",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1908",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"alsa-topology-utils-0:1.2.6-1.el8.aarch64.rpm",
+					"alsa-topology-utils-0:1.2.6-1.el8.x86_64.rpm",
+					"alsa-topology-utils-debuginfo-0:1.2.6-1.el8.aarch64.rpm",
+					"alsa-topology-utils-debuginfo-0:1.2.6-1.el8.x86_64.rpm",
+					"alsa-ucm-utils-0:1.2.6-1.el8.aarch64.rpm",
+					"alsa-ucm-utils-0:1.2.6-1.el8.x86_64.rpm",
+					"alsa-ucm-utils-debuginfo-0:1.2.6-1.el8.aarch64.rpm",
+					"alsa-ucm-utils-debuginfo-0:1.2.6-1.el8.x86_64.rpm",
+					"alsa-utils-0:1.2.6-1.el8.aarch64.rpm",
+					"alsa-utils-0:1.2.6-1.el8.src.rpm",
+					"alsa-utils-0:1.2.6-1.el8.x86_64.rpm",
+					"alsa-utils-alsabat-0:1.2.6-1.el8.aarch64.rpm",
+					"alsa-utils-alsabat-0:1.2.6-1.el8.x86_64.rpm",
+					"alsa-utils-alsabat-debuginfo-0:1.2.6-1.el8.aarch64.rpm",
+					"alsa-utils-alsabat-debuginfo-0:1.2.6-1.el8.x86_64.rpm",
+					"alsa-utils-debuginfo-0:1.2.6-1.el8.aarch64.rpm",
+					"alsa-utils-debuginfo-0:1.2.6-1.el8.x86_64.rpm",
+					"alsa-utils-debugsource-0:1.2.6-1.el8.aarch64.rpm",
+					"alsa-utils-debugsource-0:1.2.6-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,73 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1911",
+		"synopsis": "setroubleshoot bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for setroubleshoot is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2003052",
+				"description": "[setroubleshoot] RHEL 8.5 Tier 0 Localization [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2003052"
+			},
+			{
+				"ticket": "2017299",
+				"description": "[setroubleshoot] RHEL 8.6 Tier 0 Localization",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2017299"
+			},
+			{
+				"ticket": "2028226",
+				"description": "Typo in output of \"sealert --help\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028226"
+			},
+			{
+				"ticket": "2031081",
+				"description": "Rebase setroubleshoot to latest upstream release",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2031081"
+			},
+			{
+				"ticket": "2050734",
+				"description": "setroubleshoot sends incorrect number of email alerts",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2050734"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1911",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1911",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"setroubleshoot-0:3.3.26-3.el8.aarch64.rpm",
+					"setroubleshoot-0:3.3.26-3.el8.src.rpm",
+					"setroubleshoot-0:3.3.26-3.el8.x86_64.rpm",
+					"setroubleshoot-debugsource-0:3.3.26-3.el8.aarch64.rpm",
+					"setroubleshoot-debugsource-0:3.3.26-3.el8.x86_64.rpm",
+					"setroubleshoot-server-0:3.3.26-3.el8.aarch64.rpm",
+					"setroubleshoot-server-0:3.3.26-3.el8.x86_64.rpm",
+					"setroubleshoot-server-debuginfo-0:3.3.26-3.el8.aarch64.rpm",
+					"setroubleshoot-server-debuginfo-0:3.3.26-3.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

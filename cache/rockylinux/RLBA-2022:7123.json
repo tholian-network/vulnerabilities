@@ -1,0 +1,69 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:7123",
+		"synopsis": "openwsman bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "Updated openwsman packages that fix several bugs and add various enhancementsare now available.",
+		"description": "Openwsman is a project intended to provide an open source implementation of the Web Services Management specification (WS-Management) and to expose system management information on the Linux operating system using the WS-Management protocol. WS-Management is based on a suite of web services specifications and usage requirements that cover all system management aspects.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2124893",
+				"description": "openwsman: Improve handling of HTTP 401 Unauthorized [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2124893"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:7123",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:7123",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-11-07T19:40:50.491200Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libwsman1-0:2.6.5-8.el8_6.aarch64.rpm",
+					"libwsman1-0:2.6.5-8.el8_6.i686.rpm",
+					"libwsman1-0:2.6.5-8.el8_6.x86_64.rpm",
+					"libwsman1-debuginfo-0:2.6.5-8.el8_6.aarch64.rpm",
+					"libwsman1-debuginfo-0:2.6.5-8.el8_6.i686.rpm",
+					"libwsman1-debuginfo-0:2.6.5-8.el8_6.x86_64.rpm",
+					"libwsman-devel-0:2.6.5-8.el8_6.aarch64.rpm",
+					"libwsman-devel-0:2.6.5-8.el8_6.i686.rpm",
+					"libwsman-devel-0:2.6.5-8.el8_6.x86_64.rpm",
+					"openwsman-0:2.6.5-8.el8_6.src.rpm",
+					"openwsman-client-0:2.6.5-8.el8_6.aarch64.rpm",
+					"openwsman-client-0:2.6.5-8.el8_6.i686.rpm",
+					"openwsman-client-0:2.6.5-8.el8_6.x86_64.rpm",
+					"openwsman-client-debuginfo-0:2.6.5-8.el8_6.aarch64.rpm",
+					"openwsman-client-debuginfo-0:2.6.5-8.el8_6.i686.rpm",
+					"openwsman-client-debuginfo-0:2.6.5-8.el8_6.x86_64.rpm",
+					"openwsman-debuginfo-0:2.6.5-8.el8_6.aarch64.rpm",
+					"openwsman-debuginfo-0:2.6.5-8.el8_6.i686.rpm",
+					"openwsman-debuginfo-0:2.6.5-8.el8_6.x86_64.rpm",
+					"openwsman-python3-0:2.6.5-8.el8_6.aarch64.rpm",
+					"openwsman-python3-0:2.6.5-8.el8_6.x86_64.rpm",
+					"openwsman-python3-debuginfo-0:2.6.5-8.el8_6.aarch64.rpm",
+					"openwsman-python3-debuginfo-0:2.6.5-8.el8_6.x86_64.rpm",
+					"openwsman-server-0:2.6.5-8.el8_6.aarch64.rpm",
+					"openwsman-server-0:2.6.5-8.el8_6.i686.rpm",
+					"openwsman-server-0:2.6.5-8.el8_6.x86_64.rpm",
+					"openwsman-server-debuginfo-0:2.6.5-8.el8_6.aarch64.rpm",
+					"openwsman-server-debuginfo-0:2.6.5-8.el8_6.i686.rpm",
+					"openwsman-server-debuginfo-0:2.6.5-8.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

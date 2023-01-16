@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4537",
+		"synopsis": "Important: httpd:2.4 security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for the httpd:2.4 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The httpd packages provide the Apache HTTP Server, a powerful, efficient, and extensible web server.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2017321",
+				"description": "CVE-2021-20325 httpd: Regression of CVE-2021-40438 and CVE-2021-26691 fixes in Red Hat Enterprise Linux 8.5",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2017321"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-20325",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20325.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+				"cvss3BaseScore": "9.0",
+				"cwe": "(CWE-119|CWE-918)"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mod_md-1:2.0.8-8.module+el8.5.0+695+1fa8055e.aarch64.rpm",
+					"mod_md-1:2.0.8-8.module+el8.5.0+695+1fa8055e.src.rpm",
+					"mod_md-1:2.0.8-8.module+el8.5.0+695+1fa8055e.x86_64.rpm",
+					"mod_md-debuginfo-1:2.0.8-8.module+el8.5.0+695+1fa8055e.aarch64.rpm",
+					"mod_md-debuginfo-1:2.0.8-8.module+el8.5.0+695+1fa8055e.x86_64.rpm",
+					"mod_md-debugsource-1:2.0.8-8.module+el8.5.0+695+1fa8055e.aarch64.rpm",
+					"mod_md-debugsource-1:2.0.8-8.module+el8.5.0+695+1fa8055e.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

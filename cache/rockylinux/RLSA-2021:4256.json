@@ -1,0 +1,77 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4256",
+		"synopsis": "Moderate: graphviz security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for graphviz is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Graphviz is open-source graph-visualization software. Graph visualization is a way of representing structural information as diagrams of abstract graphs and networks. It has important applications in networking, bioinformatics, software engineering, database and web design, machine learning, and in visual interfaces for other technical domains.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1966272",
+				"description": "CVE-2020-18032 graphviz: off-by-one in parse_reclbl() in lib/common/shapes.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1966272"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-18032",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-18032.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-193"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"graphviz-0:2.40.1-43.el8.aarch64.rpm",
+					"graphviz-0:2.40.1-43.el8.i686.rpm",
+					"graphviz-0:2.40.1-43.el8.src.rpm",
+					"graphviz-0:2.40.1-43.el8.x86_64.rpm",
+					"graphviz-debuginfo-0:2.40.1-43.el8.aarch64.rpm",
+					"graphviz-debuginfo-0:2.40.1-43.el8.i686.rpm",
+					"graphviz-debuginfo-0:2.40.1-43.el8.x86_64.rpm",
+					"graphviz-debugsource-0:2.40.1-43.el8.aarch64.rpm",
+					"graphviz-debugsource-0:2.40.1-43.el8.i686.rpm",
+					"graphviz-debugsource-0:2.40.1-43.el8.x86_64.rpm",
+					"graphviz-devel-0:2.40.1-43.el8.aarch64.rpm",
+					"graphviz-devel-0:2.40.1-43.el8.i686.rpm",
+					"graphviz-devel-0:2.40.1-43.el8.x86_64.rpm",
+					"graphviz-doc-0:2.40.1-43.el8.aarch64.rpm",
+					"graphviz-doc-0:2.40.1-43.el8.x86_64.rpm",
+					"graphviz-gd-0:2.40.1-43.el8.aarch64.rpm",
+					"graphviz-gd-0:2.40.1-43.el8.i686.rpm",
+					"graphviz-gd-0:2.40.1-43.el8.x86_64.rpm",
+					"graphviz-gd-debuginfo-0:2.40.1-43.el8.aarch64.rpm",
+					"graphviz-gd-debuginfo-0:2.40.1-43.el8.i686.rpm",
+					"graphviz-gd-debuginfo-0:2.40.1-43.el8.x86_64.rpm",
+					"graphviz-perl-0:2.40.1-43.el8.aarch64.rpm",
+					"graphviz-perl-0:2.40.1-43.el8.x86_64.rpm",
+					"graphviz-perl-debuginfo-0:2.40.1-43.el8.aarch64.rpm",
+					"graphviz-perl-debuginfo-0:2.40.1-43.el8.x86_64.rpm",
+					"graphviz-python3-0:2.40.1-43.el8.aarch64.rpm",
+					"graphviz-python3-0:2.40.1-43.el8.x86_64.rpm",
+					"graphviz-python3-debuginfo-0:2.40.1-43.el8.aarch64.rpm",
+					"graphviz-python3-debuginfo-0:2.40.1-43.el8.x86_64.rpm",
+					"graphviz-ruby-0:2.40.1-43.el8.aarch64.rpm",
+					"graphviz-ruby-0:2.40.1-43.el8.x86_64.rpm",
+					"graphviz-ruby-debuginfo-0:2.40.1-43.el8.aarch64.rpm",
+					"graphviz-ruby-debuginfo-0:2.40.1-43.el8.x86_64.rpm",
+					"graphviz-tcl-0:2.40.1-43.el8.aarch64.rpm",
+					"graphviz-tcl-0:2.40.1-43.el8.x86_64.rpm",
+					"graphviz-tcl-debuginfo-0:2.40.1-43.el8.aarch64.rpm",
+					"graphviz-tcl-debuginfo-0:2.40.1-43.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

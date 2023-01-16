@@ -1,0 +1,215 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:1775",
+		"synopsis": "Moderate: pki-core:10.6 and pki-deps:10.6 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the pki-core:10.6 and pki-deps:10.6 modules is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The Public Key Infrastructure (PKI) Core contains fundamental packages required by Rocky Enterprise Software Foundation Certificate System.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1584550",
+				"description": "CRMFPopClient: unexpected behavior with -y option when values are specified",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1584550"
+			},
+			{
+				"ticket": "1590942",
+				"description": "CMCResponse treats -d as optional",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1590942"
+			},
+			{
+				"ticket": "1656772",
+				"description": "Update 'man pkispawn' having reference of setup-ds.pl with dscreate command",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1656772"
+			},
+			{
+				"ticket": "1664435",
+				"description": "Error instantiating class for challenge_password with SCEP request",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1664435"
+			},
+			{
+				"ticket": "1730462",
+				"description": "CVE-2020-1695 resteasy: Improper validation of response header in MediaTypeHeaderDelegate.java class",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1730462"
+			},
+			{
+				"ticket": "1787115",
+				"description": "[RFE] Need Method to copy SKI from CSR to  Certificate signed.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1787115"
+			},
+			{
+				"ticket": "1843416",
+				"description": "kra-audit-mod fail with Invalid event configuration if we have disabled entry in input file",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1843416"
+			},
+			{
+				"ticket": "1868233",
+				"description": "Disabling AIA and cert policy extensions in ACME examples",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1868233"
+			},
+			{
+				"ticket": "1875563",
+				"description": "Add KRA Transport and Storage Certificates profiles, audit for IPA",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1875563"
+			},
+			{
+				"ticket": "1883656",
+				"description": "[RFE] Add OAEP as a KeyWrap algorithm for KRA in Dogtag PKI",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1883656"
+			},
+			{
+				"ticket": "1883996",
+				"description": "Inconsistent folders in pki-tools",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1883996"
+			},
+			{
+				"ticket": "1889691",
+				"description": "acme failed with error when run with more than 1 thread/connection (performance test)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1889691"
+			},
+			{
+				"ticket": "1890639",
+				"description": "Two-step installation with external certificates fails on HSM configured system",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890639"
+			},
+			{
+				"ticket": "1891577",
+				"description": "Sub-ordinate installation is failing with NullPointerException",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1891577"
+			},
+			{
+				"ticket": "1897120",
+				"description": "pki-server cert-fix command failing",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1897120"
+			},
+			{
+				"ticket": "1908541",
+				"description": "jss broke SCEP - missing PasswordChallenge class",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1908541"
+			},
+			{
+				"ticket": "1912418",
+				"description": "OCSP and TKS cloning failed due to duplicate replica ID",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1912418"
+			},
+			{
+				"ticket": "1912493",
+				"description": "pkispawn reports incorrect FIPS mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1912493"
+			},
+			{
+				"ticket": "1916686",
+				"description": "Memory leak during ACME performance test",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1916686"
+			},
+			{
+				"ticket": "1919282",
+				"description": "ACME cert enrollment failed with HTTP 500",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1919282"
+			},
+			{
+				"ticket": "1929067",
+				"description": "PKI instance creation failed with new 389-ds-base build",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1929067"
+			},
+			{
+				"ticket": "1932803",
+				"description": "FIPS: CMCRequest with a shared secret resulting in error",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1932803"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-1695",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-1695.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-20"
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"apache-commons-lang-0:2.6-21.module+el8.3.0+53+ea062990.noarch.rpm",
+					"apache-commons-lang-0:2.6-21.module+el8.3.0+53+ea062990.src.rpm",
+					"bea-stax-0:1.2.0-16.module+el8.3.0+53+ea062990.src.rpm",
+					"bea-stax-api-0:1.2.0-16.module+el8.3.0+53+ea062990.noarch.rpm",
+					"glassfish-fastinfoset-0:1.2.13-9.module+el8.3.0+53+ea062990.noarch.rpm",
+					"glassfish-fastinfoset-0:1.2.13-9.module+el8.3.0+53+ea062990.src.rpm",
+					"glassfish-jaxb-0:2.2.11-11.module+el8.3.0+53+ea062990.src.rpm",
+					"glassfish-jaxb-api-0:2.2.12-8.module+el8.3.0+53+ea062990.noarch.rpm",
+					"glassfish-jaxb-api-0:2.2.12-8.module+el8.3.0+53+ea062990.src.rpm",
+					"glassfish-jaxb-core-0:2.2.11-11.module+el8.3.0+53+ea062990.noarch.rpm",
+					"glassfish-jaxb-runtime-0:2.2.11-11.module+el8.3.0+53+ea062990.noarch.rpm",
+					"glassfish-jaxb-txw2-0:2.2.11-11.module+el8.3.0+53+ea062990.noarch.rpm",
+					"jackson-annotations-0:2.10.0-1.module+el8.3.0+53+ea062990.noarch.rpm",
+					"jackson-annotations-0:2.10.0-1.module+el8.3.0+53+ea062990.src.rpm",
+					"jackson-core-0:2.10.0-1.module+el8.3.0+53+ea062990.noarch.rpm",
+					"jackson-core-0:2.10.0-1.module+el8.3.0+53+ea062990.src.rpm",
+					"jackson-databind-0:2.10.0-1.module+el8.3.0+53+ea062990.noarch.rpm",
+					"jackson-databind-0:2.10.0-1.module+el8.3.0+53+ea062990.src.rpm",
+					"jackson-jaxrs-json-provider-0:2.9.9-1.module+el8.3.0+53+ea062990.noarch.rpm",
+					"jackson-jaxrs-providers-0:2.9.9-1.module+el8.3.0+53+ea062990.noarch.rpm",
+					"jackson-jaxrs-providers-0:2.9.9-1.module+el8.3.0+53+ea062990.src.rpm",
+					"jackson-module-jaxb-annotations-0:2.7.6-4.module+el8.3.0+53+ea062990.noarch.rpm",
+					"jackson-module-jaxb-annotations-0:2.7.6-4.module+el8.3.0+53+ea062990.src.rpm",
+					"jakarta-commons-httpclient-1:3.1-28.module+el8.3.0+53+ea062990.noarch.rpm",
+					"jakarta-commons-httpclient-1:3.1-28.module+el8.3.0+53+ea062990.src.rpm",
+					"jcl-over-slf4j-0:1.7.25-4.module+el8.6.0+843+5a13dac3.noarch.rpm",
+					"python3-nss-0:1.0.1-10.module+el8.3.0+53+ea062990.aarch64.rpm",
+					"python3-nss-0:1.0.1-10.module+el8.3.0+53+ea062990.x86_64.rpm",
+					"python3-nss-debuginfo-0:1.0.1-10.module+el8.3.0+53+ea062990.aarch64.rpm",
+					"python3-nss-debuginfo-0:1.0.1-10.module+el8.3.0+53+ea062990.x86_64.rpm",
+					"python-nss-0:1.0.1-10.module+el8.3.0+53+ea062990.src.rpm",
+					"python-nss-debugsource-0:1.0.1-10.module+el8.3.0+53+ea062990.aarch64.rpm",
+					"python-nss-debugsource-0:1.0.1-10.module+el8.3.0+53+ea062990.x86_64.rpm",
+					"python-nss-doc-0:1.0.1-10.module+el8.3.0+53+ea062990.aarch64.rpm",
+					"python-nss-doc-0:1.0.1-10.module+el8.3.0+53+ea062990.x86_64.rpm",
+					"relaxngDatatype-0:2011.1-7.module+el8.3.0+53+ea062990.noarch.rpm",
+					"relaxngDatatype-0:2011.1-7.module+el8.3.0+53+ea062990.src.rpm",
+					"resteasy-0:3.0.26-6.module+el8.5.0+697+f586bb30.noarch.rpm",
+					"resteasy-0:3.0.26-6.module+el8.5.0+697+f586bb30.src.rpm",
+					"slf4j-0:1.7.25-4.module+el8.6.0+843+5a13dac3.noarch.rpm",
+					"slf4j-0:1.7.25-4.module+el8.6.0+843+5a13dac3.src.rpm",
+					"stax-ex-0:1.7.7-8.module+el8.3.0+53+ea062990.noarch.rpm",
+					"stax-ex-0:1.7.7-8.module+el8.3.0+53+ea062990.src.rpm",
+					"xml-commons-apis-0:1.4.01-25.module+el8.5.0+697+f586bb30.noarch.rpm",
+					"xml-commons-apis-0:1.4.01-25.module+el8.5.0+697+f586bb30.src.rpm",
+					"xmlstreambuffer-0:1.5.4-8.module+el8.3.0+53+ea062990.noarch.rpm",
+					"xmlstreambuffer-0:1.5.4-8.module+el8.3.0+53+ea062990.src.rpm",
+					"xsom-0:0-19.20110809svn.module+el8.3.0+53+ea062990.noarch.rpm",
+					"xsom-0:0-19.20110809svn.module+el8.3.0+53+ea062990.src.rpm"
+				]
+			}
+		}
+	}
+}

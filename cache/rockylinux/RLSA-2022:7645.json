@@ -1,0 +1,60 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7645",
+		"synopsis": "Low: openjpeg2 security update",
+		"severity": "SEVERITY_LOW",
+		"topic": "An update for openjpeg2 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "OpenJPEG is an open source library for reading and writing image files in JPEG2000 format.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2067052",
+				"description": "CVE-2022-1122 openjpeg: segmentation fault in opj2_decompress due to uninitialized pointer",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2067052"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-1122",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1122.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.1",
+				"cwe": "CWE-665-\u003eCWE-824"
+			}
+		],
+		"publishedAt": "2022-11-13T07:48:51.365380Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"openjpeg2-0:2.4.0-5.el8.aarch64.rpm",
+					"openjpeg2-0:2.4.0-5.el8.i686.rpm",
+					"openjpeg2-0:2.4.0-5.el8.src.rpm",
+					"openjpeg2-0:2.4.0-5.el8.x86_64.rpm",
+					"openjpeg2-debuginfo-0:2.4.0-5.el8.aarch64.rpm",
+					"openjpeg2-debuginfo-0:2.4.0-5.el8.i686.rpm",
+					"openjpeg2-debuginfo-0:2.4.0-5.el8.x86_64.rpm",
+					"openjpeg2-debugsource-0:2.4.0-5.el8.aarch64.rpm",
+					"openjpeg2-debugsource-0:2.4.0-5.el8.i686.rpm",
+					"openjpeg2-debugsource-0:2.4.0-5.el8.x86_64.rpm",
+					"openjpeg2-devel-0:2.4.0-5.el8.aarch64.rpm",
+					"openjpeg2-devel-0:2.4.0-5.el8.i686.rpm",
+					"openjpeg2-devel-0:2.4.0-5.el8.x86_64.rpm",
+					"openjpeg2-devel-docs-0:2.4.0-5.el8.noarch.rpm",
+					"openjpeg2-tools-0:2.4.0-5.el8.aarch64.rpm",
+					"openjpeg2-tools-0:2.4.0-5.el8.i686.rpm",
+					"openjpeg2-tools-0:2.4.0-5.el8.x86_64.rpm",
+					"openjpeg2-tools-debuginfo-0:2.4.0-5.el8.aarch64.rpm",
+					"openjpeg2-tools-debuginfo-0:2.4.0-5.el8.i686.rpm",
+					"openjpeg2-tools-debuginfo-0:2.4.0-5.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

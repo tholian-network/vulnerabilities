@@ -1,0 +1,73 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2050",
+		"synopsis": "libsolv bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libsolv is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2006664",
+				"description": "Rebase libsolv to \u003e= 0.7.20",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2006664"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2050",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2050",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libsolv-0:0.7.20-1.el8.aarch64.rpm",
+					"libsolv-0:0.7.20-1.el8.i686.rpm",
+					"libsolv-0:0.7.20-1.el8.src.rpm",
+					"libsolv-0:0.7.20-1.el8.x86_64.rpm",
+					"libsolv-debuginfo-0:0.7.20-1.el8.aarch64.rpm",
+					"libsolv-debuginfo-0:0.7.20-1.el8.i686.rpm",
+					"libsolv-debuginfo-0:0.7.20-1.el8.x86_64.rpm",
+					"libsolv-debugsource-0:0.7.20-1.el8.aarch64.rpm",
+					"libsolv-debugsource-0:0.7.20-1.el8.i686.rpm",
+					"libsolv-debugsource-0:0.7.20-1.el8.x86_64.rpm",
+					"libsolv-demo-0:0.7.20-1.el8.aarch64.rpm",
+					"libsolv-demo-0:0.7.20-1.el8.x86_64.rpm",
+					"libsolv-demo-debuginfo-0:0.7.20-1.el8.aarch64.rpm",
+					"libsolv-demo-debuginfo-0:0.7.20-1.el8.x86_64.rpm",
+					"libsolv-devel-0:0.7.20-1.el8.aarch64.rpm",
+					"libsolv-devel-0:0.7.20-1.el8.i686.rpm",
+					"libsolv-devel-0:0.7.20-1.el8.x86_64.rpm",
+					"libsolv-tools-0:0.7.20-1.el8.aarch64.rpm",
+					"libsolv-tools-0:0.7.20-1.el8.x86_64.rpm",
+					"libsolv-tools-debuginfo-0:0.7.20-1.el8.aarch64.rpm",
+					"libsolv-tools-debuginfo-0:0.7.20-1.el8.x86_64.rpm",
+					"perl-solv-0:0.7.20-1.el8.aarch64.rpm",
+					"perl-solv-0:0.7.20-1.el8.x86_64.rpm",
+					"perl-solv-debuginfo-0:0.7.20-1.el8.aarch64.rpm",
+					"perl-solv-debuginfo-0:0.7.20-1.el8.x86_64.rpm",
+					"python3-solv-0:0.7.20-1.el8.aarch64.rpm",
+					"python3-solv-0:0.7.20-1.el8.x86_64.rpm",
+					"python3-solv-debuginfo-0:0.7.20-1.el8.aarch64.rpm",
+					"python3-solv-debuginfo-0:0.7.20-1.el8.x86_64.rpm",
+					"ruby-solv-0:0.7.20-1.el8.aarch64.rpm",
+					"ruby-solv-0:0.7.20-1.el8.x86_64.rpm",
+					"ruby-solv-debuginfo-0:0.7.20-1.el8.aarch64.rpm",
+					"ruby-solv-debuginfo-0:0.7.20-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

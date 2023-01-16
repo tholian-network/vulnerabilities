@@ -1,0 +1,98 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4585",
+		"synopsis": "Moderate: gcc-toolset-10-gcc security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for gcc-toolset-10-gcc is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The gcc packages provide compilers for C, C++, Java, Fortran, Objective C, and Ada 95 GNU, as well as related support libraries.\nThe following changes were introduced in gcc in order to facilitate detection of BiDi Unicode characters:\nThis update implements a new warning option -Wbidirectional to warn about possibly dangerous bidirectional characters.\nThere are three levels of warning supported by gcc:\n\u0026#34;-Wbidirectional=unpaired\u0026#34;, which warns about improperly terminated BiDi contexts. (This is the default.)\n\u0026#34;-Wbidirectional=none\u0026#34;, which turns the warning off.\n\u0026#34;-Wbidirectional=any\u0026#34;, which warns about any use of bidirectional characters.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2005819",
+				"description": "CVE-2021-42574 Developer environment: Unicode's bidirectional (BiDi) override characters can cause trojan source attacks",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2005819"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-42574",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-42574.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.5",
+				"cwe": "CWE-838"
+			}
+		],
+		"publishedAt": "2021-11-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gcc-toolset-10-gcc-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-gcc-0:10.3.1-1.2.el8_5.src.rpm",
+					"gcc-toolset-10-gcc-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-gcc-c++-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-gcc-c++-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-gcc-c++-debuginfo-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-gcc-c++-debuginfo-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-gcc-debuginfo-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-gcc-debuginfo-0:10.3.1-1.2.el8_5.i686.rpm",
+					"gcc-toolset-10-gcc-debuginfo-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-gcc-gdb-plugin-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-gcc-gdb-plugin-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-gcc-gdb-plugin-debuginfo-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-gcc-gdb-plugin-debuginfo-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-gcc-gfortran-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-gcc-gfortran-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-gcc-gfortran-debuginfo-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-gcc-gfortran-debuginfo-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-gcc-plugin-devel-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-gcc-plugin-devel-0:10.3.1-1.2.el8_5.i686.rpm",
+					"gcc-toolset-10-gcc-plugin-devel-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-gcc-plugin-devel-debuginfo-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-gcc-plugin-devel-debuginfo-0:10.3.1-1.2.el8_5.i686.rpm",
+					"gcc-toolset-10-gcc-plugin-devel-debuginfo-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-libasan-devel-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-libasan-devel-0:10.3.1-1.2.el8_5.i686.rpm",
+					"gcc-toolset-10-libasan-devel-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-libatomic-devel-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-libatomic-devel-0:10.3.1-1.2.el8_5.i686.rpm",
+					"gcc-toolset-10-libatomic-devel-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-libgccjit-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-libgccjit-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-libgccjit-debuginfo-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-libgccjit-debuginfo-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-libgccjit-devel-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-libgccjit-devel-0:10.3.1-1.2.el8_5.i686.rpm",
+					"gcc-toolset-10-libgccjit-devel-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-libgccjit-docs-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-libgccjit-docs-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-libitm-devel-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-libitm-devel-0:10.3.1-1.2.el8_5.i686.rpm",
+					"gcc-toolset-10-libitm-devel-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-liblsan-devel-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-liblsan-devel-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-libquadmath-devel-0:10.3.1-1.2.el8_5.i686.rpm",
+					"gcc-toolset-10-libquadmath-devel-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-libstdc++-devel-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-libstdc++-devel-0:10.3.1-1.2.el8_5.i686.rpm",
+					"gcc-toolset-10-libstdc++-devel-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-libstdc++-docs-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-libstdc++-docs-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-libtsan-devel-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-libtsan-devel-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-libubsan-devel-0:10.3.1-1.2.el8_5.aarch64.rpm",
+					"gcc-toolset-10-libubsan-devel-0:10.3.1-1.2.el8_5.i686.rpm",
+					"gcc-toolset-10-libubsan-devel-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-offload-nvptx-0:10.3.1-1.2.el8_5.x86_64.rpm",
+					"gcc-toolset-10-offload-nvptx-debuginfo-0:10.3.1-1.2.el8_5.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,100 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:9073",
+		"synopsis": "Moderate: nodejs:16 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the nodejs:16 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Node.js is a software development platform for building fast and scalable network applications in the JavaScript programming language. \nThe following packages were updated to later upstream versions: nodejs (16.18.1), nodejs-nodemon (2.0.20).\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2040839",
+				"description": "CVE-2021-44531 nodejs: Improper handling of URI Subject Alternative Names",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2040839"
+			},
+			{
+				"ticket": "2040846",
+				"description": "CVE-2021-44532 nodejs: Certificate Verification Bypass via String Injection",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2040846"
+			},
+			{
+				"ticket": "2040856",
+				"description": "CVE-2021-44533 nodejs: Incorrect handling of certificate subject and issuer fields",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2040856"
+			},
+			{
+				"ticket": "2040862",
+				"description": "CVE-2022-21824 nodejs: Prototype pollution via console.table properties",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2040862"
+			},
+			{
+				"ticket": "2066009",
+				"description": "CVE-2021-44906 minimist: prototype pollution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2066009"
+			},
+			{
+				"ticket": "2134609",
+				"description": "CVE-2022-3517 nodejs-minimatch: ReDoS via the braceExpand function",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2134609"
+			},
+			{
+				"ticket": "2140911",
+				"description": "CVE-2022-43548 nodejs: DNS rebinding in inspect via invalid octal IP address",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2140911"
+			},
+			{
+				"ticket": "2142806",
+				"description": "nodejs:16/nodejs: Rebase to the latest Nodejs 16 release [rhel-8] [rhel-8.7.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2142806"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-44906",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-44906.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.1",
+				"cwe": "CWE-1321"
+			}
+		],
+		"publishedAt": "2022-12-16T17:49:19.217969Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nodejs-1:16.18.1-3.module+el8.7.0+1108+49363b0d.aarch64.rpm",
+					"nodejs-1:16.18.1-3.module+el8.7.0+1108+49363b0d.src.rpm",
+					"nodejs-1:16.18.1-3.module+el8.7.0+1108+49363b0d.x86_64.rpm",
+					"nodejs-debuginfo-1:16.18.1-3.module+el8.7.0+1108+49363b0d.aarch64.rpm",
+					"nodejs-debuginfo-1:16.18.1-3.module+el8.7.0+1108+49363b0d.x86_64.rpm",
+					"nodejs-debugsource-1:16.18.1-3.module+el8.7.0+1108+49363b0d.aarch64.rpm",
+					"nodejs-debugsource-1:16.18.1-3.module+el8.7.0+1108+49363b0d.x86_64.rpm",
+					"nodejs-devel-1:16.18.1-3.module+el8.7.0+1108+49363b0d.aarch64.rpm",
+					"nodejs-devel-1:16.18.1-3.module+el8.7.0+1108+49363b0d.x86_64.rpm",
+					"nodejs-docs-1:16.18.1-3.module+el8.7.0+1108+49363b0d.noarch.rpm",
+					"nodejs-full-i18n-1:16.18.1-3.module+el8.7.0+1108+49363b0d.aarch64.rpm",
+					"nodejs-full-i18n-1:16.18.1-3.module+el8.7.0+1108+49363b0d.x86_64.rpm",
+					"nodejs-nodemon-0:2.0.20-2.module+el8.7.0+1108+49363b0d.noarch.rpm",
+					"nodejs-nodemon-0:2.0.20-2.module+el8.7.0+1108+49363b0d.src.rpm",
+					"nodejs-packaging-0:25-1.module+el8.7.0+1108+49363b0d.noarch.rpm",
+					"nodejs-packaging-0:25-1.module+el8.7.0+1108+49363b0d.src.rpm",
+					"npm-1:8.19.2-1.16.18.1.3.module+el8.7.0+1108+49363b0d.aarch64.rpm",
+					"npm-1:8.19.2-1.16.18.1.3.module+el8.7.0+1108+49363b0d.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

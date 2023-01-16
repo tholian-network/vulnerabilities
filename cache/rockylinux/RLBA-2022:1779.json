@@ -1,0 +1,93 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1779",
+		"synopsis": "usbguard bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for usbguard is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1929364",
+				"description": "usbguard.service / IPAddressDeny not supported",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1929364"
+			},
+			{
+				"ticket": "1963271",
+				"description": "file conflict when installing usbguard on rhel-8.3",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1963271"
+			},
+			{
+				"ticket": "2000000",
+				"description": "too many usbguard messages in the journal",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000000"
+			},
+			{
+				"ticket": "2004511",
+				"description": "IPC access control files override each other",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2004511"
+			},
+			{
+				"ticket": "2005020",
+				"description": "usbguard does not validate permission existence",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2005020"
+			},
+			{
+				"ticket": "2014441",
+				"description": "SELinux DSP module is wrongly defined in SPEC",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2014441"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1779",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1779",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"usbguard-0:1.0.0-8.el8.aarch64.rpm",
+					"usbguard-0:1.0.0-8.el8.i686.rpm",
+					"usbguard-0:1.0.0-8.el8.src.rpm",
+					"usbguard-0:1.0.0-8.el8.x86_64.rpm",
+					"usbguard-dbus-0:1.0.0-8.el8.aarch64.rpm",
+					"usbguard-dbus-0:1.0.0-8.el8.x86_64.rpm",
+					"usbguard-dbus-debuginfo-0:1.0.0-8.el8.aarch64.rpm",
+					"usbguard-dbus-debuginfo-0:1.0.0-8.el8.x86_64.rpm",
+					"usbguard-debuginfo-0:1.0.0-8.el8.aarch64.rpm",
+					"usbguard-debuginfo-0:1.0.0-8.el8.i686.rpm",
+					"usbguard-debuginfo-0:1.0.0-8.el8.x86_64.rpm",
+					"usbguard-debugsource-0:1.0.0-8.el8.aarch64.rpm",
+					"usbguard-debugsource-0:1.0.0-8.el8.i686.rpm",
+					"usbguard-debugsource-0:1.0.0-8.el8.x86_64.rpm",
+					"usbguard-notifier-0:1.0.0-8.el8.aarch64.rpm",
+					"usbguard-notifier-0:1.0.0-8.el8.x86_64.rpm",
+					"usbguard-notifier-debuginfo-0:1.0.0-8.el8.aarch64.rpm",
+					"usbguard-notifier-debuginfo-0:1.0.0-8.el8.x86_64.rpm",
+					"usbguard-selinux-0:1.0.0-8.el8.noarch.rpm",
+					"usbguard-tools-0:1.0.0-8.el8.aarch64.rpm",
+					"usbguard-tools-0:1.0.0-8.el8.x86_64.rpm",
+					"usbguard-tools-debuginfo-0:1.0.0-8.el8.aarch64.rpm",
+					"usbguard-tools-debuginfo-0:1.0.0-8.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

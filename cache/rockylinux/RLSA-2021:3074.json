@@ -1,0 +1,72 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:3074",
+		"synopsis": "Moderate: nodejs:14 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the nodejs:14 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Node.js is a software development platform for building fast and scalable network applications in the JavaScript programming language. \nThe following packages have been upgraded to a later upstream version: nodejs (14.17.3). (BZ#1978203)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1941471",
+				"description": "CVE-2021-27290 nodejs-ssri: Regular expression DoS (ReDoS) when parsing malicious SRI in strict mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1941471"
+			},
+			{
+				"ticket": "1943208",
+				"description": "CVE-2021-23362 nodejs-hosted-git-info: Regular Expression denial of service via shortcutMatch in fromUrl()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1943208"
+			},
+			{
+				"ticket": "1979338",
+				"description": "CVE-2021-22918 libuv: out-of-bounds read in uv__idna_toascii() can lead to information disclosures or crashes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1979338"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-22918",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22918.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2021-23362",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-23362.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-400"
+			},
+			{
+				"name": "CVE-2021-27290",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-27290.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-400"
+			}
+		],
+		"publishedAt": "2021-08-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nodejs-nodemon-0:2.0.3-1.module+el8.6.0+982+9fdca2d4.noarch.rpm",
+					"nodejs-nodemon-0:2.0.3-1.module+el8.6.0+982+9fdca2d4.src.rpm",
+					"nodejs-packaging-0:23-3.module+el8.5.0+733+de4fee6c.noarch.rpm",
+					"nodejs-packaging-0:23-3.module+el8.5.0+733+de4fee6c.src.rpm"
+				]
+			}
+		}
+	}
+}

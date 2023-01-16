@@ -1,0 +1,141 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1841",
+		"synopsis": "osbuild-composer bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for osbuild-composer is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1922845",
+				"description": "using \"blueprints undo\" creates a new, empty blueprint",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922845"
+			},
+			{
+				"ticket": "1951936",
+				"description": "[Edge] After upgrade, user cannot login if upgrade bp has no user defined",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951936"
+			},
+			{
+				"ticket": "2000908",
+				"description": "greenboot journal log in edge-simplified-installer and edge-raw-image is different from edge-installer [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000908"
+			},
+			{
+				"ticket": "2002726",
+				"description": "osbuild-composer allows cross-building more distributions that we want to support [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2002726"
+			},
+			{
+				"ticket": "2002727",
+				"description": "Custom filesystems in blueprints don't support arbitrary depth [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2002727"
+			},
+			{
+				"ticket": "2002728",
+				"description": "guest image is missing man pages [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2002728"
+			},
+			{
+				"ticket": "2005000",
+				"description": "Use 'none' as ostree bootloader backend to fix upgrade that contain grub2 [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2005000"
+			},
+			{
+				"ticket": "2010256",
+				"description": "Rebase osbuild-composer for 8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2010256"
+			},
+			{
+				"ticket": "2023270",
+				"description": "composer-cli compose cancel can't delete waiting compose",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2023270"
+			},
+			{
+				"ticket": "2023635",
+				"description": "RFE: Allow using units for mountpoint sizes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2023635"
+			},
+			{
+				"ticket": "2023796",
+				"description": "osbuild-composer support for additional mountpoints",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2023796"
+			},
+			{
+				"ticket": "2049500",
+				"description": "osbuild fails to add a custom partition",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2049500"
+			},
+			{
+				"ticket": "2056451",
+				"description": "osbuild fails to build an ISO \u003e= 4GB",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2056451"
+			},
+			{
+				"ticket": "2062132",
+				"description": "Slow booting when using the fdo-linux-client",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2062132"
+			},
+			{
+				"ticket": "2063832",
+				"description": "[RHEL for Edge] Path to root certificates for FIDO provisioning is wrong",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2063832"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1841",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1841",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"osbuild-composer-0:46.1-1.el8.aarch64.rpm",
+					"osbuild-composer-0:46.1-1.el8.src.rpm",
+					"osbuild-composer-0:46.1-1.el8.x86_64.rpm",
+					"osbuild-composer-core-0:46.1-1.el8.aarch64.rpm",
+					"osbuild-composer-core-0:46.1-1.el8.x86_64.rpm",
+					"osbuild-composer-core-debuginfo-0:46.1-1.el8.aarch64.rpm",
+					"osbuild-composer-core-debuginfo-0:46.1-1.el8.x86_64.rpm",
+					"osbuild-composer-debuginfo-0:46.1-1.el8.aarch64.rpm",
+					"osbuild-composer-debuginfo-0:46.1-1.el8.x86_64.rpm",
+					"osbuild-composer-debugsource-0:46.1-1.el8.aarch64.rpm",
+					"osbuild-composer-debugsource-0:46.1-1.el8.x86_64.rpm",
+					"osbuild-composer-dnf-json-0:46.1-1.el8.aarch64.rpm",
+					"osbuild-composer-dnf-json-0:46.1-1.el8.x86_64.rpm",
+					"osbuild-composer-worker-0:46.1-1.el8.aarch64.rpm",
+					"osbuild-composer-worker-0:46.1-1.el8.x86_64.rpm",
+					"osbuild-composer-worker-debuginfo-0:46.1-1.el8.aarch64.rpm",
+					"osbuild-composer-worker-debuginfo-0:46.1-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

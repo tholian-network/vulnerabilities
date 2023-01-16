@@ -1,0 +1,134 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4451",
+		"synopsis": "Moderate: gnutls and nettle security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for gnutls and nettle is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The gnutls packages provide the GNU Transport Layer Security (GnuTLS) library, which implements cryptographic algorithms and protocols such as SSL, TLS, and DTLS.\nNettle is a cryptographic library that is designed to fit easily in almost any context: In crypto toolkits for object-oriented languages, such as C++, Python, or Pike, in applications like LSH or GNUPG, or even in kernel space.\nThe following packages have been upgraded to a later upstream version: gnutls (3.6.16). (BZ#1956783)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1776250",
+				"description": "p11tool do not reuse ID for certificate matching ECDSA private key when importing to PKCS#11 device",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1776250"
+			},
+			{
+				"ticket": "1908110",
+				"description": "gnutls update 3.6.14-7.el8_3 includes time BOMB in tests",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1908110"
+			},
+			{
+				"ticket": "1908334",
+				"description": "gnutls-serv doesn't listen on IPvN loopback addresses if there are no IPvN external addresses configured",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1908334"
+			},
+			{
+				"ticket": "1922275",
+				"description": "CVE-2021-20232 gnutls: Use after free in client_send_params in lib/ext/pre_shared_key.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922275"
+			},
+			{
+				"ticket": "1922276",
+				"description": "CVE-2021-20231 gnutls: Use after free in client key_share extension",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922276"
+			},
+			{
+				"ticket": "1965445",
+				"description": "SHA-1 CAs are rejected even if they are explicitly trusted",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1965445"
+			},
+			{
+				"ticket": "1967983",
+				"description": "CVE-2021-3580 nettle: Remote crash in RSA decryption via manipulated ciphertext",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1967983"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-20231",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20231.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "3.7",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-20232",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20232.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "3.7",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-3580",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3580.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-20"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gnutls-0:3.6.16-4.el8.aarch64.rpm",
+					"gnutls-0:3.6.16-4.el8.i686.rpm",
+					"gnutls-0:3.6.16-4.el8.src.rpm",
+					"gnutls-0:3.6.16-4.el8.x86_64.rpm",
+					"gnutls-c++-0:3.6.16-4.el8.aarch64.rpm",
+					"gnutls-c++-0:3.6.16-4.el8.i686.rpm",
+					"gnutls-c++-0:3.6.16-4.el8.x86_64.rpm",
+					"gnutls-c++-debuginfo-0:3.6.16-4.el8.aarch64.rpm",
+					"gnutls-c++-debuginfo-0:3.6.16-4.el8.i686.rpm",
+					"gnutls-c++-debuginfo-0:3.6.16-4.el8.x86_64.rpm",
+					"gnutls-dane-0:3.6.16-4.el8.aarch64.rpm",
+					"gnutls-dane-0:3.6.16-4.el8.i686.rpm",
+					"gnutls-dane-0:3.6.16-4.el8.x86_64.rpm",
+					"gnutls-dane-debuginfo-0:3.6.16-4.el8.aarch64.rpm",
+					"gnutls-dane-debuginfo-0:3.6.16-4.el8.i686.rpm",
+					"gnutls-dane-debuginfo-0:3.6.16-4.el8.x86_64.rpm",
+					"gnutls-debuginfo-0:3.6.16-4.el8.aarch64.rpm",
+					"gnutls-debuginfo-0:3.6.16-4.el8.i686.rpm",
+					"gnutls-debuginfo-0:3.6.16-4.el8.x86_64.rpm",
+					"gnutls-debugsource-0:3.6.16-4.el8.aarch64.rpm",
+					"gnutls-debugsource-0:3.6.16-4.el8.i686.rpm",
+					"gnutls-debugsource-0:3.6.16-4.el8.x86_64.rpm",
+					"gnutls-devel-0:3.6.16-4.el8.aarch64.rpm",
+					"gnutls-devel-0:3.6.16-4.el8.i686.rpm",
+					"gnutls-devel-0:3.6.16-4.el8.x86_64.rpm",
+					"gnutls-utils-0:3.6.16-4.el8.aarch64.rpm",
+					"gnutls-utils-0:3.6.16-4.el8.x86_64.rpm",
+					"gnutls-utils-debuginfo-0:3.6.16-4.el8.aarch64.rpm",
+					"gnutls-utils-debuginfo-0:3.6.16-4.el8.x86_64.rpm",
+					"nettle-0:3.4.1-7.el8.aarch64.rpm",
+					"nettle-0:3.4.1-7.el8.i686.rpm",
+					"nettle-0:3.4.1-7.el8.src.rpm",
+					"nettle-0:3.4.1-7.el8.x86_64.rpm",
+					"nettle-debuginfo-0:3.4.1-7.el8.aarch64.rpm",
+					"nettle-debuginfo-0:3.4.1-7.el8.i686.rpm",
+					"nettle-debuginfo-0:3.4.1-7.el8.x86_64.rpm",
+					"nettle-debugsource-0:3.4.1-7.el8.aarch64.rpm",
+					"nettle-debugsource-0:3.4.1-7.el8.i686.rpm",
+					"nettle-debugsource-0:3.4.1-7.el8.x86_64.rpm",
+					"nettle-devel-0:3.4.1-7.el8.aarch64.rpm",
+					"nettle-devel-0:3.4.1-7.el8.i686.rpm",
+					"nettle-devel-0:3.4.1-7.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

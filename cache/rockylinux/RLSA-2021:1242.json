@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:1242",
+		"synopsis": "Important: mariadb:10.3 and mariadb-devel:10.3 security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for the mariadb:10.3 and mariadb-devel:10.3 modules is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "MariaDB is a multi-user, multi-threaded SQL database server that is binary compatible with MySQL. \nThe following packages have been upgraded to a later upstream version: mariadb (10.3.28), galera (25.3.32).\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1940909",
+				"description": "CVE-2021-27928 mariadb: writable system variables allows a database user with SUPER privilege to execute arbitrary code as the system mysql user",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1940909"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-27928",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-27928.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.2",
+				"cwe": "CWE-426-\u003eCWE-78"
+			}
+		],
+		"publishedAt": "2021-04-19T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"Judy-0:1.0.5-18.module+el8.4.0+431+26aaed18.aarch64.rpm",
+					"Judy-0:1.0.5-18.module+el8.4.0+431+26aaed18.src.rpm",
+					"Judy-0:1.0.5-18.module+el8.4.0+431+26aaed18.x86_64.rpm",
+					"Judy-debuginfo-0:1.0.5-18.module+el8.4.0+431+26aaed18.aarch64.rpm",
+					"Judy-debuginfo-0:1.0.5-18.module+el8.4.0+431+26aaed18.x86_64.rpm",
+					"Judy-debugsource-0:1.0.5-18.module+el8.4.0+431+26aaed18.aarch64.rpm",
+					"Judy-debugsource-0:1.0.5-18.module+el8.4.0+431+26aaed18.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

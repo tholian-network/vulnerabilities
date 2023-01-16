@@ -1,0 +1,120 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:6448",
+		"synopsis": "Moderate: nodejs:14 security and bug fix update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the nodejs:14 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Node.js is a software development platform for building fast and scalable network applications in the JavaScript programming language. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2102001",
+				"description": "CVE-2022-33987 got: missing verification of requested URLs allows redirects to UNIX sockets",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2102001"
+			},
+			{
+				"ticket": "2105422",
+				"description": "CVE-2022-32212 nodejs: DNS rebinding in --inspect via invalid IP addresses",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2105422"
+			},
+			{
+				"ticket": "2105426",
+				"description": "CVE-2022-32215 nodejs: HTTP request smuggling due to incorrect parsing of multi-line Transfer-Encoding",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2105426"
+			},
+			{
+				"ticket": "2105428",
+				"description": "CVE-2022-32214 nodejs: HTTP request smuggling due to improper delimiting of header fields",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2105428"
+			},
+			{
+				"ticket": "2105430",
+				"description": "CVE-2022-32213 nodejs: HTTP request smuggling due to flawed parsing of Transfer-Encoding",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2105430"
+			},
+			{
+				"ticket": "2106367",
+				"description": "nodejs:14/nodejs: rebase to latest upstream release [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2106367"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-32212",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32212.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-703"
+			},
+			{
+				"name": "CVE-2022-32213",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32213.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-444"
+			},
+			{
+				"name": "CVE-2022-32214",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32214.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-444"
+			},
+			{
+				"name": "CVE-2022-32215",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32215.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-444"
+			},
+			{
+				"name": "CVE-2022-33987",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-33987.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-601"
+			}
+		],
+		"publishedAt": "2022-09-23T19:44:43.298057Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nodejs-1:14.20.0-2.module+el8.6.0+1004+df064614.aarch64.rpm",
+					"nodejs-1:14.20.0-2.module+el8.6.0+1004+df064614.src.rpm",
+					"nodejs-1:14.20.0-2.module+el8.6.0+1004+df064614.x86_64.rpm",
+					"nodejs-debuginfo-1:14.20.0-2.module+el8.6.0+1004+df064614.aarch64.rpm",
+					"nodejs-debuginfo-1:14.20.0-2.module+el8.6.0+1004+df064614.x86_64.rpm",
+					"nodejs-debugsource-1:14.20.0-2.module+el8.6.0+1004+df064614.aarch64.rpm",
+					"nodejs-debugsource-1:14.20.0-2.module+el8.6.0+1004+df064614.x86_64.rpm",
+					"nodejs-devel-1:14.20.0-2.module+el8.6.0+1004+df064614.aarch64.rpm",
+					"nodejs-devel-1:14.20.0-2.module+el8.6.0+1004+df064614.x86_64.rpm",
+					"nodejs-docs-1:14.20.0-2.module+el8.6.0+1004+df064614.noarch.rpm",
+					"nodejs-full-i18n-1:14.20.0-2.module+el8.6.0+1004+df064614.aarch64.rpm",
+					"nodejs-full-i18n-1:14.20.0-2.module+el8.6.0+1004+df064614.x86_64.rpm",
+					"nodejs-nodemon-0:2.0.19-2.module+el8.6.0+1003+ae94235a.noarch.rpm",
+					"nodejs-nodemon-0:2.0.19-2.module+el8.6.0+1003+ae94235a.src.rpm",
+					"nodejs-packaging-0:23-3.module+el8.5.0+733+de4fee6c.noarch.rpm",
+					"nodejs-packaging-0:23-3.module+el8.5.0+733+de4fee6c.src.rpm",
+					"npm-1:6.14.17-1.14.20.0.2.module+el8.6.0+1004+df064614.aarch64.rpm",
+					"npm-1:6.14.17-1.14.20.0.2.module+el8.6.0+1004+df064614.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

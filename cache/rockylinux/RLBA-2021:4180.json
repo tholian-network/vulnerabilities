@@ -1,0 +1,90 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4180",
+		"synopsis": "evolution, evolution-data-server, evolution-ews bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for evolution, evolution-data-server, and evolution-ews is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1952792",
+				"description": "IMAPx: Fix connect to iCloud mail server",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1952792"
+			},
+			{
+				"ticket": "1961192",
+				"description": "Add missing bundled() Provides for libgnomecanvas",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1961192"
+			},
+			{
+				"ticket": "1971676",
+				"description": "ECalBackendFile: Free interval tree only when being allocated",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1971676"
+			},
+			{
+				"ticket": "1972749",
+				"description": "PrintableOptions.cmake: Correct variable name comparison",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1972749"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4180",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4180",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"evolution-0:3.28.5-18.el8.aarch64.rpm",
+					"evolution-0:3.28.5-18.el8.src.rpm",
+					"evolution-0:3.28.5-18.el8.x86_64.rpm",
+					"evolution-bogofilter-0:3.28.5-18.el8.aarch64.rpm",
+					"evolution-bogofilter-0:3.28.5-18.el8.x86_64.rpm",
+					"evolution-bogofilter-debuginfo-0:3.28.5-18.el8.aarch64.rpm",
+					"evolution-bogofilter-debuginfo-0:3.28.5-18.el8.x86_64.rpm",
+					"evolution-debuginfo-0:3.28.5-18.el8.aarch64.rpm",
+					"evolution-debuginfo-0:3.28.5-18.el8.x86_64.rpm",
+					"evolution-debugsource-0:3.28.5-18.el8.aarch64.rpm",
+					"evolution-debugsource-0:3.28.5-18.el8.x86_64.rpm",
+					"evolution-devel-0:3.28.5-18.el8.aarch64.rpm",
+					"evolution-devel-0:3.28.5-18.el8.i686.rpm",
+					"evolution-devel-0:3.28.5-18.el8.x86_64.rpm",
+					"evolution-ews-0:3.28.5-11.el8_6.1.aarch64.rpm",
+					"evolution-ews-0:3.28.5-11.el8_6.1.src.rpm",
+					"evolution-ews-0:3.28.5-11.el8_6.1.x86_64.rpm",
+					"evolution-ews-debuginfo-0:3.28.5-11.el8_6.1.aarch64.rpm",
+					"evolution-ews-debuginfo-0:3.28.5-11.el8_6.1.x86_64.rpm",
+					"evolution-ews-debugsource-0:3.28.5-11.el8_6.1.aarch64.rpm",
+					"evolution-ews-debugsource-0:3.28.5-11.el8_6.1.x86_64.rpm",
+					"evolution-ews-langpacks-0:3.28.5-11.el8_6.1.noarch.rpm",
+					"evolution-help-0:3.28.5-18.el8.noarch.rpm",
+					"evolution-langpacks-0:3.28.5-18.el8.noarch.rpm",
+					"evolution-pst-0:3.28.5-18.el8.aarch64.rpm",
+					"evolution-pst-0:3.28.5-18.el8.x86_64.rpm",
+					"evolution-pst-debuginfo-0:3.28.5-18.el8.aarch64.rpm",
+					"evolution-pst-debuginfo-0:3.28.5-18.el8.x86_64.rpm",
+					"evolution-spamassassin-0:3.28.5-18.el8.aarch64.rpm",
+					"evolution-spamassassin-0:3.28.5-18.el8.x86_64.rpm",
+					"evolution-spamassassin-debuginfo-0:3.28.5-18.el8.aarch64.rpm",
+					"evolution-spamassassin-debuginfo-0:3.28.5-18.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

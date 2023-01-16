@@ -1,0 +1,93 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:5337",
+		"synopsis": "Moderate: go-toolset:rhel8 security and bug fix update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the go-toolset:rhel8 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Go Toolset provides the Go programming language tools and libraries. Go is alternatively known as golang. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2077688",
+				"description": "CVE-2022-24675 golang: encoding/pem: fix stack overflow in Decode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2077688"
+			},
+			{
+				"ticket": "2077689",
+				"description": "CVE-2022-28327 golang: crypto/elliptic: panic caused by oversized scalar",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2077689"
+			},
+			{
+				"ticket": "2084085",
+				"description": "CVE-2022-29526 golang: syscall: faccessat checks wrong group",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2084085"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-24675",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-24675.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-120"
+			},
+			{
+				"name": "CVE-2022-24921",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-24921.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-400"
+			},
+			{
+				"name": "CVE-2022-28327",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-28327.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-190"
+			},
+			{
+				"name": "CVE-2022-29526",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-29526.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.2",
+				"cwe": "CWE-269-\u003eCWE-280"
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"delve-0:1.7.2-1.module+el8.6.0+824+8e984c20.src.rpm",
+					"delve-0:1.7.2-1.module+el8.6.0+824+8e984c20.x86_64.rpm",
+					"delve-debuginfo-0:1.7.2-1.module+el8.6.0+824+8e984c20.x86_64.rpm",
+					"delve-debugsource-0:1.7.2-1.module+el8.6.0+824+8e984c20.x86_64.rpm",
+					"golang-0:1.17.10-1.module+el8.6.0+986+efe4cea4.aarch64.rpm",
+					"golang-0:1.17.10-1.module+el8.6.0+986+efe4cea4.src.rpm",
+					"golang-0:1.17.10-1.module+el8.6.0+986+efe4cea4.x86_64.rpm",
+					"golang-bin-0:1.17.10-1.module+el8.6.0+986+efe4cea4.aarch64.rpm",
+					"golang-bin-0:1.17.10-1.module+el8.6.0+986+efe4cea4.x86_64.rpm",
+					"golang-docs-0:1.17.10-1.module+el8.6.0+986+efe4cea4.noarch.rpm",
+					"golang-misc-0:1.17.10-1.module+el8.6.0+986+efe4cea4.noarch.rpm",
+					"golang-race-0:1.17.10-1.module+el8.6.0+986+efe4cea4.x86_64.rpm",
+					"golang-src-0:1.17.10-1.module+el8.6.0+986+efe4cea4.noarch.rpm",
+					"golang-tests-0:1.17.10-1.module+el8.6.0+986+efe4cea4.noarch.rpm",
+					"go-toolset-0:1.17.10-1.module+el8.6.0+986+efe4cea4.aarch64.rpm",
+					"go-toolset-0:1.17.10-1.module+el8.6.0+986+efe4cea4.src.rpm",
+					"go-toolset-0:1.17.10-1.module+el8.6.0+986+efe4cea4.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

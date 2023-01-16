@@ -1,0 +1,55 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1882",
+		"synopsis": "redhat-rpm-config bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for redhat-rpm-config is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1976000",
+				"description": "Support compressed kernel modules in modalias.prov",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1976000"
+			},
+			{
+				"ticket": "2005079",
+				"description": "redhat-rpm-config: Review and update GCC builds flags documentation in buildflags.md",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2005079"
+			},
+			{
+				"ticket": "2063036",
+				"description": "Fix handling of files without newlines in brp-mangle-shebang",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2063036"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1882",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1882",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"kernel-rpm-macros-0:129-1.el8.noarch.rpm",
+					"redhat-rpm-config-0:129-1.el8.noarch.rpm",
+					"redhat-rpm-config-0:129-1.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

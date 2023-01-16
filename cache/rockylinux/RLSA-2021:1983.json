@@ -1,0 +1,48 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:1983",
+		"synopsis": "Important: idm:DL1 security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for the idm:DL1 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Rocky Enterprise Software Foundation Identity Management (IdM) is a centralized authentication, identity management, and authorization solution for both traditional and cloud-based enterprise environments. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1944640",
+				"description": "CVE-2021-3480 slapi-nis: NULL dereference (DoS) with specially crafted Binding DN",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1944640"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-3480",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3480.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-476"
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"python3-jwcrypto-0:0.5.0-1.module+el8.4.0+430+1dcf16bb.noarch.rpm",
+					"python3-kdcproxy-0:0.4-5.module+el8.3.0+244+0b2ae752.noarch.rpm",
+					"python3-pyusb-0:1.0.0-9.module+el8.4.0+430+1dcf16bb.noarch.rpm",
+					"python3-yubico-0:1.3.2-9.module+el8.4.0+430+1dcf16bb.noarch.rpm",
+					"python-jwcrypto-0:0.5.0-1.module+el8.4.0+430+1dcf16bb.src.rpm",
+					"python-kdcproxy-0:0.4-5.module+el8.3.0+244+0b2ae752.src.rpm",
+					"python-yubico-0:1.3.2-9.module+el8.4.0+430+1dcf16bb.src.rpm",
+					"pyusb-0:1.0.0-9.module+el8.4.0+430+1dcf16bb.src.rpm"
+				]
+			}
+		}
+	}
+}

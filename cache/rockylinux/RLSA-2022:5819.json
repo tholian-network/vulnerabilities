@@ -1,0 +1,107 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:5819",
+		"synopsis": "Important: kernel security and bug fix update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for kernel is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The kernel packages contain the Linux kernel, the core of any Linux operating system.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2064604",
+				"description": "CVE-2022-1012 kernel: Small table perturb size in the TCP source port generation algorithm can lead to information leak",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064604"
+			},
+			{
+				"ticket": "2092427",
+				"description": "CVE-2022-32250 kernel: a use-after-free write in the netfilter subsystem can lead to privilege escalation to root",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2092427"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-1012",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1012.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
+				"cvss3BaseScore": "8.2",
+				"cwe": "CWE-401"
+			},
+			{
+				"name": "CVE-2022-32250",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32250.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-416"
+			}
+		],
+		"publishedAt": "2022-08-02T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"bpftool-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"bpftool-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"bpftool-debuginfo-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"bpftool-debuginfo-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-0:4.18.0-372.19.1.el8_6.src.rpm",
+					"kernel-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-abi-stablelists-0:4.18.0-372.19.1.el8_6.noarch.rpm",
+					"kernel-core-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-core-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-cross-headers-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-cross-headers-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-debug-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-debug-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-debug-core-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-debug-core-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-debug-debuginfo-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-debug-debuginfo-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-debug-devel-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-debug-devel-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-debuginfo-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-debuginfo-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-debuginfo-common-aarch64-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-debuginfo-common-x86_64-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-debug-modules-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-debug-modules-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-debug-modules-extra-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-debug-modules-extra-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-devel-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-devel-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-doc-0:4.18.0-372.19.1.el8_6.noarch.rpm",
+					"kernel-headers-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-headers-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-modules-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-modules-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-modules-extra-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-modules-extra-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-tools-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-tools-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-tools-debuginfo-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-tools-debuginfo-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-tools-libs-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-tools-libs-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"kernel-tools-libs-devel-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"kernel-tools-libs-devel-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"perf-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"perf-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"perf-debuginfo-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"perf-debuginfo-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"python3-perf-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"python3-perf-0:4.18.0-372.19.1.el8_6.x86_64.rpm",
+					"python3-perf-debuginfo-0:4.18.0-372.19.1.el8_6.aarch64.rpm",
+					"python3-perf-debuginfo-0:4.18.0-372.19.1.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

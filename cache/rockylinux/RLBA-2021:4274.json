@@ -1,0 +1,38 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4274",
+		"synopsis": "new packages: gcc-toolset-11-ltrace",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "New gcc-toolset-11-ltrace packages are now available for Rocky Linux 8.",
+		"description": "GCC Toolset is a compiler toolset that provides recent versions of development tools. GCC Toolset is an Application Stream packaged as a Software Collection.\nThis enhancement update adds the gcc-toolset-11-ltrace packages to Rocky Linux 8.\nFor instructions on usage, see Using GCC Toolset linked from the References section. Components and specifics of this version are documented in the GCC Toolset 11 chapter.\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2021:4274",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4274",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gcc-toolset-11-ltrace-0:0.7.91-1.el8.aarch64.rpm",
+					"gcc-toolset-11-ltrace-0:0.7.91-1.el8.src.rpm",
+					"gcc-toolset-11-ltrace-0:0.7.91-1.el8.x86_64.rpm",
+					"gcc-toolset-11-ltrace-debuginfo-0:0.7.91-1.el8.aarch64.rpm",
+					"gcc-toolset-11-ltrace-debuginfo-0:0.7.91-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

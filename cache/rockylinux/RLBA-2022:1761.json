@@ -1,0 +1,120 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1761",
+		"synopsis": "gcc-toolset-11-gcc bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gcc-toolset-11-gcc is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1995192",
+				"description": "[RFE] requesting gcc-toolset-11-gcc-plugin-devel be moved into codeready or appstream",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1995192"
+			},
+			{
+				"ticket": "1996862",
+				"description": "Rebase GCC in GTS 11 from Fedora gcc 11.2",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1996862"
+			},
+			{
+				"ticket": "2037072",
+				"description": "Fix bogus dg-ice FAILs",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2037072"
+			},
+			{
+				"ticket": "2047286",
+				"description": "Rebase GCC in GTS 11 from Fedora gcc 11.2.1-9",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2047286"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1761",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1761",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gcc-toolset-11-gcc-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-gcc-0:11.2.1-9.1.el8.src.rpm",
+					"gcc-toolset-11-gcc-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-gcc-c++-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-gcc-c++-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-gcc-c++-debuginfo-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-gcc-c++-debuginfo-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-gcc-debuginfo-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-gcc-debuginfo-0:11.2.1-9.1.el8.i686.rpm",
+					"gcc-toolset-11-gcc-debuginfo-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-gcc-gdb-plugin-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-gcc-gdb-plugin-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-gcc-gdb-plugin-debuginfo-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-gcc-gdb-plugin-debuginfo-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-gcc-gfortran-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-gcc-gfortran-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-gcc-gfortran-debuginfo-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-gcc-gfortran-debuginfo-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-gcc-plugin-devel-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-gcc-plugin-devel-0:11.2.1-9.1.el8.i686.rpm",
+					"gcc-toolset-11-gcc-plugin-devel-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-gcc-plugin-devel-debuginfo-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-gcc-plugin-devel-debuginfo-0:11.2.1-9.1.el8.i686.rpm",
+					"gcc-toolset-11-gcc-plugin-devel-debuginfo-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-libasan-devel-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-libasan-devel-0:11.2.1-9.1.el8.i686.rpm",
+					"gcc-toolset-11-libasan-devel-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-libatomic-devel-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-libatomic-devel-0:11.2.1-9.1.el8.i686.rpm",
+					"gcc-toolset-11-libatomic-devel-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-libgccjit-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-libgccjit-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-libgccjit-debuginfo-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-libgccjit-debuginfo-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-libgccjit-devel-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-libgccjit-devel-0:11.2.1-9.1.el8.i686.rpm",
+					"gcc-toolset-11-libgccjit-devel-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-libgccjit-docs-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-libgccjit-docs-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-libitm-devel-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-libitm-devel-0:11.2.1-9.1.el8.i686.rpm",
+					"gcc-toolset-11-libitm-devel-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-liblsan-devel-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-liblsan-devel-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-libquadmath-devel-0:11.2.1-9.1.el8.i686.rpm",
+					"gcc-toolset-11-libquadmath-devel-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-libstdc++-devel-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-libstdc++-devel-0:11.2.1-9.1.el8.i686.rpm",
+					"gcc-toolset-11-libstdc++-devel-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-libstdc++-docs-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-libstdc++-docs-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-libtsan-devel-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-libtsan-devel-0:11.2.1-9.1.el8.x86_64.rpm",
+					"gcc-toolset-11-libubsan-devel-0:11.2.1-9.1.el8.aarch64.rpm",
+					"gcc-toolset-11-libubsan-devel-0:11.2.1-9.1.el8.i686.rpm",
+					"gcc-toolset-11-libubsan-devel-0:11.2.1-9.1.el8.x86_64.rpm",
+					"libasan6-0:11.2.1-9.1.el8.aarch64.rpm",
+					"libasan6-0:11.2.1-9.1.el8.i686.rpm",
+					"libasan6-0:11.2.1-9.1.el8.x86_64.rpm",
+					"libasan6-debuginfo-0:11.2.1-9.1.el8.aarch64.rpm",
+					"libasan6-debuginfo-0:11.2.1-9.1.el8.i686.rpm",
+					"libasan6-debuginfo-0:11.2.1-9.1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

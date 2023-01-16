@@ -1,0 +1,49 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4505",
+		"synopsis": "mobile-broadband-provider-info bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for mobile-broadband-provider-info is now available for Rocky Enterprise Software FoundationEnterprise Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1973446",
+				"description": "Please put mobile-broadband-provider-info-devel in RHEL8 CRB",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1973446"
+			},
+			{
+				"ticket": "1990476",
+				"description": "[rebase] update to mobile-broadband-provider-info 20210805 [rhel-8.5]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1990476"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4505",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4505",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mobile-broadband-provider-info-0:20210805-1.el8.noarch.rpm",
+					"mobile-broadband-provider-info-0:20210805-1.el8.src.rpm",
+					"mobile-broadband-provider-info-devel-0:20210805-1.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

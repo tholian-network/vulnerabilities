@@ -1,0 +1,87 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1894",
+		"synopsis": "Moderate: rust-toolset:rhel8 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the rust-toolset:rhel8 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Rust Toolset provides the Rust programming language compiler rustc, the cargo build tool and dependency manager, and required libraries. \nThe following packages have been upgraded to a later upstream version: rust (1.58.0). (BZ#2002883)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1980080",
+				"description": "Enable Rust wasm32-wasi target [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1980080"
+			},
+			{
+				"ticket": "2041504",
+				"description": "CVE-2022-21658 rust: Race condition in remove_dir_all leading to removal of files outside of the directory being removed",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2041504"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-21658",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21658.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "5.3",
+				"cwe": "(CWE-363|CWE-367)"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cargo-0:1.58.1-1.module+el8.6.0+826+60f85975.aarch64.rpm",
+					"cargo-0:1.58.1-1.module+el8.6.0+826+60f85975.x86_64.rpm",
+					"cargo-debuginfo-0:1.58.1-1.module+el8.6.0+826+60f85975.aarch64.rpm",
+					"cargo-debuginfo-0:1.58.1-1.module+el8.6.0+826+60f85975.x86_64.rpm",
+					"cargo-doc-0:1.58.1-1.module+el8.6.0+826+60f85975.noarch.rpm",
+					"clippy-0:1.58.1-1.module+el8.6.0+826+60f85975.aarch64.rpm",
+					"clippy-0:1.58.1-1.module+el8.6.0+826+60f85975.x86_64.rpm",
+					"clippy-debuginfo-0:1.58.1-1.module+el8.6.0+826+60f85975.aarch64.rpm",
+					"clippy-debuginfo-0:1.58.1-1.module+el8.6.0+826+60f85975.x86_64.rpm",
+					"rls-0:1.58.1-1.module+el8.6.0+826+60f85975.aarch64.rpm",
+					"rls-0:1.58.1-1.module+el8.6.0+826+60f85975.x86_64.rpm",
+					"rls-debuginfo-0:1.58.1-1.module+el8.6.0+826+60f85975.aarch64.rpm",
+					"rls-debuginfo-0:1.58.1-1.module+el8.6.0+826+60f85975.x86_64.rpm",
+					"rust-0:1.58.1-1.module+el8.6.0+826+60f85975.aarch64.rpm",
+					"rust-0:1.58.1-1.module+el8.6.0+826+60f85975.src.rpm",
+					"rust-0:1.58.1-1.module+el8.6.0+826+60f85975.x86_64.rpm",
+					"rust-analysis-0:1.58.1-1.module+el8.6.0+826+60f85975.aarch64.rpm",
+					"rust-analysis-0:1.58.1-1.module+el8.6.0+826+60f85975.x86_64.rpm",
+					"rust-debugger-common-0:1.58.1-1.module+el8.6.0+826+60f85975.noarch.rpm",
+					"rust-debuginfo-0:1.58.1-1.module+el8.6.0+826+60f85975.aarch64.rpm",
+					"rust-debuginfo-0:1.58.1-1.module+el8.6.0+826+60f85975.x86_64.rpm",
+					"rust-debugsource-0:1.58.1-1.module+el8.6.0+826+60f85975.aarch64.rpm",
+					"rust-debugsource-0:1.58.1-1.module+el8.6.0+826+60f85975.x86_64.rpm",
+					"rust-doc-0:1.58.1-1.module+el8.6.0+826+60f85975.aarch64.rpm",
+					"rust-doc-0:1.58.1-1.module+el8.6.0+826+60f85975.x86_64.rpm",
+					"rustfmt-0:1.58.1-1.module+el8.6.0+826+60f85975.aarch64.rpm",
+					"rustfmt-0:1.58.1-1.module+el8.6.0+826+60f85975.x86_64.rpm",
+					"rustfmt-debuginfo-0:1.58.1-1.module+el8.6.0+826+60f85975.aarch64.rpm",
+					"rustfmt-debuginfo-0:1.58.1-1.module+el8.6.0+826+60f85975.x86_64.rpm",
+					"rust-gdb-0:1.58.1-1.module+el8.6.0+826+60f85975.noarch.rpm",
+					"rust-lldb-0:1.58.1-1.module+el8.6.0+826+60f85975.noarch.rpm",
+					"rust-src-0:1.58.1-1.module+el8.6.0+826+60f85975.noarch.rpm",
+					"rust-std-static-0:1.58.1-1.module+el8.6.0+826+60f85975.aarch64.rpm",
+					"rust-std-static-0:1.58.1-1.module+el8.6.0+826+60f85975.x86_64.rpm",
+					"rust-std-static-wasm32-unknown-unknown-0:1.58.1-1.module+el8.6.0+826+60f85975.aarch64.rpm",
+					"rust-std-static-wasm32-unknown-unknown-0:1.58.1-1.module+el8.6.0+826+60f85975.x86_64.rpm",
+					"rust-std-static-wasm32-wasi-0:1.58.1-1.module+el8.6.0+826+60f85975.aarch64.rpm",
+					"rust-std-static-wasm32-wasi-0:1.58.1-1.module+el8.6.0+826+60f85975.x86_64.rpm",
+					"rust-toolset-0:1.58.1-1.module+el8.6.0+826+60f85975.aarch64.rpm",
+					"rust-toolset-0:1.58.1-1.module+el8.6.0+826+60f85975.src.rpm",
+					"rust-toolset-0:1.58.1-1.module+el8.6.0+826+60f85975.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

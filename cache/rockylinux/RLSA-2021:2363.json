@@ -1,0 +1,54 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:2363",
+		"synopsis": "Important: gupnp security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for gupnp is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "GUPnP is an object-oriented open source framework for creating UPnP devices and control points, written in C using GObject and libsoup. The GUPnP API is intended to be easy to use, efficient and flexible.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1964091",
+				"description": "CVE-2021-33516 gupnp: allows DNS rebinding which could result in tricking browser into triggering actions against local UPnP services",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1964091"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-33516",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-33516.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:L",
+				"cvss3BaseScore": "8.3",
+				"cwe": "CWE-200"
+			}
+		],
+		"publishedAt": "2021-06-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gupnp-0:1.0.6-2.el8_4.aarch64.rpm",
+					"gupnp-0:1.0.6-2.el8_4.i686.rpm",
+					"gupnp-0:1.0.6-2.el8_4.src.rpm",
+					"gupnp-0:1.0.6-2.el8_4.x86_64.rpm",
+					"gupnp-debuginfo-0:1.0.6-2.el8_4.aarch64.rpm",
+					"gupnp-debuginfo-0:1.0.6-2.el8_4.i686.rpm",
+					"gupnp-debuginfo-0:1.0.6-2.el8_4.x86_64.rpm",
+					"gupnp-debugsource-0:1.0.6-2.el8_4.aarch64.rpm",
+					"gupnp-debugsource-0:1.0.6-2.el8_4.i686.rpm",
+					"gupnp-debugsource-0:1.0.6-2.el8_4.x86_64.rpm",
+					"gupnp-devel-0:1.0.6-2.el8_4.aarch64.rpm",
+					"gupnp-devel-0:1.0.6-2.el8_4.i686.rpm",
+					"gupnp-devel-0:1.0.6-2.el8_4.x86_64.rpm",
+					"gupnp-docs-0:1.0.6-2.el8_4.noarch.rpm"
+				]
+			}
+		}
+	}
+}

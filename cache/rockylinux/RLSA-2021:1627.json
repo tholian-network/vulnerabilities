@@ -1,0 +1,86 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:1627",
+		"synopsis": "Moderate: trousers security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for TrouSerS is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "TrouSerS is an implementation of the Trusted Computing Group\u0026#39;s Software Stack (TSS) specification. TrouSerS enables the user to write applications that make use of the Trusted Platform Module (TPM) hardware.\nThe following packages have been upgraded to a later upstream version: trousers (0.3.15). (BZ#1725782)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1870052",
+				"description": "CVE-2020-24332 trousers: tss user can be used to create or corrupt existing files, this could lead to DoS",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1870052"
+			},
+			{
+				"ticket": "1870054",
+				"description": "CVE-2020-24330 trousers: fails to drop the root gid privilege when no longer needed",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1870054"
+			},
+			{
+				"ticket": "1870056",
+				"description": "CVE-2020-24331 trousers: tss user still has read and write access to the /etc/tcsd.conf file if tcsd is started as root",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1870056"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-24330",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-24330.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-271"
+			},
+			{
+				"name": "CVE-2020-24331",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-24331.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2020-24332",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-24332.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-59-\u003eCWE-22"
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"trousers-0:0.3.15-1.el8.aarch64.rpm",
+					"trousers-0:0.3.15-1.el8.src.rpm",
+					"trousers-0:0.3.15-1.el8.x86_64.rpm",
+					"trousers-debuginfo-0:0.3.15-1.el8.aarch64.rpm",
+					"trousers-debuginfo-0:0.3.15-1.el8.i686.rpm",
+					"trousers-debuginfo-0:0.3.15-1.el8.x86_64.rpm",
+					"trousers-debugsource-0:0.3.15-1.el8.aarch64.rpm",
+					"trousers-debugsource-0:0.3.15-1.el8.i686.rpm",
+					"trousers-debugsource-0:0.3.15-1.el8.x86_64.rpm",
+					"trousers-devel-0:0.3.15-1.el8.aarch64.rpm",
+					"trousers-devel-0:0.3.15-1.el8.i686.rpm",
+					"trousers-devel-0:0.3.15-1.el8.x86_64.rpm",
+					"trousers-lib-0:0.3.15-1.el8.aarch64.rpm",
+					"trousers-lib-0:0.3.15-1.el8.i686.rpm",
+					"trousers-lib-0:0.3.15-1.el8.x86_64.rpm",
+					"trousers-lib-debuginfo-0:0.3.15-1.el8.aarch64.rpm",
+					"trousers-lib-debuginfo-0:0.3.15-1.el8.i686.rpm",
+					"trousers-lib-debuginfo-0:0.3.15-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

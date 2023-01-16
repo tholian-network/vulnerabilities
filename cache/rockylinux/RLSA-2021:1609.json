@@ -1,0 +1,103 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:1609",
+		"synopsis": "Moderate: p11-kit security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for p11-kit is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The p11-kit packages provide a mechanism to manage PKCS#11 modules. The p11-kit-trust subpackage includes a PKCS#11 trust module that provides certificate anchors and black lists based on configuration files.\nThe following packages have been upgraded to a later upstream version: p11-kit (0.23.22). (BZ#1887853)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1665172",
+				"description": "SIGABRT when trust anchor read a malformed file",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1665172"
+			},
+			{
+				"ticket": "1890464",
+				"description": "p11-kit freeze for invalid module configuration",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890464"
+			},
+			{
+				"ticket": "1903588",
+				"description": "CVE-2020-29363 p11-kit: out-of-bounds write in p11_rpc_buffer_get_byte_array_value function in rpc-message.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1903588"
+			},
+			{
+				"ticket": "1903590",
+				"description": "CVE-2020-29362 p11-kit: out-of-bounds read in p11_rpc_buffer_get_byte_array function in rpc-message.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1903590"
+			},
+			{
+				"ticket": "1903592",
+				"description": "CVE-2020-29361 p11-kit: integer overflow when allocating memory for arrays or attributes and object identifiers",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1903592"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-29361",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-29361.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-190"
+			},
+			{
+				"name": "CVE-2020-29362",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-29362.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2020-29363",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-29363.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-787"
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"p11-kit-0:0.23.22-1.el8.aarch64.rpm",
+					"p11-kit-0:0.23.22-1.el8.i686.rpm",
+					"p11-kit-0:0.23.22-1.el8.src.rpm",
+					"p11-kit-0:0.23.22-1.el8.x86_64.rpm",
+					"p11-kit-debuginfo-0:0.23.22-1.el8.aarch64.rpm",
+					"p11-kit-debuginfo-0:0.23.22-1.el8.i686.rpm",
+					"p11-kit-debuginfo-0:0.23.22-1.el8.x86_64.rpm",
+					"p11-kit-debugsource-0:0.23.22-1.el8.aarch64.rpm",
+					"p11-kit-debugsource-0:0.23.22-1.el8.i686.rpm",
+					"p11-kit-debugsource-0:0.23.22-1.el8.x86_64.rpm",
+					"p11-kit-devel-0:0.23.22-1.el8.aarch64.rpm",
+					"p11-kit-devel-0:0.23.22-1.el8.i686.rpm",
+					"p11-kit-devel-0:0.23.22-1.el8.x86_64.rpm",
+					"p11-kit-server-0:0.23.22-1.el8.aarch64.rpm",
+					"p11-kit-server-0:0.23.22-1.el8.x86_64.rpm",
+					"p11-kit-server-debuginfo-0:0.23.22-1.el8.aarch64.rpm",
+					"p11-kit-server-debuginfo-0:0.23.22-1.el8.x86_64.rpm",
+					"p11-kit-trust-0:0.23.22-1.el8.aarch64.rpm",
+					"p11-kit-trust-0:0.23.22-1.el8.i686.rpm",
+					"p11-kit-trust-0:0.23.22-1.el8.x86_64.rpm",
+					"p11-kit-trust-debuginfo-0:0.23.22-1.el8.aarch64.rpm",
+					"p11-kit-trust-debuginfo-0:0.23.22-1.el8.i686.rpm",
+					"p11-kit-trust-debuginfo-0:0.23.22-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

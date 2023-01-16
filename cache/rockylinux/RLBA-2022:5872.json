@@ -1,0 +1,49 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5872",
+		"synopsis": "sos bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for sos is now available for Rocky Linux 8.",
+		"description": "The sos package contains a set of utilities that gather information from\nsystem hardware, logs, and configuration files. The information can then be\nused for diagnostic purposes and debugging.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2098639",
+				"description": "Obfuscate all passwords from ovirt answer files [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2098639"
+			},
+			{
+				"ticket": "2098643",
+				"description": "sos disables openshift_ovn plugin [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2098643"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:5872",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5872",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-08-03T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"sos-0:4.2-20.el8_6.noarch.rpm",
+					"sos-0:4.2-20.el8_6.src.rpm",
+					"sos-audit-0:4.2-20.el8_6.noarch.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,50 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7482",
+		"synopsis": "Moderate: qt5 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for qt5 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The Qt5 libraries packages provide Qt 5, version 5 of the Qt cross-platform application framework.\nThe following packages have been upgraded to a later upstream version: qt5 (5.15.3). (BZ#2061377)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2055505",
+				"description": "CVE-2022-25255 qt: QProcess could execute a binary from the current working directory when not found in the PATH",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2055505"
+			},
+			{
+				"ticket": "2061377",
+				"description": "Rebase qt5 to 5.15.3",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2061377"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-25255",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-25255.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-427"
+			}
+		],
+		"publishedAt": "2022-11-13T07:50:17.396838Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"qt5-0:5.15.3-1.el8.src.rpm",
+					"qt5-devel-0:5.15.3-1.el8.noarch.rpm",
+					"qt5-rpm-macros-0:5.15.3-1.el8.noarch.rpm",
+					"qt5-srpm-macros-0:5.15.3-1.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

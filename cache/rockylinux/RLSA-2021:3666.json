@@ -1,0 +1,148 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:3666",
+		"synopsis": "Important: nodejs:14 security and bug fix update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for the nodejs:14 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Node.js is a software development platform for building fast and scalable network applications in the JavaScript programming language. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1956818",
+				"description": "CVE-2021-23343 nodejs-path-parse: ReDoS via splitDeviceRe, splitTailRe and splitPathRe",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1956818"
+			},
+			{
+				"ticket": "1988342",
+				"description": "CVE-2021-3672 c-ares: Missing input validation of host names may lead to domain hijacking",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1988342"
+			},
+			{
+				"ticket": "1988394",
+				"description": "CVE-2021-22930 nodejs: Use-after-free on close http2 on stream canceling",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1988394"
+			},
+			{
+				"ticket": "1990409",
+				"description": "CVE-2021-32804 nodejs-tar: Insufficient absolute path sanitization allowing arbitrary file creation and overwrite",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1990409"
+			},
+			{
+				"ticket": "1990415",
+				"description": "CVE-2021-32803 nodejs-tar: Insufficient symlink protection allowing arbitrary file creation and overwrite",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1990415"
+			},
+			{
+				"ticket": "1993019",
+				"description": "CVE-2021-22931 nodejs: Improper handling of untypical characters in domain names",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1993019"
+			},
+			{
+				"ticket": "1993029",
+				"description": "CVE-2021-22940 nodejs: Use-after-free on close http2 on stream canceling",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1993029"
+			},
+			{
+				"ticket": "1993039",
+				"description": "CVE-2021-22939 nodejs: Incomplete validation of tls rejectUnauthorized parameter",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1993039"
+			},
+			{
+				"ticket": "1993924",
+				"description": "nodejs:14/nodejs: Make FIPS options always available [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1993924"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-22930",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22930.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "9.8",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-22931",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22931.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L",
+				"cvss3BaseScore": "5.0",
+				"cwe": "CWE-20"
+			},
+			{
+				"name": "CVE-2021-22939",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22939.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+				"cvss3BaseScore": "3.7",
+				"cwe": "CWE-20"
+			},
+			{
+				"name": "CVE-2021-22940",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22940.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-23343",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-23343.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-400"
+			},
+			{
+				"name": "CVE-2021-32803",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-32803.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+				"cvss3BaseScore": "8.1",
+				"cwe": "CWE-22"
+			},
+			{
+				"name": "CVE-2021-32804",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-32804.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+				"cvss3BaseScore": "8.1",
+				"cwe": "CWE-22"
+			},
+			{
+				"name": "CVE-2021-3672",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3672.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+				"cvss3BaseScore": "5.6",
+				"cwe": "CWE-79"
+			}
+		],
+		"publishedAt": "2021-09-27T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nodejs-nodemon-0:2.0.3-1.module+el8.6.0+982+9fdca2d4.noarch.rpm",
+					"nodejs-nodemon-0:2.0.3-1.module+el8.6.0+982+9fdca2d4.src.rpm",
+					"nodejs-packaging-0:23-3.module+el8.5.0+733+de4fee6c.noarch.rpm",
+					"nodejs-packaging-0:23-3.module+el8.5.0+733+de4fee6c.src.rpm"
+				]
+			}
+		}
+	}
+}

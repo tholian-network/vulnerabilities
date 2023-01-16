@@ -1,0 +1,43 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1927",
+		"synopsis": "mozilla-filesystem bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for mozilla-filesystem is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2031231",
+				"description": "Unnecessary dependency on mozilla-filesystem for firefox-91",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2031231"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1927",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1927",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mozilla-filesystem-0:1.9-19.el8.aarch64.rpm",
+					"mozilla-filesystem-0:1.9-19.el8.src.rpm",
+					"mozilla-filesystem-0:1.9-19.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,91 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4257",
+		"synopsis": "Moderate: httpd:2.4 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the httpd:2.4 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The httpd packages provide the Apache HTTP Server, a powerful, efficient, and extensible web server.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1905613",
+				"description": "mod_ssl does not like valid certificate chain",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1905613"
+			},
+			{
+				"ticket": "1934741",
+				"description": "Apache trademark update - new logo",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1934741"
+			},
+			{
+				"ticket": "1935742",
+				"description": "[RFE] backport samesite/httponly/secure flags for usertrack",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1935742"
+			},
+			{
+				"ticket": "1937334",
+				"description": "SSLProtocol with based virtual hosts",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1937334"
+			},
+			{
+				"ticket": "1952557",
+				"description": "mod_proxy_wstunnel.html is a malformed XML",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1952557"
+			},
+			{
+				"ticket": "1966729",
+				"description": "CVE-2021-26690 httpd: mod_session: NULL pointer dereference when parsing Cookie header",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1966729"
+			},
+			{
+				"ticket": "1966743",
+				"description": "CVE-2021-30641 httpd: Unexpected URL matching with 'MergeSlashes OFF'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1966743"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-26690",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-26690.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-476"
+			},
+			{
+				"name": "CVE-2021-30641",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30641.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "5.9",
+				"cwe": "CWE-20"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mod_md-1:2.0.8-8.module+el8.5.0+695+1fa8055e.aarch64.rpm",
+					"mod_md-1:2.0.8-8.module+el8.5.0+695+1fa8055e.src.rpm",
+					"mod_md-1:2.0.8-8.module+el8.5.0+695+1fa8055e.x86_64.rpm",
+					"mod_md-debuginfo-1:2.0.8-8.module+el8.5.0+695+1fa8055e.aarch64.rpm",
+					"mod_md-debuginfo-1:2.0.8-8.module+el8.5.0+695+1fa8055e.x86_64.rpm",
+					"mod_md-debugsource-1:2.0.8-8.module+el8.5.0+695+1fa8055e.aarch64.rpm",
+					"mod_md-debugsource-1:2.0.8-8.module+el8.5.0+695+1fa8055e.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

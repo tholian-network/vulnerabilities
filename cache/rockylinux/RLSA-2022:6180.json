@@ -1,0 +1,48 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:6180",
+		"synopsis": "Important: rsync security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for rsync is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The rsync utility enables the users to copy and synchronize files locally or across a network. Synchronization with rsync is fast because rsync only sends the differences in files over the network instead of sending whole files. The rsync utility is also used as a mirroring tool.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2110928",
+				"description": "CVE-2022-29154 rsync: remote arbitrary files write inside the directories of connecting peers",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2110928"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-29154",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-29154.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H",
+				"cvss3BaseScore": "7.4",
+				"cwe": "CWE-22"
+			}
+		],
+		"publishedAt": "2022-08-24T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"rsync-0:3.1.3-14.el8_6.3.aarch64.rpm",
+					"rsync-0:3.1.3-14.el8_6.3.src.rpm",
+					"rsync-0:3.1.3-14.el8_6.3.x86_64.rpm",
+					"rsync-daemon-0:3.1.3-14.el8_6.3.noarch.rpm",
+					"rsync-debuginfo-0:3.1.3-14.el8_6.3.aarch64.rpm",
+					"rsync-debuginfo-0:3.1.3-14.el8_6.3.x86_64.rpm",
+					"rsync-debugsource-0:3.1.3-14.el8_6.3.aarch64.rpm",
+					"rsync-debugsource-0:3.1.3-14.el8_6.3.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

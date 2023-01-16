@@ -1,0 +1,83 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:1943",
+		"synopsis": "pmdk:1_fileformat_v6 bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for the pmdk:1_fileformat_v6 module is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2061720",
+				"description": "libpmemobj-cpp-1.11-1.module+el8.6.0+14043+a2e27587 fails to build if clang is installed",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2061720"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2022:1943",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:1943",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"daxio-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"daxio-debuginfo-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmem-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmemblk-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmemblk-debug-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmemblk-debug-debuginfo-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmemblk-debuginfo-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmemblk-devel-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmem-debug-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmem-debug-debuginfo-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmem-debuginfo-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmem-devel-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmemlog-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmemlog-debug-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmemlog-debug-debuginfo-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmemlog-debuginfo-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmemlog-devel-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmemobj-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmemobj-cpp-0:1.11-2.module+el8.6.0+818+bd395263.src.rpm",
+					"libpmemobj-debug-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmemobj-debug-debuginfo-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmemobj-debuginfo-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmemobj-devel-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmemobj++-devel-0:1.11-2.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmemobj++-doc-0:1.11-2.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmempool-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmempool-debug-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmempool-debug-debuginfo-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmempool-debuginfo-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"libpmempool-devel-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"librpmem-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"librpmem-debug-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"librpmem-debug-debuginfo-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"librpmem-debuginfo-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"librpmem-devel-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"pmdk-0:1.11.1-1.module+el8.6.0+818+bd395263.src.rpm",
+					"pmdk-debuginfo-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"pmdk-debugsource-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"pmempool-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"pmempool-debuginfo-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"pmreorder-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"rpmemd-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm",
+					"rpmemd-debuginfo-0:1.11.1-1.module+el8.6.0+818+bd395263.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

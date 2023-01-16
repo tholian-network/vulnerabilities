@@ -1,0 +1,128 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:1962",
+		"synopsis": "vulkan bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for vulkan is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2016188",
+				"description": "Rebase vulkan-loader in 8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016188"
+			},
+			{
+				"ticket": "2016189",
+				"description": "Rebase vulkan-headers in 8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016189"
+			},
+			{
+				"ticket": "2016190",
+				"description": "Rebase spirv-headers in 8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016190"
+			},
+			{
+				"ticket": "2016191",
+				"description": "Rebase spirv-tools in 8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016191"
+			},
+			{
+				"ticket": "2016192",
+				"description": "Rebase vulkan-tools in 8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016192"
+			},
+			{
+				"ticket": "2016193",
+				"description": "Rebase vulkan-validation-layers in 8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016193"
+			},
+			{
+				"ticket": "2026527",
+				"description": "Rebase glslang in 8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2026527"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2022:1962",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:1962",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"spirv-tools-0:2022.1-1.20220202.git45dd184.el8.aarch64.rpm",
+					"spirv-tools-0:2022.1-1.20220202.git45dd184.el8.src.rpm",
+					"spirv-tools-0:2022.1-1.20220202.git45dd184.el8.x86_64.rpm",
+					"spirv-tools-debuginfo-0:2022.1-1.20220202.git45dd184.el8.aarch64.rpm",
+					"spirv-tools-debuginfo-0:2022.1-1.20220202.git45dd184.el8.i686.rpm",
+					"spirv-tools-debuginfo-0:2022.1-1.20220202.git45dd184.el8.x86_64.rpm",
+					"spirv-tools-debugsource-0:2022.1-1.20220202.git45dd184.el8.aarch64.rpm",
+					"spirv-tools-debugsource-0:2022.1-1.20220202.git45dd184.el8.x86_64.rpm",
+					"spirv-tools-devel-0:2022.1-1.20220202.git45dd184.el8.aarch64.rpm",
+					"spirv-tools-devel-0:2022.1-1.20220202.git45dd184.el8.i686.rpm",
+					"spirv-tools-devel-0:2022.1-1.20220202.git45dd184.el8.x86_64.rpm",
+					"spirv-tools-libs-0:2022.1-1.20220202.git45dd184.el8.aarch64.rpm",
+					"spirv-tools-libs-0:2022.1-1.20220202.git45dd184.el8.i686.rpm",
+					"spirv-tools-libs-0:2022.1-1.20220202.git45dd184.el8.x86_64.rpm",
+					"spirv-tools-libs-debuginfo-0:2022.1-1.20220202.git45dd184.el8.aarch64.rpm",
+					"spirv-tools-libs-debuginfo-0:2022.1-1.20220202.git45dd184.el8.i686.rpm",
+					"spirv-tools-libs-debuginfo-0:2022.1-1.20220202.git45dd184.el8.x86_64.rpm",
+					"vulkan-headers-0:1.3.204.0-1.el8.noarch.rpm",
+					"vulkan-headers-0:1.3.204.0-1.el8.src.rpm",
+					"vulkan-loader-0:1.3.204.0-2.el8.aarch64.rpm",
+					"vulkan-loader-0:1.3.204.0-2.el8.i686.rpm",
+					"vulkan-loader-0:1.3.204.0-2.el8.src.rpm",
+					"vulkan-loader-0:1.3.204.0-2.el8.x86_64.rpm",
+					"vulkan-loader-debuginfo-0:1.3.204.0-2.el8.aarch64.rpm",
+					"vulkan-loader-debuginfo-0:1.3.204.0-2.el8.i686.rpm",
+					"vulkan-loader-debuginfo-0:1.3.204.0-2.el8.x86_64.rpm",
+					"vulkan-loader-debugsource-0:1.3.204.0-2.el8.aarch64.rpm",
+					"vulkan-loader-debugsource-0:1.3.204.0-2.el8.i686.rpm",
+					"vulkan-loader-debugsource-0:1.3.204.0-2.el8.x86_64.rpm",
+					"vulkan-loader-devel-0:1.3.204.0-2.el8.aarch64.rpm",
+					"vulkan-loader-devel-0:1.3.204.0-2.el8.i686.rpm",
+					"vulkan-loader-devel-0:1.3.204.0-2.el8.x86_64.rpm",
+					"vulkan-tools-0:1.3.204.0-1.el8.aarch64.rpm",
+					"vulkan-tools-0:1.3.204.0-1.el8.src.rpm",
+					"vulkan-tools-0:1.3.204.0-1.el8.x86_64.rpm",
+					"vulkan-tools-debuginfo-0:1.3.204.0-1.el8.aarch64.rpm",
+					"vulkan-tools-debuginfo-0:1.3.204.0-1.el8.x86_64.rpm",
+					"vulkan-tools-debugsource-0:1.3.204.0-1.el8.aarch64.rpm",
+					"vulkan-tools-debugsource-0:1.3.204.0-1.el8.x86_64.rpm",
+					"vulkan-validation-layers-0:1.3.204.0-1.el8.aarch64.rpm",
+					"vulkan-validation-layers-0:1.3.204.0-1.el8.i686.rpm",
+					"vulkan-validation-layers-0:1.3.204.0-1.el8.src.rpm",
+					"vulkan-validation-layers-0:1.3.204.0-1.el8.x86_64.rpm",
+					"vulkan-validation-layers-debuginfo-0:1.3.204.0-1.el8.aarch64.rpm",
+					"vulkan-validation-layers-debuginfo-0:1.3.204.0-1.el8.i686.rpm",
+					"vulkan-validation-layers-debuginfo-0:1.3.204.0-1.el8.x86_64.rpm",
+					"vulkan-validation-layers-debugsource-0:1.3.204.0-1.el8.aarch64.rpm",
+					"vulkan-validation-layers-debugsource-0:1.3.204.0-1.el8.i686.rpm",
+					"vulkan-validation-layers-debugsource-0:1.3.204.0-1.el8.x86_64.rpm",
+					"vulkan-validation-layers-devel-0:1.3.204.0-1.el8.aarch64.rpm",
+					"vulkan-validation-layers-devel-0:1.3.204.0-1.el8.i686.rpm",
+					"vulkan-validation-layers-devel-0:1.3.204.0-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

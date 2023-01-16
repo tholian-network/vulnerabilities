@@ -1,0 +1,69 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2077",
+		"synopsis": "libldb bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libldb is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2013605",
+				"description": "Rebase libldb to the version required by Samba",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013605"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2077",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2077",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"ldb-tools-0:2.4.1-1.el8.aarch64.rpm",
+					"ldb-tools-0:2.4.1-1.el8.x86_64.rpm",
+					"ldb-tools-debuginfo-0:2.4.1-1.el8.aarch64.rpm",
+					"ldb-tools-debuginfo-0:2.4.1-1.el8.x86_64.rpm",
+					"libldb-0:2.4.1-1.el8.aarch64.rpm",
+					"libldb-0:2.4.1-1.el8.i686.rpm",
+					"libldb-0:2.4.1-1.el8.src.rpm",
+					"libldb-0:2.4.1-1.el8.x86_64.rpm",
+					"libldb-debuginfo-0:2.4.1-1.el8.aarch64.rpm",
+					"libldb-debuginfo-0:2.4.1-1.el8.i686.rpm",
+					"libldb-debuginfo-0:2.4.1-1.el8.x86_64.rpm",
+					"libldb-debugsource-0:2.4.1-1.el8.aarch64.rpm",
+					"libldb-debugsource-0:2.4.1-1.el8.i686.rpm",
+					"libldb-debugsource-0:2.4.1-1.el8.x86_64.rpm",
+					"libldb-devel-0:2.4.1-1.el8.aarch64.rpm",
+					"libldb-devel-0:2.4.1-1.el8.i686.rpm",
+					"libldb-devel-0:2.4.1-1.el8.x86_64.rpm",
+					"python3-ldb-0:2.4.1-1.el8.aarch64.rpm",
+					"python3-ldb-0:2.4.1-1.el8.i686.rpm",
+					"python3-ldb-0:2.4.1-1.el8.x86_64.rpm",
+					"python3-ldb-debuginfo-0:2.4.1-1.el8.aarch64.rpm",
+					"python3-ldb-debuginfo-0:2.4.1-1.el8.i686.rpm",
+					"python3-ldb-debuginfo-0:2.4.1-1.el8.x86_64.rpm",
+					"python3-ldb-devel-0:2.4.1-1.el8.aarch64.rpm",
+					"python3-ldb-devel-0:2.4.1-1.el8.i686.rpm",
+					"python3-ldb-devel-0:2.4.1-1.el8.x86_64.rpm",
+					"python-ldb-devel-common-0:2.4.1-1.el8.aarch64.rpm",
+					"python-ldb-devel-common-0:2.4.1-1.el8.i686.rpm",
+					"python-ldb-devel-common-0:2.4.1-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

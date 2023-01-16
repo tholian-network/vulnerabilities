@@ -1,0 +1,53 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1808",
+		"synopsis": "Moderate: aspell security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for aspell is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "GNU Aspell is a spell checker designed to eventually replace Ispell. It can either be used as a library or as an independent spell checker.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1984066",
+				"description": "CVE-2019-25051 aspell: Heap-buffer-overflow in acommon::ObjStack::dup_top",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1984066"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2019-25051",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2019-25051.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-119"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"aspell-12:0.60.6.1-22.el8.aarch64.rpm",
+					"aspell-12:0.60.6.1-22.el8.i686.rpm",
+					"aspell-12:0.60.6.1-22.el8.src.rpm",
+					"aspell-12:0.60.6.1-22.el8.x86_64.rpm",
+					"aspell-debuginfo-12:0.60.6.1-22.el8.aarch64.rpm",
+					"aspell-debuginfo-12:0.60.6.1-22.el8.i686.rpm",
+					"aspell-debuginfo-12:0.60.6.1-22.el8.x86_64.rpm",
+					"aspell-debugsource-12:0.60.6.1-22.el8.aarch64.rpm",
+					"aspell-debugsource-12:0.60.6.1-22.el8.i686.rpm",
+					"aspell-debugsource-12:0.60.6.1-22.el8.x86_64.rpm",
+					"aspell-devel-12:0.60.6.1-22.el8.aarch64.rpm",
+					"aspell-devel-12:0.60.6.1-22.el8.i686.rpm",
+					"aspell-devel-12:0.60.6.1-22.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

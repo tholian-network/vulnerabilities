@@ -1,0 +1,374 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:1985",
+		"synopsis": "NetworkManager bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for NetworkManager is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1753677",
+				"description": "High cpu usage while non-controlled interface is mangling tc filters",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1753677"
+			},
+			{
+				"ticket": "1763054",
+				"description": "connection.interface-name problem with type dummy",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1763054"
+			},
+			{
+				"ticket": "1852445",
+				"description": "[NMCI] config file specifying VFs number does not work when connection is up",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1852445"
+			},
+			{
+				"ticket": "1861527",
+				"description": "Excessive memory and CPU usage on a router with IPv6 BGP feed.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1861527"
+			},
+			{
+				"ticket": "1868254",
+				"description": "[nm-next] refactor NetworkManager's IP configuration done by NMDevice",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1868254"
+			},
+			{
+				"ticket": "1870059",
+				"description": "[RFE] show gateway instead of 0.0.0.0/0 in nmcli output",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1870059"
+			},
+			{
+				"ticket": "1871950",
+				"description": "cannot set bridge mac-ageing-time to 0",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1871950"
+			},
+			{
+				"ticket": "1878166",
+				"description": "SSHFP+DNSSEC not acknowledged by openssh on RHEL8: \"Matching host key fingerprint found in DNS.\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1878166"
+			},
+			{
+				"ticket": "1897004",
+				"description": "Advertised link modes not show 2500baseT and 5000baseT",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1897004"
+			},
+			{
+				"ticket": "1935026",
+				"description": "cannot delete ovs bridge",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1935026"
+			},
+			{
+				"ticket": "1937823",
+				"description": "[RFE] support route types \"unreachable\" and \"prohibit\" in NetworkManager",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1937823"
+			},
+			{
+				"ticket": "1949023",
+				"description": "Conscious language - deprecate \"master\"/\"slave\" on bonding and bridge API",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1949023"
+			},
+			{
+				"ticket": "1961666",
+				"description": "In dracut allow enough time for DHCP allocation with dual stack, don't get stuck forever on missing IP family",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1961666"
+			},
+			{
+				"ticket": "1973536",
+				"description": "MTU got decrease 1 after removal of 802-3-ethernet configuration",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1973536"
+			},
+			{
+				"ticket": "1983747",
+				"description": "Wi-Fi in GNOME shell System Menu is showing connected when it is disconnected.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1983747"
+			},
+			{
+				"ticket": "1987286",
+				"description": "[RFE] Use IFLA_PERM_ADDRESS/rtnetlink or fallback to ethtool call for permanent MAC/HW address",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1987286"
+			},
+			{
+				"ticket": "1992829",
+				"description": "PKCS module not passing the -login flag while using the smartcard  during openssl eap-tls handshake",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992829"
+			},
+			{
+				"ticket": "1996617",
+				"description": "[Rebase] Rebase NetworkManager to last stable release",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1996617"
+			},
+			{
+				"ticket": "2001563",
+				"description": "[RFE] rx_queue support for OVS-DPDK configuration",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001563"
+			},
+			{
+				"ticket": "2001851",
+				"description": "Unable to set the MTU for the OVS-DPDK ports",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001851"
+			},
+			{
+				"ticket": "2006370",
+				"description": "[nm-cloud-setup] [AWS] default route inter-feres with other subnets on the VM (making containers unreachable) [rhel-8.6]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2006370"
+			},
+			{
+				"ticket": "2006408",
+				"description": "IPv6 Default gateway deleted from routing table [rhel-8.6]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2006408"
+			},
+			{
+				"ticket": "2006677",
+				"description": "[NMCI] ipv4_dns-search_remove test failure",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2006677"
+			},
+			{
+				"ticket": "2010561",
+				"description": "/usr/lib/systemd/system/nm-sudo.service:47: Unknown lvalue 'ProtectClock' in section 'Service'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2010561"
+			},
+			{
+				"ticket": "2010640",
+				"description": "Network route disappears after service restart",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2010640"
+			},
+			{
+				"ticket": "2012123",
+				"description": "CS8 - NetworkManager undefined symbol: ifname_valid",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012123"
+			},
+			{
+				"ticket": "2013266",
+				"description": "[NMCI] [abrt] [faf] NetworkManager: _g_log_abort(): vlan_ipv4_ipv6_restart_persistence killed by 5",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013266"
+			},
+			{
+				"ticket": "2013587",
+				"description": "[RFE] Add blackhole routing as a supported routing type in NetworkManager",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013587"
+			},
+			{
+				"ticket": "2016348",
+				"description": "[NMCI] nmcli_ethernet_wol_from_file_to_default test broken",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016348"
+			},
+			{
+				"ticket": "2022275",
+				"description": "[NMCI] NM_reboot_openvswitch_vlan_configuration failure",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2022275"
+			},
+			{
+				"ticket": "2026288",
+				"description": "[NMCI] [abrt] [faf] NetworkManager: raise(): /usr/sbin/NetworkManager killed by 6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2026288"
+			},
+			{
+				"ticket": "2027267",
+				"description": "NetworkManager-1.34.0-0.3 not renewing DHCPv6 leases when using internal DHCP client",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2027267"
+			},
+			{
+				"ticket": "2027490",
+				"description": "firewalld upstream test rhbz1928860.at fails with \"INVALID_INTERFACE: ovs-interface-port\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2027490"
+			},
+			{
+				"ticket": "2028385",
+				"description": "[NMCI] [abrt] [faf] NetworkManager: unknown function(): gsm_sim_create_default_connection killed by 5",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028385"
+			},
+			{
+				"ticket": "2028404",
+				"description": "[NMCI] [abrt] [faf] NetworkManager: raise(): nmtui_vlan_deactivate_connection_wo_autoconnect killed by 6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028404"
+			},
+			{
+				"ticket": "2028427",
+				"description": "[NMCI] [abrt] [faf] NetworkManager: raise(): gsm_sim_create_default_connection killed by 6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028427"
+			},
+			{
+				"ticket": "2028751",
+				"description": "The ipv4.dad-timeout parameter in NetworkManager is invalid for bonding device.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028751"
+			},
+			{
+				"ticket": "2028849",
+				"description": "[NMCI] vlan_create_500_vlans test failure",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028849"
+			},
+			{
+				"ticket": "2035519",
+				"description": "Re-attach unmanaged ports to bridge controller after rollback",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2035519"
+			},
+			{
+				"ticket": "2037411",
+				"description": "nmstatectl removes routes of unmanaged interfaces (NM process hanging/blocked?)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2037411"
+			},
+			{
+				"ticket": "2039331",
+				"description": "libnm: dangling pointer while destroying NMClient (or removing object from D-Bus) can lead to crash",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2039331"
+			},
+			{
+				"ticket": "2040683",
+				"description": "Configure route-table and reapply take effect immediately",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2040683"
+			},
+			{
+				"ticket": "2043514",
+				"description": "[NMCI] nmcli_general_activate_static_connection_carrier_not_ignored test failure",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2043514"
+			},
+			{
+				"ticket": "2052465",
+				"description": "[NMCI] ovs_mtu test fail",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2052465"
+			},
+			{
+				"ticket": "2053603",
+				"description": "[NMCI] inf_create_port_novice_mode test fail",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2053603"
+			},
+			{
+				"ticket": "2059138",
+				"description": "No DNS configured on WWAN modem connections",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2059138"
+			},
+			{
+				"ticket": "2059673",
+				"description": "NetworkManager DHCP client does not work maybe due to received NAKs",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2059673"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2022:1985",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:1985",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"NetworkManager-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-1:1.36.0-4.el8.src.rpm",
+					"NetworkManager-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-adsl-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-adsl-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-adsl-debuginfo-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-adsl-debuginfo-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-bluetooth-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-bluetooth-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-bluetooth-debuginfo-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-bluetooth-debuginfo-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-cloud-setup-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-cloud-setup-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-cloud-setup-debuginfo-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-cloud-setup-debuginfo-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-config-connectivity-redhat-1:1.36.0-4.el8.noarch.rpm",
+					"NetworkManager-config-server-1:1.36.0-4.el8.noarch.rpm",
+					"NetworkManager-debuginfo-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-debuginfo-1:1.36.0-4.el8.i686.rpm",
+					"NetworkManager-debuginfo-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-debugsource-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-debugsource-1:1.36.0-4.el8.i686.rpm",
+					"NetworkManager-debugsource-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-dispatcher-routing-rules-1:1.36.0-4.el8.noarch.rpm",
+					"NetworkManager-initscripts-updown-1:1.36.0-4.el8.noarch.rpm",
+					"NetworkManager-libnm-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-libnm-1:1.36.0-4.el8.i686.rpm",
+					"NetworkManager-libnm-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-libnm-debuginfo-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-libnm-debuginfo-1:1.36.0-4.el8.i686.rpm",
+					"NetworkManager-libnm-debuginfo-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-libnm-devel-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-libnm-devel-1:1.36.0-4.el8.i686.rpm",
+					"NetworkManager-libnm-devel-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-ovs-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-ovs-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-ovs-debuginfo-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-ovs-debuginfo-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-ppp-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-ppp-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-ppp-debuginfo-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-ppp-debuginfo-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-team-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-team-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-team-debuginfo-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-team-debuginfo-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-tui-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-tui-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-tui-debuginfo-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-tui-debuginfo-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-wifi-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-wifi-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-wifi-debuginfo-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-wifi-debuginfo-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-wwan-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-wwan-1:1.36.0-4.el8.x86_64.rpm",
+					"NetworkManager-wwan-debuginfo-1:1.36.0-4.el8.aarch64.rpm",
+					"NetworkManager-wwan-debuginfo-1:1.36.0-4.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,73 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2105",
+		"synopsis": "dracut bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for dracut is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1712424",
+				"description": "kickstart installation will fail with \"Warning: /dev/root does not exist\" when specifying non existent network interface",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1712424"
+			},
+			{
+				"ticket": "1996019",
+				"description": "FIPS: misleading \"FATAL: Module xxx not found\" messages when booting",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1996019"
+			},
+			{
+				"ticket": "2023665",
+				"description": "Make sure dracut-initramfs-restore cleans up the incompletely unpacked initramfs upon forced shutdown",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2023665"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2105",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2105",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"dracut-0:049-201.git20220131.el8.aarch64.rpm",
+					"dracut-0:049-201.git20220131.el8.src.rpm",
+					"dracut-0:049-201.git20220131.el8.x86_64.rpm",
+					"dracut-caps-0:049-201.git20220131.el8.aarch64.rpm",
+					"dracut-caps-0:049-201.git20220131.el8.x86_64.rpm",
+					"dracut-config-generic-0:049-201.git20220131.el8.aarch64.rpm",
+					"dracut-config-generic-0:049-201.git20220131.el8.x86_64.rpm",
+					"dracut-config-rescue-0:049-201.git20220131.el8.aarch64.rpm",
+					"dracut-config-rescue-0:049-201.git20220131.el8.x86_64.rpm",
+					"dracut-debuginfo-0:049-201.git20220131.el8.aarch64.rpm",
+					"dracut-debuginfo-0:049-201.git20220131.el8.x86_64.rpm",
+					"dracut-debugsource-0:049-201.git20220131.el8.aarch64.rpm",
+					"dracut-debugsource-0:049-201.git20220131.el8.x86_64.rpm",
+					"dracut-live-0:049-201.git20220131.el8.aarch64.rpm",
+					"dracut-live-0:049-201.git20220131.el8.x86_64.rpm",
+					"dracut-network-0:049-201.git20220131.el8.aarch64.rpm",
+					"dracut-network-0:049-201.git20220131.el8.x86_64.rpm",
+					"dracut-squash-0:049-201.git20220131.el8.aarch64.rpm",
+					"dracut-squash-0:049-201.git20220131.el8.x86_64.rpm",
+					"dracut-tools-0:049-201.git20220131.el8.aarch64.rpm",
+					"dracut-tools-0:049-201.git20220131.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

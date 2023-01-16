@@ -1,0 +1,62 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1928",
+		"synopsis": "tigervnc bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for tigervnc is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2021892",
+				"description": "Rebase Tigervnc to 1.12.0",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2021892"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1928",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1928",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"tigervnc-0:1.12.0-4.el8.aarch64.rpm",
+					"tigervnc-0:1.12.0-4.el8.src.rpm",
+					"tigervnc-0:1.12.0-4.el8.x86_64.rpm",
+					"tigervnc-debuginfo-0:1.12.0-4.el8.aarch64.rpm",
+					"tigervnc-debuginfo-0:1.12.0-4.el8.x86_64.rpm",
+					"tigervnc-debugsource-0:1.12.0-4.el8.aarch64.rpm",
+					"tigervnc-debugsource-0:1.12.0-4.el8.x86_64.rpm",
+					"tigervnc-icons-0:1.12.0-4.el8.noarch.rpm",
+					"tigervnc-license-0:1.12.0-4.el8.noarch.rpm",
+					"tigervnc-selinux-0:1.12.0-4.el8.noarch.rpm",
+					"tigervnc-server-0:1.12.0-4.el8.aarch64.rpm",
+					"tigervnc-server-0:1.12.0-4.el8.x86_64.rpm",
+					"tigervnc-server-debuginfo-0:1.12.0-4.el8.aarch64.rpm",
+					"tigervnc-server-debuginfo-0:1.12.0-4.el8.x86_64.rpm",
+					"tigervnc-server-minimal-0:1.12.0-4.el8.aarch64.rpm",
+					"tigervnc-server-minimal-0:1.12.0-4.el8.x86_64.rpm",
+					"tigervnc-server-minimal-debuginfo-0:1.12.0-4.el8.aarch64.rpm",
+					"tigervnc-server-minimal-debuginfo-0:1.12.0-4.el8.x86_64.rpm",
+					"tigervnc-server-module-0:1.12.0-4.el8.aarch64.rpm",
+					"tigervnc-server-module-0:1.12.0-4.el8.x86_64.rpm",
+					"tigervnc-server-module-debuginfo-0:1.12.0-4.el8.aarch64.rpm",
+					"tigervnc-server-module-debuginfo-0:1.12.0-4.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

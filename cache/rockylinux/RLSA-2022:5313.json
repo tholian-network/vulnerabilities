@@ -1,0 +1,106 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:5313",
+		"synopsis": "Moderate: curl security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for curl is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The curl packages provide the libcurl library and the curl utility for downloading files from servers using various protocols, including HTTP, FTP, and LDAP.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2077541",
+				"description": "CVE-2022-22576 curl: OAUTH2 bearer bypass in connection re-use",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2077541"
+			},
+			{
+				"ticket": "2077547",
+				"description": "CVE-2022-27774 curl: credential leak on redirect",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2077547"
+			},
+			{
+				"ticket": "2078408",
+				"description": "CVE-2022-27776 curl: auth/cookie leak on redirect",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2078408"
+			},
+			{
+				"ticket": "2082215",
+				"description": "CVE-2022-27782 curl: TLS and SSH connection too eager reuse",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2082215"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-22576",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-22576.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+				"cvss3BaseScore": "8.1",
+				"cwe": "CWE-287-\u003eCWE-295"
+			},
+			{
+				"name": "CVE-2022-27774",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27774.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L",
+				"cvss3BaseScore": "5.0",
+				"cwe": "CWE-522"
+			},
+			{
+				"name": "CVE-2022-27776",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27776.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "4.3",
+				"cwe": "CWE-522"
+			},
+			{
+				"name": "CVE-2022-27782",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27782.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-295"
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"curl-0:7.61.1-22.el8_6.3.aarch64.rpm",
+					"curl-0:7.61.1-22.el8_6.3.src.rpm",
+					"curl-0:7.61.1-22.el8_6.3.x86_64.rpm",
+					"curl-debuginfo-0:7.61.1-22.el8_6.3.aarch64.rpm",
+					"curl-debuginfo-0:7.61.1-22.el8_6.3.i686.rpm",
+					"curl-debuginfo-0:7.61.1-22.el8_6.3.x86_64.rpm",
+					"curl-debugsource-0:7.61.1-22.el8_6.3.aarch64.rpm",
+					"curl-debugsource-0:7.61.1-22.el8_6.3.i686.rpm",
+					"curl-debugsource-0:7.61.1-22.el8_6.3.x86_64.rpm",
+					"libcurl-0:7.61.1-22.el8_6.3.aarch64.rpm",
+					"libcurl-0:7.61.1-22.el8_6.3.i686.rpm",
+					"libcurl-0:7.61.1-22.el8_6.3.x86_64.rpm",
+					"libcurl-debuginfo-0:7.61.1-22.el8_6.3.aarch64.rpm",
+					"libcurl-debuginfo-0:7.61.1-22.el8_6.3.i686.rpm",
+					"libcurl-debuginfo-0:7.61.1-22.el8_6.3.x86_64.rpm",
+					"libcurl-devel-0:7.61.1-22.el8_6.3.aarch64.rpm",
+					"libcurl-devel-0:7.61.1-22.el8_6.3.i686.rpm",
+					"libcurl-devel-0:7.61.1-22.el8_6.3.x86_64.rpm",
+					"libcurl-minimal-0:7.61.1-22.el8_6.3.aarch64.rpm",
+					"libcurl-minimal-0:7.61.1-22.el8_6.3.i686.rpm",
+					"libcurl-minimal-0:7.61.1-22.el8_6.3.x86_64.rpm",
+					"libcurl-minimal-debuginfo-0:7.61.1-22.el8_6.3.aarch64.rpm",
+					"libcurl-minimal-debuginfo-0:7.61.1-22.el8_6.3.i686.rpm",
+					"libcurl-minimal-debuginfo-0:7.61.1-22.el8_6.3.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

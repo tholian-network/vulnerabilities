@@ -1,0 +1,259 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2047",
+		"synopsis": "subscription-manager bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for subscription-manager is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1859157",
+				"description": "Change the dispalyed message when user tries to list available roles and usage for an invalid org",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1859157"
+			},
+			{
+				"ticket": "1859529",
+				"description": "--noproxy option is ignored when you try to list available role, usage , service-level and addons",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1859529"
+			},
+			{
+				"ticket": "1859569",
+				"description": "On a registered system if user tries to list role/usage/addons using invalid credentials , no error message is thrown",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1859569"
+			},
+			{
+				"ticket": "1924338",
+				"description": "Content host connected to the SCA enabled Satellite is showing as Not subscribed after attaching a valid subscription",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1924338"
+			},
+			{
+				"ticket": "1955480",
+				"description": "D-Bus method Register() do not create redhat.repo, when SCA mode is used",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1955480"
+			},
+			{
+				"ticket": "1979323",
+				"description": "subscription component shows red X when SCA is enabled, should show gray or green icon",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1979323"
+			},
+			{
+				"ticket": "1983074",
+				"description": "Log level Suggestion \"NOSET\" is not a valid option",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1983074"
+			},
+			{
+				"ticket": "1990660",
+				"description": "virt.uuid fact is missing on ibm_power-lpar_dedicated system",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1990660"
+			},
+			{
+				"ticket": "1994056",
+				"description": "Subscription manager should accept multiple content views (Environment)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1994056"
+			},
+			{
+				"ticket": "1999866",
+				"description": "Update subscription-manager-cockpit to match the current cockpit style",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1999866"
+			},
+			{
+				"ticket": "2000326",
+				"description": "Status of installed product is shown as \"Not subscribed\" when the system is actually \"Partially subscribed\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000326"
+			},
+			{
+				"ticket": "2000867",
+				"description": "[RHEL8.6] Display information about \"syspurpose\" tool deprecation when the tool is used",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000867"
+			},
+			{
+				"ticket": "2000883",
+				"description": "[RHEL 8.6 ]  Backport request for new \"syspurpose\" modules",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000883"
+			},
+			{
+				"ticket": "2013162",
+				"description": "[ALL_LANG][RHSM CLI] Unlocalized message in syspurpose module.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013162"
+			},
+			{
+				"ticket": "2014052",
+				"description": "Subscription manager sends redundant requests to the server in SCA mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2014052"
+			},
+			{
+				"ticket": "2014646",
+				"description": "rhn-migrate-classic-to-rhsm fails with \" TypeError: 'Namespace' object is not iterable\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2014646"
+			},
+			{
+				"ticket": "2015173",
+				"description": "chmod: cannot access '/etc/pki/entitlement/*.pem': No such file or directory",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2015173"
+			},
+			{
+				"ticket": "2016995",
+				"description": "[subscription-manager, syspurpose ] RHEL 8.6 Tier 0 Localization",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016995"
+			},
+			{
+				"ticket": "2017795",
+				"description": "[RFE]: Disallow manual subscription attachment in SCA mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2017795"
+			},
+			{
+				"ticket": "2020284",
+				"description": "AttributeError: 'dict' object has no attribute 'result'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2020284"
+			},
+			{
+				"ticket": "2021982",
+				"description": "the new subscription-manager syspurpose module is not tab completing",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2021982"
+			},
+			{
+				"ticket": "2023392",
+				"description": "Environment CFLAGS are not respected by the libdnf plugin",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2023392"
+			},
+			{
+				"ticket": "2024573",
+				"description": "refresh command removes SCA certificate cache before it can be used",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2024573"
+			},
+			{
+				"ticket": "2024589",
+				"description": "client assumes SCA cert 'lastUpdate' date is in it's local timezone, then thinks it re-converts to UTC",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2024589"
+			},
+			{
+				"ticket": "2024930",
+				"description": "Environment CFLAGS are not respected by the certificate C extension",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2024930"
+			},
+			{
+				"ticket": "2026013",
+				"description": "Needs consistent error message in syspurpose modules(role/usage/addon) when an invalid org is used",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2026013"
+			},
+			{
+				"ticket": "2028565",
+				"description": "System Purpose status is not being displayed after subscription-manager-cockpit updated to match the current cockpit style",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028565"
+			},
+			{
+				"ticket": "2029384",
+				"description": "subscription-manager syspurpose  does not tab complete on --password option for submodules",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2029384"
+			},
+			{
+				"ticket": "2037901",
+				"description": "Show available orgs before prompting for input in syspurpose subcommands",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2037901"
+			},
+			{
+				"ticket": "2049101",
+				"description": "failed to attach subscription: Auto-attaching is not allowed in simple content access mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2049101"
+			},
+			{
+				"ticket": "2049441",
+				"description": "Enable insights registration by default in the cockpit UI",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2049441"
+			},
+			{
+				"ticket": "2064002",
+				"description": "TypeError: registerConsumer() got an unexpected keyword argument 'environment' in initial-setup-graphical",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064002"
+			},
+			{
+				"ticket": "2073558",
+				"description": "subscription-manager release setting is not landing in the redhat.repo file",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2073558"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2047",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2047",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"dnf-plugin-subscription-manager-0:1.28.29-3.el8.aarch64.rpm",
+					"dnf-plugin-subscription-manager-0:1.28.29-3.el8.x86_64.rpm",
+					"dnf-plugin-subscription-manager-debuginfo-0:1.28.29-3.el8.aarch64.rpm",
+					"dnf-plugin-subscription-manager-debuginfo-0:1.28.29-3.el8.x86_64.rpm",
+					"python3-cloud-what-0:1.28.29-3.el8.aarch64.rpm",
+					"python3-cloud-what-0:1.28.29-3.el8.x86_64.rpm",
+					"python3-subscription-manager-rhsm-0:1.28.29-3.el8.aarch64.rpm",
+					"python3-subscription-manager-rhsm-0:1.28.29-3.el8.x86_64.rpm",
+					"python3-subscription-manager-rhsm-debuginfo-0:1.28.29-3.el8.aarch64.rpm",
+					"python3-subscription-manager-rhsm-debuginfo-0:1.28.29-3.el8.x86_64.rpm",
+					"python3-syspurpose-0:1.28.29-3.el8.aarch64.rpm",
+					"python3-syspurpose-0:1.28.29-3.el8.x86_64.rpm",
+					"rhsm-icons-0:1.28.29-3.el8.noarch.rpm",
+					"subscription-manager-0:1.28.29-3.el8.aarch64.rpm",
+					"subscription-manager-0:1.28.29-3.el8.src.rpm",
+					"subscription-manager-0:1.28.29-3.el8.x86_64.rpm",
+					"subscription-manager-cockpit-0:1.28.29-3.el8.noarch.rpm",
+					"subscription-manager-debuginfo-0:1.28.29-3.el8.aarch64.rpm",
+					"subscription-manager-debuginfo-0:1.28.29-3.el8.x86_64.rpm",
+					"subscription-manager-debugsource-0:1.28.29-3.el8.aarch64.rpm",
+					"subscription-manager-debugsource-0:1.28.29-3.el8.x86_64.rpm",
+					"subscription-manager-migration-0:1.28.29-3.el8.aarch64.rpm",
+					"subscription-manager-migration-0:1.28.29-3.el8.x86_64.rpm",
+					"subscription-manager-plugin-ostree-0:1.28.29-3.el8.aarch64.rpm",
+					"subscription-manager-plugin-ostree-0:1.28.29-3.el8.x86_64.rpm",
+					"subscription-manager-rhsm-certificates-0:1.28.29-3.el8.aarch64.rpm",
+					"subscription-manager-rhsm-certificates-0:1.28.29-3.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

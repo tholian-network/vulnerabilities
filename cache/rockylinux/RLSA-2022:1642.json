@@ -1,0 +1,56 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1642",
+		"synopsis": "Important: zlib security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for zlib is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The zlib packages provide a general-purpose lossless data compression library that is used by many different programs.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2067945",
+				"description": "CVE-2018-25032 zlib: A flaw found in zlib when compressing (not decompressing) certain inputs",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2067945"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2018-25032",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2018-25032.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+				"cvss3BaseScore": "8.2",
+				"cwe": "CWE-119"
+			}
+		],
+		"publishedAt": "2022-04-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"zlib-0:1.2.11-18.el8_5.aarch64.rpm",
+					"zlib-0:1.2.11-18.el8_5.i686.rpm",
+					"zlib-0:1.2.11-18.el8_5.src.rpm",
+					"zlib-0:1.2.11-18.el8_5.x86_64.rpm",
+					"zlib-debuginfo-0:1.2.11-18.el8_5.aarch64.rpm",
+					"zlib-debuginfo-0:1.2.11-18.el8_5.i686.rpm",
+					"zlib-debuginfo-0:1.2.11-18.el8_5.x86_64.rpm",
+					"zlib-debugsource-0:1.2.11-18.el8_5.aarch64.rpm",
+					"zlib-debugsource-0:1.2.11-18.el8_5.i686.rpm",
+					"zlib-debugsource-0:1.2.11-18.el8_5.x86_64.rpm",
+					"zlib-devel-0:1.2.11-18.el8_5.aarch64.rpm",
+					"zlib-devel-0:1.2.11-18.el8_5.i686.rpm",
+					"zlib-devel-0:1.2.11-18.el8_5.x86_64.rpm",
+					"zlib-static-0:1.2.11-18.el8_5.aarch64.rpm",
+					"zlib-static-0:1.2.11-18.el8_5.i686.rpm",
+					"zlib-static-0:1.2.11-18.el8_5.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

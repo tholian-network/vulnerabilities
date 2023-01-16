@@ -1,0 +1,54 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1899",
+		"synopsis": "gcc-toolset-10-gdb bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gcc-toolset-10-gdb is now available for Rocky Linux 8.",
+		"description": "GCC Toolset is a compiler toolset that provides recent versions of development tools. GCC Toolset is an Application Stream packaged as a Software Collection.\nFor instructions on usage, see Using GCC Toolset linked from the References section. Components and specifics of this version are documented in the GCC Toolset 10 chapter.\nFor detailed changes in this release, see the Rocky Linux 8.4 Release Notes.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1903375",
+				"description": "Error recording \"store on condition\" insns",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1903375"
+			},
+			{
+				"ticket": "1905702",
+				"description": "Backport \"Fortran dynamic type related fixes\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1905702"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1899",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1899",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gcc-toolset-10-gdb-0:9.2-4.el8.aarch64.rpm",
+					"gcc-toolset-10-gdb-0:9.2-4.el8.src.rpm",
+					"gcc-toolset-10-gdb-0:9.2-4.el8.x86_64.rpm",
+					"gcc-toolset-10-gdb-debuginfo-0:9.2-4.el8.aarch64.rpm",
+					"gcc-toolset-10-gdb-debuginfo-0:9.2-4.el8.x86_64.rpm",
+					"gcc-toolset-10-gdb-doc-0:9.2-4.el8.noarch.rpm",
+					"gcc-toolset-10-gdb-gdbserver-0:9.2-4.el8.aarch64.rpm",
+					"gcc-toolset-10-gdb-gdbserver-0:9.2-4.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

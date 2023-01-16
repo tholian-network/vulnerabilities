@@ -1,0 +1,35 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5814",
+		"synopsis": "microcode_ctl bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for microcode_ctl is now available for Rocky Linux 8.",
+		"description": "The microcode_ctl packages provide microcode updates for Intel and AMD processors.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2022:5814",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5814",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-08-02T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"microcode_ctl-4:20220207-1.20220510.1.el8_6.src.rpm",
+					"microcode_ctl-4:20220207-1.20220510.1.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

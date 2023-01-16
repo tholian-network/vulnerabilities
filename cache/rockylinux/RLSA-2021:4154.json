@@ -1,0 +1,422 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4154",
+		"synopsis": "Moderate: container-tools:rhel8 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the container-tools:rhel8 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The container-tools module contains tools for working with containers, notably podman, buildah, skopeo, and runc.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1914687",
+				"description": "Rebase to github.com/containers/toolbox",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1914687"
+			},
+			{
+				"ticket": "1928935",
+				"description": "RFE: Let `podman volume prune` show the volumes that are going to be removed",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1928935"
+			},
+			{
+				"ticket": "1932399",
+				"description": "IPv6 errors after exiting crictl",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1932399"
+			},
+			{
+				"ticket": "1933775",
+				"description": "shortname for ubi8-minimal leads to \"Repo not found\" error [RHEL 8.5]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1933775"
+			},
+			{
+				"ticket": "1933776",
+				"description": "podman 3.0.1 ships with a v2 go module [RHEL 8.5]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1933776"
+			},
+			{
+				"ticket": "1934415",
+				"description": "Work on 8.5.0 container-tools module.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1934415"
+			},
+			{
+				"ticket": "1934480",
+				"description": "Podman will pull image for rootless CNI",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1934480"
+			},
+			{
+				"ticket": "1937641",
+				"description": "Regression: Overlay mounts is broken on existing directories. [rhel-8.5.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1937641"
+			},
+			{
+				"ticket": "1937830",
+				"description": "regressions cp command in Podman v3.0 [rhel-8.5.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1937830"
+			},
+			{
+				"ticket": "1939485",
+				"description": "CVE-2021-20291 containers/storage: DoS via malicious image",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1939485"
+			},
+			{
+				"ticket": "1940037",
+				"description": "toolbox does not provide /:/host mount required for sosreport",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1940037"
+			},
+			{
+				"ticket": "1940054",
+				"description": "Support logging into a registry if necessary",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1940054"
+			},
+			{
+				"ticket": "1940082",
+				"description": "toolbox does not support a config file",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1940082"
+			},
+			{
+				"ticket": "1940493",
+				"description": "[gss][podman]Getting the error while starting container \"Error: readlink /var/lib/containers/storage/overlay/l/XXX no such file or directory\" [rhel-8.5.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1940493"
+			},
+			{
+				"ticket": "1941380",
+				"description": "Podman - secondary groups not available in container when using userns=keep-id",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1941380"
+			},
+			{
+				"ticket": "1947432",
+				"description": "podman run --pid=host command causes OCI permission error",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1947432"
+			},
+			{
+				"ticket": "1947999",
+				"description": "rootless podman --cgroup-manager=cgroupfs run command causes OCI permission error when CGroups V2 is enabled",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1947999"
+			},
+			{
+				"ticket": "1952204",
+				"description": "shortnames for containerized images",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1952204"
+			},
+			{
+				"ticket": "1952698",
+				"description": "Permission on /dev/null are changing from 666 to 777 after running podman as root",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1952698"
+			},
+			{
+				"ticket": "1957299",
+				"description": "Podman \"--format\" does not support \"join\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1957299"
+			},
+			{
+				"ticket": "1957840",
+				"description": "kubelet service fail to load EnvironmentFile due to SELinux denial",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1957840"
+			},
+			{
+				"ticket": "1957904",
+				"description": "Confined selinux users of type staff_u and user_u cannot run rootless podman containers",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1957904"
+			},
+			{
+				"ticket": "1958353",
+				"description": "\"rootless-cni-infra\": executable file not found in $PATH: OCI not found",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1958353"
+			},
+			{
+				"ticket": "1960948",
+				"description": "Error refreshing container XXX: error acquiring lock 0 for container",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1960948"
+			},
+			{
+				"ticket": "1966538",
+				"description": "Podman returns development version",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1966538"
+			},
+			{
+				"ticket": "1966872",
+				"description": "podman's image index corrupted during WAN emulation tests",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1966872"
+			},
+			{
+				"ticket": "1969264",
+				"description": "CVE-2021-3602 buildah: Host environment variables leaked in build container when using chroot isolation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1969264"
+			},
+			{
+				"ticket": "1972150",
+				"description": "Image fails to prune from registry, preventing subsequent prunes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1972150"
+			},
+			{
+				"ticket": "1972209",
+				"description": "Under load, container failed to be created due to missing cgroup scope",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1972209"
+			},
+			{
+				"ticket": "1972211",
+				"description": "When running a lot of one-off containers, podman hangs forever",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1972211"
+			},
+			{
+				"ticket": "1972282",
+				"description": "TMPDIR is not working in podman pull and podman load",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1972282"
+			},
+			{
+				"ticket": "1972648",
+				"description": "Update shortname list",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1972648"
+			},
+			{
+				"ticket": "1973418",
+				"description": "kubelet service fail to load EnvironmentFile due to SELinux denial (Re-opened)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1973418"
+			},
+			{
+				"ticket": "1976283",
+				"description": "podman search does not return an exact match",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1976283"
+			},
+			{
+				"ticket": "1977280",
+				"description": "registries.conf mixes v1 and v2 syntax",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1977280"
+			},
+			{
+				"ticket": "1977673",
+				"description": "podman v3.2.2 writes image events too early",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1977673"
+			},
+			{
+				"ticket": "1978415",
+				"description": "Supply the python-podman package in RHEL 8.5.0",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1978415"
+			},
+			{
+				"ticket": "1978556",
+				"description": "podman v3.2.2 - error resolving image of another architecture",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1978556"
+			},
+			{
+				"ticket": "1978647",
+				"description": "[RFE] Podman secrets for RHEL 8.4",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1978647"
+			},
+			{
+				"ticket": "1979497",
+				"description": "podman v3.2.2 - cannot get logs when running in namespace with /var/log overmounted",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1979497"
+			},
+			{
+				"ticket": "1980212",
+				"description": "[Cockpit 8.5] [ja_JP, ko_KR] Podman Container Page is not localized",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1980212"
+			},
+			{
+				"ticket": "1982593",
+				"description": "podman 3.2 - CNI-in-slirp4netns DNS gets broken when running a rootful container after running a rootless container",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1982593"
+			},
+			{
+				"ticket": "1982762",
+				"description": "podman v3.2.2 - race condition with rootless cni networking",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1982762"
+			},
+			{
+				"ticket": "1985499",
+				"description": "podman: Cannot run Fedora 35/RHEL 9 Beta images due to clone3 incompatibility",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1985499"
+			},
+			{
+				"ticket": "1985905",
+				"description": "Podman report unsupported pull policy if set imagePullPolicy with capitalized Word",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1985905"
+			},
+			{
+				"ticket": "1987049",
+				"description": "inability to start container with runc caused by redundant seccomp rules",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1987049"
+			},
+			{
+				"ticket": "1993209",
+				"description": "new containers-common packaging conflicts with redhat-release",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1993209"
+			},
+			{
+				"ticket": "1993249",
+				"description": "Make volume removal with third-party drivers consistent with Docker behavior",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1993249"
+			},
+			{
+				"ticket": "1995041",
+				"description": "Rebase udica to v0.2.5",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1995041"
+			},
+			{
+				"ticket": "1998191",
+				"description": "Suggest a way forward if coreos/toolbox was used",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1998191"
+			},
+			{
+				"ticket": "1999144",
+				"description": "podman update to 3.3 removes default network config",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1999144"
+			},
+			{
+				"ticket": "2000943",
+				"description": "podman auto update fails to login to registry after podman upgrade to 3.2",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000943"
+			},
+			{
+				"ticket": "2004562",
+				"description": "Switch to using the Toolbox-specific UBI image by default",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2004562"
+			},
+			{
+				"ticket": "2005018",
+				"description": "[8.4.0.z] kubelet service fail to load EnvironmentFile due to SELinux denial (Re-opened)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2005018"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-20291",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20291.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-667"
+			},
+			{
+				"name": "CVE-2021-3602",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3602.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+				"cvss3BaseScore": "5.6",
+				"cwe": "CWE-200"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"aardvark-dns-2:1.0.1-28.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"aardvark-dns-2:1.0.1-28.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"containers-common-2:1-28.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"containers-common-2:1-28.module+el8.6.0+972+902006e0.src.rpm",
+					"containers-common-2:1-28.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"crit-0:3.15-3.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"crit-0:3.15-3.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"criu-0:3.15-3.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"criu-0:3.15-3.module+el8.6.0+997+05c9d812.src.rpm",
+					"criu-0:3.15-3.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"criu-debuginfo-0:3.15-3.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"criu-debuginfo-0:3.15-3.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"criu-debugsource-0:3.15-3.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"criu-debugsource-0:3.15-3.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"criu-devel-0:3.15-3.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"criu-devel-0:3.15-3.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"criu-libs-0:3.15-3.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"criu-libs-0:3.15-3.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"criu-libs-debuginfo-0:3.15-3.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"criu-libs-debuginfo-0:3.15-3.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"libslirp-0:4.4.0-1.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"libslirp-0:4.4.0-1.module+el8.6.0+997+05c9d812.src.rpm",
+					"libslirp-0:4.4.0-1.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"libslirp-debuginfo-0:4.4.0-1.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"libslirp-debuginfo-0:4.4.0-1.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"libslirp-debugsource-0:4.4.0-1.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"libslirp-debugsource-0:4.4.0-1.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"libslirp-devel-0:4.4.0-1.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"libslirp-devel-0:4.4.0-1.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"netavark-2:1.0.1-28.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"netavark-2:1.0.1-28.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"oci-seccomp-bpf-hook-0:1.2.3-3.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"oci-seccomp-bpf-hook-0:1.2.3-3.module+el8.6.0+972+902006e0.src.rpm",
+					"oci-seccomp-bpf-hook-0:1.2.3-3.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"oci-seccomp-bpf-hook-debuginfo-0:1.2.3-3.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"oci-seccomp-bpf-hook-debuginfo-0:1.2.3-3.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"oci-seccomp-bpf-hook-debugsource-0:1.2.3-3.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"oci-seccomp-bpf-hook-debugsource-0:1.2.3-3.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"python3-criu-0:3.15-3.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"python3-criu-0:3.15-3.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"slirp4netns-0:1.1.8-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"slirp4netns-0:1.1.8-1.module+el8.6.0+973+7a06b91e.src.rpm",
+					"slirp4netns-0:1.1.8-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"slirp4netns-debuginfo-0:1.1.8-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"slirp4netns-debuginfo-0:1.1.8-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"slirp4netns-debugsource-0:1.1.8-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"slirp4netns-debugsource-0:1.1.8-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"toolbox-0:0.0.99.3-0.4.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"toolbox-0:0.0.99.3-0.4.module+el8.6.0+972+902006e0.src.rpm",
+					"toolbox-0:0.0.99.3-0.4.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"toolbox-debuginfo-0:0.0.99.3-0.4.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"toolbox-debuginfo-0:0.0.99.3-0.4.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"toolbox-debugsource-0:0.0.99.3-0.4.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"toolbox-debugsource-0:0.0.99.3-0.4.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"toolbox-tests-0:0.0.99.3-0.4.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"toolbox-tests-0:0.0.99.3-0.4.module+el8.6.0+972+902006e0.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

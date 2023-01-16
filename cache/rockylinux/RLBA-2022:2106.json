@@ -1,0 +1,104 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2106",
+		"synopsis": "tuned bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for tuned is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1854816",
+				"description": "Some block devices are not visible to the [disk] plugin.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1854816"
+			},
+			{
+				"ticket": "1978786",
+				"description": "tuned on s390x keeps $tuned_params variable even though zipl doesn't support variables",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1978786"
+			},
+			{
+				"ticket": "2002744",
+				"description": "100% CPU usage on VMware VMs when latency-performance profile is active",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2002744"
+			},
+			{
+				"ticket": "2003833",
+				"description": "Rebase TuneD to the latest upstream version",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2003833"
+			},
+			{
+				"ticket": "2011459",
+				"description": "Tuned performs a full rollback when it hangs at shutdown",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2011459"
+			},
+			{
+				"ticket": "2015044",
+				"description": "[RFE]:RHEL8.2/RHOSP16.1: extend tuned to support tuning the default txqueuelen",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2015044"
+			},
+			{
+				"ticket": "2017862",
+				"description": "RFE: support to conditionally load profiles",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2017862"
+			},
+			{
+				"ticket": "2017924",
+				"description": "TuneD improperly parses the include directive when profile name finishes in non-word characters",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2017924"
+			},
+			{
+				"ticket": "2052886",
+				"description": "better conntrack configuration for ocp-related profiles",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2052886"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2106",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2106",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"tuned-0:2.18.0-2.el8_6.1.noarch.rpm",
+					"tuned-0:2.18.0-2.el8_6.1.src.rpm",
+					"tuned-gtk-0:2.18.0-2.el8_6.1.noarch.rpm",
+					"tuned-profiles-atomic-0:2.18.0-2.el8_6.1.noarch.rpm",
+					"tuned-profiles-compat-0:2.18.0-2.el8_6.1.noarch.rpm",
+					"tuned-profiles-cpu-partitioning-0:2.18.0-2.el8_6.1.noarch.rpm",
+					"tuned-profiles-mssql-0:2.18.0-2.el8_6.1.noarch.rpm",
+					"tuned-profiles-nfv-0:2.18.0-2.el8_6.1.noarch.rpm",
+					"tuned-profiles-nfv-guest-0:2.18.0-2.el8_6.1.noarch.rpm",
+					"tuned-profiles-nfv-host-0:2.18.0-2.el8_6.1.noarch.rpm",
+					"tuned-profiles-oracle-0:2.18.0-2.el8_6.1.noarch.rpm",
+					"tuned-profiles-postgresql-0:2.18.0-2.el8_6.1.noarch.rpm",
+					"tuned-profiles-realtime-0:2.18.0-2.el8_6.1.noarch.rpm",
+					"tuned-profiles-sap-0:2.18.0-2.el8_6.1.noarch.rpm",
+					"tuned-utils-0:2.18.0-2.el8_6.1.noarch.rpm",
+					"tuned-utils-systemtap-0:2.18.0-2.el8_6.1.noarch.rpm"
+				]
+			}
+		}
+	}
+}

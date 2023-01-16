@@ -1,0 +1,98 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1807",
+		"synopsis": "gnome-shell-extensions bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gnome-shell-extensions is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1751336",
+				"description": "Classification banners into Gnome login and desktop",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1751336"
+			},
+			{
+				"ticket": "1984956",
+				"description": "Desktop icons extension sometimes gets confused about grab state and starts eating most mouse events",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1984956"
+			},
+			{
+				"ticket": "1988906",
+				"description": "Disable unfullscreen gesture or a function to switch between normal mode and fullscreen mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1988906"
+			},
+			{
+				"ticket": "1995814",
+				"description": "Add dash-to-panel gnome-shell extension to RHEL8.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1995814"
+			},
+			{
+				"ticket": "2013571",
+				"description": "gnome-shell-extension-heads-up-display not in CS8 / RHEL 8.5 composes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013571"
+			},
+			{
+				"ticket": "2026622",
+				"description": "gnome-shell Error connecting to Nautilus",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2026622"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1807",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1807",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gnome-classic-session-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-apps-menu-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-auto-move-windows-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-classification-banner-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-common-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-dash-to-dock-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-dash-to-panel-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-desktop-icons-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-disable-screenshield-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-drive-menu-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-gesture-inhibitor-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-heads-up-display-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-horizontal-workspaces-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-launch-new-instance-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-native-window-placement-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-no-hot-corner-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-panel-favorites-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-places-menu-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extensions-0:3.32.1-27.el8.src.rpm",
+					"gnome-shell-extension-screenshot-window-sizer-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-systemMonitor-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-top-icons-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-updates-dialog-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-user-theme-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-window-grouper-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-window-list-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-windowsNavigator-0:3.32.1-27.el8.noarch.rpm",
+					"gnome-shell-extension-workspace-indicator-0:3.32.1-27.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

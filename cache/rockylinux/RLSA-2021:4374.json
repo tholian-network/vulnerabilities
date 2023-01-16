@@ -1,0 +1,59 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4374",
+		"synopsis": "Moderate: file security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for file is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The file command is used to identify a particular file according to the type of data the file contains. It can identify many different file types, including Executable and Linkable Format (ELF) binary files, system libraries, RPM packages, and different graphics formats.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1765272",
+				"description": "CVE-2019-18218 file: heap-based buffer overflow in cdf_read_property_info in cdf.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1765272"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2019-18218",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2019-18218.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "9.8",
+				"cwe": "CWE-122"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"file-0:5.33-20.el8.aarch64.rpm",
+					"file-0:5.33-20.el8.src.rpm",
+					"file-0:5.33-20.el8.x86_64.rpm",
+					"file-debuginfo-0:5.33-20.el8.aarch64.rpm",
+					"file-debuginfo-0:5.33-20.el8.i686.rpm",
+					"file-debuginfo-0:5.33-20.el8.x86_64.rpm",
+					"file-debugsource-0:5.33-20.el8.aarch64.rpm",
+					"file-debugsource-0:5.33-20.el8.i686.rpm",
+					"file-debugsource-0:5.33-20.el8.x86_64.rpm",
+					"file-devel-0:5.33-20.el8.aarch64.rpm",
+					"file-devel-0:5.33-20.el8.i686.rpm",
+					"file-devel-0:5.33-20.el8.x86_64.rpm",
+					"file-libs-0:5.33-20.el8.aarch64.rpm",
+					"file-libs-0:5.33-20.el8.i686.rpm",
+					"file-libs-0:5.33-20.el8.x86_64.rpm",
+					"file-libs-debuginfo-0:5.33-20.el8.aarch64.rpm",
+					"file-libs-debuginfo-0:5.33-20.el8.i686.rpm",
+					"file-libs-debuginfo-0:5.33-20.el8.x86_64.rpm",
+					"python3-magic-0:5.33-20.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

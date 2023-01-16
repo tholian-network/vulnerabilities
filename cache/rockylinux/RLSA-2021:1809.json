@@ -1,0 +1,123 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:1809",
+		"synopsis": "Moderate: httpd:2.4 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the httpd:2.4 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The httpd packages provide the Apache HTTP Server, a powerful, efficient, and extensible web server.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1651376",
+				"description": "centralizing default index.html for httpd",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1651376"
+			},
+			{
+				"ticket": "1668493",
+				"description": "CVE-2018-17199 httpd: mod_session_cookie does not respect expiry time",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1668493"
+			},
+			{
+				"ticket": "1680118",
+				"description": "unorderly connection close when client attempts renegotiation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1680118"
+			},
+			{
+				"ticket": "1847585",
+				"description": "mod_ldap: High CPU usage at  apr_ldap_rebind_remove()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1847585"
+			},
+			{
+				"ticket": "1866563",
+				"description": "CVE-2020-11984 httpd: mod_proxy_uwsgi buffer overflow",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1866563"
+			},
+			{
+				"ticket": "1866564",
+				"description": "CVE-2020-11993 httpd: mod_http2 concurrent pool usage",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1866564"
+			},
+			{
+				"ticket": "1872828",
+				"description": "httpd: typo in htpasswd, contained in httpd-tools package",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1872828"
+			},
+			{
+				"ticket": "1875844",
+				"description": "mod_cgid takes CGIDScriptTimeout x 2 seconds for timeout",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1875844"
+			},
+			{
+				"ticket": "1891594",
+				"description": "only one url is displayed using \"htcacheclean -p . -A\" when there are \u003e= 2 files in one subdirectory",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1891594"
+			},
+			{
+				"ticket": "1891829",
+				"description": "mod_proxy_hcheck Doesn't perform checks when in a balancer",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1891829"
+			},
+			{
+				"ticket": "1918741",
+				"description": "Thousands of /tmp/modproxy.tmp.* files created by apache",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1918741"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2018-17199",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2018-17199.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+				"cvss3BaseScore": "5.4",
+				"cwe": "CWE-613"
+			},
+			{
+				"name": "CVE-2020-11984",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-11984.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "9.8",
+				"cwe": "CWE-119-\u003eCWE-400"
+			},
+			{
+				"name": "CVE-2020-11993",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-11993.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-400"
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mod_md-1:2.0.8-8.module+el8.5.0+695+1fa8055e.aarch64.rpm",
+					"mod_md-1:2.0.8-8.module+el8.5.0+695+1fa8055e.src.rpm",
+					"mod_md-1:2.0.8-8.module+el8.5.0+695+1fa8055e.x86_64.rpm",
+					"mod_md-debuginfo-1:2.0.8-8.module+el8.5.0+695+1fa8055e.aarch64.rpm",
+					"mod_md-debuginfo-1:2.0.8-8.module+el8.5.0+695+1fa8055e.x86_64.rpm",
+					"mod_md-debugsource-1:2.0.8-8.module+el8.5.0+695+1fa8055e.aarch64.rpm",
+					"mod_md-debugsource-1:2.0.8-8.module+el8.5.0+695+1fa8055e.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

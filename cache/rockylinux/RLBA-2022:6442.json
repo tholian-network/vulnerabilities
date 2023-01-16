@@ -1,0 +1,59 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:6442",
+		"synopsis": "nmstate bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for nmstate is now available for Rocky Linux 8.",
+		"description": "Nmstate is a library with an accompanying command line tool that manages host networking settings in a declarative manner and aimed to satisfy enterprise\nneeds to manage host networking through a northbound declarative API and multi provider support on the southbound.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2108632",
+				"description": "NNCP deployment flakiness when having multiple SriovNetworkNodePolicy [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2108632"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:6442",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:6442",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-09-13T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nmstate-0:1.2.1-4.el8_6.aarch64.rpm",
+					"nmstate-0:1.2.1-4.el8_6.src.rpm",
+					"nmstate-0:1.2.1-4.el8_6.x86_64.rpm",
+					"nmstate-debuginfo-0:1.2.1-4.el8_6.aarch64.rpm",
+					"nmstate-debuginfo-0:1.2.1-4.el8_6.i686.rpm",
+					"nmstate-debuginfo-0:1.2.1-4.el8_6.x86_64.rpm",
+					"nmstate-debugsource-0:1.2.1-4.el8_6.aarch64.rpm",
+					"nmstate-debugsource-0:1.2.1-4.el8_6.x86_64.rpm",
+					"nmstate-devel-0:1.2.1-4.el8_6.aarch64.rpm",
+					"nmstate-devel-0:1.2.1-4.el8_6.i686.rpm",
+					"nmstate-devel-0:1.2.1-4.el8_6.x86_64.rpm",
+					"nmstate-libs-0:1.2.1-4.el8_6.aarch64.rpm",
+					"nmstate-libs-0:1.2.1-4.el8_6.i686.rpm",
+					"nmstate-libs-0:1.2.1-4.el8_6.x86_64.rpm",
+					"nmstate-libs-debuginfo-0:1.2.1-4.el8_6.aarch64.rpm",
+					"nmstate-libs-debuginfo-0:1.2.1-4.el8_6.i686.rpm",
+					"nmstate-libs-debuginfo-0:1.2.1-4.el8_6.x86_64.rpm",
+					"nmstate-plugin-ovsdb-0:1.2.1-4.el8_6.noarch.rpm",
+					"python3-libnmstate-0:1.2.1-4.el8_6.noarch.rpm"
+				]
+			}
+		}
+	}
+}

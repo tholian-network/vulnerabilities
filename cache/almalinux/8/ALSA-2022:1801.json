@@ -1,0 +1,75 @@
+{
+	"updateinfo_id": "ALSA-2022:1801",
+	"fromstr": "packager@almalinux.org",
+	"title": "Moderate: gfbgraph security update",
+	"type": "security",
+	"release": "0",
+	"version": "4",
+	"status": "final",
+	"severity": "Moderate",
+	"summary": "An update for gfbgraph is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+	"pushcount": "3",
+	"pkglist": {
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"packages": [
+			{
+				"src": "gfbgraph-0.2.4-1.el8.src.rpm",
+				"name": "gfbgraph",
+				"epoch": "0",
+				"version": "0.2.4",
+				"release": "1.el8",
+				"arch": "x86_64",
+				"filename": "gfbgraph-0.2.4-1.el8.x86_64.rpm",
+				"sum": "3be8bc184dca48642bb594f342c12b43a5f3e503ea06d681c7ed1223970374ce",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "gfbgraph-0.2.4-1.el8.src.rpm",
+				"name": "gfbgraph",
+				"epoch": "0",
+				"version": "0.2.4",
+				"release": "1.el8",
+				"arch": "x86_64",
+				"filename": "gfbgraph-0.2.4-1.el8.x86_64.rpm",
+				"sum": "3be8bc184dca48642bb594f342c12b43a5f3e503ea06d681c7ed1223970374ce",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "gfbgraph-0.2.4-1.el8.src.rpm",
+				"name": "gfbgraph",
+				"epoch": "0",
+				"version": "0.2.4",
+				"release": "1.el8",
+				"arch": "ppc64le",
+				"filename": "gfbgraph-0.2.4-1.el8.ppc64le.rpm",
+				"sum": "8ed98c3f3fbc2226c64ee26d156eb46b2aa9e6409321da27daeeed7bd70fb2ff",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "GLib/GObject wrapper for the Facebook Graph API that integrates with GNOME Online Accounts.\n\nThe following packages have been upgraded to a later upstream version: gfbgraph (0.2.4). (BZ#1997941)\n\nSecurity Fix(es):\n\n* gfbgraph: missing TLS certificate verification (CVE-2021-39358)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
+	"references": [
+		{
+			"id": "ALSA-2022-1801",
+			"title": "ALSA-2022-1801",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-1801.html"
+		},
+		{
+			"id": "CVE-2021-39358",
+			"title": "CVE-2021-39358",
+			"type": "cve",
+			"href": "https://vulners.com/cve/CVE-2021-39358"
+		}
+	],
+	"issued_date": {
+		"$date": 1652164072000
+	},
+	"updated_date": {
+		"$date": 1652169718000
+	}
+}

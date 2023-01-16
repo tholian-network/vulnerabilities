@@ -1,0 +1,89 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:2372",
+		"synopsis": "Important: postgresql:12 security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for the postgresql:12 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "PostgreSQL is an advanced object-relational database management system (DBMS).\nThe following packages have been upgraded to a later upstream version: postgresql (12.7)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1924005",
+				"description": "CVE-2021-3393 postgresql: Partition constraint violation errors leak values of denied columns",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1924005"
+			},
+			{
+				"ticket": "1956876",
+				"description": "CVE-2021-32027 postgresql: Buffer overrun from integer overflow in array subscripting calculations",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1956876"
+			},
+			{
+				"ticket": "1956877",
+				"description": "CVE-2021-32028 postgresql: Memory disclosure in INSERT ... ON CONFLICT ... DO UPDATE",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1956877"
+			},
+			{
+				"ticket": "1956883",
+				"description": "CVE-2021-32029 postgresql: Memory disclosure in partitioned-table UPDATE ... RETURNING",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1956883"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-32027",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-32027.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-190-\u003eCWE-119"
+			},
+			{
+				"name": "CVE-2021-32028",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-32028.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-200"
+			},
+			{
+				"name": "CVE-2021-32029",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-32029.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2021-3393",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3393.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "3.1",
+				"cwe": "CWE-209"
+			}
+		],
+		"publishedAt": "2021-06-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"postgres-decoderbufs-0:0.10.0-2.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"postgres-decoderbufs-0:0.10.0-2.module+el8.5.0+686+20453ecc.src.rpm",
+					"postgres-decoderbufs-0:0.10.0-2.module+el8.5.0+686+20453ecc.x86_64.rpm",
+					"postgres-decoderbufs-debuginfo-0:0.10.0-2.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"postgres-decoderbufs-debuginfo-0:0.10.0-2.module+el8.5.0+686+20453ecc.x86_64.rpm",
+					"postgres-decoderbufs-debugsource-0:0.10.0-2.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"postgres-decoderbufs-debugsource-0:0.10.0-2.module+el8.5.0+686+20453ecc.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

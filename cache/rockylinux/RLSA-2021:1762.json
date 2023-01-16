@@ -1,0 +1,350 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:1762",
+		"synopsis": "Moderate: virt:rhel and virt-devel:rhel security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the virt:rhel and virt-devel:rhel modules is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Kernel-based Virtual Machine (KVM) offers a full virtualization solution for Linux on numerous hardware platforms. The virt:rhel module contains packages which provide user-space components used to run virtual machines using KVM. The packages also provide APIs for managing and interacting with the virtualized systems.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1384241",
+				"description": "The tar-in command does not allow restoring file capabilities",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1384241"
+			},
+			{
+				"ticket": "1798463",
+				"description": "cpu.shares for existing scopes under machine.slice are reset to default when creating a new scope after daemon-reload",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1798463"
+			},
+			{
+				"ticket": "1828952",
+				"description": "virt-customize --selinux-relabel (and other tools) do not work if SELINUXTYPE != targeted",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1828952"
+			},
+			{
+				"ticket": "1834281",
+				"description": "qemu-img convert abort when converting image with unaligned size",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1834281"
+			},
+			{
+				"ticket": "1837495",
+				"description": "[detach-device][s390x] can't detach virtio interface device by its address only (no mac)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1837495"
+			},
+			{
+				"ticket": "1843852",
+				"description": "qemu core dumped: qemu-kvm: /builddir/build/BUILD/qemu-4.2.0/memory.c:1928: memory_region_notify_one: Assertion `entry-\u003eiova \u003e= notifier-\u003estart \u0026\u0026 entry_end \u003c= notifier-\u003eend' failed.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1843852"
+			},
+			{
+				"ticket": "1846975",
+				"description": "Failed to boot up a s390x guest with virtio-blk-ccw if attaching a virtio-scsi-ccw bus in previous",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1846975"
+			},
+			{
+				"ticket": "1850680",
+				"description": "hypervisor-cpu-compare raises internal error for host-passthrough cpu model",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1850680"
+			},
+			{
+				"ticket": "1859494",
+				"description": "Report logical_name for disks without mounted file-system",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1859494"
+			},
+			{
+				"ticket": "1860283",
+				"description": "CVE-2020-16092 QEMU: reachable assertion failure in net_tx_pkt_add_raw_fragment() in hw/net/net_tx_pkt.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1860283"
+			},
+			{
+				"ticket": "1872854",
+				"description": "move the glusterfs dependency out of qemu-kvm-core to the glusterfs module",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1872854"
+			},
+			{
+				"ticket": "1874304",
+				"description": "nwfilter fails trying to bind/unbind rules for tap device that was/is in use by a different domain",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1874304"
+			},
+			{
+				"ticket": "1874780",
+				"description": "-prom-env does not validate input",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1874780"
+			},
+			{
+				"ticket": "1876297",
+				"description": "Setting \"ramfb='on'\" in the mdev device does not save in the guest xml and only works once",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1876297"
+			},
+			{
+				"ticket": "1876742",
+				"description": "libvirtd[32318]: internal error: Invalid unsigned integer value '-1' in file '/sys/devices/system/cpu/cpu0/topology/die_id'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1876742"
+			},
+			{
+				"ticket": "1880418",
+				"description": "Regression: migration: unable to find any master var store for loader",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1880418"
+			},
+			{
+				"ticket": "1880546",
+				"description": "qemu use SCMP_ACT_TRAP even SCMP_ACT_KILL_PROCESS is available",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1880546"
+			},
+			{
+				"ticket": "1881037",
+				"description": "CVE-2020-25637 libvirt: double free in qemuAgentGetInterfaces() in qemu_agent.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1881037"
+			},
+			{
+				"ticket": "1884531",
+				"description": "qemu-ga aborts after guest-shutdown command",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1884531"
+			},
+			{
+				"ticket": "1893895",
+				"description": "CVE-2020-25707 QEMU: infinite loop in e1000e_write_packet_to_guest() in hw/net/e1000e_core.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1893895"
+			},
+			{
+				"ticket": "1898579",
+				"description": "CVE-2020-25723 QEMU: assertion failure through usb_packet_unmap() in hw/usb/hcd-ehci.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1898579"
+			},
+			{
+				"ticket": "1901837",
+				"description": "Failed to hotunplug pc-dimm device",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1901837"
+			},
+			{
+				"ticket": "1902231",
+				"description": "CVE-2020-29129 CVE-2020-29130 QEMU: slirp: out-of-bounds access while processing ARP/NCSI packets",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1902231"
+			},
+			{
+				"ticket": "1902651",
+				"description": "CVE-2020-27821 QEMU: heap buffer overflow in msix_table_mmio_write() in hw/pci/msix.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1902651"
+			},
+			{
+				"ticket": "1902960",
+				"description": "QEMU doesn't honour system crypto policies",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1902960"
+			},
+			{
+				"ticket": "1903064",
+				"description": "CVE-2020-28916 QEMU: e1000e: infinite loop scenario in case of null packet descriptor",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1903064"
+			},
+			{
+				"ticket": "1910220",
+				"description": "qemu-ga service still active and can work after qemu-guest-agent been removed",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1910220"
+			},
+			{
+				"ticket": "1910267",
+				"description": "There is no soft link '/etc/qemu-kvm/fsfreeze-hook'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1910267"
+			},
+			{
+				"ticket": "1910326",
+				"description": "Incorrect hostname returned by  qga command 'guest-get-host-name'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1910326"
+			},
+			{
+				"ticket": "1912765",
+				"description": "CVE-2020-11947 QEMU: heap buffer overflow in iscsi_aio_ioctl_cb() in block/iscsi.c may lead to information disclosure",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1912765"
+			},
+			{
+				"ticket": "1917446",
+				"description": "CVE-2020-29443 QEMU: ide: atapi: OOB access while processing read commands",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1917446"
+			},
+			{
+				"ticket": "1918708",
+				"description": "Support Link non uplink representors to PCI device",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1918708"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-11947",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-11947.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N",
+				"cvss3BaseScore": "3.8",
+				"cwe": "CWE-131-\u003eCWE-122"
+			},
+			{
+				"name": "CVE-2020-16092",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-16092.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:L",
+				"cvss3BaseScore": "3.8",
+				"cwe": "CWE-617"
+			},
+			{
+				"name": "CVE-2020-25637",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-25637.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "6.4",
+				"cwe": "CWE-415"
+			},
+			{
+				"name": "CVE-2020-25707",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-25707.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:N/I:N/A:L",
+				"cvss3BaseScore": "2.5",
+				"cwe": "CWE-835"
+			},
+			{
+				"name": "CVE-2020-25723",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-25723.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:L",
+				"cvss3BaseScore": "3.2",
+				"cwe": "CWE-617"
+			},
+			{
+				"name": "CVE-2020-27821",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-27821.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:L",
+				"cvss3BaseScore": "5.7",
+				"cwe": "CWE-787-\u003eCWE-122"
+			},
+			{
+				"name": "CVE-2020-28916",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-28916.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:N/I:N/A:L",
+				"cvss3BaseScore": "2.5",
+				"cwe": "CWE-835"
+			},
+			{
+				"name": "CVE-2020-29129",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-29129.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:L/I:N/A:N",
+				"cvss3BaseScore": "2.5",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2020-29130",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-29130.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:L/I:N/A:N",
+				"cvss3BaseScore": "2.5",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2020-29443",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-29443.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:L/I:N/A:L",
+				"cvss3BaseScore": "3.9",
+				"cwe": "CWE-125"
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libiscsi-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-0:1.18.0-8.module+el8.6.0+847+b490afdd.src.rpm",
+					"libiscsi-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-debugsource-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-debugsource-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-debugsource-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-devel-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-devel-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-devel-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-utils-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-utils-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-utils-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-utils-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-utils-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-utils-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libvirt-dbus-0:1.3.0-2.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libvirt-dbus-0:1.3.0-2.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libvirt-dbus-0:1.3.0-2.module+el8.6.0+847+b490afdd.src.rpm",
+					"libvirt-dbus-0:1.3.0-2.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libvirt-dbus-debuginfo-0:1.3.0-2.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libvirt-dbus-debuginfo-0:1.3.0-2.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libvirt-dbus-debuginfo-0:1.3.0-2.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libvirt-dbus-debugsource-0:1.3.0-2.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libvirt-dbus-debugsource-0:1.3.0-2.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libvirt-dbus-debugsource-0:1.3.0-2.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-0:0.2.8-12.module+el8.6.0+847+b490afdd.src.rpm",
+					"netcf-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-debugsource-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-debugsource-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-debugsource-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-devel-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-devel-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-devel-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-libs-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-libs-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-libs-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-libs-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-libs-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-libs-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"sgabios-1:0.20170427git-3.module+el8.6.0+847+b490afdd.i686.rpm",
+					"sgabios-1:0.20170427git-3.module+el8.6.0+847+b490afdd.src.rpm",
+					"sgabios-1:0.20170427git-3.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"sgabios-bin-1:0.20170427git-3.module+el8.6.0+847+b490afdd.noarch.rpm"
+				]
+			}
+		}
+	}
+}

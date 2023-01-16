@@ -1,0 +1,58 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2060",
+		"synopsis": "kmod bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for kmod is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2026938",
+				"description": "Concurrent executions of depmod results in missing modules.* files",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2026938"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2060",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2060",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"kmod-0:25-19.el8.aarch64.rpm",
+					"kmod-0:25-19.el8.src.rpm",
+					"kmod-0:25-19.el8.x86_64.rpm",
+					"kmod-debuginfo-0:25-19.el8.aarch64.rpm",
+					"kmod-debuginfo-0:25-19.el8.i686.rpm",
+					"kmod-debuginfo-0:25-19.el8.x86_64.rpm",
+					"kmod-debugsource-0:25-19.el8.aarch64.rpm",
+					"kmod-debugsource-0:25-19.el8.i686.rpm",
+					"kmod-debugsource-0:25-19.el8.x86_64.rpm",
+					"kmod-devel-0:25-19.el8.aarch64.rpm",
+					"kmod-devel-0:25-19.el8.i686.rpm",
+					"kmod-devel-0:25-19.el8.x86_64.rpm",
+					"kmod-libs-0:25-19.el8.aarch64.rpm",
+					"kmod-libs-0:25-19.el8.i686.rpm",
+					"kmod-libs-0:25-19.el8.x86_64.rpm",
+					"kmod-libs-debuginfo-0:25-19.el8.aarch64.rpm",
+					"kmod-libs-debuginfo-0:25-19.el8.i686.rpm",
+					"kmod-libs-debuginfo-0:25-19.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

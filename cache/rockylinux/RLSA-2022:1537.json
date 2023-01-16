@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1537",
+		"synopsis": "Important: gzip security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for gzip is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The gzip packages contain the gzip (GNU zip) data compression utility. gzip is used to compress regular files. It replaces them with files containing the .gz extension, while retaining ownership modes, access, and modification times.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2073310",
+				"description": "CVE-2022-1271 gzip: arbitrary-file-write vulnerability",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2073310"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-1271",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1271.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "(CWE-179|CWE-1173)"
+			}
+		],
+		"publishedAt": "2022-04-26T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gzip-0:1.9-13.el8_5.aarch64.rpm",
+					"gzip-0:1.9-13.el8_5.src.rpm",
+					"gzip-0:1.9-13.el8_5.x86_64.rpm",
+					"gzip-debuginfo-0:1.9-13.el8_5.aarch64.rpm",
+					"gzip-debuginfo-0:1.9-13.el8_5.x86_64.rpm",
+					"gzip-debugsource-0:1.9-13.el8_5.aarch64.rpm",
+					"gzip-debugsource-0:1.9-13.el8_5.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

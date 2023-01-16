@@ -1,0 +1,59 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:2029",
+		"synopsis": "libseccomp bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libseccomp is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2019893",
+				"description": "Update to 2.5.2 or newer",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2019893"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2022:2029",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:2029",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libseccomp-0:2.5.2-1.el8.aarch64.rpm",
+					"libseccomp-0:2.5.2-1.el8.i686.rpm",
+					"libseccomp-0:2.5.2-1.el8.src.rpm",
+					"libseccomp-0:2.5.2-1.el8.x86_64.rpm",
+					"libseccomp-debuginfo-0:2.5.2-1.el8.aarch64.rpm",
+					"libseccomp-debuginfo-0:2.5.2-1.el8.i686.rpm",
+					"libseccomp-debuginfo-0:2.5.2-1.el8.x86_64.rpm",
+					"libseccomp-debugsource-0:2.5.2-1.el8.aarch64.rpm",
+					"libseccomp-debugsource-0:2.5.2-1.el8.i686.rpm",
+					"libseccomp-debugsource-0:2.5.2-1.el8.x86_64.rpm",
+					"libseccomp-devel-0:2.5.2-1.el8.aarch64.rpm",
+					"libseccomp-devel-0:2.5.2-1.el8.i686.rpm",
+					"libseccomp-devel-0:2.5.2-1.el8.x86_64.rpm",
+					"libseccomp-devel-debuginfo-0:2.5.2-1.el8.aarch64.rpm",
+					"libseccomp-devel-debuginfo-0:2.5.2-1.el8.i686.rpm",
+					"libseccomp-devel-debuginfo-0:2.5.2-1.el8.x86_64.rpm",
+					"libseccomp-static-0:2.5.2-1.el8.aarch64.rpm",
+					"libseccomp-static-0:2.5.2-1.el8.i686.rpm",
+					"libseccomp-static-0:2.5.2-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1845",
+		"synopsis": "sblim-sfcb bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for sblim-sfcb is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1854991",
+				"description": "Bug in sfcbrepos redirection stderr to stdout in SPEC file (%post)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1854991"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1845",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1845",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"sblim-sfcb-0:1.4.9-17.el8.aarch64.rpm",
+					"sblim-sfcb-0:1.4.9-17.el8.src.rpm",
+					"sblim-sfcb-0:1.4.9-17.el8.x86_64.rpm",
+					"sblim-sfcb-debuginfo-0:1.4.9-17.el8.aarch64.rpm",
+					"sblim-sfcb-debuginfo-0:1.4.9-17.el8.x86_64.rpm",
+					"sblim-sfcb-debugsource-0:1.4.9-17.el8.aarch64.rpm",
+					"sblim-sfcb-debugsource-0:1.4.9-17.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

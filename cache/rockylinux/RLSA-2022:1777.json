@@ -1,0 +1,486 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1777",
+		"synopsis": "Moderate: webkit2gtk3 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for webkit2gtk3 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "WebKitGTK is the port of the portable web rendering engine WebKit to the GTK platform.\nThe following packages have been upgraded to a later upstream version: webkit2gtk3 (2.34.6). (BZ#1985042)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1985042",
+				"description": "Upgrade WebKitGTK for RHEL 8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1985042"
+			},
+			{
+				"ticket": "2017898",
+				"description": "CVE-2021-30846 webkitgtk: Memory corruption issue leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2017898"
+			},
+			{
+				"ticket": "2017901",
+				"description": "CVE-2021-30848 webkitgtk: Memory corruption issue leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2017901"
+			},
+			{
+				"ticket": "2017904",
+				"description": "CVE-2021-30849 webkitgtk: Multiple memory corruption issue leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2017904"
+			},
+			{
+				"ticket": "2018573",
+				"description": "CVE-2021-30851 webkitgtk: Memory corruption issue leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2018573"
+			},
+			{
+				"ticket": "2034347",
+				"description": "CVE-2021-30809 webkitgtk: Use-after-free leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2034347"
+			},
+			{
+				"ticket": "2034368",
+				"description": "CVE-2021-30818 webkitgtk: Type confusion issue leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2034368"
+			},
+			{
+				"ticket": "2034373",
+				"description": "CVE-2021-30823 webkitgtk: Logic issue leading to HSTS bypass",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2034373"
+			},
+			{
+				"ticket": "2034376",
+				"description": "CVE-2021-30836 webkitgtk: Out-of-bounds read leading to memory disclosure",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2034376"
+			},
+			{
+				"ticket": "2034378",
+				"description": "CVE-2021-30884 webkitgtk: CSS compositing issue leading to revealing of the browsing history",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2034378"
+			},
+			{
+				"ticket": "2034381",
+				"description": "CVE-2021-30887 webkitgtk: Logic issue leading to Content Security Policy bypass",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2034381"
+			},
+			{
+				"ticket": "2034383",
+				"description": "CVE-2021-30888 webkitgtk: Information leak via Content Security Policy reports",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2034383"
+			},
+			{
+				"ticket": "2034386",
+				"description": "CVE-2021-30889 webkitgtk: Buffer overflow leading to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2034386"
+			},
+			{
+				"ticket": "2034389",
+				"description": "CVE-2021-30890 webkitgtk: Logic issue leading to universal cross-site scripting",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2034389"
+			},
+			{
+				"ticket": "2038907",
+				"description": "CVE-2021-30897 webkitgtk: Cross-origin data exfiltration via resource timing API",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2038907"
+			},
+			{
+				"ticket": "2040327",
+				"description": "CVE-2021-45481 webkitgtk: Incorrect memory allocation in WebCore::ImageBufferCairoImageSurfaceBackend::create",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2040327"
+			},
+			{
+				"ticket": "2040329",
+				"description": "CVE-2021-45482 webkitgtk: use-after-free in WebCore::ContainerNode::firstChild",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2040329"
+			},
+			{
+				"ticket": "2040331",
+				"description": "CVE-2021-45483 webkitgtk: use-after-free in WebCore::Frame::page",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2040331"
+			},
+			{
+				"ticket": "2041559",
+				"description": "Doesn't show document with ongoing resources' download immediately",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2041559"
+			},
+			{
+				"ticket": "2044521",
+				"description": "CVE-2021-30934 webkitgtk: Processing maliciously crafted web content may lead to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2044521"
+			},
+			{
+				"ticket": "2044528",
+				"description": "CVE-2021-30936 webkitgtk: Processing maliciously crafted web content may lead to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2044528"
+			},
+			{
+				"ticket": "2044534",
+				"description": "CVE-2021-30951 webkitgtk: Processing maliciously crafted web content may lead to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2044534"
+			},
+			{
+				"ticket": "2044538",
+				"description": "CVE-2021-30952 webkitgtk: Processing maliciously crafted web content may lead to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2044538"
+			},
+			{
+				"ticket": "2044542",
+				"description": "CVE-2021-30953 webkitgtk: Processing maliciously crafted web content may lead to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2044542"
+			},
+			{
+				"ticket": "2044551",
+				"description": "CVE-2021-30954 webkitgtk: Processing maliciously crafted web content may lead to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2044551"
+			},
+			{
+				"ticket": "2044553",
+				"description": "CVE-2021-30984 webkitgtk: Processing maliciously crafted web content may lead to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2044553"
+			},
+			{
+				"ticket": "2045291",
+				"description": "CVE-2022-22594 webkitgtk: A malicious website may exfiltrate data cross-origin",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2045291"
+			},
+			{
+				"ticket": "2053179",
+				"description": "CVE-2022-22589 webkitgtk: Processing a maliciously crafted mail message may lead to running arbitrary javascript",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2053179"
+			},
+			{
+				"ticket": "2053181",
+				"description": "CVE-2022-22590 webkitgtk: Processing maliciously crafted web content may lead to arbitrary code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2053181"
+			},
+			{
+				"ticket": "2053185",
+				"description": "CVE-2022-22592 webkitgtk: Processing maliciously crafted web content may prevent Content Security Policy from being enforced",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2053185"
+			},
+			{
+				"ticket": "2056474",
+				"description": "CVE-2022-22620 webkitgtk: maliciously crafted web content may lead to arbitrary code execution due to use after free",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2056474"
+			},
+			{
+				"ticket": "2073903",
+				"description": "CVE-2022-22637 webkitgtk: logic issue was addressed with improved state management",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2073903"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-30809",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30809.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-30818",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30818.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-843"
+			},
+			{
+				"name": "CVE-2021-30823",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30823.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-30836",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30836.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2021-30846",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30846.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-787"
+			},
+			{
+				"name": "CVE-2021-30848",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30848.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-787"
+			},
+			{
+				"name": "CVE-2021-30849",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30849.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-787"
+			},
+			{
+				"name": "CVE-2021-30851",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30851.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-30884",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30884.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N/A:N",
+				"cvss3BaseScore": "4.7",
+				"cwe": "CWE-200"
+			},
+			{
+				"name": "CVE-2021-30887",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30887.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2021-30888",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30888.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N",
+				"cvss3BaseScore": "7.4",
+				"cwe": "CWE-601"
+			},
+			{
+				"name": "CVE-2021-30889",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30889.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-120"
+			},
+			{
+				"name": "CVE-2021-30890",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30890.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-79"
+			},
+			{
+				"name": "CVE-2021-30897",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30897.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-200"
+			},
+			{
+				"name": "CVE-2021-30934",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30934.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-120"
+			},
+			{
+				"name": "CVE-2021-30936",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30936.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-30951",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30951.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-30952",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30952.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-190"
+			},
+			{
+				"name": "CVE-2021-30953",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30953.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2021-30954",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30954.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-843"
+			},
+			{
+				"name": "CVE-2021-30984",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-30984.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-362"
+			},
+			{
+				"name": "CVE-2021-45481",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-45481.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-401"
+			},
+			{
+				"name": "CVE-2021-45482",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-45482.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-45483",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-45483.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2022-22589",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-22589.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:H",
+				"cvss3BaseScore": "7.6",
+				"cwe": "CWE-1173"
+			},
+			{
+				"name": "CVE-2022-22590",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-22590.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2022-22592",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-22592.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+				"cvss3BaseScore": "8.1",
+				"cwe": "CWE-1021"
+			},
+			{
+				"name": "CVE-2022-22594",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-22594.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-346"
+			},
+			{
+				"name": "CVE-2022-22620",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-22620.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2022-22637",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-22637.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"webkit2gtk3-0:2.34.6-1.el8.aarch64.rpm",
+					"webkit2gtk3-0:2.34.6-1.el8.i686.rpm",
+					"webkit2gtk3-0:2.34.6-1.el8.src.rpm",
+					"webkit2gtk3-0:2.34.6-1.el8.x86_64.rpm",
+					"webkit2gtk3-debuginfo-0:2.34.6-1.el8.aarch64.rpm",
+					"webkit2gtk3-debuginfo-0:2.34.6-1.el8.i686.rpm",
+					"webkit2gtk3-debuginfo-0:2.34.6-1.el8.x86_64.rpm",
+					"webkit2gtk3-debugsource-0:2.34.6-1.el8.aarch64.rpm",
+					"webkit2gtk3-debugsource-0:2.34.6-1.el8.i686.rpm",
+					"webkit2gtk3-debugsource-0:2.34.6-1.el8.x86_64.rpm",
+					"webkit2gtk3-devel-0:2.34.6-1.el8.aarch64.rpm",
+					"webkit2gtk3-devel-0:2.34.6-1.el8.i686.rpm",
+					"webkit2gtk3-devel-0:2.34.6-1.el8.x86_64.rpm",
+					"webkit2gtk3-devel-debuginfo-0:2.34.6-1.el8.aarch64.rpm",
+					"webkit2gtk3-devel-debuginfo-0:2.34.6-1.el8.i686.rpm",
+					"webkit2gtk3-devel-debuginfo-0:2.34.6-1.el8.x86_64.rpm",
+					"webkit2gtk3-jsc-0:2.34.6-1.el8.aarch64.rpm",
+					"webkit2gtk3-jsc-0:2.34.6-1.el8.i686.rpm",
+					"webkit2gtk3-jsc-0:2.34.6-1.el8.x86_64.rpm",
+					"webkit2gtk3-jsc-debuginfo-0:2.34.6-1.el8.aarch64.rpm",
+					"webkit2gtk3-jsc-debuginfo-0:2.34.6-1.el8.i686.rpm",
+					"webkit2gtk3-jsc-debuginfo-0:2.34.6-1.el8.x86_64.rpm",
+					"webkit2gtk3-jsc-devel-0:2.34.6-1.el8.aarch64.rpm",
+					"webkit2gtk3-jsc-devel-0:2.34.6-1.el8.i686.rpm",
+					"webkit2gtk3-jsc-devel-0:2.34.6-1.el8.x86_64.rpm",
+					"webkit2gtk3-jsc-devel-debuginfo-0:2.34.6-1.el8.aarch64.rpm",
+					"webkit2gtk3-jsc-devel-debuginfo-0:2.34.6-1.el8.i686.rpm",
+					"webkit2gtk3-jsc-devel-debuginfo-0:2.34.6-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

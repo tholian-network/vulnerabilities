@@ -1,0 +1,103 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1791",
+		"synopsis": "ansible-freeipa bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for ansible-freeipa is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1918025",
+				"description": "[RFE] Add ability to run modules remotely",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1918025"
+			},
+			{
+				"ticket": "1999912",
+				"description": "[ansible-freeipa] automember set default group/hostgroup is missing from the automember module.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1999912"
+			},
+			{
+				"ticket": "1999913",
+				"description": "[ansible-freeipa] automember remove default group/hostgroup is missing from the automember module.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1999913"
+			},
+			{
+				"ticket": "1999915",
+				"description": "[ansible-freeipa] automember rebuild is missing from the automember module.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1999915"
+			},
+			{
+				"ticket": "1999916",
+				"description": "[ansible-freeipa] automember remove orphans group/hostgroup is missing from the automember module.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1999916"
+			},
+			{
+				"ticket": "2010621",
+				"description": "Rebase ansible-freeipa to a recent upstream release",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2010621"
+			},
+			{
+				"ticket": "2010639",
+				"description": "[RFE] New management module automount locations",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2010639"
+			},
+			{
+				"ticket": "2021393",
+				"description": "[ansible-freeipa] Not able to update existing automember rule description.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2021393"
+			},
+			{
+				"ticket": "2040462",
+				"description": "[RFE] Add module to manage automount maps",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2040462"
+			},
+			{
+				"ticket": "2040464",
+				"description": "[RFE] Add module to manage automount keys",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2040464"
+			},
+			{
+				"ticket": "2041753",
+				"description": "[ansible-freeipa] Client deploy failing with ipaadmin keytab and OTP due to latest ansible version.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2041753"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1791",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1791",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"ansible-freeipa-0:1.6.3-1.el8.noarch.rpm",
+					"ansible-freeipa-0:1.6.3-1.el8.src.rpm",
+					"ansible-freeipa-tests-0:1.6.3-1.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

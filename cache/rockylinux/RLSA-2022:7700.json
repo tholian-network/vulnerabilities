@@ -1,0 +1,67 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7700",
+		"synopsis": "Moderate: gdisk security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for gdisk is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The gdisk packages provide the gdisk partitioning utility for GUID Partition Table (GPT) disks. The utility features a command-line interface similar to fdisk, direct manipulation of partition table structures, recovery tools to deal with corrupt partition tables, and the ability to convert Master Boot Record (MBR) disks to the GPT format.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2051939",
+				"description": "CVE-2020-0256 gdisk: possible out-of-bounds-write in LoadPartitionTable of gpt.cc",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2051939"
+			},
+			{
+				"ticket": "2051943",
+				"description": "CVE-2021-0308 gdisk: possible out-of-bounds-write in ReadLogicalParts of basicmbr.cc",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2051943"
+			},
+			{
+				"ticket": "2065205",
+				"description": "gptfdisk naming of paritions does not work for big endian systems [rhel-8.7.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2065205"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-0256",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-0256.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "6.8",
+				"cwe": "CWE-787"
+			},
+			{
+				"name": "CVE-2021-0308",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-0308.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "6.8",
+				"cwe": "CWE-787"
+			}
+		],
+		"publishedAt": "2022-11-13T07:49:07.285284Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gdisk-0:1.0.3-11.el8.aarch64.rpm",
+					"gdisk-0:1.0.3-11.el8.src.rpm",
+					"gdisk-0:1.0.3-11.el8.x86_64.rpm",
+					"gdisk-debuginfo-0:1.0.3-11.el8.aarch64.rpm",
+					"gdisk-debuginfo-0:1.0.3-11.el8.x86_64.rpm",
+					"gdisk-debugsource-0:1.0.3-11.el8.aarch64.rpm",
+					"gdisk-debugsource-0:1.0.3-11.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

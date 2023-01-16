@@ -1,0 +1,59 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1947",
+		"synopsis": "mutter bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for mutter is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1977721",
+				"description": "multiple windows in overview displaying same image",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1977721"
+			},
+			{
+				"ticket": "2001655",
+				"description": "Unable to disable xrandr configuration in wayland, need to be able to set or enforce monitor setup irregardless of users montiors.xml",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001655"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1947",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1947",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mutter-0:3.32.2-63.el8.aarch64.rpm",
+					"mutter-0:3.32.2-63.el8.i686.rpm",
+					"mutter-0:3.32.2-63.el8.src.rpm",
+					"mutter-0:3.32.2-63.el8.x86_64.rpm",
+					"mutter-debuginfo-0:3.32.2-63.el8.aarch64.rpm",
+					"mutter-debuginfo-0:3.32.2-63.el8.i686.rpm",
+					"mutter-debuginfo-0:3.32.2-63.el8.x86_64.rpm",
+					"mutter-debugsource-0:3.32.2-63.el8.aarch64.rpm",
+					"mutter-debugsource-0:3.32.2-63.el8.i686.rpm",
+					"mutter-debugsource-0:3.32.2-63.el8.x86_64.rpm",
+					"mutter-devel-0:3.32.2-63.el8.aarch64.rpm",
+					"mutter-devel-0:3.32.2-63.el8.i686.rpm",
+					"mutter-devel-0:3.32.2-63.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

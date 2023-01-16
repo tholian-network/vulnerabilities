@@ -1,0 +1,40 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5285",
+		"synopsis": "gnome-initial-setup bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gnome-initial-setup is now available for Rocky Linux 8.",
+		"description": "The gnome-initial-setup packages provide the Initial Setup application for GNOME, which allows for quick configuration of the operating system after installation.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2022:5285",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5285",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gnome-initial-setup-0:3.28.0-10.el8_6.1.aarch64.rpm",
+					"gnome-initial-setup-0:3.28.0-10.el8_6.1.src.rpm",
+					"gnome-initial-setup-0:3.28.0-10.el8_6.1.x86_64.rpm",
+					"gnome-initial-setup-debuginfo-0:3.28.0-10.el8_6.1.aarch64.rpm",
+					"gnome-initial-setup-debuginfo-0:3.28.0-10.el8_6.1.x86_64.rpm",
+					"gnome-initial-setup-debugsource-0:3.28.0-10.el8_6.1.aarch64.rpm",
+					"gnome-initial-setup-debugsource-0:3.28.0-10.el8_6.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

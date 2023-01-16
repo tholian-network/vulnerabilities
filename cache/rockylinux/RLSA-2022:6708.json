@@ -1,0 +1,173 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:6708",
+		"synopsis": "Important: thunderbird security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for thunderbird is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Mozilla Thunderbird is a standalone mail and newsgroup client.\nThis update upgrades Thunderbird to version 102.3.0.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2123255",
+				"description": "CVE-2022-3032 Mozilla: Remote content specified in an HTML document that was nested inside an iframe's srcdoc attribute was not blocked",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2123255"
+			},
+			{
+				"ticket": "2123256",
+				"description": "CVE-2022-3033 Mozilla: Leaking of sensitive information when composing a response to an HTML email with a META refresh tag",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2123256"
+			},
+			{
+				"ticket": "2123257",
+				"description": "CVE-2022-3034 Mozilla: An iframe element in an HTML email could trigger a network request",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2123257"
+			},
+			{
+				"ticket": "2123258",
+				"description": "CVE-2022-36059 Mozilla: Matrix SDK bundled with Thunderbird vulnerable to denial-of-service attack",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2123258"
+			},
+			{
+				"ticket": "2128792",
+				"description": "CVE-2022-40959 Mozilla: Bypassing FeaturePolicy restrictions on transient pages",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2128792"
+			},
+			{
+				"ticket": "2128793",
+				"description": "CVE-2022-40960 Mozilla: Data-race when parsing non-UTF-8 URLs in threads",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2128793"
+			},
+			{
+				"ticket": "2128794",
+				"description": "CVE-2022-40958 Mozilla: Bypassing Secure Context restriction for cookies with __Host and __Secure prefix",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2128794"
+			},
+			{
+				"ticket": "2128795",
+				"description": "CVE-2022-40956 Mozilla: Content-Security-Policy base-uri bypass",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2128795"
+			},
+			{
+				"ticket": "2128796",
+				"description": "CVE-2022-40957 Mozilla: Incoherent instruction cache when building WASM on ARM64",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2128796"
+			},
+			{
+				"ticket": "2128797",
+				"description": "CVE-2022-40962 Mozilla: Memory safety bugs fixed in Firefox 105 and Firefox ESR 102.3",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2128797"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-3032",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-3032.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-1021"
+			},
+			{
+				"name": "CVE-2022-3033",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-3033.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-200"
+			},
+			{
+				"name": "CVE-2022-3034",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-3034.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-449"
+			},
+			{
+				"name": "CVE-2022-36059",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-36059.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-440"
+			},
+			{
+				"name": "CVE-2022-40956",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40956.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-1021"
+			},
+			{
+				"name": "CVE-2022-40957",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40957.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:L",
+				"cvss3BaseScore": "5.8",
+				"cwe": "CWE-240"
+			},
+			{
+				"name": "CVE-2022-40958",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40958.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-784"
+			},
+			{
+				"name": "CVE-2022-40959",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40959.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-1021"
+			},
+			{
+				"name": "CVE-2022-40960",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40960.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2022-40962",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-40962.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-120"
+			}
+		],
+		"publishedAt": "2022-10-13T13:00:50.023690Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"thunderbird-0:102.3.0-3.el8_6.aarch64.rpm",
+					"thunderbird-0:102.3.0-3.el8_6.src.rpm",
+					"thunderbird-0:102.3.0-3.el8_6.x86_64.rpm",
+					"thunderbird-debuginfo-0:102.3.0-3.el8_6.aarch64.rpm",
+					"thunderbird-debuginfo-0:102.3.0-3.el8_6.x86_64.rpm",
+					"thunderbird-debugsource-0:102.3.0-3.el8_6.aarch64.rpm",
+					"thunderbird-debugsource-0:102.3.0-3.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

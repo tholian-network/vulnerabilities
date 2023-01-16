@@ -1,0 +1,75 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2002",
+		"synopsis": "iptables bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for iptables is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1803183",
+				"description": "Hashlimit extension test does not fail when it should on non-x86_64 archs",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1803183"
+			},
+			{
+				"ticket": "1984093",
+				"description": "ebtables doesn't recognize --atomic-* arguments",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1984093"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2002",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2002",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"iptables-0:1.8.4-22.el8.aarch64.rpm",
+					"iptables-0:1.8.4-22.el8.i686.rpm",
+					"iptables-0:1.8.4-22.el8.src.rpm",
+					"iptables-0:1.8.4-22.el8.x86_64.rpm",
+					"iptables-arptables-0:1.8.4-22.el8.aarch64.rpm",
+					"iptables-arptables-0:1.8.4-22.el8.x86_64.rpm",
+					"iptables-debuginfo-0:1.8.4-22.el8.aarch64.rpm",
+					"iptables-debuginfo-0:1.8.4-22.el8.i686.rpm",
+					"iptables-debuginfo-0:1.8.4-22.el8.x86_64.rpm",
+					"iptables-debugsource-0:1.8.4-22.el8.aarch64.rpm",
+					"iptables-debugsource-0:1.8.4-22.el8.i686.rpm",
+					"iptables-debugsource-0:1.8.4-22.el8.x86_64.rpm",
+					"iptables-devel-0:1.8.4-22.el8.aarch64.rpm",
+					"iptables-devel-0:1.8.4-22.el8.i686.rpm",
+					"iptables-devel-0:1.8.4-22.el8.x86_64.rpm",
+					"iptables-ebtables-0:1.8.4-22.el8.aarch64.rpm",
+					"iptables-ebtables-0:1.8.4-22.el8.x86_64.rpm",
+					"iptables-libs-0:1.8.4-22.el8.aarch64.rpm",
+					"iptables-libs-0:1.8.4-22.el8.i686.rpm",
+					"iptables-libs-0:1.8.4-22.el8.x86_64.rpm",
+					"iptables-libs-debuginfo-0:1.8.4-22.el8.aarch64.rpm",
+					"iptables-libs-debuginfo-0:1.8.4-22.el8.i686.rpm",
+					"iptables-libs-debuginfo-0:1.8.4-22.el8.x86_64.rpm",
+					"iptables-services-0:1.8.4-22.el8.aarch64.rpm",
+					"iptables-services-0:1.8.4-22.el8.x86_64.rpm",
+					"iptables-utils-0:1.8.4-22.el8.aarch64.rpm",
+					"iptables-utils-0:1.8.4-22.el8.x86_64.rpm",
+					"iptables-utils-debuginfo-0:1.8.4-22.el8.aarch64.rpm",
+					"iptables-utils-debuginfo-0:1.8.4-22.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

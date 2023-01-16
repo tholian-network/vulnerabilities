@@ -1,0 +1,108 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:7132",
+		"synopsis": "idm:DL1 bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for the idm:DL1 module is now available for Rocky Linux 8.",
+		"description": "Rocky Enterprise Software Foundation Identity Management (IdM) is a centralized authentication, identity management, and authorization solution for both traditional and cloud-based enterprise environments.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2121324",
+				"description": "Regression: cn=views,cn=compat broken with slapi-nis-0.56.5-3.el7_9.x86_64 [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2121324"
+			},
+			{
+				"ticket": "2133036",
+				"description": "named-pkcs11 crashing into dns-pkcs11 library red-black tree [bind-dyndb-ldap] [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2133036"
+			},
+			{
+				"ticket": "2133051",
+				"description": "Attempt to log in as \"root\" user with admin's password in Web UI does not properly fail [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2133051"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:7132",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:7132",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-11-07T19:41:39.090338Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"bind-dyndb-ldap-0:11.6-4.module+el8.6.0+1050+4989852e.aarch64.rpm",
+					"bind-dyndb-ldap-0:11.6-4.module+el8.6.0+1050+4989852e.src.rpm",
+					"bind-dyndb-ldap-0:11.6-4.module+el8.6.0+1050+4989852e.x86_64.rpm",
+					"bind-dyndb-ldap-debuginfo-0:11.6-4.module+el8.6.0+1050+4989852e.aarch64.rpm",
+					"bind-dyndb-ldap-debuginfo-0:11.6-4.module+el8.6.0+1050+4989852e.x86_64.rpm",
+					"bind-dyndb-ldap-debugsource-0:11.6-4.module+el8.6.0+1050+4989852e.aarch64.rpm",
+					"bind-dyndb-ldap-debugsource-0:11.6-4.module+el8.6.0+1050+4989852e.x86_64.rpm",
+					"ipa-0:4.9.8-8.module+el8.6.0+1050+4989852e.src.rpm",
+					"ipa-client-0:4.9.8-8.module+el8.6.0+1050+4989852e.aarch64.rpm",
+					"ipa-client-0:4.9.8-8.module+el8.6.0+1050+4989852e.x86_64.rpm",
+					"ipa-client-common-0:4.9.8-8.module+el8.6.0+1050+4989852e.noarch.rpm",
+					"ipa-client-debuginfo-0:4.9.8-8.module+el8.6.0+1050+4989852e.aarch64.rpm",
+					"ipa-client-debuginfo-0:4.9.8-8.module+el8.6.0+1050+4989852e.x86_64.rpm",
+					"ipa-client-epn-0:4.9.8-8.module+el8.6.0+1050+4989852e.aarch64.rpm",
+					"ipa-client-epn-0:4.9.8-8.module+el8.6.0+1050+4989852e.x86_64.rpm",
+					"ipa-client-samba-0:4.9.8-8.module+el8.6.0+1050+4989852e.aarch64.rpm",
+					"ipa-client-samba-0:4.9.8-8.module+el8.6.0+1050+4989852e.x86_64.rpm",
+					"ipa-common-0:4.9.8-8.module+el8.6.0+1050+4989852e.noarch.rpm",
+					"ipa-debuginfo-0:4.9.8-8.module+el8.6.0+1050+4989852e.aarch64.rpm",
+					"ipa-debuginfo-0:4.9.8-8.module+el8.6.0+1050+4989852e.x86_64.rpm",
+					"ipa-debugsource-0:4.9.8-8.module+el8.6.0+1050+4989852e.aarch64.rpm",
+					"ipa-debugsource-0:4.9.8-8.module+el8.6.0+1050+4989852e.x86_64.rpm",
+					"ipa-healthcheck-0:0.7-10.module+el8.6.0+1050+4989852e.noarch.rpm",
+					"ipa-healthcheck-0:0.7-10.module+el8.6.0+1050+4989852e.src.rpm",
+					"ipa-healthcheck-core-0:0.7-10.module+el8.6.0+1050+4989852e.noarch.rpm",
+					"ipa-python-compat-0:4.9.8-8.module+el8.6.0+1050+4989852e.noarch.rpm",
+					"ipa-selinux-0:4.9.8-8.module+el8.6.0+1050+4989852e.noarch.rpm",
+					"ipa-server-0:4.9.8-8.module+el8.6.0+1050+4989852e.aarch64.rpm",
+					"ipa-server-0:4.9.8-8.module+el8.6.0+1050+4989852e.x86_64.rpm",
+					"ipa-server-common-0:4.9.8-8.module+el8.6.0+1050+4989852e.noarch.rpm",
+					"ipa-server-debuginfo-0:4.9.8-8.module+el8.6.0+1050+4989852e.aarch64.rpm",
+					"ipa-server-debuginfo-0:4.9.8-8.module+el8.6.0+1050+4989852e.x86_64.rpm",
+					"ipa-server-dns-0:4.9.8-8.module+el8.6.0+1050+4989852e.noarch.rpm",
+					"ipa-server-trust-ad-0:4.9.8-8.module+el8.6.0+1050+4989852e.aarch64.rpm",
+					"ipa-server-trust-ad-0:4.9.8-8.module+el8.6.0+1050+4989852e.x86_64.rpm",
+					"ipa-server-trust-ad-debuginfo-0:4.9.8-8.module+el8.6.0+1050+4989852e.aarch64.rpm",
+					"ipa-server-trust-ad-debuginfo-0:4.9.8-8.module+el8.6.0+1050+4989852e.x86_64.rpm",
+					"python3-ipaclient-0:4.9.8-8.module+el8.6.0+1050+4989852e.noarch.rpm",
+					"python3-ipalib-0:4.9.8-8.module+el8.6.0+1050+4989852e.noarch.rpm",
+					"python3-ipaserver-0:4.9.8-8.module+el8.6.0+1050+4989852e.noarch.rpm",
+					"python3-ipatests-0:4.9.8-8.module+el8.6.0+1050+4989852e.noarch.rpm",
+					"python3-jwcrypto-0:0.5.0-1.module+el8.6.0+1050+4989852e.noarch.rpm",
+					"python3-kdcproxy-0:0.4-5.module+el8.3.0+244+0b2ae752.noarch.rpm",
+					"python3-pyusb-0:1.0.0-9.module+el8.6.0+1050+4989852e.noarch.rpm",
+					"python3-yubico-0:1.3.2-9.module+el8.6.0+1050+4989852e.noarch.rpm",
+					"python-jwcrypto-0:0.5.0-1.module+el8.6.0+1050+4989852e.src.rpm",
+					"python-kdcproxy-0:0.4-5.module+el8.3.0+244+0b2ae752.src.rpm",
+					"python-yubico-0:1.3.2-9.module+el8.6.0+1050+4989852e.src.rpm",
+					"pyusb-0:1.0.0-9.module+el8.6.0+1050+4989852e.src.rpm",
+					"slapi-nis-0:0.60.0-1.module+el8.6.0+1050+4989852e.aarch64.rpm",
+					"slapi-nis-0:0.60.0-1.module+el8.6.0+1050+4989852e.src.rpm",
+					"slapi-nis-0:0.60.0-1.module+el8.6.0+1050+4989852e.x86_64.rpm",
+					"slapi-nis-debuginfo-0:0.60.0-1.module+el8.6.0+1050+4989852e.aarch64.rpm",
+					"slapi-nis-debuginfo-0:0.60.0-1.module+el8.6.0+1050+4989852e.x86_64.rpm",
+					"slapi-nis-debugsource-0:0.60.0-1.module+el8.6.0+1050+4989852e.aarch64.rpm",
+					"slapi-nis-debugsource-0:0.60.0-1.module+el8.6.0+1050+4989852e.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,64 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2009",
+		"synopsis": "ModemManager bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for ModemManager is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2009314",
+				"description": "[Rebase] Rebase ModemManager to 1.16 without libqrtr-glib support",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2009314"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2009",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2009",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"ModemManager-0:1.18.2-1.el8.aarch64.rpm",
+					"ModemManager-0:1.18.2-1.el8.i686.rpm",
+					"ModemManager-0:1.18.2-1.el8.src.rpm",
+					"ModemManager-0:1.18.2-1.el8.x86_64.rpm",
+					"ModemManager-debuginfo-0:1.18.2-1.el8.aarch64.rpm",
+					"ModemManager-debuginfo-0:1.18.2-1.el8.i686.rpm",
+					"ModemManager-debuginfo-0:1.18.2-1.el8.x86_64.rpm",
+					"ModemManager-debugsource-0:1.18.2-1.el8.aarch64.rpm",
+					"ModemManager-debugsource-0:1.18.2-1.el8.i686.rpm",
+					"ModemManager-debugsource-0:1.18.2-1.el8.x86_64.rpm",
+					"ModemManager-devel-0:1.18.2-1.el8.aarch64.rpm",
+					"ModemManager-devel-0:1.18.2-1.el8.i686.rpm",
+					"ModemManager-devel-0:1.18.2-1.el8.x86_64.rpm",
+					"ModemManager-glib-0:1.18.2-1.el8.aarch64.rpm",
+					"ModemManager-glib-0:1.18.2-1.el8.i686.rpm",
+					"ModemManager-glib-0:1.18.2-1.el8.x86_64.rpm",
+					"ModemManager-glib-debuginfo-0:1.18.2-1.el8.aarch64.rpm",
+					"ModemManager-glib-debuginfo-0:1.18.2-1.el8.i686.rpm",
+					"ModemManager-glib-debuginfo-0:1.18.2-1.el8.x86_64.rpm",
+					"ModemManager-glib-devel-0:1.18.2-1.el8.aarch64.rpm",
+					"ModemManager-glib-devel-0:1.18.2-1.el8.i686.rpm",
+					"ModemManager-glib-devel-0:1.18.2-1.el8.x86_64.rpm",
+					"ModemManager-vala-0:1.18.2-1.el8.aarch64.rpm",
+					"ModemManager-vala-0:1.18.2-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

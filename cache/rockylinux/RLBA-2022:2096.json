@@ -1,0 +1,106 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2096",
+		"synopsis": "audit bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for audit is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1906065",
+				"description": "'audisp-remote' process consumes 100% of one CPU, if remote location is not available",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1906065"
+			},
+			{
+				"ticket": "1921447",
+				"description": "wrong section number in augenrules(8)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1921447"
+			},
+			{
+				"ticket": "1921658",
+				"description": "Ausearch fails to correctly parse an event whose timestamp appears more than 2 seconds later than co-located events",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1921658"
+			},
+			{
+				"ticket": "1939406",
+				"description": "Rebase audit to latest upstream version",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1939406"
+			},
+			{
+				"ticket": "2054727",
+				"description": "/usr/share/audit/sample-rules is no longer readable by non-root users",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2054727"
+			},
+			{
+				"ticket": "2061726",
+				"description": "auparse missing information when used with --format-text",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2061726"
+			},
+			{
+				"ticket": "2070705",
+				"description": "Default systemd service config blocks audit watch rules in some directories",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2070705"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2096",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2096",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"audispd-plugins-0:3.0.7-2.el8.2.aarch64.rpm",
+					"audispd-plugins-0:3.0.7-2.el8.2.x86_64.rpm",
+					"audispd-plugins-debuginfo-0:3.0.7-2.el8.2.aarch64.rpm",
+					"audispd-plugins-debuginfo-0:3.0.7-2.el8.2.x86_64.rpm",
+					"audispd-plugins-zos-0:3.0.7-2.el8.2.aarch64.rpm",
+					"audispd-plugins-zos-0:3.0.7-2.el8.2.x86_64.rpm",
+					"audispd-plugins-zos-debuginfo-0:3.0.7-2.el8.2.aarch64.rpm",
+					"audispd-plugins-zos-debuginfo-0:3.0.7-2.el8.2.x86_64.rpm",
+					"audit-0:3.0.7-2.el8.2.aarch64.rpm",
+					"audit-0:3.0.7-2.el8.2.src.rpm",
+					"audit-0:3.0.7-2.el8.2.x86_64.rpm",
+					"audit-debuginfo-0:3.0.7-2.el8.2.aarch64.rpm",
+					"audit-debuginfo-0:3.0.7-2.el8.2.i686.rpm",
+					"audit-debuginfo-0:3.0.7-2.el8.2.x86_64.rpm",
+					"audit-debugsource-0:3.0.7-2.el8.2.aarch64.rpm",
+					"audit-debugsource-0:3.0.7-2.el8.2.i686.rpm",
+					"audit-debugsource-0:3.0.7-2.el8.2.x86_64.rpm",
+					"audit-libs-0:3.0.7-2.el8.2.aarch64.rpm",
+					"audit-libs-0:3.0.7-2.el8.2.i686.rpm",
+					"audit-libs-0:3.0.7-2.el8.2.x86_64.rpm",
+					"audit-libs-debuginfo-0:3.0.7-2.el8.2.aarch64.rpm",
+					"audit-libs-debuginfo-0:3.0.7-2.el8.2.i686.rpm",
+					"audit-libs-debuginfo-0:3.0.7-2.el8.2.x86_64.rpm",
+					"audit-libs-devel-0:3.0.7-2.el8.2.aarch64.rpm",
+					"audit-libs-devel-0:3.0.7-2.el8.2.i686.rpm",
+					"audit-libs-devel-0:3.0.7-2.el8.2.x86_64.rpm",
+					"python3-audit-0:3.0.7-2.el8.2.aarch64.rpm",
+					"python3-audit-0:3.0.7-2.el8.2.x86_64.rpm",
+					"python3-audit-debuginfo-0:3.0.7-2.el8.2.aarch64.rpm",
+					"python3-audit-debuginfo-0:3.0.7-2.el8.2.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

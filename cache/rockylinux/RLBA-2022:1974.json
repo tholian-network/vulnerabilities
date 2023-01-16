@@ -1,0 +1,112 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1974",
+		"synopsis": "resource-agents bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for resource-agents is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1654862",
+				"description": "IPsrcaddr: Log a more specific error for resource start failure",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1654862"
+			},
+			{
+				"ticket": "1704348",
+				"description": "gcp-vpc-move-route and gcp-vpc-move-vip can fail with permission denied errors if token file is not found",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1704348"
+			},
+			{
+				"ticket": "1986409",
+				"description": "CTDB: replace timeout override w/ctdb_timeout parameter",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986409"
+			},
+			{
+				"ticket": "1992661",
+				"description": "mysql: add support for local SSL connection",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992661"
+			},
+			{
+				"ticket": "2002764",
+				"description": "Route: \"monitor\" fails if interface does not exist / is also managed by pcs",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2002764"
+			},
+			{
+				"ticket": "2003117",
+				"description": "Several resource agents report incorrect OCF version (RHEL8)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2003117"
+			},
+			{
+				"ticket": "2008333",
+				"description": "gcp-vpc-move-vip, gcp-vpc-move-route, gcp-pd-move: A failed API call returns OCF_ERR_CONFIGURED, preventing restarts",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2008333"
+			},
+			{
+				"ticket": "2012057",
+				"description": "Route: Probe returns OCF_ERR_GENERIC for IPv4 if the device doesn't yet have an address",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012057"
+			},
+			{
+				"ticket": "2014415",
+				"description": "nfsserver: Fix NFSv4 lock failover: set NFS Server Scope (RHEL8)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2014415"
+			},
+			{
+				"ticket": "2027591",
+				"description": "ocf:heartbeat:nfsnotify fails to start",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2027591"
+			},
+			{
+				"ticket": "2029706",
+				"description": "db2: use -l forever instead of -t nodes -l reboot, as they conflict with eachother (RHEL8)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2029706"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1974",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1974",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"resource-agents-0:4.9.0-16.el8_6.2.aarch64.rpm",
+					"resource-agents-0:4.9.0-16.el8_6.2.src.rpm",
+					"resource-agents-0:4.9.0-16.el8_6.2.x86_64.rpm",
+					"resource-agents-aliyun-0:4.9.0-16.el8_6.2.x86_64.rpm",
+					"resource-agents-aliyun-debuginfo-0:4.9.0-16.el8_6.2.x86_64.rpm",
+					"resource-agents-debuginfo-0:4.9.0-16.el8_6.2.aarch64.rpm",
+					"resource-agents-debuginfo-0:4.9.0-16.el8_6.2.x86_64.rpm",
+					"resource-agents-debugsource-0:4.9.0-16.el8_6.2.aarch64.rpm",
+					"resource-agents-debugsource-0:4.9.0-16.el8_6.2.x86_64.rpm",
+					"resource-agents-gcp-0:4.9.0-16.el8_6.2.x86_64.rpm",
+					"resource-agents-paf-0:4.9.0-16.el8_6.2.aarch64.rpm",
+					"resource-agents-paf-0:4.9.0-16.el8_6.2.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

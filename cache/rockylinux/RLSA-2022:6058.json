@@ -1,0 +1,74 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:6058",
+		"synopsis": "Moderate: .NET 6.0 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for .NET 6.0 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": ".NET is a managed-software framework. It implements a subset of the .NET framework APIs and several new APIs, and it includes a CLR implementation.\nNew versions of .NET that address a security vulnerability are now available. The updated versions are .NET SDK 6.0.108 and .NET Runtime 6.0.8.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2115183",
+				"description": "CVE-2022-34716 dotnet: External Entity Injection during XML signature verification",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2115183"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-34716",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-34716.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "5.9",
+				"cwe": "CWE-611"
+			}
+		],
+		"publishedAt": "2022-08-15T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"aspnetcore-runtime-6.0-0:6.0.8-1.el8_6.aarch64.rpm",
+					"aspnetcore-runtime-6.0-0:6.0.8-1.el8_6.x86_64.rpm",
+					"aspnetcore-targeting-pack-6.0-0:6.0.8-1.el8_6.aarch64.rpm",
+					"aspnetcore-targeting-pack-6.0-0:6.0.8-1.el8_6.x86_64.rpm",
+					"dotnet-0:6.0.108-1.el8_6.x86_64.rpm",
+					"dotnet6.0-0:6.0.108-1.el8_6.src.rpm",
+					"dotnet6.0-debuginfo-0:6.0.108-1.el8_6.aarch64.rpm",
+					"dotnet6.0-debuginfo-0:6.0.108-1.el8_6.x86_64.rpm",
+					"dotnet-apphost-pack-6.0-0:6.0.8-1.el8_6.aarch64.rpm",
+					"dotnet-apphost-pack-6.0-0:6.0.8-1.el8_6.x86_64.rpm",
+					"dotnet-apphost-pack-6.0-debuginfo-0:6.0.8-1.el8_6.aarch64.rpm",
+					"dotnet-apphost-pack-6.0-debuginfo-0:6.0.8-1.el8_6.x86_64.rpm",
+					"dotnet-host-0:6.0.8-1.el8_6.aarch64.rpm",
+					"dotnet-host-0:6.0.8-1.el8_6.x86_64.rpm",
+					"dotnet-host-debuginfo-0:6.0.8-1.el8_6.aarch64.rpm",
+					"dotnet-host-debuginfo-0:6.0.8-1.el8_6.x86_64.rpm",
+					"dotnet-hostfxr-6.0-0:6.0.8-1.el8_6.aarch64.rpm",
+					"dotnet-hostfxr-6.0-0:6.0.8-1.el8_6.x86_64.rpm",
+					"dotnet-hostfxr-6.0-debuginfo-0:6.0.8-1.el8_6.aarch64.rpm",
+					"dotnet-hostfxr-6.0-debuginfo-0:6.0.8-1.el8_6.x86_64.rpm",
+					"dotnet-runtime-6.0-0:6.0.8-1.el8_6.aarch64.rpm",
+					"dotnet-runtime-6.0-0:6.0.8-1.el8_6.x86_64.rpm",
+					"dotnet-runtime-6.0-debuginfo-0:6.0.8-1.el8_6.aarch64.rpm",
+					"dotnet-runtime-6.0-debuginfo-0:6.0.8-1.el8_6.x86_64.rpm",
+					"dotnet-sdk-6.0-0:6.0.108-1.el8_6.aarch64.rpm",
+					"dotnet-sdk-6.0-0:6.0.108-1.el8_6.x86_64.rpm",
+					"dotnet-sdk-6.0-debuginfo-0:6.0.108-1.el8_6.aarch64.rpm",
+					"dotnet-sdk-6.0-debuginfo-0:6.0.108-1.el8_6.x86_64.rpm",
+					"dotnet-targeting-pack-6.0-0:6.0.8-1.el8_6.aarch64.rpm",
+					"dotnet-targeting-pack-6.0-0:6.0.8-1.el8_6.x86_64.rpm",
+					"dotnet-templates-6.0-0:6.0.108-1.el8_6.aarch64.rpm",
+					"dotnet-templates-6.0-0:6.0.108-1.el8_6.x86_64.rpm",
+					"netstandard-targeting-pack-2.1-0:6.0.108-1.el8_6.aarch64.rpm",
+					"netstandard-targeting-pack-2.1-0:6.0.108-1.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

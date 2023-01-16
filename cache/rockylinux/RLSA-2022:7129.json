@@ -1,0 +1,103 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7129",
+		"synopsis": "Moderate: git-lfs security and bug fix update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for git-lfs is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Git Large File Storage (LFS) replaces large files such as audio samples, videos, datasets, and graphics with text pointers inside Git, while storing the file contents on a remote server.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1913333",
+				"description": "CVE-2020-28851 golang.org/x/text: Panic in language.ParseAcceptLanguage while parsing -u- extension",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1913333"
+			},
+			{
+				"ticket": "1913338",
+				"description": "CVE-2020-28852 golang.org/x/text: Panic in language.ParseAcceptLanguage while processing bcp47 tag",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1913338"
+			},
+			{
+				"ticket": "2107371",
+				"description": "CVE-2022-30630 golang: io/fs: stack exhaustion in Glob",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2107371"
+			},
+			{
+				"ticket": "2107374",
+				"description": "CVE-2022-1705 golang: net/http: improper sanitization of Transfer-Encoding header",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2107374"
+			},
+			{
+				"ticket": "2107383",
+				"description": "CVE-2022-32148 golang: net/http/httputil: NewSingleHostReverseProxy - omit X-Forwarded-For not working",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2107383"
+			},
+			{
+				"ticket": "2107386",
+				"description": "CVE-2022-30632 golang: path/filepath: stack exhaustion in Glob",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2107386"
+			},
+			{
+				"ticket": "2107388",
+				"description": "CVE-2022-30635 golang: encoding/gob: stack exhaustion in Decoder.Decode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2107388"
+			},
+			{
+				"ticket": "2113814",
+				"description": "CVE-2022-32189 golang: math/big: decoding big.Float and big.Rat types can panic if the encoded message is too short, potentially allowing a denial of service",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2113814"
+			},
+			{
+				"ticket": "2124669",
+				"description": "CVE-2022-27664 golang: net/http: handle server errors after sending GOAWAY",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2124669"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-27664",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27664.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-400"
+			},
+			{
+				"name": "CVE-2022-32189",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32189.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-400"
+			}
+		],
+		"publishedAt": "2022-10-31T21:11:46.168906Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"git-lfs-0:2.13.3-3.el8_6.aarch64.rpm",
+					"git-lfs-0:2.13.3-3.el8_6.src.rpm",
+					"git-lfs-0:2.13.3-3.el8_6.x86_64.rpm",
+					"git-lfs-debuginfo-0:2.13.3-3.el8_6.aarch64.rpm",
+					"git-lfs-debuginfo-0:2.13.3-3.el8_6.x86_64.rpm",
+					"git-lfs-debugsource-0:2.13.3-3.el8_6.aarch64.rpm",
+					"git-lfs-debugsource-0:2.13.3-3.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

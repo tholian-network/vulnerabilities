@@ -1,0 +1,59 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:1893",
+		"synopsis": "new module: mariadb:10.5",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "A new mariadb:10.5 module is now available for Rocky Linux 8.",
+		"description": "MariaDB is a multi-user, multi-threaded SQL database server that is binary\ncompatible with MySQL.\nThis enhancement update adds the mariadb:10.5 module to Rocky Linux 8. (BZ#1855781)\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1772330",
+				"description": "Logrotate fails in mariadb [10.5 stream]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1772330"
+			},
+			{
+				"ticket": "1929104",
+				"description": "Revert upstream switch to Perl DBD::MariaDB driver from DBD::mysql driver",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1929104"
+			},
+			{
+				"ticket": "1936842",
+				"description": "mariadb:10.5/mariadb: Review permissions of auth_pam_tool and auth_pam_tool_dir",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1936842"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:1893",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:1893",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"Judy-0:1.0.5-18.module+el8.4.0+431+26aaed18.aarch64.rpm",
+					"Judy-0:1.0.5-18.module+el8.4.0+431+26aaed18.src.rpm",
+					"Judy-0:1.0.5-18.module+el8.4.0+431+26aaed18.x86_64.rpm",
+					"Judy-debuginfo-0:1.0.5-18.module+el8.4.0+431+26aaed18.aarch64.rpm",
+					"Judy-debuginfo-0:1.0.5-18.module+el8.4.0+431+26aaed18.x86_64.rpm",
+					"Judy-debugsource-0:1.0.5-18.module+el8.4.0+431+26aaed18.aarch64.rpm",
+					"Judy-debugsource-0:1.0.5-18.module+el8.4.0+431+26aaed18.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

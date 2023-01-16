@@ -1,0 +1,354 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:1846",
+		"synopsis": "Moderate: idm:DL1 and idm:client security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the idm:DL1 and idm:client modules is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Rocky Enterprise Software Foundation Identity Management (IdM) is a centralized authentication, identity management, and authorization solution for both traditional and cloud-based enterprise environments. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1340463",
+				"description": "[RFE] Implement pam_pwquality featureset in IPA password policies",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1340463"
+			},
+			{
+				"ticket": "1357495",
+				"description": "ipa command provides stack trace when provided with single hypen commands",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1357495"
+			},
+			{
+				"ticket": "1484088",
+				"description": "[RFE]: Able to browse different links from IPA web gui in new tabs",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1484088"
+			},
+			{
+				"ticket": "1542737",
+				"description": "Incorrect certs are being updated with \"ipa-certupdate\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1542737"
+			},
+			{
+				"ticket": "1544379",
+				"description": "ipa-client-install changes system wide ssh configuration",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1544379"
+			},
+			{
+				"ticket": "1660877",
+				"description": "kinit is failing due to overflow in Root CA certificate's timestamp",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1660877"
+			},
+			{
+				"ticket": "1779981",
+				"description": "ipa-cert-fix warning message should use commercial name for the product.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1779981"
+			},
+			{
+				"ticket": "1780328",
+				"description": "ipa-healthcheck - Mention that the default output format is JSON.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1780328"
+			},
+			{
+				"ticket": "1780510",
+				"description": "Source 'ipahealthcheck.ipa.topology' not found is displayed when ipactl service is stopped",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1780510"
+			},
+			{
+				"ticket": "1780782",
+				"description": "ipa-cert-fix tool fails when the Dogtag CA SSL CSR is missing from CS.cfg",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1780782"
+			},
+			{
+				"ticket": "1784657",
+				"description": "Unlock user accounts after a password reset and replicate that unlock to all IdM servers",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1784657"
+			},
+			{
+				"ticket": "1809215",
+				"description": "Man page has incorrect examples; log location for healthcheck tool",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1809215"
+			},
+			{
+				"ticket": "1810148",
+				"description": "ipa-server-certinstall raises exception when installing IPA-issued web server cert",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1810148"
+			},
+			{
+				"ticket": "1812871",
+				"description": "Intermittent IdM Client Registration Failures",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1812871"
+			},
+			{
+				"ticket": "1824193",
+				"description": "Add Directory Server Healthchecks from lib389",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1824193"
+			},
+			{
+				"ticket": "1850004",
+				"description": "CVE-2020-11023 jquery: Passing HTML containing \u003coption\u003e elements to manipulation methods could result in untrusted code execution",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1850004"
+			},
+			{
+				"ticket": "1851835",
+				"description": "[RFE] IdM short-term certificates ACME provider",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1851835"
+			},
+			{
+				"ticket": "1857272",
+				"description": "negative option for token.mechanism not working correctly",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1857272"
+			},
+			{
+				"ticket": "1860129",
+				"description": "ipa trust-add fails when FIPS enabled",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1860129"
+			},
+			{
+				"ticket": "1866558",
+				"description": "ipa-healthcheck --input-file returns 1 on exit",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1866558"
+			},
+			{
+				"ticket": "1872603",
+				"description": "KRA Transport and Storage Certificates do not renew",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1872603"
+			},
+			{
+				"ticket": "1875001",
+				"description": "It is not possible to edit KDC database when the FreeIPA server is running",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1875001"
+			},
+			{
+				"ticket": "1882340",
+				"description": "nsslapd-db-locks patching no longer works",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1882340"
+			},
+			{
+				"ticket": "1891056",
+				"description": "ipa-kdb: support subordinate/superior UPN suffixes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1891056"
+			},
+			{
+				"ticket": "1891505",
+				"description": "ipa-healthcheck returns msg\": \"{sssctl} {key} reports mismatch: sssd domains {sssd_domains} trust domains {trust_domains}\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1891505"
+			},
+			{
+				"ticket": "1891735",
+				"description": "[Rebase] Rebase bind-dyndb-ldap to the recent upstream release",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1891735"
+			},
+			{
+				"ticket": "1891741",
+				"description": "[Rebase] Rebase slapi-nis to recent upstream release",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1891741"
+			},
+			{
+				"ticket": "1891832",
+				"description": "[Rebase] Rebase FreeIPA to a recent upstream release",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1891832"
+			},
+			{
+				"ticket": "1891850",
+				"description": "[Rebase] Rebase ipa-healthcheck to 0.7 upstream release",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1891850"
+			},
+			{
+				"ticket": "1894800",
+				"description": "IPA WebUI inaccessible after upgrading to RHEL 8.3.-  idoverride-memberof.js missing",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1894800"
+			},
+			{
+				"ticket": "1901068",
+				"description": "Traceback while doing ipa-backup",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1901068"
+			},
+			{
+				"ticket": "1902173",
+				"description": "Uninstallation of IPA server with KRA installed displays 'ERROR: subprocess.CalledProcessError:'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1902173"
+			},
+			{
+				"ticket": "1902727",
+				"description": "ipa-acme-manage enable fails after upgrade",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1902727"
+			},
+			{
+				"ticket": "1903025",
+				"description": "test failure in test_acme.py::TestACME::test_third_party_certs",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1903025"
+			},
+			{
+				"ticket": "1904484",
+				"description": "[Rebase] Rebase opendnssec to 2.1.7",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1904484"
+			},
+			{
+				"ticket": "1904612",
+				"description": "bind-dyndb-ldap: Rebased bind modifies so versions",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1904612"
+			},
+			{
+				"ticket": "1905919",
+				"description": "ipa-server-upgrade fails with traceback \"exception: KeyError: 'DOMAIN'\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1905919"
+			},
+			{
+				"ticket": "1909876",
+				"description": "ipa uninstall fails when dns not installed",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1909876"
+			},
+			{
+				"ticket": "1912845",
+				"description": "ipa-certupdate drops profile from the caSigningCert tracking",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1912845"
+			},
+			{
+				"ticket": "1922955",
+				"description": "Resubmitting KDC cert fails with internal server error",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922955"
+			},
+			{
+				"ticket": "1923900",
+				"description": "Samba on IdM member failure",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1923900"
+			},
+			{
+				"ticket": "1924026",
+				"description": "Fix upstream test test_trust.py::test_subordinate_suffix",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1924026"
+			},
+			{
+				"ticket": "1924501",
+				"description": "ipa-client-install: Error trying to clean keytab: /usr/sbin/ipa-rmkeytab returned 7",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1924501"
+			},
+			{
+				"ticket": "1924812",
+				"description": "Fix upstream test test_smb.py::TestSMB::test_authentication_with_smb_cifs_principal_alias",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1924812"
+			},
+			{
+				"ticket": "1925410",
+				"description": "Cannot delete sudocmd with typo error e.g. \"/usr/sbin/reboot.\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1925410"
+			},
+			{
+				"ticket": "1926699",
+				"description": "avc denial for gpg-agent with systemd-run",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1926699"
+			},
+			{
+				"ticket": "1926910",
+				"description": "ipa cert-remove-hold \u003cinvalid_cert_id\u003e returns an incorrect error message",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1926910"
+			},
+			{
+				"ticket": "1928900",
+				"description": "Support new baseURL config option for ACME",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1928900"
+			},
+			{
+				"ticket": "1930426",
+				"description": "IPA krb5kdc crash possible doublefree ipadb_mspac_struct_free  finish_process_as_req",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1930426"
+			},
+			{
+				"ticket": "1932289",
+				"description": "Sync ipatests from upstream to RHEL packages for FreeIPA 4.9 branch",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1932289"
+			},
+			{
+				"ticket": "1939371",
+				"description": "ipa-client-install displays false message 'sudo binary does not seem to be present on this system'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1939371"
+			},
+			{
+				"ticket": "871208",
+				"description": "ipa sudorule-add-user should accept external users",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=871208"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-11023",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-11023.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-79"
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"python3-jwcrypto-0:0.5.0-1.module+el8.4.0+430+1dcf16bb.noarch.rpm",
+					"python3-kdcproxy-0:0.4-5.module+el8.3.0+244+0b2ae752.noarch.rpm",
+					"python3-pyusb-0:1.0.0-9.module+el8.4.0+430+1dcf16bb.noarch.rpm",
+					"python3-yubico-0:1.3.2-9.module+el8.4.0+430+1dcf16bb.noarch.rpm",
+					"python-jwcrypto-0:0.5.0-1.module+el8.4.0+430+1dcf16bb.src.rpm",
+					"python-kdcproxy-0:0.4-5.module+el8.3.0+244+0b2ae752.src.rpm",
+					"python-yubico-0:1.3.2-9.module+el8.4.0+430+1dcf16bb.src.rpm",
+					"pyusb-0:1.0.0-9.module+el8.4.0+430+1dcf16bb.src.rpm"
+				]
+			}
+		}
+	}
+}

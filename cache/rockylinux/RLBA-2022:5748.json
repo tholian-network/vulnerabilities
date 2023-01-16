@@ -1,0 +1,48 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5748",
+		"synopsis": ".NET Core 3.1 bugfix update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for .NET Core 3.1 is now available for Rocky Linux 8.",
+		"description": ".NET Core is a managed-software framework. It implements a subset of the .NET\nframework APIs and several new APIs, and it includes a CLR implementation.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2022:5748",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5748",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-07-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"aspnetcore-runtime-3.1-0:3.1.27-1.el8_6.x86_64.rpm",
+					"aspnetcore-targeting-pack-3.1-0:3.1.27-1.el8_6.x86_64.rpm",
+					"dotnet3.1-0:3.1.421-1.el8_6.src.rpm",
+					"dotnet3.1-debuginfo-0:3.1.421-1.el8_6.x86_64.rpm",
+					"dotnet-apphost-pack-3.1-0:3.1.27-1.el8_6.x86_64.rpm",
+					"dotnet-apphost-pack-3.1-debuginfo-0:3.1.27-1.el8_6.x86_64.rpm",
+					"dotnet-hostfxr-3.1-0:3.1.27-1.el8_6.x86_64.rpm",
+					"dotnet-hostfxr-3.1-debuginfo-0:3.1.27-1.el8_6.x86_64.rpm",
+					"dotnet-runtime-3.1-0:3.1.27-1.el8_6.x86_64.rpm",
+					"dotnet-runtime-3.1-debuginfo-0:3.1.27-1.el8_6.x86_64.rpm",
+					"dotnet-sdk-3.1-0:3.1.421-1.el8_6.x86_64.rpm",
+					"dotnet-sdk-3.1-debuginfo-0:3.1.421-1.el8_6.x86_64.rpm",
+					"dotnet-sdk-3.1-source-built-artifacts-0:3.1.421-1.el8_6.x86_64.rpm",
+					"dotnet-targeting-pack-3.1-0:3.1.27-1.el8_6.x86_64.rpm",
+					"dotnet-templates-3.1-0:3.1.421-1.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

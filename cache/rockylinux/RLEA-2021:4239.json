@@ -1,0 +1,137 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:4239",
+		"synopsis": "pki-core bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for pki-core is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1925311",
+				"description": "[RFE] Add a Boolean to Not Allow a CA Certificate Issued Past Issuing CA's Validity",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1925311"
+			},
+			{
+				"ticket": "1930586",
+				"description": "'pki-server cert-fix' fails when CS.cfg parameter selftests.container.order.startup not present",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1930586"
+			},
+			{
+				"ticket": "1952628",
+				"description": "CRMF requests with extensions other than SKID cannot be processed",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1952628"
+			},
+			{
+				"ticket": "1969366",
+				"description": "CA instance installation fails with error message \"Unable to compile class for JSP\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1969366"
+			},
+			{
+				"ticket": "1972741",
+				"description": "Rebase pki-core to PKI 10.11",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1972741"
+			},
+			{
+				"ticket": "1976010",
+				"description": "restrict EE profile list and enrollment submission per LDAP group without immediate issuance [rhel-8]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1976010"
+			},
+			{
+				"ticket": "1992337",
+				"description": "Double issuance of non-CA subsystem certs at installation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1992337"
+			},
+			{
+				"ticket": "2001576",
+				"description": "pki instance creation fails for IPA server in FIPS mode (RHEL-8.5)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001576"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:4239",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:4239",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"apache-commons-lang-0:2.6-21.module+el8.3.0+53+ea062990.noarch.rpm",
+					"apache-commons-lang-0:2.6-21.module+el8.3.0+53+ea062990.src.rpm",
+					"bea-stax-0:1.2.0-16.module+el8.3.0+53+ea062990.src.rpm",
+					"bea-stax-api-0:1.2.0-16.module+el8.3.0+53+ea062990.noarch.rpm",
+					"glassfish-fastinfoset-0:1.2.13-9.module+el8.3.0+53+ea062990.noarch.rpm",
+					"glassfish-fastinfoset-0:1.2.13-9.module+el8.3.0+53+ea062990.src.rpm",
+					"glassfish-jaxb-0:2.2.11-11.module+el8.3.0+53+ea062990.src.rpm",
+					"glassfish-jaxb-api-0:2.2.12-8.module+el8.3.0+53+ea062990.noarch.rpm",
+					"glassfish-jaxb-api-0:2.2.12-8.module+el8.3.0+53+ea062990.src.rpm",
+					"glassfish-jaxb-core-0:2.2.11-11.module+el8.3.0+53+ea062990.noarch.rpm",
+					"glassfish-jaxb-runtime-0:2.2.11-11.module+el8.3.0+53+ea062990.noarch.rpm",
+					"glassfish-jaxb-txw2-0:2.2.11-11.module+el8.3.0+53+ea062990.noarch.rpm",
+					"jackson-annotations-0:2.10.0-1.module+el8.3.0+53+ea062990.noarch.rpm",
+					"jackson-annotations-0:2.10.0-1.module+el8.3.0+53+ea062990.src.rpm",
+					"jackson-core-0:2.10.0-1.module+el8.3.0+53+ea062990.noarch.rpm",
+					"jackson-core-0:2.10.0-1.module+el8.3.0+53+ea062990.src.rpm",
+					"jackson-databind-0:2.10.0-1.module+el8.3.0+53+ea062990.noarch.rpm",
+					"jackson-databind-0:2.10.0-1.module+el8.3.0+53+ea062990.src.rpm",
+					"jackson-jaxrs-json-provider-0:2.9.9-1.module+el8.3.0+53+ea062990.noarch.rpm",
+					"jackson-jaxrs-providers-0:2.9.9-1.module+el8.3.0+53+ea062990.noarch.rpm",
+					"jackson-jaxrs-providers-0:2.9.9-1.module+el8.3.0+53+ea062990.src.rpm",
+					"jackson-module-jaxb-annotations-0:2.7.6-4.module+el8.3.0+53+ea062990.noarch.rpm",
+					"jackson-module-jaxb-annotations-0:2.7.6-4.module+el8.3.0+53+ea062990.src.rpm",
+					"jakarta-commons-httpclient-1:3.1-28.module+el8.3.0+53+ea062990.noarch.rpm",
+					"jakarta-commons-httpclient-1:3.1-28.module+el8.3.0+53+ea062990.src.rpm",
+					"jcl-over-slf4j-0:1.7.25-4.module+el8.6.0+843+5a13dac3.noarch.rpm",
+					"ldapjdk-0:4.23.0-1.module+el8.5.0+701+8dc610e5.noarch.rpm",
+					"ldapjdk-0:4.23.0-1.module+el8.5.0+701+8dc610e5.src.rpm",
+					"ldapjdk-javadoc-0:4.23.0-1.module+el8.5.0+701+8dc610e5.noarch.rpm",
+					"pki-servlet-4.0-api-1:9.0.30-3.module+el8.5.0+697+f586bb30.noarch.rpm",
+					"pki-servlet-engine-1:9.0.30-3.module+el8.5.0+697+f586bb30.noarch.rpm",
+					"pki-servlet-engine-1:9.0.30-3.module+el8.5.0+697+f586bb30.src.rpm",
+					"python3-nss-0:1.0.1-10.module+el8.3.0+53+ea062990.aarch64.rpm",
+					"python3-nss-0:1.0.1-10.module+el8.3.0+53+ea062990.x86_64.rpm",
+					"python3-nss-debuginfo-0:1.0.1-10.module+el8.3.0+53+ea062990.aarch64.rpm",
+					"python3-nss-debuginfo-0:1.0.1-10.module+el8.3.0+53+ea062990.x86_64.rpm",
+					"python-nss-0:1.0.1-10.module+el8.3.0+53+ea062990.src.rpm",
+					"python-nss-debugsource-0:1.0.1-10.module+el8.3.0+53+ea062990.aarch64.rpm",
+					"python-nss-debugsource-0:1.0.1-10.module+el8.3.0+53+ea062990.x86_64.rpm",
+					"python-nss-doc-0:1.0.1-10.module+el8.3.0+53+ea062990.aarch64.rpm",
+					"python-nss-doc-0:1.0.1-10.module+el8.3.0+53+ea062990.x86_64.rpm",
+					"relaxngDatatype-0:2011.1-7.module+el8.3.0+53+ea062990.noarch.rpm",
+					"relaxngDatatype-0:2011.1-7.module+el8.3.0+53+ea062990.src.rpm",
+					"resteasy-0:3.0.26-6.module+el8.5.0+697+f586bb30.noarch.rpm",
+					"resteasy-0:3.0.26-6.module+el8.5.0+697+f586bb30.src.rpm",
+					"slf4j-0:1.7.25-4.module+el8.6.0+843+5a13dac3.noarch.rpm",
+					"slf4j-0:1.7.25-4.module+el8.6.0+843+5a13dac3.src.rpm",
+					"stax-ex-0:1.7.7-8.module+el8.3.0+53+ea062990.noarch.rpm",
+					"stax-ex-0:1.7.7-8.module+el8.3.0+53+ea062990.src.rpm",
+					"xml-commons-apis-0:1.4.01-25.module+el8.5.0+697+f586bb30.noarch.rpm",
+					"xml-commons-apis-0:1.4.01-25.module+el8.5.0+697+f586bb30.src.rpm",
+					"xmlstreambuffer-0:1.5.4-8.module+el8.3.0+53+ea062990.noarch.rpm",
+					"xmlstreambuffer-0:1.5.4-8.module+el8.3.0+53+ea062990.src.rpm",
+					"xsom-0:0-19.20110809svn.module+el8.3.0+53+ea062990.noarch.rpm",
+					"xsom-0:0-19.20110809svn.module+el8.3.0+53+ea062990.src.rpm"
+				]
+			}
+		}
+	}
+}

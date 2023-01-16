@@ -1,0 +1,63 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1759",
+		"synopsis": "oddjob bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for oddjob is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1886433",
+				"description": "oddjob-mkhomedir - homedir has a wrong permissions",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1886433"
+			},
+			{
+				"ticket": "1907481",
+				"description": "ipa: establishing trust fails on fetching domains from AD - oddjob locale issue",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1907481"
+			},
+			{
+				"ticket": "1907541",
+				"description": "[Rebase] Rebase oddjob to 0.34.7",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1907541"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1759",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1759",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"oddjob-0:0.34.7-1.el8.aarch64.rpm",
+					"oddjob-0:0.34.7-1.el8.src.rpm",
+					"oddjob-0:0.34.7-1.el8.x86_64.rpm",
+					"oddjob-debuginfo-0:0.34.7-1.el8.aarch64.rpm",
+					"oddjob-debuginfo-0:0.34.7-1.el8.x86_64.rpm",
+					"oddjob-debugsource-0:0.34.7-1.el8.aarch64.rpm",
+					"oddjob-debugsource-0:0.34.7-1.el8.x86_64.rpm",
+					"oddjob-mkhomedir-0:0.34.7-1.el8.aarch64.rpm",
+					"oddjob-mkhomedir-0:0.34.7-1.el8.x86_64.rpm",
+					"oddjob-mkhomedir-debuginfo-0:0.34.7-1.el8.aarch64.rpm",
+					"oddjob-mkhomedir-debuginfo-0:0.34.7-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

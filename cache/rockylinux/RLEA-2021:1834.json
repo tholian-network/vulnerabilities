@@ -1,0 +1,75 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:1834",
+		"synopsis": "nginx:1.18 bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for the nginx:1.18 module is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1651377",
+				"description": "centralizing default index.html on nginx",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1651377"
+			},
+			{
+				"ticket": "1825683",
+				"description": "Outdated Red Hat branding used in nginx default pages",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1825683"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:1834",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:1834",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nginx-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.aarch64.rpm",
+					"nginx-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.src.rpm",
+					"nginx-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.x86_64.rpm",
+					"nginx-all-modules-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.noarch.rpm",
+					"nginx-debuginfo-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.aarch64.rpm",
+					"nginx-debuginfo-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.x86_64.rpm",
+					"nginx-debugsource-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.aarch64.rpm",
+					"nginx-debugsource-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.x86_64.rpm",
+					"nginx-filesystem-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.noarch.rpm",
+					"nginx-mod-http-image-filter-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.aarch64.rpm",
+					"nginx-mod-http-image-filter-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.x86_64.rpm",
+					"nginx-mod-http-image-filter-debuginfo-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.aarch64.rpm",
+					"nginx-mod-http-image-filter-debuginfo-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.x86_64.rpm",
+					"nginx-mod-http-perl-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.aarch64.rpm",
+					"nginx-mod-http-perl-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.x86_64.rpm",
+					"nginx-mod-http-perl-debuginfo-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.aarch64.rpm",
+					"nginx-mod-http-perl-debuginfo-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.x86_64.rpm",
+					"nginx-mod-http-xslt-filter-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.aarch64.rpm",
+					"nginx-mod-http-xslt-filter-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.x86_64.rpm",
+					"nginx-mod-http-xslt-filter-debuginfo-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.aarch64.rpm",
+					"nginx-mod-http-xslt-filter-debuginfo-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.x86_64.rpm",
+					"nginx-mod-mail-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.aarch64.rpm",
+					"nginx-mod-mail-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.x86_64.rpm",
+					"nginx-mod-mail-debuginfo-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.aarch64.rpm",
+					"nginx-mod-mail-debuginfo-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.x86_64.rpm",
+					"nginx-mod-stream-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.aarch64.rpm",
+					"nginx-mod-stream-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.x86_64.rpm",
+					"nginx-mod-stream-debuginfo-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.aarch64.rpm",
+					"nginx-mod-stream-debuginfo-1:1.18.0-3.module+el8.4.0+544+e40554cf.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

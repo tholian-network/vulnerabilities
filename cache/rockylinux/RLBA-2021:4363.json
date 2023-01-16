@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4363",
+		"synopsis": "gfs2-utils bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gfs2-utils is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1942434",
+				"description": "gfs2_jadd is slow",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1942434"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4363",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4363",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gfs2-utils-0:3.2.0-11.el8.aarch64.rpm",
+					"gfs2-utils-0:3.2.0-11.el8.src.rpm",
+					"gfs2-utils-0:3.2.0-11.el8.x86_64.rpm",
+					"gfs2-utils-debuginfo-0:3.2.0-11.el8.aarch64.rpm",
+					"gfs2-utils-debuginfo-0:3.2.0-11.el8.x86_64.rpm",
+					"gfs2-utils-debugsource-0:3.2.0-11.el8.aarch64.rpm",
+					"gfs2-utils-debugsource-0:3.2.0-11.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

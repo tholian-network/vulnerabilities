@@ -1,0 +1,110 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:3070",
+		"synopsis": "container-tools:rhel8 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for the container-tools:rhel8 module is now available for Rocky Linux 8.",
+		"description": "The container-tools module contains tools for working with containers, notably podman, buildah, skopeo, and runc.\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1942753",
+				"description": "IPv6 errors after exiting crictl [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1942753"
+			},
+			{
+				"ticket": "1961682",
+				"description": "Permission on /dev/null are changing from 666 to 777 after running podman as root [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1961682"
+			},
+			{
+				"ticket": "1972700",
+				"description": "Update shortname list [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1972700"
+			},
+			{
+				"ticket": "1974900",
+				"description": "Podman returns development version [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1974900"
+			},
+			{
+				"ticket": "1974903",
+				"description": "Image fails to prune from registry, preventing subsequent prunes [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1974903"
+			},
+			{
+				"ticket": "1976749",
+				"description": "When running a lot of one-off containers, podman hangs forever [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1976749"
+			},
+			{
+				"ticket": "1986000",
+				"description": "[RFE] Podman secrets for RHEL 8.4 [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986000"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:3070",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:3070",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-08-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"containernetworking-plugins-0:0.9.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"containernetworking-plugins-0:0.9.1-1.module+el8.6.0+973+7a06b91e.src.rpm",
+					"containernetworking-plugins-0:0.9.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"containernetworking-plugins-debuginfo-0:0.9.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"containernetworking-plugins-debuginfo-0:0.9.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"containernetworking-plugins-debugsource-0:0.9.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"containernetworking-plugins-debugsource-0:0.9.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"crit-0:3.15-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"crit-0:3.15-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"criu-0:3.15-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"criu-0:3.15-1.module+el8.6.0+973+7a06b91e.src.rpm",
+					"criu-0:3.15-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"criu-debuginfo-0:3.15-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"criu-debuginfo-0:3.15-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"criu-debugsource-0:3.15-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"criu-debugsource-0:3.15-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"libslirp-0:4.3.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"libslirp-0:4.3.1-1.module+el8.6.0+973+7a06b91e.src.rpm",
+					"libslirp-0:4.3.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"libslirp-debuginfo-0:4.3.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"libslirp-debuginfo-0:4.3.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"libslirp-debugsource-0:4.3.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"libslirp-debugsource-0:4.3.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"libslirp-devel-0:4.3.1-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"libslirp-devel-0:4.3.1-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"python3-criu-0:3.15-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"python3-criu-0:3.15-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"slirp4netns-0:1.1.8-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"slirp4netns-0:1.1.8-1.module+el8.6.0+973+7a06b91e.src.rpm",
+					"slirp4netns-0:1.1.8-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"slirp4netns-debuginfo-0:1.1.8-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"slirp4netns-debuginfo-0:1.1.8-1.module+el8.6.0+973+7a06b91e.x86_64.rpm",
+					"slirp4netns-debugsource-0:1.1.8-1.module+el8.6.0+973+7a06b91e.aarch64.rpm",
+					"slirp4netns-debugsource-0:1.1.8-1.module+el8.6.0+973+7a06b91e.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

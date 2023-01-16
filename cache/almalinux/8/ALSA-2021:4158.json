@@ -1,0 +1,45 @@
+{
+	"updateinfo_id": "ALSA-2021:4158",
+	"fromstr": "packager@almalinux.org",
+	"title": "Moderate: python-lxml security update",
+	"type": "security",
+	"release": "0",
+	"version": "2",
+	"status": "final",
+	"severity": "Moderate",
+	"summary": "An update for python-lxml is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+	"pushcount": "2",
+	"pkglist": {
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"packages": [
+			{
+				"src": "python-lxml-4.2.3-3.el8.src.rpm",
+				"name": "python3-lxml",
+				"epoch": "0",
+				"version": "4.2.3",
+				"release": "3.el8",
+				"arch": "x86_64",
+				"filename": "python3-lxml-4.2.3-3.el8.x86_64.rpm",
+				"sum": "d6320cfcaaf09766f5dd28f394c0ddf35a82edfd9ee4e5b10bd4ed06bb784028",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "lxml is an XML processing library providing access to libxml2 and libxslt libraries using the Python ElementTree API. \n\nSecurity Fix(es):\n\n* python-lxml: Missing input sanitization for formaction HTML5 attributes may lead to XSS (CVE-2021-28957)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
+	"references": [
+		{
+			"id": "CVE-2021-28957",
+			"title": "CVE-2021-28957",
+			"type": "cve",
+			"href": "https://vulners.com/cve/CVE-2021-28957"
+		}
+	],
+	"issued_date": {
+		"$date": 1636446380000
+	},
+	"updated_date": {
+		"$date": 1636712456000
+	}
+}

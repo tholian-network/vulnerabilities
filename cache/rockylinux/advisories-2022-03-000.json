@@ -1,0 +1,86 @@
+{
+	"advisories": [
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:1065",
+			"synopsis": "Important: openssl security update",
+			"severity": "SEVERITY_IMPORTANT",
+			"topic": "An update for openssl is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "OpenSSL is a toolkit that implements the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols, as well as a full-strength general-purpose cryptography library.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-0778",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-0778.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-835"
+				}
+			],
+			"publishedAt": "2022-03-28T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2022:1049",
+			"synopsis": "Important: httpd:2.4 security update",
+			"severity": "SEVERITY_IMPORTANT",
+			"topic": "An update for the httpd:2.4 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "The httpd packages provide the Apache HTTP Server, a powerful, efficient, and extensible web server.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2022-22720",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-22720.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L",
+					"cvss3BaseScore": "8.3",
+					"cwe": "CWE-444"
+				}
+			],
+			"publishedAt": "2022-03-24T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_BUGFIX",
+			"shortCode": "RL",
+			"name": "RLBA-2022:1032",
+			"synopsis": "tzdata bug fix and enhancement update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "Updated tzdata packages that add various enhancements are now available for RedHat Enterprise Linux 6 Extended Lifecycle Support, Rocky Linux 7.3 Advanced Update Support, Rocky Linux 7.4 Advanced Update Support, Rocky Linux, 7.6 Advanced Update Support, Rocky Linux 7.6 Update Services forSAP Solutions, Rocky Linux 7.6 Telco Extended Update Support, Enterprise Linux 7.7 Advanced Update Support, Rocky Linux 7.7 Update Services for SAP Solutions, Rocky Linux 7.7 Telco Extended Update Support, Rocky Linux 7, Rocky Linux 8.2 Extended Update Support, Rocky Linux 8.4 Extended Update Support, and Rocky Linux 8.",
+			"description": "The tzdata packages contain data files with rules for various time zones.\nThe tzdata packages have been updated to version 2022a, which addresses recent\ntime zone changes. Notably:",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHBA-2022:1032",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1032",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2022-03-23T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		}
+	],
+	"total": "3",
+	"size": 100,
+	"page": 0,
+	"lastUpdated": "2023-01-16T04:00:00.369210Z"
+}

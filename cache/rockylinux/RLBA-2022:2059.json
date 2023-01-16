@@ -1,0 +1,53 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2059",
+		"synopsis": "nvme-cli bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for nvme-cli is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2027364",
+				"description": "RHEL8.6: update nvme-cli to version 1.16",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2027364"
+			},
+			{
+				"ticket": "2035066",
+				"description": "nvme cli rev 1.14 and later can fail ns attachment due to nqn upper vs lower case",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2035066"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2059",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2059",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nvme-cli-0:1.16-3.el8.aarch64.rpm",
+					"nvme-cli-0:1.16-3.el8.src.rpm",
+					"nvme-cli-0:1.16-3.el8.x86_64.rpm",
+					"nvme-cli-debuginfo-0:1.16-3.el8.aarch64.rpm",
+					"nvme-cli-debuginfo-0:1.16-3.el8.x86_64.rpm",
+					"nvme-cli-debugsource-0:1.16-3.el8.aarch64.rpm",
+					"nvme-cli-debugsource-0:1.16-3.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

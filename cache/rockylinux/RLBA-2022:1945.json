@@ -1,0 +1,56 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1945",
+		"synopsis": "sevctl bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for sevctl is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2037961",
+				"description": "Rebase sevctl for RHEL8",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2037961"
+			},
+			{
+				"ticket": "2037963",
+				"description": "sevctl verify could not find a matching builtin certificate on AMD Milan",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2037963"
+			},
+			{
+				"ticket": "2037966",
+				"description": "sevctl show flags command return nothing",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2037966"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1945",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1945",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"sevctl-0:0.2.0-1.el8.src.rpm",
+					"sevctl-0:0.2.0-1.el8.x86_64.rpm",
+					"sevctl-debuginfo-0:0.2.0-1.el8.x86_64.rpm",
+					"sevctl-debugsource-0:0.2.0-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

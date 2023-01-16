@@ -1,0 +1,45 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:7136",
+		"synopsis": "resource-agents bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for resource-agents is now available for Rocky Linux 8.",
+		"description": "The resource-agents packages provide the Pacemaker and RGManager service managers with a set of scripts. These scripts interface with several services to allow operating in a high-availability (HA) environment.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHEA-2022:7136",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:7136",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-11-07T19:41:41.383604Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"resource-agents-0:4.9.0-16.el8_6.5.aarch64.rpm",
+					"resource-agents-0:4.9.0-16.el8_6.5.src.rpm",
+					"resource-agents-0:4.9.0-16.el8_6.5.x86_64.rpm",
+					"resource-agents-aliyun-0:4.9.0-16.el8_6.5.x86_64.rpm",
+					"resource-agents-aliyun-debuginfo-0:4.9.0-16.el8_6.5.x86_64.rpm",
+					"resource-agents-debuginfo-0:4.9.0-16.el8_6.5.aarch64.rpm",
+					"resource-agents-debuginfo-0:4.9.0-16.el8_6.5.x86_64.rpm",
+					"resource-agents-debugsource-0:4.9.0-16.el8_6.5.aarch64.rpm",
+					"resource-agents-debugsource-0:4.9.0-16.el8_6.5.x86_64.rpm",
+					"resource-agents-gcp-0:4.9.0-16.el8_6.5.x86_64.rpm",
+					"resource-agents-paf-0:4.9.0-16.el8_6.5.aarch64.rpm",
+					"resource-agents-paf-0:4.9.0-16.el8_6.5.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

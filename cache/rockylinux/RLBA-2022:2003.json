@@ -1,0 +1,59 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2003",
+		"synopsis": "kmod-kvdo bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for kmod-kvdo is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1996893",
+				"description": "VDO resume in read only mode never succeeds.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1996893"
+			},
+			{
+				"ticket": "2000909",
+				"description": "Latest kmod-kvdo does not work with latest RHEL-8.6.0 kernel",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000909"
+			},
+			{
+				"ticket": "2011426",
+				"description": "kmod-kvdo should depend on the 'kernel-modules' package",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2011426"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2003",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2003",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"kmod-kvdo-0:6.2.6.14-84.el8.aarch64.rpm",
+					"kmod-kvdo-0:6.2.6.14-84.el8.src.rpm",
+					"kmod-kvdo-0:6.2.6.14-84.el8.x86_64.rpm",
+					"kmod-kvdo-debuginfo-0:6.2.6.14-84.el8.aarch64.rpm",
+					"kmod-kvdo-debuginfo-0:6.2.6.14-84.el8.x86_64.rpm",
+					"kmod-kvdo-debugsource-0:6.2.6.14-84.el8.aarch64.rpm",
+					"kmod-kvdo-debugsource-0:6.2.6.14-84.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

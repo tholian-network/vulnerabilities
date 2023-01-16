@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1909",
+		"synopsis": "spice-vdagent bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for spice-vdagent is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2005802",
+				"description": "spice-vdagent: udscs_connect: Could not connect: No such file or directory",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2005802"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1909",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1909",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"spice-vdagent-0:0.20.0-4.el8.aarch64.rpm",
+					"spice-vdagent-0:0.20.0-4.el8.src.rpm",
+					"spice-vdagent-0:0.20.0-4.el8.x86_64.rpm",
+					"spice-vdagent-debuginfo-0:0.20.0-4.el8.aarch64.rpm",
+					"spice-vdagent-debuginfo-0:0.20.0-4.el8.x86_64.rpm",
+					"spice-vdagent-debugsource-0:0.20.0-4.el8.aarch64.rpm",
+					"spice-vdagent-debugsource-0:0.20.0-4.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

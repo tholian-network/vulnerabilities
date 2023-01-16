@@ -1,0 +1,7260 @@
+{
+	"cves": [
+		{
+			"id": "CVE-2019-14897",
+			"notices_ids": [
+				"USN-4226-1",
+				"USN-4227-2",
+				"USN-4227-1",
+				"USN-4225-1",
+				"USN-4225-2",
+				"USN-4228-1",
+				"USN-4228-2"
+			],
+			"packages": [
+				{
+					"name": "linux",
+					"source": "https://ubuntu.com/security/cve?package=linux",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "was needs-triage ESM criteria",
+							"release_codename": "precise",
+							"status": "ignored"
+						},
+						{
+							"description": "was needs-triage ESM criteria",
+							"release_codename": "trusty",
+							"status": "ignored"
+						},
+						{
+							"description": "4.4.0-171.200",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "4.15.0-74.84",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "5.0.0-38.41",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "5.3.0-26.28",
+							"release_codename": "eoan",
+							"status": "released"
+						},
+						{
+							"description": "5.4.0-9.12",
+							"release_codename": "focal",
+							"status": "not-affected"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux"
+				},
+				{
+					"name": "linux-hwe",
+					"source": "https://ubuntu.com/security/cve?package=linux-hwe",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "4.15.0-74.83~16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "5.3.0-26.28~18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "disco",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-hwe",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-hwe"
+				},
+				{
+					"name": "linux-hwe-edge",
+					"source": "https://ubuntu.com/security/cve?package=linux-hwe-edge",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "was needs-triage now end-of-life",
+							"release_codename": "xenial",
+							"status": "ignored"
+						},
+						{
+							"description": "was needs-triage now end-of-life",
+							"release_codename": "bionic",
+							"status": "ignored"
+						},
+						{
+							"description": "",
+							"release_codename": "disco",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-hwe-edge",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-hwe-edge"
+				},
+				{
+					"name": "linux-lts-xenial",
+					"source": "https://ubuntu.com/security/cve?package=linux-lts-xenial",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "4.4.0-171.200~14.04.1",
+							"release_codename": "trusty",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "xenial",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "bionic",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "disco",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-lts-xenial",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-lts-xenial"
+				},
+				{
+					"name": "linux-lts-trusty",
+					"source": "https://ubuntu.com/security/cve?package=linux-lts-trusty",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "was needs-triage ESM criteria",
+							"release_codename": "precise",
+							"status": "ignored"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "xenial",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "bionic",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "disco",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-lts-trusty",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-lts-trusty"
+				},
+				{
+					"name": "linux-oem",
+					"source": "https://ubuntu.com/security/cve?package=linux-oem",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "was needs-triage now end-of-life",
+							"release_codename": "xenial",
+							"status": "ignored"
+						},
+						{
+							"description": "4.15.0-1066.76",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "4.15.0-1066.76",
+							"release_codename": "eoan",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-oem",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-oem"
+				},
+				{
+					"name": "linux-oem-osp1",
+					"source": "https://ubuntu.com/security/cve?package=linux-oem-osp1",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "xenial",
+							"status": "DNE"
+						},
+						{
+							"description": "5.0.0-1033.38",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "5.0.0-1033.38",
+							"release_codename": "eoan",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-oem-osp1",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-oem-osp1"
+				},
+				{
+					"name": "linux-kvm",
+					"source": "https://ubuntu.com/security/cve?package=linux-kvm",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "4.4.0-1064.71",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "4.15.0-1052.52",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "5.0.0-1024.26",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "5.3.0-1009.10",
+							"release_codename": "eoan",
+							"status": "released"
+						},
+						{
+							"description": "5.4.0-1004.4",
+							"release_codename": "focal",
+							"status": "not-affected"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-kvm",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-kvm"
+				},
+				{
+					"name": "linux-aws",
+					"source": "https://ubuntu.com/security/cve?package=linux-aws",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "4.4.0-1060.64",
+							"release_codename": "trusty",
+							"status": "released"
+						},
+						{
+							"description": "4.4.0-1100.111",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "4.15.0-1057.59",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "5.0.0-1023.26",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "5.3.0-1009.10",
+							"release_codename": "eoan",
+							"status": "released"
+						},
+						{
+							"description": "5.4.0-1005.5",
+							"release_codename": "focal",
+							"status": "not-affected"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-aws",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-aws"
+				},
+				{
+					"name": "linux-aws-hwe",
+					"source": "https://ubuntu.com/security/cve?package=linux-aws-hwe",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "4.15.0-1057.59~16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "bionic",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "disco",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-aws-hwe",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-aws-hwe"
+				},
+				{
+					"name": "linux-azure",
+					"source": "https://ubuntu.com/security/cve?package=linux-azure",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "4.15.0-1066.71~14.04.1",
+							"release_codename": "trusty",
+							"status": "released"
+						},
+						{
+							"description": "4.15.0-1066.71",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "5.0.0-1028.30~18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "5.0.0-1028.30",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "5.3.0-1009.10",
+							"release_codename": "eoan",
+							"status": "released"
+						},
+						{
+							"description": "5.4.0-1006.6",
+							"release_codename": "focal",
+							"status": "not-affected"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-azure",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-azure"
+				},
+				{
+					"name": "linux-azure-edge",
+					"source": "https://ubuntu.com/security/cve?package=linux-azure-edge",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "was needs-triage now end-of-life",
+							"release_codename": "xenial",
+							"status": "ignored"
+						},
+						{
+							"description": "was needs-triage now end-of-life",
+							"release_codename": "bionic",
+							"status": "ignored"
+						},
+						{
+							"description": "",
+							"release_codename": "disco",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-azure-edge",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-azure-edge"
+				},
+				{
+					"name": "linux-gcp",
+					"source": "https://ubuntu.com/security/cve?package=linux-gcp",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "4.15.0-1052.56",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "5.0.0-1028.29~18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "5.0.0-1028.29",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "5.3.0-1011.12",
+							"release_codename": "eoan",
+							"status": "released"
+						},
+						{
+							"description": "5.4.0-1005.5",
+							"release_codename": "focal",
+							"status": "not-affected"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-gcp",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-gcp"
+				},
+				{
+					"name": "linux-gcp-edge",
+					"source": "https://ubuntu.com/security/cve?package=linux-gcp-edge",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "xenial",
+							"status": "DNE"
+						},
+						{
+							"description": "was needs-triage now end-of-life",
+							"release_codename": "bionic",
+							"status": "ignored"
+						},
+						{
+							"description": "",
+							"release_codename": "disco",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-gcp-edge",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-gcp-edge"
+				},
+				{
+					"name": "linux-gke-4.15",
+					"source": "https://ubuntu.com/security/cve?package=linux-gke-4.15",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "xenial",
+							"status": "DNE"
+						},
+						{
+							"description": "4.15.0-1050.53",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "disco",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-gke-4.15",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-gke-4.15"
+				},
+				{
+					"name": "linux-gke-5.0",
+					"source": "https://ubuntu.com/security/cve?package=linux-gke-5.0",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "xenial",
+							"status": "DNE"
+						},
+						{
+							"description": "5.0.0-1027.28~18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "disco",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-gke-5.0",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-gke-5.0"
+				},
+				{
+					"name": "linux-oracle",
+					"source": "https://ubuntu.com/security/cve?package=linux-oracle",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "4.15.0-1031.34~16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "4.15.0-1031.34",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "5.0.0-1009.14",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "5.3.0-1008.9",
+							"release_codename": "eoan",
+							"status": "released"
+						},
+						{
+							"description": "5.4.0-1005.5",
+							"release_codename": "focal",
+							"status": "not-affected"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-oracle",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-oracle"
+				},
+				{
+					"name": "linux-raspi2",
+					"source": "https://ubuntu.com/security/cve?package=linux-raspi2",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "4.4.0-1127.136",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "4.15.0-1053.57",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "5.0.0-1024.25",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "5.3.0-1015.17",
+							"release_codename": "eoan",
+							"status": "released"
+						},
+						{
+							"description": "was needed now end-of-life",
+							"release_codename": "focal",
+							"status": "ignored"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-raspi2",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-raspi2"
+				},
+				{
+					"name": "linux-snapdragon",
+					"source": "https://ubuntu.com/security/cve?package=linux-snapdragon",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "4.4.0-1131.139",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "4.15.0-1070.77",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "was pending \\[5.0.0-1028.30\\] now end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-snapdragon",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-snapdragon"
+				},
+				{
+					"name": "linux-gcp-5.3",
+					"source": "https://ubuntu.com/security/cve?package=linux-gcp-5.3",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "xenial",
+							"status": "DNE"
+						},
+						{
+							"description": "5.3.0-1010.11~18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "disco",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-gcp-5.3",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-gcp-5.3"
+				},
+				{
+					"name": "linux-oracle-5.0",
+					"source": "https://ubuntu.com/security/cve?package=linux-oracle-5.0",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "xenial",
+							"status": "DNE"
+						},
+						{
+							"description": "5.0.0-1009.14~18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "disco",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-oracle-5.0",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-oracle-5.0"
+				},
+				{
+					"name": "linux-aws-5.0",
+					"source": "https://ubuntu.com/security/cve?package=linux-aws-5.0",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "xenial",
+							"status": "DNE"
+						},
+						{
+							"description": "5.0.0-1023.26~18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "disco",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-aws-5.0",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-aws-5.0"
+				},
+				{
+					"name": "linux-azure-5.3",
+					"source": "https://ubuntu.com/security/cve?package=linux-azure-5.3",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "xenial",
+							"status": "DNE"
+						},
+						{
+							"description": "5.3.0-1009.10~18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "disco",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-azure-5.3",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-azure-5.3"
+				},
+				{
+					"name": "linux-raspi2-5.3",
+					"source": "https://ubuntu.com/security/cve?package=linux-raspi2-5.3",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "xenial",
+							"status": "DNE"
+						},
+						{
+							"description": "5.3.0-1017.19~18.04.1",
+							"release_codename": "bionic",
+							"status": "not-affected"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-raspi2-5.3",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-raspi2-5.3"
+				},
+				{
+					"name": "linux-oem-5.6",
+					"source": "https://ubuntu.com/security/cve?package=linux-oem-5.6",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "xenial",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "bionic",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "5.4.0-1002.4",
+							"release_codename": "focal",
+							"status": "not-affected"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-oem-5.6",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-oem-5.6"
+				},
+				{
+					"name": "linux-gke-5.3",
+					"source": "https://ubuntu.com/security/cve?package=linux-gke-5.3",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "xenial",
+							"status": "DNE"
+						},
+						{
+							"description": "5.3.0-1011.12~18.04.1",
+							"release_codename": "bionic",
+							"status": "not-affected"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-gke-5.3",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-gke-5.3"
+				},
+				{
+					"name": "linux-oracle-5.3",
+					"source": "https://ubuntu.com/security/cve?package=linux-oracle-5.3",
+					"statuses": [
+						{
+							"description": "5.5",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "xenial",
+							"status": "DNE"
+						},
+						{
+							"description": "5.3.0-1011.12~18.04.1",
+							"release_codename": "bionic",
+							"status": "not-affected"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/linux-oracle-5.3",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=linux-oracle-5.3"
+				}
+			],
+			"patches": {
+				"linux": [
+					"break-fix: - local-2019-14897-fix|e5e884b42639c74b5b57dc277909915c0aefc8bb"
+				],
+				"linux-aws": [],
+				"linux-aws-5.0": [],
+				"linux-aws-hwe": [],
+				"linux-azure": [],
+				"linux-azure-5.3": [],
+				"linux-azure-edge": [],
+				"linux-gcp": [],
+				"linux-gcp-5.3": [],
+				"linux-gcp-edge": [],
+				"linux-gke-4.15": [],
+				"linux-gke-5.0": [],
+				"linux-gke-5.3": [],
+				"linux-hwe": [],
+				"linux-hwe-edge": [],
+				"linux-kvm": [],
+				"linux-lts-trusty": [],
+				"linux-lts-xenial": [],
+				"linux-oem": [],
+				"linux-oem-5.6": [],
+				"linux-oem-osp1": [],
+				"linux-oracle": [],
+				"linux-oracle-5.0": [],
+				"linux-oracle-5.3": [],
+				"linux-raspi2": [],
+				"linux-raspi2-5.3": [],
+				"linux-snapdragon": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:00:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14897",
+				"https://seclists.org/oss-sec/2019/q4/95",
+				"https://lore.kernel.org/linux-wireless/20191122052917.11309-1-huangwenabc@gmail.com/T/#u",
+				"https://ubuntu.com/security/notices/USN-4225-1",
+				"https://ubuntu.com/security/notices/USN-4226-1",
+				"https://ubuntu.com/security/notices/USN-4227-1",
+				"https://ubuntu.com/security/notices/USN-4228-1",
+				"https://ubuntu.com/security/notices/USN-4227-2",
+				"https://ubuntu.com/security/notices/USN-4228-2",
+				"https://ubuntu.com/security/notices/USN-4225-2"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2012-5631",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "freeipa",
+					"source": "https://ubuntu.com/security/cve?package=freeipa",
+					"statuses": [
+						{
+							"description": "3.0.2, 3.1.0",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "not-affected"
+						},
+						{
+							"description": "",
+							"release_codename": "xenial",
+							"status": "not-affected"
+						},
+						{
+							"description": "",
+							"release_codename": "bionic",
+							"status": "not-affected"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/freeipa",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=freeipa"
+				}
+			],
+			"patches": {
+				"freeipa": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5631",
+				"https://bugzilla.redhat.com/show_bug.cgi?id=886369",
+				"https://pagure.io/freeipa/issue/3022",
+				"https://pagure.io/freeipa/c/9269e5d6ddc85716d2b03c7763cf4b8e1ca67cad",
+				"https://pagure.io/freeipa/c/bfca97f46c92196eb8c52f1b381c95063a5eef45"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2012-5644",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "libuser",
+					"source": "https://ubuntu.com/security/cve?package=libuser",
+					"statuses": [
+						{
+							"description": "0.57.6-2.fc17, 0.58-3.fc18",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "hardy",
+							"status": "ignored"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "lucid",
+							"status": "ignored"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "oneiric",
+							"status": "ignored"
+						},
+						{
+							"description": "precise was needed",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "quantal",
+							"status": "ignored"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "raring",
+							"status": "ignored"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "saucy",
+							"status": "ignored"
+						},
+						{
+							"description": "trusty was needed",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "utopic",
+							"status": "ignored"
+						},
+						{
+							"description": "1:0.60~dfsg-1.2",
+							"release_codename": "wily",
+							"status": "not-affected"
+						},
+						{
+							"description": "1:0.60~dfsg-1.2",
+							"release_codename": "xenial",
+							"status": "not-affected"
+						},
+						{
+							"description": "1:0.60~dfsg-1.2",
+							"release_codename": "yakkety",
+							"status": "not-affected"
+						},
+						{
+							"description": "1:0.60~dfsg-1.2",
+							"release_codename": "zesty",
+							"status": "not-affected"
+						},
+						{
+							"description": "1:0.60~dfsg-1.2",
+							"release_codename": "artful",
+							"status": "not-affected"
+						},
+						{
+							"description": "1:0.60~dfsg-1.2",
+							"release_codename": "bionic",
+							"status": "not-affected"
+						},
+						{
+							"description": "1:0.60~dfsg-1.2",
+							"release_codename": "cosmic",
+							"status": "not-affected"
+						},
+						{
+							"description": "1:0.60~dfsg-1.2",
+							"release_codename": "disco",
+							"status": "not-affected"
+						},
+						{
+							"description": "1:0.60~dfsg-1.2",
+							"release_codename": "vivid",
+							"status": "not-affected"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/libuser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=libuser"
+				}
+			],
+			"patches": {
+				"libuser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5644",
+				"https://bugzilla.redhat.com/show_bug.cgi?id=928846"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13659",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13659"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13660",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13660"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13661",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13661"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13662",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13662"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13663",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13663"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13664",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13664"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13665",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13665"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13666",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13666"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13667",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13667"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13668",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13668"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13669",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13669"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13670",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13670"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13671",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13671"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13673",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13673"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13674",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13674"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13675",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13675"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13676",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13676"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13677",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13677"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13678",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13678"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13679",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13679"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13680",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13680"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13681",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13681"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13682",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13682"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13683",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13683"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13684",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "72.0.3626.81-1",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "72.0.3626.119-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "72.0.3626.119-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "72.0.3626.81-0ubuntu1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "72.0.3626.81-0ubuntu1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13684",
+				"https://chromereleases.googleblog.com/2019/01/stable-channel-update-for-desktop.html",
+				"https://crbug.com/837936"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13685",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.90",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13685"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13686",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.90",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13686"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13687",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.90",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13687"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13688",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.90",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13688"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13691",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13691"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13692",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13692"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13693",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3865.120",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "not-affected"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13693"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13694",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3865.120",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "not-affected"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13694"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13695",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3865.120",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "not-affected"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13695"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13696",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3865.120",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "not-affected"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13696"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13697",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3865.120",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "not-affected"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13697"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13698",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "73.0.3683.103",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "74.0.3729.169-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "74.0.3729.169-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "73.0.3683.103-0ubuntu1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "73.0.3683.103-0ubuntu1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13698",
+				"https://chromereleases.googleblog.com/2019/04/stable-channel-update-for-desktop.html",
+				"https://crbug.com/944971"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13699",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13699"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13700",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13700"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13701",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13701"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13702",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13702"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13703",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13703"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13704",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13704"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13705",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13705"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13706",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13706"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13707",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13707"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13708",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13708"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13709",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13709"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13710",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13710"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13711",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13711"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13713",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13713"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13714",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13714"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13715",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13715"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13716",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13716"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13717",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13717"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13718",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13718"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13719",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.70",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.16.04.2",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.18.04.2",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.70-0ubuntu0.19.04.4",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13719"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13720",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.87",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.97-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.97-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.97-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13720",
+				"https://chromereleases.googleblog.com/2019/10/"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13721",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.87",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.97-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.97-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.97-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13721",
+				"https://chromereleases.googleblog.com/2019/10/"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13723",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.108",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.108-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.108-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.108-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13723"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-13724",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "78.0.3904.108",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "78.0.3904.108-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.108-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "78.0.3904.108-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "79.0.3945.79-0ubuntu0.19.10.2",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13724"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5842",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "75.0.3770.90",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "75.0.3770.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "cosmic",
+							"status": "ignored"
+						},
+						{
+							"description": "75.0.3770.90-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5842"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5847",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "75.0.3770.142",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "75.0.3770.142-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "75.0.3770.142-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5847"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5848",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "75.0.3770.142",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "75.0.3770.142-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "75.0.3770.142-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5848"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5850",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "76.0.3809.87",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5850"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5851",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "76.0.3809.87",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5851"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5852",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "76.0.3809.87",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5852"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5853",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "76.0.3809.87",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5853"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5854",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "76.0.3809.87",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5854"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5855",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "76.0.3809.87",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5855"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5856",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "76.0.3809.87",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5856"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5857",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "76.0.3809.87",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5857"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5858",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "76.0.3809.87",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5858"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5859",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "76.0.3809.87",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5859"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5860",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "76.0.3809.87",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5860"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5861",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "76.0.3809.87",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5861"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5862",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "76.0.3809.87",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5862"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5864",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "76.0.3809.87",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5864"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5865",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "76.0.3809.87",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1.19.10.1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5865"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5866",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "75.0.3770.142",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.87-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "75.0.3770.142-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "75.0.3770.142-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "75.0.3770.142-0ubuntu1~snap1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5866"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5867",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "76.0.3809.100",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.100-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.100-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.100-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1~snap1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5867"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5868",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "76.0.3809.100",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "76.0.3809.100-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.100-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "76.0.3809.100-0ubuntu0.19.04.1",
+							"release_codename": "disco",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1~snap1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5868"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5869",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "76.0.3809.132",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1~snap1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "unknown",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5869"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5870",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1~snap1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5870"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5871",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1~snap1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5871"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5872",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1~snap1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5872"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5873",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1~snap1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5873"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5874",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1~snap1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5874"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5875",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1~snap1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5875"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5876",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1~snap1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5876"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5877",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1~snap1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5877"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5878",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1~snap1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5878"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5879",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1~snap1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5879"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5880",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1~snap1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5880"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-5881",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "chromium-browser",
+					"source": "https://ubuntu.com/security/cve?package=chromium-browser",
+					"statuses": [
+						{
+							"description": "77.0.3865.75",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.16.04.1",
+							"release_codename": "xenial",
+							"status": "released"
+						},
+						{
+							"description": "77.0.3865.90-0ubuntu0.18.04.1",
+							"release_codename": "bionic",
+							"status": "released"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "77.0.3865.120-0ubuntu1~snap1",
+							"release_codename": "eoan",
+							"status": "released"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/chromium-browser",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=chromium-browser"
+				}
+			],
+			"patches": {
+				"chromium-browser": []
+			},
+			"priority": "medium",
+			"published": "2019-11-25T15:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5881"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-10217",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "ansible",
+					"source": "https://ubuntu.com/security/cve?package=ansible",
+					"statuses": [
+						{
+							"description": "2.8.6+dfsg-1",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "code not present",
+							"release_codename": "trusty",
+							"status": "not-affected"
+						},
+						{
+							"description": "code not present",
+							"release_codename": "xenial",
+							"status": "not-affected"
+						},
+						{
+							"description": "code not present",
+							"release_codename": "bionic",
+							"status": "not-affected"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "eoan",
+							"status": "ignored"
+						},
+						{
+							"description": "2.8.6+dfsg-1",
+							"release_codename": "focal",
+							"status": "not-affected"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/ansible",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=ansible"
+				}
+			],
+			"patches": {
+				"ansible": []
+			},
+			"priority": "low",
+			"published": "2019-11-25T16:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10217",
+				"https://github.com/ansible/ansible/issues/56269",
+				"https://github.com/ansible/ansible/pull/59427"
+			],
+			"status": "active"
+		},
+		{
+			"id": "CVE-2019-10224",
+			"notices_ids": [],
+			"packages": [
+				{
+					"name": "389-ds-base",
+					"source": "https://ubuntu.com/security/cve?package=389-ds-base",
+					"statuses": [
+						{
+							"description": "1.4.1.5-1",
+							"release_codename": "upstream",
+							"status": "released"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "bionic",
+							"status": "needed"
+						},
+						{
+							"description": "reached end-of-life",
+							"release_codename": "disco",
+							"status": "ignored"
+						},
+						{
+							"description": "1.4.1.5-1",
+							"release_codename": "eoan",
+							"status": "not-affected"
+						},
+						{
+							"description": "1.4.1.5-1",
+							"release_codename": "focal",
+							"status": "not-affected"
+						},
+						{
+							"description": "1.4.1.5-1",
+							"release_codename": "impish",
+							"status": "not-affected"
+						},
+						{
+							"description": "1.4.1.5-1",
+							"release_codename": "groovy",
+							"status": "not-affected"
+						},
+						{
+							"description": "1.4.1.5-1",
+							"release_codename": "hirsute",
+							"status": "not-affected"
+						},
+						{
+							"description": "end of standard support, was needed",
+							"release_codename": "xenial",
+							"status": "ignored"
+						},
+						{
+							"description": "1.4.1.5-1",
+							"release_codename": "jammy",
+							"status": "not-affected"
+						},
+						{
+							"description": "1.4.1.5-1",
+							"release_codename": "kinetic",
+							"status": "not-affected"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/389-ds-base",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=389-ds-base"
+				},
+				{
+					"name": "python-lib389",
+					"source": "https://ubuntu.com/security/cve?package=python-lib389",
+					"statuses": [
+						{
+							"description": "",
+							"release_codename": "upstream",
+							"status": "needs-triage"
+						},
+						{
+							"description": "",
+							"release_codename": "precise",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "trusty",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "xenial",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "bionic",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "disco",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "eoan",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "focal",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "impish",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "groovy",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "hirsute",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "jammy",
+							"status": "DNE"
+						},
+						{
+							"description": "",
+							"release_codename": "kinetic",
+							"status": "DNE"
+						}
+					],
+					"debian": "https://tracker.debian.org/pkg/python-lib389",
+					"ubuntu": "https://packages.ubuntu.com/search?suite=all\u0026section=all\u0026arch=any\u0026searchon=sourcenames\u0026keywords=python-lib389"
+				}
+			],
+			"patches": {
+				"389-ds-base": [],
+				"python-lib389": []
+			},
+			"priority": "low",
+			"published": "2019-11-25T16:15:00",
+			"references": [
+				"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10224",
+				"https://bugzilla.redhat.com/show_bug.cgi?id=1677147",
+				"https://pagure.io/389-ds-base/issue/50251",
+				"https://pagure.io/389-ds-base/c/632ecb90d96ac0535656f5aaf67fd2be4b81d310"
+			],
+			"status": "active"
+		}
+	],
+	"limit": 100,
+	"offset": 31500,
+	"total_results": 42471
+}

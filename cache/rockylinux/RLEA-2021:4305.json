@@ -1,0 +1,49 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:4305",
+		"synopsis": "WALinuxAgent bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for WALinuxAgent is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1972102",
+				"description": "[Azure][RHEL-8]Rebase WALinuxAgent to 2.3.0.2",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1972102"
+			},
+			{
+				"ticket": "1985198",
+				"description": "[Azure][WALA][RHEL-8] WALA needs iptables package",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1985198"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:4305",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:4305",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"WALinuxAgent-0:2.3.0.2-2.el8_6.2.rocky.0.noarch.rpm",
+					"WALinuxAgent-0:2.3.0.2-2.el8_6.2.rocky.0.src.rpm",
+					"WALinuxAgent-udev-0:2.3.0.2-2.el8_6.2.rocky.0.noarch.rpm"
+				]
+			}
+		}
+	}
+}

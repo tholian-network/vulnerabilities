@@ -1,0 +1,95 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4235",
+		"synopsis": "Moderate: jasper security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for jasper is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "JasPer is an implementation of Part 1 of the JPEG 2000 image compression standard.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1905201",
+				"description": "CVE-2020-27828 jasper: Heap-based buffer overflow in cp_create() in jpc_enc.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1905201"
+			},
+			{
+				"ticket": "1921325",
+				"description": "CVE-2021-3272 jasper: Heap-based buffer over-read in jp2_decode() in jp2_dec.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1921325"
+			},
+			{
+				"ticket": "1921426",
+				"description": "CVE-2021-26926 jasper: Out of bounds read in jp2_decode() in jp2_dec.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1921426"
+			},
+			{
+				"ticket": "1921428",
+				"description": "CVE-2021-26927 jasper: NULL pointer dereference in jp2_decode() in jp2_dec.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1921428"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-27828",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-27828.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-20-\u003eCWE-122-\u003eCWE-787"
+			},
+			{
+				"name": "CVE-2021-26926",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-26926.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2021-26927",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-26927.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-476"
+			},
+			{
+				"name": "CVE-2021-3272",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3272.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-125"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"jasper-0:2.0.14-5.el8.src.rpm",
+					"jasper-debuginfo-0:2.0.14-5.el8.aarch64.rpm",
+					"jasper-debuginfo-0:2.0.14-5.el8.i686.rpm",
+					"jasper-debuginfo-0:2.0.14-5.el8.x86_64.rpm",
+					"jasper-devel-0:2.0.14-5.el8.aarch64.rpm",
+					"jasper-devel-0:2.0.14-5.el8.i686.rpm",
+					"jasper-devel-0:2.0.14-5.el8.x86_64.rpm",
+					"jasper-libs-0:2.0.14-5.el8.aarch64.rpm",
+					"jasper-libs-0:2.0.14-5.el8.i686.rpm",
+					"jasper-libs-0:2.0.14-5.el8.x86_64.rpm",
+					"jasper-libs-debuginfo-0:2.0.14-5.el8.aarch64.rpm",
+					"jasper-libs-debuginfo-0:2.0.14-5.el8.i686.rpm",
+					"jasper-libs-debuginfo-0:2.0.14-5.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

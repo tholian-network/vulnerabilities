@@ -1,0 +1,55 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2044",
+		"synopsis": "crypto-policies bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for crypto-policies is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2020346",
+				"description": "Update the OSPP ssh settings",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2020346"
+			},
+			{
+				"ticket": "2023734",
+				"description": "crypto-policies blocks CHACHA20 incorrectly in openssl",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2023734"
+			},
+			{
+				"ticket": "2023744",
+				"description": "enable diffie-hellman-group14-sha256 in libssh",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2023744"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2044",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2044",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"crypto-policies-0:20211116-1.gitae470d6.el8.noarch.rpm",
+					"crypto-policies-0:20211116-1.gitae470d6.el8.src.rpm",
+					"crypto-policies-scripts-0:20211116-1.gitae470d6.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

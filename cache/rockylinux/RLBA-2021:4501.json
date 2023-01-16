@@ -1,0 +1,61 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4501",
+		"synopsis": "emacs bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for emacs is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1810729",
+				"description": "Please update to Emacs 26.3 to fix expired ELPA signing key",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1810729"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4501",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4501",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"emacs-1:26.1-7.el8.aarch64.rpm",
+					"emacs-1:26.1-7.el8.src.rpm",
+					"emacs-1:26.1-7.el8.x86_64.rpm",
+					"emacs-common-1:26.1-7.el8.aarch64.rpm",
+					"emacs-common-1:26.1-7.el8.x86_64.rpm",
+					"emacs-common-debuginfo-1:26.1-7.el8.aarch64.rpm",
+					"emacs-common-debuginfo-1:26.1-7.el8.x86_64.rpm",
+					"emacs-debuginfo-1:26.1-7.el8.aarch64.rpm",
+					"emacs-debuginfo-1:26.1-7.el8.x86_64.rpm",
+					"emacs-debugsource-1:26.1-7.el8.aarch64.rpm",
+					"emacs-debugsource-1:26.1-7.el8.x86_64.rpm",
+					"emacs-filesystem-1:26.1-7.el8.noarch.rpm",
+					"emacs-lucid-1:26.1-7.el8.aarch64.rpm",
+					"emacs-lucid-1:26.1-7.el8.x86_64.rpm",
+					"emacs-lucid-debuginfo-1:26.1-7.el8.aarch64.rpm",
+					"emacs-lucid-debuginfo-1:26.1-7.el8.x86_64.rpm",
+					"emacs-nox-1:26.1-7.el8.aarch64.rpm",
+					"emacs-nox-1:26.1-7.el8.x86_64.rpm",
+					"emacs-nox-debuginfo-1:26.1-7.el8.aarch64.rpm",
+					"emacs-nox-debuginfo-1:26.1-7.el8.x86_64.rpm",
+					"emacs-terminal-1:26.1-7.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

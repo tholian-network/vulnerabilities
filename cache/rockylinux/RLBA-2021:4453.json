@@ -1,0 +1,60 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4453",
+		"synopsis": "adcli bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for adcli is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1690920",
+				"description": "[RFE] add option to populate \"managed by\" computer attribute",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1690920"
+			},
+			{
+				"ticket": "1769644",
+				"description": "[RFE] adcli should allow to modify DONT_EXPIRE_PASSWORD attribute",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1769644"
+			},
+			{
+				"ticket": "1952828",
+				"description": "[RFE] Allow adcli to create  AD user with password as well as set or reset existing user password",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1952828"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4453",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4453",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"adcli-0:0.8.2-12.el8.aarch64.rpm",
+					"adcli-0:0.8.2-12.el8.src.rpm",
+					"adcli-0:0.8.2-12.el8.x86_64.rpm",
+					"adcli-debuginfo-0:0.8.2-12.el8.aarch64.rpm",
+					"adcli-debuginfo-0:0.8.2-12.el8.x86_64.rpm",
+					"adcli-debugsource-0:0.8.2-12.el8.aarch64.rpm",
+					"adcli-debugsource-0:0.8.2-12.el8.x86_64.rpm",
+					"adcli-doc-0:0.8.2-12.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

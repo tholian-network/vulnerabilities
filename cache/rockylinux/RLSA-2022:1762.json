@@ -1,0 +1,379 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1762",
+		"synopsis": "Important: container-tools:rhel8 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for the container-tools:rhel8 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The container-tools module contains tools for working with containers, notably podman, buildah, skopeo, and runc.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1861760",
+				"description": "RFE: podman - join multiple CNI network and set static IPs for them (multiple static networks)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1861760"
+			},
+			{
+				"ticket": "1967642",
+				"description": "compilation of container_runtime_run interface leads to errors",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1967642"
+			},
+			{
+				"ticket": "1982164",
+				"description": "Podman volumes with size options",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1982164"
+			},
+			{
+				"ticket": "1982784",
+				"description": "RFE: Full support for network management in the podman compatibility API",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1982784"
+			},
+			{
+				"ticket": "1995900",
+				"description": "Podman does not honor the userns configuration",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1995900"
+			},
+			{
+				"ticket": "1998835",
+				"description": "error loading cached network config: network \"podman\" not found in CNI cache",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1998835"
+			},
+			{
+				"ticket": "2000914",
+				"description": "Suggest a way forward if coreos/toolbox was used",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000914"
+			},
+			{
+				"ticket": "2002721",
+				"description": "podman auto update fails to login to registry after podman upgrade to 3.2 [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2002721"
+			},
+			{
+				"ticket": "2004993",
+				"description": "Switch to using the Toolbox-specific UBI image by default [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2004993"
+			},
+			{
+				"ticket": "2005972",
+				"description": "podman 3.2.3: Recovering from API handler panic: runtime error: index out of range [58] with length 58, goroutine 805 [running]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2005972"
+			},
+			{
+				"ticket": "2006678",
+				"description": "podman: panic: runtime error: invalid memory address or nil pointer dereference",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2006678"
+			},
+			{
+				"ticket": "2009047",
+				"description": "Networking failure when running Fedora 35 container",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2009047"
+			},
+			{
+				"ticket": "2009296",
+				"description": "No events reported when creating pod with --infra=false",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2009296"
+			},
+			{
+				"ticket": "2017266",
+				"description": "[cockpit-podman] RHEL 8.6 Tier 0 Localization",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2017266"
+			},
+			{
+				"ticket": "2018949",
+				"description": "podman multi stage build failing when using with --pull flag",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2018949"
+			},
+			{
+				"ticket": "2023112",
+				"description": "Podman should be built with the support of 'libsubid'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2023112"
+			},
+			{
+				"ticket": "2024229",
+				"description": "Healthcheck does not work with podman, after container stop/start",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2024229"
+			},
+			{
+				"ticket": "2025336",
+				"description": "[RFE] Backport GH#12294 PR to Podman - secret: honor custom target= for secrets with type=mount",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2025336"
+			},
+			{
+				"ticket": "2030599",
+				"description": "Creating a podman container with option \"--hostname\" in a pod with --pod new:test didn't effect correctly",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2030599"
+			},
+			{
+				"ticket": "2045880",
+				"description": "CVE-2022-21698 prometheus/client_golang: Denial of service using InstrumentHandlerCounter",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2045880"
+			},
+			{
+				"ticket": "2055487",
+				"description": "BUILDAH-Error locating just-written images while creating multiple container",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2055487"
+			},
+			{
+				"ticket": "2059754",
+				"description": "podman 4.0.1 rootless, without dbus session, blows up after run --uidmap",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2059754"
+			},
+			{
+				"ticket": "2065292",
+				"description": "CentOS Stream 8 podman: symbol lookup error: podman: undefined symbol: seccomp_notify_fd",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2065292"
+			},
+			{
+				"ticket": "2065707",
+				"description": "Removal of invalid vendored project with unwanted license in aardvark-dns/netavark",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2065707"
+			},
+			{
+				"ticket": "2066568",
+				"description": "CVE-2022-27649 podman: Default inheritable capabilities for linux container should be empty",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2066568"
+			},
+			{
+				"ticket": "2066840",
+				"description": "CVE-2022-27651 buildah: Default inheritable capabilities for linux container should be empty",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2066840"
+			},
+			{
+				"ticket": "2066845",
+				"description": "CVE-2022-27650 crun: Default inheritable capabilities for linux container should be empty",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2066845"
+			},
+			{
+				"ticket": "2070368",
+				"description": "CVE-2022-1227 psgo: Privilege escalation in 'podman top'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2070368"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-1227",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1227.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.0",
+				"cwe": "CWE-281"
+			},
+			{
+				"name": "CVE-2022-21698",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21698.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-772"
+			},
+			{
+				"name": "CVE-2022-27649",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27649.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L",
+				"cvss3BaseScore": "5.0",
+				"cwe": "CWE-276"
+			},
+			{
+				"name": "CVE-2022-27650",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27650.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+				"cvss3BaseScore": "5.6",
+				"cwe": "CWE-276"
+			},
+			{
+				"name": "CVE-2022-27651",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27651.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+				"cvss3BaseScore": "4.8",
+				"cwe": "CWE-276"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"aardvark-dns-2:1.0.1-27.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"aardvark-dns-2:1.0.1-27.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"buildah-1:1.24.2-4.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"buildah-1:1.24.2-4.module+el8.6.0+971+69b94baf.src.rpm",
+					"buildah-1:1.24.2-4.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"buildah-debuginfo-1:1.24.2-4.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"buildah-debuginfo-1:1.24.2-4.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"buildah-debugsource-1:1.24.2-4.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"buildah-debugsource-1:1.24.2-4.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"buildah-tests-1:1.24.2-4.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"buildah-tests-1:1.24.2-4.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"buildah-tests-debuginfo-1:1.24.2-4.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"buildah-tests-debuginfo-1:1.24.2-4.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"cockpit-podman-0:43-1.module+el8.6.0+972+902006e0.noarch.rpm",
+					"cockpit-podman-0:43-1.module+el8.6.0+972+902006e0.src.rpm",
+					"conmon-2:2.1.0-1.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"conmon-2:2.1.0-1.module+el8.6.0+972+902006e0.src.rpm",
+					"conmon-2:2.1.0-1.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"conmon-debuginfo-2:2.1.0-1.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"conmon-debuginfo-2:2.1.0-1.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"conmon-debugsource-2:2.1.0-1.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"conmon-debugsource-2:2.1.0-1.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"containernetworking-plugins-1:1.0.1-2.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"containernetworking-plugins-1:1.0.1-2.module+el8.6.0+971+69b94baf.src.rpm",
+					"containernetworking-plugins-1:1.0.1-2.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"containernetworking-plugins-debuginfo-1:1.0.1-2.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"containernetworking-plugins-debuginfo-1:1.0.1-2.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"containernetworking-plugins-debugsource-1:1.0.1-2.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"containernetworking-plugins-debugsource-1:1.0.1-2.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"containers-common-2:1-27.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"containers-common-2:1-27.module+el8.6.0+971+69b94baf.src.rpm",
+					"containers-common-2:1-27.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"container-selinux-2:2.179.1-1.module+el8.6.0+971+69b94baf.noarch.rpm",
+					"container-selinux-2:2.179.1-1.module+el8.6.0+971+69b94baf.src.rpm",
+					"crit-0:3.15-3.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"crit-0:3.15-3.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"criu-0:3.15-3.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"criu-0:3.15-3.module+el8.6.0+997+05c9d812.src.rpm",
+					"criu-0:3.15-3.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"criu-debuginfo-0:3.15-3.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"criu-debuginfo-0:3.15-3.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"criu-debugsource-0:3.15-3.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"criu-debugsource-0:3.15-3.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"criu-devel-0:3.15-3.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"criu-devel-0:3.15-3.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"criu-libs-0:3.15-3.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"criu-libs-0:3.15-3.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"criu-libs-debuginfo-0:3.15-3.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"criu-libs-debuginfo-0:3.15-3.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"crun-0:1.4.4-1.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"crun-0:1.4.4-1.module+el8.6.0+972+902006e0.src.rpm",
+					"crun-0:1.4.4-1.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"crun-debuginfo-0:1.4.4-1.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"crun-debuginfo-0:1.4.4-1.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"crun-debugsource-0:1.4.4-1.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"crun-debugsource-0:1.4.4-1.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"fuse-overlayfs-0:1.8.2-1.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"fuse-overlayfs-0:1.8.2-1.module+el8.6.0+972+902006e0.src.rpm",
+					"fuse-overlayfs-0:1.8.2-1.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"fuse-overlayfs-debuginfo-0:1.8.2-1.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"fuse-overlayfs-debuginfo-0:1.8.2-1.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"fuse-overlayfs-debugsource-0:1.8.2-1.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"fuse-overlayfs-debugsource-0:1.8.2-1.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"libslirp-0:4.4.0-1.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"libslirp-0:4.4.0-1.module+el8.6.0+997+05c9d812.src.rpm",
+					"libslirp-0:4.4.0-1.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"libslirp-debuginfo-0:4.4.0-1.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"libslirp-debuginfo-0:4.4.0-1.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"libslirp-debugsource-0:4.4.0-1.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"libslirp-debugsource-0:4.4.0-1.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"libslirp-devel-0:4.4.0-1.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"libslirp-devel-0:4.4.0-1.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"netavark-2:1.0.1-27.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"netavark-2:1.0.1-27.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"oci-seccomp-bpf-hook-0:1.2.3-3.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"oci-seccomp-bpf-hook-0:1.2.3-3.module+el8.6.0+972+902006e0.src.rpm",
+					"oci-seccomp-bpf-hook-0:1.2.3-3.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"oci-seccomp-bpf-hook-debuginfo-0:1.2.3-3.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"oci-seccomp-bpf-hook-debuginfo-0:1.2.3-3.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"oci-seccomp-bpf-hook-debugsource-0:1.2.3-3.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"oci-seccomp-bpf-hook-debugsource-0:1.2.3-3.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"podman-2:4.0.2-6.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"podman-2:4.0.2-6.module+el8.6.0+971+69b94baf.src.rpm",
+					"podman-2:4.0.2-6.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"podman-catatonit-2:4.0.2-6.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"podman-catatonit-2:4.0.2-6.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"podman-catatonit-debuginfo-2:4.0.2-6.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"podman-catatonit-debuginfo-2:4.0.2-6.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"podman-debuginfo-2:4.0.2-6.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"podman-debuginfo-2:4.0.2-6.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"podman-debugsource-2:4.0.2-6.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"podman-debugsource-2:4.0.2-6.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"podman-docker-2:4.0.2-6.module+el8.6.0+971+69b94baf.noarch.rpm",
+					"podman-gvproxy-2:4.0.2-6.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"podman-gvproxy-2:4.0.2-6.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"podman-gvproxy-debuginfo-2:4.0.2-6.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"podman-gvproxy-debuginfo-2:4.0.2-6.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"podman-plugins-2:4.0.2-6.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"podman-plugins-2:4.0.2-6.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"podman-plugins-debuginfo-2:4.0.2-6.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"podman-plugins-debuginfo-2:4.0.2-6.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"podman-remote-2:4.0.2-6.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"podman-remote-2:4.0.2-6.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"podman-remote-debuginfo-2:4.0.2-6.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"podman-remote-debuginfo-2:4.0.2-6.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"podman-tests-2:4.0.2-6.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"podman-tests-2:4.0.2-6.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"python3-criu-0:3.15-3.module+el8.6.0+997+05c9d812.aarch64.rpm",
+					"python3-criu-0:3.15-3.module+el8.6.0+997+05c9d812.x86_64.rpm",
+					"python3-podman-0:4.0.0-1.module+el8.6.0+997+05c9d812.noarch.rpm",
+					"python-podman-0:4.0.0-1.module+el8.6.0+997+05c9d812.src.rpm",
+					"runc-1:1.0.3-2.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"runc-1:1.0.3-2.module+el8.6.0+971+69b94baf.src.rpm",
+					"runc-1:1.0.3-2.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"runc-debuginfo-1:1.0.3-2.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"runc-debuginfo-1:1.0.3-2.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"runc-debugsource-1:1.0.3-2.module+el8.6.0+971+69b94baf.aarch64.rpm",
+					"runc-debugsource-1:1.0.3-2.module+el8.6.0+971+69b94baf.x86_64.rpm",
+					"skopeo-2:1.6.1-2.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"skopeo-2:1.6.1-2.module+el8.6.0+972+902006e0.src.rpm",
+					"skopeo-2:1.6.1-2.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"skopeo-debuginfo-2:1.6.1-2.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"skopeo-debuginfo-2:1.6.1-2.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"skopeo-debugsource-2:1.6.1-2.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"skopeo-debugsource-2:1.6.1-2.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"skopeo-tests-2:1.6.1-2.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"skopeo-tests-2:1.6.1-2.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"slirp4netns-0:1.1.8-2.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"slirp4netns-0:1.1.8-2.module+el8.6.0+972+902006e0.src.rpm",
+					"slirp4netns-0:1.1.8-2.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"slirp4netns-debuginfo-0:1.1.8-2.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"slirp4netns-debuginfo-0:1.1.8-2.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"slirp4netns-debugsource-0:1.1.8-2.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"slirp4netns-debugsource-0:1.1.8-2.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"toolbox-0:0.0.99.3-0.4.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"toolbox-0:0.0.99.3-0.4.module+el8.6.0+972+902006e0.src.rpm",
+					"toolbox-0:0.0.99.3-0.4.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"toolbox-debuginfo-0:0.0.99.3-0.4.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"toolbox-debuginfo-0:0.0.99.3-0.4.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"toolbox-debugsource-0:0.0.99.3-0.4.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"toolbox-debugsource-0:0.0.99.3-0.4.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"toolbox-tests-0:0.0.99.3-0.4.module+el8.6.0+972+902006e0.aarch64.rpm",
+					"toolbox-tests-0:0.0.99.3-0.4.module+el8.6.0+972+902006e0.x86_64.rpm",
+					"udica-0:0.2.6-2.module+el8.6.0+784+32aef5de.noarch.rpm",
+					"udica-0:0.2.6-2.module+el8.6.0+784+32aef5de.src.rpm"
+				]
+			}
+		}
+	}
+}

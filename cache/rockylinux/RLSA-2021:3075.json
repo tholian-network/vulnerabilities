@@ -1,0 +1,53 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:3075",
+		"synopsis": "Low: libuv security update",
+		"severity": "SEVERITY_LOW",
+		"topic": "An update for libuv is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "libuv is a multi-platform support library with a focus on asynchronous I/O. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1979338",
+				"description": "CVE-2021-22918 libuv: out-of-bounds read in uv__idna_toascii() can lead to information disclosures or crashes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1979338"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-22918",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22918.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-125"
+			}
+		],
+		"publishedAt": "2021-08-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libuv-1:1.41.1-1.el8_4.aarch64.rpm",
+					"libuv-1:1.41.1-1.el8_4.i686.rpm",
+					"libuv-1:1.41.1-1.el8_4.src.rpm",
+					"libuv-1:1.41.1-1.el8_4.x86_64.rpm",
+					"libuv-debuginfo-1:1.41.1-1.el8_4.aarch64.rpm",
+					"libuv-debuginfo-1:1.41.1-1.el8_4.i686.rpm",
+					"libuv-debuginfo-1:1.41.1-1.el8_4.x86_64.rpm",
+					"libuv-debugsource-1:1.41.1-1.el8_4.aarch64.rpm",
+					"libuv-debugsource-1:1.41.1-1.el8_4.i686.rpm",
+					"libuv-debugsource-1:1.41.1-1.el8_4.x86_64.rpm",
+					"libuv-devel-1:1.41.1-1.el8_4.aarch64.rpm",
+					"libuv-devel-1:1.41.1-1.el8_4.i686.rpm",
+					"libuv-devel-1:1.41.1-1.el8_4.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

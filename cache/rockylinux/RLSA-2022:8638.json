@@ -1,0 +1,87 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:8638",
+		"synopsis": "Important: krb5 security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for krb5 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Kerberos is a network authentication system, which can improve the security of your network by eliminating the insecure practice of sending passwords over the network in unencrypted form. It allows clients and servers to authenticate to each other with the help of a trusted third party, the Kerberos key distribution center (KDC).\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2140960",
+				"description": "CVE-2022-42898 krb5: integer overflow vulnerabilities in PAC parsing",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2140960"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-42898",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-42898.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-190"
+			}
+		],
+		"publishedAt": "2022-12-07T14:05:29.714478Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"krb5-0:1.18.2-22.el8_7.src.rpm",
+					"krb5-debuginfo-0:1.18.2-22.el8_7.aarch64.rpm",
+					"krb5-debuginfo-0:1.18.2-22.el8_7.i686.rpm",
+					"krb5-debuginfo-0:1.18.2-22.el8_7.x86_64.rpm",
+					"krb5-debugsource-0:1.18.2-22.el8_7.aarch64.rpm",
+					"krb5-debugsource-0:1.18.2-22.el8_7.i686.rpm",
+					"krb5-debugsource-0:1.18.2-22.el8_7.x86_64.rpm",
+					"krb5-devel-0:1.18.2-22.el8_7.aarch64.rpm",
+					"krb5-devel-0:1.18.2-22.el8_7.i686.rpm",
+					"krb5-devel-0:1.18.2-22.el8_7.x86_64.rpm",
+					"krb5-devel-debuginfo-0:1.18.2-22.el8_7.aarch64.rpm",
+					"krb5-devel-debuginfo-0:1.18.2-22.el8_7.i686.rpm",
+					"krb5-devel-debuginfo-0:1.18.2-22.el8_7.x86_64.rpm",
+					"krb5-libs-0:1.18.2-22.el8_7.aarch64.rpm",
+					"krb5-libs-0:1.18.2-22.el8_7.i686.rpm",
+					"krb5-libs-0:1.18.2-22.el8_7.x86_64.rpm",
+					"krb5-libs-debuginfo-0:1.18.2-22.el8_7.aarch64.rpm",
+					"krb5-libs-debuginfo-0:1.18.2-22.el8_7.i686.rpm",
+					"krb5-libs-debuginfo-0:1.18.2-22.el8_7.x86_64.rpm",
+					"krb5-pkinit-0:1.18.2-22.el8_7.aarch64.rpm",
+					"krb5-pkinit-0:1.18.2-22.el8_7.i686.rpm",
+					"krb5-pkinit-0:1.18.2-22.el8_7.x86_64.rpm",
+					"krb5-pkinit-debuginfo-0:1.18.2-22.el8_7.aarch64.rpm",
+					"krb5-pkinit-debuginfo-0:1.18.2-22.el8_7.i686.rpm",
+					"krb5-pkinit-debuginfo-0:1.18.2-22.el8_7.x86_64.rpm",
+					"krb5-server-0:1.18.2-22.el8_7.aarch64.rpm",
+					"krb5-server-0:1.18.2-22.el8_7.i686.rpm",
+					"krb5-server-0:1.18.2-22.el8_7.x86_64.rpm",
+					"krb5-server-debuginfo-0:1.18.2-22.el8_7.aarch64.rpm",
+					"krb5-server-debuginfo-0:1.18.2-22.el8_7.i686.rpm",
+					"krb5-server-debuginfo-0:1.18.2-22.el8_7.x86_64.rpm",
+					"krb5-server-ldap-0:1.18.2-22.el8_7.aarch64.rpm",
+					"krb5-server-ldap-0:1.18.2-22.el8_7.i686.rpm",
+					"krb5-server-ldap-0:1.18.2-22.el8_7.x86_64.rpm",
+					"krb5-server-ldap-debuginfo-0:1.18.2-22.el8_7.aarch64.rpm",
+					"krb5-server-ldap-debuginfo-0:1.18.2-22.el8_7.i686.rpm",
+					"krb5-server-ldap-debuginfo-0:1.18.2-22.el8_7.x86_64.rpm",
+					"krb5-workstation-0:1.18.2-22.el8_7.aarch64.rpm",
+					"krb5-workstation-0:1.18.2-22.el8_7.x86_64.rpm",
+					"krb5-workstation-debuginfo-0:1.18.2-22.el8_7.aarch64.rpm",
+					"krb5-workstation-debuginfo-0:1.18.2-22.el8_7.x86_64.rpm",
+					"libkadm5-0:1.18.2-22.el8_7.aarch64.rpm",
+					"libkadm5-0:1.18.2-22.el8_7.i686.rpm",
+					"libkadm5-0:1.18.2-22.el8_7.x86_64.rpm",
+					"libkadm5-debuginfo-0:1.18.2-22.el8_7.aarch64.rpm",
+					"libkadm5-debuginfo-0:1.18.2-22.el8_7.i686.rpm",
+					"libkadm5-debuginfo-0:1.18.2-22.el8_7.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

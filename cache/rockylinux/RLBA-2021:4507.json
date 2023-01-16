@@ -1,0 +1,54 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4507",
+		"synopsis": "fontconfig bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for fontconfig is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1972037",
+				"description": "fc-validate commands returns exit code 0 on failure",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1972037"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4507",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4507",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"fontconfig-0:2.13.1-4.el8.aarch64.rpm",
+					"fontconfig-0:2.13.1-4.el8.i686.rpm",
+					"fontconfig-0:2.13.1-4.el8.src.rpm",
+					"fontconfig-0:2.13.1-4.el8.x86_64.rpm",
+					"fontconfig-debuginfo-0:2.13.1-4.el8.aarch64.rpm",
+					"fontconfig-debuginfo-0:2.13.1-4.el8.i686.rpm",
+					"fontconfig-debuginfo-0:2.13.1-4.el8.x86_64.rpm",
+					"fontconfig-debugsource-0:2.13.1-4.el8.aarch64.rpm",
+					"fontconfig-debugsource-0:2.13.1-4.el8.i686.rpm",
+					"fontconfig-debugsource-0:2.13.1-4.el8.x86_64.rpm",
+					"fontconfig-devel-0:2.13.1-4.el8.aarch64.rpm",
+					"fontconfig-devel-0:2.13.1-4.el8.i686.rpm",
+					"fontconfig-devel-0:2.13.1-4.el8.x86_64.rpm",
+					"fontconfig-devel-doc-0:2.13.1-4.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1879",
+		"synopsis": "virt-who bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for virt-who is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1889363",
+				"description": "virt-who's systemd unit is missing 'libvirtd-ro.socket' requirement",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1889363"
+			},
+			{
+				"ticket": "1985258",
+				"description": "[Nutanix] Got the redundant line ?Finding vms uuid? when run virt-who with -p option",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1985258"
+			},
+			{
+				"ticket": "1996944",
+				"description": "[Nutanix] The hypervisor facts should show the cluster name, not uuid",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1996944"
+			},
+			{
+				"ticket": "2000024",
+				"description": "[Nutanix] Should allow unicode characters in username and password",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000024"
+			},
+			{
+				"ticket": "2000423",
+				"description": "[Nutanix] Failed to start virt-who with bad server value",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000423"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1879",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1879",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"virt-who-0:1.30.12-1.el8.noarch.rpm",
+					"virt-who-0:1.30.12-1.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4477",
+		"synopsis": "parted bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for parted is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1980105",
+				"description": "t9050 disk label test fails with gpt -\u003e bsd transition on s390x",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1980105"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4477",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4477",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"parted-0:3.2-39.el8.aarch64.rpm",
+					"parted-0:3.2-39.el8.i686.rpm",
+					"parted-0:3.2-39.el8.src.rpm",
+					"parted-0:3.2-39.el8.x86_64.rpm",
+					"parted-debuginfo-0:3.2-39.el8.aarch64.rpm",
+					"parted-debuginfo-0:3.2-39.el8.i686.rpm",
+					"parted-debuginfo-0:3.2-39.el8.x86_64.rpm",
+					"parted-debugsource-0:3.2-39.el8.aarch64.rpm",
+					"parted-debugsource-0:3.2-39.el8.i686.rpm",
+					"parted-debugsource-0:3.2-39.el8.x86_64.rpm",
+					"parted-devel-0:3.2-39.el8.aarch64.rpm",
+					"parted-devel-0:3.2-39.el8.i686.rpm",
+					"parted-devel-0:3.2-39.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

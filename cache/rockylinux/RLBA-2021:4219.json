@@ -1,0 +1,84 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4219",
+		"synopsis": "libinput and libevdev bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libinput and libevdev is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1951885",
+				"description": "Backport AttrInputPropDisable from libinput 1.17",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951885"
+			},
+			{
+				"ticket": "1963767",
+				"description": "rebase libevdev to 1.10",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1963767"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4219",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4219",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libevdev-0:1.10.0-1.el8.aarch64.rpm",
+					"libevdev-0:1.10.0-1.el8.i686.rpm",
+					"libevdev-0:1.10.0-1.el8.src.rpm",
+					"libevdev-0:1.10.0-1.el8.x86_64.rpm",
+					"libevdev-debuginfo-0:1.10.0-1.el8.aarch64.rpm",
+					"libevdev-debuginfo-0:1.10.0-1.el8.i686.rpm",
+					"libevdev-debuginfo-0:1.10.0-1.el8.x86_64.rpm",
+					"libevdev-debugsource-0:1.10.0-1.el8.aarch64.rpm",
+					"libevdev-debugsource-0:1.10.0-1.el8.i686.rpm",
+					"libevdev-debugsource-0:1.10.0-1.el8.x86_64.rpm",
+					"libevdev-devel-0:1.10.0-1.el8.aarch64.rpm",
+					"libevdev-devel-0:1.10.0-1.el8.i686.rpm",
+					"libevdev-devel-0:1.10.0-1.el8.x86_64.rpm",
+					"libevdev-utils-0:1.10.0-1.el8.aarch64.rpm",
+					"libevdev-utils-0:1.10.0-1.el8.x86_64.rpm",
+					"libevdev-utils-debuginfo-0:1.10.0-1.el8.aarch64.rpm",
+					"libevdev-utils-debuginfo-0:1.10.0-1.el8.x86_64.rpm",
+					"libinput-0:1.16.3-2.el8.aarch64.rpm",
+					"libinput-0:1.16.3-2.el8.i686.rpm",
+					"libinput-0:1.16.3-2.el8.src.rpm",
+					"libinput-0:1.16.3-2.el8.x86_64.rpm",
+					"libinput-debuginfo-0:1.16.3-2.el8.aarch64.rpm",
+					"libinput-debuginfo-0:1.16.3-2.el8.i686.rpm",
+					"libinput-debuginfo-0:1.16.3-2.el8.x86_64.rpm",
+					"libinput-debugsource-0:1.16.3-2.el8.aarch64.rpm",
+					"libinput-debugsource-0:1.16.3-2.el8.i686.rpm",
+					"libinput-debugsource-0:1.16.3-2.el8.x86_64.rpm",
+					"libinput-devel-0:1.16.3-2.el8.aarch64.rpm",
+					"libinput-devel-0:1.16.3-2.el8.i686.rpm",
+					"libinput-devel-0:1.16.3-2.el8.x86_64.rpm",
+					"libinput-test-0:1.16.3-2.el8.aarch64.rpm",
+					"libinput-test-0:1.16.3-2.el8.x86_64.rpm",
+					"libinput-test-debuginfo-0:1.16.3-2.el8.aarch64.rpm",
+					"libinput-test-debuginfo-0:1.16.3-2.el8.x86_64.rpm",
+					"libinput-utils-0:1.16.3-2.el8.aarch64.rpm",
+					"libinput-utils-0:1.16.3-2.el8.x86_64.rpm",
+					"libinput-utils-debuginfo-0:1.16.3-2.el8.aarch64.rpm",
+					"libinput-utils-debuginfo-0:1.16.3-2.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7458",
+		"synopsis": "Moderate: flatpak-builder security and bug fix update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for flatpak-builder is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Flatpak-builder is a tool for building flatpaks from sources.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2041592",
+				"description": "CVE-2022-21682 flatpak: flatpak-builder --mirror-screenshots-url can access files outside the build directory",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2041592"
+			},
+			{
+				"ticket": "2047312",
+				"description": "Update flatpak-builder to 1.0.14",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2047312"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-21682",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21682.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+				"cvss3BaseScore": "7.7",
+				"cwe": "CWE-22"
+			}
+		],
+		"publishedAt": "2022-11-13T07:49:02.118760Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"flatpak-builder-0:1.0.14-2.el8.aarch64.rpm",
+					"flatpak-builder-0:1.0.14-2.el8.src.rpm",
+					"flatpak-builder-0:1.0.14-2.el8.x86_64.rpm",
+					"flatpak-builder-debuginfo-0:1.0.14-2.el8.aarch64.rpm",
+					"flatpak-builder-debuginfo-0:1.0.14-2.el8.x86_64.rpm",
+					"flatpak-builder-debugsource-0:1.0.14-2.el8.aarch64.rpm",
+					"flatpak-builder-debugsource-0:1.0.14-2.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,96 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7583",
+		"synopsis": "Moderate: xorg-x11-server and xorg-x11-server-Xwayland security and bug fix update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for xorg-x11-server, xorg-x11-server-Xwayland, and xorg-x11-xtrans-devel is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "X.Org is an open-source implementation of the X Window System. It provides the basic low-level functionality that full-fledged graphical user interfaces are designed upon.\nXwayland is an X server for running X clients under Wayland.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2075132",
+				"description": "\"Xorg -listen tcp\" fails to start if ipv6 is disabled on the system",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2075132"
+			},
+			{
+				"ticket": "2106671",
+				"description": "CVE-2022-2319 xorg-x11-server: X.Org Server ProcXkbSetGeometry out-of-bounds access",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2106671"
+			},
+			{
+				"ticket": "2106683",
+				"description": "CVE-2022-2320 xorg-x11-server: out-of-bounds access in ProcXkbSetDeviceInfo request handler of the Xkb extension",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2106683"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-2319",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-2319.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L",
+				"cvss3BaseScore": "7.6",
+				"cwe": "CWE-1320"
+			},
+			{
+				"name": "CVE-2022-2320",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-2320.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-787"
+			}
+		],
+		"publishedAt": "2022-11-13T07:54:08.677899Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"xorg-x11-server-0:1.20.11-9.el8.src.rpm",
+					"xorg-x11-server-common-0:1.20.11-9.el8.aarch64.rpm",
+					"xorg-x11-server-common-0:1.20.11-9.el8.x86_64.rpm",
+					"xorg-x11-server-debuginfo-0:1.20.11-9.el8.aarch64.rpm",
+					"xorg-x11-server-debuginfo-0:1.20.11-9.el8.x86_64.rpm",
+					"xorg-x11-server-devel-0:1.20.11-9.el8.aarch64.rpm",
+					"xorg-x11-server-devel-0:1.20.11-9.el8.i686.rpm",
+					"xorg-x11-server-devel-0:1.20.11-9.el8.x86_64.rpm",
+					"xorg-x11-server-source-0:1.20.11-9.el8.noarch.rpm",
+					"xorg-x11-server-Xdmx-0:1.20.11-9.el8.aarch64.rpm",
+					"xorg-x11-server-Xdmx-0:1.20.11-9.el8.x86_64.rpm",
+					"xorg-x11-server-Xdmx-debuginfo-0:1.20.11-9.el8.aarch64.rpm",
+					"xorg-x11-server-Xdmx-debuginfo-0:1.20.11-9.el8.x86_64.rpm",
+					"xorg-x11-server-Xephyr-0:1.20.11-9.el8.aarch64.rpm",
+					"xorg-x11-server-Xephyr-0:1.20.11-9.el8.x86_64.rpm",
+					"xorg-x11-server-Xephyr-debuginfo-0:1.20.11-9.el8.aarch64.rpm",
+					"xorg-x11-server-Xephyr-debuginfo-0:1.20.11-9.el8.x86_64.rpm",
+					"xorg-x11-server-Xnest-0:1.20.11-9.el8.aarch64.rpm",
+					"xorg-x11-server-Xnest-0:1.20.11-9.el8.x86_64.rpm",
+					"xorg-x11-server-Xnest-debuginfo-0:1.20.11-9.el8.aarch64.rpm",
+					"xorg-x11-server-Xnest-debuginfo-0:1.20.11-9.el8.x86_64.rpm",
+					"xorg-x11-server-Xorg-0:1.20.11-9.el8.aarch64.rpm",
+					"xorg-x11-server-Xorg-0:1.20.11-9.el8.x86_64.rpm",
+					"xorg-x11-server-Xorg-debuginfo-0:1.20.11-9.el8.aarch64.rpm",
+					"xorg-x11-server-Xorg-debuginfo-0:1.20.11-9.el8.x86_64.rpm",
+					"xorg-x11-server-Xvfb-0:1.20.11-9.el8.aarch64.rpm",
+					"xorg-x11-server-Xvfb-0:1.20.11-9.el8.x86_64.rpm",
+					"xorg-x11-server-Xvfb-debuginfo-0:1.20.11-9.el8.aarch64.rpm",
+					"xorg-x11-server-Xvfb-debuginfo-0:1.20.11-9.el8.x86_64.rpm",
+					"xorg-x11-server-Xwayland-0:21.1.3-6.el8.aarch64.rpm",
+					"xorg-x11-server-Xwayland-0:21.1.3-6.el8.src.rpm",
+					"xorg-x11-server-Xwayland-0:21.1.3-6.el8.x86_64.rpm",
+					"xorg-x11-server-Xwayland-debuginfo-0:21.1.3-6.el8.aarch64.rpm",
+					"xorg-x11-server-Xwayland-debuginfo-0:21.1.3-6.el8.x86_64.rpm",
+					"xorg-x11-server-Xwayland-debugsource-0:21.1.3-6.el8.aarch64.rpm",
+					"xorg-x11-server-Xwayland-debugsource-0:21.1.3-6.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

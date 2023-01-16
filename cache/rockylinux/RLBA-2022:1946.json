@@ -1,0 +1,84 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1946",
+		"synopsis": "gtk3 bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gtk3 is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1887266",
+				"description": "RHEL 8.3 messages log contain some \"Fatal IO error \"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1887266"
+			},
+			{
+				"ticket": "2032437",
+				"description": "Resizing column of tree/table to zero width crashes application",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2032437"
+			},
+			{
+				"ticket": "2032438",
+				"description": "[GTK3] gtk_tree_view_set_cursor() leaks memory for trees with multiple renderers",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2032438"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1946",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1946",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gtk3-0:3.22.30-10.el8.aarch64.rpm",
+					"gtk3-0:3.22.30-10.el8.i686.rpm",
+					"gtk3-0:3.22.30-10.el8.src.rpm",
+					"gtk3-0:3.22.30-10.el8.x86_64.rpm",
+					"gtk3-debuginfo-0:3.22.30-10.el8.aarch64.rpm",
+					"gtk3-debuginfo-0:3.22.30-10.el8.i686.rpm",
+					"gtk3-debuginfo-0:3.22.30-10.el8.x86_64.rpm",
+					"gtk3-debugsource-0:3.22.30-10.el8.aarch64.rpm",
+					"gtk3-debugsource-0:3.22.30-10.el8.i686.rpm",
+					"gtk3-debugsource-0:3.22.30-10.el8.x86_64.rpm",
+					"gtk3-devel-0:3.22.30-10.el8.aarch64.rpm",
+					"gtk3-devel-0:3.22.30-10.el8.i686.rpm",
+					"gtk3-devel-0:3.22.30-10.el8.x86_64.rpm",
+					"gtk3-devel-debuginfo-0:3.22.30-10.el8.aarch64.rpm",
+					"gtk3-devel-debuginfo-0:3.22.30-10.el8.i686.rpm",
+					"gtk3-devel-debuginfo-0:3.22.30-10.el8.x86_64.rpm",
+					"gtk3-immodules-0:3.22.30-10.el8.aarch64.rpm",
+					"gtk3-immodules-0:3.22.30-10.el8.x86_64.rpm",
+					"gtk3-immodules-debuginfo-0:3.22.30-10.el8.aarch64.rpm",
+					"gtk3-immodules-debuginfo-0:3.22.30-10.el8.x86_64.rpm",
+					"gtk3-immodule-xim-0:3.22.30-10.el8.aarch64.rpm",
+					"gtk3-immodule-xim-0:3.22.30-10.el8.x86_64.rpm",
+					"gtk3-immodule-xim-debuginfo-0:3.22.30-10.el8.aarch64.rpm",
+					"gtk3-immodule-xim-debuginfo-0:3.22.30-10.el8.x86_64.rpm",
+					"gtk3-tests-0:3.22.30-10.el8.aarch64.rpm",
+					"gtk3-tests-0:3.22.30-10.el8.x86_64.rpm",
+					"gtk3-tests-debuginfo-0:3.22.30-10.el8.aarch64.rpm",
+					"gtk3-tests-debuginfo-0:3.22.30-10.el8.x86_64.rpm",
+					"gtk-update-icon-cache-0:3.22.30-10.el8.aarch64.rpm",
+					"gtk-update-icon-cache-0:3.22.30-10.el8.x86_64.rpm",
+					"gtk-update-icon-cache-debuginfo-0:3.22.30-10.el8.aarch64.rpm",
+					"gtk-update-icon-cache-debuginfo-0:3.22.30-10.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

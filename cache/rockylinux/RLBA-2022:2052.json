@@ -1,0 +1,89 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2052",
+		"synopsis": "dnf-plugins-core bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for dnf-plugins-core is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1868047",
+				"description": "[RFE] A module-granularity synchronization tool (similar to reposync)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1868047"
+			},
+			{
+				"ticket": "2009894",
+				"description": "dnf reposync does not continue on 401 errors",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2009894"
+			},
+			{
+				"ticket": "2013324",
+				"description": "Multiple package-name-spec arguments don't lock correctly",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013324"
+			},
+			{
+				"ticket": "2013332",
+				"description": "Locking a version of a not installed package disallows locking other versions later",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013332"
+			},
+			{
+				"ticket": "2013633",
+				"description": "[RFE] Add ability to yum-groups-manager to identify packages with version and/or architecture specified in package name",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013633"
+			},
+			{
+				"ticket": "2017271",
+				"description": "[dnf-plugins-core] RHEL 8.6 Tier 0 Localization",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2017271"
+			},
+			{
+				"ticket": "2022389",
+				"description": "\"needs-restarting -r\" not notifying kernel modification",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2022389"
+			},
+			{
+				"ticket": "2023739",
+				"description": "'dnf reposync' fails with a traceback",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2023739"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2052",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2052",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"dnf-plugins-core-0:4.0.21-11.el8.noarch.rpm",
+					"dnf-plugins-core-0:4.0.21-11.el8.src.rpm",
+					"python3-dnf-plugin-modulesync-0:4.0.21-11.el8.noarch.rpm",
+					"python3-dnf-plugin-post-transaction-actions-0:4.0.21-11.el8.noarch.rpm",
+					"python3-dnf-plugins-core-0:4.0.21-11.el8.noarch.rpm",
+					"python3-dnf-plugin-versionlock-0:4.0.21-11.el8.noarch.rpm",
+					"yum-utils-0:4.0.21-11.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

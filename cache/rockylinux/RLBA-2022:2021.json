@@ -1,0 +1,70 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2021",
+		"synopsis": "shadow-utils bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for shadow-utils is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1986782",
+				"description": "groupdel gives segmentation fault when using '-P'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986782"
+			},
+			{
+				"ticket": "2013009",
+				"description": "[RFE] support pluggable data sources for subid ranges configurable via /etc/nsswitch.conf",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013009"
+			},
+			{
+				"ticket": "2013016",
+				"description": "[RHEL8] Please include list_subid_ranges in the rpm",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013016"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2021",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2021",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"shadow-utils-2:4.6-16.el8.aarch64.rpm",
+					"shadow-utils-2:4.6-16.el8.src.rpm",
+					"shadow-utils-2:4.6-16.el8.x86_64.rpm",
+					"shadow-utils-debuginfo-2:4.6-16.el8.aarch64.rpm",
+					"shadow-utils-debuginfo-2:4.6-16.el8.i686.rpm",
+					"shadow-utils-debuginfo-2:4.6-16.el8.x86_64.rpm",
+					"shadow-utils-debugsource-2:4.6-16.el8.aarch64.rpm",
+					"shadow-utils-debugsource-2:4.6-16.el8.i686.rpm",
+					"shadow-utils-debugsource-2:4.6-16.el8.x86_64.rpm",
+					"shadow-utils-subid-2:4.6-16.el8.aarch64.rpm",
+					"shadow-utils-subid-2:4.6-16.el8.i686.rpm",
+					"shadow-utils-subid-2:4.6-16.el8.x86_64.rpm",
+					"shadow-utils-subid-debuginfo-2:4.6-16.el8.aarch64.rpm",
+					"shadow-utils-subid-debuginfo-2:4.6-16.el8.i686.rpm",
+					"shadow-utils-subid-debuginfo-2:4.6-16.el8.x86_64.rpm",
+					"shadow-utils-subid-devel-2:4.6-16.el8.aarch64.rpm",
+					"shadow-utils-subid-devel-2:4.6-16.el8.i686.rpm",
+					"shadow-utils-subid-devel-2:4.6-16.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

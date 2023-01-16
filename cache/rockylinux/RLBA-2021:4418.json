@@ -1,0 +1,77 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4418",
+		"synopsis": "coreutils bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for coreutils is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1760300",
+				"description": "make /bin/ls and /bin/stat use statx() system call",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1760300"
+			},
+			{
+				"ticket": "1905481",
+				"description": "\"rm -rf *\" performs an extra skip when it encounters an immutable empty directory",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1905481"
+			},
+			{
+				"ticket": "1926138",
+				"description": "split can cause data corruption with --number=K/N construct [rhel-8]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1926138"
+			},
+			{
+				"ticket": "1952714",
+				"description": "various commands failing to access fuse.portal filesystems",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1952714"
+			},
+			{
+				"ticket": "1962515",
+				"description": "df: duplicates listed for remote filesystems (NFS) with same fsid/device without \"-a\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1962515"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4418",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4418",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"coreutils-0:8.30-12.el8.aarch64.rpm",
+					"coreutils-0:8.30-12.el8.src.rpm",
+					"coreutils-0:8.30-12.el8.x86_64.rpm",
+					"coreutils-common-0:8.30-12.el8.aarch64.rpm",
+					"coreutils-common-0:8.30-12.el8.x86_64.rpm",
+					"coreutils-debuginfo-0:8.30-12.el8.aarch64.rpm",
+					"coreutils-debuginfo-0:8.30-12.el8.x86_64.rpm",
+					"coreutils-debugsource-0:8.30-12.el8.aarch64.rpm",
+					"coreutils-debugsource-0:8.30-12.el8.x86_64.rpm",
+					"coreutils-single-0:8.30-12.el8.aarch64.rpm",
+					"coreutils-single-0:8.30-12.el8.x86_64.rpm",
+					"coreutils-single-debuginfo-0:8.30-12.el8.aarch64.rpm",
+					"coreutils-single-debuginfo-0:8.30-12.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

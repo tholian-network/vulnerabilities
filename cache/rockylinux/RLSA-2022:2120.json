@@ -1,0 +1,48 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:2120",
+		"synopsis": "Moderate: zsh security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for zsh is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The zsh shell is a command interpreter usable as an interactive login shell and as a shell script command processor. Zsh resembles the ksh shell (the Korn shell), but includes many enhancements. Zsh supports command-line editing, built-in spelling correction, programmable command completion, shell functions (with autoloading), a history mechanism, and more.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2054089",
+				"description": "CVE-2021-45444 zsh: Prompt expansion vulnerability",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2054089"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-45444",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-45444.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-77"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"zsh-0:5.5.1-9.el8.aarch64.rpm",
+					"zsh-0:5.5.1-9.el8.src.rpm",
+					"zsh-0:5.5.1-9.el8.x86_64.rpm",
+					"zsh-debuginfo-0:5.5.1-9.el8.aarch64.rpm",
+					"zsh-debuginfo-0:5.5.1-9.el8.x86_64.rpm",
+					"zsh-debugsource-0:5.5.1-9.el8.aarch64.rpm",
+					"zsh-debugsource-0:5.5.1-9.el8.x86_64.rpm",
+					"zsh-html-0:5.5.1-9.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

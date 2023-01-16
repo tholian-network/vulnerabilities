@@ -1,0 +1,161 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1491",
+		"synopsis": "Important: java-1.8.0-openjdk security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for java-1.8.0-openjdk is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The java-1.8.0-openjdk packages provide the OpenJDK 8 Java Runtime Environment and the OpenJDK 8 Java Software Development Kit.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2075788",
+				"description": "CVE-2022-21426 OpenJDK: Unbounded memory allocation when compiling crafted XPath expressions (JAXP, 8270504)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2075788"
+			},
+			{
+				"ticket": "2075793",
+				"description": "CVE-2022-21443 OpenJDK: Missing check for negative ObjectIdentifier (Libraries, 8275151)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2075793"
+			},
+			{
+				"ticket": "2075836",
+				"description": "CVE-2022-21434 OpenJDK: Improper object-to-string conversion in AnnotationInvocationHandler (Libraries, 8277672)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2075836"
+			},
+			{
+				"ticket": "2075842",
+				"description": "CVE-2022-21476 OpenJDK: Defective secure validation in Apache Santuario (Libraries, 8278008)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2075842"
+			},
+			{
+				"ticket": "2075849",
+				"description": "CVE-2022-21496 OpenJDK: URI parsing inconsistencies (JNDI, 8278972)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2075849"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-21426",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21426.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-400-\u003eCWE-770"
+			},
+			{
+				"name": "CVE-2022-21434",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21434.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-470"
+			},
+			{
+				"name": "CVE-2022-21443",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21443.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "3.7",
+				"cwe": "CWE-191-\u003eCWE-770"
+			},
+			{
+				"name": "CVE-2022-21476",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21476.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-179"
+			},
+			{
+				"name": "CVE-2022-21496",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-21496.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-1173"
+			}
+		],
+		"publishedAt": "2022-04-25T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"java-1.8.0-openjdk-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-1:1.8.0.332.b09-1.el8_5.src.rpm",
+					"java-1.8.0-openjdk-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-accessibility-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-accessibility-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-accessibility-fastdebug-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-accessibility-fastdebug-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-accessibility-slowdebug-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-accessibility-slowdebug-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-debuginfo-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-debuginfo-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-debugsource-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-debugsource-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-demo-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-demo-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-demo-debuginfo-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-demo-debuginfo-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-demo-fastdebug-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-demo-fastdebug-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-demo-fastdebug-debuginfo-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-demo-fastdebug-debuginfo-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-demo-slowdebug-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-demo-slowdebug-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-demo-slowdebug-debuginfo-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-demo-slowdebug-debuginfo-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-devel-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-devel-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-devel-debuginfo-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-devel-debuginfo-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-devel-fastdebug-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-devel-fastdebug-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-devel-fastdebug-debuginfo-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-devel-fastdebug-debuginfo-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-devel-slowdebug-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-devel-slowdebug-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-devel-slowdebug-debuginfo-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-devel-slowdebug-debuginfo-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-fastdebug-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-fastdebug-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-fastdebug-debuginfo-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-fastdebug-debuginfo-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-headless-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-headless-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-headless-debuginfo-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-headless-debuginfo-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-headless-fastdebug-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-headless-fastdebug-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-headless-fastdebug-debuginfo-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-headless-fastdebug-debuginfo-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-headless-slowdebug-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-headless-slowdebug-debuginfo-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-headless-slowdebug-debuginfo-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-javadoc-1:1.8.0.332.b09-1.el8_5.noarch.rpm",
+					"java-1.8.0-openjdk-javadoc-zip-1:1.8.0.332.b09-1.el8_5.noarch.rpm",
+					"java-1.8.0-openjdk-slowdebug-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-slowdebug-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-slowdebug-debuginfo-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-slowdebug-debuginfo-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-src-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-src-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-src-fastdebug-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-src-fastdebug-1:1.8.0.332.b09-1.el8_5.x86_64.rpm",
+					"java-1.8.0-openjdk-src-slowdebug-1:1.8.0.332.b09-1.el8_5.aarch64.rpm",
+					"java-1.8.0-openjdk-src-slowdebug-1:1.8.0.332.b09-1.el8_5.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

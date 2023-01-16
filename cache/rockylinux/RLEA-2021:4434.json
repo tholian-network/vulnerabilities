@@ -1,0 +1,67 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:4434",
+		"synopsis": "libcap-ng bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libcap-ng is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1939386",
+				"description": "Rebase libcap-ng to version 0.7.11",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1939386"
+			},
+			{
+				"ticket": "1971558",
+				"description": "libcap-ng-python3 missing",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1971558"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:4434",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:4434",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libcap-ng-0:0.7.11-1.el8.aarch64.rpm",
+					"libcap-ng-0:0.7.11-1.el8.i686.rpm",
+					"libcap-ng-0:0.7.11-1.el8.src.rpm",
+					"libcap-ng-0:0.7.11-1.el8.x86_64.rpm",
+					"libcap-ng-debuginfo-0:0.7.11-1.el8.aarch64.rpm",
+					"libcap-ng-debuginfo-0:0.7.11-1.el8.i686.rpm",
+					"libcap-ng-debuginfo-0:0.7.11-1.el8.x86_64.rpm",
+					"libcap-ng-debugsource-0:0.7.11-1.el8.aarch64.rpm",
+					"libcap-ng-debugsource-0:0.7.11-1.el8.i686.rpm",
+					"libcap-ng-debugsource-0:0.7.11-1.el8.x86_64.rpm",
+					"libcap-ng-devel-0:0.7.11-1.el8.aarch64.rpm",
+					"libcap-ng-devel-0:0.7.11-1.el8.i686.rpm",
+					"libcap-ng-devel-0:0.7.11-1.el8.x86_64.rpm",
+					"libcap-ng-python3-0:0.7.11-1.el8.aarch64.rpm",
+					"libcap-ng-python3-0:0.7.11-1.el8.x86_64.rpm",
+					"libcap-ng-python3-debuginfo-0:0.7.11-1.el8.aarch64.rpm",
+					"libcap-ng-python3-debuginfo-0:0.7.11-1.el8.x86_64.rpm",
+					"libcap-ng-utils-0:0.7.11-1.el8.aarch64.rpm",
+					"libcap-ng-utils-0:0.7.11-1.el8.x86_64.rpm",
+					"libcap-ng-utils-debuginfo-0:0.7.11-1.el8.aarch64.rpm",
+					"libcap-ng-utils-debuginfo-0:0.7.11-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

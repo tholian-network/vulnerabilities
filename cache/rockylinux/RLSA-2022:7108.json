@@ -1,0 +1,86 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7108",
+		"synopsis": "Moderate: sqlite security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for sqlite is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "SQLite is a C library that implements an SQL database engine. A large subset of SQL92 is supported. A complete database is stored in a single disk file. The API is designed for convenience and ease of use. Applications that link against SQLite can enjoy the power and flexibility of an SQL database without the administrative hassles of supporting a separate database server.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2122324",
+				"description": "CVE-2020-35525 sqlite: Null pointer derreference in src/select.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2122324"
+			},
+			{
+				"ticket": "2122329",
+				"description": "CVE-2020-35527 sqlite: Out of bounds access during table rename",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2122329"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-35525",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-35525.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-476"
+			},
+			{
+				"name": "CVE-2020-35527",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-35527.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.1",
+				"cwe": "CWE-119"
+			}
+		],
+		"publishedAt": "2022-11-01T05:27:36.658577Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"lemon-0:3.26.0-16.el8_6.aarch64.rpm",
+					"lemon-0:3.26.0-16.el8_6.x86_64.rpm",
+					"lemon-debuginfo-0:3.26.0-16.el8_6.aarch64.rpm",
+					"lemon-debuginfo-0:3.26.0-16.el8_6.x86_64.rpm",
+					"sqlite-0:3.26.0-16.el8_6.aarch64.rpm",
+					"sqlite-0:3.26.0-16.el8_6.i686.rpm",
+					"sqlite-0:3.26.0-16.el8_6.src.rpm",
+					"sqlite-0:3.26.0-16.el8_6.x86_64.rpm",
+					"sqlite-analyzer-0:3.26.0-16.el8_6.aarch64.rpm",
+					"sqlite-analyzer-0:3.26.0-16.el8_6.x86_64.rpm",
+					"sqlite-analyzer-debuginfo-0:3.26.0-16.el8_6.aarch64.rpm",
+					"sqlite-analyzer-debuginfo-0:3.26.0-16.el8_6.x86_64.rpm",
+					"sqlite-debuginfo-0:3.26.0-16.el8_6.aarch64.rpm",
+					"sqlite-debuginfo-0:3.26.0-16.el8_6.i686.rpm",
+					"sqlite-debuginfo-0:3.26.0-16.el8_6.x86_64.rpm",
+					"sqlite-debugsource-0:3.26.0-16.el8_6.aarch64.rpm",
+					"sqlite-debugsource-0:3.26.0-16.el8_6.i686.rpm",
+					"sqlite-debugsource-0:3.26.0-16.el8_6.x86_64.rpm",
+					"sqlite-devel-0:3.26.0-16.el8_6.aarch64.rpm",
+					"sqlite-devel-0:3.26.0-16.el8_6.i686.rpm",
+					"sqlite-devel-0:3.26.0-16.el8_6.x86_64.rpm",
+					"sqlite-doc-0:3.26.0-16.el8_6.noarch.rpm",
+					"sqlite-libs-0:3.26.0-16.el8_6.aarch64.rpm",
+					"sqlite-libs-0:3.26.0-16.el8_6.i686.rpm",
+					"sqlite-libs-0:3.26.0-16.el8_6.x86_64.rpm",
+					"sqlite-libs-debuginfo-0:3.26.0-16.el8_6.aarch64.rpm",
+					"sqlite-libs-debuginfo-0:3.26.0-16.el8_6.i686.rpm",
+					"sqlite-libs-debuginfo-0:3.26.0-16.el8_6.x86_64.rpm",
+					"sqlite-tcl-0:3.26.0-16.el8_6.aarch64.rpm",
+					"sqlite-tcl-0:3.26.0-16.el8_6.x86_64.rpm",
+					"sqlite-tcl-debuginfo-0:3.26.0-16.el8_6.aarch64.rpm",
+					"sqlite-tcl-debuginfo-0:3.26.0-16.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

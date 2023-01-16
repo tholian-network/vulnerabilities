@@ -1,0 +1,56 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1838",
+		"synopsis": "nss-pam-ldapd bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for nss-pam-ldapd is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1969826",
+				"description": "tmpfiles snippet needs updated path for nss-pam-ldapd",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1969826"
+			},
+			{
+				"ticket": "2028914",
+				"description": "nslcd prints only 200 characters in error message",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028914"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1838",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1838",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nss-pam-ldapd-0:0.9.9-5.el8.aarch64.rpm",
+					"nss-pam-ldapd-0:0.9.9-5.el8.i686.rpm",
+					"nss-pam-ldapd-0:0.9.9-5.el8.src.rpm",
+					"nss-pam-ldapd-0:0.9.9-5.el8.x86_64.rpm",
+					"nss-pam-ldapd-debuginfo-0:0.9.9-5.el8.aarch64.rpm",
+					"nss-pam-ldapd-debuginfo-0:0.9.9-5.el8.i686.rpm",
+					"nss-pam-ldapd-debuginfo-0:0.9.9-5.el8.x86_64.rpm",
+					"nss-pam-ldapd-debugsource-0:0.9.9-5.el8.aarch64.rpm",
+					"nss-pam-ldapd-debugsource-0:0.9.9-5.el8.i686.rpm",
+					"nss-pam-ldapd-debugsource-0:0.9.9-5.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

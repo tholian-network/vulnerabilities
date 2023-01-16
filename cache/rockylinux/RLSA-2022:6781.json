@@ -1,0 +1,98 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:6781",
+		"synopsis": "Important: bind9.16 security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for bind9.16 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The Berkeley Internet Name Domain (BIND) is an implementation of the Domain Name System (DNS) protocols. BIND includes a DNS server (named); a resolver library (routines for applications to use when interfacing with DNS); and tools for verifying that the DNS server is operating correctly.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2128600",
+				"description": "CVE-2022-3080 bind: BIND 9 resolvers configured to answer from cache with zero stale-answer-timeout may terminate unexpectedly",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2128600"
+			},
+			{
+				"ticket": "2128601",
+				"description": "CVE-2022-38177 bind: memory leak in ECDSA DNSSEC verification code",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2128601"
+			},
+			{
+				"ticket": "2128602",
+				"description": "CVE-2022-38178 bind: memory leaks in EdDSA DNSSEC verification code",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2128602"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-3080",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-3080.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-20"
+			},
+			{
+				"name": "CVE-2022-38177",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-38177.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-401"
+			},
+			{
+				"name": "CVE-2022-38178",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-38178.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-401"
+			}
+		],
+		"publishedAt": "2022-10-13T13:00:48.250631Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"bind9.16-32:9.16.23-0.7.el8_6.1.aarch64.rpm",
+					"bind9.16-32:9.16.23-0.7.el8_6.1.src.rpm",
+					"bind9.16-32:9.16.23-0.7.el8_6.1.x86_64.rpm",
+					"bind9.16-chroot-32:9.16.23-0.7.el8_6.1.aarch64.rpm",
+					"bind9.16-chroot-32:9.16.23-0.7.el8_6.1.x86_64.rpm",
+					"bind9.16-debuginfo-32:9.16.23-0.7.el8_6.1.aarch64.rpm",
+					"bind9.16-debuginfo-32:9.16.23-0.7.el8_6.1.i686.rpm",
+					"bind9.16-debuginfo-32:9.16.23-0.7.el8_6.1.x86_64.rpm",
+					"bind9.16-debugsource-32:9.16.23-0.7.el8_6.1.aarch64.rpm",
+					"bind9.16-debugsource-32:9.16.23-0.7.el8_6.1.x86_64.rpm",
+					"bind9.16-devel-32:9.16.23-0.7.el8_6.1.aarch64.rpm",
+					"bind9.16-devel-32:9.16.23-0.7.el8_6.1.i686.rpm",
+					"bind9.16-devel-32:9.16.23-0.7.el8_6.1.x86_64.rpm",
+					"bind9.16-dnssec-utils-32:9.16.23-0.7.el8_6.1.aarch64.rpm",
+					"bind9.16-dnssec-utils-32:9.16.23-0.7.el8_6.1.x86_64.rpm",
+					"bind9.16-dnssec-utils-debuginfo-32:9.16.23-0.7.el8_6.1.aarch64.rpm",
+					"bind9.16-dnssec-utils-debuginfo-32:9.16.23-0.7.el8_6.1.x86_64.rpm",
+					"bind9.16-doc-32:9.16.23-0.7.el8_6.1.noarch.rpm",
+					"bind9.16-libs-32:9.16.23-0.7.el8_6.1.aarch64.rpm",
+					"bind9.16-libs-32:9.16.23-0.7.el8_6.1.i686.rpm",
+					"bind9.16-libs-32:9.16.23-0.7.el8_6.1.x86_64.rpm",
+					"bind9.16-libs-debuginfo-32:9.16.23-0.7.el8_6.1.aarch64.rpm",
+					"bind9.16-libs-debuginfo-32:9.16.23-0.7.el8_6.1.i686.rpm",
+					"bind9.16-libs-debuginfo-32:9.16.23-0.7.el8_6.1.x86_64.rpm",
+					"bind9.16-license-32:9.16.23-0.7.el8_6.1.noarch.rpm",
+					"bind9.16-utils-32:9.16.23-0.7.el8_6.1.aarch64.rpm",
+					"bind9.16-utils-32:9.16.23-0.7.el8_6.1.x86_64.rpm",
+					"bind9.16-utils-debuginfo-32:9.16.23-0.7.el8_6.1.aarch64.rpm",
+					"bind9.16-utils-debuginfo-32:9.16.23-0.7.el8_6.1.x86_64.rpm",
+					"python3-bind9.16-32:9.16.23-0.7.el8_6.1.noarch.rpm"
+				]
+			}
+		}
+	}
+}

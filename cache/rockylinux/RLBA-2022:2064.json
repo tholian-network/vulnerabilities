@@ -1,0 +1,54 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2064",
+		"synopsis": "python-linux-procfs bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for python-linux-procfs is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1820709",
+				"description": "python-linux-procfs: pflags exception getting info for completed PID",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1820709"
+			},
+			{
+				"ticket": "2016204",
+				"description": "traceback if there is non-utf8 character in the /proc/PID/cmdline",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016204"
+			},
+			{
+				"ticket": "2031158",
+				"description": "Rebase [RHEL-8.6] python-linux-procfs to latest upstream",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2031158"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2064",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2064",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"python3-linux-procfs-0:0.7.0-1.el8.noarch.rpm",
+					"python-linux-procfs-0:0.7.0-1.el8.src.rpm"
+				]
+			}
+		}
+	}
+}

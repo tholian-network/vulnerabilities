@@ -1,0 +1,52 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5815",
+		"synopsis": "bash bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for bash is now available for Rocky Linux 8.",
+		"description": "The bash packages provide Bash (Bourne-again shell), which is the default shell for Rocky Linux.                                   ",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2097659",
+				"description": "Segfault in 'buffered_getchar()' function in bash [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2097659"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:5815",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5815",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-08-02T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"bash-0:4.4.20-4.el8_6.aarch64.rpm",
+					"bash-0:4.4.20-4.el8_6.src.rpm",
+					"bash-0:4.4.20-4.el8_6.x86_64.rpm",
+					"bash-debuginfo-0:4.4.20-4.el8_6.aarch64.rpm",
+					"bash-debuginfo-0:4.4.20-4.el8_6.x86_64.rpm",
+					"bash-debugsource-0:4.4.20-4.el8_6.aarch64.rpm",
+					"bash-debugsource-0:4.4.20-4.el8_6.x86_64.rpm",
+					"bash-devel-0:4.4.20-4.el8_6.aarch64.rpm",
+					"bash-devel-0:4.4.20-4.el8_6.i686.rpm",
+					"bash-devel-0:4.4.20-4.el8_6.x86_64.rpm",
+					"bash-doc-0:4.4.20-4.el8_6.aarch64.rpm",
+					"bash-doc-0:4.4.20-4.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:1712",
+		"synopsis": "libpcap bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libpcap is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHEA-2021:1712",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:1712",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libpcap-14:1.9.1-5.el8.aarch64.rpm",
+					"libpcap-14:1.9.1-5.el8.i686.rpm",
+					"libpcap-14:1.9.1-5.el8.src.rpm",
+					"libpcap-14:1.9.1-5.el8.x86_64.rpm",
+					"libpcap-debuginfo-14:1.9.1-5.el8.aarch64.rpm",
+					"libpcap-debuginfo-14:1.9.1-5.el8.i686.rpm",
+					"libpcap-debuginfo-14:1.9.1-5.el8.x86_64.rpm",
+					"libpcap-debugsource-14:1.9.1-5.el8.aarch64.rpm",
+					"libpcap-debugsource-14:1.9.1-5.el8.i686.rpm",
+					"libpcap-debugsource-14:1.9.1-5.el8.x86_64.rpm",
+					"libpcap-devel-14:1.9.1-5.el8.aarch64.rpm",
+					"libpcap-devel-14:1.9.1-5.el8.i686.rpm",
+					"libpcap-devel-14:1.9.1-5.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

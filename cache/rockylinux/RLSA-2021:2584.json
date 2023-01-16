@@ -1,0 +1,96 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:2584",
+		"synopsis": "Moderate: ruby:2.7 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the ruby:2.7 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Ruby is an extensible, interpreted, object-oriented, scripting language. It has features to process text files and to perform system management tasks.\nThe following packages have been upgraded to a later upstream version: ruby (2.7.3). (BZ#1951999)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1883623",
+				"description": "CVE-2020-25613 ruby: Potential HTTP request smuggling in WEBrick",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1883623"
+			},
+			{
+				"ticket": "1947526",
+				"description": "CVE-2021-28965 ruby: XML round-trip vulnerability in REXML",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1947526"
+			},
+			{
+				"ticket": "1951999",
+				"description": "Rebase to the latest Ruby 2.7 point release [rhel-8] [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951999"
+			},
+			{
+				"ticket": "1952000",
+				"description": "Resolv::DNS: ruby:2.7/ruby: timeouts if multiple IPv6 name servers are given and address contains leading zero [rhel-8] [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1952000"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-25613",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-25613.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-444"
+			},
+			{
+				"name": "CVE-2021-28965",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-28965.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-611"
+			}
+		],
+		"publishedAt": "2021-06-29T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"rubygem-abrt-0:0.4.0-1.module+el8.5.0+668+665814fa.noarch.rpm",
+					"rubygem-abrt-0:0.4.0-1.module+el8.5.0+668+665814fa.src.rpm",
+					"rubygem-abrt-doc-0:0.4.0-1.module+el8.5.0+668+665814fa.noarch.rpm",
+					"rubygem-bson-0:4.8.1-1.module+el8.4.0+594+11b6673a.aarch64.rpm",
+					"rubygem-bson-0:4.8.1-1.module+el8.4.0+594+11b6673a.src.rpm",
+					"rubygem-bson-0:4.8.1-1.module+el8.4.0+594+11b6673a.x86_64.rpm",
+					"rubygem-bson-debuginfo-0:4.8.1-1.module+el8.4.0+594+11b6673a.aarch64.rpm",
+					"rubygem-bson-debuginfo-0:4.8.1-1.module+el8.4.0+594+11b6673a.x86_64.rpm",
+					"rubygem-bson-debugsource-0:4.8.1-1.module+el8.4.0+594+11b6673a.aarch64.rpm",
+					"rubygem-bson-debugsource-0:4.8.1-1.module+el8.4.0+594+11b6673a.x86_64.rpm",
+					"rubygem-bson-doc-0:4.8.1-1.module+el8.4.0+594+11b6673a.noarch.rpm",
+					"rubygem-mongo-0:2.11.3-1.module+el8.4.0+594+11b6673a.noarch.rpm",
+					"rubygem-mongo-0:2.11.3-1.module+el8.4.0+594+11b6673a.src.rpm",
+					"rubygem-mongo-doc-0:2.11.3-1.module+el8.4.0+594+11b6673a.noarch.rpm",
+					"rubygem-mysql2-0:0.5.3-1.module+el8.5.0+668+665814fa.aarch64.rpm",
+					"rubygem-mysql2-0:0.5.3-1.module+el8.5.0+668+665814fa.src.rpm",
+					"rubygem-mysql2-0:0.5.3-1.module+el8.5.0+668+665814fa.x86_64.rpm",
+					"rubygem-mysql2-debuginfo-0:0.5.3-1.module+el8.5.0+668+665814fa.aarch64.rpm",
+					"rubygem-mysql2-debuginfo-0:0.5.3-1.module+el8.5.0+668+665814fa.x86_64.rpm",
+					"rubygem-mysql2-debugsource-0:0.5.3-1.module+el8.5.0+668+665814fa.aarch64.rpm",
+					"rubygem-mysql2-debugsource-0:0.5.3-1.module+el8.5.0+668+665814fa.x86_64.rpm",
+					"rubygem-mysql2-doc-0:0.5.3-1.module+el8.5.0+668+665814fa.noarch.rpm",
+					"rubygem-pg-0:1.2.3-1.module+el8.5.0+668+665814fa.aarch64.rpm",
+					"rubygem-pg-0:1.2.3-1.module+el8.5.0+668+665814fa.src.rpm",
+					"rubygem-pg-0:1.2.3-1.module+el8.5.0+668+665814fa.x86_64.rpm",
+					"rubygem-pg-debuginfo-0:1.2.3-1.module+el8.5.0+668+665814fa.aarch64.rpm",
+					"rubygem-pg-debuginfo-0:1.2.3-1.module+el8.5.0+668+665814fa.x86_64.rpm",
+					"rubygem-pg-debugsource-0:1.2.3-1.module+el8.5.0+668+665814fa.aarch64.rpm",
+					"rubygem-pg-debugsource-0:1.2.3-1.module+el8.5.0+668+665814fa.x86_64.rpm",
+					"rubygem-pg-doc-0:1.2.3-1.module+el8.5.0+668+665814fa.noarch.rpm"
+				]
+			}
+		}
+	}
+}

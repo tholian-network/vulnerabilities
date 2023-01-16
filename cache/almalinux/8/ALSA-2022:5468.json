@@ -1,0 +1,63 @@
+{
+	"updateinfo_id": "ALSA-2022:5468",
+	"fromstr": "packager@almalinux.org",
+	"title": "ALSA-2022:5468: php:8.0 security update (Important)",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Important",
+	"summary": "php:8.0 security update",
+	"pushcount": "1",
+	"pkglist": {
+		"name": "almalinux-8-for-i686-appstream-rpms__8_6_default",
+		"shortname": "almalinux-8-for-i686-appstream-rpms__8_6_default",
+		"packages": [
+			{
+				"src": "php-pear-1.10.13-1.module_el8.6.0+3268+b150a051.src.rpm",
+				"name": "php-pear",
+				"epoch": "1",
+				"version": "1.10.13",
+				"release": "1.module_el8.6.0+3268+b150a051",
+				"arch": "noarch",
+				"filename": "php-pear-1.10.13-1.module_el8.6.0+3268+b150a051.noarch.rpm",
+				"sum": "0cce4d216b43c4b38de6e0f49d7e0705d81c35d448903204b93b913865a2007c",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "PHP is an HTML-embedded scripting language commonly used with the Apache HTTP Server.\nSecurity Fix(es):\n* php: password of excessive length triggers buffer overflow leading to RCE (CVE-2022-31626)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+	"references": [
+		{
+			"id": "RHSA-2022:5468",
+			"title": "RHSA-2022:5468",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5468"
+		},
+		{
+			"id": "CVE-2022-31626",
+			"title": "CVE-2022-31626",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-31626"
+		},
+		{
+			"id": "2098523",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2098523"
+		},
+		{
+			"id": "ALSA-2022:5468",
+			"title": "ALSA-2022:5468",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-5468.html"
+		}
+	],
+	"issued_date": {
+		"$date": 1656547200000
+	},
+	"updated_date": {
+		"$date": 1669241970000
+	}
+}

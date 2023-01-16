@@ -1,0 +1,63 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:1955",
+		"synopsis": "jmc:rhel8 bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for the jmc:rhel8 module is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1931769",
+				"description": "[RHEL-8] Broken dependencies: jmc-core",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1931769"
+			},
+			{
+				"ticket": "1933072",
+				"description": "JDK Mission control  About windows shows incorrect information for the version.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1933072"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:1955",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:1955",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"directory-maven-plugin-0:0.3.1-2.module+el8.5.0+676+5f023c1e.noarch.rpm",
+					"directory-maven-plugin-0:0.3.1-2.module+el8.5.0+676+5f023c1e.src.rpm",
+					"directory-maven-plugin-javadoc-0:0.3.1-2.module+el8.5.0+676+5f023c1e.noarch.rpm",
+					"ee4j-parent-0:1.0.1-2.module+el8.5.0+676+5f023c1e.noarch.rpm",
+					"ee4j-parent-0:1.0.1-2.module+el8.5.0+676+5f023c1e.src.rpm",
+					"HdrHistogram-0:2.1.11-3.module+el8.4.0+405+66dfe7da.noarch.rpm",
+					"HdrHistogram-0:2.1.11-3.module+el8.4.0+405+66dfe7da.src.rpm",
+					"HdrHistogram-javadoc-0:2.1.11-3.module+el8.4.0+405+66dfe7da.noarch.rpm",
+					"jaf-0:1.2.1-5.module+el8.4.0+405+66dfe7da.noarch.rpm",
+					"jaf-0:1.2.1-5.module+el8.4.0+405+66dfe7da.src.rpm",
+					"jaf-javadoc-0:1.2.1-5.module+el8.4.0+405+66dfe7da.noarch.rpm",
+					"lz4-java-0:1.7.1-14.module+el8.4.0+394+13a3c723.src.rpm",
+					"lz4-java-0:1.7.1-14.module+el8.4.0+394+13a3c723.x86_64.rpm",
+					"lz4-java-javadoc-0:1.7.1-14.module+el8.4.0+394+13a3c723.noarch.rpm",
+					"owasp-java-encoder-0:1.2.2-3.module+el8.4.0+405+66dfe7da.noarch.rpm",
+					"owasp-java-encoder-0:1.2.2-3.module+el8.4.0+405+66dfe7da.src.rpm",
+					"owasp-java-encoder-javadoc-0:1.2.2-3.module+el8.4.0+405+66dfe7da.noarch.rpm"
+				]
+			}
+		}
+	}
+}

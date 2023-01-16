@@ -1,0 +1,53 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1918",
+		"synopsis": "webrtc-audio-processing bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for webrtc-audio-processing is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2036956",
+				"description": "webrtc-audio-processing-devel is not shipped to users in RHEL 8",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2036956"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1918",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1918",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"webrtc-audio-processing-0:0.3-10.el8.aarch64.rpm",
+					"webrtc-audio-processing-0:0.3-10.el8.i686.rpm",
+					"webrtc-audio-processing-0:0.3-10.el8.src.rpm",
+					"webrtc-audio-processing-0:0.3-10.el8.x86_64.rpm",
+					"webrtc-audio-processing-debuginfo-0:0.3-10.el8.aarch64.rpm",
+					"webrtc-audio-processing-debuginfo-0:0.3-10.el8.i686.rpm",
+					"webrtc-audio-processing-debuginfo-0:0.3-10.el8.x86_64.rpm",
+					"webrtc-audio-processing-debugsource-0:0.3-10.el8.aarch64.rpm",
+					"webrtc-audio-processing-debugsource-0:0.3-10.el8.i686.rpm",
+					"webrtc-audio-processing-debugsource-0:0.3-10.el8.x86_64.rpm",
+					"webrtc-audio-processing-devel-0:0.3-10.el8.aarch64.rpm",
+					"webrtc-audio-processing-devel-0:0.3-10.el8.i686.rpm",
+					"webrtc-audio-processing-devel-0:0.3-10.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

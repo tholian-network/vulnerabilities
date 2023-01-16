@@ -1,0 +1,53 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1801",
+		"synopsis": "Moderate: gfbgraph security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for gfbgraph is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "GLib/GObject wrapper for the Facebook Graph API that integrates with GNOME Online Accounts.\nThe following packages have been upgraded to a later upstream version: gfbgraph (0.2.4). (BZ#1997941)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1997139",
+				"description": "CVE-2021-39358 gfbgraph: missing TLS certificate verification",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1997139"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-39358",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-39358.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-295"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gfbgraph-0:0.2.4-1.el8.aarch64.rpm",
+					"gfbgraph-0:0.2.4-1.el8.i686.rpm",
+					"gfbgraph-0:0.2.4-1.el8.src.rpm",
+					"gfbgraph-0:0.2.4-1.el8.x86_64.rpm",
+					"gfbgraph-debuginfo-0:0.2.4-1.el8.aarch64.rpm",
+					"gfbgraph-debuginfo-0:0.2.4-1.el8.i686.rpm",
+					"gfbgraph-debuginfo-0:0.2.4-1.el8.x86_64.rpm",
+					"gfbgraph-debugsource-0:0.2.4-1.el8.aarch64.rpm",
+					"gfbgraph-debugsource-0:0.2.4-1.el8.i686.rpm",
+					"gfbgraph-debugsource-0:0.2.4-1.el8.x86_64.rpm",
+					"gfbgraph-devel-0:0.2.4-1.el8.aarch64.rpm",
+					"gfbgraph-devel-0:0.2.4-1.el8.i686.rpm",
+					"gfbgraph-devel-0:0.2.4-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

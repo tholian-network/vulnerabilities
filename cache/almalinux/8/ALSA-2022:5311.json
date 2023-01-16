@@ -1,0 +1,147 @@
+{
+	"updateinfo_id": "ALSA-2022:5311",
+	"fromstr": "packager@almalinux.org",
+	"title": "Moderate: libgcrypt security update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Moderate",
+	"summary": "An update for libgcrypt is now available for AlmaLinux 8.",
+	"pushcount": "1",
+	"pkglist": {
+		"name": "almalinux-8-for-x86_64-baseos-rpms__8_6_default",
+		"shortname": "almalinux-8-for-x86_64-baseos-rpms__8_6_default",
+		"packages": [
+			{
+				"src": "libgcrypt-1.8.5-7.el8_6.src.rpm",
+				"name": "libgcrypt-devel",
+				"epoch": "0",
+				"version": "1.8.5",
+				"release": "7.el8_6",
+				"arch": "x86_64",
+				"filename": "libgcrypt-devel-1.8.5-7.el8_6.x86_64.rpm",
+				"sum": "0c97528fd9c9085861b7b6d9d76bbfc223d6d6aad8fcaeaf2b3dd53964635173",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libgcrypt-1.8.5-7.el8_6.src.rpm",
+				"name": "libgcrypt-devel",
+				"epoch": "0",
+				"version": "1.8.5",
+				"release": "7.el8_6",
+				"arch": "i686",
+				"filename": "libgcrypt-devel-1.8.5-7.el8_6.i686.rpm",
+				"sum": "17a36975ed068ed17664dbb84e0a1834ca821d64e971608f90fd3846e393b80d",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libgcrypt-1.8.5-7.el8_6.src.rpm",
+				"name": "libgcrypt",
+				"epoch": "0",
+				"version": "1.8.5",
+				"release": "7.el8_6",
+				"arch": "x86_64",
+				"filename": "libgcrypt-1.8.5-7.el8_6.x86_64.rpm",
+				"sum": "dcfe1f4d19c8ade6902d188949e902971a5b0807643e1c37f0419340ac890a64",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libgcrypt-1.8.5-7.el8_6.src.rpm",
+				"name": "libgcrypt",
+				"epoch": "0",
+				"version": "1.8.5",
+				"release": "7.el8_6",
+				"arch": "i686",
+				"filename": "libgcrypt-1.8.5-7.el8_6.i686.rpm",
+				"sum": "fa9e03e98c9d396cfa45403de68436a080cfdbec9c8e00ec4fe5c11922c0833f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libgcrypt-1.8.5-7.el8_6.src.rpm",
+				"name": "libgcrypt-devel",
+				"epoch": "0",
+				"version": "1.8.5",
+				"release": "7.el8_6",
+				"arch": "aarch64",
+				"filename": "libgcrypt-devel-1.8.5-7.el8_6.aarch64.rpm",
+				"sum": "21b82730c587a9db222063de38f44c5e2bebdcd8ecb81f53878343bf1bf17ead",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libgcrypt-1.8.5-7.el8_6.src.rpm",
+				"name": "libgcrypt",
+				"epoch": "0",
+				"version": "1.8.5",
+				"release": "7.el8_6",
+				"arch": "aarch64",
+				"filename": "libgcrypt-1.8.5-7.el8_6.aarch64.rpm",
+				"sum": "dd7baa83a1a02ac7f5e56592c57b8f7e516543c9db0c40c1500945adc4da3eb0",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libgcrypt-1.8.5-7.el8_6.src.rpm",
+				"name": "libgcrypt-devel",
+				"epoch": "0",
+				"version": "1.8.5",
+				"release": "7.el8_6",
+				"arch": "ppc64le",
+				"filename": "libgcrypt-devel-1.8.5-7.el8_6.ppc64le.rpm",
+				"sum": "56ef741a8acdf8161143d1218ab198cca41558fb2f2d76b2ff1ad1193a3e7064",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libgcrypt-1.8.5-7.el8_6.src.rpm",
+				"name": "libgcrypt",
+				"epoch": "0",
+				"version": "1.8.5",
+				"release": "7.el8_6",
+				"arch": "ppc64le",
+				"filename": "libgcrypt-1.8.5-7.el8_6.ppc64le.rpm",
+				"sum": "628f67249ebb5c7be7c7629c241ba7b4ff7ab77097e0626e67b566ad18ad7f5e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "The libgcrypt library provides general-purpose implementations of various cryptographic algorithms.\nSecurity Fix(es):\n* libgcrypt: ElGamal implementation allows plaintext recovery (CVE-2021-40528)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+	"references": [
+		{
+			"id": "RHSA-2022:5311",
+			"title": "RHSA-2022:5311",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5311"
+		},
+		{
+			"id": "CVE-2021-40528",
+			"title": "CVE-2021-40528",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2021-40528"
+		},
+		{
+			"id": "2002816",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2002816"
+		},
+		{
+			"id": "ALSA-2022:5311",
+			"title": "ALSA-2022:5311",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-5311.html"
+		}
+	],
+	"issued_date": {
+		"$date": 1656547200000
+	},
+	"updated_date": {
+		"$date": 1658425354000
+	}
+}

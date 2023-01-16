@@ -1,0 +1,107 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7790",
+		"synopsis": "Moderate: bind security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for bind is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The Berkeley Internet Name Domain (BIND) is an implementation of the Domain Name System (DNS) protocols. BIND includes a DNS server (named); a resolver library (routines for applications to use when interfacing with DNS); and tools for verifying that the DNS server is operating correctly.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2064512",
+				"description": "CVE-2021-25220 bind: DNS forwarders - cache poisoning vulnerability",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064512"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-25220",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-25220.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:N",
+				"cvss3BaseScore": "6.8",
+				"cwe": "CWE-444"
+			}
+		],
+		"publishedAt": "2022-11-13T07:51:29.339201Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"bind-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-32:9.11.36-5.el8_7.2.src.rpm",
+					"bind-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-chroot-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-chroot-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-debuginfo-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-debuginfo-32:9.11.36-5.el8_7.2.i686.rpm",
+					"bind-debuginfo-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-debugsource-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-debugsource-32:9.11.36-5.el8_7.2.i686.rpm",
+					"bind-debugsource-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-devel-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-devel-32:9.11.36-5.el8_7.2.i686.rpm",
+					"bind-devel-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-export-devel-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-export-devel-32:9.11.36-5.el8_7.2.i686.rpm",
+					"bind-export-devel-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-export-libs-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-export-libs-32:9.11.36-5.el8_7.2.i686.rpm",
+					"bind-export-libs-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-export-libs-debuginfo-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-export-libs-debuginfo-32:9.11.36-5.el8_7.2.i686.rpm",
+					"bind-export-libs-debuginfo-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-libs-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-libs-32:9.11.36-5.el8_7.2.i686.rpm",
+					"bind-libs-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-libs-debuginfo-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-libs-debuginfo-32:9.11.36-5.el8_7.2.i686.rpm",
+					"bind-libs-debuginfo-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-libs-lite-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-libs-lite-32:9.11.36-5.el8_7.2.i686.rpm",
+					"bind-libs-lite-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-libs-lite-debuginfo-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-libs-lite-debuginfo-32:9.11.36-5.el8_7.2.i686.rpm",
+					"bind-libs-lite-debuginfo-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-license-32:9.11.36-5.el8_7.2.noarch.rpm",
+					"bind-lite-devel-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-lite-devel-32:9.11.36-5.el8_7.2.i686.rpm",
+					"bind-lite-devel-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-pkcs11-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-pkcs11-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-pkcs11-debuginfo-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-pkcs11-debuginfo-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-pkcs11-devel-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-pkcs11-devel-32:9.11.36-5.el8_7.2.i686.rpm",
+					"bind-pkcs11-devel-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-pkcs11-libs-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-pkcs11-libs-32:9.11.36-5.el8_7.2.i686.rpm",
+					"bind-pkcs11-libs-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-pkcs11-libs-debuginfo-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-pkcs11-libs-debuginfo-32:9.11.36-5.el8_7.2.i686.rpm",
+					"bind-pkcs11-libs-debuginfo-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-pkcs11-utils-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-pkcs11-utils-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-pkcs11-utils-debuginfo-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-pkcs11-utils-debuginfo-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-sdb-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-sdb-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-sdb-chroot-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-sdb-chroot-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-sdb-debuginfo-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-sdb-debuginfo-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-utils-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-utils-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"bind-utils-debuginfo-32:9.11.36-5.el8_7.2.aarch64.rpm",
+					"bind-utils-debuginfo-32:9.11.36-5.el8_7.2.x86_64.rpm",
+					"python3-bind-32:9.11.36-5.el8_7.2.noarch.rpm"
+				]
+			}
+		}
+	}
+}

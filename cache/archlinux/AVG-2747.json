@@ -1,18 +1,18 @@
 {
-	"name": "AVG-2747",
-	"packages": [
-		"linux-hardened"
-	],
-	"status": "Fixed",
-	"severity": "High",
-	"type": "privilege escalation",
-	"affected": "5.17.9.hardened1-1",
-	"fixed": "5.17.10.hardened1-1",
-	"ticket": null,
-	"issues": [
-		"CVE-2022-1729"
-	],
-	"advisories": [],
-	"references": [],
-	"notes": "By default, for linux-hardened, an unprivileged user can't trigger an attack. To prevent the possibility of an unprivileged users' attack, set kernel.perf_event_paranoid to the value 3.\r\nTo confirm the current state, inspect the sysctl with the command:\r\n\r\n    cat /proc/sys/kernel/perf_event_paranoid\r\n\r\nThe setting >=3 would mean that unprivileged users can not use performance events, mitigating the flaw."
+  "name": "AVG-2747",
+  "packages": [
+    "linux-hardened"
+  ],
+  "status": "Fixed",
+  "severity": "High",
+  "type": "privilege escalation",
+  "affected": "5.17.9.hardened1-1",
+  "fixed": "5.17.10.hardened1-1",
+  "ticket": null,
+  "issues": [
+    "CVE-2022-1729"
+  ],
+  "advisories": [],
+  "references": [],
+  "notes": "By default, for linux-hardened, an unprivileged user can't trigger an attack. To prevent the possibility of an unprivileged users' attack, set kernel.perf_event_paranoid to the value 3.\r\nTo confirm the current state, inspect the sysctl with the command:\r\n\r\n    cat /proc/sys/kernel/perf_event_paranoid\r\n\r\nThe setting >=3 would mean that unprivileged users can not use performance events, mitigating the flaw."
 }

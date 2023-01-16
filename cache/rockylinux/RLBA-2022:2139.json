@@ -1,0 +1,50 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2139",
+		"synopsis": "tlog bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for tlog is now available for Rocky Linux 8.",
+		"description": "Tlog is a terminal I/O recording program similar to \u0026#34;script\u0026#34;, but used in place of a user\u0026#39;s shell, starting the recording and executing the real user\u0026#39;s\nshell afterwards. The recorded I/O can then be forwarded to a logging server\nin JSON format.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2077473",
+				"description": "tlog causing SSH to not reliably run commands [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2077473"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2139",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2139",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"tlog-0:12.1-1.el8_6.aarch64.rpm",
+					"tlog-0:12.1-1.el8_6.i686.rpm",
+					"tlog-0:12.1-1.el8_6.src.rpm",
+					"tlog-0:12.1-1.el8_6.x86_64.rpm",
+					"tlog-debuginfo-0:12.1-1.el8_6.aarch64.rpm",
+					"tlog-debuginfo-0:12.1-1.el8_6.i686.rpm",
+					"tlog-debuginfo-0:12.1-1.el8_6.x86_64.rpm",
+					"tlog-debugsource-0:12.1-1.el8_6.aarch64.rpm",
+					"tlog-debugsource-0:12.1-1.el8_6.i686.rpm",
+					"tlog-debugsource-0:12.1-1.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

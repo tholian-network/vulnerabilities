@@ -1,0 +1,107 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2032",
+		"synopsis": "cups bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for cups is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1726383",
+				"description": "\"lpadmin -p \u003cqueue\u003e -o cupsSNMPSupplies:false\" doesn't work",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1726383"
+			},
+			{
+				"ticket": "1811716",
+				"description": "lpr to non-existent printer reports incorrect error",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1811716"
+			},
+			{
+				"ticket": "1982891",
+				"description": "Printing of banner before PCL file only prints banner",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1982891"
+			},
+			{
+				"ticket": "2006591",
+				"description": "Trying to restart and hold a job doesn't work",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2006591"
+			},
+			{
+				"ticket": "2006987",
+				"description": "Unauthenticated users can't move print jobs in Web UI",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2006987"
+			},
+			{
+				"ticket": "2015182",
+				"description": "RFE: Implement IdleExitTimeout configuration during build",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2015182"
+			},
+			{
+				"ticket": "2032965",
+				"description": "[RFE] RHEL8 - CUPS Web UI supports adding IPP Everywhere",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2032965"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2032",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2032",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cups-1:2.2.6-44.el8.aarch64.rpm",
+					"cups-1:2.2.6-44.el8.src.rpm",
+					"cups-1:2.2.6-44.el8.x86_64.rpm",
+					"cups-client-1:2.2.6-44.el8.aarch64.rpm",
+					"cups-client-1:2.2.6-44.el8.x86_64.rpm",
+					"cups-client-debuginfo-1:2.2.6-44.el8.aarch64.rpm",
+					"cups-client-debuginfo-1:2.2.6-44.el8.x86_64.rpm",
+					"cups-debuginfo-1:2.2.6-44.el8.aarch64.rpm",
+					"cups-debuginfo-1:2.2.6-44.el8.i686.rpm",
+					"cups-debuginfo-1:2.2.6-44.el8.x86_64.rpm",
+					"cups-debugsource-1:2.2.6-44.el8.aarch64.rpm",
+					"cups-debugsource-1:2.2.6-44.el8.i686.rpm",
+					"cups-debugsource-1:2.2.6-44.el8.x86_64.rpm",
+					"cups-devel-1:2.2.6-44.el8.aarch64.rpm",
+					"cups-devel-1:2.2.6-44.el8.i686.rpm",
+					"cups-devel-1:2.2.6-44.el8.x86_64.rpm",
+					"cups-filesystem-1:2.2.6-44.el8.noarch.rpm",
+					"cups-ipptool-1:2.2.6-44.el8.aarch64.rpm",
+					"cups-ipptool-1:2.2.6-44.el8.x86_64.rpm",
+					"cups-ipptool-debuginfo-1:2.2.6-44.el8.aarch64.rpm",
+					"cups-ipptool-debuginfo-1:2.2.6-44.el8.x86_64.rpm",
+					"cups-libs-1:2.2.6-44.el8.aarch64.rpm",
+					"cups-libs-1:2.2.6-44.el8.i686.rpm",
+					"cups-libs-1:2.2.6-44.el8.x86_64.rpm",
+					"cups-libs-debuginfo-1:2.2.6-44.el8.aarch64.rpm",
+					"cups-libs-debuginfo-1:2.2.6-44.el8.i686.rpm",
+					"cups-libs-debuginfo-1:2.2.6-44.el8.x86_64.rpm",
+					"cups-lpd-1:2.2.6-44.el8.aarch64.rpm",
+					"cups-lpd-1:2.2.6-44.el8.x86_64.rpm",
+					"cups-lpd-debuginfo-1:2.2.6-44.el8.aarch64.rpm",
+					"cups-lpd-debuginfo-1:2.2.6-44.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

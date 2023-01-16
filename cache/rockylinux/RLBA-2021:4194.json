@@ -1,0 +1,67 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4194",
+		"synopsis": "unbound bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for unbound is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1830625",
+				"description": "SELinux is preventing unbound-anchor from name_bind access on the udp_socket port 61000",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1830625"
+			},
+			{
+				"ticket": "1922448",
+				"description": "[RFE] Allow disabling unbound-anchor during startup",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1922448"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4194",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4194",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"python3-unbound-0:1.7.3-17.el8.aarch64.rpm",
+					"python3-unbound-0:1.7.3-17.el8.x86_64.rpm",
+					"python3-unbound-debuginfo-0:1.7.3-17.el8.aarch64.rpm",
+					"python3-unbound-debuginfo-0:1.7.3-17.el8.x86_64.rpm",
+					"unbound-0:1.7.3-17.el8.aarch64.rpm",
+					"unbound-0:1.7.3-17.el8.src.rpm",
+					"unbound-0:1.7.3-17.el8.x86_64.rpm",
+					"unbound-debuginfo-0:1.7.3-17.el8.aarch64.rpm",
+					"unbound-debuginfo-0:1.7.3-17.el8.i686.rpm",
+					"unbound-debuginfo-0:1.7.3-17.el8.x86_64.rpm",
+					"unbound-debugsource-0:1.7.3-17.el8.aarch64.rpm",
+					"unbound-debugsource-0:1.7.3-17.el8.x86_64.rpm",
+					"unbound-devel-0:1.7.3-17.el8.aarch64.rpm",
+					"unbound-devel-0:1.7.3-17.el8.i686.rpm",
+					"unbound-devel-0:1.7.3-17.el8.x86_64.rpm",
+					"unbound-libs-0:1.7.3-17.el8.aarch64.rpm",
+					"unbound-libs-0:1.7.3-17.el8.i686.rpm",
+					"unbound-libs-0:1.7.3-17.el8.x86_64.rpm",
+					"unbound-libs-debuginfo-0:1.7.3-17.el8.aarch64.rpm",
+					"unbound-libs-debuginfo-0:1.7.3-17.el8.i686.rpm",
+					"unbound-libs-debuginfo-0:1.7.3-17.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

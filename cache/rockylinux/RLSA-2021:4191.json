@@ -1,0 +1,266 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4191",
+		"synopsis": "Moderate: virt:rhel and virt-devel:rhel security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the virt:rhel and virt-devel:rhel modules is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Kernel-based Virtual Machine (KVM) offers a full virtualization solution for Linux on numerous hardware platforms. The virt:rhel module contains packages which provide user-space components used to run virtual machines using KVM. The packages also provide APIs for managing and interacting with the virtualized systems.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1855250",
+				"description": "qemu-img convert uses possibly slow pre-zeroing on block storage",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1855250"
+			},
+			{
+				"ticket": "1859168",
+				"description": "CVE-2020-15859 QEMU: net: e1000e: use-after-free while sending packets",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1859168"
+			},
+			{
+				"ticket": "1929357",
+				"description": "UEFI: Provide a way how to configure different combinations of secure boot enabled/disabled and keys enrolled/not enrolled",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1929357"
+			},
+			{
+				"ticket": "1932823",
+				"description": "after upgrade from 4.3 to 4.4 audio stops working in guests after couple of seconds",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1932823"
+			},
+			{
+				"ticket": "1933640",
+				"description": "[Regression] lvcreate fails to wipe signatures again",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1933640"
+			},
+			{
+				"ticket": "1934509",
+				"description": "QEMU doesn't honour system crypto policies",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1934509"
+			},
+			{
+				"ticket": "1939418",
+				"description": "Invalid hash calculated when using IPv6 RSS offload",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1939418"
+			},
+			{
+				"ticket": "1942805",
+				"description": "cannot restart default network and firewalld: iptables: No chain/target/match by that name.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1942805"
+			},
+			{
+				"ticket": "1961562",
+				"description": "vm can not start with error as \"internal error: unknown feature amd-sev-es\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1961562"
+			},
+			{
+				"ticket": "1967329",
+				"description": "Make qemu-kvm use versioned obsoletes for qemu-kvm-ma and qemu-kvm-rhev",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1967329"
+			},
+			{
+				"ticket": "1967496",
+				"description": "[virtio-fs] nfs/xfstest generic/089 generic/478 failed",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1967496"
+			},
+			{
+				"ticket": "1967716",
+				"description": "RFE: rebuild guest agent to include public ssh injection api support",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1967716"
+			},
+			{
+				"ticket": "1967914",
+				"description": "[virtio-fs] virtiofsd quit when coping file to a folder in virtio-fs mounted volume(windows guest)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1967914"
+			},
+			{
+				"ticket": "1969848",
+				"description": "qemu-img convert hangs on aarch64",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1969848"
+			},
+			{
+				"ticket": "1970484",
+				"description": "CVE-2021-3592 QEMU: slirp: invalid pointer initialization may lead to information disclosure (bootp)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1970484"
+			},
+			{
+				"ticket": "1970487",
+				"description": "CVE-2021-3593 QEMU: slirp: invalid pointer initialization may lead to information disclosure (udp6)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1970487"
+			},
+			{
+				"ticket": "1970489",
+				"description": "CVE-2021-3595 QEMU: slirp: invalid pointer initialization may lead to information disclosure (tftp)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1970489"
+			},
+			{
+				"ticket": "1970491",
+				"description": "CVE-2021-3594 QEMU: slirp: invalid pointer initialization may lead to information disclosure (udp)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1970491"
+			},
+			{
+				"ticket": "1977726",
+				"description": "CVE-2021-3631 libvirt: Insecure sVirt label generation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1977726"
+			},
+			{
+				"ticket": "1982134",
+				"description": "QEMU core dump while booting guest with a non-exist fd on tap",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1982134"
+			},
+			{
+				"ticket": "1986094",
+				"description": "CVE-2021-3667 libvirt: Improper locking on ACL failure in virStoragePoolLookupByTargetPath API",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986094"
+			},
+			{
+				"ticket": "1994041",
+				"description": "qemu-kvm scsi: change default passthrough timeout to non-infinite",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1994041"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-15859",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-15859.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:L",
+				"cvss3BaseScore": "3.8",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-3592",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3592.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N",
+				"cvss3BaseScore": "3.8",
+				"cwe": "CWE-824"
+			},
+			{
+				"name": "CVE-2021-3593",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3593.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N",
+				"cvss3BaseScore": "3.8",
+				"cwe": "CWE-824"
+			},
+			{
+				"name": "CVE-2021-3594",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3594.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N",
+				"cvss3BaseScore": "3.8",
+				"cwe": "CWE-824"
+			},
+			{
+				"name": "CVE-2021-3595",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3595.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N",
+				"cvss3BaseScore": "3.8",
+				"cwe": "CWE-824"
+			},
+			{
+				"name": "CVE-2021-3631",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3631.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:L/I:L/A:N",
+				"cvss3BaseScore": "3.0",
+				"cwe": "CWE-732"
+			},
+			{
+				"name": "CVE-2021-3667",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3667.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-667"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libiscsi-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-0:1.18.0-8.module+el8.6.0+847+b490afdd.src.rpm",
+					"libiscsi-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-debugsource-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-debugsource-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-debugsource-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-devel-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-devel-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-devel-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-utils-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-utils-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-utils-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-utils-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-utils-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-utils-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libvirt-dbus-0:1.3.0-2.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libvirt-dbus-0:1.3.0-2.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libvirt-dbus-0:1.3.0-2.module+el8.6.0+847+b490afdd.src.rpm",
+					"libvirt-dbus-0:1.3.0-2.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libvirt-dbus-debuginfo-0:1.3.0-2.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libvirt-dbus-debuginfo-0:1.3.0-2.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libvirt-dbus-debuginfo-0:1.3.0-2.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libvirt-dbus-debugsource-0:1.3.0-2.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libvirt-dbus-debugsource-0:1.3.0-2.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libvirt-dbus-debugsource-0:1.3.0-2.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-0:0.2.8-12.module+el8.6.0+847+b490afdd.src.rpm",
+					"netcf-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-debugsource-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-debugsource-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-debugsource-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-devel-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-devel-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-devel-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-libs-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-libs-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-libs-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-libs-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-libs-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-libs-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"sgabios-1:0.20170427git-3.module+el8.6.0+847+b490afdd.i686.rpm",
+					"sgabios-1:0.20170427git-3.module+el8.6.0+847+b490afdd.src.rpm",
+					"sgabios-1:0.20170427git-3.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"sgabios-bin-1:0.20170427git-3.module+el8.6.0+847+b490afdd.noarch.rpm"
+				]
+			}
+		}
+	}
+}

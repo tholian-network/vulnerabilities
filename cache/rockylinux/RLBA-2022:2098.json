@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2098",
+		"synopsis": "unzip bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for unzip is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2020320",
+				"description": "Regression in patches to detect possible zipbomb",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2020320"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2098",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2098",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"unzip-0:6.0-46.el8.aarch64.rpm",
+					"unzip-0:6.0-46.el8.src.rpm",
+					"unzip-0:6.0-46.el8.x86_64.rpm",
+					"unzip-debuginfo-0:6.0-46.el8.aarch64.rpm",
+					"unzip-debuginfo-0:6.0-46.el8.x86_64.rpm",
+					"unzip-debugsource-0:6.0-46.el8.aarch64.rpm",
+					"unzip-debugsource-0:6.0-46.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

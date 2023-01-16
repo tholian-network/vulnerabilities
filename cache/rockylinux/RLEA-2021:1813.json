@@ -1,0 +1,90 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:1813",
+		"synopsis": "new module: subversion:1.14",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "A new subversion:1.14 module is now available for Rocky Linux 8.",
+		"description": "Subversion (SVN) is a concurrent version control system which enables one or more users to collaborate in developing and maintaining a hierarchy of files and directories while keeping a history of all changes.\nThis enhancement update adds the subversion:1.14 module to Rocky Linux 8. (BZ#1844947)\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1844947",
+				"description": "[RFE] Make Subversion 1.14 available for RHEL-8.x",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1844947"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:1813",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:1813",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libserf-0:1.3.9-9.module+el8.6.0+981+332af5e1.aarch64.rpm",
+					"libserf-0:1.3.9-9.module+el8.6.0+981+332af5e1.src.rpm",
+					"libserf-0:1.3.9-9.module+el8.6.0+981+332af5e1.x86_64.rpm",
+					"libserf-debuginfo-0:1.3.9-9.module+el8.6.0+981+332af5e1.aarch64.rpm",
+					"libserf-debuginfo-0:1.3.9-9.module+el8.6.0+981+332af5e1.x86_64.rpm",
+					"libserf-debugsource-0:1.3.9-9.module+el8.6.0+981+332af5e1.aarch64.rpm",
+					"libserf-debugsource-0:1.3.9-9.module+el8.6.0+981+332af5e1.x86_64.rpm",
+					"mod_dav_svn-0:1.14.1-1.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"mod_dav_svn-0:1.14.1-1.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"mod_dav_svn-debuginfo-0:1.14.1-1.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"mod_dav_svn-debuginfo-0:1.14.1-1.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"python3-subversion-0:1.14.1-1.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"python3-subversion-0:1.14.1-1.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"python3-subversion-debuginfo-0:1.14.1-1.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"python3-subversion-debuginfo-0:1.14.1-1.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"subversion-0:1.14.1-1.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"subversion-0:1.14.1-1.module+el8.4.0+408+b59d7166.src.rpm",
+					"subversion-0:1.14.1-1.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"subversion-debuginfo-0:1.14.1-1.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"subversion-debuginfo-0:1.14.1-1.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"subversion-debugsource-0:1.14.1-1.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"subversion-debugsource-0:1.14.1-1.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"subversion-devel-0:1.14.1-1.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"subversion-devel-0:1.14.1-1.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"subversion-devel-debuginfo-0:1.14.1-1.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"subversion-devel-debuginfo-0:1.14.1-1.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"subversion-gnome-0:1.14.1-1.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"subversion-gnome-0:1.14.1-1.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"subversion-gnome-debuginfo-0:1.14.1-1.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"subversion-gnome-debuginfo-0:1.14.1-1.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"subversion-javahl-0:1.14.1-1.module+el8.4.0+408+b59d7166.noarch.rpm",
+					"subversion-libs-0:1.14.1-1.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"subversion-libs-0:1.14.1-1.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"subversion-libs-debuginfo-0:1.14.1-1.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"subversion-libs-debuginfo-0:1.14.1-1.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"subversion-perl-0:1.14.1-1.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"subversion-perl-0:1.14.1-1.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"subversion-perl-debuginfo-0:1.14.1-1.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"subversion-perl-debuginfo-0:1.14.1-1.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"subversion-tools-0:1.14.1-1.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"subversion-tools-0:1.14.1-1.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"subversion-tools-debuginfo-0:1.14.1-1.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"subversion-tools-debuginfo-0:1.14.1-1.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"utf8proc-0:2.1.1-5.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"utf8proc-0:2.1.1-5.module+el8.4.0+408+b59d7166.src.rpm",
+					"utf8proc-0:2.1.1-5.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"utf8proc-debuginfo-0:2.1.1-5.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"utf8proc-debuginfo-0:2.1.1-5.module+el8.4.0+408+b59d7166.x86_64.rpm",
+					"utf8proc-debugsource-0:2.1.1-5.module+el8.4.0+408+b59d7166.aarch64.rpm",
+					"utf8proc-debugsource-0:2.1.1-5.module+el8.4.0+408+b59d7166.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,81 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1857",
+		"synopsis": "clevis bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for clevis is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1949289",
+				"description": "clevis-systemd is using ncat but has dependency set on nc but uses ncat",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1949289"
+			},
+			{
+				"ticket": "1976880",
+				"description": "RFE: Stop sending stderr to the void when decryption doesn't happen",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1976880"
+			},
+			{
+				"ticket": "1979256",
+				"description": "clevis added LUKS2 keyslots does not have to use LUKS2 pbkdf defaults for new keyslots.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1979256"
+			},
+			{
+				"ticket": "1980742",
+				"description": "RFE: enable debugging in clevis scripts when rd.debug is set",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1980742"
+			},
+			{
+				"ticket": "2028096",
+				"description": "[RFE] Support a null pin",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028096"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1857",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1857",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"clevis-0:15-8.el8.aarch64.rpm",
+					"clevis-0:15-8.el8.src.rpm",
+					"clevis-0:15-8.el8.x86_64.rpm",
+					"clevis-debuginfo-0:15-8.el8.aarch64.rpm",
+					"clevis-debuginfo-0:15-8.el8.x86_64.rpm",
+					"clevis-debugsource-0:15-8.el8.aarch64.rpm",
+					"clevis-debugsource-0:15-8.el8.x86_64.rpm",
+					"clevis-dracut-0:15-8.el8.aarch64.rpm",
+					"clevis-dracut-0:15-8.el8.x86_64.rpm",
+					"clevis-luks-0:15-8.el8.aarch64.rpm",
+					"clevis-luks-0:15-8.el8.x86_64.rpm",
+					"clevis-systemd-0:15-8.el8.aarch64.rpm",
+					"clevis-systemd-0:15-8.el8.x86_64.rpm",
+					"clevis-udisks2-0:15-8.el8.aarch64.rpm",
+					"clevis-udisks2-0:15-8.el8.x86_64.rpm",
+					"clevis-udisks2-debuginfo-0:15-8.el8.aarch64.rpm",
+					"clevis-udisks2-debuginfo-0:15-8.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

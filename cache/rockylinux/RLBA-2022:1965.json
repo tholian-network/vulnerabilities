@@ -1,0 +1,100 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1965",
+		"synopsis": "plymouth bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for plymouth is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2056473",
+				"description": "LUKS passphrase prompt not being presented on boot",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2056473"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1965",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1965",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"plymouth-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-0:0.9.4-11.20200615git1e36e30.el8.src.rpm",
+					"plymouth-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-core-libs-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-core-libs-0:0.9.4-11.20200615git1e36e30.el8.i686.rpm",
+					"plymouth-core-libs-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-core-libs-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-core-libs-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.i686.rpm",
+					"plymouth-core-libs-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.i686.rpm",
+					"plymouth-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-debugsource-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-debugsource-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-graphics-libs-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-graphics-libs-0:0.9.4-11.20200615git1e36e30.el8.i686.rpm",
+					"plymouth-graphics-libs-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-graphics-libs-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-graphics-libs-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.i686.rpm",
+					"plymouth-graphics-libs-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-plugin-fade-throbber-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-plugin-fade-throbber-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-plugin-fade-throbber-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-plugin-fade-throbber-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-plugin-label-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-plugin-label-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-plugin-label-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-plugin-label-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-plugin-script-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-plugin-script-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-plugin-script-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-plugin-script-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-plugin-space-flares-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-plugin-space-flares-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-plugin-space-flares-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-plugin-space-flares-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-plugin-throbgress-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-plugin-throbgress-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-plugin-throbgress-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-plugin-throbgress-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-plugin-two-step-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-plugin-two-step-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-plugin-two-step-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-plugin-two-step-debuginfo-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-scripts-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-scripts-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-system-theme-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-system-theme-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-theme-charge-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-theme-charge-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-theme-fade-in-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-theme-fade-in-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-theme-script-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-theme-script-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-theme-solar-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-theme-solar-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-theme-spinfinity-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-theme-spinfinity-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm",
+					"plymouth-theme-spinner-0:0.9.4-11.20200615git1e36e30.el8.aarch64.rpm",
+					"plymouth-theme-spinner-0:0.9.4-11.20200615git1e36e30.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

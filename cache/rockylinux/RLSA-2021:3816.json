@@ -1,0 +1,61 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:3816",
+		"synopsis": "Important: httpd:2.4 security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for the httpd:2.4 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The httpd packages provide the Apache HTTP Server, a powerful, efficient, and extensible web server.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1966732",
+				"description": "CVE-2021-26691 httpd: mod_session: Heap overflow via a crafted SessionHeader value",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1966732"
+			},
+			{
+				"ticket": "2005117",
+				"description": "CVE-2021-40438 httpd: mod_proxy: SSRF via a crafted request uri-path containing \"unix:\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2005117"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-26691",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-26691.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.1",
+				"cwe": "CWE-119"
+			},
+			{
+				"name": "CVE-2021-40438",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-40438.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+				"cvss3BaseScore": "9.0",
+				"cwe": "CWE-918"
+			}
+		],
+		"publishedAt": "2021-10-12T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mod_md-1:2.0.8-8.module+el8.5.0+695+1fa8055e.aarch64.rpm",
+					"mod_md-1:2.0.8-8.module+el8.5.0+695+1fa8055e.src.rpm",
+					"mod_md-1:2.0.8-8.module+el8.5.0+695+1fa8055e.x86_64.rpm",
+					"mod_md-debuginfo-1:2.0.8-8.module+el8.5.0+695+1fa8055e.aarch64.rpm",
+					"mod_md-debuginfo-1:2.0.8-8.module+el8.5.0+695+1fa8055e.x86_64.rpm",
+					"mod_md-debugsource-1:2.0.8-8.module+el8.5.0+695+1fa8055e.aarch64.rpm",
+					"mod_md-debugsource-1:2.0.8-8.module+el8.5.0+695+1fa8055e.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

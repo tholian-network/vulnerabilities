@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7640",
+		"synopsis": "Moderate: mutt security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for mutt is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Mutt is a low resource, highly configurable, text-based MIME e-mail client. Mutt supports most e-mail storing formats, such as mbox and Maildir, as well as most protocols, including POP3 and IMAP.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2076058",
+				"description": "CVE-2022-1328 mutt: buffer overflow in uudecoder function",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2076058"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-1328",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1328.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-120"
+			}
+		],
+		"publishedAt": "2022-11-13T07:51:45.462676Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mutt-5:2.0.7-2.el8.aarch64.rpm",
+					"mutt-5:2.0.7-2.el8.src.rpm",
+					"mutt-5:2.0.7-2.el8.x86_64.rpm",
+					"mutt-debuginfo-5:2.0.7-2.el8.aarch64.rpm",
+					"mutt-debuginfo-5:2.0.7-2.el8.x86_64.rpm",
+					"mutt-debugsource-5:2.0.7-2.el8.aarch64.rpm",
+					"mutt-debugsource-5:2.0.7-2.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

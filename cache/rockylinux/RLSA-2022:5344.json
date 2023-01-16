@@ -1,0 +1,70 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:5344",
+		"synopsis": "Important: kernel-rt security and bug fix update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for kernel-rt is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The kernel-rt packages provide the Real Time Linux Kernel, which enables fine-tuning for systems with extremely high determinism requirements.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1899177",
+				"description": "CVE-2020-28915 kernel: out-of-bounds read in fbcon_get_font function",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1899177"
+			},
+			{
+				"ticket": "2061633",
+				"description": "CVE-2022-27666 kernel: buffer overflow in IPsec ESP transformation code",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2061633"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-28915",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-28915.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:P/AC:L/PR:H/UI:N/S:U/C:L/I:H/A:H",
+				"cvss3BaseScore": "5.8",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2022-27666",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-27666.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-122"
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"kernel-rt-0:4.18.0-372.13.1.rt7.170.el8_6.src.rpm",
+					"kernel-rt-0:4.18.0-372.13.1.rt7.170.el8_6.x86_64.rpm",
+					"kernel-rt-core-0:4.18.0-372.13.1.rt7.170.el8_6.x86_64.rpm",
+					"kernel-rt-debug-0:4.18.0-372.13.1.rt7.170.el8_6.x86_64.rpm",
+					"kernel-rt-debug-core-0:4.18.0-372.13.1.rt7.170.el8_6.x86_64.rpm",
+					"kernel-rt-debug-debuginfo-0:4.18.0-372.13.1.rt7.170.el8_6.x86_64.rpm",
+					"kernel-rt-debug-devel-0:4.18.0-372.13.1.rt7.170.el8_6.x86_64.rpm",
+					"kernel-rt-debuginfo-0:4.18.0-372.13.1.rt7.170.el8_6.x86_64.rpm",
+					"kernel-rt-debuginfo-common-x86_64-0:4.18.0-372.13.1.rt7.170.el8_6.x86_64.rpm",
+					"kernel-rt-debug-kvm-0:4.18.0-372.13.1.rt7.170.el8_6.x86_64.rpm",
+					"kernel-rt-debug-modules-0:4.18.0-372.13.1.rt7.170.el8_6.x86_64.rpm",
+					"kernel-rt-debug-modules-extra-0:4.18.0-372.13.1.rt7.170.el8_6.x86_64.rpm",
+					"kernel-rt-devel-0:4.18.0-372.13.1.rt7.170.el8_6.x86_64.rpm",
+					"kernel-rt-kvm-0:4.18.0-372.13.1.rt7.170.el8_6.x86_64.rpm",
+					"kernel-rt-modules-0:4.18.0-372.13.1.rt7.170.el8_6.x86_64.rpm",
+					"kernel-rt-modules-extra-0:4.18.0-372.13.1.rt7.170.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

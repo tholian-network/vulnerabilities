@@ -1,0 +1,139 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:1998",
+		"synopsis": "sos bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for sos is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1998133",
+				"description": "[rebase] rebase sos to 4.2",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1998133"
+			},
+			{
+				"ticket": "1998433",
+				"description": "plugin:omnipath_client runs `depmod -a` which changes some files under /usr/lib/modules/$kernel",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1998433"
+			},
+			{
+				"ticket": "1998521",
+				"description": "sosreport can hang with a relative symlink loop",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1998521"
+			},
+			{
+				"ticket": "2004929",
+				"description": "RFE request SOS collect sufficient information for offline analysis",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2004929"
+			},
+			{
+				"ticket": "2005195",
+				"description": "running sosreport creates iptables built-in tables in nftables",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2005195"
+			},
+			{
+				"ticket": "2011332",
+				"description": "sosreport should use new Red Hat Secure FTP instead of dropbox for attachments",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2011332"
+			},
+			{
+				"ticket": "2011506",
+				"description": "[REF] Collect Puma Status Data for Satellite6.10",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2011506"
+			},
+			{
+				"ticket": "2012856",
+				"description": "sos report --dry-run raises uncaught exception",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012856"
+			},
+			{
+				"ticket": "2012857",
+				"description": "unhandled exception when plugin timeout happens during logging a collected file",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012857"
+			},
+			{
+				"ticket": "2020777",
+				"description": "plugin option networking.namespace_pattern stopped working",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2020777"
+			},
+			{
+				"ticket": "2025610",
+				"description": "Reflect RHST API changes in sos upload",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2025610"
+			},
+			{
+				"ticket": "2030741",
+				"description": "Please also collect /var/log/rhui/ in the RHUI plugin",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2030741"
+			},
+			{
+				"ticket": "2041488",
+				"description": "virsh command timeouts cause sos report to take over 25 minutes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2041488"
+			},
+			{
+				"ticket": "2042966",
+				"description": "sos report not collecting ovn db from controllers",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2042966"
+			},
+			{
+				"ticket": "2043102",
+				"description": "foreman plugin to collect decoded dynflow data for dynflow\u003e1.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2043102"
+			},
+			{
+				"ticket": "2054882",
+				"description": "sos report forgets to write --plugopts from /etc/sos/sos.conf to sos.log",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2054882"
+			},
+			{
+				"ticket": "2055547",
+				"description": "sos report does not honor plugin's default plugin_timeout",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2055547"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2022:1998",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:1998",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"sos-0:4.2-15.el8.noarch.rpm",
+					"sos-0:4.2-15.el8.src.rpm",
+					"sos-audit-0:4.2-15.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

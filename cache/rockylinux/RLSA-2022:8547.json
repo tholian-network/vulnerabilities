@@ -1,0 +1,215 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:8547",
+		"synopsis": "Important: thunderbird security update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for thunderbird is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Mozilla Thunderbird is a standalone mail and newsgroup client.\nThis update upgrades Thunderbird to version 102.5.0.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2143197",
+				"description": "CVE-2022-45403 Mozilla: Service Workers might have learned size of cross-origin media files",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2143197"
+			},
+			{
+				"ticket": "2143198",
+				"description": "CVE-2022-45404 Mozilla: Fullscreen notification bypass",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2143198"
+			},
+			{
+				"ticket": "2143199",
+				"description": "CVE-2022-45405 Mozilla: Use-after-free in InputStream implementation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2143199"
+			},
+			{
+				"ticket": "2143200",
+				"description": "CVE-2022-45406 Mozilla: Use-after-free of a JavaScript Realm",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2143200"
+			},
+			{
+				"ticket": "2143201",
+				"description": "CVE-2022-45408 Mozilla: Fullscreen notification bypass via windowName",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2143201"
+			},
+			{
+				"ticket": "2143202",
+				"description": "CVE-2022-45409 Mozilla: Use-after-free in Garbage Collection",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2143202"
+			},
+			{
+				"ticket": "2143203",
+				"description": "CVE-2022-45410 Mozilla: ServiceWorker-intercepted requests bypassed SameSite cookie policy",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2143203"
+			},
+			{
+				"ticket": "2143204",
+				"description": "CVE-2022-45411 Mozilla: Cross-Site Tracing was possible via non-standard override headers",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2143204"
+			},
+			{
+				"ticket": "2143205",
+				"description": "CVE-2022-45412 Mozilla: Symlinks may resolve to partially uninitialized buffers",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2143205"
+			},
+			{
+				"ticket": "2143240",
+				"description": "CVE-2022-45416 Mozilla: Keystroke Side-Channel Leakage",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2143240"
+			},
+			{
+				"ticket": "2143241",
+				"description": "CVE-2022-45418 Mozilla: Custom mouse cursor could have been drawn over browser UI",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2143241"
+			},
+			{
+				"ticket": "2143242",
+				"description": "CVE-2022-45420 Mozilla: Iframe contents could be rendered outside the iframe",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2143242"
+			},
+			{
+				"ticket": "2143243",
+				"description": "CVE-2022-45421 Mozilla: Memory safety bugs fixed in Firefox 107 and Firefox ESR 102.5",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2143243"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-45403",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-45403.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-829"
+			},
+			{
+				"name": "CVE-2022-45404",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-45404.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-1021"
+			},
+			{
+				"name": "CVE-2022-45405",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-45405.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2022-45406",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-45406.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2022-45408",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-45408.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-1021"
+			},
+			{
+				"name": "CVE-2022-45409",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-45409.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2022-45410",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-45410.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-1275"
+			},
+			{
+				"name": "CVE-2022-45411",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-45411.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-79"
+			},
+			{
+				"name": "CVE-2022-45412",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-45412.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-200"
+			},
+			{
+				"name": "CVE-2022-45416",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-45416.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2022-45418",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-45418.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2022-45420",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-45420.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+				"cvss3BaseScore": "4.3",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2022-45421",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-45421.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-120"
+			}
+		],
+		"publishedAt": "2022-11-22T18:24:23.790560Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"thunderbird-0:102.5.0-2.el8_7.aarch64.rpm",
+					"thunderbird-0:102.5.0-2.el8_7.src.rpm",
+					"thunderbird-0:102.5.0-2.el8_7.x86_64.rpm",
+					"thunderbird-debuginfo-0:102.5.0-2.el8_7.aarch64.rpm",
+					"thunderbird-debuginfo-0:102.5.0-2.el8_7.x86_64.rpm",
+					"thunderbird-debugsource-0:102.5.0-2.el8_7.aarch64.rpm",
+					"thunderbird-debugsource-0:102.5.0-2.el8_7.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

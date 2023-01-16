@@ -1,0 +1,142 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:4234",
+		"synopsis": "mesa and related packages bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for mesa and wayland library packages is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1951842",
+				"description": "Rebase libdrm in 8.5",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951842"
+			},
+			{
+				"ticket": "1951843",
+				"description": "Rebase mesa in 8.5",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1951843"
+			},
+			{
+				"ticket": "1954260",
+				"description": "Update xorg-x11-server in 8.5",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1954260"
+			},
+			{
+				"ticket": "1956072",
+				"description": "Please update wayland-protocols to 1.19",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1956072"
+			},
+			{
+				"ticket": "1962477",
+				"description": "rebase wayland to 1.19",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1962477"
+			},
+			{
+				"ticket": "1975862",
+				"description": "Rebase egl-wayland to 1.1.7",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1975862"
+			},
+			{
+				"ticket": "1976132",
+				"description": "EGLStream: Xwayland windows turn black sometimes when resizing",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1976132"
+			},
+			{
+				"ticket": "1976780",
+				"description": "Update libepoxy to version 1.5.8",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1976780"
+			},
+			{
+				"ticket": "1982746",
+				"description": "Mesa reuses shader cache created for different CPU causing gnome-shell crash",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1982746"
+			},
+			{
+				"ticket": "1984260",
+				"description": "sw vulkan when turned on doesn't work with wayland session in a VM",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1984260"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:4234",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:4234",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libepoxy-0:1.5.8-1.el8.aarch64.rpm",
+					"libepoxy-0:1.5.8-1.el8.i686.rpm",
+					"libepoxy-0:1.5.8-1.el8.src.rpm",
+					"libepoxy-0:1.5.8-1.el8.x86_64.rpm",
+					"libepoxy-debuginfo-0:1.5.8-1.el8.aarch64.rpm",
+					"libepoxy-debuginfo-0:1.5.8-1.el8.i686.rpm",
+					"libepoxy-debuginfo-0:1.5.8-1.el8.x86_64.rpm",
+					"libepoxy-debugsource-0:1.5.8-1.el8.aarch64.rpm",
+					"libepoxy-debugsource-0:1.5.8-1.el8.i686.rpm",
+					"libepoxy-debugsource-0:1.5.8-1.el8.x86_64.rpm",
+					"libepoxy-devel-0:1.5.8-1.el8.aarch64.rpm",
+					"libepoxy-devel-0:1.5.8-1.el8.i686.rpm",
+					"libepoxy-devel-0:1.5.8-1.el8.x86_64.rpm",
+					"libwayland-client-0:1.19.0-1.el8.aarch64.rpm",
+					"libwayland-client-0:1.19.0-1.el8.i686.rpm",
+					"libwayland-client-0:1.19.0-1.el8.x86_64.rpm",
+					"libwayland-client-debuginfo-0:1.19.0-1.el8.aarch64.rpm",
+					"libwayland-client-debuginfo-0:1.19.0-1.el8.i686.rpm",
+					"libwayland-client-debuginfo-0:1.19.0-1.el8.x86_64.rpm",
+					"libwayland-cursor-0:1.19.0-1.el8.aarch64.rpm",
+					"libwayland-cursor-0:1.19.0-1.el8.i686.rpm",
+					"libwayland-cursor-0:1.19.0-1.el8.x86_64.rpm",
+					"libwayland-cursor-debuginfo-0:1.19.0-1.el8.aarch64.rpm",
+					"libwayland-cursor-debuginfo-0:1.19.0-1.el8.i686.rpm",
+					"libwayland-cursor-debuginfo-0:1.19.0-1.el8.x86_64.rpm",
+					"libwayland-egl-0:1.19.0-1.el8.aarch64.rpm",
+					"libwayland-egl-0:1.19.0-1.el8.i686.rpm",
+					"libwayland-egl-0:1.19.0-1.el8.x86_64.rpm",
+					"libwayland-egl-debuginfo-0:1.19.0-1.el8.aarch64.rpm",
+					"libwayland-egl-debuginfo-0:1.19.0-1.el8.i686.rpm",
+					"libwayland-egl-debuginfo-0:1.19.0-1.el8.x86_64.rpm",
+					"libwayland-server-0:1.19.0-1.el8.aarch64.rpm",
+					"libwayland-server-0:1.19.0-1.el8.i686.rpm",
+					"libwayland-server-0:1.19.0-1.el8.x86_64.rpm",
+					"libwayland-server-debuginfo-0:1.19.0-1.el8.aarch64.rpm",
+					"libwayland-server-debuginfo-0:1.19.0-1.el8.i686.rpm",
+					"libwayland-server-debuginfo-0:1.19.0-1.el8.x86_64.rpm",
+					"wayland-0:1.19.0-1.el8.src.rpm",
+					"wayland-debuginfo-0:1.19.0-1.el8.aarch64.rpm",
+					"wayland-debuginfo-0:1.19.0-1.el8.i686.rpm",
+					"wayland-debuginfo-0:1.19.0-1.el8.x86_64.rpm",
+					"wayland-devel-0:1.19.0-1.el8.aarch64.rpm",
+					"wayland-devel-0:1.19.0-1.el8.i686.rpm",
+					"wayland-devel-0:1.19.0-1.el8.x86_64.rpm",
+					"wayland-devel-debuginfo-0:1.19.0-1.el8.aarch64.rpm",
+					"wayland-devel-debuginfo-0:1.19.0-1.el8.i686.rpm",
+					"wayland-devel-debuginfo-0:1.19.0-1.el8.x86_64.rpm",
+					"wayland-doc-0:1.19.0-1.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

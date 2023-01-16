@@ -1,0 +1,70 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:5834",
+		"synopsis": "Important: kernel-rt security and bug fix update",
+		"severity": "SEVERITY_IMPORTANT",
+		"topic": "An update for kernel-rt is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The kernel-rt packages provide the Real Time Linux Kernel, which enables fine-tuning for systems with extremely high determinism requirements.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2064604",
+				"description": "CVE-2022-1012 kernel: Small table perturb size in the TCP source port generation algorithm can lead to information leak",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064604"
+			},
+			{
+				"ticket": "2092427",
+				"description": "CVE-2022-32250 kernel: a use-after-free write in the netfilter subsystem can lead to privilege escalation to root",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2092427"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-1012",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1012.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
+				"cvss3BaseScore": "8.2",
+				"cwe": "CWE-401"
+			},
+			{
+				"name": "CVE-2022-32250",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-32250.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-416"
+			}
+		],
+		"publishedAt": "2022-08-02T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"kernel-rt-0:4.18.0-372.19.1.rt7.176.el8_6.src.rpm",
+					"kernel-rt-0:4.18.0-372.19.1.rt7.176.el8_6.x86_64.rpm",
+					"kernel-rt-core-0:4.18.0-372.19.1.rt7.176.el8_6.x86_64.rpm",
+					"kernel-rt-debug-0:4.18.0-372.19.1.rt7.176.el8_6.x86_64.rpm",
+					"kernel-rt-debug-core-0:4.18.0-372.19.1.rt7.176.el8_6.x86_64.rpm",
+					"kernel-rt-debug-debuginfo-0:4.18.0-372.19.1.rt7.176.el8_6.x86_64.rpm",
+					"kernel-rt-debug-devel-0:4.18.0-372.19.1.rt7.176.el8_6.x86_64.rpm",
+					"kernel-rt-debuginfo-0:4.18.0-372.19.1.rt7.176.el8_6.x86_64.rpm",
+					"kernel-rt-debuginfo-common-x86_64-0:4.18.0-372.19.1.rt7.176.el8_6.x86_64.rpm",
+					"kernel-rt-debug-kvm-0:4.18.0-372.19.1.rt7.176.el8_6.x86_64.rpm",
+					"kernel-rt-debug-modules-0:4.18.0-372.19.1.rt7.176.el8_6.x86_64.rpm",
+					"kernel-rt-debug-modules-extra-0:4.18.0-372.19.1.rt7.176.el8_6.x86_64.rpm",
+					"kernel-rt-devel-0:4.18.0-372.19.1.rt7.176.el8_6.x86_64.rpm",
+					"kernel-rt-kvm-0:4.18.0-372.19.1.rt7.176.el8_6.x86_64.rpm",
+					"kernel-rt-modules-0:4.18.0-372.19.1.rt7.176.el8_6.x86_64.rpm",
+					"kernel-rt-modules-extra-0:4.18.0-372.19.1.rt7.176.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

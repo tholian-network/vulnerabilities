@@ -1,0 +1,1448 @@
+{
+	"advisories": [
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2021:3666",
+			"synopsis": "Important: nodejs:14 security and bug fix update",
+			"severity": "SEVERITY_IMPORTANT",
+			"topic": "An update for the nodejs:14 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Node.js is a software development platform for building fast and scalable network applications in the JavaScript programming language. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2021-22930",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22930.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "9.8",
+					"cwe": "CWE-416"
+				},
+				{
+					"name": "CVE-2021-22931",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22931.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L",
+					"cvss3BaseScore": "5.0",
+					"cwe": "CWE-20"
+				},
+				{
+					"name": "CVE-2021-22939",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22939.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+					"cvss3BaseScore": "3.7",
+					"cwe": "CWE-20"
+				},
+				{
+					"name": "CVE-2021-22940",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22940.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-416"
+				},
+				{
+					"name": "CVE-2021-23343",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-23343.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+					"cvss3BaseScore": "5.3",
+					"cwe": "CWE-400"
+				},
+				{
+					"name": "CVE-2021-32803",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-32803.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+					"cvss3BaseScore": "8.1",
+					"cwe": "CWE-22"
+				},
+				{
+					"name": "CVE-2021-32804",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-32804.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+					"cvss3BaseScore": "8.1",
+					"cwe": "CWE-22"
+				},
+				{
+					"name": "CVE-2021-3672",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3672.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+					"cvss3BaseScore": "5.6",
+					"cwe": "CWE-79"
+				}
+			],
+			"publishedAt": "2021-09-27T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_BUGFIX",
+			"shortCode": "RL",
+			"name": "RLBA-2021:3661",
+			"synopsis": "container-tools:rhel8 bug fix update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "An update for the container-tools:rhel8 module is now available for Rocky Linux 8.",
+			"description": "The container-tools module contains tools for working with containers, notably podman, buildah, skopeo, and runc.\nBug Fix:",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHBA-2021:3661",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHBA-2021:3661",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2021-09-23T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_BUGFIX",
+			"shortCode": "RL",
+			"name": "RLBA-2021:3573",
+			"synopsis": "ca-certificates bug fix and enhancement update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "An update for ca-certificates is now available for Rocky Linux8.",
+			"description": "The ca-certificates package contains a set of Certificate Authority (CA)\ncertificates chosen by the Mozilla Foundation for use with the Internet\nPublic Key Infrastructure (PKI).\n(BZ#1971200)",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHBA-2021:3573",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHBA-2021:3573",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2021-09-21T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2021:3623",
+			"synopsis": "Important: nodejs:12 security and bug fix update",
+			"severity": "SEVERITY_IMPORTANT",
+			"topic": "An update for the nodejs:12 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Node.js is a software development platform for building fast and scalable network applications in the JavaScript programming language. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2021-22930",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22930.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "9.8",
+					"cwe": "CWE-416"
+				},
+				{
+					"name": "CVE-2021-22931",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22931.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L",
+					"cvss3BaseScore": "5.0",
+					"cwe": "CWE-20"
+				},
+				{
+					"name": "CVE-2021-22939",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22939.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+					"cvss3BaseScore": "3.7",
+					"cwe": "CWE-20"
+				},
+				{
+					"name": "CVE-2021-22940",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-22940.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-416"
+				},
+				{
+					"name": "CVE-2021-23343",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-23343.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+					"cvss3BaseScore": "5.3",
+					"cwe": "CWE-400"
+				},
+				{
+					"name": "CVE-2021-32803",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-32803.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+					"cvss3BaseScore": "8.1",
+					"cwe": "CWE-22"
+				},
+				{
+					"name": "CVE-2021-32804",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-32804.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+					"cvss3BaseScore": "8.1",
+					"cwe": "CWE-22"
+				},
+				{
+					"name": "CVE-2021-3672",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3672.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+					"cvss3BaseScore": "5.6",
+					"cwe": "CWE-79"
+				}
+			],
+			"publishedAt": "2021-09-21T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2021:3572",
+			"synopsis": "Moderate: nss and nspr security, bug fix, and enhancement update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for nss and nspr is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "Network Security Services (NSS) is a set of libraries designed to support the cross-platform development of security-enabled client and server applications.\nNetscape Portable Runtime (NSPR) provides platform independence for non-GUI operating system facilities.\nThe following packages have been upgraded to a later upstream version: nss (3.67.0), nspr (4.32.0). (BZ#1967980)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2020-25648",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-25648.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "7.5",
+					"cwe": "CWE-770"
+				}
+			],
+			"publishedAt": "2021-09-21T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_SECURITY",
+			"shortCode": "RL",
+			"name": "RLSA-2021:3590",
+			"synopsis": "Moderate: mysql:8.0 security, bug fix, and enhancement update",
+			"severity": "SEVERITY_MODERATE",
+			"topic": "An update for the mysql:8.0 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+			"description": "MySQL is a multi-user, multi-threaded SQL database server. It consists of the MySQL server daemon (mysqld) and many client programs and libraries.\nThe following packages have been upgraded to a later upstream version: mysql (8.0.26). (BZ#1996693)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "CVE-2020-14672",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14672.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14765",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14765.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14769",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14769.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14773",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14773.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14775",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14775.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14776",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14776.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14777",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14777.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14785",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14785.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14786",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14786.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14789",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14789.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14790",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14790.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14791",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14791.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:L",
+					"cvss3BaseScore": "2.2",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14793",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14793.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14794",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14794.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14800",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14800.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14804",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14804.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14809",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14809.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14812",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14812.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14814",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14814.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14821",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14821.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14828",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14828.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+					"cvss3BaseScore": "7.2",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14829",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14829.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14830",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14830.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14836",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14836.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14837",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14837.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14838",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14838.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+					"cvss3BaseScore": "4.3",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14839",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14839.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14844",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14844.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14845",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14845.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14846",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14846.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14848",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14848.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14852",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14852.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14860",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14860.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N",
+					"cvss3BaseScore": "2.7",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14861",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14861.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14866",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14866.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14867",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14867.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.4",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14868",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14868.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14870",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14870.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14873",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14873.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.4",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14888",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14888.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14891",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14891.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2020-14893",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-14893.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2001",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2001.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2002",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2002.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2010",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2010.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:L",
+					"cvss3BaseScore": "4.2",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2011",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2011.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "5.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2021",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2021.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2022",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2022.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.4",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2024",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2024.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2028",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2028.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2030",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2030.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2031",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2031.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2032",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2032.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+					"cvss3BaseScore": "4.3",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2036",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2036.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2038",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2038.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.4",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2042",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2042.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N",
+					"cvss3BaseScore": "2.3",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2046",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2046.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.8",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2048",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2048.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "5.0",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2055",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2055.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2056",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2056.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.4",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2058",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2058.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2060",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2060.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2061",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2061.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.4",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2065",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2065.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2070",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2070.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2072",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2072.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2076",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2076.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2081",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2081.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2087",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2087.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.4",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2088",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2088.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.4",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2122",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2122.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2146",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2146.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2164",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2164.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2166",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2166.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2169",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2169.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2170",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2170.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2171",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2171.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.4",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2172",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2172.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2174",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2174.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.4",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2178",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2178.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2179",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2179.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2180",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2180.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2193",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2193.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2194",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2194.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2196",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2196.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2201",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2201.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2202",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2202.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2203",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2203.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2208",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2208.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2212",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2212.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2213",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2213.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2215",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2215.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2217",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2217.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2226",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2226.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2230",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2230.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2232",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2232.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:L",
+					"cvss3BaseScore": "1.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2278",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2278.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2293",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2293.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2298",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2298.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "6.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2299",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2299.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2300",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2300.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2301",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2301.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N",
+					"cvss3BaseScore": "2.7",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2304",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2304.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "5.5",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2305",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2305.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2307",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2307.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N",
+					"cvss3BaseScore": "6.1",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2308",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2308.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N",
+					"cvss3BaseScore": "2.7",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2339",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2339.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2340",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2340.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L",
+					"cvss3BaseScore": "2.7",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2342",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2342.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2352",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2352.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2354",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2354.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2356",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2356.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "5.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2357",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2357.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2367",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2367.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2370",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2370.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2372",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2372.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.4",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2374",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2374.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N",
+					"cvss3BaseScore": "4.1",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2383",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2383.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2384",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2384.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2385",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2385.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:L/A:H",
+					"cvss3BaseScore": "5.0",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2387",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2387.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2389",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2389.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "5.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2390",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2390.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "5.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2399",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2399.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2402",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2402.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2410",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2410.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2412",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2412.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2417",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2417.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:H",
+					"cvss3BaseScore": "6.0",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2418",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2418.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2422",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2422.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2424",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2424.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2425",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2425.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2426",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2426.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2427",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2427.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2429",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2429.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "5.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2437",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2437.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2440",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2440.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2441",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2441.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-2444",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-2444.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35537",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35537.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				},
+				{
+					"name": "CVE-2021-35629",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-35629.json",
+					"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+					"cvss3BaseScore": "4.9",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2021-09-21T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_BUGFIX",
+			"shortCode": "RL",
+			"name": "RLBA-2021:3594",
+			"synopsis": "libdb bug fix and enhancement update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "An update for libdb is now available for Rocky Linux 8.",
+			"description": "The libdb packages provide the Berkeley Database, an embedded database\nsupporting both traditional and client/server applications.\n(BZ#2001972)",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHBA-2021:3594",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHBA-2021:3594",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2021-09-21T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		},
+		{
+			"type": "TYPE_BUGFIX",
+			"shortCode": "RL",
+			"name": "RLBA-2021:3593",
+			"synopsis": "gcc-toolset-10-elfutils bug fix update",
+			"severity": "SEVERITY_UNKNOWN",
+			"topic": "An update for gcc-toolset-10-elfutils is now available for Rocky Linux 8.",
+			"description": "GCC Toolset is a compiler toolset that provides recent versions of development tools. GCC Toolset is an Application Stream packaged as a Software Collection.\nBug fix: ",
+			"affectedProducts": [
+				"Rocky Linux 8"
+			],
+			"fixes": [],
+			"cves": [
+				{
+					"name": "RHBA-2021:3593",
+					"sourceBy": "Red Hat",
+					"sourceLink": "https://access.redhat.com/errata/RHBA-2021:3593",
+					"cvss3ScoringVector": "",
+					"cvss3BaseScore": "",
+					"cwe": ""
+				}
+			],
+			"publishedAt": "2021-09-21T00:00:00Z",
+			"rebootSuggested": false,
+			"rpms": {}
+		}
+	],
+	"total": "8",
+	"size": 100,
+	"page": 0,
+	"lastUpdated": "2023-01-16T04:00:00.369210Z"
+}

@@ -1,0 +1,57 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:7116",
+		"synopsis": "libsemanage bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libsemanage is now available for Rocky Linux 8.",
+		"description": "The libsemanage library provides an API for the manipulation of SELinux binary policies. It is used by the checkpolicy compiler and similar utilitlies, as well as by programs such as load_policy, which must perform specific transformations on binary policies, such as customizing policy Boolean settings.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2129139",
+				"description": "libsemanage's check_ext_changes doesn't pick up boolean changes [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2129139"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:7116",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:7116",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-11-07T19:38:50.376460Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libsemanage-0:2.9-9.el8_6.aarch64.rpm",
+					"libsemanage-0:2.9-9.el8_6.i686.rpm",
+					"libsemanage-0:2.9-9.el8_6.src.rpm",
+					"libsemanage-0:2.9-9.el8_6.x86_64.rpm",
+					"libsemanage-debuginfo-0:2.9-9.el8_6.aarch64.rpm",
+					"libsemanage-debuginfo-0:2.9-9.el8_6.i686.rpm",
+					"libsemanage-debuginfo-0:2.9-9.el8_6.x86_64.rpm",
+					"libsemanage-debugsource-0:2.9-9.el8_6.aarch64.rpm",
+					"libsemanage-debugsource-0:2.9-9.el8_6.i686.rpm",
+					"libsemanage-debugsource-0:2.9-9.el8_6.x86_64.rpm",
+					"libsemanage-devel-0:2.9-9.el8_6.aarch64.rpm",
+					"libsemanage-devel-0:2.9-9.el8_6.i686.rpm",
+					"libsemanage-devel-0:2.9-9.el8_6.x86_64.rpm",
+					"python3-libsemanage-0:2.9-9.el8_6.aarch64.rpm",
+					"python3-libsemanage-0:2.9-9.el8_6.x86_64.rpm",
+					"python3-libsemanage-debuginfo-0:2.9-9.el8_6.aarch64.rpm",
+					"python3-libsemanage-debuginfo-0:2.9-9.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

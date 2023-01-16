@@ -1,0 +1,42 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:3573",
+		"synopsis": "ca-certificates bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for ca-certificates is now available for Rocky Linux8.",
+		"description": "The ca-certificates package contains a set of Certificate Authority (CA)\ncertificates chosen by the Mozilla Foundation for use with the Internet\nPublic Key Infrastructure (PKI).\n(BZ#1971200)",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1971200",
+				"description": "Annual 2021 ca-certificates update 2.48 from nss 3.66 for Firefox 91 [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1971200"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:3573",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:3573",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-09-21T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"ca-certificates-0:2021.2.50-80.0.el8_4.noarch.rpm",
+					"ca-certificates-0:2021.2.50-80.0.el8_4.src.rpm"
+				]
+			}
+		}
+	}
+}

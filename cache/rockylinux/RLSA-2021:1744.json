@@ -1,0 +1,74 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:1744",
+		"synopsis": "Moderate: sane-backends security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for sane-backends is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Scanner Access Now Easy (SANE) is a universal scanner interface. The SANE application programming interface (API) provides standardized access to any raster image scanner hardware (for example, flatbed scanners, hand-held scanners, video and still cameras, and frame-grabbers).\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1848097",
+				"description": "CVE-2020-12867 sane-backends: NULL pointer dereference in sanei_epson_net_read function",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1848097"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-12867",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-12867.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.7",
+				"cwe": "CWE-476"
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"sane-backends-0:1.0.27-22.el8.aarch64.rpm",
+					"sane-backends-0:1.0.27-22.el8.src.rpm",
+					"sane-backends-0:1.0.27-22.el8.x86_64.rpm",
+					"sane-backends-daemon-0:1.0.27-22.el8.aarch64.rpm",
+					"sane-backends-daemon-0:1.0.27-22.el8.x86_64.rpm",
+					"sane-backends-daemon-debuginfo-0:1.0.27-22.el8.aarch64.rpm",
+					"sane-backends-daemon-debuginfo-0:1.0.27-22.el8.x86_64.rpm",
+					"sane-backends-debuginfo-0:1.0.27-22.el8.aarch64.rpm",
+					"sane-backends-debuginfo-0:1.0.27-22.el8.i686.rpm",
+					"sane-backends-debuginfo-0:1.0.27-22.el8.x86_64.rpm",
+					"sane-backends-debugsource-0:1.0.27-22.el8.aarch64.rpm",
+					"sane-backends-debugsource-0:1.0.27-22.el8.x86_64.rpm",
+					"sane-backends-devel-0:1.0.27-22.el8.aarch64.rpm",
+					"sane-backends-devel-0:1.0.27-22.el8.i686.rpm",
+					"sane-backends-devel-0:1.0.27-22.el8.x86_64.rpm",
+					"sane-backends-doc-0:1.0.27-22.el8.noarch.rpm",
+					"sane-backends-drivers-cameras-0:1.0.27-22.el8.aarch64.rpm",
+					"sane-backends-drivers-cameras-0:1.0.27-22.el8.i686.rpm",
+					"sane-backends-drivers-cameras-0:1.0.27-22.el8.x86_64.rpm",
+					"sane-backends-drivers-cameras-debuginfo-0:1.0.27-22.el8.aarch64.rpm",
+					"sane-backends-drivers-cameras-debuginfo-0:1.0.27-22.el8.i686.rpm",
+					"sane-backends-drivers-cameras-debuginfo-0:1.0.27-22.el8.x86_64.rpm",
+					"sane-backends-drivers-scanners-0:1.0.27-22.el8.aarch64.rpm",
+					"sane-backends-drivers-scanners-0:1.0.27-22.el8.i686.rpm",
+					"sane-backends-drivers-scanners-0:1.0.27-22.el8.x86_64.rpm",
+					"sane-backends-drivers-scanners-debuginfo-0:1.0.27-22.el8.aarch64.rpm",
+					"sane-backends-drivers-scanners-debuginfo-0:1.0.27-22.el8.i686.rpm",
+					"sane-backends-drivers-scanners-debuginfo-0:1.0.27-22.el8.x86_64.rpm",
+					"sane-backends-libs-0:1.0.27-22.el8.aarch64.rpm",
+					"sane-backends-libs-0:1.0.27-22.el8.i686.rpm",
+					"sane-backends-libs-0:1.0.27-22.el8.x86_64.rpm",
+					"sane-backends-libs-debuginfo-0:1.0.27-22.el8.aarch64.rpm",
+					"sane-backends-libs-debuginfo-0:1.0.27-22.el8.i686.rpm",
+					"sane-backends-libs-debuginfo-0:1.0.27-22.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

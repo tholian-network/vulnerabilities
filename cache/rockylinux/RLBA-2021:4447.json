@@ -1,0 +1,50 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4447",
+		"synopsis": "lldpad bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for lldpad is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1915458",
+				"description": "Finish update of lldpad to 1.1.0",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1915458"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4447",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4447",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"lldpad-0:1.0.1-16.git036e314.el8.aarch64.rpm",
+					"lldpad-0:1.0.1-16.git036e314.el8.i686.rpm",
+					"lldpad-0:1.0.1-16.git036e314.el8.src.rpm",
+					"lldpad-0:1.0.1-16.git036e314.el8.x86_64.rpm",
+					"lldpad-debuginfo-0:1.0.1-16.git036e314.el8.aarch64.rpm",
+					"lldpad-debuginfo-0:1.0.1-16.git036e314.el8.i686.rpm",
+					"lldpad-debuginfo-0:1.0.1-16.git036e314.el8.x86_64.rpm",
+					"lldpad-debugsource-0:1.0.1-16.git036e314.el8.aarch64.rpm",
+					"lldpad-debugsource-0:1.0.1-16.git036e314.el8.i686.rpm",
+					"lldpad-debugsource-0:1.0.1-16.git036e314.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

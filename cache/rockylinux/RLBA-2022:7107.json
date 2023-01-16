@@ -1,0 +1,68 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:7107",
+		"synopsis": "glib2 bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for glib2 is now available for Rocky Linux 8.",
+		"description": "GLib provides the core application building blocks for libraries and applications written in C. It provides the core object system used in GNOME, the main loop implementation, and a large set of utility functions for strings and common data structures.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2124615",
+				"description": "Add --interface-info-[body|header] modes to gdbus-codegen [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2124615"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:7107",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:7107",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-11-07T19:38:22.786505Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"glib2-0:2.56.4-158.el8_6.1.aarch64.rpm",
+					"glib2-0:2.56.4-158.el8_6.1.i686.rpm",
+					"glib2-0:2.56.4-158.el8_6.1.src.rpm",
+					"glib2-0:2.56.4-158.el8_6.1.x86_64.rpm",
+					"glib2-debuginfo-0:2.56.4-158.el8_6.1.aarch64.rpm",
+					"glib2-debuginfo-0:2.56.4-158.el8_6.1.i686.rpm",
+					"glib2-debuginfo-0:2.56.4-158.el8_6.1.x86_64.rpm",
+					"glib2-debugsource-0:2.56.4-158.el8_6.1.aarch64.rpm",
+					"glib2-debugsource-0:2.56.4-158.el8_6.1.i686.rpm",
+					"glib2-debugsource-0:2.56.4-158.el8_6.1.x86_64.rpm",
+					"glib2-devel-0:2.56.4-158.el8_6.1.aarch64.rpm",
+					"glib2-devel-0:2.56.4-158.el8_6.1.i686.rpm",
+					"glib2-devel-0:2.56.4-158.el8_6.1.x86_64.rpm",
+					"glib2-devel-debuginfo-0:2.56.4-158.el8_6.1.aarch64.rpm",
+					"glib2-devel-debuginfo-0:2.56.4-158.el8_6.1.i686.rpm",
+					"glib2-devel-debuginfo-0:2.56.4-158.el8_6.1.x86_64.rpm",
+					"glib2-doc-0:2.56.4-158.el8_6.1.noarch.rpm",
+					"glib2-fam-0:2.56.4-158.el8_6.1.aarch64.rpm",
+					"glib2-fam-0:2.56.4-158.el8_6.1.x86_64.rpm",
+					"glib2-fam-debuginfo-0:2.56.4-158.el8_6.1.aarch64.rpm",
+					"glib2-fam-debuginfo-0:2.56.4-158.el8_6.1.x86_64.rpm",
+					"glib2-static-0:2.56.4-158.el8_6.1.aarch64.rpm",
+					"glib2-static-0:2.56.4-158.el8_6.1.i686.rpm",
+					"glib2-static-0:2.56.4-158.el8_6.1.x86_64.rpm",
+					"glib2-tests-0:2.56.4-158.el8_6.1.aarch64.rpm",
+					"glib2-tests-0:2.56.4-158.el8_6.1.x86_64.rpm",
+					"glib2-tests-debuginfo-0:2.56.4-158.el8_6.1.aarch64.rpm",
+					"glib2-tests-debuginfo-0:2.56.4-158.el8_6.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

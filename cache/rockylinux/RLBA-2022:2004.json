@@ -1,0 +1,79 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2004",
+		"synopsis": "nftables bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for nftables is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1908127",
+				"description": "nftable segmentation fault with big ip set",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1908127"
+			},
+			{
+				"ticket": "1994141",
+				"description": "assertion on python3-nftables after it pass  nft.json_validate",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1994141"
+			},
+			{
+				"ticket": "1999059",
+				"description": "Fix for covscan-indicated issues",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1999059"
+			},
+			{
+				"ticket": "2002565",
+				"description": "Request to include nftables-devel in the CRB repo",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2002565"
+			},
+			{
+				"ticket": "2047821",
+				"description": "Reduce memory overhead when restoring large sets",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2047821"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2004",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2004",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nftables-1:0.9.3-25.el8.aarch64.rpm",
+					"nftables-1:0.9.3-25.el8.i686.rpm",
+					"nftables-1:0.9.3-25.el8.src.rpm",
+					"nftables-1:0.9.3-25.el8.x86_64.rpm",
+					"nftables-debuginfo-1:0.9.3-25.el8.aarch64.rpm",
+					"nftables-debuginfo-1:0.9.3-25.el8.i686.rpm",
+					"nftables-debuginfo-1:0.9.3-25.el8.x86_64.rpm",
+					"nftables-debugsource-1:0.9.3-25.el8.aarch64.rpm",
+					"nftables-debugsource-1:0.9.3-25.el8.i686.rpm",
+					"nftables-debugsource-1:0.9.3-25.el8.x86_64.rpm",
+					"nftables-devel-1:0.9.3-25.el8.aarch64.rpm",
+					"nftables-devel-1:0.9.3-25.el8.i686.rpm",
+					"nftables-devel-1:0.9.3-25.el8.x86_64.rpm",
+					"python3-nftables-1:0.9.3-25.el8.aarch64.rpm",
+					"python3-nftables-1:0.9.3-25.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

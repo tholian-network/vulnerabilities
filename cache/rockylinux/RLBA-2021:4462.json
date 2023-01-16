@@ -1,0 +1,65 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4462",
+		"synopsis": "chrony bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for chrony is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1895003",
+				"description": "Rebase chrony to 4.1",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1895003"
+			},
+			{
+				"ticket": "1929157",
+				"description": "Chronyd tries to use IPv4 address for NTP server in IPv6-only environment",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1929157"
+			},
+			{
+				"ticket": "1939295",
+				"description": "/var/lib/chrony permissions triggering enterprise security scanners",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1939295"
+			},
+			{
+				"ticket": "1971697",
+				"description": "chrony-helper removes servers added in previous run",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1971697"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4462",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4462",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"chrony-0:4.1-1.el8.rocky.0.1.aarch64.rpm",
+					"chrony-0:4.1-1.el8.rocky.0.1.src.rpm",
+					"chrony-0:4.1-1.el8.rocky.0.1.x86_64.rpm",
+					"chrony-debuginfo-0:4.1-1.el8.rocky.0.1.aarch64.rpm",
+					"chrony-debuginfo-0:4.1-1.el8.rocky.0.1.x86_64.rpm",
+					"chrony-debugsource-0:4.1-1.el8.rocky.0.1.aarch64.rpm",
+					"chrony-debugsource-0:4.1-1.el8.rocky.0.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

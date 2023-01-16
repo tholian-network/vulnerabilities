@@ -1,0 +1,48 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2138",
+		"synopsis": "rhel-system-roles bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for rhel-system-roles is now available for Rocky Linux 8.",
+		"description": "The rhel-system-roles package includes a collection of Ansible roles and modules that provide a stable and consistent configuration interface for managing multiple versions of Rocky Linux.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2074653",
+				"description": "Tlog role - Enabling session recording configuration does not work due to RHEL9 SSSD files provider default [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2074653"
+			},
+			{
+				"ticket": "2075536",
+				"description": "FIPS mode detection in SSHD role is wrong [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2075536"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2138",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2138",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"rhel-system-roles-0:1.16.2-1.el8_6.2.noarch.rpm",
+					"rhel-system-roles-0:1.16.2-1.el8_6.2.src.rpm"
+				]
+			}
+		}
+	}
+}

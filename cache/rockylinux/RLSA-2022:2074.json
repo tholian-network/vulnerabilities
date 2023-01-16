@@ -1,0 +1,245 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:2074",
+		"synopsis": "Moderate: samba security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for samba is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Samba is an open-source implementation of the Server Message Block (SMB) protocol and the related Common Internet File System (CIFS) protocol, which allow PC-compatible machines to share files, printers, and various information.\nThe following packages have been upgraded to a later upstream version: samba (4.15.5). (BZ#2013596)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1979959",
+				"description": "Samba autorid fails to map AD users if id rangesize fits in the id range only once",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1979959"
+			},
+			{
+				"ticket": "1995849",
+				"description": "[RFE] Change change password change prompt phrasing",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1995849"
+			},
+			{
+				"ticket": "1999294",
+				"description": "With \"samba-4.13.3-4.el8_4.x86_64\" there was error/message in the winbind service status  . \"open_internal_pipe: Could not connect to dssetup pipe: NT_STATUS_RPC_INTERFACE_NOT_FOUND\" ; \"DCERPC_NCA_S_OP_RNG_ERROR \"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1999294"
+			},
+			{
+				"ticket": "2009673",
+				"description": "CVE-2021-20316 samba: Symlink race error can allow metadata read and modify outside of the exported share",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2009673"
+			},
+			{
+				"ticket": "2013596",
+				"description": "Rebase Samba to the the latest 4.15.x release",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013596"
+			},
+			{
+				"ticket": "2019461",
+				"description": "Directory containing dangling symlinks cannot be deleted.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2019461"
+			},
+			{
+				"ticket": "2028029",
+				"description": "Winbindd crashes after NULL pointer dereference - missing return value check in winbindd_util.c:fill_domain_username_talloc()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028029"
+			},
+			{
+				"ticket": "2035528",
+				"description": "[smb] Segmentation fault when joining the domain",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2035528"
+			},
+			{
+				"ticket": "2038148",
+				"description": "Failed to authenticate users after upgrade samba package to release samba-4.14.5-7x",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2038148"
+			},
+			{
+				"ticket": "2038796",
+				"description": "filename_convert_internal: open_pathref_fsp [xxx] failed: NT_STATUS_ACCESS_DENIED",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2038796"
+			},
+			{
+				"ticket": "2043154",
+				"description": "smb.service: Got notification message from PID [pid1], but reception only permitted for main PID [pid2]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2043154"
+			},
+			{
+				"ticket": "2044404",
+				"description": "Printing no longer works on Windows 7 with 2021-10 monthly rollup patch (KB5006743)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2044404"
+			},
+			{
+				"ticket": "2046120",
+				"description": "CVE-2021-44141 samba: Information leak via symlinks of existance of files or directories outside of the exported share",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2046120"
+			},
+			{
+				"ticket": "2049602",
+				"description": "SAMBA: Disable NTLMSSP for ldap client connections (e.g. libads)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2049602"
+			},
+			{
+				"ticket": "2057503",
+				"description": "Regression: [samba] winbind isn't able to refresh Kerberos tickets",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2057503"
+			},
+			{
+				"ticket": "2064325",
+				"description": "[Regression] `create krb5 conf = yes` doesn't work with a single KDC",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064325"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-20316",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20316.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:N",
+				"cvss3BaseScore": "5.9",
+				"cwe": "CWE-362"
+			},
+			{
+				"name": "CVE-2021-44141",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-44141.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-59"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"ctdb-0:4.15.5-5.el8.aarch64.rpm",
+					"ctdb-0:4.15.5-5.el8.x86_64.rpm",
+					"ctdb-debuginfo-0:4.15.5-5.el8.aarch64.rpm",
+					"ctdb-debuginfo-0:4.15.5-5.el8.x86_64.rpm",
+					"libsmbclient-0:4.15.5-5.el8.aarch64.rpm",
+					"libsmbclient-0:4.15.5-5.el8.i686.rpm",
+					"libsmbclient-0:4.15.5-5.el8.x86_64.rpm",
+					"libsmbclient-debuginfo-0:4.15.5-5.el8.aarch64.rpm",
+					"libsmbclient-debuginfo-0:4.15.5-5.el8.i686.rpm",
+					"libsmbclient-debuginfo-0:4.15.5-5.el8.x86_64.rpm",
+					"libsmbclient-devel-0:4.15.5-5.el8.aarch64.rpm",
+					"libsmbclient-devel-0:4.15.5-5.el8.i686.rpm",
+					"libsmbclient-devel-0:4.15.5-5.el8.x86_64.rpm",
+					"libwbclient-0:4.15.5-5.el8.aarch64.rpm",
+					"libwbclient-0:4.15.5-5.el8.i686.rpm",
+					"libwbclient-0:4.15.5-5.el8.x86_64.rpm",
+					"libwbclient-debuginfo-0:4.15.5-5.el8.aarch64.rpm",
+					"libwbclient-debuginfo-0:4.15.5-5.el8.i686.rpm",
+					"libwbclient-debuginfo-0:4.15.5-5.el8.x86_64.rpm",
+					"libwbclient-devel-0:4.15.5-5.el8.aarch64.rpm",
+					"libwbclient-devel-0:4.15.5-5.el8.i686.rpm",
+					"libwbclient-devel-0:4.15.5-5.el8.x86_64.rpm",
+					"python3-samba-0:4.15.5-5.el8.aarch64.rpm",
+					"python3-samba-0:4.15.5-5.el8.i686.rpm",
+					"python3-samba-0:4.15.5-5.el8.x86_64.rpm",
+					"python3-samba-debuginfo-0:4.15.5-5.el8.aarch64.rpm",
+					"python3-samba-debuginfo-0:4.15.5-5.el8.i686.rpm",
+					"python3-samba-debuginfo-0:4.15.5-5.el8.x86_64.rpm",
+					"python3-samba-devel-0:4.15.5-5.el8.aarch64.rpm",
+					"python3-samba-devel-0:4.15.5-5.el8.i686.rpm",
+					"python3-samba-devel-0:4.15.5-5.el8.x86_64.rpm",
+					"python3-samba-test-0:4.15.5-5.el8.aarch64.rpm",
+					"python3-samba-test-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-0:4.15.5-5.el8.src.rpm",
+					"samba-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-client-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-client-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-client-debuginfo-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-client-debuginfo-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-client-libs-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-client-libs-0:4.15.5-5.el8.i686.rpm",
+					"samba-client-libs-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-client-libs-debuginfo-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-client-libs-debuginfo-0:4.15.5-5.el8.i686.rpm",
+					"samba-client-libs-debuginfo-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-common-0:4.15.5-5.el8.noarch.rpm",
+					"samba-common-libs-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-common-libs-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-common-libs-debuginfo-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-common-libs-debuginfo-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-common-tools-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-common-tools-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-common-tools-debuginfo-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-common-tools-debuginfo-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-debuginfo-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-debuginfo-0:4.15.5-5.el8.i686.rpm",
+					"samba-debuginfo-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-debugsource-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-debugsource-0:4.15.5-5.el8.i686.rpm",
+					"samba-debugsource-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-devel-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-devel-0:4.15.5-5.el8.i686.rpm",
+					"samba-devel-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-krb5-printing-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-krb5-printing-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-krb5-printing-debuginfo-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-krb5-printing-debuginfo-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-libs-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-libs-0:4.15.5-5.el8.i686.rpm",
+					"samba-libs-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-libs-debuginfo-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-libs-debuginfo-0:4.15.5-5.el8.i686.rpm",
+					"samba-libs-debuginfo-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-pidl-0:4.15.5-5.el8.noarch.rpm",
+					"samba-test-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-test-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-test-debuginfo-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-test-debuginfo-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-test-libs-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-test-libs-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-test-libs-debuginfo-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-test-libs-debuginfo-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-vfs-iouring-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-vfs-iouring-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-vfs-iouring-debuginfo-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-vfs-iouring-debuginfo-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-winbind-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-winbind-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-winbind-clients-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-winbind-clients-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-winbind-clients-debuginfo-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-winbind-clients-debuginfo-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-winbind-debuginfo-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-winbind-debuginfo-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-winbind-krb5-locator-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-winbind-krb5-locator-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-winbind-krb5-locator-debuginfo-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-winbind-krb5-locator-debuginfo-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-winbind-modules-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-winbind-modules-0:4.15.5-5.el8.i686.rpm",
+					"samba-winbind-modules-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-winbind-modules-debuginfo-0:4.15.5-5.el8.aarch64.rpm",
+					"samba-winbind-modules-debuginfo-0:4.15.5-5.el8.i686.rpm",
+					"samba-winbind-modules-debuginfo-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-winexe-0:4.15.5-5.el8.x86_64.rpm",
+					"samba-winexe-debuginfo-0:4.15.5-5.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

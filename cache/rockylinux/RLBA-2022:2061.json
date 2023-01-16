@@ -1,0 +1,53 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2061",
+		"synopsis": "jansson bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for jansson is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2001062",
+				"description": "backport build fix to add symbol versions",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001062"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2061",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2061",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"jansson-0:2.14-1.el8.aarch64.rpm",
+					"jansson-0:2.14-1.el8.i686.rpm",
+					"jansson-0:2.14-1.el8.src.rpm",
+					"jansson-0:2.14-1.el8.x86_64.rpm",
+					"jansson-debuginfo-0:2.14-1.el8.aarch64.rpm",
+					"jansson-debuginfo-0:2.14-1.el8.i686.rpm",
+					"jansson-debuginfo-0:2.14-1.el8.x86_64.rpm",
+					"jansson-debugsource-0:2.14-1.el8.aarch64.rpm",
+					"jansson-debugsource-0:2.14-1.el8.i686.rpm",
+					"jansson-debugsource-0:2.14-1.el8.x86_64.rpm",
+					"jansson-devel-0:2.14-1.el8.aarch64.rpm",
+					"jansson-devel-0:2.14-1.el8.i686.rpm",
+					"jansson-devel-0:2.14-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

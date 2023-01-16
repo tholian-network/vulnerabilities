@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5322",
+		"synopsis": "mtools bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for mtools is now available for Rocky Linux 8.",
+		"description": "Mtools is a collection of utilities for files created in the MS-DOS operating system. Mtools allow you to read, write, and move MS-DOS file system files (normally on MS-DOS floppy disks). Mtools supports Windows95 style long file names, IBM extended density format (OS/2 XDF) disks, and disks formatted in the 2M program. Install Mtools if your scenario requires using MS-DOS disks.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2080999",
+				"description": "mtools missing glibc-gconv-extra dependency [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2080999"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:5322",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5322",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mtools-0:4.0.18-15.el8_6.aarch64.rpm",
+					"mtools-0:4.0.18-15.el8_6.src.rpm",
+					"mtools-0:4.0.18-15.el8_6.x86_64.rpm",
+					"mtools-debuginfo-0:4.0.18-15.el8_6.aarch64.rpm",
+					"mtools-debuginfo-0:4.0.18-15.el8_6.x86_64.rpm",
+					"mtools-debugsource-0:4.0.18-15.el8_6.aarch64.rpm",
+					"mtools-debugsource-0:4.0.18-15.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

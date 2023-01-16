@@ -1,0 +1,69 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1871",
+		"synopsis": "corosync bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for corosync is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2002115",
+				"description": "totem: Add cancel_hold_on_retransmit config option [RHEL 8]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2002115"
+			},
+			{
+				"ticket": "2024658",
+				"description": "totemsrp: Switch totempg buffers at the right time [RHEL 8]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2024658"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1871",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1871",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"corosync-0:3.1.5-2.el8.aarch64.rpm",
+					"corosync-0:3.1.5-2.el8.src.rpm",
+					"corosync-0:3.1.5-2.el8.x86_64.rpm",
+					"corosync-debuginfo-0:3.1.5-2.el8.aarch64.rpm",
+					"corosync-debuginfo-0:3.1.5-2.el8.i686.rpm",
+					"corosync-debuginfo-0:3.1.5-2.el8.x86_64.rpm",
+					"corosynclib-0:3.1.5-2.el8.aarch64.rpm",
+					"corosynclib-0:3.1.5-2.el8.i686.rpm",
+					"corosynclib-0:3.1.5-2.el8.x86_64.rpm",
+					"corosynclib-debuginfo-0:3.1.5-2.el8.aarch64.rpm",
+					"corosynclib-debuginfo-0:3.1.5-2.el8.i686.rpm",
+					"corosynclib-debuginfo-0:3.1.5-2.el8.x86_64.rpm",
+					"corosynclib-devel-0:3.1.5-2.el8.aarch64.rpm",
+					"corosynclib-devel-0:3.1.5-2.el8.i686.rpm",
+					"corosynclib-devel-0:3.1.5-2.el8.x86_64.rpm",
+					"corosync-vqsim-0:3.1.5-2.el8.aarch64.rpm",
+					"corosync-vqsim-0:3.1.5-2.el8.x86_64.rpm",
+					"corosync-vqsim-debuginfo-0:3.1.5-2.el8.aarch64.rpm",
+					"corosync-vqsim-debuginfo-0:3.1.5-2.el8.x86_64.rpm",
+					"spausedd-0:3.1.5-2.el8.aarch64.rpm",
+					"spausedd-0:3.1.5-2.el8.x86_64.rpm",
+					"spausedd-debuginfo-0:3.1.5-2.el8.aarch64.rpm",
+					"spausedd-debuginfo-0:3.1.5-2.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

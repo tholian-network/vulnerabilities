@@ -1,0 +1,40 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1931",
+		"synopsis": "haproxy bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for haproxy is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2022:1931",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1931",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"haproxy-0:1.8.27-4.el8.aarch64.rpm",
+					"haproxy-0:1.8.27-4.el8.src.rpm",
+					"haproxy-0:1.8.27-4.el8.x86_64.rpm",
+					"haproxy-debuginfo-0:1.8.27-4.el8.aarch64.rpm",
+					"haproxy-debuginfo-0:1.8.27-4.el8.x86_64.rpm",
+					"haproxy-debugsource-0:1.8.27-4.el8.aarch64.rpm",
+					"haproxy-debugsource-0:1.8.27-4.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

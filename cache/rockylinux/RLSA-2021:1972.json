@@ -1,0 +1,44 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:1972",
+		"synopsis": "Moderate: pandoc security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for pandoc is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Pandoc is a Haskell library for converting from one markup format to another, and a command-line tool that uses this library.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1854328",
+				"description": "CVE-2020-5238 cmark-gfm: Exponential time to parse certain inputs could lead to DoS",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1854328"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-5238",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-5238.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-20"
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"pandoc-0:2.0.6-5.el8.2.aarch64.rpm",
+					"pandoc-0:2.0.6-5.el8.2.src.rpm",
+					"pandoc-0:2.0.6-5.el8.2.x86_64.rpm",
+					"pandoc-common-0:2.0.6-5.el8.2.noarch.rpm"
+				]
+			}
+		}
+	}
+}

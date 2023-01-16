@@ -1,0 +1,57 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4377",
+		"synopsis": "quota bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for quota is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2021:4377",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4377",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"quota-1:4.04-14.el8.aarch64.rpm",
+					"quota-1:4.04-14.el8.src.rpm",
+					"quota-1:4.04-14.el8.x86_64.rpm",
+					"quota-debuginfo-1:4.04-14.el8.aarch64.rpm",
+					"quota-debuginfo-1:4.04-14.el8.x86_64.rpm",
+					"quota-debugsource-1:4.04-14.el8.aarch64.rpm",
+					"quota-debugsource-1:4.04-14.el8.x86_64.rpm",
+					"quota-devel-1:4.04-14.el8.aarch64.rpm",
+					"quota-devel-1:4.04-14.el8.i686.rpm",
+					"quota-devel-1:4.04-14.el8.x86_64.rpm",
+					"quota-doc-1:4.04-14.el8.noarch.rpm",
+					"quota-nld-1:4.04-14.el8.aarch64.rpm",
+					"quota-nld-1:4.04-14.el8.x86_64.rpm",
+					"quota-nld-debuginfo-1:4.04-14.el8.aarch64.rpm",
+					"quota-nld-debuginfo-1:4.04-14.el8.x86_64.rpm",
+					"quota-nls-1:4.04-14.el8.noarch.rpm",
+					"quota-rpc-1:4.04-14.el8.aarch64.rpm",
+					"quota-rpc-1:4.04-14.el8.x86_64.rpm",
+					"quota-rpc-debuginfo-1:4.04-14.el8.aarch64.rpm",
+					"quota-rpc-debuginfo-1:4.04-14.el8.x86_64.rpm",
+					"quota-warnquota-1:4.04-14.el8.aarch64.rpm",
+					"quota-warnquota-1:4.04-14.el8.x86_64.rpm",
+					"quota-warnquota-debuginfo-1:4.04-14.el8.aarch64.rpm",
+					"quota-warnquota-debuginfo-1:4.04-14.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,50 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2006",
+		"synopsis": "python-pip bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for python-pip is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2000135",
+				"description": "pip3.6 happily installs yanked releases",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000135"
+			},
+			{
+				"ticket": "2006788",
+				"description": "RHEL 8 Python 3.6: pip contains bundled pre-built exe files in site-packages/pip/_vendor/distlib/",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2006788"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2006",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2006",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"platform-python-pip-0:9.0.3-22.el8.rocky.0.noarch.rpm",
+					"python3-pip-0:9.0.3-22.el8.rocky.0.noarch.rpm",
+					"python3-pip-wheel-0:9.0.3-22.el8.rocky.0.noarch.rpm",
+					"python-pip-0:9.0.3-22.el8.rocky.0.src.rpm"
+				]
+			}
+		}
+	}
+}

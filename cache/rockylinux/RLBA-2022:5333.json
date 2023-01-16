@@ -1,0 +1,49 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5333",
+		"synopsis": "gdm bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gdm is now available for Rocky Linux 8.",
+		"description": "The GNOME Display Manager (GDM) provides the graphical login screen. The\nscreen is shown shortly after boot, after log out, and when switching the\ncurrent user.\n(BZ#2085391)",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2022:5333",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5333",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gdm-1:40.0-23.el8_6.1.aarch64.rpm",
+					"gdm-1:40.0-23.el8_6.1.i686.rpm",
+					"gdm-1:40.0-23.el8_6.1.src.rpm",
+					"gdm-1:40.0-23.el8_6.1.x86_64.rpm",
+					"gdm-debuginfo-1:40.0-23.el8_6.1.aarch64.rpm",
+					"gdm-debuginfo-1:40.0-23.el8_6.1.i686.rpm",
+					"gdm-debuginfo-1:40.0-23.el8_6.1.x86_64.rpm",
+					"gdm-debugsource-1:40.0-23.el8_6.1.aarch64.rpm",
+					"gdm-debugsource-1:40.0-23.el8_6.1.i686.rpm",
+					"gdm-debugsource-1:40.0-23.el8_6.1.x86_64.rpm",
+					"gdm-devel-1:40.0-23.el8_6.1.aarch64.rpm",
+					"gdm-devel-1:40.0-23.el8_6.1.i686.rpm",
+					"gdm-devel-1:40.0-23.el8_6.1.x86_64.rpm",
+					"gdm-pam-extensions-devel-1:40.0-23.el8_6.1.aarch64.rpm",
+					"gdm-pam-extensions-devel-1:40.0-23.el8_6.1.i686.rpm",
+					"gdm-pam-extensions-devel-1:40.0-23.el8_6.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

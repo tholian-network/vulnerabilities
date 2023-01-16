@@ -1,0 +1,164 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1815",
+		"synopsis": "389-ds:1.4 bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for the 389-ds:1.4 module is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1601470",
+				"description": "Unable to read the RUV after a db2index operation.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1601470"
+			},
+			{
+				"ticket": "1780842",
+				"description": "[RFE] set db home directory to /dev/shm by default",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1780842"
+			},
+			{
+				"ticket": "1859210",
+				"description": "systemd-tmpfiles warnings",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1859210"
+			},
+			{
+				"ticket": "1913199",
+				"description": "IPA server (389ds) is very slow in execution of some searches (`\u0026(memberOf=...)(objectClass=ipaHost)` in particular)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1913199"
+			},
+			{
+				"ticket": "1916292",
+				"description": "Indexing a single backend actually processes all configured backends.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1916292"
+			},
+			{
+				"ticket": "1950335",
+				"description": "upgrade password hash on bind also causes passwordExpirationtime to be updated",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1950335"
+			},
+			{
+				"ticket": "1974236",
+				"description": "RFE automatique disable of virtual attribute checking",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1974236"
+			},
+			{
+				"ticket": "1976882",
+				"description": "logconv.pl -j: Use of uninitialized value $first in numeric gt (\u003e) at /usr/bin/logconv.pl line 1754.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1976882"
+			},
+			{
+				"ticket": "1981281",
+				"description": "ipa user-add fails with \"gecos: value #0 invalid per syntax: Invalid syntax\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1981281"
+			},
+			{
+				"ticket": "1990002",
+				"description": "monitor displays wrong date for connection",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1990002"
+			},
+			{
+				"ticket": "2000975",
+				"description": "Retro Changelog does not trim changes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000975"
+			},
+			{
+				"ticket": "2015998",
+				"description": "Log the Auto Member invalid regex rules in the LDAP errors log.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2015998"
+			},
+			{
+				"ticket": "2016014",
+				"description": "rebase RHEL 8.6 with 389-ds-base-1.4.3",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016014"
+			},
+			{
+				"ticket": "2024695",
+				"description": "DB corruption \"_entryrdn_insert_key - Same DN (dn: nsuniqueid=ffffffff-ffffffff-ffffffff-ffffffff,\u003cSUFFIX\u003e) is already in the entryrdn file\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2024695"
+			},
+			{
+				"ticket": "2030393",
+				"description": "Fix csn generator to limit time skew drift",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2030393"
+			},
+			{
+				"ticket": "2033398",
+				"description": "PBKDF2 hashing does not work in FIPS mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2033398"
+			},
+			{
+				"ticket": "2045223",
+				"description": "ipa-restore command is failing when restore after uninstalling the server",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2045223"
+			},
+			{
+				"ticket": "2047171",
+				"description": "Based on 1944494 (RFC 4530 entryUUID attribute) - plugin entryuuid failing",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2047171"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1815",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1815",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"389-ds-base-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.aarch64.rpm",
+					"389-ds-base-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.src.rpm",
+					"389-ds-base-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.x86_64.rpm",
+					"389-ds-base-debuginfo-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.aarch64.rpm",
+					"389-ds-base-debuginfo-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.x86_64.rpm",
+					"389-ds-base-debugsource-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.aarch64.rpm",
+					"389-ds-base-debugsource-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.x86_64.rpm",
+					"389-ds-base-devel-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.aarch64.rpm",
+					"389-ds-base-devel-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.x86_64.rpm",
+					"389-ds-base-legacy-tools-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.aarch64.rpm",
+					"389-ds-base-legacy-tools-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.x86_64.rpm",
+					"389-ds-base-legacy-tools-debuginfo-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.aarch64.rpm",
+					"389-ds-base-legacy-tools-debuginfo-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.x86_64.rpm",
+					"389-ds-base-libs-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.aarch64.rpm",
+					"389-ds-base-libs-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.x86_64.rpm",
+					"389-ds-base-libs-debuginfo-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.aarch64.rpm",
+					"389-ds-base-libs-debuginfo-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.x86_64.rpm",
+					"389-ds-base-snmp-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.aarch64.rpm",
+					"389-ds-base-snmp-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.x86_64.rpm",
+					"389-ds-base-snmp-debuginfo-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.aarch64.rpm",
+					"389-ds-base-snmp-debuginfo-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.x86_64.rpm",
+					"python3-lib389-0:1.4.3.28-6.module+el8.6.0+782+23a9774d.noarch.rpm"
+				]
+			}
+		}
+	}
+}

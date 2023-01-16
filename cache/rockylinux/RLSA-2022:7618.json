@@ -1,0 +1,56 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7618",
+		"synopsis": "Moderate: gstreamer1-plugins-good security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for gstreamer1-plugins-good is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "GStreamer is a streaming media framework based on graphs of filters that operate on media data. The gstreamer1-plugins-good packages contain a collection of well-supported plug-ins of good quality and under the LGPL license.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1945339",
+				"description": "CVE-2021-3497 gstreamer-plugins-good: Use-after-free in matroska demuxing",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1945339"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-3497",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3497.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-416"
+			}
+		],
+		"publishedAt": "2022-11-13T07:48:49.146331Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gstreamer1-plugins-good-0:1.16.1-3.el8.aarch64.rpm",
+					"gstreamer1-plugins-good-0:1.16.1-3.el8.i686.rpm",
+					"gstreamer1-plugins-good-0:1.16.1-3.el8.src.rpm",
+					"gstreamer1-plugins-good-0:1.16.1-3.el8.x86_64.rpm",
+					"gstreamer1-plugins-good-debuginfo-0:1.16.1-3.el8.aarch64.rpm",
+					"gstreamer1-plugins-good-debuginfo-0:1.16.1-3.el8.i686.rpm",
+					"gstreamer1-plugins-good-debuginfo-0:1.16.1-3.el8.x86_64.rpm",
+					"gstreamer1-plugins-good-debugsource-0:1.16.1-3.el8.aarch64.rpm",
+					"gstreamer1-plugins-good-debugsource-0:1.16.1-3.el8.i686.rpm",
+					"gstreamer1-plugins-good-debugsource-0:1.16.1-3.el8.x86_64.rpm",
+					"gstreamer1-plugins-good-gtk-0:1.16.1-3.el8.aarch64.rpm",
+					"gstreamer1-plugins-good-gtk-0:1.16.1-3.el8.i686.rpm",
+					"gstreamer1-plugins-good-gtk-0:1.16.1-3.el8.x86_64.rpm",
+					"gstreamer1-plugins-good-gtk-debuginfo-0:1.16.1-3.el8.aarch64.rpm",
+					"gstreamer1-plugins-good-gtk-debuginfo-0:1.16.1-3.el8.i686.rpm",
+					"gstreamer1-plugins-good-gtk-debuginfo-0:1.16.1-3.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

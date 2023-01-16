@@ -1,0 +1,56 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:1755",
+		"synopsis": "new module: swig:4.0",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "A new swig:4.0 module is now available for Rocky Linux 8.",
+		"description": "The simplified wrapper and interface generator (SWIG) is a software development utility to connect C, C++, and Objective C programs with a variety of high-level programming languages. SWIG is used to create high-level interpreted programming environments, systems integration, and as a utility for building user interfaces.\nThis enhancement update adds the swig:4.0 module to Rocky Linux 8. (BZ#1853639)\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1853639",
+				"description": "RFE: add swig:4 module stream",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1853639"
+			},
+			{
+				"ticket": "1870557",
+				"description": "invalid free in SWIG_Python_AddErrMesg",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1870557"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:1755",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:1755",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"swig-0:4.0.2-3.module+el8.4.0+386+8a292e6f.aarch64.rpm",
+					"swig-0:4.0.2-3.module+el8.4.0+386+8a292e6f.src.rpm",
+					"swig-0:4.0.2-3.module+el8.4.0+386+8a292e6f.x86_64.rpm",
+					"swig-debuginfo-0:4.0.2-3.module+el8.4.0+386+8a292e6f.aarch64.rpm",
+					"swig-debuginfo-0:4.0.2-3.module+el8.4.0+386+8a292e6f.x86_64.rpm",
+					"swig-debugsource-0:4.0.2-3.module+el8.4.0+386+8a292e6f.aarch64.rpm",
+					"swig-debugsource-0:4.0.2-3.module+el8.4.0+386+8a292e6f.x86_64.rpm",
+					"swig-doc-0:4.0.2-3.module+el8.4.0+386+8a292e6f.noarch.rpm",
+					"swig-gdb-0:4.0.2-3.module+el8.4.0+386+8a292e6f.aarch64.rpm",
+					"swig-gdb-0:4.0.2-3.module+el8.4.0+386+8a292e6f.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

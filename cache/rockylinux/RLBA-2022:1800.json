@@ -1,0 +1,57 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1800",
+		"synopsis": "accountsservice bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for accountsservice is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1919300",
+				"description": "Permissions of files owned by accountsservice package diverge from RPM database",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1919300"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1800",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1800",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"accountsservice-0:0.6.55-4.el8.aarch64.rpm",
+					"accountsservice-0:0.6.55-4.el8.src.rpm",
+					"accountsservice-0:0.6.55-4.el8.x86_64.rpm",
+					"accountsservice-debuginfo-0:0.6.55-4.el8.aarch64.rpm",
+					"accountsservice-debuginfo-0:0.6.55-4.el8.i686.rpm",
+					"accountsservice-debuginfo-0:0.6.55-4.el8.x86_64.rpm",
+					"accountsservice-debugsource-0:0.6.55-4.el8.aarch64.rpm",
+					"accountsservice-debugsource-0:0.6.55-4.el8.x86_64.rpm",
+					"accountsservice-devel-0:0.6.55-4.el8.aarch64.rpm",
+					"accountsservice-devel-0:0.6.55-4.el8.i686.rpm",
+					"accountsservice-devel-0:0.6.55-4.el8.x86_64.rpm",
+					"accountsservice-libs-0:0.6.55-4.el8.aarch64.rpm",
+					"accountsservice-libs-0:0.6.55-4.el8.i686.rpm",
+					"accountsservice-libs-0:0.6.55-4.el8.x86_64.rpm",
+					"accountsservice-libs-debuginfo-0:0.6.55-4.el8.aarch64.rpm",
+					"accountsservice-libs-debuginfo-0:0.6.55-4.el8.i686.rpm",
+					"accountsservice-libs-debuginfo-0:0.6.55-4.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

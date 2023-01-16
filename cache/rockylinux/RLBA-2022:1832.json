@@ -1,0 +1,117 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1832",
+		"synopsis": "postgresql:13 bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for the postgresql:13 module is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2016996",
+				"description": "postgresql:13/postgresql: tmpfiles config is using deprecated path, causing a warning to be logged",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016996"
+			},
+			{
+				"ticket": "2024567",
+				"description": "postgresql:13/postgresql: Presence of data_directory in /var/lib/pgsql/data/postgresql.conf breaks postgresql-upgrade",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2024567"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1832",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1832",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"pgaudit-0:1.5.0-1.module+el8.5.0+684+c3892ef9.aarch64.rpm",
+					"pgaudit-0:1.5.0-1.module+el8.5.0+684+c3892ef9.src.rpm",
+					"pgaudit-0:1.5.0-1.module+el8.5.0+684+c3892ef9.x86_64.rpm",
+					"pgaudit-debuginfo-0:1.5.0-1.module+el8.5.0+684+c3892ef9.aarch64.rpm",
+					"pgaudit-debuginfo-0:1.5.0-1.module+el8.5.0+684+c3892ef9.x86_64.rpm",
+					"pgaudit-debugsource-0:1.5.0-1.module+el8.5.0+684+c3892ef9.aarch64.rpm",
+					"pgaudit-debugsource-0:1.5.0-1.module+el8.5.0+684+c3892ef9.x86_64.rpm",
+					"pg_repack-0:1.4.6-3.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"pg_repack-0:1.4.6-3.module+el8.5.0+686+20453ecc.src.rpm",
+					"pg_repack-0:1.4.6-3.module+el8.5.0+686+20453ecc.x86_64.rpm",
+					"pg_repack-debuginfo-0:1.4.6-3.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"pg_repack-debuginfo-0:1.4.6-3.module+el8.5.0+686+20453ecc.x86_64.rpm",
+					"pg_repack-debugsource-0:1.4.6-3.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"pg_repack-debugsource-0:1.4.6-3.module+el8.5.0+686+20453ecc.x86_64.rpm",
+					"postgres-decoderbufs-0:0.10.0-2.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"postgres-decoderbufs-0:0.10.0-2.module+el8.5.0+686+20453ecc.src.rpm",
+					"postgres-decoderbufs-0:0.10.0-2.module+el8.5.0+686+20453ecc.x86_64.rpm",
+					"postgres-decoderbufs-debuginfo-0:0.10.0-2.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"postgres-decoderbufs-debuginfo-0:0.10.0-2.module+el8.5.0+686+20453ecc.x86_64.rpm",
+					"postgres-decoderbufs-debugsource-0:0.10.0-2.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"postgres-decoderbufs-debugsource-0:0.10.0-2.module+el8.5.0+686+20453ecc.x86_64.rpm",
+					"postgresql-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-0:13.5-2.module+el8.6.0+804+51649222.src.rpm",
+					"postgresql-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-contrib-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-contrib-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-contrib-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-contrib-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-debugsource-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-debugsource-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-docs-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-docs-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-docs-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-docs-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-plperl-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-plperl-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-plperl-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-plperl-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-plpython3-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-plpython3-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-plpython3-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-plpython3-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-pltcl-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-pltcl-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-pltcl-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-pltcl-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-server-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-server-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-server-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-server-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-server-devel-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-server-devel-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-server-devel-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-server-devel-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-static-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-static-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-test-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-test-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-test-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-test-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-test-rpm-macros-0:13.5-2.module+el8.6.0+804+51649222.noarch.rpm",
+					"postgresql-upgrade-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-upgrade-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-upgrade-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-upgrade-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-upgrade-devel-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-upgrade-devel-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm",
+					"postgresql-upgrade-devel-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.aarch64.rpm",
+					"postgresql-upgrade-devel-debuginfo-0:13.5-2.module+el8.6.0+804+51649222.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

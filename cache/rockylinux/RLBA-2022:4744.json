@@ -1,0 +1,49 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:4744",
+		"synopsis": "sos bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for sos is now available for Rocky Linux 8.6Extended Update Support.",
+		"description": "The sos package contains a set of utilities that gather information from\nsystem hardware, logs, and configuration files. The information can then be\nused for diagnostic purposes and debugging.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2071695",
+				"description": "sos collect fails to get node list from a pacemaker cluster [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2071695"
+			},
+			{
+				"ticket": "2071824",
+				"description": "Tracker for 8.6 sos OCP focused async release [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2071824"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:4744",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:4744",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-25T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"sos-0:4.2-19.el8_6.noarch.rpm",
+					"sos-0:4.2-19.el8_6.src.rpm",
+					"sos-audit-0:4.2-19.el8_6.noarch.rpm"
+				]
+			}
+		}
+	}
+}

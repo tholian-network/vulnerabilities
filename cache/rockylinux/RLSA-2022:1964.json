@@ -1,0 +1,61 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1964",
+		"synopsis": "Moderate: fetchmail security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for fetchmail is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Fetchmail is a remote mail retrieval and forwarding utility intended for use over on-demand TCP/IP links, like SLIP or PPP connections. Fetchmail supports every remote-mail protocol currently in use on the Internet (POP2, POP3, RPOP, APOP, KPOP, all IMAPs, ESMTP ETRN, IPv6, and IPSEC) for retrieval. Then Fetchmail forwards the mail through SMTP so the user can read it through their favorite mail client.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1987766",
+				"description": "CVE-2021-36386 fetchmail: DoS or information disclosure when logging long messages",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1987766"
+			},
+			{
+				"ticket": "1999190",
+				"description": "CVE-2021-39272 fetchmail: STARTTLS session encryption bypassing",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1999190"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-36386",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-36386.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-665"
+			},
+			{
+				"name": "CVE-2021-39272",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-39272.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "5.9",
+				"cwe": "CWE-319"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"fetchmail-0:6.4.24-1.el8.aarch64.rpm",
+					"fetchmail-0:6.4.24-1.el8.src.rpm",
+					"fetchmail-0:6.4.24-1.el8.x86_64.rpm",
+					"fetchmail-debuginfo-0:6.4.24-1.el8.aarch64.rpm",
+					"fetchmail-debuginfo-0:6.4.24-1.el8.x86_64.rpm",
+					"fetchmail-debugsource-0:6.4.24-1.el8.aarch64.rpm",
+					"fetchmail-debugsource-0:6.4.24-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

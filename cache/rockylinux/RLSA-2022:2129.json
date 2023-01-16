@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:2129",
+		"synopsis": "Moderate: lynx security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for lynx is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Lynx is a text-based Web browser. Lynx does not display any images, but it does support frames, tables, and most other HTML tags.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1994998",
+				"description": "CVE-2021-38165 lynx: Disclosure of HTTP authentication credentials via SNI data",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1994998"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-38165",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-38165.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-522"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"lynx-0:2.8.9-4.el8.aarch64.rpm",
+					"lynx-0:2.8.9-4.el8.src.rpm",
+					"lynx-0:2.8.9-4.el8.x86_64.rpm",
+					"lynx-debuginfo-0:2.8.9-4.el8.aarch64.rpm",
+					"lynx-debuginfo-0:2.8.9-4.el8.x86_64.rpm",
+					"lynx-debugsource-0:2.8.9-4.el8.aarch64.rpm",
+					"lynx-debugsource-0:2.8.9-4.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

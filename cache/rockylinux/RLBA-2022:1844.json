@@ -1,0 +1,114 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1844",
+		"synopsis": "openscap bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for openscap is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1893888",
+				"description": "OpenSCAP oscap-podman on RHEL8-based hosts is unable to collect data related to RPM DB from containers based on F33 and RHEL9",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1893888"
+			},
+			{
+				"ticket": "1970529",
+				"description": "oscap complains about missing resources even though they were downloaded locally",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1970529"
+			},
+			{
+				"ticket": "1977668",
+				"description": "Read the hostname from alternative sources (/proc/sys/kernel/hostname) so that XCCDF reports can fill the \u003ctarget\u003e element",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1977668"
+			},
+			{
+				"ticket": "2008922",
+				"description": "oscap-chroot (process58 probe) errors when scanning minimalist filesystem",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2008922"
+			},
+			{
+				"ticket": "2020050",
+				"description": "[RFE] Introduce support for Image Builder's Blueprint remediation type",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2020050"
+			},
+			{
+				"ticket": "2021851",
+				"description": "Downstream test Regression/bz1932833-probe_file-memory fails",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2021851"
+			},
+			{
+				"ticket": "2022364",
+				"description": "rpmdeplint reports conflict in user manual",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2022364"
+			},
+			{
+				"ticket": "2041781",
+				"description": "Rebase OpenSCAP in RHEL 8.6 to the latest upstream version",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2041781"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1844",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1844",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"openscap-0:1.3.6-3.el8.rocky.0.1.aarch64.rpm",
+					"openscap-0:1.3.6-3.el8.rocky.0.1.i686.rpm",
+					"openscap-0:1.3.6-3.el8.rocky.0.1.src.rpm",
+					"openscap-0:1.3.6-3.el8.rocky.0.1.x86_64.rpm",
+					"openscap-debuginfo-0:1.3.6-3.el8.rocky.0.1.aarch64.rpm",
+					"openscap-debuginfo-0:1.3.6-3.el8.rocky.0.1.i686.rpm",
+					"openscap-debuginfo-0:1.3.6-3.el8.rocky.0.1.x86_64.rpm",
+					"openscap-debugsource-0:1.3.6-3.el8.rocky.0.1.aarch64.rpm",
+					"openscap-debugsource-0:1.3.6-3.el8.rocky.0.1.i686.rpm",
+					"openscap-debugsource-0:1.3.6-3.el8.rocky.0.1.x86_64.rpm",
+					"openscap-devel-0:1.3.6-3.el8.rocky.0.1.aarch64.rpm",
+					"openscap-devel-0:1.3.6-3.el8.rocky.0.1.i686.rpm",
+					"openscap-devel-0:1.3.6-3.el8.rocky.0.1.x86_64.rpm",
+					"openscap-engine-sce-0:1.3.6-3.el8.rocky.0.1.aarch64.rpm",
+					"openscap-engine-sce-0:1.3.6-3.el8.rocky.0.1.i686.rpm",
+					"openscap-engine-sce-0:1.3.6-3.el8.rocky.0.1.x86_64.rpm",
+					"openscap-engine-sce-debuginfo-0:1.3.6-3.el8.rocky.0.1.aarch64.rpm",
+					"openscap-engine-sce-debuginfo-0:1.3.6-3.el8.rocky.0.1.i686.rpm",
+					"openscap-engine-sce-debuginfo-0:1.3.6-3.el8.rocky.0.1.x86_64.rpm",
+					"openscap-engine-sce-devel-0:1.3.6-3.el8.rocky.0.1.aarch64.rpm",
+					"openscap-engine-sce-devel-0:1.3.6-3.el8.rocky.0.1.i686.rpm",
+					"openscap-engine-sce-devel-0:1.3.6-3.el8.rocky.0.1.x86_64.rpm",
+					"openscap-python3-0:1.3.6-3.el8.rocky.0.1.aarch64.rpm",
+					"openscap-python3-0:1.3.6-3.el8.rocky.0.1.x86_64.rpm",
+					"openscap-python3-debuginfo-0:1.3.6-3.el8.rocky.0.1.aarch64.rpm",
+					"openscap-python3-debuginfo-0:1.3.6-3.el8.rocky.0.1.x86_64.rpm",
+					"openscap-scanner-0:1.3.6-3.el8.rocky.0.1.aarch64.rpm",
+					"openscap-scanner-0:1.3.6-3.el8.rocky.0.1.x86_64.rpm",
+					"openscap-scanner-debuginfo-0:1.3.6-3.el8.rocky.0.1.aarch64.rpm",
+					"openscap-scanner-debuginfo-0:1.3.6-3.el8.rocky.0.1.x86_64.rpm",
+					"openscap-utils-0:1.3.6-3.el8.rocky.0.1.aarch64.rpm",
+					"openscap-utils-0:1.3.6-3.el8.rocky.0.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

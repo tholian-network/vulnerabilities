@@ -1,0 +1,69 @@
+{
+	"updateinfo_id": "ALSA-2022:0441",
+	"fromstr": "packager@almalinux.org",
+	"title": "Important: aide security update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Important",
+	"summary": "An update for aide is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+	"pushcount": "2",
+	"pkglist": {
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"packages": [
+			{
+				"src": "aide-0.16-14.el8_5.1.src.rpm",
+				"name": "aide",
+				"epoch": "0",
+				"version": "0.16",
+				"release": "14.el8_5.1",
+				"arch": "x86_64",
+				"filename": "aide-0.16-14.el8_5.1.x86_64.rpm",
+				"sum": "1d1f44317b15ba707feb8d4d360966ef13f0e09be4f03899d5479e6a75376480",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "aide-0.16-14.el8_5.1.src.rpm",
+				"name": "aide",
+				"epoch": "0",
+				"version": "0.16",
+				"release": "14.el8_5.1",
+				"arch": "aarch64",
+				"filename": "aide-0.16-14.el8_5.1.aarch64.rpm",
+				"sum": "bdfc75a7f4ce989f0a43b6ca15de59ef6963eff353de9f5f24561a18d8ee7ca4",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "aide-0.16-14.el8_5.1.src.rpm",
+				"name": "aide",
+				"epoch": "0",
+				"version": "0.16",
+				"release": "14.el8_5.1",
+				"arch": "ppc64le",
+				"filename": "aide-0.16-14.el8_5.1.ppc64le.rpm",
+				"sum": "30e9bf7a968f914e48e7b729b55efbd03d3b82bbe2ee33b33b9637b9976eb11d",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "Advanced Intrusion Detection Environment (AIDE) is a utility that creates a database of files on the system, and then uses that database to ensure file integrity and detect system intrusions.\n\nSecurity Fix(es):\n\n* aide: heap-based buffer overflow on outputs larger than B64_BUF (CVE-2021-45417)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+	"references": [
+		{
+			"id": "CVE-2021-45417",
+			"title": "CVE-2021-45417",
+			"type": "cve",
+			"href": "https://vulners.com/cve/CVE-2021-45417"
+		}
+	],
+	"issued_date": {
+		"$date": 1644221530000
+	},
+	"updated_date": {
+		"$date": 1644258004000
+	}
+}

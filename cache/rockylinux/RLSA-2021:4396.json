@@ -1,0 +1,128 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4396",
+		"synopsis": "Moderate: sqlite security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for sqlite is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "SQLite is a C library that implements an SQL database engine. A large subset of SQL92 is supported. A complete database is stored in a single disk file. The API is designed for convenience and ease of use. Applications that link against SQLite can enjoy the power and flexibility of an SQL database without the administrative hassles of supporting a separate database server.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1706805",
+				"description": "CVE-2019-5827 sqlite: out-of-bounds access due to the use of 32-bit memory allocator interfaces",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1706805"
+			},
+			{
+				"ticket": "1781997",
+				"description": "CVE-2019-13750 sqlite: dropping of shadow tables not restricted in defensive mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1781997"
+			},
+			{
+				"ticket": "1781998",
+				"description": "CVE-2019-13751 sqlite: fts3: improve detection of corrupted records",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1781998"
+			},
+			{
+				"ticket": "1785318",
+				"description": "CVE-2019-19603 sqlite: mishandling of certain SELECT statements with non-existent VIEW can lead to DoS",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1785318"
+			},
+			{
+				"ticket": "1841231",
+				"description": "CVE-2020-13435 sqlite: NULL pointer dereference in sqlite3ExprCodeTarget()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1841231"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2019-13750",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2019-13750.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2019-13751",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2019-13751.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": ""
+			},
+			{
+				"name": "CVE-2019-19603",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2019-19603.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-20"
+			},
+			{
+				"name": "CVE-2019-5827",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2019-5827.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.8",
+				"cwe": "CWE-125"
+			},
+			{
+				"name": "CVE-2020-13435",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-13435.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "5.5",
+				"cwe": "CWE-476"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"lemon-0:3.26.0-15.el8.aarch64.rpm",
+					"lemon-0:3.26.0-15.el8.x86_64.rpm",
+					"lemon-debuginfo-0:3.26.0-15.el8.aarch64.rpm",
+					"lemon-debuginfo-0:3.26.0-15.el8.x86_64.rpm",
+					"sqlite-0:3.26.0-15.el8.aarch64.rpm",
+					"sqlite-0:3.26.0-15.el8.i686.rpm",
+					"sqlite-0:3.26.0-15.el8.src.rpm",
+					"sqlite-0:3.26.0-15.el8.x86_64.rpm",
+					"sqlite-analyzer-0:3.26.0-15.el8.aarch64.rpm",
+					"sqlite-analyzer-0:3.26.0-15.el8.x86_64.rpm",
+					"sqlite-analyzer-debuginfo-0:3.26.0-15.el8.aarch64.rpm",
+					"sqlite-analyzer-debuginfo-0:3.26.0-15.el8.x86_64.rpm",
+					"sqlite-debuginfo-0:3.26.0-15.el8.aarch64.rpm",
+					"sqlite-debuginfo-0:3.26.0-15.el8.i686.rpm",
+					"sqlite-debuginfo-0:3.26.0-15.el8.x86_64.rpm",
+					"sqlite-debugsource-0:3.26.0-15.el8.aarch64.rpm",
+					"sqlite-debugsource-0:3.26.0-15.el8.i686.rpm",
+					"sqlite-debugsource-0:3.26.0-15.el8.x86_64.rpm",
+					"sqlite-devel-0:3.26.0-15.el8.aarch64.rpm",
+					"sqlite-devel-0:3.26.0-15.el8.i686.rpm",
+					"sqlite-devel-0:3.26.0-15.el8.x86_64.rpm",
+					"sqlite-doc-0:3.26.0-15.el8.noarch.rpm",
+					"sqlite-libs-0:3.26.0-15.el8.aarch64.rpm",
+					"sqlite-libs-0:3.26.0-15.el8.i686.rpm",
+					"sqlite-libs-0:3.26.0-15.el8.x86_64.rpm",
+					"sqlite-libs-debuginfo-0:3.26.0-15.el8.aarch64.rpm",
+					"sqlite-libs-debuginfo-0:3.26.0-15.el8.i686.rpm",
+					"sqlite-libs-debuginfo-0:3.26.0-15.el8.x86_64.rpm",
+					"sqlite-tcl-0:3.26.0-15.el8.aarch64.rpm",
+					"sqlite-tcl-0:3.26.0-15.el8.x86_64.rpm",
+					"sqlite-tcl-debuginfo-0:3.26.0-15.el8.aarch64.rpm",
+					"sqlite-tcl-debuginfo-0:3.26.0-15.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

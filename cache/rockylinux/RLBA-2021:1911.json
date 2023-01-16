@@ -1,0 +1,102 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1911",
+		"synopsis": "container-tools:2.0 bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for the container-tools:2.0 module is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1883324",
+				"description": "docker.io needs to be listed in search registries in registries.conf [2.0-8.3.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1883324"
+			},
+			{
+				"ticket": "1897596",
+				"description": "update description and summary for container-tools module for 2.0-8.3.0",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1897596"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1911",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1911",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cockpit-podman-0:11-1.module+el8.5.0+770+e2f49861.noarch.rpm",
+					"cockpit-podman-0:11-1.module+el8.5.0+770+e2f49861.src.rpm",
+					"conmon-2:2.0.15-1.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"conmon-2:2.0.15-1.module+el8.5.0+770+e2f49861.src.rpm",
+					"conmon-2:2.0.15-1.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"containernetworking-plugins-0:0.8.3-4.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"containernetworking-plugins-0:0.8.3-4.module+el8.5.0+770+e2f49861.src.rpm",
+					"containernetworking-plugins-0:0.8.3-4.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"containernetworking-plugins-debuginfo-0:0.8.3-4.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"containernetworking-plugins-debuginfo-0:0.8.3-4.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"containernetworking-plugins-debugsource-0:0.8.3-4.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"containernetworking-plugins-debugsource-0:0.8.3-4.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"containers-common-1:0.1.41-4.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"containers-common-1:0.1.41-4.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"container-selinux-2:2.130.0-1.module+el8.5.0+770+e2f49861.noarch.rpm",
+					"container-selinux-2:2.130.0-1.module+el8.5.0+770+e2f49861.src.rpm",
+					"crit-0:3.12-9.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"crit-0:3.12-9.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"criu-0:3.12-9.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"criu-0:3.12-9.module+el8.5.0+770+e2f49861.src.rpm",
+					"criu-0:3.12-9.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"criu-debuginfo-0:3.12-9.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"criu-debuginfo-0:3.12-9.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"criu-debugsource-0:3.12-9.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"criu-debugsource-0:3.12-9.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"fuse-overlayfs-0:0.7.8-1.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"fuse-overlayfs-0:0.7.8-1.module+el8.5.0+770+e2f49861.src.rpm",
+					"fuse-overlayfs-0:0.7.8-1.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"fuse-overlayfs-debuginfo-0:0.7.8-1.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"fuse-overlayfs-debuginfo-0:0.7.8-1.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"fuse-overlayfs-debugsource-0:0.7.8-1.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"fuse-overlayfs-debugsource-0:0.7.8-1.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"python3-criu-0:3.12-9.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"python3-criu-0:3.12-9.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"python-podman-api-0:1.2.0-0.2.gitd0a45fe.module+el8.5.0+770+e2f49861.noarch.rpm",
+					"python-podman-api-0:1.2.0-0.2.gitd0a45fe.module+el8.5.0+770+e2f49861.src.rpm",
+					"skopeo-1:0.1.41-4.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"skopeo-1:0.1.41-4.module+el8.5.0+770+e2f49861.src.rpm",
+					"skopeo-1:0.1.41-4.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"skopeo-debuginfo-1:0.1.41-4.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"skopeo-debuginfo-1:0.1.41-4.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"skopeo-debugsource-1:0.1.41-4.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"skopeo-debugsource-1:0.1.41-4.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"skopeo-tests-1:0.1.41-4.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"skopeo-tests-1:0.1.41-4.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"slirp4netns-0:0.4.2-3.git21fdece.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"slirp4netns-0:0.4.2-3.git21fdece.module+el8.5.0+770+e2f49861.src.rpm",
+					"slirp4netns-0:0.4.2-3.git21fdece.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"slirp4netns-debuginfo-0:0.4.2-3.git21fdece.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"slirp4netns-debuginfo-0:0.4.2-3.git21fdece.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"slirp4netns-debugsource-0:0.4.2-3.git21fdece.module+el8.5.0+770+e2f49861.aarch64.rpm",
+					"slirp4netns-debugsource-0:0.4.2-3.git21fdece.module+el8.5.0+770+e2f49861.x86_64.rpm",
+					"toolbox-0:0.0.7-1.module+el8.5.0+770+e2f49861.noarch.rpm",
+					"toolbox-0:0.0.7-1.module+el8.5.0+770+e2f49861.src.rpm",
+					"udica-0:0.2.1-2.module+el8.5.0+770+e2f49861.noarch.rpm",
+					"udica-0:0.2.1-2.module+el8.5.0+770+e2f49861.src.rpm"
+				]
+			}
+		}
+	}
+}

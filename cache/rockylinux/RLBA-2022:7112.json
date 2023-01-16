@@ -1,0 +1,55 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:7112",
+		"synopsis": "sos bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for sos is now available for Rocky Linux 8.",
+		"description": "The sos package contains a set of utilities that gather information from\nsystem hardware, logs, and configuration files. The information can then be\nused for diagnostic purposes and debugging.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2121774",
+				"description": "vdsm plugin does not collect LVM information of RHV SDs if the host uses LVM devices [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2121774"
+			},
+			{
+				"ticket": "2125656",
+				"description": "Default plugin timeout doesn't works if block devices count up to 10K. [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2125656"
+			},
+			{
+				"ticket": "2129105",
+				"description": "Add convert2rhel archived log collection [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2129105"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:7112",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:7112",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-11-07T19:38:26.844985Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"sos-0:4.2-22.el8_6.noarch.rpm",
+					"sos-0:4.2-22.el8_6.src.rpm",
+					"sos-audit-0:4.2-22.el8_6.noarch.rpm"
+				]
+			}
+		}
+	}
+}

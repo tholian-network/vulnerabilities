@@ -1,18 +1,18 @@
 {
-	"name": "AVG-895",
-	"packages": [
-		"podman-docker"
-	],
-	"status": "Not affected",
-	"severity": "High",
-	"type": "privilege escalation",
-	"affected": "1.0.0-2",
-	"fixed": null,
-	"ticket": null,
-	"issues": [
-		"CVE-2019-5736"
-	],
-	"advisories": [],
-	"references": [],
-	"notes": "podman-docker does not use a bundled runc, therefor only the runc package itself is affected."
+  "name": "AVG-895",
+  "packages": [
+    "podman-docker"
+  ],
+  "status": "Not affected",
+  "severity": "High",
+  "type": "privilege escalation",
+  "affected": "1.0.0-2",
+  "fixed": null,
+  "ticket": null,
+  "issues": [
+    "CVE-2019-5736"
+  ],
+  "advisories": [],
+  "references": [],
+  "notes": "podman-docker does not use a bundled runc, therefor only the runc package itself is affected."
 }

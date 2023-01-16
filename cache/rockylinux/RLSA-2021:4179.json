@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4179",
+		"synopsis": "Low: file-roller security update",
+		"severity": "SEVERITY_LOW",
+		"topic": "An update for file-roller is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "File Roller is an application for creating and viewing archives files, such as tar or zip files.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1947534",
+				"description": "CVE-2020-36314 file-roller: directory traversal via directory symlink pointing outside of the target directory (incomplete fix for CVE-2020-11736)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1947534"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-36314",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-36314.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:L",
+				"cvss3BaseScore": "3.9",
+				"cwe": "CWE-22"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"file-roller-0:3.28.1-4.el8.aarch64.rpm",
+					"file-roller-0:3.28.1-4.el8.src.rpm",
+					"file-roller-0:3.28.1-4.el8.x86_64.rpm",
+					"file-roller-debuginfo-0:3.28.1-4.el8.aarch64.rpm",
+					"file-roller-debuginfo-0:3.28.1-4.el8.x86_64.rpm",
+					"file-roller-debugsource-0:3.28.1-4.el8.aarch64.rpm",
+					"file-roller-debugsource-0:3.28.1-4.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

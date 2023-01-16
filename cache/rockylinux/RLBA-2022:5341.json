@@ -1,0 +1,53 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5341",
+		"synopsis": "mutter bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for mutter is now available for Rocky Linux 8 Extended Update Support.",
+		"description": "Mutter is a compositing window manager that displays and manages desktop\nthrough OpenGL. It combines the window-management logic inherited from the\nMetacity window manager with a display engine that uses the Clutter\ntoolkit.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2090329",
+				"description": "Gnome-bundled software freezes after 48 days [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2090329"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:5341",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5341",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mutter-0:3.32.2-64.el8_6.aarch64.rpm",
+					"mutter-0:3.32.2-64.el8_6.i686.rpm",
+					"mutter-0:3.32.2-64.el8_6.src.rpm",
+					"mutter-0:3.32.2-64.el8_6.x86_64.rpm",
+					"mutter-debuginfo-0:3.32.2-64.el8_6.aarch64.rpm",
+					"mutter-debuginfo-0:3.32.2-64.el8_6.i686.rpm",
+					"mutter-debuginfo-0:3.32.2-64.el8_6.x86_64.rpm",
+					"mutter-debugsource-0:3.32.2-64.el8_6.aarch64.rpm",
+					"mutter-debugsource-0:3.32.2-64.el8_6.i686.rpm",
+					"mutter-debugsource-0:3.32.2-64.el8_6.x86_64.rpm",
+					"mutter-devel-0:3.32.2-64.el8_6.aarch64.rpm",
+					"mutter-devel-0:3.32.2-64.el8_6.i686.rpm",
+					"mutter-devel-0:3.32.2-64.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

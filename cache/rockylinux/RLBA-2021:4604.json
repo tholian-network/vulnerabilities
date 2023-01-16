@@ -1,0 +1,40 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4604",
+		"synopsis": "httpd:2.4 bug fix update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for the httpd:2.4 module is now available for Rocky Linux 8, Rocky Linux 8.1 Extended Update Support, and 8.2 Extended Update Support.",
+		"description": "The httpd packages provide the Apache HTTP Server, a powerful, efficient, and extensible web server.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2021:4604",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4604",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mod_md-1:2.0.8-8.module+el8.5.0+695+1fa8055e.aarch64.rpm",
+					"mod_md-1:2.0.8-8.module+el8.5.0+695+1fa8055e.src.rpm",
+					"mod_md-1:2.0.8-8.module+el8.5.0+695+1fa8055e.x86_64.rpm",
+					"mod_md-debuginfo-1:2.0.8-8.module+el8.5.0+695+1fa8055e.aarch64.rpm",
+					"mod_md-debuginfo-1:2.0.8-8.module+el8.5.0+695+1fa8055e.x86_64.rpm",
+					"mod_md-debugsource-1:2.0.8-8.module+el8.5.0+695+1fa8055e.aarch64.rpm",
+					"mod_md-debugsource-1:2.0.8-8.module+el8.5.0+695+1fa8055e.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

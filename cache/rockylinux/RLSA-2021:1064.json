@@ -1,0 +1,92 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:1064",
+		"synopsis": "Moderate: virt:rhel and virt-devel:rhel security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the virt:rhel and virt-devel:rhel modules is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Kernel-based Virtual Machine (KVM) offers a full virtualization solution for Linux on numerous hardware platforms. The virt:rhel module contains packages which provide user-space components used to run virtual machines using KVM. The packages also provide APIs for managing and interacting with the virtualized systems.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1944075",
+				"description": "CVE-2021-20295 QEMU: Regression of CVE-2020-10756 fix in virt:rhel/qemu-kvm in Red Hat Enterprise Linux 8.3",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1944075"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-20295",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-20295.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-125"
+			}
+		],
+		"publishedAt": "2021-04-05T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libiscsi-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-0:1.18.0-8.module+el8.6.0+847+b490afdd.src.rpm",
+					"libiscsi-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-debugsource-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-debugsource-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-debugsource-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-devel-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-devel-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-devel-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-utils-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-utils-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-utils-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libiscsi-utils-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libiscsi-utils-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libiscsi-utils-debuginfo-0:1.18.0-8.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libvirt-dbus-0:1.3.0-2.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libvirt-dbus-0:1.3.0-2.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libvirt-dbus-0:1.3.0-2.module+el8.6.0+847+b490afdd.src.rpm",
+					"libvirt-dbus-0:1.3.0-2.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libvirt-dbus-debuginfo-0:1.3.0-2.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libvirt-dbus-debuginfo-0:1.3.0-2.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libvirt-dbus-debuginfo-0:1.3.0-2.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"libvirt-dbus-debugsource-0:1.3.0-2.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"libvirt-dbus-debugsource-0:1.3.0-2.module+el8.6.0+847+b490afdd.i686.rpm",
+					"libvirt-dbus-debugsource-0:1.3.0-2.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-0:0.2.8-12.module+el8.6.0+847+b490afdd.src.rpm",
+					"netcf-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-debugsource-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-debugsource-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-debugsource-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-devel-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-devel-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-devel-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-libs-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-libs-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-libs-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"netcf-libs-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.aarch64.rpm",
+					"netcf-libs-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.i686.rpm",
+					"netcf-libs-debuginfo-0:0.2.8-12.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"sgabios-1:0.20170427git-3.module+el8.6.0+847+b490afdd.i686.rpm",
+					"sgabios-1:0.20170427git-3.module+el8.6.0+847+b490afdd.src.rpm",
+					"sgabios-1:0.20170427git-3.module+el8.6.0+847+b490afdd.x86_64.rpm",
+					"sgabios-bin-1:0.20170427git-3.module+el8.6.0+847+b490afdd.noarch.rpm"
+				]
+			}
+		}
+	}
+}

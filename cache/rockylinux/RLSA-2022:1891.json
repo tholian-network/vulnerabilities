@@ -1,0 +1,56 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1891",
+		"synopsis": "Low: libpq security update",
+		"severity": "SEVERITY_LOW",
+		"topic": "An update for libpq is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The libpq package provides the PostgreSQL client library, which allows client programs to connect to PostgreSQL servers. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2022675",
+				"description": "CVE-2021-23222 postgresql: libpq processes unencrypted bytes from man-in-the-middle",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2022675"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-23222",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-23222.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "3.7",
+				"cwe": "CWE-522"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libpq-0:13.5-1.el8.aarch64.rpm",
+					"libpq-0:13.5-1.el8.i686.rpm",
+					"libpq-0:13.5-1.el8.src.rpm",
+					"libpq-0:13.5-1.el8.x86_64.rpm",
+					"libpq-debuginfo-0:13.5-1.el8.aarch64.rpm",
+					"libpq-debuginfo-0:13.5-1.el8.i686.rpm",
+					"libpq-debuginfo-0:13.5-1.el8.x86_64.rpm",
+					"libpq-debugsource-0:13.5-1.el8.aarch64.rpm",
+					"libpq-debugsource-0:13.5-1.el8.i686.rpm",
+					"libpq-debugsource-0:13.5-1.el8.x86_64.rpm",
+					"libpq-devel-0:13.5-1.el8.aarch64.rpm",
+					"libpq-devel-0:13.5-1.el8.i686.rpm",
+					"libpq-devel-0:13.5-1.el8.x86_64.rpm",
+					"libpq-devel-debuginfo-0:13.5-1.el8.aarch64.rpm",
+					"libpq-devel-debuginfo-0:13.5-1.el8.i686.rpm",
+					"libpq-devel-debuginfo-0:13.5-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

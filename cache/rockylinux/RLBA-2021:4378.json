@@ -1,0 +1,99 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4378",
+		"synopsis": "krb5 bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for krb5 is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1945679",
+				"description": "Creating tmp files for systemd on behalf of krb5 references legacy directory /var/run/ instead of /run",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1945679"
+			},
+			{
+				"ticket": "1956388",
+				"description": "[RFE] Include KCM_OP_GET_CRED_LIST",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1956388"
+			},
+			{
+				"ticket": "1964619",
+				"description": "Expose krb5 functions for serialization of credentials",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1964619"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4378",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4378",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"krb5-0:1.18.2-14.el8.src.rpm",
+					"krb5-debuginfo-0:1.18.2-14.el8.aarch64.rpm",
+					"krb5-debuginfo-0:1.18.2-14.el8.i686.rpm",
+					"krb5-debuginfo-0:1.18.2-14.el8.x86_64.rpm",
+					"krb5-debugsource-0:1.18.2-14.el8.aarch64.rpm",
+					"krb5-debugsource-0:1.18.2-14.el8.i686.rpm",
+					"krb5-debugsource-0:1.18.2-14.el8.x86_64.rpm",
+					"krb5-devel-0:1.18.2-14.el8.aarch64.rpm",
+					"krb5-devel-0:1.18.2-14.el8.i686.rpm",
+					"krb5-devel-0:1.18.2-14.el8.x86_64.rpm",
+					"krb5-devel-debuginfo-0:1.18.2-14.el8.aarch64.rpm",
+					"krb5-devel-debuginfo-0:1.18.2-14.el8.i686.rpm",
+					"krb5-devel-debuginfo-0:1.18.2-14.el8.x86_64.rpm",
+					"krb5-libs-0:1.18.2-14.el8.aarch64.rpm",
+					"krb5-libs-0:1.18.2-14.el8.i686.rpm",
+					"krb5-libs-0:1.18.2-14.el8.x86_64.rpm",
+					"krb5-libs-debuginfo-0:1.18.2-14.el8.aarch64.rpm",
+					"krb5-libs-debuginfo-0:1.18.2-14.el8.i686.rpm",
+					"krb5-libs-debuginfo-0:1.18.2-14.el8.x86_64.rpm",
+					"krb5-pkinit-0:1.18.2-14.el8.aarch64.rpm",
+					"krb5-pkinit-0:1.18.2-14.el8.i686.rpm",
+					"krb5-pkinit-0:1.18.2-14.el8.x86_64.rpm",
+					"krb5-pkinit-debuginfo-0:1.18.2-14.el8.aarch64.rpm",
+					"krb5-pkinit-debuginfo-0:1.18.2-14.el8.i686.rpm",
+					"krb5-pkinit-debuginfo-0:1.18.2-14.el8.x86_64.rpm",
+					"krb5-server-0:1.18.2-14.el8.aarch64.rpm",
+					"krb5-server-0:1.18.2-14.el8.i686.rpm",
+					"krb5-server-0:1.18.2-14.el8.x86_64.rpm",
+					"krb5-server-debuginfo-0:1.18.2-14.el8.aarch64.rpm",
+					"krb5-server-debuginfo-0:1.18.2-14.el8.i686.rpm",
+					"krb5-server-debuginfo-0:1.18.2-14.el8.x86_64.rpm",
+					"krb5-server-ldap-0:1.18.2-14.el8.aarch64.rpm",
+					"krb5-server-ldap-0:1.18.2-14.el8.i686.rpm",
+					"krb5-server-ldap-0:1.18.2-14.el8.x86_64.rpm",
+					"krb5-server-ldap-debuginfo-0:1.18.2-14.el8.aarch64.rpm",
+					"krb5-server-ldap-debuginfo-0:1.18.2-14.el8.i686.rpm",
+					"krb5-server-ldap-debuginfo-0:1.18.2-14.el8.x86_64.rpm",
+					"krb5-workstation-0:1.18.2-14.el8.aarch64.rpm",
+					"krb5-workstation-0:1.18.2-14.el8.x86_64.rpm",
+					"krb5-workstation-debuginfo-0:1.18.2-14.el8.aarch64.rpm",
+					"krb5-workstation-debuginfo-0:1.18.2-14.el8.x86_64.rpm",
+					"libkadm5-0:1.18.2-14.el8.aarch64.rpm",
+					"libkadm5-0:1.18.2-14.el8.i686.rpm",
+					"libkadm5-0:1.18.2-14.el8.x86_64.rpm",
+					"libkadm5-debuginfo-0:1.18.2-14.el8.aarch64.rpm",
+					"libkadm5-debuginfo-0:1.18.2-14.el8.i686.rpm",
+					"libkadm5-debuginfo-0:1.18.2-14.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

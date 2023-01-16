@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:8824",
+		"synopsis": "stalld bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for stalld is now available for Rocky Linux 8.6 Extended Update Support.",
+		"description": "The stalld package provides a mechanism used to prevent the starvation of operating system threads in a Linux system.\nBug fix(es) and Enhancement(s):",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2136560",
+				"description": "Rebase stalld to latest upstream version [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2136560"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:8824",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:8824",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2023-01-14T01:54:46.468116Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"stalld-0:1.17.1-1.el8_7.aarch64.rpm",
+					"stalld-0:1.17.1-1.el8_7.src.rpm",
+					"stalld-0:1.17.1-1.el8_7.x86_64.rpm",
+					"stalld-debuginfo-0:1.17.1-1.el8_7.aarch64.rpm",
+					"stalld-debuginfo-0:1.17.1-1.el8_7.x86_64.rpm",
+					"stalld-debugsource-0:1.17.1-1.el8_7.aarch64.rpm",
+					"stalld-debugsource-0:1.17.1-1.el8_7.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

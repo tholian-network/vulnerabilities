@@ -1,0 +1,89 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4217",
+		"synopsis": "stratis-cli bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for stratis-cli is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1707461",
+				"description": "stratisd tries to extremely grow thin metadata device on large disk",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1707461"
+			},
+			{
+				"ticket": "1735475",
+				"description": "[RFE] Dump Startis Configuration on Demand or in Debug",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1735475"
+			},
+			{
+				"ticket": "1927485",
+				"description": "Improve Stratis by adding Multi-threading",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1927485"
+			},
+			{
+				"ticket": "1931670",
+				"description": "Include Stratis-cli in RHEL 8.5",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1931670"
+			},
+			{
+				"ticket": "1931671",
+				"description": "Include Stratisd in RHEL 8.5",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1931671"
+			},
+			{
+				"ticket": "1972355",
+				"description": "Remove python-semantic_version from Stratis-cli requirements",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1972355"
+			},
+			{
+				"ticket": "1995916",
+				"description": "stratisd/simple test failed for plymouth-0.9.4-10.20200615git1e36e30.el8",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1995916"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4217",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4217",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"stratis-cli-0:2.4.2-1.el8.noarch.rpm",
+					"stratis-cli-0:2.4.2-1.el8.src.rpm",
+					"stratisd-0:2.4.2-2.el8.aarch64.rpm",
+					"stratisd-0:2.4.2-2.el8.src.rpm",
+					"stratisd-0:2.4.2-2.el8.x86_64.rpm",
+					"stratisd-debuginfo-0:2.4.2-2.el8.aarch64.rpm",
+					"stratisd-debuginfo-0:2.4.2-2.el8.x86_64.rpm",
+					"stratisd-debugsource-0:2.4.2-2.el8.aarch64.rpm",
+					"stratisd-debugsource-0:2.4.2-2.el8.x86_64.rpm",
+					"stratisd-dracut-0:2.4.2-2.el8.aarch64.rpm",
+					"stratisd-dracut-0:2.4.2-2.el8.x86_64.rpm",
+					"stratisd-dracut-debuginfo-0:2.4.2-2.el8.aarch64.rpm",
+					"stratisd-dracut-debuginfo-0:2.4.2-2.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

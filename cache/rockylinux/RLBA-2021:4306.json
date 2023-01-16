@@ -1,0 +1,44 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4306",
+		"synopsis": "nmap bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for nmap is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2021:4306",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4306",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"nmap-2:7.70-6.el8.aarch64.rpm",
+					"nmap-2:7.70-6.el8.src.rpm",
+					"nmap-2:7.70-6.el8.x86_64.rpm",
+					"nmap-debuginfo-2:7.70-6.el8.aarch64.rpm",
+					"nmap-debuginfo-2:7.70-6.el8.x86_64.rpm",
+					"nmap-debugsource-2:7.70-6.el8.aarch64.rpm",
+					"nmap-debugsource-2:7.70-6.el8.x86_64.rpm",
+					"nmap-ncat-2:7.70-6.el8.aarch64.rpm",
+					"nmap-ncat-2:7.70-6.el8.x86_64.rpm",
+					"nmap-ncat-debuginfo-2:7.70-6.el8.aarch64.rpm",
+					"nmap-ncat-debuginfo-2:7.70-6.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

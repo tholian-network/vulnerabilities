@@ -1,0 +1,66 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2125",
+		"synopsis": "sanlock bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for sanlock is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2065711",
+				"description": "sanlock lockspace stuck in 'ADD' for days",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2065711"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2125",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2125",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"python3-sanlock-0:3.8.4-3.el8.aarch64.rpm",
+					"python3-sanlock-0:3.8.4-3.el8.x86_64.rpm",
+					"python3-sanlock-debuginfo-0:3.8.4-3.el8.aarch64.rpm",
+					"python3-sanlock-debuginfo-0:3.8.4-3.el8.x86_64.rpm",
+					"sanlk-reset-0:3.8.4-3.el8.aarch64.rpm",
+					"sanlk-reset-0:3.8.4-3.el8.x86_64.rpm",
+					"sanlk-reset-debuginfo-0:3.8.4-3.el8.aarch64.rpm",
+					"sanlk-reset-debuginfo-0:3.8.4-3.el8.x86_64.rpm",
+					"sanlock-0:3.8.4-3.el8.aarch64.rpm",
+					"sanlock-0:3.8.4-3.el8.src.rpm",
+					"sanlock-0:3.8.4-3.el8.x86_64.rpm",
+					"sanlock-debuginfo-0:3.8.4-3.el8.aarch64.rpm",
+					"sanlock-debuginfo-0:3.8.4-3.el8.i686.rpm",
+					"sanlock-debuginfo-0:3.8.4-3.el8.x86_64.rpm",
+					"sanlock-debugsource-0:3.8.4-3.el8.aarch64.rpm",
+					"sanlock-debugsource-0:3.8.4-3.el8.i686.rpm",
+					"sanlock-debugsource-0:3.8.4-3.el8.x86_64.rpm",
+					"sanlock-devel-0:3.8.4-3.el8.aarch64.rpm",
+					"sanlock-devel-0:3.8.4-3.el8.i686.rpm",
+					"sanlock-devel-0:3.8.4-3.el8.x86_64.rpm",
+					"sanlock-lib-0:3.8.4-3.el8.aarch64.rpm",
+					"sanlock-lib-0:3.8.4-3.el8.i686.rpm",
+					"sanlock-lib-0:3.8.4-3.el8.x86_64.rpm",
+					"sanlock-lib-debuginfo-0:3.8.4-3.el8.aarch64.rpm",
+					"sanlock-lib-debuginfo-0:3.8.4-3.el8.i686.rpm",
+					"sanlock-lib-debuginfo-0:3.8.4-3.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

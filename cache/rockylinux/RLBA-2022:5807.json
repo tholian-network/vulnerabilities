@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5807",
+		"synopsis": "rng-tools bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for rng-tools is now available for Rocky Linux 8.",
+		"description": "The rng-tools packages contain random number generator user-space utilities, such as the rngd daemon.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2077035",
+				"description": "recent rng-tools updates to run udevadm --settle hang in container [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2077035"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:5807",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5807",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-08-02T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"rng-tools-0:6.14-6.git.b2b7934e.el8_6.aarch64.rpm",
+					"rng-tools-0:6.14-6.git.b2b7934e.el8_6.src.rpm",
+					"rng-tools-0:6.14-6.git.b2b7934e.el8_6.x86_64.rpm",
+					"rng-tools-debuginfo-0:6.14-6.git.b2b7934e.el8_6.aarch64.rpm",
+					"rng-tools-debuginfo-0:6.14-6.git.b2b7934e.el8_6.x86_64.rpm",
+					"rng-tools-debugsource-0:6.14-6.git.b2b7934e.el8_6.aarch64.rpm",
+					"rng-tools-debugsource-0:6.14-6.git.b2b7934e.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

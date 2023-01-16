@@ -1,0 +1,59 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:7120",
+		"synopsis": "motif bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for motif is now available for Rocky Linux 8.",
+		"description": "The motif packages include the Motif shared libraries needed to run applications which are dynamically linked against Motif, as well as MWM, the Motif Window Manager.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2074599",
+				"description": "Motif fixes for submenu hotkeys present in RHEL 7 are not observed in RHEL 8. [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2074599"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:7120",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:7120",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-11-07T19:38:52.854527Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"motif-0:2.3.4-17.el8_6.1.aarch64.rpm",
+					"motif-0:2.3.4-17.el8_6.1.i686.rpm",
+					"motif-0:2.3.4-17.el8_6.1.src.rpm",
+					"motif-0:2.3.4-17.el8_6.1.x86_64.rpm",
+					"motif-debuginfo-0:2.3.4-17.el8_6.1.aarch64.rpm",
+					"motif-debuginfo-0:2.3.4-17.el8_6.1.i686.rpm",
+					"motif-debuginfo-0:2.3.4-17.el8_6.1.x86_64.rpm",
+					"motif-debugsource-0:2.3.4-17.el8_6.1.aarch64.rpm",
+					"motif-debugsource-0:2.3.4-17.el8_6.1.i686.rpm",
+					"motif-debugsource-0:2.3.4-17.el8_6.1.x86_64.rpm",
+					"motif-devel-0:2.3.4-17.el8_6.1.aarch64.rpm",
+					"motif-devel-0:2.3.4-17.el8_6.1.i686.rpm",
+					"motif-devel-0:2.3.4-17.el8_6.1.x86_64.rpm",
+					"motif-devel-debuginfo-0:2.3.4-17.el8_6.1.aarch64.rpm",
+					"motif-devel-debuginfo-0:2.3.4-17.el8_6.1.i686.rpm",
+					"motif-devel-debuginfo-0:2.3.4-17.el8_6.1.x86_64.rpm",
+					"motif-static-0:2.3.4-17.el8_6.1.aarch64.rpm",
+					"motif-static-0:2.3.4-17.el8_6.1.i686.rpm",
+					"motif-static-0:2.3.4-17.el8_6.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

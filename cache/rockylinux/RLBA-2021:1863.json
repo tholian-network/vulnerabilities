@@ -1,0 +1,50 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1863",
+		"synopsis": "icedtea-web bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "Updated icedtea-web packages that fix several bugs and add various enhancements are now available.",
+		"description": "migrate icedtea-web to use alt-java special binary in our JDK8 packages instead of plain java",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1888633",
+				"description": "migrate icedtea-web to use alt-java special binary in our JDK8 packages instead of plain java [rhel-8]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1888633"
+			},
+			{
+				"ticket": "1900043",
+				"description": "[rebase] rebase ITW to 1.8",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1900043"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1863",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1863",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"icedtea-web-0:1.8.4-4.el8.aarch64.rpm",
+					"icedtea-web-0:1.8.4-4.el8.src.rpm",
+					"icedtea-web-0:1.8.4-4.el8.x86_64.rpm",
+					"icedtea-web-javadoc-0:1.8.4-4.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

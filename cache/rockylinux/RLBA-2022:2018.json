@@ -1,0 +1,96 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2018",
+		"synopsis": "perl bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for perl is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2014981",
+				"description": "redhat perl 5.26 leaking memory during regexp operations",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2014981"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2018",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2018",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"perl-4:5.26.3-421.el8.aarch64.rpm",
+					"perl-4:5.26.3-421.el8.src.rpm",
+					"perl-4:5.26.3-421.el8.x86_64.rpm",
+					"perl-Attribute-Handlers-0:0.99-421.el8.noarch.rpm",
+					"perl-debuginfo-4:5.26.3-421.el8.aarch64.rpm",
+					"perl-debuginfo-4:5.26.3-421.el8.i686.rpm",
+					"perl-debuginfo-4:5.26.3-421.el8.x86_64.rpm",
+					"perl-debugsource-4:5.26.3-421.el8.aarch64.rpm",
+					"perl-debugsource-4:5.26.3-421.el8.i686.rpm",
+					"perl-debugsource-4:5.26.3-421.el8.x86_64.rpm",
+					"perl-devel-4:5.26.3-421.el8.aarch64.rpm",
+					"perl-devel-4:5.26.3-421.el8.i686.rpm",
+					"perl-devel-4:5.26.3-421.el8.x86_64.rpm",
+					"perl-Devel-Peek-0:1.26-421.el8.aarch64.rpm",
+					"perl-Devel-Peek-0:1.26-421.el8.x86_64.rpm",
+					"perl-Devel-Peek-debuginfo-0:1.26-421.el8.aarch64.rpm",
+					"perl-Devel-Peek-debuginfo-0:1.26-421.el8.x86_64.rpm",
+					"perl-Devel-SelfStubber-0:1.06-421.el8.noarch.rpm",
+					"perl-Errno-0:1.28-421.el8.aarch64.rpm",
+					"perl-Errno-0:1.28-421.el8.x86_64.rpm",
+					"perl-ExtUtils-Embed-0:1.34-421.el8.noarch.rpm",
+					"perl-ExtUtils-Miniperl-0:1.06-421.el8.noarch.rpm",
+					"perl-interpreter-4:5.26.3-421.el8.aarch64.rpm",
+					"perl-interpreter-4:5.26.3-421.el8.x86_64.rpm",
+					"perl-interpreter-debuginfo-4:5.26.3-421.el8.aarch64.rpm",
+					"perl-interpreter-debuginfo-4:5.26.3-421.el8.x86_64.rpm",
+					"perl-IO-0:1.38-421.el8.aarch64.rpm",
+					"perl-IO-0:1.38-421.el8.x86_64.rpm",
+					"perl-IO-debuginfo-0:1.38-421.el8.aarch64.rpm",
+					"perl-IO-debuginfo-0:1.38-421.el8.x86_64.rpm",
+					"perl-IO-Zlib-1:1.10-421.el8.noarch.rpm",
+					"perl-libnetcfg-4:5.26.3-421.el8.noarch.rpm",
+					"perl-libs-4:5.26.3-421.el8.aarch64.rpm",
+					"perl-libs-4:5.26.3-421.el8.i686.rpm",
+					"perl-libs-4:5.26.3-421.el8.x86_64.rpm",
+					"perl-libs-debuginfo-4:5.26.3-421.el8.aarch64.rpm",
+					"perl-libs-debuginfo-4:5.26.3-421.el8.i686.rpm",
+					"perl-libs-debuginfo-4:5.26.3-421.el8.x86_64.rpm",
+					"perl-Locale-Maketext-Simple-1:0.21-421.el8.noarch.rpm",
+					"perl-macros-4:5.26.3-421.el8.aarch64.rpm",
+					"perl-macros-4:5.26.3-421.el8.x86_64.rpm",
+					"perl-Math-Complex-0:1.59-421.el8.noarch.rpm",
+					"perl-Memoize-0:1.03-421.el8.noarch.rpm",
+					"perl-Module-Loaded-1:0.08-421.el8.noarch.rpm",
+					"perl-Net-Ping-0:2.55-421.el8.noarch.rpm",
+					"perl-open-0:1.11-421.el8.noarch.rpm",
+					"perl-Pod-Html-0:1.22.02-421.el8.noarch.rpm",
+					"perl-SelfLoader-0:1.23-421.el8.noarch.rpm",
+					"perl-Test-0:1.30-421.el8.noarch.rpm",
+					"perl-tests-4:5.26.3-421.el8.aarch64.rpm",
+					"perl-tests-4:5.26.3-421.el8.x86_64.rpm",
+					"perl-Time-Piece-0:1.31-421.el8.aarch64.rpm",
+					"perl-Time-Piece-0:1.31-421.el8.x86_64.rpm",
+					"perl-Time-Piece-debuginfo-0:1.31-421.el8.aarch64.rpm",
+					"perl-Time-Piece-debuginfo-0:1.31-421.el8.x86_64.rpm",
+					"perl-utils-0:5.26.3-421.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

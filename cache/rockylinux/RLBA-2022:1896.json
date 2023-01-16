@@ -1,0 +1,312 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1896",
+		"synopsis": "rhel-system-roles bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for rhel-system-roles is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1897565",
+				"description": "[Network] RFE: Support ignoring default gateway retrieved by DHCP/IPv6-RA",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1897565"
+			},
+			{
+				"ticket": "1967321",
+				"description": "metrics role can't be re-run if the Grafana admin password has been changed",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1967321"
+			},
+			{
+				"ticket": "1974000",
+				"description": "linux-system-roles.selinux fails linit rules role-name and unnamed-task",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1974000"
+			},
+			{
+				"ticket": "1979714",
+				"description": "sshd - should detect FIPS mode and handle tasks correctly in FIPS mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1979714"
+			},
+			{
+				"ticket": "1985022",
+				"description": "NBDE client system role does not support servers with static IP addresses",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1985022"
+			},
+			{
+				"ticket": "1993311",
+				"description": "[RFE] support WPA3 Simultaneous Authentication of Equals(SAE)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1993311"
+			},
+			{
+				"ticket": "1993379",
+				"description": "[RFE] support wifi Enhanced Open (OWE)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1993379"
+			},
+			{
+				"ticket": "2005727",
+				"description": "Logging - Performance improvement",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2005727"
+			},
+			{
+				"ticket": "2006081",
+				"description": "Vendoring non-builtin modules for Ansible 2.11+",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2006081"
+			},
+			{
+				"ticket": "2006231",
+				"description": "Replace `# {{ ansible_managed }}` with `{{ ansible_managed | comment }}`",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2006231"
+			},
+			{
+				"ticket": "2008931",
+				"description": "[RFE] Add more bonding options to rhel-system-roles.network",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2008931"
+			},
+			{
+				"ticket": "2010327",
+				"description": "[RFE]  logging - Add user and password",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2010327"
+			},
+			{
+				"ticket": "2011808",
+				"description": "RHEL System Roles Automation Hub site should link to downstream/Red Hat links",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2011808"
+			},
+			{
+				"ticket": "2012316",
+				"description": "Support ansible-core 2.11+",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2012316"
+			},
+			{
+				"ticket": "2016511",
+				"description": "RFE: Add support for cached volumes (lvm-only)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016511"
+			},
+			{
+				"ticket": "2016514",
+				"description": "RFE: Add support for RAID volumes (lvm-only)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016514"
+			},
+			{
+				"ticket": "2021661",
+				"description": "Please include \"cockpit\" role",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2021661"
+			},
+			{
+				"ticket": "2021678",
+				"description": "logging role missing quotes for immark module interval value",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2021678"
+			},
+			{
+				"ticket": "2021682",
+				"description": "add regenerate-all to the dracut command",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2021682"
+			},
+			{
+				"ticket": "2021683",
+				"description": "certificates: \"group\" option keeps certificates inaccessible to the group",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2021683"
+			},
+			{
+				"ticket": "2021685",
+				"description": "Update network system role to reflect that network teaming is deprecated in RHEL 9",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2021685"
+			},
+			{
+				"ticket": "2022458",
+				"description": "[RFE] - Firewall RHEL System Role should be able to set default zone",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2022458"
+			},
+			{
+				"ticket": "2029605",
+				"description": "kdump: support reboot required and reboot ok",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2029605"
+			},
+			{
+				"ticket": "2029614",
+				"description": "ssh/tests_all_options.yml: \"assertion\": \"'StdinNull yes' in config.content | b64decode \", failure",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2029614"
+			},
+			{
+				"ticket": "2031521",
+				"description": "RFE: Support Routing Tables in static routes in Network Role",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2031521"
+			},
+			{
+				"ticket": "2034908",
+				"description": "Failure to activate connection: nm-manager-error-quark: No suitable device found for this connection",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2034908"
+			},
+			{
+				"ticket": "2040038",
+				"description": "sshd system role does not add ansible_manged variable contents to /etc/ssh/sshd_config file",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2040038"
+			},
+			{
+				"ticket": "2040812",
+				"description": "Logging role \"logging_purge_confs\" option not properly working",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2040812"
+			},
+			{
+				"ticket": "2041627",
+				"description": "Set DNS search setting only for enabled IP protocols",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2041627"
+			},
+			{
+				"ticket": "2041635",
+				"description": "[RFE] ha_cluster - Support for creating resource constraints (Location, Ordering, etc.)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2041635"
+			},
+			{
+				"ticket": "2042541",
+				"description": "ensure zone exists and can be used in subsequent operations",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2042541"
+			},
+			{
+				"ticket": "2044657",
+				"description": "Postfix RHEL System Role should provide the ability to replace config and reset configuration back to default",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2044657"
+			},
+			{
+				"ticket": "2047504",
+				"description": "kernel_settings role should use ansible_managed in its configuration file",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2047504"
+			},
+			{
+				"ticket": "2048057",
+				"description": "incorrectly missing netaddr on a controller",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2048057"
+			},
+			{
+				"ticket": "2049747",
+				"description": "ha_cluster - set permissions for haclient group",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2049747"
+			},
+			{
+				"ticket": "2054363",
+				"description": "tlog - consistently use ansible_managed in configuration files managed by role",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2054363"
+			},
+			{
+				"ticket": "2054364",
+				"description": "certificate - should consistently use ansible_managed in hook scripts",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2054364"
+			},
+			{
+				"ticket": "2054365",
+				"description": "vpn - consistently use ansible_managed in configuration files managed by role",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2054365"
+			},
+			{
+				"ticket": "2057172",
+				"description": "ensure target changes take effect immediately",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2057172"
+			},
+			{
+				"ticket": "2057645",
+				"description": "metrics - consistently use ansible_managed in configuration files managed by role",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2057645"
+			},
+			{
+				"ticket": "2057656",
+				"description": "network - consistently use ansible_managed in configuration files managed by role",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2057656"
+			},
+			{
+				"ticket": "2057661",
+				"description": "postfix - consistently use ansible_managed in configuration files managed by role",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2057661"
+			},
+			{
+				"ticket": "2058655",
+				"description": "Metrics role, with \"metrics_from_mssql\" option does not configure /var/lib/pcp/pmdas/mssql/mssql.conf on first run",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2058655"
+			},
+			{
+				"ticket": "2058772",
+				"description": "kernel_settings error configobj not found on RHEL 8.6 managed hosts",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2058772"
+			},
+			{
+				"ticket": "2064388",
+				"description": "bond: fix typo in supporting the infiniband ports in active-backup mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064388"
+			},
+			{
+				"ticket": "2064396",
+				"description": "pytest failed when running with nm providers in the rhel-8.5 beaker machine",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064396"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1896",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1896",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"rhel-system-roles-0:1.16.2-1.el8_6.3.noarch.rpm",
+					"rhel-system-roles-0:1.16.2-1.el8_6.3.src.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,102 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:1600",
+		"synopsis": "Moderate: opensc security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for opensc is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The OpenSC set of libraries and utilities provides support for working with smart cards. OpenSC focuses on cards that support cryptographic operations and enables their use for authentication, mail encryption, or digital signatures.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1830901",
+				"description": "pkcs11-tool --login --change-pin gives error: PKCS11 function C_SetPIN failed: rv = CKR_USER_NOT_LOGGED_IN (0x101)",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1830901"
+			},
+			{
+				"ticket": "1877973",
+				"description": "smart card pkcs11 token field with additional padding",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1877973"
+			},
+			{
+				"ticket": "1885947",
+				"description": "CVE-2020-26570 opensc: heap-based buffer overflow in sc_oberthur_read_file",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1885947"
+			},
+			{
+				"ticket": "1885950",
+				"description": "CVE-2020-26571 opensc: stack-based buffer overflow in sc_pkcs15emu_gemsafeGPK_init",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1885950"
+			},
+			{
+				"ticket": "1885954",
+				"description": "CVE-2020-26572 opensc: stack-based buffer overflow in tcos_decipher",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1885954"
+			},
+			{
+				"ticket": "1892810",
+				"description": "Enable file caching by default",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1892810"
+			},
+			{
+				"ticket": "1895401",
+				"description": "opensc invokes calloc with nmemb*size=0",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1895401"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-26570",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-26570.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:P/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "6.4",
+				"cwe": "CWE-122-\u003eCWE-787"
+			},
+			{
+				"name": "CVE-2020-26571",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-26571.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:P/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:H",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-121-\u003eCWE-787"
+			},
+			{
+				"name": "CVE-2020-26572",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-26572.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:P/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "6.4",
+				"cwe": "CWE-121-\u003eCWE-787"
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"opensc-0:0.20.0-4.el8.aarch64.rpm",
+					"opensc-0:0.20.0-4.el8.i686.rpm",
+					"opensc-0:0.20.0-4.el8.src.rpm",
+					"opensc-0:0.20.0-4.el8.x86_64.rpm",
+					"opensc-debuginfo-0:0.20.0-4.el8.aarch64.rpm",
+					"opensc-debuginfo-0:0.20.0-4.el8.i686.rpm",
+					"opensc-debuginfo-0:0.20.0-4.el8.x86_64.rpm",
+					"opensc-debugsource-0:0.20.0-4.el8.aarch64.rpm",
+					"opensc-debugsource-0:0.20.0-4.el8.i686.rpm",
+					"opensc-debugsource-0:0.20.0-4.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

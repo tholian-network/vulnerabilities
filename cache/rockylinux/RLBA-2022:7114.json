@@ -1,0 +1,93 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:7114",
+		"synopsis": "systemd update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for systemd is now available for Rocky Linux 8.",
+		"description": "The systemd packages contain systemd, a system and service manager for Linux, compatible with the SysV and LSB init scripts. It provides aggressive parallelism capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, and keeps track of processes using Linux cgroups. In addition, it supports snapshotting and restoring of the system state, maintains mount and automount points, and implements an elaborate transactional dependency-based service control logic. It can also work as a drop-in replacement for sysvinit.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2094712",
+				"description": "longer mount points cause systemd invalid argument messages [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2094712"
+			},
+			{
+				"ticket": "2123801",
+				"description": "systemd path unit fails when triggered unit conditions not met [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2123801"
+			},
+			{
+				"ticket": "2127171",
+				"description": "ShutdownWatchdogSec value is not taken into account on reboot [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2127171"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:7114",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:7114",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-11-07T19:38:35.880206Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"systemd-0:239-58.el8_6.8.aarch64.rpm",
+					"systemd-0:239-58.el8_6.8.i686.rpm",
+					"systemd-0:239-58.el8_6.8.src.rpm",
+					"systemd-0:239-58.el8_6.8.x86_64.rpm",
+					"systemd-container-0:239-58.el8_6.8.aarch64.rpm",
+					"systemd-container-0:239-58.el8_6.8.i686.rpm",
+					"systemd-container-0:239-58.el8_6.8.x86_64.rpm",
+					"systemd-container-debuginfo-0:239-58.el8_6.8.aarch64.rpm",
+					"systemd-container-debuginfo-0:239-58.el8_6.8.i686.rpm",
+					"systemd-container-debuginfo-0:239-58.el8_6.8.x86_64.rpm",
+					"systemd-debuginfo-0:239-58.el8_6.8.aarch64.rpm",
+					"systemd-debuginfo-0:239-58.el8_6.8.i686.rpm",
+					"systemd-debuginfo-0:239-58.el8_6.8.x86_64.rpm",
+					"systemd-debugsource-0:239-58.el8_6.8.aarch64.rpm",
+					"systemd-debugsource-0:239-58.el8_6.8.i686.rpm",
+					"systemd-debugsource-0:239-58.el8_6.8.x86_64.rpm",
+					"systemd-devel-0:239-58.el8_6.8.aarch64.rpm",
+					"systemd-devel-0:239-58.el8_6.8.i686.rpm",
+					"systemd-devel-0:239-58.el8_6.8.x86_64.rpm",
+					"systemd-journal-remote-0:239-58.el8_6.8.aarch64.rpm",
+					"systemd-journal-remote-0:239-58.el8_6.8.x86_64.rpm",
+					"systemd-journal-remote-debuginfo-0:239-58.el8_6.8.aarch64.rpm",
+					"systemd-journal-remote-debuginfo-0:239-58.el8_6.8.x86_64.rpm",
+					"systemd-libs-0:239-58.el8_6.8.aarch64.rpm",
+					"systemd-libs-0:239-58.el8_6.8.i686.rpm",
+					"systemd-libs-0:239-58.el8_6.8.x86_64.rpm",
+					"systemd-libs-debuginfo-0:239-58.el8_6.8.aarch64.rpm",
+					"systemd-libs-debuginfo-0:239-58.el8_6.8.i686.rpm",
+					"systemd-libs-debuginfo-0:239-58.el8_6.8.x86_64.rpm",
+					"systemd-pam-0:239-58.el8_6.8.aarch64.rpm",
+					"systemd-pam-0:239-58.el8_6.8.x86_64.rpm",
+					"systemd-pam-debuginfo-0:239-58.el8_6.8.aarch64.rpm",
+					"systemd-pam-debuginfo-0:239-58.el8_6.8.x86_64.rpm",
+					"systemd-tests-0:239-58.el8_6.8.aarch64.rpm",
+					"systemd-tests-0:239-58.el8_6.8.x86_64.rpm",
+					"systemd-tests-debuginfo-0:239-58.el8_6.8.aarch64.rpm",
+					"systemd-tests-debuginfo-0:239-58.el8_6.8.x86_64.rpm",
+					"systemd-udev-0:239-58.el8_6.8.aarch64.rpm",
+					"systemd-udev-0:239-58.el8_6.8.x86_64.rpm",
+					"systemd-udev-debuginfo-0:239-58.el8_6.8.aarch64.rpm",
+					"systemd-udev-debuginfo-0:239-58.el8_6.8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

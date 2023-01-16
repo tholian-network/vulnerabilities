@@ -1,0 +1,172 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:2587",
+		"synopsis": "Moderate: ruby:2.5 security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the ruby:2.5 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Ruby is an extensible, interpreted, object-oriented, scripting language. It has features to process text files and to perform system management tasks.\nThe following packages have been upgraded to a later upstream version: ruby (2.5.9). (BZ#1952626)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1773728",
+				"description": "CVE-2019-16201 ruby: Regular expression denial of service vulnerability of WEBrick's Digest authentication",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1773728"
+			},
+			{
+				"ticket": "1789407",
+				"description": "CVE-2019-15845 ruby: NUL injection vulnerability of File.fnmatch and File.fnmatch?",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1789407"
+			},
+			{
+				"ticket": "1789556",
+				"description": "CVE-2019-16254 ruby: HTTP response splitting in WEBrick",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1789556"
+			},
+			{
+				"ticket": "1793683",
+				"description": "CVE-2019-16255 ruby: Code injection via command argument of Shell#test / Shell#[]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1793683"
+			},
+			{
+				"ticket": "1827500",
+				"description": "CVE-2020-10663 rubygem-json: Unsafe object creation vulnerability in JSON",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1827500"
+			},
+			{
+				"ticket": "1833291",
+				"description": "CVE-2020-10933 ruby: BasicSocket#read_nonblock method leads to information disclosure",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1833291"
+			},
+			{
+				"ticket": "1883623",
+				"description": "CVE-2020-25613 ruby: Potential HTTP request smuggling in WEBrick",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1883623"
+			},
+			{
+				"ticket": "1947526",
+				"description": "CVE-2021-28965 ruby: XML round-trip vulnerability in REXML",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1947526"
+			},
+			{
+				"ticket": "1952626",
+				"description": "Rebase to the latest Ruby 2.5 point release [rhel-8] [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1952626"
+			},
+			{
+				"ticket": "1955010",
+				"description": "Resolv::DNS: ruby:2.5/ruby: timeouts if multiple IPv6 name servers are given and address contains leading zero [rhel-8] [rhel-8.4.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1955010"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2019-15845",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2019-15845.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-626-\u003eCWE-41"
+			},
+			{
+				"name": "CVE-2019-16201",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2019-16201.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-400"
+			},
+			{
+				"name": "CVE-2019-16254",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2019-16254.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-113"
+			},
+			{
+				"name": "CVE-2019-16255",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2019-16255.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.1",
+				"cwe": "CWE-94"
+			},
+			{
+				"name": "CVE-2020-10663",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-10663.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+				"cvss3BaseScore": "7.3",
+				"cwe": "CWE-20-\u003eCWE-94"
+			},
+			{
+				"name": "CVE-2020-10933",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-10933.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-805-\u003eCWE-200"
+			},
+			{
+				"name": "CVE-2020-25613",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-25613.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-444"
+			},
+			{
+				"name": "CVE-2021-28965",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-28965.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-611"
+			}
+		],
+		"publishedAt": "2021-06-29T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"rubygem-abrt-0:0.3.0-4.module+el8.5.0+739+43897a5e.noarch.rpm",
+					"rubygem-abrt-0:0.3.0-4.module+el8.5.0+739+43897a5e.src.rpm",
+					"rubygem-abrt-doc-0:0.3.0-4.module+el8.5.0+739+43897a5e.noarch.rpm",
+					"rubygem-bson-0:4.3.0-2.module+el8.4.0+592+03ff458a.aarch64.rpm",
+					"rubygem-bson-0:4.3.0-2.module+el8.4.0+592+03ff458a.src.rpm",
+					"rubygem-bson-0:4.3.0-2.module+el8.4.0+592+03ff458a.x86_64.rpm",
+					"rubygem-bson-debuginfo-0:4.3.0-2.module+el8.4.0+592+03ff458a.aarch64.rpm",
+					"rubygem-bson-debuginfo-0:4.3.0-2.module+el8.4.0+592+03ff458a.x86_64.rpm",
+					"rubygem-bson-debugsource-0:4.3.0-2.module+el8.4.0+592+03ff458a.aarch64.rpm",
+					"rubygem-bson-debugsource-0:4.3.0-2.module+el8.4.0+592+03ff458a.x86_64.rpm",
+					"rubygem-bson-doc-0:4.3.0-2.module+el8.4.0+592+03ff458a.noarch.rpm",
+					"rubygem-mongo-0:2.5.1-2.module+el8.4.0+592+03ff458a.noarch.rpm",
+					"rubygem-mongo-0:2.5.1-2.module+el8.4.0+592+03ff458a.src.rpm",
+					"rubygem-mongo-doc-0:2.5.1-2.module+el8.4.0+592+03ff458a.noarch.rpm",
+					"rubygem-mysql2-0:0.4.10-4.module+el8.5.0+739+43897a5e.aarch64.rpm",
+					"rubygem-mysql2-0:0.4.10-4.module+el8.5.0+739+43897a5e.src.rpm",
+					"rubygem-mysql2-0:0.4.10-4.module+el8.5.0+739+43897a5e.x86_64.rpm",
+					"rubygem-mysql2-debuginfo-0:0.4.10-4.module+el8.5.0+739+43897a5e.aarch64.rpm",
+					"rubygem-mysql2-debuginfo-0:0.4.10-4.module+el8.5.0+739+43897a5e.x86_64.rpm",
+					"rubygem-mysql2-debugsource-0:0.4.10-4.module+el8.5.0+739+43897a5e.aarch64.rpm",
+					"rubygem-mysql2-debugsource-0:0.4.10-4.module+el8.5.0+739+43897a5e.x86_64.rpm",
+					"rubygem-mysql2-doc-0:0.4.10-4.module+el8.5.0+739+43897a5e.noarch.rpm"
+				]
+			}
+		}
+	}
+}

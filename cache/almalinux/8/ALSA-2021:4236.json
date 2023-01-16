@@ -1,0 +1,45 @@
+{
+	"updateinfo_id": "ALSA-2021:4236",
+	"fromstr": "packager@almalinux.org",
+	"title": "Low: tcpdump security and bug fix update",
+	"type": "security",
+	"release": "0",
+	"version": "2",
+	"status": "final",
+	"severity": "Low",
+	"summary": "An update for tcpdump is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+	"pushcount": "4",
+	"pkglist": {
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"packages": [
+			{
+				"src": "tcpdump-4.9.3-2.el8.src.rpm",
+				"name": "tcpdump",
+				"epoch": "14",
+				"version": "4.9.3",
+				"release": "2.el8",
+				"arch": "x86_64",
+				"filename": "tcpdump-4.9.3-2.el8.x86_64.rpm",
+				"sum": "7d6765e47ea345b094a1dd09ff6224ac3601e0bd903c78886326902925ef3659",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "The tcpdump packages contain the tcpdump utility for monitoring network traffic. The tcpdump utility can capture and display the packet headers on a particular network interface or on all interfaces.\n\nSecurity Fix(es):\n\n* tcpdump: ppp decapsulator can be convinced to allocate a large amount of memory (CVE-2020-8037)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
+	"references": [
+		{
+			"id": "CVE-2020-8037",
+			"title": "CVE-2020-8037",
+			"type": "cve",
+			"href": "https://vulners.com/cve/CVE-2020-8037"
+		}
+	],
+	"issued_date": {
+		"$date": 1636447722000
+	},
+	"updated_date": {
+		"$date": 1636712456000
+	}
+}

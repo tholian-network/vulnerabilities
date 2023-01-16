@@ -1,0 +1,157 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1900",
+		"synopsis": "scap-security-guide bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for scap-security-guide is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1884687",
+				"description": "Openscap protection profile rules for rhel 8 are always notchecked.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1884687"
+			},
+			{
+				"ticket": "1914849",
+				"description": "Rule accounts_passwords_pam_faillock_enforce_local fails to remediate",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1914849"
+			},
+			{
+				"ticket": "1956972",
+				"description": "[RHEL8/SCAP/RFE] Align SCAP pam_faillock with recommendation of pam_faillock manpage to use failock.conf",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1956972"
+			},
+			{
+				"ticket": "1983061",
+				"description": "The rules CCE-80763-6 and CCE-83496-0 should not be there in RHEL CIS compliance policy",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1983061"
+			},
+			{
+				"ticket": "1993826",
+				"description": "content_rule_audit_basic_configuration enforces using default buffer size (8192) for audit, which isn't always suitable on busy systems",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1993826"
+			},
+			{
+				"ticket": "2000264",
+				"description": "oscap scans for xccdf_org.ssgproject.content_profile_ospp profile incorrectly flags 11-loginuid.rules and 30-ospp-v42.rules as altered if 10-base-config.rules is changed",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2000264"
+			},
+			{
+				"ticket": "2002719",
+				"description": "[Regression] Cannot accept Licence due to USB keyboard and mouse being blocked (ISM profile) [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2002719"
+			},
+			{
+				"ticket": "2002850",
+				"description": "The CIS profile sets /etc/ssh/*key to 640 which prevents sshd from starting",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2002850"
+			},
+			{
+				"ticket": "2013159",
+				"description": "rsyslog_encrypt_offload_* rules fail after ansible remediation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2013159"
+			},
+			{
+				"ticket": "2014485",
+				"description": "Rebase scap-security-guide in Red Hat Enterprise Linux 8.6 to the latest upstream version",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2014485"
+			},
+			{
+				"ticket": "2021802",
+				"description": "[RFE] RHV hypervisors hardening profile based on DISA STIG profile",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2021802"
+			},
+			{
+				"ticket": "2023569",
+				"description": "Remediations for scan with xccdf_org.ssgproject.content_profile_ism_o do not actually remediate failed test results",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2023569"
+			},
+			{
+				"ticket": "2026301",
+				"description": "Cannot remediate Configure Time Service Maxpoll Interval",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2026301"
+			},
+			{
+				"ticket": "2028428",
+				"description": "Update source of CVE data in data stream",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028428"
+			},
+			{
+				"ticket": "2030966",
+				"description": "[BZ] [RHEL 8.X] Bash scripts for remediations on grub2_slub_debug and poisoning doesn't work on RHEL 8 as expected.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2030966"
+			},
+			{
+				"ticket": "2049555",
+				"description": "Update RHEL8 DISA STIG profile to V1R5",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2049555"
+			},
+			{
+				"ticket": "2053587",
+				"description": "Profile ANSSI Enhanced is missing the rule selinux_state",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2053587"
+			},
+			{
+				"ticket": "2055149",
+				"description": "Add krb5-workstation to ignored for RHV",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2055149"
+			},
+			{
+				"ticket": "2055860",
+				"description": "configure_bashrc_exec_tmux now errors during remediation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2055860"
+			},
+			{
+				"ticket": "2058033",
+				"description": "ANSSI kickstart doesn't provide enough space for /usr",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2058033"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1900",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1900",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"scap-security-guide-0:0.1.60-7.el8.rocky.0.3.noarch.rpm",
+					"scap-security-guide-0:0.1.60-7.el8.rocky.0.3.src.rpm",
+					"scap-security-guide-doc-0:0.1.60-7.el8.rocky.0.3.noarch.rpm"
+				]
+			}
+		}
+	}
+}

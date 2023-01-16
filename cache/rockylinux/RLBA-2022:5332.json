@@ -1,0 +1,43 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5332",
+		"synopsis": "scap-security-guide bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for scap-security-guide is now available for Rocky Linux 8.",
+		"description": "The scap-security-guide project provides a guide for configuration of the system from the final system\u0026#39;s security point of view. The guidance is specified in the Security Content Automation Protocol (SCAP) format and constitutes a catalog of practical hardening advice, linked to government requirements where applicable. The project bridges the gap between generalized policy requirements and specific implementation guidelines.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2082556",
+				"description": "Update RHEL8 DISA STIG profile to V1R6 [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2082556"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:5332",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5332",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"scap-security-guide-0:0.1.60-9.el8_6.rocky.0.3.noarch.rpm",
+					"scap-security-guide-0:0.1.60-9.el8_6.rocky.0.3.src.rpm",
+					"scap-security-guide-doc-0:0.1.60-9.el8_6.rocky.0.3.noarch.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4328",
+		"synopsis": "scrub bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for scrub is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1920252",
+				"description": "scrub command fails when directed at symlink to block device",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1920252"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4328",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4328",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"scrub-0:2.5.2-16.el8.aarch64.rpm",
+					"scrub-0:2.5.2-16.el8.src.rpm",
+					"scrub-0:2.5.2-16.el8.x86_64.rpm",
+					"scrub-debuginfo-0:2.5.2-16.el8.aarch64.rpm",
+					"scrub-debuginfo-0:2.5.2-16.el8.x86_64.rpm",
+					"scrub-debugsource-0:2.5.2-16.el8.aarch64.rpm",
+					"scrub-debugsource-0:2.5.2-16.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

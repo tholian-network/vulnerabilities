@@ -1,0 +1,78 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2049",
+		"synopsis": "iproute bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for iproute is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1989591",
+				"description": "invalid json output from tc filter",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1989591"
+			},
+			{
+				"ticket": "2009640",
+				"description": "failed loading xdp program in netns [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2009640"
+			},
+			{
+				"ticket": "2016061",
+				"description": "Rebase iproute to version 5.15",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2016061"
+			},
+			{
+				"ticket": "2036880",
+				"description": "backport vdpa tool for mac and mtu setting",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2036880"
+			},
+			{
+				"ticket": "2056827",
+				"description": "backport vdpa tool for mq setting to rhel8.6",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2056827"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2049",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2049",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"iproute-0:5.15.0-4.el8_6.1.aarch64.rpm",
+					"iproute-0:5.15.0-4.el8_6.1.src.rpm",
+					"iproute-0:5.15.0-4.el8_6.1.x86_64.rpm",
+					"iproute-debuginfo-0:5.15.0-4.el8_6.1.aarch64.rpm",
+					"iproute-debuginfo-0:5.15.0-4.el8_6.1.x86_64.rpm",
+					"iproute-debugsource-0:5.15.0-4.el8_6.1.aarch64.rpm",
+					"iproute-debugsource-0:5.15.0-4.el8_6.1.x86_64.rpm",
+					"iproute-devel-0:5.15.0-4.el8_6.1.aarch64.rpm",
+					"iproute-devel-0:5.15.0-4.el8_6.1.i686.rpm",
+					"iproute-devel-0:5.15.0-4.el8_6.1.x86_64.rpm",
+					"iproute-tc-0:5.15.0-4.el8_6.1.aarch64.rpm",
+					"iproute-tc-0:5.15.0-4.el8_6.1.x86_64.rpm",
+					"iproute-tc-debuginfo-0:5.15.0-4.el8_6.1.aarch64.rpm",
+					"iproute-tc-debuginfo-0:5.15.0-4.el8_6.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

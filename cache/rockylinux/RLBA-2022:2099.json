@@ -1,0 +1,58 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2099",
+		"synopsis": "sysfsutils bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for sysfsutils is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2046426",
+				"description": "sysfsutils needs to be rebuilt for rhel-8.6, no functional changes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2046426"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2099",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2099",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libsysfs-0:2.1.0-25.el8.aarch64.rpm",
+					"libsysfs-0:2.1.0-25.el8.i686.rpm",
+					"libsysfs-0:2.1.0-25.el8.x86_64.rpm",
+					"libsysfs-debuginfo-0:2.1.0-25.el8.aarch64.rpm",
+					"libsysfs-debuginfo-0:2.1.0-25.el8.i686.rpm",
+					"libsysfs-debuginfo-0:2.1.0-25.el8.x86_64.rpm",
+					"libsysfs-devel-0:2.1.0-25.el8.aarch64.rpm",
+					"libsysfs-devel-0:2.1.0-25.el8.i686.rpm",
+					"libsysfs-devel-0:2.1.0-25.el8.x86_64.rpm",
+					"sysfsutils-0:2.1.0-25.el8.aarch64.rpm",
+					"sysfsutils-0:2.1.0-25.el8.src.rpm",
+					"sysfsutils-0:2.1.0-25.el8.x86_64.rpm",
+					"sysfsutils-debuginfo-0:2.1.0-25.el8.aarch64.rpm",
+					"sysfsutils-debuginfo-0:2.1.0-25.el8.i686.rpm",
+					"sysfsutils-debuginfo-0:2.1.0-25.el8.x86_64.rpm",
+					"sysfsutils-debugsource-0:2.1.0-25.el8.aarch64.rpm",
+					"sysfsutils-debugsource-0:2.1.0-25.el8.i686.rpm",
+					"sysfsutils-debugsource-0:2.1.0-25.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

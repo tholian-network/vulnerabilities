@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:1869",
+		"synopsis": "new module: postgresql:13",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "A new postgresql:13 module is now available for Rocky Linux 8.",
+		"description": "PostgreSQL is an advanced object-relational database management system (DBMS).\nThis enhancement update adds the postgresql:13 module to Rocky Linux 8. (BZ#1855776)\nFor detailed information on changes in this release, see the Rocky Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHEA-2021:1869",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:1869",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"pgaudit-0:1.5.0-1.module+el8.5.0+684+c3892ef9.aarch64.rpm",
+					"pgaudit-0:1.5.0-1.module+el8.5.0+684+c3892ef9.src.rpm",
+					"pgaudit-0:1.5.0-1.module+el8.5.0+684+c3892ef9.x86_64.rpm",
+					"pgaudit-debuginfo-0:1.5.0-1.module+el8.5.0+684+c3892ef9.aarch64.rpm",
+					"pgaudit-debuginfo-0:1.5.0-1.module+el8.5.0+684+c3892ef9.x86_64.rpm",
+					"pgaudit-debugsource-0:1.5.0-1.module+el8.5.0+684+c3892ef9.aarch64.rpm",
+					"pgaudit-debugsource-0:1.5.0-1.module+el8.5.0+684+c3892ef9.x86_64.rpm",
+					"postgres-decoderbufs-0:0.10.0-2.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"postgres-decoderbufs-0:0.10.0-2.module+el8.5.0+686+20453ecc.src.rpm",
+					"postgres-decoderbufs-0:0.10.0-2.module+el8.5.0+686+20453ecc.x86_64.rpm",
+					"postgres-decoderbufs-debuginfo-0:0.10.0-2.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"postgres-decoderbufs-debuginfo-0:0.10.0-2.module+el8.5.0+686+20453ecc.x86_64.rpm",
+					"postgres-decoderbufs-debugsource-0:0.10.0-2.module+el8.5.0+686+20453ecc.aarch64.rpm",
+					"postgres-decoderbufs-debugsource-0:0.10.0-2.module+el8.5.0+686+20453ecc.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

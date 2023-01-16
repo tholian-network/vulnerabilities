@@ -1,0 +1,77 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1778",
+		"synopsis": "frr bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for frr is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1917269",
+				"description": "vtysh running-config output not showing bgp ttl-security hops option",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1917269"
+			},
+			{
+				"ticket": "1979426",
+				"description": "FRR: Unable to configure OSPF  in multi-instance mode",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1979426"
+			},
+			{
+				"ticket": "2020878",
+				"description": "frr ospfd show ip ospf interface does not show designated router info",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2020878"
+			},
+			{
+				"ticket": "2021819",
+				"description": "Please rebuild with json-c-0.13.1-3",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2021819"
+			},
+			{
+				"ticket": "2029958",
+				"description": "FRR reloader generating invalid BFD configurations, exits with error",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2029958"
+			},
+			{
+				"ticket": "2034328",
+				"description": "Bfdd crash in metallb CI",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2034328"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1778",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1778",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"frr-0:7.5-11.el8.aarch64.rpm",
+					"frr-0:7.5-11.el8.src.rpm",
+					"frr-0:7.5-11.el8.x86_64.rpm",
+					"frr-debuginfo-0:7.5-11.el8.aarch64.rpm",
+					"frr-debuginfo-0:7.5-11.el8.x86_64.rpm",
+					"frr-debugsource-0:7.5-11.el8.aarch64.rpm",
+					"frr-debugsource-0:7.5-11.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:6458",
+		"synopsis": "iproute bug fix and enhacement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for iproute is now available for Rocky Linux 8.",
+		"description": "The iproute packages contain networking utilities, such as ip and rtmon, designed to use the advanced networking capabilities of the Linux kernel.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2099364",
+				"description": "Fix buffer overflow on large labels [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2099364"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:6458",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:6458",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-09-13T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"iproute-0:5.15.0-4.el8_6.1.aarch64.rpm",
+					"iproute-0:5.15.0-4.el8_6.1.src.rpm",
+					"iproute-0:5.15.0-4.el8_6.1.x86_64.rpm",
+					"iproute-debuginfo-0:5.15.0-4.el8_6.1.aarch64.rpm",
+					"iproute-debuginfo-0:5.15.0-4.el8_6.1.x86_64.rpm",
+					"iproute-debugsource-0:5.15.0-4.el8_6.1.aarch64.rpm",
+					"iproute-debugsource-0:5.15.0-4.el8_6.1.x86_64.rpm",
+					"iproute-devel-0:5.15.0-4.el8_6.1.aarch64.rpm",
+					"iproute-devel-0:5.15.0-4.el8_6.1.i686.rpm",
+					"iproute-devel-0:5.15.0-4.el8_6.1.x86_64.rpm",
+					"iproute-tc-0:5.15.0-4.el8_6.1.aarch64.rpm",
+					"iproute-tc-0:5.15.0-4.el8_6.1.x86_64.rpm",
+					"iproute-tc-debuginfo-0:5.15.0-4.el8_6.1.aarch64.rpm",
+					"iproute-tc-debuginfo-0:5.15.0-4.el8_6.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,73 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4181",
+		"synopsis": "Moderate: mutt security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for mutt is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Mutt is a low resource, highly configurable, text-based MIME e-mail client. Mutt supports most e-mail storing formats, such as mbox and Maildir, as well as most protocols, including POP3 and IMAP.\nThe following packages have been upgraded to a later upstream version: mutt (2.0.7). (BZ#1912614)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1890084",
+				"description": "RFE: Enable oauth2 support in mutt",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1890084"
+			},
+			{
+				"ticket": "1900826",
+				"description": "CVE-2020-28896 mutt: Incorrect handling of invalid initial IMAP responses could lead to an authentication attempt over unencrypted connection",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1900826"
+			},
+			{
+				"ticket": "1912614",
+				"description": "[RFE] Rebase mutt packages to mutt v2.x+",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1912614"
+			},
+			{
+				"ticket": "1920446",
+				"description": "CVE-2021-3181 mutt: Memory leak when parsing rfc822 group addresses",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1920446"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2020-28896",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2020-28896.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-319"
+			},
+			{
+				"name": "CVE-2021-3181",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-3181.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-401"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"mutt-5:2.0.7-1.el8.aarch64.rpm",
+					"mutt-5:2.0.7-1.el8.src.rpm",
+					"mutt-5:2.0.7-1.el8.x86_64.rpm",
+					"mutt-debuginfo-5:2.0.7-1.el8.aarch64.rpm",
+					"mutt-debuginfo-5:2.0.7-1.el8.x86_64.rpm",
+					"mutt-debugsource-5:2.0.7-1.el8.aarch64.rpm",
+					"mutt-debugsource-5:2.0.7-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:5331",
+		"synopsis": "Moderate: libinput security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for libinput is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "libinput is a library that handles input devices for display servers and other applications that need to directly deal with input devices.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2074952",
+				"description": "CVE-2022-1215 libinput: format string vulnerability may lead to privilege escalation",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2074952"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-1215",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1215.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.8",
+				"cwe": "CWE-134"
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libinput-0:1.16.3-3.el8_6.aarch64.rpm",
+					"libinput-0:1.16.3-3.el8_6.i686.rpm",
+					"libinput-0:1.16.3-3.el8_6.src.rpm",
+					"libinput-0:1.16.3-3.el8_6.x86_64.rpm",
+					"libinput-debuginfo-0:1.16.3-3.el8_6.aarch64.rpm",
+					"libinput-debuginfo-0:1.16.3-3.el8_6.i686.rpm",
+					"libinput-debuginfo-0:1.16.3-3.el8_6.x86_64.rpm",
+					"libinput-debugsource-0:1.16.3-3.el8_6.aarch64.rpm",
+					"libinput-debugsource-0:1.16.3-3.el8_6.i686.rpm",
+					"libinput-debugsource-0:1.16.3-3.el8_6.x86_64.rpm",
+					"libinput-devel-0:1.16.3-3.el8_6.aarch64.rpm",
+					"libinput-devel-0:1.16.3-3.el8_6.i686.rpm",
+					"libinput-devel-0:1.16.3-3.el8_6.x86_64.rpm",
+					"libinput-test-0:1.16.3-3.el8_6.aarch64.rpm",
+					"libinput-test-0:1.16.3-3.el8_6.x86_64.rpm",
+					"libinput-test-debuginfo-0:1.16.3-3.el8_6.aarch64.rpm",
+					"libinput-test-debuginfo-0:1.16.3-3.el8_6.x86_64.rpm",
+					"libinput-utils-0:1.16.3-3.el8_6.aarch64.rpm",
+					"libinput-utils-0:1.16.3-3.el8_6.x86_64.rpm",
+					"libinput-utils-debuginfo-0:1.16.3-3.el8_6.aarch64.rpm",
+					"libinput-utils-debuginfo-0:1.16.3-3.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

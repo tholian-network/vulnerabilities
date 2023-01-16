@@ -1,0 +1,69 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2080",
+		"synopsis": "sudo bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for sudo is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1917379",
+				"description": "[RFE] pass KRB5CCNAME to pam_authenticate environment if available",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1917379"
+			},
+			{
+				"ticket": "1986572",
+				"description": "utmp resource leak in sudo",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986572"
+			},
+			{
+				"ticket": "1999751",
+				"description": "Request to backport https://www.sudo.ws/repos/sudo/rev/b4c91a0f72e7 to RHEL 8",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1999751"
+			},
+			{
+				"ticket": "2029551",
+				"description": "sudoedit does not work with selinux args",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2029551"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2080",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2080",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"sudo-0:1.8.29-8.el8.aarch64.rpm",
+					"sudo-0:1.8.29-8.el8.src.rpm",
+					"sudo-0:1.8.29-8.el8.x86_64.rpm",
+					"sudo-debuginfo-0:1.8.29-8.el8.aarch64.rpm",
+					"sudo-debuginfo-0:1.8.29-8.el8.x86_64.rpm",
+					"sudo-debugsource-0:1.8.29-8.el8.aarch64.rpm",
+					"sudo-debugsource-0:1.8.29-8.el8.i686.rpm",
+					"sudo-debugsource-0:1.8.29-8.el8.x86_64.rpm",
+					"sudo-devel-0:1.8.29-8.el8.aarch64.rpm",
+					"sudo-devel-0:1.8.29-8.el8.i686.rpm",
+					"sudo-devel-0:1.8.29-8.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

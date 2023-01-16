@@ -1,0 +1,211 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7647",
+		"synopsis": "Moderate: httpd:2.4 security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the httpd:2.4 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The httpd packages provide the Apache HTTP Server, a powerful, efficient, and extensible web server.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2064319",
+				"description": "CVE-2022-23943 httpd: mod_sed: Read/write beyond bounds",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064319"
+			},
+			{
+				"ticket": "2064320",
+				"description": "CVE-2022-22721 httpd: core: Possible buffer overflow with very large or unlimited LimitXMLRequestBody",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064320"
+			},
+			{
+				"ticket": "2064322",
+				"description": "CVE-2022-22719 httpd: mod_lua: Use of uninitialized value of in r:parsebody",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064322"
+			},
+			{
+				"ticket": "2094997",
+				"description": "CVE-2022-26377 httpd: mod_proxy_ajp: Possible request smuggling",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2094997"
+			},
+			{
+				"ticket": "2095002",
+				"description": "CVE-2022-28614 httpd: Out-of-bounds read via ap_rwrite()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2095002"
+			},
+			{
+				"ticket": "2095006",
+				"description": "CVE-2022-28615 httpd: Out-of-bounds read in ap_strcmp_match()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2095006"
+			},
+			{
+				"ticket": "2095012",
+				"description": "CVE-2022-29404 httpd: mod_lua: DoS in r:parsebody",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2095012"
+			},
+			{
+				"ticket": "2095015",
+				"description": "CVE-2022-30522 httpd: mod_sed: DoS vulnerability",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2095015"
+			},
+			{
+				"ticket": "2095018",
+				"description": "CVE-2022-30556 httpd: mod_lua: Information disclosure with websockets",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2095018"
+			},
+			{
+				"ticket": "2095020",
+				"description": "CVE-2022-31813 httpd: mod_proxy: X-Forwarded-For dropped by hop-by-hop mechanism",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2095020"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-22719",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-22719.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-665-\u003eCWE-908"
+			},
+			{
+				"name": "CVE-2022-22721",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-22721.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H",
+				"cvss3BaseScore": "7.4",
+				"cwe": "CWE-190-\u003eCWE-787"
+			},
+			{
+				"name": "CVE-2022-23943",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-23943.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "8.1",
+				"cwe": "(CWE-190|CWE-787)"
+			},
+			{
+				"name": "CVE-2022-26377",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-26377.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:L",
+				"cvss3BaseScore": "6.5",
+				"cwe": "CWE-444"
+			},
+			{
+				"name": "CVE-2022-28614",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-28614.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+				"cvss3BaseScore": "5.3",
+				"cwe": "CWE-190-\u003eCWE-200"
+			},
+			{
+				"name": "CVE-2022-28615",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-28615.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+				"cvss3BaseScore": "7.4",
+				"cwe": "CWE-190-\u003eCWE-125"
+			},
+			{
+				"name": "CVE-2022-29404",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-29404.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-770"
+			},
+			{
+				"name": "CVE-2022-30522",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-30522.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "(CWE-770|CWE-789)"
+			},
+			{
+				"name": "CVE-2022-30556",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-30556.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-200"
+			},
+			{
+				"name": "CVE-2022-31813",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-31813.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+				"cvss3BaseScore": "7.3",
+				"cwe": "(CWE-345|CWE-348)"
+			}
+		],
+		"publishedAt": "2022-11-13T07:52:24.498089Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"httpd-0:2.4.37-51.module+el8.7.0+1059+126e9251.aarch64.rpm",
+					"httpd-0:2.4.37-51.module+el8.7.0+1059+126e9251.src.rpm",
+					"httpd-0:2.4.37-51.module+el8.7.0+1059+126e9251.x86_64.rpm",
+					"httpd-debuginfo-0:2.4.37-51.module+el8.7.0+1059+126e9251.aarch64.rpm",
+					"httpd-debuginfo-0:2.4.37-51.module+el8.7.0+1059+126e9251.x86_64.rpm",
+					"httpd-debugsource-0:2.4.37-51.module+el8.7.0+1059+126e9251.aarch64.rpm",
+					"httpd-debugsource-0:2.4.37-51.module+el8.7.0+1059+126e9251.x86_64.rpm",
+					"httpd-devel-0:2.4.37-51.module+el8.7.0+1059+126e9251.aarch64.rpm",
+					"httpd-devel-0:2.4.37-51.module+el8.7.0+1059+126e9251.x86_64.rpm",
+					"httpd-filesystem-0:2.4.37-51.module+el8.7.0+1059+126e9251.noarch.rpm",
+					"httpd-manual-0:2.4.37-51.module+el8.7.0+1059+126e9251.noarch.rpm",
+					"httpd-tools-0:2.4.37-51.module+el8.7.0+1059+126e9251.aarch64.rpm",
+					"httpd-tools-0:2.4.37-51.module+el8.7.0+1059+126e9251.x86_64.rpm",
+					"httpd-tools-debuginfo-0:2.4.37-51.module+el8.7.0+1059+126e9251.aarch64.rpm",
+					"httpd-tools-debuginfo-0:2.4.37-51.module+el8.7.0+1059+126e9251.x86_64.rpm",
+					"mod_http2-0:1.15.7-5.module+el8.6.0+823+f143cee1.aarch64.rpm",
+					"mod_http2-0:1.15.7-5.module+el8.6.0+823+f143cee1.src.rpm",
+					"mod_http2-0:1.15.7-5.module+el8.6.0+823+f143cee1.x86_64.rpm",
+					"mod_http2-debuginfo-0:1.15.7-5.module+el8.6.0+823+f143cee1.aarch64.rpm",
+					"mod_http2-debuginfo-0:1.15.7-5.module+el8.6.0+823+f143cee1.x86_64.rpm",
+					"mod_http2-debugsource-0:1.15.7-5.module+el8.6.0+823+f143cee1.aarch64.rpm",
+					"mod_http2-debugsource-0:1.15.7-5.module+el8.6.0+823+f143cee1.x86_64.rpm",
+					"mod_ldap-0:2.4.37-51.module+el8.7.0+1059+126e9251.aarch64.rpm",
+					"mod_ldap-0:2.4.37-51.module+el8.7.0+1059+126e9251.x86_64.rpm",
+					"mod_ldap-debuginfo-0:2.4.37-51.module+el8.7.0+1059+126e9251.aarch64.rpm",
+					"mod_ldap-debuginfo-0:2.4.37-51.module+el8.7.0+1059+126e9251.x86_64.rpm",
+					"mod_md-1:2.0.8-8.module+el8.5.0+695+1fa8055e.aarch64.rpm",
+					"mod_md-1:2.0.8-8.module+el8.5.0+695+1fa8055e.src.rpm",
+					"mod_md-1:2.0.8-8.module+el8.5.0+695+1fa8055e.x86_64.rpm",
+					"mod_md-debuginfo-1:2.0.8-8.module+el8.5.0+695+1fa8055e.aarch64.rpm",
+					"mod_md-debuginfo-1:2.0.8-8.module+el8.5.0+695+1fa8055e.x86_64.rpm",
+					"mod_md-debugsource-1:2.0.8-8.module+el8.5.0+695+1fa8055e.aarch64.rpm",
+					"mod_md-debugsource-1:2.0.8-8.module+el8.5.0+695+1fa8055e.x86_64.rpm",
+					"mod_proxy_html-1:2.4.37-51.module+el8.7.0+1059+126e9251.aarch64.rpm",
+					"mod_proxy_html-1:2.4.37-51.module+el8.7.0+1059+126e9251.x86_64.rpm",
+					"mod_proxy_html-debuginfo-1:2.4.37-51.module+el8.7.0+1059+126e9251.aarch64.rpm",
+					"mod_proxy_html-debuginfo-1:2.4.37-51.module+el8.7.0+1059+126e9251.x86_64.rpm",
+					"mod_session-0:2.4.37-51.module+el8.7.0+1059+126e9251.aarch64.rpm",
+					"mod_session-0:2.4.37-51.module+el8.7.0+1059+126e9251.x86_64.rpm",
+					"mod_session-debuginfo-0:2.4.37-51.module+el8.7.0+1059+126e9251.aarch64.rpm",
+					"mod_session-debuginfo-0:2.4.37-51.module+el8.7.0+1059+126e9251.x86_64.rpm",
+					"mod_ssl-1:2.4.37-51.module+el8.7.0+1059+126e9251.aarch64.rpm",
+					"mod_ssl-1:2.4.37-51.module+el8.7.0+1059+126e9251.x86_64.rpm",
+					"mod_ssl-debuginfo-1:2.4.37-51.module+el8.7.0+1059+126e9251.aarch64.rpm",
+					"mod_ssl-debuginfo-1:2.4.37-51.module+el8.7.0+1059+126e9251.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

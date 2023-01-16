@@ -1,0 +1,81 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:2013",
+		"synopsis": "Moderate: openssh security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for openssh is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "OpenSSH is an SSH protocol implementation supported by a number of Linux, UNIX, and similar operating systems. It includes the core files necessary for both the OpenSSH client and server.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2008291",
+				"description": "CVE-2021-41617 openssh: privilege escalation when AuthorizedKeysCommand or AuthorizedPrincipalsCommand are configured",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2008291"
+			},
+			{
+				"ticket": "2015828",
+				"description": "openssh patch for sshd_config:ClientAliveCountMax=0 disable the connection killing behaviour",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2015828"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-41617",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-41617.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+				"cvss3BaseScore": "7.0",
+				"cwe": "CWE-273"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"openssh-0:8.0p1-13.el8.aarch64.rpm",
+					"openssh-0:8.0p1-13.el8.src.rpm",
+					"openssh-0:8.0p1-13.el8.x86_64.rpm",
+					"openssh-askpass-0:8.0p1-13.el8.aarch64.rpm",
+					"openssh-askpass-0:8.0p1-13.el8.x86_64.rpm",
+					"openssh-askpass-debuginfo-0:8.0p1-13.el8.aarch64.rpm",
+					"openssh-askpass-debuginfo-0:8.0p1-13.el8.x86_64.rpm",
+					"openssh-cavs-0:8.0p1-13.el8.aarch64.rpm",
+					"openssh-cavs-0:8.0p1-13.el8.x86_64.rpm",
+					"openssh-cavs-debuginfo-0:8.0p1-13.el8.aarch64.rpm",
+					"openssh-cavs-debuginfo-0:8.0p1-13.el8.x86_64.rpm",
+					"openssh-clients-0:8.0p1-13.el8.aarch64.rpm",
+					"openssh-clients-0:8.0p1-13.el8.x86_64.rpm",
+					"openssh-clients-debuginfo-0:8.0p1-13.el8.aarch64.rpm",
+					"openssh-clients-debuginfo-0:8.0p1-13.el8.x86_64.rpm",
+					"openssh-debuginfo-0:8.0p1-13.el8.aarch64.rpm",
+					"openssh-debuginfo-0:8.0p1-13.el8.x86_64.rpm",
+					"openssh-debugsource-0:8.0p1-13.el8.aarch64.rpm",
+					"openssh-debugsource-0:8.0p1-13.el8.x86_64.rpm",
+					"openssh-keycat-0:8.0p1-13.el8.aarch64.rpm",
+					"openssh-keycat-0:8.0p1-13.el8.x86_64.rpm",
+					"openssh-keycat-debuginfo-0:8.0p1-13.el8.aarch64.rpm",
+					"openssh-keycat-debuginfo-0:8.0p1-13.el8.x86_64.rpm",
+					"openssh-ldap-0:8.0p1-13.el8.aarch64.rpm",
+					"openssh-ldap-0:8.0p1-13.el8.x86_64.rpm",
+					"openssh-ldap-debuginfo-0:8.0p1-13.el8.aarch64.rpm",
+					"openssh-ldap-debuginfo-0:8.0p1-13.el8.x86_64.rpm",
+					"openssh-server-0:8.0p1-13.el8.aarch64.rpm",
+					"openssh-server-0:8.0p1-13.el8.x86_64.rpm",
+					"openssh-server-debuginfo-0:8.0p1-13.el8.aarch64.rpm",
+					"openssh-server-debuginfo-0:8.0p1-13.el8.x86_64.rpm",
+					"pam_ssh_agent_auth-0:0.10.3-7.13.el8.aarch64.rpm",
+					"pam_ssh_agent_auth-0:0.10.3-7.13.el8.x86_64.rpm",
+					"pam_ssh_agent_auth-debuginfo-0:0.10.3-7.13.el8.aarch64.rpm",
+					"pam_ssh_agent_auth-debuginfo-0:0.10.3-7.13.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

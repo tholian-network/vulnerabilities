@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:7126",
+		"synopsis": "stalld bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for stalld is now available for Rocky Linux 8.",
+		"description": "The stalld program monitors the set of system threads, looking for threads that are ready-to-run but have not been given processor time for some threshold period. When a starving thread is found, it is given a temporary boost using the SCHED_DEADLINE policy. The default is to allow 10 microseconds of runtime for 1 second of clock time.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2126495",
+				"description": "Stalld is running in unconfined_service_t type [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2126495"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:7126",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:7126",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-11-07T19:40:53.135478Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"stalld-0:1.17-3.el8_6.aarch64.rpm",
+					"stalld-0:1.17-3.el8_6.src.rpm",
+					"stalld-0:1.17-3.el8_6.x86_64.rpm",
+					"stalld-debuginfo-0:1.17-3.el8_6.aarch64.rpm",
+					"stalld-debuginfo-0:1.17-3.el8_6.x86_64.rpm",
+					"stalld-debugsource-0:1.17-3.el8_6.aarch64.rpm",
+					"stalld-debugsource-0:1.17-3.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

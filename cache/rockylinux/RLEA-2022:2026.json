@@ -1,0 +1,65 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2022:2026",
+		"synopsis": "strace bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for strace is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2015917",
+				"description": "[RHEL 8] Rebase strace to version 5.13",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2015917"
+			},
+			{
+				"ticket": "2028158",
+				"description": "[RHEL 8] assertion when using 'xx' arguments to strace",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028158"
+			},
+			{
+				"ticket": "2038810",
+				"description": "RFE: backport of --secontext=mismatch functionality",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2038810"
+			},
+			{
+				"ticket": "2046259",
+				"description": "[RHEL 8] strace: options-syntax test fails in tests-m32",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2046259"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2022:2026",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2022:2026",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"strace-0:5.13-4.el8.aarch64.rpm",
+					"strace-0:5.13-4.el8.src.rpm",
+					"strace-0:5.13-4.el8.x86_64.rpm",
+					"strace-debuginfo-0:5.13-4.el8.aarch64.rpm",
+					"strace-debuginfo-0:5.13-4.el8.x86_64.rpm",
+					"strace-debugsource-0:5.13-4.el8.aarch64.rpm",
+					"strace-debugsource-0:5.13-4.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

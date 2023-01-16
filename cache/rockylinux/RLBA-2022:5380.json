@@ -1,0 +1,43 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5380",
+		"synopsis": "libtimezonemap bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libtimezonemap is now available for Rocky Linux 8.",
+		"description": "The libtimezonemap packages contain a time zone map widget for the GTK+ toolkit. The widget displays a world map with a highlighted region representing the selected time zone, and the location can be changed by clicking the map.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [],
+		"cves": [
+			{
+				"name": "RHBA-2022:5380",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5380",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libtimezonemap-0:0.4.5.1-3.el8_6.1.aarch64.rpm",
+					"libtimezonemap-0:0.4.5.1-3.el8_6.1.i686.rpm",
+					"libtimezonemap-0:0.4.5.1-3.el8_6.1.src.rpm",
+					"libtimezonemap-0:0.4.5.1-3.el8_6.1.x86_64.rpm",
+					"libtimezonemap-debuginfo-0:0.4.5.1-3.el8_6.1.aarch64.rpm",
+					"libtimezonemap-debuginfo-0:0.4.5.1-3.el8_6.1.i686.rpm",
+					"libtimezonemap-debuginfo-0:0.4.5.1-3.el8_6.1.x86_64.rpm",
+					"libtimezonemap-debugsource-0:0.4.5.1-3.el8_6.1.aarch64.rpm",
+					"libtimezonemap-debugsource-0:0.4.5.1-3.el8_6.1.i686.rpm",
+					"libtimezonemap-debugsource-0:0.4.5.1-3.el8_6.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

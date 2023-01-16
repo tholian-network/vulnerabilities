@@ -1,0 +1,47 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1996",
+		"synopsis": "sed bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for sed is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1905777",
+				"description": "%check's testsuite/inplace-selinux.sh fails when rebuilding using mock",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1905777"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1996",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1996",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"sed-0:4.5-5.el8.aarch64.rpm",
+					"sed-0:4.5-5.el8.src.rpm",
+					"sed-0:4.5-5.el8.x86_64.rpm",
+					"sed-debuginfo-0:4.5-5.el8.aarch64.rpm",
+					"sed-debuginfo-0:4.5-5.el8.x86_64.rpm",
+					"sed-debugsource-0:4.5-5.el8.aarch64.rpm",
+					"sed-debugsource-0:4.5-5.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

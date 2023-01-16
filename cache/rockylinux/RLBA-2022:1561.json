@@ -1,0 +1,61 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1561",
+		"synopsis": "idm:DL1 bug fix update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for the idm:DL1 module is now available for Rocky Linux 8.",
+		"description": "Rocky Enterprise Software Foundation Identity Management (IdM) is a centralized authentication, identity\nmanagement, and authorization solution for both traditional and cloud-based\nenterprise environments.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2062404",
+				"description": "Error replacing a replica with CentOS Stream 9 [rhel-8.5.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2062404"
+			},
+			{
+				"ticket": "2065719",
+				"description": "reinstalling samba client causes winbindd coredump [rhel-8.5.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2065719"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1561",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1561",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-04-26T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"python3-jwcrypto-0:0.5.0-1.module+el8.4.0+430+1dcf16bb.noarch.rpm",
+					"python3-kdcproxy-0:0.4-5.module+el8.3.0+244+0b2ae752.noarch.rpm",
+					"python3-pyusb-0:1.0.0-9.module+el8.4.0+430+1dcf16bb.noarch.rpm",
+					"python3-yubico-0:1.3.2-9.module+el8.4.0+430+1dcf16bb.noarch.rpm",
+					"python-jwcrypto-0:0.5.0-1.module+el8.4.0+430+1dcf16bb.src.rpm",
+					"python-kdcproxy-0:0.4-5.module+el8.3.0+244+0b2ae752.src.rpm",
+					"python-yubico-0:1.3.2-9.module+el8.4.0+430+1dcf16bb.src.rpm",
+					"pyusb-0:1.0.0-9.module+el8.4.0+430+1dcf16bb.src.rpm",
+					"slapi-nis-0:0.56.6-4.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"slapi-nis-0:0.56.6-4.module+el8.6.0+796+128eec25.src.rpm",
+					"slapi-nis-0:0.56.6-4.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"slapi-nis-debuginfo-0:0.56.6-4.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"slapi-nis-debuginfo-0:0.56.6-4.module+el8.6.0+796+128eec25.x86_64.rpm",
+					"slapi-nis-debugsource-0:0.56.6-4.module+el8.6.0+796+128eec25.aarch64.rpm",
+					"slapi-nis-debugsource-0:0.56.6-4.module+el8.6.0+796+128eec25.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

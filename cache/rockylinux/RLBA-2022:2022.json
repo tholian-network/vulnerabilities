@@ -1,0 +1,56 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2022",
+		"synopsis": "binutils bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for binutils is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2005412",
+				"description": "Regression with patch binutils-plugin-as-needed.patch",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2005412"
+			},
+			{
+				"ticket": "2039117",
+				"description": "nm: /usr/bin/../bin/../lib/bfd-plugins/LLVMgold.so: wrong ELF class: ELFCLASS32",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2039117"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2022",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2022",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"binutils-0:2.30-113.el8.aarch64.rpm",
+					"binutils-0:2.30-113.el8.src.rpm",
+					"binutils-0:2.30-113.el8.x86_64.rpm",
+					"binutils-debuginfo-0:2.30-113.el8.aarch64.rpm",
+					"binutils-debuginfo-0:2.30-113.el8.x86_64.rpm",
+					"binutils-debugsource-0:2.30-113.el8.aarch64.rpm",
+					"binutils-debugsource-0:2.30-113.el8.x86_64.rpm",
+					"binutils-devel-0:2.30-113.el8.aarch64.rpm",
+					"binutils-devel-0:2.30-113.el8.i686.rpm",
+					"binutils-devel-0:2.30-113.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

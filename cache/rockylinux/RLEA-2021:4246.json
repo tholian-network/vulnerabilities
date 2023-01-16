@@ -1,0 +1,57 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:4246",
+		"synopsis": "cmake bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for cmake is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1960791",
+				"description": "/usr/bin/cmake3 has gone away",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1960791"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:4246",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:4246",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cmake-0:3.20.2-4.el8.aarch64.rpm",
+					"cmake-0:3.20.2-4.el8.src.rpm",
+					"cmake-0:3.20.2-4.el8.x86_64.rpm",
+					"cmake-data-0:3.20.2-4.el8.noarch.rpm",
+					"cmake-debuginfo-0:3.20.2-4.el8.aarch64.rpm",
+					"cmake-debuginfo-0:3.20.2-4.el8.x86_64.rpm",
+					"cmake-debugsource-0:3.20.2-4.el8.aarch64.rpm",
+					"cmake-debugsource-0:3.20.2-4.el8.x86_64.rpm",
+					"cmake-doc-0:3.20.2-4.el8.noarch.rpm",
+					"cmake-filesystem-0:3.20.2-4.el8.aarch64.rpm",
+					"cmake-filesystem-0:3.20.2-4.el8.i686.rpm",
+					"cmake-filesystem-0:3.20.2-4.el8.x86_64.rpm",
+					"cmake-gui-0:3.20.2-4.el8.aarch64.rpm",
+					"cmake-gui-0:3.20.2-4.el8.x86_64.rpm",
+					"cmake-gui-debuginfo-0:3.20.2-4.el8.aarch64.rpm",
+					"cmake-gui-debuginfo-0:3.20.2-4.el8.x86_64.rpm",
+					"cmake-rpm-macros-0:3.20.2-4.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

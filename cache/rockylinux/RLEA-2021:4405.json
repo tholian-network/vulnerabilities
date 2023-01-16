@@ -1,0 +1,67 @@
+{
+	"advisory": {
+		"type": "TYPE_ENHANCEMENT",
+		"shortCode": "RL",
+		"name": "RLEA-2021:4405",
+		"synopsis": "libmodulemd bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for libmodulemd is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1894573",
+				"description": "Rebase libmodulemd to \u003e= 2.12.0",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1894573"
+			},
+			{
+				"ticket": "1984402",
+				"description": "Support RPM demodularization",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1984402"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHEA-2021:4405",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHEA-2021:4405",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libmodulemd-0:2.13.0-1.el8.aarch64.rpm",
+					"libmodulemd-0:2.13.0-1.el8.i686.rpm",
+					"libmodulemd-0:2.13.0-1.el8.src.rpm",
+					"libmodulemd-0:2.13.0-1.el8.x86_64.rpm",
+					"libmodulemd1-0:1.8.16-0.2.13.0.1.aarch64.rpm",
+					"libmodulemd1-0:1.8.16-0.2.13.0.1.i686.rpm",
+					"libmodulemd1-0:1.8.16-0.2.13.0.1.x86_64.rpm",
+					"libmodulemd1-debuginfo-0:1.8.16-0.2.13.0.1.aarch64.rpm",
+					"libmodulemd1-debuginfo-0:1.8.16-0.2.13.0.1.i686.rpm",
+					"libmodulemd1-debuginfo-0:1.8.16-0.2.13.0.1.x86_64.rpm",
+					"libmodulemd-debuginfo-0:2.13.0-1.el8.aarch64.rpm",
+					"libmodulemd-debuginfo-0:2.13.0-1.el8.i686.rpm",
+					"libmodulemd-debuginfo-0:2.13.0-1.el8.x86_64.rpm",
+					"libmodulemd-debugsource-0:2.13.0-1.el8.aarch64.rpm",
+					"libmodulemd-debugsource-0:2.13.0-1.el8.i686.rpm",
+					"libmodulemd-debugsource-0:2.13.0-1.el8.x86_64.rpm",
+					"libmodulemd-devel-0:2.13.0-1.el8.aarch64.rpm",
+					"libmodulemd-devel-0:2.13.0-1.el8.i686.rpm",
+					"libmodulemd-devel-0:2.13.0-1.el8.x86_64.rpm",
+					"python3-libmodulemd-0:2.13.0-1.el8.aarch64.rpm",
+					"python3-libmodulemd-0:2.13.0-1.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

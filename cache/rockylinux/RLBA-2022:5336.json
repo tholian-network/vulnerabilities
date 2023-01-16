@@ -1,0 +1,78 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:5336",
+		"synopsis": "xorg-x11-server and related packages bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for xorg-x11-server, xorg-x11-server-Xwayland, and xorg-x11-xtrans-devel is now available for Rocky Linux 8.",
+		"description": "Xorg is an open-source implementation of the X Window System. It provides the basic low-level functionality that full-fledged graphical user interfaces are designed upon.\nThe xorg-x11-server-Xwayland is an X server for running X clients under Wayland.\nThe xorg-x11-xtrans-devel package is a development library used in Xorg and Xwayland to communicate with X clients.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2090323",
+				"description": "\"Xorg -listen tcp\" fails to start if ipv6 is disabled on the system [rhel-8.6.0.z]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2090323"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:5336",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:5336",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-06-28T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"xorg-x11-server-0:1.20.11-5.el8_6.2.src.rpm",
+					"xorg-x11-server-common-0:1.20.11-5.el8_6.2.aarch64.rpm",
+					"xorg-x11-server-common-0:1.20.11-5.el8_6.2.x86_64.rpm",
+					"xorg-x11-server-debuginfo-0:1.20.11-5.el8_6.2.aarch64.rpm",
+					"xorg-x11-server-debuginfo-0:1.20.11-5.el8_6.2.x86_64.rpm",
+					"xorg-x11-server-devel-0:1.20.11-5.el8_6.2.aarch64.rpm",
+					"xorg-x11-server-devel-0:1.20.11-5.el8_6.2.i686.rpm",
+					"xorg-x11-server-devel-0:1.20.11-5.el8_6.2.x86_64.rpm",
+					"xorg-x11-server-source-0:1.20.11-5.el8_6.2.noarch.rpm",
+					"xorg-x11-server-Xdmx-0:1.20.11-5.el8_6.2.aarch64.rpm",
+					"xorg-x11-server-Xdmx-0:1.20.11-5.el8_6.2.x86_64.rpm",
+					"xorg-x11-server-Xdmx-debuginfo-0:1.20.11-5.el8_6.2.aarch64.rpm",
+					"xorg-x11-server-Xdmx-debuginfo-0:1.20.11-5.el8_6.2.x86_64.rpm",
+					"xorg-x11-server-Xephyr-0:1.20.11-5.el8_6.2.aarch64.rpm",
+					"xorg-x11-server-Xephyr-0:1.20.11-5.el8_6.2.x86_64.rpm",
+					"xorg-x11-server-Xephyr-debuginfo-0:1.20.11-5.el8_6.2.aarch64.rpm",
+					"xorg-x11-server-Xephyr-debuginfo-0:1.20.11-5.el8_6.2.x86_64.rpm",
+					"xorg-x11-server-Xnest-0:1.20.11-5.el8_6.2.aarch64.rpm",
+					"xorg-x11-server-Xnest-0:1.20.11-5.el8_6.2.x86_64.rpm",
+					"xorg-x11-server-Xnest-debuginfo-0:1.20.11-5.el8_6.2.aarch64.rpm",
+					"xorg-x11-server-Xnest-debuginfo-0:1.20.11-5.el8_6.2.x86_64.rpm",
+					"xorg-x11-server-Xorg-0:1.20.11-5.el8_6.2.aarch64.rpm",
+					"xorg-x11-server-Xorg-0:1.20.11-5.el8_6.2.x86_64.rpm",
+					"xorg-x11-server-Xorg-debuginfo-0:1.20.11-5.el8_6.2.aarch64.rpm",
+					"xorg-x11-server-Xorg-debuginfo-0:1.20.11-5.el8_6.2.x86_64.rpm",
+					"xorg-x11-server-Xvfb-0:1.20.11-5.el8_6.2.aarch64.rpm",
+					"xorg-x11-server-Xvfb-0:1.20.11-5.el8_6.2.x86_64.rpm",
+					"xorg-x11-server-Xvfb-debuginfo-0:1.20.11-5.el8_6.2.aarch64.rpm",
+					"xorg-x11-server-Xvfb-debuginfo-0:1.20.11-5.el8_6.2.x86_64.rpm",
+					"xorg-x11-server-Xwayland-0:21.1.3-2.el8_6.3.aarch64.rpm",
+					"xorg-x11-server-Xwayland-0:21.1.3-2.el8_6.3.src.rpm",
+					"xorg-x11-server-Xwayland-0:21.1.3-2.el8_6.3.x86_64.rpm",
+					"xorg-x11-server-Xwayland-debuginfo-0:21.1.3-2.el8_6.3.aarch64.rpm",
+					"xorg-x11-server-Xwayland-debuginfo-0:21.1.3-2.el8_6.3.x86_64.rpm",
+					"xorg-x11-server-Xwayland-debugsource-0:21.1.3-2.el8_6.3.aarch64.rpm",
+					"xorg-x11-server-Xwayland-debugsource-0:21.1.3-2.el8_6.3.x86_64.rpm",
+					"xorg-x11-xtrans-devel-0:1.4.0-1.el8_6.2.noarch.rpm",
+					"xorg-x11-xtrans-devel-0:1.4.0-1.el8_6.2.src.rpm"
+				]
+			}
+		}
+	}
+}

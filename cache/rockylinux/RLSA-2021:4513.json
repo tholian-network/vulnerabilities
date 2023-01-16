@@ -1,0 +1,98 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2021:4513",
+		"synopsis": "Moderate: libsepol security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for libsepol is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The libsepol library provides an API for the manipulation of SELinux binary policies. It is used by checkpolicy (the policy compiler) and similar tools, as well as by programs like load_policy that need to perform specific transformations on binary policies (for example, customizing policy boolean settings).\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1979662",
+				"description": "CVE-2021-36084 libsepol: use-after-free in __cil_verify_classperms()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1979662"
+			},
+			{
+				"ticket": "1979664",
+				"description": "CVE-2021-36085 libsepol: use-after-free in __cil_verify_classperms()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1979664"
+			},
+			{
+				"ticket": "1979666",
+				"description": "CVE-2021-36086 libsepol: use-after-free in cil_reset_classpermission()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1979666"
+			},
+			{
+				"ticket": "1979668",
+				"description": "CVE-2021-36087 libsepol: heap-based buffer overflow in ebitmap_match_any()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1979668"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-36084",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-36084.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "3.3",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-36085",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-36085.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "3.3",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-36086",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-36086.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "3.3",
+				"cwe": "CWE-416"
+			},
+			{
+				"name": "CVE-2021-36087",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-36087.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+				"cvss3BaseScore": "3.3",
+				"cwe": "CWE-119"
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"libsepol-0:2.9-3.el8.aarch64.rpm",
+					"libsepol-0:2.9-3.el8.i686.rpm",
+					"libsepol-0:2.9-3.el8.src.rpm",
+					"libsepol-0:2.9-3.el8.x86_64.rpm",
+					"libsepol-debuginfo-0:2.9-3.el8.aarch64.rpm",
+					"libsepol-debuginfo-0:2.9-3.el8.i686.rpm",
+					"libsepol-debuginfo-0:2.9-3.el8.x86_64.rpm",
+					"libsepol-debugsource-0:2.9-3.el8.aarch64.rpm",
+					"libsepol-debugsource-0:2.9-3.el8.i686.rpm",
+					"libsepol-debugsource-0:2.9-3.el8.x86_64.rpm",
+					"libsepol-devel-0:2.9-3.el8.aarch64.rpm",
+					"libsepol-devel-0:2.9-3.el8.i686.rpm",
+					"libsepol-devel-0:2.9-3.el8.x86_64.rpm",
+					"libsepol-static-0:2.9-3.el8.aarch64.rpm",
+					"libsepol-static-0:2.9-3.el8.i686.rpm",
+					"libsepol-static-0:2.9-3.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

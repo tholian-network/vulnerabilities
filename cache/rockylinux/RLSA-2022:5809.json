@@ -1,0 +1,72 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:5809",
+		"synopsis": "Moderate: pcre2 security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for pcre2 is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The pcre2 package contains a new generation of the Perl Compatible Regular Expression libraries for implementing regular expression pattern matching using the same syntax and semantics as Perl. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2077976",
+				"description": "CVE-2022-1586 pcre2: Out-of-bounds read in compile_xclass_matchingpath in pcre2_jit_compile.c",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2077976"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-1586",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1586.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+				"cvss3BaseScore": "7.1",
+				"cwe": "CWE-125"
+			}
+		],
+		"publishedAt": "2022-08-02T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"pcre2-0:10.32-3.el8_6.aarch64.rpm",
+					"pcre2-0:10.32-3.el8_6.i686.rpm",
+					"pcre2-0:10.32-3.el8_6.src.rpm",
+					"pcre2-0:10.32-3.el8_6.x86_64.rpm",
+					"pcre2-debuginfo-0:10.32-3.el8_6.aarch64.rpm",
+					"pcre2-debuginfo-0:10.32-3.el8_6.i686.rpm",
+					"pcre2-debuginfo-0:10.32-3.el8_6.x86_64.rpm",
+					"pcre2-debugsource-0:10.32-3.el8_6.aarch64.rpm",
+					"pcre2-debugsource-0:10.32-3.el8_6.i686.rpm",
+					"pcre2-debugsource-0:10.32-3.el8_6.x86_64.rpm",
+					"pcre2-devel-0:10.32-3.el8_6.aarch64.rpm",
+					"pcre2-devel-0:10.32-3.el8_6.i686.rpm",
+					"pcre2-devel-0:10.32-3.el8_6.x86_64.rpm",
+					"pcre2-static-0:10.32-3.el8_6.aarch64.rpm",
+					"pcre2-static-0:10.32-3.el8_6.i686.rpm",
+					"pcre2-static-0:10.32-3.el8_6.x86_64.rpm",
+					"pcre2-tools-0:10.32-3.el8_6.aarch64.rpm",
+					"pcre2-tools-0:10.32-3.el8_6.x86_64.rpm",
+					"pcre2-tools-debuginfo-0:10.32-3.el8_6.aarch64.rpm",
+					"pcre2-tools-debuginfo-0:10.32-3.el8_6.x86_64.rpm",
+					"pcre2-utf16-0:10.32-3.el8_6.aarch64.rpm",
+					"pcre2-utf16-0:10.32-3.el8_6.i686.rpm",
+					"pcre2-utf16-0:10.32-3.el8_6.x86_64.rpm",
+					"pcre2-utf16-debuginfo-0:10.32-3.el8_6.aarch64.rpm",
+					"pcre2-utf16-debuginfo-0:10.32-3.el8_6.i686.rpm",
+					"pcre2-utf16-debuginfo-0:10.32-3.el8_6.x86_64.rpm",
+					"pcre2-utf32-0:10.32-3.el8_6.aarch64.rpm",
+					"pcre2-utf32-0:10.32-3.el8_6.i686.rpm",
+					"pcre2-utf32-0:10.32-3.el8_6.x86_64.rpm",
+					"pcre2-utf32-debuginfo-0:10.32-3.el8_6.aarch64.rpm",
+					"pcre2-utf32-debuginfo-0:10.32-3.el8_6.i686.rpm",
+					"pcre2-utf32-debuginfo-0:10.32-3.el8_6.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

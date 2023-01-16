@@ -1,0 +1,57 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1920",
+		"synopsis": "Moderate: qt5-qtsvg security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for qt5-qtsvg is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "Scalable Vector Graphics (SVG) is an XML-based language for describing two-dimensional vector graphics. Qt provides classes for rendering and displaying SVG drawings in widgets and on other paint devices.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2037339",
+				"description": "CVE-2021-45930 qt: out-of-bounds write may lead to DoS",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2037339"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-45930",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-45930.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+				"cvss3BaseScore": "7.5",
+				"cwe": "CWE-787"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"qt5-qtsvg-0:5.15.2-4.el8.0.1.aarch64.rpm",
+					"qt5-qtsvg-0:5.15.2-4.el8.0.1.i686.rpm",
+					"qt5-qtsvg-0:5.15.2-4.el8.0.1.src.rpm",
+					"qt5-qtsvg-0:5.15.2-4.el8.0.1.x86_64.rpm",
+					"qt5-qtsvg-debuginfo-0:5.15.2-4.el8.0.1.aarch64.rpm",
+					"qt5-qtsvg-debuginfo-0:5.15.2-4.el8.0.1.i686.rpm",
+					"qt5-qtsvg-debuginfo-0:5.15.2-4.el8.0.1.x86_64.rpm",
+					"qt5-qtsvg-debugsource-0:5.15.2-4.el8.0.1.aarch64.rpm",
+					"qt5-qtsvg-debugsource-0:5.15.2-4.el8.0.1.i686.rpm",
+					"qt5-qtsvg-debugsource-0:5.15.2-4.el8.0.1.x86_64.rpm",
+					"qt5-qtsvg-devel-0:5.15.2-4.el8.0.1.aarch64.rpm",
+					"qt5-qtsvg-devel-0:5.15.2-4.el8.0.1.i686.rpm",
+					"qt5-qtsvg-devel-0:5.15.2-4.el8.0.1.x86_64.rpm",
+					"qt5-qtsvg-examples-0:5.15.2-4.el8.0.1.aarch64.rpm",
+					"qt5-qtsvg-examples-0:5.15.2-4.el8.0.1.x86_64.rpm",
+					"qt5-qtsvg-examples-debuginfo-0:5.15.2-4.el8.0.1.aarch64.rpm",
+					"qt5-qtsvg-examples-debuginfo-0:5.15.2-4.el8.0.1.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

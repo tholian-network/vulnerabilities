@@ -1,0 +1,66 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:1626",
+		"synopsis": "procps-ng bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for procps-ng is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.4 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1860486",
+				"description": "initscripts status() function -l option does not return correct values anymore",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1860486"
+			},
+			{
+				"ticket": "1894526",
+				"description": "pidof returns running scripts in without the '-x' parameter",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1894526"
+			},
+			{
+				"ticket": "1895985",
+				"description": "pidof - backport fix for separator option",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1895985"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:1626",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:1626",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-05-18T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"procps-ng-0:3.3.15-6.el8.aarch64.rpm",
+					"procps-ng-0:3.3.15-6.el8.i686.rpm",
+					"procps-ng-0:3.3.15-6.el8.src.rpm",
+					"procps-ng-0:3.3.15-6.el8.x86_64.rpm",
+					"procps-ng-debuginfo-0:3.3.15-6.el8.aarch64.rpm",
+					"procps-ng-debuginfo-0:3.3.15-6.el8.i686.rpm",
+					"procps-ng-debuginfo-0:3.3.15-6.el8.x86_64.rpm",
+					"procps-ng-debugsource-0:3.3.15-6.el8.aarch64.rpm",
+					"procps-ng-debugsource-0:3.3.15-6.el8.i686.rpm",
+					"procps-ng-debugsource-0:3.3.15-6.el8.x86_64.rpm",
+					"procps-ng-devel-0:3.3.15-6.el8.aarch64.rpm",
+					"procps-ng-devel-0:3.3.15-6.el8.i686.rpm",
+					"procps-ng-devel-0:3.3.15-6.el8.x86_64.rpm",
+					"procps-ng-i18n-0:3.3.15-6.el8.noarch.rpm"
+				]
+			}
+		}
+	}
+}

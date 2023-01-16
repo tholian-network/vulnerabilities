@@ -1,0 +1,129 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:7447",
+		"synopsis": "Moderate: pcs security, bug fix, and enhancement update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for pcs is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The pcs packages provide a command-line configuration system for the Pacemaker and Corosync utilities.\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.7 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1730232",
+				"description": "[RFE] Provide easier management of constraints created by pcs move command",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1730232"
+			},
+			{
+				"ticket": "1786964",
+				"description": "pcs booth ticket add does not recognize mode option",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1786964"
+			},
+			{
+				"ticket": "1791661",
+				"description": "booth: pcs should validate ticket names",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1791661"
+			},
+			{
+				"ticket": "1791670",
+				"description": "booth: pcs should check that '/etc/booth' exists",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1791670"
+			},
+			{
+				"ticket": "1874624",
+				"description": "[RFE] Provide method to export commands to create all resources",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1874624"
+			},
+			{
+				"ticket": "1909904",
+				"description": "[RFE] Provide method to export commands to create all fence devices",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1909904"
+			},
+			{
+				"ticket": "1950551",
+				"description": "[RFE] Generate UUID for each cluster",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1950551"
+			},
+			{
+				"ticket": "1954099",
+				"description": "Prevent fence_sbd in combination with stonith-watchdog-timeout\u003e0",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1954099"
+			},
+			{
+				"ticket": "2019894",
+				"description": "A user that is not authorized to run \"pcs status\" is able to get \"pcs status\" output anyhow",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2019894"
+			},
+			{
+				"ticket": "2023845",
+				"description": "[RFE] Provide a way to add a scsi **mpath** fencing device to a cluster without requiring a restart of all cluster resources",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2023845"
+			},
+			{
+				"ticket": "2059500",
+				"description": "pcs rebase bz for 8.7",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2059500"
+			},
+			{
+				"ticket": "2064805",
+				"description": "man pcs suggests using 'stickiness' instead of 'resource-stickiness' in 'pcs resource meta'",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2064805"
+			},
+			{
+				"ticket": "2066629",
+				"description": "CVE-2022-1049 pcs: improper authentication via PAM",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2066629"
+			},
+			{
+				"ticket": "2115326",
+				"description": "Cannot remove a quorum device",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2115326"
+			},
+			{
+				"ticket": "2117650",
+				"description": "[Web-UI] It is not possible to enable SBD using web UI",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2117650"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2022-1049",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2022-1049.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+				"cvss3BaseScore": "6.3",
+				"cwe": "CWE-287"
+			}
+		],
+		"publishedAt": "2022-11-13T07:51:34.929867Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"pcs-0:0.10.14-5.el8.aarch64.rpm",
+					"pcs-0:0.10.14-5.el8.src.rpm",
+					"pcs-0:0.10.14-5.el8.x86_64.rpm",
+					"pcs-snmp-0:0.10.14-5.el8.aarch64.rpm",
+					"pcs-snmp-0:0.10.14-5.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

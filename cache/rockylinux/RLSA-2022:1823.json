@@ -1,0 +1,98 @@
+{
+	"advisory": {
+		"type": "TYPE_SECURITY",
+		"shortCode": "RL",
+		"name": "RLSA-2022:1823",
+		"synopsis": "Moderate: mod_auth_openidc:2.3 security update",
+		"severity": "SEVERITY_MODERATE",
+		"topic": "An update for the mod_auth_openidc:2.3 module is now available for Rocky Linux 8.\nRocky Enterprise Software Foundation Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+		"description": "The mod_auth_openidc is an OpenID Connect authentication module for Apache HTTP Server. It enables an Apache HTTP Server to operate as an OpenID Connect Relying Party and/or OAuth 2.0 Resource Server. \nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nAdditional Changes:\nFor detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1986102",
+				"description": "CVE-2021-32786 mod_auth_openidc: open redirect in oidc_validate_redirect_url()",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986102"
+			},
+			{
+				"ticket": "1986395",
+				"description": "CVE-2021-32791 mod_auth_openidc: hardcoded static IV and AAD with a reused key in AES GCM encryption",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986395"
+			},
+			{
+				"ticket": "1986397",
+				"description": "CVE-2021-32792 mod_auth_openidc: XSS when using OIDCPreservePost On",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1986397"
+			},
+			{
+				"ticket": "2001646",
+				"description": "CVE-2021-39191 mod_auth_openidc: open redirect due to target_link_uri parameter not validated",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2001646"
+			}
+		],
+		"cves": [
+			{
+				"name": "CVE-2021-32786",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-32786.json",
+				"cvss3ScoringVector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-601"
+			},
+			{
+				"name": "CVE-2021-32791",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-32791.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+				"cvss3BaseScore": "5.9",
+				"cwe": "CWE-330"
+			},
+			{
+				"name": "CVE-2021-32792",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-32792.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-79"
+			},
+			{
+				"name": "CVE-2021-39191",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2021-39191.json",
+				"cvss3ScoringVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+				"cvss3BaseScore": "6.1",
+				"cwe": "CWE-601"
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"cjose-0:0.6.1-2.module+el8.3.0+129+2feafa46.aarch64.rpm",
+					"cjose-0:0.6.1-2.module+el8.3.0+129+2feafa46.src.rpm",
+					"cjose-0:0.6.1-2.module+el8.3.0+129+2feafa46.x86_64.rpm",
+					"cjose-debuginfo-0:0.6.1-2.module+el8.3.0+129+2feafa46.aarch64.rpm",
+					"cjose-debuginfo-0:0.6.1-2.module+el8.3.0+129+2feafa46.x86_64.rpm",
+					"cjose-debugsource-0:0.6.1-2.module+el8.3.0+129+2feafa46.aarch64.rpm",
+					"cjose-debugsource-0:0.6.1-2.module+el8.3.0+129+2feafa46.x86_64.rpm",
+					"cjose-devel-0:0.6.1-2.module+el8.3.0+129+2feafa46.aarch64.rpm",
+					"cjose-devel-0:0.6.1-2.module+el8.3.0+129+2feafa46.x86_64.rpm",
+					"mod_auth_openidc-0:2.3.7-11.module+el8.6.0+840+73eca44e.aarch64.rpm",
+					"mod_auth_openidc-0:2.3.7-11.module+el8.6.0+840+73eca44e.src.rpm",
+					"mod_auth_openidc-0:2.3.7-11.module+el8.6.0+840+73eca44e.x86_64.rpm",
+					"mod_auth_openidc-debuginfo-0:2.3.7-11.module+el8.6.0+840+73eca44e.aarch64.rpm",
+					"mod_auth_openidc-debuginfo-0:2.3.7-11.module+el8.6.0+840+73eca44e.x86_64.rpm",
+					"mod_auth_openidc-debugsource-0:2.3.7-11.module+el8.6.0+840+73eca44e.aarch64.rpm",
+					"mod_auth_openidc-debugsource-0:2.3.7-11.module+el8.6.0+840+73eca44e.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

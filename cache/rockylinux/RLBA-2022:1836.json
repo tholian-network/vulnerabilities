@@ -1,0 +1,62 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1836",
+		"synopsis": "redhat-support-lib-python bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for redhat-support-lib-python is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1947345",
+				"description": "Add support for handling JSON response from API's",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1947345"
+			},
+			{
+				"ticket": "1947346",
+				"description": "RHST should use new Red Hat Secure FTP instead of dropbox for attachments",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1947346"
+			},
+			{
+				"ticket": "2018194",
+				"description": "Add support for handling JSON response from API's",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2018194"
+			},
+			{
+				"ticket": "2018195",
+				"description": "RHST should use new Red Hat Secure FTP instead of dropbox for attachments",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2018195"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1836",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1836",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"redhat-support-lib-python-0:0.13.0-0.el8_5.noarch.rpm",
+					"redhat-support-lib-python-0:0.13.0-0.el8_5.src.rpm",
+					"redhat-support-tool-0:0.13.0-0.el8_5.noarch.rpm",
+					"redhat-support-tool-0:0.13.0-0.el8_5.src.rpm"
+				]
+			}
+		}
+	}
+}

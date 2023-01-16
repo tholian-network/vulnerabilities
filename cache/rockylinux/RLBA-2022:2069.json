@@ -1,0 +1,195 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:2069",
+		"synopsis": "systemd bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for systemd is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1798685",
+				"description": "[spec] rpm -V setup fail on /var/log/lastlog",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1798685"
+			},
+			{
+				"ticket": "1860899",
+				"description": "Annoying notice messages \"Killing process PID (systemctl) with signal SIGKILL.\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1860899"
+			},
+			{
+				"ticket": "1931806",
+				"description": "[PATCH] - Changing process PID causing journal logs to show old PID then logs are missing _SYSTEMD_ tags after a restart of systemd-journald",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1931806"
+			},
+			{
+				"ticket": "1944468",
+				"description": "No difference between x and X type in systemd-tmpfiles",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1944468"
+			},
+			{
+				"ticket": "1959150",
+				"description": "[ESXi][RHEL8] ESXi AARCH64 Bringup",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1959150"
+			},
+			{
+				"ticket": "1970945",
+				"description": "systemd coredump in message_extend_fields -\u003e realloc",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1970945"
+			},
+			{
+				"ticket": "1977569",
+				"description": "infinite loop in systemd-coredump process with crashing a process started by kernel thread.",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1977569"
+			},
+			{
+				"ticket": "1991834",
+				"description": "[RFE] Add udev rule to create /dev/ptp_hyperv symlink",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1991834"
+			},
+			{
+				"ticket": "2004765",
+				"description": "systemd-analyze calendar --iterations= unsupported",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2004765"
+			},
+			{
+				"ticket": "2005009",
+				"description": "Update hwdb to support new HW [rhel-8.6.0]",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2005009"
+			},
+			{
+				"ticket": "2008825",
+				"description": "Node upgrade failed due to \"expected target osImageURL\" MCD error",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2008825"
+			},
+			{
+				"ticket": "2015057",
+				"description": "Backport \"mount-util: fix fd_is_mount_point() when both the parent and directory are network fs\"",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2015057"
+			},
+			{
+				"ticket": "2017033",
+				"description": "CI fixes for RHEL-8",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2017033"
+			},
+			{
+				"ticket": "2018024",
+				"description": "systemd: backport %_environmentdir macro typo fix",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2018024"
+			},
+			{
+				"ticket": "2020239",
+				"description": "Avoid possible assert on D-Bus call",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2020239"
+			},
+			{
+				"ticket": "2027908",
+				"description": "Network interface names are not necessarily predictable and don't match previous names",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2027908"
+			},
+			{
+				"ticket": "2036608",
+				"description": "Rate-limiting mount events can make starting/stopping mount units unreliable",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2036608"
+			},
+			{
+				"ticket": "2036853",
+				"description": "Unable to ensure pod container exists: failed to create container for [kubepods burstable ...] : Argument list too long",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2036853"
+			},
+			{
+				"ticket": "2037807",
+				"description": "Unprivileged users can't send ICMP echo requests",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2037807"
+			},
+			{
+				"ticket": "2039797",
+				"description": "Update list of RHEL specific network naming schemes",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2039797"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:2069",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:2069",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"systemd-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-0:239-58.el8_6.7.i686.rpm",
+					"systemd-0:239-58.el8_6.7.src.rpm",
+					"systemd-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-container-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-container-0:239-58.el8_6.7.i686.rpm",
+					"systemd-container-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-container-debuginfo-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-container-debuginfo-0:239-58.el8_6.7.i686.rpm",
+					"systemd-container-debuginfo-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-debuginfo-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-debuginfo-0:239-58.el8_6.7.i686.rpm",
+					"systemd-debuginfo-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-debugsource-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-debugsource-0:239-58.el8_6.7.i686.rpm",
+					"systemd-debugsource-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-devel-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-devel-0:239-58.el8_6.7.i686.rpm",
+					"systemd-devel-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-journal-remote-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-journal-remote-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-journal-remote-debuginfo-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-journal-remote-debuginfo-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-libs-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-libs-0:239-58.el8_6.7.i686.rpm",
+					"systemd-libs-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-libs-debuginfo-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-libs-debuginfo-0:239-58.el8_6.7.i686.rpm",
+					"systemd-libs-debuginfo-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-pam-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-pam-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-pam-debuginfo-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-pam-debuginfo-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-tests-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-tests-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-tests-debuginfo-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-tests-debuginfo-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-udev-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-udev-0:239-58.el8_6.7.x86_64.rpm",
+					"systemd-udev-debuginfo-0:239-58.el8_6.7.aarch64.rpm",
+					"systemd-udev-debuginfo-0:239-58.el8_6.7.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

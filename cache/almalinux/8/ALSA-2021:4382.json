@@ -1,0 +1,69 @@
+{
+	"updateinfo_id": "ALSA-2021:4382",
+	"fromstr": "packager@almalinux.org",
+	"title": "Moderate: json-c security and bug fix update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Moderate",
+	"summary": "An update for json-c is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+	"pushcount": "2",
+	"pkglist": {
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"packages": [
+			{
+				"src": "json-c-0.13.1-2.el8.src.rpm",
+				"name": "json-c-devel",
+				"epoch": "0",
+				"version": "0.13.1",
+				"release": "2.el8",
+				"arch": "x86_64",
+				"filename": "json-c-devel-0.13.1-2.el8.x86_64.rpm",
+				"sum": "277ca7581b61ed8518c9250fe562e6122b9bf478d4b269edbf336662c494bb34",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "json-c-0.13.1-2.el8.src.rpm",
+				"name": "json-c-devel",
+				"epoch": "0",
+				"version": "0.13.1",
+				"release": "2.el8",
+				"arch": "i686",
+				"filename": "json-c-devel-0.13.1-2.el8.i686.rpm",
+				"sum": "6cf2c0e6bb23e771555930eb63dd245a8abd313237387d1144c35d10d9a96f63",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "json-c-0.13.1-2.el8.src.rpm",
+				"name": "json-c-doc",
+				"epoch": "0",
+				"version": "0.13.1",
+				"release": "2.el8",
+				"arch": "noarch",
+				"filename": "json-c-doc-0.13.1-2.el8.noarch.rpm",
+				"sum": "33e7a0c1fe4ae2ceaeed0241ac97fae87af80642e5237d023906edde6823bef5",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "JSON-C implements a reference counting object model that allows users to easily construct JavaScript Object Notation (JSON) objects in C, output them as JSON formatted strings, and parse JSON formatted strings back into the C representation of JSON objects.\n\nSecurity Fix(es):\n\n* json-c: integer overflow and out-of-bounds write via a large JSON file (CVE-2020-12762)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
+	"references": [
+		{
+			"id": "CVE-2020-12762",
+			"title": "CVE-2020-12762",
+			"type": "cve",
+			"href": "https://vulners.com/cve/CVE-2020-12762"
+		}
+	],
+	"issued_date": {
+		"$date": 1636463409000
+	},
+	"updated_date": {
+		"$date": 1636712456000
+	}
+}

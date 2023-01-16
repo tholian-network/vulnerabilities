@@ -1,0 +1,48 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2021:4470",
+		"synopsis": "man-db bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for man-db is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Enterprise Software Foundation\nEnterprise Linux 8.5 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "1874010",
+				"description": "After installing lapack package, server shutdown is delayed while man-db-cache-update.service runs",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=1874010"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2021:4470",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2021:4470",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2021-11-09T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"man-db-0:2.7.6.1-18.el8.aarch64.rpm",
+					"man-db-0:2.7.6.1-18.el8.src.rpm",
+					"man-db-0:2.7.6.1-18.el8.x86_64.rpm",
+					"man-db-cron-0:2.7.6.1-18.el8.noarch.rpm",
+					"man-db-debuginfo-0:2.7.6.1-18.el8.aarch64.rpm",
+					"man-db-debuginfo-0:2.7.6.1-18.el8.x86_64.rpm",
+					"man-db-debugsource-0:2.7.6.1-18.el8.aarch64.rpm",
+					"man-db-debugsource-0:2.7.6.1-18.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}

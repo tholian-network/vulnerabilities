@@ -1,0 +1,57 @@
+{
+	"advisory": {
+		"type": "TYPE_BUGFIX",
+		"shortCode": "RL",
+		"name": "RLBA-2022:1929",
+		"synopsis": "gcc-toolset-11-strace bug fix and enhancement update",
+		"severity": "SEVERITY_UNKNOWN",
+		"topic": "An update for gcc-toolset-11-strace is now available for Rocky Linux 8.",
+		"description": "For detailed information on changes in this release, see the Rocky Linux 8.6 Release Notes linked from the References section.",
+		"affectedProducts": [
+			"Rocky Linux 8"
+		],
+		"fixes": [
+			{
+				"ticket": "2028163",
+				"description": "[RHEL 8 GTS] assertion when using 'xx' arguments to strace",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2028163"
+			},
+			{
+				"ticket": "2038992",
+				"description": "[RHEL 8 GTS] RFE: backport of --secontext=mismatch functionality",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2038992"
+			},
+			{
+				"ticket": "2046265",
+				"description": "[RHEL 8 GTS] gcc-toolset-11-strace: options-syntax test fails in tests-m32",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://bugzilla.redhat.com/show_bug.cgi?id=2046265"
+			}
+		],
+		"cves": [
+			{
+				"name": "RHBA-2022:1929",
+				"sourceBy": "Red Hat",
+				"sourceLink": "https://access.redhat.com/errata/RHBA-2022:1929",
+				"cvss3ScoringVector": "",
+				"cvss3BaseScore": "",
+				"cwe": ""
+			}
+		],
+		"publishedAt": "2022-05-10T00:00:00Z",
+		"rebootSuggested": false,
+		"rpms": {
+			"Rocky Linux 8": {
+				"nvras": [
+					"gcc-toolset-11-strace-0:5.13-7.el8.aarch64.rpm",
+					"gcc-toolset-11-strace-0:5.13-7.el8.src.rpm",
+					"gcc-toolset-11-strace-0:5.13-7.el8.x86_64.rpm",
+					"gcc-toolset-11-strace-debuginfo-0:5.13-7.el8.aarch64.rpm",
+					"gcc-toolset-11-strace-debuginfo-0:5.13-7.el8.x86_64.rpm"
+				]
+			}
+		}
+	}
+}
