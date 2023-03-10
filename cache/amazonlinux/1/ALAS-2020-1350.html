@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2020-1350</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2020-1350'>ALAS-2020-1350</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2020-1350
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2020-03-09 19:20 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2020-03-13 19:45 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2020-7061.html' target='_blank'>CVE-2020-7061&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-7062.html' target='_blank'>CVE-2020-7062&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-7063.html' target='_blank'>CVE-2020-7063&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>In PHP versions 7.3.x below 7.3.15 and 7.4.x below 7.4.3, while extracting PHAR files on Windows using phar extension, certain content inside PHAR file could lead to one-byte read past the allocated buffer. This could potentially lead to information disclosure or crash. (CVE-2020-7061)</p><p>In PHP versions 7.2.x below 7.2.28, 7.3.x below 7.3.15 and 7.4.x below 7.4.3, when using file upload functionality, if upload progress tracking is enabled, but session.upload_progress.cleanup is set to 0 (disabled), and the file upload fails, the upload procedure would try to clean up data that does not exist and encounter null pointer dereference, which would likely lead to a crash. (CVE-2020-7062)</p><p>In PHP versions 7.2.x below 7.2.28, 7.3.x below 7.3.15 and 7.4.x below 7.4.3, when creating PHAR archive using PharData::buildFromIterator() function, the files are added with default permissions (0666, or all access) even if the original files on the filesystem were with more restrictive permissions. This may result in files having more lax permissions than intended when such archive is extracted. (CVE-2020-7063)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>php72</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update php72</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; php72-cli-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-fpm-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-xml-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-dba-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-snmp-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-debuginfo-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-pdo-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-mbstring-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-dbg-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-opcache-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-gmp-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-embedded-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-mysqlnd-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-gd-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-devel-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-bcmath-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-ldap-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-odbc-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-pdo-dblib-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-json-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-soap-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-common-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-pspell-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-intl-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-enchant-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-tidy-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-recode-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-imap-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-pgsql-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-process-7.2.28-1.21.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-xmlrpc-7.2.28-1.21.amzn1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; php72-7.2.28-1.21.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; php72-tidy-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-mbstring-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-pgsql-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-pdo-dblib-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-recode-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-imap-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-bcmath-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-json-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-common-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-ldap-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-gmp-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-odbc-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-gd-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-snmp-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-process-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-opcache-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-intl-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-xmlrpc-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-cli-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-mysqlnd-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-pdo-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-pspell-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-dbg-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-devel-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-enchant-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-embedded-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-dba-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-soap-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-debuginfo-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-fpm-7.2.28-1.21.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-xml-7.2.28-1.21.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-7061" target="_blank" rel="noopener noreferrer">CVE-2020-7061</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-7062" target="_blank" rel="noopener noreferrer">CVE-2020-7062</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-7063" target="_blank" rel="noopener noreferrer">CVE-2020-7063</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7061" target="_blank" rel="noopener noreferrer">CVE-2020-7061</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7062" target="_blank" rel="noopener noreferrer">CVE-2020-7062</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7063" target="_blank" rel="noopener noreferrer">CVE-2020-7063</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

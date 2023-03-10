@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2022-1571</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2022-1571'>ALAS-2022-1571</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2022-1571
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2022-03-07 23:19 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2022-05-23 21:59 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2018-25020.html' target='_blank'>CVE-2018-25020&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-36322.html' target='_blank'>CVE-2020-36322&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-26341.html' target='_blank'>CVE-2021-26341&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-26401.html' target='_blank'>CVE-2021-26401&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-38199.html' target='_blank'>CVE-2021-38199&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-4197.html' target='_blank'>CVE-2021-4197&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-0001.html' target='_blank'>CVE-2022-0001&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-0002.html' target='_blank'>CVE-2022-0002&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-0330.html' target='_blank'>CVE-2022-0330&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-0435.html' target='_blank'>CVE-2022-0435&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-0617.html' target='_blank'>CVE-2022-0617&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-23960.html' target='_blank'>CVE-2022-23960&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-24448.html' target='_blank'>CVE-2022-24448&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Amazon Linux has been made aware of a potential Branch Target Injection (BTI) issue (sometimes referred to as Spectre variant 2). This is a known cross-domain transient execution attack where a third party may seek to cause a disclosure gadget to be speculatively executed after an indirect branch prediction. Generally, actors who attempt transient execution attacks do not have access to the data on the hosts they attempt to access (e.g. where privilege-level isolation is in place). For such attacks to succeed, actors need to be able to run code on the (virtual) machine hosting the data in which they are interested.</p><p>To mitigate this issue, Amazon Linux recommends that customers disable unprivileged eBPF.  This configuration, having the unprivileged eBPF disabled, is the current default for most Linux distributions and as of this advisory, is also the default for all Amazon Linux kernels.</p><p>Specific mitigations for various CPUs are listed below.</p><p>Intel CPUs: <br />For Intel CPUs, this applies to all instance types that have CPUs with eIBRS support. They are:<br />       *6i* (all sizes), c5d.metal, c5.metal, g4dn.metal, i3en.metal, m5*.metal, r5*.metal</p><p>Vectors outside of unprivileged eBPF are not currently known, and Intel recommends disabling unprivileged BPF, as mentioned above. However, optionally enabling &#34;spectre_v2=eibrs,lfence&#34; on Linux kernel command line on the instance types mentioned above, would provide additional protection.</p><p>AMD CPUs:<br />As part of the investigation triggered by this issue, AMD now recommends using a different software mitigation inside the Linux kernel, which the Amazon Linux kernel is enabling by default. This means that the Linux kernel will use the generic retpoline software mitigation, instead of the specialized AMD one, on AMD instances (*5a*). This is done by default, and no administrator action is needed.</p><p>ARM CPUs:<br />The Amazon Linux kernel now enables, by default, a software mitigation for this issue, on all ARM-based EC2 instance types.</p><p><br />A buffer overflow flaw in the Linux kernel BPF subsystem was found in the way users run BPF with long jump over an instruction sequence where inner instructions require substantial expansions into multiple BPF instructions. A local user could use this flaw to crash the system or escalate their privileges on the system. (CVE-2018-25020)</p><p>A denial of service flaw was found in fuse_do_getattr in fs/fuse/dir.c in the kernel side of the FUSE filesystem in the Linux kernel. A local user could use this flaw to crash the system. (CVE-2020-36322)</p><p>A flaw was found in the hanging of mounts in the Linux kernel&#39;s NFS4 subsystem where remote servers are unreachable for the client during migration of data from one server to another (during trunking detection). This flaw allows a remote NFS4 server (if the client is connected) to starve the resources, causing a denial of service. The highest threat from this vulnerability is to system availability. (CVE-2021-38199)</p><p>An unprivileged write to the file handler flaw in the Linux kernel&#39;s control groups and namespaces subsystem was found in the way users have access to some less privileged process that are controlled by cgroups and have higher privileged parent process. It is actually both for cgroup2 and cgroup1 versions of control groups. A local user could use this flaw to crash the system or escalate their privileges on the system. (CVE-2021-4197)</p><p>Non-transparent sharing of branch predictor selectors between contexts in some Intel(R) Processors may allow an authorized user to potentially enable information disclosure. (CVE-2022-0001)</p><p>Non-transparent sharing of branch predictor within a context in some Intel(r) Processors may allow an authorized user to potentially enable information disclosure via local access. (CVE-2022-0002)</p><p>A random memory access flaw was found in the Linux kernel&#39;s GPU i915 kernel driver functionality in the way a user may run malicious code on the GPU. This flaw allows a local user to crash the system or escalate their privileges on the system. (CVE-2022-0330)</p><p>A stack overflow flaw was found in the Linux kernel&#39;s TIPC protocol functionality in the way a user sends a packet with malicious content where the number of domain member nodes is higher than the 64 allowed. This flaw allows a remote user to crash the system or possibly escalate their privileges if they have access to the TIPC network. (CVE-2022-0435)</p><p>A NULL pointer dereference was found in the Linux kernel&#39;s UDF file system functionality in the way the user triggers the udf_file_write_iter function for a malicious UDF image. This flaw allows a local user to crash the system. (CVE-2022-0617)</p><p>A flaw was found in the Linux kernel. When an application tries to open a directory (using the O_DIRECTORY flag) in a mounted NFS filesystem, a lookup operation is performed. If the NFS server returns a file as a result of the lookup, the NFS filesystem returns an uninitialized file descriptor instead of the expected ENOTDIR value. This flaw leads to the kernel&#39;s data leak into the userspace. (CVE-2022-24448) <br /> References to CVE-2021-26401, CVE-2021-26341 and CVE-2022-23960 have been added after the original release of this advisory, however those vulnerabilities were fixed by the packages referenced by this advisory&#39;s initial release on 2022-03-07</p><p>References to CVE-2022-0847 have been removed after the original release of this advisory, as we have determined that the code within kernel versions prior to 5.8 is not affected by CVE-2022-0847.  </p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>kernel</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update kernel</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; perf-4.14.268-139.500.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-4.14.268-139.500.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-devel-4.14.268-139.500.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-common-i686-4.14.268-139.500.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-4.14.268-139.500.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-tools-debuginfo-4.14.268-139.500.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-headers-4.14.268-139.500.amzn1.i686<br />&nbsp;&nbsp;&nbsp; perf-debuginfo-4.14.268-139.500.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-tools-4.14.268-139.500.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-tools-devel-4.14.268-139.500.amzn1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; kernel-4.14.268-139.500.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; kernel-tools-4.14.268-139.500.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-headers-4.14.268-139.500.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-4.14.268-139.500.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; perf-debuginfo-4.14.268-139.500.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-4.14.268-139.500.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-tools-debuginfo-4.14.268-139.500.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-tools-devel-4.14.268-139.500.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-common-x86_64-4.14.268-139.500.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; perf-4.14.268-139.500.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-devel-4.14.268-139.500.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-25020" target="_blank" rel="noopener noreferrer">CVE-2018-25020</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-36322" target="_blank" rel="noopener noreferrer">CVE-2020-36322</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-26341" target="_blank" rel="noopener noreferrer">CVE-2021-26341</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-26401" target="_blank" rel="noopener noreferrer">CVE-2021-26401</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-38199" target="_blank" rel="noopener noreferrer">CVE-2021-38199</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-4197" target="_blank" rel="noopener noreferrer">CVE-2021-4197</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-0001" target="_blank" rel="noopener noreferrer">CVE-2022-0001</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-0002" target="_blank" rel="noopener noreferrer">CVE-2022-0002</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-0330" target="_blank" rel="noopener noreferrer">CVE-2022-0330</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-0435" target="_blank" rel="noopener noreferrer">CVE-2022-0435</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-0617" target="_blank" rel="noopener noreferrer">CVE-2022-0617</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-23960" target="_blank" rel="noopener noreferrer">CVE-2022-23960</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-24448" target="_blank" rel="noopener noreferrer">CVE-2022-24448</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-25020" target="_blank" rel="noopener noreferrer">CVE-2018-25020</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36322" target="_blank" rel="noopener noreferrer">CVE-2020-36322</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-26341" target="_blank" rel="noopener noreferrer">CVE-2021-26341</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-26401" target="_blank" rel="noopener noreferrer">CVE-2021-26401</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-38199" target="_blank" rel="noopener noreferrer">CVE-2021-38199</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4197" target="_blank" rel="noopener noreferrer">CVE-2021-4197</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0001" target="_blank" rel="noopener noreferrer">CVE-2022-0001</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0002" target="_blank" rel="noopener noreferrer">CVE-2022-0002</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0330" target="_blank" rel="noopener noreferrer">CVE-2022-0330</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0435" target="_blank" rel="noopener noreferrer">CVE-2022-0435</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0617" target="_blank" rel="noopener noreferrer">CVE-2022-0617</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23960" target="_blank" rel="noopener noreferrer">CVE-2022-23960</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-24448" target="_blank" rel="noopener noreferrer">CVE-2022-24448</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

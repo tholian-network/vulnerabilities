@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2020-1510</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2020-1510'>ALAS2-2020-1510</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2020-1510
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2020-10-22 17:30 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2020-10-22 22:38 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2019-14558.html' target='_blank'>CVE-2019-14558&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-14559.html' target='_blank'>CVE-2019-14559&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-14563.html' target='_blank'>CVE-2019-14563&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-14575.html' target='_blank'>CVE-2019-14575&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-14586.html' target='_blank'>CVE-2019-14586&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-14587.html' target='_blank'>CVE-2019-14587&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Insufficient control flow management in BIOS firmware for 8th, 9th, 10th Generation Intel(R) Core(TM), Intel(R) Celeron(R) Processor 4000 &amp; 5000 Series Processors may allow an authenticated user to potentially enable denial of service via adjacent access. (CVE-2019-14558)</p><p>Memory leak in ArpOnFrameRcvdDpc (CVE-2019-14559)</p><p>Numeric truncation in MdeModulePkg/PiDxeS3BootScriptLib (CVE-2019-14563)</p><p>DxeImageVerificationHandler() fails open in case of dbx signature check (CVE-2019-14575)</p><p>Potential use-after-free due to the original configuration runtime memory is freed but it is still exposed to the OS runtime (CVE-2019-14586)</p><p>Double-unmap issue in SdMmcCreateTrb function in MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHci.c (CVE-2019-14587)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>edk2</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update edk2</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; edk2-tools-20200801stable-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; edk2-debuginfo-20200801stable-1.amzn2.0.1.aarch64<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; edk2-tools-python-20200801stable-1.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; edk2-tools-doc-20200801stable-1.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; edk2-aarch64-20200801stable-1.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; edk2-ovmf-20200801stable-1.amzn2.0.1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; edk2-20200801stable-1.amzn2.0.1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; edk2-tools-20200801stable-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; edk2-debuginfo-20200801stable-1.amzn2.0.1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-14558" target="_blank" rel="noopener noreferrer">CVE-2019-14558</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-14559" target="_blank" rel="noopener noreferrer">CVE-2019-14559</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-14563" target="_blank" rel="noopener noreferrer">CVE-2019-14563</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-14575" target="_blank" rel="noopener noreferrer">CVE-2019-14575</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-14586" target="_blank" rel="noopener noreferrer">CVE-2019-14586</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-14587" target="_blank" rel="noopener noreferrer">CVE-2019-14587</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14558" target="_blank" rel="noopener noreferrer">CVE-2019-14558</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14559" target="_blank" rel="noopener noreferrer">CVE-2019-14559</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14563" target="_blank" rel="noopener noreferrer">CVE-2019-14563</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14575" target="_blank" rel="noopener noreferrer">CVE-2019-14575</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14586" target="_blank" rel="noopener noreferrer">CVE-2019-14586</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14587" target="_blank" rel="noopener noreferrer">CVE-2019-14587</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

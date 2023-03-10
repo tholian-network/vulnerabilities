@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2018-958</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2018-958'>ALAS-2018-958</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2018-958
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2018-02-20 21:35 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2018-02-21 20:57 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2017-12374.html' target='_blank'>CVE-2017-12374&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-12375.html' target='_blank'>CVE-2017-12375&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-12376.html' target='_blank'>CVE-2017-12376&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-12377.html' target='_blank'>CVE-2017-12377&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-12378.html' target='_blank'>CVE-2017-12378&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-12379.html' target='_blank'>CVE-2017-12379&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-12380.html' target='_blank'>CVE-2017-12380&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-6418.html' target='_blank'>CVE-2017-6418&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-6419.html' target='_blank'>CVE-2017-6419&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-6420.html' target='_blank'>CVE-2017-6420&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Heap-based buffer overflow in mspack/lzxd.c:<br />mspack/lzxd.c in libmspack 0.5alpha, as used in ClamAV 0.99.2, allows remote attackers to cause a denial of service (heap-based buffer overflow and application crash) or possibly have unspecified other impact via a crafted CHM file.(CVE-2017-6419)</p><p>The wwunpack function in libclamav/wwunpack.c in ClamAV 0.99.2 allows remote attackers to cause a denial of service (use-after-free) via a crafted PE file with WWPack compression.(CVE-2017-6420)</p><p>ClamAV AntiVirus software versions 0.99.2 and prior contain a vulnerability that could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition or potentially execute arbitrary code on an affected device. The vulnerability is due to improper input validation checking mechanisms when handling Portable Document Format (.pdf) files sent to an affected device. An unauthenticated, remote attacker could exploit this vulnerability by sending a crafted .pdf file to an affected device. This action could cause a handle_pdfname (in pdf.c) buffer overflow when ClamAV scans the malicious file, allowing the attacker to cause a DoS condition or potentially execute arbitrary code. (CVE-2017-12376)</p><p>ClamAV AntiVirus software versions 0.99.2 and prior contain a vulnerability that could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device. The vulnerability is due to improper input validation checking mechanisms of .tar (Tape Archive) files sent to an affected device. A successful exploit could cause a checksum buffer over-read condition when ClamAV scans the malicious .tar file, potentially allowing the attacker to cause a DoS condition on the affected device.(CVE-2017-12378)</p><p>The ClamAV AntiVirus software versions 0.99.2 and prior contain a vulnerability that could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device. The vulnerability is due to a lack of input validation checking mechanisms during certain mail parsing functions (the rfc2047 function in mbox.c). An unauthenticated, remote attacker could exploit this vulnerability by sending a crafted email to the affected device. This action could cause a buffer overflow condition when ClamAV scans the malicious email, allowing the attacker to potentially cause a DoS condition on an affected device.(CVE-2017-12375)</p><p>ClamAV AntiVirus software versions 0.99.2 and prior contain a vulnerability that could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition or potentially execute arbitrary code on an affected device. The vulnerability is due to improper input validation checking mechanisms in the message parsing function on an affected system. An unauthenticated, remote attacker could exploit this vulnerability by sending a crafted email to the affected device. This action could cause a messageAddArgument (in message.c) buffer overflow condition when ClamAV scans the malicious email, allowing the attacker to potentially cause a DoS condition or execute arbitrary code on an affected device.(CVE-2017-12379)</p><p>libclamav/message.c in ClamAV 0.99.2 allows remote attackers to cause a denial of service (out-of-bounds read) via a crafted e-mail message.(CVE-2017-6418)  </p><p>The ClamAV AntiVirus software versions 0.99.2 and prior contain a vulnerability that could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device. The vulnerability is due to a lack of input validation checking mechanisms during certain mail parsing operations (mbox.c operations on bounce messages). If successfully exploited, the ClamAV software could allow a variable pointing to the mail body which could cause a used after being free (use-after-free) instance which may lead to a disruption of services on an affected device to include a denial of service condition.(CVE-2017-12374)</p><p>ClamAV AntiVirus software versions 0.99.2 and prior contain a vulnerability that could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition or potentially execute arbitrary code on an affected device. The vulnerability is due to improper input validation checking mechanisms in mew packet files sent to an affected device. A successful exploit could cause a heap-based buffer over-read condition in mew.c when ClamAV scans the malicious file, allowing the attacker to cause a DoS condition or potentially execute arbitrary code on the affected device.(CVE-2017-12377)</p><p>ClamAV AntiVirus software versions 0.99.2 and prior contain a vulnerability that could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device. The vulnerability is due to improper input validation checking mechanisms in mbox.c during certain mail parsing functions of the ClamAV software. An unauthenticated, remote attacker could exploit this vulnerability by sending a crafted email to the affected device. An exploit could trigger a NULL pointer dereference condition when ClamAV scans the malicious email, which may result in a DoS condition.(CVE-2017-12380) </p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>clamav</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update clamav</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; clamav-db-0.99.3-1.28.amzn1.i686<br />&nbsp;&nbsp;&nbsp; clamav-milter-0.99.3-1.28.amzn1.i686<br />&nbsp;&nbsp;&nbsp; clamav-lib-0.99.3-1.28.amzn1.i686<br />&nbsp;&nbsp;&nbsp; clamav-debuginfo-0.99.3-1.28.amzn1.i686<br />&nbsp;&nbsp;&nbsp; clamd-0.99.3-1.28.amzn1.i686<br />&nbsp;&nbsp;&nbsp; clamav-devel-0.99.3-1.28.amzn1.i686<br />&nbsp;&nbsp;&nbsp; clamav-update-0.99.3-1.28.amzn1.i686<br />&nbsp;&nbsp;&nbsp; clamav-server-0.99.3-1.28.amzn1.i686<br />&nbsp;&nbsp;&nbsp; clamav-0.99.3-1.28.amzn1.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; clamav-scanner-sysvinit-0.99.3-1.28.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; clamav-data-0.99.3-1.28.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; clamav-milter-sysvinit-0.99.3-1.28.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; clamav-scanner-0.99.3-1.28.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; clamav-data-empty-0.99.3-1.28.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; clamav-filesystem-0.99.3-1.28.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; clamav-server-sysvinit-0.99.3-1.28.amzn1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; clamav-0.99.3-1.28.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; clamav-milter-0.99.3-1.28.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; clamav-lib-0.99.3-1.28.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; clamav-devel-0.99.3-1.28.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; clamav-server-0.99.3-1.28.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; clamav-debuginfo-0.99.3-1.28.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; clamav-db-0.99.3-1.28.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; clamd-0.99.3-1.28.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; clamav-0.99.3-1.28.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; clamav-update-0.99.3-1.28.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-12374" target="_blank" rel="noopener noreferrer">CVE-2017-12374</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-12375" target="_blank" rel="noopener noreferrer">CVE-2017-12375</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-12376" target="_blank" rel="noopener noreferrer">CVE-2017-12376</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-12377" target="_blank" rel="noopener noreferrer">CVE-2017-12377</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-12378" target="_blank" rel="noopener noreferrer">CVE-2017-12378</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-12379" target="_blank" rel="noopener noreferrer">CVE-2017-12379</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-12380" target="_blank" rel="noopener noreferrer">CVE-2017-12380</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-6418" target="_blank" rel="noopener noreferrer">CVE-2017-6418</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-6419" target="_blank" rel="noopener noreferrer">CVE-2017-6419</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-6420" target="_blank" rel="noopener noreferrer">CVE-2017-6420</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12374" target="_blank" rel="noopener noreferrer">CVE-2017-12374</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12375" target="_blank" rel="noopener noreferrer">CVE-2017-12375</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12376" target="_blank" rel="noopener noreferrer">CVE-2017-12376</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12377" target="_blank" rel="noopener noreferrer">CVE-2017-12377</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12378" target="_blank" rel="noopener noreferrer">CVE-2017-12378</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12379" target="_blank" rel="noopener noreferrer">CVE-2017-12379</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12380" target="_blank" rel="noopener noreferrer">CVE-2017-12380</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6418" target="_blank" rel="noopener noreferrer">CVE-2017-6418</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6419" target="_blank" rel="noopener noreferrer">CVE-2017-6419</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6420" target="_blank" rel="noopener noreferrer">CVE-2017-6420</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

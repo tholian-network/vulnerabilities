@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2020-1495</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2020-1495'>ALAS2-2020-1495</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2020-1495
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2020-09-28 20:57 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2020-09-30 21:34 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2019-19448.html' target='_blank'>CVE-2019-19448&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-14314.html' target='_blank'>CVE-2020-14314&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-14331.html' target='_blank'>CVE-2020-14331&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-25211.html' target='_blank'>CVE-2020-25211&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-25212.html' target='_blank'>CVE-2020-25212&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-25285.html' target='_blank'>CVE-2020-25285&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>In the Linux kernel 5.0.21 and 5.3.11, mounting a crafted btrfs filesystem image, performing some operations, and then making a syncfs system call can lead to a use-after-free in try_merge_free_space in fs/btrfs/free-space-cache.c because the pointer to a left data structure can be the same as the pointer to a right data structure.A flaw was found in the Linux kernel&#39;s implementation of BTRFS free space management, where the kernel does not correctly manage the lifetime of internal data structures used. An attacker could use this flaw to corrupt memory or escalate privileges. (CVE-2019-19448)</p><p>A memory out-of-bounds read flaw was found in the Linux kernel before 5.9-rc2 with the ext3/ext4 file system, in the way it accesses a directory with broken indexing. This flaw allows a local user to crash the system if the directory exists. The highest threat from this vulnerability is to system availability.A memory out-of-bounds read flaw was found in the Linux kernel&#39;s ext3/ext4 file system, in the way it accesses a directory with broken indexing. This flaw allows a local user to crash the system if the directory exists. The highest threat from this vulnerability is to system availability. (CVE-2020-14314)</p><p>A flaw was found in the Linux kernel&#39;s implementation of the invert video code on VGA consoles when a local attacker attempts to resize the console, calling an ioctl VT_RESIZE, which causes an out-of-bounds write to occur. This flaw allows a local user with access to the VGA console to crash the system, potentially escalating their privileges on the system. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.A flaw was found in the Linux kernel&#39;s implementation of the invert video code on VGA consoles when a local attacker attempts to resize the console, calling an ioctl VT_RESIZE, which causes an out-of-bounds write to occur. This flaw allows a local user with access to the VGA console to crash the system, potentially escalating their privileges on the system. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability. (CVE-2020-14331)</p><p>In the Linux kernel through 5.8.7, local attackers able to inject conntrack netlink configuration could overflow a local buffer, causing crashes or triggering use of incorrect protocol numbers in ctnetlink_parse_tuple_filter in net/netfilter/nf_conntrack_netlink.c, aka CID-1cc5ef91d2ff.A flaw was found in the Linux kernel. A local attacker, able to inject conntrack netlink configuration, could overflow a local buffer causing crashes or triggering the use of incorrect protocol numbers in ctnetlink_parse_tuple_filter in net/netfilter/nf_conntrack_netlink.c. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability. (CVE-2020-25211)</p><p>A TOCTOU mismatch in the NFS client code in the Linux kernel before 5.8.3 could be used by local attackers to corrupt memory or possibly have unspecified other impact because a size check is in fs/nfs/nfs4proc.c instead of fs/nfs/nfs4xdr.c, aka CID-b4487b935452.A flaw was found in the NFSv4 implementation where when mounting a remote attacker controlled server it could return specially crafted response allow for local memory corruption and possibly privilege escalation. (CVE-2020-25212)</p><p>A race condition between hugetlb sysctl handlers in mm/hugetlb.c in the Linux kernel before 5.8.8 could be used by local attackers to corrupt memory, cause a NULL pointer dereference, or possibly have unspecified other impact, aka CID-17743798d812. (CVE-2020-25285)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>kernel</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update kernel</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; kernel-4.14.198-152.320.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-headers-4.14.198-152.320.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-common-aarch64-4.14.198-152.320.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; perf-4.14.198-152.320.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; perf-debuginfo-4.14.198-152.320.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; python-perf-4.14.198-152.320.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; python-perf-debuginfo-4.14.198-152.320.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-tools-4.14.198-152.320.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-tools-devel-4.14.198-152.320.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-tools-debuginfo-4.14.198-152.320.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-devel-4.14.198-152.320.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-4.14.198-152.320.amzn2.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; kernel-headers-4.14.198-152.320.amzn2.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; kernel-4.14.198-152.320.amzn2.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; kernel-4.14.198-152.320.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-headers-4.14.198-152.320.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-common-x86_64-4.14.198-152.320.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; perf-4.14.198-152.320.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; perf-debuginfo-4.14.198-152.320.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; python-perf-4.14.198-152.320.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; python-perf-debuginfo-4.14.198-152.320.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-tools-4.14.198-152.320.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-tools-devel-4.14.198-152.320.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-tools-debuginfo-4.14.198-152.320.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-devel-4.14.198-152.320.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-4.14.198-152.320.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-livepatch-4.14.198-152.320-1.0-0.amzn2.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-19448" target="_blank" rel="noopener noreferrer">CVE-2019-19448</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-14314" target="_blank" rel="noopener noreferrer">CVE-2020-14314</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-14331" target="_blank" rel="noopener noreferrer">CVE-2020-14331</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-25211" target="_blank" rel="noopener noreferrer">CVE-2020-25211</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-25212" target="_blank" rel="noopener noreferrer">CVE-2020-25212</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-25285" target="_blank" rel="noopener noreferrer">CVE-2020-25285</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19448" target="_blank" rel="noopener noreferrer">CVE-2019-19448</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14314" target="_blank" rel="noopener noreferrer">CVE-2020-14314</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14331" target="_blank" rel="noopener noreferrer">CVE-2020-14331</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25211" target="_blank" rel="noopener noreferrer">CVE-2020-25211</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25212" target="_blank" rel="noopener noreferrer">CVE-2020-25212</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25285" target="_blank" rel="noopener noreferrer">CVE-2020-25285</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

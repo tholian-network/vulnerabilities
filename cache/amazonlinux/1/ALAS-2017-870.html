@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2017-870</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2017-870'>ALAS-2017-870</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2017-870
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2017-08-17 18:09 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2017-11-03 05:45 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2017-11473.html' target='_blank'>CVE-2017-11473&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-7533.html' target='_blank'>CVE-2017-7533&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-7542.html' target='_blank'>CVE-2017-7542&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-8831.html' target='_blank'>CVE-2017-8831&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Buffer overflow in mp_override_legacy_irq():<br />Buffer overflow in the mp_override_legacy_irq() function in arch/x86/kernel/acpi/boot.c in the Linux kernel through 4.12.2 allows local users to gain privileges via a crafted ACPI table. (CVE-2017-11473)</p><p>A race between inotify_handle_event() and sys_rename():<br />A race condition was found in the Linux kernel, present since v3.14-rc1 through v4.12. The race happens between threads of inotify_handle_event() and vfs_rename() while running the rename operation against the same file. As a result of the race the next slab data or the slab&#39;s free list pointer can be corrupted with attacker-controlled data, which may lead to the privilege escalation. (CVE-2017-7533)</p><p>Integer overflow in ip6_find_1stfragopt() causes infinite loop:<br />An integer overflow vulnerability in ip6_find_1stfragopt() function was found. A local attacker that has privileges (of CAP_NET_RAW) to open raw socket can cause an infinite loop inside the ip6_find_1stfragopt() function.(CVE-2017-7542)</p><p>Double fetch vulnerability in saa7164_bus_get function The saa7164_bus_get function in drivers/media/pci/saa7164/saa7164-bus.c in the Linux kernel through 4.10.14 allows local users to cause a denial of service (out-of-bounds array access) or possibly have unspecified other impact by changing a certain sequence-number value, aka a &#34;double fetch&#34; vulnerability. Please note, the saa7164 driver is not enabled in the Amazon Linux AMI kernel (CVE-2017-8831)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>kernel</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update kernel</i> to update your system.
+                                    <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; perf-4.9.43-17.38.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-tools-devel-4.9.43-17.38.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-tools-4.9.43-17.38.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-tools-debuginfo-4.9.43-17.38.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-headers-4.9.43-17.38.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-common-i686-4.9.43-17.38.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-4.9.43-17.38.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-devel-4.9.43-17.38.amzn1.i686<br />&nbsp;&nbsp;&nbsp; perf-debuginfo-4.9.43-17.38.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-4.9.43-17.38.amzn1.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; kernel-doc-4.9.43-17.38.amzn1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; kernel-4.9.43-17.38.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; kernel-headers-4.9.43-17.38.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; perf-4.9.43-17.38.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-4.9.43-17.38.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-4.9.43-17.38.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-tools-debuginfo-4.9.43-17.38.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-common-x86_64-4.9.43-17.38.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-tools-4.9.43-17.38.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; perf-debuginfo-4.9.43-17.38.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-devel-4.9.43-17.38.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-tools-devel-4.9.43-17.38.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-11473" target="_blank" rel="noopener noreferrer">CVE-2017-11473</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-7533" target="_blank" rel="noopener noreferrer">CVE-2017-7533</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-7542" target="_blank" rel="noopener noreferrer">CVE-2017-7542</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-8831" target="_blank" rel="noopener noreferrer">CVE-2017-8831</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11473" target="_blank" rel="noopener noreferrer">CVE-2017-11473</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7533" target="_blank" rel="noopener noreferrer">CVE-2017-7533</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7542" target="_blank" rel="noopener noreferrer">CVE-2017-7542</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8831" target="_blank" rel="noopener noreferrer">CVE-2017-8831</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

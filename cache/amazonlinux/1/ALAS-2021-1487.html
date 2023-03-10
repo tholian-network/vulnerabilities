@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2021-1487</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2021-1487'>ALAS-2021-1487</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2021-1487
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2021-03-18 17:29 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2021-03-19 23:18 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2021-26930.html' target='_blank'>CVE-2021-26930&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-26931.html' target='_blank'>CVE-2021-26931&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-26932.html' target='_blank'>CVE-2021-26932&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-27363.html' target='_blank'>CVE-2021-27363&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-27364.html' target='_blank'>CVE-2021-27364&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-27365.html' target='_blank'>CVE-2021-27365&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-28038.html' target='_blank'>CVE-2021-28038&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>An issue was discovered in the Linux kernel 3.11 through 5.10.16, as used by Xen. To service requests to the PV backend, the driver maps grant references provided by the frontend. In this process, errors may be encountered. In one case, an error encountered earlier might be discarded by later processing, resulting in the caller assuming successful mapping, and hence subsequent operations trying to access space that wasn&#39;t mapped. In another case, internal state would be insufficiently updated, preventing safe recovery from the error. This affects drivers/block/xen-blkback/blkback.c. (&lt;a href=&#34;https://nvd.nist.gov/vuln/detail/CVE%2D2021%2D26930&#34;&gt;CVE-2021-26930&lt;/a&gt;)</p><p>An issue was discovered in the Linux kernel 2.6.39 through 5.10.16, as used in Xen. Block, net, and SCSI backends consider certain errors a plain bug, deliberately causing a kernel crash. For errors potentially being at least under the influence of guests (such as out of memory conditions), it isn&#39;t correct to assume a plain bug. Memory allocations potentially causing such crashes occur only when Linux is running in PV mode, though. This affects drivers/block/xen-blkback/blkback.c and drivers/xen/xen-scsiback.c. (&lt;a href=&#34;https://nvd.nist.gov/vuln/detail/CVE%2D2021%2D26931&#34;&gt;CVE-2021-26931&lt;/a&gt;)</p><p>An issue was discovered in the Linux kernel 3.2 through 5.10.16, as used by Xen. Grant mapping operations often occur in batch hypercalls, where a number of operations are done in a single hypercall, the success or failure of each one is reported to the backend driver, and the backend driver then loops over the results, performing follow-up actions based on the success or failure of each operation. Unfortunately, when running in PV mode, the Linux backend drivers mishandle this: Some errors are ignored, effectively implying their success from the success of related batch elements. In other cases, errors resulting from one batch element lead to further batch elements not being inspected, and hence successful ones to not be possible to properly unmap upon error recovery. Only systems with Linux backends running in PV mode are vulnerable. Linux backends run in HVM / PVH modes are not vulnerable. This affects arch/*/xen/p2m.c and drivers/xen/gntdev.c. (&lt;a href=&#34;https://nvd.nist.gov/vuln/detail/CVE%2D2021%2D26932&#34;&gt;CVE-2021-26932&lt;/a&gt;)</p><p>A flaw was found in the way access to sessions and handles was handled in the iSCSI driver in the Linux kernel. A local user could use this flaw to leak iSCSI transport handle kernel address or end arbitrary iSCSI connections on the system. (CVE-2021-27363)</p><p>A flaw was found in the Linux kernel. An out-of-bounds read was discovered in the libiscsi module that could lead to reading kernel memory or a crash. The highest threat from this vulnerability is to data confidentiality as well as system availability. (CVE-2021-27364)</p><p>A flaw was found in the Linux kernel. A heap buffer overflow in the iSCSI subsystem is triggered by setting an iSCSI string attribute to a value larger than one page and then trying to read it. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability. (CVE-2021-27365)</p><p>An issue was discovered in the Linux kernel through 5.11.3, as used with Xen PV. A certain part of the netback driver lacks necessary treatment of errors such as failed memory allocations (as a result of changes to the handling of grant mapping errors). A host OS denial of service may occur during misbehavior of a networking frontend driver. NOTE: this issue exists because of an incomplete fix for CVE-2021-26931. (&lt;a href=&#34;https://nvd.nist.gov/vuln/detail/CVE%2D2021%2D28038&#34;&gt;CVE-2021-28038&lt;/a&gt;)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>kernel</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update kernel</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; kernel-tools-4.14.225-121.357.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-common-i686-4.14.225-121.357.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-4.14.225-121.357.amzn1.i686<br />&nbsp;&nbsp;&nbsp; perf-4.14.225-121.357.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-devel-4.14.225-121.357.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-4.14.225-121.357.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-tools-debuginfo-4.14.225-121.357.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-tools-devel-4.14.225-121.357.amzn1.i686<br />&nbsp;&nbsp;&nbsp; perf-debuginfo-4.14.225-121.357.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-headers-4.14.225-121.357.amzn1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; kernel-4.14.225-121.357.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; perf-debuginfo-4.14.225-121.357.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; perf-4.14.225-121.357.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-devel-4.14.225-121.357.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-common-x86_64-4.14.225-121.357.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-4.14.225-121.357.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-headers-4.14.225-121.357.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-tools-debuginfo-4.14.225-121.357.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-tools-devel-4.14.225-121.357.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-tools-4.14.225-121.357.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-4.14.225-121.357.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-26930" target="_blank" rel="noopener noreferrer">CVE-2021-26930</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-26931" target="_blank" rel="noopener noreferrer">CVE-2021-26931</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-26932" target="_blank" rel="noopener noreferrer">CVE-2021-26932</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-27363" target="_blank" rel="noopener noreferrer">CVE-2021-27363</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-27364" target="_blank" rel="noopener noreferrer">CVE-2021-27364</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-27365" target="_blank" rel="noopener noreferrer">CVE-2021-27365</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-28038" target="_blank" rel="noopener noreferrer">CVE-2021-28038</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-26930" target="_blank" rel="noopener noreferrer">CVE-2021-26930</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-26931" target="_blank" rel="noopener noreferrer">CVE-2021-26931</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-26932" target="_blank" rel="noopener noreferrer">CVE-2021-26932</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27363" target="_blank" rel="noopener noreferrer">CVE-2021-27363</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27364" target="_blank" rel="noopener noreferrer">CVE-2021-27364</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27365" target="_blank" rel="noopener noreferrer">CVE-2021-27365</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28038" target="_blank" rel="noopener noreferrer">CVE-2021-28038</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

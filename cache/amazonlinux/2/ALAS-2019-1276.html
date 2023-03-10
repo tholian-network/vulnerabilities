@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2019-1276</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2019-1276'>ALAS2-2019-1276</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2019-1276
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2019-08-23 03:41 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2019-08-27 21:24 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2017-17742.html' target='_blank'>CVE-2017-17742&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-1000073.html' target='_blank'>CVE-2018-1000073&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-1000074.html' target='_blank'>CVE-2018-1000074&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-1000075.html' target='_blank'>CVE-2018-1000075&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-1000076.html' target='_blank'>CVE-2018-1000076&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-1000077.html' target='_blank'>CVE-2018-1000077&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-1000078.html' target='_blank'>CVE-2018-1000078&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-1000079.html' target='_blank'>CVE-2018-1000079&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-16396.html' target='_blank'>CVE-2018-16396&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-6914.html' target='_blank'>CVE-2018-6914&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-8777.html' target='_blank'>CVE-2018-8777&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-8778.html' target='_blank'>CVE-2018-8778&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-8779.html' target='_blank'>CVE-2018-8779&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-8780.html' target='_blank'>CVE-2018-8780&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>It was found that WEBrick could be forced to use an excessive amount of memory during the processing of HTTP requests, leading to a Denial of Service. An attacker could use this flaw to send huge requests to a WEBrick application, resulting in the server running out of memory. (CVE-2018-8777)</p><p>It was found that the tmpdir and tempfile modules did not sanitize their file name argument. An attacker with control over the name could create temporary files and directories outside of the dedicated directory. (CVE-2018-6914)</p><p>It was found that WEBrick did not sanitize headers sent back to clients, resulting in a response-splitting vulnerability. An attacker, able to control the server&#39;s headers, could force WEBrick into injecting additional headers to a client. (CVE-2017-17742)</p><p>RubyGems version Ruby 2.2 series: 2.2.9 and earlier, Ruby 2.3 series: 2.3.6 and earlier, Ruby 2.4 series: 2.4.3 and earlier, Ruby 2.5 series: 2.5.0 and earlier, prior to trunk revision 62422 contains a Directory Traversal vulnerability in install_location function of package.rb that can result in path traversal when writing to a symlinked basedir outside of the root. This vulnerability appears to have been fixed in 2.7.6. (CVE-2018-1000073)</p><p>RubyGems version Ruby 2.2 series: 2.2.9 and earlier, Ruby 2.3 series: 2.3.6 and earlier, Ruby 2.4 series: 2.4.3 and earlier, Ruby 2.5 series: 2.5.0 and earlier, prior to trunk revision 62422 contains a Improper Verification of Cryptographic Signature vulnerability in package.rb that can result in a mis-signed gem could be installed, as the tarball would contain multiple gem signatures.. This vulnerability appears to have been fixed in 2.7.6. (CVE-2018-1000076)</p><p>It was found that the methods from the Dir class did not properly handle strings containing the NULL byte. An attacker, able to inject NULL bytes in a path, could possibly trigger an unspecified behavior of the ruby script. (CVE-2018-8780)</p><p>RubyGems version Ruby 2.2 series: 2.2.9 and earlier, Ruby 2.3 series: 2.3.6 and earlier, Ruby 2.4 series: 2.4.3 and earlier, Ruby 2.5 series: 2.5.0 and earlier, prior to trunk revision 62422 contains a infinite loop caused by negative size vulnerability in ruby gem package tar header that can result in a negative size could cause an infinite loop.. This vulnerability appears to have been fixed in 2.7.6. (CVE-2018-1000075)</p><p>RubyGems version Ruby 2.2 series: 2.2.9 and earlier, Ruby 2.3 series: 2.3.6 and earlier, Ruby 2.4 series: 2.4.3 and earlier, Ruby 2.5 series: 2.5.0 and earlier, prior to trunk revision 62422 contains a Cross Site Scripting (XSS) vulnerability in gem server display of homepage attribute that can result in XSS. This attack appear to be exploitable via the victim must browse to a malicious gem on a vulnerable gem server. This vulnerability appears to have been fixed in 2.7.6. (CVE-2018-1000078)</p><p>An issue was discovered in Ruby before 2.3.8, 2.4.x before 2.4.5, 2.5.x before 2.5.2, and 2.6.x before 2.6.0-preview3. It does not taint strings that result from unpacking tainted strings with some formats. (CVE-2018-16396)</p><p>A integer underflow was found in the way String#unpack decodes the unpacking format. An attacker, able to control the unpack format, could use this flaw to disclose arbitrary parts of the application&#39;s memory. (CVE-2018-8778)</p><p>It was found that the UNIXSocket::open and UNIXServer::open ruby methods did not handle the NULL byte properly. An attacker, able to inject NULL bytes in the socket path, could possibly trigger an unspecified behavior of the ruby script. (CVE-2018-8779)</p><p>RubyGems version Ruby 2.2 series: 2.2.9 and earlier, Ruby 2.3 series: 2.3.6 and earlier, Ruby 2.4 series: 2.4.3 and earlier, Ruby 2.5 series: 2.5.0 and earlier, prior to trunk revision 62422 contains a Deserialization of Untrusted Data vulnerability in owner command that can result in code execution. This attack appear to be exploitable via victim must run the `gem owner` command on a gem with a specially crafted YAML file. This vulnerability appears to have been fixed in 2.7.6. (CVE-2018-1000074)</p><p>RubyGems version Ruby 2.2 series: 2.2.9 and earlier, Ruby 2.3 series: 2.3.6 and earlier, Ruby 2.4 series: 2.4.3 and earlier, Ruby 2.5 series: 2.5.0 and earlier, prior to trunk revision 62422 contains a Improper Input Validation vulnerability in ruby gems specification homepage attribute that can result in a malicious gem could set an invalid homepage URL. This vulnerability appears to have been fixed in 2.7.6. (CVE-2018-1000077)</p><p>RubyGems version Ruby 2.2 series: 2.2.9 and earlier, Ruby 2.3 series: 2.3.6 and earlier, Ruby 2.4 series: 2.4.3 and earlier, Ruby 2.5 series: 2.5.0 and earlier, prior to trunk revision 62422 contains a Directory Traversal vulnerability in gem installation that can result in the gem could write to arbitrary filesystem locations during installation. This attack appear to be exploitable via the victim must install a malicious gem. This vulnerability appears to have been fixed in 2.7.6. (CVE-2018-1000079)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>ruby</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update ruby</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; ruby-2.0.0.648-36.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; ruby-devel-2.0.0.648-36.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; ruby-libs-2.0.0.648-36.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; rubygem-bigdecimal-1.2.0-36.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; rubygem-io-console-0.4.2-36.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; rubygem-json-1.7.7-36.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; rubygem-psych-2.0.0-36.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; ruby-tcltk-2.0.0.648-36.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; ruby-debuginfo-2.0.0.648-36.amzn2.0.1.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; ruby-2.0.0.648-36.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; ruby-devel-2.0.0.648-36.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; ruby-libs-2.0.0.648-36.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; rubygem-bigdecimal-1.2.0-36.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; rubygem-io-console-0.4.2-36.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; rubygem-json-1.7.7-36.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; rubygem-psych-2.0.0-36.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; ruby-tcltk-2.0.0.648-36.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; ruby-debuginfo-2.0.0.648-36.amzn2.0.1.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; rubygems-2.0.14.1-36.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; rubygems-devel-2.0.14.1-36.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; rubygem-rake-0.9.6-36.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; ruby-irb-2.0.0.648-36.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; rubygem-rdoc-4.0.0-36.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; ruby-doc-2.0.0.648-36.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; rubygem-minitest-4.3.2-36.amzn2.0.1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; ruby-2.0.0.648-36.amzn2.0.1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; ruby-2.0.0.648-36.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; ruby-devel-2.0.0.648-36.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; ruby-libs-2.0.0.648-36.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; rubygem-bigdecimal-1.2.0-36.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; rubygem-io-console-0.4.2-36.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; rubygem-json-1.7.7-36.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; rubygem-psych-2.0.0-36.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; ruby-tcltk-2.0.0.648-36.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; ruby-debuginfo-2.0.0.648-36.amzn2.0.1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-17742" target="_blank" rel="noopener noreferrer">CVE-2017-17742</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-1000073" target="_blank" rel="noopener noreferrer">CVE-2018-1000073</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-1000074" target="_blank" rel="noopener noreferrer">CVE-2018-1000074</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-1000075" target="_blank" rel="noopener noreferrer">CVE-2018-1000075</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-1000076" target="_blank" rel="noopener noreferrer">CVE-2018-1000076</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-1000077" target="_blank" rel="noopener noreferrer">CVE-2018-1000077</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-1000078" target="_blank" rel="noopener noreferrer">CVE-2018-1000078</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-1000079" target="_blank" rel="noopener noreferrer">CVE-2018-1000079</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-16396" target="_blank" rel="noopener noreferrer">CVE-2018-16396</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-6914" target="_blank" rel="noopener noreferrer">CVE-2018-6914</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-8777" target="_blank" rel="noopener noreferrer">CVE-2018-8777</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-8778" target="_blank" rel="noopener noreferrer">CVE-2018-8778</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-8779" target="_blank" rel="noopener noreferrer">CVE-2018-8779</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-8780" target="_blank" rel="noopener noreferrer">CVE-2018-8780</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-17742" target="_blank" rel="noopener noreferrer">CVE-2017-17742</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000073" target="_blank" rel="noopener noreferrer">CVE-2018-1000073</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000074" target="_blank" rel="noopener noreferrer">CVE-2018-1000074</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000075" target="_blank" rel="noopener noreferrer">CVE-2018-1000075</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000076" target="_blank" rel="noopener noreferrer">CVE-2018-1000076</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000077" target="_blank" rel="noopener noreferrer">CVE-2018-1000077</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000078" target="_blank" rel="noopener noreferrer">CVE-2018-1000078</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000079" target="_blank" rel="noopener noreferrer">CVE-2018-1000079</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16396" target="_blank" rel="noopener noreferrer">CVE-2018-16396</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-6914" target="_blank" rel="noopener noreferrer">CVE-2018-6914</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8777" target="_blank" rel="noopener noreferrer">CVE-2018-8777</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8778" target="_blank" rel="noopener noreferrer">CVE-2018-8778</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8779" target="_blank" rel="noopener noreferrer">CVE-2018-8779</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8780" target="_blank" rel="noopener noreferrer">CVE-2018-8780</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

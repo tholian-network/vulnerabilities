@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2011-007</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2011-007'>ALAS-2011-007</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2011-7
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2011-10-11 00:07 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2014-09-14 14:25 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2011-1148.html' target='_blank'>CVE-2011-1148&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2011-1938.html' target='_blank'>CVE-2011-1938&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2011-2202.html' target='_blank'>CVE-2011-2202&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2011-2483.html' target='_blank'>CVE-2011-2483&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2011-3182.html' target='_blank'>CVE-2011-3182&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2011-3379.html' target='_blank'>CVE-2011-3379&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>PHP before 5.3.7 does not properly check the return values of the malloc, calloc, and realloc library functions, which allows context-dependent attackers to cause a denial of service (NULL pointer dereference and application crash) or trigger a buffer overflow by leveraging the ability to provide an arbitrary value for a function argument, related to (1) ext/curl/interface.c, (2) ext/date/lib/parse_date.c, (3) ext/date/lib/parse_iso_intervals.c, (4) ext/date/lib/parse_tz.c, (5) ext/date/lib/timelib.c, (6) ext/pdo_odbc/pdo_odbc.c, (7) ext/reflection/php_reflection.c, (8) ext/soap/php_sdl.c, (9) ext/xmlrpc/libxmlrpc/base64.c, (10) TSRM/tsrm_win32.c, and (11) the strtotime function.</p><p>The is_a function in PHP 5.3.7 and 5.3.8 triggers a call to the __autoload function, which makes it easier for remote attackers to execute arbitrary code by providing a crafted URL and leveraging potentially unsafe behavior in certain PEAR packages and custom autoloaders.</p><p>php: changes to is_a() in 5.3.7 may allow arbitrary code execution with certain code</p><p>A signedness issue was found in the way the PHP crypt() function handled 8-bit characters in passwords when using Blowfish hashing. Up to three characters immediately preceding a non-ASCII character (one with the high bit set) had no effect on the hash result, thus shortening the effective password length. This made brute-force guessing more efficient as several different passwords were hashed to the same value.</p><p>A signedness issue was found in the way the crypt() function in the PostgreSQL pgcrypto module handled 8-bit characters in passwords when using Blowfish hashing. Up to three characters immediately preceding a non-ASCII character (one with the high bit set) had no effect on the hash result, thus shortening the effective password length. This made brute-force guessing more efficient as several different passwords were hashed to the same value.</p><p>crypt_blowfish before 1.1, as used in PHP before 5.3.7 on certain platforms, PostgreSQL before 8.4.9, and other products, does not properly handle 8-bit characters, which makes it easier for context-dependent attackers to determine a cleartext password by leveraging knowledge of a password hash.</p><p>A stack-based buffer overflow flaw was found in the way the PHP socket extension handled long AF_UNIX socket addresses. An attacker able to make a PHP script connect to a long AF_UNIX socket address could use this flaw to crash the PHP interpreter.</p><p>Stack-based buffer overflow in the socket_connect function in ext/sockets/sockets.c in PHP 5.3.3 through 5.3.6 might allow context-dependent attackers to execute arbitrary code via a long pathname for a UNIX socket.</p><p>The rfc1867_post_handler function in main/rfc1867.c in PHP before 5.3.7 does not properly restrict filenames in multipart/form-data POST requests, which allows remote attackers to conduct absolute path traversal attacks, and possibly create or overwrite arbitrary files, via a crafted upload request, related to a &#34;file path injection vulnerability.&#34;</p><p>An off-by-one flaw was found in PHP. If an attacker uploaded a file with a specially-crafted file name it could cause a PHP script to attempt to write a file to the root (/) directory. By default, PHP runs as the &#34;apache&#34; user, preventing it from writing to the root directory.</p><p>The rfc1867_post_handler function in main/rfc1867.c in PHP before 5.3.7 does not properly restrict filenames in multipart/form-data POST requests, which allows remote attackers to conduct absolute path traversal attacks, and possibly create or overwrite arbitrary files, via a crafted upload request, related to a &#39;file path injection vulnerability.&#39;</p><p>Use-after-free vulnerability in the substr_replace function in PHP 5.3.6 and earlier allows context-dependent attackers to cause a denial of service (memory corruption) or possibly have unspecified other impact by using the same variable for multiple arguments.</p><p>A use-after-free flaw was found in the PHP substr_replace() function. If a PHP script used the same variable as multiple function arguments, a remote attacker could possibly use this to crash the PHP interpreter or, possibly, execute arbitrary code.</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>php</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update php</i> to update your system.</div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; php-cli-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-debuginfo-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-xml-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-soap-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-process-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-pspell-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-mysql-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-mssql-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-ldap-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-gd-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-fpm-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-devel-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-pgsql-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-dba-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-odbc-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-common-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-mcrypt-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-xmlrpc-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-tidy-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-bcmath-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-mbstring-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-pdo-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-intl-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-snmp-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-zts-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-imap-5.3.8-3.19.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-embedded-5.3.8-3.19.amzn1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; php-5.3.8-3.19.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; php-dba-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-debuginfo-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-odbc-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-process-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-zts-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-common-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-pdo-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-mssql-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-mbstring-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-devel-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-cli-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-pspell-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-snmp-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-pgsql-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-soap-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-mcrypt-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-xmlrpc-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-xml-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-ldap-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-embedded-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-mysql-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-intl-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-bcmath-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-tidy-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-gd-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-fpm-5.3.8-3.19.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-imap-5.3.8-3.19.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2011-1148" target="_blank" rel="noopener noreferrer">CVE-2011-1148</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2011-1938" target="_blank" rel="noopener noreferrer">CVE-2011-1938</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2011-2202" target="_blank" rel="noopener noreferrer">CVE-2011-2202</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2011-2483" target="_blank" rel="noopener noreferrer">CVE-2011-2483</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2011-3182" target="_blank" rel="noopener noreferrer">CVE-2011-3182</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2011-3379" target="_blank" rel="noopener noreferrer">CVE-2011-3379</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1148" target="_blank" rel="noopener noreferrer">CVE-2011-1148</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1938" target="_blank" rel="noopener noreferrer">CVE-2011-1938</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2202" target="_blank" rel="noopener noreferrer">CVE-2011-2202</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2483" target="_blank" rel="noopener noreferrer">CVE-2011-2483</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3182" target="_blank" rel="noopener noreferrer">CVE-2011-3182</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3379" target="_blank" rel="noopener noreferrer">CVE-2011-3379</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

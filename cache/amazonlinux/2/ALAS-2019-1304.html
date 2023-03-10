@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2019-1304</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2019-1304'>ALAS2-2019-1304</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2019-1304
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2019-09-30 22:54 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2019-10-02 23:15 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2019-11739.html' target='_blank'>CVE-2019-11739&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-11740.html' target='_blank'>CVE-2019-11740&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-11742.html' target='_blank'>CVE-2019-11742&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-11743.html' target='_blank'>CVE-2019-11743&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-11744.html' target='_blank'>CVE-2019-11744&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-11746.html' target='_blank'>CVE-2019-11746&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-11752.html' target='_blank'>CVE-2019-11752&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Encrypted S/MIME parts in a crafted multipart/alternative message can leak plaintext when included in a a HTML reply/forward. This vulnerability affects Thunderbird &lt; 68.1 and Thunderbird &lt; 60.9. (CVE-2019-11739)</p><p><br />A same-origin policy violation occurs allowing the theft of cross-origin images through a combination of SVG filters and a &lt;canvas&gt; element due to an error in how same-origin policy is applied to cached image content. The resulting same-origin policy violation could allow for data theft. This vulnerability affects Firefox &lt; 69, Thunderbird &lt; 68.1, Thunderbird &lt; 60.9, Firefox ESR &lt; 60.9, and Firefox ESR &lt; 68.1. (CVE-2019-11742)</p><p><br />A use-after-free vulnerability can occur while manipulating video elements if the body is freed while still in use. This results in a potentially exploitable crash. This vulnerability affects Firefox &lt; 69, Thunderbird &lt; 68.1, Thunderbird &lt; 60.9, Firefox ESR &lt; 60.9, and Firefox ESR &lt; 68.1. (CVE-2019-11746)</p><p>It is possible to delete an IndexedDB key value and subsequently try to extract it during conversion. This results in a use-after-free and a potentially exploitable crash. This vulnerability affects Firefox &lt; 69, Thunderbird &lt; 68.1, Thunderbird &lt; 60.9, Firefox ESR &lt; 60.9, and Firefox ESR &lt; 68.1. (CVE-2019-11752)</p><p><br />Some HTML elements, such as &lt;title&gt; and &lt;textarea&gt;, can contain literal angle brackets without treating them as markup. It is possible to pass a literal closing tag to .innerHTML on these elements, and subsequent content after that will be parsed as if it were outside the tag. This can lead to XSS if a site does not filter user input as strictly for these elements as it does for other elements. This vulnerability affects Firefox &lt; 69, Thunderbird &lt; 68.1, Thunderbird &lt; 60.9, Firefox ESR &lt; 60.9, and Firefox ESR &lt; 68.1. (CVE-2019-11744)</p><p><br />Mozilla developers and community members reported memory safety bugs present in Firefox 68, Firefox ESR 68, and Firefox 60.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code. This vulnerability affects Firefox &lt; 69, Thunderbird &lt; 68.1, Thunderbird &lt; 60.9, Firefox ESR &lt; 60.9, and Firefox ESR &lt; 68.1. (CVE-2019-11740)</p><p><br />Navigation events were not fully adhering to the W3C&#39;s &#34;Navigation-Timing Level 2&#34; draft specification in some instances for the unload event, which restricts access to detailed timing attributes to only be same-origin. This resulted in potential cross-origin information exposure of history through timing side-channel attacks. This vulnerability affects Firefox &lt; 69, Thunderbird &lt; 68.1, Thunderbird &lt; 60.9, Firefox ESR &lt; 60.9, and Firefox ESR &lt; 68.1. (CVE-2019-11743)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>thunderbird</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update thunderbird</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>src:<br />&nbsp;&nbsp;&nbsp; thunderbird-60.9.0-1.amzn2.0.1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; thunderbird-60.9.0-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; thunderbird-debuginfo-60.9.0-1.amzn2.0.1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-11739" target="_blank" rel="noopener noreferrer">CVE-2019-11739</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-11740" target="_blank" rel="noopener noreferrer">CVE-2019-11740</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-11742" target="_blank" rel="noopener noreferrer">CVE-2019-11742</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-11743" target="_blank" rel="noopener noreferrer">CVE-2019-11743</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-11744" target="_blank" rel="noopener noreferrer">CVE-2019-11744</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-11746" target="_blank" rel="noopener noreferrer">CVE-2019-11746</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-11752" target="_blank" rel="noopener noreferrer">CVE-2019-11752</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11739" target="_blank" rel="noopener noreferrer">CVE-2019-11739</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11740" target="_blank" rel="noopener noreferrer">CVE-2019-11740</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11742" target="_blank" rel="noopener noreferrer">CVE-2019-11742</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11743" target="_blank" rel="noopener noreferrer">CVE-2019-11743</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11744" target="_blank" rel="noopener noreferrer">CVE-2019-11744</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11746" target="_blank" rel="noopener noreferrer">CVE-2019-11746</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11752" target="_blank" rel="noopener noreferrer">CVE-2019-11752</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

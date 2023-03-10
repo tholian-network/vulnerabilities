@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2019-1189</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2019-1189'>ALAS-2019-1189</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2019-1189
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2019-04-05 20:05 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2019-08-06 21:31 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2019-0196.html' target='_blank'>CVE-2019-0196&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-0197.html' target='_blank'>CVE-2019-0197&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-0211.html' target='_blank'>CVE-2019-0211&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-0215.html' target='_blank'>CVE-2019-0215&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-0217.html' target='_blank'>CVE-2019-0217&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-0220.html' target='_blank'>CVE-2019-0220&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>In Apache HTTP Server with MPM event, worker or prefork, code executing in less-privileged child processes or threads (including scripts executed by an in-process scripting interpreter) could execute arbitrary code with the privileges of the parent process (usually root) by manipulating the scoreboard.  (CVE-2019-0211)</p><p>A vulnerability was found in Apache HTTP Server 2.4.0 to 2.4.38. When the path component of a request URL contains multiple consecutive slashes (&#39;/&#39;), directives such as LocationMatch and RewriteRule must account for duplicates in regular expressions while other aspects of the servers processing will implicitly collapse them.(CVE-2019-0220)</p><p>In Apache HTTP Server 2.4 releases 2.4.37 and 2.4.38, a bug in mod_ssl when using per-location client certificate verification with TLSv1.3 allowed a client to bypass configured access control restrictions.(CVE-2019-0215)</p><p>A vulnerability was found in Apache HTTP Server 2.4.17 to 2.4.38. Using fuzzed network input, the http/2 request handling could be made to access freed memory in string comparison when determining the method of a request and thus process the request incorrectly.(CVE-2019-0196)</p><p>A vulnerability was found in Apache HTTP Server 2.4.34 to 2.4.38. When HTTP/2 was enabled for a http: host or H2Upgrade was enabled for h2 on a https: host, an Upgrade request from http/1.1 to http/2 that was not the first request on a connection could lead to a misconfiguration and crash. Server that never enabled the h2 protocol or that only enabled it for https: and did not set &#34;H2Upgrade on&#34; are unaffected by this issue.(CVE-2019-0197)</p><p>A race condition was found in mod_auth_digest when the web server was running in a threaded MPM configuration. It could allow a user with valid credentials to authenticate using another username, bypassing configured access control restrictions.(CVE-2019-0217)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>httpd24</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update httpd24</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; httpd24-debuginfo-2.4.39-1.87.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mod24_proxy_html-2.4.39-1.87.amzn1.i686<br />&nbsp;&nbsp;&nbsp; httpd24-2.4.39-1.87.amzn1.i686<br />&nbsp;&nbsp;&nbsp; httpd24-tools-2.4.39-1.87.amzn1.i686<br />&nbsp;&nbsp;&nbsp; httpd24-devel-2.4.39-1.87.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mod24_session-2.4.39-1.87.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mod24_ldap-2.4.39-1.87.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mod24_ssl-2.4.39-1.87.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mod24_md-2.4.39-1.87.amzn1.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; httpd24-manual-2.4.39-1.87.amzn1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; httpd24-2.4.39-1.87.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; mod24_session-2.4.39-1.87.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mod24_md-2.4.39-1.87.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mod24_ssl-2.4.39-1.87.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; httpd24-tools-2.4.39-1.87.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; httpd24-devel-2.4.39-1.87.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; httpd24-2.4.39-1.87.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mod24_proxy_html-2.4.39-1.87.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mod24_ldap-2.4.39-1.87.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; httpd24-debuginfo-2.4.39-1.87.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-0196" target="_blank" rel="noopener noreferrer">CVE-2019-0196</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-0197" target="_blank" rel="noopener noreferrer">CVE-2019-0197</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-0211" target="_blank" rel="noopener noreferrer">CVE-2019-0211</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-0215" target="_blank" rel="noopener noreferrer">CVE-2019-0215</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-0217" target="_blank" rel="noopener noreferrer">CVE-2019-0217</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-0220" target="_blank" rel="noopener noreferrer">CVE-2019-0220</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0196" target="_blank" rel="noopener noreferrer">CVE-2019-0196</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0197" target="_blank" rel="noopener noreferrer">CVE-2019-0197</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0211" target="_blank" rel="noopener noreferrer">CVE-2019-0211</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0215" target="_blank" rel="noopener noreferrer">CVE-2019-0215</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0217" target="_blank" rel="noopener noreferrer">CVE-2019-0217</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0220" target="_blank" rel="noopener noreferrer">CVE-2019-0220</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

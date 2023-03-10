@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2020-1441</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2020-1441'>ALAS2-2020-1441</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2020-1441
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2020-06-26 22:51 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2020-07-01 00:01 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2018-5745.html' target='_blank'>CVE-2018-5745&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-6465.html' target='_blank'>CVE-2019-6465&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-6477.html' target='_blank'>CVE-2019-6477&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>&#34;managed-keys&#34; is a feature which allows a BIND resolver to automatically maintain the keys used by trust anchors which operators configure for use in DNSSEC validation. Due to an error in the managed-keys feature it is possible for a BIND server which uses managed-keys to exit due to an assertion failure if, during key rollover, a trust anchor&#39;s keys are replaced with keys which use an unsupported algorithm. Versions affected: BIND 9.9.0 -&gt; 9.10.8-P1, 9.11.0 -&gt; 9.11.5-P1, 9.12.0 -&gt; 9.12.3-P1, and versions 9.9.3-S1 -&gt; 9.11.5-S3 of BIND 9 Supported Preview Edition. Versions 9.13.0 -&gt; 9.13.6 of the 9.13 development branch are also affected. Versions prior to BIND 9.9.0 have not been evaluated for vulnerability to CVE-2018-5745. (CVE-2018-5745)</p><p>With pipelining enabled each incoming query on a TCP connection requires a similar resource allocation to a query received via UDP or via TCP without pipelining enabled. A client using a TCP-pipelined connection to a server could consume more resources than the server has been provisioned to handle. When a TCP connection with a large number of pipelined queries is closed, the load on the server releasing these multiple resources can cause it to become unresponsive, even for queries that can be answered authoritatively or from cache. (This is most likely to be perceived as an intermittent server problem). (CVE-2019-6477)</p><p>Controls for zone transfers may not be properly applied to Dynamically Loadable Zones (DLZs) if the zones are writable Versions affected: BIND 9.9.0 -&gt; 9.10.8-P1, 9.11.0 -&gt; 9.11.5-P2, 9.12.0 -&gt; 9.12.3-P2, and versions 9.9.3-S1 -&gt; 9.11.5-S3 of BIND 9 Supported Preview Edition. Versions 9.13.0 -&gt; 9.13.6 of the 9.13 development branch are also affected. Versions prior to BIND 9.9.0 have not been evaluated for vulnerability to CVE-2019-6465. (CVE-2019-6465)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>bind</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update bind</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; bind-9.11.4-9.P2.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; bind-pkcs11-9.11.4-9.P2.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; bind-pkcs11-utils-9.11.4-9.P2.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; bind-pkcs11-libs-9.11.4-9.P2.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; bind-pkcs11-devel-9.11.4-9.P2.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; bind-sdb-9.11.4-9.P2.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; bind-libs-lite-9.11.4-9.P2.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; bind-libs-9.11.4-9.P2.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; bind-utils-9.11.4-9.P2.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; bind-devel-9.11.4-9.P2.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; bind-lite-devel-9.11.4-9.P2.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; bind-chroot-9.11.4-9.P2.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; bind-sdb-chroot-9.11.4-9.P2.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; bind-export-libs-9.11.4-9.P2.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; bind-export-devel-9.11.4-9.P2.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; bind-debuginfo-9.11.4-9.P2.amzn2.0.4.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; bind-9.11.4-9.P2.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; bind-pkcs11-9.11.4-9.P2.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; bind-pkcs11-utils-9.11.4-9.P2.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; bind-pkcs11-libs-9.11.4-9.P2.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; bind-pkcs11-devel-9.11.4-9.P2.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; bind-sdb-9.11.4-9.P2.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; bind-libs-lite-9.11.4-9.P2.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; bind-libs-9.11.4-9.P2.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; bind-utils-9.11.4-9.P2.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; bind-devel-9.11.4-9.P2.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; bind-lite-devel-9.11.4-9.P2.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; bind-chroot-9.11.4-9.P2.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; bind-sdb-chroot-9.11.4-9.P2.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; bind-export-libs-9.11.4-9.P2.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; bind-export-devel-9.11.4-9.P2.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; bind-debuginfo-9.11.4-9.P2.amzn2.0.4.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; bind-license-9.11.4-9.P2.amzn2.0.4.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; bind-9.11.4-9.P2.amzn2.0.4.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; bind-9.11.4-9.P2.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; bind-pkcs11-9.11.4-9.P2.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; bind-pkcs11-utils-9.11.4-9.P2.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; bind-pkcs11-libs-9.11.4-9.P2.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; bind-pkcs11-devel-9.11.4-9.P2.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; bind-sdb-9.11.4-9.P2.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; bind-libs-lite-9.11.4-9.P2.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; bind-libs-9.11.4-9.P2.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; bind-utils-9.11.4-9.P2.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; bind-devel-9.11.4-9.P2.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; bind-lite-devel-9.11.4-9.P2.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; bind-chroot-9.11.4-9.P2.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; bind-sdb-chroot-9.11.4-9.P2.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; bind-export-libs-9.11.4-9.P2.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; bind-export-devel-9.11.4-9.P2.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; bind-debuginfo-9.11.4-9.P2.amzn2.0.4.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-5745" target="_blank" rel="noopener noreferrer">CVE-2018-5745</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-6465" target="_blank" rel="noopener noreferrer">CVE-2019-6465</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-6477" target="_blank" rel="noopener noreferrer">CVE-2019-6477</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5745" target="_blank" rel="noopener noreferrer">CVE-2018-5745</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-6465" target="_blank" rel="noopener noreferrer">CVE-2019-6465</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-6477" target="_blank" rel="noopener noreferrer">CVE-2019-6477</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

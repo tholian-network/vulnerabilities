@@ -10,8 +10,8 @@
 	"summary": "httpd security, bug fix, and enhancement update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-i686-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-i686-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
 		"packages": [
 			{
 				"src": "httpd-2.4.53-7.el9.src.rpm",
@@ -27,18 +27,6 @@
 			},
 			{
 				"src": "httpd-2.4.53-7.el9.src.rpm",
-				"name": "httpd-filesystem",
-				"epoch": "0",
-				"version": "2.4.53",
-				"release": "7.el9",
-				"arch": "noarch",
-				"filename": "httpd-filesystem-2.4.53-7.el9.noarch.rpm",
-				"sum": "61226547b629d1bfe902193c7322ef89e09039ac4017036efa0b678183f622e5",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "httpd-2.4.53-7.el9.src.rpm",
 				"name": "mod_lua",
 				"epoch": "0",
 				"version": "2.4.53",
@@ -46,6 +34,18 @@
 				"arch": "aarch64",
 				"filename": "mod_lua-2.4.53-7.el9.aarch64.rpm",
 				"sum": "53da9aefd916773ce1a056b52f56be5fd2aef670b6e484c0a981ee75e8024540",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "httpd-2.4.53-7.el9.src.rpm",
+				"name": "httpd-filesystem",
+				"epoch": "0",
+				"version": "2.4.53",
+				"release": "7.el9",
+				"arch": "noarch",
+				"filename": "httpd-filesystem-2.4.53-7.el9.noarch.rpm",
+				"sum": "61226547b629d1bfe902193c7322ef89e09039ac4017036efa0b678183f622e5",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -610,6 +610,6 @@
 		"$date": 1668470400000
 	},
 	"updated_date": {
-		"$date": 1668746438000
+		"$date": 1668746440000
 	}
 }

@@ -10,21 +10,9 @@
 	"summary": "podman security, bug fix, and enhancement update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-i686-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-i686-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
 		"packages": [
-			{
-				"src": "podman-4.2.0-7.el9_1.src.rpm",
-				"name": "podman-docker",
-				"epoch": "2",
-				"version": "4.2.0",
-				"release": "7.el9_1",
-				"arch": "noarch",
-				"filename": "podman-docker-4.2.0-7.el9_1.noarch.rpm",
-				"sum": "5fc18b2301ea8e5a166d1c090e387bb6aa6ca2f6037faaa08e39a50baedc42ee",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "podman-4.2.0-7.el9_1.src.rpm",
 				"name": "podman-gvproxy",
@@ -34,6 +22,18 @@
 				"arch": "aarch64",
 				"filename": "podman-gvproxy-4.2.0-7.el9_1.aarch64.rpm",
 				"sum": "0cdeace2f34ab966ee532a2391ad91dc552377211fe114eb5583ae94fc3d337d",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "podman-4.2.0-7.el9_1.src.rpm",
+				"name": "podman-docker",
+				"epoch": "2",
+				"version": "4.2.0",
+				"release": "7.el9_1",
+				"arch": "noarch",
+				"filename": "podman-docker-4.2.0-7.el9_1.noarch.rpm",
+				"sum": "5fc18b2301ea8e5a166d1c090e387bb6aa6ca2f6037faaa08e39a50baedc42ee",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -358,6 +358,6 @@
 		"$date": 1668470400000
 	},
 	"updated_date": {
-		"$date": 1668692324000
+		"$date": 1668692325000
 	}
 }

@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2022-1741</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2022-1741'>ALAS2-2022-1741</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2022-1741
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2022-01-18 21:37 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2022-01-20 19:31 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2018-20845.html' target='_blank'>CVE-2018-20845&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-20847.html' target='_blank'>CVE-2018-20847&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-5727.html' target='_blank'>CVE-2018-5727&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-5785.html' target='_blank'>CVE-2018-5785&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-12973.html' target='_blank'>CVE-2019-12973&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-15389.html' target='_blank'>CVE-2020-15389&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-27814.html' target='_blank'>CVE-2020-27814&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-27823.html' target='_blank'>CVE-2020-27823&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-27824.html' target='_blank'>CVE-2020-27824&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-27842.html' target='_blank'>CVE-2020-27842&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-27843.html' target='_blank'>CVE-2020-27843&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-27845.html' target='_blank'>CVE-2020-27845&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-29338.html' target='_blank'>CVE-2021-29338&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-3575.html' target='_blank'>CVE-2021-3575&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Division-by-zero vulnerabilities in the functions pi_next_pcrl, pi_next_cprl, and pi_next_rpcl in openmj2/pi.c in OpenJPEG through 2.3.0 allow remote attackers to cause a denial of service (application crash). (CVE-2018-20845)</p><p>An improper computation of p_tx0, p_tx1, p_ty0 and p_ty1 in the function opj_get_encoding_parameters in openjp2/pi.c in OpenJPEG through 2.3.0 can lead to an integer overflow. (CVE-2018-20847)</p><p>In OpenJPEG 2.3.0, there is an integer overflow vulnerability in the opj_t1_encode_cblks function (openjp2/t1.c). Remote attackers could leverage this vulnerability to cause a denial of service via a crafted bmp file. (CVE-2018-5727)</p><p>In OpenJPEG 2.3.0, there is an integer overflow caused by an out-of-bounds left shift in the opj_j2k_setup_encoder function (openjp2/j2k.c). Remote attackers could leverage this vulnerability to cause a denial of service via a crafted bmp file. (CVE-2018-5785)</p><p>In OpenJPEG 2.3.1, there is excessive iteration in the opj_t1_encode_cblks function of openjp2/t1.c. Remote attackers could leverage this vulnerability to cause a denial of service via a crafted bmp file. This issue is similar to CVE-2018-6616. (CVE-2019-12973)</p><p>jp2/opj_decompress.c in OpenJPEG through 2.3.1 has a use-after-free that can be triggered if there is a mix of valid and invalid files in a directory operated on by the decompressor. Triggering a double-free may also be possible. This is related to calling opj_image_destroy twice. (CVE-2020-15389)</p><p>A heap-buffer overflow was found in the way openjpeg2 handled certain PNG format files. An attacker could use this flaw to cause an application crash or in some cases execute arbitrary code with the permission of the user running such an application. (CVE-2020-27814)</p><p>A flaw was found in OpenJPEG&#39;s encoder. This flaw allows an attacker to pass specially crafted x,y offset input to OpenJPEG to use during encoding. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability. (CVE-2020-27823)</p><p>A flaw was found in OpenJPEG&#39;s encoder in the opj_dwt_calc_explicit_stepsizes() function. This flaw allows an attacker who can supply crafted input to decomposition levels to cause a buffer overflow. The highest threat from this vulnerability is to system availability. (CVE-2020-27824)</p><p>A flaw was found in OpenJPEG&#39;s t2 encoder. This flaw allows an attacker who can provide crafted input to be processed by OpenJPEG to cause a NULL pointer dereference issue. The highest threat to this vulnerability is to system availability. (CVE-2020-27842)</p><p>A flaw was found in OpenJPEG. This flaw allows an attacker to provide specially crafted input to the conversion or encoding functionality, causing an out-of-bounds read. The highest threat from this vulnerability is system availability. (CVE-2020-27843)</p><p>A flaw was found in the src/lib/openjp2/pi.c function of OpenJPEG. This flaw allows an attacker who can provide untrusted input to OpenJPEG&#39;s conversion/encoding functionality to cause an out-of-bounds read. The highest impact from this vulnerability is to system availability. (CVE-2020-27845)</p><p>There is a flaw in the opj2_compress program in openjpeg2. An attacker who is able to submit a large number of image files to be processed in a directory by opj2_compress, could trigger a heap out-of-bounds write due to an integer overflow, which is caused by the large number of image files. The greatest threat posed by this flaw is to confidentiality, integrity, and availability. (CVE-2021-29338)</p><p>A heap-based buffer overflow was found in OpenJPEG. This flaw allows an attacker to execute arbitrary code with the permissions of the application compiled against OpenJPEG. (CVE-2021-3575)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>openjpeg2</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update openjpeg2</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; openjpeg2-2.4.0-4.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; openjpeg2-devel-2.4.0-4.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; openjpeg2-tools-2.4.0-4.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; openjpeg2-debuginfo-2.4.0-4.amzn2.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; openjpeg2-2.4.0-4.amzn2.i686<br />&nbsp;&nbsp;&nbsp; openjpeg2-devel-2.4.0-4.amzn2.i686<br />&nbsp;&nbsp;&nbsp; openjpeg2-tools-2.4.0-4.amzn2.i686<br />&nbsp;&nbsp;&nbsp; openjpeg2-debuginfo-2.4.0-4.amzn2.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; openjpeg2-devel-docs-2.4.0-4.amzn2.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; openjpeg2-2.4.0-4.amzn2.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; openjpeg2-2.4.0-4.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; openjpeg2-devel-2.4.0-4.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; openjpeg2-tools-2.4.0-4.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; openjpeg2-debuginfo-2.4.0-4.amzn2.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-20845" target="_blank" rel="noopener noreferrer">CVE-2018-20845</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-20847" target="_blank" rel="noopener noreferrer">CVE-2018-20847</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-5727" target="_blank" rel="noopener noreferrer">CVE-2018-5727</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-5785" target="_blank" rel="noopener noreferrer">CVE-2018-5785</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-12973" target="_blank" rel="noopener noreferrer">CVE-2019-12973</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-15389" target="_blank" rel="noopener noreferrer">CVE-2020-15389</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-27814" target="_blank" rel="noopener noreferrer">CVE-2020-27814</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-27823" target="_blank" rel="noopener noreferrer">CVE-2020-27823</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-27824" target="_blank" rel="noopener noreferrer">CVE-2020-27824</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-27842" target="_blank" rel="noopener noreferrer">CVE-2020-27842</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-27843" target="_blank" rel="noopener noreferrer">CVE-2020-27843</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-27845" target="_blank" rel="noopener noreferrer">CVE-2020-27845</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-29338" target="_blank" rel="noopener noreferrer">CVE-2021-29338</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-3575" target="_blank" rel="noopener noreferrer">CVE-2021-3575</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20845" target="_blank" rel="noopener noreferrer">CVE-2018-20845</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20847" target="_blank" rel="noopener noreferrer">CVE-2018-20847</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5727" target="_blank" rel="noopener noreferrer">CVE-2018-5727</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5785" target="_blank" rel="noopener noreferrer">CVE-2018-5785</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12973" target="_blank" rel="noopener noreferrer">CVE-2019-12973</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-15389" target="_blank" rel="noopener noreferrer">CVE-2020-15389</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27814" target="_blank" rel="noopener noreferrer">CVE-2020-27814</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27823" target="_blank" rel="noopener noreferrer">CVE-2020-27823</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27824" target="_blank" rel="noopener noreferrer">CVE-2020-27824</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27842" target="_blank" rel="noopener noreferrer">CVE-2020-27842</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27843" target="_blank" rel="noopener noreferrer">CVE-2020-27843</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27845" target="_blank" rel="noopener noreferrer">CVE-2020-27845</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-29338" target="_blank" rel="noopener noreferrer">CVE-2021-29338</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3575" target="_blank" rel="noopener noreferrer">CVE-2021-3575</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

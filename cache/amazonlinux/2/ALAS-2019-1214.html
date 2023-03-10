@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2019-1214</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2019-1214'>ALAS2-2019-1214</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2019-1214
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2019-05-29 18:59 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2019-07-22 16:22 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2019-10142.html' target='_blank'>CVE-2019-10142&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-11833.html' target='_blank'>CVE-2019-11833&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-11884.html' target='_blank'>CVE-2019-11884&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-3882.html' target='_blank'>CVE-2019-3882&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-5489.html' target='_blank'>CVE-2019-5489&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-9500.html' target='_blank'>CVE-2019-9500&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>A flaw was found in the Linux kernel&#39;s freescale hypervisor manager implementation. A parameter passed via to an ioctl was incorrectly validated and used in size calculations for the page size calculation. An attacker can use this flaw to crash the system or corrupt memory or, possibly, create other adverse security affects.(CVE-2019-10142)</p><p>A new software page cache side channel attack scenario was discovered in operating systems that implement the very common &#39;page cache&#39; caching mechanism. A malicious user/process could use &#39;in memory&#39; page-cache knowledge to infer access timings to shared memory and gain knowledge which can be used to reduce effectiveness of cryptographic strength by monitoring algorithmic behavior, infer access patterns of memory to determine code paths taken, and exfiltrate data to a blinded attacker through page-granularity access times as a side-channel. (CVE-2019-5489)</p><p>The do_hidp_sock_ioctl function in net/bluetooth/hidp/sock.c in the Linux kernel before 5.0.15 allows a local user to obtain potentially sensitive information from kernel stack memory via a HIDPCONNADD command, because a name field may not end with a &#39;\0&#39; character.(CVE-2019-11884)</p><p>A flaw was found in the Linux kernel&#39;s vfio interface implementation that permits violation of the user&#39;s locked memory limit. If a device is bound to a vfio driver, such as vfio-pci, and the local attacker is administratively granted ownership of the device, it may cause a system memory exhaustion and thus a denial of service (DoS).(CVE-2019-3882)</p><p>If the Wake-up on Wireless LAN functionality is configured in the brcmfmac driver, which only works with Broadcom FullMAC chipsets, a malicious event frame can be constructed to trigger a heap buffer overflow in the brcmf_wowl_nd_results() function. This vulnerability can be exploited by compromised chipsets to compromise the host, or when used in combination with another brcmfmac driver flaw  (CVE-2019-9503), can be used remotely. This can result in a remote denial of service (DoS). Due to the nature of the flaw, a remote privilege escalation cannot be fully ruled out.(CVE-2019-9500)</p><p>A flaw was found in the Linux kernel&#39;s implementation of ext4 extent management. The kernel doesn&#39;t correctly initialize memory regions in the extent tree block which may be exported to a local user to obtain sensitive information by reading empty/uninitialized data from the filesystem. (CVE-2019-11833)</p><p></p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>kernel</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update kernel</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; kernel-4.14.121-109.96.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-headers-4.14.121-109.96.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-common-aarch64-4.14.121-109.96.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; perf-4.14.121-109.96.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; perf-debuginfo-4.14.121-109.96.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; python-perf-4.14.121-109.96.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; python-perf-debuginfo-4.14.121-109.96.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-tools-4.14.121-109.96.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-tools-devel-4.14.121-109.96.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-tools-debuginfo-4.14.121-109.96.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-devel-4.14.121-109.96.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-4.14.121-109.96.amzn2.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; kernel-headers-4.14.121-109.96.amzn2.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; kernel-4.14.121-109.96.amzn2.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; kernel-4.14.121-109.96.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-headers-4.14.121-109.96.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-common-x86_64-4.14.121-109.96.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; perf-4.14.121-109.96.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; perf-debuginfo-4.14.121-109.96.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; python-perf-4.14.121-109.96.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; python-perf-debuginfo-4.14.121-109.96.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-tools-4.14.121-109.96.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-tools-devel-4.14.121-109.96.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-tools-debuginfo-4.14.121-109.96.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-devel-4.14.121-109.96.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-4.14.121-109.96.amzn2.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-10142" target="_blank" rel="noopener noreferrer">CVE-2019-10142</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-11833" target="_blank" rel="noopener noreferrer">CVE-2019-11833</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-11884" target="_blank" rel="noopener noreferrer">CVE-2019-11884</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-3882" target="_blank" rel="noopener noreferrer">CVE-2019-3882</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-5489" target="_blank" rel="noopener noreferrer">CVE-2019-5489</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-9500" target="_blank" rel="noopener noreferrer">CVE-2019-9500</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10142" target="_blank" rel="noopener noreferrer">CVE-2019-10142</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11833" target="_blank" rel="noopener noreferrer">CVE-2019-11833</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11884" target="_blank" rel="noopener noreferrer">CVE-2019-11884</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3882" target="_blank" rel="noopener noreferrer">CVE-2019-3882</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5489" target="_blank" rel="noopener noreferrer">CVE-2019-5489</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9500" target="_blank" rel="noopener noreferrer">CVE-2019-9500</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

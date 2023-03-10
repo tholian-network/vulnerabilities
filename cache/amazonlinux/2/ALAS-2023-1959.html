@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2023-1959</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2023.html">Amazon Linux 2023</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/faqs.html">FAQs</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2023-1959'>ALAS2-2023-1959</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2023-1959
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2023-02-17 00:12 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2023-02-22 01:53 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2022-36113.html' target='_blank' rel='noopener noreferrer'>CVE-2022-36113&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-36114.html' target='_blank' rel='noopener noreferrer'>CVE-2022-36114&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                            <a href="../../faqs.html">FAQs regarding Amazon Linux ALAS/CVE Severity</a>
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Cargo is a package manager for the rust programming language. After a package is downloaded, Cargo extracts its source code in the ~/.cargo folder on disk, making it available to the Rust projects it builds. To reco<br />rd when an extraction is successful, Cargo writes &#34;ok&#34; to the .cargo-ok file at the root of the extracted source code once it extracted all the files. It was discovered that Cargo allowed packages to contain a .cargo-ok symbolic l<br />ink, which Cargo would extract. Then, when Cargo attempted to write &#34;ok&#34; into .cargo-ok, it would actually replace the first two bytes of the file the symlink pointed to with ok. This would allow an attacker to corrupt one file on<br /> the machine using Cargo to extract the package. Note that by design Cargo allows code execution at build time, due to build scripts and procedural macros. The vulnerabilities in this advisory allow performing a subset of the poss<br />ible damage in a harder to track down way. Your dependencies must still be trusted if you want to be protected from attacks, as its possible to perform the same attacks with build scripts and procedural macros. The vulnerability <br />is present in all versions of Cargo. Rust 1.64, to be released on September 22nd, will include a fix for it. Since the vulnerability is just a more limited way to accomplish what a malicious build scripts or procedural macros can <br />do, we decided not to publish Rust point releases backporting the security fix. Patch files are available for Rust 1.63.0 are available in the wg-security-response repository for people building their own toolchain. Mitigations We<br /> recommend users of alternate registries to exercise care in which package they download, by only including trusted dependencies in their projects. Please note that even with these vulnerabilities fixed, by design Cargo allows arb<br />itrary code execution at build time thanks to build scripts and procedural macros: a malicious dependency will be able to cause damage regardless of these vulnerabilities. crates.io implemented server-side checks to reject these k<br />inds of packages years ago, and there are no packages on crates.io exploiting these vulnerabilities. crates.io users still need to exercise care in choosing their dependencies though, as remote code execution is allowed by design <br />there as well. (CVE-2022-36113)</p><p>Cargo is a package manager for the rust programming language. It was discovered that Cargo did not limit the amount of data extracted from compressed archives. An attacker could upload to an alternate registry a spe<br />cially crafted package that extracts way more data than its size (also known as a &#34;zip bomb&#34;), exhausting the disk space on the machine using Cargo to download the package. Note that by design Cargo allows code execution at build <br />time, due to build scripts and procedural macros. The vulnerabilities in this advisory allow performing a subset of the possible damage in a harder to track down way. Your dependencies must still be trusted if you want to be prote<br />cted from attacks, as its possible to perform the same attacks with build scripts and procedural macros. The vulnerability is present in all versions of Cargo. Rust 1.64, to be released on September 22nd, will include a fix for i<br />t. Since the vulnerability is just a more limited way to accomplish what a malicious build scripts or procedural macros can do, we decided not to publish Rust point releases backporting the security fix. Patch files are available <br />for Rust 1.63.0 are available in the wg-security-response repository for people building their own toolchain. We recommend users of alternate registries to excercise care in which package they download, by only including trusted d<br />ependencies in their projects. Please note that even with these vulnerabilities fixed, by design Cargo allows arbitrary code execution at build time thanks to build scripts and procedural macros: a malicious dependency will be abl<br />e to cause damage regardless of these vulnerabilities. crates.io implemented server-side checks to reject these kinds of packages years ago, and there are no packages on crates.io exploiting these vulnerabilities. crates.io users <br />still need to excercise care in choosing their dependencies though, as the same concerns about build scripts and procedural macros apply here. (CVE-2022-36114)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>rust</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update rust</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; rust-1.66.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; rust-std-static-1.66.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; rust-doc-1.66.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; cargo-1.66.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; rustfmt-1.66.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; rust-analyzer-1.66.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; clippy-1.66.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; rust-analysis-1.66.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; rust-debuginfo-1.66.1-1.amzn2.0.1.aarch64<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; rust-debugger-common-1.66.1-1.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; rust-gdb-1.66.1-1.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; rust-src-1.66.1-1.amzn2.0.1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; rust-1.66.1-1.amzn2.0.1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; rust-1.66.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; rust-std-static-1.66.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; rust-doc-1.66.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; cargo-1.66.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; rustfmt-1.66.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; rust-analyzer-1.66.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; clippy-1.66.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; rust-analysis-1.66.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; rust-debuginfo-1.66.1-1.amzn2.0.1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-36113" target="_blank" rel="noopener noreferrer">CVE-2022-36113</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-36114" target="_blank" rel="noopener noreferrer">CVE-2022-36114</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-36113" target="_blank" rel="noopener noreferrer">CVE-2022-36113</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-36114" target="_blank" rel="noopener noreferrer">CVE-2022-36114</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2023
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2023 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2023, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

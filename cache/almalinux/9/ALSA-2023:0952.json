@@ -1,0 +1,75 @@
+{
+	"updateinfo_id": "ALSA-2023:0952",
+	"fromstr": "packager@almalinux.org",
+	"title": "Moderate: python-setuptools security update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Moderate",
+	"summary": "python-setuptools security update",
+	"pushcount": "1",
+	"pkglist": {
+		"name": "almalinux-9-for-i686-baseos-rpms__9_1_default",
+		"shortname": "almalinux-9-for-i686-baseos-rpms__9_1_default",
+		"packages": [
+			{
+				"src": "python-setuptools-53.0.0-10.el9_1.1.src.rpm",
+				"name": "python3-setuptools-wheel",
+				"epoch": "0",
+				"version": "53.0.0",
+				"release": "10.el9_1.1",
+				"arch": "noarch",
+				"filename": "python3-setuptools-wheel-53.0.0-10.el9_1.1.noarch.rpm",
+				"sum": "99bd05d0b078d46b51d11d727c21305e93d7d9a52a43b622d926b9b10658a756",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python-setuptools-53.0.0-10.el9_1.1.src.rpm",
+				"name": "python3-setuptools",
+				"epoch": "0",
+				"version": "53.0.0",
+				"release": "10.el9_1.1",
+				"arch": "noarch",
+				"filename": "python3-setuptools-53.0.0-10.el9_1.1.noarch.rpm",
+				"sum": "bef4e0eb356f420b754a5d0983a2339389d354a2d0c5c04d548fe97dba555337",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "The python-setuptools package provides a collection of enhancements to Python distribution utilities allowing convenient building and distribution of Python packages.\n\nSecurity Fix(es):\n\n* pypa-setuptools: Regular Expression Denial of Service (ReDoS) in package_index.py (CVE-2022-40897)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+	"references": [
+		{
+			"id": "RHSA-2023:0952",
+			"title": "RHSA-2023:0952",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:0952"
+		},
+		{
+			"id": "CVE-2022-40897",
+			"title": "CVE-2022-40897",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-40897"
+		},
+		{
+			"id": "2158559",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2158559"
+		},
+		{
+			"id": "ALSA-2023:0952",
+			"title": "ALSA-2023:0952",
+			"type": "self",
+			"href": "https://errata.almalinux.org/9/ALSA-2023-0952.html"
+		}
+	],
+	"issued_date": {
+		"$date": 1677542400000
+	},
+	"updated_date": {
+		"$date": 1677605995000
+	}
+}

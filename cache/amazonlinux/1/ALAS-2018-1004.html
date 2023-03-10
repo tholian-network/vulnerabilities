@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2018-1004</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2018-1004'>ALAS-2018-1004</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2018-1004
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2018-05-03 16:29 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2018-05-03 22:47 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2017-15710.html' target='_blank'>CVE-2017-15710&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-15715.html' target='_blank'>CVE-2017-15715&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-1283.html' target='_blank'>CVE-2018-1283&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-1301.html' target='_blank'>CVE-2018-1301&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-1302.html' target='_blank'>CVE-2018-1302&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-1303.html' target='_blank'>CVE-2018-1303&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-1312.html' target='_blank'>CVE-2018-1312&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Use-after-free on HTTP/2 stream shutdown<br />When an HTTP/2 stream was destroyed after being handled, the Apache HTTP Server prior to version 2.4.30 could have written a NULL pointer potentially to an already freed memory. The memory pools maintained by the server make this vulnerability hard to trigger in usual configurations, the reporter and the team could not reproduce it outside debug builds, so it is classified as low risk. (CVE-2018-1302)</p><p>Bypass with a trailing newline in the file name<br />In Apache httpd 2.4.0 to 2.4.29, the expression specified in &lt;FilesMatch&gt; could match &#39;$&#39; to a newline character in a malicious filename, rather than matching only the end of the filename. This could be exploited in environments where uploads of some files are are externally blocked, but only by matching the trailing portion of the filename. (CVE-2017-15715)</p><p>Out of bounds read in mod_cache_socache can allow a remote attacker to cause a denial of service<br />A specially crafted HTTP request header could have crashed the Apache HTTP Server prior to version 2.4.30 due to an out of bound read while preparing data to be cached in shared memory. It could be used as a Denial of Service attack against users of mod_cache_socache. The vulnerability is considered as low risk since mod_cache_socache is not widely used, mod_cache_disk is not concerned by this vulnerability. (CVE-2018-1303)</p><p>Improper handling of headers in mod_session can allow a remote user to modify session data for CGI applications<br />It has been discovered that the mod_session module of Apache HTTP Server (httpd), through version 2.4.29, has an improper input validation flaw in the way it handles HTTP session headers in some configurations. A remote attacker may influence their content by using a &#34;Session&#34; header. (CVE-2018-1283)</p><p>Out of bound write in mod_authnz_ldap when using too small Accept-Language values<br />In Apache httpd 2.0.23 to 2.0.65, 2.2.0 to 2.2.34, and 2.4.0 to 2.4.29, mod_authnz_ldap, if configured with AuthLDAPCharsetConfig, uses the Accept-Language header value to lookup the right charset encoding when verifying the user&#39;s credentials. If the header value is not present in the charset conversion table, a fallback mechanism is used to truncate it to a two characters value to allow a quick retry (for example, &#39;en-US&#39; is truncated to &#39;en&#39;). A header value of less than two characters forces an out of bound write of one NUL byte to a memory location that is not part of the string. In the worst case, quite unlikely, the process would crash which could be used as a Denial of Service attack. In the more likely case, this memory is already reserved for future use and the issue has no effect at all. (CVE-2017-15710)</p><p>Out of bound access after failure in reading the HTTP request<br />A specially crafted request could have crashed the Apache HTTP Server prior to version 2.4.30, due to an out of bound access after a size limit is reached by reading the HTTP header. This vulnerability is considered very hard if not impossible to trigger in non-debug mode (both log and build level), so it is classified as low risk for common server usage. (CVE-2018-1301)</p><p>Weak Digest auth nonce generation in mod_auth_digest<br />In Apache httpd 2.2.0 to 2.4.29, when generating an HTTP Digest authentication challenge, the nonce sent to prevent reply attacks was not correctly generated using a pseudo-random seed. In a cluster of servers using a common Digest authentication configuration, HTTP requests could be replayed across servers by an attacker without detection. (CVE-2018-1312)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>httpd24</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update httpd24</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; httpd24-debuginfo-2.4.33-2.78.amzn1.i686<br />&nbsp;&nbsp;&nbsp; httpd24-2.4.33-2.78.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mod24_session-2.4.33-2.78.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mod24_md-2.4.33-2.78.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mod24_ssl-2.4.33-2.78.amzn1.i686<br />&nbsp;&nbsp;&nbsp; httpd24-devel-2.4.33-2.78.amzn1.i686<br />&nbsp;&nbsp;&nbsp; httpd24-tools-2.4.33-2.78.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mod24_proxy_html-2.4.33-2.78.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mod24_ldap-2.4.33-2.78.amzn1.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; httpd24-manual-2.4.33-2.78.amzn1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; httpd24-2.4.33-2.78.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; httpd24-devel-2.4.33-2.78.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; httpd24-2.4.33-2.78.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mod24_ssl-2.4.33-2.78.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; httpd24-debuginfo-2.4.33-2.78.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mod24_ldap-2.4.33-2.78.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mod24_proxy_html-2.4.33-2.78.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mod24_session-2.4.33-2.78.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mod24_md-2.4.33-2.78.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; httpd24-tools-2.4.33-2.78.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-15710" target="_blank" rel="noopener noreferrer">CVE-2017-15710</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-15715" target="_blank" rel="noopener noreferrer">CVE-2017-15715</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-1283" target="_blank" rel="noopener noreferrer">CVE-2018-1283</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-1301" target="_blank" rel="noopener noreferrer">CVE-2018-1301</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-1302" target="_blank" rel="noopener noreferrer">CVE-2018-1302</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-1303" target="_blank" rel="noopener noreferrer">CVE-2018-1303</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-1312" target="_blank" rel="noopener noreferrer">CVE-2018-1312</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15710" target="_blank" rel="noopener noreferrer">CVE-2017-15710</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15715" target="_blank" rel="noopener noreferrer">CVE-2017-15715</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1283" target="_blank" rel="noopener noreferrer">CVE-2018-1283</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1301" target="_blank" rel="noopener noreferrer">CVE-2018-1301</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1302" target="_blank" rel="noopener noreferrer">CVE-2018-1302</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1303" target="_blank" rel="noopener noreferrer">CVE-2018-1303</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1312" target="_blank" rel="noopener noreferrer">CVE-2018-1312</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

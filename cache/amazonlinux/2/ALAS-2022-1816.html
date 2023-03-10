@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2022-1816</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2022-1816'>ALAS2-2022-1816</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2022-1816
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2022-07-06 03:15 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2022-07-14 22:26 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2020-36323.html' target='_blank'>CVE-2020-36323&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-28876.html' target='_blank'>CVE-2021-28876&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-28878.html' target='_blank'>CVE-2021-28878&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-28879.html' target='_blank'>CVE-2021-28879&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-31162.html' target='_blank'>CVE-2021-31162&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>In the standard library in Rust before 1.52.0, there is an optimization for joining strings that can cause uninitialized bytes to be exposed (or the program to crash) if the borrowed string changes after its length is checked. (CVE-2020-36323)</p><p>In the standard library in Rust before 1.52.0, the Zip implementation has a panic safety issue. It calls __iterator_get_unchecked() more than once for the same index when the underlying iterator panics (in certain conditions). This bug could lead to a memory safety violation due to an unmet safety requirement for the TrustedRandomAccess trait. (CVE-2021-28876)</p><p>In the standard library in Rust before 1.52.0, the Zip implementation calls __iterator_get_unchecked() more than once for the same index (under certain conditions) when next_back() and next() are used together. This bug could lead to a memory safety violation due to an unmet safety requirement for the TrustedRandomAccess trait. (CVE-2021-28878)</p><p>In the standard library in Rust before 1.52.0, the Zip implementation can report an incorrect size due to an integer overflow. This bug can lead to a buffer overflow when a consumed Zip iterator is used again. (CVE-2021-28879)</p><p>In the standard library in Rust before 1.52.0, a double free can occur in the Vec::from_iter function if freeing the element panics. (CVE-2021-31162)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>rust</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update rust</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; rust-1.56.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; rust-std-static-1.56.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; rust-doc-1.56.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; cargo-1.56.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; rustfmt-1.56.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; rls-1.56.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; clippy-1.56.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; rust-analysis-1.56.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; rust-debuginfo-1.56.1-1.amzn2.0.1.aarch64<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; rust-debugger-common-1.56.1-1.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; rust-gdb-1.56.1-1.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; cargo-doc-1.56.1-1.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; rust-src-1.56.1-1.amzn2.0.1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; rust-1.56.1-1.amzn2.0.1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; rust-1.56.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; rust-std-static-1.56.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; rust-doc-1.56.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; cargo-1.56.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; rustfmt-1.56.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; rls-1.56.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; clippy-1.56.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; rust-analysis-1.56.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; rust-debuginfo-1.56.1-1.amzn2.0.1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-36323" target="_blank" rel="noopener noreferrer">CVE-2020-36323</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-28876" target="_blank" rel="noopener noreferrer">CVE-2021-28876</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-28878" target="_blank" rel="noopener noreferrer">CVE-2021-28878</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-28879" target="_blank" rel="noopener noreferrer">CVE-2021-28879</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-31162" target="_blank" rel="noopener noreferrer">CVE-2021-31162</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36323" target="_blank" rel="noopener noreferrer">CVE-2020-36323</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28876" target="_blank" rel="noopener noreferrer">CVE-2021-28876</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28878" target="_blank" rel="noopener noreferrer">CVE-2021-28878</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28879" target="_blank" rel="noopener noreferrer">CVE-2021-28879</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31162" target="_blank" rel="noopener noreferrer">CVE-2021-31162</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

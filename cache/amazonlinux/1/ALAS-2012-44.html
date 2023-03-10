@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2012-044</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2012-044'>ALAS-2012-044</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2012-44
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2012-02-15 17:18 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2014-09-14 15:29 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2011-2262.html' target='_blank'>CVE-2011-2262&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-0075.html' target='_blank'>CVE-2012-0075&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-0087.html' target='_blank'>CVE-2012-0087&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-0101.html' target='_blank'>CVE-2012-0101&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-0112.html' target='_blank'>CVE-2012-0112&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-0113.html' target='_blank'>CVE-2012-0113&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-0114.html' target='_blank'>CVE-2012-0114&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-0115.html' target='_blank'>CVE-2012-0115&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-0116.html' target='_blank'>CVE-2012-0116&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-0118.html' target='_blank'>CVE-2012-0118&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-0119.html' target='_blank'>CVE-2012-0119&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-0120.html' target='_blank'>CVE-2012-0120&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-0484.html' target='_blank'>CVE-2012-0484&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-0485.html' target='_blank'>CVE-2012-0485&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-0490.html' target='_blank'>CVE-2012-0490&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-0492.html' target='_blank'>CVE-2012-0492&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='https://rhn.redhat.com/errata/RHSA-2012-0105.html' target='_blank'>RHSA-2012-0105&nbsp;<i class='fas fa-external-link-alt'></i></a><br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>This update fixes several vulnerabilities in the MySQL database server. Information about these flaws can be found on the Oracle Critical Patch Update Advisory page, listed in the References section. (CVE-2011-2262, CVE-2012-0075, CVE-2012-0087, CVE-2012-0101, CVE-2012-0102, CVE-2012-0112, CVE-2012-0113, CVE-2012-0114, CVE-2012-0115, CVE-2012-0116, CVE-2012-0118, CVE-2012-0119, CVE-2012-0120, CVE-2012-0484, CVE-2012-0485, CVE-2012-0490, CVE-2012-0492)</p><p>These updated packages upgrade MySQL to version 5.1.61. Refer to the MySQL &lt;a href=&#34;http://dev.mysql.com/doc/refman/5.1/en/news-5-1-x.html&#34;&gt;release notes&lt;/a&gt; for a full list of changes:</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>mysql</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update mysql</i> to update your system.</div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; mysql-embedded-devel-5.1.61-1.27.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mysql-test-5.1.61-1.27.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mysql-debuginfo-5.1.61-1.27.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mysql-embedded-5.1.61-1.27.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mysql-libs-5.1.61-1.27.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mysql-server-5.1.61-1.27.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mysql-bench-5.1.61-1.27.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mysql-5.1.61-1.27.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mysql-devel-5.1.61-1.27.amzn1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; mysql-5.1.61-1.27.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; mysql-5.1.61-1.27.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mysql-libs-5.1.61-1.27.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mysql-server-5.1.61-1.27.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mysql-embedded-devel-5.1.61-1.27.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mysql-debuginfo-5.1.61-1.27.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mysql-devel-5.1.61-1.27.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mysql-bench-5.1.61-1.27.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mysql-test-5.1.61-1.27.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mysql-embedded-5.1.61-1.27.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2011-2262" target="_blank" rel="noopener noreferrer">CVE-2011-2262</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-0075" target="_blank" rel="noopener noreferrer">CVE-2012-0075</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-0087" target="_blank" rel="noopener noreferrer">CVE-2012-0087</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-0101" target="_blank" rel="noopener noreferrer">CVE-2012-0101</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-0112" target="_blank" rel="noopener noreferrer">CVE-2012-0112</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-0113" target="_blank" rel="noopener noreferrer">CVE-2012-0113</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-0114" target="_blank" rel="noopener noreferrer">CVE-2012-0114</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-0115" target="_blank" rel="noopener noreferrer">CVE-2012-0115</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-0116" target="_blank" rel="noopener noreferrer">CVE-2012-0116</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-0118" target="_blank" rel="noopener noreferrer">CVE-2012-0118</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-0119" target="_blank" rel="noopener noreferrer">CVE-2012-0119</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-0120" target="_blank" rel="noopener noreferrer">CVE-2012-0120</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-0484" target="_blank" rel="noopener noreferrer">CVE-2012-0484</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-0485" target="_blank" rel="noopener noreferrer">CVE-2012-0485</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-0490" target="_blank" rel="noopener noreferrer">CVE-2012-0490</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-0492" target="_blank" rel="noopener noreferrer">CVE-2012-0492</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2262" target="_blank" rel="noopener noreferrer">CVE-2011-2262</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0075" target="_blank" rel="noopener noreferrer">CVE-2012-0075</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0087" target="_blank" rel="noopener noreferrer">CVE-2012-0087</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0101" target="_blank" rel="noopener noreferrer">CVE-2012-0101</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0112" target="_blank" rel="noopener noreferrer">CVE-2012-0112</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0113" target="_blank" rel="noopener noreferrer">CVE-2012-0113</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0114" target="_blank" rel="noopener noreferrer">CVE-2012-0114</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0115" target="_blank" rel="noopener noreferrer">CVE-2012-0115</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0116" target="_blank" rel="noopener noreferrer">CVE-2012-0116</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0118" target="_blank" rel="noopener noreferrer">CVE-2012-0118</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0119" target="_blank" rel="noopener noreferrer">CVE-2012-0119</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0120" target="_blank" rel="noopener noreferrer">CVE-2012-0120</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0484" target="_blank" rel="noopener noreferrer">CVE-2012-0484</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0485" target="_blank" rel="noopener noreferrer">CVE-2012-0485</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0490" target="_blank" rel="noopener noreferrer">CVE-2012-0490</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0492" target="_blank" rel="noopener noreferrer">CVE-2012-0492</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

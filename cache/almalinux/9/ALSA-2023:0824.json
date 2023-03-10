@@ -1,0 +1,243 @@
+{
+	"updateinfo_id": "ALSA-2023:0824",
+	"fromstr": "packager@almalinux.org",
+	"title": "Important: thunderbird security update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Important",
+	"summary": "thunderbird security update",
+	"pushcount": "1",
+	"pkglist": {
+		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"packages": [
+			{
+				"src": "thunderbird-102.8.0-2.el9_1.alma.src.rpm",
+				"name": "thunderbird",
+				"epoch": "0",
+				"version": "102.8.0",
+				"release": "2.el9_1.alma",
+				"arch": "aarch64",
+				"filename": "thunderbird-102.8.0-2.el9_1.alma.aarch64.rpm",
+				"sum": "c821dc0425f02be30ad4d2bdb2b00b556d7748c0ea24d7bf0483a6ad21242bf9",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "thunderbird-102.8.0-2.el9_1.alma.src.rpm",
+				"name": "thunderbird",
+				"epoch": "0",
+				"version": "102.8.0",
+				"release": "2.el9_1.alma",
+				"arch": "x86_64",
+				"filename": "thunderbird-102.8.0-2.el9_1.alma.x86_64.rpm",
+				"sum": "61585e36c901cb932b94a3fe60382fd0dbab569af28a527f086721762ec217f5",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "thunderbird-102.8.0-2.el9_1.alma.src.rpm",
+				"name": "thunderbird",
+				"epoch": "0",
+				"version": "102.8.0",
+				"release": "2.el9_1.alma",
+				"arch": "s390x",
+				"filename": "thunderbird-102.8.0-2.el9_1.alma.s390x.rpm",
+				"sum": "3e49afef8c2487222e2103fffd36d18f76bd78be2ebd12015150d1f6c8ddb16f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "thunderbird-102.8.0-2.el9_1.alma.src.rpm",
+				"name": "thunderbird",
+				"epoch": "0",
+				"version": "102.8.0",
+				"release": "2.el9_1.alma",
+				"arch": "ppc64le",
+				"filename": "thunderbird-102.8.0-2.el9_1.alma.ppc64le.rpm",
+				"sum": "164ca7e8b8c1e1f9bdf5d4257df3833a64ad58af36257dfdac766d313c5c00b7",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "Mozilla Thunderbird is a standalone mail and newsgroup client.\n\nThis update upgrades Thunderbird to version 102.8.0.\n\nSecurity Fix(es):\n\n* Mozilla: Arbitrary memory write via PKCS 12 in NSS (CVE-2023-0767)\n* Mozilla: Content security policy leak in violation reports using iframes (CVE-2023-25728)\n* Mozilla: Screen hijack via browser fullscreen mode (CVE-2023-25730)\n* Mozilla: Potential use-after-free from compartment mismatch in SpiderMonkey (CVE-2023-25735)\n* Mozilla: Invalid downcast in SVGUtils::SetupStrokeGeometry (CVE-2023-25737)\n* Mozilla: Use-after-free in mozilla::dom::ScriptLoadContext::~ScriptLoadContext (CVE-2023-25739)\n* Mozilla: Fullscreen notification not shown in Firefox Focus (CVE-2023-25743)\n* Mozilla: Memory safety bugs fixed in Firefox 110 and Firefox ESR 102.8 (CVE-2023-25744)\n* Mozilla: Memory safety bugs fixed in Firefox ESR 102.8 (CVE-2023-25746)\n* Mozilla: Extensions could have opened external schemes without user knowledge (CVE-2023-25729)\n* Mozilla: Out of bounds memory write from EncodeInputStream (CVE-2023-25732)\n* Mozilla: User Interface lockup with messages combining S/MIME and OpenPGP (CVE-2023-0616)\n* Mozilla: Web Crypto ImportKey crashes tab (CVE-2023-25742)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+	"references": [
+		{
+			"id": "RHSA-2023:0824",
+			"title": "RHSA-2023:0824",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:0824"
+		},
+		{
+			"id": "CVE-2023-0616",
+			"title": "CVE-2023-0616",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2023-0616"
+		},
+		{
+			"id": "CVE-2023-0767",
+			"title": "CVE-2023-0767",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2023-0767"
+		},
+		{
+			"id": "CVE-2023-25728",
+			"title": "CVE-2023-25728",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2023-25728"
+		},
+		{
+			"id": "CVE-2023-25729",
+			"title": "CVE-2023-25729",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2023-25729"
+		},
+		{
+			"id": "CVE-2023-25730",
+			"title": "CVE-2023-25730",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2023-25730"
+		},
+		{
+			"id": "CVE-2023-25732",
+			"title": "CVE-2023-25732",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2023-25732"
+		},
+		{
+			"id": "CVE-2023-25735",
+			"title": "CVE-2023-25735",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2023-25735"
+		},
+		{
+			"id": "CVE-2023-25737",
+			"title": "CVE-2023-25737",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2023-25737"
+		},
+		{
+			"id": "CVE-2023-25739",
+			"title": "CVE-2023-25739",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2023-25739"
+		},
+		{
+			"id": "CVE-2023-25742",
+			"title": "CVE-2023-25742",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2023-25742"
+		},
+		{
+			"id": "CVE-2023-25743",
+			"title": "CVE-2023-25743",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2023-25743"
+		},
+		{
+			"id": "CVE-2023-25744",
+			"title": "CVE-2023-25744",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2023-25744"
+		},
+		{
+			"id": "CVE-2023-25746",
+			"title": "CVE-2023-25746",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2023-25746"
+		},
+		{
+			"id": "2170374",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170374"
+		},
+		{
+			"id": "2170375",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170375"
+		},
+		{
+			"id": "2170376",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170376"
+		},
+		{
+			"id": "2170377",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170377"
+		},
+		{
+			"id": "2170378",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170378"
+		},
+		{
+			"id": "2170379",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170379"
+		},
+		{
+			"id": "2170381",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170381"
+		},
+		{
+			"id": "2170382",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170382"
+		},
+		{
+			"id": "2170383",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170383"
+		},
+		{
+			"id": "2170390",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170390"
+		},
+		{
+			"id": "2170391",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170391"
+		},
+		{
+			"id": "2170402",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170402"
+		},
+		{
+			"id": "2171397",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2171397"
+		},
+		{
+			"id": "ALSA-2023:0824",
+			"title": "ALSA-2023:0824",
+			"type": "self",
+			"href": "https://errata.almalinux.org/9/ALSA-2023-0824.html"
+		}
+	],
+	"issued_date": {
+		"$date": 1676851200000
+	},
+	"updated_date": {
+		"$date": 1677001838000
+	}
+}

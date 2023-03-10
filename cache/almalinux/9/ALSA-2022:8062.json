@@ -10,21 +10,9 @@
 	"summary": "unbound security, bug fix, and enhancement update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-i686-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-i686-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
 		"packages": [
-			{
-				"src": "unbound-1.16.2-2.el9.src.rpm",
-				"name": "unbound-libs",
-				"epoch": "0",
-				"version": "1.16.2",
-				"release": "2.el9",
-				"arch": "i686",
-				"filename": "unbound-libs-1.16.2-2.el9.i686.rpm",
-				"sum": "8b7ef8c88e5a4bcd778a165404a4a7234544fdd1d452dd341322836be1db6632",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "unbound-1.16.2-2.el9.src.rpm",
 				"name": "unbound",
@@ -58,6 +46,18 @@
 				"arch": "aarch64",
 				"filename": "python3-unbound-1.16.2-2.el9.aarch64.rpm",
 				"sum": "942465aa36d658403876636277cc8c8ce1bca750d26b446189e1a40681b3a56a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "unbound-1.16.2-2.el9.src.rpm",
+				"name": "unbound-libs",
+				"epoch": "0",
+				"version": "1.16.2",
+				"release": "2.el9",
+				"arch": "i686",
+				"filename": "unbound-libs-1.16.2-2.el9.i686.rpm",
+				"sum": "8b7ef8c88e5a4bcd778a165404a4a7234544fdd1d452dd341322836be1db6632",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -135,6 +135,42 @@
 			},
 			{
 				"src": "unbound-1.16.2-2.el9.src.rpm",
+				"name": "unbound-devel",
+				"epoch": "0",
+				"version": "1.16.2",
+				"release": "2.el9",
+				"arch": "i686",
+				"filename": "unbound-devel-1.16.2-2.el9.i686.rpm",
+				"sum": "6469e0f04451e671f3a4712c51b66d430dd48492de66063384e25caa2101f8c0",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "unbound-1.16.2-2.el9.src.rpm",
+				"name": "unbound-devel",
+				"epoch": "0",
+				"version": "1.16.2",
+				"release": "2.el9",
+				"arch": "x86_64",
+				"filename": "unbound-devel-1.16.2-2.el9.x86_64.rpm",
+				"sum": "9c682e9f670e4531a57296d171cc7f71dc16a4c004024e8e8bf55de0524245db",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "unbound-1.16.2-2.el9.src.rpm",
+				"name": "unbound-devel",
+				"epoch": "0",
+				"version": "1.16.2",
+				"release": "2.el9",
+				"arch": "ppc64le",
+				"filename": "unbound-devel-1.16.2-2.el9.ppc64le.rpm",
+				"sum": "15d6faa01d27d57325f7175dbe2b4c178a40faa1ff145145efcf6d7cf981a6cf",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "unbound-1.16.2-2.el9.src.rpm",
 				"name": "unbound",
 				"epoch": "0",
 				"version": "1.16.2",
@@ -175,42 +211,6 @@
 				"epoch": "0",
 				"version": "1.16.2",
 				"release": "2.el9",
-				"arch": "i686",
-				"filename": "unbound-devel-1.16.2-2.el9.i686.rpm",
-				"sum": "6469e0f04451e671f3a4712c51b66d430dd48492de66063384e25caa2101f8c0",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "unbound-1.16.2-2.el9.src.rpm",
-				"name": "unbound-devel",
-				"epoch": "0",
-				"version": "1.16.2",
-				"release": "2.el9",
-				"arch": "ppc64le",
-				"filename": "unbound-devel-1.16.2-2.el9.ppc64le.rpm",
-				"sum": "15d6faa01d27d57325f7175dbe2b4c178a40faa1ff145145efcf6d7cf981a6cf",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "unbound-1.16.2-2.el9.src.rpm",
-				"name": "unbound-devel",
-				"epoch": "0",
-				"version": "1.16.2",
-				"release": "2.el9",
-				"arch": "aarch64",
-				"filename": "unbound-devel-1.16.2-2.el9.aarch64.rpm",
-				"sum": "15832725c65683e48d200773d774e33b31ed6bea28fec80f1356b01a20d2d5fd",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "unbound-1.16.2-2.el9.src.rpm",
-				"name": "unbound-devel",
-				"epoch": "0",
-				"version": "1.16.2",
-				"release": "2.el9",
 				"arch": "s390x",
 				"filename": "unbound-devel-1.16.2-2.el9.s390x.rpm",
 				"sum": "44bef07e3eb38e96c8704542c2089e759ad2ee1e3043c615c285747500697b0e",
@@ -223,9 +223,9 @@
 				"epoch": "0",
 				"version": "1.16.2",
 				"release": "2.el9",
-				"arch": "x86_64",
-				"filename": "unbound-devel-1.16.2-2.el9.x86_64.rpm",
-				"sum": "9c682e9f670e4531a57296d171cc7f71dc16a4c004024e8e8bf55de0524245db",
+				"arch": "aarch64",
+				"filename": "unbound-devel-1.16.2-2.el9.aarch64.rpm",
+				"sum": "15832725c65683e48d200773d774e33b31ed6bea28fec80f1356b01a20d2d5fd",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}

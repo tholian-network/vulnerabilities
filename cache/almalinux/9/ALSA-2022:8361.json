@@ -10,33 +10,9 @@
 	"summary": "e2fsprogs security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-i686-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-i686-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
 		"packages": [
-			{
-				"src": "e2fsprogs-1.46.5-3.el9.src.rpm",
-				"name": "e2fsprogs-devel",
-				"epoch": "0",
-				"version": "1.46.5",
-				"release": "3.el9",
-				"arch": "i686",
-				"filename": "e2fsprogs-devel-1.46.5-3.el9.i686.rpm",
-				"sum": "189e47293d98fc4954c1d2fd144b38a87e8a1f94cb5bb2d3fe8a3ca2db12024c",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "e2fsprogs-1.46.5-3.el9.src.rpm",
-				"name": "libcom_err-devel",
-				"epoch": "0",
-				"version": "1.46.5",
-				"release": "3.el9",
-				"arch": "i686",
-				"filename": "libcom_err-devel-1.46.5-3.el9.i686.rpm",
-				"sum": "748096413b45b8acebbbc3a2d8744327201a8defc21f48539c6ad324d908fb70",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "e2fsprogs-1.46.5-3.el9.src.rpm",
 				"name": "e2fsprogs-devel",
@@ -58,6 +34,30 @@
 				"arch": "aarch64",
 				"filename": "libcom_err-devel-1.46.5-3.el9.aarch64.rpm",
 				"sum": "e438fbbcb45386c36c545e8340d7fcc99d3ad4acff2955123aacaac69aefff09",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "e2fsprogs-1.46.5-3.el9.src.rpm",
+				"name": "e2fsprogs-devel",
+				"epoch": "0",
+				"version": "1.46.5",
+				"release": "3.el9",
+				"arch": "i686",
+				"filename": "e2fsprogs-devel-1.46.5-3.el9.i686.rpm",
+				"sum": "189e47293d98fc4954c1d2fd144b38a87e8a1f94cb5bb2d3fe8a3ca2db12024c",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "e2fsprogs-1.46.5-3.el9.src.rpm",
+				"name": "libcom_err-devel",
+				"epoch": "0",
+				"version": "1.46.5",
+				"release": "3.el9",
+				"arch": "i686",
+				"filename": "libcom_err-devel-1.46.5-3.el9.i686.rpm",
+				"sum": "748096413b45b8acebbbc3a2d8744327201a8defc21f48539c6ad324d908fb70",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -147,25 +147,49 @@
 			},
 			{
 				"src": "e2fsprogs-1.46.5-3.el9.src.rpm",
-				"name": "libcom_err-devel",
+				"name": "e2fsprogs-libs",
 				"epoch": "0",
 				"version": "1.46.5",
 				"release": "3.el9",
 				"arch": "ppc64le",
-				"filename": "libcom_err-devel-1.46.5-3.el9.ppc64le.rpm",
-				"sum": "9fb96ff665095e539617f76c177713ff5a0e2ecb2df13eb478d9c81fa558816c",
+				"filename": "e2fsprogs-libs-1.46.5-3.el9.ppc64le.rpm",
+				"sum": "9b73a33d08801fcf4ed1a45e0bd5012512750a4410263b6fa48060cda6d9344e",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
 			{
 				"src": "e2fsprogs-1.46.5-3.el9.src.rpm",
-				"name": "e2fsprogs-devel",
+				"name": "e2fsprogs",
 				"epoch": "0",
 				"version": "1.46.5",
 				"release": "3.el9",
 				"arch": "ppc64le",
-				"filename": "e2fsprogs-devel-1.46.5-3.el9.ppc64le.rpm",
-				"sum": "fcccbd9734bec3128fe7eb2c666d70b117f25d903ca975620932931ad2ac3cec",
+				"filename": "e2fsprogs-1.46.5-3.el9.ppc64le.rpm",
+				"sum": "b5f9b84d77f042abec97818f037411374cdd3fdf542d9106a8a84336cbf912e5",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "e2fsprogs-1.46.5-3.el9.src.rpm",
+				"name": "libss",
+				"epoch": "0",
+				"version": "1.46.5",
+				"release": "3.el9",
+				"arch": "ppc64le",
+				"filename": "libss-1.46.5-3.el9.ppc64le.rpm",
+				"sum": "cdf2f8a9071bfdefe54264a931ee643ee6b6234318e26db2af77175087498af8",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "e2fsprogs-1.46.5-3.el9.src.rpm",
+				"name": "libcom_err",
+				"epoch": "0",
+				"version": "1.46.5",
+				"release": "3.el9",
+				"arch": "ppc64le",
+				"filename": "libcom_err-1.46.5-3.el9.ppc64le.rpm",
+				"sum": "e89f652d8239c1d2bd1d45f946ef5740ae570e66ab3b09d69e862a98e12eebc2",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -219,37 +243,13 @@
 			},
 			{
 				"src": "e2fsprogs-1.46.5-3.el9.src.rpm",
-				"name": "e2fsprogs-libs",
-				"epoch": "0",
-				"version": "1.46.5",
-				"release": "3.el9",
-				"arch": "ppc64le",
-				"filename": "e2fsprogs-libs-1.46.5-3.el9.ppc64le.rpm",
-				"sum": "9b73a33d08801fcf4ed1a45e0bd5012512750a4410263b6fa48060cda6d9344e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "e2fsprogs-1.46.5-3.el9.src.rpm",
 				"name": "e2fsprogs",
 				"epoch": "0",
 				"version": "1.46.5",
 				"release": "3.el9",
-				"arch": "ppc64le",
-				"filename": "e2fsprogs-1.46.5-3.el9.ppc64le.rpm",
-				"sum": "b5f9b84d77f042abec97818f037411374cdd3fdf542d9106a8a84336cbf912e5",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "e2fsprogs-1.46.5-3.el9.src.rpm",
-				"name": "libss",
-				"epoch": "0",
-				"version": "1.46.5",
-				"release": "3.el9",
-				"arch": "ppc64le",
-				"filename": "libss-1.46.5-3.el9.ppc64le.rpm",
-				"sum": "cdf2f8a9071bfdefe54264a931ee643ee6b6234318e26db2af77175087498af8",
+				"arch": "s390x",
+				"filename": "e2fsprogs-1.46.5-3.el9.s390x.rpm",
+				"sum": "02521d1e9075849d5291719e5f93b38cb6fba947288fd4e91c746d25b891472b",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -259,9 +259,33 @@
 				"epoch": "0",
 				"version": "1.46.5",
 				"release": "3.el9",
-				"arch": "ppc64le",
-				"filename": "libcom_err-1.46.5-3.el9.ppc64le.rpm",
-				"sum": "e89f652d8239c1d2bd1d45f946ef5740ae570e66ab3b09d69e862a98e12eebc2",
+				"arch": "s390x",
+				"filename": "libcom_err-1.46.5-3.el9.s390x.rpm",
+				"sum": "42f05354a91ae9f035268abb2bd2b7d0a86748201ff2abe76a4c775960d89470",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "e2fsprogs-1.46.5-3.el9.src.rpm",
+				"name": "e2fsprogs-libs",
+				"epoch": "0",
+				"version": "1.46.5",
+				"release": "3.el9",
+				"arch": "s390x",
+				"filename": "e2fsprogs-libs-1.46.5-3.el9.s390x.rpm",
+				"sum": "cffbe827ba246d984b643895c5a5a5c62265d2bd31b43b02ac12dbc94cb05019",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "e2fsprogs-1.46.5-3.el9.src.rpm",
+				"name": "libss",
+				"epoch": "0",
+				"version": "1.46.5",
+				"release": "3.el9",
+				"arch": "s390x",
+				"filename": "libss-1.46.5-3.el9.s390x.rpm",
+				"sum": "e39880bb1ef0e2a9959ea7e31d6fecc92fce40fa62e28ddc3d45fea4bc22fac4",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -315,49 +339,25 @@
 			},
 			{
 				"src": "e2fsprogs-1.46.5-3.el9.src.rpm",
-				"name": "e2fsprogs",
+				"name": "libcom_err-devel",
 				"epoch": "0",
 				"version": "1.46.5",
 				"release": "3.el9",
-				"arch": "s390x",
-				"filename": "e2fsprogs-1.46.5-3.el9.s390x.rpm",
-				"sum": "02521d1e9075849d5291719e5f93b38cb6fba947288fd4e91c746d25b891472b",
+				"arch": "ppc64le",
+				"filename": "libcom_err-devel-1.46.5-3.el9.ppc64le.rpm",
+				"sum": "9fb96ff665095e539617f76c177713ff5a0e2ecb2df13eb478d9c81fa558816c",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
 			{
 				"src": "e2fsprogs-1.46.5-3.el9.src.rpm",
-				"name": "libcom_err",
+				"name": "e2fsprogs-devel",
 				"epoch": "0",
 				"version": "1.46.5",
 				"release": "3.el9",
-				"arch": "s390x",
-				"filename": "libcom_err-1.46.5-3.el9.s390x.rpm",
-				"sum": "42f05354a91ae9f035268abb2bd2b7d0a86748201ff2abe76a4c775960d89470",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "e2fsprogs-1.46.5-3.el9.src.rpm",
-				"name": "e2fsprogs-libs",
-				"epoch": "0",
-				"version": "1.46.5",
-				"release": "3.el9",
-				"arch": "s390x",
-				"filename": "e2fsprogs-libs-1.46.5-3.el9.s390x.rpm",
-				"sum": "cffbe827ba246d984b643895c5a5a5c62265d2bd31b43b02ac12dbc94cb05019",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "e2fsprogs-1.46.5-3.el9.src.rpm",
-				"name": "libss",
-				"epoch": "0",
-				"version": "1.46.5",
-				"release": "3.el9",
-				"arch": "s390x",
-				"filename": "libss-1.46.5-3.el9.s390x.rpm",
-				"sum": "e39880bb1ef0e2a9959ea7e31d6fecc92fce40fa62e28ddc3d45fea4bc22fac4",
+				"arch": "ppc64le",
+				"filename": "e2fsprogs-devel-1.46.5-3.el9.ppc64le.rpm",
+				"sum": "fcccbd9734bec3128fe7eb2c666d70b117f25d903ca975620932931ad2ac3cec",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -394,6 +394,6 @@
 		"$date": 1668470400000
 	},
 	"updated_date": {
-		"$date": 1668721716000
+		"$date": 1668721715000
 	}
 }

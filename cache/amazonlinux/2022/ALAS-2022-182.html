@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2022-2022-182</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2022-2022-182'>ALAS2022-2022-182</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2022 Security Advisory:</b> ALAS-2022-182
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2022-11-01 21:24 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2022-11-03 21:00 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2021-2372.html' target='_blank'>CVE-2021-2372&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-2389.html' target='_blank'>CVE-2021-2389&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-35604.html' target='_blank'>CVE-2021-35604&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-46658.html' target='_blank'>CVE-2021-46658&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-46659.html' target='_blank'>CVE-2021-46659&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-46661.html' target='_blank'>CVE-2021-46661&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-46662.html' target='_blank'>CVE-2021-46662&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-46663.html' target='_blank'>CVE-2021-46663&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-46664.html' target='_blank'>CVE-2021-46664&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-46665.html' target='_blank'>CVE-2021-46665&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-46667.html' target='_blank'>CVE-2021-46667&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-46668.html' target='_blank'>CVE-2021-46668&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-46669.html' target='_blank'>CVE-2021-46669&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-0778.html' target='_blank'>CVE-2022-0778&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-24048.html' target='_blank'>CVE-2022-24048&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-24050.html' target='_blank'>CVE-2022-24050&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-24051.html' target='_blank'>CVE-2022-24051&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-24052.html' target='_blank'>CVE-2022-24052&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27376.html' target='_blank'>CVE-2022-27376&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27377.html' target='_blank'>CVE-2022-27377&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27378.html' target='_blank'>CVE-2022-27378&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27379.html' target='_blank'>CVE-2022-27379&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27380.html' target='_blank'>CVE-2022-27380&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27381.html' target='_blank'>CVE-2022-27381&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27382.html' target='_blank'>CVE-2022-27382&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27383.html' target='_blank'>CVE-2022-27383&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27384.html' target='_blank'>CVE-2022-27384&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27385.html' target='_blank'>CVE-2022-27385&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27386.html' target='_blank'>CVE-2022-27386&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27387.html' target='_blank'>CVE-2022-27387&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27444.html' target='_blank'>CVE-2022-27444&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27445.html' target='_blank'>CVE-2022-27445&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27446.html' target='_blank'>CVE-2022-27446&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27447.html' target='_blank'>CVE-2022-27447&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27448.html' target='_blank'>CVE-2022-27448&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27449.html' target='_blank'>CVE-2022-27449&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27451.html' target='_blank'>CVE-2022-27451&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27452.html' target='_blank'>CVE-2022-27452&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27455.html' target='_blank'>CVE-2022-27455&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27456.html' target='_blank'>CVE-2022-27456&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27457.html' target='_blank'>CVE-2022-27457&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-27458.html' target='_blank'>CVE-2022-27458&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-31624.html' target='_blank'>CVE-2022-31624&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-32083.html' target='_blank'>CVE-2022-32083&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-32085.html' target='_blank'>CVE-2022-32085&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-32086.html' target='_blank'>CVE-2022-32086&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-32087.html' target='_blank'>CVE-2022-32087&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-32088.html' target='_blank'>CVE-2022-32088&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB). Supported versions that are affected are 5.7.34 and prior and 8.0.25 and prior. Difficult to exploit vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.4 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H). (CVE-2021-2372)</p><p>Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB). Supported versions that are affected are 5.7.34 and prior and 8.0.25 and prior. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 5.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H). (CVE-2021-2389)</p><p>Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB). Supported versions that are affected are 5.7.35 and prior and 8.0.26 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 5.5 (Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H). (CVE-2021-35604)</p><p>save_window_function_values in MariaDB before 10.6.3 allows an application crash because of incorrect handling of with_window_func=true for a subquery. (CVE-2021-46658)</p><p>MariaDB before 10.7.2 allows an application crash because it does not recognize that SELECT_LEX::nest_level is local to each VIEW. (CVE-2021-46659)</p><p>MariaDB through 10.5.9 allows an application crash in find_field_in_tables and find_order_in_list via an unused common table expression (CTE). (CVE-2021-46661)</p><p>MariaDB through 10.5.9 allows a set_var.cc application crash via certain uses of an UPDATE statement in conjunction with a nested subquery. (CVE-2021-46662)</p><p>MariaDB through 10.5.13 allows a ha_maria::extra application crash via certain SELECT statements. (CVE-2021-46663)</p><p>MariaDB through 10.5.9 allows an application crash in sub_select_postjoin_aggr for a NULL value of aggr. (CVE-2021-46664)</p><p>MariaDB through 10.5.9 allows a sql_parse.cc application crash because of incorrect used_tables expectations. (CVE-2021-46665)</p><p>An integer overflow vulnerability was found in MariaDB, where an invalid size of ref_pointer_array is allocated. This issue results in a denial of service. (CVE-2021-46667)</p><p>MariaDB through 10.5.9 allows an application crash via certain long SELECT DISTINCT statements that improperly interact with storage-engine resource limitations for temporary data structures. (CVE-2021-46668)</p><p>A use-after-free vulnerability was found in MariaDB. This flaw allows attackers to trigger a convert_const_to_int() use-after-free when the BIGINT data type is used, resulting in a denial of service. (CVE-2021-46669)</p><p>The BN_mod_sqrt() function, which computes a modular square root, contains a bug that can cause it to loop forever for non-prime moduli. Internally this function is used when parsing certificates that contain elliptic curve public keys in compressed form or explicit elliptic curve parameters with a base point encoded in compressed form. It is possible to trigger the infinite loop by crafting a certificate that has invalid explicit curve parameters. Since certificate parsing happens prior to verification of the certificate signature, any process that parses an externally supplied certificate may thus be subject to a denial of service attack. The infinite loop can also be reached when parsing crafted private keys as they can contain explicit elliptic curve parameters. Thus vulnerable situations include: - TLS clients consuming server certificates - TLS servers consuming client certificates - Hosting providers taking certificates or private keys from customers - Certificate authorities parsing certification requests from subscribers - Anything else which parses ASN.1 elliptic curve parameters Also any other applications that use the BN_mod_sqrt() where the attacker can control the parameter values are vulnerable to this DoS issue. In the OpenSSL 1.0.2 version the public key is not parsed during initial parsing of the certificate which makes it slightly harder to trigger the infinite loop. However any operation which requires the public key from the certificate will trigger the infinite loop. In particular the attacker can use a self-signed certificate to trigger the loop during verification of the certificate signature. This issue affects OpenSSL versions 1.0.2, 1.1.1 and 3.0. It was addressed in the releases of 1.1.1n and 3.0.2 on the 15th March 2022. Fixed in OpenSSL 3.0.2 (Affected 3.0.0,3.0.1). Fixed in OpenSSL 1.1.1n (Affected 1.1.1-1.1.1m). Fixed in OpenSSL 1.0.2zd (Affected 1.0.2-1.0.2zc). (CVE-2022-0778) (CVE-2022-0778)</p><p>MariaDB CONNECT Storage Engine Stack-based Buffer Overflow Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of MariaDB. Authentication is required to exploit this vulnerability. The specific flaw exists within the processing of SQL queries. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of the service account. Was ZDI-CAN-16191. (CVE-2022-24048)</p><p>MariaDB CONNECT Storage Engine Use-After-Free Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of MariaDB. Authentication is required to exploit this vulnerability. The specific flaw exists within the processing of SQL queries. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of the service account. Was ZDI-CAN-16207. (CVE-2022-24050)</p><p>MariaDB CONNECT Storage Engine Format String Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of MariaDB. Authentication is required to exploit this vulnerability. The specific flaw exists within the processing of SQL queries. The issue results from the lack of proper validation of a user-supplied string before using it as a format specifier. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of the service account. Was ZDI-CAN-16193. (CVE-2022-24051)</p><p>A flaw was found in MariaDB. Lack of input validation leads to a heap buffer overflow. This flaw allows an authenticated, local attacker with at least a low level of privileges to submit a crafted SQL query to MariaDB and escalate their privileges to the level of the MariaDB service user, running arbitrary code. (CVE-2022-24052)</p><p>MariaDB Server v10.6.5 and below was discovered to contain an use-after-free in the component Item_args::walk_arg, which is exploited via specially crafted SQL statements. (CVE-2022-27376)</p><p>MariaDB Server v10.6.3 and below was discovered to contain an use-after-free in the component Item_func_in::cleanup(), which is exploited via specially crafted SQL statements. (CVE-2022-27377)</p><p>An issue in the component Create_tmp_table::finalize of MariaDB Server v10.7 and below was discovered to allow attackers to cause a Denial of Service (DoS) via specially crafted SQL statements. (CVE-2022-27378)</p><p>An issue in the component Arg_comparator::compare_real_fixed of MariaDB Server v10.6.2 and below was discovered to allow attackers to cause a Denial of Service (DoS) via specially crafted SQL statements. (CVE-2022-27379)</p><p>An issue in the component my_decimal::operator= of MariaDB Server v10.6.3 and below was discovered to allow attackers to cause a Denial of Service (DoS) via specially crafted SQL statements. (CVE-2022-27380)</p><p>An issue in the component Field::set_default of MariaDB Server v10.6 and below was discovered to allow attackers to cause a Denial of Service (DoS) via specially crafted SQL statements. (CVE-2022-27381)</p><p>MariaDB Server v10.7 and below was discovered to contain a segmentation fault via the component Item_field::used_tables/update_depend_map_for_order. (CVE-2022-27382)</p><p>MariaDB Server v10.6 and below was discovered to contain an use-after-free in the component my_strcasecmp_8bit, which is exploited via specially crafted SQL statements. (CVE-2022-27383)</p><p>An issue in the component Item_subselect::init_expr_cache_tracker of MariaDB Server v10.6 and below was discovered to allow attackers to cause a Denial of Service (DoS) via specially crafted SQL statements. (CVE-2022-27384)</p><p>An issue in the component Used_tables_and_const_cache::used_tables_and_const_cache_join of MariaDB Server v10.7 and below was discovered to allow attackers to cause a Denial of Service (DoS) via specially crafted SQL statements. (CVE-2022-27385)</p><p>MariaDB Server v10.7 and below was discovered to contain a segmentation fault via the component sql/sql_class.cc. (CVE-2022-27386)</p><p>MariaDB Server v10.7 and below was discovered to contain a global buffer overflow in the component decimal_bin_size, which is exploited via specially crafted SQL statements. (CVE-2022-27387)</p><p>MariaDB Server v10.9 and below was discovered to contain a segmentation fault via the component sql/item_subselect.cc. (CVE-2022-27444)</p><p>MariaDB Server v10.9 and below was discovered to contain a segmentation fault via the component sql/sql_window.cc. (CVE-2022-27445)</p><p>MariaDB Server v10.9 and below was discovered to contain a segmentation fault via the component sql/item_cmpfunc.h. (CVE-2022-27446)</p><p>MariaDB Server v10.9 and below was discovered to contain a use-after-free via the component Binary_string::free_buffer() at /sql/sql_string.h. (CVE-2022-27447)</p><p>There is an Assertion failure in MariaDB Server v10.9 and below via &#39;node-&gt;pcur-&gt;rel_pos == BTR_PCUR_ON&#39; at /row/row0mysql.cc. (CVE-2022-27448)</p><p>MariaDB Server v10.9 and below was discovered to contain a segmentation fault via the component sql/item_func.cc:148. (CVE-2022-27449)</p><p>MariaDB Server v10.9 and below was discovered to contain a segmentation fault via the component sql/field_conv.cc. (CVE-2022-27451)</p><p>MariaDB Server v10.9 and below was discovered to contain a segmentation fault via the component sql/item_cmpfunc.cc. (CVE-2022-27452)</p><p>MariaDB Server v10.6.3 and below was discovered to contain an use-after-free in the component my_wildcmp_8bit_impl at /strings/ctype-simple.c. (CVE-2022-27455)</p><p>MariaDB Server v10.6.3 and below was discovered to contain an use-after-free in the component VDec::VDec at /sql/sql_type.cc. (CVE-2022-27456)</p><p>MariaDB Server v10.6.3 and below was discovered to contain an use-after-free in the component my_mb_wc_latin1 at /strings/ctype-latin1.c. (CVE-2022-27457)</p><p>MariaDB Server v10.6.3 and below was discovered to contain an use-after-free in the component Binary_string::free_buffer() at /sql/sql_string.h. (CVE-2022-27458)</p><p>MariaDB Server before 10.7 is vulnerable to Denial of Service. While executing the plugin/server_audit/server_audit.c method log_statement_ex, the held lock lock_bigbuffer is not released correctly, which allows local users to trigger a denial of service due to the deadlock. (CVE-2022-31624)</p><p>MariaDB v10.2 to v10.6.1 was discovered to contain a segmentation fault via the component Item_subselect::init_expr_cache_tracker. (CVE-2022-32083)</p><p>MariaDB v10.2 to v10.7 was discovered to contain a segmentation fault via the component Item_func_in::cleanup/Item::cleanup_processor. (CVE-2022-32085)</p><p>MariaDB v10.4 to v10.8 was discovered to contain a segmentation fault via the component Item_field::fix_outer_field. (CVE-2022-32086)</p><p>MariaDB v10.2 to v10.7 was discovered to contain a segmentation fault via the component Item_args::walk_args. (CVE-2022-32087)</p><p>MariaDB v10.2 to v10.7 was discovered to contain a segmentation fault via the component Exec_time_tracker::get_loops/Filesort_tracker::report_use/filesort. (CVE-2022-32088)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>mariadb105</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>dnf update mariadb105 --releasever=2022.0.20221102</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; mariadb105-oqgraph-engine-debuginfo-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-connect-engine-debuginfo-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-server-debuginfo-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-cracklib-password-check-debuginfo-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-devel-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-sphinx-engine-debuginfo-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-errmsg-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-gssapi-server-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-sphinx-engine-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-server-utils-debuginfo-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-server-utils-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-backup-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-cracklib-password-check-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-connect-engine-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-oqgraph-engine-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-common-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-test-debuginfo-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-gssapi-server-debuginfo-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-pam-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-pam-debuginfo-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-backup-debuginfo-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-debuginfo-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-server-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-debugsource-10.5.16-1.amzn2022.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; mariadb105-test-10.5.16-1.amzn2022.0.4.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; mariadb105-backup-debuginfo-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-server-debuginfo-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-debugsource-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-test-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-server-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-backup-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-debuginfo-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-test-debuginfo-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-devel-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-connect-engine-debuginfo-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-errmsg-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-oqgraph-engine-debuginfo-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-connect-engine-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-server-utils-debuginfo-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-sphinx-engine-debuginfo-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-server-utils-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-oqgraph-engine-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-common-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-sphinx-engine-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-pam-debuginfo-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-pam-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-gssapi-server-debuginfo-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-cracklib-password-check-debuginfo-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-gssapi-server-10.5.16-1.amzn2022.0.4.i686<br />&nbsp;&nbsp;&nbsp; mariadb105-cracklib-password-check-10.5.16-1.amzn2022.0.4.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; mariadb105-10.5.16-1.amzn2022.0.4.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; mariadb105-pam-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-debuginfo-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-gssapi-server-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-rocksdb-engine-debuginfo-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-cracklib-password-check-debuginfo-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-pam-debuginfo-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-server-utils-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-backup-debuginfo-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-server-debuginfo-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-devel-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-oqgraph-engine-debuginfo-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-sphinx-engine-debuginfo-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-connect-engine-debuginfo-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-common-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-oqgraph-engine-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-rocksdb-engine-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-errmsg-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-gssapi-server-debuginfo-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-test-debuginfo-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-server-utils-debuginfo-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-connect-engine-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-sphinx-engine-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-backup-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-debugsource-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-cracklib-password-check-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-server-10.5.16-1.amzn2022.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; mariadb105-test-10.5.16-1.amzn2022.0.4.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-2372" target="_blank" rel="noopener noreferrer">CVE-2021-2372</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-2389" target="_blank" rel="noopener noreferrer">CVE-2021-2389</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-35604" target="_blank" rel="noopener noreferrer">CVE-2021-35604</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-46658" target="_blank" rel="noopener noreferrer">CVE-2021-46658</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-46659" target="_blank" rel="noopener noreferrer">CVE-2021-46659</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-46661" target="_blank" rel="noopener noreferrer">CVE-2021-46661</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-46662" target="_blank" rel="noopener noreferrer">CVE-2021-46662</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-46663" target="_blank" rel="noopener noreferrer">CVE-2021-46663</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-46664" target="_blank" rel="noopener noreferrer">CVE-2021-46664</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-46665" target="_blank" rel="noopener noreferrer">CVE-2021-46665</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-46667" target="_blank" rel="noopener noreferrer">CVE-2021-46667</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-46668" target="_blank" rel="noopener noreferrer">CVE-2021-46668</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-46669" target="_blank" rel="noopener noreferrer">CVE-2021-46669</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-0778" target="_blank" rel="noopener noreferrer">CVE-2022-0778</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-24048" target="_blank" rel="noopener noreferrer">CVE-2022-24048</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-24050" target="_blank" rel="noopener noreferrer">CVE-2022-24050</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-24051" target="_blank" rel="noopener noreferrer">CVE-2022-24051</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-24052" target="_blank" rel="noopener noreferrer">CVE-2022-24052</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27376" target="_blank" rel="noopener noreferrer">CVE-2022-27376</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27377" target="_blank" rel="noopener noreferrer">CVE-2022-27377</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27378" target="_blank" rel="noopener noreferrer">CVE-2022-27378</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27379" target="_blank" rel="noopener noreferrer">CVE-2022-27379</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27380" target="_blank" rel="noopener noreferrer">CVE-2022-27380</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27381" target="_blank" rel="noopener noreferrer">CVE-2022-27381</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27382" target="_blank" rel="noopener noreferrer">CVE-2022-27382</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27383" target="_blank" rel="noopener noreferrer">CVE-2022-27383</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27384" target="_blank" rel="noopener noreferrer">CVE-2022-27384</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27385" target="_blank" rel="noopener noreferrer">CVE-2022-27385</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27386" target="_blank" rel="noopener noreferrer">CVE-2022-27386</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27387" target="_blank" rel="noopener noreferrer">CVE-2022-27387</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27444" target="_blank" rel="noopener noreferrer">CVE-2022-27444</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27445" target="_blank" rel="noopener noreferrer">CVE-2022-27445</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27446" target="_blank" rel="noopener noreferrer">CVE-2022-27446</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27447" target="_blank" rel="noopener noreferrer">CVE-2022-27447</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27448" target="_blank" rel="noopener noreferrer">CVE-2022-27448</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27449" target="_blank" rel="noopener noreferrer">CVE-2022-27449</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27451" target="_blank" rel="noopener noreferrer">CVE-2022-27451</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27452" target="_blank" rel="noopener noreferrer">CVE-2022-27452</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27455" target="_blank" rel="noopener noreferrer">CVE-2022-27455</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27456" target="_blank" rel="noopener noreferrer">CVE-2022-27456</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27457" target="_blank" rel="noopener noreferrer">CVE-2022-27457</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-27458" target="_blank" rel="noopener noreferrer">CVE-2022-27458</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-31624" target="_blank" rel="noopener noreferrer">CVE-2022-31624</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-32083" target="_blank" rel="noopener noreferrer">CVE-2022-32083</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-32085" target="_blank" rel="noopener noreferrer">CVE-2022-32085</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-32086" target="_blank" rel="noopener noreferrer">CVE-2022-32086</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-32087" target="_blank" rel="noopener noreferrer">CVE-2022-32087</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-32088" target="_blank" rel="noopener noreferrer">CVE-2022-32088</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-2372" target="_blank" rel="noopener noreferrer">CVE-2021-2372</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-2389" target="_blank" rel="noopener noreferrer">CVE-2021-2389</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35604" target="_blank" rel="noopener noreferrer">CVE-2021-35604</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46658" target="_blank" rel="noopener noreferrer">CVE-2021-46658</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46659" target="_blank" rel="noopener noreferrer">CVE-2021-46659</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46661" target="_blank" rel="noopener noreferrer">CVE-2021-46661</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46662" target="_blank" rel="noopener noreferrer">CVE-2021-46662</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46663" target="_blank" rel="noopener noreferrer">CVE-2021-46663</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46664" target="_blank" rel="noopener noreferrer">CVE-2021-46664</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46665" target="_blank" rel="noopener noreferrer">CVE-2021-46665</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46667" target="_blank" rel="noopener noreferrer">CVE-2021-46667</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46668" target="_blank" rel="noopener noreferrer">CVE-2021-46668</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46669" target="_blank" rel="noopener noreferrer">CVE-2021-46669</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0778" target="_blank" rel="noopener noreferrer">CVE-2022-0778</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-24048" target="_blank" rel="noopener noreferrer">CVE-2022-24048</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-24050" target="_blank" rel="noopener noreferrer">CVE-2022-24050</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-24051" target="_blank" rel="noopener noreferrer">CVE-2022-24051</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-24052" target="_blank" rel="noopener noreferrer">CVE-2022-24052</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27376" target="_blank" rel="noopener noreferrer">CVE-2022-27376</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27377" target="_blank" rel="noopener noreferrer">CVE-2022-27377</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27378" target="_blank" rel="noopener noreferrer">CVE-2022-27378</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27379" target="_blank" rel="noopener noreferrer">CVE-2022-27379</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27380" target="_blank" rel="noopener noreferrer">CVE-2022-27380</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27381" target="_blank" rel="noopener noreferrer">CVE-2022-27381</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27382" target="_blank" rel="noopener noreferrer">CVE-2022-27382</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27383" target="_blank" rel="noopener noreferrer">CVE-2022-27383</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27384" target="_blank" rel="noopener noreferrer">CVE-2022-27384</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27385" target="_blank" rel="noopener noreferrer">CVE-2022-27385</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27386" target="_blank" rel="noopener noreferrer">CVE-2022-27386</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27387" target="_blank" rel="noopener noreferrer">CVE-2022-27387</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27444" target="_blank" rel="noopener noreferrer">CVE-2022-27444</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27445" target="_blank" rel="noopener noreferrer">CVE-2022-27445</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27446" target="_blank" rel="noopener noreferrer">CVE-2022-27446</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27447" target="_blank" rel="noopener noreferrer">CVE-2022-27447</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27448" target="_blank" rel="noopener noreferrer">CVE-2022-27448</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27449" target="_blank" rel="noopener noreferrer">CVE-2022-27449</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27451" target="_blank" rel="noopener noreferrer">CVE-2022-27451</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27452" target="_blank" rel="noopener noreferrer">CVE-2022-27452</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27455" target="_blank" rel="noopener noreferrer">CVE-2022-27455</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27456" target="_blank" rel="noopener noreferrer">CVE-2022-27456</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27457" target="_blank" rel="noopener noreferrer">CVE-2022-27457</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27458" target="_blank" rel="noopener noreferrer">CVE-2022-27458</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-31624" target="_blank" rel="noopener noreferrer">CVE-2022-31624</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32083" target="_blank" rel="noopener noreferrer">CVE-2022-32083</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32085" target="_blank" rel="noopener noreferrer">CVE-2022-32085</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32086" target="_blank" rel="noopener noreferrer">CVE-2022-32086</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32087" target="_blank" rel="noopener noreferrer">CVE-2022-32087</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32088" target="_blank" rel="noopener noreferrer">CVE-2022-32088</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2017-906</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2017-906'>ALAS-2017-906</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2017-906
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2017-10-02 17:01 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2018-01-18 20:17 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2015-9096.html' target='_blank'>CVE-2015-9096&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-0898.html' target='_blank'>CVE-2017-0898&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-0899.html' target='_blank'>CVE-2017-0899&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-0900.html' target='_blank'>CVE-2017-0900&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-0901.html' target='_blank'>CVE-2017-0901&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-0902.html' target='_blank'>CVE-2017-0902&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-0903.html' target='_blank'>CVE-2017-0903&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-10784.html' target='_blank'>CVE-2017-10784&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-14033.html' target='_blank'>CVE-2017-14033&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-14064.html' target='_blank'>CVE-2017-14064&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>SMTP command injection via CRLF sequences in RCPT TO or MAIL FROM commands in Net::SMTP<br />A SMTP command injection flaw was found in the way Ruby&#39;s Net::SMTP module handled CRLF sequences in certain SMTP commands. An attacker could potentially use this flaw to inject SMTP commands in a SMTP session in order to facilitate phishing attacks or spam campaigns. (CVE-2015-9096)</p><p>Escape sequence injection vulnerability in the Basic authentication of WEBrick<br />The Basic authentication code in WEBrick library in Ruby allows remote attackers to inject terminal emulator escape sequences into its log and possibly execute arbitrary commands via a crafted user name. (CVE-2017-10784)</p><p>Buffer underrun in OpenSSL ASN1 decode<br />The decode method in the OpenSSL::ASN1 module in Ruby allows attackers to cause a denial of service (interpreter crash) via a crafted string. (CVE-2017-14033)</p><p>No size limit in summary length of gem spec<br />RubyGems is vulnerable to maliciously crafted gem specifications to cause a denial of service attack against RubyGems clients who have issued a `query` command. (CVE-2017-0900)</p><p>Arbitrary file overwrite due to incorrect validation of specification name<br />RubyGems fails to validate specification names, allowing a maliciously crafted gem to potentially overwrite any file on the filesystem. (CVE-2017-0901)</p><p>DNS hijacking vulnerability<br />RubyGems is vulnerable to a DNS hijacking vulnerability that allows a MITM attacker to force the RubyGems client to download and install gems from a server that the attacker controls. (CVE-2017-0902)</p><p>Buffer underrun vulnerability in Kernel.sprintf<br />Ruby is vulnerable to a malicious format string which contains a precious specifier (*) with a huge minus value. Such situation can lead to a buffer overrun, resulting in a heap memory corruption or an information disclosure from the heap. (CVE-2017-0898)</p><p>Escape sequence in the &#34;summary&#34; field of gemspec<br />RubyGems is vulnerable to maliciously crafted gem specifications that include terminal escape characters. Printing the gem specification would execute terminal escape sequences. (CVE-2017-0899)</p><p>Arbitrary heap exposure during a JSON.generate call<br />Ruby can expose arbitrary memory during a JSON.generate call. The issues lies in using strdup in ext/json/ext/generator/generator.c, which will stop after encountering a &#39;\\0&#39; byte, returning a pointer to a string of length zero, which is not the length stored in space_len. (CVE-2017-14064)</p><p>A vulnerability was found where the rubygems module was vulnerable to an unsafe YAML deserialization when inspecting a gem. Applications inspecting gem files without installing them can be tricked to execute arbitrary code in the context of the ruby interpreter. (CVE-2017-0903)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>ruby22, ruby23</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update ruby22</i> to update your system.
+                                    <br />Run <i>yum update ruby23</i> to update your system.
+                                    <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; ruby22-libs-2.2.8-1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; rubygem22-psych-2.0.8.1-1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; ruby22-debuginfo-2.2.8-1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; ruby22-2.2.8-1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; ruby22-devel-2.2.8-1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; rubygem22-io-console-0.4.3-1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; rubygem22-bigdecimal-1.2.6-1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; rubygem23-psych-2.1.0.1-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; rubygem23-io-console-0.4.5-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; rubygem23-json-1.8.3.1-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; ruby23-devel-2.3.5-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; ruby23-debuginfo-2.3.5-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; ruby23-2.3.5-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; rubygem23-bigdecimal-1.2.8-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; ruby23-libs-2.3.5-1.17.amzn1.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; ruby22-irb-2.2.8-1.9.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; rubygems22-devel-2.4.5.2-1.9.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; rubygems22-2.4.5.2-1.9.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; ruby22-doc-2.2.8-1.9.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; ruby23-doc-2.3.5-1.17.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; rubygem23-did_you_mean-1.0.0-1.17.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; rubygems23-devel-2.5.2.1-1.17.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; rubygems23-2.5.2.1-1.17.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; ruby23-irb-2.3.5-1.17.amzn1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; ruby22-2.2.8-1.9.amzn1.src<br />&nbsp;&nbsp;&nbsp; ruby23-2.3.5-1.17.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; ruby22-2.2.8-1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; ruby22-devel-2.2.8-1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; ruby22-debuginfo-2.2.8-1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; rubygem22-bigdecimal-1.2.6-1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; ruby22-libs-2.2.8-1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; rubygem22-psych-2.0.8.1-1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; rubygem22-io-console-0.4.3-1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; rubygem23-json-1.8.3.1-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; ruby23-debuginfo-2.3.5-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; rubygem23-psych-2.1.0.1-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; ruby23-libs-2.3.5-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; ruby23-2.3.5-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; rubygem23-bigdecimal-1.2.8-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; rubygem23-io-console-0.4.5-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; ruby23-devel-2.3.5-1.17.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-9096" target="_blank" rel="noopener noreferrer">CVE-2015-9096</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-0898" target="_blank" rel="noopener noreferrer">CVE-2017-0898</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-0899" target="_blank" rel="noopener noreferrer">CVE-2017-0899</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-0900" target="_blank" rel="noopener noreferrer">CVE-2017-0900</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-0901" target="_blank" rel="noopener noreferrer">CVE-2017-0901</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-0902" target="_blank" rel="noopener noreferrer">CVE-2017-0902</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-0903" target="_blank" rel="noopener noreferrer">CVE-2017-0903</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-10784" target="_blank" rel="noopener noreferrer">CVE-2017-10784</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-14033" target="_blank" rel="noopener noreferrer">CVE-2017-14033</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-14064" target="_blank" rel="noopener noreferrer">CVE-2017-14064</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-9096" target="_blank" rel="noopener noreferrer">CVE-2015-9096</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0898" target="_blank" rel="noopener noreferrer">CVE-2017-0898</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0899" target="_blank" rel="noopener noreferrer">CVE-2017-0899</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0900" target="_blank" rel="noopener noreferrer">CVE-2017-0900</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0901" target="_blank" rel="noopener noreferrer">CVE-2017-0901</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0902" target="_blank" rel="noopener noreferrer">CVE-2017-0902</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0903" target="_blank" rel="noopener noreferrer">CVE-2017-0903</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-10784" target="_blank" rel="noopener noreferrer">CVE-2017-10784</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14033" target="_blank" rel="noopener noreferrer">CVE-2017-14033</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14064" target="_blank" rel="noopener noreferrer">CVE-2017-14064</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

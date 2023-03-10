@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2019-1339</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2019-1339'>ALAS2-2019-1339</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2019-1339
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2019-10-21 18:01 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2019-10-24 05:28 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Low<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2017-17724.html' target='_blank'>CVE-2017-17724&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-10772.html' target='_blank'>CVE-2018-10772&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-10958.html' target='_blank'>CVE-2018-10958&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-10998.html' target='_blank'>CVE-2018-10998&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-11037.html' target='_blank'>CVE-2018-11037&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-12264.html' target='_blank'>CVE-2018-12264&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-12265.html' target='_blank'>CVE-2018-12265&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-14046.html' target='_blank'>CVE-2018-14046&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-17282.html' target='_blank'>CVE-2018-17282&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-17581.html' target='_blank'>CVE-2018-17581&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-18915.html' target='_blank'>CVE-2018-18915&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-19107.html' target='_blank'>CVE-2018-19107&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-19108.html' target='_blank'>CVE-2018-19108&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-19535.html' target='_blank'>CVE-2018-19535&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-19607.html' target='_blank'>CVE-2018-19607&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-20096.html' target='_blank'>CVE-2018-20096&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-20097.html' target='_blank'>CVE-2018-20097&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-20098.html' target='_blank'>CVE-2018-20098&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-20099.html' target='_blank'>CVE-2018-20099&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-8976.html' target='_blank'>CVE-2018-8976&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-8977.html' target='_blank'>CVE-2018-8977&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-9305.html' target='_blank'>CVE-2018-9305&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>An integer underflow, leading to heap-based out-of-bound read, was found in the way Exiv2 library prints IPTC Photo Metadata embedded in an image. By persuading a victim to open a crafted image, a remote attacker could crash the application or possibly retrieve a portion of memory.(CVE-2017-17724)</p><p>The tEXtToDataBuf function in pngimage.cpp in Exiv2 through 0.26 allows remote attackers to cause a denial of service (application crash) or possibly have unspecified other impact via a crafted file.(CVE-2018-10772)</p><p>In types.cpp in Exiv2 0.26, a large size value may lead to a SIGABRT during an attempt at memory allocation for an Exiv2::Internal::PngChunk::zlibUncompress call.(CVE-2018-10958)</p><p>An issue was discovered in Exiv2 0.26. readMetadata in jp2image.cpp allows remote attackers to cause a denial of service (SIGABRT) by triggering an incorrect Safe::add call.(CVE-2018-10998)</p><p>In Exiv2 0.26, the Exiv2::PngImage::printStructure function in pngimage.cpp allows remote attackers to cause an information leak via a crafted file.(CVE-2018-11037)</p><p>Exiv2 0.26 has integer overflows in LoaderTiff::getData() in preview.cpp, leading to an out-of-bounds read in Exiv2::ValueType::setDataArea in value.hpp.(CVE-2018-12264)</p><p>Exiv2 0.26 has an integer overflow in the LoaderExifJpeg class in preview.cpp, leading to an out-of-bounds read in Exiv2::MemIo::read in basicio.cpp.(CVE-2018-12265)</p><p>Exiv2 0.26 has a heap-based buffer over-read in WebPImage::decodeChunks in webpimage.cpp.(CVE-2018-14046)</p><p>An issue was discovered in Exiv2 v0.26. The function Exiv2::DataValue::copy in value.cpp has a NULL pointer dereference.(CVE-2018-17282)</p><p>CiffDirectory::readDirectory() at crwimage_int.cpp in Exiv2 0.26 has excessive stack consumption due to a recursive function, leading to Denial of service.(CVE-2018-17581)</p><p>There is an infinite loop in the Exiv2::Image::printIFDStructure function of image.cpp in Exiv2 0.27-RC1. A crafted input will lead to a remote denial of service attack.(CVE-2018-18915)</p><p>In Exiv2 0.26, Exiv2::IptcParser::decode in iptc.cpp (called from psdimage.cpp in the PSD image reader) may suffer from a denial of service (heap-based buffer over-read) caused by an integer overflow via a crafted PSD image file.(CVE-2018-19107)</p><p>In Exiv2 0.26, Exiv2::PsdImage::readMetadata in psdimage.cpp in the PSD image reader may suffer from a denial of service (infinite loop) caused by an integer overflow via a crafted PSD image file.(CVE-2018-19108)</p><p>In Exiv2 0.26 and previous versions, PngChunk::readRawProfile in pngchunk_int.cpp may cause a denial of service (application crash due to a heap-based buffer over-read) via a crafted PNG file.(CVE-2018-19535)</p><p>Exiv2::isoSpeed in easyaccess.cpp in Exiv2 v0.27-RC2 allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a crafted file.(CVE-2018-19607)</p><p>There is a heap-based buffer over-read in the Exiv2::tEXtToDataBuf function of pngimage.cpp in Exiv2 0.27-RC3. A crafted input will lead to a remote denial of service attack.(CVE-2018-20096)</p><p>There is a SEGV in Exiv2::Internal::TiffParserWorker::findPrimaryGroups of tiffimage_int.cpp in Exiv2 0.27-RC3. A crafted input will lead to a remote denial of service attack.(CVE-2018-20097)</p><p>There is a heap-based buffer over-read in Exiv2::Jp2Image::encodeJp2Header of jp2image.cpp in Exiv2 0.27-RC3. A crafted input will lead to a remote denial of service attack.(CVE-2018-20098)</p><p>There is an infinite loop in Exiv2::Jp2Image::encodeJp2Header of jp2image.cpp in Exiv2 0.27-RC3. A crafted input will lead to a remote denial of service attack.(CVE-2018-20099)</p><p>In Exiv2 0.26, jpgimage.cpp allows remote attackers to cause a denial of service (image.cpp Exiv2::Internal::stringFormat out-of-bounds read) via a crafted file.(CVE-2018-8976)</p><p>In Exiv2 0.26, the Exiv2::Internal::printCsLensFFFF function in canonmn_int.cpp allows remote attackers to cause a denial of service (invalid memory access) via a crafted file.(CVE-2018-8977)</p><p>An out-of-bounds read vulnerability has been discovered in IptcData::printStructure in iptc.cpp file of Exiv2 0.26. An attacker could cause a crash or an information leak by providing a crafted image.(CVE-2018-9305)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>exiv2</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update exiv2</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; exiv2-0.27.0-3.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; exiv2-devel-0.27.0-3.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; exiv2-libs-0.27.0-3.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; exiv2-debuginfo-0.27.0-3.amzn2.0.1.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; exiv2-0.27.0-3.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; exiv2-devel-0.27.0-3.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; exiv2-libs-0.27.0-3.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; exiv2-debuginfo-0.27.0-3.amzn2.0.1.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; exiv2-doc-0.27.0-3.amzn2.0.1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; exiv2-0.27.0-3.amzn2.0.1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; exiv2-0.27.0-3.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; exiv2-devel-0.27.0-3.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; exiv2-libs-0.27.0-3.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; exiv2-debuginfo-0.27.0-3.amzn2.0.1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-17724" target="_blank" rel="noopener noreferrer">CVE-2017-17724</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-10772" target="_blank" rel="noopener noreferrer">CVE-2018-10772</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-10958" target="_blank" rel="noopener noreferrer">CVE-2018-10958</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-10998" target="_blank" rel="noopener noreferrer">CVE-2018-10998</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-11037" target="_blank" rel="noopener noreferrer">CVE-2018-11037</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-12264" target="_blank" rel="noopener noreferrer">CVE-2018-12264</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-12265" target="_blank" rel="noopener noreferrer">CVE-2018-12265</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-14046" target="_blank" rel="noopener noreferrer">CVE-2018-14046</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-17282" target="_blank" rel="noopener noreferrer">CVE-2018-17282</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-17581" target="_blank" rel="noopener noreferrer">CVE-2018-17581</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-18915" target="_blank" rel="noopener noreferrer">CVE-2018-18915</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-19107" target="_blank" rel="noopener noreferrer">CVE-2018-19107</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-19108" target="_blank" rel="noopener noreferrer">CVE-2018-19108</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-19535" target="_blank" rel="noopener noreferrer">CVE-2018-19535</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-19607" target="_blank" rel="noopener noreferrer">CVE-2018-19607</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-20096" target="_blank" rel="noopener noreferrer">CVE-2018-20096</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-20097" target="_blank" rel="noopener noreferrer">CVE-2018-20097</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-20098" target="_blank" rel="noopener noreferrer">CVE-2018-20098</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-20099" target="_blank" rel="noopener noreferrer">CVE-2018-20099</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-8976" target="_blank" rel="noopener noreferrer">CVE-2018-8976</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-8977" target="_blank" rel="noopener noreferrer">CVE-2018-8977</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-9305" target="_blank" rel="noopener noreferrer">CVE-2018-9305</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-17724" target="_blank" rel="noopener noreferrer">CVE-2017-17724</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-10772" target="_blank" rel="noopener noreferrer">CVE-2018-10772</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-10958" target="_blank" rel="noopener noreferrer">CVE-2018-10958</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-10998" target="_blank" rel="noopener noreferrer">CVE-2018-10998</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-11037" target="_blank" rel="noopener noreferrer">CVE-2018-11037</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12264" target="_blank" rel="noopener noreferrer">CVE-2018-12264</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12265" target="_blank" rel="noopener noreferrer">CVE-2018-12265</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14046" target="_blank" rel="noopener noreferrer">CVE-2018-14046</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17282" target="_blank" rel="noopener noreferrer">CVE-2018-17282</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17581" target="_blank" rel="noopener noreferrer">CVE-2018-17581</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18915" target="_blank" rel="noopener noreferrer">CVE-2018-18915</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19107" target="_blank" rel="noopener noreferrer">CVE-2018-19107</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19108" target="_blank" rel="noopener noreferrer">CVE-2018-19108</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19535" target="_blank" rel="noopener noreferrer">CVE-2018-19535</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19607" target="_blank" rel="noopener noreferrer">CVE-2018-19607</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20096" target="_blank" rel="noopener noreferrer">CVE-2018-20096</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20097" target="_blank" rel="noopener noreferrer">CVE-2018-20097</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20098" target="_blank" rel="noopener noreferrer">CVE-2018-20098</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20099" target="_blank" rel="noopener noreferrer">CVE-2018-20099</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8976" target="_blank" rel="noopener noreferrer">CVE-2018-8976</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8977" target="_blank" rel="noopener noreferrer">CVE-2018-8977</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-9305" target="_blank" rel="noopener noreferrer">CVE-2018-9305</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

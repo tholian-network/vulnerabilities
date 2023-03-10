@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2016-743</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2016-743'>ALAS-2016-743</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2016-743
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2016-09-27 10:30 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2016-09-27 10:30 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2015-8916.html' target='_blank'>CVE-2015-8916&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-8917.html' target='_blank'>CVE-2015-8917&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-8919.html' target='_blank'>CVE-2015-8919&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-8920.html' target='_blank'>CVE-2015-8920&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-8921.html' target='_blank'>CVE-2015-8921&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-8922.html' target='_blank'>CVE-2015-8922&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-8923.html' target='_blank'>CVE-2015-8923&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-8924.html' target='_blank'>CVE-2015-8924&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-8925.html' target='_blank'>CVE-2015-8925&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-8926.html' target='_blank'>CVE-2015-8926&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-8928.html' target='_blank'>CVE-2015-8928&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-8930.html' target='_blank'>CVE-2015-8930&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-8931.html' target='_blank'>CVE-2015-8931&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-8932.html' target='_blank'>CVE-2015-8932&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-8934.html' target='_blank'>CVE-2015-8934&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-1541.html' target='_blank'>CVE-2016-1541&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-4300.html' target='_blank'>CVE-2016-4300&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-4302.html' target='_blank'>CVE-2016-4302&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-4809.html' target='_blank'>CVE-2016-4809&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-5418.html' target='_blank'>CVE-2016-5418&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-5844.html' target='_blank'>CVE-2016-5844&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-6250.html' target='_blank'>CVE-2016-6250&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-7166.html' target='_blank'>CVE-2016-7166&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>A flaw was found in the way libarchive handled hardlink archive entries of non-zero size. Combined with flaws in libarchive&#39;s file system sandboxing, this issue could cause an application using libarchive to overwrite arbitrary files with arbitrary data from the archive. (CVE-2016-5418)</p><p>Multiple out-of-bounds write flaws were found in libarchive. Specially crafted ZIP, 7ZIP, or RAR files could cause a heap overflow, potentially allowing code execution in the context of the application using libarchive. (CVE-2016-1541, CVE-2016-4300, CVE-2016-4302)</p><p>Multiple out-of-bounds read flaws were found in libarchive. Specially crafted LZA/LZH, AR, MTREE, ZIP, TAR, or RAR files could cause the application to read data out of bounds, potentially disclosing a small amount of application memory, or causing an application crash. (CVE-2015-8919, CVE-2015-8920, CVE-2015-8921, CVE-2015-8923, CVE-2015-8924, CVE-2015-8925, CVE-2015-8926, CVE-2015-8928, CVE-2015-8934)</p><p>Multiple NULL pointer dereference flaws were found in libarchive. Specially crafted RAR, CAB, or 7ZIP files could cause an application using libarchive to crash. (CVE-2015-8916, CVE-2015-8917, CVE-2015-8922)</p><p>Multiple infinite loop / resource exhaustion flaws were found in libarchive. Specially crafted GZIP or ISO files could cause the application to consume an excessive amount of resources, eventually leading to a crash on memory exhaustion. (CVE-2016-7166, CVE-2015-8930)</p><p>A denial of service vulnerability was found in libarchive. A specially crafted CPIO archive containing a symbolic link to a large target path could cause memory allocation to fail, causing an application using libarchive that attempted to view or extract such archive to crash. (CVE-2016-4809)</p><p>An integer overflow flaw, leading to a buffer overflow, was found in libarchive&#39;s construction of ISO9660 volumes. Attempting to create an ISO9660 volume with 2 GB or 4 GB file names could cause the application to attempt to allocate 20 GB of memory. If this were to succeed, it could lead to an out of bounds write on the heap and potential code execution. (CVE-2016-6250)</p><p>Multiple instances of undefined behavior due to arithmetic overflow were found in libarchive. Specially crafted MTREE archives, Compress streams, or ISO9660 volumes could potentially cause the application to fail to read the archive, or to crash. (CVE-2015-8931, CVE-2015-8932, CVE-2016-5844)<br /></p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>libarchive</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update libarchive</i> to update your system.
+                                    <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; libarchive-devel-3.1.2-10.11.amzn1.i686<br />&nbsp;&nbsp;&nbsp; bsdtar-3.1.2-10.11.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libarchive-3.1.2-10.11.amzn1.i686<br />&nbsp;&nbsp;&nbsp; bsdcpio-3.1.2-10.11.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libarchive-debuginfo-3.1.2-10.11.amzn1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; libarchive-3.1.2-10.11.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; bsdtar-3.1.2-10.11.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libarchive-devel-3.1.2-10.11.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libarchive-3.1.2-10.11.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; bsdcpio-3.1.2-10.11.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libarchive-debuginfo-3.1.2-10.11.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-8916" target="_blank" rel="noopener noreferrer">CVE-2015-8916</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-8917" target="_blank" rel="noopener noreferrer">CVE-2015-8917</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-8919" target="_blank" rel="noopener noreferrer">CVE-2015-8919</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-8920" target="_blank" rel="noopener noreferrer">CVE-2015-8920</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-8921" target="_blank" rel="noopener noreferrer">CVE-2015-8921</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-8922" target="_blank" rel="noopener noreferrer">CVE-2015-8922</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-8923" target="_blank" rel="noopener noreferrer">CVE-2015-8923</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-8924" target="_blank" rel="noopener noreferrer">CVE-2015-8924</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-8925" target="_blank" rel="noopener noreferrer">CVE-2015-8925</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-8926" target="_blank" rel="noopener noreferrer">CVE-2015-8926</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-8928" target="_blank" rel="noopener noreferrer">CVE-2015-8928</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-8930" target="_blank" rel="noopener noreferrer">CVE-2015-8930</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-8931" target="_blank" rel="noopener noreferrer">CVE-2015-8931</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-8932" target="_blank" rel="noopener noreferrer">CVE-2015-8932</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-8934" target="_blank" rel="noopener noreferrer">CVE-2015-8934</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-1541" target="_blank" rel="noopener noreferrer">CVE-2016-1541</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-4300" target="_blank" rel="noopener noreferrer">CVE-2016-4300</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-4302" target="_blank" rel="noopener noreferrer">CVE-2016-4302</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-4809" target="_blank" rel="noopener noreferrer">CVE-2016-4809</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-5418" target="_blank" rel="noopener noreferrer">CVE-2016-5418</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-5844" target="_blank" rel="noopener noreferrer">CVE-2016-5844</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-6250" target="_blank" rel="noopener noreferrer">CVE-2016-6250</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-7166" target="_blank" rel="noopener noreferrer">CVE-2016-7166</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8916" target="_blank" rel="noopener noreferrer">CVE-2015-8916</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8917" target="_blank" rel="noopener noreferrer">CVE-2015-8917</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8919" target="_blank" rel="noopener noreferrer">CVE-2015-8919</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8920" target="_blank" rel="noopener noreferrer">CVE-2015-8920</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8921" target="_blank" rel="noopener noreferrer">CVE-2015-8921</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8922" target="_blank" rel="noopener noreferrer">CVE-2015-8922</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8923" target="_blank" rel="noopener noreferrer">CVE-2015-8923</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8924" target="_blank" rel="noopener noreferrer">CVE-2015-8924</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8925" target="_blank" rel="noopener noreferrer">CVE-2015-8925</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8926" target="_blank" rel="noopener noreferrer">CVE-2015-8926</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8928" target="_blank" rel="noopener noreferrer">CVE-2015-8928</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8930" target="_blank" rel="noopener noreferrer">CVE-2015-8930</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8931" target="_blank" rel="noopener noreferrer">CVE-2015-8931</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8932" target="_blank" rel="noopener noreferrer">CVE-2015-8932</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8934" target="_blank" rel="noopener noreferrer">CVE-2015-8934</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1541" target="_blank" rel="noopener noreferrer">CVE-2016-1541</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4300" target="_blank" rel="noopener noreferrer">CVE-2016-4300</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4302" target="_blank" rel="noopener noreferrer">CVE-2016-4302</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4809" target="_blank" rel="noopener noreferrer">CVE-2016-4809</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5418" target="_blank" rel="noopener noreferrer">CVE-2016-5418</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5844" target="_blank" rel="noopener noreferrer">CVE-2016-5844</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6250" target="_blank" rel="noopener noreferrer">CVE-2016-6250</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7166" target="_blank" rel="noopener noreferrer">CVE-2016-7166</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

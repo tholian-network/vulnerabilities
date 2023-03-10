@@ -7,11 +7,11 @@
 	"version": "1",
 	"status": "final",
 	"severity": "Important",
-	"summary": "An update for java-1.8.0-openjdk-javadoc is now available for AlmaLinux 9.",
+	"summary": "An update for java-1.8.0-openjdk is now available for AlmaLinux 9.",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-i686-appstream-rpms__9_default",
-		"shortname": "almalinux-9-for-i686-appstream-rpms__9_default",
+		"name": "almalinux-9-for-aarch64-appstream-rpms__9_default",
+		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_default",
 		"packages": [
 			{
 				"src": "java-1.8.0-openjdk-1.8.0.342.b07-1.el9_0.src.rpm",
@@ -22,18 +22,6 @@
 				"arch": "noarch",
 				"filename": "java-1.8.0-openjdk-javadoc-1.8.0.342.b07-1.el9_0.noarch.rpm",
 				"sum": "016c0c76cdcb9e6561492bf3c35a2cedde2695d2d3573cb0ca2a4fa753bf5a75",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "java-1.8.0-openjdk-1.8.0.342.b07-1.el9_0.src.rpm",
-				"name": "java-1.8.0-openjdk-javadoc-zip",
-				"epoch": "1",
-				"version": "1.8.0.342.b07",
-				"release": "1.el9_0",
-				"arch": "noarch",
-				"filename": "java-1.8.0-openjdk-javadoc-zip-1.8.0.342.b07-1.el9_0.noarch.rpm",
-				"sum": "eef6d2e8806b1e7e959d8ea2224f3ff6f2aa5e4802e5b61ddcebf3adad114d9b",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -214,6 +202,18 @@
 				"arch": "aarch64",
 				"filename": "java-1.8.0-openjdk-fastdebug-1.8.0.342.b07-1.el9_0.aarch64.rpm",
 				"sum": "bc2ce7c6832e2fb2c60b46cb5284a3c3bbb1e4e1c377e7001a75645cd6bad5d6",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "java-1.8.0-openjdk-1.8.0.342.b07-1.el9_0.src.rpm",
+				"name": "java-1.8.0-openjdk-javadoc-zip",
+				"epoch": "1",
+				"version": "1.8.0.342.b07",
+				"release": "1.el9_0",
+				"arch": "noarch",
+				"filename": "java-1.8.0-openjdk-javadoc-zip-1.8.0.342.b07-1.el9_0.noarch.rpm",
+				"sum": "eef6d2e8806b1e7e959d8ea2224f3ff6f2aa5e4802e5b61ddcebf3adad114d9b",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -643,25 +643,25 @@
 	"references": [
 		{
 			"id": "RHSA-2022:5709",
-			"title": "",
+			"title": "RHSA-2022:5709",
 			"type": "rhsa",
 			"href": "https://access.redhat.com/errata/RHSA-2022:5709"
 		},
 		{
 			"id": "CVE-2022-21540",
-			"title": "",
+			"title": "CVE-2022-21540",
 			"type": "cve",
 			"href": "https://access.redhat.com/security/cve/CVE-2022-21540"
 		},
 		{
 			"id": "CVE-2022-21541",
-			"title": "",
+			"title": "CVE-2022-21541",
 			"type": "cve",
 			"href": "https://access.redhat.com/security/cve/CVE-2022-21541"
 		},
 		{
 			"id": "CVE-2022-34169",
-			"title": "",
+			"title": "CVE-2022-34169",
 			"type": "cve",
 			"href": "https://access.redhat.com/security/cve/CVE-2022-34169"
 		},
@@ -694,6 +694,6 @@
 		"$date": 1658707200000
 	},
 	"updated_date": {
-		"$date": 1659000072000
+		"$date": 1659000020000
 	}
 }

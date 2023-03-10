@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2018-1130</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2018-1130'>ALAS-2018-1130</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2018-1130
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2018-12-14 18:50 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2018-12-14 22:32 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2018-16873.html' target='_blank'>CVE-2018-16873&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-16874.html' target='_blank'>CVE-2018-16874&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-16875.html' target='_blank'>CVE-2018-16875&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>In Go before 1.10.6 and 1.11.x before 1.11.3, the &#34;go get&#34; command is vulnerable to remote code execution when executed with the -u flag and the import path of a malicious Go package, or a package that imports it directly or indirectly. Specifically, it is only vulnerable in GOPATH mode, but not in module mode (the distinction is documented at https://golang.org/cmd/go/#hdr-Module_aware_go_get). Using custom domains, it&#39;s possible to arrange things so that a Git repository is cloned to a folder named &#34;.git&#34; by using a vanity import path that ends with &#34;/.git&#34;. If the Git repository root contains a &#34;HEAD&#34; file, a &#34;config&#34; file, an &#34;objects&#34; directory, a &#34;refs&#34; directory, with some work to ensure the proper ordering of operations, &#34;go get -u&#34; can be tricked into considering the parent directory as a repository root, and running Git commands on it. That will use the &#34;config&#34; file in the original Git repository root for its configuration, and if that config file contains malicious commands, they will execute on the system running &#34;go get -u&#34;. (CVE-2018-16873)</p><p>The crypto/x509 package of Go before 1.10.6 and 1.11.x before 1.11.3 does not limit the amount of work performed for each chain verification, which might allow attackers to craft pathological inputs leading to a CPU denial of service. Go TLS servers accepting client certificates and TLS clients are affected. (CVE-2018-16875)</p><p>In Go before 1.10.6 and 1.11.x before 1.11.3, the &#34;go get&#34; command is vulnerable to directory traversal when executed with the import path of a malicious Go package which contains curly braces (both &#39;{&#39; and &#39;}&#39; characters). Specifically, it is only vulnerable in GOPATH mode, but not in module mode (the distinction is documented at https://golang.org/cmd/go/#hdr-Module_aware_go_get). The attacker can cause an arbitrary filesystem write, which can lead to code execution. (CVE-2018-16874)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>golang</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update golang</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; golang-1.10.6-1.47.amzn1.i686<br />&nbsp;&nbsp;&nbsp; golang-bin-1.10.6-1.47.amzn1.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; golang-misc-1.10.6-1.47.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; golang-tests-1.10.6-1.47.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; golang-src-1.10.6-1.47.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; golang-docs-1.10.6-1.47.amzn1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; golang-1.10.6-1.47.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; golang-bin-1.10.6-1.47.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; golang-race-1.10.6-1.47.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; golang-1.10.6-1.47.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-16873" target="_blank" rel="noopener noreferrer">CVE-2018-16873</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-16874" target="_blank" rel="noopener noreferrer">CVE-2018-16874</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-16875" target="_blank" rel="noopener noreferrer">CVE-2018-16875</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16873" target="_blank" rel="noopener noreferrer">CVE-2018-16873</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16874" target="_blank" rel="noopener noreferrer">CVE-2018-16874</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16875" target="_blank" rel="noopener noreferrer">CVE-2018-16875</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

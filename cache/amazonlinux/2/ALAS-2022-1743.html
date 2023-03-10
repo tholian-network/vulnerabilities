@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2022-1743</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2022-1743'>ALAS2-2022-1743</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2022-1743
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2022-01-18 21:38 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2022-02-11 22:12 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2021-3903.html' target='_blank'>CVE-2021-3903&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-3927.html' target='_blank'>CVE-2021-3927&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-3928.html' target='_blank'>CVE-2021-3928&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-3968.html' target='_blank'>CVE-2021-3968&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-3973.html' target='_blank'>CVE-2021-3973&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-3974.html' target='_blank'>CVE-2021-3974&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-3984.html' target='_blank'>CVE-2021-3984&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-4019.html' target='_blank'>CVE-2021-4019&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-4069.html' target='_blank'>CVE-2021-4069&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-4136.html' target='_blank'>CVE-2021-4136&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-4166.html' target='_blank'>CVE-2021-4166&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-4173.html' target='_blank'>CVE-2021-4173&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-4187.html' target='_blank'>CVE-2021-4187&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-4192.html' target='_blank'>CVE-2021-4192&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-4193.html' target='_blank'>CVE-2021-4193&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>vim is vulnerable to Heap-based Buffer Overflow (CVE-2021-3903)</p><p>A flaw was found in vim. A possible heap-based buffer overflow could allow an attacker to input a specially crafted file leading to a crash or code execution. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability. (CVE-2021-3927)</p><p>A flaw was found in vim. A possible stack-based buffer overflow could allow an attacker to input a specially crafted file leading to a crash or code execution. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability. (CVE-2021-3928)</p><p>A flaw was found in vim. A possible heap use-after-free vulnerability could allow an attacker to input a specially crafted file leading to a crash or code execution. The highest threat from this vulnerability is to system availability. (CVE-2021-3968)</p><p>A flaw was found in vim. A possible heap-based buffer overflow could allow an attacker to input a specially crafted file leading to a crash or code execution. The highest threat from this vulnerability is to system availability. (CVE-2021-3973)</p><p>A flaw was found in vim. A possible use-after-free vulnerability could allow an attacker to input a specially crafted file leading to a crash or code execution. The highest threat from this vulnerability is to system availability. (CVE-2021-3974)</p><p>A flaw was found in vim. A possible heap-based buffer overflow allows an attacker to input a specially crafted file, leading to a crash or code execution. The highest threat from this vulnerability is confidentiality, integrity, and system availability. (CVE-2021-3984)</p><p>A flaw was found in vim. A possible heap-based buffer overflow vulnerability allows an attacker to input a specially crafted file, leading to a crash or code execution. The highest threat from this vulnerability is system availability. (CVE-2021-4019)</p><p>vim is vulnerable to Use After Free (CVE-2021-4069)</p><p>A flaw was found in vim. A possible heap-based buffer overflow could allow an attacker to input a specially crafted file leading to a crash or code execution. (CVE-2021-4136)</p><p>A flaw was found in vim. A possible heap-based buffer overflow could allow an attacker to input a specially crafted file leading to a crash or code execution. (CVE-2021-4166)</p><p>A flaw was found in vim. A possible use after free vulnerability could allow an attacker to input a specially crafted file leading to a crash or code execution. (CVE-2021-4173)</p><p>A flaw was found in vim. A possible use after free vulnerability could allow an attacker to input a specially crafted file leading to a crash or code execution. (CVE-2021-4187)</p><p>It was found that vim was vulnerable to use-after-free flaw in win_linetabsize(). Sourcing a specially crafted file in vim could crash the vim process or possibly lead to other undefined behaviors. (CVE-2021-4192)</p><p>It was found that vim was vulnerable to an out-of-bound read flaw in getvcol(). A specially crafted file could be used to, when opened in vim, disclose some of the process&#39;s internal memory. (CVE-2021-4193)</p><p>References to CVE-2021-4192 and CVE-2021-4193 have been added after the original release of this advisory, however those vulnerabilities were fixed by the packages referenced by this advisory&#39;s initial release on 2022-01-18.</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>vim</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update vim</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; vim-common-8.2.4006-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; vim-minimal-8.2.4006-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; vim-enhanced-8.2.4006-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; vim-X11-8.2.4006-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; vim-debuginfo-8.2.4006-1.amzn2.0.1.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; vim-common-8.2.4006-1.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; vim-minimal-8.2.4006-1.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; vim-enhanced-8.2.4006-1.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; vim-X11-8.2.4006-1.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; vim-debuginfo-8.2.4006-1.amzn2.0.1.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; vim-filesystem-8.2.4006-1.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; vim-data-8.2.4006-1.amzn2.0.1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; vim-8.2.4006-1.amzn2.0.1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; vim-common-8.2.4006-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; vim-minimal-8.2.4006-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; vim-enhanced-8.2.4006-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; vim-X11-8.2.4006-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; vim-debuginfo-8.2.4006-1.amzn2.0.1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-3903" target="_blank" rel="noopener noreferrer">CVE-2021-3903</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-3927" target="_blank" rel="noopener noreferrer">CVE-2021-3927</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-3928" target="_blank" rel="noopener noreferrer">CVE-2021-3928</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-3968" target="_blank" rel="noopener noreferrer">CVE-2021-3968</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-3973" target="_blank" rel="noopener noreferrer">CVE-2021-3973</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-3974" target="_blank" rel="noopener noreferrer">CVE-2021-3974</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-3984" target="_blank" rel="noopener noreferrer">CVE-2021-3984</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-4019" target="_blank" rel="noopener noreferrer">CVE-2021-4019</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-4069" target="_blank" rel="noopener noreferrer">CVE-2021-4069</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-4136" target="_blank" rel="noopener noreferrer">CVE-2021-4136</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-4166" target="_blank" rel="noopener noreferrer">CVE-2021-4166</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-4173" target="_blank" rel="noopener noreferrer">CVE-2021-4173</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-4187" target="_blank" rel="noopener noreferrer">CVE-2021-4187</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-4192" target="_blank" rel="noopener noreferrer">CVE-2021-4192</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-4193" target="_blank" rel="noopener noreferrer">CVE-2021-4193</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3903" target="_blank" rel="noopener noreferrer">CVE-2021-3903</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3927" target="_blank" rel="noopener noreferrer">CVE-2021-3927</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3928" target="_blank" rel="noopener noreferrer">CVE-2021-3928</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3968" target="_blank" rel="noopener noreferrer">CVE-2021-3968</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3973" target="_blank" rel="noopener noreferrer">CVE-2021-3973</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3974" target="_blank" rel="noopener noreferrer">CVE-2021-3974</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3984" target="_blank" rel="noopener noreferrer">CVE-2021-3984</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4019" target="_blank" rel="noopener noreferrer">CVE-2021-4019</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4069" target="_blank" rel="noopener noreferrer">CVE-2021-4069</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4136" target="_blank" rel="noopener noreferrer">CVE-2021-4136</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4166" target="_blank" rel="noopener noreferrer">CVE-2021-4166</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4173" target="_blank" rel="noopener noreferrer">CVE-2021-4173</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4187" target="_blank" rel="noopener noreferrer">CVE-2021-4187</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4192" target="_blank" rel="noopener noreferrer">CVE-2021-4192</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4193" target="_blank" rel="noopener noreferrer">CVE-2021-4193</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

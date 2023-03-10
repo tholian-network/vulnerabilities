@@ -10,57 +10,9 @@
 	"summary": "bind security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-i686-appstream-rpms__9_default",
-		"shortname": "almalinux-9-for-i686-appstream-rpms__9_default",
+		"name": "almalinux-9-for-aarch64-appstream-rpms__9_default",
+		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_default",
 		"packages": [
-			{
-				"src": "bind-9.16.23-1.el9_0.1.src.rpm",
-				"name": "bind-dnssec-doc",
-				"epoch": "32",
-				"version": "9.16.23",
-				"release": "1.el9_0.1",
-				"arch": "noarch",
-				"filename": "bind-dnssec-doc-9.16.23-1.el9_0.1.noarch.rpm",
-				"sum": "4088d5438d88486bafd546b5fb2ce066ca0050519d9080299ef4cdd16fb3b279",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "bind-9.16.23-1.el9_0.1.src.rpm",
-				"name": "python3-bind",
-				"epoch": "32",
-				"version": "9.16.23",
-				"release": "1.el9_0.1",
-				"arch": "noarch",
-				"filename": "python3-bind-9.16.23-1.el9_0.1.noarch.rpm",
-				"sum": "b4ab83c8dc85311851f565c3d71ab2af15778c57f1b1216c43ca4c896fcf2d0a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "bind-9.16.23-1.el9_0.1.src.rpm",
-				"name": "bind-license",
-				"epoch": "32",
-				"version": "9.16.23",
-				"release": "1.el9_0.1",
-				"arch": "noarch",
-				"filename": "bind-license-9.16.23-1.el9_0.1.noarch.rpm",
-				"sum": "e745141e636123b205e4d059aa3b57e080a29f58d014d6f6e5ca704d05093e33",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "bind-9.16.23-1.el9_0.1.src.rpm",
-				"name": "bind-libs",
-				"epoch": "32",
-				"version": "9.16.23",
-				"release": "1.el9_0.1",
-				"arch": "i686",
-				"filename": "bind-libs-9.16.23-1.el9_0.1.i686.rpm",
-				"sum": "fd311081e08d5d37bc66f868ac9b2e3971ad1eeffe619dc67c2c73f00d6799e7",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "bind-9.16.23-1.el9_0.1.src.rpm",
 				"name": "bind",
@@ -82,6 +34,18 @@
 				"arch": "aarch64",
 				"filename": "bind-utils-9.16.23-1.el9_0.1.aarch64.rpm",
 				"sum": "2c5e1df34935671b9f4475e243a1ccaf6605df536f6e68597aa87285f25cc7ec",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "bind-9.16.23-1.el9_0.1.src.rpm",
+				"name": "bind-dnssec-doc",
+				"epoch": "32",
+				"version": "9.16.23",
+				"release": "1.el9_0.1",
+				"arch": "noarch",
+				"filename": "bind-dnssec-doc-9.16.23-1.el9_0.1.noarch.rpm",
+				"sum": "4088d5438d88486bafd546b5fb2ce066ca0050519d9080299ef4cdd16fb3b279",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -118,6 +82,42 @@
 				"arch": "aarch64",
 				"filename": "bind-libs-9.16.23-1.el9_0.1.aarch64.rpm",
 				"sum": "7e2236120c46441c5e970ed4fdaf46fffa1775c1c9bcdc1653930a9c49079769",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "bind-9.16.23-1.el9_0.1.src.rpm",
+				"name": "python3-bind",
+				"epoch": "32",
+				"version": "9.16.23",
+				"release": "1.el9_0.1",
+				"arch": "noarch",
+				"filename": "python3-bind-9.16.23-1.el9_0.1.noarch.rpm",
+				"sum": "b4ab83c8dc85311851f565c3d71ab2af15778c57f1b1216c43ca4c896fcf2d0a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "bind-9.16.23-1.el9_0.1.src.rpm",
+				"name": "bind-license",
+				"epoch": "32",
+				"version": "9.16.23",
+				"release": "1.el9_0.1",
+				"arch": "noarch",
+				"filename": "bind-license-9.16.23-1.el9_0.1.noarch.rpm",
+				"sum": "e745141e636123b205e4d059aa3b57e080a29f58d014d6f6e5ca704d05093e33",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "bind-9.16.23-1.el9_0.1.src.rpm",
+				"name": "bind-libs",
+				"epoch": "32",
+				"version": "9.16.23",
+				"release": "1.el9_0.1",
+				"arch": "i686",
+				"filename": "bind-libs-9.16.23-1.el9_0.1.i686.rpm",
+				"sum": "fd311081e08d5d37bc66f868ac9b2e3971ad1eeffe619dc67c2c73f00d6799e7",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -243,6 +243,30 @@
 			},
 			{
 				"src": "bind-9.16.23-1.el9_0.1.src.rpm",
+				"name": "bind-devel",
+				"epoch": "32",
+				"version": "9.16.23",
+				"release": "1.el9_0.1",
+				"arch": "i686",
+				"filename": "bind-devel-9.16.23-1.el9_0.1.i686.rpm",
+				"sum": "a1f06c2cbe74517778b3c76672ea3aa6ba0ede096e2ae8f6c5a70af02cec9c86",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "bind-9.16.23-1.el9_0.1.src.rpm",
+				"name": "bind-devel",
+				"epoch": "32",
+				"version": "9.16.23",
+				"release": "1.el9_0.1",
+				"arch": "ppc64le",
+				"filename": "bind-devel-9.16.23-1.el9_0.1.ppc64le.rpm",
+				"sum": "86a3a1d351735b85d409e8b79eb90355c8a0a89a60d7306158d1015e6ec449ec",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "bind-9.16.23-1.el9_0.1.src.rpm",
 				"name": "bind-dnssec-utils",
 				"epoch": "32",
 				"version": "9.16.23",
@@ -307,21 +331,9 @@
 				"epoch": "32",
 				"version": "9.16.23",
 				"release": "1.el9_0.1",
-				"arch": "i686",
-				"filename": "bind-devel-9.16.23-1.el9_0.1.i686.rpm",
-				"sum": "a1f06c2cbe74517778b3c76672ea3aa6ba0ede096e2ae8f6c5a70af02cec9c86",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "bind-9.16.23-1.el9_0.1.src.rpm",
-				"name": "bind-devel",
-				"epoch": "32",
-				"version": "9.16.23",
-				"release": "1.el9_0.1",
-				"arch": "ppc64le",
-				"filename": "bind-devel-9.16.23-1.el9_0.1.ppc64le.rpm",
-				"sum": "86a3a1d351735b85d409e8b79eb90355c8a0a89a60d7306158d1015e6ec449ec",
+				"arch": "s390x",
+				"filename": "bind-devel-9.16.23-1.el9_0.1.s390x.rpm",
+				"sum": "0f855846bdcc1b144a2d5ad60b1ca4f8c6c90212992f7db93bd7df2af72dae7c",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -334,18 +346,6 @@
 				"arch": "aarch64",
 				"filename": "bind-devel-9.16.23-1.el9_0.1.aarch64.rpm",
 				"sum": "554042dbd95f1e0249beeed93709b4c8943e52532a8a74a66d694d81e2b04b46",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "bind-9.16.23-1.el9_0.1.src.rpm",
-				"name": "bind-devel",
-				"epoch": "32",
-				"version": "9.16.23",
-				"release": "1.el9_0.1",
-				"arch": "s390x",
-				"filename": "bind-devel-9.16.23-1.el9_0.1.s390x.rpm",
-				"sum": "0f855846bdcc1b144a2d5ad60b1ca4f8c6c90212992f7db93bd7df2af72dae7c",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -406,6 +406,6 @@
 		"$date": 1664755200000
 	},
 	"updated_date": {
-		"$date": 1665763459000
+		"$date": 1665763466000
 	}
 }

@@ -10,8 +10,8 @@
 	"summary": "nodejs security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-i686-appstream-rpms__9_default",
-		"shortname": "almalinux-9-for-i686-appstream-rpms__9_default",
+		"name": "almalinux-9-for-aarch64-appstream-rpms__9_default",
+		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_default",
 		"packages": [
 			{
 				"src": "nodejs-16.17.1-1.el9_0.src.rpm",
@@ -22,18 +22,6 @@
 				"arch": "noarch",
 				"filename": "nodejs-docs-16.17.1-1.el9_0.noarch.rpm",
 				"sum": "025d8cf2ef9c89f70a4254dae5644efaa1dfaa4f88db77dec807afd44515bd8c",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "nodejs-16.17.1-1.el9_0.src.rpm",
-				"name": "nodejs-libs",
-				"epoch": "1",
-				"version": "16.17.1",
-				"release": "1.el9_0",
-				"arch": "i686",
-				"filename": "nodejs-libs-16.17.1-1.el9_0.i686.rpm",
-				"sum": "dfc9e65ea6573cc240c0840dad0d3853758223f815f5a887ee6872e0b7eca5a2",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -82,6 +70,18 @@
 				"arch": "aarch64",
 				"filename": "nodejs-16.17.1-1.el9_0.aarch64.rpm",
 				"sum": "f74580e2d438b12b7a826d3fcacd63e8ad0638627e5aa58811b1a8a0055ef41f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "nodejs-16.17.1-1.el9_0.src.rpm",
+				"name": "nodejs-libs",
+				"epoch": "1",
+				"version": "16.17.1",
+				"release": "1.el9_0",
+				"arch": "i686",
+				"filename": "nodejs-libs-16.17.1-1.el9_0.i686.rpm",
+				"sum": "dfc9e65ea6573cc240c0840dad0d3853758223f815f5a887ee6872e0b7eca5a2",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -262,6 +262,6 @@
 		"$date": 1666051200000
 	},
 	"updated_date": {
-		"$date": 1666167019000
+		"$date": 1666167023000
 	}
 }

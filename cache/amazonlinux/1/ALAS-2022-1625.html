@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2022-1625</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2022-1625'>ALAS-2022-1625</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2022-1625
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2022-07-28 20:38 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2022-08-04 22:54 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2016-9532.html' target='_blank'>CVE-2016-9532&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-35521.html' target='_blank'>CVE-2020-35521&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-35522.html' target='_blank'>CVE-2020-35522&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-35523.html' target='_blank'>CVE-2020-35523&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-35524.html' target='_blank'>CVE-2020-35524&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-0561.html' target='_blank'>CVE-2022-0561&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-0562.html' target='_blank'>CVE-2022-0562&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-0865.html' target='_blank'>CVE-2022-0865&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-0907.html' target='_blank'>CVE-2022-0907&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-0908.html' target='_blank'>CVE-2022-0908&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-0909.html' target='_blank'>CVE-2022-0909&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-0924.html' target='_blank'>CVE-2022-0924&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22844.html' target='_blank'>CVE-2022-22844&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Integer overflow in the writeBufferToSeparateStrips function in tiffcrop.c in LibTIFF before 4.0.7 allows remote attackers to cause a denial of service (out-of-bounds read) via a crafted tif file. (CVE-2016-9532)</p><p>A flaw was found in libtiff. Due to a memory allocation failure in tif_read.c, a crafted TIFF file can lead to an abort, resulting in denial of service. (CVE-2020-35521)</p><p>In LibTIFF, there is a memory malloc failure in tif_pixarlog.c. A crafted TIFF document can lead to an abort, resulting in a remote denial of service attack. (CVE-2020-35522)</p><p>An integer overflow flaw was found in libtiff that exists in the tif_getimage.c file. This flaw allows an attacker to inject and execute arbitrary code when a user opens a crafted TIFF file. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability. (CVE-2020-35523)</p><p>A heap-based buffer overflow flaw was found in libtiff in the handling of TIFF images in libtiff&#39;s TIFF2PDF tool. A specially crafted TIFF file can lead to arbitrary code execution. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability. (CVE-2020-35524)</p><p>A flaw was found in libtiff where a NULL source pointer passed as an argument to the memcpy() function within the TIFFFetchStripThing() in tif_dirread.c. This flaw allows an attacker with a crafted TIFF file to exploit this flaw, causing a crash and leading to a denial of service. (CVE-2022-0561)</p><p>A flaw was found in libtiff where a NULL source pointer passed as an argument to the memcpy() function within the TIFFReadDirectory() in tif_dirread.c. This flaw allows an attacker to exploit this vulnerability via a crafted TIFF file, causing a crash and leading to a denial of service. (CVE-2022-0562)</p><p>A reachable assertion failure was found in libtiff&#39;s JBIG functionality. This flaw allows an attacker who can submit a crafted file to an application linked with libtiff and using the JBIG functionality, causes a crash via an assertion failure, leading to a denial of service. The exact mechanism and conditions around this issue are dependent on how the application uses libtiff. (CVE-2022-0865)</p><p>A NULL pointer dereference flaw was found in Libtiff. This flaw allows an attacker with a crafted TIFF file to cause a crash that leads to a denial of service. (CVE-2022-0907)</p><p>A flaw was found in LibTIFF where a NULL source pointer passed as an argument to the memcpy() function within the TIFFFetchNormalTag() in tif_dirread.c. This flaw allows an attacker with a crafted TIFF file to cause a crash that leads to a denial of service. (CVE-2022-0908)</p><p>A floating-point exception (FPE) flaw was found in LibTIFF&#39;s computeOutputPixelOffsets() function in tiffcrop.c file. This flaw allows an attacker with a crafted TIFF file to trigger a divide-by-zero error, causing a crash that leads to a denial of service. (CVE-2022-0909)</p><p>A heap buffer overflow flaw was found in Libtiffs&#39; cpContigBufToSeparateBuf() function of the tiffcp.c file. This flaw allows an attacker with a crafted TIFF file to trigger a heap out-of-bounds read access issue, causing a crash that leads to a denial of service. (CVE-2022-0924)</p><p>A buffer overflow vulnerability was found in libtiff. This flaw allows an attacker with network access to pass specially crafted files, causing an application to halt or crash. The root cause of this issue was from the memcpy function in tif_unix.c. (CVE-2022-22844)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>libtiff</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update libtiff</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; libtiff-debuginfo-4.0.3-35.38.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libtiff-4.0.3-35.38.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libtiff-devel-4.0.3-35.38.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libtiff-static-4.0.3-35.38.amzn1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; libtiff-4.0.3-35.38.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; libtiff-4.0.3-35.38.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libtiff-static-4.0.3-35.38.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libtiff-debuginfo-4.0.3-35.38.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libtiff-devel-4.0.3-35.38.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-9532" target="_blank" rel="noopener noreferrer">CVE-2016-9532</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-35521" target="_blank" rel="noopener noreferrer">CVE-2020-35521</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-35522" target="_blank" rel="noopener noreferrer">CVE-2020-35522</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-35523" target="_blank" rel="noopener noreferrer">CVE-2020-35523</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-35524" target="_blank" rel="noopener noreferrer">CVE-2020-35524</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-0561" target="_blank" rel="noopener noreferrer">CVE-2022-0561</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-0562" target="_blank" rel="noopener noreferrer">CVE-2022-0562</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-0865" target="_blank" rel="noopener noreferrer">CVE-2022-0865</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-0907" target="_blank" rel="noopener noreferrer">CVE-2022-0907</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-0908" target="_blank" rel="noopener noreferrer">CVE-2022-0908</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-0909" target="_blank" rel="noopener noreferrer">CVE-2022-0909</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-0924" target="_blank" rel="noopener noreferrer">CVE-2022-0924</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22844" target="_blank" rel="noopener noreferrer">CVE-2022-22844</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9532" target="_blank" rel="noopener noreferrer">CVE-2016-9532</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35521" target="_blank" rel="noopener noreferrer">CVE-2020-35521</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35522" target="_blank" rel="noopener noreferrer">CVE-2020-35522</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35523" target="_blank" rel="noopener noreferrer">CVE-2020-35523</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35524" target="_blank" rel="noopener noreferrer">CVE-2020-35524</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0561" target="_blank" rel="noopener noreferrer">CVE-2022-0561</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0562" target="_blank" rel="noopener noreferrer">CVE-2022-0562</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0865" target="_blank" rel="noopener noreferrer">CVE-2022-0865</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0907" target="_blank" rel="noopener noreferrer">CVE-2022-0907</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0908" target="_blank" rel="noopener noreferrer">CVE-2022-0908</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0909" target="_blank" rel="noopener noreferrer">CVE-2022-0909</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0924" target="_blank" rel="noopener noreferrer">CVE-2022-0924</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22844" target="_blank" rel="noopener noreferrer">CVE-2022-22844</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2013-207</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2013-207'>ALAS-2013-207</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2013-207
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2013-07-12 15:31 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2014-09-15 23:15 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2013-1500.html' target='_blank'>CVE-2013-1500&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-1571.html' target='_blank'>CVE-2013-1571&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2407.html' target='_blank'>CVE-2013-2407&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2412.html' target='_blank'>CVE-2013-2412&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2443.html' target='_blank'>CVE-2013-2443&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2444.html' target='_blank'>CVE-2013-2444&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2445.html' target='_blank'>CVE-2013-2445&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2446.html' target='_blank'>CVE-2013-2446&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2447.html' target='_blank'>CVE-2013-2447&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2448.html' target='_blank'>CVE-2013-2448&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2450.html' target='_blank'>CVE-2013-2450&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2452.html' target='_blank'>CVE-2013-2452&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2453.html' target='_blank'>CVE-2013-2453&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2455.html' target='_blank'>CVE-2013-2455&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2456.html' target='_blank'>CVE-2013-2456&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2457.html' target='_blank'>CVE-2013-2457&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2459.html' target='_blank'>CVE-2013-2459&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2461.html' target='_blank'>CVE-2013-2461&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2463.html' target='_blank'>CVE-2013-2463&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2465.html' target='_blank'>CVE-2013-2465&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2469.html' target='_blank'>CVE-2013-2469&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2470.html' target='_blank'>CVE-2013-2470&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2471.html' target='_blank'>CVE-2013-2471&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2472.html' target='_blank'>CVE-2013-2472&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2473.html' target='_blank'>CVE-2013-2473&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='https://rhn.redhat.com/errata/RHSA-2013-1014.html' target='_blank'>RHSA-2013-1014&nbsp;<i class='fas fa-external-link-alt'></i></a><br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Multiple flaws were discovered in the ImagingLib and the image attribute, channel, layout and raster processing in the 2D component. An untrusted Java application or applet could possibly use these flaws to trigger Java Virtual Machine memory corruption. (CVE-2013-2470, CVE-2013-2471, CVE-2013-2472, CVE-2013-2473, CVE-2013-2463, CVE-2013-2465, CVE-2013-2469)</p><p>Integer overflow flaws were found in the way AWT processed certain input. An attacker could use these flaws to execute arbitrary code with the privileges of the user running an untrusted Java applet or application. (CVE-2013-2459)</p><p>Multiple improper permission check issues were discovered in the Sound and JMX components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass Java sandbox restrictions. (CVE-2013-2448, CVE-2013-2457, CVE-2013-2453)</p><p>Multiple flaws in the Serialization, Networking, Libraries and CORBA components can be exploited by an untrusted Java application or applet to gain access to potentially sensitive information. (CVE-2013-2456, CVE-2013-2447, CVE-2013-2455, CVE-2013-2452, CVE-2013-2443, CVE-2013-2446)</p><p>It was discovered that the Hotspot component did not properly handle out-of-memory errors. An untrusted Java application or applet could possibly use these flaws to terminate the Java Virtual Machine. (CVE-2013-2445)</p><p>It was discovered that the AWT component did not properly manage certain resources and that the ObjectStreamClass of the Serialization component did not properly handle circular references. An untrusted Java application or applet could possibly use these flaws to cause a denial of service. (CVE-2013-2444, CVE-2013-2450)</p><p>It was discovered that the Libraries component contained certain errors related to XML security and the class loader. A remote attacker could possibly exploit these flaws to bypass intended security mechanisms or disclose potentially sensitive information and cause a denial of service. (CVE-2013-2407, CVE-2013-2461)</p><p>It was discovered that JConsole did not properly inform the user when establishing an SSL connection failed. An attacker could exploit this flaw to gain access to potentially sensitive information. (CVE-2013-2412)</p><p>It was found that documentation generated by Javadoc was vulnerable to a frame injection attack. If such documentation was accessible over a network, and a remote attacker could trick a user into visiting a specially-crafted URL, it would lead to arbitrary web content being displayed next to the documentation. This could be used to perform a phishing attack by providing frame content that spoofed a login form on the site hosting the vulnerable documentation. (CVE-2013-1571)</p><p>It was discovered that the 2D component created shared memory segments with insecure permissions. A local attacker could use this flaw to read or write to the shared memory segment. (CVE-2013-1500)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>java-1.6.0-openjdk</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update java-1.6.0-openjdk</i> to update your system.</div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-src-1.6.0.0-62.1.11.11.90.55.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-javadoc-1.6.0.0-62.1.11.11.90.55.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-devel-1.6.0.0-62.1.11.11.90.55.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-demo-1.6.0.0-62.1.11.11.90.55.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-1.6.0.0-62.1.11.11.90.55.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-debuginfo-1.6.0.0-62.1.11.11.90.55.amzn1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-1.6.0.0-62.1.11.11.90.55.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-1.6.0.0-62.1.11.11.90.55.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-src-1.6.0.0-62.1.11.11.90.55.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-demo-1.6.0.0-62.1.11.11.90.55.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-debuginfo-1.6.0.0-62.1.11.11.90.55.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-javadoc-1.6.0.0-62.1.11.11.90.55.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-devel-1.6.0.0-62.1.11.11.90.55.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-1500" target="_blank" rel="noopener noreferrer">CVE-2013-1500</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-1571" target="_blank" rel="noopener noreferrer">CVE-2013-1571</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2407" target="_blank" rel="noopener noreferrer">CVE-2013-2407</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2412" target="_blank" rel="noopener noreferrer">CVE-2013-2412</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2443" target="_blank" rel="noopener noreferrer">CVE-2013-2443</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2444" target="_blank" rel="noopener noreferrer">CVE-2013-2444</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2445" target="_blank" rel="noopener noreferrer">CVE-2013-2445</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2446" target="_blank" rel="noopener noreferrer">CVE-2013-2446</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2447" target="_blank" rel="noopener noreferrer">CVE-2013-2447</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2448" target="_blank" rel="noopener noreferrer">CVE-2013-2448</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2450" target="_blank" rel="noopener noreferrer">CVE-2013-2450</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2452" target="_blank" rel="noopener noreferrer">CVE-2013-2452</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2453" target="_blank" rel="noopener noreferrer">CVE-2013-2453</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2455" target="_blank" rel="noopener noreferrer">CVE-2013-2455</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2456" target="_blank" rel="noopener noreferrer">CVE-2013-2456</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2457" target="_blank" rel="noopener noreferrer">CVE-2013-2457</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2459" target="_blank" rel="noopener noreferrer">CVE-2013-2459</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2461" target="_blank" rel="noopener noreferrer">CVE-2013-2461</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2463" target="_blank" rel="noopener noreferrer">CVE-2013-2463</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2465" target="_blank" rel="noopener noreferrer">CVE-2013-2465</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2469" target="_blank" rel="noopener noreferrer">CVE-2013-2469</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2470" target="_blank" rel="noopener noreferrer">CVE-2013-2470</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2471" target="_blank" rel="noopener noreferrer">CVE-2013-2471</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2472" target="_blank" rel="noopener noreferrer">CVE-2013-2472</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2473" target="_blank" rel="noopener noreferrer">CVE-2013-2473</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1500" target="_blank" rel="noopener noreferrer">CVE-2013-1500</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1571" target="_blank" rel="noopener noreferrer">CVE-2013-1571</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2407" target="_blank" rel="noopener noreferrer">CVE-2013-2407</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2412" target="_blank" rel="noopener noreferrer">CVE-2013-2412</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2443" target="_blank" rel="noopener noreferrer">CVE-2013-2443</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2444" target="_blank" rel="noopener noreferrer">CVE-2013-2444</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2445" target="_blank" rel="noopener noreferrer">CVE-2013-2445</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2446" target="_blank" rel="noopener noreferrer">CVE-2013-2446</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2447" target="_blank" rel="noopener noreferrer">CVE-2013-2447</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2448" target="_blank" rel="noopener noreferrer">CVE-2013-2448</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2450" target="_blank" rel="noopener noreferrer">CVE-2013-2450</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2452" target="_blank" rel="noopener noreferrer">CVE-2013-2452</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2453" target="_blank" rel="noopener noreferrer">CVE-2013-2453</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2455" target="_blank" rel="noopener noreferrer">CVE-2013-2455</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2456" target="_blank" rel="noopener noreferrer">CVE-2013-2456</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2457" target="_blank" rel="noopener noreferrer">CVE-2013-2457</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2459" target="_blank" rel="noopener noreferrer">CVE-2013-2459</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2461" target="_blank" rel="noopener noreferrer">CVE-2013-2461</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2463" target="_blank" rel="noopener noreferrer">CVE-2013-2463</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2465" target="_blank" rel="noopener noreferrer">CVE-2013-2465</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2469" target="_blank" rel="noopener noreferrer">CVE-2013-2469</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2470" target="_blank" rel="noopener noreferrer">CVE-2013-2470</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2471" target="_blank" rel="noopener noreferrer">CVE-2013-2471</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2472" target="_blank" rel="noopener noreferrer">CVE-2013-2472</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2473" target="_blank" rel="noopener noreferrer">CVE-2013-2473</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

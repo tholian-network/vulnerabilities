@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2016-753</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2016-753'>ALAS-2016-753</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2016-753
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2016-10-12 17:00 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2016-10-12 17:00 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2016-7411.html' target='_blank'>CVE-2016-7411&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-7412.html' target='_blank'>CVE-2016-7412&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-7413.html' target='_blank'>CVE-2016-7413&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-7414.html' target='_blank'>CVE-2016-7414&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-7416.html' target='_blank'>CVE-2016-7416&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-7417.html' target='_blank'>CVE-2016-7417&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-7418.html' target='_blank'>CVE-2016-7418&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>ext/standard/var_unserializer.re in PHP before 5.6.26 mishandles object-deserialization failures, which allows remote attackers to cause a denial of service (memory corruption) or possibly have unspecified other impact via an unserialize call that references a partially constructed object (CVE-2016-7411).</p><p>ext/mysqlnd/mysqlnd_wireprotocol.c in PHP before 5.6.26 and 7.x before 7.0.11 does not verify that a BIT field has the UNSIGNED_FLAG flag, which allows remote MySQL servers to cause a denial of service (heap-based buffer overflow) or possibly have unspecified other impact via crafted field metadata (CVE-2016-7412).</p><p>Use-after-free vulnerability in the wddx_stack_destroy function in ext/wddx/wddx.c in PHP before 5.6.26 and 7.x before 7.0.11 allows remote attackers to cause a denial of service or possibly have unspecified other impact via a wddxPacket XML document that lacks an end-tag for a recordset field element, leading to mishandling in a wddx_deserialize call (CVE-2016-7413).</p><p>The ZIP signature-verification feature in PHP before 5.6.26 and 7.x before 7.0.11 does not ensure that the uncompressed_filesize field is large enough, which allows remote attackers to cause a denial of service (out-of-bounds memory access) or possibly have unspecified other impact via a crafted PHAR archive, related to ext/phar/util.c and ext/phar/zip.c (CVE-2016-7414).</p><p>ext/intl/msgformat/msgformat_format.c in PHP before 5.6.26 and 7.x before 7.0.11 does not properly restrict the locale length provided to the Locale class in the ICU library, which allows remote attackers to cause a denial of service (application crash) or possibly have unspecified other impact via a MessageFormatter::formatMessage call with a long first argument (CVE-2016-7416).</p><p>ext/spl/spl_array.c in PHP before 5.6.26 and 7.x before 7.0.11 proceeds with SplArray unserialization without validating a return value and data type, which allows remote attackers to cause a denial of service or possibly have unspecified other impact via crafted serialized data (CVE-2016-7417).</p><p>The php_wddx_push_element function in ext/wddx/wddx.c in PHP before 5.6.26 and 7.x before 7.0.11 allows remote attackers to cause a denial of service (invalid pointer access and out-of-bounds read) or possibly have unspecified other impact via an incorrect boolean element in a wddxPacket XML document, leading to mishandling in a wddx_deserialize call (CVE-2016-7418).<br /></p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>php56</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update php56</i> to update your system.
+                                    <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; php56-tidy-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-bcmath-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-fpm-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-mysqlnd-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-intl-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-cli-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-mssql-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-enchant-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-dba-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-soap-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-common-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-mcrypt-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-gmp-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-process-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-pspell-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-mbstring-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-pgsql-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-debuginfo-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-dbg-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-imap-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-odbc-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-snmp-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-ldap-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-embedded-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-xmlrpc-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-devel-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-pdo-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-gd-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-opcache-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-recode-5.6.26-1.128.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php56-xml-5.6.26-1.128.amzn1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; php56-5.6.26-1.128.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; php56-process-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-dba-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-odbc-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-intl-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-pgsql-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-recode-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-gmp-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-enchant-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-xml-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-ldap-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-bcmath-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-devel-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-mbstring-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-common-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-soap-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-dbg-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-pspell-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-debuginfo-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-snmp-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-xmlrpc-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-mssql-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-cli-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-pdo-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-opcache-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-gd-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-fpm-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-mysqlnd-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-embedded-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-tidy-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-imap-5.6.26-1.128.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php56-mcrypt-5.6.26-1.128.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-7411" target="_blank" rel="noopener noreferrer">CVE-2016-7411</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-7412" target="_blank" rel="noopener noreferrer">CVE-2016-7412</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-7413" target="_blank" rel="noopener noreferrer">CVE-2016-7413</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-7414" target="_blank" rel="noopener noreferrer">CVE-2016-7414</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-7416" target="_blank" rel="noopener noreferrer">CVE-2016-7416</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-7417" target="_blank" rel="noopener noreferrer">CVE-2016-7417</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-7418" target="_blank" rel="noopener noreferrer">CVE-2016-7418</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7411" target="_blank" rel="noopener noreferrer">CVE-2016-7411</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7412" target="_blank" rel="noopener noreferrer">CVE-2016-7412</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7413" target="_blank" rel="noopener noreferrer">CVE-2016-7413</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7414" target="_blank" rel="noopener noreferrer">CVE-2016-7414</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7416" target="_blank" rel="noopener noreferrer">CVE-2016-7416</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7417" target="_blank" rel="noopener noreferrer">CVE-2016-7417</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7418" target="_blank" rel="noopener noreferrer">CVE-2016-7418</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

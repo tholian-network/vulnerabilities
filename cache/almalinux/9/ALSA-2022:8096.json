@@ -10,8 +10,8 @@
 	"summary": "redis security and bug fix update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-i686-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-i686-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
 		"packages": [
 			{
 				"src": "redis-6.2.7-1.el9.src.rpm",
@@ -22,18 +22,6 @@
 				"arch": "noarch",
 				"filename": "redis-doc-6.2.7-1.el9.noarch.rpm",
 				"sum": "142f8f9a73b8b4e8f94dd2bd4a7cde5f54880fe6e5dd1a54ec5c41a6bd33ac58",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "redis-6.2.7-1.el9.src.rpm",
-				"name": "redis-devel",
-				"epoch": "0",
-				"version": "6.2.7",
-				"release": "1.el9",
-				"arch": "i686",
-				"filename": "redis-devel-6.2.7-1.el9.i686.rpm",
-				"sum": "7aa3e793576437268a42d168c4febef9a03d425b0d5375e0d73f189024e16528",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -58,6 +46,18 @@
 				"arch": "aarch64",
 				"filename": "redis-devel-6.2.7-1.el9.aarch64.rpm",
 				"sum": "ce8c061d66961a97d2fba567733884e17f854e687a024db00b2b1892634f3954",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "redis-6.2.7-1.el9.src.rpm",
+				"name": "redis-devel",
+				"epoch": "0",
+				"version": "6.2.7",
+				"release": "1.el9",
+				"arch": "i686",
+				"filename": "redis-devel-6.2.7-1.el9.i686.rpm",
+				"sum": "7aa3e793576437268a42d168c4febef9a03d425b0d5375e0d73f189024e16528",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -178,6 +178,6 @@
 		"$date": 1668470400000
 	},
 	"updated_date": {
-		"$date": 1668745089000
+		"$date": 1668745088000
 	}
 }

@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2014-393</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2014-393'>ALAS-2014-393</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2014-393
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2014-08-21 11:15 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2014-09-19 12:00 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2013-6712.html' target='_blank'>CVE-2013-6712&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2014-0207.html' target='_blank'>CVE-2014-0207&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2014-0237.html' target='_blank'>CVE-2014-0237&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2014-0238.html' target='_blank'>CVE-2014-0238&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2014-3515.html' target='_blank'>CVE-2014-3515&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2014-3981.html' target='_blank'>CVE-2014-3981&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2014-4049.html' target='_blank'>CVE-2014-4049&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>A denial of service flaw was found in the way the File Information (fileinfo) extension parsed certain Composite Document Format (CDF) files. A remote attacker could use this flaw to crash a PHP application using fileinfo via a specially crafted CDF file.</p><p>acinclude.m4, as used in the configure script in PHP 5.5.13 and earlier, allows local users to overwrite arbitrary files via a symlink attack on the /tmp/phpglibccheck file. </p><p>A buffer over-read flaw was found in the way the DateInterval class parsed interval specifications. An attacker able to make a PHP application parse a specially crafted specification using DateInterval could possibly cause the PHP interpreter to crash. </p><p>A heap-based buffer overflow flaw was found in the way PHP parsed DNS TXT records. A malicious DNS server or a man-in-the-middle attacker could possibly use this flaw to execute arbitrary code as the PHP interpreter if a PHP application used the dns_get_record() function to perform a DNS query. </p><p>A type confusion issue was found in the SPL ArrayObject and SPLObjectStorage classes&#39; unserialize() method. A remote attacker able to submit specially crafted input to a PHP application, which would then unserialize this input using one of the aforementioned methods, could use this flaw to execute arbitrary code with the privileges of the user running that PHP application.</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>php</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update php</i> to update your system.</div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; php-enchant-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-devel-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-xmlrpc-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-bcmath-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-fpm-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-tidy-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-embedded-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-mysql-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-xml-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-mcrypt-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-snmp-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-pspell-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-mssql-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-ldap-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-intl-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-odbc-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-debuginfo-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-pdo-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-mbstring-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-gd-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-recode-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-pgsql-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-imap-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-cli-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-soap-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-process-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-dba-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-common-5.3.29-1.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php-mysqlnd-5.3.29-1.7.amzn1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; php-5.3.29-1.7.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; php-debuginfo-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-tidy-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-enchant-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-pdo-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-mcrypt-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-mssql-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-cli-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-recode-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-ldap-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-dba-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-xml-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-intl-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-snmp-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-embedded-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-xmlrpc-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-imap-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-devel-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-bcmath-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-odbc-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-soap-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-mysql-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-mysqlnd-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-mbstring-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-pgsql-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-gd-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-process-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-fpm-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-common-5.3.29-1.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php-pspell-5.3.29-1.7.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-6712" target="_blank" rel="noopener noreferrer">CVE-2013-6712</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2014-0207" target="_blank" rel="noopener noreferrer">CVE-2014-0207</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2014-0237" target="_blank" rel="noopener noreferrer">CVE-2014-0237</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2014-0238" target="_blank" rel="noopener noreferrer">CVE-2014-0238</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2014-3515" target="_blank" rel="noopener noreferrer">CVE-2014-3515</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2014-3981" target="_blank" rel="noopener noreferrer">CVE-2014-3981</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2014-4049" target="_blank" rel="noopener noreferrer">CVE-2014-4049</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6712" target="_blank" rel="noopener noreferrer">CVE-2013-6712</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0207" target="_blank" rel="noopener noreferrer">CVE-2014-0207</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0237" target="_blank" rel="noopener noreferrer">CVE-2014-0237</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0238" target="_blank" rel="noopener noreferrer">CVE-2014-0238</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3515" target="_blank" rel="noopener noreferrer">CVE-2014-3515</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3981" target="_blank" rel="noopener noreferrer">CVE-2014-3981</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4049" target="_blank" rel="noopener noreferrer">CVE-2014-4049</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2022-1776</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2022-1776'>ALAS2-2022-1776</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2022-1776
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2022-04-25 03:47 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2022-06-16 20:13 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2021-38297.html' target='_blank'>CVE-2021-38297&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-39293.html' target='_blank'>CVE-2021-39293&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-41771.html' target='_blank'>CVE-2021-41771&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-41772.html' target='_blank'>CVE-2021-41772&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-44716.html' target='_blank'>CVE-2021-44716&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-44717.html' target='_blank'>CVE-2021-44717&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-23772.html' target='_blank'>CVE-2022-23772&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-23773.html' target='_blank'>CVE-2022-23773&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-23806.html' target='_blank'>CVE-2022-23806&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-24921.html' target='_blank'>CVE-2022-24921&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>A validation flaw was found in golang. When invoking functions from WASM modules built using GOARCH=wasm GOOS=js, passing very large arguments can cause portions of the module to be overwritten with data from the arguments. The highest threat from this vulnerability is to integrity. (CVE-2021-38297)</p><p>An out of bounds read vulnerability was found in debug/macho of the Go standard library. When using the debug/macho standard library (stdlib) and malformed binaries are parsed using Open or OpenFat, it can cause golang to attempt to read outside of a slice (array) causing a panic when calling ImportedSymbols. An attacker can use this vulnerability to craft a file which causes an application using this library to crash resulting in a denial of service. (CVE-2021-41771)</p><p>A vulnerability was found in archive/zip of the Go standard library. Applications written in Go where Reader.Open (the API implementing io/fs.FS introduced in Go 1.16) can panic when parsing a crafted ZIP archive containing completely invalid names or an empty filename argument. (CVE-2021-41772)</p><p>There&#39;s an uncontrolled resource consumption flaw in golang&#39;s net/http library in the canonicalHeader() function. An attacker who submits specially crafted requests to applications linked with net/http&#39;s http2 functionality could cause excessive resource consumption that could lead to a denial of service or otherwise impact to system performance and resources. (CVE-2021-44716)</p><p>There&#39;s a flaw in golang&#39;s syscall.ForkExec() interface. An attacker who manages to first cause a file descriptor exhaustion for the process, then cause syscall.ForkExec() to be called repeatedly, could compromise data integrity and/or confidentiality in a somewhat uncontrolled way in programs linked with and using syscall.ForkExec(). (CVE-2021-44717)</p><p>A flaw was found in the elliptic package of the crypto library in golang when the IsOnCurve function could return true for invalid field elements. This flaw allows an attacker to take advantage of this undefined behavior, affecting the availability and integrity of the resource. (CVE-2022-23806)</p><p>cmd/go in Go before 1.16.14 and 1.17.x before 1.17.7 can misinterpret branch names that falsely appear to be version tags. This can lead to incorrect access control if an actor is supposed to be able to create branches but not tags. (CVE-2022-23773)</p><p>Rat.SetString in math/big in Go before 1.16.14 and 1.17.x before 1.17.7 has an overflow that can lead to Uncontrolled Memory Consumption. (CVE-2022-23772)</p><p>A stack overflow flaw was found in Golang&#39;s regexp module, which can crash the runtime if the application using regexp accepts very long or arbitrarily long regexps from untrusted sources that have sufficient nesting depths. To exploit this vulnerability, an attacker would need to send large regexps with deep nesting to the application. Triggering this flaw leads to a crash of the runtime, which causes a denial of service. (CVE-2022-24921)</p><p>A vulnerability was found in archive/zip of the Go standard library. Applications written in Go can panic or potentially exhaust system memory when parsing malformed ZIP files. An attacker capable of submitting a crafted ZIP file to a Go application using archive/zip to process that file could cause a denial of service via memory exhaustion or panic. This particular flaw is an incomplete fix for a previous flaw. (CVE-2021-39293)</p><p>Reference to CVE-2022-23806, CVE-2022-23773, CVE-2022-23772, CVE-2022-24921 and CVE-2021-39293 have been added after the original release of this advisory, however these vulnerability were fixed by the packages referenced by this advisory&#39;s initial release on 2022-04-25.</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>golang</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update golang</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; golang-1.16.15-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; golang-bin-1.16.15-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; golang-shared-1.16.15-1.amzn2.0.1.aarch64<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; golang-docs-1.16.15-1.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; golang-misc-1.16.15-1.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; golang-tests-1.16.15-1.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; golang-src-1.16.15-1.amzn2.0.1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; golang-1.16.15-1.amzn2.0.1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; golang-1.16.15-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; golang-bin-1.16.15-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; golang-shared-1.16.15-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; golang-race-1.16.15-1.amzn2.0.1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-38297" target="_blank" rel="noopener noreferrer">CVE-2021-38297</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-39293" target="_blank" rel="noopener noreferrer">CVE-2021-39293</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-41771" target="_blank" rel="noopener noreferrer">CVE-2021-41771</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-41772" target="_blank" rel="noopener noreferrer">CVE-2021-41772</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-44716" target="_blank" rel="noopener noreferrer">CVE-2021-44716</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-44717" target="_blank" rel="noopener noreferrer">CVE-2021-44717</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-23772" target="_blank" rel="noopener noreferrer">CVE-2022-23772</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-23773" target="_blank" rel="noopener noreferrer">CVE-2022-23773</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-23806" target="_blank" rel="noopener noreferrer">CVE-2022-23806</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-24921" target="_blank" rel="noopener noreferrer">CVE-2022-24921</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-38297" target="_blank" rel="noopener noreferrer">CVE-2021-38297</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-39293" target="_blank" rel="noopener noreferrer">CVE-2021-39293</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41771" target="_blank" rel="noopener noreferrer">CVE-2021-41771</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41772" target="_blank" rel="noopener noreferrer">CVE-2021-41772</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44716" target="_blank" rel="noopener noreferrer">CVE-2021-44716</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44717" target="_blank" rel="noopener noreferrer">CVE-2021-44717</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23772" target="_blank" rel="noopener noreferrer">CVE-2022-23772</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23773" target="_blank" rel="noopener noreferrer">CVE-2022-23773</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23806" target="_blank" rel="noopener noreferrer">CVE-2022-23806</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-24921" target="_blank" rel="noopener noreferrer">CVE-2022-24921</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

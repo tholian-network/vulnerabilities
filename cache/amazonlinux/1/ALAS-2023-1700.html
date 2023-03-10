@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2023-1700</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2023.html">Amazon Linux 2023</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/faqs.html">FAQs</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2023-1700'>ALAS-2023-1700</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2023-1700
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2023-03-02 20:22 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2023-03-07 01:55 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2023-22490.html' target='_blank' rel='noopener noreferrer'>CVE-2023-22490&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2023-23946.html' target='_blank' rel='noopener noreferrer'>CVE-2023-23946&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                            <a href="../../faqs.html">FAQs regarding Amazon Linux ALAS/CVE Severity</a>
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Git is a revision control system. Using a specially-crafted repository, Git prior to versions 2.39.2, 2.38.4, 2.37.6, 2.36.5, 2.35.7, 2.34.7, 2.33.7, 2.32.6, 2.31.7, and 2.30.8 can be tricked into using its local clone optimization even when using a non-local transport. Though Git will abort local clones whose source `$GIT_DIR/objects` directory contains symbolic links, the `objects` directory itself may still be a symbolic link. These two may be combined to include arbitrary files based on known paths on the victim&#39;s filesystem within the malicious repository&#39;s working copy, allowing for data exfiltration in a similar manner as CVE-2022-39253. A fix has been prepared and will appear in v2.39.2 v2.38.4 v2.37.6 v2.36.5 v2.35.7 v2.34.7 v2.33.7 v2.32.6, v2.31.7 and v2.30.8. If upgrading is impractical, two short-term workarounds are available. Avoid cloning repositories from untrusted sources with `--recurse-submodules`. Instead, consider cloning repositories without recursively cloning their submodules, and instead run `git submodule update` at each layer. Before doing so, inspect each new `.gitmodules` file to ensure that it does not contain suspicious module URLs. (CVE-2023-22490)</p><p>Git, a revision control system, is vulnerable to path traversal prior to versions 2.39.2, 2.38.4, 2.37.6, 2.36.5, 2.35.7, 2.34.7, 2.33.7, 2.32.6, 2.31.7, and 2.30.8. By feeding a crafted input to `git apply`, a path outside the working tree can be overwritten as the user who is running `git apply`. A fix has been prepared and will appear in v2.39.2, v2.38.4, v2.37.6, v2.36.5, v2.35.7, v2.34.7, v2.33.7, v2.32.6, v2.31.7, and v2.30.8. As a workaround, use `git apply --stat` to inspect a patch before applying; avoid applying one that creates a symbolic link and then creates a file beyond the symbolic link. (CVE-2023-23946)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>git</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update git</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; git-instaweb-2.38.4-1.80.amzn1.i686<br />&nbsp;&nbsp;&nbsp; git-svn-2.38.4-1.80.amzn1.i686<br />&nbsp;&nbsp;&nbsp; git-core-2.38.4-1.80.amzn1.i686<br />&nbsp;&nbsp;&nbsp; git-2.38.4-1.80.amzn1.i686<br />&nbsp;&nbsp;&nbsp; git-daemon-2.38.4-1.80.amzn1.i686<br />&nbsp;&nbsp;&nbsp; git-debuginfo-2.38.4-1.80.amzn1.i686<br />&nbsp;&nbsp;&nbsp; git-subtree-2.38.4-1.80.amzn1.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; git-hg-2.38.4-1.80.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; emacs-git-el-2.38.4-1.80.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; perl-Git-SVN-2.38.4-1.80.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; git-cvs-2.38.4-1.80.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; git-email-2.38.4-1.80.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; gitweb-2.38.4-1.80.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; emacs-git-2.38.4-1.80.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; git-bzr-2.38.4-1.80.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; git-core-doc-2.38.4-1.80.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; git-all-2.38.4-1.80.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; perl-Git-2.38.4-1.80.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; git-p4-2.38.4-1.80.amzn1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; git-2.38.4-1.80.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; git-daemon-2.38.4-1.80.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; git-instaweb-2.38.4-1.80.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; git-core-2.38.4-1.80.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; git-subtree-2.38.4-1.80.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; git-debuginfo-2.38.4-1.80.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; git-svn-2.38.4-1.80.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; git-2.38.4-1.80.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-22490" target="_blank" rel="noopener noreferrer">CVE-2023-22490</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-23946" target="_blank" rel="noopener noreferrer">CVE-2023-23946</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-22490" target="_blank" rel="noopener noreferrer">CVE-2023-22490</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-23946" target="_blank" rel="noopener noreferrer">CVE-2023-23946</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2023
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2023 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2023, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

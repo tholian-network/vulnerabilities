@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2015-492</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2015-492'>ALAS-2015-492</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2015-492
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2015-03-13 02:37 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2015-03-13 02:49 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2014-0067.html' target='_blank'>CVE-2014-0067&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2014-8161.html' target='_blank'>CVE-2014-8161&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-0241.html' target='_blank'>CVE-2015-0241&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-0242.html' target='_blank'>CVE-2015-0242&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-0243.html' target='_blank'>CVE-2015-0243&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-0244.html' target='_blank'>CVE-2015-0244&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>A buffer overflow flaw was found in the way PostgreSQL handled certain numeric formatting. An authenticated database user could use a specially crafted timestamp formatting template to cause PostgreSQL to crash or, under certain conditions, execute arbitrary code with the permissions of the user running PostgreSQL. (CVE-2015-0241)</p><p>A buffer overflow flaw was found in the PostgreSQL&#39;s internal printf() implementation. An authenticated database user could use a specially crafted string in an SQL query to cause PostgreSQL to crash or, potentially, lead to privilege escalation. (CVE-2015-0242)</p><p>A stack-buffer overflow flaw was found in PostgreSQL&#39;s pgcrypto module. An authenticated database user could use this flaw to cause PostgreSQL to crash or, potentially, execute arbitrary code with the permissions of the user running PostgreSQL. (CVE-2015-0243)</p><p>A flaw was found in way PostgreSQL handled certain errors during that were generated during protocol synchronization. An authenticated database user could use this flaw to inject queries into an existing connection. (CVE-2015-0244)</p><p>The &#34;make check&#34; command for the test suites in PostgreSQL 9.3.3 and earlier does not properly invoke initdb to specify the authentication requirements for a database cluster to be used for the tests, which allows local users to gain privileges by leveraging access to this cluster. (CVE-2014-0067)</p><p>An information leak flaw was found in the way certain the PostgreSQL database server handled certain error messages. An authenticated database user could possibly obtain the results of a query they did not have privileges to execute by observing the constraint violation error messages produced when the query was executed. (CVE-2014-8161)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>postgresql92</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update postgresql92</i> to update your system.</div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; postgresql92-test-9.2.10-1.49.amzn1.i686<br />&nbsp;&nbsp;&nbsp; postgresql92-libs-9.2.10-1.49.amzn1.i686<br />&nbsp;&nbsp;&nbsp; postgresql92-docs-9.2.10-1.49.amzn1.i686<br />&nbsp;&nbsp;&nbsp; postgresql92-plperl-9.2.10-1.49.amzn1.i686<br />&nbsp;&nbsp;&nbsp; postgresql92-debuginfo-9.2.10-1.49.amzn1.i686<br />&nbsp;&nbsp;&nbsp; postgresql92-plpython-9.2.10-1.49.amzn1.i686<br />&nbsp;&nbsp;&nbsp; postgresql92-devel-9.2.10-1.49.amzn1.i686<br />&nbsp;&nbsp;&nbsp; postgresql92-server-9.2.10-1.49.amzn1.i686<br />&nbsp;&nbsp;&nbsp; postgresql92-pltcl-9.2.10-1.49.amzn1.i686<br />&nbsp;&nbsp;&nbsp; postgresql92-contrib-9.2.10-1.49.amzn1.i686<br />&nbsp;&nbsp;&nbsp; postgresql92-server-compat-9.2.10-1.49.amzn1.i686<br />&nbsp;&nbsp;&nbsp; postgresql92-9.2.10-1.49.amzn1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; postgresql92-9.2.10-1.49.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; postgresql92-server-compat-9.2.10-1.49.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; postgresql92-test-9.2.10-1.49.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; postgresql92-devel-9.2.10-1.49.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; postgresql92-docs-9.2.10-1.49.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; postgresql92-pltcl-9.2.10-1.49.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; postgresql92-9.2.10-1.49.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; postgresql92-contrib-9.2.10-1.49.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; postgresql92-debuginfo-9.2.10-1.49.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; postgresql92-libs-9.2.10-1.49.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; postgresql92-server-9.2.10-1.49.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; postgresql92-plpython-9.2.10-1.49.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; postgresql92-plperl-9.2.10-1.49.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2014-0067" target="_blank" rel="noopener noreferrer">CVE-2014-0067</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2014-8161" target="_blank" rel="noopener noreferrer">CVE-2014-8161</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-0241" target="_blank" rel="noopener noreferrer">CVE-2015-0241</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-0242" target="_blank" rel="noopener noreferrer">CVE-2015-0242</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-0243" target="_blank" rel="noopener noreferrer">CVE-2015-0243</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-0244" target="_blank" rel="noopener noreferrer">CVE-2015-0244</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0067" target="_blank" rel="noopener noreferrer">CVE-2014-0067</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8161" target="_blank" rel="noopener noreferrer">CVE-2014-8161</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0241" target="_blank" rel="noopener noreferrer">CVE-2015-0241</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0242" target="_blank" rel="noopener noreferrer">CVE-2015-0242</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0243" target="_blank" rel="noopener noreferrer">CVE-2015-0243</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0244" target="_blank" rel="noopener noreferrer">CVE-2015-0244</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

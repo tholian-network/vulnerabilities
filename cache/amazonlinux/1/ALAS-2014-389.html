@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2014-389</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2014-389'>ALAS-2014-389</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2014-389
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2014-07-31 13:56 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2014-09-19 11:40 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2014-0118.html' target='_blank'>CVE-2014-0118&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2014-0226.html' target='_blank'>CVE-2014-0226&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2014-0231.html' target='_blank'>CVE-2014-0231&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>A race condition flaw, leading to heap-based buffer overflows, was found in the mod_status httpd module. A remote attacker able to access a status page served by mod_status on a server using a threaded Multi-Processing Module (MPM) could send a specially crafted request that would cause the httpd child process to crash or, possibly, allow the attacker to execute arbitrary code with the privileges of the &#34;apache&#34; user. (CVE-2014-0226)</p><p>A denial of service flaw was found in the way httpd&#39;s mod_deflate module handled request body decompression (configured via the &#34;DEFLATE&#34; input filter). A remote attacker able to send a request whose body would be decompressed could use this flaw to consume an excessive amount of system memory and CPU on the target system. (CVE-2014-0118)</p><p>A denial of service flaw was found in the way httpd&#39;s mod_cgid module executed CGI scripts that did not read data from the standard input. A remote attacker could submit a specially crafted request that would cause the httpd child process to hang indefinitely. (CVE-2014-0231)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>httpd24</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update httpd24</i> to update your system.</div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; mod24_proxy_html-2.4.10-1.59.amzn1.i686<br />&nbsp;&nbsp;&nbsp; httpd24-2.4.10-1.59.amzn1.i686<br />&nbsp;&nbsp;&nbsp; httpd24-debuginfo-2.4.10-1.59.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mod24_ldap-2.4.10-1.59.amzn1.i686<br />&nbsp;&nbsp;&nbsp; httpd24-tools-2.4.10-1.59.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mod24_ssl-2.4.10-1.59.amzn1.i686<br />&nbsp;&nbsp;&nbsp; httpd24-devel-2.4.10-1.59.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mod24_session-2.4.10-1.59.amzn1.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; httpd24-manual-2.4.10-1.59.amzn1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; httpd24-2.4.10-1.59.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; mod24_proxy_html-2.4.10-1.59.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; httpd24-tools-2.4.10-1.59.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mod24_ldap-2.4.10-1.59.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; httpd24-2.4.10-1.59.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; httpd24-debuginfo-2.4.10-1.59.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; httpd24-devel-2.4.10-1.59.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mod24_session-2.4.10-1.59.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mod24_ssl-2.4.10-1.59.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2014-0118" target="_blank" rel="noopener noreferrer">CVE-2014-0118</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2014-0226" target="_blank" rel="noopener noreferrer">CVE-2014-0226</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2014-0231" target="_blank" rel="noopener noreferrer">CVE-2014-0231</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0118" target="_blank" rel="noopener noreferrer">CVE-2014-0118</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0226" target="_blank" rel="noopener noreferrer">CVE-2014-0226</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0231" target="_blank" rel="noopener noreferrer">CVE-2014-0231</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

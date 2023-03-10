@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2020-1516</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2020-1516'>ALAS2-2020-1516</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2020-1516
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2020-10-22 17:36 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2020-10-22 22:36 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2020-11018.html' target='_blank'>CVE-2020-11018&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11019.html' target='_blank'>CVE-2020-11019&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11038.html' target='_blank'>CVE-2020-11038&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11039.html' target='_blank'>CVE-2020-11039&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11040.html' target='_blank'>CVE-2020-11040&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11041.html' target='_blank'>CVE-2020-11041&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11042.html' target='_blank'>CVE-2020-11042&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11043.html' target='_blank'>CVE-2020-11043&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11044.html' target='_blank'>CVE-2020-11044&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11045.html' target='_blank'>CVE-2020-11045&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11046.html' target='_blank'>CVE-2020-11046&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11047.html' target='_blank'>CVE-2020-11047&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11048.html' target='_blank'>CVE-2020-11048&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11049.html' target='_blank'>CVE-2020-11049&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11058.html' target='_blank'>CVE-2020-11058&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11085.html' target='_blank'>CVE-2020-11085&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11086.html' target='_blank'>CVE-2020-11086&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11087.html' target='_blank'>CVE-2020-11087&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11088.html' target='_blank'>CVE-2020-11088&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11089.html' target='_blank'>CVE-2020-11089&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11522.html' target='_blank'>CVE-2020-11522&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11525.html' target='_blank'>CVE-2020-11525&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-11526.html' target='_blank'>CVE-2020-11526&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-13396.html' target='_blank'>CVE-2020-13396&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-13397.html' target='_blank'>CVE-2020-13397&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>In FreeRDP less than or equal to 2.0.0, a possible resource exhaustion vulnerability can be performed. Malicious clients could trigger out of bound reads causing memory allocation with random size. This has been fixed in 2.1.0. (CVE-2020-11018)</p><p>In FreeRDP less than or equal to 2.0.0, when running with logger set to &#34;WLOG_TRACE&#34;, a possible crash of application could occur due to a read of an invalid array index. Data could be printed as string to local terminal. This has been fixed in 2.1.0. (CVE-2020-11019)</p><p>In FreeRDP less than or equal to 2.0.0, an Integer Overflow to Buffer Overflow exists. When using /video redirection, a manipulated server can instruct the client to allocate a buffer with a smaller size than requested due to an integer overflow in size calculation. With later messages, the server can manipulate the client to write data out of bound to the previously allocated buffer. This has been patched in 2.1.0. (CVE-2020-11038)</p><p>In FreeRDP less than or equal to 2.0.0, when using a manipulated server with USB redirection enabled (nearly) arbitrary memory can be read and written due to integer overflows in length checks. This has been patched in 2.1.0. (CVE-2020-11039)</p><p>In FreeRDP less than or equal to 2.0.0, there is an out-of-bound data read from memory in clear_decompress_subcode_rlex, visualized on screen as color. This has been patched in 2.1.0. (CVE-2020-11040)</p><p>In FreeRDP less than or equal to 2.0.0, an outside controlled array index is used unchecked for data used as configuration for sound backend (alsa, oss, pulse, ...). The most likely outcome is a crash of the client instance followed by no or distorted sound or a session disconnect. If a user cannot upgrade to the patched version, a workaround is to disable sound for the session. This has been patched in 2.1.0. (CVE-2020-11041)</p><p>In FreeRDP greater than 1.1 and before 2.0.0, there is an out-of-bounds read in update_read_icon_info. It allows reading a attacker-defined amount of client memory (32bit unsigned -&gt; 4GB) to an intermediate buffer. This can be used to crash the client or store information for later retrieval. This has been patched in 2.0.0. (CVE-2020-11042)</p><p>In FreeRDP less than or equal to 2.0.0, there is an out-of-bounds read in rfx_process_message_tileset. Invalid data fed to RFX decoder results in garbage on screen (as colors). This has been patched in 2.1.0. (CVE-2020-11043)</p><p>In FreeRDP greater than 1.2 and before 2.0.0, a double free in update_read_cache_bitmap_v3_order crashes the client application if corrupted data from a manipulated server is parsed. This has been patched in 2.0.0. (CVE-2020-11044)</p><p>In FreeRDP after 1.0 and before 2.0.0, there is an out-of-bound read in in update_read_bitmap_data that allows client memory to be read to an image buffer. The result displayed on screen as colour. (CVE-2020-11045)</p><p>In FreeRDP after 1.0 and before 2.0.0, there is a stream out-of-bounds seek in update_read_synchronize that could lead to a later out-of-bounds read. (CVE-2020-11046)</p><p>In FreeRDP after 1.1 and before 2.0.0, there is an out-of-bounds read in autodetect_recv_bandwidth_measure_results. A malicious server can extract up to 8 bytes of client memory with a manipulated message by providing a short input and reading the measurement result data. This has been patched in 2.0.0. (CVE-2020-11047)</p><p>In FreeRDP after 1.0 and before 2.0.0, there is an out-of-bounds read. It only allows to abort a session. No data extraction is possible. This has been fixed in 2.0.0. (CVE-2020-11048)</p><p>In FreeRDP after 1.1 and before 2.0.0, there is an out-of-bound read of client memory that is then passed on to the protocol parser. This has been patched in 2.0.0. (CVE-2020-11049)</p><p>In FreeRDP after 1.1 and before 2.0.0, a stream out-of-bounds seek in rdp_read_font_capability_set could lead to a later out-of-bounds read. As a result, a manipulated client or server might force a disconnect due to an invalid data read. This has been fixed in 2.0.0. (CVE-2020-11058)</p><p>In FreeRDP before 2.1.0, there is an out-of-bounds read in cliprdr_read_format_list. Clipboard format data read (by client or server) might read data out-of-bounds. This has been fixed in 2.1.0. (CVE-2020-11085)</p><p>In FreeRDP less than or equal to 2.0.0, there is an out-of-bound read in ntlm_read_ntlm_v2_client_challenge that reads up to 28 bytes out-of-bound to an internal structure. This has been fixed in 2.1.0. (CVE-2020-11086)</p><p>In FreeRDP less than or equal to 2.0.0, there is an out-of-bound read in ntlm_read_AuthenticateMessage. This has been fixed in 2.1.0. (CVE-2020-11087)</p><p>In FreeRDP less than or equal to 2.0.0, there is an out-of-bound read in ntlm_read_NegotiateMessage. This has been fixed in 2.1.0. (CVE-2020-11088)</p><p>In FreeRDP before 2.1.0, there is an out-of-bound read in irp functions (parallel_process_irp_create, serial_process_irp_create, drive_process_irp_write, printer_process_irp_write, rdpei_recv_pdu, serial_process_irp_write). This has been fixed in 2.1.0. (CVE-2020-11089)</p><p>libfreerdp/gdi/gdi.c in FreeRDP &gt; 1.0 through 2.0.0-rc4 has an Out-of-bounds Read. (CVE-2020-11522)</p><p>libfreerdp/cache/bitmap.c in FreeRDP versions &gt; 1.0 through 2.0.0-rc4 has an Out of bounds read. (CVE-2020-11525)</p><p>libfreerdp/core/update.c in FreeRDP versions &gt; 1.1 through 2.0.0-rc4 has an Out-of-bounds Read. (CVE-2020-11526)</p><p>An issue was discovered in FreeRDP before 2.1.1. An out-of-bounds (OOB) read vulnerability has been detected in ntlm_read_ChallengeMessage in winpr/libwinpr/sspi/NTLM/ntlm_message.c. (CVE-2020-13396)</p><p>An issue was discovered in FreeRDP before 2.1.1. An out-of-bounds (OOB) read vulnerability has been detected in security_fips_decrypt in libfreerdp/core/security.c due to an uninitialized value. (CVE-2020-13397)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>freerdp</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update freerdp</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; freerdp-2.1.1-2.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; freerdp-libs-2.1.1-2.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; freerdp-devel-2.1.1-2.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; libwinpr-2.1.1-2.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; libwinpr-devel-2.1.1-2.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; freerdp-debuginfo-2.1.1-2.amzn2.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; freerdp-2.1.1-2.amzn2.i686<br />&nbsp;&nbsp;&nbsp; freerdp-libs-2.1.1-2.amzn2.i686<br />&nbsp;&nbsp;&nbsp; freerdp-devel-2.1.1-2.amzn2.i686<br />&nbsp;&nbsp;&nbsp; libwinpr-2.1.1-2.amzn2.i686<br />&nbsp;&nbsp;&nbsp; libwinpr-devel-2.1.1-2.amzn2.i686<br />&nbsp;&nbsp;&nbsp; freerdp-debuginfo-2.1.1-2.amzn2.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; freerdp-2.1.1-2.amzn2.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; freerdp-2.1.1-2.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; freerdp-libs-2.1.1-2.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; freerdp-devel-2.1.1-2.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; libwinpr-2.1.1-2.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; libwinpr-devel-2.1.1-2.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; freerdp-debuginfo-2.1.1-2.amzn2.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11018" target="_blank" rel="noopener noreferrer">CVE-2020-11018</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11019" target="_blank" rel="noopener noreferrer">CVE-2020-11019</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11038" target="_blank" rel="noopener noreferrer">CVE-2020-11038</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11039" target="_blank" rel="noopener noreferrer">CVE-2020-11039</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11040" target="_blank" rel="noopener noreferrer">CVE-2020-11040</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11041" target="_blank" rel="noopener noreferrer">CVE-2020-11041</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11042" target="_blank" rel="noopener noreferrer">CVE-2020-11042</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11043" target="_blank" rel="noopener noreferrer">CVE-2020-11043</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11044" target="_blank" rel="noopener noreferrer">CVE-2020-11044</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11045" target="_blank" rel="noopener noreferrer">CVE-2020-11045</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11046" target="_blank" rel="noopener noreferrer">CVE-2020-11046</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11047" target="_blank" rel="noopener noreferrer">CVE-2020-11047</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11048" target="_blank" rel="noopener noreferrer">CVE-2020-11048</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11049" target="_blank" rel="noopener noreferrer">CVE-2020-11049</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11058" target="_blank" rel="noopener noreferrer">CVE-2020-11058</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11085" target="_blank" rel="noopener noreferrer">CVE-2020-11085</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11086" target="_blank" rel="noopener noreferrer">CVE-2020-11086</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11087" target="_blank" rel="noopener noreferrer">CVE-2020-11087</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11088" target="_blank" rel="noopener noreferrer">CVE-2020-11088</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11089" target="_blank" rel="noopener noreferrer">CVE-2020-11089</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11522" target="_blank" rel="noopener noreferrer">CVE-2020-11522</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11525" target="_blank" rel="noopener noreferrer">CVE-2020-11525</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-11526" target="_blank" rel="noopener noreferrer">CVE-2020-11526</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-13396" target="_blank" rel="noopener noreferrer">CVE-2020-13396</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-13397" target="_blank" rel="noopener noreferrer">CVE-2020-13397</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11018" target="_blank" rel="noopener noreferrer">CVE-2020-11018</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11019" target="_blank" rel="noopener noreferrer">CVE-2020-11019</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11038" target="_blank" rel="noopener noreferrer">CVE-2020-11038</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11039" target="_blank" rel="noopener noreferrer">CVE-2020-11039</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11040" target="_blank" rel="noopener noreferrer">CVE-2020-11040</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11041" target="_blank" rel="noopener noreferrer">CVE-2020-11041</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11042" target="_blank" rel="noopener noreferrer">CVE-2020-11042</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11043" target="_blank" rel="noopener noreferrer">CVE-2020-11043</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11044" target="_blank" rel="noopener noreferrer">CVE-2020-11044</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11045" target="_blank" rel="noopener noreferrer">CVE-2020-11045</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11046" target="_blank" rel="noopener noreferrer">CVE-2020-11046</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11047" target="_blank" rel="noopener noreferrer">CVE-2020-11047</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11048" target="_blank" rel="noopener noreferrer">CVE-2020-11048</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11049" target="_blank" rel="noopener noreferrer">CVE-2020-11049</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11058" target="_blank" rel="noopener noreferrer">CVE-2020-11058</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11085" target="_blank" rel="noopener noreferrer">CVE-2020-11085</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11086" target="_blank" rel="noopener noreferrer">CVE-2020-11086</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11087" target="_blank" rel="noopener noreferrer">CVE-2020-11087</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11088" target="_blank" rel="noopener noreferrer">CVE-2020-11088</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11089" target="_blank" rel="noopener noreferrer">CVE-2020-11089</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11522" target="_blank" rel="noopener noreferrer">CVE-2020-11522</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11525" target="_blank" rel="noopener noreferrer">CVE-2020-11525</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11526" target="_blank" rel="noopener noreferrer">CVE-2020-11526</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13396" target="_blank" rel="noopener noreferrer">CVE-2020-13396</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13397" target="_blank" rel="noopener noreferrer">CVE-2020-13397</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

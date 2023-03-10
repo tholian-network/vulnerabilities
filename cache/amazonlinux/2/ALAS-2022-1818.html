@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2022-1818</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2022-1818'>ALAS2-2022-1818</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2022-1818
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2022-07-06 03:17 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2022-08-21 19:26 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2021-32810.html' target='_blank'>CVE-2021-32810&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-38496.html' target='_blank'>CVE-2021-38496&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-38497.html' target='_blank'>CVE-2021-38497&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-38498.html' target='_blank'>CVE-2021-38498&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-38500.html' target='_blank'>CVE-2021-38500&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-38501.html' target='_blank'>CVE-2021-38501&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-38502.html' target='_blank'>CVE-2021-38502&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-38503.html' target='_blank'>CVE-2021-38503&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-4140.html' target='_blank'>CVE-2021-4140&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-43529.html' target='_blank'>CVE-2021-43529&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22737.html' target='_blank'>CVE-2022-22737&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22738.html' target='_blank'>CVE-2022-22738&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22739.html' target='_blank'>CVE-2022-22739&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22740.html' target='_blank'>CVE-2022-22740&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22741.html' target='_blank'>CVE-2022-22741&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22742.html' target='_blank'>CVE-2022-22742&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22743.html' target='_blank'>CVE-2022-22743&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22745.html' target='_blank'>CVE-2022-22745&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22747.html' target='_blank'>CVE-2022-22747&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22748.html' target='_blank'>CVE-2022-22748&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22751.html' target='_blank'>CVE-2022-22751&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22754.html' target='_blank'>CVE-2022-22754&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22756.html' target='_blank'>CVE-2022-22756&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22759.html' target='_blank'>CVE-2022-22759&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22760.html' target='_blank'>CVE-2022-22760&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22761.html' target='_blank'>CVE-2022-22761&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22763.html' target='_blank'>CVE-2022-22763&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-22764.html' target='_blank'>CVE-2022-22764&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>crossbeam-deque is a package of work-stealing deques for building task schedulers when programming in Rust. In versions prior to 0.7.4 and 0.8.0, the result of the race condition is that one or more tasks in the worker queue can be popped twice instead of other tasks that are forgotten and never popped. If tasks are allocated on the heap, this can cause double free and a memory leak. If not, this still can cause a logical bug. Crates using `Stealer::steal`, `Stealer::steal_batch`, or `Stealer::steal_batch_and_pop` are affected by this issue. This has been fixed in crossbeam-deque 0.8.1 and 0.7.4. (CVE-2021-32810)</p><p>During operations on MessageTasks, a task may have been removed while it was still scheduled, resulting in memory corruption and a potentially exploitable crash. This vulnerability affects Thunderbird &lt; 78.15, Thunderbird &lt; 91.2, Firefox ESR &lt; 91.2, Firefox ESR &lt; 78.15, and Firefox &lt; 93. (CVE-2021-38496)</p><p>Through use of reportValidity() and window.open(), a plain-text validation message could have been overlaid on another origin, leading to possible user confusion and spoofing attacks. This vulnerability affects Firefox &lt; 93, Thunderbird &lt; 91.2, and Firefox ESR &lt; 91.2. (CVE-2021-38497)</p><p>During process shutdown, a document could have caused a use-after-free of a languages service object, leading to memory corruption and a potentially exploitable crash. This vulnerability affects Firefox &lt; 93, Thunderbird &lt; 91.2, and Firefox ESR &lt; 91.2. (CVE-2021-38498)</p><p>Mozilla developers reported memory safety bugs present in Firefox 92 and Firefox ESR 91.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Thunderbird &lt; 78.15, Thunderbird &lt; 91.2, Firefox ESR &lt; 91.2, Firefox ESR &lt; 78.15, and Firefox &lt; 93. (CVE-2021-38500)</p><p>Mozilla developers reported memory safety bugs present in Firefox 92 and Firefox ESR 91.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox &lt; 93, Thunderbird &lt; 91.2, and Firefox ESR &lt; 91.2. (CVE-2021-38501)</p><p>Thunderbird ignored the configuration to require STARTTLS security for an SMTP connection. A MITM could perform a downgrade attack to intercept transmitted messages, or could take control of the authenticated session to execute SMTP commands chosen by the MITM. If an unprotected authentication method was configured, the MITM could obtain the authentication credentials, too. This vulnerability affects Thunderbird &lt; 91.2. (CVE-2021-38502)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:</p><p>It was possible to construct specific XSLT markup that would be able to bypass an iframe sandbox. (CVE-2021-4140)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:</p><p>Constructing audio sinks could have lead to a race condition when playing audio files and closing windows. This could have lead to a use-after-free causing a potentially exploitable crash. (CVE-2022-22737)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:</p><p>Applying a CSS filter effect could have accessed out of bounds memory. This could have lead to a heap-buffer-overflow causing a potentially exploitable crash. (CVE-2022-22738)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:</p><p>Malicious websites could have tricked users into accepting launching a program to handle an external URL protocol. (CVE-2022-22739)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:</p><p>Certain network request objects were freed too early when releasing a network request handle. This could have lead to a use-after-free causing a potentially exploitable crash. (CVE-2022-22740)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:</p><p>When resizing a popup while requesting fullscreen access, the popup would have become unable to leave fullscreen mode. (CVE-2022-22741)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:</p><p>When inserting text while in edit mode, some characters might have lead to out-of-bounds memory access causing a potentially exploitable crash. (CVE-2022-22742)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:</p><p>When navigating from inside an iframe while requesting fullscreen access, an attacker-controlled tab could have made the browser unable to leave fullscreen mode. (CVE-2022-22743)</p><p>The Mozilla Foundation Security Advisory describes this flaw as: </p><p>Securitypolicyviolation events could have leaked cross-origin information for frame-ancestors violations (CVE-2022-22745)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:</p><p>After accepting an untrusted certificate, handling an empty pkcs7 sequence as part of the certificate data could have lead to a crash. This crash is believed to be unexploitable. (CVE-2022-22747)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:</p><p>Malicious websites could have confused Thunderbird into showing the wrong origin when asking to launch a program and handling an external URL protocol. (CVE-2022-22748)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:</p><p>Mozilla developers Calixte Denizet, Kershaw Chang, Christian Holler, Jason Kratzer, Gabriele Svelto, Tyson Smith, Simon Giesecke, and Steve Fink reported memory safety bugs present in Firefox 95 and Firefox ESR 91.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. (CVE-2022-22751)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:</p><p>If a user installed an extension of a particular type, the extension could have auto-updated itself and while doing so, bypass the prompt which grants the new version the new requested permissions. (CVE-2022-22754)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:</p><p>If a user was convinced to drag and drop an image to their desktop or other folder, the resulting object could have been changed into an executable script which would have run arbitrary code after the user clicked on it. (CVE-2022-22756)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:</p><p>If a document created a sandboxed iframe without allow-scripts, and subsequently appended an element to the iframe&#39;s document that e.g. had a JavaScript event handler - the event handler would have run despite the iframe&#39;s sandbox. (CVE-2022-22759)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:</p><p>When importing resources using Web Workers, error messages would distinguish the difference between application/javascript responses and non-script responses. This could have been abused to learn information cross-origin. (CVE-2022-22760)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:</p><p>Web-accessible extension pages (pages with a moz-extension:// scheme) were not correctly enforcing the frame-ancestors directive when it was used in the Web Extension\&#39;s Content Security Policy. (CVE-2022-22761)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:</p><p>When a worker is shutdown, it was possible to cause script to run late in the lifecycle, at a point after where it should not be possible. (CVE-2022-22763)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:</p><p>Mozilla developers and community members Paul Adenot and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 96 and Firefox ESR 91.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. (CVE-2022-22764)</p><p>The iframe sandbox rules were not correctly applied to XSLT stylesheets, allowing an iframe to bypass restrictions such as executing scripts or navigating the top-level frame. This vulnerability affects Firefox &lt; 94, Thunderbird &lt; 91.3, and Firefox ESR &lt; 91.3. (CVE-2021-38503)</p><p>A flaw was found in Thunderbird, which is vulnerable to the heap overflow described in CVE-2021-43527 when processing S/MIME messages. Thunderbird versions 91.3.0 and later will not call the vulnerable code when processing S/MIME messages that contain certificates with DER-encoded DSA or RSA-PSS signatures. (CVE-2021-43529)</p><p>References to CVE-2021-38503 and CVE-2021-43529 have been added after the original release of this advisory, however those vulnerabilities were fixed by the packages referenced by this advisory&#39;s initial release on 2022-07-06.</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>thunderbird</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update thunderbird</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; thunderbird-91.6.0-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; thunderbird-debuginfo-91.6.0-1.amzn2.0.1.aarch64<br /><br />src:<br />&nbsp;&nbsp;&nbsp; thunderbird-91.6.0-1.amzn2.0.1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; thunderbird-91.6.0-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; thunderbird-debuginfo-91.6.0-1.amzn2.0.1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-32810" target="_blank" rel="noopener noreferrer">CVE-2021-32810</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-38496" target="_blank" rel="noopener noreferrer">CVE-2021-38496</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-38497" target="_blank" rel="noopener noreferrer">CVE-2021-38497</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-38498" target="_blank" rel="noopener noreferrer">CVE-2021-38498</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-38500" target="_blank" rel="noopener noreferrer">CVE-2021-38500</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-38501" target="_blank" rel="noopener noreferrer">CVE-2021-38501</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-38502" target="_blank" rel="noopener noreferrer">CVE-2021-38502</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-38503" target="_blank" rel="noopener noreferrer">CVE-2021-38503</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-4140" target="_blank" rel="noopener noreferrer">CVE-2021-4140</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-43529" target="_blank" rel="noopener noreferrer">CVE-2021-43529</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22737" target="_blank" rel="noopener noreferrer">CVE-2022-22737</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22738" target="_blank" rel="noopener noreferrer">CVE-2022-22738</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22739" target="_blank" rel="noopener noreferrer">CVE-2022-22739</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22740" target="_blank" rel="noopener noreferrer">CVE-2022-22740</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22741" target="_blank" rel="noopener noreferrer">CVE-2022-22741</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22742" target="_blank" rel="noopener noreferrer">CVE-2022-22742</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22743" target="_blank" rel="noopener noreferrer">CVE-2022-22743</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22745" target="_blank" rel="noopener noreferrer">CVE-2022-22745</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22747" target="_blank" rel="noopener noreferrer">CVE-2022-22747</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22748" target="_blank" rel="noopener noreferrer">CVE-2022-22748</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22751" target="_blank" rel="noopener noreferrer">CVE-2022-22751</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22754" target="_blank" rel="noopener noreferrer">CVE-2022-22754</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22756" target="_blank" rel="noopener noreferrer">CVE-2022-22756</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22759" target="_blank" rel="noopener noreferrer">CVE-2022-22759</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22760" target="_blank" rel="noopener noreferrer">CVE-2022-22760</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22761" target="_blank" rel="noopener noreferrer">CVE-2022-22761</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22763" target="_blank" rel="noopener noreferrer">CVE-2022-22763</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22764" target="_blank" rel="noopener noreferrer">CVE-2022-22764</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32810" target="_blank" rel="noopener noreferrer">CVE-2021-32810</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-38496" target="_blank" rel="noopener noreferrer">CVE-2021-38496</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-38497" target="_blank" rel="noopener noreferrer">CVE-2021-38497</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-38498" target="_blank" rel="noopener noreferrer">CVE-2021-38498</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-38500" target="_blank" rel="noopener noreferrer">CVE-2021-38500</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-38501" target="_blank" rel="noopener noreferrer">CVE-2021-38501</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-38502" target="_blank" rel="noopener noreferrer">CVE-2021-38502</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-38503" target="_blank" rel="noopener noreferrer">CVE-2021-38503</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4140" target="_blank" rel="noopener noreferrer">CVE-2021-4140</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43529" target="_blank" rel="noopener noreferrer">CVE-2021-43529</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22737" target="_blank" rel="noopener noreferrer">CVE-2022-22737</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22738" target="_blank" rel="noopener noreferrer">CVE-2022-22738</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22739" target="_blank" rel="noopener noreferrer">CVE-2022-22739</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22740" target="_blank" rel="noopener noreferrer">CVE-2022-22740</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22741" target="_blank" rel="noopener noreferrer">CVE-2022-22741</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22742" target="_blank" rel="noopener noreferrer">CVE-2022-22742</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22743" target="_blank" rel="noopener noreferrer">CVE-2022-22743</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22745" target="_blank" rel="noopener noreferrer">CVE-2022-22745</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22747" target="_blank" rel="noopener noreferrer">CVE-2022-22747</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22748" target="_blank" rel="noopener noreferrer">CVE-2022-22748</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22751" target="_blank" rel="noopener noreferrer">CVE-2022-22751</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22754" target="_blank" rel="noopener noreferrer">CVE-2022-22754</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22756" target="_blank" rel="noopener noreferrer">CVE-2022-22756</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22759" target="_blank" rel="noopener noreferrer">CVE-2022-22759</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22760" target="_blank" rel="noopener noreferrer">CVE-2022-22760</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22761" target="_blank" rel="noopener noreferrer">CVE-2022-22761</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22763" target="_blank" rel="noopener noreferrer">CVE-2022-22763</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22764" target="_blank" rel="noopener noreferrer">CVE-2022-22764</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

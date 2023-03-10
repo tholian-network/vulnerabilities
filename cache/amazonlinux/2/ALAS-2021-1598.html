@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2021-1598</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2021-1598'>ALAS2-2021-1598</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2021-1598
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2021-02-17 00:58 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2021-02-19 22:06 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2018-17183.html' target='_blank'>CVE-2018-17183&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-17961.html' target='_blank'>CVE-2018-17961&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-18073.html' target='_blank'>CVE-2018-18073&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-18284.html' target='_blank'>CVE-2018-18284&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-19134.html' target='_blank'>CVE-2018-19134&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-19409.html' target='_blank'>CVE-2018-19409&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-19475.html' target='_blank'>CVE-2018-19475&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-19476.html' target='_blank'>CVE-2018-19476&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-19477.html' target='_blank'>CVE-2018-19477&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-14811.html' target='_blank'>CVE-2019-14811&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-14812.html' target='_blank'>CVE-2019-14812&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-14813.html' target='_blank'>CVE-2019-14813&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-14817.html' target='_blank'>CVE-2019-14817&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-14869.html' target='_blank'>CVE-2019-14869&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-3835.html' target='_blank'>CVE-2019-3835&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-3838.html' target='_blank'>CVE-2019-3838&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-3839.html' target='_blank'>CVE-2019-3839&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-6116.html' target='_blank'>CVE-2019-6116&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Artifex Ghostscript before 9.25 allowed a user-writable error exception table, which could be used by remote attackers able to supply crafted PostScript to potentially overwrite or replace error handlers to inject code. (CVE-2018-17183)</p><p>Artifex Ghostscript 9.25 and earlier allows attackers to bypass a sandbox protection mechanism via vectors involving errorhandler setup. NOTE: this issue exists because of an incomplete fix for CVE-2018-17183. (CVE-2018-17961)</p><p>Artifex Ghostscript allows attackers to bypass a sandbox protection mechanism by leveraging exposure of system operators in the saved execution stack in an error object. (CVE-2018-18073)</p><p>Artifex Ghostscript 9.25 and earlier allows attackers to bypass a sandbox protection mechanism via vectors involving the 1Policy operator. (CVE-2018-18284)</p><p>In Artifex Ghostscript through 9.25, the setpattern operator did not properly validate certain types. A specially crafted PostScript document could exploit this to crash Ghostscript or, possibly, execute arbitrary code in the context of the Ghostscript process. This is a type confusion issue because of failure to check whether the Implementation of a pattern dictionary was a structure type. (CVE-2018-19134)</p><p>An issue was discovered in Artifex Ghostscript before 9.26. LockSafetyParams is not checked correctly if another device is used. (CVE-2018-19409)</p><p>psi/zdevice2.c in Artifex Ghostscript before 9.26 allows remote attackers to bypass intended access restrictions because available stack space is not checked when the device remains the same. (CVE-2018-19475)</p><p>psi/zicc.c in Artifex Ghostscript before 9.26 allows remote attackers to bypass intended access restrictions because of a setcolorspace type confusion. (CVE-2018-19476)</p><p>psi/zfjbig2.c in Artifex Ghostscript before 9.26 allows remote attackers to bypass intended access restrictions because of a JBIG2Decode type confusion. (CVE-2018-19477)</p><p>A flaw was found in the .pdf_hook_DSC_Creator procedure where it did not properly secure its privileged calls, enabling scripts to bypass `-dSAFER` restrictions. A specially crafted PostScript file could disable security protection and then have access to the file system, or execute arbitrary commands. (CVE-2019-14811)</p><p>A flaw was found in the .setuserparams2 procedure where it did not properly secure its privileged calls, enabling scripts to bypass `-dSAFER` restrictions. A specially crafted PostScript file could disable security protection and then have access to the file system, or execute arbitrary commands. (CVE-2019-14812)</p><p>A flaw was found in the setsystemparams procedure where it did not properly secure its privileged calls, enabling scripts to bypass `-dSAFER` restrictions. A specially crafted PostScript file could disable security protection and then have access to the file system, or execute arbitrary commands. (CVE-2019-14813)</p><p>A flaw was found in the .pdfexectoken and other procedures where it did not properly secure its privileged calls, enabling scripts to bypass `-dSAFER` restrictions. A specially crafted PostScript file could disable security protection and then have access to the file system, or execute arbitrary commands. (CVE-2019-14817)</p><p>A flaw was found in the `.charkeys` procedure, where it did not properly secure its privileged calls, enabling scripts to bypass `-dSAFER` restrictions. An attacker could abuse this flaw by creating a specially crafted PostScript file that could escalate privileges within the Ghostscript and access files outside of restricted areas or execute commands. (CVE-2019-14869)</p><p>It was found that the superexec operator was available in the internal dictionary.  A specially crafted PostScript file could use this flaw in order to, for example, have access to the file system outside of the constrains imposed by -dSAFER. (CVE-2019-3835)</p><p>It was found that the forceput operator could be extracted from the DefineResource method. A specially crafted PostScript file could use this flaw in order to, for example, have access to the file system outside of the constrains imposed by -dSAFER. (CVE-2019-3838)</p><p>It was found that some privileged operators remained accessible from various places after the CVE-2019-6116 fix. A specially crafted PostScript file could use this flaw in order to, for example, have access to the file system outside of the constrains imposed by -dSAFER. (CVE-2019-3839)</p><p>It was found that ghostscript could leak sensitive operators on the operand stack when a pseudo-operator pushes a subroutine. A specially crafted PostScript file could use this flaw to escape the -dSAFER protection in order to, for example, have access to the file system outside of the SAFER constraints. (CVE-2019-6116)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>ghostscript</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update ghostscript</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; ghostscript-9.25-5.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; libgs-9.25-5.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; libgs-devel-9.25-5.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; ghostscript-gtk-9.25-5.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; ghostscript-cups-9.25-5.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; ghostscript-debuginfo-9.25-5.amzn2.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; ghostscript-9.25-5.amzn2.i686<br />&nbsp;&nbsp;&nbsp; libgs-9.25-5.amzn2.i686<br />&nbsp;&nbsp;&nbsp; libgs-devel-9.25-5.amzn2.i686<br />&nbsp;&nbsp;&nbsp; ghostscript-gtk-9.25-5.amzn2.i686<br />&nbsp;&nbsp;&nbsp; ghostscript-cups-9.25-5.amzn2.i686<br />&nbsp;&nbsp;&nbsp; ghostscript-debuginfo-9.25-5.amzn2.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; ghostscript-doc-9.25-5.amzn2.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; ghostscript-9.25-5.amzn2.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; ghostscript-9.25-5.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; libgs-9.25-5.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; libgs-devel-9.25-5.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; ghostscript-gtk-9.25-5.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; ghostscript-cups-9.25-5.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; ghostscript-debuginfo-9.25-5.amzn2.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-17183" target="_blank" rel="noopener noreferrer">CVE-2018-17183</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-17961" target="_blank" rel="noopener noreferrer">CVE-2018-17961</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-18073" target="_blank" rel="noopener noreferrer">CVE-2018-18073</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-18284" target="_blank" rel="noopener noreferrer">CVE-2018-18284</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-19134" target="_blank" rel="noopener noreferrer">CVE-2018-19134</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-19409" target="_blank" rel="noopener noreferrer">CVE-2018-19409</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-19475" target="_blank" rel="noopener noreferrer">CVE-2018-19475</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-19476" target="_blank" rel="noopener noreferrer">CVE-2018-19476</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-19477" target="_blank" rel="noopener noreferrer">CVE-2018-19477</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-14811" target="_blank" rel="noopener noreferrer">CVE-2019-14811</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-14812" target="_blank" rel="noopener noreferrer">CVE-2019-14812</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-14813" target="_blank" rel="noopener noreferrer">CVE-2019-14813</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-14817" target="_blank" rel="noopener noreferrer">CVE-2019-14817</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-14869" target="_blank" rel="noopener noreferrer">CVE-2019-14869</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-3835" target="_blank" rel="noopener noreferrer">CVE-2019-3835</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-3838" target="_blank" rel="noopener noreferrer">CVE-2019-3838</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-3839" target="_blank" rel="noopener noreferrer">CVE-2019-3839</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-6116" target="_blank" rel="noopener noreferrer">CVE-2019-6116</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17183" target="_blank" rel="noopener noreferrer">CVE-2018-17183</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17961" target="_blank" rel="noopener noreferrer">CVE-2018-17961</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18073" target="_blank" rel="noopener noreferrer">CVE-2018-18073</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18284" target="_blank" rel="noopener noreferrer">CVE-2018-18284</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19134" target="_blank" rel="noopener noreferrer">CVE-2018-19134</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19409" target="_blank" rel="noopener noreferrer">CVE-2018-19409</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19475" target="_blank" rel="noopener noreferrer">CVE-2018-19475</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19476" target="_blank" rel="noopener noreferrer">CVE-2018-19476</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19477" target="_blank" rel="noopener noreferrer">CVE-2018-19477</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14811" target="_blank" rel="noopener noreferrer">CVE-2019-14811</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14812" target="_blank" rel="noopener noreferrer">CVE-2019-14812</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14813" target="_blank" rel="noopener noreferrer">CVE-2019-14813</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14817" target="_blank" rel="noopener noreferrer">CVE-2019-14817</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14869" target="_blank" rel="noopener noreferrer">CVE-2019-14869</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3835" target="_blank" rel="noopener noreferrer">CVE-2019-3835</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3838" target="_blank" rel="noopener noreferrer">CVE-2019-3838</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3839" target="_blank" rel="noopener noreferrer">CVE-2019-3839</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-6116" target="_blank" rel="noopener noreferrer">CVE-2019-6116</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

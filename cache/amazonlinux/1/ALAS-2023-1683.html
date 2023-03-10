@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2023-1683</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2023.html">Amazon Linux 2023</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/faqs.html">FAQs</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2023-1683'>ALAS-2023-1683</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2023-1683
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2023-02-03 23:39 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2023-02-08 18:15 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2022-4304.html' target='_blank' rel='noopener noreferrer'>CVE-2022-4304&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2023-0215.html' target='_blank' rel='noopener noreferrer'>CVE-2023-0215&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2023-0286.html' target='_blank' rel='noopener noreferrer'>CVE-2023-0286&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                            <a href="../../faqs.html">FAQs regarding Amazon Linux ALAS/CVE Severity</a>
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>A timing-based side channel exists in the OpenSSL RSA Decryption implementation, which could be sufficient to recover a ciphertext across a network in a Bleichenbacher style attack. To achieve a successful decryption, an attacker would have to be able to send a very large number of trial messages for decryption. This issue affects all RSA padding modes: PKCS#1 v1.5, RSA-OEAP, and RSASVE. (CVE-2022-4304)</p><p>A use-after-free vulnerability was found in OpenSSL&#39;s BIO_new_NDEF function. The public API function BIO_new_NDEF is a helper function used for streaming ASN.1 data via a BIO. It is primarily used internally by OpenSSL to support the SMIME, CMS, and PKCS7 streaming capabilities, but it may also be called directly by end-user applications. The function receives a BIO from the caller, prepends a new BIO_f_asn1 filter BIO onto the front of it to form a BIO chain, and then returns the new head of the BIO chain to the caller. Under certain conditions. For example, if a CMS recipient public key is invalid, the new filter BIO is freed, and the function returns a NULL result indicating a failure. However, in this case, the BIO chain is not properly cleaned up, and the BIO passed by the caller still retains internal pointers to the previously freed filter BIO. If the caller then calls BIO_pop() on the BIO, a use-after-free will occur, possibly resulting in a crash. (CVE-2023-0215)</p><p>A type confusion vulnerability was found in OpenSSL when OpenSSL X.400 addresses processing inside an X.509 GeneralName. When CRL checking is enabled (for example, the application sets the X509_V_FLAG_CRL_CHECK flag), this vulnerability may allow an attacker to pass arbitrary pointers to a memcmp call, enabling them to read memory contents or cause a denial of service. In most cases, the attack requires the attacker to provide both the certificate chain and CRL, of which neither needs a valid signature. If the attacker only controls one of these inputs, the other input must already contain an X.400 address as a CRL distribution point, which is uncommon. In this case, this vulnerability is likely only to affect applications that have implemented their own functionality for retrieving CRLs over a network. (CVE-2023-0286)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>openssl</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update openssl</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; openssl-debuginfo-1.0.2k-16.162.amzn1.i686<br />&nbsp;&nbsp;&nbsp; openssl-perl-1.0.2k-16.162.amzn1.i686<br />&nbsp;&nbsp;&nbsp; openssl-devel-1.0.2k-16.162.amzn1.i686<br />&nbsp;&nbsp;&nbsp; openssl-static-1.0.2k-16.162.amzn1.i686<br />&nbsp;&nbsp;&nbsp; openssl-1.0.2k-16.162.amzn1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; openssl-1.0.2k-16.162.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; openssl-static-1.0.2k-16.162.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; openssl-1.0.2k-16.162.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; openssl-devel-1.0.2k-16.162.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; openssl-debuginfo-1.0.2k-16.162.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; openssl-perl-1.0.2k-16.162.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-4304" target="_blank" rel="noopener noreferrer">CVE-2022-4304</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-0215" target="_blank" rel="noopener noreferrer">CVE-2023-0215</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-0286" target="_blank" rel="noopener noreferrer">CVE-2023-0286</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304" target="_blank" rel="noopener noreferrer">CVE-2022-4304</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215" target="_blank" rel="noopener noreferrer">CVE-2023-0215</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0286" target="_blank" rel="noopener noreferrer">CVE-2023-0286</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2023
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2023 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2023, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

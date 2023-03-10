@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2022-1854</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2022-1854'>ALAS2-2022-1854</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2022-1854
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2022-09-30 07:04 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2022-10-10 21:54 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2019-3842.html' target='_blank'>CVE-2019-3842&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-13529.html' target='_blank'>CVE-2020-13529&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-13776.html' target='_blank'>CVE-2020-13776&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-2526.html' target='_blank'>CVE-2022-2526&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>It was discovered that pam_systemd does not properly sanitize the environment before using the XDG_SEAT variable. It is possible for an attacker, in some particular configurations, to set a XDG_SEAT environment variable which allows for commands to be checked against polkit policies using the &#34;allow_active&#34; element rather than &#34;allow_any&#34;. (CVE-2019-3842)</p><p>An exploitable denial of service vulnerability exists in systemd which does not fully implement RFC3203, as it does not support authentication of FORCERENEW packets. A specially crafted DHCP FORCERENEW packet can cause a system, running the DHCP client, to be vulnerable to a DHCP ACK spoofing attack. An attacker can forge a pair of FORCERENEW and DCHPACK packets to reconfigure the system with arbitrary network settings. (CVE-2020-13529)</p><p>A flaw was found in systemd, where it mishandles numerical usernames beginning with decimal digits, or &#34;0x&#34; followed by hexadecimal digits. When the usernames are used by systemd, for example in service units, an unexpected user may be used instead. In some particular configurations, this flaw allows local attackers to elevate their privileges. (CVE-2020-13776)</p><p>A use-after-free vulnerability was found in systemd. This issue occurs due to the on_stream_io() function and dns_stream_complete() function in resolved-dns-stream.c not incrementing the reference counting for the<br /> DnsStream object. Therefore, other functions and callbacks called can dereference the DNSStream object, causing the use-after-free when the reference is still used later. (CVE-2022-2526)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>systemd</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update systemd</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; systemd-219-78.amzn2.0.20.aarch64<br />&nbsp;&nbsp;&nbsp; systemd-libs-219-78.amzn2.0.20.aarch64<br />&nbsp;&nbsp;&nbsp; systemd-devel-219-78.amzn2.0.20.aarch64<br />&nbsp;&nbsp;&nbsp; systemd-sysv-219-78.amzn2.0.20.aarch64<br />&nbsp;&nbsp;&nbsp; systemd-python-219-78.amzn2.0.20.aarch64<br />&nbsp;&nbsp;&nbsp; libgudev1-219-78.amzn2.0.20.aarch64<br />&nbsp;&nbsp;&nbsp; libgudev1-devel-219-78.amzn2.0.20.aarch64<br />&nbsp;&nbsp;&nbsp; systemd-journal-gateway-219-78.amzn2.0.20.aarch64<br />&nbsp;&nbsp;&nbsp; systemd-networkd-219-78.amzn2.0.20.aarch64<br />&nbsp;&nbsp;&nbsp; systemd-resolved-219-78.amzn2.0.20.aarch64<br />&nbsp;&nbsp;&nbsp; systemd-debuginfo-219-78.amzn2.0.20.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; systemd-219-78.amzn2.0.20.i686<br />&nbsp;&nbsp;&nbsp; systemd-libs-219-78.amzn2.0.20.i686<br />&nbsp;&nbsp;&nbsp; systemd-devel-219-78.amzn2.0.20.i686<br />&nbsp;&nbsp;&nbsp; systemd-sysv-219-78.amzn2.0.20.i686<br />&nbsp;&nbsp;&nbsp; systemd-python-219-78.amzn2.0.20.i686<br />&nbsp;&nbsp;&nbsp; libgudev1-219-78.amzn2.0.20.i686<br />&nbsp;&nbsp;&nbsp; libgudev1-devel-219-78.amzn2.0.20.i686<br />&nbsp;&nbsp;&nbsp; systemd-journal-gateway-219-78.amzn2.0.20.i686<br />&nbsp;&nbsp;&nbsp; systemd-networkd-219-78.amzn2.0.20.i686<br />&nbsp;&nbsp;&nbsp; systemd-resolved-219-78.amzn2.0.20.i686<br />&nbsp;&nbsp;&nbsp; systemd-debuginfo-219-78.amzn2.0.20.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; systemd-219-78.amzn2.0.20.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; systemd-219-78.amzn2.0.20.x86_64<br />&nbsp;&nbsp;&nbsp; systemd-libs-219-78.amzn2.0.20.x86_64<br />&nbsp;&nbsp;&nbsp; systemd-devel-219-78.amzn2.0.20.x86_64<br />&nbsp;&nbsp;&nbsp; systemd-sysv-219-78.amzn2.0.20.x86_64<br />&nbsp;&nbsp;&nbsp; systemd-python-219-78.amzn2.0.20.x86_64<br />&nbsp;&nbsp;&nbsp; libgudev1-219-78.amzn2.0.20.x86_64<br />&nbsp;&nbsp;&nbsp; libgudev1-devel-219-78.amzn2.0.20.x86_64<br />&nbsp;&nbsp;&nbsp; systemd-journal-gateway-219-78.amzn2.0.20.x86_64<br />&nbsp;&nbsp;&nbsp; systemd-networkd-219-78.amzn2.0.20.x86_64<br />&nbsp;&nbsp;&nbsp; systemd-resolved-219-78.amzn2.0.20.x86_64<br />&nbsp;&nbsp;&nbsp; systemd-debuginfo-219-78.amzn2.0.20.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-3842" target="_blank" rel="noopener noreferrer">CVE-2019-3842</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-13529" target="_blank" rel="noopener noreferrer">CVE-2020-13529</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-13776" target="_blank" rel="noopener noreferrer">CVE-2020-13776</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-2526" target="_blank" rel="noopener noreferrer">CVE-2022-2526</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3842" target="_blank" rel="noopener noreferrer">CVE-2019-3842</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13529" target="_blank" rel="noopener noreferrer">CVE-2020-13529</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13776" target="_blank" rel="noopener noreferrer">CVE-2020-13776</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2526" target="_blank" rel="noopener noreferrer">CVE-2022-2526</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2017-918</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2017-918'>ALAS-2017-918</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2017-918
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2017-11-02 20:17 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2017-11-03 05:50 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2017-15041.html' target='_blank'>CVE-2017-15041&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-15042.html' target='_blank'>CVE-2017-15042&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Arbitrary code execution during go get or go get -d:<br />Go before 1.8.4 and 1.9.x before 1.9.1 allows &#34;go get&#34; remote command execution. Using custom domains, it is possible to arrange things so that example.com/pkg1 points to a Subversion repository but example.com/pkg1/pkg2 points to a Git repository. If the Subversion repository includes a Git checkout in its pkg2 directory and some other work is done to ensure the proper ordering of operations, &#34;go get&#34; can be tricked into reusing this Git checkout for the fetch of code from pkg2. If the Subversion repository&#39;s Git checkout has malicious commands in .git/hooks/, they will execute on the system running &#34;go get.&#34; (CVE-2017-15041)</p><p>smtp.PlainAuth susceptible to man-in-the-middle password harvesting<br />An unintended cleartext issue exists in Go before 1.8.4 and 1.9.x before 1.9.1. RFC 4954 requires that, during SMTP, the PLAIN auth scheme must only be used on network connections secured with TLS. The original implementation of smtp.PlainAuth in Go 1.0 enforced this requirement, and it was documented to do so. In 2013, upstream issue #5184, this was changed so that the server may decide whether PLAIN is acceptable. The result is that if you set up a man-in-the-middle SMTP server that doesn&#39;t advertise STARTTLS and does advertise that PLAIN auth is OK, the smtp.PlainAuth implementation sends the username and password. (CVE-2017-15042)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>golang</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update golang</i> to update your system.
+                                    <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; golang-bin-1.8.4-1.41.amzn1.i686<br />&nbsp;&nbsp;&nbsp; golang-1.8.4-1.41.amzn1.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; golang-tests-1.8.4-1.41.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; golang-src-1.8.4-1.41.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; golang-docs-1.8.4-1.41.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; golang-misc-1.8.4-1.41.amzn1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; golang-1.8.4-1.41.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; golang-bin-1.8.4-1.41.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; golang-race-1.8.4-1.41.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; golang-1.8.4-1.41.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-15041" target="_blank" rel="noopener noreferrer">CVE-2017-15041</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-15042" target="_blank" rel="noopener noreferrer">CVE-2017-15042</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15041" target="_blank" rel="noopener noreferrer">CVE-2017-15041</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15042" target="_blank" rel="noopener noreferrer">CVE-2017-15042</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

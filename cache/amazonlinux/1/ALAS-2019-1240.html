@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2019-1240</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2019-1240'>ALAS-2019-1240</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2019-1240
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2019-07-17 23:33 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2019-07-25 18:41 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2019-11038.html' target='_blank'>CVE-2019-11038&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-11039.html' target='_blank'>CVE-2019-11039&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-11040.html' target='_blank'>CVE-2019-11040&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Function iconv_mime_decode_headers() in PHP may perform out-of-buffer read due to integer overflow when parsing MIME headers. This may lead to information disclosure or crash.(CVE-2019-11039)</p><p>When using gdImageCreateFromXbm() function of PHP gd extension, it is possible to supply data that will cause the function to use the value of uninitialized variable. This may lead to disclosing contents of the stack that has been left there by previous code. (CVE-2019-11038)</p><p>When PHP EXIF extension is parsing EXIF information from an image, e.g. via exif_read_data() function, in PHP it is possible to supply it with data what will cause it to read past the allocated buffer. This may lead to information disclosure or crash. (CVE-2019-11040)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>php71, php72, php73</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update php71</i> to update your system.
+                                <br />Run <i>yum update php72</i> to update your system.
+                                <br />Run <i>yum update php73</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; php73-fpm-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-gd-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-bcmath-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-mysqlnd-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-common-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-cli-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-tidy-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-odbc-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-json-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-xmlrpc-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-pgsql-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-intl-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-mbstring-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-pdo-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-imap-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-debuginfo-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-gmp-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-dbg-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-embedded-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-opcache-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-dba-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-xml-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-process-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-devel-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-enchant-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-soap-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-pspell-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-ldap-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-pdo-dblib-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-recode-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php73-snmp-7.3.6-1.17.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-devel-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-pdo-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-pspell-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-embedded-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-json-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-tidy-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-debuginfo-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-pgsql-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-ldap-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-snmp-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-gmp-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-bcmath-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-mcrypt-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-common-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-mbstring-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-opcache-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-fpm-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-xmlrpc-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-pdo-dblib-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-recode-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-dbg-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-mysqlnd-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-odbc-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-cli-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-xml-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-imap-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-process-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-gd-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-intl-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-dba-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-enchant-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php71-soap-7.1.30-1.40.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-dbg-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-xmlrpc-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-process-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-imap-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-mysqlnd-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-bcmath-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-pdo-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-devel-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-fpm-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-ldap-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-cli-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-pgsql-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-pdo-dblib-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-snmp-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-mbstring-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-json-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-intl-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-debuginfo-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-opcache-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-pspell-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-recode-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-common-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-gd-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-embedded-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-enchant-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-xml-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-dba-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-gmp-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-odbc-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-tidy-7.2.19-1.14.amzn1.i686<br />&nbsp;&nbsp;&nbsp; php72-soap-7.2.19-1.14.amzn1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; php73-7.3.6-1.17.amzn1.src<br />&nbsp;&nbsp;&nbsp; php71-7.1.30-1.40.amzn1.src<br />&nbsp;&nbsp;&nbsp; php72-7.2.19-1.14.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; php73-dbg-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-recode-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-mysqlnd-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-devel-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-xmlrpc-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-pgsql-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-xml-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-opcache-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-dba-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-gmp-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-cli-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-json-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-pdo-dblib-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-mbstring-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-fpm-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-common-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-intl-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-imap-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-soap-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-debuginfo-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-odbc-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-embedded-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-ldap-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-bcmath-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-snmp-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-tidy-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-gd-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-pspell-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-pdo-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-process-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-enchant-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php73-7.3.6-1.17.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-dba-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-xml-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-imap-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-ldap-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-bcmath-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-mbstring-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-gd-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-fpm-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-pdo-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-soap-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-process-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-xmlrpc-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-devel-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-pspell-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-mcrypt-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-opcache-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-gmp-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-recode-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-pdo-dblib-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-embedded-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-snmp-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-intl-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-json-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-mysqlnd-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-cli-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-debuginfo-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-pgsql-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-enchant-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-common-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-tidy-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-dbg-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php71-odbc-7.1.30-1.40.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-bcmath-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-soap-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-odbc-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-mbstring-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-tidy-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-embedded-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-pspell-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-gmp-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-imap-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-debuginfo-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-dba-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-mysqlnd-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-ldap-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-process-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-xmlrpc-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-common-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-dbg-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-pdo-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-enchant-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-cli-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-devel-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-snmp-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-json-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-xml-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-intl-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-opcache-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-pgsql-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-recode-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-gd-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-fpm-7.2.19-1.14.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; php72-pdo-dblib-7.2.19-1.14.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-11038" target="_blank" rel="noopener noreferrer">CVE-2019-11038</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-11039" target="_blank" rel="noopener noreferrer">CVE-2019-11039</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-11040" target="_blank" rel="noopener noreferrer">CVE-2019-11040</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11038" target="_blank" rel="noopener noreferrer">CVE-2019-11038</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11039" target="_blank" rel="noopener noreferrer">CVE-2019-11039</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11040" target="_blank" rel="noopener noreferrer">CVE-2019-11040</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

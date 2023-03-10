@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2019-1337</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2019-1337'>ALAS2-2019-1337</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2019-1337
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2019-10-21 18:01 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2019-10-24 00:04 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Low<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2018-16062.html' target='_blank'>CVE-2018-16062&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-16402.html' target='_blank'>CVE-2018-16402&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-16403.html' target='_blank'>CVE-2018-16403&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-18310.html' target='_blank'>CVE-2018-18310&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-18520.html' target='_blank'>CVE-2018-18520&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2018-18521.html' target='_blank'>CVE-2018-18521&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-7149.html' target='_blank'>CVE-2019-7149&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-7150.html' target='_blank'>CVE-2019-7150&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-7664.html' target='_blank'>CVE-2019-7664&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-7665.html' target='_blank'>CVE-2019-7665&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>An out-of-bounds read was discovered in elfutils in the way it reads DWARF address ranges information. Function dwarf_getaranges() in dwarf_getaranges.c does not properly check whether it reads beyond the limits of the ELF section. An attacker could use this flaw to cause a denial of service via a crafted file.(CVE-2018-16062)</p><p>libelf/elf_end.c in elfutils 0.173 allows remote attackers to cause a denial of service (double free and application crash) or possibly have unspecified other impact because it tries to decompress twice.(CVE-2018-16402)</p><p>libdw in elfutils 0.173 checks the end of the attributes list incorrectly in dwarf_getabbrev in dwarf_getabbrev.c and dwarf_hasattr in dwarf_hasattr.c, leading to a heap-based buffer over-read and an application crash.(CVE-2018-16403)</p><p>An invalid memory address dereference was discovered in dwfl_segment_report_module.c in libdwfl in elfutils through v0.174. The vulnerability allows attackers to cause a denial of service (application crash) with a crafted ELF file, as demonstrated by consider_notes.(CVE-2018-18310)</p><p>An Invalid Memory Address Dereference exists in the function elf_end in libelf in elfutils through v0.174. Although eu-size is intended to support ar files inside ar files, handle_ar in size.c closes the outer ar file before handling all inner entries. The vulnerability allows attackers to cause a denial of service (application crash) with a crafted ELF file.(CVE-2018-18520)</p><p>Divide-by-zero vulnerabilities in the function arlib_add_symbols() in arlib.c in elfutils 0.174 allow remote attackers to cause a denial of service (application crash) with a crafted ELF file, as demonstrated by eu-ranlib, because a zero sh_entsize is mishandled.(CVE-2018-18521)</p><p>A heap-based buffer over-read was discovered in the function read_srclines in dwarf_getsrclines.c in libdw in elfutils 0.175. A crafted input can cause segmentation faults, leading to denial-of-service, as demonstrated by eu-nm.(CVE-2019-7149)</p><p>An issue was discovered in elfutils 0.175. A segmentation fault can occur in the function elf64_xlatetom in libelf/elf32_xlatetom.c, due to dwfl_segment_report_module not checking whether the dyn data read from a core file is truncated. A crafted input can cause a program crash, leading to denial-of-service, as demonstrated by eu-stack.(CVE-2019-7150)</p><p>In elfutils 0.175, a negative-sized memcpy is attempted in elf_cvt_note in libelf/note_xlate.h because of an incorrect overflow check. Crafted elf input causes a segmentation fault, leading to denial of service (program crash).(CVE-2019-7664)</p><p>In elfutils 0.175, a heap-based buffer over-read was discovered in the function elf32_xlatetom in elf32_xlatetom.c in libelf. A crafted ELF input can cause a segmentation fault leading to denial of service (program crash) because ebl_core_note does not reject malformed core file notes.(CVE-2019-7665)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>elfutils</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update elfutils</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; elfutils-0.176-2.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; elfutils-libs-0.176-2.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; elfutils-devel-0.176-2.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; elfutils-devel-static-0.176-2.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; elfutils-libelf-0.176-2.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; elfutils-libelf-devel-0.176-2.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; elfutils-libelf-devel-static-0.176-2.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; elfutils-debuginfo-0.176-2.amzn2.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; elfutils-0.176-2.amzn2.i686<br />&nbsp;&nbsp;&nbsp; elfutils-libs-0.176-2.amzn2.i686<br />&nbsp;&nbsp;&nbsp; elfutils-devel-0.176-2.amzn2.i686<br />&nbsp;&nbsp;&nbsp; elfutils-devel-static-0.176-2.amzn2.i686<br />&nbsp;&nbsp;&nbsp; elfutils-libelf-0.176-2.amzn2.i686<br />&nbsp;&nbsp;&nbsp; elfutils-libelf-devel-0.176-2.amzn2.i686<br />&nbsp;&nbsp;&nbsp; elfutils-libelf-devel-static-0.176-2.amzn2.i686<br />&nbsp;&nbsp;&nbsp; elfutils-debuginfo-0.176-2.amzn2.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; elfutils-default-yama-scope-0.176-2.amzn2.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; elfutils-0.176-2.amzn2.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; elfutils-0.176-2.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; elfutils-libs-0.176-2.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; elfutils-devel-0.176-2.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; elfutils-devel-static-0.176-2.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; elfutils-libelf-0.176-2.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; elfutils-libelf-devel-0.176-2.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; elfutils-libelf-devel-static-0.176-2.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; elfutils-debuginfo-0.176-2.amzn2.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-16062" target="_blank" rel="noopener noreferrer">CVE-2018-16062</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-16402" target="_blank" rel="noopener noreferrer">CVE-2018-16402</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-16403" target="_blank" rel="noopener noreferrer">CVE-2018-16403</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-18310" target="_blank" rel="noopener noreferrer">CVE-2018-18310</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-18520" target="_blank" rel="noopener noreferrer">CVE-2018-18520</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2018-18521" target="_blank" rel="noopener noreferrer">CVE-2018-18521</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-7149" target="_blank" rel="noopener noreferrer">CVE-2019-7149</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-7150" target="_blank" rel="noopener noreferrer">CVE-2019-7150</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-7664" target="_blank" rel="noopener noreferrer">CVE-2019-7664</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-7665" target="_blank" rel="noopener noreferrer">CVE-2019-7665</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16062" target="_blank" rel="noopener noreferrer">CVE-2018-16062</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16402" target="_blank" rel="noopener noreferrer">CVE-2018-16402</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16403" target="_blank" rel="noopener noreferrer">CVE-2018-16403</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18310" target="_blank" rel="noopener noreferrer">CVE-2018-18310</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18520" target="_blank" rel="noopener noreferrer">CVE-2018-18520</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18521" target="_blank" rel="noopener noreferrer">CVE-2018-18521</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-7149" target="_blank" rel="noopener noreferrer">CVE-2019-7149</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-7150" target="_blank" rel="noopener noreferrer">CVE-2019-7150</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-7664" target="_blank" rel="noopener noreferrer">CVE-2019-7664</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-7665" target="_blank" rel="noopener noreferrer">CVE-2019-7665</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

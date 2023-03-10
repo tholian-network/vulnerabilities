@@ -10,9 +10,33 @@
 	"summary": "An update for oniguruma is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "2",
 	"pkglist": {
-		"name": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
-		"shortname": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
+		"name": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
+		"shortname": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
 		"packages": [
+			{
+				"src": "oniguruma-6.8.2-2.el8.src.rpm",
+				"name": "oniguruma",
+				"epoch": "0",
+				"version": "6.8.2",
+				"release": "2.el8",
+				"arch": "aarch64",
+				"filename": "oniguruma-6.8.2-2.el8.aarch64.rpm",
+				"sum": "4c698aa447aa904a2a9b88077ddacc421087ce655183021bc025a96e08e6c84f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "oniguruma-6.8.2-2.el8.src.rpm",
+				"name": "oniguruma-devel",
+				"epoch": "0",
+				"version": "6.8.2",
+				"release": "2.el8",
+				"arch": "aarch64",
+				"filename": "oniguruma-devel-6.8.2-2.el8.aarch64.rpm",
+				"sum": "4c8611499bcdcf4dcc947bb22f05b811024a987e696215149daaf8011ef27eb5",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "oniguruma-6.8.2-2.el8.src.rpm",
 				"name": "oniguruma-devel",
@@ -51,42 +75,6 @@
 			},
 			{
 				"src": "oniguruma-6.8.2-2.el8.src.rpm",
-				"name": "oniguruma",
-				"epoch": "0",
-				"version": "6.8.2",
-				"release": "2.el8",
-				"arch": "aarch64",
-				"filename": "oniguruma-6.8.2-2.el8.aarch64.rpm",
-				"sum": "4c698aa447aa904a2a9b88077ddacc421087ce655183021bc025a96e08e6c84f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "oniguruma-6.8.2-2.el8.src.rpm",
-				"name": "oniguruma-devel",
-				"epoch": "0",
-				"version": "6.8.2",
-				"release": "2.el8",
-				"arch": "aarch64",
-				"filename": "oniguruma-devel-6.8.2-2.el8.aarch64.rpm",
-				"sum": "4c8611499bcdcf4dcc947bb22f05b811024a987e696215149daaf8011ef27eb5",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "oniguruma-6.8.2-2.el8.src.rpm",
-				"name": "oniguruma",
-				"epoch": "0",
-				"version": "6.8.2",
-				"release": "2.el8",
-				"arch": "i686",
-				"filename": "oniguruma-6.8.2-2.el8.i686.rpm",
-				"sum": "e36259807e0c28b1ec118e3e3f0ac3792b01da27bbd745a576e3c23a8d6d0d32",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "oniguruma-6.8.2-2.el8.src.rpm",
 				"name": "oniguruma-devel",
 				"epoch": "0",
 				"version": "6.8.2",
@@ -108,11 +96,29 @@
 				"sum": "94e3f7866c395c5f06f4a10b961ed1d3d7c642e3337374839ebeec5896268366",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "oniguruma-6.8.2-2.el8.src.rpm",
+				"name": "oniguruma",
+				"epoch": "0",
+				"version": "6.8.2",
+				"release": "2.el8",
+				"arch": "i686",
+				"filename": "oniguruma-6.8.2-2.el8.i686.rpm",
+				"sum": "e36259807e0c28b1ec118e3e3f0ac3792b01da27bbd745a576e3c23a8d6d0d32",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "Oniguruma is a regular expressions library that supports a variety of character encodings. \n\nSecurity Fix(es):\n\n* oniguruma: NULL pointer dereference in match_at() in regexec.c (CVE-2019-13225)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
+		{
+			"id": "ALSA-2020-4827",
+			"title": "ALSA-2020-4827",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2020-4827.html"
+		},
 		{
 			"id": "CVE-2019-13225",
 			"title": "CVE-2019-13225",
@@ -124,6 +130,6 @@
 		"$date": 1604407154000
 	},
 	"updated_date": {
-		"$date": 1628672040000
+		"$date": 1604433678000
 	}
 }

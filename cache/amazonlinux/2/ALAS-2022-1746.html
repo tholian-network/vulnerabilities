@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2022-1746</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2022-1746'>ALAS2-2022-1746</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2022-1746
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2022-02-03 19:29 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2022-03-07 21:43 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Critical<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2016-2124.html' target='_blank'>CVE-2016-2124&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-25717.html' target='_blank'>CVE-2020-25717&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-44142.html' target='_blank'>CVE-2021-44142&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Out-of-bounds heap read/write vulnerability in VFS module vfs_fruit allows code execution (CVE-2021-44142)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>samba</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update samba</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; samba-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; samba-client-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; samba-client-libs-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; samba-common-libs-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; samba-common-tools-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; samba-dc-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; samba-dc-libs-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; samba-devel-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; samba-krb5-printing-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; samba-libs-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; libsmbclient-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; libsmbclient-devel-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; libwbclient-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; libwbclient-devel-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; samba-python-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; samba-python-test-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; samba-test-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; samba-test-libs-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; samba-winbind-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; samba-winbind-clients-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; samba-winbind-krb5-locator-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; samba-winbind-modules-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; ctdb-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; ctdb-tests-4.10.16-18.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; samba-debuginfo-4.10.16-18.amzn2.0.1.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; samba-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; samba-client-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; samba-client-libs-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; samba-common-libs-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; samba-common-tools-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; samba-dc-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; samba-dc-libs-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; samba-devel-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; samba-krb5-printing-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; samba-libs-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; libsmbclient-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; libsmbclient-devel-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; libwbclient-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; libwbclient-devel-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; samba-python-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; samba-python-test-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; samba-test-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; samba-test-libs-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; samba-winbind-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; samba-winbind-clients-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; samba-winbind-krb5-locator-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; samba-winbind-modules-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; ctdb-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; ctdb-tests-4.10.16-18.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; samba-debuginfo-4.10.16-18.amzn2.0.1.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; samba-common-4.10.16-18.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; samba-pidl-4.10.16-18.amzn2.0.1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; samba-4.10.16-18.amzn2.0.1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; samba-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-client-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-client-libs-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-common-libs-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-common-tools-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-dc-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-dc-libs-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-devel-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-vfs-glusterfs-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-krb5-printing-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-libs-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; libsmbclient-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; libsmbclient-devel-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; libwbclient-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; libwbclient-devel-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-python-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-python-test-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-test-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-test-libs-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-winbind-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-winbind-clients-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-winbind-krb5-locator-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-winbind-modules-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; ctdb-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; ctdb-tests-4.10.16-18.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; samba-debuginfo-4.10.16-18.amzn2.0.1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-2124" target="_blank" rel="noopener noreferrer">CVE-2016-2124</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-25717" target="_blank" rel="noopener noreferrer">CVE-2020-25717</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-44142" target="_blank" rel="noopener noreferrer">CVE-2021-44142</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2124" target="_blank" rel="noopener noreferrer">CVE-2016-2124</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25717" target="_blank" rel="noopener noreferrer">CVE-2020-25717</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44142" target="_blank" rel="noopener noreferrer">CVE-2021-44142</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

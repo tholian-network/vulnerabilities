@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2021-1586</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2021-1586'>ALAS2-2021-1586</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2021-1586
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2021-01-05 23:35 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2021-01-06 21:04 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2020-16012.html' target='_blank'>CVE-2020-16012&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-16042.html' target='_blank'>CVE-2020-16042&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-26951.html' target='_blank'>CVE-2020-26951&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-26953.html' target='_blank'>CVE-2020-26953&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-26956.html' target='_blank'>CVE-2020-26956&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-26958.html' target='_blank'>CVE-2020-26958&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-26959.html' target='_blank'>CVE-2020-26959&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-26960.html' target='_blank'>CVE-2020-26960&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-26961.html' target='_blank'>CVE-2020-26961&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-26965.html' target='_blank'>CVE-2020-26965&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-26968.html' target='_blank'>CVE-2020-26968&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-26971.html' target='_blank'>CVE-2020-26971&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-26973.html' target='_blank'>CVE-2020-26973&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-26974.html' target='_blank'>CVE-2020-26974&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-26978.html' target='_blank'>CVE-2020-26978&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-35111.html' target='_blank'>CVE-2020-35111&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-35113.html' target='_blank'>CVE-2020-35113&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>When drawing a transparent image on top of an unknown cross-origin image, the Skia library `drawImage` function took a variable amount of time depending on the content of the underlying image. This resulted in potential cross-origin information exposure of image content through timing side-channel attacks. (CVE-2020-16012)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:<br />When a BigInt was right-shifted the backing store was not properly cleared, allowing uninitialized memory to be read. (CVE-2020-16042)</p><p>A parsing and event loading mismatch in Firefox&#39;s SVG code could have allowed load events to fire, even after sanitization. An attacker already capable of exploiting an XSS vulnerability in privileged internal pages could have used this attack to bypass our built-in sanitizer. This vulnerability affects Firefox &lt; 83, Firefox ESR &lt; 78.5, and Thunderbird &lt; 78.5. (CVE-2020-26951)</p><p>It was possible to cause the browser to enter fullscreen mode without displaying the security UI; thus making it possible to attempt a phishing attack or otherwise confuse the user. This vulnerability affects Firefox &lt; 83, Firefox ESR &lt; 78.5, and Thunderbird &lt; 78.5. (CVE-2020-26953)</p><p>In some cases, removing HTML elements during sanitization would keep existing SVG event handlers and therefore lead to XSS. This vulnerability affects Firefox &lt; 83, Firefox ESR &lt; 78.5, and Thunderbird &lt; 78.5. (CVE-2020-26956)</p><p>Firefox did not block execution of scripts with incorrect MIME types when the response was intercepted and cached through a ServiceWorker. This could lead to a cross-site script inclusion vulnerability, or a Content Security Policy bypass. This vulnerability affects Firefox &lt; 83, Firefox ESR &lt; 78.5, and Thunderbird &lt; 78.5. (CVE-2020-26958)</p><p>During browser shutdown, reference decrementing could have occured on a previously freed object, resulting in a use-after-free, memory corruption, and a potentially exploitable crash. This vulnerability affects Firefox &lt; 83, Firefox ESR &lt; 78.5, and Thunderbird &lt; 78.5. (CVE-2020-26959)</p><p>If the Compact() method was called on an nsTArray, the array could have been reallocated without updating other pointers, leading to a potential use-after-free and exploitable crash. This vulnerability affects Firefox &lt; 83, Firefox ESR &lt; 78.5, and Thunderbird &lt; 78.5. (CVE-2020-26960)</p><p>When DNS over HTTPS is in use, it intentionally filters RFC1918 and related IP ranges from the responses as these do not make sense coming from a DoH resolver. However when an IPv4 address was mapped through IPv6, these addresses were erroneously let through, leading to a potential DNS Rebinding attack. This vulnerability affects Firefox &lt; 83, Firefox ESR &lt; 78.5, and Thunderbird &lt; 78.5. (CVE-2020-26961)</p><p>Some websites have a feature &#34;Show Password&#34; where clicking a button will change a password field into a textbook field, revealing the typed password. If, when using a software keyboard that remembers user input, a user typed their password and used that feature, the type of the password field was changed, resulting in a keyboard layout change and the possibility for the software keyboard to remember the typed password. This vulnerability affects Firefox &lt; 83, Firefox ESR &lt; 78.5, and Thunderbird &lt; 78.5. (CVE-2020-26965)</p><p>Mozilla developers reported memory safety bugs present in Firefox 82 and Firefox ESR 78.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox &lt; 83, Firefox ESR &lt; 78.5, and Thunderbird &lt; 78.5. (CVE-2020-26968)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:<br />Certain blit values provided by the user were not properly constrained leading to a heap buffer overflow on some video drivers. (CVE-2020-26971)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:<br />Certain input to the CSS Sanitizer confused it, resulting in incorrect components being removed. This could have been used as a sanitizer bypass. (CVE-2020-26973)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:<br />When `flex-basis` was used on a table wrapper, a `StyleGenericFlexBasis` object could have been incorrectly cast to the wrong type. This resulted in a heap user-after-free, memory corruption, and a potentially exploitable crash. (CVE-2020-26974)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:<br />Using techniques that built on the slipstream research, a malicious webpage could have exposed both an internal network&#39;s hosts as well as services running on the user&#39;s local machine. (CVE-2020-26978)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:<br />When an extension with the proxy permission registered to receive `&lt;all_urls&gt;`, the proxy.onRequest callback was not triggered for view-source URLs. While web content cannot navigate to such URLs, a user opening View Source could have inadvertently leaked their IP address. (CVE-2020-35111)</p><p>The Mozilla Foundation Security Advisory describes this flaw as:<br />Mozilla developer reported memory safety bugs present in Firefox 83 and Firefox ESR 78.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. (CVE-2020-35113)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>thunderbird</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update thunderbird</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; thunderbird-78.6.0-1.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; thunderbird-debuginfo-78.6.0-1.amzn2.aarch64<br /><br />src:<br />&nbsp;&nbsp;&nbsp; thunderbird-78.6.0-1.amzn2.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; thunderbird-78.6.0-1.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; thunderbird-debuginfo-78.6.0-1.amzn2.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-16012" target="_blank" rel="noopener noreferrer">CVE-2020-16012</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-16042" target="_blank" rel="noopener noreferrer">CVE-2020-16042</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-26951" target="_blank" rel="noopener noreferrer">CVE-2020-26951</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-26953" target="_blank" rel="noopener noreferrer">CVE-2020-26953</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-26956" target="_blank" rel="noopener noreferrer">CVE-2020-26956</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-26958" target="_blank" rel="noopener noreferrer">CVE-2020-26958</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-26959" target="_blank" rel="noopener noreferrer">CVE-2020-26959</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-26960" target="_blank" rel="noopener noreferrer">CVE-2020-26960</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-26961" target="_blank" rel="noopener noreferrer">CVE-2020-26961</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-26965" target="_blank" rel="noopener noreferrer">CVE-2020-26965</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-26968" target="_blank" rel="noopener noreferrer">CVE-2020-26968</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-26971" target="_blank" rel="noopener noreferrer">CVE-2020-26971</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-26973" target="_blank" rel="noopener noreferrer">CVE-2020-26973</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-26974" target="_blank" rel="noopener noreferrer">CVE-2020-26974</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-26978" target="_blank" rel="noopener noreferrer">CVE-2020-26978</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-35111" target="_blank" rel="noopener noreferrer">CVE-2020-35111</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-35113" target="_blank" rel="noopener noreferrer">CVE-2020-35113</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-16012" target="_blank" rel="noopener noreferrer">CVE-2020-16012</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-16042" target="_blank" rel="noopener noreferrer">CVE-2020-16042</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26951" target="_blank" rel="noopener noreferrer">CVE-2020-26951</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26953" target="_blank" rel="noopener noreferrer">CVE-2020-26953</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26956" target="_blank" rel="noopener noreferrer">CVE-2020-26956</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26958" target="_blank" rel="noopener noreferrer">CVE-2020-26958</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26959" target="_blank" rel="noopener noreferrer">CVE-2020-26959</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26960" target="_blank" rel="noopener noreferrer">CVE-2020-26960</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26961" target="_blank" rel="noopener noreferrer">CVE-2020-26961</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26965" target="_blank" rel="noopener noreferrer">CVE-2020-26965</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26968" target="_blank" rel="noopener noreferrer">CVE-2020-26968</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26971" target="_blank" rel="noopener noreferrer">CVE-2020-26971</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26973" target="_blank" rel="noopener noreferrer">CVE-2020-26973</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26974" target="_blank" rel="noopener noreferrer">CVE-2020-26974</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26978" target="_blank" rel="noopener noreferrer">CVE-2020-26978</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35111" target="_blank" rel="noopener noreferrer">CVE-2020-35111</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35113" target="_blank" rel="noopener noreferrer">CVE-2020-35113</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

@@ -10,21 +10,9 @@
 	"summary": "varnish security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-i686-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-i686-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
 		"packages": [
-			{
-				"src": "varnish-6.6.2-2.el9_1.1.src.rpm",
-				"name": "varnish",
-				"epoch": "0",
-				"version": "6.6.2",
-				"release": "2.el9_1.1",
-				"arch": "i686",
-				"filename": "varnish-6.6.2-2.el9_1.1.i686.rpm",
-				"sum": "9c8e5290a36bf609612a0e87de5c0af8274e941146df35fb992f244856d5593f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "varnish-6.6.2-2.el9_1.1.src.rpm",
 				"name": "varnish",
@@ -46,6 +34,18 @@
 				"arch": "aarch64",
 				"filename": "varnish-docs-6.6.2-2.el9_1.1.aarch64.rpm",
 				"sum": "d91dec72b65912d9cd72a374acf8e9858790dd218bb83124b271e011db5312ea",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "varnish-6.6.2-2.el9_1.1.src.rpm",
+				"name": "varnish",
+				"epoch": "0",
+				"version": "6.6.2",
+				"release": "2.el9_1.1",
+				"arch": "i686",
+				"filename": "varnish-6.6.2-2.el9_1.1.i686.rpm",
+				"sum": "9c8e5290a36bf609612a0e87de5c0af8274e941146df35fb992f244856d5593f",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -87,6 +87,30 @@
 			},
 			{
 				"src": "varnish-6.6.2-2.el9_1.1.src.rpm",
+				"name": "varnish-devel",
+				"epoch": "0",
+				"version": "6.6.2",
+				"release": "2.el9_1.1",
+				"arch": "i686",
+				"filename": "varnish-devel-6.6.2-2.el9_1.1.i686.rpm",
+				"sum": "28bd24d2caa29de715780722052283a27dd03cc6c5220f7387413b131256e3cb",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "varnish-6.6.2-2.el9_1.1.src.rpm",
+				"name": "varnish-devel",
+				"epoch": "0",
+				"version": "6.6.2",
+				"release": "2.el9_1.1",
+				"arch": "ppc64le",
+				"filename": "varnish-devel-6.6.2-2.el9_1.1.ppc64le.rpm",
+				"sum": "69d91c9edf2e03ac0a7f680b6519ba79b71803365c05d4bc1d2b97636b5a1abf",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "varnish-6.6.2-2.el9_1.1.src.rpm",
 				"name": "varnish",
 				"epoch": "0",
 				"version": "6.6.2",
@@ -115,21 +139,9 @@
 				"epoch": "0",
 				"version": "6.6.2",
 				"release": "2.el9_1.1",
-				"arch": "i686",
-				"filename": "varnish-devel-6.6.2-2.el9_1.1.i686.rpm",
-				"sum": "28bd24d2caa29de715780722052283a27dd03cc6c5220f7387413b131256e3cb",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "varnish-6.6.2-2.el9_1.1.src.rpm",
-				"name": "varnish-devel",
-				"epoch": "0",
-				"version": "6.6.2",
-				"release": "2.el9_1.1",
-				"arch": "ppc64le",
-				"filename": "varnish-devel-6.6.2-2.el9_1.1.ppc64le.rpm",
-				"sum": "69d91c9edf2e03ac0a7f680b6519ba79b71803365c05d4bc1d2b97636b5a1abf",
+				"arch": "s390x",
+				"filename": "varnish-devel-6.6.2-2.el9_1.1.s390x.rpm",
+				"sum": "085c10efb72c94d794df0afd2eae9375e042b6d50a154e9a1bdfee603517fb33",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -142,18 +154,6 @@
 				"arch": "aarch64",
 				"filename": "varnish-devel-6.6.2-2.el9_1.1.aarch64.rpm",
 				"sum": "7c4beeebf942e4699bbde45b92950d638a9b54c33d6a7c736b5378dfb52f21c7",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "varnish-6.6.2-2.el9_1.1.src.rpm",
-				"name": "varnish-devel",
-				"epoch": "0",
-				"version": "6.6.2",
-				"release": "2.el9_1.1",
-				"arch": "s390x",
-				"filename": "varnish-devel-6.6.2-2.el9_1.1.s390x.rpm",
-				"sum": "085c10efb72c94d794df0afd2eae9375e042b6d50a154e9a1bdfee603517fb33",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}

@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2013-148</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2013-148'>ALAS-2013-148</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2013-148
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2013-01-14 01:14 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2014-09-14 17:22 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2012-2100.html' target='_blank'>CVE-2012-2100&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-2375.html' target='_blank'>CVE-2012-2375&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-4444.html' target='_blank'>CVE-2012-4444&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-4565.html' target='_blank'>CVE-2012-4565&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-5517.html' target='_blank'>CVE-2012-5517&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='https://rhn.redhat.com/errata/RHSA-2012-1580.html' target='_blank'>RHSA-2012-1580&nbsp;<i class='fas fa-external-link-alt'></i></a><br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>A malicious Network File System version 4 (NFSv4) server could return a crafted reply to a GETACL request, causing a denial of service on the client. (CVE-2012-2375, Moderate)</p><p>A divide-by-zero flaw was found in the TCP Illinois congestion control algorithm implementation in the Linux kernel. If the TCP Illinois congestion control algorithm were in use (the sysctl net.ipv4.tcp_congestion_control variable set to &#34;illinois&#34;), a local, unprivileged user could trigger this flaw and cause a denial of service. (CVE-2012-4565, Moderate)</p><p>A NULL pointer dereference flaw was found in the way a new node&#39;s hot added memory was propagated to other nodes&#39; zonelists. By utilizing this newly added memory from one of the remaining nodes, a local, unprivileged user could use this flaw to cause a denial of service. (CVE-2012-5517, Moderate)</p><p>It was found that a prevoius kernel release did not correctly fix the CVE-2009-4307 issue, a divide-by-zero flaw in the ext4 file system code. A local, unprivileged user with the ability to mount an ext4 file system could use this flaw to cause a denial of service. (CVE-2012-2100, Low)</p><p>A flaw was found in the way the Linux kernel&#39;s IPv6 implementation handled overlapping, fragmented IPv6 packets. A remote attacker could potentially use this flaw to bypass protection mechanisms (such as a firewall or intrusion detection system (IDS)) when sending network packets to a target system. (CVE-2012-4444, Low)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>kernel, nvidia</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update kernel nvidia</i> to update your system.  You will need to reboot your system in order for the new kernel to be running.</div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; kernel-devel-3.2.36-1.46.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-headers-3.2.36-1.46.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-tools-debuginfo-3.2.36-1.46.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-tools-3.2.36-1.46.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-3.2.36-1.46.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-3.2.36-1.46.amzn1.i686<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-common-i686-3.2.36-1.46.amzn1.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; kernel-doc-3.2.36-1.46.amzn1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; kernel-3.2.36-1.46.amzn1.src<br />&nbsp;&nbsp;&nbsp; nvidia-310.19-2012.09.10.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; kernel-devel-3.2.36-1.46.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-common-x86_64-3.2.36-1.46.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-tools-3.2.36-1.46.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-3.2.36-1.46.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-3.2.36-1.46.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-tools-debuginfo-3.2.36-1.46.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-headers-3.2.36-1.46.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; nvidia-310.19-2012.09.10.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; nvidia-kmod-3.2.36-1.46.amzn1-310.19-2012.09.10.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-2100" target="_blank" rel="noopener noreferrer">CVE-2012-2100</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-2375" target="_blank" rel="noopener noreferrer">CVE-2012-2375</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-4444" target="_blank" rel="noopener noreferrer">CVE-2012-4444</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-4565" target="_blank" rel="noopener noreferrer">CVE-2012-4565</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-5517" target="_blank" rel="noopener noreferrer">CVE-2012-5517</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2100" target="_blank" rel="noopener noreferrer">CVE-2012-2100</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2375" target="_blank" rel="noopener noreferrer">CVE-2012-2375</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4444" target="_blank" rel="noopener noreferrer">CVE-2012-4444</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4565" target="_blank" rel="noopener noreferrer">CVE-2012-4565</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5517" target="_blank" rel="noopener noreferrer">CVE-2012-5517</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2012-088</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2012-088'>ALAS-2012-088</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2012-88
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2012-06-19 15:58 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2014-09-14 16:20 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2012-1711.html' target='_blank'>CVE-2012-1711&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-1713.html' target='_blank'>CVE-2012-1713&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-1716.html' target='_blank'>CVE-2012-1716&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-1717.html' target='_blank'>CVE-2012-1717&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-1718.html' target='_blank'>CVE-2012-1718&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-1723.html' target='_blank'>CVE-2012-1723&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2012-1724.html' target='_blank'>CVE-2012-1724&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='https://rhn.redhat.com/errata/RHSA-2012-0729.html' target='_blank'>RHSA-2012-0729&nbsp;<i class='fas fa-external-link-alt'></i></a><br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Multiple flaws were discovered in the CORBA (Common Object Request Broker Architecture) implementation in Java. A malicious Java application or applet could use these flaws to bypass Java sandbox restrictions or modify immutable object data. (CVE-2012-1711, CVE-2012-1719)</p><p>It was discovered that the SynthLookAndFeel class from Swing did not properly prevent access to certain UI elements from outside the current application context. A malicious Java application or applet could use this flaw to crash the Java Virtual Machine, or bypass Java sandbox restrictions. (CVE-2012-1716)</p><p>Multiple flaws were discovered in the font manager&#39;s layout lookup implementation. A specially-crafted font file could cause the Java Virtual Machine to crash or, possibly, execute arbitrary code with the privileges of the user running the virtual machine. (CVE-2012-1713)</p><p>Multiple flaws were found in the way the Java HotSpot Virtual Machine verified the bytecode of the class file to be executed. A specially-crafted Java application or applet could use these flaws to crash the Java Virtual Machine, or bypass Java sandbox restrictions. (CVE-2012-1723, CVE-2012-1725)</p><p>It was discovered that the Java XML parser did not properly handle certain XML documents. An attacker able to make a Java application parse a specially-crafted XML file could use this flaw to make the XML parser enter an infinite loop. (CVE-2012-1724)</p><p>It was discovered that the Java security classes did not properly handle Certificate Revocation Lists (CRL). CRL containing entries with duplicate certificate serial numbers could have been ignored. (CVE-2012-1718)</p><p>It was discovered that various classes of the Java Runtime library could create temporary files with insecure permissions. A local attacker could use this flaw to gain access to the content of such temporary files. (CVE-2012-1717)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>java-1.6.0-openjdk</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update java-1.6.0-openjdk</i> to update your system.</div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-devel-1.6.0.0-52.1.11.3.45.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-src-1.6.0.0-52.1.11.3.45.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-1.6.0.0-52.1.11.3.45.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-javadoc-1.6.0.0-52.1.11.3.45.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-demo-1.6.0.0-52.1.11.3.45.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-debuginfo-1.6.0.0-52.1.11.3.45.amzn1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-1.6.0.0-52.1.11.3.45.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-devel-1.6.0.0-52.1.11.3.45.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-src-1.6.0.0-52.1.11.3.45.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-1.6.0.0-52.1.11.3.45.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-debuginfo-1.6.0.0-52.1.11.3.45.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-demo-1.6.0.0-52.1.11.3.45.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-javadoc-1.6.0.0-52.1.11.3.45.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-1711" target="_blank" rel="noopener noreferrer">CVE-2012-1711</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-1713" target="_blank" rel="noopener noreferrer">CVE-2012-1713</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-1716" target="_blank" rel="noopener noreferrer">CVE-2012-1716</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-1717" target="_blank" rel="noopener noreferrer">CVE-2012-1717</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-1718" target="_blank" rel="noopener noreferrer">CVE-2012-1718</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-1723" target="_blank" rel="noopener noreferrer">CVE-2012-1723</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2012-1724" target="_blank" rel="noopener noreferrer">CVE-2012-1724</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1711" target="_blank" rel="noopener noreferrer">CVE-2012-1711</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1713" target="_blank" rel="noopener noreferrer">CVE-2012-1713</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1716" target="_blank" rel="noopener noreferrer">CVE-2012-1716</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1717" target="_blank" rel="noopener noreferrer">CVE-2012-1717</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1718" target="_blank" rel="noopener noreferrer">CVE-2012-1718</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1723" target="_blank" rel="noopener noreferrer">CVE-2012-1723</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1724" target="_blank" rel="noopener noreferrer">CVE-2012-1724</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

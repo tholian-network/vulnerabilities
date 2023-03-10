@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2017-827</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2017-827'>ALAS-2017-827</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2017-827
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2017-05-09 23:21 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2017-05-10 23:59 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2016-5542.html' target='_blank'>CVE-2016-5542&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-3509.html' target='_blank'>CVE-2017-3509&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-3511.html' target='_blank'>CVE-2017-3511&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-3526.html' target='_blank'>CVE-2017-3526&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-3533.html' target='_blank'>CVE-2017-3533&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-3539.html' target='_blank'>CVE-2017-3539&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2017-3544.html' target='_blank'>CVE-2017-3544&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Improper re-use of NTLM authenticated connections (Networking, 8163520):<br />It was discovered that the HTTP client implementation in the Networking component of OpenJDK could cache and re-use an NTLM authenticated connection in a different security context. A remote attacker could possibly use this flaw to make a Java application perform HTTP requests authenticated with credentials of a different user. (CVE-2017-3509)</p><p>Newline injection in the SMTP client (Networking, 8171533):<br />A newline injection flaw was discovered in the SMTP client implementation in the Networking component in OpenJDK. A remote attacker could possibly use this flaw to manipulate SMTP connections established by a Java application. (CVE-2017-3544)</p><p>Newline injection in the FTP client (Networking, 8170222)<br />A newline injection flaw was discovered in the FTP client implementation in the Networking component in OpenJDK. A remote attacker could possibly use this flaw to manipulate FTP connections established by a Java application. (CVE-2017-3533)</p><p>Missing algorithm restrictions for jar verification (Libraries, 8155973):<br />It was discovered that the Libraries component of OpenJDK did not restrict the set of algorithms used for JAR integrity verification. This flaw could allow an attacker to modify content of the JAR file that used weak signing key or hash algorithm. (CVE-2016-5542)</p><p>Untrusted extension directories search path in Launcher (JCE, 8163528)<br />An untrusted library search path flaw was found in the JCE component of OpenJDK. A local attacker could possibly use this flaw to cause a Java application using JCE to load an attacker-controlled library and hence escalate their privileges. (CVE-2017-3511)</p><p>MD5 allowed for jar verification (Security, 8171121)<br />It was discovered that the Security component of OpenJDK did not allow users to restrict the set of algorithms allowed for Jar integrity verification. This flaw could allow an attacker to modify content of the Jar file that used weak signing key or hash algorithm. (CVE-2017-3539)</p><p>Incomplete XML parse tree size enforcement (JAXP, 8169011)<br />It was found that the JAXP component of OpenJDK failed to correctly enforce parse tree size limits when parsing XML document. An attacker able to make a Java application parse a specially crafted XML document could use this flaw to make it consume an excessive amount of CPU and memory. (CVE-2017-3526)<br /></p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>java-1.8.0-openjdk</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update java-1.8.0-openjdk</i> to update your system.
+                                    <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; java-1.8.0-openjdk-headless-1.8.0.131-2.b11.30.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.8.0-openjdk-devel-1.8.0.131-2.b11.30.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.8.0-openjdk-1.8.0.131-2.b11.30.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.8.0-openjdk-src-1.8.0.131-2.b11.30.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.8.0-openjdk-demo-1.8.0.131-2.b11.30.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.8.0-openjdk-debuginfo-1.8.0.131-2.b11.30.amzn1.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; java-1.8.0-openjdk-javadoc-zip-1.8.0.131-2.b11.30.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; java-1.8.0-openjdk-javadoc-1.8.0.131-2.b11.30.amzn1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; java-1.8.0-openjdk-1.8.0.131-2.b11.30.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; java-1.8.0-openjdk-src-1.8.0.131-2.b11.30.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.8.0-openjdk-debuginfo-1.8.0.131-2.b11.30.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.8.0-openjdk-demo-1.8.0.131-2.b11.30.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.8.0-openjdk-headless-1.8.0.131-2.b11.30.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.8.0-openjdk-1.8.0.131-2.b11.30.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.8.0-openjdk-devel-1.8.0.131-2.b11.30.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-5542" target="_blank" rel="noopener noreferrer">CVE-2016-5542</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-3509" target="_blank" rel="noopener noreferrer">CVE-2017-3509</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-3511" target="_blank" rel="noopener noreferrer">CVE-2017-3511</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-3526" target="_blank" rel="noopener noreferrer">CVE-2017-3526</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-3533" target="_blank" rel="noopener noreferrer">CVE-2017-3533</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-3539" target="_blank" rel="noopener noreferrer">CVE-2017-3539</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2017-3544" target="_blank" rel="noopener noreferrer">CVE-2017-3544</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5542" target="_blank" rel="noopener noreferrer">CVE-2016-5542</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3509" target="_blank" rel="noopener noreferrer">CVE-2017-3509</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3511" target="_blank" rel="noopener noreferrer">CVE-2017-3511</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3526" target="_blank" rel="noopener noreferrer">CVE-2017-3526</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3533" target="_blank" rel="noopener noreferrer">CVE-2017-3533</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3539" target="_blank" rel="noopener noreferrer">CVE-2017-3539</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3544" target="_blank" rel="noopener noreferrer">CVE-2017-3544</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

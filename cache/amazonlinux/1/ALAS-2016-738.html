@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2016-738</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2016-738'>ALAS-2016-738</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2016-738
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2016-08-17 13:30 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2016-08-17 13:30 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2016-0505.html' target='_blank'>CVE-2016-0505&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0546.html' target='_blank'>CVE-2016-0546&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0596.html' target='_blank'>CVE-2016-0596&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0597.html' target='_blank'>CVE-2016-0597&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0598.html' target='_blank'>CVE-2016-0598&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0600.html' target='_blank'>CVE-2016-0600&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0606.html' target='_blank'>CVE-2016-0606&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0608.html' target='_blank'>CVE-2016-0608&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0609.html' target='_blank'>CVE-2016-0609&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0616.html' target='_blank'>CVE-2016-0616&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0640.html' target='_blank'>CVE-2016-0640&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0641.html' target='_blank'>CVE-2016-0641&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0642.html' target='_blank'>CVE-2016-0642&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0643.html' target='_blank'>CVE-2016-0643&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0644.html' target='_blank'>CVE-2016-0644&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0646.html' target='_blank'>CVE-2016-0646&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0647.html' target='_blank'>CVE-2016-0647&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0648.html' target='_blank'>CVE-2016-0648&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0649.html' target='_blank'>CVE-2016-0649&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0650.html' target='_blank'>CVE-2016-0650&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0651.html' target='_blank'>CVE-2016-0651&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0666.html' target='_blank'>CVE-2016-0666&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-2047.html' target='_blank'>CVE-2016-2047&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-3452.html' target='_blank'>CVE-2016-3452&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-3477.html' target='_blank'>CVE-2016-3477&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-3521.html' target='_blank'>CVE-2016-3521&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-3615.html' target='_blank'>CVE-2016-3615&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-5440.html' target='_blank'>CVE-2016-5440&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-5444.html' target='_blank'>CVE-2016-5444&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>It was found that the MariaDB client library did not properly check host names against server identities noted in the X.509 certificates when establishing secure connections using TLS/SSL. A man-in-the-middle attacker could possibly use this flaw to impersonate a server to a client. (CVE-2016-2047)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.46 and earlier allows remote authenticated users to affect availability via vectors related to UDF. (CVE-2016-0608)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.46 and earlier allows remote authenticated users to affect availability via unknown vectors related to privileges. (CVE-2016-0609)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.46 and earlier allows remote authenticated users to affect availability via unknown vectors related to Options. (CVE-2016-0505)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.46 and earlier allows remote authenticated users to affect availability via unknown vectors related to InnoDB. (CVE-2016-0600)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.46 and earlier allows remote authenticated users to affect availability via unknown vectors related to Optimizer. (CVE-2016-0616)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.48 and earlier allows remote attackers to affect confidentiality via vectors related to Server: Security: Encryption. (CVE-2016-3452)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.47 and earlier allows local users to affect availability via vectors related to DDL. (CVE-2016-0644)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.49 and earlier allows local users to affect confidentiality, integrity, and availability via vectors related to Server: Parser. (CVE-2016-3477)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.46 and earlier allows remote authenticated users to affect availability via vectors related to DML. (CVE-2016-0596)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.46 and earlier allows remote authenticated users to affect availability via unknown vectors related to Optimizer. (CVE-2016-0597)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.47 and earlier allows local users to affect integrity and availability via vectors related to DML. (CVE-2016-0640)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.49 and earlier allows remote authenticated users to affect availability via vectors related to Server: Types. (CVE-2016-3521)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.48 and earlier allows local users to affect integrity and availability via vectors related to Federated. (CVE-2016-0642)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.48 and earlier allows local users to affect confidentiality via vectors related to DML. (CVE-2016-0643)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.48 and earlier allows local users to affect availability via vectors related to Security: Privileges. (CVE-2016-0666)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.46 and earlier allows local users to affect availability via vectors related to Optimizer. (CVE-2016-0651)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.47 and earlier allows local users to affect availability via vectors related to Replication. (CVE-2016-0650)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.46 and earlier allows remote authenticated users to affect availability via vectors related to DML. (CVE-2016-0598)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.47 and earlier allows local users to affect availability via vectors related to PS. (CVE-2016-0649)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.49 and earlier allows remote administrators to affect availability via vectors related to Server: RBR. (CVE-2016-5440)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.48 and earlier allows remote attackers to affect confidentiality via vectors related to Server: Connection. (CVE-2016-5444)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.46 and earlier allows remote authenticated users to affect integrity via unknown vectors related to encryption. (CVE-2016-0606)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.48 and earlier allows local users to affect availability via vectors related to PS. (CVE-2016-0648)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.47 and earlier allows local users to affect availability via vectors related to DML. (CVE-2016-0646)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.46 and earlier allows local users to affect confidentiality, integrity, and availability via unknown vectors related to Client. (CVE-2016-0546)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.48 and earlier allows local users to affect availability via vectors related to FTS. (CVE-2016-0647)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.49 and earlier allows remote authenticated users to affect availability via vectors related to Server: DML. (CVE-2016-3615)</p><p>Unspecified vulnerability in Oracle MySQL 5.5.47 and earlier allows local users to affect confidentiality and availability via vectors related to MyISAM. (CVE-2016-0641)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>mysql55</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update mysql55</i> to update your system.
+                                    <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; mysql55-libs-5.5.51-1.11.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mysql55-debuginfo-5.5.51-1.11.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mysql55-bench-5.5.51-1.11.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mysql55-embedded-devel-5.5.51-1.11.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mysql55-test-5.5.51-1.11.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mysql55-devel-5.5.51-1.11.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mysql55-5.5.51-1.11.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mysql55-server-5.5.51-1.11.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mysql-config-5.5.51-1.11.amzn1.i686<br />&nbsp;&nbsp;&nbsp; mysql55-embedded-5.5.51-1.11.amzn1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; mysql55-5.5.51-1.11.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; mysql-config-5.5.51-1.11.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mysql55-bench-5.5.51-1.11.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mysql55-debuginfo-5.5.51-1.11.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mysql55-libs-5.5.51-1.11.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mysql55-server-5.5.51-1.11.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mysql55-embedded-5.5.51-1.11.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mysql55-embedded-devel-5.5.51-1.11.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mysql55-devel-5.5.51-1.11.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mysql55-test-5.5.51-1.11.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; mysql55-5.5.51-1.11.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0505" target="_blank" rel="noopener noreferrer">CVE-2016-0505</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0546" target="_blank" rel="noopener noreferrer">CVE-2016-0546</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0596" target="_blank" rel="noopener noreferrer">CVE-2016-0596</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0597" target="_blank" rel="noopener noreferrer">CVE-2016-0597</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0598" target="_blank" rel="noopener noreferrer">CVE-2016-0598</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0600" target="_blank" rel="noopener noreferrer">CVE-2016-0600</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0606" target="_blank" rel="noopener noreferrer">CVE-2016-0606</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0608" target="_blank" rel="noopener noreferrer">CVE-2016-0608</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0609" target="_blank" rel="noopener noreferrer">CVE-2016-0609</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0616" target="_blank" rel="noopener noreferrer">CVE-2016-0616</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0640" target="_blank" rel="noopener noreferrer">CVE-2016-0640</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0641" target="_blank" rel="noopener noreferrer">CVE-2016-0641</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0642" target="_blank" rel="noopener noreferrer">CVE-2016-0642</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0643" target="_blank" rel="noopener noreferrer">CVE-2016-0643</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0644" target="_blank" rel="noopener noreferrer">CVE-2016-0644</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0646" target="_blank" rel="noopener noreferrer">CVE-2016-0646</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0647" target="_blank" rel="noopener noreferrer">CVE-2016-0647</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0648" target="_blank" rel="noopener noreferrer">CVE-2016-0648</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0649" target="_blank" rel="noopener noreferrer">CVE-2016-0649</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0650" target="_blank" rel="noopener noreferrer">CVE-2016-0650</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0651" target="_blank" rel="noopener noreferrer">CVE-2016-0651</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0666" target="_blank" rel="noopener noreferrer">CVE-2016-0666</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-2047" target="_blank" rel="noopener noreferrer">CVE-2016-2047</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-3452" target="_blank" rel="noopener noreferrer">CVE-2016-3452</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-3477" target="_blank" rel="noopener noreferrer">CVE-2016-3477</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-3521" target="_blank" rel="noopener noreferrer">CVE-2016-3521</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-3615" target="_blank" rel="noopener noreferrer">CVE-2016-3615</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-5440" target="_blank" rel="noopener noreferrer">CVE-2016-5440</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-5444" target="_blank" rel="noopener noreferrer">CVE-2016-5444</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0505" target="_blank" rel="noopener noreferrer">CVE-2016-0505</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0546" target="_blank" rel="noopener noreferrer">CVE-2016-0546</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0596" target="_blank" rel="noopener noreferrer">CVE-2016-0596</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0597" target="_blank" rel="noopener noreferrer">CVE-2016-0597</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0598" target="_blank" rel="noopener noreferrer">CVE-2016-0598</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0600" target="_blank" rel="noopener noreferrer">CVE-2016-0600</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0606" target="_blank" rel="noopener noreferrer">CVE-2016-0606</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0608" target="_blank" rel="noopener noreferrer">CVE-2016-0608</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0609" target="_blank" rel="noopener noreferrer">CVE-2016-0609</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0616" target="_blank" rel="noopener noreferrer">CVE-2016-0616</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0640" target="_blank" rel="noopener noreferrer">CVE-2016-0640</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0641" target="_blank" rel="noopener noreferrer">CVE-2016-0641</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0642" target="_blank" rel="noopener noreferrer">CVE-2016-0642</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0643" target="_blank" rel="noopener noreferrer">CVE-2016-0643</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0644" target="_blank" rel="noopener noreferrer">CVE-2016-0644</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0646" target="_blank" rel="noopener noreferrer">CVE-2016-0646</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0647" target="_blank" rel="noopener noreferrer">CVE-2016-0647</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0648" target="_blank" rel="noopener noreferrer">CVE-2016-0648</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0649" target="_blank" rel="noopener noreferrer">CVE-2016-0649</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0650" target="_blank" rel="noopener noreferrer">CVE-2016-0650</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0651" target="_blank" rel="noopener noreferrer">CVE-2016-0651</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0666" target="_blank" rel="noopener noreferrer">CVE-2016-0666</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2047" target="_blank" rel="noopener noreferrer">CVE-2016-2047</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3452" target="_blank" rel="noopener noreferrer">CVE-2016-3452</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3477" target="_blank" rel="noopener noreferrer">CVE-2016-3477</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3521" target="_blank" rel="noopener noreferrer">CVE-2016-3521</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3615" target="_blank" rel="noopener noreferrer">CVE-2016-3615</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5440" target="_blank" rel="noopener noreferrer">CVE-2016-5440</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5444" target="_blank" rel="noopener noreferrer">CVE-2016-5444</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

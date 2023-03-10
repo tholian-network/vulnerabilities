@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2022-2022-114</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2022-2022-114'>ALAS2022-2022-114</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2022 Security Advisory:</b> ALAS-2022-114
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2022-07-20 16:02 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2022-07-21 18:11 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2022-1184.html' target='_blank'>CVE-2022-1184&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-1789.html' target='_blank'>CVE-2022-1789&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-1852.html' target='_blank'>CVE-2022-1852&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-1966.html' target='_blank'>CVE-2022-1966&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-1972.html' target='_blank'>CVE-2022-1972&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-1973.html' target='_blank'>CVE-2022-1973&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-2078.html' target='_blank'>CVE-2022-2078&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-26365.html' target='_blank'>CVE-2022-26365&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-32250.html' target='_blank'>CVE-2022-32250&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-32981.html' target='_blank'>CVE-2022-32981&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-33740.html' target='_blank'>CVE-2022-33740&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-33741.html' target='_blank'>CVE-2022-33741&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-33742.html' target='_blank'>CVE-2022-33742&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-33743.html' target='_blank'>CVE-2022-33743&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-34494.html' target='_blank'>CVE-2022-34494&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-34495.html' target='_blank'>CVE-2022-34495&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-34918.html' target='_blank'>CVE-2022-34918&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>A use-after-free flaw was found in fs/ext4/namei.c:dx_insert_block() in the Linux kernel&#39;s filesystem sub-component. This flaw allows a local attacker with a user privilege to cause a denial of service. (CVE-2022-1184)</p><p>A flaw was found in KVM. With shadow paging enabled if INVPCID is executed with CR0.PG=0, the invlpg callback is not set, and the result is a NULL pointer dereference. This flaw allows a guest user to cause a kernel oops condition on the host, resulting in a denial of service. (CVE-2022-1789)</p><p>A NULL pointer dereference flaw was found in the Linux kernel&#39;s KVM module, which can lead to a denial of service in the x86_emulate_insn in arch/x86/kvm/emulate.c. This flaw occurs while executing an illegal instruction in guest in the Intel CPU. (CVE-2022-1852)</p><p>A use-after-free vulnerability was found in the Linux kernel&#39;s Netfilter subsystem in net/netfilter/nf_tables_api.c. This flaw allows a local attacker with user access to cause a privilege escalation issue. (CVE-2022-1966)</p><p>No description is available for this CVE. (CVE-2022-1972)</p><p>A use-after-free flaw was found in the Linux kernel in log_replay in fs/ntfs3/fslog.c in the NTFS journal. This flaw allows a local attacker to crash the system and leads to a kernel information leak problem. (CVE-2022-1973)</p><p>A vulnerability was found in the Linux kernel&#39;s nft_set_desc_concat_parse() function .This flaw allows an attacker to trigger a buffer overflow via nft_set_desc_concat_parse() , causing a denial of service and possibly to run code. (CVE-2022-2078)</p><p>Linux disk/nic frontends data leaks T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Linux Block and Network PV device frontends don&#39;t zero memory regions before sharing them with the backend (CVE-2022-26365, CVE-2022-33740). Additionally the granularity of the grant table doesn&#39;t allow sharing less than a 4K page, leading to unrelated data residing in the same 4K page as data shared with a backend being accessible by such backend (CVE-2022-33741, CVE-2022-33742). (CVE-2022-26365)</p><p>net/netfilter/nf_tables_api.c in the Linux kernel through 5.18.1 allows a local user (able to create user/net namespaces) to escalate privileges to root because an incorrect NFT_STATEFUL_EXPR check leads to a use-after-free. (CVE-2022-32250)</p><p>An issue was discovered in the Linux kernel through 5.18.3 on powerpc 32-bit platforms. There is a buffer overflow in ptrace PEEKUSER and POKEUSER (aka PEEKUSR and POKEUSR) when accessing floating point registers. (CVE-2022-32981)</p><p>Linux disk/nic frontends data leaks T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Linux Block and Network PV device frontends don&#39;t zero memory regions before sharing them with the backend (CVE-2022-26365, CVE-2022-33740). Additionally the granularity of the grant table doesn&#39;t allow sharing less than a 4K page, leading to unrelated data residing in the same 4K page as data shared with a backend being accessible by such backend (CVE-2022-33741, CVE-2022-33742). (CVE-2022-33740)</p><p>Linux disk/nic frontends data leaks T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Linux Block and Network PV device frontends don&#39;t zero memory regions before sharing them with the backend (CVE-2022-26365, CVE-2022-33740). Additionally the granularity of the grant table doesn&#39;t allow sharing less than a 4K page, leading to unrelated data residing in the same 4K page as data shared with a backend being accessible by such backend (CVE-2022-33741, CVE-2022-33742). (CVE-2022-33741)</p><p>Linux disk/nic frontends data leaks T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Linux Block and Network PV device frontends don&#39;t zero memory regions before sharing them with the backend (CVE-2022-26365, CVE-2022-33740). Additionally the granularity of the grant table doesn&#39;t allow sharing less than a 4K page, leading to unrelated data residing in the same 4K page as data shared with a backend being accessible by such backend (CVE-2022-33741, CVE-2022-33742). (CVE-2022-33742)</p><p>network backend may cause Linux netfront to use freed SKBs While adding logic to support XDP (eXpress Data Path), a code label was moved in a way allowing for SKBs having references (pointers) retained for further processing to nevertheless be freed. (CVE-2022-33743)</p><p>rpmsg_virtio_add_ctrl_dev in drivers/rpmsg/virtio_rpmsg_bus.c in the Linux kernel before 5.18.4 has a double free. (CVE-2022-34494)</p><p>rpmsg_probe in drivers/rpmsg/virtio_rpmsg_bus.c in the Linux kernel before 5.18.4 has a double free. (CVE-2022-34495)</p><p>A heap buffer overflow flaw was found in the Linux kernel&#39;s Netfilter subsystem in the way a user provides incorrect input of the NFT_DATA_VERDICT type. This flaw allows a local user to crash or potentially escalate their privileges on the system. (CVE-2022-34918)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>kernel</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>dnf update --releasever=2022.0.20220719 kernel</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; bpftool-5.15.54-25.126.amzn2022.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-tools-5.15.54-25.126.amzn2022.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-tools-devel-5.15.54-25.126.amzn2022.aarch64<br />&nbsp;&nbsp;&nbsp; bpftool-debuginfo-5.15.54-25.126.amzn2022.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-headers-5.15.54-25.126.amzn2022.aarch64<br />&nbsp;&nbsp;&nbsp; python3-perf-5.15.54-25.126.amzn2022.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-tools-debuginfo-5.15.54-25.126.amzn2022.aarch64<br />&nbsp;&nbsp;&nbsp; perf-debuginfo-5.15.54-25.126.amzn2022.aarch64<br />&nbsp;&nbsp;&nbsp; python3-perf-debuginfo-5.15.54-25.126.amzn2022.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-livepatch-5.15.54-25.126-1.0-0.amzn2022.aarch64<br />&nbsp;&nbsp;&nbsp; perf-5.15.54-25.126.amzn2022.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-5.15.54-25.126.amzn2022.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-5.15.54-25.126.amzn2022.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-common-aarch64-5.15.54-25.126.amzn2022.aarch64<br />&nbsp;&nbsp;&nbsp; kernel-devel-5.15.54-25.126.amzn2022.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; kernel-headers-5.15.54-25.126.amzn2022.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; kernel-5.15.54-25.126.amzn2022.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; kernel-tools-debuginfo-5.15.54-25.126.amzn2022.x86_64<br />&nbsp;&nbsp;&nbsp; python3-perf-debuginfo-5.15.54-25.126.amzn2022.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-tools-5.15.54-25.126.amzn2022.x86_64<br />&nbsp;&nbsp;&nbsp; python3-perf-5.15.54-25.126.amzn2022.x86_64<br />&nbsp;&nbsp;&nbsp; perf-5.15.54-25.126.amzn2022.x86_64<br />&nbsp;&nbsp;&nbsp; bpftool-5.15.54-25.126.amzn2022.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-livepatch-5.15.54-25.126-1.0-0.amzn2022.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-tools-devel-5.15.54-25.126.amzn2022.x86_64<br />&nbsp;&nbsp;&nbsp; perf-debuginfo-5.15.54-25.126.amzn2022.x86_64<br />&nbsp;&nbsp;&nbsp; bpftool-debuginfo-5.15.54-25.126.amzn2022.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-headers-5.15.54-25.126.amzn2022.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-5.15.54-25.126.amzn2022.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-5.15.54-25.126.amzn2022.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-debuginfo-common-x86_64-5.15.54-25.126.amzn2022.x86_64<br />&nbsp;&nbsp;&nbsp; kernel-devel-5.15.54-25.126.amzn2022.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-1184" target="_blank" rel="noopener noreferrer">CVE-2022-1184</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-1789" target="_blank" rel="noopener noreferrer">CVE-2022-1789</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-1852" target="_blank" rel="noopener noreferrer">CVE-2022-1852</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-1966" target="_blank" rel="noopener noreferrer">CVE-2022-1966</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-1972" target="_blank" rel="noopener noreferrer">CVE-2022-1972</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-1973" target="_blank" rel="noopener noreferrer">CVE-2022-1973</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-2078" target="_blank" rel="noopener noreferrer">CVE-2022-2078</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-26365" target="_blank" rel="noopener noreferrer">CVE-2022-26365</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-32250" target="_blank" rel="noopener noreferrer">CVE-2022-32250</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-32981" target="_blank" rel="noopener noreferrer">CVE-2022-32981</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-33740" target="_blank" rel="noopener noreferrer">CVE-2022-33740</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-33741" target="_blank" rel="noopener noreferrer">CVE-2022-33741</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-33742" target="_blank" rel="noopener noreferrer">CVE-2022-33742</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-33743" target="_blank" rel="noopener noreferrer">CVE-2022-33743</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-34494" target="_blank" rel="noopener noreferrer">CVE-2022-34494</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-34495" target="_blank" rel="noopener noreferrer">CVE-2022-34495</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-34918" target="_blank" rel="noopener noreferrer">CVE-2022-34918</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1184" target="_blank" rel="noopener noreferrer">CVE-2022-1184</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1789" target="_blank" rel="noopener noreferrer">CVE-2022-1789</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1852" target="_blank" rel="noopener noreferrer">CVE-2022-1852</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1966" target="_blank" rel="noopener noreferrer">CVE-2022-1966</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1972" target="_blank" rel="noopener noreferrer">CVE-2022-1972</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1973" target="_blank" rel="noopener noreferrer">CVE-2022-1973</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2078" target="_blank" rel="noopener noreferrer">CVE-2022-2078</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26365" target="_blank" rel="noopener noreferrer">CVE-2022-26365</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32250" target="_blank" rel="noopener noreferrer">CVE-2022-32250</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32981" target="_blank" rel="noopener noreferrer">CVE-2022-32981</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-33740" target="_blank" rel="noopener noreferrer">CVE-2022-33740</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-33741" target="_blank" rel="noopener noreferrer">CVE-2022-33741</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-33742" target="_blank" rel="noopener noreferrer">CVE-2022-33742</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-33743" target="_blank" rel="noopener noreferrer">CVE-2022-33743</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-34494" target="_blank" rel="noopener noreferrer">CVE-2022-34494</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-34495" target="_blank" rel="noopener noreferrer">CVE-2022-34495</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-34918" target="_blank" rel="noopener noreferrer">CVE-2022-34918</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

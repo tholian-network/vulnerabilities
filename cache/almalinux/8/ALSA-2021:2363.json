@@ -10,9 +10,33 @@
 	"summary": "An update for gupnp is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "3",
 	"pkglist": {
-		"name": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
-		"shortname": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
+		"name": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
+		"shortname": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
 		"packages": [
+			{
+				"src": "gupnp-1.0.6-2.el8_4.src.rpm",
+				"name": "gupnp",
+				"epoch": "0",
+				"version": "1.0.6",
+				"release": "2.el8_4",
+				"arch": "aarch64",
+				"filename": "gupnp-1.0.6-2.el8_4.aarch64.rpm",
+				"sum": "8b335342f6b8f6a02db14d075ed54275f547eb0ebcc4185a24158df5da790955",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "gupnp-1.0.6-2.el8_4.src.rpm",
+				"name": "gupnp-devel",
+				"epoch": "0",
+				"version": "1.0.6",
+				"release": "2.el8_4",
+				"arch": "aarch64",
+				"filename": "gupnp-devel-1.0.6-2.el8_4.aarch64.rpm",
+				"sum": "a42a41ca123c0e1ec9d22d2fbe4b9e9301e59c2aa67c740c9473cbbb6aebc3d9",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "gupnp-1.0.6-2.el8_4.src.rpm",
 				"name": "gupnp",
@@ -51,42 +75,6 @@
 			},
 			{
 				"src": "gupnp-1.0.6-2.el8_4.src.rpm",
-				"name": "gupnp",
-				"epoch": "0",
-				"version": "1.0.6",
-				"release": "2.el8_4",
-				"arch": "aarch64",
-				"filename": "gupnp-1.0.6-2.el8_4.aarch64.rpm",
-				"sum": "8b335342f6b8f6a02db14d075ed54275f547eb0ebcc4185a24158df5da790955",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gupnp-1.0.6-2.el8_4.src.rpm",
-				"name": "gupnp-devel",
-				"epoch": "0",
-				"version": "1.0.6",
-				"release": "2.el8_4",
-				"arch": "aarch64",
-				"filename": "gupnp-devel-1.0.6-2.el8_4.aarch64.rpm",
-				"sum": "a42a41ca123c0e1ec9d22d2fbe4b9e9301e59c2aa67c740c9473cbbb6aebc3d9",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gupnp-1.0.6-2.el8_4.src.rpm",
-				"name": "gupnp",
-				"epoch": "0",
-				"version": "1.0.6",
-				"release": "2.el8_4",
-				"arch": "i686",
-				"filename": "gupnp-1.0.6-2.el8_4.i686.rpm",
-				"sum": "4f1929410c8643b85a2c7844000d11f55d6e9511d1f2099336c40708cd469d80",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gupnp-1.0.6-2.el8_4.src.rpm",
 				"name": "gupnp-devel",
 				"epoch": "0",
 				"version": "1.0.6",
@@ -108,11 +96,29 @@
 				"sum": "b8b3d44c5ffa86e398fd0375746fb61ebe6d2cd8c7ee4bb2884b49bffdab3381",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "gupnp-1.0.6-2.el8_4.src.rpm",
+				"name": "gupnp",
+				"epoch": "0",
+				"version": "1.0.6",
+				"release": "2.el8_4",
+				"arch": "i686",
+				"filename": "gupnp-1.0.6-2.el8_4.i686.rpm",
+				"sum": "4f1929410c8643b85a2c7844000d11f55d6e9511d1f2099336c40708cd469d80",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "GUPnP is an object-oriented open source framework for creating UPnP devices and control points, written in C using GObject and libsoup. The GUPnP API is intended to be easy to use, efficient and flexible.\n\nSecurity Fix(es):\n\n* gupnp: allows DNS rebinding which could result in tricking browser into triggering actions against local UPnP services (CVE-2021-33516)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
+		{
+			"id": "ALSA-2021-2363",
+			"title": "ALSA-2021-2363",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-2363.html"
+		},
 		{
 			"id": "CVE-2021-33516",
 			"title": "CVE-2021-33516",
@@ -124,6 +130,6 @@
 		"$date": 1623243248000
 	},
 	"updated_date": {
-		"$date": 1628672040000
+		"$date": 1623243248000
 	}
 }

@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2016-649</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2016-649'>ALAS-2016-649</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2016-649
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2016-02-09 13:30 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2016-10-18 12:15 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2015-7974.html' target='_blank'>CVE-2015-7974&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-7977.html' target='_blank'>CVE-2015-7977&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-7978.html' target='_blank'>CVE-2015-7978&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-7979.html' target='_blank'>CVE-2015-7979&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-8138.html' target='_blank'>CVE-2015-8138&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-8158.html' target='_blank'>CVE-2015-8158&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-4953.html' target='_blank'>CVE-2016-4953&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>It was discovered that ntpd as a client did not correctly check the originate timestamp in received packets. A remote attacker could use this flaw to send a crafted packet to an ntpd client that would effectively disable synchronization with the server, or push arbitrary offset/delay measurements to modify the time on the client. (CVE-2015-8138)</p><p>A NULL pointer dereference flaw was found in the way ntpd processed &#39;ntpdc reslist&#39; commands that queried restriction lists with a large amount of entries. A remote attacker could use this flaw to crash the ntpd process. (CVE-2015-7977)</p><p>It was found that NTP does not verify peer associations of symmetric keys when authenticating packets, which might allow remote attackers to conduct impersonation attacks via an arbitrary trusted key. (CVE-2015-7974)</p><p>A stack-based buffer overflow was found in the way ntpd processed &#39;ntpdc reslist&#39; commands that queried restriction lists with a large amount of entries. A remote attacker could use this flaw to crash the ntpd process. (CVE-2015-7978)</p><p>It was found that when NTP is configured in broadcast mode, an off-path attacker could broadcast packets with bad authentication (wrong key, mismatched key, incorrect MAC, etc) to all clients. The clients, upon receiving the malformed packets, would break the association with the broadcast server. This could cause the time on affected clients to become out of sync over a longer period of time. (CVE-2015-7979)</p><p>A flaw was found in the way the ntpq client certain processed incoming packets in a loop in the getresponse() function. A remote attacker could potentially use this flaw to crash an ntpq client instance. (CVE-2015-8158)</p><p>A flaw was found in ntpd that allows remote attackers to cause a denial of service (ephemeral-association demobilization) by sending a spoofed crypto-NAK packet with incorrect authentication data at a certain time. (CVE-2016-4953)</p><p>(Updated 2016-10-18: CVE-2016-4953 was fixed in this release but was not previously part of this errata.)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>ntp</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update ntp</i> to update your system.
+                                    <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; ntp-4.2.6p5-36.29.amzn1.i686<br />&nbsp;&nbsp;&nbsp; ntpdate-4.2.6p5-36.29.amzn1.i686<br />&nbsp;&nbsp;&nbsp; ntp-debuginfo-4.2.6p5-36.29.amzn1.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; ntp-doc-4.2.6p5-36.29.amzn1.noarch<br />&nbsp;&nbsp;&nbsp; ntp-perl-4.2.6p5-36.29.amzn1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; ntp-4.2.6p5-36.29.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; ntpdate-4.2.6p5-36.29.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; ntp-4.2.6p5-36.29.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; ntp-debuginfo-4.2.6p5-36.29.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-7974" target="_blank" rel="noopener noreferrer">CVE-2015-7974</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-7977" target="_blank" rel="noopener noreferrer">CVE-2015-7977</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-7978" target="_blank" rel="noopener noreferrer">CVE-2015-7978</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-7979" target="_blank" rel="noopener noreferrer">CVE-2015-7979</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-8138" target="_blank" rel="noopener noreferrer">CVE-2015-8138</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-8158" target="_blank" rel="noopener noreferrer">CVE-2015-8158</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-4953" target="_blank" rel="noopener noreferrer">CVE-2016-4953</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7974" target="_blank" rel="noopener noreferrer">CVE-2015-7974</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7977" target="_blank" rel="noopener noreferrer">CVE-2015-7977</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7978" target="_blank" rel="noopener noreferrer">CVE-2015-7978</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7979" target="_blank" rel="noopener noreferrer">CVE-2015-7979</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8138" target="_blank" rel="noopener noreferrer">CVE-2015-8138</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8158" target="_blank" rel="noopener noreferrer">CVE-2015-8158</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4953" target="_blank" rel="noopener noreferrer">CVE-2016-4953</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

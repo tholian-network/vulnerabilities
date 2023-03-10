@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2021-1630</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2021-1630'>ALAS2-2021-1630</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2021-1630
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2021-04-20 17:55 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2021-04-21 18:01 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2019-10146.html' target='_blank'>CVE-2019-10146&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-10179.html' target='_blank'>CVE-2019-10179&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2019-10221.html' target='_blank'>CVE-2019-10221&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-1721.html' target='_blank'>CVE-2020-1721&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-25715.html' target='_blank'>CVE-2020-25715&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-20179.html' target='_blank'>CVE-2021-20179&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>A Reflected Cross Site Scripting flaw was found in the pki-ca module from the pki-core server due to the CA Agent Service not properly sanitizing the certificate request page. An attacker could inject a specially crafted value that will be executed on the victim&#39;s browser. (CVE-2019-10146)</p><p>It was found that the Key Recovery Authority (KRA) Agent Service did not properly sanitize recovery request search page, enabling a Reflected Cross Site Scripting (XSS) vulnerability. An attacker could trick an authenticated victim into executing specially crafted Javascript code. (CVE-2019-10179)</p><p>A Reflected Cross Site Scripting vulnerability was found in the pki-ca module from the pki-core server. This flaw is caused by missing sanitization of the GET URL parameters. An attacker could abuse this flaw to trick an authenticated user into clicking a specially crafted link which can execute arbitrary code when viewed in a browser. (CVE-2019-10221)</p><p>A flaw was found in the Key Recovery Authority (KRA) Agent Service where it did not properly sanitize the recovery ID during a key recovery request, enabling a Reflected Cross-Site Scripting (XSS) vulnerability. An attacker could trick an authenticated victim into executing specially crafted Javascript code. (CVE-2020-1721)</p><p>A flaw was found in pki-core. A specially crafted POST request can be used to reflect a DOM-based cross-site scripting (XSS) attack to inject code into the search query form which can get automatically executed. The highest threat from this vulnerability is to data integrity. (CVE-2020-25715)</p><p>A flaw was found in pki-core. An attacker who has successfully compromised a key could use this flaw to renew the corresponding certificate over and over again, as long as it is not explicitly revoked. The highest threat from this vulnerability is to data confidentiality and integrity. (CVE-2021-20179)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>pki-core</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update pki-core</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; pki-symkey-10.5.18-12.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; pki-tools-10.5.18-12.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; pki-core-debuginfo-10.5.18-12.amzn2.0.1.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; pki-symkey-10.5.18-12.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; pki-tools-10.5.18-12.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; pki-core-debuginfo-10.5.18-12.amzn2.0.1.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; pki-base-10.5.18-12.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; pki-base-java-10.5.18-12.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; pki-server-10.5.18-12.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; pki-ca-10.5.18-12.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; pki-kra-10.5.18-12.amzn2.0.1.noarch<br />&nbsp;&nbsp;&nbsp; pki-javadoc-10.5.18-12.amzn2.0.1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; pki-core-10.5.18-12.amzn2.0.1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; pki-symkey-10.5.18-12.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; pki-tools-10.5.18-12.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; pki-core-debuginfo-10.5.18-12.amzn2.0.1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-10146" target="_blank" rel="noopener noreferrer">CVE-2019-10146</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-10179" target="_blank" rel="noopener noreferrer">CVE-2019-10179</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-10221" target="_blank" rel="noopener noreferrer">CVE-2019-10221</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-1721" target="_blank" rel="noopener noreferrer">CVE-2020-1721</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-25715" target="_blank" rel="noopener noreferrer">CVE-2020-25715</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-20179" target="_blank" rel="noopener noreferrer">CVE-2021-20179</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10146" target="_blank" rel="noopener noreferrer">CVE-2019-10146</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10179" target="_blank" rel="noopener noreferrer">CVE-2019-10179</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10221" target="_blank" rel="noopener noreferrer">CVE-2019-10221</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-1721" target="_blank" rel="noopener noreferrer">CVE-2020-1721</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25715" target="_blank" rel="noopener noreferrer">CVE-2020-25715</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20179" target="_blank" rel="noopener noreferrer">CVE-2021-20179</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

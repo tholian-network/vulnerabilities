@@ -10,33 +10,9 @@
 	"summary": "kernel security, bug fix, and enhancement update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-i686-appstream-rpms__9_default",
-		"shortname": "almalinux-9-for-i686-appstream-rpms__9_default",
+		"name": "almalinux-9-for-aarch64-appstream-rpms__9_default",
+		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_default",
 		"packages": [
-			{
-				"src": "kernel-5.14.0-70.22.1.el9_0.src.rpm",
-				"name": "kernel-doc",
-				"epoch": "0",
-				"version": "5.14.0",
-				"release": "70.22.1.el9_0",
-				"arch": "noarch",
-				"filename": "kernel-doc-5.14.0-70.22.1.el9_0.noarch.rpm",
-				"sum": "232d05e4af484d9fb62fcffcdb7b23f898a654e8107f29507eaa1d61344427aa",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "kernel-5.14.0-70.22.1.el9_0.src.rpm",
-				"name": "kernel-abi-stablelists",
-				"epoch": "0",
-				"version": "5.14.0",
-				"release": "70.22.1.el9_0",
-				"arch": "noarch",
-				"filename": "kernel-abi-stablelists-5.14.0-70.22.1.el9_0.noarch.rpm",
-				"sum": "a7507bb31645b36cd5120e3dee6c9f7928ea50fa4707527e8af610752ebdea2e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "kernel-5.14.0-70.22.1.el9_0.src.rpm",
 				"name": "perf",
@@ -70,6 +46,18 @@
 				"arch": "aarch64",
 				"filename": "kernel-debug-devel-5.14.0-70.22.1.el9_0.aarch64.rpm",
 				"sum": "19067b58234778af03dc1406968e83cf7204c772247fe6aae0e902dbba9e8dc6",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "kernel-5.14.0-70.22.1.el9_0.src.rpm",
+				"name": "kernel-doc",
+				"epoch": "0",
+				"version": "5.14.0",
+				"release": "70.22.1.el9_0",
+				"arch": "noarch",
+				"filename": "kernel-doc-5.14.0-70.22.1.el9_0.noarch.rpm",
+				"sum": "232d05e4af484d9fb62fcffcdb7b23f898a654e8107f29507eaa1d61344427aa",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -202,6 +190,18 @@
 				"arch": "aarch64",
 				"filename": "kernel-modules-5.14.0-70.22.1.el9_0.aarch64.rpm",
 				"sum": "92c8eae307a024835f76633b28309131b7ad94a310ac34f09996f5e4d8afe301",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "kernel-5.14.0-70.22.1.el9_0.src.rpm",
+				"name": "kernel-abi-stablelists",
+				"epoch": "0",
+				"version": "5.14.0",
+				"release": "70.22.1.el9_0",
+				"arch": "noarch",
+				"filename": "kernel-abi-stablelists-5.14.0-70.22.1.el9_0.noarch.rpm",
+				"sum": "a7507bb31645b36cd5120e3dee6c9f7928ea50fa4707527e8af610752ebdea2e",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -1090,6 +1090,6 @@
 		"$date": 1660003200000
 	},
 	"updated_date": {
-		"$date": 1660165712000
+		"$date": 1660165371000
 	}
 }

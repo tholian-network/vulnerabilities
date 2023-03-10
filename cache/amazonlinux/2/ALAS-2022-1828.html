@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2022-1828</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2022-1828'>ALAS2-2022-1828</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2022-1828
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2022-07-19 01:23 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2022-07-20 22:28 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2022-1834.html' target='_blank'>CVE-2022-1834&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-31736.html' target='_blank'>CVE-2022-31736&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-31737.html' target='_blank'>CVE-2022-31737&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-31738.html' target='_blank'>CVE-2022-31738&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-31740.html' target='_blank'>CVE-2022-31740&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-31741.html' target='_blank'>CVE-2022-31741&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-31742.html' target='_blank'>CVE-2022-31742&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-31747.html' target='_blank'>CVE-2022-31747&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>A flaw was found in Mozilla. The Mozilla Foundation Security Advisory describes the issue of when displaying the sender of an email, and the sender name contained the Braille Pattern Blank space character multiple times, Thunderbird displays all spaces. This flaw allows an attacker to send an email message with the attacker&#39;s digital signature that shows an arbitrary sender email address chosen by the attacker. If the sender&#39;s name started with a false email address, followed by many Braille space characters, the attacker&#39;s email address was not visible. Because Thunderbird compared the invisible sender address with the signature&#39;s email address, if Thunderbird accepted the signing key or certificate, the email was shown as having a valid digital signature. (CVE-2022-1834)</p><p>A flaw was found in Mozilla. The Mozilla Foundation Security Advisory describes the issue as a malicious website that could have learned the size of a cross-origin resource that supported Range requests. (CVE-2022-31736)</p><p>A flaw was found in Mozilla. The Mozilla Foundation Security Advisory describes the issue as a malicious webpage that could have caused an out-of-bounds write in WebGL, leading to memory corruption and a potentially exploitable crash. (CVE-2022-31737)</p><p>A flaw was found in Mozilla. The Mozilla Foundation Security Advisory describes the issue of when exiting fullscreen mode, an iframe could have confused the browser about the current state of the fullscreen, resulting in potential user confusion or spoofing attacks. (CVE-2022-31738)</p><p>A flaw was found in Mozilla. The Mozilla Foundation Security Advisory describes the issue on arm64; WASM code could have resulted in incorrect assembly generation, leading to a register allocation problem and a potentially exploitable crash. (CVE-2022-31740)</p><p>A flaw was found in Mozilla. The Mozilla Foundation Security Advisory describes the issue as having a crafted CMS message that could have been processed incorrectly, leading to an invalid memory read and potential memory corruption. (CVE-2022-31741)</p><p>A flaw was found in Mozilla. The Mozilla Foundation Security Advisory describes the issue as an attacker could have exploited a timing attack by sending a large number of allowCredential entries and detecting the difference between invalid key handles and cross-origin key handles. This could have led to cross-origin account linking in violation of WebAuthn goals. (CVE-2022-31742)</p><p>A flaw was found in Mozilla. The Mozilla Foundation Security Advisory describes the issue of Mozilla developers and community members reporting memory safety bugs present in Firefox 100 and Firefox ESR 91.0. Some of these bugs showed evidence of memory corruption, and we presume that with enough effort some of these could have been exploited to run arbitrary code. (CVE-2022-31747)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>thunderbird</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update thunderbird</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; thunderbird-91.11.0-2.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; thunderbird-debuginfo-91.11.0-2.amzn2.0.1.aarch64<br /><br />src:<br />&nbsp;&nbsp;&nbsp; thunderbird-91.11.0-2.amzn2.0.1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; thunderbird-91.11.0-2.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; thunderbird-debuginfo-91.11.0-2.amzn2.0.1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-1834" target="_blank" rel="noopener noreferrer">CVE-2022-1834</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-31736" target="_blank" rel="noopener noreferrer">CVE-2022-31736</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-31737" target="_blank" rel="noopener noreferrer">CVE-2022-31737</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-31738" target="_blank" rel="noopener noreferrer">CVE-2022-31738</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-31740" target="_blank" rel="noopener noreferrer">CVE-2022-31740</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-31741" target="_blank" rel="noopener noreferrer">CVE-2022-31741</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-31742" target="_blank" rel="noopener noreferrer">CVE-2022-31742</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-31747" target="_blank" rel="noopener noreferrer">CVE-2022-31747</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1834" target="_blank" rel="noopener noreferrer">CVE-2022-1834</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-31736" target="_blank" rel="noopener noreferrer">CVE-2022-31736</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-31737" target="_blank" rel="noopener noreferrer">CVE-2022-31737</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-31738" target="_blank" rel="noopener noreferrer">CVE-2022-31738</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-31740" target="_blank" rel="noopener noreferrer">CVE-2022-31740</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-31741" target="_blank" rel="noopener noreferrer">CVE-2022-31741</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-31742" target="_blank" rel="noopener noreferrer">CVE-2022-31742</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-31747" target="_blank" rel="noopener noreferrer">CVE-2022-31747</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

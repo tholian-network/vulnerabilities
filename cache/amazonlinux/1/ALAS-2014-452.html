@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2014-452</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2014-452'>ALAS-2014-452</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2014-452
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2014-11-22 14:00 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2014-11-24 15:22 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2013-1981.html' target='_blank'>CVE-2013-1981&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-1982.html' target='_blank'>CVE-2013-1982&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-1983.html' target='_blank'>CVE-2013-1983&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-1984.html' target='_blank'>CVE-2013-1984&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-1985.html' target='_blank'>CVE-2013-1985&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-1986.html' target='_blank'>CVE-2013-1986&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-1987.html' target='_blank'>CVE-2013-1987&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-1988.html' target='_blank'>CVE-2013-1988&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-1989.html' target='_blank'>CVE-2013-1989&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-1990.html' target='_blank'>CVE-2013-1990&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-1991.html' target='_blank'>CVE-2013-1991&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-1995.html' target='_blank'>CVE-2013-1995&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-1997.html' target='_blank'>CVE-2013-1997&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-1998.html' target='_blank'>CVE-2013-1998&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-1999.html' target='_blank'>CVE-2013-1999&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2000.html' target='_blank'>CVE-2013-2000&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2001.html' target='_blank'>CVE-2013-2001&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2002.html' target='_blank'>CVE-2013-2002&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2003.html' target='_blank'>CVE-2013-2003&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2004.html' target='_blank'>CVE-2013-2004&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2005.html' target='_blank'>CVE-2013-2005&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2062.html' target='_blank'>CVE-2013-2062&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2064.html' target='_blank'>CVE-2013-2064&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2013-2066.html' target='_blank'>CVE-2013-2066&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='https://rhn.redhat.com/errata/RHSA-2014-1436.html' target='_blank'>RHSA-2014-1436&nbsp;<i class='fas fa-external-link-alt'></i></a><br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Multiple integer overflow flaws, leading to heap-based buffer overflows, were found in the way various X11 client libraries handled certain protocol data. An attacker able to submit invalid protocol data to an X11 server via a malicious X11 client could use either of these flaws to potentially escalate their privileges on the system. (CVE-2013-1981, CVE-2013-1982, CVE-2013-1983, CVE-2013-1984, CVE-2013-1985, CVE-2013-1986, CVE-2013-1987, CVE-2013-1988, CVE-2013-1989, CVE-2013-1990, CVE-2013-1991, CVE-2013-2003, CVE-2013-2062, CVE-2013-2064)</p><p>Multiple array index errors, leading to heap-based buffer out-of-bounds write flaws, were found in the way various X11 client libraries handled data returned from an X11 server. A malicious X11 server could possibly use this flaw to execute arbitrary code with the privileges of the user running an X11 client. (CVE-2013-1997, CVE-2013-1998, CVE-2013-1999, CVE-2013-2000, CVE-2013-2001, CVE-2013-2002, CVE-2013-2066)</p><p>A buffer overflow flaw was found in the way the XListInputDevices() function of X.Org X11&#39;s libXi runtime library handled signed numbers. A malicious X11 server could possibly use this flaw to execute arbitrary code with the privileges of the user running an X11 client. (CVE-2013-1995)</p><p>A flaw was found in the way the X.Org X11 libXt runtime library used uninitialized pointers. A malicious X11 server could possibly use this flaw to execute arbitrary code with the privileges of the user running an X11 client. (CVE-2013-2005)</p><p>Two stack-based buffer overflow flaws were found in the way libX11, the Core X11 protocol client library, processed certain user-specified files. A malicious X11 server could possibly use this flaw to crash an X11 client via a specially crafted file. (CVE-2013-2004)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>libX11, libXcursor, libXfixes, libXi, libXrandr, libXrender, libXres, libXt, libXv, libXvMC, libXxf86dga, libXxf86vm, libdmx, xorg-x11-proto-devel</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update libX11 libXcursor libXfixes libXi libXrandr libXrender libXres libXt libXv libXvMC libXxf86dga libXxf86vm libdmx xorg-x11-proto-devel</i> to update your system.</div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; libX11-debuginfo-1.6.0-2.2.12.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libX11-1.6.0-2.2.12.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libX11-common-1.6.0-2.2.12.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libX11-devel-1.6.0-2.2.12.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXcursor-debuginfo-1.1.14-2.1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXcursor-1.1.14-2.1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXcursor-devel-1.1.14-2.1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXfixes-5.0.1-2.1.8.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXfixes-debuginfo-5.0.1-2.1.8.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXfixes-devel-5.0.1-2.1.8.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXrandr-debuginfo-1.4.1-2.1.8.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXrandr-1.4.1-2.1.8.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXrandr-devel-1.4.1-2.1.8.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXrender-0.9.8-2.1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXrender-debuginfo-0.9.8-2.1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXrender-devel-0.9.8-2.1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXres-debuginfo-1.0.7-2.1.8.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXres-1.0.7-2.1.8.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXres-devel-1.0.7-2.1.8.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXt-devel-1.1.4-6.1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXt-debuginfo-1.1.4-6.1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXt-1.1.4-6.1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXv-devel-1.0.9-2.1.8.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXv-debuginfo-1.0.9-2.1.8.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXv-1.0.9-2.1.8.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXvMC-1.0.8-2.1.8.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXvMC-debuginfo-1.0.8-2.1.8.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXvMC-devel-1.0.8-2.1.8.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXi-1.7.2-2.2.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXi-devel-1.7.2-2.2.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXi-debuginfo-1.7.2-2.2.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXxf86dga-1.1.4-2.1.8.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXxf86dga-debuginfo-1.1.4-2.1.8.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXxf86dga-devel-1.1.4-2.1.8.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXxf86vm-devel-1.1.3-2.1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXxf86vm-debuginfo-1.1.3-2.1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libXxf86vm-1.1.3-2.1.9.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libdmx-debuginfo-1.1.3-3.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libdmx-1.1.3-3.7.amzn1.i686<br />&nbsp;&nbsp;&nbsp; libdmx-devel-1.1.3-3.7.amzn1.i686<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; xorg-x11-proto-devel-7.7-9.10.amzn1.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; libX11-1.6.0-2.2.12.amzn1.src<br />&nbsp;&nbsp;&nbsp; libXcursor-1.1.14-2.1.9.amzn1.src<br />&nbsp;&nbsp;&nbsp; libXfixes-5.0.1-2.1.8.amzn1.src<br />&nbsp;&nbsp;&nbsp; libXrandr-1.4.1-2.1.8.amzn1.src<br />&nbsp;&nbsp;&nbsp; xorg-x11-proto-devel-7.7-9.10.amzn1.src<br />&nbsp;&nbsp;&nbsp; libXrender-0.9.8-2.1.9.amzn1.src<br />&nbsp;&nbsp;&nbsp; libXres-1.0.7-2.1.8.amzn1.src<br />&nbsp;&nbsp;&nbsp; libXt-1.1.4-6.1.9.amzn1.src<br />&nbsp;&nbsp;&nbsp; libXv-1.0.9-2.1.8.amzn1.src<br />&nbsp;&nbsp;&nbsp; libXvMC-1.0.8-2.1.8.amzn1.src<br />&nbsp;&nbsp;&nbsp; libXi-1.7.2-2.2.9.amzn1.src<br />&nbsp;&nbsp;&nbsp; libXxf86dga-1.1.4-2.1.8.amzn1.src<br />&nbsp;&nbsp;&nbsp; libXxf86vm-1.1.3-2.1.9.amzn1.src<br />&nbsp;&nbsp;&nbsp; libdmx-1.1.3-3.7.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; libX11-1.6.0-2.2.12.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libX11-devel-1.6.0-2.2.12.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libX11-common-1.6.0-2.2.12.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libX11-debuginfo-1.6.0-2.2.12.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXcursor-debuginfo-1.1.14-2.1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXcursor-devel-1.1.14-2.1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXcursor-1.1.14-2.1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXfixes-devel-5.0.1-2.1.8.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXfixes-debuginfo-5.0.1-2.1.8.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXfixes-5.0.1-2.1.8.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXrandr-devel-1.4.1-2.1.8.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXrandr-debuginfo-1.4.1-2.1.8.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXrandr-1.4.1-2.1.8.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXrender-devel-0.9.8-2.1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXrender-0.9.8-2.1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXrender-debuginfo-0.9.8-2.1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXres-devel-1.0.7-2.1.8.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXres-debuginfo-1.0.7-2.1.8.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXres-1.0.7-2.1.8.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXt-devel-1.1.4-6.1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXt-1.1.4-6.1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXt-debuginfo-1.1.4-6.1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXv-devel-1.0.9-2.1.8.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXv-1.0.9-2.1.8.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXv-debuginfo-1.0.9-2.1.8.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXvMC-1.0.8-2.1.8.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXvMC-debuginfo-1.0.8-2.1.8.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXvMC-devel-1.0.8-2.1.8.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXi-debuginfo-1.7.2-2.2.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXi-1.7.2-2.2.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXi-devel-1.7.2-2.2.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXxf86dga-debuginfo-1.1.4-2.1.8.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXxf86dga-devel-1.1.4-2.1.8.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXxf86dga-1.1.4-2.1.8.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXxf86vm-debuginfo-1.1.3-2.1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXxf86vm-devel-1.1.3-2.1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libXxf86vm-1.1.3-2.1.9.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libdmx-debuginfo-1.1.3-3.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libdmx-1.1.3-3.7.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; libdmx-devel-1.1.3-3.7.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-1981" target="_blank" rel="noopener noreferrer">CVE-2013-1981</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-1982" target="_blank" rel="noopener noreferrer">CVE-2013-1982</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-1983" target="_blank" rel="noopener noreferrer">CVE-2013-1983</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-1984" target="_blank" rel="noopener noreferrer">CVE-2013-1984</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-1985" target="_blank" rel="noopener noreferrer">CVE-2013-1985</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-1986" target="_blank" rel="noopener noreferrer">CVE-2013-1986</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-1987" target="_blank" rel="noopener noreferrer">CVE-2013-1987</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-1988" target="_blank" rel="noopener noreferrer">CVE-2013-1988</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-1989" target="_blank" rel="noopener noreferrer">CVE-2013-1989</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-1990" target="_blank" rel="noopener noreferrer">CVE-2013-1990</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-1991" target="_blank" rel="noopener noreferrer">CVE-2013-1991</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-1995" target="_blank" rel="noopener noreferrer">CVE-2013-1995</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-1997" target="_blank" rel="noopener noreferrer">CVE-2013-1997</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-1998" target="_blank" rel="noopener noreferrer">CVE-2013-1998</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-1999" target="_blank" rel="noopener noreferrer">CVE-2013-1999</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2000" target="_blank" rel="noopener noreferrer">CVE-2013-2000</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2001" target="_blank" rel="noopener noreferrer">CVE-2013-2001</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2002" target="_blank" rel="noopener noreferrer">CVE-2013-2002</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2003" target="_blank" rel="noopener noreferrer">CVE-2013-2003</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2004" target="_blank" rel="noopener noreferrer">CVE-2013-2004</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2005" target="_blank" rel="noopener noreferrer">CVE-2013-2005</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2062" target="_blank" rel="noopener noreferrer">CVE-2013-2062</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2064" target="_blank" rel="noopener noreferrer">CVE-2013-2064</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2013-2066" target="_blank" rel="noopener noreferrer">CVE-2013-2066</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1981" target="_blank" rel="noopener noreferrer">CVE-2013-1981</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1982" target="_blank" rel="noopener noreferrer">CVE-2013-1982</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1983" target="_blank" rel="noopener noreferrer">CVE-2013-1983</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1984" target="_blank" rel="noopener noreferrer">CVE-2013-1984</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1985" target="_blank" rel="noopener noreferrer">CVE-2013-1985</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1986" target="_blank" rel="noopener noreferrer">CVE-2013-1986</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1987" target="_blank" rel="noopener noreferrer">CVE-2013-1987</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1988" target="_blank" rel="noopener noreferrer">CVE-2013-1988</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1989" target="_blank" rel="noopener noreferrer">CVE-2013-1989</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1990" target="_blank" rel="noopener noreferrer">CVE-2013-1990</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1991" target="_blank" rel="noopener noreferrer">CVE-2013-1991</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1995" target="_blank" rel="noopener noreferrer">CVE-2013-1995</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1997" target="_blank" rel="noopener noreferrer">CVE-2013-1997</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1998" target="_blank" rel="noopener noreferrer">CVE-2013-1998</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1999" target="_blank" rel="noopener noreferrer">CVE-2013-1999</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2000" target="_blank" rel="noopener noreferrer">CVE-2013-2000</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2001" target="_blank" rel="noopener noreferrer">CVE-2013-2001</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2002" target="_blank" rel="noopener noreferrer">CVE-2013-2002</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2003" target="_blank" rel="noopener noreferrer">CVE-2013-2003</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2004" target="_blank" rel="noopener noreferrer">CVE-2013-2004</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2005" target="_blank" rel="noopener noreferrer">CVE-2013-2005</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2062" target="_blank" rel="noopener noreferrer">CVE-2013-2062</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2064" target="_blank" rel="noopener noreferrer">CVE-2013-2064</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2066" target="_blank" rel="noopener noreferrer">CVE-2013-2066</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

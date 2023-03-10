@@ -10,33 +10,9 @@
 	"summary": "harfbuzz security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-i686-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-i686-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
 		"packages": [
-			{
-				"src": "harfbuzz-2.7.4-8.el9.src.rpm",
-				"name": "harfbuzz-devel",
-				"epoch": "0",
-				"version": "2.7.4",
-				"release": "8.el9",
-				"arch": "i686",
-				"filename": "harfbuzz-devel-2.7.4-8.el9.i686.rpm",
-				"sum": "1a3940c6a82ca3f3acc1844d42bd1cb40eda95127ea0650a05ffed698618425b",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "harfbuzz-2.7.4-8.el9.src.rpm",
-				"name": "harfbuzz-icu",
-				"epoch": "0",
-				"version": "2.7.4",
-				"release": "8.el9",
-				"arch": "i686",
-				"filename": "harfbuzz-icu-2.7.4-8.el9.i686.rpm",
-				"sum": "dc84447d71fc5781192e2a17e8098296cb8e832d733151d915ab7a887988087b",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "harfbuzz-2.7.4-8.el9.src.rpm",
 				"name": "harfbuzz-icu",
@@ -58,6 +34,30 @@
 				"arch": "aarch64",
 				"filename": "harfbuzz-devel-2.7.4-8.el9.aarch64.rpm",
 				"sum": "cb5a5ece643a085359ec7d971aafd3d58bf2bc71326e20b592a66eb4e14ddc4e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "harfbuzz-2.7.4-8.el9.src.rpm",
+				"name": "harfbuzz-devel",
+				"epoch": "0",
+				"version": "2.7.4",
+				"release": "8.el9",
+				"arch": "i686",
+				"filename": "harfbuzz-devel-2.7.4-8.el9.i686.rpm",
+				"sum": "1a3940c6a82ca3f3acc1844d42bd1cb40eda95127ea0650a05ffed698618425b",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "harfbuzz-2.7.4-8.el9.src.rpm",
+				"name": "harfbuzz-icu",
+				"epoch": "0",
+				"version": "2.7.4",
+				"release": "8.el9",
+				"arch": "i686",
+				"filename": "harfbuzz-icu-2.7.4-8.el9.i686.rpm",
+				"sum": "dc84447d71fc5781192e2a17e8098296cb8e832d733151d915ab7a887988087b",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -135,25 +135,13 @@
 			},
 			{
 				"src": "harfbuzz-2.7.4-8.el9.src.rpm",
-				"name": "harfbuzz-icu",
+				"name": "harfbuzz",
 				"epoch": "0",
 				"version": "2.7.4",
 				"release": "8.el9",
 				"arch": "ppc64le",
-				"filename": "harfbuzz-icu-2.7.4-8.el9.ppc64le.rpm",
-				"sum": "2e8741742870d13c187d74b680fe9de64e1ac67d01dd05c397a4ebee85f760c1",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "harfbuzz-2.7.4-8.el9.src.rpm",
-				"name": "harfbuzz-devel",
-				"epoch": "0",
-				"version": "2.7.4",
-				"release": "8.el9",
-				"arch": "ppc64le",
-				"filename": "harfbuzz-devel-2.7.4-8.el9.ppc64le.rpm",
-				"sum": "7846742d5506c03c0f67503a32fa53f4f2fea4aab4515b2ea7dfc8b0c5eee5ef",
+				"filename": "harfbuzz-2.7.4-8.el9.ppc64le.rpm",
+				"sum": "496ec4e38ae0230d2a59cd3ea54fa98a7d2d61e619b4ac620279fed898ea6db1",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -175,21 +163,33 @@
 				"epoch": "0",
 				"version": "2.7.4",
 				"release": "8.el9",
-				"arch": "ppc64le",
-				"filename": "harfbuzz-2.7.4-8.el9.ppc64le.rpm",
-				"sum": "496ec4e38ae0230d2a59cd3ea54fa98a7d2d61e619b4ac620279fed898ea6db1",
+				"arch": "aarch64",
+				"filename": "harfbuzz-2.7.4-8.el9.aarch64.rpm",
+				"sum": "24adeb48aba5b174091d755e91cc8c17100480b4759e45403ec6544a451bdfeb",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
 			{
 				"src": "harfbuzz-2.7.4-8.el9.src.rpm",
-				"name": "harfbuzz",
+				"name": "harfbuzz-icu",
 				"epoch": "0",
 				"version": "2.7.4",
 				"release": "8.el9",
-				"arch": "aarch64",
-				"filename": "harfbuzz-2.7.4-8.el9.aarch64.rpm",
-				"sum": "24adeb48aba5b174091d755e91cc8c17100480b4759e45403ec6544a451bdfeb",
+				"arch": "ppc64le",
+				"filename": "harfbuzz-icu-2.7.4-8.el9.ppc64le.rpm",
+				"sum": "2e8741742870d13c187d74b680fe9de64e1ac67d01dd05c397a4ebee85f760c1",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "harfbuzz-2.7.4-8.el9.src.rpm",
+				"name": "harfbuzz-devel",
+				"epoch": "0",
+				"version": "2.7.4",
+				"release": "8.el9",
+				"arch": "ppc64le",
+				"filename": "harfbuzz-devel-2.7.4-8.el9.ppc64le.rpm",
+				"sum": "7846742d5506c03c0f67503a32fa53f4f2fea4aab4515b2ea7dfc8b0c5eee5ef",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -226,6 +226,6 @@
 		"$date": 1668470400000
 	},
 	"updated_date": {
-		"$date": 1668720942000
+		"$date": 1668720941000
 	}
 }

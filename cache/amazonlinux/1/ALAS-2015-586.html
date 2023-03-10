@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2015-586</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2015-586'>ALAS-2015-586</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2015-586
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2015-08-24 22:26 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2015-08-24 22:33 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2015-2590.html' target='_blank'>CVE-2015-2590&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-2601.html' target='_blank'>CVE-2015-2601&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-2621.html' target='_blank'>CVE-2015-2621&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-2625.html' target='_blank'>CVE-2015-2625&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-2628.html' target='_blank'>CVE-2015-2628&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-2632.html' target='_blank'>CVE-2015-2632&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-2808.html' target='_blank'>CVE-2015-2808&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-4000.html' target='_blank'>CVE-2015-4000&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-4731.html' target='_blank'>CVE-2015-4731&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-4732.html' target='_blank'>CVE-2015-4732&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-4733.html' target='_blank'>CVE-2015-4733&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-4748.html' target='_blank'>CVE-2015-4748&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-4749.html' target='_blank'>CVE-2015-4749&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-4760.html' target='_blank'>CVE-2015-4760&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='https://rhn.redhat.com/errata/RHSA-2015-1526.html' target='_blank'>RHSA-2015-1526&nbsp;<i class='fas fa-external-link-alt'></i></a><br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Multiple flaws were discovered in the 2D, CORBA, JMX, Libraries and RMI components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass Java sandbox restrictions. (CVE-2015-4760, CVE-2015-2628, CVE-2015-4731, CVE-2015-2590, CVE-2015-4732, CVE-2015-4733)</p><p>A flaw was found in the way the Libraries component of OpenJDK verified Online Certificate Status Protocol (OCSP) responses. An OCSP response with no nextUpdate date specified was incorrectly handled as having unlimited validity, possibly causing a revoked X.509 certificate to be interpreted as valid. (CVE-2015-4748)</p><p>It was discovered that the JCE component in OpenJDK failed to use constant time comparisons in multiple cases. An attacker could possibly use these flaws to disclose sensitive information by measuring the time used to perform operations using these non-constant time comparisons. (CVE-2015-2601)</p><p>A flaw was found in the RC4 encryption algorithm. When using certain keys for RC4 encryption, an attacker could obtain portions of the plain text from the cipher text without the knowledge of the encryption key. (CVE-2015-2808)</p><p>A flaw was found in the way the TLS protocol composed the Diffie-Hellman (DH) key exchange. A man-in-the-middle attacker could use this flaw to force the use of weak 512 bit export-grade keys during the key exchange, allowing them to decrypt all traffic. (CVE-2015-4000)</p><p>It was discovered that the JNDI component in OpenJDK did not handle DNS resolutions correctly. An attacker able to trigger such DNS errors could cause a Java application using JNDI to consume memory and CPU time, and possibly block further DNS resolution. (CVE-2015-4749)</p><p>Multiple information leak flaws were found in the JMX and 2D components in OpenJDK. An untrusted Java application or applet could use this flaw to bypass certain Java sandbox restrictions. (CVE-2015-2621, CVE-2015-2632)</p><p>A flaw was found in the way the JSSE component in OpenJDK performed X.509 certificate identity verification when establishing a TLS/SSL connection to a host identified by an IP address. In certain cases, the certificate was accepted as valid if it was issued for a host name to which the IP address resolves rather than for the IP address. (CVE-2015-2625)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>java-1.6.0-openjdk</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update java-1.6.0-openjdk</i> to update your system.</div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-1.6.0.36-1.13.8.1.71.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-demo-1.6.0.36-1.13.8.1.71.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-devel-1.6.0.36-1.13.8.1.71.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-javadoc-1.6.0.36-1.13.8.1.71.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-src-1.6.0.36-1.13.8.1.71.amzn1.i686<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-debuginfo-1.6.0.36-1.13.8.1.71.amzn1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-1.6.0.36-1.13.8.1.71.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-1.6.0.36-1.13.8.1.71.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-devel-1.6.0.36-1.13.8.1.71.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-src-1.6.0.36-1.13.8.1.71.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-demo-1.6.0.36-1.13.8.1.71.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-javadoc-1.6.0.36-1.13.8.1.71.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; java-1.6.0-openjdk-debuginfo-1.6.0.36-1.13.8.1.71.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-2590" target="_blank" rel="noopener noreferrer">CVE-2015-2590</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-2601" target="_blank" rel="noopener noreferrer">CVE-2015-2601</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-2621" target="_blank" rel="noopener noreferrer">CVE-2015-2621</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-2625" target="_blank" rel="noopener noreferrer">CVE-2015-2625</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-2628" target="_blank" rel="noopener noreferrer">CVE-2015-2628</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-2632" target="_blank" rel="noopener noreferrer">CVE-2015-2632</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-2808" target="_blank" rel="noopener noreferrer">CVE-2015-2808</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-4000" target="_blank" rel="noopener noreferrer">CVE-2015-4000</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-4731" target="_blank" rel="noopener noreferrer">CVE-2015-4731</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-4732" target="_blank" rel="noopener noreferrer">CVE-2015-4732</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-4733" target="_blank" rel="noopener noreferrer">CVE-2015-4733</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-4748" target="_blank" rel="noopener noreferrer">CVE-2015-4748</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-4749" target="_blank" rel="noopener noreferrer">CVE-2015-4749</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-4760" target="_blank" rel="noopener noreferrer">CVE-2015-4760</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2590" target="_blank" rel="noopener noreferrer">CVE-2015-2590</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2601" target="_blank" rel="noopener noreferrer">CVE-2015-2601</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2621" target="_blank" rel="noopener noreferrer">CVE-2015-2621</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2625" target="_blank" rel="noopener noreferrer">CVE-2015-2625</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2628" target="_blank" rel="noopener noreferrer">CVE-2015-2628</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2632" target="_blank" rel="noopener noreferrer">CVE-2015-2632</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2808" target="_blank" rel="noopener noreferrer">CVE-2015-2808</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4000" target="_blank" rel="noopener noreferrer">CVE-2015-4000</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4731" target="_blank" rel="noopener noreferrer">CVE-2015-4731</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4732" target="_blank" rel="noopener noreferrer">CVE-2015-4732</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4733" target="_blank" rel="noopener noreferrer">CVE-2015-4733</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4748" target="_blank" rel="noopener noreferrer">CVE-2015-4748</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4749" target="_blank" rel="noopener noreferrer">CVE-2015-4749</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4760" target="_blank" rel="noopener noreferrer">CVE-2015-4760</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

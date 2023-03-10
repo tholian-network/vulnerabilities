@@ -10,9 +10,57 @@
 	"summary": "An update for openjpeg2 is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "4",
 	"pkglist": {
-		"name": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
-		"shortname": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
+		"name": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
+		"shortname": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
 		"packages": [
+			{
+				"src": "openjpeg2-2.4.0-4.el8.src.rpm",
+				"name": "openjpeg2-devel-docs",
+				"epoch": "0",
+				"version": "2.4.0",
+				"release": "4.el8",
+				"arch": "noarch",
+				"filename": "openjpeg2-devel-docs-2.4.0-4.el8.noarch.rpm",
+				"sum": "6bde46ae06a70b193e567d4a8cc186b7976a1e7dee9984b44020a9840d82a9c2",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "openjpeg2-2.4.0-4.el8.src.rpm",
+				"name": "openjpeg2-devel",
+				"epoch": "0",
+				"version": "2.4.0",
+				"release": "4.el8",
+				"arch": "aarch64",
+				"filename": "openjpeg2-devel-2.4.0-4.el8.aarch64.rpm",
+				"sum": "97a4e5404c0faf20d1c15932982805508bb4566458e282a644b6c09cbea8edb7",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "openjpeg2-2.4.0-4.el8.src.rpm",
+				"name": "openjpeg2",
+				"epoch": "0",
+				"version": "2.4.0",
+				"release": "4.el8",
+				"arch": "aarch64",
+				"filename": "openjpeg2-2.4.0-4.el8.aarch64.rpm",
+				"sum": "99be2e41c35001971460010569be92c7d3598df29ce60b873379c84ed3ecc4fa",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "openjpeg2-2.4.0-4.el8.src.rpm",
+				"name": "openjpeg2-tools",
+				"epoch": "0",
+				"version": "2.4.0",
+				"release": "4.el8",
+				"arch": "aarch64",
+				"filename": "openjpeg2-tools-2.4.0-4.el8.aarch64.rpm",
+				"sum": "ff30d2db507c005744b79a585fc52a7f9408cc7f56f2eee6d13790fd62f733d3",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "openjpeg2-2.4.0-4.el8.src.rpm",
 				"name": "openjpeg2-devel",
@@ -34,18 +82,6 @@
 				"arch": "i686",
 				"filename": "openjpeg2-tools-2.4.0-4.el8.i686.rpm",
 				"sum": "4fc177c317c576c98da8ef24f15b6fc0aeccdc7d3ca62eec7a5c58dcc76c5bd1",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "openjpeg2-2.4.0-4.el8.src.rpm",
-				"name": "openjpeg2-devel-docs",
-				"epoch": "0",
-				"version": "2.4.0",
-				"release": "4.el8",
-				"arch": "noarch",
-				"filename": "openjpeg2-devel-docs-2.4.0-4.el8.noarch.rpm",
-				"sum": "6bde46ae06a70b193e567d4a8cc186b7976a1e7dee9984b44020a9840d82a9c2",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -91,54 +127,6 @@
 				"epoch": "0",
 				"version": "2.4.0",
 				"release": "4.el8",
-				"arch": "aarch64",
-				"filename": "openjpeg2-devel-2.4.0-4.el8.aarch64.rpm",
-				"sum": "97a4e5404c0faf20d1c15932982805508bb4566458e282a644b6c09cbea8edb7",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "openjpeg2-2.4.0-4.el8.src.rpm",
-				"name": "openjpeg2",
-				"epoch": "0",
-				"version": "2.4.0",
-				"release": "4.el8",
-				"arch": "aarch64",
-				"filename": "openjpeg2-2.4.0-4.el8.aarch64.rpm",
-				"sum": "99be2e41c35001971460010569be92c7d3598df29ce60b873379c84ed3ecc4fa",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "openjpeg2-2.4.0-4.el8.src.rpm",
-				"name": "openjpeg2-tools",
-				"epoch": "0",
-				"version": "2.4.0",
-				"release": "4.el8",
-				"arch": "aarch64",
-				"filename": "openjpeg2-tools-2.4.0-4.el8.aarch64.rpm",
-				"sum": "ff30d2db507c005744b79a585fc52a7f9408cc7f56f2eee6d13790fd62f733d3",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "openjpeg2-2.4.0-4.el8.src.rpm",
-				"name": "openjpeg2",
-				"epoch": "0",
-				"version": "2.4.0",
-				"release": "4.el8",
-				"arch": "i686",
-				"filename": "openjpeg2-2.4.0-4.el8.i686.rpm",
-				"sum": "0cdd5dadeabbb0bb1e5eb758776298470c6bbfdca2b87eb790b69b498822c460",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "openjpeg2-2.4.0-4.el8.src.rpm",
-				"name": "openjpeg2-devel",
-				"epoch": "0",
-				"version": "2.4.0",
-				"release": "4.el8",
 				"arch": "ppc64le",
 				"filename": "openjpeg2-devel-2.4.0-4.el8.ppc64le.rpm",
 				"sum": "1fb05fa02b693d59fb11a9d94420e40c3dcd783656ba28142b1916df032b1be2",
@@ -168,11 +156,29 @@
 				"sum": "b22f80cac2c210647e7a27fcad69799a34a31f4413e166071d15163010379d64",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "openjpeg2-2.4.0-4.el8.src.rpm",
+				"name": "openjpeg2",
+				"epoch": "0",
+				"version": "2.4.0",
+				"release": "4.el8",
+				"arch": "i686",
+				"filename": "openjpeg2-2.4.0-4.el8.i686.rpm",
+				"sum": "0cdd5dadeabbb0bb1e5eb758776298470c6bbfdca2b87eb790b69b498822c460",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "OpenJPEG is an open source library for reading and writing image files in JPEG2000 format.\n\nThe following packages have been upgraded to a later upstream version: openjpeg2 (2.4.0).\n\nSecurity Fix(es):\n\n* openjpeg: use-after-free and double-free via a mix of valid and invalid files in a directory operated on by the decompressor (CVE-2020-15389)\n\n* openjpeg: heap-buffer-overflow in lib/openjp2/mqc.c could result in DoS (CVE-2020-27814)\n\n* openjpeg: heap-buffer-overflow write in opj_tcd_dc_level_shift_encode() (CVE-2020-27823)\n\n* openjpeg: heap-buffer-overflow in color.c may lead to DoS or arbitrary code execution (CVE-2021-3575)\n\n* openjpeg: integer overflow in opj_t1_encode_cblks in src/lib/openjp2/t1.c (CVE-2018-5727)\n\n* openjpeg: integer overflow in opj_j2k_setup_encoder function in openjp2/j2k.c (CVE-2018-5785)\n\n* openjpeg: division-by-zero in functions pi_next_pcrl, pi_next_cprl, and pi_next_rpcl in openmj2/pi.c (CVE-2018-20845)\n\n* openjpeg: integer overflow in function opj_get_encoding_parameters in openjp2/pi.c (CVE-2018-20847)\n\n* openjpeg: denial of service in function opj_t1_encode_cblks in openjp2/t1.c (CVE-2019-12973)\n\n* openjpeg: global-buffer-overflow read in opj_dwt_calc_explicit_stepsizes() (CVE-2020-27824)\n\n* openjpeg: null pointer dereference in opj_tgt_reset function in lib/openjp2/tgt.c (CVE-2020-27842)\n\n* openjpeg: out-of-bounds read in opj_t2_encode_packet function in openjp2/t2.c (CVE-2020-27843)\n\n* openjpeg: heap-based buffer overflow in functions opj_pi_next_rlcp, opj_pi_next_rpcl and opj_pi_next_lrcp in openjp2/pi.c (CVE-2020-27845)\n\n* openjpeg: out-of-bounds write due to an integer overflow in opj_compress.c (CVE-2021-29338)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
+		{
+			"id": "ALSA-2021-4251",
+			"title": "ALSA-2021-4251",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-4251.html"
+		},
 		{
 			"id": "CVE-2018-20845",
 			"title": "CVE-2018-20845",
@@ -262,6 +268,6 @@
 		"$date": 1636447871000
 	},
 	"updated_date": {
-		"$date": 1636712461000
+		"$date": 1636462742000
 	}
 }

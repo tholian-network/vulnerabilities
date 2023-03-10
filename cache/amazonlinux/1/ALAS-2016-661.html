@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2016-661</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2022.html">Amazon Linux 2022</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2016-661'>ALAS-2016-661</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2016-661
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2016-03-10 16:30 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2016-04-28 14:30 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2015-3197.html' target='_blank'>CVE-2015-3197&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2015-7575.html' target='_blank'>CVE-2015-7575&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0702.html' target='_blank'>CVE-2016-0702&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0705.html' target='_blank'>CVE-2016-0705&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0797.html' target='_blank'>CVE-2016-0797&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0799.html' target='_blank'>CVE-2016-0799&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-0800.html' target='_blank'>CVE-2016-0800&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2016-2842.html' target='_blank'>CVE-2016-2842&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>A padding oracle flaw was found in the Secure Sockets Layer version 2.0 (SSLv2) protocol. An attacker can potentially use this flaw to decrypt RSA-encrypted cipher text from a connection using a newer SSL/TLS protocol version, allowing them to decrypt such connections. This cross-protocol attack is publicly referred to as DROWN (CVE-2016-0800). Prior to this advisory, SSLv2 has been disabled by default in OpenSSL on the Amazon Linux AMI. However, application configurations may still re-enable SSLv2.</p><p>A flaw was found in the way TLS 1.2 could use the MD5 hash function for signing ServerKeyExchange and Client Authentication packets during a TLS handshake. A man-in-the-middle attacker able to force a TLS connection to use the MD5 hash function could use this flaw to conduct collision attacks to impersonate a TLS server or an authenticated TLS client. (CVE-2015-7575, Medium)<br />A flaw was found in the way malicious SSLv2 clients could negotiate SSLv2 ciphers that have been disabled on the server. This could result in weak SSLv2 ciphers being used for SSLv2 connections, making them vulnerable to man-in-the-middle attacks. (CVE-2015-3197, Low)</p><p>A side-channel attack was found that makes use of cache-bank conflicts on the Intel Sandy-Bridge microarchitecture. An attacker who has the ability to control code in a thread running on the same hyper-threaded core as the victim&#39;s thread that is performing decryption, could use this flaw to recover RSA private keys. (CVE-2016-0702, Low)</p><p>A double-free flaw was found in the way OpenSSL parsed certain malformed DSA (Digital Signature Algorithm) private keys. An attacker could create specially crafted DSA private keys that, when processed by an application compiled against OpenSSL, could cause the application to crash. (CVE-2016-0705, Low)</p><p>An integer overflow flaw, leading to a NULL pointer dereference or a heap-based memory corruption, was found in the way some BIGNUM functions of OpenSSL were implemented. Applications that use these functions with large untrusted input could crash or, potentially, execute arbitrary code. (CVE-2016-0797, Low)</p><p>The fmtstr function in crypto/bio/b_print.c in OpenSSL improperly calculated string lengths, which allows remote attackers to cause a denial of service (overflow and out-of-bounds read) or possibly have unspecified other impact via a long string, as demonstrated by a large amount of ASN.1 data. (CVE-2016-0799, Low)</p><p>The doapr_outch function in crypto/bio/b_print.c in OpenSSL did not verify that a certain memory allocation succeeds, which allows remote attackers to cause a denial of service (out-of-bounds write or memory consumption) or possibly have unspecified other impact via a long string, as demonstrated by a large amount of ASN.1 data. (CVE-2016-2842, Low)</p><p>&lt;i&gt;(Updated on 2016-04-28: CVE-2016-2842 was fixed as part of this update but was previously not listed in this advisory.)&lt;/i&gt;</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>openssl</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update openssl</i> to update your system.
+                                    <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; openssl-static-1.0.1k-14.89.amzn1.i686<br />&nbsp;&nbsp;&nbsp; openssl-debuginfo-1.0.1k-14.89.amzn1.i686<br />&nbsp;&nbsp;&nbsp; openssl-devel-1.0.1k-14.89.amzn1.i686<br />&nbsp;&nbsp;&nbsp; openssl-perl-1.0.1k-14.89.amzn1.i686<br />&nbsp;&nbsp;&nbsp; openssl-1.0.1k-14.89.amzn1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; openssl-1.0.1k-14.89.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; openssl-perl-1.0.1k-14.89.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; openssl-1.0.1k-14.89.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; openssl-devel-1.0.1k-14.89.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; openssl-static-1.0.1k-14.89.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; openssl-debuginfo-1.0.1k-14.89.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-3197" target="_blank" rel="noopener noreferrer">CVE-2015-3197</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2015-7575" target="_blank" rel="noopener noreferrer">CVE-2015-7575</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0702" target="_blank" rel="noopener noreferrer">CVE-2016-0702</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0705" target="_blank" rel="noopener noreferrer">CVE-2016-0705</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0797" target="_blank" rel="noopener noreferrer">CVE-2016-0797</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0799" target="_blank" rel="noopener noreferrer">CVE-2016-0799</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-0800" target="_blank" rel="noopener noreferrer">CVE-2016-0800</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-2842" target="_blank" rel="noopener noreferrer">CVE-2016-2842</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3197" target="_blank" rel="noopener noreferrer">CVE-2015-3197</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7575" target="_blank" rel="noopener noreferrer">CVE-2015-7575</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0702" target="_blank" rel="noopener noreferrer">CVE-2016-0702</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0705" target="_blank" rel="noopener noreferrer">CVE-2016-0705</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0797" target="_blank" rel="noopener noreferrer">CVE-2016-0797</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0799" target="_blank" rel="noopener noreferrer">CVE-2016-0799</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0800" target="_blank" rel="noopener noreferrer">CVE-2016-0800</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2842" target="_blank" rel="noopener noreferrer">CVE-2016-2842</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2021
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2021 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2021, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

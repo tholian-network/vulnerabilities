@@ -10,9 +10,45 @@
 	"summary": "An update for libwmf is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "4",
 	"pkglist": {
-		"name": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
-		"shortname": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
+		"name": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
+		"shortname": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
 		"packages": [
+			{
+				"src": "libwmf-0.2.9-8.el8_0.src.rpm",
+				"name": "libwmf-devel",
+				"epoch": "0",
+				"version": "0.2.9",
+				"release": "8.el8_0",
+				"arch": "aarch64",
+				"filename": "libwmf-devel-0.2.9-8.el8_0.aarch64.rpm",
+				"sum": "0b3bb7bc2e117303c1b72678a0f65bad4be955cd997427492ebe7f121fd2aa68",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libwmf-0.2.9-8.el8_0.src.rpm",
+				"name": "libwmf-lite",
+				"epoch": "0",
+				"version": "0.2.9",
+				"release": "8.el8_0",
+				"arch": "aarch64",
+				"filename": "libwmf-lite-0.2.9-8.el8_0.aarch64.rpm",
+				"sum": "56ee0267ef85c3fcbdcd0cbb15e1e800fadd9f4876942be31bf9ddf6d15191a5",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libwmf-0.2.9-8.el8_0.src.rpm",
+				"name": "libwmf",
+				"epoch": "0",
+				"version": "0.2.9",
+				"release": "8.el8_0",
+				"arch": "aarch64",
+				"filename": "libwmf-0.2.9-8.el8_0.aarch64.rpm",
+				"sum": "84923c479012c05bb07de347ca009360fbf0c1dab273f8db6651c577f9eaffa1",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "libwmf-0.2.9-8.el8_0.src.rpm",
 				"name": "libwmf",
@@ -63,66 +99,6 @@
 			},
 			{
 				"src": "libwmf-0.2.9-8.el8_0.src.rpm",
-				"name": "libwmf-devel",
-				"epoch": "0",
-				"version": "0.2.9",
-				"release": "8.el8_0",
-				"arch": "aarch64",
-				"filename": "libwmf-devel-0.2.9-8.el8_0.aarch64.rpm",
-				"sum": "0b3bb7bc2e117303c1b72678a0f65bad4be955cd997427492ebe7f121fd2aa68",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libwmf-0.2.9-8.el8_0.src.rpm",
-				"name": "libwmf-lite",
-				"epoch": "0",
-				"version": "0.2.9",
-				"release": "8.el8_0",
-				"arch": "aarch64",
-				"filename": "libwmf-lite-0.2.9-8.el8_0.aarch64.rpm",
-				"sum": "56ee0267ef85c3fcbdcd0cbb15e1e800fadd9f4876942be31bf9ddf6d15191a5",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libwmf-0.2.9-8.el8_0.src.rpm",
-				"name": "libwmf",
-				"epoch": "0",
-				"version": "0.2.9",
-				"release": "8.el8_0",
-				"arch": "aarch64",
-				"filename": "libwmf-0.2.9-8.el8_0.aarch64.rpm",
-				"sum": "84923c479012c05bb07de347ca009360fbf0c1dab273f8db6651c577f9eaffa1",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libwmf-0.2.9-8.el8_0.src.rpm",
-				"name": "libwmf-lite",
-				"epoch": "0",
-				"version": "0.2.9",
-				"release": "8.el8_0",
-				"arch": "i686",
-				"filename": "libwmf-lite-0.2.9-8.el8_0.i686.rpm",
-				"sum": "7c7886675e7ada94b5003fd0b8776705214b165114e0b312d376f1eb9202969c",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libwmf-0.2.9-8.el8_0.src.rpm",
-				"name": "libwmf",
-				"epoch": "0",
-				"version": "0.2.9",
-				"release": "8.el8_0",
-				"arch": "i686",
-				"filename": "libwmf-0.2.9-8.el8_0.i686.rpm",
-				"sum": "fb73daf306bd2fa2fee6c14da4718f4f56ed6d5e0ebcfce558b962f724c1280b",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libwmf-0.2.9-8.el8_0.src.rpm",
 				"name": "libwmf-lite",
 				"epoch": "0",
 				"version": "0.2.9",
@@ -156,11 +132,41 @@
 				"sum": "d9e506677554cc03356aef0c4d67a3019bf2d7166971557e61aca42651e153a9",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "libwmf-0.2.9-8.el8_0.src.rpm",
+				"name": "libwmf-lite",
+				"epoch": "0",
+				"version": "0.2.9",
+				"release": "8.el8_0",
+				"arch": "i686",
+				"filename": "libwmf-lite-0.2.9-8.el8_0.i686.rpm",
+				"sum": "7c7886675e7ada94b5003fd0b8776705214b165114e0b312d376f1eb9202969c",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libwmf-0.2.9-8.el8_0.src.rpm",
+				"name": "libwmf",
+				"epoch": "0",
+				"version": "0.2.9",
+				"release": "8.el8_0",
+				"arch": "i686",
+				"filename": "libwmf-0.2.9-8.el8_0.i686.rpm",
+				"sum": "fb73daf306bd2fa2fee6c14da4718f4f56ed6d5e0ebcfce558b962f724c1280b",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "The libwmf packages provide a library for reading and converting Windows Metafile Format (WMF) vector graphics. The library is used by applications such as GIMP and ImageMagick.\n\nSecurity Fix(es):\n\n* gd: double free in the gdImage*Ptr in gd_gif_out.c, gd_jpeg.c, and gd_wbmp.c (CVE-2019-6978)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
+		{
+			"id": "ALSA-2019-2722",
+			"title": "ALSA-2019-2722",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2019-2722.html"
+		},
 		{
 			"id": "CVE-2019-6978",
 			"title": "CVE-2019-6978",
@@ -172,6 +178,6 @@
 		"$date": 1568129579000
 	},
 	"updated_date": {
-		"$date": 1628672040000
+		"$date": 1568129573000
 	}
 }
