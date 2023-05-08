@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2023-2028</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/index.html">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2023.html">Amazon Linux 2023</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/faqs.html">FAQs</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2023-2028'>ALAS2-2023-2028</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2023-2028
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2023-04-27 18:37 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2023-05-02 19:19 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2023-0547.html' target='_blank' rel='noopener noreferrer'>CVE-2023-0547&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2023-1945.html' target='_blank' rel='noopener noreferrer'>CVE-2023-1945&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2023-29479.html' target='_blank' rel='noopener noreferrer'>CVE-2023-29479&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2023-29533.html' target='_blank' rel='noopener noreferrer'>CVE-2023-29533&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2023-29535.html' target='_blank' rel='noopener noreferrer'>CVE-2023-29535&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2023-29536.html' target='_blank' rel='noopener noreferrer'>CVE-2023-29536&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2023-29539.html' target='_blank' rel='noopener noreferrer'>CVE-2023-29539&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2023-29541.html' target='_blank' rel='noopener noreferrer'>CVE-2023-29541&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2023-29548.html' target='_blank' rel='noopener noreferrer'>CVE-2023-29548&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2023-29550.html' target='_blank' rel='noopener noreferrer'>CVE-2023-29550&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                            <a href="../../faqs.html">FAQs regarding Amazon Linux ALAS/CVE Severity</a>
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>The Mozilla Foundation describes this issue as follows:<br />OCSP revocation status of recipient certificates was not checked when sending S/Mime encrypted email, and revoked certificates would be accepted. Thunderbird versions from 68 to 102.9.1 were affected by this bug. (CVE-2023-0547)</p><p>The Mozilla Foundation describes this issue as follows:<br />Unexpected data returned from the Safe Browsing API could have led to memory corruption and a potentially exploitable crash. (CVE-2023-1945)</p><p>The Mozilla Foundation describes this issue as follows:<br />Certain malformed OpenPGP messages could trigger incorrect parsing of PKESK/SKESK packets due to a bug in the Ribose RNP library used by Thunderbird up to version 102.9.1, which would cause the Thunderbird user interface to hang. The issue was discovered using Google&#39;s oss-fuzz. (CVE-2023-29479)</p><p>The Mozilla Foundation describes this issue as follows:<br />A website could have obscured the fullscreen notification by using a combination of window.open, fullscreen requests, window.name assignments, and setInterval calls. This could have led to user confusion and possible spoofing attacks. (CVE-2023-29533)</p><p>The Mozilla Foundation describes this issue as follows:<br />Following a Garbage Collector compaction, weak maps may have been accessed before they were correctly traced. This resulted in memory corruption and a potentially exploitable crash. (CVE-2023-29535)</p><p>The Mozilla Foundation describes this issue as follows:<br />An attacker could cause the memory manager to incorrectly free a pointer that addresses attacker-controlled memory, resulting in an assertion, memory corruption, or a potentially exploitable crash. (CVE-2023-29536)</p><p>The Mozilla Foundation describes this issue as follows:<br />When handling the filename directive in the Content-Disposition header, the filename would be truncated if the filename contained a NULL character. This could have led to reflected file download attacks potentially tricking users to install malware. (CVE-2023-29539)</p><p>The Mozilla Foundation describes this issue as follows:<br />Firefox did not properly handle downloads of files ending in .desktop, which can be interpreted to run attacker-controlled commands.<br />This bug only affects Firefox for Linux on certain Distributions. Other operating systems are unaffected, and Mozilla is unable to enumerate all affected Linux Distributions. (CVE-2023-29541)</p><p>The Mozilla Foundation describes this issue as follows:<br />A wrong lowering instruction in the ARM64 Ion compiler resulted in a wrong optimization result. (CVE-2023-29548)</p><p>The Mozilla Foundation describes this issue as follows:<br />Mozilla developers Andrew Osmond, Sebastian Hengst, Andrew McCreight, and the Mozilla Fuzzing Team reported memory safety bugs present in Thunderbird 102.9, Firefox 111, and Firefox ESR 102.9. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. (CVE-2023-29550)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>thunderbird</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update thunderbird</i> to update your system.
+                                    <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; thunderbird-102.10.0-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; thunderbird-debuginfo-102.10.0-1.amzn2.0.1.aarch64<br /><br />src:<br />&nbsp;&nbsp;&nbsp; thunderbird-102.10.0-1.amzn2.0.1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; thunderbird-102.10.0-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; thunderbird-debuginfo-102.10.0-1.amzn2.0.1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-0547" target="_blank" rel="noopener noreferrer">CVE-2023-0547</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-1945" target="_blank" rel="noopener noreferrer">CVE-2023-1945</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-29479" target="_blank" rel="noopener noreferrer">CVE-2023-29479</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-29533" target="_blank" rel="noopener noreferrer">CVE-2023-29533</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-29535" target="_blank" rel="noopener noreferrer">CVE-2023-29535</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-29536" target="_blank" rel="noopener noreferrer">CVE-2023-29536</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-29539" target="_blank" rel="noopener noreferrer">CVE-2023-29539</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-29541" target="_blank" rel="noopener noreferrer">CVE-2023-29541</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-29548" target="_blank" rel="noopener noreferrer">CVE-2023-29548</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-29550" target="_blank" rel="noopener noreferrer">CVE-2023-29550</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0547" target="_blank" rel="noopener noreferrer">CVE-2023-0547</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-1945" target="_blank" rel="noopener noreferrer">CVE-2023-1945</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29479" target="_blank" rel="noopener noreferrer">CVE-2023-29479</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29533" target="_blank" rel="noopener noreferrer">CVE-2023-29533</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29535" target="_blank" rel="noopener noreferrer">CVE-2023-29535</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29536" target="_blank" rel="noopener noreferrer">CVE-2023-29536</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29539" target="_blank" rel="noopener noreferrer">CVE-2023-29539</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29541" target="_blank" rel="noopener noreferrer">CVE-2023-29541</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29548" target="_blank" rel="noopener noreferrer">CVE-2023-29548</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29550" target="_blank" rel="noopener noreferrer">CVE-2023-29550</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2023
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2023 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2023, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

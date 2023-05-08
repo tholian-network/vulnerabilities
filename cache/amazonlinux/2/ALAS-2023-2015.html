@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2023-2015</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/index.html">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2023.html">Amazon Linux 2023</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/faqs.html">FAQs</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2023-2015'>ALAS2-2023-2015</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2023-2015
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2023-04-13 19:28 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2023-04-20 18:23 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2022-2880.html' target='_blank' rel='noopener noreferrer'>CVE-2022-2880&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-30580.html' target='_blank' rel='noopener noreferrer'>CVE-2022-30580&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-30634.html' target='_blank' rel='noopener noreferrer'>CVE-2022-30634&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-41722.html' target='_blank' rel='noopener noreferrer'>CVE-2022-41722&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-41723.html' target='_blank' rel='noopener noreferrer'>CVE-2022-41723&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-41724.html' target='_blank' rel='noopener noreferrer'>CVE-2022-41724&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2022-41725.html' target='_blank' rel='noopener noreferrer'>CVE-2022-41725&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2023-24532.html' target='_blank' rel='noopener noreferrer'>CVE-2023-24532&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2023-24534.html' target='_blank' rel='noopener noreferrer'>CVE-2023-24534&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2023-24536.html' target='_blank' rel='noopener noreferrer'>CVE-2023-24536&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2023-24537.html' target='_blank' rel='noopener noreferrer'>CVE-2023-24537&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2023-24538.html' target='_blank' rel='noopener noreferrer'>CVE-2023-24538&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                            <a href="../../faqs.html">FAQs regarding Amazon Linux ALAS/CVE Severity</a>
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Requests forwarded by ReverseProxy include the raw query parameters from the inbound request, including unparseable parameters rejected by net/http. This could permit query parameter smuggling when a Go proxy forwards a parameter with an unparseable value. After fix, ReverseProxy sanitizes the query parameters in the forwarded query when the outbound request&#39;s Form field is set after the ReverseProxy. Director function returns, indicating that the proxy has parsed the query parameters. Proxies which do not parse query parameters continue to forward the original query parameters unchanged. (CVE-2022-2880)</p><p>Code injection in Cmd.Start in os/exec before Go 1.17.11 and Go 1.18.3 allows execution of any binaries in the working directory named either &#34;..com&#34; or &#34;..exe&#34; by calling Cmd.Run, Cmd.Start, Cmd.Output, or Cmd.CombinedOutput when Cmd.Path is unset. (CVE-2022-30580)</p><p>Infinite loop in Read in crypto/rand before Go 1.17.11 and Go 1.18.3 on Windows allows attacker to cause an indefinite hang by passing a buffer larger than 1 &lt;&lt; 32 - 1 bytes. (CVE-2022-30634)</p><p>The Go project has described this issue as follows:</p><p>&#34;On Windows, the filepath.Clean function could transform an invalid path such as a/../c:/b into the valid path c:\b. This transformation of a relative (if invalid) path into an absolute path could enable a directory traversal attack. The filepath.Clean function will now transform this path into the relative (but still invalid) path .\c:\b.&#34; (CVE-2022-41722)</p><p>http2/hpack: avoid quadratic complexity in hpack decoding (CVE-2022-41723)</p><p>RESERVED<br />NOTE: https://groups.google.com/g/golang-announce/c/V0aBFqaFs_E (CVE-2022-41724)</p><p>Golang: net/http, mime/multipart: denial of service from excessive resource consumption (https://groups.google.com/g/golang-announce/c/V0aBFqaFs_E) (CVE-2022-41725)</p><p>The ScalarMult and ScalarBaseMult methods of the P256 Curve may return an incorrect result if called with some specific unreduced scalars (a scalar larger than the order of the curve). This does not impact usages of crypto/ecdsa or crypto/ecdh. (CVE-2023-24532)</p><p>HTTP and MIME header parsing could allocate large amounts of memory, even when parsing small inputs.</p><p>Certain unusual patterns of input data could cause the common function used to parse HTTP and MIME headers to allocate substantially more memory than required to hold the parsed headers. An attacker can exploit this behavior to cause an HTTP server to allocate large amounts of memory from a small request, potentially leading to memory exhaustion and a denial of service. (CVE-2023-24534)</p><p>Multipart form parsing can consume large amounts of CPU and memory when processing form inputs containing very large numbers of parts. This stems from several causes: 1. mime/multipart.Reader.ReadForm limits the total memory a parsed multipart form can consume. ReadForm can undercount the amount of memory consumed, leading it to accept larger inputs than intended. 2. Limiting total memory does not account for increased pressure on the garbage collector from large numbers of small allocations in forms with many parts. 3. ReadForm can allocate a large number of short-lived buffers, further increasing pressure on the garbage collector. The combination of these factors can permit an attacker to cause an program that parses multipart forms to consume large amounts of CPU and memory, potentially resulting in a denial of service. This affects programs that use mime/multipart.Reader.ReadForm, as well as form parsing in the net/http package with the Request methods FormFile, FormValue, ParseMultipartForm, and PostFormValue. With fix, ReadForm now does a better job of estimating the memory consumption of parsed forms, and performs many fewer short-lived allocations. In addition, the fixed mime/multipart.Reader imposes the following limits on the size of parsed forms: 1. Forms parsed with ReadForm may contain no more than 1000 parts. This limit may be adjusted with the environment variable GODEBUG=multipartmaxparts=. 2. Form parts parsed with NextPart and NextRawPart may contain no more than 10,000 header fields. In addition, forms parsed with ReadForm may contain no more than 10,000 header fields across all parts. This limit may be adjusted with the environment variable GODEBUG=multipartmaxheaders=. (CVE-2023-24536)</p><p>Calling any of the Parse functions on Go source code which contains //line directives with very large line numbers can cause an infinite loop due to integer overflow. (CVE-2023-24537)</p><p>Templates did not properly consider backticks (`) as Javascript string delimiters, and as such did<br />not escape them as expected. Backticks are used, since ES6, for JS template literals. If a template<br />contained a Go template action within a Javascript template literal, the contents of the action could<br />be used to terminate the literal, injecting arbitrary Javascript code into the Go template. (CVE-2023-24538)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>golang</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update golang</i> to update your system.
+                                <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; golang-1.18.9-1.amzn2.0.2.aarch64<br />&nbsp;&nbsp;&nbsp; golang-bin-1.18.9-1.amzn2.0.2.aarch64<br />&nbsp;&nbsp;&nbsp; golang-shared-1.18.9-1.amzn2.0.2.aarch64<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; golang-docs-1.18.9-1.amzn2.0.2.noarch<br />&nbsp;&nbsp;&nbsp; golang-misc-1.18.9-1.amzn2.0.2.noarch<br />&nbsp;&nbsp;&nbsp; golang-tests-1.18.9-1.amzn2.0.2.noarch<br />&nbsp;&nbsp;&nbsp; golang-src-1.18.9-1.amzn2.0.2.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; golang-1.18.9-1.amzn2.0.2.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; golang-1.18.9-1.amzn2.0.2.x86_64<br />&nbsp;&nbsp;&nbsp; golang-bin-1.18.9-1.amzn2.0.2.x86_64<br />&nbsp;&nbsp;&nbsp; golang-shared-1.18.9-1.amzn2.0.2.x86_64<br />&nbsp;&nbsp;&nbsp; golang-race-1.18.9-1.amzn2.0.2.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-2880" target="_blank" rel="noopener noreferrer">CVE-2022-2880</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-30580" target="_blank" rel="noopener noreferrer">CVE-2022-30580</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-30634" target="_blank" rel="noopener noreferrer">CVE-2022-30634</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-41722" target="_blank" rel="noopener noreferrer">CVE-2022-41722</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-41723" target="_blank" rel="noopener noreferrer">CVE-2022-41723</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-41724" target="_blank" rel="noopener noreferrer">CVE-2022-41724</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-41725" target="_blank" rel="noopener noreferrer">CVE-2022-41725</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-24532" target="_blank" rel="noopener noreferrer">CVE-2023-24532</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-24534" target="_blank" rel="noopener noreferrer">CVE-2023-24534</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-24536" target="_blank" rel="noopener noreferrer">CVE-2023-24536</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-24537" target="_blank" rel="noopener noreferrer">CVE-2023-24537</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-24538" target="_blank" rel="noopener noreferrer">CVE-2023-24538</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2880" target="_blank" rel="noopener noreferrer">CVE-2022-2880</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30580" target="_blank" rel="noopener noreferrer">CVE-2022-30580</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30634" target="_blank" rel="noopener noreferrer">CVE-2022-30634</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41722" target="_blank" rel="noopener noreferrer">CVE-2022-41722</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41723" target="_blank" rel="noopener noreferrer">CVE-2022-41723</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41724" target="_blank" rel="noopener noreferrer">CVE-2022-41724</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41725" target="_blank" rel="noopener noreferrer">CVE-2022-41725</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-24532" target="_blank" rel="noopener noreferrer">CVE-2023-24532</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-24534" target="_blank" rel="noopener noreferrer">CVE-2023-24534</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-24536" target="_blank" rel="noopener noreferrer">CVE-2023-24536</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-24537" target="_blank" rel="noopener noreferrer">CVE-2023-24537</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-24538" target="_blank" rel="noopener noreferrer">CVE-2023-24538</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2023
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2023 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2023, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

@@ -10,8 +10,8 @@
 	"summary": "An update for libX11 is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "2",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
-		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"name": "almalinux-8-for-aarch64-appstream-rpms__8_0_default",
+		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_0_default",
 		"packages": [
 			{
 				"src": "libX11-1.6.8-5.el8.src.rpm",
@@ -22,6 +22,42 @@
 				"arch": "noarch",
 				"filename": "libX11-common-1.6.8-5.el8.noarch.rpm",
 				"sum": "32e70a5172480e43288d0ac1544b93489eddf59c726518de5efef383fc9433dc",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libX11-1.6.8-5.el8.src.rpm",
+				"name": "libX11-devel",
+				"epoch": "0",
+				"version": "1.6.8",
+				"release": "5.el8",
+				"arch": "aarch64",
+				"filename": "libX11-devel-1.6.8-5.el8.aarch64.rpm",
+				"sum": "9984ea9af21cb403225a36d6d50f572e6a70a1d7bc58bbcb2b7b7ea9cfd53c4f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libX11-1.6.8-5.el8.src.rpm",
+				"name": "libX11-xcb",
+				"epoch": "0",
+				"version": "1.6.8",
+				"release": "5.el8",
+				"arch": "aarch64",
+				"filename": "libX11-xcb-1.6.8-5.el8.aarch64.rpm",
+				"sum": "eeb63b277dc4766d73a384f1900b511d0f53cf39c71c3771fbd7cb4c5070130f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libX11-1.6.8-5.el8.src.rpm",
+				"name": "libX11",
+				"epoch": "0",
+				"version": "1.6.8",
+				"release": "5.el8",
+				"arch": "aarch64",
+				"filename": "libX11-1.6.8-5.el8.aarch64.rpm",
+				"sum": "f655b703faf14c3a3533a4a3611f15151096237eedf6b3e9cf326839521190d6",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -99,42 +135,6 @@
 			},
 			{
 				"src": "libX11-1.6.8-5.el8.src.rpm",
-				"name": "libX11-devel",
-				"epoch": "0",
-				"version": "1.6.8",
-				"release": "5.el8",
-				"arch": "aarch64",
-				"filename": "libX11-devel-1.6.8-5.el8.aarch64.rpm",
-				"sum": "9984ea9af21cb403225a36d6d50f572e6a70a1d7bc58bbcb2b7b7ea9cfd53c4f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libX11-1.6.8-5.el8.src.rpm",
-				"name": "libX11-xcb",
-				"epoch": "0",
-				"version": "1.6.8",
-				"release": "5.el8",
-				"arch": "aarch64",
-				"filename": "libX11-xcb-1.6.8-5.el8.aarch64.rpm",
-				"sum": "eeb63b277dc4766d73a384f1900b511d0f53cf39c71c3771fbd7cb4c5070130f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libX11-1.6.8-5.el8.src.rpm",
-				"name": "libX11",
-				"epoch": "0",
-				"version": "1.6.8",
-				"release": "5.el8",
-				"arch": "aarch64",
-				"filename": "libX11-1.6.8-5.el8.aarch64.rpm",
-				"sum": "f655b703faf14c3a3533a4a3611f15151096237eedf6b3e9cf326839521190d6",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libX11-1.6.8-5.el8.src.rpm",
 				"name": "libX11-xcb",
 				"epoch": "0",
 				"version": "1.6.8",
@@ -174,6 +174,12 @@
 	"description": "The libX11 packages contain the core X11 protocol client library.\n\nSecurity Fix(es):\n\n* libX11: missing request length checks (CVE-2021-31535)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
+			"id": "ALSA-2021-4326",
+			"title": "ALSA-2021-4326",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-4326.html"
+		},
+		{
 			"id": "CVE-2021-31535",
 			"title": "CVE-2021-31535",
 			"type": "cve",
@@ -184,6 +190,6 @@
 		"$date": 1636448467000
 	},
 	"updated_date": {
-		"$date": 1636712456000
+		"$date": 1636462977000
 	}
 }

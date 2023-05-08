@@ -10,8 +10,8 @@
 	"summary": "redis security and bug fix update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-i686-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-i686-appstream-rpms__9_1_default",
 		"packages": [
 			{
 				"src": "redis-6.2.7-1.el9.src.rpm",
@@ -22,30 +22,6 @@
 				"arch": "noarch",
 				"filename": "redis-doc-6.2.7-1.el9.noarch.rpm",
 				"sum": "142f8f9a73b8b4e8f94dd2bd4a7cde5f54880fe6e5dd1a54ec5c41a6bd33ac58",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "redis-6.2.7-1.el9.src.rpm",
-				"name": "redis",
-				"epoch": "0",
-				"version": "6.2.7",
-				"release": "1.el9",
-				"arch": "aarch64",
-				"filename": "redis-6.2.7-1.el9.aarch64.rpm",
-				"sum": "66f6158952241a26323601cfbf5f929687ad1c326488309a7393e09f1f160e41",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "redis-6.2.7-1.el9.src.rpm",
-				"name": "redis-devel",
-				"epoch": "0",
-				"version": "6.2.7",
-				"release": "1.el9",
-				"arch": "aarch64",
-				"filename": "redis-devel-6.2.7-1.el9.aarch64.rpm",
-				"sum": "ce8c061d66961a97d2fba567733884e17f854e687a024db00b2b1892634f3954",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -132,6 +108,30 @@
 				"sum": "9faf550f0f705ba4475994be1dfd83638f8dcd273dce46b74525dd25dbc2c2f0",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "redis-6.2.7-1.el9.src.rpm",
+				"name": "redis",
+				"epoch": "0",
+				"version": "6.2.7",
+				"release": "1.el9",
+				"arch": "aarch64",
+				"filename": "redis-6.2.7-1.el9.aarch64.rpm",
+				"sum": "66f6158952241a26323601cfbf5f929687ad1c326488309a7393e09f1f160e41",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "redis-6.2.7-1.el9.src.rpm",
+				"name": "redis-devel",
+				"epoch": "0",
+				"version": "6.2.7",
+				"release": "1.el9",
+				"arch": "aarch64",
+				"filename": "redis-devel-6.2.7-1.el9.aarch64.rpm",
+				"sum": "ce8c061d66961a97d2fba567733884e17f854e687a024db00b2b1892634f3954",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
@@ -178,6 +178,6 @@
 		"$date": 1668470400000
 	},
 	"updated_date": {
-		"$date": 1668745088000
+		"$date": 1668745089000
 	}
 }

@@ -10,9 +10,21 @@
 	"summary": "An update for the httpd:2.4 module is now available for AlmaLinux AlmaLinux Extended Update Support, and AlmaLinux Extended Update Support.\n\nAlmaLinux Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "2",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_httpd",
-		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_httpd",
+		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_httpd",
+		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_httpd",
 		"packages": [
+			{
+				"src": "mod_md-2.0.8-8.module_el8.6.0+2872+fe0ff7aa.src.rpm",
+				"name": "mod_md",
+				"epoch": "1",
+				"version": "2.0.8",
+				"release": "8.module_el8.6.0+2872+fe0ff7aa",
+				"arch": "aarch64",
+				"filename": "mod_md-2.0.8-8.module_el8.6.0+2872+fe0ff7aa.aarch64.rpm",
+				"sum": "2678c086cc5a3b9b6f20f73891c8d84235646307efa87d482c5f95d828da9f4e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "mod_md-2.0.8-8.module_el8.5.0+2609+b30d9eec.src.rpm",
 				"name": "mod_md",
@@ -163,18 +175,6 @@
 				"epoch": "1",
 				"version": "2.0.8",
 				"release": "8.module_el8.6.0+2872+fe0ff7aa",
-				"arch": "aarch64",
-				"filename": "mod_md-2.0.8-8.module_el8.6.0+2872+fe0ff7aa.aarch64.rpm",
-				"sum": "2678c086cc5a3b9b6f20f73891c8d84235646307efa87d482c5f95d828da9f4e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mod_md-2.0.8-8.module_el8.6.0+2872+fe0ff7aa.src.rpm",
-				"name": "mod_md",
-				"epoch": "1",
-				"version": "2.0.8",
-				"release": "8.module_el8.6.0+2872+fe0ff7aa",
 				"arch": "ppc64le",
 				"filename": "mod_md-2.0.8-8.module_el8.6.0+2872+fe0ff7aa.ppc64le.rpm",
 				"sum": "1a26f7d2af339e6769c26359dbdc9aa33083ab2b7d43c69c006dfafb57b05ac6",
@@ -186,6 +186,12 @@
 	"description": "The httpd packages provide the Apache HTTP Server, a powerful, efficient, and extensible web server.\n\nSecurity Fix(es):\n\n* httpd: mod_lua: Possible buffer overflow when parsing multipart content (CVE-2021-44790)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
+			"id": "ALSA-2022-0258",
+			"title": "ALSA-2022-0258",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-0258.html"
+		},
+		{
 			"id": "CVE-2021-44790",
 			"title": "CVE-2021-44790",
 			"type": "cve",
@@ -196,6 +202,6 @@
 		"$date": 1643114982000
 	},
 	"updated_date": {
-		"$date": 1643182044000
+		"$date": 1643114982000
 	}
 }

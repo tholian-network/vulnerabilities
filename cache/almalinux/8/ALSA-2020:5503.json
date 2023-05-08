@@ -10,9 +10,45 @@
 	"summary": "An update for mariadb-connector-c is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "2",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
-		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"name": "almalinux-8-for-aarch64-appstream-rpms__8_0_default",
+		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_0_default",
 		"packages": [
+			{
+				"src": "mariadb-connector-c-3.1.11-2.el8_3.src.rpm",
+				"name": "mariadb-connector-c",
+				"epoch": "0",
+				"version": "3.1.11",
+				"release": "2.el8_3",
+				"arch": "aarch64",
+				"filename": "mariadb-connector-c-3.1.11-2.el8_3.aarch64.rpm",
+				"sum": "569330e3f408084ae955197af6edb83d692602e643bc906839a4dcabdc4be850",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mariadb-connector-c-3.1.11-2.el8_3.src.rpm",
+				"name": "mariadb-connector-c-config",
+				"epoch": "0",
+				"version": "3.1.11",
+				"release": "2.el8_3",
+				"arch": "noarch",
+				"filename": "mariadb-connector-c-config-3.1.11-2.el8_3.noarch.rpm",
+				"sum": "eca6eb7026bfbb5ff51825587af1376bd6bd957dea4ec89cc7e9971a32983b0f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mariadb-connector-c-3.1.11-2.el8_3.src.rpm",
+				"name": "mariadb-connector-c-devel",
+				"epoch": "0",
+				"version": "3.1.11",
+				"release": "2.el8_3",
+				"arch": "aarch64",
+				"filename": "mariadb-connector-c-devel-3.1.11-2.el8_3.aarch64.rpm",
+				"sum": "ee38d736af8f77eca1d323cc3fd165050d43089451c87b5501bec19ee60ddd00",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "mariadb-connector-c-3.1.11-2.el8_3.src.rpm",
 				"name": "mariadb-connector-c",
@@ -63,42 +99,6 @@
 			},
 			{
 				"src": "mariadb-connector-c-3.1.11-2.el8_3.src.rpm",
-				"name": "mariadb-connector-c-config",
-				"epoch": "0",
-				"version": "3.1.11",
-				"release": "2.el8_3",
-				"arch": "noarch",
-				"filename": "mariadb-connector-c-config-3.1.11-2.el8_3.noarch.rpm",
-				"sum": "eca6eb7026bfbb5ff51825587af1376bd6bd957dea4ec89cc7e9971a32983b0f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mariadb-connector-c-3.1.11-2.el8_3.src.rpm",
-				"name": "mariadb-connector-c",
-				"epoch": "0",
-				"version": "3.1.11",
-				"release": "2.el8_3",
-				"arch": "aarch64",
-				"filename": "mariadb-connector-c-3.1.11-2.el8_3.aarch64.rpm",
-				"sum": "569330e3f408084ae955197af6edb83d692602e643bc906839a4dcabdc4be850",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mariadb-connector-c-3.1.11-2.el8_3.src.rpm",
-				"name": "mariadb-connector-c-devel",
-				"epoch": "0",
-				"version": "3.1.11",
-				"release": "2.el8_3",
-				"arch": "aarch64",
-				"filename": "mariadb-connector-c-devel-3.1.11-2.el8_3.aarch64.rpm",
-				"sum": "ee38d736af8f77eca1d323cc3fd165050d43089451c87b5501bec19ee60ddd00",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mariadb-connector-c-3.1.11-2.el8_3.src.rpm",
 				"name": "mariadb-connector-c-devel",
 				"epoch": "0",
 				"version": "3.1.11",
@@ -125,6 +125,12 @@
 	},
 	"description": "The MariaDB Native Client library (C driver) is used to connect applications developed in C/C++ to MariaDB and MySQL databases. \n\nThe following packages have been upgraded to a later upstream version: mariadb-connector-c (3.1.11). (BZ#1898993)\n\nSecurity Fix(es):\n\n* mysql: C API unspecified vulnerability (CPU Apr 2020) (CVE-2020-2752)\n\n* mysql: C API unspecified vulnerability (CPU Apr 2020) (CVE-2020-2922)\n\n* mariadb-connector-c: Improper validation of content in a OK packet received from server (CVE-2020-13249)\n\n* mysql: C API unspecified vulnerability (CPU Jan 2020) (CVE-2020-2574)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nBug Fix(es):\n\n* Code utilizing plugins can't be compiled properly (BZ#1899001)\n\n* Add \"zlib-devel\" requirement in \"-devel\" subpackage (BZ#1899005)\n\n* Replace hard-coded /usr with %{_prefix} (BZ#1899099)",
 	"references": [
+		{
+			"id": "ALSA-2020-5503",
+			"title": "ALSA-2020-5503",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2020-5503.html"
+		},
 		{
 			"id": "CVE-2020-13249",
 			"title": "CVE-2020-13249",
@@ -160,6 +166,6 @@
 		"$date": 1608048252000
 	},
 	"updated_date": {
-		"$date": 1636712456000
+		"$date": 1608048238000
 	}
 }

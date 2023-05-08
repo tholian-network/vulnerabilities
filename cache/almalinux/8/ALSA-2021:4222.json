@@ -10,9 +10,153 @@
 	"summary": "An update for the container-tools:3.0 module is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "2",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_container-tools",
-		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_container-tools",
+		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_container-tools",
+		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_container-tools",
 		"packages": [
+			{
+				"src": "criu-3.15-1.module_el8.6.0+2876+9ed4eae2.src.rpm",
+				"name": "criu",
+				"epoch": "0",
+				"version": "3.15",
+				"release": "1.module_el8.6.0+2876+9ed4eae2",
+				"arch": "aarch64",
+				"filename": "criu-3.15-1.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
+				"sum": "183bda468943a18b6ad10f132ac7b8ad92c5ba67382f18c333c8c9aa867498a4",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "criu-3.15-1.module_el8.6.0+2876+9ed4eae2.src.rpm",
+				"name": "python3-criu",
+				"epoch": "0",
+				"version": "3.15",
+				"release": "1.module_el8.6.0+2876+9ed4eae2",
+				"arch": "aarch64",
+				"filename": "python3-criu-3.15-1.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
+				"sum": "2c7f1ee8ae4215d079cff1e2b603282a859335d29bd594ea9af2b34898b61f0b",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "conmon-2.0.26-1.module_el8.6.0+2876+9ed4eae2.src.rpm",
+				"name": "conmon",
+				"epoch": "2",
+				"version": "2.0.26",
+				"release": "1.module_el8.6.0+2876+9ed4eae2",
+				"arch": "aarch64",
+				"filename": "conmon-2.0.26-1.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
+				"sum": "306fe44498a4025085a058d7b4579031779ed4142c440f955e909f6289bd77f1",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "fuse-overlayfs-1.4.0-2.module_el8.6.0+2876+9ed4eae2.src.rpm",
+				"name": "fuse-overlayfs",
+				"epoch": "0",
+				"version": "1.4.0",
+				"release": "2.module_el8.6.0+2876+9ed4eae2",
+				"arch": "aarch64",
+				"filename": "fuse-overlayfs-1.4.0-2.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
+				"sum": "3ca66bf90a7db10bfcb190424d8994f7ce1b9500e48b74b8a372134de734ad81",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "containernetworking-plugins-0.9.1-1.module_el8.6.0+2876+9ed4eae2.src.rpm",
+				"name": "containernetworking-plugins",
+				"epoch": "0",
+				"version": "0.9.1",
+				"release": "1.module_el8.6.0+2876+9ed4eae2",
+				"arch": "aarch64",
+				"filename": "containernetworking-plugins-0.9.1-1.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
+				"sum": "3f0c39e32bbcb770678be8761bf54de06006a20775a7b770a14e52d6a06b3829",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "udica-0.2.4-1.module_el8.6.0+2876+9ed4eae2.src.rpm",
+				"name": "udica",
+				"epoch": "0",
+				"version": "0.2.4",
+				"release": "1.module_el8.6.0+2876+9ed4eae2",
+				"arch": "noarch",
+				"filename": "udica-0.2.4-1.module_el8.6.0+2876+9ed4eae2.noarch.rpm",
+				"sum": "5127ec25a6d4632da80e860fe822430306d9edd11da0e2720e8993208343d5b0",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "oci-seccomp-bpf-hook-1.2.0-3.module_el8.6.0+2876+9ed4eae2.src.rpm",
+				"name": "oci-seccomp-bpf-hook",
+				"epoch": "0",
+				"version": "1.2.0",
+				"release": "3.module_el8.6.0+2876+9ed4eae2",
+				"arch": "aarch64",
+				"filename": "oci-seccomp-bpf-hook-1.2.0-3.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
+				"sum": "7002596a5823b220a24a2825ed359567469700fe68233be7bad9a8193dab70f9",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "criu-3.15-1.module_el8.6.0+2876+9ed4eae2.src.rpm",
+				"name": "crit",
+				"epoch": "0",
+				"version": "3.15",
+				"release": "1.module_el8.6.0+2876+9ed4eae2",
+				"arch": "aarch64",
+				"filename": "crit-3.15-1.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
+				"sum": "9736844ada2bb607243e5c208ad7849c2a30f63c7a355b98d3ec2b58fd0553a7",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libslirp-4.3.1-1.module_el8.6.0+2876+9ed4eae2.src.rpm",
+				"name": "libslirp-devel",
+				"epoch": "0",
+				"version": "4.3.1",
+				"release": "1.module_el8.6.0+2876+9ed4eae2",
+				"arch": "aarch64",
+				"filename": "libslirp-devel-4.3.1-1.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
+				"sum": "bf78102e9bec56771abff788e3e9faa89d9851415bd9113306a377b5e4217b09",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "cockpit-podman-29-2.module_el8.6.0+2876+9ed4eae2.src.rpm",
+				"name": "cockpit-podman",
+				"epoch": "0",
+				"version": "29",
+				"release": "2.module_el8.6.0+2876+9ed4eae2",
+				"arch": "noarch",
+				"filename": "cockpit-podman-29-2.module_el8.6.0+2876+9ed4eae2.noarch.rpm",
+				"sum": "ca63901ffa3247a330ba3fdd859e8ce0a9963d6f27c13d2480ec70ad444226c3",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libslirp-4.3.1-1.module_el8.6.0+2876+9ed4eae2.src.rpm",
+				"name": "libslirp",
+				"epoch": "0",
+				"version": "4.3.1",
+				"release": "1.module_el8.6.0+2876+9ed4eae2",
+				"arch": "aarch64",
+				"filename": "libslirp-4.3.1-1.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
+				"sum": "f719eed0bd389be60c4c101043a6341134725a1dcea82f94b45108a00a3826b0",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "slirp4netns-1.1.8-1.module_el8.6.0+2876+9ed4eae2.src.rpm",
+				"name": "slirp4netns",
+				"epoch": "0",
+				"version": "1.1.8",
+				"release": "1.module_el8.6.0+2876+9ed4eae2",
+				"arch": "aarch64",
+				"filename": "slirp4netns-1.1.8-1.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
+				"sum": "f9f089fce7f81a740a5e0f4b0bd3d6bdf571a5957dde324c949f356db249314e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "criu-3.15-1.module_el8.5.0+2614+87221ce8.src.rpm",
 				"name": "python3-criu",
@@ -142,18 +286,6 @@
 				"arch": "x86_64",
 				"filename": "containernetworking-plugins-0.9.1-1.module_el8.5.0+2614+87221ce8.x86_64.rpm",
 				"sum": "4069ffbedf346bdab1c3a53d4fe192c6eaa31868b39dee20bcfc4baf89568219",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "udica-0.2.4-1.module_el8.6.0+2876+9ed4eae2.src.rpm",
-				"name": "udica",
-				"epoch": "0",
-				"version": "0.2.4",
-				"release": "1.module_el8.6.0+2876+9ed4eae2",
-				"arch": "noarch",
-				"filename": "udica-0.2.4-1.module_el8.6.0+2876+9ed4eae2.noarch.rpm",
-				"sum": "5127ec25a6d4632da80e860fe822430306d9edd11da0e2720e8993208343d5b0",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -302,18 +434,6 @@
 				"reboot_suggested": 0
 			},
 			{
-				"src": "cockpit-podman-29-2.module_el8.6.0+2876+9ed4eae2.src.rpm",
-				"name": "cockpit-podman",
-				"epoch": "0",
-				"version": "29",
-				"release": "2.module_el8.6.0+2876+9ed4eae2",
-				"arch": "noarch",
-				"filename": "cockpit-podman-29-2.module_el8.6.0+2876+9ed4eae2.noarch.rpm",
-				"sum": "ca63901ffa3247a330ba3fdd859e8ce0a9963d6f27c13d2480ec70ad444226c3",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
 				"src": "oci-seccomp-bpf-hook-1.2.0-3.module_el8.6.0+2876+9ed4eae2.src.rpm",
 				"name": "oci-seccomp-bpf-hook",
 				"epoch": "0",
@@ -358,126 +478,6 @@
 				"arch": "x86_64",
 				"filename": "fuse-overlayfs-1.4.0-2.module_el8.5.0+2614+87221ce8.x86_64.rpm",
 				"sum": "fff7d6e727876fcd71747be7fc574ee83a597b9001e3bfb4d3a3432ea78023a0",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "criu-3.15-1.module_el8.6.0+2876+9ed4eae2.src.rpm",
-				"name": "criu",
-				"epoch": "0",
-				"version": "3.15",
-				"release": "1.module_el8.6.0+2876+9ed4eae2",
-				"arch": "aarch64",
-				"filename": "criu-3.15-1.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
-				"sum": "183bda468943a18b6ad10f132ac7b8ad92c5ba67382f18c333c8c9aa867498a4",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "criu-3.15-1.module_el8.6.0+2876+9ed4eae2.src.rpm",
-				"name": "python3-criu",
-				"epoch": "0",
-				"version": "3.15",
-				"release": "1.module_el8.6.0+2876+9ed4eae2",
-				"arch": "aarch64",
-				"filename": "python3-criu-3.15-1.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
-				"sum": "2c7f1ee8ae4215d079cff1e2b603282a859335d29bd594ea9af2b34898b61f0b",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "conmon-2.0.26-1.module_el8.6.0+2876+9ed4eae2.src.rpm",
-				"name": "conmon",
-				"epoch": "2",
-				"version": "2.0.26",
-				"release": "1.module_el8.6.0+2876+9ed4eae2",
-				"arch": "aarch64",
-				"filename": "conmon-2.0.26-1.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
-				"sum": "306fe44498a4025085a058d7b4579031779ed4142c440f955e909f6289bd77f1",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "fuse-overlayfs-1.4.0-2.module_el8.6.0+2876+9ed4eae2.src.rpm",
-				"name": "fuse-overlayfs",
-				"epoch": "0",
-				"version": "1.4.0",
-				"release": "2.module_el8.6.0+2876+9ed4eae2",
-				"arch": "aarch64",
-				"filename": "fuse-overlayfs-1.4.0-2.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
-				"sum": "3ca66bf90a7db10bfcb190424d8994f7ce1b9500e48b74b8a372134de734ad81",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "containernetworking-plugins-0.9.1-1.module_el8.6.0+2876+9ed4eae2.src.rpm",
-				"name": "containernetworking-plugins",
-				"epoch": "0",
-				"version": "0.9.1",
-				"release": "1.module_el8.6.0+2876+9ed4eae2",
-				"arch": "aarch64",
-				"filename": "containernetworking-plugins-0.9.1-1.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
-				"sum": "3f0c39e32bbcb770678be8761bf54de06006a20775a7b770a14e52d6a06b3829",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "oci-seccomp-bpf-hook-1.2.0-3.module_el8.6.0+2876+9ed4eae2.src.rpm",
-				"name": "oci-seccomp-bpf-hook",
-				"epoch": "0",
-				"version": "1.2.0",
-				"release": "3.module_el8.6.0+2876+9ed4eae2",
-				"arch": "aarch64",
-				"filename": "oci-seccomp-bpf-hook-1.2.0-3.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
-				"sum": "7002596a5823b220a24a2825ed359567469700fe68233be7bad9a8193dab70f9",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "criu-3.15-1.module_el8.6.0+2876+9ed4eae2.src.rpm",
-				"name": "crit",
-				"epoch": "0",
-				"version": "3.15",
-				"release": "1.module_el8.6.0+2876+9ed4eae2",
-				"arch": "aarch64",
-				"filename": "crit-3.15-1.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
-				"sum": "9736844ada2bb607243e5c208ad7849c2a30f63c7a355b98d3ec2b58fd0553a7",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libslirp-4.3.1-1.module_el8.6.0+2876+9ed4eae2.src.rpm",
-				"name": "libslirp-devel",
-				"epoch": "0",
-				"version": "4.3.1",
-				"release": "1.module_el8.6.0+2876+9ed4eae2",
-				"arch": "aarch64",
-				"filename": "libslirp-devel-4.3.1-1.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
-				"sum": "bf78102e9bec56771abff788e3e9faa89d9851415bd9113306a377b5e4217b09",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libslirp-4.3.1-1.module_el8.6.0+2876+9ed4eae2.src.rpm",
-				"name": "libslirp",
-				"epoch": "0",
-				"version": "4.3.1",
-				"release": "1.module_el8.6.0+2876+9ed4eae2",
-				"arch": "aarch64",
-				"filename": "libslirp-4.3.1-1.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
-				"sum": "f719eed0bd389be60c4c101043a6341134725a1dcea82f94b45108a00a3826b0",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "slirp4netns-1.1.8-1.module_el8.6.0+2876+9ed4eae2.src.rpm",
-				"name": "slirp4netns",
-				"epoch": "0",
-				"version": "1.1.8",
-				"release": "1.module_el8.6.0+2876+9ed4eae2",
-				"arch": "aarch64",
-				"filename": "slirp4netns-1.1.8-1.module_el8.6.0+2876+9ed4eae2.aarch64.rpm",
-				"sum": "f9f089fce7f81a740a5e0f4b0bd3d6bdf571a5957dde324c949f356db249314e",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -606,6 +606,12 @@
 	"description": "The container-tools module contains tools for working with containers, notably podman, buildah, skopeo, and runc.\n\nSecurity Fix(es):\n\n* buildah: Host environment variables leaked in build container when using chroot isolation (CVE-2021-3602)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
+			"id": "ALSA-2021-4222",
+			"title": "ALSA-2021-4222",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-4222.html"
+		},
+		{
 			"id": "CVE-2021-3602",
 			"title": "CVE-2021-3602",
 			"type": "cve",
@@ -616,6 +622,6 @@
 		"$date": 1636447594000
 	},
 	"updated_date": {
-		"$date": 1643825093000
+		"$date": 1636462462000
 	}
 }

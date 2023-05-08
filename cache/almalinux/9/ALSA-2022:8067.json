@@ -10,8 +10,8 @@
 	"summary": "httpd security, bug fix, and enhancement update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-i686-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-i686-appstream-rpms__9_1_default",
 		"packages": [
 			{
 				"src": "httpd-2.4.53-7.el9.src.rpm",
@@ -27,18 +27,6 @@
 			},
 			{
 				"src": "httpd-2.4.53-7.el9.src.rpm",
-				"name": "mod_lua",
-				"epoch": "0",
-				"version": "2.4.53",
-				"release": "7.el9",
-				"arch": "aarch64",
-				"filename": "mod_lua-2.4.53-7.el9.aarch64.rpm",
-				"sum": "53da9aefd916773ce1a056b52f56be5fd2aef670b6e484c0a981ee75e8024540",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "httpd-2.4.53-7.el9.src.rpm",
 				"name": "httpd-filesystem",
 				"epoch": "0",
 				"version": "2.4.53",
@@ -46,102 +34,6 @@
 				"arch": "noarch",
 				"filename": "httpd-filesystem-2.4.53-7.el9.noarch.rpm",
 				"sum": "61226547b629d1bfe902193c7322ef89e09039ac4017036efa0b678183f622e5",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "httpd-2.4.53-7.el9.src.rpm",
-				"name": "httpd",
-				"epoch": "0",
-				"version": "2.4.53",
-				"release": "7.el9",
-				"arch": "aarch64",
-				"filename": "httpd-2.4.53-7.el9.aarch64.rpm",
-				"sum": "6c790fac3894ef5777514f216713972ceab84d1506717c24a1ddacd841600fca",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "httpd-2.4.53-7.el9.src.rpm",
-				"name": "httpd-tools",
-				"epoch": "0",
-				"version": "2.4.53",
-				"release": "7.el9",
-				"arch": "aarch64",
-				"filename": "httpd-tools-2.4.53-7.el9.aarch64.rpm",
-				"sum": "79662241200124dbda1a839311f935d6f659ea8a70369f0486000a6195ff5109",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "httpd-2.4.53-7.el9.src.rpm",
-				"name": "httpd-core",
-				"epoch": "0",
-				"version": "2.4.53",
-				"release": "7.el9",
-				"arch": "aarch64",
-				"filename": "httpd-core-2.4.53-7.el9.aarch64.rpm",
-				"sum": "a78db736cdeb0db253cc2043caaa25dfe7680953bf866d3e4db78797cd9c1ae2",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "httpd-2.4.53-7.el9.src.rpm",
-				"name": "mod_proxy_html",
-				"epoch": "1",
-				"version": "2.4.53",
-				"release": "7.el9",
-				"arch": "aarch64",
-				"filename": "mod_proxy_html-2.4.53-7.el9.aarch64.rpm",
-				"sum": "a7a31a43fc75abf0afb16985b17f65f9cee28a35719dd60e688da2fe6bcf884f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "httpd-2.4.53-7.el9.src.rpm",
-				"name": "mod_ldap",
-				"epoch": "0",
-				"version": "2.4.53",
-				"release": "7.el9",
-				"arch": "aarch64",
-				"filename": "mod_ldap-2.4.53-7.el9.aarch64.rpm",
-				"sum": "ab57c0913f40a44e34aef9e40aaf767077174423a5f53a8f2a606a6fbf1289f4",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "httpd-2.4.53-7.el9.src.rpm",
-				"name": "httpd-devel",
-				"epoch": "0",
-				"version": "2.4.53",
-				"release": "7.el9",
-				"arch": "aarch64",
-				"filename": "httpd-devel-2.4.53-7.el9.aarch64.rpm",
-				"sum": "c858611bfe80177092e5db963974f249a65417063dd0b5f888dd7218794b87f8",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "httpd-2.4.53-7.el9.src.rpm",
-				"name": "mod_ssl",
-				"epoch": "1",
-				"version": "2.4.53",
-				"release": "7.el9",
-				"arch": "aarch64",
-				"filename": "mod_ssl-2.4.53-7.el9.aarch64.rpm",
-				"sum": "fb69e631da0ff5af48b4a4dd52dfac30f198660227c1c88fc1a1ca075c1698d8",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "httpd-2.4.53-7.el9.src.rpm",
-				"name": "mod_session",
-				"epoch": "0",
-				"version": "2.4.53",
-				"release": "7.el9",
-				"arch": "aarch64",
-				"filename": "mod_session-2.4.53-7.el9.aarch64.rpm",
-				"sum": "ffba43f397543ce2aa87ec208f1e606540a302542f56dc0640ff398bc6f0f19d",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -468,6 +360,114 @@
 				"sum": "ffb4c49b0ed60811771cde3c7b56cc557d77ba99284f1e092b531b0dd35fe8a2",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "httpd-2.4.53-7.el9.src.rpm",
+				"name": "mod_lua",
+				"epoch": "0",
+				"version": "2.4.53",
+				"release": "7.el9",
+				"arch": "aarch64",
+				"filename": "mod_lua-2.4.53-7.el9.aarch64.rpm",
+				"sum": "53da9aefd916773ce1a056b52f56be5fd2aef670b6e484c0a981ee75e8024540",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "httpd-2.4.53-7.el9.src.rpm",
+				"name": "httpd",
+				"epoch": "0",
+				"version": "2.4.53",
+				"release": "7.el9",
+				"arch": "aarch64",
+				"filename": "httpd-2.4.53-7.el9.aarch64.rpm",
+				"sum": "6c790fac3894ef5777514f216713972ceab84d1506717c24a1ddacd841600fca",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "httpd-2.4.53-7.el9.src.rpm",
+				"name": "httpd-tools",
+				"epoch": "0",
+				"version": "2.4.53",
+				"release": "7.el9",
+				"arch": "aarch64",
+				"filename": "httpd-tools-2.4.53-7.el9.aarch64.rpm",
+				"sum": "79662241200124dbda1a839311f935d6f659ea8a70369f0486000a6195ff5109",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "httpd-2.4.53-7.el9.src.rpm",
+				"name": "httpd-core",
+				"epoch": "0",
+				"version": "2.4.53",
+				"release": "7.el9",
+				"arch": "aarch64",
+				"filename": "httpd-core-2.4.53-7.el9.aarch64.rpm",
+				"sum": "a78db736cdeb0db253cc2043caaa25dfe7680953bf866d3e4db78797cd9c1ae2",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "httpd-2.4.53-7.el9.src.rpm",
+				"name": "mod_proxy_html",
+				"epoch": "1",
+				"version": "2.4.53",
+				"release": "7.el9",
+				"arch": "aarch64",
+				"filename": "mod_proxy_html-2.4.53-7.el9.aarch64.rpm",
+				"sum": "a7a31a43fc75abf0afb16985b17f65f9cee28a35719dd60e688da2fe6bcf884f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "httpd-2.4.53-7.el9.src.rpm",
+				"name": "mod_ldap",
+				"epoch": "0",
+				"version": "2.4.53",
+				"release": "7.el9",
+				"arch": "aarch64",
+				"filename": "mod_ldap-2.4.53-7.el9.aarch64.rpm",
+				"sum": "ab57c0913f40a44e34aef9e40aaf767077174423a5f53a8f2a606a6fbf1289f4",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "httpd-2.4.53-7.el9.src.rpm",
+				"name": "httpd-devel",
+				"epoch": "0",
+				"version": "2.4.53",
+				"release": "7.el9",
+				"arch": "aarch64",
+				"filename": "httpd-devel-2.4.53-7.el9.aarch64.rpm",
+				"sum": "c858611bfe80177092e5db963974f249a65417063dd0b5f888dd7218794b87f8",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "httpd-2.4.53-7.el9.src.rpm",
+				"name": "mod_ssl",
+				"epoch": "1",
+				"version": "2.4.53",
+				"release": "7.el9",
+				"arch": "aarch64",
+				"filename": "mod_ssl-2.4.53-7.el9.aarch64.rpm",
+				"sum": "fb69e631da0ff5af48b4a4dd52dfac30f198660227c1c88fc1a1ca075c1698d8",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "httpd-2.4.53-7.el9.src.rpm",
+				"name": "mod_session",
+				"epoch": "0",
+				"version": "2.4.53",
+				"release": "7.el9",
+				"arch": "aarch64",
+				"filename": "mod_session-2.4.53-7.el9.aarch64.rpm",
+				"sum": "ffba43f397543ce2aa87ec208f1e606540a302542f56dc0640ff398bc6f0f19d",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
@@ -610,6 +610,6 @@
 		"$date": 1668470400000
 	},
 	"updated_date": {
-		"$date": 1668746440000
+		"$date": 1668746438000
 	}
 }

@@ -10,9 +10,33 @@
 	"summary": "An update for gd is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "2",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
-		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"name": "almalinux-8-for-aarch64-appstream-rpms__8_0_default",
+		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_0_default",
 		"packages": [
+			{
+				"src": "gd-2.2.5-7.el8.src.rpm",
+				"name": "gd",
+				"epoch": "0",
+				"version": "2.2.5",
+				"release": "7.el8",
+				"arch": "aarch64",
+				"filename": "gd-2.2.5-7.el8.aarch64.rpm",
+				"sum": "6fd636508eee6b5a3ca9a9793c662242c7c952a5ef0b06204dc07972abfbec79",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "gd-2.2.5-7.el8.src.rpm",
+				"name": "gd-devel",
+				"epoch": "0",
+				"version": "2.2.5",
+				"release": "7.el8",
+				"arch": "aarch64",
+				"filename": "gd-devel-2.2.5-7.el8.aarch64.rpm",
+				"sum": "7951fffa5bf341bea7cd44637a5c1154ca89c5f67693587da53e85798217182a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "gd-2.2.5-7.el8.src.rpm",
 				"name": "gd-devel",
@@ -63,30 +87,6 @@
 			},
 			{
 				"src": "gd-2.2.5-7.el8.src.rpm",
-				"name": "gd",
-				"epoch": "0",
-				"version": "2.2.5",
-				"release": "7.el8",
-				"arch": "aarch64",
-				"filename": "gd-2.2.5-7.el8.aarch64.rpm",
-				"sum": "6fd636508eee6b5a3ca9a9793c662242c7c952a5ef0b06204dc07972abfbec79",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gd-2.2.5-7.el8.src.rpm",
-				"name": "gd-devel",
-				"epoch": "0",
-				"version": "2.2.5",
-				"release": "7.el8",
-				"arch": "aarch64",
-				"filename": "gd-devel-2.2.5-7.el8.aarch64.rpm",
-				"sum": "7951fffa5bf341bea7cd44637a5c1154ca89c5f67693587da53e85798217182a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gd-2.2.5-7.el8.src.rpm",
 				"name": "gd-devel",
 				"epoch": "0",
 				"version": "2.2.5",
@@ -114,6 +114,12 @@
 	"description": "GD is an open source code library for the dynamic creation of images by programmers. GD creates PNG, JPEG, GIF, WebP, XPM, BMP images, among other formats. \n\nSecurity Fix(es):\n\n* gd: Heap-based buffer overflow in gdImageColorMatch() in gd_color_match.c (CVE-2019-6977)\n\n* gd: NULL pointer dereference in gdImageClone (CVE-2018-14553)\n\n* gd: Double free in the gdImage*Ptr in gd_gif_out.c, gd_jpeg.c, and gd_wbmp.c (CVE-2019-6978)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
+			"id": "ALSA-2020-4659",
+			"title": "ALSA-2020-4659",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2020-4659.html"
+		},
+		{
 			"id": "CVE-2018-14553",
 			"title": "CVE-2018-14553",
 			"type": "cve",
@@ -136,6 +142,6 @@
 		"$date": 1604406280000
 	},
 	"updated_date": {
-		"$date": 1636712455000
+		"$date": 1604432868000
 	}
 }

@@ -10,9 +10,21 @@
 	"summary": "An update for the nodejs:12 module is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "3",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_nodejs",
-		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_nodejs",
+		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_nodejs",
+		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_nodejs",
 		"packages": [
+			{
+				"src": "nodejs-packaging-17-3.module_el8.4.0+2224+b07ac28e.src.rpm",
+				"name": "nodejs-packaging",
+				"epoch": "0",
+				"version": "17",
+				"release": "3.module_el8.4.0+2224+b07ac28e",
+				"arch": "noarch",
+				"filename": "nodejs-packaging-17-3.module_el8.4.0+2224+b07ac28e.noarch.rpm",
+				"sum": "34d06c7655fa3e83fb4c8cd1af3eeee4471f30a9231142e5561fa34eac5e1cb5",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "nodejs-packaging-17-3.module_el8.4.0+2521+c668cc9f.src.rpm",
 				"name": "nodejs-packaging",
@@ -22,18 +34,6 @@
 				"arch": "noarch",
 				"filename": "nodejs-packaging-17-3.module_el8.4.0+2521+c668cc9f.noarch.rpm",
 				"sum": "48a2bb3aaf5af5eb9eff27d730f873dfcb942c9bc4ff765f9fbcaddd031cd78f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "nodejs-packaging-17-3.module_el8.3.0+2023+d2377ea3.src.rpm",
-				"name": "nodejs-packaging",
-				"epoch": "0",
-				"version": "17",
-				"release": "3.module_el8.3.0+2023+d2377ea3",
-				"arch": "noarch",
-				"filename": "nodejs-packaging-17-3.module_el8.3.0+2023+d2377ea3.noarch.rpm",
-				"sum": "866fca29b11c2772a119fa9bcf208c5d4a6e7cea51445fcb2194e1ad3c4ddc0e",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -50,14 +50,14 @@
 				"reboot_suggested": 0
 			},
 			{
-				"src": "nodejs-packaging-17-3.module_el8.4.0+2224+b07ac28e.src.rpm",
+				"src": "nodejs-packaging-17-3.module_el8.3.0+2023+d2377ea3.src.rpm",
 				"name": "nodejs-packaging",
 				"epoch": "0",
 				"version": "17",
-				"release": "3.module_el8.4.0+2224+b07ac28e",
+				"release": "3.module_el8.3.0+2023+d2377ea3",
 				"arch": "noarch",
-				"filename": "nodejs-packaging-17-3.module_el8.4.0+2224+b07ac28e.noarch.rpm",
-				"sum": "34d06c7655fa3e83fb4c8cd1af3eeee4471f30a9231142e5561fa34eac5e1cb5",
+				"filename": "nodejs-packaging-17-3.module_el8.3.0+2023+d2377ea3.noarch.rpm",
+				"sum": "866fca29b11c2772a119fa9bcf208c5d4a6e7cea51445fcb2194e1ad3c4ddc0e",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},

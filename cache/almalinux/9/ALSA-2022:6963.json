@@ -10,8 +10,8 @@
 	"summary": "nodejs security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_default",
+		"name": "almalinux-9-for-i686-appstream-rpms__9_default",
+		"shortname": "almalinux-9-for-i686-appstream-rpms__9_default",
 		"packages": [
 			{
 				"src": "nodejs-16.17.1-1.el9_0.src.rpm",
@@ -27,54 +27,6 @@
 			},
 			{
 				"src": "nodejs-16.17.1-1.el9_0.src.rpm",
-				"name": "npm",
-				"epoch": "1",
-				"version": "8.15.0",
-				"release": "1.16.17.1.1.el9_0",
-				"arch": "aarch64",
-				"filename": "npm-8.15.0-1.16.17.1.1.el9_0.aarch64.rpm",
-				"sum": "75d87651325402ef7035349f294cea7cfcdb53292e421b07986344a51e5ec3e8",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "nodejs-16.17.1-1.el9_0.src.rpm",
-				"name": "nodejs-full-i18n",
-				"epoch": "1",
-				"version": "16.17.1",
-				"release": "1.el9_0",
-				"arch": "aarch64",
-				"filename": "nodejs-full-i18n-16.17.1-1.el9_0.aarch64.rpm",
-				"sum": "8259fcf0f18d8f629d545d9df1573df5409aa32abf3ad9cdd02e7933b1a9c7f3",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "nodejs-16.17.1-1.el9_0.src.rpm",
-				"name": "nodejs-libs",
-				"epoch": "1",
-				"version": "16.17.1",
-				"release": "1.el9_0",
-				"arch": "aarch64",
-				"filename": "nodejs-libs-16.17.1-1.el9_0.aarch64.rpm",
-				"sum": "b8e1f4824d013d72b66c3ac922b204026777a79e938a778eb6295374d9c0e733",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "nodejs-16.17.1-1.el9_0.src.rpm",
-				"name": "nodejs",
-				"epoch": "1",
-				"version": "16.17.1",
-				"release": "1.el9_0",
-				"arch": "aarch64",
-				"filename": "nodejs-16.17.1-1.el9_0.aarch64.rpm",
-				"sum": "f74580e2d438b12b7a826d3fcacd63e8ad0638627e5aa58811b1a8a0055ef41f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "nodejs-16.17.1-1.el9_0.src.rpm",
 				"name": "nodejs-libs",
 				"epoch": "1",
 				"version": "16.17.1",
@@ -82,6 +34,18 @@
 				"arch": "i686",
 				"filename": "nodejs-libs-16.17.1-1.el9_0.i686.rpm",
 				"sum": "dfc9e65ea6573cc240c0840dad0d3853758223f815f5a887ee6872e0b7eca5a2",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "nodejs-16.17.1-1.el9_0.src.rpm",
+				"name": "nodejs-libs",
+				"epoch": "1",
+				"version": "16.17.1",
+				"release": "1.el9_0",
+				"arch": "x86_64",
+				"filename": "nodejs-libs-16.17.1-1.el9_0.x86_64.rpm",
+				"sum": "02b1fa3316afccf54f476e3107a9e856fd01bfa038f620849ebebc6ae5aa9f21",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -216,6 +180,54 @@
 				"sum": "a4636231da5d605d2a18adbbe9549ad14f6bf1fe4dc7a7eb7ece8450b973daa0",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "nodejs-16.17.1-1.el9_0.src.rpm",
+				"name": "npm",
+				"epoch": "1",
+				"version": "8.15.0",
+				"release": "1.16.17.1.1.el9_0",
+				"arch": "aarch64",
+				"filename": "npm-8.15.0-1.16.17.1.1.el9_0.aarch64.rpm",
+				"sum": "75d87651325402ef7035349f294cea7cfcdb53292e421b07986344a51e5ec3e8",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "nodejs-16.17.1-1.el9_0.src.rpm",
+				"name": "nodejs-full-i18n",
+				"epoch": "1",
+				"version": "16.17.1",
+				"release": "1.el9_0",
+				"arch": "aarch64",
+				"filename": "nodejs-full-i18n-16.17.1-1.el9_0.aarch64.rpm",
+				"sum": "8259fcf0f18d8f629d545d9df1573df5409aa32abf3ad9cdd02e7933b1a9c7f3",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "nodejs-16.17.1-1.el9_0.src.rpm",
+				"name": "nodejs-libs",
+				"epoch": "1",
+				"version": "16.17.1",
+				"release": "1.el9_0",
+				"arch": "aarch64",
+				"filename": "nodejs-libs-16.17.1-1.el9_0.aarch64.rpm",
+				"sum": "b8e1f4824d013d72b66c3ac922b204026777a79e938a778eb6295374d9c0e733",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "nodejs-16.17.1-1.el9_0.src.rpm",
+				"name": "nodejs",
+				"epoch": "1",
+				"version": "16.17.1",
+				"release": "1.el9_0",
+				"arch": "aarch64",
+				"filename": "nodejs-16.17.1-1.el9_0.aarch64.rpm",
+				"sum": "f74580e2d438b12b7a826d3fcacd63e8ad0638627e5aa58811b1a8a0055ef41f",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
@@ -262,6 +274,6 @@
 		"$date": 1666051200000
 	},
 	"updated_date": {
-		"$date": 1666167023000
+		"$date": 1666167019000
 	}
 }

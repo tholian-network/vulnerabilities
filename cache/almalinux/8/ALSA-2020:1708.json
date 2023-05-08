@@ -10,9 +10,33 @@
 	"summary": "An update for liblouis is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "3",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
-		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"name": "almalinux-8-for-aarch64-appstream-rpms__8_0_default",
+		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_0_default",
 		"packages": [
+			{
+				"src": "liblouis-2.6.2-21.el8.src.rpm",
+				"name": "liblouis",
+				"epoch": "0",
+				"version": "2.6.2",
+				"release": "21.el8",
+				"arch": "aarch64",
+				"filename": "liblouis-2.6.2-21.el8.aarch64.rpm",
+				"sum": "46e2d605266a930a88775aefdb1b13c49fc319caa901a2ee370998cef8598702",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "liblouis-2.6.2-21.el8.src.rpm",
+				"name": "python3-louis",
+				"epoch": "0",
+				"version": "2.6.2",
+				"release": "21.el8",
+				"arch": "noarch",
+				"filename": "python3-louis-2.6.2-21.el8.noarch.rpm",
+				"sum": "c4e903f72e4f8063babcb656b929ceea92795de1cc3c5b1e8efcff9f60ae00a7",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "liblouis-2.6.2-21.el8.src.rpm",
 				"name": "liblouis",
@@ -39,30 +63,6 @@
 			},
 			{
 				"src": "liblouis-2.6.2-21.el8.src.rpm",
-				"name": "python3-louis",
-				"epoch": "0",
-				"version": "2.6.2",
-				"release": "21.el8",
-				"arch": "noarch",
-				"filename": "python3-louis-2.6.2-21.el8.noarch.rpm",
-				"sum": "c4e903f72e4f8063babcb656b929ceea92795de1cc3c5b1e8efcff9f60ae00a7",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "liblouis-2.6.2-21.el8.src.rpm",
-				"name": "liblouis",
-				"epoch": "0",
-				"version": "2.6.2",
-				"release": "21.el8",
-				"arch": "aarch64",
-				"filename": "liblouis-2.6.2-21.el8.aarch64.rpm",
-				"sum": "46e2d605266a930a88775aefdb1b13c49fc319caa901a2ee370998cef8598702",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "liblouis-2.6.2-21.el8.src.rpm",
 				"name": "liblouis",
 				"epoch": "0",
 				"version": "2.6.2",
@@ -77,6 +77,12 @@
 	},
 	"description": "Liblouis is an open source braille translator and back-translator named in honor of Louis Braille. It features support for computer and literary braille, supports contracted and uncontracted translation for many languages and has support for hyphenation. New languages can easily be added through tables that support a rule or dictionary based approach. Liblouis also supports math braille (Nemeth and Marburg).\n\nSecurity Fix(es):\n\n* liblouis: Stack-based buffer overflow in function includeFile in compileTranslationTable.c (CVE-2018-11684)\n\n* liblouis: Stack-based buffer overflow in function compileHyphenation in compileTranslationTable.c (CVE-2018-11685)\n\n* liblouis: Segmentation fault in logging.c:lou_logPrint() (CVE-2018-11577)\n\n* liblouis: Stack-based buffer overflow in compileTranslationTable.c (CVE-2018-12085)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
+		{
+			"id": "ALSA-2020-1708",
+			"title": "ALSA-2020-1708",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2020-1708.html"
+		},
 		{
 			"id": "CVE-2018-11577",
 			"title": "CVE-2018-11577",
@@ -106,6 +112,6 @@
 		"$date": 1588064837000
 	},
 	"updated_date": {
-		"$date": 1636712455000
+		"$date": 1588064827000
 	}
 }

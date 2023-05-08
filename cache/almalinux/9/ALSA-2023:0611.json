@@ -10,8 +10,8 @@
 	"summary": "git security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-i686-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-i686-appstream-rpms__9_1_default",
 		"packages": [
 			{
 				"src": "git-2.31.1-3.el9_1.src.rpm",
@@ -39,18 +39,6 @@
 			},
 			{
 				"src": "git-2.31.1-3.el9_1.src.rpm",
-				"name": "git-credential-libsecret",
-				"epoch": "0",
-				"version": "2.31.1",
-				"release": "3.el9_1",
-				"arch": "aarch64",
-				"filename": "git-credential-libsecret-2.31.1-3.el9_1.aarch64.rpm",
-				"sum": "0d4bda118ea0b3f790ff98b033ac1c152f70f70e85d96dd1d79aee4784ab478b",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "git-2.31.1-3.el9_1.src.rpm",
 				"name": "git-email",
 				"epoch": "0",
 				"version": "2.31.1",
@@ -70,18 +58,6 @@
 				"arch": "noarch",
 				"filename": "git-all-2.31.1-3.el9_1.noarch.rpm",
 				"sum": "1d8420694c41b43364dda7c452660014fd9c569e41c36336b6771c41dd586477",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "git-2.31.1-3.el9_1.src.rpm",
-				"name": "git",
-				"epoch": "0",
-				"version": "2.31.1",
-				"release": "3.el9_1",
-				"arch": "aarch64",
-				"filename": "git-2.31.1-3.el9_1.aarch64.rpm",
-				"sum": "3dbff98044d54be2dbaf65d5406c2643f8eca5659c116929ddf6f1885f98f94e",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -130,42 +106,6 @@
 				"arch": "noarch",
 				"filename": "git-instaweb-2.31.1-3.el9_1.noarch.rpm",
 				"sum": "98e5682d625dcd29a2c589ea6c3baf17f04fc64946acaa6ce5f9acb6b38a5250",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "git-2.31.1-3.el9_1.src.rpm",
-				"name": "git-core",
-				"epoch": "0",
-				"version": "2.31.1",
-				"release": "3.el9_1",
-				"arch": "aarch64",
-				"filename": "git-core-2.31.1-3.el9_1.aarch64.rpm",
-				"sum": "a4399d8b7f96c0b100a87667c8ac3d69be3282d329dac0b5409ac1637b91e3cd",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "git-2.31.1-3.el9_1.src.rpm",
-				"name": "git-subtree",
-				"epoch": "0",
-				"version": "2.31.1",
-				"release": "3.el9_1",
-				"arch": "aarch64",
-				"filename": "git-subtree-2.31.1-3.el9_1.aarch64.rpm",
-				"sum": "c59d4b02022aaaf0630a602dbaa015b11ffa56aea0b5342ab664b1a8e13ed7ef",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "git-2.31.1-3.el9_1.src.rpm",
-				"name": "git-daemon",
-				"epoch": "0",
-				"version": "2.31.1",
-				"release": "3.el9_1",
-				"arch": "aarch64",
-				"filename": "git-daemon-2.31.1-3.el9_1.aarch64.rpm",
-				"sum": "ca57c5eb3731ea8f46f4b254acdd28c7ed80dc7f6c2978b991b509f9af001bea",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -372,6 +312,66 @@
 				"sum": "db322a82e0063b437b75b00028a39433976b527c8ecd3eed8e57053a77ffe5aa",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "git-2.31.1-3.el9_1.src.rpm",
+				"name": "git-credential-libsecret",
+				"epoch": "0",
+				"version": "2.31.1",
+				"release": "3.el9_1",
+				"arch": "aarch64",
+				"filename": "git-credential-libsecret-2.31.1-3.el9_1.aarch64.rpm",
+				"sum": "0d4bda118ea0b3f790ff98b033ac1c152f70f70e85d96dd1d79aee4784ab478b",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "git-2.31.1-3.el9_1.src.rpm",
+				"name": "git",
+				"epoch": "0",
+				"version": "2.31.1",
+				"release": "3.el9_1",
+				"arch": "aarch64",
+				"filename": "git-2.31.1-3.el9_1.aarch64.rpm",
+				"sum": "3dbff98044d54be2dbaf65d5406c2643f8eca5659c116929ddf6f1885f98f94e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "git-2.31.1-3.el9_1.src.rpm",
+				"name": "git-core",
+				"epoch": "0",
+				"version": "2.31.1",
+				"release": "3.el9_1",
+				"arch": "aarch64",
+				"filename": "git-core-2.31.1-3.el9_1.aarch64.rpm",
+				"sum": "a4399d8b7f96c0b100a87667c8ac3d69be3282d329dac0b5409ac1637b91e3cd",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "git-2.31.1-3.el9_1.src.rpm",
+				"name": "git-subtree",
+				"epoch": "0",
+				"version": "2.31.1",
+				"release": "3.el9_1",
+				"arch": "aarch64",
+				"filename": "git-subtree-2.31.1-3.el9_1.aarch64.rpm",
+				"sum": "c59d4b02022aaaf0630a602dbaa015b11ffa56aea0b5342ab664b1a8e13ed7ef",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "git-2.31.1-3.el9_1.src.rpm",
+				"name": "git-daemon",
+				"epoch": "0",
+				"version": "2.31.1",
+				"release": "3.el9_1",
+				"arch": "aarch64",
+				"filename": "git-daemon-2.31.1-3.el9_1.aarch64.rpm",
+				"sum": "ca57c5eb3731ea8f46f4b254acdd28c7ed80dc7f6c2978b991b509f9af001bea",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
@@ -418,6 +418,6 @@
 		"$date": 1675641600000
 	},
 	"updated_date": {
-		"$date": 1675803805000
+		"$date": 1675803804000
 	}
 }

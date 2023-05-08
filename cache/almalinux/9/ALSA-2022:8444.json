@@ -10,33 +10,9 @@
 	"summary": "keylime security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-i686-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-i686-appstream-rpms__9_1_default",
 		"packages": [
-			{
-				"src": "keylime-6.5.1-1.el9_1.src.rpm",
-				"name": "keylime-base",
-				"epoch": "0",
-				"version": "6.5.1",
-				"release": "1.el9_1",
-				"arch": "aarch64",
-				"filename": "keylime-base-6.5.1-1.el9_1.aarch64.rpm",
-				"sum": "14cf5c4ddb55362cb5204cd371c7e49f761b5458ec1499ad9605698f9709b522",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "keylime-6.5.1-1.el9_1.src.rpm",
-				"name": "python3-keylime",
-				"epoch": "0",
-				"version": "6.5.1",
-				"release": "1.el9_1",
-				"arch": "aarch64",
-				"filename": "python3-keylime-6.5.1-1.el9_1.aarch64.rpm",
-				"sum": "2dc85747471493dfdcb5bf3f46a016d7bc811b557148514a76f499ba30e2f148",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "keylime-6.5.1-1.el9_1.src.rpm",
 				"name": "keylime-selinux",
@@ -46,54 +22,6 @@
 				"arch": "noarch",
 				"filename": "keylime-selinux-6.5.1-1.el9_1.noarch.rpm",
 				"sum": "31db20cc7837e7a9bb5695c2d5e9462020086d85ae634a8e96214e04a01d9366",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "keylime-6.5.1-1.el9_1.src.rpm",
-				"name": "keylime-registrar",
-				"epoch": "0",
-				"version": "6.5.1",
-				"release": "1.el9_1",
-				"arch": "aarch64",
-				"filename": "keylime-registrar-6.5.1-1.el9_1.aarch64.rpm",
-				"sum": "448927940a4c7b3f5aaf0dfa53c74cd9c14ce12b4dd526d44c6b1af12bec66ac",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "keylime-6.5.1-1.el9_1.src.rpm",
-				"name": "keylime",
-				"epoch": "0",
-				"version": "6.5.1",
-				"release": "1.el9_1",
-				"arch": "aarch64",
-				"filename": "keylime-6.5.1-1.el9_1.aarch64.rpm",
-				"sum": "d3c1fd2eeec606d4eb167803f257ec97456677e1da2b05285dfb95bb657c3e20",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "keylime-6.5.1-1.el9_1.src.rpm",
-				"name": "keylime-verifier",
-				"epoch": "0",
-				"version": "6.5.1",
-				"release": "1.el9_1",
-				"arch": "aarch64",
-				"filename": "keylime-verifier-6.5.1-1.el9_1.aarch64.rpm",
-				"sum": "d5b2e5b2d33539380ffe0bf9246bedea03dd968e2f59624d91d4919e78f90d1f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "keylime-6.5.1-1.el9_1.src.rpm",
-				"name": "keylime-tenant",
-				"epoch": "0",
-				"version": "6.5.1",
-				"release": "1.el9_1",
-				"arch": "aarch64",
-				"filename": "keylime-tenant-6.5.1-1.el9_1.aarch64.rpm",
-				"sum": "da19815f807d3c38e25155bf6459e496e955468080ec98ccd30eb815b0fc9b83",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -312,6 +240,78 @@
 				"sum": "9edd755b78d9a096d51a4dea7255d8139616a83d4625816c5818c39753751458",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "keylime-6.5.1-1.el9_1.src.rpm",
+				"name": "keylime-base",
+				"epoch": "0",
+				"version": "6.5.1",
+				"release": "1.el9_1",
+				"arch": "aarch64",
+				"filename": "keylime-base-6.5.1-1.el9_1.aarch64.rpm",
+				"sum": "14cf5c4ddb55362cb5204cd371c7e49f761b5458ec1499ad9605698f9709b522",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "keylime-6.5.1-1.el9_1.src.rpm",
+				"name": "python3-keylime",
+				"epoch": "0",
+				"version": "6.5.1",
+				"release": "1.el9_1",
+				"arch": "aarch64",
+				"filename": "python3-keylime-6.5.1-1.el9_1.aarch64.rpm",
+				"sum": "2dc85747471493dfdcb5bf3f46a016d7bc811b557148514a76f499ba30e2f148",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "keylime-6.5.1-1.el9_1.src.rpm",
+				"name": "keylime-registrar",
+				"epoch": "0",
+				"version": "6.5.1",
+				"release": "1.el9_1",
+				"arch": "aarch64",
+				"filename": "keylime-registrar-6.5.1-1.el9_1.aarch64.rpm",
+				"sum": "448927940a4c7b3f5aaf0dfa53c74cd9c14ce12b4dd526d44c6b1af12bec66ac",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "keylime-6.5.1-1.el9_1.src.rpm",
+				"name": "keylime",
+				"epoch": "0",
+				"version": "6.5.1",
+				"release": "1.el9_1",
+				"arch": "aarch64",
+				"filename": "keylime-6.5.1-1.el9_1.aarch64.rpm",
+				"sum": "d3c1fd2eeec606d4eb167803f257ec97456677e1da2b05285dfb95bb657c3e20",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "keylime-6.5.1-1.el9_1.src.rpm",
+				"name": "keylime-verifier",
+				"epoch": "0",
+				"version": "6.5.1",
+				"release": "1.el9_1",
+				"arch": "aarch64",
+				"filename": "keylime-verifier-6.5.1-1.el9_1.aarch64.rpm",
+				"sum": "d5b2e5b2d33539380ffe0bf9246bedea03dd968e2f59624d91d4919e78f90d1f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "keylime-6.5.1-1.el9_1.src.rpm",
+				"name": "keylime-tenant",
+				"epoch": "0",
+				"version": "6.5.1",
+				"release": "1.el9_1",
+				"arch": "aarch64",
+				"filename": "keylime-tenant-6.5.1-1.el9_1.aarch64.rpm",
+				"sum": "da19815f807d3c38e25155bf6459e496e955468080ec98ccd30eb815b0fc9b83",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
@@ -346,6 +346,6 @@
 		"$date": 1668470400000
 	},
 	"updated_date": {
-		"$date": 1668693799000
+		"$date": 1668693798000
 	}
 }

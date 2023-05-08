@@ -10,9 +10,69 @@
 	"summary": "An update for the postgresql:13 module is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "2",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_postgresql",
-		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_postgresql",
+		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_postgresql",
+		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_postgresql",
 		"packages": [
+			{
+				"src": "pg_repack-1.4.6-3.module_el8.6.0+2760+1746ec94.src.rpm",
+				"name": "pg_repack",
+				"epoch": "0",
+				"version": "1.4.6",
+				"release": "3.module_el8.6.0+2760+1746ec94",
+				"arch": "aarch64",
+				"filename": "pg_repack-1.4.6-3.module_el8.6.0+2760+1746ec94.aarch64.rpm",
+				"sum": "0bc131332c26443ba517f370c75ff8455abd1e32f7762def0cb858065ae917ec",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pg_repack-1.4.6-3.module_el8.6.0+2758+4f4474df.src.rpm",
+				"name": "pg_repack",
+				"epoch": "0",
+				"version": "1.4.6",
+				"release": "3.module_el8.6.0+2758+4f4474df",
+				"arch": "aarch64",
+				"filename": "pg_repack-1.4.6-3.module_el8.6.0+2758+4f4474df.aarch64.rpm",
+				"sum": "171b64e80f9cd7045800367f93bc0e088d4f5f3feb14e89f96e0a1fd9d94956c",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pgaudit-1.5.0-1.module_el8.6.0+2760+1746ec94.src.rpm",
+				"name": "pgaudit",
+				"epoch": "0",
+				"version": "1.5.0",
+				"release": "1.module_el8.6.0+2760+1746ec94",
+				"arch": "aarch64",
+				"filename": "pgaudit-1.5.0-1.module_el8.6.0+2760+1746ec94.aarch64.rpm",
+				"sum": "5693432a162b3d47be77299991ed7dd77bc206427ce8f7442f27f6342a7502f3",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "postgres-decoderbufs-0.10.0-2.module_el8.6.0+2760+1746ec94.src.rpm",
+				"name": "postgres-decoderbufs",
+				"epoch": "0",
+				"version": "0.10.0",
+				"release": "2.module_el8.6.0+2760+1746ec94",
+				"arch": "aarch64",
+				"filename": "postgres-decoderbufs-0.10.0-2.module_el8.6.0+2760+1746ec94.aarch64.rpm",
+				"sum": "6e3400183f8f17474e90addbd65385025002f6f67f655a5c09fccd1901a6bd45",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "postgres-decoderbufs-0.10.0-2.module_el8.6.0+2758+4f4474df.src.rpm",
+				"name": "postgres-decoderbufs",
+				"epoch": "0",
+				"version": "0.10.0",
+				"release": "2.module_el8.6.0+2758+4f4474df",
+				"arch": "aarch64",
+				"filename": "postgres-decoderbufs-0.10.0-2.module_el8.6.0+2758+4f4474df.aarch64.rpm",
+				"sum": "bf811155cf3657988a3d16afe45a7c73de068ad1a9b8a34d8f78d145ee445bee",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "postgresql-13.5-1.module_el8.5.0+2607+8c0fd184.src.rpm",
 				"name": "postgresql-server",
@@ -242,66 +302,6 @@
 				"reboot_suggested": 0
 			},
 			{
-				"src": "pg_repack-1.4.6-3.module_el8.6.0+2760+1746ec94.src.rpm",
-				"name": "pg_repack",
-				"epoch": "0",
-				"version": "1.4.6",
-				"release": "3.module_el8.6.0+2760+1746ec94",
-				"arch": "aarch64",
-				"filename": "pg_repack-1.4.6-3.module_el8.6.0+2760+1746ec94.aarch64.rpm",
-				"sum": "0bc131332c26443ba517f370c75ff8455abd1e32f7762def0cb858065ae917ec",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pg_repack-1.4.6-3.module_el8.6.0+2758+4f4474df.src.rpm",
-				"name": "pg_repack",
-				"epoch": "0",
-				"version": "1.4.6",
-				"release": "3.module_el8.6.0+2758+4f4474df",
-				"arch": "aarch64",
-				"filename": "pg_repack-1.4.6-3.module_el8.6.0+2758+4f4474df.aarch64.rpm",
-				"sum": "171b64e80f9cd7045800367f93bc0e088d4f5f3feb14e89f96e0a1fd9d94956c",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pgaudit-1.5.0-1.module_el8.6.0+2760+1746ec94.src.rpm",
-				"name": "pgaudit",
-				"epoch": "0",
-				"version": "1.5.0",
-				"release": "1.module_el8.6.0+2760+1746ec94",
-				"arch": "aarch64",
-				"filename": "pgaudit-1.5.0-1.module_el8.6.0+2760+1746ec94.aarch64.rpm",
-				"sum": "5693432a162b3d47be77299991ed7dd77bc206427ce8f7442f27f6342a7502f3",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "postgres-decoderbufs-0.10.0-2.module_el8.6.0+2760+1746ec94.src.rpm",
-				"name": "postgres-decoderbufs",
-				"epoch": "0",
-				"version": "0.10.0",
-				"release": "2.module_el8.6.0+2760+1746ec94",
-				"arch": "aarch64",
-				"filename": "postgres-decoderbufs-0.10.0-2.module_el8.6.0+2760+1746ec94.aarch64.rpm",
-				"sum": "6e3400183f8f17474e90addbd65385025002f6f67f655a5c09fccd1901a6bd45",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "postgres-decoderbufs-0.10.0-2.module_el8.6.0+2758+4f4474df.src.rpm",
-				"name": "postgres-decoderbufs",
-				"epoch": "0",
-				"version": "0.10.0",
-				"release": "2.module_el8.6.0+2758+4f4474df",
-				"arch": "aarch64",
-				"filename": "postgres-decoderbufs-0.10.0-2.module_el8.6.0+2758+4f4474df.aarch64.rpm",
-				"sum": "bf811155cf3657988a3d16afe45a7c73de068ad1a9b8a34d8f78d145ee445bee",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
 				"src": "postgres-decoderbufs-0.10.0-2.module_el8.6.0+2760+1746ec94.src.rpm",
 				"name": "postgres-decoderbufs",
 				"epoch": "0",
@@ -342,6 +342,12 @@
 	"description": "PostgreSQL is an advanced object-relational database management system (DBMS).\n\nThe following packages have been upgraded to a later upstream version: postgresql (13.5).\n\nSecurity Fix(es):\n\n* postgresql: memory disclosure in certain queries (CVE-2021-3677)\n\n* postgresql: server processes unencrypted bytes from man-in-the-middle (CVE-2021-23214)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
+			"id": "ALSA-2021-5236",
+			"title": "ALSA-2021-5236",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-5236.html"
+		},
+		{
 			"id": "CVE-2021-23214",
 			"title": "CVE-2021-23214",
 			"type": "cve",
@@ -358,6 +364,6 @@
 		"$date": 1640077835000
 	},
 	"updated_date": {
-		"$date": 1640161398000
+		"$date": 1640077831000
 	}
 }

@@ -10,9 +10,45 @@
 	"summary": "An update for librsvg2 is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "3",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
-		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"name": "almalinux-8-for-aarch64-appstream-rpms__8_0_default",
+		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_0_default",
 		"packages": [
+			{
+				"src": "librsvg2-2.42.7-4.el8.src.rpm",
+				"name": "librsvg2",
+				"epoch": "0",
+				"version": "2.42.7",
+				"release": "4.el8",
+				"arch": "aarch64",
+				"filename": "librsvg2-2.42.7-4.el8.aarch64.rpm",
+				"sum": "171d006652fc2ce59a2daeb732e128d9c8176ca59977f40dcc835bf3ca78b9c3",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "librsvg2-2.42.7-4.el8.src.rpm",
+				"name": "librsvg2-devel",
+				"epoch": "0",
+				"version": "2.42.7",
+				"release": "4.el8",
+				"arch": "aarch64",
+				"filename": "librsvg2-devel-2.42.7-4.el8.aarch64.rpm",
+				"sum": "a501bc5422aba30dbf38fa07dba6e67a8013eb699e6f17386d45d291cb3b092f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "librsvg2-2.42.7-4.el8.src.rpm",
+				"name": "librsvg2-tools",
+				"epoch": "0",
+				"version": "2.42.7",
+				"release": "4.el8",
+				"arch": "aarch64",
+				"filename": "librsvg2-tools-2.42.7-4.el8.aarch64.rpm",
+				"sum": "af4d13aee384f1b920d92823bd0fc88fd2b20b2f3f88a874aa1200cd1660863f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "librsvg2-2.42.7-4.el8.src.rpm",
 				"name": "librsvg2-tools",
@@ -75,42 +111,6 @@
 			},
 			{
 				"src": "librsvg2-2.42.7-4.el8.src.rpm",
-				"name": "librsvg2",
-				"epoch": "0",
-				"version": "2.42.7",
-				"release": "4.el8",
-				"arch": "aarch64",
-				"filename": "librsvg2-2.42.7-4.el8.aarch64.rpm",
-				"sum": "171d006652fc2ce59a2daeb732e128d9c8176ca59977f40dcc835bf3ca78b9c3",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "librsvg2-2.42.7-4.el8.src.rpm",
-				"name": "librsvg2-devel",
-				"epoch": "0",
-				"version": "2.42.7",
-				"release": "4.el8",
-				"arch": "aarch64",
-				"filename": "librsvg2-devel-2.42.7-4.el8.aarch64.rpm",
-				"sum": "a501bc5422aba30dbf38fa07dba6e67a8013eb699e6f17386d45d291cb3b092f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "librsvg2-2.42.7-4.el8.src.rpm",
-				"name": "librsvg2-tools",
-				"epoch": "0",
-				"version": "2.42.7",
-				"release": "4.el8",
-				"arch": "aarch64",
-				"filename": "librsvg2-tools-2.42.7-4.el8.aarch64.rpm",
-				"sum": "af4d13aee384f1b920d92823bd0fc88fd2b20b2f3f88a874aa1200cd1660863f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "librsvg2-2.42.7-4.el8.src.rpm",
 				"name": "librsvg2-tools",
 				"epoch": "0",
 				"version": "2.42.7",
@@ -150,6 +150,12 @@
 	"description": "The librsvg2 packages provide a Scalable Vector Graphics (SVG) library based on the libart library.\n\nSecurity Fix(es):\n\n* librsvg: Resource exhaustion via crafted SVG file with nested patterns (CVE-2019-20446)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
+			"id": "ALSA-2020-4709",
+			"title": "ALSA-2020-4709",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2020-4709.html"
+		},
+		{
 			"id": "CVE-2019-20446",
 			"title": "CVE-2019-20446",
 			"type": "cve",
@@ -160,6 +166,6 @@
 		"$date": 1604406549000
 	},
 	"updated_date": {
-		"$date": 1636712456000
+		"$date": 1604433099000
 	}
 }

@@ -10,8 +10,8 @@
 	"summary": "An update for the nodejs:14 module is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "4",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_nodejs",
-		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_nodejs",
+		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_nodejs",
+		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_nodejs",
 		"packages": [
 			{
 				"src": "nodejs-nodemon-2.0.15-1.module_el8.6.0+2904+f21ad6f4.src.rpm",
@@ -26,18 +26,6 @@
 				"reboot_suggested": 0
 			},
 			{
-				"src": "nodejs-14.18.2-2.module_el8.5.0+2618+8d46dafd.src.rpm",
-				"name": "nodejs-full-i18n",
-				"epoch": "1",
-				"version": "14.18.2",
-				"release": "2.module_el8.5.0+2618+8d46dafd",
-				"arch": "x86_64",
-				"filename": "nodejs-full-i18n-14.18.2-2.module_el8.5.0+2618+8d46dafd.x86_64.rpm",
-				"sum": "334df7373f1019d90d6a2f1cbc992ade09ada649f0a4a9faf26981af41b32777",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
 				"src": "nodejs-packaging-23-3.module_el8.5.0+2618+8d46dafd.src.rpm",
 				"name": "nodejs-packaging",
 				"epoch": "0",
@@ -46,66 +34,6 @@
 				"arch": "noarch",
 				"filename": "nodejs-packaging-23-3.module_el8.5.0+2618+8d46dafd.noarch.rpm",
 				"sum": "4eaf7a47bcf25d9511b9d22e4d927a284d4256b063d7ef611908e8475f9d6646",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "nodejs-14.18.2-2.module_el8.5.0+2618+8d46dafd.src.rpm",
-				"name": "npm",
-				"epoch": "1",
-				"version": "6.14.15",
-				"release": "1.14.18.2.2.module_el8.5.0+2618+8d46dafd",
-				"arch": "x86_64",
-				"filename": "npm-6.14.15-1.14.18.2.2.module_el8.5.0+2618+8d46dafd.x86_64.rpm",
-				"sum": "8d14afee004545d9e3830b7be23e72039550a891fd0e92cd0b4c0b462dddde1f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "nodejs-14.18.2-2.module_el8.5.0+2618+8d46dafd.src.rpm",
-				"name": "nodejs-docs",
-				"epoch": "1",
-				"version": "14.18.2",
-				"release": "2.module_el8.5.0+2618+8d46dafd",
-				"arch": "noarch",
-				"filename": "nodejs-docs-14.18.2-2.module_el8.5.0+2618+8d46dafd.noarch.rpm",
-				"sum": "99139122b205766ac12289d6ea0290c93a564fa35e26ca14792a3e274fec23ed",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "nodejs-nodemon-2.0.15-1.module_el8.5.0+2618+8d46dafd.src.rpm",
-				"name": "nodejs-nodemon",
-				"epoch": "0",
-				"version": "2.0.15",
-				"release": "1.module_el8.5.0+2618+8d46dafd",
-				"arch": "noarch",
-				"filename": "nodejs-nodemon-2.0.15-1.module_el8.5.0+2618+8d46dafd.noarch.rpm",
-				"sum": "cfa3ce28707a3be23edfb6d178aeea1aa32ff6e15779fcf271060e0cc6e73a87",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "nodejs-14.18.2-2.module_el8.5.0+2618+8d46dafd.src.rpm",
-				"name": "nodejs-devel",
-				"epoch": "1",
-				"version": "14.18.2",
-				"release": "2.module_el8.5.0+2618+8d46dafd",
-				"arch": "x86_64",
-				"filename": "nodejs-devel-14.18.2-2.module_el8.5.0+2618+8d46dafd.x86_64.rpm",
-				"sum": "d4bf2e18172097a715f128db3bd5ea3a147f81fcbd633ea11a2f223eab110823",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "nodejs-14.18.2-2.module_el8.5.0+2618+8d46dafd.src.rpm",
-				"name": "nodejs",
-				"epoch": "1",
-				"version": "14.18.2",
-				"release": "2.module_el8.5.0+2618+8d46dafd",
-				"arch": "x86_64",
-				"filename": "nodejs-14.18.2-2.module_el8.5.0+2618+8d46dafd.x86_64.rpm",
-				"sum": "ee89a92d91e36429ea0536b8de9f36f97ee96a36a5e669125ad8c4834e687f46",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -159,6 +87,18 @@
 			},
 			{
 				"src": "nodejs-14.18.2-2.module_el8.5.0+2618+8d46dafd.src.rpm",
+				"name": "nodejs-docs",
+				"epoch": "1",
+				"version": "14.18.2",
+				"release": "2.module_el8.5.0+2618+8d46dafd",
+				"arch": "noarch",
+				"filename": "nodejs-docs-14.18.2-2.module_el8.5.0+2618+8d46dafd.noarch.rpm",
+				"sum": "99139122b205766ac12289d6ea0290c93a564fa35e26ca14792a3e274fec23ed",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "nodejs-14.18.2-2.module_el8.5.0+2618+8d46dafd.src.rpm",
 				"name": "nodejs-full-i18n",
 				"epoch": "1",
 				"version": "14.18.2",
@@ -178,6 +118,66 @@
 				"arch": "aarch64",
 				"filename": "nodejs-devel-14.18.2-2.module_el8.5.0+2618+8d46dafd.aarch64.rpm",
 				"sum": "bdd011fef6d0e84f97f740ef0c3daf5577bb2e7b0084e3f1dd03be1e9a892a51",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "nodejs-14.18.2-2.module_el8.5.0+2618+8d46dafd.src.rpm",
+				"name": "nodejs-full-i18n",
+				"epoch": "1",
+				"version": "14.18.2",
+				"release": "2.module_el8.5.0+2618+8d46dafd",
+				"arch": "x86_64",
+				"filename": "nodejs-full-i18n-14.18.2-2.module_el8.5.0+2618+8d46dafd.x86_64.rpm",
+				"sum": "334df7373f1019d90d6a2f1cbc992ade09ada649f0a4a9faf26981af41b32777",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "nodejs-14.18.2-2.module_el8.5.0+2618+8d46dafd.src.rpm",
+				"name": "npm",
+				"epoch": "1",
+				"version": "6.14.15",
+				"release": "1.14.18.2.2.module_el8.5.0+2618+8d46dafd",
+				"arch": "x86_64",
+				"filename": "npm-6.14.15-1.14.18.2.2.module_el8.5.0+2618+8d46dafd.x86_64.rpm",
+				"sum": "8d14afee004545d9e3830b7be23e72039550a891fd0e92cd0b4c0b462dddde1f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "nodejs-nodemon-2.0.15-1.module_el8.5.0+2618+8d46dafd.src.rpm",
+				"name": "nodejs-nodemon",
+				"epoch": "0",
+				"version": "2.0.15",
+				"release": "1.module_el8.5.0+2618+8d46dafd",
+				"arch": "noarch",
+				"filename": "nodejs-nodemon-2.0.15-1.module_el8.5.0+2618+8d46dafd.noarch.rpm",
+				"sum": "cfa3ce28707a3be23edfb6d178aeea1aa32ff6e15779fcf271060e0cc6e73a87",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "nodejs-14.18.2-2.module_el8.5.0+2618+8d46dafd.src.rpm",
+				"name": "nodejs-devel",
+				"epoch": "1",
+				"version": "14.18.2",
+				"release": "2.module_el8.5.0+2618+8d46dafd",
+				"arch": "x86_64",
+				"filename": "nodejs-devel-14.18.2-2.module_el8.5.0+2618+8d46dafd.x86_64.rpm",
+				"sum": "d4bf2e18172097a715f128db3bd5ea3a147f81fcbd633ea11a2f223eab110823",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "nodejs-14.18.2-2.module_el8.5.0+2618+8d46dafd.src.rpm",
+				"name": "nodejs",
+				"epoch": "1",
+				"version": "14.18.2",
+				"release": "2.module_el8.5.0+2618+8d46dafd",
+				"arch": "x86_64",
+				"filename": "nodejs-14.18.2-2.module_el8.5.0+2618+8d46dafd.x86_64.rpm",
+				"sum": "ee89a92d91e36429ea0536b8de9f36f97ee96a36a5e669125ad8c4834e687f46",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -246,6 +246,12 @@
 	"description": "Node.js is a software development platform for building fast and scalable network applications in the JavaScript programming language. \n\nThe following packages have been upgraded to a later upstream version: nodejs (14.18.2), nodejs-nodemon (2.0.15). (BZ#2027609)\n\nSecurity Fix(es):\n\n* nodejs-json-schema: Prototype pollution vulnerability (CVE-2021-3918)\n\n* nodejs-ini: Prototype pollution via malicious INI file (CVE-2020-7788)\n\n* nodejs-glob-parent: Regular expression denial of service (CVE-2020-28469)\n\n* nodejs-ansi-regex: Regular expression denial of service (ReDoS) matching ANSI escape codes (CVE-2021-3807)\n\n* normalize-url: ReDoS for data URLs (CVE-2021-33502)\n\n* nodejs-tar: Insufficient symlink protection due to directory cache poisoning using symbolic links allowing arbitrary file creation and overwrite (CVE-2021-37701)\n\n* nodejs-tar: Insufficient symlink protection due to directory cache poisoning using symbolic links allowing arbitrary file creation and overwrite (CVE-2021-37712)\n\n* llhttp: HTTP Request Smuggling due to spaces in headers (CVE-2021-22959)\n\n* llhttp: HTTP Request Smuggling when parsing the body of chunked requests (CVE-2021-22960)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
+			"id": "ALSA-2022-0350",
+			"title": "ALSA-2022-0350",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-0350.html"
+		},
+		{
 			"id": "CVE-2020-28469",
 			"title": "CVE-2020-28469",
 			"type": "cve",
@@ -304,6 +310,6 @@
 		"$date": 1643746119000
 	},
 	"updated_date": {
-		"$date": 1643991222000
+		"$date": 1643746054000
 	}
 }

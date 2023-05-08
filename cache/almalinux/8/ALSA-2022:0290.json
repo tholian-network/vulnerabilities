@@ -10,8 +10,8 @@
 	"summary": "An update for the parfait:0.5 module is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "6",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_parfait",
-		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_parfait",
+		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_parfait",
+		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_parfait",
 		"packages": [
 			{
 				"src": "uom-lib-1.0.1-6.module_el8.5.0+2610+de2b8c0b.src.rpm",
@@ -378,6 +378,12 @@
 	"description": "Parfait is a Java performance monitoring library that collects metrics and exposes them through a variety of outputs. It provides APIs for extracting performance metrics from the JVM and other sources. It interfaces to Performance Co-Pilot (PCP) using the Memory Mapped Value (MMV) machinery for extremely lightweight instrumentation.\n\nSecurity Fix(es):\n\n* log4j: SQL injection in Log4j 1.x when application is configured to use JDBCAppender (CVE-2022-23305)\n\n* log4j: Unsafe deserialization flaw in Chainsaw log viewer (CVE-2022-23307)\n\n* log4j: Remote code execution in Log4j 1.x when application is configured to use JMSAppender (CVE-2021-4104)\n\n* log4j: Remote code execution in Log4j 1.x when application is configured to use JMSSink (CVE-2022-23302)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
+			"id": "ALSA-2022-0290",
+			"title": "ALSA-2022-0290",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-0290.html"
+		},
+		{
 			"id": "CVE-2021-4104",
 			"title": "CVE-2021-4104",
 			"type": "cve",
@@ -406,6 +412,6 @@
 		"$date": 1643207239000
 	},
 	"updated_date": {
-		"$date": 1643315006000
+		"$date": 1643207239000
 	}
 }

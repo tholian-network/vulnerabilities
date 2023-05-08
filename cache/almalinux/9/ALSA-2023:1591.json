@@ -1,0 +1,147 @@
+{
+	"updateinfo_id": "ALSA-2023:1591",
+	"fromstr": "packager@almalinux.org",
+	"title": "Important: pcs security update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Important",
+	"summary": "pcs security update",
+	"pushcount": "1",
+	"pkglist": {
+		"name": "almalinux-9-for-x86_64-highavailability-rpms__9_1_default",
+		"shortname": "almalinux-9-for-x86_64-highavailability-rpms__9_1_default",
+		"packages": [
+			{
+				"src": "pcs-0.11.3-4.el9_1.3.src.rpm",
+				"name": "pcs-snmp",
+				"epoch": "0",
+				"version": "0.11.3",
+				"release": "4.el9_1.3",
+				"arch": "x86_64",
+				"filename": "pcs-snmp-0.11.3-4.el9_1.3.x86_64.rpm",
+				"sum": "61c1de78fb185db850a2b40db34ccbb98a8bae4dc3ed83415540f5b4ca586fd9",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pcs-0.11.3-4.el9_1.3.src.rpm",
+				"name": "pcs",
+				"epoch": "0",
+				"version": "0.11.3",
+				"release": "4.el9_1.3",
+				"arch": "x86_64",
+				"filename": "pcs-0.11.3-4.el9_1.3.x86_64.rpm",
+				"sum": "eac2574db0524fd678e7e41ba581fd44236e72dbaece3af828b230be71a57bfd",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pcs-0.11.3-4.el9_1.3.src.rpm",
+				"name": "pcs-snmp",
+				"epoch": "0",
+				"version": "0.11.3",
+				"release": "4.el9_1.3",
+				"arch": "ppc64le",
+				"filename": "pcs-snmp-0.11.3-4.el9_1.3.ppc64le.rpm",
+				"sum": "27fa41fcde57d3938dde23069e0f8338ad68a66009671ac24614a03b238b277f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pcs-0.11.3-4.el9_1.3.src.rpm",
+				"name": "pcs",
+				"epoch": "0",
+				"version": "0.11.3",
+				"release": "4.el9_1.3",
+				"arch": "ppc64le",
+				"filename": "pcs-0.11.3-4.el9_1.3.ppc64le.rpm",
+				"sum": "d39ad7d1dd2c2890bc8f40e0fc5fa75e4874fb19e9636ed1064ca58d9c141a06",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pcs-0.11.3-4.el9_1.3.src.rpm",
+				"name": "pcs-snmp",
+				"epoch": "0",
+				"version": "0.11.3",
+				"release": "4.el9_1.3",
+				"arch": "aarch64",
+				"filename": "pcs-snmp-0.11.3-4.el9_1.3.aarch64.rpm",
+				"sum": "4a6f877603b81b36baf04b43ec2511a49330184b0b78526d1ed410bb992c9656",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pcs-0.11.3-4.el9_1.3.src.rpm",
+				"name": "pcs",
+				"epoch": "0",
+				"version": "0.11.3",
+				"release": "4.el9_1.3",
+				"arch": "aarch64",
+				"filename": "pcs-0.11.3-4.el9_1.3.aarch64.rpm",
+				"sum": "99bb88bb138e6c7c1138d56071b72c86dfa77db2f747a28aa3c9ea50e9a1624a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pcs-0.11.3-4.el9_1.3.src.rpm",
+				"name": "pcs-snmp",
+				"epoch": "0",
+				"version": "0.11.3",
+				"release": "4.el9_1.3",
+				"arch": "s390x",
+				"filename": "pcs-snmp-0.11.3-4.el9_1.3.s390x.rpm",
+				"sum": "7c3ab09cc99502b3a371ac648f670456215764fb0ca112aa147c90d9bb985ede",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pcs-0.11.3-4.el9_1.3.src.rpm",
+				"name": "pcs",
+				"epoch": "0",
+				"version": "0.11.3",
+				"release": "4.el9_1.3",
+				"arch": "s390x",
+				"filename": "pcs-0.11.3-4.el9_1.3.s390x.rpm",
+				"sum": "a6b34c2e858cbb79b2b6bdc098047d7d489c8ded92245dce8f3bdefc4ba175c8",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "The pcs packages provide a command-line configuration system for the Pacemaker and Corosync utilities.\n\nSecurity Fix(es):\n\n* webpack: avoid cross-realm objects (CVE-2023-28154)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
+	"references": [
+		{
+			"id": "RHSA-2023:1591",
+			"title": "RHSA-2023:1591",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:1591"
+		},
+		{
+			"id": "CVE-2023-28154",
+			"title": "CVE-2023-28154",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2023-28154"
+		},
+		{
+			"id": "2179227",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2179227"
+		},
+		{
+			"id": "ALSA-2023:1591",
+			"title": "ALSA-2023:1591",
+			"type": "self",
+			"href": "https://errata.almalinux.org/9/ALSA-2023-1591.html"
+		}
+	],
+	"issued_date": {
+		"$date": 1680566400000
+	},
+	"updated_date": {
+		"$date": 1680695181000
+	}
+}

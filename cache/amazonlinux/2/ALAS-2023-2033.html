@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2023-2033</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/index.html">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2023.html">Amazon Linux 2023</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/faqs.html">FAQs</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2023-2033'>ALAS2-2023-2033</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2023-2033
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2023-04-27 18:37 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2023-05-02 19:19 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2019-13565.html' target='_blank' rel='noopener noreferrer'>CVE-2019-13565&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-36221.html' target='_blank' rel='noopener noreferrer'>CVE-2020-36221&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-36222.html' target='_blank' rel='noopener noreferrer'>CVE-2020-36222&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-36223.html' target='_blank' rel='noopener noreferrer'>CVE-2020-36223&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-36224.html' target='_blank' rel='noopener noreferrer'>CVE-2020-36224&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-36226.html' target='_blank' rel='noopener noreferrer'>CVE-2020-36226&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-36227.html' target='_blank' rel='noopener noreferrer'>CVE-2020-36227&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-36228.html' target='_blank' rel='noopener noreferrer'>CVE-2020-36228&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-36229.html' target='_blank' rel='noopener noreferrer'>CVE-2020-36229&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2020-36230.html' target='_blank' rel='noopener noreferrer'>CVE-2020-36230&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <a href='/cve/html/CVE-2021-27212.html' target='_blank' rel='noopener noreferrer'>CVE-2021-27212&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                            <br />
+                            <a href="../../faqs.html">FAQs regarding Amazon Linux ALAS/CVE Severity</a>
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>An issue was discovered in OpenLDAP 2.x before 2.4.48. When using SASL authentication and session encryption, and relying on the SASL security layers in slapd access controls, it is possible to obtain access that would otherwise be denied via a simple bind for any identity covered in those ACLs. After the first SASL bind is completed, the sasl_ssf value is retained for all new non-SASL connections. Depending on the ACL configuration, this can affect different types of operations (searches, modifications, etc.). In other words, a successful authorization step completed by one user affects the authorization requirement for a different user. (CVE-2019-13565)</p><p>An integer underflow was discovered in OpenLDAP before 2.4.57 leading to slapd crashes in the Certificate Exact Assertion processing, resulting in denial of service (schema_init.c serialNumberAndIssuerCheck). (CVE-2020-36221)</p><p>A flaw was discovered in OpenLDAP before 2.4.57 leading to an assertion failure in slapd in the saslAuthzTo validation, resulting in denial of service. (CVE-2020-36222)</p><p>A flaw was discovered in OpenLDAP before 2.4.57 leading to a slapd crash in the Values Return Filter control handling, resulting in denial of service (double free and out-of-bounds read). (CVE-2020-36223)</p><p>A flaw was discovered in OpenLDAP before 2.4.57 leading to an invalid pointer free and slapd crash in the saslAuthzTo processing, resulting in denial of service. (CVE-2020-36224)</p><p>A flaw was discovered in OpenLDAP before 2.4.57 leading to a memch-&gt;bv_len miscalculation and slapd crash in the saslAuthzTo processing, resulting in denial of service. (CVE-2020-36226)</p><p>A flaw was discovered in OpenLDAP before 2.4.57 leading to an infinite loop in slapd with the cancel_extop Cancel operation, resulting in denial of service. (CVE-2020-36227)</p><p>An integer underflow was discovered in OpenLDAP before 2.4.57 leading to a slapd crash in the Certificate List Exact Assertion processing, resulting in denial of service. (CVE-2020-36228)</p><p>A flaw was discovered in ldap_X509dn2bv in OpenLDAP before 2.4.57 leading to a slapd crash in the X.509 DN parsing in ad_keystring, resulting in denial of service. (CVE-2020-36229)</p><p>A flaw was discovered in OpenLDAP before 2.4.57 leading in an assertion failure in slapd in the X.509 DN parsing in decode.c ber_next_element, resulting in denial of service. (CVE-2020-36230)</p><p>In OpenLDAP through 2.4.57 and 2.5.x through 2.5.1alpha, an assertion  ...</p><p>NOTE: https://bugs.openldap.org/show_bug.cgi?id=9454<br />NOTE: trunk: https://git.openldap.org/openldap/openldap/-/commit/3539fc33212b528c56b716584f2c2994af7c30b0<br />NOTE: REL_ENG 2.4.x: https://git.openldap.org/openldap/openldap/-/commit/9badb73425a67768c09bcaed1a9c26c684af6c30 (CVE-2021-27212)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>openldap</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update openldap</i> to update your system.
+                                    <br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; openldap-2.4.44-25.amzn2.0.5.aarch64<br />&nbsp;&nbsp;&nbsp; openldap-devel-2.4.44-25.amzn2.0.5.aarch64<br />&nbsp;&nbsp;&nbsp; openldap-servers-2.4.44-25.amzn2.0.5.aarch64<br />&nbsp;&nbsp;&nbsp; openldap-servers-sql-2.4.44-25.amzn2.0.5.aarch64<br />&nbsp;&nbsp;&nbsp; openldap-clients-2.4.44-25.amzn2.0.5.aarch64<br />&nbsp;&nbsp;&nbsp; openldap-debuginfo-2.4.44-25.amzn2.0.5.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; openldap-2.4.44-25.amzn2.0.5.i686<br />&nbsp;&nbsp;&nbsp; openldap-devel-2.4.44-25.amzn2.0.5.i686<br />&nbsp;&nbsp;&nbsp; openldap-servers-2.4.44-25.amzn2.0.5.i686<br />&nbsp;&nbsp;&nbsp; openldap-servers-sql-2.4.44-25.amzn2.0.5.i686<br />&nbsp;&nbsp;&nbsp; openldap-clients-2.4.44-25.amzn2.0.5.i686<br />&nbsp;&nbsp;&nbsp; openldap-debuginfo-2.4.44-25.amzn2.0.5.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; openldap-2.4.44-25.amzn2.0.5.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; openldap-2.4.44-25.amzn2.0.5.x86_64<br />&nbsp;&nbsp;&nbsp; openldap-devel-2.4.44-25.amzn2.0.5.x86_64<br />&nbsp;&nbsp;&nbsp; openldap-servers-2.4.44-25.amzn2.0.5.x86_64<br />&nbsp;&nbsp;&nbsp; openldap-servers-sql-2.4.44-25.amzn2.0.5.x86_64<br />&nbsp;&nbsp;&nbsp; openldap-clients-2.4.44-25.amzn2.0.5.x86_64<br />&nbsp;&nbsp;&nbsp; openldap-debuginfo-2.4.44-25.amzn2.0.5.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2019-13565" target="_blank" rel="noopener noreferrer">CVE-2019-13565</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-36221" target="_blank" rel="noopener noreferrer">CVE-2020-36221</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-36222" target="_blank" rel="noopener noreferrer">CVE-2020-36222</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-36223" target="_blank" rel="noopener noreferrer">CVE-2020-36223</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-36224" target="_blank" rel="noopener noreferrer">CVE-2020-36224</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-36226" target="_blank" rel="noopener noreferrer">CVE-2020-36226</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-36227" target="_blank" rel="noopener noreferrer">CVE-2020-36227</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-36228" target="_blank" rel="noopener noreferrer">CVE-2020-36228</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-36229" target="_blank" rel="noopener noreferrer">CVE-2020-36229</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-36230" target="_blank" rel="noopener noreferrer">CVE-2020-36230</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-27212" target="_blank" rel="noopener noreferrer">CVE-2021-27212</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13565" target="_blank" rel="noopener noreferrer">CVE-2019-13565</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36221" target="_blank" rel="noopener noreferrer">CVE-2020-36221</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36222" target="_blank" rel="noopener noreferrer">CVE-2020-36222</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36223" target="_blank" rel="noopener noreferrer">CVE-2020-36223</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36224" target="_blank" rel="noopener noreferrer">CVE-2020-36224</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36226" target="_blank" rel="noopener noreferrer">CVE-2020-36226</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36227" target="_blank" rel="noopener noreferrer">CVE-2020-36227</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36228" target="_blank" rel="noopener noreferrer">CVE-2020-36228</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36229" target="_blank" rel="noopener noreferrer">CVE-2020-36229</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36230" target="_blank" rel="noopener noreferrer">CVE-2020-36230</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27212" target="_blank" rel="noopener noreferrer">CVE-2021-27212</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2023
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2023 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2023, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

@@ -10,8 +10,8 @@
 	"summary": "An update for the maven:3.5 module is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "3",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_maven",
-		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_maven",
+		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_maven",
+		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_maven",
 		"packages": [
 			{
 				"src": "google-guice-4.1-11.module_el8.6.0+2752+f1f3449e.src.rpm",
@@ -98,6 +98,18 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "jansi-native-1.7-7.module_el8.6.0+2752+f1f3449e.src.rpm",
+				"name": "jansi-native",
+				"epoch": "0",
+				"version": "1.7",
+				"release": "7.module_el8.6.0+2752+f1f3449e",
+				"arch": "aarch64",
+				"filename": "jansi-native-1.7-7.module_el8.6.0+2752+f1f3449e.aarch64.rpm",
+				"sum": "27ded7a3b605f7eaa5a78779586fd7c2ac0fe07d4218937776d049f77d8e0d6d",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "slf4j-1.7.25-4.module_el8.6.0+2752+f1f3449e.src.rpm",
 				"name": "slf4j",
 				"epoch": "0",
@@ -170,18 +182,6 @@
 				"reboot_suggested": 0
 			},
 			{
-				"src": "jansi-1.17.1-1.module_el8.0.0+6044+f3cbc35d.src.rpm",
-				"name": "jansi",
-				"epoch": "0",
-				"version": "1.17.1",
-				"release": "1.module_el8.0.0+6044+f3cbc35d",
-				"arch": "noarch",
-				"filename": "jansi-1.17.1-1.module_el8.0.0+6044+f3cbc35d.noarch.rpm",
-				"sum": "589967abf16ecdd12217640a0895038befaab43f0fab27c05984e46e231e425c",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
 				"src": "maven-wagon-3.1.0-1.module_el8.6.0+2752+f1f3449e.src.rpm",
 				"name": "maven-wagon-http",
 				"epoch": "0",
@@ -190,6 +190,18 @@
 				"arch": "noarch",
 				"filename": "maven-wagon-http-3.1.0-1.module_el8.6.0+2752+f1f3449e.noarch.rpm",
 				"sum": "5fea2d32a719f10068fb23779b80d37cbe363851d5de5e17d5963f2d2a39c8a3",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "jansi-1.17.1-1.module_el8.4.0+2250+516cbbff.src.rpm",
+				"name": "jansi",
+				"epoch": "0",
+				"version": "1.17.1",
+				"release": "1.module_el8.4.0+2250+516cbbff",
+				"arch": "noarch",
+				"filename": "jansi-1.17.1-1.module_el8.4.0+2250+516cbbff.noarch.rpm",
+				"sum": "624ad0b84b9a633a3502b7ad602b9bd612331f7c229c39ff0f577cca4e327fa1",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -506,18 +518,6 @@
 				"reboot_suggested": 0
 			},
 			{
-				"src": "jansi-native-1.7-7.module_el8.6.0+2752+f1f3449e.src.rpm",
-				"name": "jansi-native",
-				"epoch": "0",
-				"version": "1.7",
-				"release": "7.module_el8.6.0+2752+f1f3449e",
-				"arch": "x86_64",
-				"filename": "jansi-native-1.7-7.module_el8.6.0+2752+f1f3449e.x86_64.rpm",
-				"sum": "e3ca966451b6ee4b1b7abe4ed2aa54fbcb94267d5680952b35a6ba20dd69bf76",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
 				"src": "maven-wagon-3.1.0-1.module_el8.6.0+2752+f1f3449e.src.rpm",
 				"name": "maven-wagon-http-shared",
 				"epoch": "0",
@@ -542,26 +542,26 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "jansi-1.17.1-1.module_el8.0.0+6044+f3cbc35d.src.rpm",
+				"name": "jansi",
+				"epoch": "0",
+				"version": "1.17.1",
+				"release": "1.module_el8.0.0+6044+f3cbc35d",
+				"arch": "noarch",
+				"filename": "jansi-1.17.1-1.module_el8.0.0+6044+f3cbc35d.noarch.rpm",
+				"sum": "589967abf16ecdd12217640a0895038befaab43f0fab27c05984e46e231e425c",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "jansi-native-1.7-7.module_el8.6.0+2752+f1f3449e.src.rpm",
 				"name": "jansi-native",
 				"epoch": "0",
 				"version": "1.7",
 				"release": "7.module_el8.6.0+2752+f1f3449e",
-				"arch": "aarch64",
-				"filename": "jansi-native-1.7-7.module_el8.6.0+2752+f1f3449e.aarch64.rpm",
-				"sum": "27ded7a3b605f7eaa5a78779586fd7c2ac0fe07d4218937776d049f77d8e0d6d",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "jansi-1.17.1-1.module_el8.4.0+2250+516cbbff.src.rpm",
-				"name": "jansi",
-				"epoch": "0",
-				"version": "1.17.1",
-				"release": "1.module_el8.4.0+2250+516cbbff",
-				"arch": "noarch",
-				"filename": "jansi-1.17.1-1.module_el8.4.0+2250+516cbbff.noarch.rpm",
-				"sum": "624ad0b84b9a633a3502b7ad602b9bd612331f7c229c39ff0f577cca4e327fa1",
+				"arch": "x86_64",
+				"filename": "jansi-native-1.7-7.module_el8.6.0+2752+f1f3449e.x86_64.rpm",
+				"sum": "e3ca966451b6ee4b1b7abe4ed2aa54fbcb94267d5680952b35a6ba20dd69bf76",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},

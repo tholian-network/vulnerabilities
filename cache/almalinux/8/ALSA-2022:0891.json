@@ -10,9 +10,21 @@
 	"summary": "An update for the httpd:2.4 module is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "2",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_httpd",
-		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_httpd",
+		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_httpd",
+		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_httpd",
 		"packages": [
+			{
+				"src": "mod_md-2.0.8-8.module_el8.6.0+2872+fe0ff7aa.src.rpm",
+				"name": "mod_md",
+				"epoch": "1",
+				"version": "2.0.8",
+				"release": "8.module_el8.6.0+2872+fe0ff7aa",
+				"arch": "aarch64",
+				"filename": "mod_md-2.0.8-8.module_el8.6.0+2872+fe0ff7aa.aarch64.rpm",
+				"sum": "2678c086cc5a3b9b6f20f73891c8d84235646307efa87d482c5f95d828da9f4e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "httpd-2.4.37-43.module_el8.5.0+2630+51c6d843.2.alma.src.rpm",
 				"name": "httpd-manual",
@@ -132,23 +144,17 @@
 				"sum": "f0b275f25ec324f10bb03d4429fb0c7468a38be49d066c48247dccfd214a7e66",
 				"sum_type": 5,
 				"reboot_suggested": 0
-			},
-			{
-				"src": "mod_md-2.0.8-8.module_el8.6.0+2872+fe0ff7aa.src.rpm",
-				"name": "mod_md",
-				"epoch": "1",
-				"version": "2.0.8",
-				"release": "8.module_el8.6.0+2872+fe0ff7aa",
-				"arch": "aarch64",
-				"filename": "mod_md-2.0.8-8.module_el8.6.0+2872+fe0ff7aa.aarch64.rpm",
-				"sum": "2678c086cc5a3b9b6f20f73891c8d84235646307efa87d482c5f95d828da9f4e",
-				"sum_type": 5,
-				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "The httpd packages provide the Apache HTTP Server, a powerful, efficient, and extensible web server.\n\nSecurity Fix(es):\n\n* httpd: NULL pointer dereference via malformed requests (CVE-2021-34798)\n\n* httpd: Out-of-bounds write in ap_escape_quotes() via malicious input (CVE-2021-39275)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
+		{
+			"id": "ALSA-2022-0891",
+			"title": "ALSA-2022-0891",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-0891.html"
+		},
 		{
 			"id": "CVE-2021-34798",
 			"title": "CVE-2021-34798",
@@ -166,6 +172,6 @@
 		"$date": 1647335444000
 	},
 	"updated_date": {
-		"$date": 1647550279000
+		"$date": 1647335442000
 	}
 }
