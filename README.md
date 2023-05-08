@@ -25,8 +25,8 @@ the Russian army stops trying to hack the EU infrastructure (which might also ne
 
 - [x] Cached OVAL data for various security trackers that exceed 100MB file size
 - [x] Automatically generated pcap streams of incidents (to generate classifiers and exploits)
-- [x] Automatically generated exploits (the `/exploit` folder for each vulnerability)
-- [x] Automatically generated classifiers (the `/classifier` folder for each vulnerability)
+- [x] Automatically generated exploits (the `aggrevations` folder for each vulnerability)
+- [x] Automatically generated classifiers (the `mitigations` folder for each vulnerability)
 
 
 ## License
