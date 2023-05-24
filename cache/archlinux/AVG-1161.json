@@ -1,0 +1,18 @@
+{
+  "name": "AVG-1161",
+  "packages": [
+    "yaws"
+  ],
+  "status": "Fixed",
+  "severity": "Medium",
+  "type": "information disclosure",
+  "affected": "2.0.7-2",
+  "fixed": "2.0.8",
+  "ticket": null,
+  "issues": [
+    "CVE-2020-12872"
+  ],
+  "advisories": [],
+  "references": [],
+  "notes": "yaws_config.erl in Yaws through 2.0.7 loads obsolete TLS ciphers, as demonstrated by ones that allow Sweet32 attacks."
+}
