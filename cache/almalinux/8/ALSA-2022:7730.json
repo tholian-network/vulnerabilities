@@ -10,33 +10,9 @@
 	"summary": "libldb security, bug fix, and enhancement update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-8-for-i686-powertools-rpms__8_6_default",
-		"shortname": "almalinux-8-for-i686-powertools-rpms__8_6_default",
+		"name": "almalinux-8-for-i686-baseos-rpms__8_6_default",
+		"shortname": "almalinux-8-for-i686-baseos-rpms__8_6_default",
 		"packages": [
-			{
-				"src": "libldb-2.5.2-2.el8.src.rpm",
-				"name": "python3-ldb-devel",
-				"epoch": "0",
-				"version": "2.5.2",
-				"release": "2.el8",
-				"arch": "i686",
-				"filename": "python3-ldb-devel-2.5.2-2.el8.i686.rpm",
-				"sum": "5b87269e5c23c4c55c195c0527aa93a2d9f0458279daa3607dd6716777cbe3d6",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libldb-2.5.2-2.el8.src.rpm",
-				"name": "python-ldb-devel-common",
-				"epoch": "0",
-				"version": "2.5.2",
-				"release": "2.el8",
-				"arch": "i686",
-				"filename": "python-ldb-devel-common-2.5.2-2.el8.i686.rpm",
-				"sum": "d2964da62ce0621e808f6df86b27a3c72322ba22abf6577608f10fd633cc7d98",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "libldb-2.5.2-2.el8.src.rpm",
 				"name": "libldb-devel",
@@ -70,6 +46,30 @@
 				"arch": "i686",
 				"filename": "libldb-2.5.2-2.el8.i686.rpm",
 				"sum": "f127993bf1c10dcceb3d10d7c7ce4ba713c3a1036868e0d082e6433b58a5e43a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libldb-2.5.2-2.el8.src.rpm",
+				"name": "python3-ldb-devel",
+				"epoch": "0",
+				"version": "2.5.2",
+				"release": "2.el8",
+				"arch": "i686",
+				"filename": "python3-ldb-devel-2.5.2-2.el8.i686.rpm",
+				"sum": "5b87269e5c23c4c55c195c0527aa93a2d9f0458279daa3607dd6716777cbe3d6",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libldb-2.5.2-2.el8.src.rpm",
+				"name": "python-ldb-devel-common",
+				"epoch": "0",
+				"version": "2.5.2",
+				"release": "2.el8",
+				"arch": "i686",
+				"filename": "python-ldb-devel-common-2.5.2-2.el8.i686.rpm",
+				"sum": "d2964da62ce0621e808f6df86b27a3c72322ba22abf6577608f10fd633cc7d98",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -267,6 +267,30 @@
 			},
 			{
 				"src": "libldb-2.5.2-2.el8.src.rpm",
+				"name": "python-ldb-devel-common",
+				"epoch": "0",
+				"version": "2.5.2",
+				"release": "2.el8",
+				"arch": "ppc64le",
+				"filename": "python-ldb-devel-common-2.5.2-2.el8.ppc64le.rpm",
+				"sum": "3c89421419c033c5791b5544487830def1fa9df62a96292456035977a3fef53d",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libldb-2.5.2-2.el8.src.rpm",
+				"name": "python3-ldb-devel",
+				"epoch": "0",
+				"version": "2.5.2",
+				"release": "2.el8",
+				"arch": "ppc64le",
+				"filename": "python3-ldb-devel-2.5.2-2.el8.ppc64le.rpm",
+				"sum": "f230fa57f2eccd34a10fa306a4b4398eb102ec0179ac0858448ec024ca1a7e1f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libldb-2.5.2-2.el8.src.rpm",
 				"name": "ldb-tools",
 				"epoch": "0",
 				"version": "2.5.2",
@@ -310,30 +334,6 @@
 				"arch": "s390x",
 				"filename": "python3-ldb-2.5.2-2.el8.s390x.rpm",
 				"sum": "e448eb5c3ed05055e55ee432e28a0ae45ac5a749e2a4725eb879cbe36393afef",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libldb-2.5.2-2.el8.src.rpm",
-				"name": "python-ldb-devel-common",
-				"epoch": "0",
-				"version": "2.5.2",
-				"release": "2.el8",
-				"arch": "ppc64le",
-				"filename": "python-ldb-devel-common-2.5.2-2.el8.ppc64le.rpm",
-				"sum": "3c89421419c033c5791b5544487830def1fa9df62a96292456035977a3fef53d",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libldb-2.5.2-2.el8.src.rpm",
-				"name": "python3-ldb-devel",
-				"epoch": "0",
-				"version": "2.5.2",
-				"release": "2.el8",
-				"arch": "ppc64le",
-				"filename": "python3-ldb-devel-2.5.2-2.el8.ppc64le.rpm",
-				"sum": "f230fa57f2eccd34a10fa306a4b4398eb102ec0179ac0858448ec024ca1a7e1f",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -394,6 +394,6 @@
 		"$date": 1667865600000
 	},
 	"updated_date": {
-		"$date": 1668423251000
+		"$date": 1668423252000
 	}
 }

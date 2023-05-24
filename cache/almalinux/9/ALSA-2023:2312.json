@@ -1,0 +1,63 @@
+{
+	"updateinfo_id": "ALSA-2023:2312",
+	"fromstr": "packager@almalinux.org",
+	"title": "Moderate: jackson security update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Moderate",
+	"summary": "jackson security update",
+	"pushcount": "1",
+	"pkglist": {
+		"name": "almalinux-9-for-i686-appstream-rpms__9_2_default",
+		"shortname": "almalinux-9-for-i686-appstream-rpms__9_2_default",
+		"packages": [
+			{
+				"src": "jackson-databind-2.14.1-2.el9.src.rpm",
+				"name": "pki-jackson-databind",
+				"epoch": "0",
+				"version": "2.14.1",
+				"release": "2.el9",
+				"arch": "noarch",
+				"filename": "pki-jackson-databind-2.14.1-2.el9.noarch.rpm",
+				"sum": "da28784a41fd010e96065fdf2a2dc83360004f68ea9615c72e57e671cfba7fbd",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "Jackson is a suite of data-processing tools for Java, including the flagship streaming JSON parser / generator library, matching data-binding library, and additional modules to process data encoded in various other data formats.\n\nSecurity Fix(es):\n\n* jackson-databind: denial of service via a large depth of nested objects (CVE-2020-36518)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
+	"references": [
+		{
+			"id": "RHSA-2023:2312",
+			"title": "RHSA-2023:2312",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:2312"
+		},
+		{
+			"id": "CVE-2020-36518",
+			"title": "CVE-2020-36518",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2020-36518"
+		},
+		{
+			"id": "2064698",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2064698"
+		},
+		{
+			"id": "ALSA-2023:2312",
+			"title": "ALSA-2023:2312",
+			"type": "self",
+			"href": "https://errata.almalinux.org/9/ALSA-2023-2312.html"
+		}
+	],
+	"issued_date": {
+		"$date": 1683590400000
+	},
+	"updated_date": {
+		"$date": 1683875549000
+	}
+}

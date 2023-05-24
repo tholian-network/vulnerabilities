@@ -1,0 +1,63 @@
+{
+	"updateinfo_id": "ALSA-2023:2893",
+	"fromstr": "packager@almalinux.org",
+	"title": "Moderate: python-mako security update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Moderate",
+	"summary": "python-mako security update",
+	"pushcount": "1",
+	"pkglist": {
+		"name": "almalinux-8-for-i686-appstream-rpms__8_8_default",
+		"shortname": "almalinux-8-for-i686-appstream-rpms__8_8_default",
+		"packages": [
+			{
+				"src": "python-mako-1.0.6-14.el8.src.rpm",
+				"name": "python3-mako",
+				"epoch": "0",
+				"version": "1.0.6",
+				"release": "14.el8",
+				"arch": "noarch",
+				"filename": "python3-mako-1.0.6-14.el8.noarch.rpm",
+				"sum": "b99a8cba2c4a73bbb4ef740382614002779ead4d3a5dbb90b48ba7847b7e1a9c",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "Mako is a template library written in Python. It provides a familiar, non-XML syntax which compiles into Python modules for maximum performance.\n\nSecurity Fix(es):\n\n* mako: REDoS in Lexer class (CVE-2022-40023)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
+	"references": [
+		{
+			"id": "RHSA-2023:2893",
+			"title": "RHSA-2023:2893",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:2893"
+		},
+		{
+			"id": "CVE-2022-40023",
+			"title": "CVE-2022-40023",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-40023"
+		},
+		{
+			"id": "2128977",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2128977"
+		},
+		{
+			"id": "ALSA-2023:2893",
+			"title": "ALSA-2023:2893",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2023-2893.html"
+		}
+	],
+	"issued_date": {
+		"$date": 1684195200000
+	},
+	"updated_date": {
+		"$date": 1684533933000
+	}
+}

@@ -10,33 +10,9 @@
 	"summary": "openblas security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-8-for-i686-appstream-rpms__8_6_default",
-		"shortname": "almalinux-8-for-i686-appstream-rpms__8_6_default",
+		"name": "almalinux-8-for-i686-powertools-rpms__8_6_default",
+		"shortname": "almalinux-8-for-i686-powertools-rpms__8_6_default",
 		"packages": [
-			{
-				"src": "openblas-0.3.15-4.el8.src.rpm",
-				"name": "openblas",
-				"epoch": "0",
-				"version": "0.3.15",
-				"release": "4.el8",
-				"arch": "i686",
-				"filename": "openblas-0.3.15-4.el8.i686.rpm",
-				"sum": "81e86f50962c0f1d0ae92b4533170e33b4bc1d906309e58efed5934108010764",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "openblas-0.3.15-4.el8.src.rpm",
-				"name": "openblas-threads",
-				"epoch": "0",
-				"version": "0.3.15",
-				"release": "4.el8",
-				"arch": "i686",
-				"filename": "openblas-threads-0.3.15-4.el8.i686.rpm",
-				"sum": "dacee90ba7face40cd34199e15155320c96d91eedc5189522fc2470d0f05005b",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "openblas-0.3.15-4.el8.src.rpm",
 				"name": "openblas-openmp",
@@ -70,6 +46,30 @@
 				"arch": "i686",
 				"filename": "openblas-devel-0.3.15-4.el8.i686.rpm",
 				"sum": "c781dbba451c61f4b619dea968ec1926dff27046420af2a13f5d148197fde4fb",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "openblas-0.3.15-4.el8.src.rpm",
+				"name": "openblas",
+				"epoch": "0",
+				"version": "0.3.15",
+				"release": "4.el8",
+				"arch": "i686",
+				"filename": "openblas-0.3.15-4.el8.i686.rpm",
+				"sum": "81e86f50962c0f1d0ae92b4533170e33b4bc1d906309e58efed5934108010764",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "openblas-0.3.15-4.el8.src.rpm",
+				"name": "openblas-threads",
+				"epoch": "0",
+				"version": "0.3.15",
+				"release": "4.el8",
+				"arch": "i686",
+				"filename": "openblas-threads-0.3.15-4.el8.i686.rpm",
+				"sum": "dacee90ba7face40cd34199e15155320c96d91eedc5189522fc2470d0f05005b",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -315,30 +315,6 @@
 			},
 			{
 				"src": "openblas-0.3.15-4.el8.src.rpm",
-				"name": "openblas-threads",
-				"epoch": "0",
-				"version": "0.3.15",
-				"release": "4.el8",
-				"arch": "aarch64",
-				"filename": "openblas-threads-0.3.15-4.el8.aarch64.rpm",
-				"sum": "aa65771a1d5586cee8378fc6e9a193a6d80e51a3a7ca76a54263a3b0f26f87b9",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "openblas-0.3.15-4.el8.src.rpm",
-				"name": "openblas",
-				"epoch": "0",
-				"version": "0.3.15",
-				"release": "4.el8",
-				"arch": "aarch64",
-				"filename": "openblas-0.3.15-4.el8.aarch64.rpm",
-				"sum": "fa943dc1569725148c337d40b2f698ba95284e25601261d743d6b07cc699af6d",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "openblas-0.3.15-4.el8.src.rpm",
 				"name": "openblas-static",
 				"epoch": "0",
 				"version": "0.3.15",
@@ -454,6 +430,54 @@
 				"arch": "ppc64le",
 				"filename": "openblas-openmp64_-0.3.15-4.el8.ppc64le.rpm",
 				"sum": "fcb049441904dff74808799362a78cd69890cb678102035776309582fd07663b",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "openblas-0.3.15-4.el8.src.rpm",
+				"name": "openblas-threads",
+				"epoch": "0",
+				"version": "0.3.15",
+				"release": "4.el8",
+				"arch": "aarch64",
+				"filename": "openblas-threads-0.3.15-4.el8.aarch64.rpm",
+				"sum": "aa65771a1d5586cee8378fc6e9a193a6d80e51a3a7ca76a54263a3b0f26f87b9",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "openblas-0.3.15-4.el8.src.rpm",
+				"name": "openblas",
+				"epoch": "0",
+				"version": "0.3.15",
+				"release": "4.el8",
+				"arch": "aarch64",
+				"filename": "openblas-0.3.15-4.el8.aarch64.rpm",
+				"sum": "fa943dc1569725148c337d40b2f698ba95284e25601261d743d6b07cc699af6d",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "openblas-0.3.15-4.el8.src.rpm",
+				"name": "openblas-threads",
+				"epoch": "0",
+				"version": "0.3.15",
+				"release": "4.el8",
+				"arch": "x86_64",
+				"filename": "openblas-threads-0.3.15-4.el8.x86_64.rpm",
+				"sum": "3738cab791019f23382b886d4e03fe529aa405c870644f60576f50e09aee7313",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "openblas-0.3.15-4.el8.src.rpm",
+				"name": "openblas",
+				"epoch": "0",
+				"version": "0.3.15",
+				"release": "4.el8",
+				"arch": "x86_64",
+				"filename": "openblas-0.3.15-4.el8.x86_64.rpm",
+				"sum": "ce16d162cdba88f90ce633acf724a801b516f89c44445f6dcbc364e45c0878b0",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -603,30 +627,6 @@
 			},
 			{
 				"src": "openblas-0.3.15-4.el8.src.rpm",
-				"name": "openblas-threads",
-				"epoch": "0",
-				"version": "0.3.15",
-				"release": "4.el8",
-				"arch": "x86_64",
-				"filename": "openblas-threads-0.3.15-4.el8.x86_64.rpm",
-				"sum": "3738cab791019f23382b886d4e03fe529aa405c870644f60576f50e09aee7313",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "openblas-0.3.15-4.el8.src.rpm",
-				"name": "openblas",
-				"epoch": "0",
-				"version": "0.3.15",
-				"release": "4.el8",
-				"arch": "x86_64",
-				"filename": "openblas-0.3.15-4.el8.x86_64.rpm",
-				"sum": "ce16d162cdba88f90ce633acf724a801b516f89c44445f6dcbc364e45c0878b0",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "openblas-0.3.15-4.el8.src.rpm",
 				"name": "openblas",
 				"epoch": "0",
 				"version": "0.3.15",
@@ -682,6 +682,6 @@
 		"$date": 1667865600000
 	},
 	"updated_date": {
-		"$date": 1668205124000
+		"$date": 1668205125000
 	}
 }

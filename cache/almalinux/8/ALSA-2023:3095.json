@@ -1,0 +1,99 @@
+{
+	"updateinfo_id": "ALSA-2023:3095",
+	"fromstr": "packager@almalinux.org",
+	"title": "Moderate: libreswan security and bug fix update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Moderate",
+	"summary": "libreswan security and bug fix update",
+	"pushcount": "1",
+	"pkglist": {
+		"name": "almalinux-8-for-aarch64-appstream-rpms__8_8_default",
+		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_8_default",
+		"packages": [
+			{
+				"src": "libreswan-4.9-2.el8_8.2.src.rpm",
+				"name": "libreswan",
+				"epoch": "0",
+				"version": "4.9",
+				"release": "2.el8_8.2",
+				"arch": "aarch64",
+				"filename": "libreswan-4.9-2.el8_8.2.aarch64.rpm",
+				"sum": "a007118e0695426a82dd1eb5cc3368c2ea78c6e7a1dee304e1295fd70c358ce5",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libreswan-4.9-2.el8_8.2.src.rpm",
+				"name": "libreswan",
+				"epoch": "0",
+				"version": "4.9",
+				"release": "2.el8_8.2",
+				"arch": "x86_64",
+				"filename": "libreswan-4.9-2.el8_8.2.x86_64.rpm",
+				"sum": "bb000cdbd7ad213c7d99643430c19e9ff6c04b619bb0f88ce9626a64e766dc54",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libreswan-4.9-2.el8_8.2.src.rpm",
+				"name": "libreswan",
+				"epoch": "0",
+				"version": "4.9",
+				"release": "2.el8_8.2",
+				"arch": "s390x",
+				"filename": "libreswan-4.9-2.el8_8.2.s390x.rpm",
+				"sum": "44d4e786e0d376d3b24d2bd50f50b55e873a8acb8b195b66a5d29a7209e827f1",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libreswan-4.9-2.el8_8.2.src.rpm",
+				"name": "libreswan",
+				"epoch": "0",
+				"version": "4.9",
+				"release": "2.el8_8.2",
+				"arch": "ppc64le",
+				"filename": "libreswan-4.9-2.el8_8.2.ppc64le.rpm",
+				"sum": "440af2d1d4da8677c8959c0011ab303bb86046cb5276864f7348dce7afb2a9cc",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "Libreswan is an implementation of IPsec and IKE for Linux. IPsec is the Internet Protocol Security and uses strong cryptography to provide both authentication and encryption services. These services allow you to build secure tunnels through untrusted networks such as virtual private network (VPN).\n\nSecurity Fix(es):\n\n* libreswan: remote DoS via crafted TS payload with an incorrect selector length (CVE-2023-23009)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nBug Fix(es):\n\n* authby=rsasig fails in FIPS policy (BZ#2187647)",
+	"references": [
+		{
+			"id": "RHSA-2023:3095",
+			"title": "RHSA-2023:3095",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:3095"
+		},
+		{
+			"id": "CVE-2023-23009",
+			"title": "CVE-2023-23009",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2023-23009"
+		},
+		{
+			"id": "2173610",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2173610"
+		},
+		{
+			"id": "ALSA-2023:3095",
+			"title": "ALSA-2023:3095",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2023-3095.html"
+		}
+	],
+	"issued_date": {
+		"$date": 1684195200000
+	},
+	"updated_date": {
+		"$date": 1684533610000
+	}
+}

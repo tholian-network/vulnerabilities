@@ -10,9 +10,21 @@
 	"summary": "dpdk security and bug fix update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-x86_64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-x86_64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
 		"packages": [
+			{
+				"src": "dpdk-21.11.2-1.el9_1.src.rpm",
+				"name": "dpdk-tools",
+				"epoch": "2",
+				"version": "21.11.2",
+				"release": "1.el9_1",
+				"arch": "aarch64",
+				"filename": "dpdk-tools-21.11.2-1.el9_1.aarch64.rpm",
+				"sum": "042d3fd7b30a5edbc2951f40dd5a8822d21742ab50baadea8b1e4b984cf48d63",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "dpdk-21.11.2-1.el9_1.src.rpm",
 				"name": "dpdk-doc",
@@ -22,6 +34,30 @@
 				"arch": "noarch",
 				"filename": "dpdk-doc-21.11.2-1.el9_1.noarch.rpm",
 				"sum": "3768ef5a8828584af12e2b46400a3648163865d74514a1a5f6e16212a23eccea",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "dpdk-21.11.2-1.el9_1.src.rpm",
+				"name": "dpdk-devel",
+				"epoch": "2",
+				"version": "21.11.2",
+				"release": "1.el9_1",
+				"arch": "aarch64",
+				"filename": "dpdk-devel-21.11.2-1.el9_1.aarch64.rpm",
+				"sum": "48fe292cb31d7e88259264a7461329821fc1212f91c04cf0a5fe00614f5a6cc8",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "dpdk-21.11.2-1.el9_1.src.rpm",
+				"name": "dpdk",
+				"epoch": "2",
+				"version": "21.11.2",
+				"release": "1.el9_1",
+				"arch": "aarch64",
+				"filename": "dpdk-21.11.2-1.el9_1.aarch64.rpm",
+				"sum": "8d83a5491213cd552b897f5167c3cf078625009630d34e224c573da84ec3d268",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -94,42 +130,6 @@
 				"arch": "ppc64le",
 				"filename": "dpdk-21.11.2-1.el9_1.ppc64le.rpm",
 				"sum": "975c0528fc93701451e79ddfcee843996a7b6d4ab95165c9414ecae945bde762",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "dpdk-21.11.2-1.el9_1.src.rpm",
-				"name": "dpdk-tools",
-				"epoch": "2",
-				"version": "21.11.2",
-				"release": "1.el9_1",
-				"arch": "aarch64",
-				"filename": "dpdk-tools-21.11.2-1.el9_1.aarch64.rpm",
-				"sum": "042d3fd7b30a5edbc2951f40dd5a8822d21742ab50baadea8b1e4b984cf48d63",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "dpdk-21.11.2-1.el9_1.src.rpm",
-				"name": "dpdk-devel",
-				"epoch": "2",
-				"version": "21.11.2",
-				"release": "1.el9_1",
-				"arch": "aarch64",
-				"filename": "dpdk-devel-21.11.2-1.el9_1.aarch64.rpm",
-				"sum": "48fe292cb31d7e88259264a7461329821fc1212f91c04cf0a5fe00614f5a6cc8",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "dpdk-21.11.2-1.el9_1.src.rpm",
-				"name": "dpdk",
-				"epoch": "2",
-				"version": "21.11.2",
-				"release": "1.el9_1",
-				"arch": "aarch64",
-				"filename": "dpdk-21.11.2-1.el9_1.aarch64.rpm",
-				"sum": "8d83a5491213cd552b897f5167c3cf078625009630d34e224c573da84ec3d268",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}

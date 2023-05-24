@@ -10,8 +10,8 @@
 	"summary": "buildah security and bug fix update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-x86_64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-x86_64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
 		"packages": [
 			{
 				"src": "buildah-1.27.0-2.el9.src.rpm",
@@ -19,9 +19,9 @@
 				"epoch": "1",
 				"version": "1.27.0",
 				"release": "2.el9",
-				"arch": "x86_64",
-				"filename": "buildah-tests-1.27.0-2.el9.x86_64.rpm",
-				"sum": "8d9e70cc300ec5ac6a19ca8d25b4dfcd65e812a7bfa9f45bfb99c1bbae3cf32d",
+				"arch": "aarch64",
+				"filename": "buildah-tests-1.27.0-2.el9.aarch64.rpm",
+				"sum": "141cd0a7ebbc0bfadce11f2baa99fee284d3609c9ae9264c4700f44442bfc237",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -31,9 +31,9 @@
 				"epoch": "1",
 				"version": "1.27.0",
 				"release": "2.el9",
-				"arch": "x86_64",
-				"filename": "buildah-1.27.0-2.el9.x86_64.rpm",
-				"sum": "9af910b67ac6a98bdab25324d1de280fa0eb355d96c41d5c9a8bfa27b65aad6f",
+				"arch": "aarch64",
+				"filename": "buildah-1.27.0-2.el9.aarch64.rpm",
+				"sum": "7fcc6cb2689780eb8c98ef30f223c81a74fae888ec614d7f79be43b893897a66",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -67,6 +67,30 @@
 				"epoch": "1",
 				"version": "1.27.0",
 				"release": "2.el9",
+				"arch": "x86_64",
+				"filename": "buildah-tests-1.27.0-2.el9.x86_64.rpm",
+				"sum": "8d9e70cc300ec5ac6a19ca8d25b4dfcd65e812a7bfa9f45bfb99c1bbae3cf32d",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "buildah-1.27.0-2.el9.src.rpm",
+				"name": "buildah",
+				"epoch": "1",
+				"version": "1.27.0",
+				"release": "2.el9",
+				"arch": "x86_64",
+				"filename": "buildah-1.27.0-2.el9.x86_64.rpm",
+				"sum": "9af910b67ac6a98bdab25324d1de280fa0eb355d96c41d5c9a8bfa27b65aad6f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "buildah-1.27.0-2.el9.src.rpm",
+				"name": "buildah-tests",
+				"epoch": "1",
+				"version": "1.27.0",
+				"release": "2.el9",
 				"arch": "ppc64le",
 				"filename": "buildah-tests-1.27.0-2.el9.ppc64le.rpm",
 				"sum": "1835cae70b89e4fe8481056d269fdd07902ad50e6f370370ad410bf17204a43c",
@@ -82,30 +106,6 @@
 				"arch": "ppc64le",
 				"filename": "buildah-1.27.0-2.el9.ppc64le.rpm",
 				"sum": "8c205ab8118d517ef8ed51e98d1127bc44af65a950d11af9e5dd6840df8e8b0a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "buildah-1.27.0-2.el9.src.rpm",
-				"name": "buildah-tests",
-				"epoch": "1",
-				"version": "1.27.0",
-				"release": "2.el9",
-				"arch": "aarch64",
-				"filename": "buildah-tests-1.27.0-2.el9.aarch64.rpm",
-				"sum": "141cd0a7ebbc0bfadce11f2baa99fee284d3609c9ae9264c4700f44442bfc237",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "buildah-1.27.0-2.el9.src.rpm",
-				"name": "buildah",
-				"epoch": "1",
-				"version": "1.27.0",
-				"release": "2.el9",
-				"arch": "aarch64",
-				"filename": "buildah-1.27.0-2.el9.aarch64.rpm",
-				"sum": "7fcc6cb2689780eb8c98ef30f223c81a74fae888ec614d7f79be43b893897a66",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}

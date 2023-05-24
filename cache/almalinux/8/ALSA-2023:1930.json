@@ -10,21 +10,9 @@
 	"summary": "emacs security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-8-for-i686-appstream-rpms__8_7_default",
-		"shortname": "almalinux-8-for-i686-appstream-rpms__8_7_default",
+		"name": "almalinux-8-for-i686-baseos-rpms__8_7_default",
+		"shortname": "almalinux-8-for-i686-baseos-rpms__8_7_default",
 		"packages": [
-			{
-				"src": "emacs-26.1-7.el8_7.1.src.rpm",
-				"name": "emacs-terminal",
-				"epoch": "1",
-				"version": "26.1",
-				"release": "7.el8_7.1",
-				"arch": "noarch",
-				"filename": "emacs-terminal-26.1-7.el8_7.1.noarch.rpm",
-				"sum": "fc8b0a8236d9b7cdf6182b128f4c8a697092372b83b5bc623460769fa8f50b62",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "emacs-26.1-7.el8_7.1.src.rpm",
 				"name": "emacs-filesystem",
@@ -34,6 +22,18 @@
 				"arch": "noarch",
 				"filename": "emacs-filesystem-26.1-7.el8_7.1.noarch.rpm",
 				"sum": "29044f58647d90a08a950e61e8edddaaf42ddbce97bd657ed1f701d0089c846a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "emacs-26.1-7.el8_7.1.src.rpm",
+				"name": "emacs-terminal",
+				"epoch": "1",
+				"version": "26.1",
+				"release": "7.el8_7.1",
+				"arch": "noarch",
+				"filename": "emacs-terminal-26.1-7.el8_7.1.noarch.rpm",
+				"sum": "fc8b0a8236d9b7cdf6182b128f4c8a697092372b83b5bc623460769fa8f50b62",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -87,54 +87,6 @@
 			},
 			{
 				"src": "emacs-26.1-7.el8_7.1.src.rpm",
-				"name": "emacs-lucid",
-				"epoch": "1",
-				"version": "26.1",
-				"release": "7.el8_7.1",
-				"arch": "s390x",
-				"filename": "emacs-lucid-26.1-7.el8_7.1.s390x.rpm",
-				"sum": "5c8eae8f1d1d63fb92bbeb9a7ba10a7b6c813b7f4df965c9166d26e6ae421533",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "emacs-26.1-7.el8_7.1.src.rpm",
-				"name": "emacs-nox",
-				"epoch": "1",
-				"version": "26.1",
-				"release": "7.el8_7.1",
-				"arch": "s390x",
-				"filename": "emacs-nox-26.1-7.el8_7.1.s390x.rpm",
-				"sum": "9f6cfbae2848ed7746079ce70da932e3dfbcea288bf7f4271fc957044c28d219",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "emacs-26.1-7.el8_7.1.src.rpm",
-				"name": "emacs-common",
-				"epoch": "1",
-				"version": "26.1",
-				"release": "7.el8_7.1",
-				"arch": "s390x",
-				"filename": "emacs-common-26.1-7.el8_7.1.s390x.rpm",
-				"sum": "c8e65cf7bf2c8da5af97bfc36609aef939df1e6e8a6fe57904edd366ad5a6d8a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "emacs-26.1-7.el8_7.1.src.rpm",
-				"name": "emacs",
-				"epoch": "1",
-				"version": "26.1",
-				"release": "7.el8_7.1",
-				"arch": "s390x",
-				"filename": "emacs-26.1-7.el8_7.1.s390x.rpm",
-				"sum": "ee476af6df5193b5cbf016a2cb2d375d22c3d0a32356ab3540c10d8b8f7d73ee",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "emacs-26.1-7.el8_7.1.src.rpm",
 				"name": "emacs-common",
 				"epoch": "1",
 				"version": "26.1",
@@ -178,6 +130,54 @@
 				"arch": "x86_64",
 				"filename": "emacs-lucid-26.1-7.el8_7.1.x86_64.rpm",
 				"sum": "f19df278bb64dc516460d1883873b1d10bf838b7597ba324476f5a12c038fb3b",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "emacs-26.1-7.el8_7.1.src.rpm",
+				"name": "emacs-lucid",
+				"epoch": "1",
+				"version": "26.1",
+				"release": "7.el8_7.1",
+				"arch": "s390x",
+				"filename": "emacs-lucid-26.1-7.el8_7.1.s390x.rpm",
+				"sum": "5c8eae8f1d1d63fb92bbeb9a7ba10a7b6c813b7f4df965c9166d26e6ae421533",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "emacs-26.1-7.el8_7.1.src.rpm",
+				"name": "emacs-nox",
+				"epoch": "1",
+				"version": "26.1",
+				"release": "7.el8_7.1",
+				"arch": "s390x",
+				"filename": "emacs-nox-26.1-7.el8_7.1.s390x.rpm",
+				"sum": "9f6cfbae2848ed7746079ce70da932e3dfbcea288bf7f4271fc957044c28d219",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "emacs-26.1-7.el8_7.1.src.rpm",
+				"name": "emacs-common",
+				"epoch": "1",
+				"version": "26.1",
+				"release": "7.el8_7.1",
+				"arch": "s390x",
+				"filename": "emacs-common-26.1-7.el8_7.1.s390x.rpm",
+				"sum": "c8e65cf7bf2c8da5af97bfc36609aef939df1e6e8a6fe57904edd366ad5a6d8a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "emacs-26.1-7.el8_7.1.src.rpm",
+				"name": "emacs",
+				"epoch": "1",
+				"version": "26.1",
+				"release": "7.el8_7.1",
+				"arch": "s390x",
+				"filename": "emacs-26.1-7.el8_7.1.s390x.rpm",
+				"sum": "ee476af6df5193b5cbf016a2cb2d375d22c3d0a32356ab3540c10d8b8f7d73ee",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},

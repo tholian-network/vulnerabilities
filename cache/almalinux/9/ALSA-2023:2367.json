@@ -1,0 +1,111 @@
+{
+	"updateinfo_id": "ALSA-2023:2367",
+	"fromstr": "packager@almalinux.org",
+	"title": "Moderate: containernetworking-plugins security and bug fix update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Moderate",
+	"summary": "containernetworking-plugins security and bug fix update",
+	"pushcount": "1",
+	"pkglist": {
+		"name": "almalinux-9-for-aarch64-appstream-rpms__9_2_default",
+		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_2_default",
+		"packages": [
+			{
+				"src": "containernetworking-plugins-1.2.0-1.el9.src.rpm",
+				"name": "containernetworking-plugins",
+				"epoch": "1",
+				"version": "1.2.0",
+				"release": "1.el9",
+				"arch": "aarch64",
+				"filename": "containernetworking-plugins-1.2.0-1.el9.aarch64.rpm",
+				"sum": "6628d448ec4017a874cd125bf6bdede760c80e16affbbf18f8e00980ec60b574",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "containernetworking-plugins-1.2.0-1.el9.src.rpm",
+				"name": "containernetworking-plugins",
+				"epoch": "1",
+				"version": "1.2.0",
+				"release": "1.el9",
+				"arch": "s390x",
+				"filename": "containernetworking-plugins-1.2.0-1.el9.s390x.rpm",
+				"sum": "371920f2903d6d063d5a338ae7432138d375febf19e658210707d257225f4ea6",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "containernetworking-plugins-1.2.0-1.el9.src.rpm",
+				"name": "containernetworking-plugins",
+				"epoch": "1",
+				"version": "1.2.0",
+				"release": "1.el9",
+				"arch": "x86_64",
+				"filename": "containernetworking-plugins-1.2.0-1.el9.x86_64.rpm",
+				"sum": "e65dd2ee6a03110099f869a80b900c12c797b1815e9bfcbe18c911ca2d35c7bd",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "containernetworking-plugins-1.2.0-1.el9.src.rpm",
+				"name": "containernetworking-plugins",
+				"epoch": "1",
+				"version": "1.2.0",
+				"release": "1.el9",
+				"arch": "ppc64le",
+				"filename": "containernetworking-plugins-1.2.0-1.el9.ppc64le.rpm",
+				"sum": "abfd41c3f9ab3be2d1e53521bb8f633eb2030f4def54fe105e185d958af9e381",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "The Container Network Interface (CNI) project consists of a specification and libraries for writing plug-ins for configuring network interfaces in Linux containers, along with a number of supported plug-ins. CNI concerns itself only with network connectivity of containers and removing allocated resources when the container is deleted. \n\nSecurity Fix(es):\n\n* golang: net/http: An attacker can cause excessive memory growth in a Go server accepting HTTP/2 requests (CVE-2022-41717)\n* golang: crypto/tls: session tickets lack random ticket_age_add (CVE-2022-30629)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
+	"references": [
+		{
+			"id": "RHSA-2023:2367",
+			"title": "RHSA-2023:2367",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:2367"
+		},
+		{
+			"id": "CVE-2022-30629",
+			"title": "CVE-2022-30629",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-30629"
+		},
+		{
+			"id": "CVE-2022-41717",
+			"title": "CVE-2022-41717",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-41717"
+		},
+		{
+			"id": "2092793",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2092793"
+		},
+		{
+			"id": "2161274",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2161274"
+		},
+		{
+			"id": "ALSA-2023:2367",
+			"title": "ALSA-2023:2367",
+			"type": "self",
+			"href": "https://errata.almalinux.org/9/ALSA-2023-2367.html"
+		}
+	],
+	"issued_date": {
+		"$date": 1683590400000
+	},
+	"updated_date": {
+		"$date": 1683870081000
+	}
+}

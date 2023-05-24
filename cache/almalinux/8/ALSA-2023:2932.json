@@ -1,0 +1,111 @@
+{
+	"updateinfo_id": "ALSA-2023:2932",
+	"fromstr": "packager@almalinux.org",
+	"title": "Important: edk2 security update",
+	"type": "security",
+	"release": "0",
+	"version": "1",
+	"status": "final",
+	"severity": "Important",
+	"summary": "edk2 security update",
+	"pushcount": "1",
+	"pkglist": {
+		"name": "almalinux-8-for-x86_64-devel-rpms__8_8_default",
+		"shortname": "almalinux-8-for-x86_64-devel-rpms__8_8_default",
+		"packages": [
+			{
+				"src": "edk2-20220126gitbb1bba3d77-4.el8.src.rpm",
+				"name": "edk2-aarch64",
+				"epoch": "0",
+				"version": "20220126gitbb1bba3d77",
+				"release": "4.el8",
+				"arch": "noarch",
+				"filename": "edk2-aarch64-20220126gitbb1bba3d77-4.el8.noarch.rpm",
+				"sum": "742ed9bc65003fe39e049d73c5712c71468e63fe0cfef03e431adb61c21c4c77",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "edk2-20220126gitbb1bba3d77-4.el8.src.rpm",
+				"name": "edk2-ovmf",
+				"epoch": "0",
+				"version": "20220126gitbb1bba3d77",
+				"release": "4.el8",
+				"arch": "noarch",
+				"filename": "edk2-ovmf-20220126gitbb1bba3d77-4.el8.noarch.rpm",
+				"sum": "683b24853c8a0ce16403dbe844ee8c53651ad8ef3c57df9bd62c68f723da127c",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			}
+		]
+	},
+	"description": "EDK (Embedded Development Kit) is a project to enable UEFI support for Virtual Machines. This package contains a sample 64-bit UEFI firmware for QEMU and KVM. \n\nSecurity Fix(es):\n\n* openssl: X.400 address type confusion in X.509 GeneralName (CVE-2023-0286)\n* openssl: timing attack in RSA Decryption implementation (CVE-2022-4304)\n* openssl: double free after calling PEM_read_bio_ex (CVE-2022-4450)\n* openssl: use-after-free following BIO_new_NDEF (CVE-2023-0215)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
+	"references": [
+		{
+			"id": "RHSA-2023:2932",
+			"title": "RHSA-2023:2932",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:2932"
+		},
+		{
+			"id": "CVE-2022-4304",
+			"title": "CVE-2022-4304",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-4304"
+		},
+		{
+			"id": "CVE-2022-4450",
+			"title": "CVE-2022-4450",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-4450"
+		},
+		{
+			"id": "CVE-2023-0215",
+			"title": "CVE-2023-0215",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2023-0215"
+		},
+		{
+			"id": "CVE-2023-0286",
+			"title": "CVE-2023-0286",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2023-0286"
+		},
+		{
+			"id": "2164440",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2164440"
+		},
+		{
+			"id": "2164487",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2164487"
+		},
+		{
+			"id": "2164492",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2164492"
+		},
+		{
+			"id": "2164494",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2164494"
+		},
+		{
+			"id": "ALSA-2023:2932",
+			"title": "ALSA-2023:2932",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2023-2932.html"
+		}
+	],
+	"issued_date": {
+		"$date": 1684195200000
+	},
+	"updated_date": {
+		"$date": 1684533750000
+	}
+}
