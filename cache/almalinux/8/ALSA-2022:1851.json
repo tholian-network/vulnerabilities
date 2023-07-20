@@ -10,9 +10,45 @@
 	"summary": "An update for the pki-core:10.6 module is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "2",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_pki-core",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_pki-core",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_pki-core",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_pki-core",
 		"packages": [
+			{
+				"src": "pki-core-10.12.0-2.module_el8.6.0+2764+9fc58d50.src.rpm",
+				"name": "pki-symkey",
+				"epoch": "0",
+				"version": "10.12.0",
+				"release": "2.module_el8.6.0+2764+9fc58d50",
+				"arch": "x86_64",
+				"filename": "pki-symkey-10.12.0-2.module_el8.6.0+2764+9fc58d50.x86_64.rpm",
+				"sum": "3489de999415095da23d87155d8381c3db7ba199f636a24f738f80900762621a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "jss-4.9.3-1.module_el8.6.0+2764+9fc58d50.src.rpm",
+				"name": "jss-javadoc",
+				"epoch": "0",
+				"version": "4.9.3",
+				"release": "1.module_el8.6.0+2764+9fc58d50",
+				"arch": "x86_64",
+				"filename": "jss-javadoc-4.9.3-1.module_el8.6.0+2764+9fc58d50.x86_64.rpm",
+				"sum": "3c10fbf67ea7f7cec5585da33382eaaf0174d16987ef5c0066fe209a14525924",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pki-core-10.12.0-2.module_el8.6.0+2764+9fc58d50.src.rpm",
+				"name": "pki-tools",
+				"epoch": "0",
+				"version": "10.12.0",
+				"release": "2.module_el8.6.0+2764+9fc58d50",
+				"arch": "ppc64le",
+				"filename": "pki-tools-10.12.0-2.module_el8.6.0+2764+9fc58d50.ppc64le.rpm",
+				"sum": "3c6dc8dae71842d52287180de11cd70ce5ba2300f08a37e8d4591ae129e9a7be",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "pki-core-10.12.0-2.module_el8.6.0+2764+9fc58d50.src.rpm",
 				"name": "python3-pki",
@@ -110,6 +146,18 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "pki-core-10.12.0-2.module_el8.6.0+2764+9fc58d50.src.rpm",
+				"name": "pki-symkey",
+				"epoch": "0",
+				"version": "10.12.0",
+				"release": "2.module_el8.6.0+2764+9fc58d50",
+				"arch": "ppc64le",
+				"filename": "pki-symkey-10.12.0-2.module_el8.6.0+2764+9fc58d50.ppc64le.rpm",
+				"sum": "bdd6c9a52e63cf57ed861a1e5fa447e4437b6d6975a05620ff5ad987525724a3",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "tomcatjss-7.7.1-1.module_el8.6.0+2764+9fc58d50.src.rpm",
 				"name": "tomcatjss",
 				"epoch": "0",
@@ -130,6 +178,18 @@
 				"arch": "noarch",
 				"filename": "pki-acme-10.12.0-2.module_el8.6.0+2764+9fc58d50.noarch.rpm",
 				"sum": "c1983ee0a52f1238f221c1911e2b962e8cb962ac5587bf97c1d776951bb13827",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pki-core-10.12.0-2.module_el8.6.0+2764+9fc58d50.src.rpm",
+				"name": "pki-tools",
+				"epoch": "0",
+				"version": "10.12.0",
+				"release": "2.module_el8.6.0+2764+9fc58d50",
+				"arch": "x86_64",
+				"filename": "pki-tools-10.12.0-2.module_el8.6.0+2764+9fc58d50.x86_64.rpm",
+				"sum": "cb347016912336e4ed697f33fe554e1d9152d1ba06b830b7184e893687b24d36",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -159,6 +219,18 @@
 			},
 			{
 				"src": "jss-4.9.3-1.module_el8.6.0+2764+9fc58d50.src.rpm",
+				"name": "jss",
+				"epoch": "0",
+				"version": "4.9.3",
+				"release": "1.module_el8.6.0+2764+9fc58d50",
+				"arch": "ppc64le",
+				"filename": "jss-4.9.3-1.module_el8.6.0+2764+9fc58d50.ppc64le.rpm",
+				"sum": "e96343f5a9e36bf1c99a24f21f43cbe80ddcc78aaf17942427dd1847d8423210",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "jss-4.9.3-1.module_el8.6.0+2764+9fc58d50.src.rpm",
 				"name": "jss-javadoc",
 				"epoch": "0",
 				"version": "4.9.3",
@@ -182,42 +254,6 @@
 				"reboot_suggested": 0
 			},
 			{
-				"src": "pki-core-10.12.0-2.module_el8.6.0+2764+9fc58d50.src.rpm",
-				"name": "pki-symkey",
-				"epoch": "0",
-				"version": "10.12.0",
-				"release": "2.module_el8.6.0+2764+9fc58d50",
-				"arch": "x86_64",
-				"filename": "pki-symkey-10.12.0-2.module_el8.6.0+2764+9fc58d50.x86_64.rpm",
-				"sum": "3489de999415095da23d87155d8381c3db7ba199f636a24f738f80900762621a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "jss-4.9.3-1.module_el8.6.0+2764+9fc58d50.src.rpm",
-				"name": "jss-javadoc",
-				"epoch": "0",
-				"version": "4.9.3",
-				"release": "1.module_el8.6.0+2764+9fc58d50",
-				"arch": "x86_64",
-				"filename": "jss-javadoc-4.9.3-1.module_el8.6.0+2764+9fc58d50.x86_64.rpm",
-				"sum": "3c10fbf67ea7f7cec5585da33382eaaf0174d16987ef5c0066fe209a14525924",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pki-core-10.12.0-2.module_el8.6.0+2764+9fc58d50.src.rpm",
-				"name": "pki-tools",
-				"epoch": "0",
-				"version": "10.12.0",
-				"release": "2.module_el8.6.0+2764+9fc58d50",
-				"arch": "x86_64",
-				"filename": "pki-tools-10.12.0-2.module_el8.6.0+2764+9fc58d50.x86_64.rpm",
-				"sum": "cb347016912336e4ed697f33fe554e1d9152d1ba06b830b7184e893687b24d36",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
 				"src": "jss-4.9.3-1.module_el8.6.0+2764+9fc58d50.src.rpm",
 				"name": "jss",
 				"epoch": "0",
@@ -226,42 +262,6 @@
 				"arch": "x86_64",
 				"filename": "jss-4.9.3-1.module_el8.6.0+2764+9fc58d50.x86_64.rpm",
 				"sum": "f43d644f34ace5d3c901b6b55726f01b6f73aad4dc97043f37e25a04f9147b72",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pki-core-10.12.0-2.module_el8.6.0+2764+9fc58d50.src.rpm",
-				"name": "pki-tools",
-				"epoch": "0",
-				"version": "10.12.0",
-				"release": "2.module_el8.6.0+2764+9fc58d50",
-				"arch": "ppc64le",
-				"filename": "pki-tools-10.12.0-2.module_el8.6.0+2764+9fc58d50.ppc64le.rpm",
-				"sum": "3c6dc8dae71842d52287180de11cd70ce5ba2300f08a37e8d4591ae129e9a7be",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pki-core-10.12.0-2.module_el8.6.0+2764+9fc58d50.src.rpm",
-				"name": "pki-symkey",
-				"epoch": "0",
-				"version": "10.12.0",
-				"release": "2.module_el8.6.0+2764+9fc58d50",
-				"arch": "ppc64le",
-				"filename": "pki-symkey-10.12.0-2.module_el8.6.0+2764+9fc58d50.ppc64le.rpm",
-				"sum": "bdd6c9a52e63cf57ed861a1e5fa447e4437b6d6975a05620ff5ad987525724a3",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "jss-4.9.3-1.module_el8.6.0+2764+9fc58d50.src.rpm",
-				"name": "jss",
-				"epoch": "0",
-				"version": "4.9.3",
-				"release": "1.module_el8.6.0+2764+9fc58d50",
-				"arch": "ppc64le",
-				"filename": "jss-4.9.3-1.module_el8.6.0+2764+9fc58d50.ppc64le.rpm",
-				"sum": "e96343f5a9e36bf1c99a24f21f43cbe80ddcc78aaf17942427dd1847d8423210",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -282,16 +282,16 @@
 	"description": "The Public Key Infrastructure (PKI) Core contains fundamental packages required by AlmaLinux Certificate System.\n\nSecurity Fix(es):\n\n* JSS: memory leak in TLS connection leads to OOM (CVE-2021-4213)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "ALSA-2022-1851",
-			"title": "ALSA-2022-1851",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2022-1851.html"
-		},
-		{
 			"id": "CVE-2021-4213",
 			"title": "CVE-2021-4213",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2021-4213"
+		},
+		{
+			"id": "ALSA-2022-1851",
+			"title": "ALSA-2022-1851",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-1851.html"
 		}
 	],
 	"issued_date": {

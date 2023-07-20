@@ -10,8 +10,8 @@
 	"summary": "pesign security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_7_default",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_7_default",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_7_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_7_default",
 		"packages": [
 			{
 				"src": "pesign-0.112-27.el8_7.src.rpm",
@@ -42,10 +42,10 @@
 	"description": "The pesign packages provide the pesign utility for signing UEFI binaries as well as other associated tools.\n\nSecurity Fix(es):\n\n* pesign: Local privilege escalation on pesign systemd service (CVE-2022-3560)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:1572",
-			"title": "RHSA-2023:1572",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:1572"
+			"id": "2135420",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2135420"
 		},
 		{
 			"id": "CVE-2022-3560",
@@ -54,10 +54,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-3560"
 		},
 		{
-			"id": "2135420",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2135420"
+			"id": "RHSA-2023:1572",
+			"title": "RHSA-2023:1572",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:1572"
 		},
 		{
 			"id": "ALSA-2023:1572",

@@ -10,21 +10,9 @@
 	"summary": "An update for the httpd:2.4 module is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "3",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_httpd",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_httpd",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_httpd",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_httpd",
 		"packages": [
-			{
-				"src": "mod_md-2.0.8-8.module_el8.6.0+2872+fe0ff7aa.src.rpm",
-				"name": "mod_md",
-				"epoch": "1",
-				"version": "2.0.8",
-				"release": "8.module_el8.6.0+2872+fe0ff7aa",
-				"arch": "aarch64",
-				"filename": "mod_md-2.0.8-8.module_el8.6.0+2872+fe0ff7aa.aarch64.rpm",
-				"sum": "2678c086cc5a3b9b6f20f73891c8d84235646307efa87d482c5f95d828da9f4e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "mod_md-2.0.8-8.module_el8.5.0+2609+b30d9eec.src.rpm",
 				"name": "mod_md",
@@ -34,6 +22,30 @@
 				"arch": "x86_64",
 				"filename": "mod_md-2.0.8-8.module_el8.5.0+2609+b30d9eec.x86_64.rpm",
 				"sum": "07eaab23220a00e74367efca529b32f0458f1d030c59858da40eed8ed9fe9ce9",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mod_md-2.0.8-8.module_el8.6.0+2872+fe0ff7aa.src.rpm",
+				"name": "mod_md",
+				"epoch": "1",
+				"version": "2.0.8",
+				"release": "8.module_el8.6.0+2872+fe0ff7aa",
+				"arch": "ppc64le",
+				"filename": "mod_md-2.0.8-8.module_el8.6.0+2872+fe0ff7aa.ppc64le.rpm",
+				"sum": "1a26f7d2af339e6769c26359dbdc9aa33083ab2b7d43c69c006dfafb57b05ac6",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mod_md-2.0.8-8.module_el8.6.0+2872+fe0ff7aa.src.rpm",
+				"name": "mod_md",
+				"epoch": "1",
+				"version": "2.0.8",
+				"release": "8.module_el8.6.0+2872+fe0ff7aa",
+				"arch": "aarch64",
+				"filename": "mod_md-2.0.8-8.module_el8.6.0+2872+fe0ff7aa.aarch64.rpm",
+				"sum": "2678c086cc5a3b9b6f20f73891c8d84235646307efa87d482c5f95d828da9f4e",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -60,29 +72,11 @@
 				"sum": "c16a208d28b94379ef5ed155d05b5308b38606b16b9f669c1c27006738cab489",
 				"sum_type": 5,
 				"reboot_suggested": 0
-			},
-			{
-				"src": "mod_md-2.0.8-8.module_el8.6.0+2872+fe0ff7aa.src.rpm",
-				"name": "mod_md",
-				"epoch": "1",
-				"version": "2.0.8",
-				"release": "8.module_el8.6.0+2872+fe0ff7aa",
-				"arch": "ppc64le",
-				"filename": "mod_md-2.0.8-8.module_el8.6.0+2872+fe0ff7aa.ppc64le.rpm",
-				"sum": "1a26f7d2af339e6769c26359dbdc9aa33083ab2b7d43c69c006dfafb57b05ac6",
-				"sum_type": 5,
-				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "The httpd packages provide the Apache HTTP Server, a powerful, efficient, and extensible web server.\n\nSecurity Fix(es):\n\n* httpd: mod_session: NULL pointer dereference when parsing Cookie header (CVE-2021-26690)\n\n* httpd: Unexpected URL matching with 'MergeSlashes OFF' (CVE-2021-30641)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
-		{
-			"id": "ALSA-2021-4257",
-			"title": "ALSA-2021-4257",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2021-4257.html"
-		},
 		{
 			"id": "CVE-2021-26690",
 			"title": "CVE-2021-26690",
@@ -94,12 +88,18 @@
 			"title": "CVE-2021-30641",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2021-30641"
+		},
+		{
+			"id": "ALSA-2021-4257",
+			"title": "ALSA-2021-4257",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-4257.html"
 		}
 	],
 	"issued_date": {
 		"$date": 1636447958000
 	},
 	"updated_date": {
-		"$date": 1636462794000
+		"$date": 1643182044000
 	}
 }

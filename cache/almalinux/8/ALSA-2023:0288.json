@@ -10,8 +10,8 @@
 	"summary": "firefox security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_7_default",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_7_default",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_7_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_7_default",
 		"packages": [
 			{
 				"src": "firefox-102.7.0-1.el8_7.alma.src.rpm",
@@ -22,6 +22,18 @@
 				"arch": "aarch64",
 				"filename": "firefox-102.7.0-1.el8_7.alma.aarch64.rpm",
 				"sum": "4424bbc98c7a0fc7c9fd9002976e6ac614b69047a4acc42dae164768a36fe23f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "firefox-102.7.0-1.el8_7.alma.src.rpm",
+				"name": "firefox",
+				"epoch": "0",
+				"version": "102.7.0",
+				"release": "1.el8_7.alma",
+				"arch": "ppc64le",
+				"filename": "firefox-102.7.0-1.el8_7.alma.ppc64le.rpm",
+				"sum": "90a89ddb73f409208f7d2eb2b58bb2e552effa8d36650edf62d722ad66bbbdff",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -48,28 +60,58 @@
 				"sum": "ea9296eabe139c59962803cf63259cf2daa3615a8c295c9ceab9c4c33559f7a0",
 				"sum_type": 5,
 				"reboot_suggested": 0
-			},
-			{
-				"src": "firefox-102.7.0-1.el8_7.alma.src.rpm",
-				"name": "firefox",
-				"epoch": "0",
-				"version": "102.7.0",
-				"release": "1.el8_7.alma",
-				"arch": "ppc64le",
-				"filename": "firefox-102.7.0-1.el8_7.alma.ppc64le.rpm",
-				"sum": "90a89ddb73f409208f7d2eb2b58bb2e552effa8d36650edf62d722ad66bbbdff",
-				"sum_type": 5,
-				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "Mozilla Firefox is an open-source web browser, designed for standards compliance, performance, and portability.\n\nThis update upgrades Firefox to version 102.7.0 ESR.\n\nSecurity Fix(es):\n\n* Mozilla: libusrsctp library out of date (CVE-2022-46871)\n* Mozilla: Arbitrary file read from GTK drag and drop on Linux (CVE-2023-23598)\n* Mozilla: Memory safety bugs fixed in Firefox 109 and Firefox ESR 102.7 (CVE-2023-23605)\n* Mozilla: Malicious command could be hidden in devtools output (CVE-2023-23599)\n* Mozilla: URL being dragged from cross-origin iframe into same tab triggers navigation (CVE-2023-23601)\n* Mozilla: Content Security Policy wasn't being correctly applied to WebSockets in WebWorkers (CVE-2023-23602)\n* Mozilla: Fullscreen notification bypass (CVE-2022-46877)\n* Mozilla: Calls to \u003ccode\u003econsole.log\u003c/code\u003e allowed bypasing Content Security Policy via format directive (CVE-2023-23603)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:0288",
-			"title": "RHSA-2023:0288",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:0288"
+			"id": "2162336",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2162336"
+		},
+		{
+			"id": "2162338",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2162338"
+		},
+		{
+			"id": "2162339",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2162339"
+		},
+		{
+			"id": "2162340",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2162340"
+		},
+		{
+			"id": "2162341",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2162341"
+		},
+		{
+			"id": "2162342",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2162342"
+		},
+		{
+			"id": "2162343",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2162343"
+		},
+		{
+			"id": "2162344",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2162344"
 		},
 		{
 			"id": "CVE-2022-46871",
@@ -120,52 +162,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2023-23605"
 		},
 		{
-			"id": "2162336",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2162336"
-		},
-		{
-			"id": "2162338",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2162338"
-		},
-		{
-			"id": "2162339",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2162339"
-		},
-		{
-			"id": "2162340",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2162340"
-		},
-		{
-			"id": "2162341",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2162341"
-		},
-		{
-			"id": "2162342",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2162342"
-		},
-		{
-			"id": "2162343",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2162343"
-		},
-		{
-			"id": "2162344",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2162344"
+			"id": "RHSA-2023:0288",
+			"title": "RHSA-2023:0288",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:0288"
 		},
 		{
 			"id": "ALSA-2023:0288",

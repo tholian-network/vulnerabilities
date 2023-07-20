@@ -15,6 +15,18 @@
 		"packages": [
 			{
 				"src": "frr-8.3.1-5.el9.src.rpm",
+				"name": "frr",
+				"epoch": "0",
+				"version": "8.3.1",
+				"release": "5.el9",
+				"arch": "x86_64",
+				"filename": "frr-8.3.1-5.el9.x86_64.rpm",
+				"sum": "15c8594038d83e43481a563bb372ba880154428a0eb7a706c48a1f62f5553b22",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "frr-8.3.1-5.el9.src.rpm",
 				"name": "frr-selinux",
 				"epoch": "0",
 				"version": "8.3.1",
@@ -31,9 +43,9 @@
 				"epoch": "0",
 				"version": "8.3.1",
 				"release": "5.el9",
-				"arch": "aarch64",
-				"filename": "frr-8.3.1-5.el9.aarch64.rpm",
-				"sum": "edb0f06d9792c9520b241167c5e828588df849224fff0b9e4b1bbc32a50d673c",
+				"arch": "ppc64le",
+				"filename": "frr-8.3.1-5.el9.ppc64le.rpm",
+				"sum": "55b688cc61eda2066b2bfb84a4cb51e7eab25054101d83ee12d8aaf94eee6f56",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -55,21 +67,9 @@
 				"epoch": "0",
 				"version": "8.3.1",
 				"release": "5.el9",
-				"arch": "x86_64",
-				"filename": "frr-8.3.1-5.el9.x86_64.rpm",
-				"sum": "15c8594038d83e43481a563bb372ba880154428a0eb7a706c48a1f62f5553b22",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "frr-8.3.1-5.el9.src.rpm",
-				"name": "frr",
-				"epoch": "0",
-				"version": "8.3.1",
-				"release": "5.el9",
-				"arch": "ppc64le",
-				"filename": "frr-8.3.1-5.el9.ppc64le.rpm",
-				"sum": "55b688cc61eda2066b2bfb84a4cb51e7eab25054101d83ee12d8aaf94eee6f56",
+				"arch": "aarch64",
+				"filename": "frr-8.3.1-5.el9.aarch64.rpm",
+				"sum": "edb0f06d9792c9520b241167c5e828588df849224fff0b9e4b1bbc32a50d673c",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -78,10 +78,10 @@
 	"description": "FRRouting is free software that manages TCP/IP based routing protocols. It supports BGP4, OSPFv2, OSPFv3, ISIS, RIP, RIPng, PIM, NHRP, PBR, EIGRP and BFD. \n\nThe following packages have been upgraded to a later upstream version: frr (8.3.1). (BZ#2129731)\n\nSecurity Fix(es):\n\n* frr: out-of-bounds read in the BGP daemon may lead to information disclosure or denial of service (CVE-2022-37032)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:2202",
-			"title": "RHSA-2023:2202",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:2202"
+			"id": "2128713",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2128713"
 		},
 		{
 			"id": "CVE-2022-37032",
@@ -90,10 +90,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-37032"
 		},
 		{
-			"id": "2128713",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2128713"
+			"id": "RHSA-2023:2202",
+			"title": "RHSA-2023:2202",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:2202"
 		},
 		{
 			"id": "ALSA-2023:2202",

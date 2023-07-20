@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2023-2088</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/index.html">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2023.html">Amazon Linux 2023</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/faqs.html">FAQs</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2023-2088'>ALAS2-2023-2088</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2023-2088
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2023-06-07 23:52 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2023-06-12 23:09 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2020-22592.html' target='_blank' rel='noopener noreferrer'>CVE-2020-22592&nbsp;</a>
+                            <a href='/cve/html/CVE-2020-27918.html' target='_blank' rel='noopener noreferrer'>CVE-2020-27918&nbsp;</a>
+                            <a href='/cve/html/CVE-2020-29623.html' target='_blank' rel='noopener noreferrer'>CVE-2020-29623&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-1765.html' target='_blank' rel='noopener noreferrer'>CVE-2021-1765&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-1788.html' target='_blank' rel='noopener noreferrer'>CVE-2021-1788&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-1789.html' target='_blank' rel='noopener noreferrer'>CVE-2021-1789&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-1799.html' target='_blank' rel='noopener noreferrer'>CVE-2021-1799&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-1801.html' target='_blank' rel='noopener noreferrer'>CVE-2021-1801&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-1817.html' target='_blank' rel='noopener noreferrer'>CVE-2021-1817&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-1820.html' target='_blank' rel='noopener noreferrer'>CVE-2021-1820&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-1825.html' target='_blank' rel='noopener noreferrer'>CVE-2021-1825&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-1826.html' target='_blank' rel='noopener noreferrer'>CVE-2021-1826&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-1844.html' target='_blank' rel='noopener noreferrer'>CVE-2021-1844&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-1870.html' target='_blank' rel='noopener noreferrer'>CVE-2021-1870&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-21775.html' target='_blank' rel='noopener noreferrer'>CVE-2021-21775&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-21779.html' target='_blank' rel='noopener noreferrer'>CVE-2021-21779&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-21806.html' target='_blank' rel='noopener noreferrer'>CVE-2021-21806&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30661.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30661&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30663.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30663&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30665.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30665&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30666.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30666&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30682.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30682&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30689.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30689&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30720.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30720&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30734.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30734&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30744.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30744&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30749.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30749&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30758.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30758&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30761.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30761&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30762.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30762&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30795.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30795&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30797.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30797&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30799.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30799&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30809.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30809&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30818.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30818&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30836.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30836&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30846.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30846&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30848.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30848&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30849.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30849&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30851.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30851&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30887.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30887&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30888.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30888&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30889.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30889&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30890.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30890&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30934.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30934&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30936.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30936&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30951.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30951&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30952.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30952&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30953.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30953&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30954.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30954&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-30984.html' target='_blank' rel='noopener noreferrer'>CVE-2021-30984&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-32912.html' target='_blank' rel='noopener noreferrer'>CVE-2021-32912&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-42762.html' target='_blank' rel='noopener noreferrer'>CVE-2021-42762&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-45481.html' target='_blank' rel='noopener noreferrer'>CVE-2021-45481&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-45482.html' target='_blank' rel='noopener noreferrer'>CVE-2021-45482&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-45483.html' target='_blank' rel='noopener noreferrer'>CVE-2021-45483&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-22590.html' target='_blank' rel='noopener noreferrer'>CVE-2022-22590&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-22592.html' target='_blank' rel='noopener noreferrer'>CVE-2022-22592&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-22662.html' target='_blank' rel='noopener noreferrer'>CVE-2022-22662&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-22677.html' target='_blank' rel='noopener noreferrer'>CVE-2022-22677&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-26700.html' target='_blank' rel='noopener noreferrer'>CVE-2022-26700&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-26709.html' target='_blank' rel='noopener noreferrer'>CVE-2022-26709&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-26710.html' target='_blank' rel='noopener noreferrer'>CVE-2022-26710&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-26716.html' target='_blank' rel='noopener noreferrer'>CVE-2022-26716&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-26717.html' target='_blank' rel='noopener noreferrer'>CVE-2022-26717&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-26719.html' target='_blank' rel='noopener noreferrer'>CVE-2022-26719&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-30293.html' target='_blank' rel='noopener noreferrer'>CVE-2022-30293&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-32792.html' target='_blank' rel='noopener noreferrer'>CVE-2022-32792&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-32793.html' target='_blank' rel='noopener noreferrer'>CVE-2022-32793&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-32816.html' target='_blank' rel='noopener noreferrer'>CVE-2022-32816&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-32885.html' target='_blank' rel='noopener noreferrer'>CVE-2022-32885&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-32888.html' target='_blank' rel='noopener noreferrer'>CVE-2022-32888&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-32923.html' target='_blank' rel='noopener noreferrer'>CVE-2022-32923&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-42799.html' target='_blank' rel='noopener noreferrer'>CVE-2022-42799&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-42824.html' target='_blank' rel='noopener noreferrer'>CVE-2022-42824&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-42826.html' target='_blank' rel='noopener noreferrer'>CVE-2022-42826&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-42852.html' target='_blank' rel='noopener noreferrer'>CVE-2022-42852&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-42856.html' target='_blank' rel='noopener noreferrer'>CVE-2022-42856&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-42863.html' target='_blank' rel='noopener noreferrer'>CVE-2022-42863&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-42867.html' target='_blank' rel='noopener noreferrer'>CVE-2022-42867&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-46691.html' target='_blank' rel='noopener noreferrer'>CVE-2022-46691&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-46692.html' target='_blank' rel='noopener noreferrer'>CVE-2022-46692&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-46698.html' target='_blank' rel='noopener noreferrer'>CVE-2022-46698&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-46699.html' target='_blank' rel='noopener noreferrer'>CVE-2022-46699&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-46700.html' target='_blank' rel='noopener noreferrer'>CVE-2022-46700&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-2203.html' target='_blank' rel='noopener noreferrer'>CVE-2023-2203&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-23517.html' target='_blank' rel='noopener noreferrer'>CVE-2023-23517&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-23518.html' target='_blank' rel='noopener noreferrer'>CVE-2023-23518&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-23529.html' target='_blank' rel='noopener noreferrer'>CVE-2023-23529&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-25358.html' target='_blank' rel='noopener noreferrer'>CVE-2023-25358&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-25360.html' target='_blank' rel='noopener noreferrer'>CVE-2023-25360&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-25361.html' target='_blank' rel='noopener noreferrer'>CVE-2023-25361&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-25362.html' target='_blank' rel='noopener noreferrer'>CVE-2023-25362&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-25363.html' target='_blank' rel='noopener noreferrer'>CVE-2023-25363&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-27932.html' target='_blank' rel='noopener noreferrer'>CVE-2023-27932&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-27954.html' target='_blank' rel='noopener noreferrer'>CVE-2023-27954&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-28204.html' target='_blank' rel='noopener noreferrer'>CVE-2023-28204&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-28205.html' target='_blank' rel='noopener noreferrer'>CVE-2023-28205&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-32373.html' target='_blank' rel='noopener noreferrer'>CVE-2023-32373&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-32409.html' target='_blank' rel='noopener noreferrer'>CVE-2023-32409&nbsp;</a>
+                            <br />
+                            <a href="../../faqs.html">FAQs regarding Amazon Linux ALAS/CVE Severity</a>
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>A logic issue was addressed with improved state management. (CVE-2020-22592)</p><p>A use after free issue was addressed with improved memory management. This issue is fixed in macOS Big Sur 11.0.1, watchOS 7.1, iOS 14.2 and iPadOS 14.2, iCloud for Windows 11.5, Safari 14.0.1, tvOS 14.2, iTunes 12.11 for Windows. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2020-27918)</p><p>&#34;Clear History and Website Data&#34; did not clear the history. The issue was addressed with improved data deletion. This issue is fixed in macOS Big Sur 11.1, Security Update 2020-001 Catalina, Security Update 2020-007 Mojave, iOS 14.3 and iPadOS 14.3, tvOS 14.3. A user may be unable to fully delete browsing history. (CVE-2020-29623)</p><p>This issue was addressed with improved iframe sandbox enforcement. This issue is fixed in macOS Big Sur 11.2, Security Update 2021-001 Catalina, Security Update 2021-001 Mojave. Maliciously crafted web content may violate iframe sandboxing policy. (CVE-2021-1765)</p><p>A use after free issue was addressed with improved memory management. This issue is fixed in macOS Big Sur 11.2, Security Update 2021-001 Catalina, Security Update 2021-001 Mojave, tvOS 14.4, watchOS 7.3, iOS 14.4 and iPadOS 14.4, Safari 14.0.3. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-1788)</p><p>A type confusion issue was addressed with improved state handling. This issue is fixed in macOS Big Sur 11.2, Security Update 2021-001 Catalina, Security Update 2021-001 Mojave, tvOS 14.4, watchOS 7.3, iOS 14.4 and iPadOS 14.4, Safari 14.0.3. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-1789)</p><p>A port redirection issue was found in WebKitGTK and WPE WebKit in versions prior to 2.30.6. A malicious website may be able to access restricted ports on arbitrary servers. The highest threat from this vulnerability is to data integrity. (CVE-2021-1799)</p><p>This issue was addressed with improved iframe sandbox enforcement. This issue is fixed in macOS Big Sur 11.2, Security Update 2021-001 Catalina, Security Update 2021-001 Mojave, watchOS 7.3, tvOS 14.4, iOS 14.4 and iPadOS 14.4. Maliciously crafted web content may violate iframe sandboxing policy. (CVE-2021-1801)</p><p>A memory corruption issue was addressed with improved state management. This issue is fixed in macOS Big Sur 11.3, iOS 14.5 and iPadOS 14.5, watchOS 7.4, tvOS 14.5. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-1817)</p><p>A memory initialization issue was addressed with improved memory handling. This issue is fixed in macOS Big Sur 11.3, iOS 14.5 and iPadOS 14.5, watchOS 7.4, tvOS 14.5. Processing maliciously crafted web content may result in the disclosure of process memory. (CVE-2021-1820)</p><p>An input validation issue was addressed with improved input validation. This issue is fixed in iTunes 12.11.3 for Windows, iCloud for Windows 12.3, macOS Big Sur 11.3, Safari 14.1, watchOS 7.4, tvOS 14.5, iOS 14.5 and iPadOS 14.5. Processing maliciously crafted web content may lead to a cross site scripting attack. (CVE-2021-1825)</p><p>A logic issue was addressed with improved restrictions. This issue is fixed in macOS Big Sur 11.3, iOS 14.5 and iPadOS 14.5, watchOS 7.4, tvOS 14.5. Processing maliciously crafted web content may lead to universal cross site scripting. (CVE-2021-1826)</p><p>A memory corruption issue was addressed with improved validation. This issue is fixed in iOS 14.4.1 and iPadOS 14.4.1, Safari 14.0.3 (v. 14610.4.3.1.7 and 15610.4.3.1.7), watchOS 7.3.2, macOS Big Sur 11.2.3. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-1844)</p><p>A logic issue was addressed with improved restrictions. This issue is fixed in macOS Big Sur 11.2, Security Update 2021-001 Catalina, Security Update 2021-001 Mojave, iOS 14.4 and iPadOS 14.4. A remote attacker may be able to cause arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited.. (CVE-2021-1870)</p><p>A use-after-free vulnerability exists in the way certain events are processed for ImageLoader objects of Webkit WebKitGTK 2.30.4. A specially crafted web page can lead to a potential information leak and further memory corruption. In order to trigger the vulnerability, a victim must be tricked into visiting a malicious webpage. (CVE-2021-21775)</p><p>A use-after-free vulnerability exists in the way Webkit&#39;s GraphicsContext handles certain events in WebKitGTK 2.30.4. A specially crafted web page can lead to a potential information leak and further memory corruption. A victim must be tricked into visiting a malicious web page to trigger this vulnerability. (CVE-2021-21779)</p><p>An exploitable use-after-free vulnerability exists in WebKitGTK browser version 2.30.3 x64. A specially crafted HTML web page can cause a use-after-free condition, resulting in remote code execution. The victim needs to visit a malicious web site to trigger the vulnerability. (CVE-2021-21806)</p><p>A use after free issue was addressed with improved memory management. This issue is fixed in Safari 14.1, iOS 12.5.3, iOS 14.5 and iPadOS 14.5, watchOS 7.4, tvOS 14.5, macOS Big Sur 11.3. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited.. (CVE-2021-30661)</p><p>An integer overflow was addressed with improved input validation. This issue is fixed in iOS 14.5.1 and iPadOS 14.5.1, tvOS 14.6, iOS 12.5.3, Safari 14.1.1, macOS Big Sur 11.3.1. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-30663)</p><p>A memory corruption issue was addressed with improved state management. This issue is fixed in watchOS 7.4.1, iOS 14.5.1 and iPadOS 14.5.1, tvOS 14.6, iOS 12.5.3, macOS Big Sur 11.3.1. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited.. (CVE-2021-30665)</p><p>A buffer overflow issue was addressed with improved memory handling. This issue is fixed in iOS 12.5.3. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited.. (CVE-2021-30666)</p><p>A logic issue was addressed with improved restrictions. This issue is fixed in tvOS 14.6, iOS 14.6 and iPadOS 14.6, Safari 14.1.1, macOS Big Sur 11.4, watchOS 7.5. A malicious application may be able to leak sensitive user information. (CVE-2021-30682)</p><p>A logic issue was addressed with improved state management. This issue is fixed in tvOS 14.6, iOS 14.6 and iPadOS 14.6, Safari 14.1.1, macOS Big Sur 11.4, watchOS 7.5. Processing maliciously crafted web content may lead to universal cross site scripting. (CVE-2021-30689)</p><p>A logic issue was addressed with improved restrictions. This issue is fixed in tvOS 14.6, iOS 14.6 and iPadOS 14.6, Safari 14.1.1, macOS Big Sur 11.4, watchOS 7.5. A malicious website may be able to access restricted ports on arbitrary servers. (CVE-2021-30720)</p><p>Multiple memory corruption issues were addressed with improved memory handling. This issue is fixed in tvOS 14.6, iOS 14.6 and iPadOS 14.6, Safari 14.1.1, macOS Big Sur 11.4, watchOS 7.5. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-30734)</p><p>Description: A cross-origin issue with iframe elements was addressed with improved tracking of security origins. This issue is fixed in tvOS 14.6, iOS 14.6 and iPadOS 14.6, Safari 14.1.1, macOS Big Sur 11.4, watchOS 7.5. Processing maliciously crafted web content may lead to universal cross site scripting. (CVE-2021-30744)</p><p>Multiple memory corruption issues were addressed with improved memory handling. This issue is fixed in tvOS 14.6, iOS 14.6 and iPadOS 14.6, Safari 14.1.1, macOS Big Sur 11.4, watchOS 7.5. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-30749)</p><p>A type confusion issue was addressed with improved state handling. This issue is fixed in iOS 14.7, Safari 14.1.2, macOS Big Sur 11.5, watchOS 7.6, tvOS 14.7. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-30758)</p><p>A memory corruption issue was addressed with improved state management. This issue is fixed in iOS 12.5.4. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited.. (CVE-2021-30761)</p><p>A use after free issue was addressed with improved memory management. This issue is fixed in iOS 12.5.4. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited.. (CVE-2021-30762)</p><p>A use after free issue was addressed with improved memory management. This issue is fixed in iOS 14.7, Safari 14.1.2, macOS Big Sur 11.5, watchOS 7.6, tvOS 14.7. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-30795)</p><p>This issue was addressed with improved checks. This issue is fixed in iOS 14.7, Safari 14.1.2, macOS Big Sur 11.5, watchOS 7.6, tvOS 14.7. Processing maliciously crafted web content may lead to code execution. (CVE-2021-30797)</p><p>Multiple memory corruption issues were addressed with improved memory handling. This issue is fixed in iOS 14.7, macOS Big Sur 11.5, Security Update 2021-004 Catalina, Security Update 2021-005 Mojave. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-30799)</p><p>A use-after-free flaw was found in WebKitGTK. Specially crafted web content could use this flaw to trigger an arbitrary code execution when processed. (CVE-2021-30809)</p><p>A confusion type flaw was found in WebKitGTK. Specially crafted web content could use this flaw to trigger an arbitrary code execution when processed. (CVE-2021-30818)</p><p>An out-of-bounds read flaw was found in WebKitGTK. A specially crafted audio file could use this flaw to trigger a disclosure of memory when processed. (CVE-2021-30836)</p><p>A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 14.8 and iPadOS 14.8, Safari 15, tvOS 15, iOS 15 and iPadOS 15, watchOS 8. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-30846)</p><p>A memory corruption issue was addressed with improved memory handling. This issue is fixed in iOS 14.8 and iPadOS 14.8, Safari 15, iOS 15 and iPadOS 15. Processing maliciously crafted web content may lead to code execution. (CVE-2021-30848)</p><p>Multiple memory corruption issues were addressed with improved memory handling. This issue is fixed in iOS 14.8 and iPadOS 14.8, watchOS 8, Safari 15, tvOS 15, iOS 15 and iPadOS 15, iTunes 12.12 for Windows. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-30849)</p><p>A memory corruption vulnerability was addressed with improved locking. This issue is fixed in Safari 15, tvOS 15, watchOS 8, iOS 15 and iPadOS 15. Processing maliciously crafted web content may lead to code execution. (CVE-2021-30851)</p><p>A logic issue was addressed with improved restrictions. This issue is fixed in macOS Monterey 12.0.1, iOS 15.1 and iPadOS 15.1, watchOS 8.1, tvOS 15.1. Processing maliciously crafted web content may lead to unexpectedly unenforced Content Security Policy. (CVE-2021-30887)</p><p>An information leak flaw was found in WebKitGTK. A malicious web site using Content Security Policy reports could use this flaw to leak information via redirects. (CVE-2021-30888)</p><p>A buffer overflow flaw was found in WebKitGTK. Specially crafted web content could use this flaw to trigger an arbitrary code execution when processed. (CVE-2021-30889)</p><p>A logic issue was addressed with improved state management. This issue is fixed in macOS Monterey 12.0.1, iOS 15.1 and iPadOS 15.1, watchOS 8.1, tvOS 15.1. Processing maliciously crafted web content may lead to universal cross site scripting. (CVE-2021-30890)</p><p>A buffer overflow issue was addressed with improved memory handling. This issue is fixed in tvOS 15.2, macOS Monterey 12.1, Safari 15.2, iOS 15.2 and iPadOS 15.2, watchOS 8.3. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-30934)</p><p>A use after free issue was addressed with improved memory management. This issue is fixed in tvOS 15.2, macOS Monterey 12.1, Safari 15.2, iOS 15.2 and iPadOS 15.2, watchOS 8.3. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-30936)</p><p>A use after free issue was addressed with improved memory management. This issue is fixed in tvOS 15.2, macOS Monterey 12.1, Safari 15.2, iOS 15.2 and iPadOS 15.2, watchOS 8.3. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-30951)</p><p>An integer overflow was addressed with improved input validation. This issue is fixed in tvOS 15.2, macOS Monterey 12.1, Safari 15.2, iOS 15.2 and iPadOS 15.2, watchOS 8.3. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-30952)</p><p>An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in tvOS 15.2, macOS Monterey 12.1, Safari 15.2, iOS 15.2 and iPadOS 15.2, watchOS 8.3. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-30953)</p><p>A type confusion issue was addressed with improved memory handling. This issue is fixed in tvOS 15.2, macOS Monterey 12.1, Safari 15.2, iOS 15.2 and iPadOS 15.2, watchOS 8.3. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-30954)</p><p>A race condition was addressed with improved state handling. This issue is fixed in tvOS 15.2, macOS Monterey 12.1, Safari 15.2, iOS 15.2 and iPadOS 15.2, watchOS 8.3. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2021-30984)</p><p>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2021. Notes: none. (CVE-2021-32912)</p><p>BubblewrapLauncher.cpp in WebKitGTK and WPE WebKit before 2.34.1 allows a limited sandbox bypass that allows a sandboxed process to trick host processes into thinking the sandboxed process is not confined by the sandbox, by abusing VFS syscalls that manipulate its filesystem namespace. The impact is limited to host services that create UNIX sockets that WebKit mounts inside its sandbox, and the sandboxed process remains otherwise confined. NOTE: this is similar to CVE-2021-41133. (CVE-2021-42762)</p><p>A segmentation violation vulnerability was found in webkitgtk. An attacker with network access could pass specially crafted HTML files causing an application to halt or crash. (CVE-2021-45481)</p><p>A use-after-free vulnerability was found in webkitgtk. An attacker with network access could pass specially crafted HTML files causing an application to halt or crash. (CVE-2021-45482)</p><p>A use-after-free vulnerability was found in webkitgtk. An attacker with network access could pass specially crafted HTML files causing an application to halt or crash. (CVE-2021-45483)</p><p>A use after free issue was addressed with improved memory management. This issue is fixed in iOS 15.3 and iPadOS 15.3, watchOS 8.4, tvOS 15.3, Safari 15.3, macOS Monterey 12.2. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2022-22590)</p><p>A logic issue was addressed with improved state management. This issue is fixed in iOS 15.3 and iPadOS 15.3, watchOS 8.4, tvOS 15.3, Safari 15.3, macOS Monterey 12.2. Processing maliciously crafted web content may prevent Content Security Policy from being enforced. (CVE-2022-22592)</p><p>A cookie management issue was addressed with improved state management. This issue is fixed in Security Update 2022-003 Catalina, macOS Big Sur 11.6.5. Processing maliciously crafted web content may disclose sensitive user information. (CVE-2022-22662)</p><p>A logic issue in the handling of concurrent media was addressed with improved state handling. This issue is fixed in macOS Monterey 12.4, iOS 15.5 and iPadOS 15.5. Video self-preview in a webRTC call may be interrupted if the user answers a phone call. (CVE-2022-22677)</p><p>A memory corruption issue was addressed with improved state management. This issue is fixed in tvOS 15.5, watchOS 8.6, iOS 15.5 and iPadOS 15.5, macOS Monterey 12.4, Safari 15.5. Processing maliciously crafted web content may lead to code execution. (CVE-2022-26700)</p><p>A use after free issue was addressed with improved memory management. This issue is fixed in tvOS 15.5, iOS 15.5 and iPadOS 15.5, watchOS 8.6, macOS Monterey 12.4, Safari 15.5. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2022-26709)</p><p>A use after free issue was addressed with improved memory management. This issue is fixed in iOS 15.5 and iPadOS 15.5, macOS Monterey 12.4, tvOS 15.5, watchOS 8.6. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2022-26710)</p><p>A memory corruption issue was addressed with improved state management. This issue is fixed in tvOS 15.5, iOS 15.5 and iPadOS 15.5, watchOS 8.6, macOS Monterey 12.4, Safari 15.5. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2022-26716)</p><p>A use after free issue was addressed with improved memory management. This issue is fixed in tvOS 15.5, watchOS 8.6, iOS 15.5 and iPadOS 15.5, macOS Monterey 12.4, Safari 15.5, iTunes 12.12.4 for Windows. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2022-26717)</p><p>A memory corruption issue was addressed with improved state management. This issue is fixed in tvOS 15.5, iOS 15.5 and iPadOS 15.5, watchOS 8.6, macOS Monterey 12.4, Safari 15.5. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2022-26719)</p><p>In WebKitGTK through 2.36.0 (and WPE WebKit), there is a heap-based buffer overflow in WebCore::TextureMapperLayer::setContentsLayer in WebCore/platform/graphics/texmap/TextureMapperLayer.cpp. (CVE-2022-30293)</p><p>An out-of-bounds write issue was addressed with improved input validation. This issue is fixed in iOS 15.6 and iPadOS 15.6, watchOS 8.7, tvOS 15.6, macOS Monterey 12.5, Safari 15.6. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2022-32792)</p><p>Multiple out-of-bounds write issues were addressed with improved bounds checking. This issue is fixed in macOS Monterey 12.5, watchOS 8.7, tvOS 15.6, iOS 15.6 and iPadOS 15.6. An app may be able to disclose kernel memory. (CVE-2022-32793)</p><p>The issue was addressed with improved UI handling. This issue is fixed in watchOS 8.7, tvOS 15.6, iOS 15.6 and iPadOS 15.6, macOS Monterey 12.5. Visiting a website that frames malicious content may lead to UI spoofing. (CVE-2022-32816)</p><p>Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2022-32885)</p><p>An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in macOS Big Sur 11.7, macOS Ventura 13, iOS 16, iOS 15.7 and iPadOS 15.7, watchOS 9, macOS Monterey 12.6, tvOS 16. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2022-32888)</p><p>A correctness issue in the JIT was addressed with improved checks. This issue is fixed in tvOS 16.1, iOS 15.7.1 and iPadOS 15.7.1, macOS Ventura 13, watchOS 9.1, Safari 16.1, iOS 16.1 and iPadOS 16. Processing maliciously crafted web content may disclose internal states of the app. (CVE-2022-32923)</p><p>The issue was addressed with improved UI handling. This issue is fixed in tvOS 16.1, macOS Ventura 13, watchOS 9.1, Safari 16.1, iOS 16.1 and iPadOS 16. Visiting a malicious website may lead to user interface spoofing. (CVE-2022-42799)</p><p>A logic issue was addressed with improved state management. This issue is fixed in tvOS 16.1, macOS Ventura 13, watchOS 9.1, Safari 16.1, iOS 16.1 and iPadOS 16. Processing maliciously crafted web content may disclose sensitive user information. (CVE-2022-42824)</p><p>Processing maliciously crafted web content may lead to arbitrary code execution</p><p>RESERVED<br />NOTE: https://webkitgtk.org/security/WSA-2023-0001.html (CVE-2022-42826)</p><p>The issue was addressed with improved memory handling. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing maliciously crafted web content may result in the disclosure of process memory. (CVE-2022-42852)</p><p>A type confusion issue was addressed with improved state handling. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.1.2. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited against versions of iOS released before iOS 15.1.. (CVE-2022-42856)</p><p>A memory corruption issue was addressed with improved state management. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2022-42863)</p><p>A use after free issue was addressed with improved memory management. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2022-42867)</p><p>A memory consumption issue was addressed with improved memory handling. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2022-46691)</p><p>A logic issue was addressed with improved state management. This issue is fixed in Safari 16.2, tvOS 16.2, iCloud for Windows 14.1, iOS 15.7.2 and iPadOS 15.7.2, macOS Ventura 13.1, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing maliciously crafted web content may bypass Same Origin Policy. (CVE-2022-46692)</p><p>A logic issue was addressed with improved checks. This issue is fixed in Safari 16.2, tvOS 16.2, iCloud for Windows 14.1, macOS Ventura 13.1, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing maliciously crafted web content may disclose sensitive user information. (CVE-2022-46698)</p><p>A memory corruption issue was addressed with improved state management. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2022-46699)</p><p>A memory corruption issue was addressed with improved input validation. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.2 and iPadOS 16.2, watchOS 9.2. Processing maliciously crafted web content may lead to arbitrary code execution. (CVE-2022-46700)</p><p>A flaw was found in the WebKitGTK package. An improper input validation issue may lead to a use-after-free vulnerability. This flaw allows attackers with network access to pass specially crafted web content files, causing a denial of service or arbitrary code execution. (CVE-2023-2203)</p><p>Processing maliciously crafted web content may lead to arbitrary code execution (CVE-2023-23517)</p><p>Processing maliciously crafted web content may lead to arbitrary code execution (CVE-2023-23518)</p><p>A vulnerability was found in WebKitGTK. This issue occurs when processing maliciously crafted web content in WebKit. This may, in theory, allow a remote attacker to create a specially crafted web page, trick the victim into opening it, trigger type confusion, and execute arbitrary code on the target system. (CVE-2023-23529)</p><p>A use-after-free vulnerability in WebCore::RenderLayer::addChild in WebKitGTK before 2.36.8 allows attackers to execute code remotely. (CVE-2023-25358)</p><p>A use-after-free vulnerability in WebCore::RenderLayer::renderer in WebKitGTK before 2.36.8 allows attackers to execute code remotely. (CVE-2023-25360)</p><p>A use-after-free vulnerability in WebCore::RenderLayer::setNextSibling in WebKitGTK before 2.36.8 allows attackers to execute code remotely. (CVE-2023-25361)</p><p>A use-after-free vulnerability in WebCore::RenderLayer::repaintBlockSelectionGaps in WebKitGTK before 2.36.8 allows attackers to execute code remotely. (CVE-2023-25362)</p><p>A use-after-free vulnerability in WebCore::RenderLayer::updateDescendantDependentFlags in WebKitGTK before 2.36.8 allows attackers to execute code remotely. (CVE-2023-25363)</p><p>The vulnerability allows a remote attacker to bypass Same Origin Policy restrictions. (CVE-2023-27932)</p><p>The vulnerability exists due to excessive data output by the application. A remote attacker can track sensitive user information. (CVE-2023-27954)</p><p>An out-of-bounds read issue in WebKit that could be abused to disclose sensitive information when processing web content. It was addressed with improved input validation. (CVE-2023-28204)</p><p>A use after free issue was addressed with improved memory management. This issue is fixed in iOS 15.7.5 and iPadOS 15.7.5, Safari 16.4.1, iOS 16.4.1 and iPadOS 16.4.1, macOS Ventura 13.3.1. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited. (CVE-2023-28205)</p><p>A use-after free bug in WebKit that could lead to arbitrary code execution when processing maliciously crafted web content. It was addressed with improved memory management. (CVE-2023-32373)</p><p>N/A (CVE-2023-32409)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>webkitgtk4</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update webkitgtk4</i> to update your system.<br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; webkitgtk4-2.38.5-3.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; webkitgtk4-devel-2.38.5-3.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; webkitgtk4-jsc-2.38.5-3.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; webkitgtk4-jsc-devel-2.38.5-3.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; webkitgtk4-debuginfo-2.38.5-3.amzn2.0.1.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; webkitgtk4-2.38.5-3.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; webkitgtk4-devel-2.38.5-3.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; webkitgtk4-jsc-2.38.5-3.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; webkitgtk4-jsc-devel-2.38.5-3.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; webkitgtk4-debuginfo-2.38.5-3.amzn2.0.1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; webkitgtk4-2.38.5-3.amzn2.0.1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; webkitgtk4-2.38.5-3.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; webkitgtk4-devel-2.38.5-3.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; webkitgtk4-jsc-2.38.5-3.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; webkitgtk4-jsc-devel-2.38.5-3.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; webkitgtk4-debuginfo-2.38.5-3.amzn2.0.1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-22592" target="_blank" rel="noopener noreferrer">CVE-2020-22592</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-27918" target="_blank" rel="noopener noreferrer">CVE-2020-27918</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-29623" target="_blank" rel="noopener noreferrer">CVE-2020-29623</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-1765" target="_blank" rel="noopener noreferrer">CVE-2021-1765</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-1788" target="_blank" rel="noopener noreferrer">CVE-2021-1788</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-1789" target="_blank" rel="noopener noreferrer">CVE-2021-1789</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-1799" target="_blank" rel="noopener noreferrer">CVE-2021-1799</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-1801" target="_blank" rel="noopener noreferrer">CVE-2021-1801</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-1817" target="_blank" rel="noopener noreferrer">CVE-2021-1817</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-1820" target="_blank" rel="noopener noreferrer">CVE-2021-1820</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-1825" target="_blank" rel="noopener noreferrer">CVE-2021-1825</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-1826" target="_blank" rel="noopener noreferrer">CVE-2021-1826</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-1844" target="_blank" rel="noopener noreferrer">CVE-2021-1844</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-1870" target="_blank" rel="noopener noreferrer">CVE-2021-1870</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-21775" target="_blank" rel="noopener noreferrer">CVE-2021-21775</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-21779" target="_blank" rel="noopener noreferrer">CVE-2021-21779</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-21806" target="_blank" rel="noopener noreferrer">CVE-2021-21806</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30661" target="_blank" rel="noopener noreferrer">CVE-2021-30661</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30663" target="_blank" rel="noopener noreferrer">CVE-2021-30663</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30665" target="_blank" rel="noopener noreferrer">CVE-2021-30665</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30666" target="_blank" rel="noopener noreferrer">CVE-2021-30666</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30682" target="_blank" rel="noopener noreferrer">CVE-2021-30682</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30689" target="_blank" rel="noopener noreferrer">CVE-2021-30689</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30720" target="_blank" rel="noopener noreferrer">CVE-2021-30720</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30734" target="_blank" rel="noopener noreferrer">CVE-2021-30734</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30744" target="_blank" rel="noopener noreferrer">CVE-2021-30744</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30749" target="_blank" rel="noopener noreferrer">CVE-2021-30749</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30758" target="_blank" rel="noopener noreferrer">CVE-2021-30758</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30761" target="_blank" rel="noopener noreferrer">CVE-2021-30761</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30762" target="_blank" rel="noopener noreferrer">CVE-2021-30762</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30795" target="_blank" rel="noopener noreferrer">CVE-2021-30795</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30797" target="_blank" rel="noopener noreferrer">CVE-2021-30797</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30799" target="_blank" rel="noopener noreferrer">CVE-2021-30799</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30809" target="_blank" rel="noopener noreferrer">CVE-2021-30809</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30818" target="_blank" rel="noopener noreferrer">CVE-2021-30818</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30836" target="_blank" rel="noopener noreferrer">CVE-2021-30836</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30846" target="_blank" rel="noopener noreferrer">CVE-2021-30846</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30848" target="_blank" rel="noopener noreferrer">CVE-2021-30848</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30849" target="_blank" rel="noopener noreferrer">CVE-2021-30849</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30851" target="_blank" rel="noopener noreferrer">CVE-2021-30851</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30887" target="_blank" rel="noopener noreferrer">CVE-2021-30887</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30888" target="_blank" rel="noopener noreferrer">CVE-2021-30888</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30889" target="_blank" rel="noopener noreferrer">CVE-2021-30889</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30890" target="_blank" rel="noopener noreferrer">CVE-2021-30890</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30934" target="_blank" rel="noopener noreferrer">CVE-2021-30934</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30936" target="_blank" rel="noopener noreferrer">CVE-2021-30936</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30951" target="_blank" rel="noopener noreferrer">CVE-2021-30951</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30952" target="_blank" rel="noopener noreferrer">CVE-2021-30952</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30953" target="_blank" rel="noopener noreferrer">CVE-2021-30953</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30954" target="_blank" rel="noopener noreferrer">CVE-2021-30954</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-30984" target="_blank" rel="noopener noreferrer">CVE-2021-30984</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-32912" target="_blank" rel="noopener noreferrer">CVE-2021-32912</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-42762" target="_blank" rel="noopener noreferrer">CVE-2021-42762</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-45481" target="_blank" rel="noopener noreferrer">CVE-2021-45481</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-45482" target="_blank" rel="noopener noreferrer">CVE-2021-45482</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-45483" target="_blank" rel="noopener noreferrer">CVE-2021-45483</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22590" target="_blank" rel="noopener noreferrer">CVE-2022-22590</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22592" target="_blank" rel="noopener noreferrer">CVE-2022-22592</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22662" target="_blank" rel="noopener noreferrer">CVE-2022-22662</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-22677" target="_blank" rel="noopener noreferrer">CVE-2022-22677</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-26700" target="_blank" rel="noopener noreferrer">CVE-2022-26700</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-26709" target="_blank" rel="noopener noreferrer">CVE-2022-26709</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-26710" target="_blank" rel="noopener noreferrer">CVE-2022-26710</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-26716" target="_blank" rel="noopener noreferrer">CVE-2022-26716</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-26717" target="_blank" rel="noopener noreferrer">CVE-2022-26717</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-26719" target="_blank" rel="noopener noreferrer">CVE-2022-26719</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-30293" target="_blank" rel="noopener noreferrer">CVE-2022-30293</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-32792" target="_blank" rel="noopener noreferrer">CVE-2022-32792</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-32793" target="_blank" rel="noopener noreferrer">CVE-2022-32793</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-32816" target="_blank" rel="noopener noreferrer">CVE-2022-32816</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-32885" target="_blank" rel="noopener noreferrer">CVE-2022-32885</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-32888" target="_blank" rel="noopener noreferrer">CVE-2022-32888</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-32923" target="_blank" rel="noopener noreferrer">CVE-2022-32923</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-42799" target="_blank" rel="noopener noreferrer">CVE-2022-42799</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-42824" target="_blank" rel="noopener noreferrer">CVE-2022-42824</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-42826" target="_blank" rel="noopener noreferrer">CVE-2022-42826</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-42852" target="_blank" rel="noopener noreferrer">CVE-2022-42852</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-42856" target="_blank" rel="noopener noreferrer">CVE-2022-42856</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-42863" target="_blank" rel="noopener noreferrer">CVE-2022-42863</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-42867" target="_blank" rel="noopener noreferrer">CVE-2022-42867</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-46691" target="_blank" rel="noopener noreferrer">CVE-2022-46691</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-46692" target="_blank" rel="noopener noreferrer">CVE-2022-46692</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-46698" target="_blank" rel="noopener noreferrer">CVE-2022-46698</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-46699" target="_blank" rel="noopener noreferrer">CVE-2022-46699</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-46700" target="_blank" rel="noopener noreferrer">CVE-2022-46700</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-2203" target="_blank" rel="noopener noreferrer">CVE-2023-2203</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-23517" target="_blank" rel="noopener noreferrer">CVE-2023-23517</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-23518" target="_blank" rel="noopener noreferrer">CVE-2023-23518</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-23529" target="_blank" rel="noopener noreferrer">CVE-2023-23529</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-25358" target="_blank" rel="noopener noreferrer">CVE-2023-25358</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-25360" target="_blank" rel="noopener noreferrer">CVE-2023-25360</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-25361" target="_blank" rel="noopener noreferrer">CVE-2023-25361</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-25362" target="_blank" rel="noopener noreferrer">CVE-2023-25362</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-25363" target="_blank" rel="noopener noreferrer">CVE-2023-25363</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-27932" target="_blank" rel="noopener noreferrer">CVE-2023-27932</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-27954" target="_blank" rel="noopener noreferrer">CVE-2023-27954</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-28204" target="_blank" rel="noopener noreferrer">CVE-2023-28204</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-28205" target="_blank" rel="noopener noreferrer">CVE-2023-28205</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-32373" target="_blank" rel="noopener noreferrer">CVE-2023-32373</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-32409" target="_blank" rel="noopener noreferrer">CVE-2023-32409</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-22592" target="_blank" rel="noopener noreferrer">CVE-2020-22592</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27918" target="_blank" rel="noopener noreferrer">CVE-2020-27918</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-29623" target="_blank" rel="noopener noreferrer">CVE-2020-29623</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-1765" target="_blank" rel="noopener noreferrer">CVE-2021-1765</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-1788" target="_blank" rel="noopener noreferrer">CVE-2021-1788</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-1789" target="_blank" rel="noopener noreferrer">CVE-2021-1789</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-1799" target="_blank" rel="noopener noreferrer">CVE-2021-1799</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-1801" target="_blank" rel="noopener noreferrer">CVE-2021-1801</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-1817" target="_blank" rel="noopener noreferrer">CVE-2021-1817</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-1820" target="_blank" rel="noopener noreferrer">CVE-2021-1820</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-1825" target="_blank" rel="noopener noreferrer">CVE-2021-1825</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-1826" target="_blank" rel="noopener noreferrer">CVE-2021-1826</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-1844" target="_blank" rel="noopener noreferrer">CVE-2021-1844</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-1870" target="_blank" rel="noopener noreferrer">CVE-2021-1870</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21775" target="_blank" rel="noopener noreferrer">CVE-2021-21775</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21779" target="_blank" rel="noopener noreferrer">CVE-2021-21779</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21806" target="_blank" rel="noopener noreferrer">CVE-2021-21806</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30661" target="_blank" rel="noopener noreferrer">CVE-2021-30661</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30663" target="_blank" rel="noopener noreferrer">CVE-2021-30663</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30665" target="_blank" rel="noopener noreferrer">CVE-2021-30665</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30666" target="_blank" rel="noopener noreferrer">CVE-2021-30666</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30682" target="_blank" rel="noopener noreferrer">CVE-2021-30682</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30689" target="_blank" rel="noopener noreferrer">CVE-2021-30689</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30720" target="_blank" rel="noopener noreferrer">CVE-2021-30720</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30734" target="_blank" rel="noopener noreferrer">CVE-2021-30734</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30744" target="_blank" rel="noopener noreferrer">CVE-2021-30744</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30749" target="_blank" rel="noopener noreferrer">CVE-2021-30749</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30758" target="_blank" rel="noopener noreferrer">CVE-2021-30758</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30761" target="_blank" rel="noopener noreferrer">CVE-2021-30761</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30762" target="_blank" rel="noopener noreferrer">CVE-2021-30762</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30795" target="_blank" rel="noopener noreferrer">CVE-2021-30795</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30797" target="_blank" rel="noopener noreferrer">CVE-2021-30797</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30799" target="_blank" rel="noopener noreferrer">CVE-2021-30799</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30809" target="_blank" rel="noopener noreferrer">CVE-2021-30809</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30818" target="_blank" rel="noopener noreferrer">CVE-2021-30818</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30836" target="_blank" rel="noopener noreferrer">CVE-2021-30836</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30846" target="_blank" rel="noopener noreferrer">CVE-2021-30846</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30848" target="_blank" rel="noopener noreferrer">CVE-2021-30848</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30849" target="_blank" rel="noopener noreferrer">CVE-2021-30849</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30851" target="_blank" rel="noopener noreferrer">CVE-2021-30851</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30887" target="_blank" rel="noopener noreferrer">CVE-2021-30887</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30888" target="_blank" rel="noopener noreferrer">CVE-2021-30888</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30889" target="_blank" rel="noopener noreferrer">CVE-2021-30889</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30890" target="_blank" rel="noopener noreferrer">CVE-2021-30890</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30934" target="_blank" rel="noopener noreferrer">CVE-2021-30934</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30936" target="_blank" rel="noopener noreferrer">CVE-2021-30936</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30951" target="_blank" rel="noopener noreferrer">CVE-2021-30951</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30952" target="_blank" rel="noopener noreferrer">CVE-2021-30952</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30953" target="_blank" rel="noopener noreferrer">CVE-2021-30953</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30954" target="_blank" rel="noopener noreferrer">CVE-2021-30954</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30984" target="_blank" rel="noopener noreferrer">CVE-2021-30984</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32912" target="_blank" rel="noopener noreferrer">CVE-2021-32912</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42762" target="_blank" rel="noopener noreferrer">CVE-2021-42762</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45481" target="_blank" rel="noopener noreferrer">CVE-2021-45481</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45482" target="_blank" rel="noopener noreferrer">CVE-2021-45482</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45483" target="_blank" rel="noopener noreferrer">CVE-2021-45483</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22590" target="_blank" rel="noopener noreferrer">CVE-2022-22590</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22592" target="_blank" rel="noopener noreferrer">CVE-2022-22592</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22662" target="_blank" rel="noopener noreferrer">CVE-2022-22662</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22677" target="_blank" rel="noopener noreferrer">CVE-2022-22677</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26700" target="_blank" rel="noopener noreferrer">CVE-2022-26700</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26709" target="_blank" rel="noopener noreferrer">CVE-2022-26709</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26710" target="_blank" rel="noopener noreferrer">CVE-2022-26710</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26716" target="_blank" rel="noopener noreferrer">CVE-2022-26716</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26717" target="_blank" rel="noopener noreferrer">CVE-2022-26717</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26719" target="_blank" rel="noopener noreferrer">CVE-2022-26719</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30293" target="_blank" rel="noopener noreferrer">CVE-2022-30293</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32792" target="_blank" rel="noopener noreferrer">CVE-2022-32792</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32793" target="_blank" rel="noopener noreferrer">CVE-2022-32793</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32816" target="_blank" rel="noopener noreferrer">CVE-2022-32816</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32885" target="_blank" rel="noopener noreferrer">CVE-2022-32885</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32888" target="_blank" rel="noopener noreferrer">CVE-2022-32888</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32923" target="_blank" rel="noopener noreferrer">CVE-2022-32923</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42799" target="_blank" rel="noopener noreferrer">CVE-2022-42799</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42824" target="_blank" rel="noopener noreferrer">CVE-2022-42824</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42826" target="_blank" rel="noopener noreferrer">CVE-2022-42826</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42852" target="_blank" rel="noopener noreferrer">CVE-2022-42852</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42856" target="_blank" rel="noopener noreferrer">CVE-2022-42856</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42863" target="_blank" rel="noopener noreferrer">CVE-2022-42863</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42867" target="_blank" rel="noopener noreferrer">CVE-2022-42867</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-46691" target="_blank" rel="noopener noreferrer">CVE-2022-46691</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-46692" target="_blank" rel="noopener noreferrer">CVE-2022-46692</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-46698" target="_blank" rel="noopener noreferrer">CVE-2022-46698</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-46699" target="_blank" rel="noopener noreferrer">CVE-2022-46699</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-46700" target="_blank" rel="noopener noreferrer">CVE-2022-46700</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-2203" target="_blank" rel="noopener noreferrer">CVE-2023-2203</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-23517" target="_blank" rel="noopener noreferrer">CVE-2023-23517</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-23518" target="_blank" rel="noopener noreferrer">CVE-2023-23518</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-23529" target="_blank" rel="noopener noreferrer">CVE-2023-23529</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25358" target="_blank" rel="noopener noreferrer">CVE-2023-25358</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25360" target="_blank" rel="noopener noreferrer">CVE-2023-25360</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25361" target="_blank" rel="noopener noreferrer">CVE-2023-25361</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25362" target="_blank" rel="noopener noreferrer">CVE-2023-25362</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25363" target="_blank" rel="noopener noreferrer">CVE-2023-25363</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27932" target="_blank" rel="noopener noreferrer">CVE-2023-27932</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27954" target="_blank" rel="noopener noreferrer">CVE-2023-27954</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28204" target="_blank" rel="noopener noreferrer">CVE-2023-28204</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28205" target="_blank" rel="noopener noreferrer">CVE-2023-28205</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-32373" target="_blank" rel="noopener noreferrer">CVE-2023-32373</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-32409" target="_blank" rel="noopener noreferrer">CVE-2023-32409</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2023
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2023 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms apply, and downloading this site or portions of it is permitted</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2023, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

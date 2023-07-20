@@ -10,33 +10,9 @@
 	"summary": "firefox security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
 		"packages": [
-			{
-				"src": "firefox-102.8.0-2.el9_1.alma.src.rpm",
-				"name": "firefox-x11",
-				"epoch": "0",
-				"version": "102.8.0",
-				"release": "2.el9_1.alma",
-				"arch": "aarch64",
-				"filename": "firefox-x11-102.8.0-2.el9_1.alma.aarch64.rpm",
-				"sum": "1d798bd20d2113dc97f13a8f7117f36bfa8e3c766ef61f52f3ad42e9f956d66f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "firefox-102.8.0-2.el9_1.alma.src.rpm",
-				"name": "firefox",
-				"epoch": "0",
-				"version": "102.8.0",
-				"release": "2.el9_1.alma",
-				"arch": "aarch64",
-				"filename": "firefox-102.8.0-2.el9_1.alma.aarch64.rpm",
-				"sum": "f9dd4789469debc57b6205d2e3d9ce618ef0ccdbc5cfbf1f98d34d9a8f5ca44a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "firefox-102.8.0-2.el9_1.alma.src.rpm",
 				"name": "firefox",
@@ -58,6 +34,18 @@
 				"arch": "s390x",
 				"filename": "firefox-x11-102.8.0-2.el9_1.alma.s390x.rpm",
 				"sum": "1061182b0b8d2bf182c9818f66778907af0355f3e8fad28c0b4986f1b394066a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "firefox-102.8.0-2.el9_1.alma.src.rpm",
+				"name": "firefox-x11",
+				"epoch": "0",
+				"version": "102.8.0",
+				"release": "2.el9_1.alma",
+				"arch": "aarch64",
+				"filename": "firefox-x11-102.8.0-2.el9_1.alma.aarch64.rpm",
+				"sum": "1d798bd20d2113dc97f13a8f7117f36bfa8e3c766ef61f52f3ad42e9f956d66f",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -108,16 +96,94 @@
 				"sum": "adfc4e1caf74711e71ea4d09b24d7dfdc8940a29e0d46b19d20ad9f95d4928dd",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "firefox-102.8.0-2.el9_1.alma.src.rpm",
+				"name": "firefox",
+				"epoch": "0",
+				"version": "102.8.0",
+				"release": "2.el9_1.alma",
+				"arch": "aarch64",
+				"filename": "firefox-102.8.0-2.el9_1.alma.aarch64.rpm",
+				"sum": "f9dd4789469debc57b6205d2e3d9ce618ef0ccdbc5cfbf1f98d34d9a8f5ca44a",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "Mozilla Firefox is an open-source web browser, designed for standards compliance, performance, and portability.\n\nThis update upgrades Firefox to version 102.8.0 ESR.\n\nSecurity Fix(es):\n\n* Mozilla: Arbitrary memory write via PKCS 12 in NSS (CVE-2023-0767)\n* Mozilla: Content security policy leak in violation reports using iframes (CVE-2023-25728)\n* Mozilla: Screen hijack via browser fullscreen mode (CVE-2023-25730)\n* Mozilla: Potential use-after-free from compartment mismatch in SpiderMonkey (CVE-2023-25735)\n* Mozilla: Invalid downcast in SVGUtils::SetupStrokeGeometry (CVE-2023-25737)\n* Mozilla: Use-after-free in mozilla::dom::ScriptLoadContext::~ScriptLoadContext (CVE-2023-25739)\n* Mozilla: Fullscreen notification not shown in Firefox Focus (CVE-2023-25743)\n* Mozilla: Memory safety bugs fixed in Firefox 110 and Firefox ESR 102.8 (CVE-2023-25744)\n* Mozilla: Memory safety bugs fixed in Firefox ESR 102.8 (CVE-2023-25746)\n* Mozilla: Extensions could have opened external schemes without user knowledge (CVE-2023-25729)\n* Mozilla: Out of bounds memory write from EncodeInputStream (CVE-2023-25732)\n* Mozilla: Web Crypto ImportKey crashes tab (CVE-2023-25742)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:0810",
-			"title": "RHSA-2023:0810",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:0810"
+			"id": "2170374",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170374"
+		},
+		{
+			"id": "2170375",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170375"
+		},
+		{
+			"id": "2170376",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170376"
+		},
+		{
+			"id": "2170377",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170377"
+		},
+		{
+			"id": "2170378",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170378"
+		},
+		{
+			"id": "2170379",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170379"
+		},
+		{
+			"id": "2170381",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170381"
+		},
+		{
+			"id": "2170382",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170382"
+		},
+		{
+			"id": "2170383",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170383"
+		},
+		{
+			"id": "2170390",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170390"
+		},
+		{
+			"id": "2170391",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170391"
+		},
+		{
+			"id": "2170402",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2170402"
 		},
 		{
 			"id": "CVE-2023-0767",
@@ -192,76 +258,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2023-25746"
 		},
 		{
-			"id": "2170374",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2170374"
-		},
-		{
-			"id": "2170375",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2170375"
-		},
-		{
-			"id": "2170376",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2170376"
-		},
-		{
-			"id": "2170377",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2170377"
-		},
-		{
-			"id": "2170378",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2170378"
-		},
-		{
-			"id": "2170379",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2170379"
-		},
-		{
-			"id": "2170381",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2170381"
-		},
-		{
-			"id": "2170382",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2170382"
-		},
-		{
-			"id": "2170383",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2170383"
-		},
-		{
-			"id": "2170390",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2170390"
-		},
-		{
-			"id": "2170391",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2170391"
-		},
-		{
-			"id": "2170402",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2170402"
+			"id": "RHSA-2023:0810",
+			"title": "RHSA-2023:0810",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:0810"
 		},
 		{
 			"id": "ALSA-2023:0810",

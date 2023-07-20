@@ -10,9 +10,33 @@
 	"summary": "An update for the mysql:8.0 module is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "3",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_mysql",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_mysql",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_mysql",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_mysql",
 		"packages": [
+			{
+				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
+				"name": "mysql-test",
+				"epoch": "0",
+				"version": "8.0.26",
+				"release": "1.module_el8.4.0+2532+b8928c02",
+				"arch": "x86_64",
+				"filename": "mysql-test-8.0.26-1.module_el8.4.0+2532+b8928c02.x86_64.rpm",
+				"sum": "0f4cf7811efe5ecb118e7d1bc72792818fc4f9b2b6c850ef0a0564901a217945",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
+				"name": "mysql",
+				"epoch": "0",
+				"version": "8.0.26",
+				"release": "1.module_el8.4.0+2532+b8928c02",
+				"arch": "x86_64",
+				"filename": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.x86_64.rpm",
+				"sum": "1747eb28b211c6a675b0ab553e523502c8d267dd08ef46ab488a867da3ad2772",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
 				"name": "mysql-common",
@@ -22,6 +46,30 @@
 				"arch": "aarch64",
 				"filename": "mysql-common-8.0.26-1.module_el8.4.0+2532+b8928c02.aarch64.rpm",
 				"sum": "1db1d2500a052e7ed59024ae8b64a61637211f436a5fe6a3067ca72c77d9b842",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
+				"name": "mysql-libs",
+				"epoch": "0",
+				"version": "8.0.26",
+				"release": "1.module_el8.4.0+2532+b8928c02",
+				"arch": "x86_64",
+				"filename": "mysql-libs-8.0.26-1.module_el8.4.0+2532+b8928c02.x86_64.rpm",
+				"sum": "205145e19a386155b72727a34c53dcafd707a9451ca2d41094798ed5275a7f20",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mysql-8.0.26-1.module_el8.5.0+33+8bc5f36a.src.rpm",
+				"name": "mysql-common",
+				"epoch": "0",
+				"version": "8.0.26",
+				"release": "1.module_el8.5.0+33+8bc5f36a",
+				"arch": "ppc64le",
+				"filename": "mysql-common-8.0.26-1.module_el8.5.0+33+8bc5f36a.ppc64le.rpm",
+				"sum": "2103c42f7d79958d0abfac5dc6b830c949d7d3207adb18147f6dd1afd1f634c0",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -51,126 +99,6 @@
 			},
 			{
 				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
-				"name": "mysql-libs",
-				"epoch": "0",
-				"version": "8.0.26",
-				"release": "1.module_el8.4.0+2532+b8928c02",
-				"arch": "aarch64",
-				"filename": "mysql-libs-8.0.26-1.module_el8.4.0+2532+b8928c02.aarch64.rpm",
-				"sum": "58c0be65afe37067755a73a7e9f48f9432cf0b03f2ce713e60758e88b542e705",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
-				"name": "mysql-test",
-				"epoch": "0",
-				"version": "8.0.26",
-				"release": "1.module_el8.4.0+2532+b8928c02",
-				"arch": "aarch64",
-				"filename": "mysql-test-8.0.26-1.module_el8.4.0+2532+b8928c02.aarch64.rpm",
-				"sum": "7aa518f4381b67b394dd7734e1023f0bf904a61a733f6b188e17b4a3a2ab1a51",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
-				"name": "mysql",
-				"epoch": "0",
-				"version": "8.0.26",
-				"release": "1.module_el8.4.0+2532+b8928c02",
-				"arch": "aarch64",
-				"filename": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.aarch64.rpm",
-				"sum": "a4af0580e44633121c7e4e4cf21a482ce22f6c8e21a47111d5054f71fd07f52b",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
-				"name": "mysql-server",
-				"epoch": "0",
-				"version": "8.0.26",
-				"release": "1.module_el8.4.0+2532+b8928c02",
-				"arch": "aarch64",
-				"filename": "mysql-server-8.0.26-1.module_el8.4.0+2532+b8928c02.aarch64.rpm",
-				"sum": "bbf887d7ad71a0a0f3fa1c6e14a1bf1f18f3fde64cac99606b9b582e4e3a7c4f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mecab-ipadic-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.src.rpm",
-				"name": "mecab-ipadic-EUCJP",
-				"epoch": "0",
-				"version": "2.7.0.20070801",
-				"release": "16.module_el8.4.0+2532+b8928c02",
-				"arch": "aarch64",
-				"filename": "mecab-ipadic-EUCJP-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.aarch64.rpm",
-				"sum": "c6de4184ff4713273b239119db1b036ea35621fdc1152a9c45cf1d6fdfadd574",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mecab-0.996-1.module_el8.4.0+2532+b8928c02.9.src.rpm",
-				"name": "mecab",
-				"epoch": "0",
-				"version": "0.996",
-				"release": "1.module_el8.4.0+2532+b8928c02.9",
-				"arch": "aarch64",
-				"filename": "mecab-0.996-1.module_el8.4.0+2532+b8928c02.9.aarch64.rpm",
-				"sum": "d23ebe5335af6f163e536f2a9ad26d5256e874df2ff6e7dca5c4d80c855c65f7",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mecab-ipadic-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.src.rpm",
-				"name": "mecab-ipadic",
-				"epoch": "0",
-				"version": "2.7.0.20070801",
-				"release": "16.module_el8.4.0+2532+b8928c02",
-				"arch": "aarch64",
-				"filename": "mecab-ipadic-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.aarch64.rpm",
-				"sum": "f03a74d0a129ec765e5c8b713138f65429c438952ce89753789d00f879948d68",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
-				"name": "mysql-test",
-				"epoch": "0",
-				"version": "8.0.26",
-				"release": "1.module_el8.4.0+2532+b8928c02",
-				"arch": "x86_64",
-				"filename": "mysql-test-8.0.26-1.module_el8.4.0+2532+b8928c02.x86_64.rpm",
-				"sum": "0f4cf7811efe5ecb118e7d1bc72792818fc4f9b2b6c850ef0a0564901a217945",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
-				"name": "mysql",
-				"epoch": "0",
-				"version": "8.0.26",
-				"release": "1.module_el8.4.0+2532+b8928c02",
-				"arch": "x86_64",
-				"filename": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.x86_64.rpm",
-				"sum": "1747eb28b211c6a675b0ab553e523502c8d267dd08ef46ab488a867da3ad2772",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
-				"name": "mysql-libs",
-				"epoch": "0",
-				"version": "8.0.26",
-				"release": "1.module_el8.4.0+2532+b8928c02",
-				"arch": "x86_64",
-				"filename": "mysql-libs-8.0.26-1.module_el8.4.0+2532+b8928c02.x86_64.rpm",
-				"sum": "205145e19a386155b72727a34c53dcafd707a9451ca2d41094798ed5275a7f20",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
 				"name": "mysql-common",
 				"epoch": "0",
 				"version": "8.0.26",
@@ -178,90 +106,6 @@
 				"arch": "x86_64",
 				"filename": "mysql-common-8.0.26-1.module_el8.4.0+2532+b8928c02.x86_64.rpm",
 				"sum": "2eecf3f0f37802eb1c3c2d41bc097c72fa8192e5a0325f6c0dd6355c1c8aec3c",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
-				"name": "mysql-server",
-				"epoch": "0",
-				"version": "8.0.26",
-				"release": "1.module_el8.4.0+2532+b8928c02",
-				"arch": "x86_64",
-				"filename": "mysql-server-8.0.26-1.module_el8.4.0+2532+b8928c02.x86_64.rpm",
-				"sum": "64e55395b287b7cc1c1ccc88462a0c9bddcceaf677eb5b993b467f8cfcfa5dcf",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mecab-0.996-1.module_el8.4.0+2532+b8928c02.9.src.rpm",
-				"name": "mecab",
-				"epoch": "0",
-				"version": "0.996",
-				"release": "1.module_el8.4.0+2532+b8928c02.9",
-				"arch": "x86_64",
-				"filename": "mecab-0.996-1.module_el8.4.0+2532+b8928c02.9.x86_64.rpm",
-				"sum": "70ddb89b5dab7580422739226a6c2a9cfd9ea37d86e658a560bd579d93e7a2f8",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
-				"name": "mysql-devel",
-				"epoch": "0",
-				"version": "8.0.26",
-				"release": "1.module_el8.4.0+2532+b8928c02",
-				"arch": "x86_64",
-				"filename": "mysql-devel-8.0.26-1.module_el8.4.0+2532+b8928c02.x86_64.rpm",
-				"sum": "7f37495e83819a8bb2b30f1f3376d4c8d670db9478c9606b27f6e0a1b5bc0d7a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
-				"name": "mysql-errmsg",
-				"epoch": "0",
-				"version": "8.0.26",
-				"release": "1.module_el8.4.0+2532+b8928c02",
-				"arch": "x86_64",
-				"filename": "mysql-errmsg-8.0.26-1.module_el8.4.0+2532+b8928c02.x86_64.rpm",
-				"sum": "dd3e8eae1ad38040eba8200d7fea500db3f4136bc2557e5e876d13348fcd4669",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mecab-ipadic-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.src.rpm",
-				"name": "mecab-ipadic-EUCJP",
-				"epoch": "0",
-				"version": "2.7.0.20070801",
-				"release": "16.module_el8.4.0+2532+b8928c02",
-				"arch": "x86_64",
-				"filename": "mecab-ipadic-EUCJP-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.x86_64.rpm",
-				"sum": "e7c6788b71c96ca8ca63fd038acaa9bbf0cf6e07c9ce08e6bc85ec6df4d17394",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mecab-ipadic-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.src.rpm",
-				"name": "mecab-ipadic",
-				"epoch": "0",
-				"version": "2.7.0.20070801",
-				"release": "16.module_el8.4.0+2532+b8928c02",
-				"arch": "x86_64",
-				"filename": "mecab-ipadic-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.x86_64.rpm",
-				"sum": "ef0f9ce428c6bd138cea55c89ddea2f479ab2e6854c2584b84f0178924260f95",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mysql-8.0.26-1.module_el8.5.0+33+8bc5f36a.src.rpm",
-				"name": "mysql-common",
-				"epoch": "0",
-				"version": "8.0.26",
-				"release": "1.module_el8.5.0+33+8bc5f36a",
-				"arch": "ppc64le",
-				"filename": "mysql-common-8.0.26-1.module_el8.5.0+33+8bc5f36a.ppc64le.rpm",
-				"sum": "2103c42f7d79958d0abfac5dc6b830c949d7d3207adb18147f6dd1afd1f634c0",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -302,6 +146,30 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
+				"name": "mysql-libs",
+				"epoch": "0",
+				"version": "8.0.26",
+				"release": "1.module_el8.4.0+2532+b8928c02",
+				"arch": "aarch64",
+				"filename": "mysql-libs-8.0.26-1.module_el8.4.0+2532+b8928c02.aarch64.rpm",
+				"sum": "58c0be65afe37067755a73a7e9f48f9432cf0b03f2ce713e60758e88b542e705",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
+				"name": "mysql-server",
+				"epoch": "0",
+				"version": "8.0.26",
+				"release": "1.module_el8.4.0+2532+b8928c02",
+				"arch": "x86_64",
+				"filename": "mysql-server-8.0.26-1.module_el8.4.0+2532+b8928c02.x86_64.rpm",
+				"sum": "64e55395b287b7cc1c1ccc88462a0c9bddcceaf677eb5b993b467f8cfcfa5dcf",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "mecab-ipadic-2.7.0.20070801-16.module_el8.5.0+33+8bc5f36a.src.rpm",
 				"name": "mecab-ipadic-EUCJP",
 				"epoch": "0",
@@ -310,6 +178,18 @@
 				"arch": "ppc64le",
 				"filename": "mecab-ipadic-EUCJP-2.7.0.20070801-16.module_el8.5.0+33+8bc5f36a.ppc64le.rpm",
 				"sum": "6923be24f74a5820b9260de6627b5241ebdb00dd574c8954eda21942b67ff892",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mecab-0.996-1.module_el8.4.0+2532+b8928c02.9.src.rpm",
+				"name": "mecab",
+				"epoch": "0",
+				"version": "0.996",
+				"release": "1.module_el8.4.0+2532+b8928c02.9",
+				"arch": "x86_64",
+				"filename": "mecab-0.996-1.module_el8.4.0+2532+b8928c02.9.x86_64.rpm",
+				"sum": "70ddb89b5dab7580422739226a6c2a9cfd9ea37d86e658a560bd579d93e7a2f8",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -326,6 +206,18 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
+				"name": "mysql-test",
+				"epoch": "0",
+				"version": "8.0.26",
+				"release": "1.module_el8.4.0+2532+b8928c02",
+				"arch": "aarch64",
+				"filename": "mysql-test-8.0.26-1.module_el8.4.0+2532+b8928c02.aarch64.rpm",
+				"sum": "7aa518f4381b67b394dd7734e1023f0bf904a61a733f6b188e17b4a3a2ab1a51",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "mysql-8.0.26-1.module_el8.5.0+33+8bc5f36a.src.rpm",
 				"name": "mysql-test",
 				"epoch": "0",
@@ -334,6 +226,42 @@
 				"arch": "ppc64le",
 				"filename": "mysql-test-8.0.26-1.module_el8.5.0+33+8bc5f36a.ppc64le.rpm",
 				"sum": "7c0b97cfd1d12787a1cad510a5f295733733e7c79f13c1f740a625cab1681f4a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
+				"name": "mysql-devel",
+				"epoch": "0",
+				"version": "8.0.26",
+				"release": "1.module_el8.4.0+2532+b8928c02",
+				"arch": "x86_64",
+				"filename": "mysql-devel-8.0.26-1.module_el8.4.0+2532+b8928c02.x86_64.rpm",
+				"sum": "7f37495e83819a8bb2b30f1f3376d4c8d670db9478c9606b27f6e0a1b5bc0d7a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
+				"name": "mysql",
+				"epoch": "0",
+				"version": "8.0.26",
+				"release": "1.module_el8.4.0+2532+b8928c02",
+				"arch": "aarch64",
+				"filename": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.aarch64.rpm",
+				"sum": "a4af0580e44633121c7e4e4cf21a482ce22f6c8e21a47111d5054f71fd07f52b",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
+				"name": "mysql-server",
+				"epoch": "0",
+				"version": "8.0.26",
+				"release": "1.module_el8.4.0+2532+b8928c02",
+				"arch": "aarch64",
+				"filename": "mysql-server-8.0.26-1.module_el8.4.0+2532+b8928c02.aarch64.rpm",
+				"sum": "bbf887d7ad71a0a0f3fa1c6e14a1bf1f18f3fde64cac99606b9b582e4e3a7c4f",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -362,6 +290,78 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "mecab-ipadic-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.src.rpm",
+				"name": "mecab-ipadic-EUCJP",
+				"epoch": "0",
+				"version": "2.7.0.20070801",
+				"release": "16.module_el8.4.0+2532+b8928c02",
+				"arch": "aarch64",
+				"filename": "mecab-ipadic-EUCJP-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.aarch64.rpm",
+				"sum": "c6de4184ff4713273b239119db1b036ea35621fdc1152a9c45cf1d6fdfadd574",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mecab-0.996-1.module_el8.4.0+2532+b8928c02.9.src.rpm",
+				"name": "mecab",
+				"epoch": "0",
+				"version": "0.996",
+				"release": "1.module_el8.4.0+2532+b8928c02.9",
+				"arch": "aarch64",
+				"filename": "mecab-0.996-1.module_el8.4.0+2532+b8928c02.9.aarch64.rpm",
+				"sum": "d23ebe5335af6f163e536f2a9ad26d5256e874df2ff6e7dca5c4d80c855c65f7",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mysql-8.0.26-1.module_el8.4.0+2532+b8928c02.src.rpm",
+				"name": "mysql-errmsg",
+				"epoch": "0",
+				"version": "8.0.26",
+				"release": "1.module_el8.4.0+2532+b8928c02",
+				"arch": "x86_64",
+				"filename": "mysql-errmsg-8.0.26-1.module_el8.4.0+2532+b8928c02.x86_64.rpm",
+				"sum": "dd3e8eae1ad38040eba8200d7fea500db3f4136bc2557e5e876d13348fcd4669",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mecab-ipadic-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.src.rpm",
+				"name": "mecab-ipadic-EUCJP",
+				"epoch": "0",
+				"version": "2.7.0.20070801",
+				"release": "16.module_el8.4.0+2532+b8928c02",
+				"arch": "x86_64",
+				"filename": "mecab-ipadic-EUCJP-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.x86_64.rpm",
+				"sum": "e7c6788b71c96ca8ca63fd038acaa9bbf0cf6e07c9ce08e6bc85ec6df4d17394",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mecab-ipadic-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.src.rpm",
+				"name": "mecab-ipadic",
+				"epoch": "0",
+				"version": "2.7.0.20070801",
+				"release": "16.module_el8.4.0+2532+b8928c02",
+				"arch": "x86_64",
+				"filename": "mecab-ipadic-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.x86_64.rpm",
+				"sum": "ef0f9ce428c6bd138cea55c89ddea2f479ab2e6854c2584b84f0178924260f95",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mecab-ipadic-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.src.rpm",
+				"name": "mecab-ipadic",
+				"epoch": "0",
+				"version": "2.7.0.20070801",
+				"release": "16.module_el8.4.0+2532+b8928c02",
+				"arch": "aarch64",
+				"filename": "mecab-ipadic-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.aarch64.rpm",
+				"sum": "f03a74d0a129ec765e5c8b713138f65429c438952ce89753789d00f879948d68",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "mysql-8.0.26-1.module_el8.5.0+33+8bc5f36a.src.rpm",
 				"name": "mysql-server",
 				"epoch": "0",
@@ -377,12 +377,6 @@
 	},
 	"description": "MySQL is a multi-user, multi-threaded SQL database server. It consists of the MySQL server daemon (mysqld) and many client programs and libraries.\n\nThe following packages have been upgraded to a later upstream version: mysql (8.0.26). (BZ#1996693)\n\nSecurity Fix(es):\n\n* mysql: Server: Stored Procedure multiple vulnerabilities (CVE-2020-14672, CVE-2021-2046, CVE-2021-2072, CVE-2021-2081, CVE-2021-2215, CVE-2021-2217, CVE-2021-2293, CVE-2021-2304, CVE-2021-2424)\n\n* mysql: Server: FTS multiple vulnerabilities (CVE-2020-14765, CVE-2020-14789, CVE-2020-14804)\n\n* mysql: Server: Optimizer multiple vulnerabilities (CVE-2020-14769, CVE-2020-14773, CVE-2020-14777, CVE-2020-14785, CVE-2020-14793, CVE-2020-14794, CVE-2020-14809, CVE-2020-14830, CVE-2020-14836, CVE-2020-14837, CVE-2020-14839, CVE-2020-14845, CVE-2020-14846, CVE-2020-14861, CVE-2020-14866, CVE-2020-14868, CVE-2020-14888, CVE-2020-14891, CVE-2020-14893, CVE-2021-2001, CVE-2021-2021, CVE-2021-2024, CVE-2021-2030, CVE-2021-2031, CVE-2021-2036, CVE-2021-2055, CVE-2021-2060, CVE-2021-2065, CVE-2021-2070, CVE-2021-2076, CVE-2021-2164, CVE-2021-2169, CVE-2021-2170, CVE-2021-2193, CVE-2021-2203, CVE-2021-2212, CVE-2021-2213, CVE-2021-2230, CVE-2021-2278, CVE-2021-2298, CVE-2021-2299, CVE-2021-2342, CVE-2021-2357, CVE-2021-2367, CVE-2021-2383, CVE-2021-2384, CVE-2021-2387, CVE-2021-2410, CVE-2021-2412, CVE-2021-2418, CVE-2021-2425, CVE-2021-2426, CVE-2021-2427, CVE-2021-2437, CVE-2021-2441, CVE-2021-2444)\n\n* mysql: InnoDB multiple vulnerabilities (CVE-2020-14775, CVE-2020-14776, CVE-2020-14821, CVE-2020-14829, CVE-2020-14848, CVE-2021-2022, CVE-2021-2028, CVE-2021-2048, CVE-2021-2174, CVE-2021-2180, CVE-2021-2194, CVE-2021-2372, CVE-2021-2374, CVE-2021-2389, CVE-2021-2390, CVE-2021-2429, CVE-2020-14791, CVE-2021-2042)\n\n* mysql: Server: PS multiple vulnerabilities (CVE-2020-14786, CVE-2020-14790, CVE-2020-14844, CVE-2021-2422)\n\n* mysql: Server: Security multiple vulnerabilities (CVE-2020-14800, CVE-2020-14838, CVE-2020-14860)\n\n* mysql: Server: Locking multiple vulnerabilities (CVE-2020-14812, CVE-2021-2058, CVE-2021-2402)\n\n* mysql: Server: DML multiple vulnerabilities (CVE-2020-14814, CVE-2020-14828, CVE-2021-2056, CVE-2021-2087, CVE-2021-2088, CVE-2021-2166, CVE-2021-2172, CVE-2021-2196, CVE-2021-2300, CVE-2021-2305, CVE-2021-2370, CVE-2021-2440)\n\n* mysql: Server: Charsets unspecified vulnerability (CVE-2020-14852)\n\n* mysql: Server: DDL multiple vulnerabilities (CVE-2020-14867, CVE-2021-2061, CVE-2021-2122, CVE-2021-2339, CVE-2021-2352, CVE-2021-2399)\n\n* mysql: Server: X Plugin unspecified vulnerability (CVE-2020-14870)\n\n* mysql: Server: Logging unspecified vulnerability (CVE-2020-14873)\n\n* mysql: Server: Replication multiple vulnerabilities (CVE-2021-2002, CVE-2021-2171, CVE-2021-2178, CVE-2021-2202, CVE-2021-2356, CVE-2021-2385)\n\n* mysql: C API multiple vulnerabilities (CVE-2021-2010, CVE-2021-2011)\n\n* mysql: Server: Components Services unspecified vulnerability (CVE-2021-2038)\n\n* mysql: Server: Options unspecified vulnerability (CVE-2021-2146)\n\n* mysql: Server: Group Replication Plugin multiple vulnerabilities (CVE-2021-2179, CVE-2021-2232)\n\n* mysql: Server: Partition multiple vulnerabilities (CVE-2021-2201, CVE-2021-2208)\n\n* mysql: Server: Information Schema multiple vulnerabilities (CVE-2021-2032, CVE-2021-2226, CVE-2021-2301, CVE-2021-2308)\n\n* mysql: Server: Packaging unspecified vulnerability (CVE-2021-2307)\n\n* mysql: Server: Federated unspecified vulnerability (CVE-2021-2354)\n\n* mysql: Server: GIS unspecified vulnerability (CVE-2021-2417)\n\n* mysql: Server: Memcached unspecified vulnerability (CVE-2021-2340)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nBug Fix(es):\n\n* Segfault and possible DoS with a crafted query (BZ#1996699)",
 	"references": [
-		{
-			"id": "ALSA-2021-3590",
-			"title": "ALSA-2021-3590",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2021-3590.html"
-		},
 		{
 			"id": "CVE-2020-14672",
 			"title": "CVE-2020-14672",
@@ -1228,6 +1222,12 @@
 			"title": "CVE-2021-35629",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2021-35629"
+		},
+		{
+			"id": "ALSA-2021-3590",
+			"title": "ALSA-2021-3590",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-3590.html"
 		}
 	],
 	"issued_date": {

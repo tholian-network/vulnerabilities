@@ -10,33 +10,9 @@
 	"summary": "toolbox security and bug fix update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
 		"packages": [
-			{
-				"src": "toolbox-0.0.99.3-5.el9.src.rpm",
-				"name": "toolbox-tests",
-				"epoch": "0",
-				"version": "0.0.99.3",
-				"release": "5.el9",
-				"arch": "aarch64",
-				"filename": "toolbox-tests-0.0.99.3-5.el9.aarch64.rpm",
-				"sum": "5a7dbb7577025725ed04679a45df55a5e21f5f42985c05eb8533668226bf1c2b",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "toolbox-0.0.99.3-5.el9.src.rpm",
-				"name": "toolbox",
-				"epoch": "0",
-				"version": "0.0.99.3",
-				"release": "5.el9",
-				"arch": "aarch64",
-				"filename": "toolbox-0.0.99.3-5.el9.aarch64.rpm",
-				"sum": "90826184d3e2d3a72b2b934cd74508f7aae17de1c73b5d141b199434870c6513",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "toolbox-0.0.99.3-5.el9.src.rpm",
 				"name": "toolbox",
@@ -46,6 +22,18 @@
 				"arch": "s390x",
 				"filename": "toolbox-0.0.99.3-5.el9.s390x.rpm",
 				"sum": "2edbcdb27866b5758291c55206e31ede8a0d7b097dcace6acd0b81f304de2965",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "toolbox-0.0.99.3-5.el9.src.rpm",
+				"name": "toolbox-tests",
+				"epoch": "0",
+				"version": "0.0.99.3",
+				"release": "5.el9",
+				"arch": "aarch64",
+				"filename": "toolbox-tests-0.0.99.3-5.el9.aarch64.rpm",
+				"sum": "5a7dbb7577025725ed04679a45df55a5e21f5f42985c05eb8533668226bf1c2b",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -79,9 +67,9 @@
 				"epoch": "0",
 				"version": "0.0.99.3",
 				"release": "5.el9",
-				"arch": "x86_64",
-				"filename": "toolbox-0.0.99.3-5.el9.x86_64.rpm",
-				"sum": "e03ca338e92ceaa677c403e2d45021d711a1d132a5e019a4bfe24824e4985315",
+				"arch": "aarch64",
+				"filename": "toolbox-0.0.99.3-5.el9.aarch64.rpm",
+				"sum": "90826184d3e2d3a72b2b934cd74508f7aae17de1c73b5d141b199434870c6513",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -108,16 +96,46 @@
 				"sum": "b9639f2bc8db4f4bcb958ff6ff5c66ce23437bd09e73a9a5a301a9f8d33c2aa0",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "toolbox-0.0.99.3-5.el9.src.rpm",
+				"name": "toolbox",
+				"epoch": "0",
+				"version": "0.0.99.3",
+				"release": "5.el9",
+				"arch": "x86_64",
+				"filename": "toolbox-0.0.99.3-5.el9.x86_64.rpm",
+				"sum": "e03ca338e92ceaa677c403e2d45021d711a1d132a5e019a4bfe24824e4985315",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "Toolbox is a tool for Linux operating systems, which allows the use of containerized command line environments. It is built on top of Podman and other standard container technologies from OCI.\n\nSecurity Fix(es):\n\n* golang: net/http: improper sanitization of Transfer-Encoding header (CVE-2022-1705)\n* golang: io/fs: stack exhaustion in Glob (CVE-2022-30630)\n* golang: compress/gzip: stack exhaustion in Reader.Read (CVE-2022-30631)\n* golang: path/filepath: stack exhaustion in Glob (CVE-2022-30632)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:8098",
-			"title": "RHSA-2022:8098",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:8098"
+			"id": "2107342",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107342"
+		},
+		{
+			"id": "2107371",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107371"
+		},
+		{
+			"id": "2107374",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107374"
+		},
+		{
+			"id": "2107386",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107386"
 		},
 		{
 			"id": "CVE-2022-1705",
@@ -144,28 +162,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-30632"
 		},
 		{
-			"id": "2107342",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107342"
-		},
-		{
-			"id": "2107371",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107371"
-		},
-		{
-			"id": "2107374",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107374"
-		},
-		{
-			"id": "2107386",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107386"
+			"id": "RHSA-2022:8098",
+			"title": "RHSA-2022:8098",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:8098"
 		},
 		{
 			"id": "ALSA-2022:8098",

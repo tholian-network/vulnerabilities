@@ -162,10 +162,184 @@
 	"description": "The kernel-rt packages provide the Real Time Linux Kernel, which enables fine-tuning for systems with extremely high determinism requirements.\n\nSecurity Fix(es):\n\n* off-path attacker may inject data or terminate victim's TCP session (CVE-2020-36516)\n* use-after-free vulnerability in function sco_sock_sendmsg() (CVE-2021-3640)\n* smb2_ioctl_query_info NULL pointer dereference (CVE-2022-0168)\n* NULL pointer dereference in udf_expand_file_adinicbdue() during writeback (CVE-2022-0617)\n* swiotlb information leak with DMA_FROM_DEVICE (CVE-2022-0854)\n* uninitialized registers on stack in nft_do_chain can cause kernel pointer leakage to UM (CVE-2022-1016)\n* race condition in snd_pcm_hw_free leading to use-after-free (CVE-2022-1048)\n* use-after-free and memory errors in ext4 when mounting and operating on a corrupted image (CVE-2022-1184)\n* concurrency use-after-free between drm_setmaster_ioctl and drm_mode_getresources (CVE-2022-1280)\n* kernel info leak issue in pfkey_register (CVE-2022-1353)\n* use-after-free in ath9k_htc_probe_device() could cause an escalation of privileges (CVE-2022-1679)\n* NULL pointer dereference in x86_emulate_insn may lead to DoS (CVE-2022-1852)\n* fanotify misuses fd_install() which could lead to use-after-free (CVE-2022-1998)\n* nf_tables cross-table potential use-after-free may lead to local privilege escalation (CVE-2022-2586)\n* openvswitch: integer underflow leads to out-of-bounds write in reserve_sfa_size() (CVE-2022-2639)\n* slab-out-of-bounds access in packet_recvmsg() (CVE-2022-20368)\n* incomplete clean-up of multi-core shared buffers (aka SBDR) (CVE-2022-21123)\n* incomplete clean-up of microarchitectural fill buffers (aka SBDS) (CVE-2022-21125)\n* incomplete clean-up in specific special register write operations (aka DRPW) (CVE-2022-21166)\n* possible to use the debugger to write zero into a location of choice (CVE-2022-21499)\n* AMD: RetBleed Arbitrary Speculative Code Execution with Return Instructions (CVE-2022-23816, CVE-2022-29900)\n* AMD: Branch Type Confusion (non-retbleed) (CVE-2022-23825)\n* Intel: Post-barrier Return Stack Buffer Predictions (CVE-2022-26373)\n* double free in ems_usb_start_xmit in drivers/net/can/usb/ems_usb.c (CVE-2022-28390)\n* use after free in SUNRPC subsystem (CVE-2022-28893)\n* use-after-free due to improper update of reference count in net/sched/cls_u32.c (CVE-2022-29581)\n* Intel: RetBleed Arbitrary Speculative Code Execution with Return Instructions (CVE-2022-29901)\n* DoS in nfqnl_mangle in net/netfilter/nfnetlink_queue.c (CVE-2022-36946)\n* nf_tables disallow binding to already bound chain (CVE-2022-39190)\n* nfs_atomic_open() returns uninitialized data instead of ENOTDIR (CVE-2022-24448)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:7933",
-			"title": "RHSA-2022:7933",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:7933"
+			"id": "1980646",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/1980646"
+		},
+		{
+			"id": "2037386",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2037386"
+		},
+		{
+			"id": "2051444",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2051444"
+		},
+		{
+			"id": "2052312",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2052312"
+		},
+		{
+			"id": "2053632",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2053632"
+		},
+		{
+			"id": "2058395",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2058395"
+		},
+		{
+			"id": "2059928",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2059928"
+		},
+		{
+			"id": "2066614",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2066614"
+		},
+		{
+			"id": "2066706",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2066706"
+		},
+		{
+			"id": "2066819",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2066819"
+		},
+		{
+			"id": "2070205",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2070205"
+		},
+		{
+			"id": "2071022",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2071022"
+		},
+		{
+			"id": "2073064",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2073064"
+		},
+		{
+			"id": "2074208",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2074208"
+		},
+		{
+			"id": "2084125",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2084125"
+		},
+		{
+			"id": "2084183",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2084183"
+		},
+		{
+			"id": "2084479",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2084479"
+		},
+		{
+			"id": "2088021",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2088021"
+		},
+		{
+			"id": "2089815",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2089815"
+		},
+		{
+			"id": "2090226",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2090226"
+		},
+		{
+			"id": "2090237",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2090237"
+		},
+		{
+			"id": "2090240",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2090240"
+		},
+		{
+			"id": "2090241",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2090241"
+		},
+		{
+			"id": "2103148",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2103148"
+		},
+		{
+			"id": "2103153",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2103153"
+		},
+		{
+			"id": "2114878",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2114878"
+		},
+		{
+			"id": "2115065",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2115065"
+		},
+		{
+			"id": "2115278",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2115278"
+		},
+		{
+			"id": "2123695",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2123695"
+		},
+		{
+			"id": "2129152",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2129152"
 		},
 		{
 			"id": "CVE-2020-36516",
@@ -354,184 +528,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-39190"
 		},
 		{
-			"id": "1980646",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/1980646"
-		},
-		{
-			"id": "2037386",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2037386"
-		},
-		{
-			"id": "2051444",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2051444"
-		},
-		{
-			"id": "2052312",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2052312"
-		},
-		{
-			"id": "2053632",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2053632"
-		},
-		{
-			"id": "2058395",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2058395"
-		},
-		{
-			"id": "2059928",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2059928"
-		},
-		{
-			"id": "2066614",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2066614"
-		},
-		{
-			"id": "2066706",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2066706"
-		},
-		{
-			"id": "2066819",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2066819"
-		},
-		{
-			"id": "2070205",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2070205"
-		},
-		{
-			"id": "2071022",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2071022"
-		},
-		{
-			"id": "2073064",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2073064"
-		},
-		{
-			"id": "2074208",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2074208"
-		},
-		{
-			"id": "2084125",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2084125"
-		},
-		{
-			"id": "2084183",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2084183"
-		},
-		{
-			"id": "2084479",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2084479"
-		},
-		{
-			"id": "2088021",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2088021"
-		},
-		{
-			"id": "2089815",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2089815"
-		},
-		{
-			"id": "2090226",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2090226"
-		},
-		{
-			"id": "2090237",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2090237"
-		},
-		{
-			"id": "2090240",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2090240"
-		},
-		{
-			"id": "2090241",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2090241"
-		},
-		{
-			"id": "2103148",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2103148"
-		},
-		{
-			"id": "2103153",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2103153"
-		},
-		{
-			"id": "2114878",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2114878"
-		},
-		{
-			"id": "2115065",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2115065"
-		},
-		{
-			"id": "2115278",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2115278"
-		},
-		{
-			"id": "2123695",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2123695"
-		},
-		{
-			"id": "2129152",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2129152"
+			"id": "RHSA-2022:7933",
+			"title": "RHSA-2022:7933",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:7933"
 		},
 		{
 			"id": "ALSA-2022:7933",

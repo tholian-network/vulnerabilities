@@ -10,9 +10,33 @@
 	"summary": "dnsmasq security and bug fix update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
 		"packages": [
+			{
+				"src": "dnsmasq-2.85-5.el9.src.rpm",
+				"name": "dnsmasq-utils",
+				"epoch": "0",
+				"version": "2.85",
+				"release": "5.el9",
+				"arch": "ppc64le",
+				"filename": "dnsmasq-utils-2.85-5.el9.ppc64le.rpm",
+				"sum": "13f0cf13c4a737f4d2da5be9dbd3fe7b551c79606ab1bf8f20f316b8cf095b62",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "dnsmasq-2.85-5.el9.src.rpm",
+				"name": "dnsmasq",
+				"epoch": "0",
+				"version": "2.85",
+				"release": "5.el9",
+				"arch": "ppc64le",
+				"filename": "dnsmasq-2.85-5.el9.ppc64le.rpm",
+				"sum": "4e057799a9dc6c3fce5617d8892c1042189d2b711afa6e32812e4e543d4a52c7",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "dnsmasq-2.85-5.el9.src.rpm",
 				"name": "dnsmasq",
@@ -84,40 +108,16 @@
 				"sum": "f465b75549e6ffbe3baa1643a4c6d0b28f996baabef0473b15e97b4cd872420b",
 				"sum_type": 5,
 				"reboot_suggested": 0
-			},
-			{
-				"src": "dnsmasq-2.85-5.el9.src.rpm",
-				"name": "dnsmasq-utils",
-				"epoch": "0",
-				"version": "2.85",
-				"release": "5.el9",
-				"arch": "ppc64le",
-				"filename": "dnsmasq-utils-2.85-5.el9.ppc64le.rpm",
-				"sum": "13f0cf13c4a737f4d2da5be9dbd3fe7b551c79606ab1bf8f20f316b8cf095b62",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "dnsmasq-2.85-5.el9.src.rpm",
-				"name": "dnsmasq",
-				"epoch": "0",
-				"version": "2.85",
-				"release": "5.el9",
-				"arch": "ppc64le",
-				"filename": "dnsmasq-2.85-5.el9.ppc64le.rpm",
-				"sum": "4e057799a9dc6c3fce5617d8892c1042189d2b711afa6e32812e4e543d4a52c7",
-				"sum_type": 5,
-				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "The dnsmasq packages contain Dnsmasq, a lightweight DNS (Domain Name Server) forwarder and DHCP (Dynamic Host Configuration Protocol) server.\n\nSecurity Fix(es):\n\n* dnsmasq: Heap use after free in dhcp6_no_relay (CVE-2022-0934)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:8070",
-			"title": "RHSA-2022:8070",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:8070"
+			"id": "2057075",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2057075"
 		},
 		{
 			"id": "CVE-2022-0934",
@@ -126,10 +126,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-0934"
 		},
 		{
-			"id": "2057075",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2057075"
+			"id": "RHSA-2022:8070",
+			"title": "RHSA-2022:8070",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:8070"
 		},
 		{
 			"id": "ALSA-2022:8070",

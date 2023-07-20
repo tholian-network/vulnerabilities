@@ -27,6 +27,18 @@
 			},
 			{
 				"src": "expat-2.2.5-10.el8_7.1.src.rpm",
+				"name": "expat-devel",
+				"epoch": "0",
+				"version": "2.2.5",
+				"release": "10.el8_7.1",
+				"arch": "ppc64le",
+				"filename": "expat-devel-2.2.5-10.el8_7.1.ppc64le.rpm",
+				"sum": "7e0d538fe12071e2ce64bf6209580caa77f8c1a3b27f972e7477736eea323832",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "expat-2.2.5-10.el8_7.1.src.rpm",
 				"name": "expat",
 				"epoch": "0",
 				"version": "2.2.5",
@@ -46,18 +58,6 @@
 				"arch": "x86_64",
 				"filename": "expat-devel-2.2.5-10.el8_7.1.x86_64.rpm",
 				"sum": "97c32fb1d238599e834019d4ff10214b0f2c26d64c007e6628c182731758376e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "expat-2.2.5-10.el8_7.1.src.rpm",
-				"name": "expat",
-				"epoch": "0",
-				"version": "2.2.5",
-				"release": "10.el8_7.1",
-				"arch": "x86_64",
-				"filename": "expat-2.2.5-10.el8_7.1.x86_64.rpm",
-				"sum": "beccf4f549a21235ceb64179af17871a0a472f8ec6d39dd1c19749b8fc91acd8",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -87,25 +87,13 @@
 			},
 			{
 				"src": "expat-2.2.5-10.el8_7.1.src.rpm",
-				"name": "expat-devel",
-				"epoch": "0",
-				"version": "2.2.5",
-				"release": "10.el8_7.1",
-				"arch": "ppc64le",
-				"filename": "expat-devel-2.2.5-10.el8_7.1.ppc64le.rpm",
-				"sum": "7e0d538fe12071e2ce64bf6209580caa77f8c1a3b27f972e7477736eea323832",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "expat-2.2.5-10.el8_7.1.src.rpm",
 				"name": "expat",
 				"epoch": "0",
 				"version": "2.2.5",
 				"release": "10.el8_7.1",
-				"arch": "ppc64le",
-				"filename": "expat-2.2.5-10.el8_7.1.ppc64le.rpm",
-				"sum": "ea8d51e48d02928f8936f87e157ba742c3549c29234a8ef8b2e32a16b32a3458",
+				"arch": "x86_64",
+				"filename": "expat-2.2.5-10.el8_7.1.x86_64.rpm",
+				"sum": "beccf4f549a21235ceb64179af17871a0a472f8ec6d39dd1c19749b8fc91acd8",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -118,6 +106,18 @@
 				"arch": "s390x",
 				"filename": "expat-2.2.5-10.el8_7.1.s390x.rpm",
 				"sum": "d75cae647435ac1b334f30c79e57406e89dc34a13736f0532083910a19b6ef21",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "expat-2.2.5-10.el8_7.1.src.rpm",
+				"name": "expat",
+				"epoch": "0",
+				"version": "2.2.5",
+				"release": "10.el8_7.1",
+				"arch": "ppc64le",
+				"filename": "expat-2.2.5-10.el8_7.1.ppc64le.rpm",
+				"sum": "ea8d51e48d02928f8936f87e157ba742c3549c29234a8ef8b2e32a16b32a3458",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -138,10 +138,10 @@
 	"description": "Expat is a C library for parsing XML documents.\n\nSecurity Fix(es):\n\n* expat: use-after free caused by overeager destruction of a shared DTD in\nXML_ExternalEntityParserCreate (CVE-2022-43680)\n\nFor more details about the security issue(s), including the impact, a CVSS\nscore, acknowledgments, and other related information, refer to the CVE page(s)\nlisted in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:0103",
-			"title": "RHSA-2023:0103",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:0103"
+			"id": "2140059",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2140059"
 		},
 		{
 			"id": "CVE-2022-43680",
@@ -150,10 +150,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-43680"
 		},
 		{
-			"id": "2140059",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2140059"
+			"id": "RHSA-2023:0103",
+			"title": "RHSA-2023:0103",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:0103"
 		},
 		{
 			"id": "ALSA-2023:0103",
@@ -166,6 +166,6 @@
 		"$date": 1673481600000
 	},
 	"updated_date": {
-		"$date": 1673868957000
+		"$date": 1678275615000
 	}
 }

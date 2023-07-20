@@ -10,21 +10,9 @@
 	"summary": "mutt security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_6_default",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_6_default",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_6_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_6_default",
 		"packages": [
-			{
-				"src": "mutt-2.0.7-2.el8.src.rpm",
-				"name": "mutt",
-				"epoch": "5",
-				"version": "2.0.7",
-				"release": "2.el8",
-				"arch": "aarch64",
-				"filename": "mutt-2.0.7-2.el8.aarch64.rpm",
-				"sum": "7eeb05e159080b9854fcab4d042aa3e1289c9da5601a2665d72054598287ade3",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "mutt-2.0.7-2.el8.src.rpm",
 				"name": "mutt",
@@ -34,6 +22,18 @@
 				"arch": "x86_64",
 				"filename": "mutt-2.0.7-2.el8.x86_64.rpm",
 				"sum": "08d04c19279e9de89b298da4f8adefa016345ebafd86a8d0aaf9bbdf5e9a2ce7",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mutt-2.0.7-2.el8.src.rpm",
+				"name": "mutt",
+				"epoch": "5",
+				"version": "2.0.7",
+				"release": "2.el8",
+				"arch": "aarch64",
+				"filename": "mutt-2.0.7-2.el8.aarch64.rpm",
+				"sum": "7eeb05e159080b9854fcab4d042aa3e1289c9da5601a2665d72054598287ade3",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -66,10 +66,10 @@
 	"description": "Mutt is a low resource, highly configurable, text-based MIME e-mail client. Mutt supports most e-mail storing formats, such as mbox and Maildir, as well as most protocols, including POP3 and IMAP.\n\nSecurity Fix(es):\n\n* mutt: buffer overflow in uudecoder function (CVE-2022-1328)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:7640",
-			"title": "RHSA-2022:7640",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:7640"
+			"id": "2076058",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2076058"
 		},
 		{
 			"id": "CVE-2022-1328",
@@ -78,10 +78,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-1328"
 		},
 		{
-			"id": "2076058",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2076058"
+			"id": "RHSA-2022:7640",
+			"title": "RHSA-2022:7640",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:7640"
 		},
 		{
 			"id": "ALSA-2022:7640",

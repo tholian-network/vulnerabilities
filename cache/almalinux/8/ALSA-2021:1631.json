@@ -10,8 +10,8 @@
 	"summary": "An update for python-urllib3 is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "3",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-baseos-rpms__8_0_default",
-		"shortname": "almalinux-8-for-x86_64-baseos-rpms__8_0_default",
+		"name": "almalinux-8-for-aarch64-baseos-rpms__8_0_default",
+		"shortname": "almalinux-8-for-aarch64-baseos-rpms__8_0_default",
 		"packages": [
 			{
 				"src": "python-urllib3-1.24.2-5.el8.src.rpm",
@@ -30,16 +30,16 @@
 	"description": "The python-urllib3 package provides the Python HTTP module with connection pooling and file POST abilities.\n\nSecurity Fix(es):\n\n* python-urllib3: CRLF injection via HTTP request method (CVE-2020-26137)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "ALSA-2021-1631",
-			"title": "ALSA-2021-1631",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2021-1631.html"
-		},
-		{
 			"id": "CVE-2020-26137",
 			"title": "CVE-2020-26137",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2020-26137"
+		},
+		{
+			"id": "ALSA-2021-1631",
+			"title": "ALSA-2021-1631",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-1631.html"
 		}
 	],
 	"issued_date": {

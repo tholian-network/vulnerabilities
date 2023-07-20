@@ -530,18 +530,6 @@
 				"reboot_suggested": 0
 			},
 			{
-				"src": "hawtjni-1.16-2.module_el8.6.0+2752+f1f3449e.src.rpm",
-				"name": "hawtjni-runtime",
-				"epoch": "0",
-				"version": "1.16",
-				"release": "2.module_el8.6.0+2752+f1f3449e",
-				"arch": "noarch",
-				"filename": "hawtjni-runtime-1.16-2.module_el8.6.0+2752+f1f3449e.noarch.rpm",
-				"sum": "f0ff23714d7896c1400d162a43b08073630b86bd787f25a60ee735b7b0de3549",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
 				"src": "jansi-native-1.7-7.module_el8.6.0+2752+f1f3449e.src.rpm",
 				"name": "jansi-native",
 				"epoch": "0",
@@ -552,22 +540,34 @@
 				"sum": "f0f6ef70ea4e09d3895d7d0d31f8481ba3d5cd4a47af7c7bee8cb30806aff163",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "hawtjni-1.16-2.module_el8.6.0+2752+f1f3449e.src.rpm",
+				"name": "hawtjni-runtime",
+				"epoch": "0",
+				"version": "1.16",
+				"release": "2.module_el8.6.0+2752+f1f3449e",
+				"arch": "noarch",
+				"filename": "hawtjni-runtime-1.16-2.module_el8.6.0+2752+f1f3449e.noarch.rpm",
+				"sum": "f0ff23714d7896c1400d162a43b08073630b86bd787f25a60ee735b7b0de3549",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "The Apache Maven Shared Utils project aims to be an improved functional replacement for plexus-utils in Maven.\n\nSecurity Fix(es):\n\n* maven-shared-utils: Command injection via Commandline class (CVE-2022-29599)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "ALSA-2022-4798",
-			"title": "ALSA-2022-4798",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2022-4798.html"
-		},
-		{
 			"id": "CVE-2022-29599",
 			"title": "CVE-2022-29599",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2022-29599"
+		},
+		{
+			"id": "ALSA-2022-4798",
+			"title": "ALSA-2022-4798",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-4798.html"
 		}
 	],
 	"issued_date": {

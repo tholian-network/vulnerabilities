@@ -10,9 +10,57 @@
 	"summary": "An update for exiv2 is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "2",
 	"pkglist": {
-		"name": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
-		"shortname": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
+		"name": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
+		"shortname": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
 		"packages": [
+			{
+				"src": "exiv2-0.27.5-2.el8.src.rpm",
+				"name": "exiv2-devel",
+				"epoch": "0",
+				"version": "0.27.5",
+				"release": "2.el8",
+				"arch": "ppc64le",
+				"filename": "exiv2-devel-0.27.5-2.el8.ppc64le.rpm",
+				"sum": "481c160690555f863db65c184f143cf6bd4873db6f117c1b3d9b82de96c92146",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "exiv2-0.27.5-2.el8.src.rpm",
+				"name": "exiv2-devel",
+				"epoch": "0",
+				"version": "0.27.5",
+				"release": "2.el8",
+				"arch": "x86_64",
+				"filename": "exiv2-devel-0.27.5-2.el8.x86_64.rpm",
+				"sum": "69978b4162ce14244cafd4fad8900b9ca6ad25e8b097d51d93dc189cc00abf8e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "exiv2-0.27.5-2.el8.src.rpm",
+				"name": "exiv2-devel",
+				"epoch": "0",
+				"version": "0.27.5",
+				"release": "2.el8",
+				"arch": "x86_64",
+				"filename": "exiv2-devel-0.27.5-2.el8.x86_64.rpm",
+				"sum": "69978b4162ce14244cafd4fad8900b9ca6ad25e8b097d51d93dc189cc00abf8e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "exiv2-0.27.5-2.el8.src.rpm",
+				"name": "exiv2",
+				"epoch": "0",
+				"version": "0.27.5",
+				"release": "2.el8",
+				"arch": "ppc64le",
+				"filename": "exiv2-0.27.5-2.el8.ppc64le.rpm",
+				"sum": "6c53b3bd193621213a9878a6656168d91d0ff55ec8ef83e8c3cf14ae40d4b933",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "exiv2-0.27.5-2.el8.src.rpm",
 				"name": "exiv2",
@@ -31,9 +79,45 @@
 				"epoch": "0",
 				"version": "0.27.5",
 				"release": "2.el8",
+				"arch": "ppc64le",
+				"filename": "exiv2-libs-0.27.5-2.el8.ppc64le.rpm",
+				"sum": "869dc81d57fc09feab2cf4347c7fdcc6773b493baa3eb4c562d4353abfd4e988",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "exiv2-0.27.5-2.el8.src.rpm",
+				"name": "exiv2-libs",
+				"epoch": "0",
+				"version": "0.27.5",
+				"release": "2.el8",
 				"arch": "aarch64",
 				"filename": "exiv2-libs-0.27.5-2.el8.aarch64.rpm",
 				"sum": "bbb61fbf2e893f94ed644df63601625df0020eee6bbd8984c643ac20ce67f139",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "exiv2-0.27.5-2.el8.src.rpm",
+				"name": "exiv2-libs",
+				"epoch": "0",
+				"version": "0.27.5",
+				"release": "2.el8",
+				"arch": "x86_64",
+				"filename": "exiv2-libs-0.27.5-2.el8.x86_64.rpm",
+				"sum": "c0d7b84d277a88bf64d9a691c3cd6d5fce4c5b094390ee8223a9d5ab38da3e92",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "exiv2-0.27.5-2.el8.src.rpm",
+				"name": "exiv2-libs",
+				"epoch": "0",
+				"version": "0.27.5",
+				"release": "2.el8",
+				"arch": "i686",
+				"filename": "exiv2-libs-0.27.5-2.el8.i686.rpm",
+				"sum": "cb378401d767cd7085a19640575664f073ebc8dd1349236e1acb895efc0fba99",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -63,30 +147,6 @@
 			},
 			{
 				"src": "exiv2-0.27.5-2.el8.src.rpm",
-				"name": "exiv2-devel",
-				"epoch": "0",
-				"version": "0.27.5",
-				"release": "2.el8",
-				"arch": "x86_64",
-				"filename": "exiv2-devel-0.27.5-2.el8.x86_64.rpm",
-				"sum": "69978b4162ce14244cafd4fad8900b9ca6ad25e8b097d51d93dc189cc00abf8e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "exiv2-0.27.5-2.el8.src.rpm",
-				"name": "exiv2-libs",
-				"epoch": "0",
-				"version": "0.27.5",
-				"release": "2.el8",
-				"arch": "x86_64",
-				"filename": "exiv2-libs-0.27.5-2.el8.x86_64.rpm",
-				"sum": "c0d7b84d277a88bf64d9a691c3cd6d5fce4c5b094390ee8223a9d5ab38da3e92",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "exiv2-0.27.5-2.el8.src.rpm",
 				"name": "exiv2",
 				"epoch": "0",
 				"version": "0.27.5",
@@ -96,76 +156,28 @@
 				"sum": "ead9b91e3bdbc3d408a137678d7076fea374bd269f7d769811e2858cb096ad0e",
 				"sum_type": 5,
 				"reboot_suggested": 0
-			},
-			{
-				"src": "exiv2-0.27.5-2.el8.src.rpm",
-				"name": "exiv2-devel",
-				"epoch": "0",
-				"version": "0.27.5",
-				"release": "2.el8",
-				"arch": "ppc64le",
-				"filename": "exiv2-devel-0.27.5-2.el8.ppc64le.rpm",
-				"sum": "481c160690555f863db65c184f143cf6bd4873db6f117c1b3d9b82de96c92146",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "exiv2-0.27.5-2.el8.src.rpm",
-				"name": "exiv2",
-				"epoch": "0",
-				"version": "0.27.5",
-				"release": "2.el8",
-				"arch": "ppc64le",
-				"filename": "exiv2-0.27.5-2.el8.ppc64le.rpm",
-				"sum": "6c53b3bd193621213a9878a6656168d91d0ff55ec8ef83e8c3cf14ae40d4b933",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "exiv2-0.27.5-2.el8.src.rpm",
-				"name": "exiv2-libs",
-				"epoch": "0",
-				"version": "0.27.5",
-				"release": "2.el8",
-				"arch": "ppc64le",
-				"filename": "exiv2-libs-0.27.5-2.el8.ppc64le.rpm",
-				"sum": "869dc81d57fc09feab2cf4347c7fdcc6773b493baa3eb4c562d4353abfd4e988",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "exiv2-0.27.5-2.el8.src.rpm",
-				"name": "exiv2-libs",
-				"epoch": "0",
-				"version": "0.27.5",
-				"release": "2.el8",
-				"arch": "i686",
-				"filename": "exiv2-libs-0.27.5-2.el8.i686.rpm",
-				"sum": "cb378401d767cd7085a19640575664f073ebc8dd1349236e1acb895efc0fba99",
-				"sum_type": 5,
-				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "Exiv2 is a C++ library to access image metadata, supporting read and write access to the Exif, IPTC and XMP metadata, Exif MakerNote support, extract and delete methods for Exif thumbnails, classes to access Ifd, and support for various image formats.\n\nThe following packages have been upgraded to a later upstream version: exiv2 (0.27.5). (BZ#2018422)\n\nSecurity Fix(es):\n\n* exiv2: stack exhaustion issue in the printIFDStructure function may lead to DoS (CVE-2020-18898)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "ALSA-2022-1842",
-			"title": "ALSA-2022-1842",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2022-1842.html"
-		},
-		{
 			"id": "CVE-2020-18898",
 			"title": "CVE-2020-18898",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2020-18898"
+		},
+		{
+			"id": "ALSA-2022-1842",
+			"title": "ALSA-2022-1842",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-1842.html"
 		}
 	],
 	"issued_date": {
 		"$date": 1652164303000
 	},
 	"updated_date": {
-		"$date": 1652169851000
+		"$date": 1678725157000
 	}
 }

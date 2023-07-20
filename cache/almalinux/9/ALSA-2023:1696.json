@@ -10,8 +10,8 @@
 	"summary": "haproxy security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
 		"packages": [
 			{
 				"src": "haproxy-2.4.17-3.el9_1.2.src.rpm",
@@ -19,9 +19,9 @@
 				"epoch": "0",
 				"version": "2.4.17",
 				"release": "3.el9_1.2",
-				"arch": "aarch64",
-				"filename": "haproxy-2.4.17-3.el9_1.2.aarch64.rpm",
-				"sum": "d8296c983dfdac15d81dbe8ac568c4ea2905991afa5bf90b7efc58aff27459e1",
+				"arch": "ppc64le",
+				"filename": "haproxy-2.4.17-3.el9_1.2.ppc64le.rpm",
+				"sum": "64a3144382833dad5022c384110f1d41dc8115f59f60b22460e8467938ec9bfd",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -55,9 +55,9 @@
 				"epoch": "0",
 				"version": "2.4.17",
 				"release": "3.el9_1.2",
-				"arch": "ppc64le",
-				"filename": "haproxy-2.4.17-3.el9_1.2.ppc64le.rpm",
-				"sum": "64a3144382833dad5022c384110f1d41dc8115f59f60b22460e8467938ec9bfd",
+				"arch": "aarch64",
+				"filename": "haproxy-2.4.17-3.el9_1.2.aarch64.rpm",
+				"sum": "d8296c983dfdac15d81dbe8ac568c4ea2905991afa5bf90b7efc58aff27459e1",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -66,10 +66,16 @@
 	"description": "The haproxy packages provide a reliable, high-performance network load balancer for TCP and HTTP-based applications.\n\nSecurity Fix(es):\n\n* haproxy: segfault DoS (CVE-2023-0056)\n* haproxy: request smuggling attack in HTTP/1 header parsing (CVE-2023-25725)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:1696",
-			"title": "RHSA-2023:1696",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:1696"
+			"id": "2160808",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2160808"
+		},
+		{
+			"id": "2169089",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2169089"
 		},
 		{
 			"id": "CVE-2023-0056",
@@ -84,16 +90,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2023-25725"
 		},
 		{
-			"id": "2160808",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2160808"
-		},
-		{
-			"id": "2169089",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2169089"
+			"id": "RHSA-2023:1696",
+			"title": "RHSA-2023:1696",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:1696"
 		},
 		{
 			"id": "ALSA-2023:1696",

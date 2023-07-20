@@ -19,9 +19,9 @@
 				"epoch": "0",
 				"version": "0.31.1",
 				"release": "65.el9",
-				"arch": "i686",
-				"filename": "autotrace-0.31.1-65.el9.i686.rpm",
-				"sum": "b91c7c0e571b4ec62eb3b8bfd3b95c5e8c2ae151b91bfca4871a9c498a59ce32",
+				"arch": "ppc64le",
+				"filename": "autotrace-0.31.1-65.el9.ppc64le.rpm",
+				"sum": "539a685a7c8d5f91cbeaf5ea11aa360821bc23b1b1880aec485a41bce0021591",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -67,9 +67,9 @@
 				"epoch": "0",
 				"version": "0.31.1",
 				"release": "65.el9",
-				"arch": "ppc64le",
-				"filename": "autotrace-0.31.1-65.el9.ppc64le.rpm",
-				"sum": "539a685a7c8d5f91cbeaf5ea11aa360821bc23b1b1880aec485a41bce0021591",
+				"arch": "i686",
+				"filename": "autotrace-0.31.1-65.el9.i686.rpm",
+				"sum": "b91c7c0e571b4ec62eb3b8bfd3b95c5e8c2ae151b91bfca4871a9c498a59ce32",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -78,10 +78,10 @@
 	"description": "AutoTrace is a program for converting bitmaps to vector graphics.\n\nSecurity Fix(es):\n\n* autotrace: heap-buffer overflow via the ReadImage() at input-bmp.c (CVE-2022-32323)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:2589",
-			"title": "RHSA-2023:2589",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:2589"
+			"id": "2107471",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107471"
 		},
 		{
 			"id": "CVE-2022-32323",
@@ -90,10 +90,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-32323"
 		},
 		{
-			"id": "2107471",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107471"
+			"id": "RHSA-2023:2589",
+			"title": "RHSA-2023:2589",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:2589"
 		},
 		{
 			"id": "ALSA-2023:2589",
@@ -106,6 +106,6 @@
 		"$date": 1683590400000
 	},
 	"updated_date": {
-		"$date": 1683848415000
+		"$date": 1683848416000
 	}
 }

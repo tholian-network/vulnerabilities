@@ -10,21 +10,9 @@
 	"summary": "python-lxml security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
 		"packages": [
-			{
-				"src": "python-lxml-4.6.5-3.el9.src.rpm",
-				"name": "python3-lxml",
-				"epoch": "0",
-				"version": "4.6.5",
-				"release": "3.el9",
-				"arch": "aarch64",
-				"filename": "python3-lxml-4.6.5-3.el9.aarch64.rpm",
-				"sum": "5edbd97d408fbd3a5561da8efa817fb4b7d3c44a8f15c1d4f129c1c5f049581e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "python-lxml-4.6.5-3.el9.src.rpm",
 				"name": "python3-lxml",
@@ -43,9 +31,9 @@
 				"epoch": "0",
 				"version": "4.6.5",
 				"release": "3.el9",
-				"arch": "x86_64",
-				"filename": "python3-lxml-4.6.5-3.el9.x86_64.rpm",
-				"sum": "8757b7d22e766770b3a70f35f0cd398efb434b3f2ba0541145193949a250b151",
+				"arch": "aarch64",
+				"filename": "python3-lxml-4.6.5-3.el9.aarch64.rpm",
+				"sum": "5edbd97d408fbd3a5561da8efa817fb4b7d3c44a8f15c1d4f129c1c5f049581e",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -60,16 +48,28 @@
 				"sum": "78b53f81af6d7a244eadcfdaaee0d3cc2922f7b1f8931c7513a0739d7f28d2f3",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "python-lxml-4.6.5-3.el9.src.rpm",
+				"name": "python3-lxml",
+				"epoch": "0",
+				"version": "4.6.5",
+				"release": "3.el9",
+				"arch": "x86_64",
+				"filename": "python3-lxml-4.6.5-3.el9.x86_64.rpm",
+				"sum": "8757b7d22e766770b3a70f35f0cd398efb434b3f2ba0541145193949a250b151",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "lxml is an XML processing library providing access to libxml2 and libxslt libraries using the Python ElementTree API. \n\nSecurity Fix(es):\n\n* lxml: NULL Pointer Dereference in lxml (CVE-2022-2309)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:8226",
-			"title": "RHSA-2022:8226",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:8226"
+			"id": "2107571",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107571"
 		},
 		{
 			"id": "CVE-2022-2309",
@@ -78,10 +78,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-2309"
 		},
 		{
-			"id": "2107571",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107571"
+			"id": "RHSA-2022:8226",
+			"title": "RHSA-2022:8226",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:8226"
 		},
 		{
 			"id": "ALSA-2022:8226",

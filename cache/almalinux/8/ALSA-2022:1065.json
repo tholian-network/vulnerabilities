@@ -10,30 +10,18 @@
 	"summary": "An update for openssl is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "3",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-baseos-rpms__8_0_default",
-		"shortname": "almalinux-8-for-x86_64-baseos-rpms__8_0_default",
+		"name": "almalinux-8-for-aarch64-baseos-rpms__8_0_default",
+		"shortname": "almalinux-8-for-aarch64-baseos-rpms__8_0_default",
 		"packages": [
 			{
 				"src": "openssl-1.1.1k-6.el8_5.src.rpm",
-				"name": "openssl-libs",
+				"name": "openssl-devel",
 				"epoch": "1",
 				"version": "1.1.1k",
 				"release": "6.el8_5",
-				"arch": "x86_64",
-				"filename": "openssl-libs-1.1.1k-6.el8_5.x86_64.rpm",
-				"sum": "8d6a959be54f6bd06f1bb2a7a41ec61c8fd2992ad4b1803f4183a6518a827077",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "openssl-1.1.1k-6.el8_5.src.rpm",
-				"name": "openssl-libs",
-				"epoch": "1",
-				"version": "1.1.1k",
-				"release": "6.el8_5",
-				"arch": "x86_64",
-				"filename": "openssl-libs-1.1.1k-6.el8_5.x86_64.rpm",
-				"sum": "8d6a959be54f6bd06f1bb2a7a41ec61c8fd2992ad4b1803f4183a6518a827077",
+				"arch": "aarch64",
+				"filename": "openssl-devel-1.1.1k-6.el8_5.aarch64.rpm",
+				"sum": "0c1f75cf5734db154ddd532b13cb48d32dcd850e420d3c7b1ebd3336eab45b0b",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -43,9 +31,45 @@
 				"epoch": "1",
 				"version": "1.1.1k",
 				"release": "6.el8_5",
+				"arch": "ppc64le",
+				"filename": "openssl-devel-1.1.1k-6.el8_5.ppc64le.rpm",
+				"sum": "64390991bc38883bb15972edda6147e1305fdf530c88e310f1547ecc998bbef9",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "openssl-1.1.1k-6.el8_5.src.rpm",
+				"name": "openssl",
+				"epoch": "1",
+				"version": "1.1.1k",
+				"release": "6.el8_5",
+				"arch": "aarch64",
+				"filename": "openssl-1.1.1k-6.el8_5.aarch64.rpm",
+				"sum": "66ef6a66c326c0d44457da66e8c9bf0515d759875d60dbf65f289fc275fdfd8c",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "openssl-1.1.1k-6.el8_5.src.rpm",
+				"name": "openssl-libs",
+				"epoch": "1",
+				"version": "1.1.1k",
+				"release": "6.el8_5",
+				"arch": "ppc64le",
+				"filename": "openssl-libs-1.1.1k-6.el8_5.ppc64le.rpm",
+				"sum": "89081ff6d07fd968fb1e5f02b3705532138e806d8938e0434ffe0845302d08b8",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "openssl-1.1.1k-6.el8_5.src.rpm",
+				"name": "openssl-libs",
+				"epoch": "1",
+				"version": "1.1.1k",
+				"release": "6.el8_5",
 				"arch": "x86_64",
-				"filename": "openssl-devel-1.1.1k-6.el8_5.x86_64.rpm",
-				"sum": "9095fda8147a00cd4260b2ec8f2d5c5475fb3607741ee4115bd3b01d184aa9a0",
+				"filename": "openssl-libs-1.1.1k-6.el8_5.x86_64.rpm",
+				"sum": "8d6a959be54f6bd06f1bb2a7a41ec61c8fd2992ad4b1803f4183a6518a827077",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -75,42 +99,6 @@
 			},
 			{
 				"src": "openssl-1.1.1k-6.el8_5.src.rpm",
-				"name": "openssl",
-				"epoch": "1",
-				"version": "1.1.1k",
-				"release": "6.el8_5",
-				"arch": "x86_64",
-				"filename": "openssl-1.1.1k-6.el8_5.x86_64.rpm",
-				"sum": "e1dda00c01bbbfe9408a7be04c1cfe30286ea18b9ce51b2008b3c00c13b2fb1d",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "openssl-1.1.1k-6.el8_5.src.rpm",
-				"name": "openssl-devel",
-				"epoch": "1",
-				"version": "1.1.1k",
-				"release": "6.el8_5",
-				"arch": "aarch64",
-				"filename": "openssl-devel-1.1.1k-6.el8_5.aarch64.rpm",
-				"sum": "0c1f75cf5734db154ddd532b13cb48d32dcd850e420d3c7b1ebd3336eab45b0b",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "openssl-1.1.1k-6.el8_5.src.rpm",
-				"name": "openssl",
-				"epoch": "1",
-				"version": "1.1.1k",
-				"release": "6.el8_5",
-				"arch": "aarch64",
-				"filename": "openssl-1.1.1k-6.el8_5.aarch64.rpm",
-				"sum": "66ef6a66c326c0d44457da66e8c9bf0515d759875d60dbf65f289fc275fdfd8c",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "openssl-1.1.1k-6.el8_5.src.rpm",
 				"name": "openssl-perl",
 				"epoch": "1",
 				"version": "1.1.1k",
@@ -123,37 +111,13 @@
 			},
 			{
 				"src": "openssl-1.1.1k-6.el8_5.src.rpm",
-				"name": "openssl-libs",
-				"epoch": "1",
-				"version": "1.1.1k",
-				"release": "6.el8_5",
-				"arch": "aarch64",
-				"filename": "openssl-libs-1.1.1k-6.el8_5.aarch64.rpm",
-				"sum": "f795a247736ff10ae0accf5ce6e139d4c3141ef945170ca9b9f4daa75ddbf4c1",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "openssl-1.1.1k-6.el8_5.src.rpm",
-				"name": "openssl-devel",
+				"name": "openssl",
 				"epoch": "1",
 				"version": "1.1.1k",
 				"release": "6.el8_5",
 				"arch": "ppc64le",
-				"filename": "openssl-devel-1.1.1k-6.el8_5.ppc64le.rpm",
-				"sum": "64390991bc38883bb15972edda6147e1305fdf530c88e310f1547ecc998bbef9",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "openssl-1.1.1k-6.el8_5.src.rpm",
-				"name": "openssl-libs",
-				"epoch": "1",
-				"version": "1.1.1k",
-				"release": "6.el8_5",
-				"arch": "ppc64le",
-				"filename": "openssl-libs-1.1.1k-6.el8_5.ppc64le.rpm",
-				"sum": "89081ff6d07fd968fb1e5f02b3705532138e806d8938e0434ffe0845302d08b8",
+				"filename": "openssl-1.1.1k-6.el8_5.ppc64le.rpm",
+				"sum": "d86fd316a16213d0a41dcc4c606b8709fb64e94f5eb58be07b437525ad34acf8",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -163,9 +127,21 @@
 				"epoch": "1",
 				"version": "1.1.1k",
 				"release": "6.el8_5",
-				"arch": "ppc64le",
-				"filename": "openssl-1.1.1k-6.el8_5.ppc64le.rpm",
-				"sum": "d86fd316a16213d0a41dcc4c606b8709fb64e94f5eb58be07b437525ad34acf8",
+				"arch": "x86_64",
+				"filename": "openssl-1.1.1k-6.el8_5.x86_64.rpm",
+				"sum": "e1dda00c01bbbfe9408a7be04c1cfe30286ea18b9ce51b2008b3c00c13b2fb1d",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "openssl-1.1.1k-6.el8_5.src.rpm",
+				"name": "openssl-libs",
+				"epoch": "1",
+				"version": "1.1.1k",
+				"release": "6.el8_5",
+				"arch": "aarch64",
+				"filename": "openssl-libs-1.1.1k-6.el8_5.aarch64.rpm",
+				"sum": "f795a247736ff10ae0accf5ce6e139d4c3141ef945170ca9b9f4daa75ddbf4c1",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -186,16 +162,16 @@
 	"description": "OpenSSL is a toolkit that implements the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols, as well as a full-strength general-purpose cryptography library.\n\nSecurity Fix(es):\n\n* openssl: Infinite loop in BN_mod_sqrt() reachable when parsing certificates (CVE-2022-0778)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "ALSA-2022-1065",
-			"title": "ALSA-2022-1065",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2022-1065.html"
-		},
-		{
 			"id": "CVE-2022-0778",
 			"title": "CVE-2022-0778",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2022-0778"
+		},
+		{
+			"id": "ALSA-2022-1065",
+			"title": "ALSA-2022-1065",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-1065.html"
 		}
 	],
 	"issued_date": {

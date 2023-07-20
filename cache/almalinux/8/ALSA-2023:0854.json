@@ -162,10 +162,22 @@
 	"description": "The kernel-rt packages provide the Real Time Linux Kernel, which enables fine-tuning for systems with extremely high determinism requirements.\n\nSecurity Fix(es):\n\n* kernel: mm/mremap.c use-after-free vulnerability (CVE-2022-41222)\n* kernel: nfsd buffer overflow by RPC message over TCP with garbage data (CVE-2022-43945)\n* kernel: an out-of-bounds vulnerability in i2c-ismt driver (CVE-2022-2873)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nBug Fix(es):\n\n* AlmaLinux8-RT: Backport use of a dedicate thread for timer wakeups (BZ#2127204)\n* SNO Crashed twice - kernel BUG at lib/list_debug.c:28 (BZ#2132062)\n* Cannot trigger kernel dump using NMI on SNO node running PAO and RT kernel  [RT-8] (BZ#2139851)\n* scheduling while atomic in fpu_clone() -\u003e fpu_inherit_perms() (BZ#2154469)\n* The latest AlmaLinux 8.7.z2 kernel changes need to be merged into the RT source tree to keep source parity between the two kernels. (BZ#2159806)",
 	"references": [
 		{
-			"id": "RHSA-2023:0854",
-			"title": "RHSA-2023:0854",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:0854"
+			"id": "2119048",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2119048"
+		},
+		{
+			"id": "2138818",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2138818"
+		},
+		{
+			"id": "2141752",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2141752"
 		},
 		{
 			"id": "CVE-2022-2873",
@@ -186,22 +198,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-43945"
 		},
 		{
-			"id": "2119048",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2119048"
-		},
-		{
-			"id": "2138818",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2138818"
-		},
-		{
-			"id": "2141752",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2141752"
+			"id": "RHSA-2023:0854",
+			"title": "RHSA-2023:0854",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:0854"
 		},
 		{
 			"id": "ALSA-2023:0854",

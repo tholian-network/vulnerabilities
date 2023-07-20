@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS-2023-1762</title>
+        <link rel='icon' type='image/x-icon' href='static/favicon.ico' />
+<link rel="stylesheet" href="static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='static/jquery.min.js'></script>
+<script type='text/javascript' src='static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #FF9900;"> <a style="color: #000000" href="/index.html">Amazon Linux</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2023.html">Amazon Linux 2023</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/faqs.html">FAQs</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS-2023-1762'>ALAS-2023-1762</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux AMI Security Advisory:</b> ALAS-2023-1762
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2023-06-05 16:39 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2023-06-08 23:39 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2023-0464.html' target='_blank' rel='noopener noreferrer'>CVE-2023-0464&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-0465.html' target='_blank' rel='noopener noreferrer'>CVE-2023-0465&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-0466.html' target='_blank' rel='noopener noreferrer'>CVE-2023-0466&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-2650.html' target='_blank' rel='noopener noreferrer'>CVE-2023-2650&nbsp;</a>
+                            <br />
+                            <a href="../../faqs.html">FAQs regarding Amazon Linux ALAS/CVE Severity</a>
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>A security vulnerability has been identified in all supported versions of OpenSSL related to the verification of X.509 certificate chains that include policy constraints. Attackers may be able to exploit this vulnerability by creating a malicious certificate chain that triggers exponential use of computational resources, leading to a denial-of-service (DoS) attack on affected systems. Policy processing is disabled by default but can be enabled by passing the `-policy&#39; argument to the command line utilities or by calling the `X509_VERIFY_PARAM_set1_policies()&#39; function. (CVE-2023-0464)</p><p>Applications that use a non-default option when verifying certificates may be vulnerable to an attack from a malicious CA to circumvent certain checks. Invalid certificate policies in leaf certificates are silently ignored by OpenSSL and other certificate policy checks are skipped for that certificate. A malicious CA could use this to deliberately assert invalid certificate policies in order to circumvent policy checking on the certificate altogether. Policy processing is disabled by default but can be enabled by passing the `-policy&#39; argument to the command line utilities or by calling the `X509_VERIFY_PARAM_set1_policies()&#39; function. (CVE-2023-0465)</p><p>The function X509_VERIFY_PARAM_add0_policy() is documented to implicitly enable the certificate policy check when doing certificate verification. However the implementation of the function does not enable the check which allows certificates with invalid or incorrect policies to pass the certificate verification. As suddenly enabling the policy check could break existing deployments it was decided to keep the existing behavior of the X509_VERIFY_PARAM_add0_policy() function. Instead the applications that require OpenSSL to perform certificate policy check need to use X509_VERIFY_PARAM_set1_policies() or explicitly enable the policy check by calling X509_VERIFY_PARAM_set_flags() with the X509_V_FLAG_POLICY_CHECK flag argument. Certificate policy checks are disabled by default in OpenSSL and are not commonly used by applications. (CVE-2023-0466)</p><p>Issue summary: Processing some specially crafted ASN.1 object identifiers or<br />data containing them may be very slow.</p><p>Impact summary: Applications that use OBJ_obj2txt() directly, or use any of<br />the OpenSSL subsystems OCSP, PKCS7/SMIME, CMS, CMP/CRMF or TS with no message<br />size limit may experience notable to very long delays when processing those<br />messages, which may lead to a Denial of Service.</p><p>An OBJECT IDENTIFIER is composed of a series of numbers - sub-identifiers -<br />most of which have no size limit.  OBJ_obj2txt() may be used to translate<br />an ASN.1 OBJECT IDENTIFIER given in DER encoding form (using the OpenSSL<br />type ASN1_OBJECT) to its canonical numeric text form, which are the<br />sub-identifiers of the OBJECT IDENTIFIER in decimal form, separated by<br />periods.</p><p>When one of the sub-identifiers in the OBJECT IDENTIFIER is very large<br />(these are sizes that are seen as absurdly large, taking up tens or hundreds<br />of KiBs), the translation to a decimal number in text may take a very long<br />time.  The time complexity is O(n^2) with &#39;n&#39; being the size of the<br />sub-identifiers in bytes (*).</p><p>With OpenSSL 3.0, support to fetch cryptographic algorithms using names /<br />identifiers in string form was introduced.  This includes using OBJECT<br />IDENTIFIERs in canonical numeric text form as identifiers for fetching<br />algorithms.</p><p>Such OBJECT IDENTIFIERs may be received through the ASN.1 structure<br />AlgorithmIdentifier, which is commonly used in multiple protocols to specify<br />what cryptographic algorithm should be used to sign or verify, encrypt or<br />decrypt, or digest passed data.</p><p>Applications that call OBJ_obj2txt() directly with untrusted data are<br />affected, with any version of OpenSSL.  If the use is for the mere purpose<br />of display, the severity is considered low.</p><p>In OpenSSL 3.0 and newer, this affects the subsystems OCSP, PKCS7/SMIME,<br />CMS, CMP/CRMF or TS.  It also impacts anything that processes X.509<br />certificates, including simple things like verifying its signature.</p><p>The impact on TLS is relatively low, because all versions of OpenSSL have a<br />100KiB limit on the peer&#39;s certificate chain.  Additionally, this only<br />impacts clients, or servers that have explicitly enabled client<br />authentication.</p><p>In OpenSSL 1.1.1 and 1.0.2, this only affects displaying diverse objects,<br />such as X.509 certificates.  This is assumed to not happen in such a way<br />that it would cause a Denial of Service, so these versions are considered<br />not affected by this issue in such a way that it would be cause for concern,<br />and the severity is therefore considered low. (CVE-2023-2650)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>openssl</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update openssl</i> to update your system.<br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>i686:<br />&nbsp;&nbsp;&nbsp; openssl-debuginfo-1.0.2k-16.163.amzn1.i686<br />&nbsp;&nbsp;&nbsp; openssl-perl-1.0.2k-16.163.amzn1.i686<br />&nbsp;&nbsp;&nbsp; openssl-devel-1.0.2k-16.163.amzn1.i686<br />&nbsp;&nbsp;&nbsp; openssl-static-1.0.2k-16.163.amzn1.i686<br />&nbsp;&nbsp;&nbsp; openssl-1.0.2k-16.163.amzn1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; openssl-1.0.2k-16.163.amzn1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; openssl-1.0.2k-16.163.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; openssl-devel-1.0.2k-16.163.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; openssl-static-1.0.2k-16.163.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; openssl-perl-1.0.2k-16.163.amzn1.x86_64<br />&nbsp;&nbsp;&nbsp; openssl-debuginfo-1.0.2k-16.163.amzn1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-0464" target="_blank" rel="noopener noreferrer">CVE-2023-0464</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-0465" target="_blank" rel="noopener noreferrer">CVE-2023-0465</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-0466" target="_blank" rel="noopener noreferrer">CVE-2023-0466</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-2650" target="_blank" rel="noopener noreferrer">CVE-2023-2650</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0464" target="_blank" rel="noopener noreferrer">CVE-2023-0464</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0465" target="_blank" rel="noopener noreferrer">CVE-2023-0465</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0466" target="_blank" rel="noopener noreferrer">CVE-2023-0466</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-2650" target="_blank" rel="noopener noreferrer">CVE-2023-2650</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2023
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2023 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms apply, and downloading this site or portions of it is permitted</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2023, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

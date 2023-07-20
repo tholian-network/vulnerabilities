@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2023-2146</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/index.html">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2023.html">Amazon Linux 2023</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/faqs.html">FAQs</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2023-2146'>ALAS2-2023-2146</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2023-2146
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2023-07-17 17:40 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2023-07-19 22:18 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2021-3695.html' target='_blank' rel='noopener noreferrer'>CVE-2021-3695&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-3696.html' target='_blank' rel='noopener noreferrer'>CVE-2021-3696&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-3697.html' target='_blank' rel='noopener noreferrer'>CVE-2021-3697&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-2601.html' target='_blank' rel='noopener noreferrer'>CVE-2022-2601&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-28733.html' target='_blank' rel='noopener noreferrer'>CVE-2022-28733&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-28734.html' target='_blank' rel='noopener noreferrer'>CVE-2022-28734&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-28735.html' target='_blank' rel='noopener noreferrer'>CVE-2022-28735&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-28736.html' target='_blank' rel='noopener noreferrer'>CVE-2022-28736&nbsp;</a>
+                            <a href='/cve/html/CVE-2022-3775.html' target='_blank' rel='noopener noreferrer'>CVE-2022-3775&nbsp;</a>
+                            <br />
+                            <a href="../../faqs.html">FAQs regarding Amazon Linux ALAS/CVE Severity</a>
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>A flaw was found in grub 2, where a crafted 16-bit grayscale PNG image may lead to an out-of-bounds write. This flaw allows an attacker to corrupt the data on the heap portion of the grub2&#39;s memory, leading to possible code execution and the circumvention of the secure boot mechanism. (CVE-2021-3695)</p><p>A flaw was found in grub2 when handling a PNG image header. When decoding the data contained in the Huffman table at the PNG file header, an out-of-bounds write may happen on grub&#39;s heap. (CVE-2021-3696)</p><p>A flaw was found in grub2 when handling JPEG images. This flaw allows an attacker to craft a malicious JPEG image, which leads to an underflow on a grub2&#39;s internal pointer, leading to a heap-based out-of-bounds write. Secure-boot mechanisms circumvention and arbitrary code execution may also be achievable. (CVE-2021-3697)</p><p>A flaw was found where a maliciously crafted pf2 font could lead to an out-of-bounds write in grub2. A successful attack can lead to memory corruption and secure boot circumvention. (CVE-2022-2601)</p><p>A flaw was found in grub2 when handling IPv4 packets. This flaw allows an attacker to craft a malicious packet, triggering an integer underflow in grub code. Consequently, the memory allocation for handling the packet data may be smaller than the size needed. This issue causes an out-of-bands write during packet handling, compromising data integrity, confidentiality issues, a denial of service, and remote code execution. (CVE-2022-28733)</p><p>A flaw was found in grub2 when handling split HTTP headers. While processing a split HTTP header, grub2 wrongly advances its control pointer to the internal buffer by one position, which can lead to an out-of-bounds write. This flaw allows an attacker to leverage this issue by crafting a malicious set of HTTP packages making grub2 corrupt its internal memory metadata structure. This leads to data integrity and confidentiality issues or forces grub to crash, resulting in a denial of service attack. (CVE-2022-28734)</p><p>A flaw was found in grub2. The shim_lock verifier from grub2 allows non-kernel files to be loaded when secure boot is enabled, giving the possibility of unverified code or modules to be loaded when it should not be allowed. (CVE-2022-28735)</p><p>A use-after-free vulnerability was found on grub2&#39;s chainloader command. This flaw allows an attacker to gain access to restricted data or cause arbitrary code execution if they can establish control from grub&#39;s memory allocation pattern. (CVE-2022-28736)</p><p>A flaw was found in the grub2 font code. When rendering certain unicode sequences, it fails to properly validate the font width and height. These values are further used to access the font buffer, causing possible out-of-bounds writes. A malicious actor may craft a font capable of triggering this issue, allowing modifications in unauthorized memory segments, causing data integrity problems or leading to denial of service. (CVE-2022-3775)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>grub2</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update grub2</i> to update your system.<br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; grub2-2.06-14.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; grub2-tools-2.06-14.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; grub2-tools-minimal-2.06-14.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; grub2-tools-extra-2.06-14.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; grub2-efi-aa64-2.06-14.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; grub2-efi-aa64-ec2-2.06-14.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; grub2-efi-aa64-cdboot-2.06-14.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; grub2-emu-2.06-14.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; grub2-emu-modules-2.06-14.amzn2.aarch64<br />&nbsp;&nbsp;&nbsp; grub2-debuginfo-2.06-14.amzn2.aarch64<br /><br />noarch:<br />&nbsp;&nbsp;&nbsp; grub2-common-2.06-14.amzn2.noarch<br />&nbsp;&nbsp;&nbsp; grub2-efi-x64-modules-2.06-14.amzn2.noarch<br />&nbsp;&nbsp;&nbsp; grub2-pc-modules-2.06-14.amzn2.noarch<br />&nbsp;&nbsp;&nbsp; grub2-efi-aa64-modules-2.06-14.amzn2.noarch<br /><br />src:<br />&nbsp;&nbsp;&nbsp; grub2-2.06-14.amzn2.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; grub2-2.06-14.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; grub2-tools-2.06-14.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; grub2-tools-efi-2.06-14.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; grub2-tools-minimal-2.06-14.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; grub2-tools-extra-2.06-14.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; grub2-efi-x64-2.06-14.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; grub2-efi-x64-ec2-2.06-14.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; grub2-efi-x64-cdboot-2.06-14.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; grub2-pc-2.06-14.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; grub2-emu-2.06-14.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; grub2-emu-modules-2.06-14.amzn2.x86_64<br />&nbsp;&nbsp;&nbsp; grub2-debuginfo-2.06-14.amzn2.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-3695" target="_blank" rel="noopener noreferrer">CVE-2021-3695</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-3696" target="_blank" rel="noopener noreferrer">CVE-2021-3696</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-3697" target="_blank" rel="noopener noreferrer">CVE-2021-3697</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-2601" target="_blank" rel="noopener noreferrer">CVE-2022-2601</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-28733" target="_blank" rel="noopener noreferrer">CVE-2022-28733</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-28734" target="_blank" rel="noopener noreferrer">CVE-2022-28734</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-28735" target="_blank" rel="noopener noreferrer">CVE-2022-28735</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-28736" target="_blank" rel="noopener noreferrer">CVE-2022-28736</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2022-3775" target="_blank" rel="noopener noreferrer">CVE-2022-3775</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3695" target="_blank" rel="noopener noreferrer">CVE-2021-3695</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3696" target="_blank" rel="noopener noreferrer">CVE-2021-3696</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3697" target="_blank" rel="noopener noreferrer">CVE-2021-3697</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2601" target="_blank" rel="noopener noreferrer">CVE-2022-2601</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28733" target="_blank" rel="noopener noreferrer">CVE-2022-28733</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28734" target="_blank" rel="noopener noreferrer">CVE-2022-28734</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28735" target="_blank" rel="noopener noreferrer">CVE-2022-28735</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28736" target="_blank" rel="noopener noreferrer">CVE-2022-28736</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3775" target="_blank" rel="noopener noreferrer">CVE-2022-3775</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2023
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2023 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms apply, and downloading this site or portions of it is permitted</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2023, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

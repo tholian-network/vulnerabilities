@@ -162,10 +162,16 @@
 	"description": "The kernel-rt packages provide the Real Time Linux Kernel, which enables fine-tuning for systems with extremely high determinism requirements.\nSecurity Fix(es):\n* kernel: Small table perturb size in the TCP source port generation algorithm can lead to information leak (CVE-2022-1012)\n* kernel: a use-after-free write in the netfilter subsystem can lead to privilege escalation to root (CVE-2022-32250)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nBug Fix(es):\n* The latest AlmaLinux 8.6.z2 kernel changes need to be merged into the RT source tree to keep source parity between the two kernels. (BZ#2107215)",
 	"references": [
 		{
-			"id": "RHSA-2022:5834",
-			"title": "RHSA-2022:5834",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:5834"
+			"id": "2064604",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2064604"
+		},
+		{
+			"id": "2092427",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2092427"
 		},
 		{
 			"id": "CVE-2022-1012",
@@ -180,16 +186,28 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-32250"
 		},
 		{
-			"id": "2064604",
+			"id": "CVE-2022-1012",
 			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2064604"
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-1012"
 		},
 		{
-			"id": "2092427",
+			"id": "CVE-2022-32250",
 			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2092427"
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-32250"
+		},
+		{
+			"id": "RHSA-2022:5834",
+			"title": "RHSA-2022:5834",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5834"
+		},
+		{
+			"id": "RHSA-2022:5834",
+			"title": "",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5834"
 		},
 		{
 			"id": "ALSA-2022:5834",
@@ -202,6 +220,6 @@
 		"$date": 1659398400000
 	},
 	"updated_date": {
-		"$date": 1659684667000
+		"$date": 1659695765000
 	}
 }

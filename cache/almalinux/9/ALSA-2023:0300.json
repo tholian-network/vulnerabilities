@@ -162,10 +162,40 @@
 	"description": "The kernel-rt packages provide the Real Time Linux Kernel, which enables fine-tuning for systems with extremely high determinism requirements.\n\nSecurity Fix(es):\n\n* kernel: watch queue race condition can lead to privilege escalation (CVE-2022-2959)\n* kernel: memory corruption in AX88179_178A based USB ethernet device. (CVE-2022-2964)\n* kernel: i915: Incorrect GPU TLB flush can lead to random memory access (CVE-2022-4139)\n* kernel: nfsd buffer overflow by RPC message over TCP with garbage data (CVE-2022-43945)\n* kernel: i2c: unbounded length leads to buffer overflow in ismt_access() (CVE-2022-3077)\n* kernel: Unprivileged users may use PTRACE_SEIZE to set PTRACE_O_SUSPEND_SECCOMP option (CVE-2022-30594)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nBug Fix(es):\n\n* DELL EMC: System is not booting into RT Kernel with perc12 [kernel-rt] (BZ#2139863)\n* kernel-rt: update RT source tree to the latest AlmaLinux-9.1.z1 Batch (BZ#2141817)",
 	"references": [
 		{
-			"id": "RHSA-2023:0300",
-			"title": "RHSA-2023:0300",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:0300"
+			"id": "2067482",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2067482"
+		},
+		{
+			"id": "2085300",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2085300"
+		},
+		{
+			"id": "2103681",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2103681"
+		},
+		{
+			"id": "2123309",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2123309"
+		},
+		{
+			"id": "2141752",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2141752"
+		},
+		{
+			"id": "2147572",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2147572"
 		},
 		{
 			"id": "CVE-2022-2959",
@@ -204,40 +234,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-43945"
 		},
 		{
-			"id": "2067482",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2067482"
-		},
-		{
-			"id": "2085300",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2085300"
-		},
-		{
-			"id": "2103681",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2103681"
-		},
-		{
-			"id": "2123309",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2123309"
-		},
-		{
-			"id": "2141752",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2141752"
-		},
-		{
-			"id": "2147572",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2147572"
+			"id": "RHSA-2023:0300",
+			"title": "RHSA-2023:0300",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:0300"
 		},
 		{
 			"id": "ALSA-2023:0300",

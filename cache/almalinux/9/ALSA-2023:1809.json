@@ -10,9 +10,21 @@
 	"summary": "thunderbird security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
 		"packages": [
+			{
+				"src": "thunderbird-102.10.0-2.el9_1.alma.src.rpm",
+				"name": "thunderbird",
+				"epoch": "0",
+				"version": "102.10.0",
+				"release": "2.el9_1.alma",
+				"arch": "ppc64le",
+				"filename": "thunderbird-102.10.0-2.el9_1.alma.ppc64le.rpm",
+				"sum": "7b0c35b19cf7ba9a5253085fed0dede18ae8411b3e7900ccc1642d2af5d7c0b4",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "thunderbird-102.10.0-2.el9_1.alma.src.rpm",
 				"name": "thunderbird",
@@ -48,28 +60,76 @@
 				"sum": "fcba53647419b8abd2bc5d83199f6aedc8b8a434c882f7e69bbe082216d0ff42",
 				"sum_type": 5,
 				"reboot_suggested": 0
-			},
-			{
-				"src": "thunderbird-102.10.0-2.el9_1.alma.src.rpm",
-				"name": "thunderbird",
-				"epoch": "0",
-				"version": "102.10.0",
-				"release": "2.el9_1.alma",
-				"arch": "ppc64le",
-				"filename": "thunderbird-102.10.0-2.el9_1.alma.ppc64le.rpm",
-				"sum": "7b0c35b19cf7ba9a5253085fed0dede18ae8411b3e7900ccc1642d2af5d7c0b4",
-				"sum_type": 5,
-				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "Mozilla Thunderbird is a standalone mail and newsgroup client.\n\nThis update upgrades Thunderbird to version 102.10.0.\n\nSecurity Fix(es):\n\n* Thunderbird: Revocation status of S/Mime recipient certificates was not checked (CVE-2023-0547)\n* Mozilla: Matrix SDK bundled with Thunderbird vulnerable to denial-of-service attack (CVE-2023-28427)\n* Mozilla: Fullscreen notification obscured (CVE-2023-29533)\n* Mozilla: Potential Memory Corruption following Garbage Collector compaction (CVE-2023-29535)\n* Mozilla: Invalid free from JavaScript code (CVE-2023-29536)\n* Mozilla: Memory safety bugs fixed in Firefox 112 and Firefox ESR 102.10 (CVE-2023-29550)\n* Mozilla: Memory Corruption in Safe Browsing Code (CVE-2023-1945)\n* Thunderbird: Hang when processing certain OpenPGP messages (CVE-2023-29479)\n* Mozilla: Content-Disposition filename truncation leads to Reflected File Download (CVE-2023-29539)\n* Mozilla: Files with malicious extensions could have been downloaded unsafely on Linux (CVE-2023-29541)\n* Mozilla: Incorrect optimization result on ARM64 (CVE-2023-29548)\n* MFSA-TMP-2023-0001 Mozilla: Double-free in libwebp (BZ#2186102)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:1809",
-			"title": "RHSA-2023:1809",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:1809"
+			"id": "2183278",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2183278"
+		},
+		{
+			"id": "2186101",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2186101"
+		},
+		{
+			"id": "2186103",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2186103"
+		},
+		{
+			"id": "2186104",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2186104"
+		},
+		{
+			"id": "2186105",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2186105"
+		},
+		{
+			"id": "2186106",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2186106"
+		},
+		{
+			"id": "2186109",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2186109"
+		},
+		{
+			"id": "2186110",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2186110"
+		},
+		{
+			"id": "2186111",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2186111"
+		},
+		{
+			"id": "2186734",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2186734"
+		},
+		{
+			"id": "2186735",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2186735"
 		},
 		{
 			"id": "CVE-2023-0547",
@@ -138,70 +198,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2023-29550"
 		},
 		{
-			"id": "2183278",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2183278"
-		},
-		{
-			"id": "2186101",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2186101"
-		},
-		{
-			"id": "2186103",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2186103"
-		},
-		{
-			"id": "2186104",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2186104"
-		},
-		{
-			"id": "2186105",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2186105"
-		},
-		{
-			"id": "2186106",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2186106"
-		},
-		{
-			"id": "2186109",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2186109"
-		},
-		{
-			"id": "2186110",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2186110"
-		},
-		{
-			"id": "2186111",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2186111"
-		},
-		{
-			"id": "2186734",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2186734"
-		},
-		{
-			"id": "2186735",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2186735"
+			"id": "RHSA-2023:1809",
+			"title": "RHSA-2023:1809",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:1809"
 		},
 		{
 			"id": "ALSA-2023:1809",

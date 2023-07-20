@@ -10,8 +10,8 @@
 	"summary": "An update for appstream-data, fwupd, gnome-software, and libxmlb is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "5",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
-		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"name": "almalinux-8-for-aarch64-baseos-rpms__8_0_default",
+		"shortname": "almalinux-8-for-aarch64-baseos-rpms__8_0_default",
 		"packages": [
 			{
 				"src": "libxmlb-0.1.15-1.el8.src.rpm",
@@ -43,9 +43,9 @@
 				"epoch": "0",
 				"version": "0.1.15",
 				"release": "1.el8",
-				"arch": "aarch64",
-				"filename": "libxmlb-0.1.15-1.el8.aarch64.rpm",
-				"sum": "518628277656002801a17820ab58658af415976f47b534a52eb07c64771e4271",
+				"arch": "ppc64le",
+				"filename": "libxmlb-0.1.15-1.el8.ppc64le.rpm",
+				"sum": "4ecb5204e65e24fea5a76a851a6fc9ccf124713e2d8fbe8df2390357f1e01806",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -55,9 +55,9 @@
 				"epoch": "0",
 				"version": "0.1.15",
 				"release": "1.el8",
-				"arch": "ppc64le",
-				"filename": "libxmlb-0.1.15-1.el8.ppc64le.rpm",
-				"sum": "4ecb5204e65e24fea5a76a851a6fc9ccf124713e2d8fbe8df2390357f1e01806",
+				"arch": "aarch64",
+				"filename": "libxmlb-0.1.15-1.el8.aarch64.rpm",
+				"sum": "518628277656002801a17820ab58658af415976f47b534a52eb07c64771e4271",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -78,16 +78,46 @@
 	"description": "The gnome-software packages contain an application that makes it easy to add, remove, and update software in the GNOME desktop.\n\nThe appstream-data package provides the distribution specific AppStream metadata required for the GNOME and KDE software centers. \n\nThe fwupd packages provide a service that allows session software to update device firmware.\n\nThe following packages have been upgraded to a later upstream version: gnome-software (3.36.1), fwupd (1.4.2).\n\nSecurity Fix(es):\n\n* fwupd: Possible bypass in signature verification (CVE-2020-10759)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
+			"id": "1844316",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/1844316"
+		},
+		{
 			"id": "CVE-2020-10759",
 			"title": "CVE-2020-10759",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2020-10759"
+		},
+		{
+			"id": "CVE-2020-10759",
+			"title": "CVE-2020-10759",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2020-10759"
+		},
+		{
+			"id": "RHSA-2020:4436",
+			"title": "RHSA-2020:4436",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2020:4436"
+		},
+		{
+			"id": "ALSA-2020-4436",
+			"title": "ALSA-2020-4436",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2020-4436.html"
+		},
+		{
+			"id": "ALSA-2020:4436",
+			"title": "ALSA-2020:4436",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2020-4436.html"
 		}
 	],
 	"issued_date": {
 		"$date": 1604405070000
 	},
 	"updated_date": {
-		"$date": 1636712456000
+		"$date": 1658331787000
 	}
 }

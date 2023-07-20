@@ -10,9 +10,45 @@
 	"summary": "An update for p11-kit is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "4",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-baseos-rpms__8_0_default",
-		"shortname": "almalinux-8-for-x86_64-baseos-rpms__8_0_default",
+		"name": "almalinux-8-for-aarch64-baseos-rpms__8_0_default",
+		"shortname": "almalinux-8-for-aarch64-baseos-rpms__8_0_default",
 		"packages": [
+			{
+				"src": "p11-kit-0.23.22-1.el8.src.rpm",
+				"name": "p11-kit-server",
+				"epoch": "0",
+				"version": "0.23.22",
+				"release": "1.el8",
+				"arch": "ppc64le",
+				"filename": "p11-kit-server-0.23.22-1.el8.ppc64le.rpm",
+				"sum": "14d335b5d60430d7e68ec30e7246030adbeae292a208c1f3296238baf9ef01bc",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "p11-kit-0.23.22-1.el8.src.rpm",
+				"name": "p11-kit-devel",
+				"epoch": "0",
+				"version": "0.23.22",
+				"release": "1.el8",
+				"arch": "ppc64le",
+				"filename": "p11-kit-devel-0.23.22-1.el8.ppc64le.rpm",
+				"sum": "16735c331b5c790620a71bfba4599e4f65ba1a129159bcf02738f9666667d97a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "p11-kit-0.23.22-1.el8.src.rpm",
+				"name": "p11-kit-trust",
+				"epoch": "0",
+				"version": "0.23.22",
+				"release": "1.el8",
+				"arch": "ppc64le",
+				"filename": "p11-kit-trust-0.23.22-1.el8.ppc64le.rpm",
+				"sum": "26cf71199b651faebda76ace4af89ba029bb055c99a771cef10f2f6b521232a8",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "p11-kit-0.23.22-1.el8.src.rpm",
 				"name": "p11-kit-devel",
@@ -63,78 +99,6 @@
 			},
 			{
 				"src": "p11-kit-0.23.22-1.el8.src.rpm",
-				"name": "p11-kit",
-				"epoch": "0",
-				"version": "0.23.22",
-				"release": "1.el8",
-				"arch": "x86_64",
-				"filename": "p11-kit-0.23.22-1.el8.x86_64.rpm",
-				"sum": "5a5aa0cc323b06a720675f9ba5925befbc27d5a093806b98139b42cb86ea6ea6",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "p11-kit-0.23.22-1.el8.src.rpm",
-				"name": "p11-kit-devel",
-				"epoch": "0",
-				"version": "0.23.22",
-				"release": "1.el8",
-				"arch": "x86_64",
-				"filename": "p11-kit-devel-0.23.22-1.el8.x86_64.rpm",
-				"sum": "5cae517a588c5264ab2d408ff04ef19ef2db4e6223e978e92fe3ad02be9f5cb6",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "p11-kit-0.23.22-1.el8.src.rpm",
-				"name": "p11-kit-devel",
-				"epoch": "0",
-				"version": "0.23.22",
-				"release": "1.el8",
-				"arch": "x86_64",
-				"filename": "p11-kit-devel-0.23.22-1.el8.x86_64.rpm",
-				"sum": "5cae517a588c5264ab2d408ff04ef19ef2db4e6223e978e92fe3ad02be9f5cb6",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "p11-kit-0.23.22-1.el8.src.rpm",
-				"name": "p11-kit-trust",
-				"epoch": "0",
-				"version": "0.23.22",
-				"release": "1.el8",
-				"arch": "x86_64",
-				"filename": "p11-kit-trust-0.23.22-1.el8.x86_64.rpm",
-				"sum": "9671da359db1b213417daad538d26e079a1c571dbbda7460f2ef3a47b0e444d4",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "p11-kit-0.23.22-1.el8.src.rpm",
-				"name": "p11-kit-trust",
-				"epoch": "0",
-				"version": "0.23.22",
-				"release": "1.el8",
-				"arch": "x86_64",
-				"filename": "p11-kit-trust-0.23.22-1.el8.x86_64.rpm",
-				"sum": "9671da359db1b213417daad538d26e079a1c571dbbda7460f2ef3a47b0e444d4",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "p11-kit-0.23.22-1.el8.src.rpm",
-				"name": "p11-kit",
-				"epoch": "0",
-				"version": "0.23.22",
-				"release": "1.el8",
-				"arch": "i686",
-				"filename": "Packages/p11-kit-0.23.22-1.el8.i686.rpm",
-				"sum": "fe19053da40d1c195413bb2993484e4f30fd723cb5ce721403640f40c6878c70",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "p11-kit-0.23.22-1.el8.src.rpm",
 				"name": "p11-kit-trust",
 				"epoch": "0",
 				"version": "0.23.22",
@@ -142,6 +106,18 @@
 				"arch": "aarch64",
 				"filename": "p11-kit-trust-0.23.22-1.el8.aarch64.rpm",
 				"sum": "5bb697349ca74dcc300af49b2e8a26effb3c5aea0d438b605bbde15ed5c1b6a2",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "p11-kit-0.23.22-1.el8.src.rpm",
+				"name": "p11-kit-devel",
+				"epoch": "0",
+				"version": "0.23.22",
+				"release": "1.el8",
+				"arch": "x86_64",
+				"filename": "p11-kit-devel-0.23.22-1.el8.x86_64.rpm",
+				"sum": "5cae517a588c5264ab2d408ff04ef19ef2db4e6223e978e92fe3ad02be9f5cb6",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -171,6 +147,18 @@
 			},
 			{
 				"src": "p11-kit-0.23.22-1.el8.src.rpm",
+				"name": "p11-kit-trust",
+				"epoch": "0",
+				"version": "0.23.22",
+				"release": "1.el8",
+				"arch": "x86_64",
+				"filename": "p11-kit-trust-0.23.22-1.el8.x86_64.rpm",
+				"sum": "9671da359db1b213417daad538d26e079a1c571dbbda7460f2ef3a47b0e444d4",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "p11-kit-0.23.22-1.el8.src.rpm",
 				"name": "p11-kit-server",
 				"epoch": "0",
 				"version": "0.23.22",
@@ -178,42 +166,6 @@
 				"arch": "aarch64",
 				"filename": "p11-kit-server-0.23.22-1.el8.aarch64.rpm",
 				"sum": "e98fc55716301501fe641f1b93d066d2bc0821e9da60c3e8c79a67153ff9fae1",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "p11-kit-0.23.22-1.el8.src.rpm",
-				"name": "p11-kit-server",
-				"epoch": "0",
-				"version": "0.23.22",
-				"release": "1.el8",
-				"arch": "ppc64le",
-				"filename": "p11-kit-server-0.23.22-1.el8.ppc64le.rpm",
-				"sum": "14d335b5d60430d7e68ec30e7246030adbeae292a208c1f3296238baf9ef01bc",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "p11-kit-0.23.22-1.el8.src.rpm",
-				"name": "p11-kit-devel",
-				"epoch": "0",
-				"version": "0.23.22",
-				"release": "1.el8",
-				"arch": "ppc64le",
-				"filename": "p11-kit-devel-0.23.22-1.el8.ppc64le.rpm",
-				"sum": "16735c331b5c790620a71bfba4599e4f65ba1a129159bcf02738f9666667d97a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "p11-kit-0.23.22-1.el8.src.rpm",
-				"name": "p11-kit-trust",
-				"epoch": "0",
-				"version": "0.23.22",
-				"release": "1.el8",
-				"arch": "ppc64le",
-				"filename": "p11-kit-trust-0.23.22-1.el8.ppc64le.rpm",
-				"sum": "26cf71199b651faebda76ace4af89ba029bb055c99a771cef10f2f6b521232a8",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -228,17 +180,23 @@
 				"sum": "fd0667bb3d4f995ccbc4b49d60786aa59267b8a61f46292945aa82663378c502",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "p11-kit-0.23.22-1.el8.src.rpm",
+				"name": "p11-kit",
+				"epoch": "0",
+				"version": "0.23.22",
+				"release": "1.el8",
+				"arch": "i686",
+				"filename": "Packages/p11-kit-0.23.22-1.el8.i686.rpm",
+				"sum": "fe19053da40d1c195413bb2993484e4f30fd723cb5ce721403640f40c6878c70",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "The p11-kit packages provide a mechanism to manage PKCS#11 modules. The p11-kit-trust subpackage includes a PKCS#11 trust module that provides certificate anchors and black lists based on configuration files.\n\nThe following packages have been upgraded to a later upstream version: p11-kit (0.23.22). (BZ#1887853)\n\nSecurity Fix(es):\n\n* p11-kit: integer overflow when allocating memory for arrays or attributes and object identifiers (CVE-2020-29361)\n\n* p11-kit: out-of-bounds read in p11_rpc_buffer_get_byte_array function in rpc-message.c (CVE-2020-29362)\n\n* p11-kit: out-of-bounds write in p11_rpc_buffer_get_byte_array_value function in rpc-message.c (CVE-2020-29363)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
-		{
-			"id": "ALSA-2021-1609",
-			"title": "ALSA-2021-1609",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2021-1609.html"
-		},
 		{
 			"id": "CVE-2020-29361",
 			"title": "CVE-2020-29361",
@@ -256,6 +214,12 @@
 			"title": "CVE-2020-29363",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2020-29363"
+		},
+		{
+			"id": "ALSA-2021-1609",
+			"title": "ALSA-2021-1609",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-1609.html"
 		}
 	],
 	"issued_date": {

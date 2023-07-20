@@ -10,8 +10,8 @@
 	"summary": "An update for the rust-toolset:rhel8 module is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "2",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_rust-toolset",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_rust-toolset",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_rust-toolset",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_rust-toolset",
 		"packages": [
 			{
 				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
@@ -22,6 +22,18 @@
 				"arch": "aarch64",
 				"filename": "rust-std-static-1.58.1-1.module_el8.6.0+2748+176088b3.aarch64.rpm",
 				"sum": "02124e39f390f09e780c98b2d031456a9289c5c0c94a2f1a4e663942f4afcac6",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
+				"name": "rls",
+				"epoch": "0",
+				"version": "1.58.1",
+				"release": "1.module_el8.6.0+2748+176088b3",
+				"arch": "ppc64le",
+				"filename": "rls-1.58.1-1.module_el8.6.0+2748+176088b3.ppc64le.rpm",
+				"sum": "04368b67d2fb686b1c0b0faea088161904eb3e998acc1b50ae3a5c60cf12061d",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -43,9 +55,57 @@
 				"epoch": "0",
 				"version": "1.58.1",
 				"release": "1.module_el8.6.0+2748+176088b3",
+				"arch": "x86_64",
+				"filename": "rust-std-static-wasm32-unknown-unknown-1.58.1-1.module_el8.6.0+2748+176088b3.x86_64.rpm",
+				"sum": "0b04f79ad1c9276503725dbd58ddf074cbad849c74e6c7e5fdc67df060ebca2f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
+				"name": "rust-analysis",
+				"epoch": "0",
+				"version": "1.58.1",
+				"release": "1.module_el8.6.0+2748+176088b3",
+				"arch": "ppc64le",
+				"filename": "rust-analysis-1.58.1-1.module_el8.6.0+2748+176088b3.ppc64le.rpm",
+				"sum": "0cdfe73209feaba6ece9c92e841b889f5b3b76143498e0b5620a9b8ecaea99ce",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
+				"name": "rust-doc",
+				"epoch": "0",
+				"version": "1.58.1",
+				"release": "1.module_el8.6.0+2748+176088b3",
+				"arch": "ppc64le",
+				"filename": "rust-doc-1.58.1-1.module_el8.6.0+2748+176088b3.ppc64le.rpm",
+				"sum": "161c53645ee2c4687aaaf46a072c27f93b49b17fa1f48f52d6ff713ffaa31a37",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
+				"name": "rust-std-static-wasm32-unknown-unknown",
+				"epoch": "0",
+				"version": "1.58.1",
+				"release": "1.module_el8.6.0+2748+176088b3",
 				"arch": "aarch64",
 				"filename": "rust-std-static-wasm32-unknown-unknown-1.58.1-1.module_el8.6.0+2748+176088b3.aarch64.rpm",
 				"sum": "1c4b0abaf4f3d5ce504e1f14ece400f8bd3e5f9989d63f967378a815145f2a33",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
+				"name": "rust",
+				"epoch": "0",
+				"version": "1.58.1",
+				"release": "1.module_el8.6.0+2748+176088b3",
+				"arch": "ppc64le",
+				"filename": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.ppc64le.rpm",
+				"sum": "23f85f26348e0bdc3b74b6b983abdd7bcaff99edadc655e0da82ced74b9f0d9d",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -58,6 +118,18 @@
 				"arch": "aarch64",
 				"filename": "rust-analysis-1.58.1-1.module_el8.6.0+2748+176088b3.aarch64.rpm",
 				"sum": "2eae71b72aebb20bcaf58d806ee62d1347bfade35015c4f967289d769095d7db",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
+				"name": "cargo",
+				"epoch": "0",
+				"version": "1.58.1",
+				"release": "1.module_el8.6.0+2748+176088b3",
+				"arch": "ppc64le",
+				"filename": "cargo-1.58.1-1.module_el8.6.0+2748+176088b3.ppc64le.rpm",
+				"sum": "343b4601d0e2b319ceb1adb7bd66213a828b6022775a6699d3504cedfda94437",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -123,102 +195,6 @@
 			},
 			{
 				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
-				"name": "rust",
-				"epoch": "0",
-				"version": "1.58.1",
-				"release": "1.module_el8.6.0+2748+176088b3",
-				"arch": "aarch64",
-				"filename": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.aarch64.rpm",
-				"sum": "55433c721ecd870472857d0eb5a2dc262e60834e0d5b7b24c5d86d267671241e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
-				"name": "rust-doc",
-				"epoch": "0",
-				"version": "1.58.1",
-				"release": "1.module_el8.6.0+2748+176088b3",
-				"arch": "aarch64",
-				"filename": "rust-doc-1.58.1-1.module_el8.6.0+2748+176088b3.aarch64.rpm",
-				"sum": "7268c531d14896750da0a341ff748ba517d6f7c0237ed277513622a730bd61fe",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
-				"name": "cargo",
-				"epoch": "0",
-				"version": "1.58.1",
-				"release": "1.module_el8.6.0+2748+176088b3",
-				"arch": "aarch64",
-				"filename": "cargo-1.58.1-1.module_el8.6.0+2748+176088b3.aarch64.rpm",
-				"sum": "9d4e6b47909eed09cd0343d5387ebe6aa5bc8f58eaae095280ffaaa228bbc484",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
-				"name": "rls",
-				"epoch": "0",
-				"version": "1.58.1",
-				"release": "1.module_el8.6.0+2748+176088b3",
-				"arch": "aarch64",
-				"filename": "rls-1.58.1-1.module_el8.6.0+2748+176088b3.aarch64.rpm",
-				"sum": "a9e1af72b51aa2b0cfbbae20b27f5603bfe5820fbcbb4fa9a2a0cd02d90ff24e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
-				"name": "rust-lldb",
-				"epoch": "0",
-				"version": "1.58.1",
-				"release": "1.module_el8.6.0+2748+176088b3",
-				"arch": "noarch",
-				"filename": "rust-lldb-1.58.1-1.module_el8.6.0+2748+176088b3.noarch.rpm",
-				"sum": "b892d2eba9ae44485e9fd2c24e7e9c31f9f61abe2837aafff84b26a4b4ca1377",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
-				"name": "cargo-doc",
-				"epoch": "0",
-				"version": "1.58.1",
-				"release": "1.module_el8.6.0+2748+176088b3",
-				"arch": "noarch",
-				"filename": "cargo-doc-1.58.1-1.module_el8.6.0+2748+176088b3.noarch.rpm",
-				"sum": "b9be5b6beb64258abe2a092c9ae10ecff197a18f2452e49c0690367ea1665682",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
-				"name": "rust-debugger-common",
-				"epoch": "0",
-				"version": "1.58.1",
-				"release": "1.module_el8.6.0+2748+176088b3",
-				"arch": "noarch",
-				"filename": "rust-debugger-common-1.58.1-1.module_el8.6.0+2748+176088b3.noarch.rpm",
-				"sum": "eb439060f145eef51df24c80bc9be277c519e4ef86e48816f90a0faeddf7b81d",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
-				"name": "rust-std-static-wasm32-unknown-unknown",
-				"epoch": "0",
-				"version": "1.58.1",
-				"release": "1.module_el8.6.0+2748+176088b3",
-				"arch": "x86_64",
-				"filename": "rust-std-static-wasm32-unknown-unknown-1.58.1-1.module_el8.6.0+2748+176088b3.x86_64.rpm",
-				"sum": "0b04f79ad1c9276503725dbd58ddf074cbad849c74e6c7e5fdc67df060ebca2f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
 				"name": "cargo",
 				"epoch": "0",
 				"version": "1.58.1",
@@ -226,6 +202,30 @@
 				"arch": "x86_64",
 				"filename": "cargo-1.58.1-1.module_el8.6.0+2748+176088b3.x86_64.rpm",
 				"sum": "4ed7749cb2c2a894bd3ba67c5bc489c06e7094f298f9a1165f408d92290623d9",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rust-toolset-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
+				"name": "rust-toolset",
+				"epoch": "0",
+				"version": "1.58.1",
+				"release": "1.module_el8.6.0+2748+176088b3",
+				"arch": "ppc64le",
+				"filename": "rust-toolset-1.58.1-1.module_el8.6.0+2748+176088b3.ppc64le.rpm",
+				"sum": "4f8a011f3870f9acb0e0316ac2666b475281158b714a3bc81bf8be1a1293d0b0",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
+				"name": "rust",
+				"epoch": "0",
+				"version": "1.58.1",
+				"release": "1.module_el8.6.0+2748+176088b3",
+				"arch": "aarch64",
+				"filename": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.aarch64.rpm",
+				"sum": "55433c721ecd870472857d0eb5a2dc262e60834e0d5b7b24c5d86d267671241e",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -243,6 +243,18 @@
 			},
 			{
 				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
+				"name": "rust-doc",
+				"epoch": "0",
+				"version": "1.58.1",
+				"release": "1.module_el8.6.0+2748+176088b3",
+				"arch": "aarch64",
+				"filename": "rust-doc-1.58.1-1.module_el8.6.0+2748+176088b3.aarch64.rpm",
+				"sum": "7268c531d14896750da0a341ff748ba517d6f7c0237ed277513622a730bd61fe",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
 				"name": "rust-analysis",
 				"epoch": "0",
 				"version": "1.58.1",
@@ -250,6 +262,18 @@
 				"arch": "x86_64",
 				"filename": "rust-analysis-1.58.1-1.module_el8.6.0+2748+176088b3.x86_64.rpm",
 				"sum": "816be7e0e10c9cb50eb9e172749645e9d45d18996086948478e0de6690846b30",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
+				"name": "rust-std-static",
+				"epoch": "0",
+				"version": "1.58.1",
+				"release": "1.module_el8.6.0+2748+176088b3",
+				"arch": "ppc64le",
+				"filename": "rust-std-static-1.58.1-1.module_el8.6.0+2748+176088b3.ppc64le.rpm",
+				"sum": "8f70f184c860a2c6d98870954da8304d5f92a0fcdc3d649c425bf782ce9225cc",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -303,6 +327,42 @@
 			},
 			{
 				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
+				"name": "cargo",
+				"epoch": "0",
+				"version": "1.58.1",
+				"release": "1.module_el8.6.0+2748+176088b3",
+				"arch": "aarch64",
+				"filename": "cargo-1.58.1-1.module_el8.6.0+2748+176088b3.aarch64.rpm",
+				"sum": "9d4e6b47909eed09cd0343d5387ebe6aa5bc8f58eaae095280ffaaa228bbc484",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
+				"name": "rls",
+				"epoch": "0",
+				"version": "1.58.1",
+				"release": "1.module_el8.6.0+2748+176088b3",
+				"arch": "aarch64",
+				"filename": "rls-1.58.1-1.module_el8.6.0+2748+176088b3.aarch64.rpm",
+				"sum": "a9e1af72b51aa2b0cfbbae20b27f5603bfe5820fbcbb4fa9a2a0cd02d90ff24e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
+				"name": "rustfmt",
+				"epoch": "0",
+				"version": "1.58.1",
+				"release": "1.module_el8.6.0+2748+176088b3",
+				"arch": "ppc64le",
+				"filename": "rustfmt-1.58.1-1.module_el8.6.0+2748+176088b3.ppc64le.rpm",
+				"sum": "ac39ee640cceb59a6d39cc9082838f6e1b5fb45929e04459845269aef122216c",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
 				"name": "rust-std-static-wasm32-wasi",
 				"epoch": "0",
 				"version": "1.58.1",
@@ -310,6 +370,30 @@
 				"arch": "x86_64",
 				"filename": "rust-std-static-wasm32-wasi-1.58.1-1.module_el8.6.0+2748+176088b3.x86_64.rpm",
 				"sum": "b5053ece2ea37cc58c5b8733d4b8eb0660aa9b853d9107a55e2f99c9adc3d574",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
+				"name": "rust-lldb",
+				"epoch": "0",
+				"version": "1.58.1",
+				"release": "1.module_el8.6.0+2748+176088b3",
+				"arch": "noarch",
+				"filename": "rust-lldb-1.58.1-1.module_el8.6.0+2748+176088b3.noarch.rpm",
+				"sum": "b892d2eba9ae44485e9fd2c24e7e9c31f9f61abe2837aafff84b26a4b4ca1377",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
+				"name": "cargo-doc",
+				"epoch": "0",
+				"version": "1.58.1",
+				"release": "1.module_el8.6.0+2748+176088b3",
+				"arch": "noarch",
+				"filename": "cargo-doc-1.58.1-1.module_el8.6.0+2748+176088b3.noarch.rpm",
+				"sum": "b9be5b6beb64258abe2a092c9ae10ecff197a18f2452e49c0690367ea1665682",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -339,97 +423,13 @@
 			},
 			{
 				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
-				"name": "rls",
+				"name": "rust-debugger-common",
 				"epoch": "0",
 				"version": "1.58.1",
 				"release": "1.module_el8.6.0+2748+176088b3",
-				"arch": "ppc64le",
-				"filename": "rls-1.58.1-1.module_el8.6.0+2748+176088b3.ppc64le.rpm",
-				"sum": "04368b67d2fb686b1c0b0faea088161904eb3e998acc1b50ae3a5c60cf12061d",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
-				"name": "rust-analysis",
-				"epoch": "0",
-				"version": "1.58.1",
-				"release": "1.module_el8.6.0+2748+176088b3",
-				"arch": "ppc64le",
-				"filename": "rust-analysis-1.58.1-1.module_el8.6.0+2748+176088b3.ppc64le.rpm",
-				"sum": "0cdfe73209feaba6ece9c92e841b889f5b3b76143498e0b5620a9b8ecaea99ce",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
-				"name": "rust-doc",
-				"epoch": "0",
-				"version": "1.58.1",
-				"release": "1.module_el8.6.0+2748+176088b3",
-				"arch": "ppc64le",
-				"filename": "rust-doc-1.58.1-1.module_el8.6.0+2748+176088b3.ppc64le.rpm",
-				"sum": "161c53645ee2c4687aaaf46a072c27f93b49b17fa1f48f52d6ff713ffaa31a37",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
-				"name": "rust",
-				"epoch": "0",
-				"version": "1.58.1",
-				"release": "1.module_el8.6.0+2748+176088b3",
-				"arch": "ppc64le",
-				"filename": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.ppc64le.rpm",
-				"sum": "23f85f26348e0bdc3b74b6b983abdd7bcaff99edadc655e0da82ced74b9f0d9d",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
-				"name": "cargo",
-				"epoch": "0",
-				"version": "1.58.1",
-				"release": "1.module_el8.6.0+2748+176088b3",
-				"arch": "ppc64le",
-				"filename": "cargo-1.58.1-1.module_el8.6.0+2748+176088b3.ppc64le.rpm",
-				"sum": "343b4601d0e2b319ceb1adb7bd66213a828b6022775a6699d3504cedfda94437",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rust-toolset-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
-				"name": "rust-toolset",
-				"epoch": "0",
-				"version": "1.58.1",
-				"release": "1.module_el8.6.0+2748+176088b3",
-				"arch": "ppc64le",
-				"filename": "rust-toolset-1.58.1-1.module_el8.6.0+2748+176088b3.ppc64le.rpm",
-				"sum": "4f8a011f3870f9acb0e0316ac2666b475281158b714a3bc81bf8be1a1293d0b0",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
-				"name": "rust-std-static",
-				"epoch": "0",
-				"version": "1.58.1",
-				"release": "1.module_el8.6.0+2748+176088b3",
-				"arch": "ppc64le",
-				"filename": "rust-std-static-1.58.1-1.module_el8.6.0+2748+176088b3.ppc64le.rpm",
-				"sum": "8f70f184c860a2c6d98870954da8304d5f92a0fcdc3d649c425bf782ce9225cc",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rust-1.58.1-1.module_el8.6.0+2748+176088b3.src.rpm",
-				"name": "rustfmt",
-				"epoch": "0",
-				"version": "1.58.1",
-				"release": "1.module_el8.6.0+2748+176088b3",
-				"arch": "ppc64le",
-				"filename": "rustfmt-1.58.1-1.module_el8.6.0+2748+176088b3.ppc64le.rpm",
-				"sum": "ac39ee640cceb59a6d39cc9082838f6e1b5fb45929e04459845269aef122216c",
+				"arch": "noarch",
+				"filename": "rust-debugger-common-1.58.1-1.module_el8.6.0+2748+176088b3.noarch.rpm",
+				"sum": "eb439060f145eef51df24c80bc9be277c519e4ef86e48816f90a0faeddf7b81d",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -474,16 +474,16 @@
 	"description": "Rust Toolset provides the Rust programming language compiler rustc, the cargo build tool and dependency manager, and required libraries. \n\nThe following packages have been upgraded to a later upstream version: rust (1.58.0). (BZ#2002883)\n\nSecurity Fix(es):\n\n* rust: Race condition in remove_dir_all leading to removal of files outside of the directory being removed (CVE-2022-21658)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "ALSA-2022-1894",
-			"title": "ALSA-2022-1894",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2022-1894.html"
-		},
-		{
 			"id": "CVE-2022-21658",
 			"title": "CVE-2022-21658",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2022-21658"
+		},
+		{
+			"id": "ALSA-2022-1894",
+			"title": "ALSA-2022-1894",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-1894.html"
 		}
 	],
 	"issued_date": {

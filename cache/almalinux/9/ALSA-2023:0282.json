@@ -10,21 +10,9 @@
 	"summary": "sudo security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
 		"packages": [
-			{
-				"src": "sudo-1.9.5p2-7.el9_1.1.src.rpm",
-				"name": "sudo-python-plugin",
-				"epoch": "0",
-				"version": "1.9.5p2",
-				"release": "7.el9_1.1",
-				"arch": "aarch64",
-				"filename": "sudo-python-plugin-1.9.5p2-7.el9_1.1.aarch64.rpm",
-				"sum": "66b1cafd177faead9e2fb58e03052607e3bc54f21db4fe20182239a5101dd1da",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "sudo-1.9.5p2-7.el9_1.1.src.rpm",
 				"name": "sudo-python-plugin",
@@ -43,9 +31,33 @@
 				"epoch": "0",
 				"version": "1.9.5p2",
 				"release": "7.el9_1.1",
+				"arch": "aarch64",
+				"filename": "sudo-python-plugin-1.9.5p2-7.el9_1.1.aarch64.rpm",
+				"sum": "66b1cafd177faead9e2fb58e03052607e3bc54f21db4fe20182239a5101dd1da",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "sudo-1.9.5p2-7.el9_1.1.src.rpm",
+				"name": "sudo-python-plugin",
+				"epoch": "0",
+				"version": "1.9.5p2",
+				"release": "7.el9_1.1",
 				"arch": "x86_64",
 				"filename": "sudo-python-plugin-1.9.5p2-7.el9_1.1.x86_64.rpm",
 				"sum": "925d1685a194ee721adda4e41050e94ebc121e1fefbc3ec6672334ea4138c5dc",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "sudo-1.9.5p2-7.el9_1.1.src.rpm",
+				"name": "sudo",
+				"epoch": "0",
+				"version": "1.9.5p2",
+				"release": "7.el9_1.1",
+				"arch": "x86_64",
+				"filename": "sudo-1.9.5p2-7.el9_1.1.x86_64.rpm",
+				"sum": "b117cf6867fc850d85553e380f6a6c36c95c0ea566824d5699f50c6bd36e73c7",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -79,18 +91,6 @@
 				"epoch": "0",
 				"version": "1.9.5p2",
 				"release": "7.el9_1.1",
-				"arch": "x86_64",
-				"filename": "sudo-1.9.5p2-7.el9_1.1.x86_64.rpm",
-				"sum": "b117cf6867fc850d85553e380f6a6c36c95c0ea566824d5699f50c6bd36e73c7",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "sudo-1.9.5p2-7.el9_1.1.src.rpm",
-				"name": "sudo",
-				"epoch": "0",
-				"version": "1.9.5p2",
-				"release": "7.el9_1.1",
 				"arch": "ppc64le",
 				"filename": "sudo-1.9.5p2-7.el9_1.1.ppc64le.rpm",
 				"sum": "dcff805d1da58c2737bb49f6d5872daee4fa3781bd6820abdbc1d1b46f4615c8",
@@ -114,10 +114,10 @@
 	"description": "The sudo packages contain the sudo utility which allows system administrators to provide certain users with the permission to execute privileged commands, which are used for system management purposes, without having to log in as root.\n\nSecurity Fix(es):\n\n* sudo: arbitrary file write with privileges of the RunAs user (CVE-2023-22809)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:0282",
-			"title": "RHSA-2023:0282",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:0282"
+			"id": "2161142",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2161142"
 		},
 		{
 			"id": "CVE-2023-22809",
@@ -126,10 +126,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2023-22809"
 		},
 		{
-			"id": "2161142",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2161142"
+			"id": "RHSA-2023:0282",
+			"title": "RHSA-2023:0282",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:0282"
 		},
 		{
 			"id": "ALSA-2023:0282",

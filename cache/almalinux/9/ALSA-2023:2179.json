@@ -10,21 +10,9 @@
 	"summary": "libguestfs-winsupport security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_2_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_2_default",
+		"name": "almalinux-9-for-x86_64-appstream-rpms__9_2_default",
+		"shortname": "almalinux-9-for-x86_64-appstream-rpms__9_2_default",
 		"packages": [
-			{
-				"src": "libguestfs-winsupport-9.2-1.el9.src.rpm",
-				"name": "libguestfs-winsupport",
-				"epoch": "0",
-				"version": "9.2",
-				"release": "1.el9",
-				"arch": "aarch64",
-				"filename": "libguestfs-winsupport-9.2-1.el9.aarch64.rpm",
-				"sum": "cbdad0105d99296745c14e4b3cff7d3464b874147c4d63a862491b446a11c2d2",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "libguestfs-winsupport-9.2-1.el9.src.rpm",
 				"name": "libguestfs-winsupport",
@@ -48,16 +36,52 @@
 				"sum": "c33fca0b84951882c4cb6df4ad952fb8e9c59e55f3e54de0e2848410b34e713f",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "libguestfs-winsupport-9.2-1.el9.src.rpm",
+				"name": "libguestfs-winsupport",
+				"epoch": "0",
+				"version": "9.2",
+				"release": "1.el9",
+				"arch": "aarch64",
+				"filename": "libguestfs-winsupport-9.2-1.el9.aarch64.rpm",
+				"sum": "cbdad0105d99296745c14e4b3cff7d3464b874147c4d63a862491b446a11c2d2",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "The libguestfs-winsupport package adds support for Windows guests to libguestfs, a set of tools and libraries allowing users to access and modify virtual machine (VM) disk images.\n\nSecurity Fix(es):\n\n* ntfs-3g: heap-based buffer overflow in ntfsck (CVE-2021-46790)\n* ntfs-3g: crafted NTFS image can cause heap exhaustion in ntfs_get_attribute_value (CVE-2022-30784)\n* ntfs-3g: crafted NTFS image can cause a heap-based buffer overflow in ntfs_names_full_collate (CVE-2022-30786)\n* ntfs-3g: crafted NTFS image can cause a heap-based buffer overflow in ntfs_mft_rec_alloc (CVE-2022-30788)\n* ntfs-3g: crafted NTFS image can cause a heap-based buffer overflow in ntfs_check_log_client_array (CVE-2022-30789)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:2179",
-			"title": "RHSA-2023:2179",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:2179"
+			"id": "2093314",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2093314"
+		},
+		{
+			"id": "2093326",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2093326"
+		},
+		{
+			"id": "2093340",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2093340"
+		},
+		{
+			"id": "2093348",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2093348"
+		},
+		{
+			"id": "2093358",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2093358"
 		},
 		{
 			"id": "CVE-2021-46790",
@@ -90,34 +114,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-30789"
 		},
 		{
-			"id": "2093314",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2093314"
-		},
-		{
-			"id": "2093326",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2093326"
-		},
-		{
-			"id": "2093340",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2093340"
-		},
-		{
-			"id": "2093348",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2093348"
-		},
-		{
-			"id": "2093358",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2093358"
+			"id": "RHSA-2023:2179",
+			"title": "RHSA-2023:2179",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:2179"
 		},
 		{
 			"id": "ALSA-2023:2179",

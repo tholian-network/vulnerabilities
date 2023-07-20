@@ -10,21 +10,9 @@
 	"summary": "sysstat security and bug fix update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_2_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_2_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_2_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_2_default",
 		"packages": [
-			{
-				"src": "sysstat-12.5.4-5.el9.src.rpm",
-				"name": "sysstat",
-				"epoch": "0",
-				"version": "12.5.4",
-				"release": "5.el9",
-				"arch": "aarch64",
-				"filename": "sysstat-12.5.4-5.el9.aarch64.rpm",
-				"sum": "91c6ebbeab132b1109c3ed91e975979a9883aec4319f5e4da03cdb7116110079",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "sysstat-12.5.4-5.el9.src.rpm",
 				"name": "sysstat",
@@ -43,9 +31,9 @@
 				"epoch": "0",
 				"version": "12.5.4",
 				"release": "5.el9",
-				"arch": "x86_64",
-				"filename": "sysstat-12.5.4-5.el9.x86_64.rpm",
-				"sum": "f50925d0d4a5d2f4ce873dc1480de6031f78e096787f0ebcc24a285e70e9d79c",
+				"arch": "ppc64le",
+				"filename": "sysstat-12.5.4-5.el9.ppc64le.rpm",
+				"sum": "86d116240c27665c33d0ce98f295e0fddca5008a9049d709c4445f586b587471",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -55,9 +43,21 @@
 				"epoch": "0",
 				"version": "12.5.4",
 				"release": "5.el9",
-				"arch": "ppc64le",
-				"filename": "sysstat-12.5.4-5.el9.ppc64le.rpm",
-				"sum": "86d116240c27665c33d0ce98f295e0fddca5008a9049d709c4445f586b587471",
+				"arch": "aarch64",
+				"filename": "sysstat-12.5.4-5.el9.aarch64.rpm",
+				"sum": "91c6ebbeab132b1109c3ed91e975979a9883aec4319f5e4da03cdb7116110079",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "sysstat-12.5.4-5.el9.src.rpm",
+				"name": "sysstat",
+				"epoch": "0",
+				"version": "12.5.4",
+				"release": "5.el9",
+				"arch": "x86_64",
+				"filename": "sysstat-12.5.4-5.el9.x86_64.rpm",
+				"sum": "f50925d0d4a5d2f4ce873dc1480de6031f78e096787f0ebcc24a285e70e9d79c",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -66,10 +66,10 @@
 	"description": "The sysstat packages provide the sar and iostat commands. These commands enable system monitoring of disk, network, and other I/O activity.\n\nSecurity Fix(es):\n\n* sysstat: arithmetic overflow in allocate_structures() on 32 bit systems (CVE-2022-39377)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:2234",
-			"title": "RHSA-2023:2234",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:2234"
+			"id": "2141207",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2141207"
 		},
 		{
 			"id": "CVE-2022-39377",
@@ -78,10 +78,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-39377"
 		},
 		{
-			"id": "2141207",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2141207"
+			"id": "RHSA-2023:2234",
+			"title": "RHSA-2023:2234",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:2234"
 		},
 		{
 			"id": "ALSA-2023:2234",
@@ -94,6 +94,6 @@
 		"$date": 1683590400000
 	},
 	"updated_date": {
-		"$date": 1683893909000
+		"$date": 1683893910000
 	}
 }

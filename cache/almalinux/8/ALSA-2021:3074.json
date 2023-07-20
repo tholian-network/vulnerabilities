@@ -10,9 +10,21 @@
 	"summary": "An update for the nodejs:14 module is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "3",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_nodejs",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_nodejs",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_nodejs",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_nodejs",
 		"packages": [
+			{
+				"src": "nodejs-packaging-23-3.module_el8.5.0+254+b4526b16.src.rpm",
+				"name": "nodejs-packaging",
+				"epoch": "0",
+				"version": "23",
+				"release": "3.module_el8.5.0+254+b4526b16",
+				"arch": "noarch",
+				"filename": "nodejs-packaging-23-3.module_el8.5.0+254+b4526b16.noarch.rpm",
+				"sum": "46efea0b245114ef59fb19785c77620fd338becc1d36c6c3ecf7e67d916cd8ed",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "nodejs-packaging-23-3.module_el8.5.0+2618+8d46dafd.src.rpm",
 				"name": "nodejs-packaging",
@@ -50,18 +62,6 @@
 				"reboot_suggested": 0
 			},
 			{
-				"src": "nodejs-packaging-23-3.module_el8.5.0+254+b4526b16.src.rpm",
-				"name": "nodejs-packaging",
-				"epoch": "0",
-				"version": "23",
-				"release": "3.module_el8.5.0+254+b4526b16",
-				"arch": "noarch",
-				"filename": "nodejs-packaging-23-3.module_el8.5.0+254+b4526b16.noarch.rpm",
-				"sum": "46efea0b245114ef59fb19785c77620fd338becc1d36c6c3ecf7e67d916cd8ed",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
 				"src": "nodejs-nodemon-2.0.3-1.module_el8.5.0+85+79a7b441.src.rpm",
 				"name": "nodejs-nodemon",
 				"epoch": "0",
@@ -77,12 +77,6 @@
 	},
 	"description": "Node.js is a software development platform for building fast and scalable network applications in the JavaScript programming language. \n\nThe following packages have been upgraded to a later upstream version: nodejs (14.17.3). (BZ#1978203)\n\nSecurity Fix(es):\n\n* nodejs-hosted-git-info: Regular Expression denial of service via shortcutMatch in fromUrl() (CVE-2021-23362)\n\n* nodejs-ssri: Regular expression DoS (ReDoS) when parsing malicious SRI in strict mode (CVE-2021-27290)\n\n* libuv: out-of-bounds read in uv__idna_toascii() can lead to information disclosures or crashes (CVE-2021-22918)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
-		{
-			"id": "ALSA-2021-3074",
-			"title": "ALSA-2021-3074",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2021-3074.html"
-		},
 		{
 			"id": "CVE-2021-22918",
 			"title": "CVE-2021-22918",
@@ -100,6 +94,12 @@
 			"title": "CVE-2021-27290",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2021-27290"
+		},
+		{
+			"id": "ALSA-2021-3074",
+			"title": "ALSA-2021-3074",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-3074.html"
 		}
 	],
 	"issued_date": {

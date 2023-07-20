@@ -15,6 +15,30 @@
 		"packages": [
 			{
 				"src": "pcs-0.10.14-5.el8.alma.src.rpm",
+				"name": "pcs",
+				"epoch": "0",
+				"version": "0.10.14",
+				"release": "5.el8.alma",
+				"arch": "ppc64le",
+				"filename": "pcs-0.10.14-5.el8.alma.ppc64le.rpm",
+				"sum": "0c3cfe3c1748173414de8c7f64fa938e702c2d3709ca364d1264c499bfbffdc0",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pcs-0.10.14-5.el8.alma.src.rpm",
+				"name": "pcs-snmp",
+				"epoch": "0",
+				"version": "0.10.14",
+				"release": "5.el8.alma",
+				"arch": "ppc64le",
+				"filename": "pcs-snmp-0.10.14-5.el8.alma.ppc64le.rpm",
+				"sum": "400470b4854e55a045ff3195f73a5af38d95a278383be8909473c23f6191a4bf",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pcs-0.10.14-5.el8.alma.src.rpm",
 				"name": "pcs-snmp",
 				"epoch": "0",
 				"version": "0.10.14",
@@ -22,18 +46,6 @@
 				"arch": "x86_64",
 				"filename": "pcs-snmp-0.10.14-5.el8.alma.x86_64.rpm",
 				"sum": "6fb4e658c8027155e3f85592aab27e27b2a006ab29df9571ed254745cf28ce40",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pcs-0.10.14-5.el8.alma.src.rpm",
-				"name": "pcs",
-				"epoch": "0",
-				"version": "0.10.14",
-				"release": "5.el8.alma",
-				"arch": "x86_64",
-				"filename": "pcs-0.10.14-5.el8.alma.x86_64.rpm",
-				"sum": "e4bb8b70d732960874fc1077d8b021b05e85d998df8460e8c301de165d334717",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -67,21 +79,9 @@
 				"epoch": "0",
 				"version": "0.10.14",
 				"release": "5.el8.alma",
-				"arch": "ppc64le",
-				"filename": "pcs-0.10.14-5.el8.alma.ppc64le.rpm",
-				"sum": "0c3cfe3c1748173414de8c7f64fa938e702c2d3709ca364d1264c499bfbffdc0",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pcs-0.10.14-5.el8.alma.src.rpm",
-				"name": "pcs-snmp",
-				"epoch": "0",
-				"version": "0.10.14",
-				"release": "5.el8.alma",
-				"arch": "ppc64le",
-				"filename": "pcs-snmp-0.10.14-5.el8.alma.ppc64le.rpm",
-				"sum": "400470b4854e55a045ff3195f73a5af38d95a278383be8909473c23f6191a4bf",
+				"arch": "x86_64",
+				"filename": "pcs-0.10.14-5.el8.alma.x86_64.rpm",
+				"sum": "e4bb8b70d732960874fc1077d8b021b05e85d998df8460e8c301de165d334717",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -114,10 +114,10 @@
 	"description": "The pcs packages provide a command-line configuration system for the Pacemaker and Corosync utilities.\n\nSecurity Fix(es):\n\n* pcs: improper authentication via PAM (CVE-2022-1049)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:7447",
-			"title": "RHSA-2022:7447",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:7447"
+			"id": "2066629",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2066629"
 		},
 		{
 			"id": "CVE-2022-1049",
@@ -126,10 +126,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-1049"
 		},
 		{
-			"id": "2066629",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2066629"
+			"id": "RHSA-2022:7447",
+			"title": "RHSA-2022:7447",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:7447"
 		},
 		{
 			"id": "ALSA-2022:7447",

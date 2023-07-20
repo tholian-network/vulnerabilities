@@ -162,10 +162,34 @@
 	"description": "The kernel-rt packages provide the Real Time Linux Kernel, which enables fine-tuning for systems with extremely high determinism requirements.\n\nSecurity Fix(es):\n\n* kernel: use-after-free caused by l2cap_reassemble_sdu() in net/bluetooth/l2cap_core.c (CVE-2022-3564)\n* kernel: stack overflow in do_proc_dointvec and proc_skip_spaces (CVE-2022-4378)\n* kernel: use-after-free in __nfs42_ssc_open() in fs/nfs/nfs4file.c leading to remote Denial of Service attack (CVE-2022-4379)\n* kernel: Netfilter integer overflow vulnerability in nft_payload_copy_vlan (CVE-2023-0179)\n* kernel: an out-of-bounds vulnerability in i2c-ismt driver (CVE-2022-2873)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nBug Fix(es):\n\n* kernel-rt: update RT source tree to the latest AlmaLinux-9.1.z2 Batch (BZ#2160463)",
 	"references": [
 		{
-			"id": "RHSA-2023:0979",
-			"title": "RHSA-2023:0979",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:0979"
+			"id": "2119048",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2119048"
+		},
+		{
+			"id": "2150999",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2150999"
+		},
+		{
+			"id": "2152548",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2152548"
+		},
+		{
+			"id": "2152807",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2152807"
+		},
+		{
+			"id": "2161713",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2161713"
 		},
 		{
 			"id": "CVE-2022-2873",
@@ -198,34 +222,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2023-0179"
 		},
 		{
-			"id": "2119048",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2119048"
-		},
-		{
-			"id": "2150999",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2150999"
-		},
-		{
-			"id": "2152548",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2152548"
-		},
-		{
-			"id": "2152807",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2152807"
-		},
-		{
-			"id": "2161713",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2161713"
+			"id": "RHSA-2023:0979",
+			"title": "RHSA-2023:0979",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:0979"
 		},
 		{
 			"id": "ALSA-2023:0979",

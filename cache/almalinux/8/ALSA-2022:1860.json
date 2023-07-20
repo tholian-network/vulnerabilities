@@ -10,8 +10,8 @@
 	"summary": "An update for the maven:3.6 module is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "3",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_maven",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_maven",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_maven",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_maven",
 		"packages": [
 			{
 				"src": "maven-resolver-1.4.1-3.module_el8.6.0+2786+d7c38b21.src.rpm",
@@ -402,16 +402,16 @@
 	"description": "Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.\n\nSecurity Fix(es):\n\n* apache-httpclient: incorrect handling of malformed authority component in request URIs (CVE-2020-13956)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "ALSA-2022-1860",
-			"title": "ALSA-2022-1860",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2022-1860.html"
-		},
-		{
 			"id": "CVE-2020-13956",
 			"title": "CVE-2020-13956",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2020-13956"
+		},
+		{
+			"id": "ALSA-2022-1860",
+			"title": "ALSA-2022-1860",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-1860.html"
 		}
 	],
 	"issued_date": {

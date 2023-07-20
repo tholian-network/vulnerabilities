@@ -10,21 +10,9 @@
 	"summary": "squid security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_default",
 		"packages": [
-			{
-				"src": "squid-5.2-1.el9_0.2.src.rpm",
-				"name": "squid",
-				"epoch": "7",
-				"version": "5.2",
-				"release": "1.el9_0.2",
-				"arch": "aarch64",
-				"filename": "squid-5.2-1.el9_0.2.aarch64.rpm",
-				"sum": "503a2b43117f234e2817cd37ea4061d92967051f9505779ccbb0dc2af378f76a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "squid-5.2-1.el9_0.2.src.rpm",
 				"name": "squid",
@@ -34,6 +22,18 @@
 				"arch": "s390x",
 				"filename": "squid-5.2-1.el9_0.2.s390x.rpm",
 				"sum": "410e69fd923c3e6af28a08e5052fc2cfe0b2a260c1f29dd05403e81d8454cdb3",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "squid-5.2-1.el9_0.2.src.rpm",
+				"name": "squid",
+				"epoch": "7",
+				"version": "5.2",
+				"release": "1.el9_0.2",
+				"arch": "aarch64",
+				"filename": "squid-5.2-1.el9_0.2.aarch64.rpm",
+				"sum": "503a2b43117f234e2817cd37ea4061d92967051f9505779ccbb0dc2af378f76a",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -66,10 +66,10 @@
 	"description": "Squid is a high-performance proxy caching server for web clients, supporting FTP, Gopher, and HTTP data objects.\n\nSecurity Fix(es):\n\n* squid: buffer-over-read in SSPI and SMB authentication (CVE-2022-41318)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:6839",
-			"title": "RHSA-2022:6839",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:6839"
+			"id": "2129771",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2129771"
 		},
 		{
 			"id": "CVE-2022-41318",
@@ -78,10 +78,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-41318"
 		},
 		{
-			"id": "2129771",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2129771"
+			"id": "RHSA-2022:6839",
+			"title": "RHSA-2022:6839",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:6839"
 		},
 		{
 			"id": "ALSA-2022:6839",

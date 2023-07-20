@@ -14,6 +14,18 @@
 		"shortname": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
 		"packages": [
 			{
+				"src": "bogofilter-1.2.5-2.el8.src.rpm",
+				"name": "bogofilter",
+				"epoch": "0",
+				"version": "1.2.5",
+				"release": "2.el8",
+				"arch": "aarch64",
+				"filename": "bogofilter-1.2.5-2.el8.aarch64.rpm",
+				"sum": "106d7463cdcb13a1d949fc6928e4e9038a22f10f4ae0b9b5284fceb66dd78390",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "evolution-data-server-3.28.5-14.el8.src.rpm",
 				"name": "evolution-data-server-perl",
 				"epoch": "0",
@@ -22,6 +34,18 @@
 				"arch": "x86_64",
 				"filename": "evolution-data-server-perl-3.28.5-14.el8.x86_64.rpm",
 				"sum": "2342e87c6ca2f5d306c34d22983a5bbb3f7876d281d7fd4a2d7cc94c21729055",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "bogofilter-1.2.5-2.el8.src.rpm",
+				"name": "bogofilter",
+				"epoch": "0",
+				"version": "1.2.5",
+				"release": "2.el8",
+				"arch": "ppc64le",
+				"filename": "bogofilter-1.2.5-2.el8.ppc64le.rpm",
+				"sum": "2da41fb4e29b5c2b7c8a89681f0d921e59fc7a08eac890c37b9be5409231745f",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -96,30 +120,6 @@
 				"sum": "fdc55207c1f7e7c3c4caa8b410d71717ac263cd225ca41ceb5819d85a5d55de4",
 				"sum_type": 5,
 				"reboot_suggested": 0
-			},
-			{
-				"src": "bogofilter-1.2.5-2.el8.src.rpm",
-				"name": "bogofilter",
-				"epoch": "0",
-				"version": "1.2.5",
-				"release": "2.el8",
-				"arch": "aarch64",
-				"filename": "bogofilter-1.2.5-2.el8.aarch64.rpm",
-				"sum": "106d7463cdcb13a1d949fc6928e4e9038a22f10f4ae0b9b5284fceb66dd78390",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "bogofilter-1.2.5-2.el8.src.rpm",
-				"name": "bogofilter",
-				"epoch": "0",
-				"version": "1.2.5",
-				"release": "2.el8",
-				"arch": "ppc64le",
-				"filename": "bogofilter-1.2.5-2.el8.ppc64le.rpm",
-				"sum": "2da41fb4e29b5c2b7c8a89681f0d921e59fc7a08eac890c37b9be5409231745f",
-				"sum_type": 5,
-				"reboot_suggested": 0
 			}
 		]
 	},
@@ -130,12 +130,18 @@
 			"title": "CVE-2020-14928",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2020-14928"
+		},
+		{
+			"id": "ALSA-2020-4649",
+			"title": "ALSA-2020-4649",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2020-4649.html"
 		}
 	],
 	"issued_date": {
 		"$date": 1604406221000
 	},
 	"updated_date": {
-		"$date": 1628672040000
+		"$date": 1636712455000
 	}
 }

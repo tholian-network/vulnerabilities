@@ -10,8 +10,8 @@
 	"summary": "An update for the maven:3.5 module is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "3",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_maven",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_maven",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_maven",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_maven",
 		"packages": [
 			{
 				"src": "google-guice-4.1-11.module_el8.6.0+2752+f1f3449e.src.rpm",
@@ -178,6 +178,18 @@
 				"arch": "noarch",
 				"filename": "jansi-1.17.1-1.module_el8.6.0+2752+f1f3449e.noarch.rpm",
 				"sum": "421aae5bdbd3fe075cbedba01735c8684c45b60b873a1b360f83bf22392f5d03",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "jansi-1.17.1-1.module_el8.0.0+6044+f3cbc35d.src.rpm",
+				"name": "jansi",
+				"epoch": "0",
+				"version": "1.17.1",
+				"release": "1.module_el8.0.0+6044+f3cbc35d",
+				"arch": "noarch",
+				"filename": "jansi-1.17.1-1.module_el8.0.0+6044+f3cbc35d.noarch.rpm",
+				"sum": "589967abf16ecdd12217640a0895038befaab43f0fab27c05984e46e231e425c",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -518,42 +530,6 @@
 				"reboot_suggested": 0
 			},
 			{
-				"src": "maven-wagon-3.1.0-1.module_el8.6.0+2752+f1f3449e.src.rpm",
-				"name": "maven-wagon-http-shared",
-				"epoch": "0",
-				"version": "3.1.0",
-				"release": "1.module_el8.6.0+2752+f1f3449e",
-				"arch": "noarch",
-				"filename": "maven-wagon-http-shared-3.1.0-1.module_el8.6.0+2752+f1f3449e.noarch.rpm",
-				"sum": "eadb4a9c395f8cec2914dccac90cdd620121a762eb8177647909146a723173bb",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "hawtjni-1.16-2.module_el8.6.0+2752+f1f3449e.src.rpm",
-				"name": "hawtjni-runtime",
-				"epoch": "0",
-				"version": "1.16",
-				"release": "2.module_el8.6.0+2752+f1f3449e",
-				"arch": "noarch",
-				"filename": "hawtjni-runtime-1.16-2.module_el8.6.0+2752+f1f3449e.noarch.rpm",
-				"sum": "f0ff23714d7896c1400d162a43b08073630b86bd787f25a60ee735b7b0de3549",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "jansi-1.17.1-1.module_el8.0.0+6044+f3cbc35d.src.rpm",
-				"name": "jansi",
-				"epoch": "0",
-				"version": "1.17.1",
-				"release": "1.module_el8.0.0+6044+f3cbc35d",
-				"arch": "noarch",
-				"filename": "jansi-1.17.1-1.module_el8.0.0+6044+f3cbc35d.noarch.rpm",
-				"sum": "589967abf16ecdd12217640a0895038befaab43f0fab27c05984e46e231e425c",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
 				"src": "jansi-native-1.7-7.module_el8.6.0+2752+f1f3449e.src.rpm",
 				"name": "jansi-native",
 				"epoch": "0",
@@ -562,6 +538,18 @@
 				"arch": "x86_64",
 				"filename": "jansi-native-1.7-7.module_el8.6.0+2752+f1f3449e.x86_64.rpm",
 				"sum": "e3ca966451b6ee4b1b7abe4ed2aa54fbcb94267d5680952b35a6ba20dd69bf76",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "maven-wagon-3.1.0-1.module_el8.6.0+2752+f1f3449e.src.rpm",
+				"name": "maven-wagon-http-shared",
+				"epoch": "0",
+				"version": "3.1.0",
+				"release": "1.module_el8.6.0+2752+f1f3449e",
+				"arch": "noarch",
+				"filename": "maven-wagon-http-shared-3.1.0-1.module_el8.6.0+2752+f1f3449e.noarch.rpm",
+				"sum": "eadb4a9c395f8cec2914dccac90cdd620121a762eb8177647909146a723173bb",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -576,22 +564,34 @@
 				"sum": "f0f6ef70ea4e09d3895d7d0d31f8481ba3d5cd4a47af7c7bee8cb30806aff163",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "hawtjni-1.16-2.module_el8.6.0+2752+f1f3449e.src.rpm",
+				"name": "hawtjni-runtime",
+				"epoch": "0",
+				"version": "1.16",
+				"release": "2.module_el8.6.0+2752+f1f3449e",
+				"arch": "noarch",
+				"filename": "hawtjni-runtime-1.16-2.module_el8.6.0+2752+f1f3449e.noarch.rpm",
+				"sum": "f0ff23714d7896c1400d162a43b08073630b86bd787f25a60ee735b7b0de3549",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.\n\nSecurity Fix(es):\n\n* apache-httpclient: incorrect handling of malformed authority component in request URIs (CVE-2020-13956)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "ALSA-2022-1861",
-			"title": "ALSA-2022-1861",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2022-1861.html"
-		},
-		{
 			"id": "CVE-2020-13956",
 			"title": "CVE-2020-13956",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2020-13956"
+		},
+		{
+			"id": "ALSA-2022-1861",
+			"title": "ALSA-2022-1861",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-1861.html"
 		}
 	],
 	"issued_date": {

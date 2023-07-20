@@ -10,8 +10,8 @@
 	"summary": "vim security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_default",
 		"packages": [
 			{
 				"src": "vim-8.2.2637-16.el9_0.3.src.rpm",
@@ -22,6 +22,18 @@
 				"arch": "aarch64",
 				"filename": "vim-enhanced-8.2.2637-16.el9_0.3.aarch64.rpm",
 				"sum": "09ab5e83d82cf1654b46e8715f63971b423823a1c387d98bf15aee603a550ece",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "vim-8.2.2637-16.el9_0.3.src.rpm",
+				"name": "vim-common",
+				"epoch": "2",
+				"version": "8.2.2637",
+				"release": "16.el9_0.3",
+				"arch": "x86_64",
+				"filename": "vim-common-8.2.2637-16.el9_0.3.x86_64.rpm",
+				"sum": "4060d5f17b11d2fb77086b017a36eea436513f40855ff127d1391bd2ed60b3d1",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -39,97 +51,13 @@
 			},
 			{
 				"src": "vim-8.2.2637-16.el9_0.3.src.rpm",
-				"name": "vim-filesystem",
-				"epoch": "2",
-				"version": "8.2.2637",
-				"release": "16.el9_0.3",
-				"arch": "noarch",
-				"filename": "vim-filesystem-8.2.2637-16.el9_0.3.noarch.rpm",
-				"sum": "85377e40c2d0d6abc50777ec8eb90ec6a20cc2cc106fcb471585ad16ed4f920f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "vim-8.2.2637-16.el9_0.3.src.rpm",
 				"name": "vim-common",
 				"epoch": "2",
 				"version": "8.2.2637",
 				"release": "16.el9_0.3",
-				"arch": "aarch64",
-				"filename": "vim-common-8.2.2637-16.el9_0.3.aarch64.rpm",
-				"sum": "c0718151a9e31e05a40e7d9fe1d1d116d42ab7417f138d1034bc28d295f6fbc3",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "vim-8.2.2637-16.el9_0.3.src.rpm",
-				"name": "vim-minimal",
-				"epoch": "2",
-				"version": "8.2.2637",
-				"release": "16.el9_0.3",
-				"arch": "aarch64",
-				"filename": "vim-minimal-8.2.2637-16.el9_0.3.aarch64.rpm",
-				"sum": "da427090d9665c15b6a0e8ac9e93e76f3bca70af2dafe630efd0235f69e77394",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "vim-8.2.2637-16.el9_0.3.src.rpm",
-				"name": "vim-enhanced",
-				"epoch": "2",
-				"version": "8.2.2637",
-				"release": "16.el9_0.3",
-				"arch": "s390x",
-				"filename": "vim-enhanced-8.2.2637-16.el9_0.3.s390x.rpm",
-				"sum": "6361babcc548c897029de08f018eb55e858f26a68c7a94218f771cc7fa9052b0",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "vim-8.2.2637-16.el9_0.3.src.rpm",
-				"name": "vim-minimal",
-				"epoch": "2",
-				"version": "8.2.2637",
-				"release": "16.el9_0.3",
-				"arch": "s390x",
-				"filename": "vim-minimal-8.2.2637-16.el9_0.3.s390x.rpm",
-				"sum": "af63cc7bc1dc8a4616bfc2b8a2820972901ad04f084c5d768de792d2136b3d9a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "vim-8.2.2637-16.el9_0.3.src.rpm",
-				"name": "vim-common",
-				"epoch": "2",
-				"version": "8.2.2637",
-				"release": "16.el9_0.3",
-				"arch": "s390x",
-				"filename": "vim-common-8.2.2637-16.el9_0.3.s390x.rpm",
-				"sum": "e59a743b18e4a8f310497504b01ffd7a06d7e996c4473cdec3cbe9c3dde1f11a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "vim-8.2.2637-16.el9_0.3.src.rpm",
-				"name": "vim-X11",
-				"epoch": "2",
-				"version": "8.2.2637",
-				"release": "16.el9_0.3",
-				"arch": "s390x",
-				"filename": "vim-X11-8.2.2637-16.el9_0.3.s390x.rpm",
-				"sum": "f17a910d139e0cce5c73a92b5fab9e34da10ac7e834ee01bb36b99bda7bf9a92",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "vim-8.2.2637-16.el9_0.3.src.rpm",
-				"name": "vim-common",
-				"epoch": "2",
-				"version": "8.2.2637",
-				"release": "16.el9_0.3",
-				"arch": "x86_64",
-				"filename": "vim-common-8.2.2637-16.el9_0.3.x86_64.rpm",
-				"sum": "4060d5f17b11d2fb77086b017a36eea436513f40855ff127d1391bd2ed60b3d1",
+				"arch": "ppc64le",
+				"filename": "vim-common-8.2.2637-16.el9_0.3.ppc64le.rpm",
+				"sum": "4d8c45c8e2efd2d5fdbe777830a69f1d88df4ec21e61fd4468a74cb545359426",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -159,6 +87,30 @@
 			},
 			{
 				"src": "vim-8.2.2637-16.el9_0.3.src.rpm",
+				"name": "vim-enhanced",
+				"epoch": "2",
+				"version": "8.2.2637",
+				"release": "16.el9_0.3",
+				"arch": "s390x",
+				"filename": "vim-enhanced-8.2.2637-16.el9_0.3.s390x.rpm",
+				"sum": "6361babcc548c897029de08f018eb55e858f26a68c7a94218f771cc7fa9052b0",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "vim-8.2.2637-16.el9_0.3.src.rpm",
+				"name": "vim-filesystem",
+				"epoch": "2",
+				"version": "8.2.2637",
+				"release": "16.el9_0.3",
+				"arch": "noarch",
+				"filename": "vim-filesystem-8.2.2637-16.el9_0.3.noarch.rpm",
+				"sum": "85377e40c2d0d6abc50777ec8eb90ec6a20cc2cc106fcb471585ad16ed4f920f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "vim-8.2.2637-16.el9_0.3.src.rpm",
 				"name": "vim-X11",
 				"epoch": "2",
 				"version": "8.2.2637",
@@ -171,13 +123,13 @@
 			},
 			{
 				"src": "vim-8.2.2637-16.el9_0.3.src.rpm",
-				"name": "vim-common",
+				"name": "vim-minimal",
 				"epoch": "2",
 				"version": "8.2.2637",
 				"release": "16.el9_0.3",
-				"arch": "ppc64le",
-				"filename": "vim-common-8.2.2637-16.el9_0.3.ppc64le.rpm",
-				"sum": "4d8c45c8e2efd2d5fdbe777830a69f1d88df4ec21e61fd4468a74cb545359426",
+				"arch": "s390x",
+				"filename": "vim-minimal-8.2.2637-16.el9_0.3.s390x.rpm",
+				"sum": "af63cc7bc1dc8a4616bfc2b8a2820972901ad04f084c5d768de792d2136b3d9a",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -190,6 +142,18 @@
 				"arch": "ppc64le",
 				"filename": "vim-minimal-8.2.2637-16.el9_0.3.ppc64le.rpm",
 				"sum": "b8012e0b3f4f5471c7be11509c8f44b0f1ce1e8e0609466a5c2baffe39a36ca9",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "vim-8.2.2637-16.el9_0.3.src.rpm",
+				"name": "vim-common",
+				"epoch": "2",
+				"version": "8.2.2637",
+				"release": "16.el9_0.3",
+				"arch": "aarch64",
+				"filename": "vim-common-8.2.2637-16.el9_0.3.aarch64.rpm",
+				"sum": "c0718151a9e31e05a40e7d9fe1d1d116d42ab7417f138d1034bc28d295f6fbc3",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -216,16 +180,64 @@
 				"sum": "c5d312d10bc51646127c7df9baacc74b9237d7d99c16cc3032383ae9f331537b",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "vim-8.2.2637-16.el9_0.3.src.rpm",
+				"name": "vim-minimal",
+				"epoch": "2",
+				"version": "8.2.2637",
+				"release": "16.el9_0.3",
+				"arch": "aarch64",
+				"filename": "vim-minimal-8.2.2637-16.el9_0.3.aarch64.rpm",
+				"sum": "da427090d9665c15b6a0e8ac9e93e76f3bca70af2dafe630efd0235f69e77394",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "vim-8.2.2637-16.el9_0.3.src.rpm",
+				"name": "vim-common",
+				"epoch": "2",
+				"version": "8.2.2637",
+				"release": "16.el9_0.3",
+				"arch": "s390x",
+				"filename": "vim-common-8.2.2637-16.el9_0.3.s390x.rpm",
+				"sum": "e59a743b18e4a8f310497504b01ffd7a06d7e996c4473cdec3cbe9c3dde1f11a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "vim-8.2.2637-16.el9_0.3.src.rpm",
+				"name": "vim-X11",
+				"epoch": "2",
+				"version": "8.2.2637",
+				"release": "16.el9_0.3",
+				"arch": "s390x",
+				"filename": "vim-X11-8.2.2637-16.el9_0.3.s390x.rpm",
+				"sum": "f17a910d139e0cce5c73a92b5fab9e34da10ac7e834ee01bb36b99bda7bf9a92",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "Vim (Vi IMproved) is an updated and improved version of the vi editor.\nSecurity Fix(es):\n* vim: Out-of-bounds Write (CVE-2022-1785)\n* vim: out-of-bounds write in vim_regsub_both() in regexp.c (CVE-2022-1897)\n* vim: buffer over-read in utf_ptr2char() in mbyte.c (CVE-2022-1927)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:5942",
-			"title": "RHSA-2022:5942",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:5942"
+			"id": "2088689",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2088689"
+		},
+		{
+			"id": "2091682",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2091682"
+		},
+		{
+			"id": "2091687",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2091687"
 		},
 		{
 			"id": "CVE-2022-1785",
@@ -246,22 +258,34 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-1927"
 		},
 		{
-			"id": "2088689",
+			"id": "CVE-2022-1785",
 			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2088689"
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-1785"
 		},
 		{
-			"id": "2091682",
+			"id": "CVE-2022-1897",
 			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2091682"
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-1897"
 		},
 		{
-			"id": "2091687",
+			"id": "CVE-2022-1927",
 			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2091687"
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-1927"
+		},
+		{
+			"id": "RHSA-2022:5942",
+			"title": "RHSA-2022:5942",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5942"
+		},
+		{
+			"id": "RHSA-2022:5942",
+			"title": "",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5942"
 		},
 		{
 			"id": "ALSA-2022:5942",
@@ -274,6 +298,6 @@
 		"$date": 1660003200000
 	},
 	"updated_date": {
-		"$date": 1660151762000
+		"$date": 1660151765000
 	}
 }

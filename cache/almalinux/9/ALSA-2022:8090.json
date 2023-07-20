@@ -10,8 +10,8 @@
 	"summary": "runc security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
 		"packages": [
 			{
 				"src": "runc-1.1.4-1.el9.src.rpm",
@@ -31,9 +31,9 @@
 				"epoch": "4",
 				"version": "1.1.4",
 				"release": "1.el9",
-				"arch": "s390x",
-				"filename": "runc-1.1.4-1.el9.s390x.rpm",
-				"sum": "d23711365b1809a99ffac3601c903d0b9dbc56b3a0d3d0c8c6ce69cf2b2cce3f",
+				"arch": "ppc64le",
+				"filename": "runc-1.1.4-1.el9.ppc64le.rpm",
+				"sum": "a1e0962f9cc833c32bf31847b35290d6994e3480d8da1352ccfcf2412eb3e35c",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -55,9 +55,9 @@
 				"epoch": "4",
 				"version": "1.1.4",
 				"release": "1.el9",
-				"arch": "ppc64le",
-				"filename": "runc-1.1.4-1.el9.ppc64le.rpm",
-				"sum": "a1e0962f9cc833c32bf31847b35290d6994e3480d8da1352ccfcf2412eb3e35c",
+				"arch": "s390x",
+				"filename": "runc-1.1.4-1.el9.s390x.rpm",
+				"sum": "d23711365b1809a99ffac3601c903d0b9dbc56b3a0d3d0c8c6ce69cf2b2cce3f",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -66,10 +66,10 @@
 	"description": "The runC tool is a lightweight, portable implementation of the Open Container Format (OCF) that provides container runtime.\n\nSecurity Fix(es):\n\n* runc: incorrect handling of inheritable capabilities (CVE-2022-29162)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:8090",
-			"title": "RHSA-2022:8090",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:8090"
+			"id": "2086398",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2086398"
 		},
 		{
 			"id": "CVE-2022-29162",
@@ -78,10 +78,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-29162"
 		},
 		{
-			"id": "2086398",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2086398"
+			"id": "RHSA-2022:8090",
+			"title": "RHSA-2022:8090",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:8090"
 		},
 		{
 			"id": "ALSA-2022:8090",

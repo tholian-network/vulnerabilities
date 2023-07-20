@@ -162,10 +162,16 @@
 	"description": "The kernel-rt packages provide the Real Time Linux Kernel, which enables fine-tuning for systems with extremely high determinism requirements.\nSecurity Fix(es):\n* information leak in scsi_ioctl() (CVE-2022-0494)\n* use-after-free in tc_new_tfilter() in net/sched/cls_api.c (CVE-2022-1055)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nBug Fix(es):\n* update RT source tree to the latest AlmaLinux-9.0.z2 Batch (BZ#2105450)",
 	"references": [
 		{
-			"id": "RHSA-2022:6002",
+			"id": "2039448",
 			"title": "",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:6002"
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2039448"
+		},
+		{
+			"id": "2070220",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2070220"
 		},
 		{
 			"id": "CVE-2022-0494",
@@ -180,16 +186,28 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-1055"
 		},
 		{
-			"id": "2039448",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2039448"
+			"id": "CVE-2022-0494",
+			"title": "CVE-2022-0494",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-0494"
 		},
 		{
-			"id": "2070220",
+			"id": "CVE-2022-1055",
+			"title": "CVE-2022-1055",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-1055"
+		},
+		{
+			"id": "RHSA-2022:6002",
 			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2070220"
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:6002"
+		},
+		{
+			"id": "RHSA-2022:6002",
+			"title": "RHSA-2022:6002",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:6002"
 		},
 		{
 			"id": "ALSA-2022:6002",

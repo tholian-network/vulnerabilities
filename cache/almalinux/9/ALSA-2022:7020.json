@@ -10,8 +10,8 @@
 	"summary": "firefox security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_default",
 		"packages": [
 			{
 				"src": "firefox-102.3.0-7.el9_0.alma.src.rpm",
@@ -19,9 +19,9 @@
 				"epoch": "0",
 				"version": "102.3.0",
 				"release": "7.el9_0.alma",
-				"arch": "aarch64",
-				"filename": "firefox-102.3.0-7.el9_0.alma.aarch64.rpm",
-				"sum": "c37d59c5d229b8a2ba241f91cf8184c63a8d5b22e5d04f63b516e3da345c1108",
+				"arch": "ppc64le",
+				"filename": "firefox-102.3.0-7.el9_0.alma.ppc64le.rpm",
+				"sum": "04c3cd4053febde4fb604dab8efc761821a927f96ce8faa755209cb8e5be998e",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -55,9 +55,9 @@
 				"epoch": "0",
 				"version": "102.3.0",
 				"release": "7.el9_0.alma",
-				"arch": "ppc64le",
-				"filename": "firefox-102.3.0-7.el9_0.alma.ppc64le.rpm",
-				"sum": "04c3cd4053febde4fb604dab8efc761821a927f96ce8faa755209cb8e5be998e",
+				"arch": "aarch64",
+				"filename": "firefox-102.3.0-7.el9_0.alma.aarch64.rpm",
+				"sum": "c37d59c5d229b8a2ba241f91cf8184c63a8d5b22e5d04f63b516e3da345c1108",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -66,10 +66,10 @@
 	"description": "Mozilla Firefox is an open-source web browser, designed for standards compliance, performance, and portability.\n\nThis update upgrades Firefox to version 102.3.0 ESR.\n\nSecurity Fix(es):\n\n* expat: a use-after-free in the doContent function in xmlparse.c (CVE-2022-40674)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:7020",
-			"title": "RHSA-2022:7020",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:7020"
+			"id": "2130769",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2130769"
 		},
 		{
 			"id": "CVE-2022-40674",
@@ -78,10 +78,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-40674"
 		},
 		{
-			"id": "2130769",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2130769"
+			"id": "RHSA-2022:7020",
+			"title": "RHSA-2022:7020",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:7020"
 		},
 		{
 			"id": "ALSA-2022:7020",

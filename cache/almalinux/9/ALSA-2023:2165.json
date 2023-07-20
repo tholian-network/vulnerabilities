@@ -10,8 +10,8 @@
 	"summary": "edk2 security, bug fix, and enhancement update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_2_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_2_default",
+		"name": "almalinux-9-for-x86_64-appstream-rpms__9_2_default",
+		"shortname": "almalinux-9-for-x86_64-appstream-rpms__9_2_default",
 		"packages": [
 			{
 				"src": "edk2-20221207gitfff6d81270b5-9.el9_2.src.rpm",
@@ -22,6 +22,18 @@
 				"arch": "noarch",
 				"filename": "edk2-aarch64-20221207gitfff6d81270b5-9.el9_2.noarch.rpm",
 				"sum": "0b2d96153f15aff5bc6a6e70c2e538b306294b495568c511f44b5a312c3d86a2",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "edk2-20221207gitfff6d81270b5-9.el9_2.src.rpm",
+				"name": "edk2-tools",
+				"epoch": "0",
+				"version": "20221207gitfff6d81270b5",
+				"release": "9.el9_2",
+				"arch": "x86_64",
+				"filename": "edk2-tools-20221207gitfff6d81270b5-9.el9_2.x86_64.rpm",
+				"sum": "37644e8ed6ae4de2928a660bcc79f3f27ed90a1f090d14b834da655e3c867d68",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -60,28 +72,40 @@
 				"sum": "ce69facb48ba1ba68470471c4067d52286e52d3983abf6ac57f7e83b75260f77",
 				"sum_type": 5,
 				"reboot_suggested": 0
-			},
-			{
-				"src": "edk2-20221207gitfff6d81270b5-9.el9_2.src.rpm",
-				"name": "edk2-tools",
-				"epoch": "0",
-				"version": "20221207gitfff6d81270b5",
-				"release": "9.el9_2",
-				"arch": "x86_64",
-				"filename": "edk2-tools-20221207gitfff6d81270b5-9.el9_2.x86_64.rpm",
-				"sum": "37644e8ed6ae4de2928a660bcc79f3f27ed90a1f090d14b834da655e3c867d68",
-				"sum_type": 5,
-				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "EDK (Embedded Development Kit) is a project to enable UEFI support for Virtual Machines. This package contains a sample 64-bit UEFI firmware for QEMU and KVM. \n\nSecurity Fix(es):\n\n* openssl: X.400 address type confusion in X.509 GeneralName (CVE-2023-0286)\n* edk2: integer underflow in SmmEntryPoint function leads to potential SMM privilege escalation (CVE-2021-38578)\n* openssl: timing attack in RSA Decryption implementation (CVE-2022-4304)\n* openssl: double free after calling PEM_read_bio_ex (CVE-2022-4450)\n* openssl: use-after-free following BIO_new_NDEF (CVE-2023-0215)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:2165",
-			"title": "RHSA-2023:2165",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:2165"
+			"id": "1960321",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/1960321"
+		},
+		{
+			"id": "2164440",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2164440"
+		},
+		{
+			"id": "2164487",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2164487"
+		},
+		{
+			"id": "2164492",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2164492"
+		},
+		{
+			"id": "2164494",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2164494"
 		},
 		{
 			"id": "CVE-2021-38578",
@@ -114,34 +138,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2023-0286"
 		},
 		{
-			"id": "1960321",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/1960321"
-		},
-		{
-			"id": "2164440",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2164440"
-		},
-		{
-			"id": "2164487",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2164487"
-		},
-		{
-			"id": "2164492",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2164492"
-		},
-		{
-			"id": "2164494",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2164494"
+			"id": "RHSA-2023:2165",
+			"title": "RHSA-2023:2165",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:2165"
 		},
 		{
 			"id": "ALSA-2023:2165",
@@ -154,6 +154,6 @@
 		"$date": 1683590400000
 	},
 	"updated_date": {
-		"$date": 1683824896000
+		"$date": 1683824899000
 	}
 }

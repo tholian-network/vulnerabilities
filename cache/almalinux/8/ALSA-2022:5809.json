@@ -10,9 +10,21 @@
 	"summary": "pcre2 security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-baseos-rpms__8_6_default",
-		"shortname": "almalinux-8-for-x86_64-baseos-rpms__8_6_default",
+		"name": "almalinux-8-for-aarch64-baseos-rpms__8_6_default",
+		"shortname": "almalinux-8-for-aarch64-baseos-rpms__8_6_default",
 		"packages": [
+			{
+				"src": "pcre2-10.32-3.el8_6.src.rpm",
+				"name": "pcre2",
+				"epoch": "0",
+				"version": "10.32",
+				"release": "3.el8_6",
+				"arch": "aarch64",
+				"filename": "pcre2-10.32-3.el8_6.aarch64.rpm",
+				"sum": "0428a49605bb6b3c549cf8d58f1c336a902a48f875e0989de6ff62832f382930",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "pcre2-10.32-3.el8_6.src.rpm",
 				"name": "pcre2-utf32",
@@ -39,6 +51,30 @@
 			},
 			{
 				"src": "pcre2-10.32-3.el8_6.src.rpm",
+				"name": "pcre2-tools",
+				"epoch": "0",
+				"version": "10.32",
+				"release": "3.el8_6",
+				"arch": "ppc64le",
+				"filename": "pcre2-tools-10.32-3.el8_6.ppc64le.rpm",
+				"sum": "2d2b86180d4407b3f02d65a9e727f37e00db452b09cef2a257dd3ff1e69a2c26",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pcre2-10.32-3.el8_6.src.rpm",
+				"name": "pcre2-devel",
+				"epoch": "0",
+				"version": "10.32",
+				"release": "3.el8_6",
+				"arch": "aarch64",
+				"filename": "pcre2-devel-10.32-3.el8_6.aarch64.rpm",
+				"sum": "3ecc571c24f48236cee64df63b53ca927ab0a3c0756b85d3cd64e4dc5c49ff1a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pcre2-10.32-3.el8_6.src.rpm",
 				"name": "pcre2",
 				"epoch": "0",
 				"version": "10.32",
@@ -46,6 +82,18 @@
 				"arch": "x86_64",
 				"filename": "pcre2-10.32-3.el8_6.x86_64.rpm",
 				"sum": "434eed2458f5a004ef6db886afe79cd5241c12cc4de402ded4dd51a3c98ed262",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pcre2-10.32-3.el8_6.src.rpm",
+				"name": "pcre2",
+				"epoch": "0",
+				"version": "10.32",
+				"release": "3.el8_6",
+				"arch": "ppc64le",
+				"filename": "pcre2-10.32-3.el8_6.ppc64le.rpm",
+				"sum": "4f22fc38d3a553a242431c57b4e576602c831dbf4bb31173c9df071b18250694",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -87,66 +135,6 @@
 			},
 			{
 				"src": "pcre2-10.32-3.el8_6.src.rpm",
-				"name": "pcre2",
-				"epoch": "0",
-				"version": "10.32",
-				"release": "3.el8_6",
-				"arch": "i686",
-				"filename": "pcre2-10.32-3.el8_6.i686.rpm",
-				"sum": "c69695b864c29bd75b5900bf15956591dcf0523986097aeeade469d41c35f617",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pcre2-10.32-3.el8_6.src.rpm",
-				"name": "pcre2-devel",
-				"epoch": "0",
-				"version": "10.32",
-				"release": "3.el8_6",
-				"arch": "x86_64",
-				"filename": "pcre2-devel-10.32-3.el8_6.x86_64.rpm",
-				"sum": "db13e26fe825c8beabc9d55e9529fb4c85873c8cfe4aa84962317787bd24cc6a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pcre2-10.32-3.el8_6.src.rpm",
-				"name": "pcre2-devel",
-				"epoch": "0",
-				"version": "10.32",
-				"release": "3.el8_6",
-				"arch": "i686",
-				"filename": "pcre2-devel-10.32-3.el8_6.i686.rpm",
-				"sum": "fe498571a26d0c5cf023202a4ebffef1d37ebfc78b58f135378985ef9537bbc3",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pcre2-10.32-3.el8_6.src.rpm",
-				"name": "pcre2",
-				"epoch": "0",
-				"version": "10.32",
-				"release": "3.el8_6",
-				"arch": "aarch64",
-				"filename": "pcre2-10.32-3.el8_6.aarch64.rpm",
-				"sum": "0428a49605bb6b3c549cf8d58f1c336a902a48f875e0989de6ff62832f382930",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pcre2-10.32-3.el8_6.src.rpm",
-				"name": "pcre2-devel",
-				"epoch": "0",
-				"version": "10.32",
-				"release": "3.el8_6",
-				"arch": "aarch64",
-				"filename": "pcre2-devel-10.32-3.el8_6.aarch64.rpm",
-				"sum": "3ecc571c24f48236cee64df63b53ca927ab0a3c0756b85d3cd64e4dc5c49ff1a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pcre2-10.32-3.el8_6.src.rpm",
 				"name": "pcre2-utf16",
 				"epoch": "0",
 				"version": "10.32",
@@ -154,6 +142,18 @@
 				"arch": "aarch64",
 				"filename": "pcre2-utf16-10.32-3.el8_6.aarch64.rpm",
 				"sum": "98d179c79c1342ba288cda410e579de2cb22b24758c60b056006c844fd460df3",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pcre2-10.32-3.el8_6.src.rpm",
+				"name": "pcre2-devel",
+				"epoch": "0",
+				"version": "10.32",
+				"release": "3.el8_6",
+				"arch": "ppc64le",
+				"filename": "pcre2-devel-10.32-3.el8_6.ppc64le.rpm",
+				"sum": "ac72d8121db092aab231844a3d28b4dd9d9ab4a3f9eb23d729d33e451b050353",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -183,13 +183,13 @@
 			},
 			{
 				"src": "pcre2-10.32-3.el8_6.src.rpm",
-				"name": "pcre2-tools",
+				"name": "pcre2-utf16",
 				"epoch": "0",
 				"version": "10.32",
 				"release": "3.el8_6",
 				"arch": "ppc64le",
-				"filename": "pcre2-tools-10.32-3.el8_6.ppc64le.rpm",
-				"sum": "2d2b86180d4407b3f02d65a9e727f37e00db452b09cef2a257dd3ff1e69a2c26",
+				"filename": "pcre2-utf16-10.32-3.el8_6.ppc64le.rpm",
+				"sum": "bfcaf81d812669720469fa8dd7c6713d42d4c5f79959d209d941f20e61af92fb",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -199,9 +199,9 @@
 				"epoch": "0",
 				"version": "10.32",
 				"release": "3.el8_6",
-				"arch": "ppc64le",
-				"filename": "pcre2-10.32-3.el8_6.ppc64le.rpm",
-				"sum": "4f22fc38d3a553a242431c57b4e576602c831dbf4bb31173c9df071b18250694",
+				"arch": "i686",
+				"filename": "pcre2-10.32-3.el8_6.i686.rpm",
+				"sum": "c69695b864c29bd75b5900bf15956591dcf0523986097aeeade469d41c35f617",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -211,21 +211,9 @@
 				"epoch": "0",
 				"version": "10.32",
 				"release": "3.el8_6",
-				"arch": "ppc64le",
-				"filename": "pcre2-devel-10.32-3.el8_6.ppc64le.rpm",
-				"sum": "ac72d8121db092aab231844a3d28b4dd9d9ab4a3f9eb23d729d33e451b050353",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pcre2-10.32-3.el8_6.src.rpm",
-				"name": "pcre2-utf16",
-				"epoch": "0",
-				"version": "10.32",
-				"release": "3.el8_6",
-				"arch": "ppc64le",
-				"filename": "pcre2-utf16-10.32-3.el8_6.ppc64le.rpm",
-				"sum": "bfcaf81d812669720469fa8dd7c6713d42d4c5f79959d209d941f20e61af92fb",
+				"arch": "x86_64",
+				"filename": "pcre2-devel-10.32-3.el8_6.x86_64.rpm",
+				"sum": "db13e26fe825c8beabc9d55e9529fb4c85873c8cfe4aa84962317787bd24cc6a",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -240,16 +228,28 @@
 				"sum": "f11282ed50be232e585702123e5c4f2f3a3abca98aa8393ac13bd6aecf934ff9",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "pcre2-10.32-3.el8_6.src.rpm",
+				"name": "pcre2-devel",
+				"epoch": "0",
+				"version": "10.32",
+				"release": "3.el8_6",
+				"arch": "i686",
+				"filename": "pcre2-devel-10.32-3.el8_6.i686.rpm",
+				"sum": "fe498571a26d0c5cf023202a4ebffef1d37ebfc78b58f135378985ef9537bbc3",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "The pcre2 package contains a new generation of the Perl Compatible Regular Expression libraries for implementing regular expression pattern matching using the same syntax and semantics as Perl. \nSecurity Fix(es):\n* pcre2: Out-of-bounds read in compile_xclass_matchingpath in pcre2_jit_compile.c (CVE-2022-1586)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:5809",
-			"title": "RHSA-2022:5809",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:5809"
+			"id": "2077976",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2077976"
 		},
 		{
 			"id": "CVE-2022-1586",
@@ -258,10 +258,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-1586"
 		},
 		{
-			"id": "2077976",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2077976"
+			"id": "RHSA-2022:5809",
+			"title": "RHSA-2022:5809",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5809"
 		},
 		{
 			"id": "ALSA-2022:5809",

@@ -10,8 +10,8 @@
 	"summary": "An update for the python39:3.9 and python39-devel:3.9 modules is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "3",
 	"pkglist": {
-		"name": "codeready-builder-for-rhel-8-aarch64-rpms__8_1_python39-devel",
-		"shortname": "codeready-builder-for-rhel-8-aarch64-rpms__8_1_python39-devel",
+		"name": "codeready-builder-for-rhel-8-x86_64-rpms__8_1_python39-devel",
+		"shortname": "codeready-builder-for-rhel-8-x86_64-rpms__8_1_python39-devel",
 		"packages": [
 			{
 				"src": "numpy-1.19.4-3.module_el8.6.0+2780+a40f65e1.src.rpm",
@@ -50,6 +50,42 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "python-cffi-1.14.3-2.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-cffi",
+				"epoch": "0",
+				"version": "1.14.3",
+				"release": "2.module_el8.6.0+2780+a40f65e1",
+				"arch": "x86_64",
+				"filename": "python39-cffi-1.14.3-2.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
+				"sum": "0bebb703b97bc003b7410d9a7c52653c37edb819b63f0e31aeea26a6ad068cf6",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mod_wsgi-4.7.1-4.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-mod_wsgi",
+				"epoch": "0",
+				"version": "4.7.1",
+				"release": "4.module_el8.6.0+2780+a40f65e1",
+				"arch": "x86_64",
+				"filename": "python39-mod_wsgi-4.7.1-4.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
+				"sum": "0d1adcf81e376582b3a5e1700ef3c2a8a7ceef385001af649e58f00ce817d3e3",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "Cython-0.29.21-5.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-Cython",
+				"epoch": "0",
+				"version": "0.29.21",
+				"release": "5.module_el8.6.0+2780+a40f65e1",
+				"arch": "ppc64le",
+				"filename": "python39-Cython-0.29.21-5.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
+				"sum": "10e1046b03c9ceccdc5628fc6801c0bdec1d5a67c80fbe682f9701ac0f35ab92",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "mod_wsgi-4.7.1-4.module_el8.6.0+2780+a40f65e1.src.rpm",
 				"name": "python39-mod_wsgi",
 				"epoch": "0",
@@ -62,6 +98,30 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "numpy-1.19.4-3.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-numpy",
+				"epoch": "0",
+				"version": "1.19.4",
+				"release": "3.module_el8.6.0+2780+a40f65e1",
+				"arch": "x86_64",
+				"filename": "python39-numpy-1.19.4-3.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
+				"sum": "25d13a7de4b8e082fc31a296afbc5e9d95f5fc5200b5c7f74c24816361d211f4",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "PyYAML-5.4.1-1.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-pyyaml",
+				"epoch": "0",
+				"version": "5.4.1",
+				"release": "1.module_el8.6.0+2780+a40f65e1",
+				"arch": "x86_64",
+				"filename": "python39-pyyaml-5.4.1-1.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
+				"sum": "268de852619c100cfddaa6542083248fb9f044404e4cb1c10182b1bbb38c75cc",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "python-psycopg2-2.8.6-2.module_el8.6.0+2780+a40f65e1.src.rpm",
 				"name": "python39-psycopg2-tests",
 				"epoch": "0",
@@ -70,6 +130,18 @@
 				"arch": "aarch64",
 				"filename": "python39-psycopg2-tests-2.8.6-2.module_el8.6.0+2780+a40f65e1.aarch64.rpm",
 				"sum": "29c92aa7decb87f06c5a6c7709f0e28765e669ead3b2a969a2244f1d51279f9b",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python-cffi-1.14.3-2.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-cffi",
+				"epoch": "0",
+				"version": "1.14.3",
+				"release": "2.module_el8.6.0+2780+a40f65e1",
+				"arch": "ppc64le",
+				"filename": "python39-cffi-1.14.3-2.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
+				"sum": "2b8f3b42f2cbb5063aa272ac70e7554e9fdb87ef531f58ebb51b938decd94520",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -122,6 +194,30 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "python-cryptography-3.3.1-2.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-cryptography",
+				"epoch": "0",
+				"version": "3.3.1",
+				"release": "2.module_el8.6.0+2780+a40f65e1",
+				"arch": "x86_64",
+				"filename": "python39-cryptography-3.3.1-2.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
+				"sum": "46be8c802e9c79a67b72f38e18af68c52c559bf60dc854be2b92bd1d9c4abdd8",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "numpy-1.19.4-3.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-numpy-f2py",
+				"epoch": "0",
+				"version": "1.19.4",
+				"release": "3.module_el8.6.0+2780+a40f65e1",
+				"arch": "ppc64le",
+				"filename": "python39-numpy-f2py-1.19.4-3.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
+				"sum": "477faa749470d164d4e50b9219dcf0a9fa84f77ed9f9070e96cfd3e362b618f2",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "python-attrs-20.3.0-2.module_el8.6.0+2780+a40f65e1.src.rpm",
 				"name": "python39-attrs",
 				"epoch": "0",
@@ -130,6 +226,42 @@
 				"arch": "noarch",
 				"filename": "python39-attrs-20.3.0-2.module_el8.6.0+2780+a40f65e1.noarch.rpm",
 				"sum": "4d269a3a0b944d45bf1d2f564ce3b4ce62bf8cb0b5b7a65f48bfbdb51aa71007",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python-cryptography-3.3.1-2.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-cryptography",
+				"epoch": "0",
+				"version": "3.3.1",
+				"release": "2.module_el8.6.0+2780+a40f65e1",
+				"arch": "ppc64le",
+				"filename": "python39-cryptography-3.3.1-2.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
+				"sum": "50c0be5166cb559c6c91569960eaa0bffa5b5f3f1060ddb17986c48b9e4b70ca",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "Cython-0.29.21-5.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-Cython",
+				"epoch": "0",
+				"version": "0.29.21",
+				"release": "5.module_el8.6.0+2780+a40f65e1",
+				"arch": "x86_64",
+				"filename": "python39-Cython-0.29.21-5.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
+				"sum": "547cbfc64c87d7032f1da548964f9dfa971957a97a952ededf29fdd7cdd56ea5",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python-psycopg2-2.8.6-2.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-psycopg2",
+				"epoch": "0",
+				"version": "2.8.6",
+				"release": "2.module_el8.6.0+2780+a40f65e1",
+				"arch": "x86_64",
+				"filename": "python39-psycopg2-2.8.6-2.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
+				"sum": "565d459389fd84f812a2907f1cbb8448c47a16f9970fc5b0c3191b97d5852486",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -158,6 +290,18 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "mod_wsgi-4.7.1-4.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-mod_wsgi",
+				"epoch": "0",
+				"version": "4.7.1",
+				"release": "4.module_el8.6.0+2780+a40f65e1",
+				"arch": "ppc64le",
+				"filename": "python39-mod_wsgi-4.7.1-4.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
+				"sum": "607663f84b5d8dd005b12e892ae73963c7b1e72c75d65e03a8851fe492642b65",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "python-more-itertools-8.5.0-2.module_el8.6.0+2780+a40f65e1.src.rpm",
 				"name": "python39-more-itertools",
 				"epoch": "0",
@@ -166,6 +310,18 @@
 				"arch": "noarch",
 				"filename": "python39-more-itertools-8.5.0-2.module_el8.6.0+2780+a40f65e1.noarch.rpm",
 				"sum": "60ea4b7acf684a487e9ffc2bc74041664231abd6cc8fc28ad48c70ffc0e27d74",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "scipy-1.5.4-3.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-scipy",
+				"epoch": "0",
+				"version": "1.5.4",
+				"release": "3.module_el8.6.0+2780+a40f65e1",
+				"arch": "ppc64le",
+				"filename": "python39-scipy-1.5.4-3.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
+				"sum": "6830d8a8c41ae1e65c5b4cfaf0e67d6d485fb80525c428b86a6556a340713692",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -182,6 +338,18 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "python-psutil-5.8.0-4.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-psutil",
+				"epoch": "0",
+				"version": "5.8.0",
+				"release": "4.module_el8.6.0+2780+a40f65e1",
+				"arch": "ppc64le",
+				"filename": "python39-psutil-5.8.0-4.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
+				"sum": "6e7a1a421eb125722729c63123dec3021da2bedcc7d89896dbe1c4d476d97be5",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "python-requests-2.25.0-2.module_el8.6.0+2780+a40f65e1.src.rpm",
 				"name": "python39-requests",
 				"epoch": "0",
@@ -190,6 +358,18 @@
 				"arch": "noarch",
 				"filename": "python39-requests-2.25.0-2.module_el8.6.0+2780+a40f65e1.noarch.rpm",
 				"sum": "70fefcaf18f9672157a32e4b921fdeb3ddddcf08aff788bfe9f3d94b1af167a6",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "scipy-1.5.4-3.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-scipy",
+				"epoch": "0",
+				"version": "1.5.4",
+				"release": "3.module_el8.6.0+2780+a40f65e1",
+				"arch": "x86_64",
+				"filename": "python39-scipy-1.5.4-3.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
+				"sum": "71b2e10abd75014c0f56194ac4f1190bbc11a69e77b21b7ca5835e3ac12b554e",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -214,6 +394,30 @@
 				"arch": "aarch64",
 				"filename": "python39-psycopg2-2.8.6-2.module_el8.6.0+2780+a40f65e1.aarch64.rpm",
 				"sum": "7e3f10153a12cb968fc339affa9729e2fccbc6c95a764a5c230e93cb6af85860",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "PyYAML-5.4.1-1.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-pyyaml",
+				"epoch": "0",
+				"version": "5.4.1",
+				"release": "1.module_el8.6.0+2780+a40f65e1",
+				"arch": "ppc64le",
+				"filename": "python39-pyyaml-5.4.1-1.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
+				"sum": "817d92a6166b4129c852b37a30b0664a11de2c17b624d6fb6f39df5f002ede77",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "numpy-1.19.4-3.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-numpy",
+				"epoch": "0",
+				"version": "1.19.4",
+				"release": "3.module_el8.6.0+2780+a40f65e1",
+				"arch": "ppc64le",
+				"filename": "python39-numpy-1.19.4-3.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
+				"sum": "99a16bc7c9736653791ed1ba29f10b80e39056ca0b8537774678db706adcc4f0",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -262,6 +466,18 @@
 				"arch": "aarch64",
 				"filename": "python39-psycopg2-doc-2.8.6-2.module_el8.6.0+2780+a40f65e1.aarch64.rpm",
 				"sum": "ab4808b3ac95ebf5afceadacfa3f59a4cc3e41426026e47e0bd9e1e4cb31c319",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python-psycopg2-2.8.6-2.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-psycopg2-tests",
+				"epoch": "0",
+				"version": "2.8.6",
+				"release": "2.module_el8.6.0+2780+a40f65e1",
+				"arch": "x86_64",
+				"filename": "python39-psycopg2-tests-2.8.6-2.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
+				"sum": "ae7f66850f3691018078b1ab5eda5b38674177557af5c9bf4877df512f0cba6e",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -334,6 +550,42 @@
 				"arch": "noarch",
 				"filename": "python39-wheel-wheel-0.35.1-4.module_el8.6.0+2780+a40f65e1.noarch.rpm",
 				"sum": "c3c6df124b0b18855dc4e5d6afc893e3112a98615f540bd7b651f8e7988ba8b2",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python-psycopg2-2.8.6-2.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-psycopg2-doc",
+				"epoch": "0",
+				"version": "2.8.6",
+				"release": "2.module_el8.6.0+2780+a40f65e1",
+				"arch": "x86_64",
+				"filename": "python39-psycopg2-doc-2.8.6-2.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
+				"sum": "c3dbe3e175a3eb0ebae69e52dabde46ac22d02f6ad81ad557ae1fb4c242fa7b0",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python-psycopg2-2.8.6-2.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-psycopg2-tests",
+				"epoch": "0",
+				"version": "2.8.6",
+				"release": "2.module_el8.6.0+2780+a40f65e1",
+				"arch": "ppc64le",
+				"filename": "python39-psycopg2-tests-2.8.6-2.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
+				"sum": "c47e7edba490d20b82bdea63b8ed31f885cf80cb6cc92a9430f486f6239ff08c",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python-psutil-5.8.0-4.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-psutil",
+				"epoch": "0",
+				"version": "5.8.0",
+				"release": "4.module_el8.6.0+2780+a40f65e1",
+				"arch": "x86_64",
+				"filename": "python39-psutil-5.8.0-4.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
+				"sum": "cdaad571b2a3963e814edf94ab46b07819f3e7ec0dc2508f5bcdcd35cba1327a",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -411,6 +663,18 @@
 			},
 			{
 				"src": "numpy-1.19.4-3.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-numpy-f2py",
+				"epoch": "0",
+				"version": "1.19.4",
+				"release": "3.module_el8.6.0+2780+a40f65e1",
+				"arch": "x86_64",
+				"filename": "python39-numpy-f2py-1.19.4-3.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
+				"sum": "e5d0b9377327a8abe75bb74764100d5cd15ea9e98c6807bf68ef67a93a4dd311",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "numpy-1.19.4-3.module_el8.6.0+2780+a40f65e1.src.rpm",
 				"name": "python39-numpy",
 				"epoch": "0",
 				"version": "1.19.4",
@@ -418,6 +682,18 @@
 				"arch": "aarch64",
 				"filename": "python39-numpy-1.19.4-3.module_el8.6.0+2780+a40f65e1.aarch64.rpm",
 				"sum": "e825258ae08adade3db36bc28b97d98147c2c585127e678f52727e8b8939afa6",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python-psycopg2-2.8.6-2.module_el8.6.0+2780+a40f65e1.src.rpm",
+				"name": "python39-psycopg2",
+				"epoch": "0",
+				"version": "2.8.6",
+				"release": "2.module_el8.6.0+2780+a40f65e1",
+				"arch": "ppc64le",
+				"filename": "python39-psycopg2-2.8.6-2.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
+				"sum": "eec2f5cf7fee95a2b032b99edd25dae21feb6073cdd1e6b5265c48de358b79af",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -446,282 +722,6 @@
 				"reboot_suggested": 0
 			},
 			{
-				"src": "python-cffi-1.14.3-2.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-cffi",
-				"epoch": "0",
-				"version": "1.14.3",
-				"release": "2.module_el8.6.0+2780+a40f65e1",
-				"arch": "x86_64",
-				"filename": "python39-cffi-1.14.3-2.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
-				"sum": "0bebb703b97bc003b7410d9a7c52653c37edb819b63f0e31aeea26a6ad068cf6",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mod_wsgi-4.7.1-4.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-mod_wsgi",
-				"epoch": "0",
-				"version": "4.7.1",
-				"release": "4.module_el8.6.0+2780+a40f65e1",
-				"arch": "x86_64",
-				"filename": "python39-mod_wsgi-4.7.1-4.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
-				"sum": "0d1adcf81e376582b3a5e1700ef3c2a8a7ceef385001af649e58f00ce817d3e3",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "numpy-1.19.4-3.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-numpy",
-				"epoch": "0",
-				"version": "1.19.4",
-				"release": "3.module_el8.6.0+2780+a40f65e1",
-				"arch": "x86_64",
-				"filename": "python39-numpy-1.19.4-3.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
-				"sum": "25d13a7de4b8e082fc31a296afbc5e9d95f5fc5200b5c7f74c24816361d211f4",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "PyYAML-5.4.1-1.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-pyyaml",
-				"epoch": "0",
-				"version": "5.4.1",
-				"release": "1.module_el8.6.0+2780+a40f65e1",
-				"arch": "x86_64",
-				"filename": "python39-pyyaml-5.4.1-1.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
-				"sum": "268de852619c100cfddaa6542083248fb9f044404e4cb1c10182b1bbb38c75cc",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python-cryptography-3.3.1-2.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-cryptography",
-				"epoch": "0",
-				"version": "3.3.1",
-				"release": "2.module_el8.6.0+2780+a40f65e1",
-				"arch": "x86_64",
-				"filename": "python39-cryptography-3.3.1-2.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
-				"sum": "46be8c802e9c79a67b72f38e18af68c52c559bf60dc854be2b92bd1d9c4abdd8",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "Cython-0.29.21-5.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-Cython",
-				"epoch": "0",
-				"version": "0.29.21",
-				"release": "5.module_el8.6.0+2780+a40f65e1",
-				"arch": "x86_64",
-				"filename": "python39-Cython-0.29.21-5.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
-				"sum": "547cbfc64c87d7032f1da548964f9dfa971957a97a952ededf29fdd7cdd56ea5",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python-psycopg2-2.8.6-2.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-psycopg2",
-				"epoch": "0",
-				"version": "2.8.6",
-				"release": "2.module_el8.6.0+2780+a40f65e1",
-				"arch": "x86_64",
-				"filename": "python39-psycopg2-2.8.6-2.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
-				"sum": "565d459389fd84f812a2907f1cbb8448c47a16f9970fc5b0c3191b97d5852486",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "scipy-1.5.4-3.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-scipy",
-				"epoch": "0",
-				"version": "1.5.4",
-				"release": "3.module_el8.6.0+2780+a40f65e1",
-				"arch": "x86_64",
-				"filename": "python39-scipy-1.5.4-3.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
-				"sum": "71b2e10abd75014c0f56194ac4f1190bbc11a69e77b21b7ca5835e3ac12b554e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python-psycopg2-2.8.6-2.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-psycopg2-tests",
-				"epoch": "0",
-				"version": "2.8.6",
-				"release": "2.module_el8.6.0+2780+a40f65e1",
-				"arch": "x86_64",
-				"filename": "python39-psycopg2-tests-2.8.6-2.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
-				"sum": "ae7f66850f3691018078b1ab5eda5b38674177557af5c9bf4877df512f0cba6e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python-psycopg2-2.8.6-2.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-psycopg2-doc",
-				"epoch": "0",
-				"version": "2.8.6",
-				"release": "2.module_el8.6.0+2780+a40f65e1",
-				"arch": "x86_64",
-				"filename": "python39-psycopg2-doc-2.8.6-2.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
-				"sum": "c3dbe3e175a3eb0ebae69e52dabde46ac22d02f6ad81ad557ae1fb4c242fa7b0",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python-psutil-5.8.0-4.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-psutil",
-				"epoch": "0",
-				"version": "5.8.0",
-				"release": "4.module_el8.6.0+2780+a40f65e1",
-				"arch": "x86_64",
-				"filename": "python39-psutil-5.8.0-4.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
-				"sum": "cdaad571b2a3963e814edf94ab46b07819f3e7ec0dc2508f5bcdcd35cba1327a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "numpy-1.19.4-3.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-numpy-f2py",
-				"epoch": "0",
-				"version": "1.19.4",
-				"release": "3.module_el8.6.0+2780+a40f65e1",
-				"arch": "x86_64",
-				"filename": "python39-numpy-f2py-1.19.4-3.module_el8.6.0+2780+a40f65e1.x86_64.rpm",
-				"sum": "e5d0b9377327a8abe75bb74764100d5cd15ea9e98c6807bf68ef67a93a4dd311",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "Cython-0.29.21-5.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-Cython",
-				"epoch": "0",
-				"version": "0.29.21",
-				"release": "5.module_el8.6.0+2780+a40f65e1",
-				"arch": "ppc64le",
-				"filename": "python39-Cython-0.29.21-5.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
-				"sum": "10e1046b03c9ceccdc5628fc6801c0bdec1d5a67c80fbe682f9701ac0f35ab92",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python-cffi-1.14.3-2.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-cffi",
-				"epoch": "0",
-				"version": "1.14.3",
-				"release": "2.module_el8.6.0+2780+a40f65e1",
-				"arch": "ppc64le",
-				"filename": "python39-cffi-1.14.3-2.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
-				"sum": "2b8f3b42f2cbb5063aa272ac70e7554e9fdb87ef531f58ebb51b938decd94520",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "numpy-1.19.4-3.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-numpy-f2py",
-				"epoch": "0",
-				"version": "1.19.4",
-				"release": "3.module_el8.6.0+2780+a40f65e1",
-				"arch": "ppc64le",
-				"filename": "python39-numpy-f2py-1.19.4-3.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
-				"sum": "477faa749470d164d4e50b9219dcf0a9fa84f77ed9f9070e96cfd3e362b618f2",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python-cryptography-3.3.1-2.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-cryptography",
-				"epoch": "0",
-				"version": "3.3.1",
-				"release": "2.module_el8.6.0+2780+a40f65e1",
-				"arch": "ppc64le",
-				"filename": "python39-cryptography-3.3.1-2.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
-				"sum": "50c0be5166cb559c6c91569960eaa0bffa5b5f3f1060ddb17986c48b9e4b70ca",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mod_wsgi-4.7.1-4.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-mod_wsgi",
-				"epoch": "0",
-				"version": "4.7.1",
-				"release": "4.module_el8.6.0+2780+a40f65e1",
-				"arch": "ppc64le",
-				"filename": "python39-mod_wsgi-4.7.1-4.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
-				"sum": "607663f84b5d8dd005b12e892ae73963c7b1e72c75d65e03a8851fe492642b65",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "scipy-1.5.4-3.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-scipy",
-				"epoch": "0",
-				"version": "1.5.4",
-				"release": "3.module_el8.6.0+2780+a40f65e1",
-				"arch": "ppc64le",
-				"filename": "python39-scipy-1.5.4-3.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
-				"sum": "6830d8a8c41ae1e65c5b4cfaf0e67d6d485fb80525c428b86a6556a340713692",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python-psutil-5.8.0-4.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-psutil",
-				"epoch": "0",
-				"version": "5.8.0",
-				"release": "4.module_el8.6.0+2780+a40f65e1",
-				"arch": "ppc64le",
-				"filename": "python39-psutil-5.8.0-4.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
-				"sum": "6e7a1a421eb125722729c63123dec3021da2bedcc7d89896dbe1c4d476d97be5",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "PyYAML-5.4.1-1.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-pyyaml",
-				"epoch": "0",
-				"version": "5.4.1",
-				"release": "1.module_el8.6.0+2780+a40f65e1",
-				"arch": "ppc64le",
-				"filename": "python39-pyyaml-5.4.1-1.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
-				"sum": "817d92a6166b4129c852b37a30b0664a11de2c17b624d6fb6f39df5f002ede77",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "numpy-1.19.4-3.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-numpy",
-				"epoch": "0",
-				"version": "1.19.4",
-				"release": "3.module_el8.6.0+2780+a40f65e1",
-				"arch": "ppc64le",
-				"filename": "python39-numpy-1.19.4-3.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
-				"sum": "99a16bc7c9736653791ed1ba29f10b80e39056ca0b8537774678db706adcc4f0",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python-psycopg2-2.8.6-2.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-psycopg2-tests",
-				"epoch": "0",
-				"version": "2.8.6",
-				"release": "2.module_el8.6.0+2780+a40f65e1",
-				"arch": "ppc64le",
-				"filename": "python39-psycopg2-tests-2.8.6-2.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
-				"sum": "c47e7edba490d20b82bdea63b8ed31f885cf80cb6cc92a9430f486f6239ff08c",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python-psycopg2-2.8.6-2.module_el8.6.0+2780+a40f65e1.src.rpm",
-				"name": "python39-psycopg2",
-				"epoch": "0",
-				"version": "2.8.6",
-				"release": "2.module_el8.6.0+2780+a40f65e1",
-				"arch": "ppc64le",
-				"filename": "python39-psycopg2-2.8.6-2.module_el8.6.0+2780+a40f65e1.ppc64le.rpm",
-				"sum": "eec2f5cf7fee95a2b032b99edd25dae21feb6073cdd1e6b5265c48de358b79af",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
 				"src": "python-psycopg2-2.8.6-2.module_el8.6.0+2780+a40f65e1.src.rpm",
 				"name": "python39-psycopg2-doc",
 				"epoch": "0",
@@ -737,12 +737,6 @@
 	},
 	"description": "Python is an interpreted, interactive, object-oriented programming language, which includes modules, classes, exceptions, very high level dynamic data types and dynamic typing. Python supports interfaces to many system calls and libraries, as well as to various windowing systems.\n\nSecurity Fix(es):\n\n* python: Information disclosure via pydoc (CVE-2021-3426)\n\n* python: urllib: Regular expression DoS in AbstractBasicAuthHandler (CVE-2021-3733)\n\n* python-lxml: Missing input sanitization for formaction HTML5 attributes may lead to XSS (CVE-2021-28957)\n\n* python-ipaddress: Improper input validation of octal strings (CVE-2021-29921)\n\n* python-urllib3: ReDoS in the parsing of authority part of URL (CVE-2021-33503)\n\n* python-pip: Incorrect handling of unicode separators in git references (CVE-2021-3572)\n\n* python: urllib: HTTP client possible infinite loop on a 100 Continue response (CVE-2021-3737)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
-		{
-			"id": "ALSA-2021-4160",
-			"title": "ALSA-2021-4160",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2021-4160.html"
-		},
 		{
 			"id": "CVE-2021-28957",
 			"title": "CVE-2021-28957",
@@ -784,6 +778,12 @@
 			"title": "CVE-2021-3737",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2021-3737"
+		},
+		{
+			"id": "ALSA-2021-4160",
+			"title": "ALSA-2021-4160",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-4160.html"
 		}
 	],
 	"issued_date": {

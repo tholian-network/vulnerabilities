@@ -19,9 +19,9 @@
 				"epoch": "0",
 				"version": "91.9.1",
 				"release": "1.el8_6.alma",
-				"arch": "x86_64",
-				"filename": "firefox-91.9.1-1.el8_6.alma.x86_64.rpm",
-				"sum": "b1726a988c33140ce294ab405de3afc0c06240c9d5ba36ae47862c27879e3585",
+				"arch": "ppc64le",
+				"filename": "firefox-91.9.1-1.el8_6.alma.ppc64le.rpm",
+				"sum": "1735572e20f18adce26dd01c31a76a4b7a5ef3b256a618745edad1fa273c81ea",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -31,9 +31,9 @@
 				"epoch": "0",
 				"version": "91.9.1",
 				"release": "1.el8_6.alma",
-				"arch": "ppc64le",
-				"filename": "firefox-91.9.1-1.el8_6.alma.ppc64le.rpm",
-				"sum": "1735572e20f18adce26dd01c31a76a4b7a5ef3b256a618745edad1fa273c81ea",
+				"arch": "x86_64",
+				"filename": "firefox-91.9.1-1.el8_6.alma.x86_64.rpm",
+				"sum": "b1726a988c33140ce294ab405de3afc0c06240c9d5ba36ae47862c27879e3585",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -41,12 +41,6 @@
 	},
 	"description": "Mozilla Firefox is an open-source web browser, designed for standards compliance, performance, and portability.\n\nThis update upgrades Firefox to version 91.9.1 ESR.\n\nSecurity Fix(es):\n\n* Mozilla: Untrusted input used in JavaScript object indexing, leading to prototype pollution (CVE-2022-1529)\n\n* Mozilla: Prototype pollution in Top-Level Await implementation (CVE-2022-1802)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
-		{
-			"id": "ALSA-2022-4776",
-			"title": "ALSA-2022-4776",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2022-4776.html"
-		},
 		{
 			"id": "CVE-2022-1529",
 			"title": "CVE-2022-1529",
@@ -58,6 +52,12 @@
 			"title": "CVE-2022-1802",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2022-1802"
+		},
+		{
+			"id": "ALSA-2022-4776",
+			"title": "ALSA-2022-4776",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-4776.html"
 		}
 	],
 	"issued_date": {

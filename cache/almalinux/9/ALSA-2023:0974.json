@@ -19,30 +19,6 @@
 				"epoch": "0",
 				"version": "0.11.3",
 				"release": "4.el9_1.2",
-				"arch": "x86_64",
-				"filename": "pcs-0.11.3-4.el9_1.2.x86_64.rpm",
-				"sum": "8384fd9cb6f7a7d35987df7bc6146e88ff00014d63dba7c5da0b2d0062b3252e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pcs-0.11.3-4.el9_1.2.src.rpm",
-				"name": "pcs-snmp",
-				"epoch": "0",
-				"version": "0.11.3",
-				"release": "4.el9_1.2",
-				"arch": "x86_64",
-				"filename": "pcs-snmp-0.11.3-4.el9_1.2.x86_64.rpm",
-				"sum": "898a944051e8638b6e075708dba8bb45752dbd2417f7a7cca5eff5d35a06ffea",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pcs-0.11.3-4.el9_1.2.src.rpm",
-				"name": "pcs",
-				"epoch": "0",
-				"version": "0.11.3",
-				"release": "4.el9_1.2",
 				"arch": "ppc64le",
 				"filename": "pcs-0.11.3-4.el9_1.2.ppc64le.rpm",
 				"sum": "1e05af7c672bfe89d0b57625358f1df8ea5019016677bd28dcd164062e84eb3a",
@@ -75,6 +51,18 @@
 			},
 			{
 				"src": "pcs-0.11.3-4.el9_1.2.src.rpm",
+				"name": "pcs",
+				"epoch": "0",
+				"version": "0.11.3",
+				"release": "4.el9_1.2",
+				"arch": "x86_64",
+				"filename": "pcs-0.11.3-4.el9_1.2.x86_64.rpm",
+				"sum": "8384fd9cb6f7a7d35987df7bc6146e88ff00014d63dba7c5da0b2d0062b3252e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pcs-0.11.3-4.el9_1.2.src.rpm",
 				"name": "pcs-snmp",
 				"epoch": "0",
 				"version": "0.11.3",
@@ -82,6 +70,18 @@
 				"arch": "aarch64",
 				"filename": "pcs-snmp-0.11.3-4.el9_1.2.aarch64.rpm",
 				"sum": "878affc3ef7204cc9f6594b615b91e5e7049f97506a638960199da53d906e965",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pcs-0.11.3-4.el9_1.2.src.rpm",
+				"name": "pcs-snmp",
+				"epoch": "0",
+				"version": "0.11.3",
+				"release": "4.el9_1.2",
+				"arch": "x86_64",
+				"filename": "pcs-snmp-0.11.3-4.el9_1.2.x86_64.rpm",
+				"sum": "898a944051e8638b6e075708dba8bb45752dbd2417f7a7cca5eff5d35a06ffea",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -114,10 +114,10 @@
 	"description": "The pcs packages provide a command-line configuration system for the Pacemaker and Corosync utilities.\n\nSecurity Fix(es):\n\n* sinatra: Reflected File Download attack (CVE-2022-45442)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:0974",
-			"title": "RHSA-2023:0974",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:0974"
+			"id": "2153363",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2153363"
 		},
 		{
 			"id": "CVE-2022-45442",
@@ -126,10 +126,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-45442"
 		},
 		{
-			"id": "2153363",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2153363"
+			"id": "RHSA-2023:0974",
+			"title": "RHSA-2023:0974",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:0974"
 		},
 		{
 			"id": "ALSA-2023:0974",
@@ -142,6 +142,6 @@
 		"$date": 1677542400000
 	},
 	"updated_date": {
-		"$date": 1677609351000
+		"$date": 1677609352000
 	}
 }

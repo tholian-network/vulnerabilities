@@ -10,8 +10,8 @@
 	"summary": "An update for sqlite is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "2",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
-		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"name": "almalinux-8-for-aarch64-baseos-rpms__8_0_default",
+		"shortname": "almalinux-8-for-aarch64-baseos-rpms__8_0_default",
 		"packages": [
 			{
 				"src": "sqlite-3.26.0-15.el8.src.rpm",
@@ -67,9 +67,9 @@
 				"epoch": "0",
 				"version": "3.26.0",
 				"release": "15.el8",
-				"arch": "x86_64",
-				"filename": "lemon-3.26.0-15.el8.x86_64.rpm",
-				"sum": "e1dc24eab039aebd47746c9ea750968bb2a6f0392a41a7e4ff8d62d9109c6a53",
+				"arch": "ppc64le",
+				"filename": "lemon-3.26.0-15.el8.ppc64le.rpm",
+				"sum": "747d56b53dac44a15c11cd6f41d98e08821b48a0acb30cd478cb451d08abfd24",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -103,6 +103,18 @@
 				"epoch": "0",
 				"version": "3.26.0",
 				"release": "15.el8",
+				"arch": "ppc64le",
+				"filename": "sqlite-devel-3.26.0-15.el8.ppc64le.rpm",
+				"sum": "a3356306b01b8ed5877d08524a8dd026768e5e25001346786455ce41f9f391c6",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "sqlite-3.26.0-15.el8.src.rpm",
+				"name": "sqlite-devel",
+				"epoch": "0",
+				"version": "3.26.0",
+				"release": "15.el8",
 				"arch": "aarch64",
 				"filename": "sqlite-devel-3.26.0-15.el8.aarch64.rpm",
 				"sum": "ba7df99452b4a0709006eac20f7a6d0ca17b2f0ade77e5b8bbf89bd547662473",
@@ -123,30 +135,6 @@
 			},
 			{
 				"src": "sqlite-3.26.0-15.el8.src.rpm",
-				"name": "lemon",
-				"epoch": "0",
-				"version": "3.26.0",
-				"release": "15.el8",
-				"arch": "ppc64le",
-				"filename": "lemon-3.26.0-15.el8.ppc64le.rpm",
-				"sum": "747d56b53dac44a15c11cd6f41d98e08821b48a0acb30cd478cb451d08abfd24",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "sqlite-3.26.0-15.el8.src.rpm",
-				"name": "sqlite-devel",
-				"epoch": "0",
-				"version": "3.26.0",
-				"release": "15.el8",
-				"arch": "ppc64le",
-				"filename": "sqlite-devel-3.26.0-15.el8.ppc64le.rpm",
-				"sum": "a3356306b01b8ed5877d08524a8dd026768e5e25001346786455ce41f9f391c6",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "sqlite-3.26.0-15.el8.src.rpm",
 				"name": "sqlite-libs",
 				"epoch": "0",
 				"version": "3.26.0",
@@ -154,6 +142,18 @@
 				"arch": "ppc64le",
 				"filename": "sqlite-libs-3.26.0-15.el8.ppc64le.rpm",
 				"sum": "bffdf530624e84f4ea213e57c502ff2e3ae89d0515853d9225c08dd111077999",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "sqlite-3.26.0-15.el8.src.rpm",
+				"name": "lemon",
+				"epoch": "0",
+				"version": "3.26.0",
+				"release": "15.el8",
+				"arch": "x86_64",
+				"filename": "lemon-3.26.0-15.el8.x86_64.rpm",
+				"sum": "e1dc24eab039aebd47746c9ea750968bb2a6f0392a41a7e4ff8d62d9109c6a53",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -202,6 +202,12 @@
 			"title": "CVE-2020-13435",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2020-13435"
+		},
+		{
+			"id": "ALSA-2021-4396",
+			"title": "ALSA-2021-4396",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-4396.html"
 		}
 	],
 	"issued_date": {

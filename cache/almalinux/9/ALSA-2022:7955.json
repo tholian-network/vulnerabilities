@@ -10,9 +10,33 @@
 	"summary": "skopeo security and bug fix update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
 		"packages": [
+			{
+				"src": "skopeo-1.9.2-1.el9.src.rpm",
+				"name": "skopeo-tests",
+				"epoch": "2",
+				"version": "1.9.2",
+				"release": "1.el9",
+				"arch": "s390x",
+				"filename": "skopeo-tests-1.9.2-1.el9.s390x.rpm",
+				"sum": "2962082e0775fce2ef0ec859a171e128455b396014863fce9cf307513f964a72",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "skopeo-1.9.2-1.el9.src.rpm",
+				"name": "skopeo",
+				"epoch": "2",
+				"version": "1.9.2",
+				"release": "1.el9",
+				"arch": "s390x",
+				"filename": "skopeo-1.9.2-1.el9.s390x.rpm",
+				"sum": "742d56708d94df4ee029e87c9f643e3faa52baf1cce37ff137f030ce0b158a8b",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "skopeo-1.9.2-1.el9.src.rpm",
 				"name": "skopeo",
@@ -43,21 +67,9 @@
 				"epoch": "2",
 				"version": "1.9.2",
 				"release": "1.el9",
-				"arch": "s390x",
-				"filename": "skopeo-tests-1.9.2-1.el9.s390x.rpm",
-				"sum": "2962082e0775fce2ef0ec859a171e128455b396014863fce9cf307513f964a72",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "skopeo-1.9.2-1.el9.src.rpm",
-				"name": "skopeo",
-				"epoch": "2",
-				"version": "1.9.2",
-				"release": "1.el9",
-				"arch": "s390x",
-				"filename": "skopeo-1.9.2-1.el9.s390x.rpm",
-				"sum": "742d56708d94df4ee029e87c9f643e3faa52baf1cce37ff137f030ce0b158a8b",
+				"arch": "ppc64le",
+				"filename": "skopeo-tests-1.9.2-1.el9.ppc64le.rpm",
+				"sum": "84e5cfba272c7886d9d73ff54b69a0727a7bf490fa5c2aaa450f2127c24219a3",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -87,18 +99,6 @@
 			},
 			{
 				"src": "skopeo-1.9.2-1.el9.src.rpm",
-				"name": "skopeo-tests",
-				"epoch": "2",
-				"version": "1.9.2",
-				"release": "1.el9",
-				"arch": "ppc64le",
-				"filename": "skopeo-tests-1.9.2-1.el9.ppc64le.rpm",
-				"sum": "84e5cfba272c7886d9d73ff54b69a0727a7bf490fa5c2aaa450f2127c24219a3",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "skopeo-1.9.2-1.el9.src.rpm",
 				"name": "skopeo",
 				"epoch": "2",
 				"version": "1.9.2",
@@ -114,10 +114,16 @@
 	"description": "The skopeo command lets you inspect images from container image registries, get images and image layers, and use signatures to create and verify files. \n\nSecurity Fix(es):\n\n* containers/storage: DoS via malicious image (CVE-2021-20291)\n* golang: math/big.Rat: may cause a panic or an unrecoverable fatal error if passed inputs with very large exponents (CVE-2021-33198)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:7955",
-			"title": "RHSA-2022:7955",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:7955"
+			"id": "1939485",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/1939485"
+		},
+		{
+			"id": "1989575",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/1989575"
 		},
 		{
 			"id": "CVE-2021-20291",
@@ -132,16 +138,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2021-33198"
 		},
 		{
-			"id": "1939485",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/1939485"
-		},
-		{
-			"id": "1989575",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/1989575"
+			"id": "RHSA-2022:7955",
+			"title": "RHSA-2022:7955",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:7955"
 		},
 		{
 			"id": "ALSA-2022:7955",

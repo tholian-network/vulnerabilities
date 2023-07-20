@@ -42,10 +42,40 @@
 	"description": "Expat is a C library for parsing XML documents. The mingw-expat packages provide a port of the Expat library for MinGW. \n\nThe following packages have been upgraded to a later upstream version: mingw-expat (2.4.8). (BZ#2057023, BZ#2057037, BZ#2057127)\n\nSecurity Fix(es):\n\n* expat: Malformed 2- and 3-byte UTF-8 sequences can lead to arbitrary code execution (CVE-2022-25235)\n* expat: Namespace-separator characters in \"xmlns[:prefix]\" attribute values can lead to arbitrary code execution (CVE-2022-25236)\n* expat: Integer overflow in storeRawNames() (CVE-2022-25315)\n* expat: Stack exhaustion in doctype parsing (CVE-2022-25313)\n* expat: Integer overflow in copyString() (CVE-2022-25314)\n* expat: Integer overflow in the doProlog function (CVE-2022-23990)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:7811",
-			"title": "RHSA-2022:7811",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:7811"
+			"id": "2048356",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2048356"
+		},
+		{
+			"id": "2056350",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2056350"
+		},
+		{
+			"id": "2056354",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2056354"
+		},
+		{
+			"id": "2056363",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2056363"
+		},
+		{
+			"id": "2056366",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2056366"
+		},
+		{
+			"id": "2056370",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2056370"
 		},
 		{
 			"id": "CVE-2022-23990",
@@ -84,40 +114,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-25315"
 		},
 		{
-			"id": "2048356",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2048356"
-		},
-		{
-			"id": "2056350",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2056350"
-		},
-		{
-			"id": "2056354",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2056354"
-		},
-		{
-			"id": "2056363",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2056363"
-		},
-		{
-			"id": "2056366",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2056366"
-		},
-		{
-			"id": "2056370",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2056370"
+			"id": "RHSA-2022:7811",
+			"title": "RHSA-2022:7811",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:7811"
 		},
 		{
 			"id": "ALSA-2022:7811",

@@ -10,9 +10,21 @@
 	"summary": "An update for the idm:DL1 and idm:client modules is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "5",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_idm",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_idm",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_2_idm",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_2_idm",
 		"packages": [
+			{
+				"src": "pyusb-1.0.0-9.module_el8.5.0+2641+983b221b.src.rpm",
+				"name": "python3-pyusb",
+				"epoch": "0",
+				"version": "1.0.0",
+				"release": "9.module_el8.5.0+2641+983b221b",
+				"arch": "noarch",
+				"filename": "python3-pyusb-1.0.0-9.module_el8.5.0+2641+983b221b.noarch.rpm",
+				"sum": "189f21bf150e0808fb26731066daab3504997a32af09c777a9ab8a60c3a7e4bc",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "python-qrcode-5.1-12.module_el8.6.0+2737+7e73ea90.src.rpm",
 				"name": "python3-qrcode-core",
@@ -38,6 +50,18 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "python-yubico-1.3.2-9.module_el8.5.0+2641+983b221b.src.rpm",
+				"name": "python3-yubico",
+				"epoch": "0",
+				"version": "1.3.2",
+				"release": "9.module_el8.5.0+2641+983b221b",
+				"arch": "noarch",
+				"filename": "python3-yubico-1.3.2-9.module_el8.5.0+2641+983b221b.noarch.rpm",
+				"sum": "526042e306058946bfc700ca4369bdadf805e0087599e66d1f3a961f7e3ad761",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "python-yubico-1.3.2-9.module_el8.6.0+2737+7e73ea90.src.rpm",
 				"name": "python3-yubico",
 				"epoch": "0",
@@ -58,6 +82,18 @@
 				"arch": "noarch",
 				"filename": "python3-pyusb-1.0.0-9.module_el8.6.0+2881+2f24dc92.noarch.rpm",
 				"sum": "91f9d74f4e9bf74b56f39b55425730114fcf13c58cd5a6f171fcbcbfd81663ac",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python-jwcrypto-0.5.0-1.module_el8.5.0+2641+983b221b.src.rpm",
+				"name": "python3-jwcrypto",
+				"epoch": "0",
+				"version": "0.5.0",
+				"release": "1.module_el8.5.0+2641+983b221b",
+				"arch": "noarch",
+				"filename": "python3-jwcrypto-0.5.0-1.module_el8.5.0+2641+983b221b.noarch.rpm",
+				"sum": "a12d429d76e9233ef3474ed2ac2d00ce655b24afc8c6efee1fd78f0bd2c91a6e",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -134,6 +170,18 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "python-qrcode-5.1-12.module_el8.5.0+2641+983b221b.src.rpm",
+				"name": "python3-qrcode",
+				"epoch": "0",
+				"version": "5.1",
+				"release": "12.module_el8.5.0+2641+983b221b",
+				"arch": "noarch",
+				"filename": "python3-qrcode-5.1-12.module_el8.5.0+2641+983b221b.noarch.rpm",
+				"sum": "db1b17845b0906c4bc63e5636505e4dbbcd8738fcd595e098975b7c6ceb71290",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "python-qrcode-5.1-12.module_el8.6.0+2737+7e73ea90.src.rpm",
 				"name": "python3-qrcode",
 				"epoch": "0",
@@ -170,54 +218,6 @@
 				"reboot_suggested": 0
 			},
 			{
-				"src": "pyusb-1.0.0-9.module_el8.5.0+2641+983b221b.src.rpm",
-				"name": "python3-pyusb",
-				"epoch": "0",
-				"version": "1.0.0",
-				"release": "9.module_el8.5.0+2641+983b221b",
-				"arch": "noarch",
-				"filename": "python3-pyusb-1.0.0-9.module_el8.5.0+2641+983b221b.noarch.rpm",
-				"sum": "189f21bf150e0808fb26731066daab3504997a32af09c777a9ab8a60c3a7e4bc",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python-yubico-1.3.2-9.module_el8.5.0+2641+983b221b.src.rpm",
-				"name": "python3-yubico",
-				"epoch": "0",
-				"version": "1.3.2",
-				"release": "9.module_el8.5.0+2641+983b221b",
-				"arch": "noarch",
-				"filename": "python3-yubico-1.3.2-9.module_el8.5.0+2641+983b221b.noarch.rpm",
-				"sum": "526042e306058946bfc700ca4369bdadf805e0087599e66d1f3a961f7e3ad761",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python-jwcrypto-0.5.0-1.module_el8.5.0+2641+983b221b.src.rpm",
-				"name": "python3-jwcrypto",
-				"epoch": "0",
-				"version": "0.5.0",
-				"release": "1.module_el8.5.0+2641+983b221b",
-				"arch": "noarch",
-				"filename": "python3-jwcrypto-0.5.0-1.module_el8.5.0+2641+983b221b.noarch.rpm",
-				"sum": "a12d429d76e9233ef3474ed2ac2d00ce655b24afc8c6efee1fd78f0bd2c91a6e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python-qrcode-5.1-12.module_el8.5.0+2641+983b221b.src.rpm",
-				"name": "python3-qrcode",
-				"epoch": "0",
-				"version": "5.1",
-				"release": "12.module_el8.5.0+2641+983b221b",
-				"arch": "noarch",
-				"filename": "python3-qrcode-5.1-12.module_el8.5.0+2641+983b221b.noarch.rpm",
-				"sum": "db1b17845b0906c4bc63e5636505e4dbbcd8738fcd595e098975b7c6ceb71290",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
 				"src": "python-qrcode-5.1-12.module_el8.5.0+2641+983b221b.src.rpm",
 				"name": "python3-qrcode-core",
 				"epoch": "0",
@@ -233,12 +233,6 @@
 	},
 	"description": "AlmaLinux Identity Management (IdM) is a centralized authentication, identity management, and authorization solution for both traditional and cloud-based enterprise environments. \n\nThe following packages have been upgraded to a later upstream version: ipa (4.8.7), softhsm (2.6.0), opendnssec (2.1.6). (BZ#1759888, BZ#1818765, BZ#1818877)\n\nSecurity Fix(es):\n\n* js-jquery: Cross-site scripting via cross-domain ajax requests (CVE-2015-9251)\n\n* bootstrap: XSS in the data-target attribute (CVE-2016-10735)\n\n* bootstrap: Cross-site Scripting (XSS) in the collapse data-parent attribute (CVE-2018-14040)\n\n* bootstrap: Cross-site Scripting (XSS) in the data-container property of tooltip (CVE-2018-14042)\n\n* bootstrap: XSS in the tooltip data-viewport attribute (CVE-2018-20676)\n\n* bootstrap: XSS in the affix configuration target property (CVE-2018-20677)\n\n* bootstrap: XSS in the tooltip or popover data-template attribute (CVE-2019-8331)\n\n* js-jquery: Prototype pollution in object's prototype leading to denial of service, remote code execution, or property injection (CVE-2019-11358)\n\n* jquery: Cross-site scripting due to improper injQuery.htmlPrefilter method (CVE-2020-11022)\n\n* ipa: No password length restriction leads to denial of service (CVE-2020-1722)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
-		{
-			"id": "ALSA-2020-4670",
-			"title": "ALSA-2020-4670",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2020-4670.html"
-		},
 		{
 			"id": "CVE-2015-9251",
 			"title": "CVE-2015-9251",
@@ -298,12 +292,18 @@
 			"title": "CVE-2020-1722",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2020-1722"
+		},
+		{
+			"id": "ALSA-2020-4670",
+			"title": "ALSA-2020-4670",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2020-4670.html"
 		}
 	],
 	"issued_date": {
 		"$date": 1604406336000
 	},
 	"updated_date": {
-		"$date": 1604432909000
+		"$date": 1651245947000
 	}
 }

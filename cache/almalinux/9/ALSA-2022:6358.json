@@ -10,8 +10,8 @@
 	"summary": "open-vm-tools security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_default",
+		"name": "almalinux-9-for-x86_64-appstream-rpms__9_default",
+		"shortname": "almalinux-9-for-x86_64-appstream-rpms__9_default",
 		"packages": [
 			{
 				"src": "open-vm-tools-11.3.5-1.el9_0.1.src.rpm",
@@ -39,18 +39,6 @@
 			},
 			{
 				"src": "open-vm-tools-11.3.5-1.el9_0.1.src.rpm",
-				"name": "open-vm-tools-test",
-				"epoch": "0",
-				"version": "11.3.5",
-				"release": "1.el9_0.1",
-				"arch": "aarch64",
-				"filename": "open-vm-tools-test-11.3.5-1.el9_0.1.aarch64.rpm",
-				"sum": "6902baab93fd4535b23c201b9fd95ce04a707c3422e1b7d36c3b5f294e710d6f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "open-vm-tools-11.3.5-1.el9_0.1.src.rpm",
 				"name": "open-vm-tools-desktop",
 				"epoch": "0",
 				"version": "11.3.5",
@@ -58,6 +46,18 @@
 				"arch": "x86_64",
 				"filename": "open-vm-tools-desktop-11.3.5-1.el9_0.1.x86_64.rpm",
 				"sum": "42a17fe0cfb7a607b8db576c0c4cb2f504f64838b6722461e4f1a82d4665e0f0",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "open-vm-tools-11.3.5-1.el9_0.1.src.rpm",
+				"name": "open-vm-tools-test",
+				"epoch": "0",
+				"version": "11.3.5",
+				"release": "1.el9_0.1",
+				"arch": "aarch64",
+				"filename": "open-vm-tools-test-11.3.5-1.el9_0.1.aarch64.rpm",
+				"sum": "6902baab93fd4535b23c201b9fd95ce04a707c3422e1b7d36c3b5f294e710d6f",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -102,10 +102,10 @@
 	"description": "The Open Virtual Machine Tools are the open source implementation of the VMware Tools. They are a set of guest operating system virtualization components that enhance performance and user experience of virtual machines.\n\nSecurity Fix(es):\n\n* open-vm-tools: local root privilege escalation in the virtual machine (CVE-2022-31676)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:6358",
-			"title": "RHSA-2022:6358",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:6358"
+			"id": "2118714",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2118714"
 		},
 		{
 			"id": "CVE-2022-31676",
@@ -114,10 +114,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-31676"
 		},
 		{
-			"id": "2118714",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2118714"
+			"id": "RHSA-2022:6358",
+			"title": "RHSA-2022:6358",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:6358"
 		},
 		{
 			"id": "ALSA-2022:6358",

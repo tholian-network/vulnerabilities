@@ -10,33 +10,9 @@
 	"summary": "lua security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
 		"packages": [
-			{
-				"src": "lua-5.4.4-2.el9_1.src.rpm",
-				"name": "lua",
-				"epoch": "0",
-				"version": "5.4.4",
-				"release": "2.el9_1",
-				"arch": "aarch64",
-				"filename": "lua-5.4.4-2.el9_1.aarch64.rpm",
-				"sum": "758db85420cae2b6e81e46e45ba64ac48f32d7b052e5b2eeea37f006d49b5cf3",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "lua-5.4.4-2.el9_1.src.rpm",
-				"name": "lua",
-				"epoch": "0",
-				"version": "5.4.4",
-				"release": "2.el9_1",
-				"arch": "s390x",
-				"filename": "lua-5.4.4-2.el9_1.s390x.rpm",
-				"sum": "75873bc393179499368c6903dd5cb348033e6164ed593c4296bbf4d09f982272",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "lua-5.4.4-2.el9_1.src.rpm",
 				"name": "lua",
@@ -46,54 +22,6 @@
 				"arch": "x86_64",
 				"filename": "lua-5.4.4-2.el9_1.x86_64.rpm",
 				"sum": "049fc03358600131efb412e6797afa1caf91c261f6373269230e4243359e3bbd",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "lua-5.4.4-2.el9_1.src.rpm",
-				"name": "lua-libs",
-				"epoch": "0",
-				"version": "5.4.4",
-				"release": "2.el9_1",
-				"arch": "i686",
-				"filename": "lua-libs-5.4.4-2.el9_1.i686.rpm",
-				"sum": "9383e10ccde5ee9c72d2603155524e3543d8560a66cf4971e164c8eea83a6dba",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "lua-5.4.4-2.el9_1.src.rpm",
-				"name": "lua",
-				"epoch": "0",
-				"version": "5.4.4",
-				"release": "2.el9_1",
-				"arch": "ppc64le",
-				"filename": "lua-5.4.4-2.el9_1.ppc64le.rpm",
-				"sum": "fa94ea4bbbb644d477d812865993725efcf9e9d6adbb268686418643abf6afaa",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "lua-5.4.4-2.el9_1.src.rpm",
-				"name": "lua-libs",
-				"epoch": "0",
-				"version": "5.4.4",
-				"release": "2.el9_1",
-				"arch": "aarch64",
-				"filename": "lua-libs-5.4.4-2.el9_1.aarch64.rpm",
-				"sum": "ade4d560be7a2e2f35fc42dccaafca3b7d2cadcddb65ffb70e9506dc56432215",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "lua-5.4.4-2.el9_1.src.rpm",
-				"name": "lua-libs",
-				"epoch": "0",
-				"version": "5.4.4",
-				"release": "2.el9_1",
-				"arch": "x86_64",
-				"filename": "lua-libs-5.4.4-2.el9_1.x86_64.rpm",
-				"sum": "8ebeb663600a8ec6f8cd9dd4418844377c1e611eb4db6278c58f245806a2e5b7",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -123,13 +51,85 @@
 			},
 			{
 				"src": "lua-5.4.4-2.el9_1.src.rpm",
+				"name": "lua-devel",
+				"epoch": "0",
+				"version": "5.4.4",
+				"release": "2.el9_1",
+				"arch": "x86_64",
+				"filename": "lua-devel-5.4.4-2.el9_1.x86_64.rpm",
+				"sum": "650ef0544090a272d132c3b1e538610a07381af7d509543bc058b3fd255a7731",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "lua-5.4.4-2.el9_1.src.rpm",
 				"name": "lua",
 				"epoch": "0",
 				"version": "5.4.4",
 				"release": "2.el9_1",
+				"arch": "s390x",
+				"filename": "lua-5.4.4-2.el9_1.s390x.rpm",
+				"sum": "75873bc393179499368c6903dd5cb348033e6164ed593c4296bbf4d09f982272",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "lua-5.4.4-2.el9_1.src.rpm",
+				"name": "lua",
+				"epoch": "0",
+				"version": "5.4.4",
+				"release": "2.el9_1",
+				"arch": "aarch64",
+				"filename": "lua-5.4.4-2.el9_1.aarch64.rpm",
+				"sum": "758db85420cae2b6e81e46e45ba64ac48f32d7b052e5b2eeea37f006d49b5cf3",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "lua-5.4.4-2.el9_1.src.rpm",
+				"name": "lua-libs",
+				"epoch": "0",
+				"version": "5.4.4",
+				"release": "2.el9_1",
+				"arch": "x86_64",
+				"filename": "lua-libs-5.4.4-2.el9_1.x86_64.rpm",
+				"sum": "8ebeb663600a8ec6f8cd9dd4418844377c1e611eb4db6278c58f245806a2e5b7",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "lua-5.4.4-2.el9_1.src.rpm",
+				"name": "lua-libs",
+				"epoch": "0",
+				"version": "5.4.4",
+				"release": "2.el9_1",
 				"arch": "i686",
-				"filename": "lua-5.4.4-2.el9_1.i686.rpm",
-				"sum": "e83d2a7d88cad76ecc06783ae71567d141942b00ae9ae766cf42b8a37a904064",
+				"filename": "lua-libs-5.4.4-2.el9_1.i686.rpm",
+				"sum": "9383e10ccde5ee9c72d2603155524e3543d8560a66cf4971e164c8eea83a6dba",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "lua-5.4.4-2.el9_1.src.rpm",
+				"name": "lua-libs",
+				"epoch": "0",
+				"version": "5.4.4",
+				"release": "2.el9_1",
+				"arch": "aarch64",
+				"filename": "lua-libs-5.4.4-2.el9_1.aarch64.rpm",
+				"sum": "ade4d560be7a2e2f35fc42dccaafca3b7d2cadcddb65ffb70e9506dc56432215",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "lua-5.4.4-2.el9_1.src.rpm",
+				"name": "lua-devel",
+				"epoch": "0",
+				"version": "5.4.4",
+				"release": "2.el9_1",
+				"arch": "aarch64",
+				"filename": "lua-devel-5.4.4-2.el9_1.aarch64.rpm",
+				"sum": "af247c7fabfb4e334a00aceeb15bbbd25bf098229a5516137aa685389c21dc36",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -163,33 +163,33 @@
 				"epoch": "0",
 				"version": "5.4.4",
 				"release": "2.el9_1",
-				"arch": "aarch64",
-				"filename": "lua-devel-5.4.4-2.el9_1.aarch64.rpm",
-				"sum": "af247c7fabfb4e334a00aceeb15bbbd25bf098229a5516137aa685389c21dc36",
+				"arch": "ppc64le",
+				"filename": "lua-devel-5.4.4-2.el9_1.ppc64le.rpm",
+				"sum": "d0bac51b7377436446961053eb659cef2ae118f4e33d4dd5125fea636069f6e9",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
 			{
 				"src": "lua-5.4.4-2.el9_1.src.rpm",
-				"name": "lua-devel",
+				"name": "lua",
 				"epoch": "0",
 				"version": "5.4.4",
 				"release": "2.el9_1",
-				"arch": "x86_64",
-				"filename": "lua-devel-5.4.4-2.el9_1.x86_64.rpm",
-				"sum": "650ef0544090a272d132c3b1e538610a07381af7d509543bc058b3fd255a7731",
+				"arch": "i686",
+				"filename": "lua-5.4.4-2.el9_1.i686.rpm",
+				"sum": "e83d2a7d88cad76ecc06783ae71567d141942b00ae9ae766cf42b8a37a904064",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
 			{
 				"src": "lua-5.4.4-2.el9_1.src.rpm",
-				"name": "lua-devel",
+				"name": "lua",
 				"epoch": "0",
 				"version": "5.4.4",
 				"release": "2.el9_1",
 				"arch": "ppc64le",
-				"filename": "lua-devel-5.4.4-2.el9_1.ppc64le.rpm",
-				"sum": "d0bac51b7377436446961053eb659cef2ae118f4e33d4dd5125fea636069f6e9",
+				"filename": "lua-5.4.4-2.el9_1.ppc64le.rpm",
+				"sum": "fa94ea4bbbb644d477d812865993725efcf9e9d6adbb268686418643abf6afaa",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -198,10 +198,16 @@
 	"description": "The lua packages provide support for Lua, a powerful light-weight programming language designed for extending applications. Lua is also frequently used as a general-purpose, stand-alone language.\n\nSecurity Fix(es):\n\n* lua: use after free allows Sandbox Escape (CVE-2021-44964)\n* lua: stack overflow in lua_resume of ldo.c allows a DoS via a crafted script file (CVE-2021-43519)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:0957",
-			"title": "RHSA-2023:0957",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:0957"
+			"id": "2047672",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2047672"
+		},
+		{
+			"id": "2064772",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2064772"
 		},
 		{
 			"id": "CVE-2021-43519",
@@ -216,16 +222,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2021-44964"
 		},
 		{
-			"id": "2047672",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2047672"
-		},
-		{
-			"id": "2064772",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2064772"
+			"id": "RHSA-2023:0957",
+			"title": "RHSA-2023:0957",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:0957"
 		},
 		{
 			"id": "ALSA-2023:0957",
@@ -238,6 +238,6 @@
 		"$date": 1677542400000
 	},
 	"updated_date": {
-		"$date": 1677607419000
+		"$date": 1677614818000
 	}
 }

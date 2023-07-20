@@ -10,9 +10,21 @@
 	"summary": "pki-core security, bug fix, and enhancement update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_2_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_2_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_2_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_2_default",
 		"packages": [
+			{
+				"src": "pki-core-11.3.0-1.el9.src.rpm",
+				"name": "idm-pki-tools",
+				"epoch": "0",
+				"version": "11.3.0",
+				"release": "1.el9",
+				"arch": "ppc64le",
+				"filename": "idm-pki-tools-11.3.0-1.el9.ppc64le.rpm",
+				"sum": "08d5f027ba24395cbea459913ffd318b944860aaf337255a7c1cccb8336493df",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "pki-core-11.3.0-1.el9.src.rpm",
 				"name": "idm-pki-ca",
@@ -22,6 +34,30 @@
 				"arch": "noarch",
 				"filename": "idm-pki-ca-11.3.0-1.el9.noarch.rpm",
 				"sum": "1aa86b42762e59396be9dfd98f1573408a841a80efcbfaaba5bd29098f8d44ee",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pki-core-11.3.0-1.el9.src.rpm",
+				"name": "idm-pki-tools",
+				"epoch": "0",
+				"version": "11.3.0",
+				"release": "1.el9",
+				"arch": "s390x",
+				"filename": "idm-pki-tools-11.3.0-1.el9.s390x.rpm",
+				"sum": "2eda3f2e8979a6b723d7664d784b696847775edbc46327848f80ebfc6244c982",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pki-core-11.3.0-1.el9.src.rpm",
+				"name": "idm-pki-tools",
+				"epoch": "0",
+				"version": "11.3.0",
+				"release": "1.el9",
+				"arch": "x86_64",
+				"filename": "idm-pki-tools-11.3.0-1.el9.x86_64.rpm",
+				"sum": "3b6c0687528089adb063d7aaa9634e2427c8e37f8e5d72e71c95e32fd227c3f7",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -120,52 +156,16 @@
 				"sum": "bdd0f52517f52af5d89331a680d226b6ab6843794003529b47a89ef1ebd482a6",
 				"sum_type": 5,
 				"reboot_suggested": 0
-			},
-			{
-				"src": "pki-core-11.3.0-1.el9.src.rpm",
-				"name": "idm-pki-tools",
-				"epoch": "0",
-				"version": "11.3.0",
-				"release": "1.el9",
-				"arch": "s390x",
-				"filename": "idm-pki-tools-11.3.0-1.el9.s390x.rpm",
-				"sum": "2eda3f2e8979a6b723d7664d784b696847775edbc46327848f80ebfc6244c982",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pki-core-11.3.0-1.el9.src.rpm",
-				"name": "idm-pki-tools",
-				"epoch": "0",
-				"version": "11.3.0",
-				"release": "1.el9",
-				"arch": "x86_64",
-				"filename": "idm-pki-tools-11.3.0-1.el9.x86_64.rpm",
-				"sum": "3b6c0687528089adb063d7aaa9634e2427c8e37f8e5d72e71c95e32fd227c3f7",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pki-core-11.3.0-1.el9.src.rpm",
-				"name": "idm-pki-tools",
-				"epoch": "0",
-				"version": "11.3.0",
-				"release": "1.el9",
-				"arch": "ppc64le",
-				"filename": "idm-pki-tools-11.3.0-1.el9.ppc64le.rpm",
-				"sum": "08d5f027ba24395cbea459913ffd318b944860aaf337255a7c1cccb8336493df",
-				"sum_type": 5,
-				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "The Public Key Infrastructure (PKI) Core contains fundamental packages required by AlmaLinux Certificate System.\n\nSecurity Fix(es):\n\n* pki-core: When using the caServerKeygen_DirUserCert profile, user can get certificates for other UIDs by entering name in Subject field (CVE-2022-2393)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:2293",
-			"title": "RHSA-2023:2293",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:2293"
+			"id": "2101046",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2101046"
 		},
 		{
 			"id": "CVE-2022-2393",
@@ -174,10 +174,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-2393"
 		},
 		{
-			"id": "2101046",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2101046"
+			"id": "RHSA-2023:2293",
+			"title": "RHSA-2023:2293",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:2293"
 		},
 		{
 			"id": "ALSA-2023:2293",

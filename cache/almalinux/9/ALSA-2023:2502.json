@@ -15,6 +15,30 @@
 		"packages": [
 			{
 				"src": "dhcp-4.4.2-18.b1.el9.src.rpm",
+				"name": "dhcp-server",
+				"epoch": "12",
+				"version": "4.4.2",
+				"release": "18.b1.el9",
+				"arch": "s390x",
+				"filename": "dhcp-server-4.4.2-18.b1.el9.s390x.rpm",
+				"sum": "3def6b89d94bb9d2d3afc42cc4ddd4a36968830d7f789533c9e9ca24582c69b8",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "dhcp-4.4.2-18.b1.el9.src.rpm",
+				"name": "dhcp-client",
+				"epoch": "12",
+				"version": "4.4.2",
+				"release": "18.b1.el9",
+				"arch": "s390x",
+				"filename": "dhcp-client-4.4.2-18.b1.el9.s390x.rpm",
+				"sum": "5c0d907b6fa4efb5f13f6d9ba631cd196a4145ecc5373d0fb42100eed8ef758e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "dhcp-4.4.2-18.b1.el9.src.rpm",
 				"name": "dhcp-common",
 				"epoch": "12",
 				"version": "4.4.2",
@@ -27,42 +51,6 @@
 			},
 			{
 				"src": "dhcp-4.4.2-18.b1.el9.src.rpm",
-				"name": "dhcp-server",
-				"epoch": "12",
-				"version": "4.4.2",
-				"release": "18.b1.el9",
-				"arch": "aarch64",
-				"filename": "dhcp-server-4.4.2-18.b1.el9.aarch64.rpm",
-				"sum": "ad7306e0fc61359bee0ac489a679fc7f5d21e42384b725103429e72d7c130129",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "dhcp-4.4.2-18.b1.el9.src.rpm",
-				"name": "dhcp-relay",
-				"epoch": "12",
-				"version": "4.4.2",
-				"release": "18.b1.el9",
-				"arch": "aarch64",
-				"filename": "dhcp-relay-4.4.2-18.b1.el9.aarch64.rpm",
-				"sum": "ba8b2f0c78b1e5596159c46bbaca59a5fe49362a40dfa76b533769c9e4693ce8",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "dhcp-4.4.2-18.b1.el9.src.rpm",
-				"name": "dhcp-client",
-				"epoch": "12",
-				"version": "4.4.2",
-				"release": "18.b1.el9",
-				"arch": "aarch64",
-				"filename": "dhcp-client-4.4.2-18.b1.el9.aarch64.rpm",
-				"sum": "d7e8ea2cfd6f823578a7fbf2ae95bd6ceb3cfd5b09d2155c25546455726cfd16",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "dhcp-4.4.2-18.b1.el9.src.rpm",
 				"name": "dhcp-client",
 				"epoch": "12",
 				"version": "4.4.2",
@@ -70,30 +58,6 @@
 				"arch": "x86_64",
 				"filename": "dhcp-client-4.4.2-18.b1.el9.x86_64.rpm",
 				"sum": "6e78c705fa3325ae44c435b8a02585c6544861ef1febd2d5b391c5588a0e75f2",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "dhcp-4.4.2-18.b1.el9.src.rpm",
-				"name": "dhcp-relay",
-				"epoch": "12",
-				"version": "4.4.2",
-				"release": "18.b1.el9",
-				"arch": "x86_64",
-				"filename": "dhcp-relay-4.4.2-18.b1.el9.x86_64.rpm",
-				"sum": "b19b5f010e1e849499222fcba10c4883f5b002974cb38acd51bafadf02b4cd9a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "dhcp-4.4.2-18.b1.el9.src.rpm",
-				"name": "dhcp-server",
-				"epoch": "12",
-				"version": "4.4.2",
-				"release": "18.b1.el9",
-				"arch": "x86_64",
-				"filename": "dhcp-server-4.4.2-18.b1.el9.x86_64.rpm",
-				"sum": "c50fb7826bcebb70237d1928c1de995b8b83b630b7f2376fea9d71692045b419",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -139,21 +103,33 @@
 				"epoch": "12",
 				"version": "4.4.2",
 				"release": "18.b1.el9",
-				"arch": "s390x",
-				"filename": "dhcp-server-4.4.2-18.b1.el9.s390x.rpm",
-				"sum": "3def6b89d94bb9d2d3afc42cc4ddd4a36968830d7f789533c9e9ca24582c69b8",
+				"arch": "aarch64",
+				"filename": "dhcp-server-4.4.2-18.b1.el9.aarch64.rpm",
+				"sum": "ad7306e0fc61359bee0ac489a679fc7f5d21e42384b725103429e72d7c130129",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
 			{
 				"src": "dhcp-4.4.2-18.b1.el9.src.rpm",
-				"name": "dhcp-client",
+				"name": "dhcp-relay",
 				"epoch": "12",
 				"version": "4.4.2",
 				"release": "18.b1.el9",
-				"arch": "s390x",
-				"filename": "dhcp-client-4.4.2-18.b1.el9.s390x.rpm",
-				"sum": "5c0d907b6fa4efb5f13f6d9ba631cd196a4145ecc5373d0fb42100eed8ef758e",
+				"arch": "x86_64",
+				"filename": "dhcp-relay-4.4.2-18.b1.el9.x86_64.rpm",
+				"sum": "b19b5f010e1e849499222fcba10c4883f5b002974cb38acd51bafadf02b4cd9a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "dhcp-4.4.2-18.b1.el9.src.rpm",
+				"name": "dhcp-relay",
+				"epoch": "12",
+				"version": "4.4.2",
+				"release": "18.b1.el9",
+				"arch": "aarch64",
+				"filename": "dhcp-relay-4.4.2-18.b1.el9.aarch64.rpm",
+				"sum": "ba8b2f0c78b1e5596159c46bbaca59a5fe49362a40dfa76b533769c9e4693ce8",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -168,16 +144,46 @@
 				"sum": "bf63e3c7ade9b1bcd168700ecd2fcaa32c3459aca8e33c2dd07982716aa8a692",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "dhcp-4.4.2-18.b1.el9.src.rpm",
+				"name": "dhcp-server",
+				"epoch": "12",
+				"version": "4.4.2",
+				"release": "18.b1.el9",
+				"arch": "x86_64",
+				"filename": "dhcp-server-4.4.2-18.b1.el9.x86_64.rpm",
+				"sum": "c50fb7826bcebb70237d1928c1de995b8b83b630b7f2376fea9d71692045b419",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "dhcp-4.4.2-18.b1.el9.src.rpm",
+				"name": "dhcp-client",
+				"epoch": "12",
+				"version": "4.4.2",
+				"release": "18.b1.el9",
+				"arch": "aarch64",
+				"filename": "dhcp-client-4.4.2-18.b1.el9.aarch64.rpm",
+				"sum": "d7e8ea2cfd6f823578a7fbf2ae95bd6ceb3cfd5b09d2155c25546455726cfd16",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "The Dynamic Host Configuration Protocol (DHCP) is a protocol that allows individual devices on an IP network to get their own network configuration information, including an IP address, a subnet mask, and a broadcast address. The dhcp packages provide a relay agent and ISC DHCP service required to enable and administer DHCP on a network.\n\nSecurity Fix(es):\n\n* dhcp: option refcount overflow when leasequery is enabled leading to dhcpd abort (CVE-2022-2928)\n* dhcp: DHCP memory leak (CVE-2022-2929)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:2502",
-			"title": "RHSA-2023:2502",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:2502"
+			"id": "2132001",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2132001"
+		},
+		{
+			"id": "2132002",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2132002"
 		},
 		{
 			"id": "CVE-2022-2928",
@@ -192,16 +198,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-2929"
 		},
 		{
-			"id": "2132001",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2132001"
-		},
-		{
-			"id": "2132002",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2132002"
+			"id": "RHSA-2023:2502",
+			"title": "RHSA-2023:2502",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:2502"
 		},
 		{
 			"id": "ALSA-2023:2502",
@@ -214,6 +214,6 @@
 		"$date": 1683590400000
 	},
 	"updated_date": {
-		"$date": 1683858699000
+		"$date": 1683858700000
 	}
 }

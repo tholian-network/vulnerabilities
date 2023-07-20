@@ -15,13 +15,13 @@
 		"packages": [
 			{
 				"src": "libksba-1.5.1-5.el9_0.src.rpm",
-				"name": "libksba",
+				"name": "libksba-devel",
 				"epoch": "0",
 				"version": "1.5.1",
 				"release": "5.el9_0",
 				"arch": "i686",
-				"filename": "libksba-1.5.1-5.el9_0.i686.rpm",
-				"sum": "fcb9a502ecd923f101b7a909a5d5d55f36974c16e861620f11c73d1ad2f0782c",
+				"filename": "libksba-devel-1.5.1-5.el9_0.i686.rpm",
+				"sum": "13e3d66cfc47875db53c255850fa6964e1a78ad506ef8cac44d7a45562a38fbb",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -31,9 +31,9 @@
 				"epoch": "0",
 				"version": "1.5.1",
 				"release": "5.el9_0",
-				"arch": "aarch64",
-				"filename": "libksba-1.5.1-5.el9_0.aarch64.rpm",
-				"sum": "38601070520dacfaaaeeb88b34bf77e8285526a31f255a82731cca0dda36dbe0",
+				"arch": "ppc64le",
+				"filename": "libksba-1.5.1-5.el9_0.ppc64le.rpm",
+				"sum": "24580ceb7feb389755000b041c5bfdeca91375ddfd51b5e8a48d917ab5c21c94",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -55,21 +55,9 @@
 				"epoch": "0",
 				"version": "1.5.1",
 				"release": "5.el9_0",
-				"arch": "ppc64le",
-				"filename": "libksba-1.5.1-5.el9_0.ppc64le.rpm",
-				"sum": "24580ceb7feb389755000b041c5bfdeca91375ddfd51b5e8a48d917ab5c21c94",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libksba-1.5.1-5.el9_0.src.rpm",
-				"name": "libksba-devel",
-				"epoch": "0",
-				"version": "1.5.1",
-				"release": "5.el9_0",
-				"arch": "i686",
-				"filename": "libksba-devel-1.5.1-5.el9_0.i686.rpm",
-				"sum": "13e3d66cfc47875db53c255850fa6964e1a78ad506ef8cac44d7a45562a38fbb",
+				"arch": "s390x",
+				"filename": "libksba-1.5.1-5.el9_0.s390x.rpm",
+				"sum": "33c0b14c3b062807c5889653879af8b9155716517e03260f1b92488758dcf5f2",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -79,9 +67,9 @@
 				"epoch": "0",
 				"version": "1.5.1",
 				"release": "5.el9_0",
-				"arch": "s390x",
-				"filename": "libksba-1.5.1-5.el9_0.s390x.rpm",
-				"sum": "33c0b14c3b062807c5889653879af8b9155716517e03260f1b92488758dcf5f2",
+				"arch": "aarch64",
+				"filename": "libksba-1.5.1-5.el9_0.aarch64.rpm",
+				"sum": "38601070520dacfaaaeeb88b34bf77e8285526a31f255a82731cca0dda36dbe0",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -132,16 +120,28 @@
 				"sum": "bdadaa2cc84b06767d9a5c5c5f2ff9543d3103c9933bf9153a76323111fa8540",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "libksba-1.5.1-5.el9_0.src.rpm",
+				"name": "libksba",
+				"epoch": "0",
+				"version": "1.5.1",
+				"release": "5.el9_0",
+				"arch": "i686",
+				"filename": "libksba-1.5.1-5.el9_0.i686.rpm",
+				"sum": "fcb9a502ecd923f101b7a909a5d5d55f36974c16e861620f11c73d1ad2f0782c",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "KSBA (pronounced Kasbah) is a library to make X.509 certificates as well as the CMS easily accessible by other applications.  Both specifications are building blocks of S/MIME and TLS.\n\nSecurity Fix(es):\n\n* libksba: integer overflow may lead to remote code execution (CVE-2022-3515)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:7090",
-			"title": "RHSA-2022:7090",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:7090"
+			"id": "2135610",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2135610"
 		},
 		{
 			"id": "CVE-2022-3515",
@@ -150,10 +150,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-3515"
 		},
 		{
-			"id": "2135610",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2135610"
+			"id": "RHSA-2022:7090",
+			"title": "RHSA-2022:7090",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:7090"
 		},
 		{
 			"id": "ALSA-2022:7090",
@@ -166,6 +166,6 @@
 		"$date": 1666569600000
 	},
 	"updated_date": {
-		"$date": 1666786071000
+		"$date": 1678725343000
 	}
 }

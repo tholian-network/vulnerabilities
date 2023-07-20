@@ -10,21 +10,9 @@
 	"summary": "pesign security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-x86_64-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-x86_64-appstream-rpms__9_1_default",
 		"packages": [
-			{
-				"src": "pesign-115-6.el9_1.src.rpm",
-				"name": "pesign",
-				"epoch": "0",
-				"version": "115",
-				"release": "6.el9_1",
-				"arch": "aarch64",
-				"filename": "pesign-115-6.el9_1.aarch64.rpm",
-				"sum": "255499f3e4e474b625594dfd1bdb8674f876841316f333250536c6ff031d5687",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "pesign-115-6.el9_1.src.rpm",
 				"name": "pesign",
@@ -36,16 +24,28 @@
 				"sum": "01e8243d8e85a1bbb5a9bb9e48694e4c42a552b660aba15fd3431064cd7b7438",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "pesign-115-6.el9_1.src.rpm",
+				"name": "pesign",
+				"epoch": "0",
+				"version": "115",
+				"release": "6.el9_1",
+				"arch": "aarch64",
+				"filename": "pesign-115-6.el9_1.aarch64.rpm",
+				"sum": "255499f3e4e474b625594dfd1bdb8674f876841316f333250536c6ff031d5687",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "The pesign packages provide the pesign utility for signing UEFI binaries as well as other associated tools.\n\nSecurity Fix(es):\n\n* pesign: Local privilege escalation on pesign systemd service (CVE-2022-3560)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:1067",
-			"title": "RHSA-2023:1067",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:1067"
+			"id": "2135420",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2135420"
 		},
 		{
 			"id": "CVE-2022-3560",
@@ -54,10 +54,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-3560"
 		},
 		{
-			"id": "2135420",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2135420"
+			"id": "RHSA-2023:1067",
+			"title": "RHSA-2023:1067",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:1067"
 		},
 		{
 			"id": "ALSA-2023:1067",

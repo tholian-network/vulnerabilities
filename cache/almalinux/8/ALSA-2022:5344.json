@@ -162,10 +162,16 @@
 	"description": "The kernel-rt packages provide the Real Time Linux Kernel, which enables fine-tuning for systems with extremely high determinism requirements.\nSecurity Fix(es):\n* kernel: buffer overflow in IPsec ESP transformation code (CVE-2022-27666)\n* kernel: out-of-bounds read in fbcon_get_font function (CVE-2020-28915)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nBug Fix(es):\n* kernel-rt: update RT source tree to the latest AlmaLinux-8.6.z0 Batch (BZ#2081704)",
 	"references": [
 		{
-			"id": "RHSA-2022:5344",
+			"id": "1899177",
 			"title": "",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:5344"
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/1899177"
+		},
+		{
+			"id": "2061633",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2061633"
 		},
 		{
 			"id": "CVE-2020-28915",
@@ -180,16 +186,28 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-27666"
 		},
 		{
-			"id": "1899177",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/1899177"
+			"id": "CVE-2020-28915",
+			"title": "CVE-2020-28915",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2020-28915"
 		},
 		{
-			"id": "2061633",
+			"id": "CVE-2022-27666",
+			"title": "CVE-2022-27666",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-27666"
+		},
+		{
+			"id": "RHSA-2022:5344",
 			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2061633"
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5344"
+		},
+		{
+			"id": "RHSA-2022:5344",
+			"title": "RHSA-2022:5344",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5344"
 		},
 		{
 			"id": "ALSA-2022:5344",

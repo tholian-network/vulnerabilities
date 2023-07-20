@@ -10,8 +10,8 @@
 	"summary": "swtpm security and bug fix update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-x86_64-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-x86_64-appstream-rpms__9_1_default",
 		"packages": [
 			{
 				"src": "swtpm-0.7.0-3.20211109gitb79fd91.el9.src.rpm",
@@ -22,6 +22,18 @@
 				"arch": "aarch64",
 				"filename": "swtpm-0.7.0-3.20211109gitb79fd91.el9.aarch64.rpm",
 				"sum": "17c5dc45ed25a16d3570737cd97b8d9561d095716549c11e3e47b22cff7610e2",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "swtpm-0.7.0-3.20211109gitb79fd91.el9.src.rpm",
+				"name": "swtpm-libs",
+				"epoch": "0",
+				"version": "0.7.0",
+				"release": "3.20211109gitb79fd91.el9",
+				"arch": "s390x",
+				"filename": "swtpm-libs-0.7.0-3.20211109gitb79fd91.el9.s390x.rpm",
+				"sum": "32257a10660815b102bc5dc1863fcd277fbd6fab8dfc3a2ad8b93e23e11a9865",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -51,18 +63,6 @@
 			},
 			{
 				"src": "swtpm-0.7.0-3.20211109gitb79fd91.el9.src.rpm",
-				"name": "swtpm-libs",
-				"epoch": "0",
-				"version": "0.7.0",
-				"release": "3.20211109gitb79fd91.el9",
-				"arch": "s390x",
-				"filename": "swtpm-libs-0.7.0-3.20211109gitb79fd91.el9.s390x.rpm",
-				"sum": "32257a10660815b102bc5dc1863fcd277fbd6fab8dfc3a2ad8b93e23e11a9865",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "swtpm-0.7.0-3.20211109gitb79fd91.el9.src.rpm",
 				"name": "swtpm-tools",
 				"epoch": "0",
 				"version": "0.7.0",
@@ -70,18 +70,6 @@
 				"arch": "s390x",
 				"filename": "swtpm-tools-0.7.0-3.20211109gitb79fd91.el9.s390x.rpm",
 				"sum": "5a73f8d55f45d1870725a9efec46985262fc6dc2b8f01041d44ce4b57d72383a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "swtpm-0.7.0-3.20211109gitb79fd91.el9.src.rpm",
-				"name": "swtpm",
-				"epoch": "0",
-				"version": "0.7.0",
-				"release": "3.20211109gitb79fd91.el9",
-				"arch": "s390x",
-				"filename": "swtpm-0.7.0-3.20211109gitb79fd91.el9.s390x.rpm",
-				"sum": "db23bed2d889e434d9ab4a9419ae6e0a4254559f7b645301a6dff88f5d21880e",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -120,16 +108,28 @@
 				"sum": "b5aa5e41ebf345c2c5991d6d00de5a6313f8ebf4dd6f6d7264fa979a779d6df0",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "swtpm-0.7.0-3.20211109gitb79fd91.el9.src.rpm",
+				"name": "swtpm",
+				"epoch": "0",
+				"version": "0.7.0",
+				"release": "3.20211109gitb79fd91.el9",
+				"arch": "s390x",
+				"filename": "swtpm-0.7.0-3.20211109gitb79fd91.el9.s390x.rpm",
+				"sum": "db23bed2d889e434d9ab4a9419ae6e0a4254559f7b645301a6dff88f5d21880e",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "SWTPM is a TPM emulator built on libtpms providing TPM functionality for QEMU VMs.\n\nSecurity Fix(es):\n\n* swtpm: Unchecked header size indicator against expected size (CVE-2022-23645)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:8100",
-			"title": "RHSA-2022:8100",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:8100"
+			"id": "2056491",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2056491"
 		},
 		{
 			"id": "CVE-2022-23645",
@@ -138,10 +138,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-23645"
 		},
 		{
-			"id": "2056491",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2056491"
+			"id": "RHSA-2022:8100",
+			"title": "RHSA-2022:8100",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:8100"
 		},
 		{
 			"id": "ALSA-2022:8100",

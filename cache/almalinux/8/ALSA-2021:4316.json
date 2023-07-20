@@ -10,9 +10,21 @@
 	"summary": "An update for zziplib is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "2",
 	"pkglist": {
-		"name": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
-		"shortname": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
+		"name": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
+		"shortname": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
 		"packages": [
+			{
+				"src": "zziplib-0.13.68-9.el8.src.rpm",
+				"name": "zziplib",
+				"epoch": "0",
+				"version": "0.13.68",
+				"release": "9.el8",
+				"arch": "ppc64le",
+				"filename": "zziplib-0.13.68-9.el8.ppc64le.rpm",
+				"sum": "0adff6408684dbdb9f4efe9d5abfc079e4fe6fa93de02e764a28dfcde0eb18d1",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "zziplib-0.13.68-9.el8.src.rpm",
 				"name": "zziplib",
@@ -22,6 +34,30 @@
 				"arch": "aarch64",
 				"filename": "zziplib-0.13.68-9.el8.aarch64.rpm",
 				"sum": "2764da3923d477c4a857eb3aea37de969f1af911dbf8ee9585fc4b982fd8d6bd",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "zziplib-0.13.68-9.el8.src.rpm",
+				"name": "zziplib",
+				"epoch": "0",
+				"version": "0.13.68",
+				"release": "9.el8",
+				"arch": "i686",
+				"filename": "zziplib-0.13.68-9.el8.i686.rpm",
+				"sum": "2fbf45a86d90093b4343f22de5437a08b7d22ce4cfe0e65d4ebb2cdead945ea1",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "zziplib-0.13.68-9.el8.src.rpm",
+				"name": "zziplib-devel",
+				"epoch": "0",
+				"version": "0.13.68",
+				"release": "9.el8",
+				"arch": "i686",
+				"filename": "zziplib-devel-0.13.68-9.el8.i686.rpm",
+				"sum": "323dfc3babd7fc11857b451976d7a8db2cee8f4515ec381f8af8ec7604a998a6",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -39,25 +75,13 @@
 			},
 			{
 				"src": "zziplib-0.13.68-9.el8.src.rpm",
-				"name": "zziplib-devel",
+				"name": "zziplib-utils",
 				"epoch": "0",
 				"version": "0.13.68",
 				"release": "9.el8",
-				"arch": "aarch64",
-				"filename": "zziplib-devel-0.13.68-9.el8.aarch64.rpm",
-				"sum": "f3aa81afa8078bcdb597f138a03e32bcb0c5e066faddb586f1248a6740bb4ba8",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "zziplib-0.13.68-9.el8.src.rpm",
-				"name": "zziplib-devel",
-				"epoch": "0",
-				"version": "0.13.68",
-				"release": "9.el8",
-				"arch": "i686",
-				"filename": "zziplib-devel-0.13.68-9.el8.i686.rpm",
-				"sum": "323dfc3babd7fc11857b451976d7a8db2cee8f4515ec381f8af8ec7604a998a6",
+				"arch": "ppc64le",
+				"filename": "zziplib-utils-0.13.68-9.el8.ppc64le.rpm",
+				"sum": "8bd2c718545868a2046c4e34053d6238acf105683d0ba9c9de280e4c1e6f5426",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -99,30 +123,6 @@
 			},
 			{
 				"src": "zziplib-0.13.68-9.el8.src.rpm",
-				"name": "zziplib",
-				"epoch": "0",
-				"version": "0.13.68",
-				"release": "9.el8",
-				"arch": "ppc64le",
-				"filename": "zziplib-0.13.68-9.el8.ppc64le.rpm",
-				"sum": "0adff6408684dbdb9f4efe9d5abfc079e4fe6fa93de02e764a28dfcde0eb18d1",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "zziplib-0.13.68-9.el8.src.rpm",
-				"name": "zziplib-utils",
-				"epoch": "0",
-				"version": "0.13.68",
-				"release": "9.el8",
-				"arch": "ppc64le",
-				"filename": "zziplib-utils-0.13.68-9.el8.ppc64le.rpm",
-				"sum": "8bd2c718545868a2046c4e34053d6238acf105683d0ba9c9de280e4c1e6f5426",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "zziplib-0.13.68-9.el8.src.rpm",
 				"name": "zziplib-devel",
 				"epoch": "0",
 				"version": "0.13.68",
@@ -135,13 +135,13 @@
 			},
 			{
 				"src": "zziplib-0.13.68-9.el8.src.rpm",
-				"name": "zziplib",
+				"name": "zziplib-devel",
 				"epoch": "0",
 				"version": "0.13.68",
 				"release": "9.el8",
-				"arch": "i686",
-				"filename": "zziplib-0.13.68-9.el8.i686.rpm",
-				"sum": "2fbf45a86d90093b4343f22de5437a08b7d22ce4cfe0e65d4ebb2cdead945ea1",
+				"arch": "aarch64",
+				"filename": "zziplib-devel-0.13.68-9.el8.aarch64.rpm",
+				"sum": "f3aa81afa8078bcdb597f138a03e32bcb0c5e066faddb586f1248a6740bb4ba8",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -150,22 +150,22 @@
 	"description": "The zziplib is a lightweight library to easily extract data from zip files.\n\nSecurity Fix(es):\n\n* zziplib: infinite loop via the return value of zzip_file_read() as used in unzzip_cat_file() (CVE-2020-18442)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "ALSA-2021-4316",
-			"title": "ALSA-2021-4316",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2021-4316.html"
-		},
-		{
 			"id": "CVE-2020-18442",
 			"title": "CVE-2020-18442",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2020-18442"
+		},
+		{
+			"id": "ALSA-2021-4316",
+			"title": "ALSA-2021-4316",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-4316.html"
 		}
 	],
 	"issued_date": {
 		"$date": 1636448351000
 	},
 	"updated_date": {
-		"$date": 1636462962000
+		"$date": 1636712461000
 	}
 }

@@ -10,21 +10,9 @@
 	"summary": "xorg-x11-server-Xwayland security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_2_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_2_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_2_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_2_default",
 		"packages": [
-			{
-				"src": "xorg-x11-server-Xwayland-21.1.3-7.el9.src.rpm",
-				"name": "xorg-x11-server-Xwayland",
-				"epoch": "0",
-				"version": "21.1.3",
-				"release": "7.el9",
-				"arch": "aarch64",
-				"filename": "xorg-x11-server-Xwayland-21.1.3-7.el9.aarch64.rpm",
-				"sum": "ba61e1963df36dcb958f61962ef134f7d9ef2aca3a46957a1a44bff041234cc5",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "xorg-x11-server-Xwayland-21.1.3-7.el9.src.rpm",
 				"name": "xorg-x11-server-Xwayland",
@@ -43,9 +31,9 @@
 				"epoch": "0",
 				"version": "21.1.3",
 				"release": "7.el9",
-				"arch": "x86_64",
-				"filename": "xorg-x11-server-Xwayland-21.1.3-7.el9.x86_64.rpm",
-				"sum": "f69f0e919bb845f7c7250c4d4657db1c83f612b180f355f1e6e1d93c72caa266",
+				"arch": "ppc64le",
+				"filename": "xorg-x11-server-Xwayland-21.1.3-7.el9.ppc64le.rpm",
+				"sum": "5e5c6d79c383733873dd6132fe349801794ef5547989254398b9143d1ac22865",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -55,9 +43,21 @@
 				"epoch": "0",
 				"version": "21.1.3",
 				"release": "7.el9",
-				"arch": "ppc64le",
-				"filename": "xorg-x11-server-Xwayland-21.1.3-7.el9.ppc64le.rpm",
-				"sum": "5e5c6d79c383733873dd6132fe349801794ef5547989254398b9143d1ac22865",
+				"arch": "aarch64",
+				"filename": "xorg-x11-server-Xwayland-21.1.3-7.el9.aarch64.rpm",
+				"sum": "ba61e1963df36dcb958f61962ef134f7d9ef2aca3a46957a1a44bff041234cc5",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "xorg-x11-server-Xwayland-21.1.3-7.el9.src.rpm",
+				"name": "xorg-x11-server-Xwayland",
+				"epoch": "0",
+				"version": "21.1.3",
+				"release": "7.el9",
+				"arch": "x86_64",
+				"filename": "xorg-x11-server-Xwayland-21.1.3-7.el9.x86_64.rpm",
+				"sum": "f69f0e919bb845f7c7250c4d4657db1c83f612b180f355f1e6e1d93c72caa266",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -66,10 +66,58 @@
 	"description": "Xwayland is an X server for running X clients under Wayland.\n\nSecurity Fix(es):\n\n* xorg-x11-server: buffer overflow in _GetCountedString() in xkb/xkb.c (CVE-2022-3550)\n* xorg-x11-server: XkbGetKbdByName use-after-free (CVE-2022-4283)\n* xorg-x11-server: XTestSwapFakeInput stack overflow (CVE-2022-46340)\n* xorg-x11-server: XIPassiveUngrab out-of-bounds access (CVE-2022-46341)\n* xorg-x11-server: XvdiSelectVideoNotify use-after-free (CVE-2022-46342)\n* xorg-x11-server: ScreenSaverSetAttributes use-after-free (CVE-2022-46343)\n* xorg-x11-server: XIChangeProperty out-of-bounds access (CVE-2022-46344)\n* xorg-x11-server: DeepCopyPointerClasses use-after-free leads to privilege elevation (CVE-2023-0494)\n* xorg-x11-server: memory leak in ProcXkbGetKbdByName() in xkb/xkb.c (CVE-2022-3551)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:2249",
-			"title": "RHSA-2023:2249",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:2249"
+			"id": "2140698",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2140698"
+		},
+		{
+			"id": "2140701",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2140701"
+		},
+		{
+			"id": "2151755",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2151755"
+		},
+		{
+			"id": "2151756",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2151756"
+		},
+		{
+			"id": "2151757",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2151757"
+		},
+		{
+			"id": "2151758",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2151758"
+		},
+		{
+			"id": "2151760",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2151760"
+		},
+		{
+			"id": "2151761",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2151761"
+		},
+		{
+			"id": "2165995",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2165995"
 		},
 		{
 			"id": "CVE-2022-3550",
@@ -126,58 +174,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2023-0494"
 		},
 		{
-			"id": "2140698",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2140698"
-		},
-		{
-			"id": "2140701",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2140701"
-		},
-		{
-			"id": "2151755",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2151755"
-		},
-		{
-			"id": "2151756",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2151756"
-		},
-		{
-			"id": "2151757",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2151757"
-		},
-		{
-			"id": "2151758",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2151758"
-		},
-		{
-			"id": "2151760",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2151760"
-		},
-		{
-			"id": "2151761",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2151761"
-		},
-		{
-			"id": "2165995",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2165995"
+			"id": "RHSA-2023:2249",
+			"title": "RHSA-2023:2249",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:2249"
 		},
 		{
 			"id": "ALSA-2023:2249",

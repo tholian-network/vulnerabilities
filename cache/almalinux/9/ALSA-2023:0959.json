@@ -10,8 +10,8 @@
 	"summary": "tar security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-baseos-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-baseos-rpms__9_1_default",
+		"name": "almalinux-9-for-x86_64-baseos-rpms__9_1_default",
+		"shortname": "almalinux-9-for-x86_64-baseos-rpms__9_1_default",
 		"packages": [
 			{
 				"src": "tar-1.34-6.el9_1.src.rpm",
@@ -22,6 +22,18 @@
 				"arch": "aarch64",
 				"filename": "tar-1.34-6.el9_1.aarch64.rpm",
 				"sum": "7f4904626815ef53aeade1ee78e6c33ee4305d91f35fe0948dd56c621608dd55",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "tar-1.34-6.el9_1.src.rpm",
+				"name": "tar",
+				"epoch": "2",
+				"version": "1.34",
+				"release": "6.el9_1",
+				"arch": "s390x",
+				"filename": "tar-1.34-6.el9_1.s390x.rpm",
+				"sum": "82e2a01476ce142200dc7f7ee3efae7b0a5ced7be91c1bfcce5cde2eb8ba5208",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -48,28 +60,16 @@
 				"sum": "e759afe8845683473e19174d61ea0ef0f5891c289be2c1f0020a8277184abb9a",
 				"sum_type": 5,
 				"reboot_suggested": 0
-			},
-			{
-				"src": "tar-1.34-6.el9_1.src.rpm",
-				"name": "tar",
-				"epoch": "2",
-				"version": "1.34",
-				"release": "6.el9_1",
-				"arch": "s390x",
-				"filename": "tar-1.34-6.el9_1.s390x.rpm",
-				"sum": "82e2a01476ce142200dc7f7ee3efae7b0a5ced7be91c1bfcce5cde2eb8ba5208",
-				"sum_type": 5,
-				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "The GNU tar program can save multiple files in an archive and restore files from an archive.\n\nSecurity Fix(es):\n\n* tar: heap buffer overflow at from_header() in list.c via specially crafted checksum (CVE-2022-48303)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:0959",
-			"title": "RHSA-2023:0959",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:0959"
+			"id": "2149722",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2149722"
 		},
 		{
 			"id": "CVE-2022-48303",
@@ -78,10 +78,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-48303"
 		},
 		{
-			"id": "2149722",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2149722"
+			"id": "RHSA-2023:0959",
+			"title": "RHSA-2023:0959",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:0959"
 		},
 		{
 			"id": "ALSA-2023:0959",

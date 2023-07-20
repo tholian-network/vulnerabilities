@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2023-2083</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/index.html">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2023.html">Amazon Linux 2023</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/faqs.html">FAQs</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2023-2083'>ALAS2-2023-2083</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2023-2083
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2023-06-05 16:39 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2023-06-07 22:37 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Important<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2014-9601.html' target='_blank' rel='noopener noreferrer'>CVE-2014-9601&nbsp;</a>
+                            <a href='/cve/html/CVE-2016-9190.html' target='_blank' rel='noopener noreferrer'>CVE-2016-9190&nbsp;</a>
+                            <a href='/cve/html/CVE-2020-35653.html' target='_blank' rel='noopener noreferrer'>CVE-2020-35653&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-28676.html' target='_blank' rel='noopener noreferrer'>CVE-2021-28676&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-28677.html' target='_blank' rel='noopener noreferrer'>CVE-2021-28677&nbsp;</a>
+                            <a href='/cve/html/CVE-2021-34552.html' target='_blank' rel='noopener noreferrer'>CVE-2021-34552&nbsp;</a>
+                            <br />
+                            <a href="../../faqs.html">FAQs regarding Amazon Linux ALAS/CVE Severity</a>
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>Pillow before 2.7.0 allows remote attackers to cause a denial of service via a compressed text chunk in a PNG image that has a large size when it is decompressed. (CVE-2014-9601)</p><p>Pillow before 3.3.2 allows context-dependent attackers to execute arbitrary code by using the &#34;crafted image file&#34; approach, related to an &#34;Insecure Sign Extension&#34; issue affecting the ImagingNew in Storage.c component. (CVE-2016-9190)</p><p>In Pillow before 8.1.0, PcxDecode has a buffer over-read when decoding a crafted PCX file because the user-supplied stride value is trusted for buffer calculations. (CVE-2020-35653)</p><p>An issue was discovered in Pillow before 8.2.0. For FLI data, FliDecode did not properly check that the block advance was non-zero, potentially leading to an infinite loop on load. (CVE-2021-28676)</p><p>An issue was discovered in Pillow before 8.2.0. For EPS data, the readline implementation used in EPSImageFile has to deal with any combination of \r and \n as line endings. It used an accidentally quadratic method of accumulating lines while looking for a line ending. A malicious EPS file could use this to perform a DoS of Pillow in the open phase, before an image was accepted for opening. (CVE-2021-28677)</p><p>Pillow through 8.2.0 and PIL (aka Python Imaging Library) through 1.1.7 allow an attacker to pass controlled parameters directly into a convert function to trigger a buffer overflow in Convert.c. (CVE-2021-34552)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>python-pillow</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update python-pillow</i> to update your system.<br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; python-pillow-2.0.0-23.gitd1c6db8.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; python-pillow-devel-2.0.0-23.gitd1c6db8.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; python-pillow-doc-2.0.0-23.gitd1c6db8.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; python-pillow-sane-2.0.0-23.gitd1c6db8.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; python-pillow-tk-2.0.0-23.gitd1c6db8.amzn2.0.4.aarch64<br />&nbsp;&nbsp;&nbsp; python-pillow-debuginfo-2.0.0-23.gitd1c6db8.amzn2.0.4.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; python-pillow-2.0.0-23.gitd1c6db8.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; python-pillow-devel-2.0.0-23.gitd1c6db8.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; python-pillow-doc-2.0.0-23.gitd1c6db8.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; python-pillow-sane-2.0.0-23.gitd1c6db8.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; python-pillow-tk-2.0.0-23.gitd1c6db8.amzn2.0.4.i686<br />&nbsp;&nbsp;&nbsp; python-pillow-debuginfo-2.0.0-23.gitd1c6db8.amzn2.0.4.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; python-pillow-2.0.0-23.gitd1c6db8.amzn2.0.4.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; python-pillow-2.0.0-23.gitd1c6db8.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; python-pillow-devel-2.0.0-23.gitd1c6db8.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; python-pillow-doc-2.0.0-23.gitd1c6db8.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; python-pillow-sane-2.0.0-23.gitd1c6db8.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; python-pillow-tk-2.0.0-23.gitd1c6db8.amzn2.0.4.x86_64<br />&nbsp;&nbsp;&nbsp; python-pillow-debuginfo-2.0.0-23.gitd1c6db8.amzn2.0.4.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2014-9601" target="_blank" rel="noopener noreferrer">CVE-2014-9601</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2016-9190" target="_blank" rel="noopener noreferrer">CVE-2016-9190</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2020-35653" target="_blank" rel="noopener noreferrer">CVE-2020-35653</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-28676" target="_blank" rel="noopener noreferrer">CVE-2021-28676</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-28677" target="_blank" rel="noopener noreferrer">CVE-2021-28677</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2021-34552" target="_blank" rel="noopener noreferrer">CVE-2021-34552</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9601" target="_blank" rel="noopener noreferrer">CVE-2014-9601</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9190" target="_blank" rel="noopener noreferrer">CVE-2016-9190</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35653" target="_blank" rel="noopener noreferrer">CVE-2020-35653</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28676" target="_blank" rel="noopener noreferrer">CVE-2021-28676</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28677" target="_blank" rel="noopener noreferrer">CVE-2021-28677</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-34552" target="_blank" rel="noopener noreferrer">CVE-2021-34552</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2023
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2023 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms apply, and downloading this site or portions of it is permitted</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2023, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

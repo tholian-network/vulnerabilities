@@ -10,9 +10,45 @@
 	"summary": "gnupg2 security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-baseos-rpms__8_6_default",
-		"shortname": "almalinux-8-for-x86_64-baseos-rpms__8_6_default",
+		"name": "almalinux-8-for-aarch64-baseos-rpms__8_6_default",
+		"shortname": "almalinux-8-for-aarch64-baseos-rpms__8_6_default",
 		"packages": [
+			{
+				"src": "gnupg2-2.2.20-3.el8_6.src.rpm",
+				"name": "gnupg2-smime",
+				"epoch": "0",
+				"version": "2.2.20",
+				"release": "3.el8_6",
+				"arch": "s390x",
+				"filename": "gnupg2-smime-2.2.20-3.el8_6.s390x.rpm",
+				"sum": "2be051f355b4571047ba6d23120301aeaa7eca43c958e1288ad899015e897ca6",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "gnupg2-2.2.20-3.el8_6.src.rpm",
+				"name": "gnupg2",
+				"epoch": "0",
+				"version": "2.2.20",
+				"release": "3.el8_6",
+				"arch": "s390x",
+				"filename": "gnupg2-2.2.20-3.el8_6.s390x.rpm",
+				"sum": "3699cc49582328b92f9ccba0cc6a1844ce0489da31e6a8abc4b590fb2e8538ca",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "gnupg2-2.2.20-3.el8_6.src.rpm",
+				"name": "gnupg2",
+				"epoch": "0",
+				"version": "2.2.20",
+				"release": "3.el8_6",
+				"arch": "aarch64",
+				"filename": "gnupg2-2.2.20-3.el8_6.aarch64.rpm",
+				"sum": "49c0c35f83ea8543ff014eb3de1c044b770232c55dbbaa4db9a1cee2d5bf14ec",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "gnupg2-2.2.20-3.el8_6.src.rpm",
 				"name": "gnupg2",
@@ -34,18 +70,6 @@
 				"arch": "x86_64",
 				"filename": "gnupg2-smime-2.2.20-3.el8_6.x86_64.rpm",
 				"sum": "90cae238eb8ac2266ccb1ee99852b59634761674cf6b6a82e5a75c4a1e4f725c",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gnupg2-2.2.20-3.el8_6.src.rpm",
-				"name": "gnupg2",
-				"epoch": "0",
-				"version": "2.2.20",
-				"release": "3.el8_6",
-				"arch": "aarch64",
-				"filename": "gnupg2-2.2.20-3.el8_6.aarch64.rpm",
-				"sum": "49c0c35f83ea8543ff014eb3de1c044b770232c55dbbaa4db9a1cee2d5bf14ec",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -84,40 +108,16 @@
 				"sum": "d7589bea5bc6c35b6167f9c5881b1ed8ae44626d3f27bbdadbe1b1883069bd69",
 				"sum_type": 5,
 				"reboot_suggested": 0
-			},
-			{
-				"src": "gnupg2-2.2.20-3.el8_6.src.rpm",
-				"name": "gnupg2-smime",
-				"epoch": "0",
-				"version": "2.2.20",
-				"release": "3.el8_6",
-				"arch": "s390x",
-				"filename": "gnupg2-smime-2.2.20-3.el8_6.s390x.rpm",
-				"sum": "2be051f355b4571047ba6d23120301aeaa7eca43c958e1288ad899015e897ca6",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gnupg2-2.2.20-3.el8_6.src.rpm",
-				"name": "gnupg2",
-				"epoch": "0",
-				"version": "2.2.20",
-				"release": "3.el8_6",
-				"arch": "s390x",
-				"filename": "gnupg2-2.2.20-3.el8_6.s390x.rpm",
-				"sum": "3699cc49582328b92f9ccba0cc6a1844ce0489da31e6a8abc4b590fb2e8538ca",
-				"sum_type": 5,
-				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "The GNU Privacy Guard (GnuPG or GPG) is a tool for encrypting data and creating digital signatures, compliant with OpenPGP and S/MIME standards.\n\nSecurity Fix(es):\n\n* gpg: Signature spoofing via status line injection (CVE-2022-34903)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:6463",
-			"title": "RHSA-2022:6463",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:6463"
+			"id": "2102868",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2102868"
 		},
 		{
 			"id": "CVE-2022-34903",
@@ -126,10 +126,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-34903"
 		},
 		{
-			"id": "2102868",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2102868"
+			"id": "RHSA-2022:6463",
+			"title": "RHSA-2022:6463",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:6463"
 		},
 		{
 			"id": "ALSA-2022:6463",

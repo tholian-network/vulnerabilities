@@ -10,8 +10,8 @@
 	"summary": "ignition security, bug fix, and enhancement update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
 		"packages": [
 			{
 				"src": "ignition-2.14.0-1.el9.src.rpm",
@@ -19,9 +19,9 @@
 				"epoch": "0",
 				"version": "2.14.0",
 				"release": "1.el9",
-				"arch": "aarch64",
-				"filename": "ignition-2.14.0-1.el9.aarch64.rpm",
-				"sum": "e9625f5d50376a62c5955151beb24ce191f4caba368e73ae898944a4dd7bdf08",
+				"arch": "x86_64",
+				"filename": "ignition-2.14.0-1.el9.x86_64.rpm",
+				"sum": "6e20f4a1374a8e2129789d350c5fedc5155e972de05362c6fb1ecbd6a298a092",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -43,9 +43,9 @@
 				"epoch": "0",
 				"version": "2.14.0",
 				"release": "1.el9",
-				"arch": "x86_64",
-				"filename": "ignition-2.14.0-1.el9.x86_64.rpm",
-				"sum": "6e20f4a1374a8e2129789d350c5fedc5155e972de05362c6fb1ecbd6a298a092",
+				"arch": "ppc64le",
+				"filename": "ignition-2.14.0-1.el9.ppc64le.rpm",
+				"sum": "988e6ceb284ede89305f74dd3aff1e1c9cb439adcc79c941e4cd3e50cf3949f1",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -55,9 +55,9 @@
 				"epoch": "0",
 				"version": "2.14.0",
 				"release": "1.el9",
-				"arch": "ppc64le",
-				"filename": "ignition-2.14.0-1.el9.ppc64le.rpm",
-				"sum": "988e6ceb284ede89305f74dd3aff1e1c9cb439adcc79c941e4cd3e50cf3949f1",
+				"arch": "aarch64",
+				"filename": "ignition-2.14.0-1.el9.aarch64.rpm",
+				"sum": "e9625f5d50376a62c5955151beb24ce191f4caba368e73ae898944a4dd7bdf08",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -66,10 +66,10 @@
 	"description": "Ignition is a utility used to manipulate systems during the initramfs. This includes partitioning disks, formatting partitions, writing files (regular files, systemd units, etc.), and configuring users. On first boot, Ignition reads its configuration from a source of truth (remote URL, network metadata service, hypervisor bridge, etc.) and applies the configuration.\n\nThe following packages have been upgraded to a later upstream version: ignition (2.14.0). (BZ#2090647)\n\nSecurity Fix(es):\n\n* ignition: configs are accessible from unprivileged containers in VMs running on VMware products (CVE-2022-1706)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:8126",
-			"title": "RHSA-2022:8126",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:8126"
+			"id": "2082274",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2082274"
 		},
 		{
 			"id": "CVE-2022-1706",
@@ -78,10 +78,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-1706"
 		},
 		{
-			"id": "2082274",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2082274"
+			"id": "RHSA-2022:8126",
+			"title": "RHSA-2022:8126",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:8126"
 		},
 		{
 			"id": "ALSA-2022:8126",

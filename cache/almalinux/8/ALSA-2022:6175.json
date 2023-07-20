@@ -10,8 +10,8 @@
 	"summary": "firefox security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_6_default",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_6_default",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_6_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_6_default",
 		"packages": [
 			{
 				"src": "firefox-91.13.0-1.el8_6.alma.src.rpm",
@@ -19,9 +19,9 @@
 				"epoch": "0",
 				"version": "91.13.0",
 				"release": "1.el8_6.alma",
-				"arch": "aarch64",
-				"filename": "firefox-91.13.0-1.el8_6.alma.aarch64.rpm",
-				"sum": "a028c17c64ea46e181d10ecc6d5cf3c6c2c1f737f9edf63710cf23aacc5ea8de",
+				"arch": "ppc64le",
+				"filename": "firefox-91.13.0-1.el8_6.alma.ppc64le.rpm",
+				"sum": "6dc2e03aef36774e7e952e5da5152602da227b54c9af9a9866d6995675d864a8",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -43,9 +43,9 @@
 				"epoch": "0",
 				"version": "91.13.0",
 				"release": "1.el8_6.alma",
-				"arch": "ppc64le",
-				"filename": "firefox-91.13.0-1.el8_6.alma.ppc64le.rpm",
-				"sum": "6dc2e03aef36774e7e952e5da5152602da227b54c9af9a9866d6995675d864a8",
+				"arch": "aarch64",
+				"filename": "firefox-91.13.0-1.el8_6.alma.aarch64.rpm",
+				"sum": "a028c17c64ea46e181d10ecc6d5cf3c6c2c1f737f9edf63710cf23aacc5ea8de",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -54,10 +54,34 @@
 	"description": "Mozilla Firefox is an open-source web browser, designed for standards compliance, performance, and portability.\nThis update upgrades Firefox to version 91.13.0 ESR.\nSecurity Fix(es):\n* Mozilla: Address bar spoofing via XSLT error handling (CVE-2022-38472)\n* Mozilla: Cross-origin XSLT Documents would have inherited the parent's permissions (CVE-2022-38473)\n* Mozilla: Memory safety bugs fixed in Firefox 104 and Firefox ESR 102.2 (CVE-2022-38477)\n* Mozilla: Memory safety bugs fixed in Firefox 104, Firefox ESR 102.2, and Firefox ESR 91.13 (CVE-2022-38478)\n* Mozilla: Data race and potential use-after-free in PK11_ChangePW (CVE-2022-38476)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:6175",
-			"title": "RHSA-2022:6175",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:6175"
+			"id": "2120673",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2120673"
+		},
+		{
+			"id": "2120674",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2120674"
+		},
+		{
+			"id": "2120678",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2120678"
+		},
+		{
+			"id": "2120695",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2120695"
+		},
+		{
+			"id": "2120696",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2120696"
 		},
 		{
 			"id": "CVE-2022-38472",
@@ -90,34 +114,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-38478"
 		},
 		{
-			"id": "2120673",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2120673"
-		},
-		{
-			"id": "2120674",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2120674"
-		},
-		{
-			"id": "2120678",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2120678"
-		},
-		{
-			"id": "2120695",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2120695"
-		},
-		{
-			"id": "2120696",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2120696"
+			"id": "RHSA-2022:6175",
+			"title": "RHSA-2022:6175",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:6175"
 		},
 		{
 			"id": "ALSA-2022:6175",

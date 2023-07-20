@@ -27,6 +27,30 @@
 			},
 			{
 				"src": "pcs-0.11.1-10.el9_0.2.src.rpm",
+				"name": "pcs-snmp",
+				"epoch": "0",
+				"version": "0.11.1",
+				"release": "10.el9_0.2",
+				"arch": "s390x",
+				"filename": "pcs-snmp-0.11.1-10.el9_0.2.s390x.rpm",
+				"sum": "4be13a1bddc6784f726451dab7246288f9ff6c85e3d18de4af39e5324d60e5eb",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pcs-0.11.1-10.el9_0.2.src.rpm",
+				"name": "pcs",
+				"epoch": "0",
+				"version": "0.11.1",
+				"release": "10.el9_0.2",
+				"arch": "s390x",
+				"filename": "pcs-0.11.1-10.el9_0.2.s390x.rpm",
+				"sum": "59cadbaa9e3057dbd8c58aec2d397951cedc5a0a902552922385dfd4a75d4e07",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pcs-0.11.1-10.el9_0.2.src.rpm",
 				"name": "pcs",
 				"epoch": "0",
 				"version": "0.11.1",
@@ -84,40 +108,16 @@
 				"sum": "ebfdc998320c1cf1f0e487bf65533f739c466236ad17ae54652daabd8e0a4857",
 				"sum_type": 5,
 				"reboot_suggested": 0
-			},
-			{
-				"src": "pcs-0.11.1-10.el9_0.2.src.rpm",
-				"name": "pcs-snmp",
-				"epoch": "0",
-				"version": "0.11.1",
-				"release": "10.el9_0.2",
-				"arch": "s390x",
-				"filename": "pcs-snmp-0.11.1-10.el9_0.2.s390x.rpm",
-				"sum": "4be13a1bddc6784f726451dab7246288f9ff6c85e3d18de4af39e5324d60e5eb",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pcs-0.11.1-10.el9_0.2.src.rpm",
-				"name": "pcs",
-				"epoch": "0",
-				"version": "0.11.1",
-				"release": "10.el9_0.2",
-				"arch": "s390x",
-				"filename": "pcs-0.11.1-10.el9_0.2.s390x.rpm",
-				"sum": "59cadbaa9e3057dbd8c58aec2d397951cedc5a0a902552922385dfd4a75d4e07",
-				"sum_type": 5,
-				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "The pcs packages provide a command-line configuration system for the Pacemaker and Corosync utilities.\n\nSecurity Fix(es):\n\n* pcs: obtaining an authentication token for hacluster user could lead to privilege escalation (CVE-2022-2735)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:6313",
-			"title": "RHSA-2022:6313",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:6313"
+			"id": "2116815",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2116815"
 		},
 		{
 			"id": "CVE-2022-2735",
@@ -126,10 +126,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-2735"
 		},
 		{
-			"id": "2116815",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2116815"
+			"id": "RHSA-2022:6313",
+			"title": "RHSA-2022:6313",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:6313"
 		},
 		{
 			"id": "ALSA-2022:6313",

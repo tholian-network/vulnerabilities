@@ -10,8 +10,8 @@
 	"summary": "thunderbird security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
 		"packages": [
 			{
 				"src": "thunderbird-102.5.0-2.el9_1.alma.src.rpm",
@@ -26,38 +26,14 @@
 				"reboot_suggested": 0
 			},
 			{
-				"src": "thunderbird-102.5.0-2.el9_1.alma.src.rpm",
+				"src": "thunderbird-102.5.0-2.el9_1.alma.plus.src.rpm",
 				"name": "thunderbird",
 				"epoch": "0",
 				"version": "102.5.0",
-				"release": "2.el9_1.alma",
-				"arch": "s390x",
-				"filename": "thunderbird-102.5.0-2.el9_1.alma.s390x.rpm",
-				"sum": "c1f452ee57708d0693ed167f4d3c7d1722aafe858815b4cd4a7d65c84f8f6d29",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "thunderbird-102.5.0-2.el9_1.alma.src.rpm",
-				"name": "thunderbird",
-				"epoch": "0",
-				"version": "102.5.0",
-				"release": "2.el9_1.alma",
-				"arch": "x86_64",
-				"filename": "thunderbird-102.5.0-2.el9_1.alma.x86_64.rpm",
-				"sum": "805573fcd89f5aa167ca64ae669da7619328f3466c1c70db4a2d229bbad63193",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "thunderbird-102.5.0-2.el9_1.alma.src.rpm",
-				"name": "thunderbird",
-				"epoch": "0",
-				"version": "102.5.0",
-				"release": "2.el9_1.alma",
+				"release": "2.el9_1.alma.plus",
 				"arch": "ppc64le",
-				"filename": "thunderbird-102.5.0-2.el9_1.alma.ppc64le.rpm",
-				"sum": "f8b44d43a8119b015b1c40504de20493a3912560d42c9900ed544afbe97e01fe",
+				"filename": "thunderbird-102.5.0-2.el9_1.alma.plus.ppc64le.rpm",
+				"sum": "3ce12f27237295f902393a674d1e22a7183407e4a5b5cb4833062d3ba69d93f1",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -86,6 +62,30 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "thunderbird-102.5.0-2.el9_1.alma.src.rpm",
+				"name": "thunderbird",
+				"epoch": "0",
+				"version": "102.5.0",
+				"release": "2.el9_1.alma",
+				"arch": "x86_64",
+				"filename": "thunderbird-102.5.0-2.el9_1.alma.x86_64.rpm",
+				"sum": "805573fcd89f5aa167ca64ae669da7619328f3466c1c70db4a2d229bbad63193",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "thunderbird-102.5.0-2.el9_1.alma.src.rpm",
+				"name": "thunderbird",
+				"epoch": "0",
+				"version": "102.5.0",
+				"release": "2.el9_1.alma",
+				"arch": "s390x",
+				"filename": "thunderbird-102.5.0-2.el9_1.alma.s390x.rpm",
+				"sum": "c1f452ee57708d0693ed167f4d3c7d1722aafe858815b4cd4a7d65c84f8f6d29",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "thunderbird-102.5.0-2.el9_1.alma.plus.src.rpm",
 				"name": "thunderbird",
 				"epoch": "0",
@@ -98,14 +98,14 @@
 				"reboot_suggested": 0
 			},
 			{
-				"src": "thunderbird-102.5.0-2.el9_1.alma.plus.src.rpm",
+				"src": "thunderbird-102.5.0-2.el9_1.alma.src.rpm",
 				"name": "thunderbird",
 				"epoch": "0",
 				"version": "102.5.0",
-				"release": "2.el9_1.alma.plus",
+				"release": "2.el9_1.alma",
 				"arch": "ppc64le",
-				"filename": "thunderbird-102.5.0-2.el9_1.alma.plus.ppc64le.rpm",
-				"sum": "3ce12f27237295f902393a674d1e22a7183407e4a5b5cb4833062d3ba69d93f1",
+				"filename": "thunderbird-102.5.0-2.el9_1.alma.ppc64le.rpm",
+				"sum": "f8b44d43a8119b015b1c40504de20493a3912560d42c9900ed544afbe97e01fe",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -114,10 +114,82 @@
 	"description": "Mozilla Thunderbird is a standalone mail and newsgroup client.\n\nThis update upgrades Thunderbird to version 102.5.0.\n\nSecurity Fix(es):\n\n* Mozilla: Service Workers might have learned size of cross-origin media files (CVE-2022-45403)\n* Mozilla: Fullscreen notification bypass (CVE-2022-45404)\n* Mozilla: Use-after-free in InputStream implementation (CVE-2022-45405)\n* Mozilla: Use-after-free of a JavaScript Realm (CVE-2022-45406)\n* Mozilla: Fullscreen notification bypass via windowName (CVE-2022-45408)\n* Mozilla: Use-after-free in Garbage Collection (CVE-2022-45409)\n* Mozilla: Memory safety bugs fixed in Firefox 107 and Firefox ESR 102.5 (CVE-2022-45421)\n* Mozilla: ServiceWorker-intercepted requests bypassed SameSite cookie policy (CVE-2022-45410)\n* Mozilla: Cross-Site Tracing was possible via non-standard override headers (CVE-2022-45411)\n* Mozilla: Symlinks may resolve to partially uninitialized buffers (CVE-2022-45412)\n* Mozilla: Keystroke Side-Channel Leakage (CVE-2022-45416)\n* Mozilla: Custom mouse cursor could have been drawn over browser UI (CVE-2022-45418)\n* Mozilla: Iframe contents could be rendered outside the iframe (CVE-2022-45420)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:8561",
-			"title": "RHSA-2022:8561",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:8561"
+			"id": "2143197",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2143197"
+		},
+		{
+			"id": "2143198",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2143198"
+		},
+		{
+			"id": "2143199",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2143199"
+		},
+		{
+			"id": "2143200",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2143200"
+		},
+		{
+			"id": "2143201",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2143201"
+		},
+		{
+			"id": "2143202",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2143202"
+		},
+		{
+			"id": "2143203",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2143203"
+		},
+		{
+			"id": "2143204",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2143204"
+		},
+		{
+			"id": "2143205",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2143205"
+		},
+		{
+			"id": "2143240",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2143240"
+		},
+		{
+			"id": "2143241",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2143241"
+		},
+		{
+			"id": "2143242",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2143242"
+		},
+		{
+			"id": "2143243",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2143243"
 		},
 		{
 			"id": "CVE-2022-45403",
@@ -198,82 +270,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-45421"
 		},
 		{
-			"id": "2143197",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2143197"
-		},
-		{
-			"id": "2143198",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2143198"
-		},
-		{
-			"id": "2143199",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2143199"
-		},
-		{
-			"id": "2143200",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2143200"
-		},
-		{
-			"id": "2143201",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2143201"
-		},
-		{
-			"id": "2143202",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2143202"
-		},
-		{
-			"id": "2143203",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2143203"
-		},
-		{
-			"id": "2143204",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2143204"
-		},
-		{
-			"id": "2143205",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2143205"
-		},
-		{
-			"id": "2143240",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2143240"
-		},
-		{
-			"id": "2143241",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2143241"
-		},
-		{
-			"id": "2143242",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2143242"
-		},
-		{
-			"id": "2143243",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2143243"
+			"id": "RHSA-2022:8561",
+			"title": "RHSA-2022:8561",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:8561"
 		},
 		{
 			"id": "ALSA-2022:8561",
@@ -286,6 +286,6 @@
 		"$date": 1668988800000
 	},
 	"updated_date": {
-		"$date": 1669065725000
+		"$date": 1669066037000
 	}
 }

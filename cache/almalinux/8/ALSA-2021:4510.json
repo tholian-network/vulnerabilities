@@ -10,45 +10,9 @@
 	"summary": "An update for lua is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "4",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
-		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"name": "almalinux-8-for-aarch64-baseos-rpms__8_0_default",
+		"shortname": "almalinux-8-for-aarch64-baseos-rpms__8_0_default",
 		"packages": [
-			{
-				"src": "lua-5.3.4-12.el8.src.rpm",
-				"name": "lua-devel",
-				"epoch": "0",
-				"version": "5.3.4",
-				"release": "12.el8",
-				"arch": "x86_64",
-				"filename": "lua-devel-5.3.4-12.el8.x86_64.rpm",
-				"sum": "4d4bdd94869eace913b5a9e1b9c3b60163bc83c1150f537ab4c669d7764cd92c",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "lua-5.3.4-12.el8.src.rpm",
-				"name": "lua-libs",
-				"epoch": "0",
-				"version": "5.3.4",
-				"release": "12.el8",
-				"arch": "x86_64",
-				"filename": "lua-libs-5.3.4-12.el8.x86_64.rpm",
-				"sum": "7088352944a1ce3fcc943a7f3deac47715aef01f2888423780905343118b29ed",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "lua-5.3.4-12.el8.src.rpm",
-				"name": "lua",
-				"epoch": "0",
-				"version": "5.3.4",
-				"release": "12.el8",
-				"arch": "x86_64",
-				"filename": "lua-5.3.4-12.el8.x86_64.rpm",
-				"sum": "7fa49f92f4402ba54412ac32fb882e41813a26669e26549700b6193797c5261f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "lua-5.3.4-12.el8.src.rpm",
 				"name": "lua",
@@ -75,37 +39,25 @@
 			},
 			{
 				"src": "lua-5.3.4-12.el8.src.rpm",
-				"name": "lua-libs",
-				"epoch": "0",
-				"version": "5.3.4",
-				"release": "12.el8",
-				"arch": "aarch64",
-				"filename": "lua-libs-5.3.4-12.el8.aarch64.rpm",
-				"sum": "c26cd5535001b7f0aab05be397283ba2820e4ac7563a1bae345537eaa6c8c71a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "lua-5.3.4-12.el8.src.rpm",
-				"name": "lua",
-				"epoch": "0",
-				"version": "5.3.4",
-				"release": "12.el8",
-				"arch": "i686",
-				"filename": "lua-5.3.4-12.el8.i686.rpm",
-				"sum": "7d90b3c05b44591db6644cffd11abff1ae1e4ab17501e3e55cf7005e94d5df24",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "lua-5.3.4-12.el8.src.rpm",
 				"name": "lua-devel",
 				"epoch": "0",
 				"version": "5.3.4",
 				"release": "12.el8",
-				"arch": "i686",
-				"filename": "lua-devel-5.3.4-12.el8.i686.rpm",
-				"sum": "9b1d9aff3313d15f4838230077e03b4f7695c05787d6c5fce6cb690f1c982883",
+				"arch": "x86_64",
+				"filename": "lua-devel-5.3.4-12.el8.x86_64.rpm",
+				"sum": "4d4bdd94869eace913b5a9e1b9c3b60163bc83c1150f537ab4c669d7764cd92c",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "lua-5.3.4-12.el8.src.rpm",
+				"name": "lua-libs",
+				"epoch": "0",
+				"version": "5.3.4",
+				"release": "12.el8",
+				"arch": "x86_64",
+				"filename": "lua-libs-5.3.4-12.el8.x86_64.rpm",
+				"sum": "7088352944a1ce3fcc943a7f3deac47715aef01f2888423780905343118b29ed",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -127,9 +79,57 @@
 				"epoch": "0",
 				"version": "5.3.4",
 				"release": "12.el8",
+				"arch": "i686",
+				"filename": "lua-5.3.4-12.el8.i686.rpm",
+				"sum": "7d90b3c05b44591db6644cffd11abff1ae1e4ab17501e3e55cf7005e94d5df24",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "lua-5.3.4-12.el8.src.rpm",
+				"name": "lua",
+				"epoch": "0",
+				"version": "5.3.4",
+				"release": "12.el8",
+				"arch": "x86_64",
+				"filename": "lua-5.3.4-12.el8.x86_64.rpm",
+				"sum": "7fa49f92f4402ba54412ac32fb882e41813a26669e26549700b6193797c5261f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "lua-5.3.4-12.el8.src.rpm",
+				"name": "lua-devel",
+				"epoch": "0",
+				"version": "5.3.4",
+				"release": "12.el8",
+				"arch": "i686",
+				"filename": "lua-devel-5.3.4-12.el8.i686.rpm",
+				"sum": "9b1d9aff3313d15f4838230077e03b4f7695c05787d6c5fce6cb690f1c982883",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "lua-5.3.4-12.el8.src.rpm",
+				"name": "lua",
+				"epoch": "0",
+				"version": "5.3.4",
+				"release": "12.el8",
 				"arch": "ppc64le",
 				"filename": "lua-5.3.4-12.el8.ppc64le.rpm",
 				"sum": "b55f84a1244615890cf5fea1854e64ad8860203f8e40859cbdea8c0d41c7d131",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "lua-5.3.4-12.el8.src.rpm",
+				"name": "lua-libs",
+				"epoch": "0",
+				"version": "5.3.4",
+				"release": "12.el8",
+				"arch": "aarch64",
+				"filename": "lua-libs-5.3.4-12.el8.aarch64.rpm",
+				"sum": "c26cd5535001b7f0aab05be397283ba2820e4ac7563a1bae345537eaa6c8c71a",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -154,12 +154,18 @@
 			"title": "CVE-2020-24370",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2020-24370"
+		},
+		{
+			"id": "ALSA-2021-4510",
+			"title": "ALSA-2021-4510",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-4510.html"
 		}
 	],
 	"issued_date": {
 		"$date": 1636450664000
 	},
 	"updated_date": {
-		"$date": 1636712456000
+		"$date": 1636712461000
 	}
 }

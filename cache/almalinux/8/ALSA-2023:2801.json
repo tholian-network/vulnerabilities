@@ -15,6 +15,18 @@
 		"packages": [
 			{
 				"src": "frr-7.5.1-7.el8.src.rpm",
+				"name": "frr",
+				"epoch": "0",
+				"version": "7.5.1",
+				"release": "7.el8",
+				"arch": "x86_64",
+				"filename": "frr-7.5.1-7.el8.x86_64.rpm",
+				"sum": "8f1b3395d7b69fa7e217b3514771f95b5e45a3f53beb56197b9b3cb525e0e086",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "frr-7.5.1-7.el8.src.rpm",
 				"name": "frr-selinux",
 				"epoch": "0",
 				"version": "7.5.1",
@@ -43,9 +55,9 @@
 				"epoch": "0",
 				"version": "7.5.1",
 				"release": "7.el8",
-				"arch": "x86_64",
-				"filename": "frr-7.5.1-7.el8.x86_64.rpm",
-				"sum": "8f1b3395d7b69fa7e217b3514771f95b5e45a3f53beb56197b9b3cb525e0e086",
+				"arch": "ppc64le",
+				"filename": "frr-7.5.1-7.el8.ppc64le.rpm",
+				"sum": "d1a21f437abb4d80dc98334176d93bb6fa77f7dbb80b73be80fb55a21ea00a73",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -60,28 +72,16 @@
 				"sum": "e0a72fad220d9b563396256e3f1479969eb648a7dedb291b57698668c1bae113",
 				"sum_type": 5,
 				"reboot_suggested": 0
-			},
-			{
-				"src": "frr-7.5.1-7.el8.src.rpm",
-				"name": "frr",
-				"epoch": "0",
-				"version": "7.5.1",
-				"release": "7.el8",
-				"arch": "ppc64le",
-				"filename": "frr-7.5.1-7.el8.ppc64le.rpm",
-				"sum": "d1a21f437abb4d80dc98334176d93bb6fa77f7dbb80b73be80fb55a21ea00a73",
-				"sum_type": 5,
-				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "FRRouting is free software that manages TCP/IP based routing protocols. It supports BGP4, OSPFv2, OSPFv3, ISIS, RIP, RIPng, PIM, NHRP, PBR, EIGRP and BFD. \n\nSecurity Fix(es):\n\n* frr: out-of-bounds read in the BGP daemon may lead to information disclosure or denial of service (CVE-2022-37032)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:2801",
-			"title": "RHSA-2023:2801",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:2801"
+			"id": "2128713",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2128713"
 		},
 		{
 			"id": "CVE-2022-37032",
@@ -90,10 +90,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-37032"
 		},
 		{
-			"id": "2128713",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2128713"
+			"id": "RHSA-2023:2801",
+			"title": "RHSA-2023:2801",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:2801"
 		},
 		{
 			"id": "ALSA-2023:2801",
@@ -106,6 +106,6 @@
 		"$date": 1684195200000
 	},
 	"updated_date": {
-		"$date": 1684533927000
+		"$date": 1684533942000
 	}
 }

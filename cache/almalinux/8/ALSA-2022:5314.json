@@ -10,9 +10,45 @@
 	"summary": "An update for expat is now available for AlmaLinux 8.",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-baseos-rpms__8_6_default",
-		"shortname": "almalinux-8-for-x86_64-baseos-rpms__8_6_default",
+		"name": "almalinux-8-for-aarch64-baseos-rpms__8_6_default",
+		"shortname": "almalinux-8-for-aarch64-baseos-rpms__8_6_default",
 		"packages": [
+			{
+				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
+				"name": "expat",
+				"epoch": "0",
+				"version": "2.2.5",
+				"release": "8.el8_6.2",
+				"arch": "aarch64",
+				"filename": "expat-2.2.5-8.el8_6.2.aarch64.rpm",
+				"sum": "2b382bf2e190a7aa2d695a9e21f8843a03ad457d37e905f1ec1ba97face2f18a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
+				"name": "expat",
+				"epoch": "0",
+				"version": "2.2.5",
+				"release": "8.el8_6.2",
+				"arch": "ppc64le",
+				"filename": "expat-2.2.5-8.el8_6.2.ppc64le.rpm",
+				"sum": "39b1a1acf98c1276500355fb7cbc6e305cdbd29434bb88f1ce0d7c9c94c13cfa",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
+				"name": "expat-devel",
+				"epoch": "0",
+				"version": "2.2.5",
+				"release": "8.el8_6.2",
+				"arch": "aarch64",
+				"filename": "expat-devel-2.2.5-8.el8_6.2.aarch64.rpm",
+				"sum": "48721b6f0033081972e5794a3548a241cd208a04276e483b67bcf3da912b8d14",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
 				"name": "expat-devel",
@@ -39,6 +75,18 @@
 			},
 			{
 				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
+				"name": "expat-devel",
+				"epoch": "0",
+				"version": "2.2.5",
+				"release": "8.el8_6.2",
+				"arch": "ppc64le",
+				"filename": "expat-devel-2.2.5-8.el8_6.2.ppc64le.rpm",
+				"sum": "9b1f222be379119232998c2c29da58e49ac7fd4562942edc64e04d0897982dcf",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
 				"name": "expat",
 				"epoch": "0",
 				"version": "2.2.5",
@@ -60,64 +108,34 @@
 				"sum": "e05399535ae6498c2ea68ca54af74c74f4782c704e303e0c773098d8abdf93e4",
 				"sum_type": 5,
 				"reboot_suggested": 0
-			},
-			{
-				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
-				"name": "expat",
-				"epoch": "0",
-				"version": "2.2.5",
-				"release": "8.el8_6.2",
-				"arch": "aarch64",
-				"filename": "expat-2.2.5-8.el8_6.2.aarch64.rpm",
-				"sum": "2b382bf2e190a7aa2d695a9e21f8843a03ad457d37e905f1ec1ba97face2f18a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
-				"name": "expat-devel",
-				"epoch": "0",
-				"version": "2.2.5",
-				"release": "8.el8_6.2",
-				"arch": "aarch64",
-				"filename": "expat-devel-2.2.5-8.el8_6.2.aarch64.rpm",
-				"sum": "48721b6f0033081972e5794a3548a241cd208a04276e483b67bcf3da912b8d14",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
-				"name": "expat",
-				"epoch": "0",
-				"version": "2.2.5",
-				"release": "8.el8_6.2",
-				"arch": "ppc64le",
-				"filename": "expat-2.2.5-8.el8_6.2.ppc64le.rpm",
-				"sum": "39b1a1acf98c1276500355fb7cbc6e305cdbd29434bb88f1ce0d7c9c94c13cfa",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
-				"name": "expat-devel",
-				"epoch": "0",
-				"version": "2.2.5",
-				"release": "8.el8_6.2",
-				"arch": "ppc64le",
-				"filename": "expat-devel-2.2.5-8.el8_6.2.ppc64le.rpm",
-				"sum": "9b1f222be379119232998c2c29da58e49ac7fd4562942edc64e04d0897982dcf",
-				"sum_type": 5,
-				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "Expat is a C library for parsing XML documents.\nSecurity Fix(es):\n* expat: stack exhaustion in doctype parsing (CVE-2022-25313)\n* expat: integer overflow in copyString() (CVE-2022-25314)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:5314",
-			"title": "RHSA-2022:5314",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:5314"
+			"id": "2056350",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2056350"
+		},
+		{
+			"id": "2056354",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2056354"
+		},
+		{
+			"id": "CVE-2022-25313",
+			"title": "",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-25313"
+		},
+		{
+			"id": "CVE-2022-25314",
+			"title": "",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-25314"
 		},
 		{
 			"id": "CVE-2022-25313",
@@ -132,16 +150,16 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-25314"
 		},
 		{
-			"id": "2056350",
+			"id": "RHSA-2022:5314",
 			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2056350"
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5314"
 		},
 		{
-			"id": "2056354",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2056354"
+			"id": "RHSA-2022:5314",
+			"title": "RHSA-2022:5314",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5314"
 		},
 		{
 			"id": "ALSA-2022:5314",
@@ -154,6 +172,6 @@
 		"$date": 1656547200000
 	},
 	"updated_date": {
-		"$date": 1658425557000
+		"$date": 1658425561000
 	}
 }

@@ -10,9 +10,57 @@
 	"summary": "An update for the mysql:8.0 module is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "2",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_mysql",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_mysql",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_mysql",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_mysql",
 		"packages": [
+			{
+				"src": "mecab-ipadic-2.7.0.20070801-16.module_el8.5.0+33+8bc5f36a.src.rpm",
+				"name": "mecab-ipadic-EUCJP",
+				"epoch": "0",
+				"version": "2.7.0.20070801",
+				"release": "16.module_el8.5.0+33+8bc5f36a",
+				"arch": "ppc64le",
+				"filename": "mecab-ipadic-EUCJP-2.7.0.20070801-16.module_el8.5.0+33+8bc5f36a.ppc64le.rpm",
+				"sum": "6923be24f74a5820b9260de6627b5241ebdb00dd574c8954eda21942b67ff892",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mecab-0.996-1.module_el8.4.0+2532+b8928c02.9.src.rpm",
+				"name": "mecab",
+				"epoch": "0",
+				"version": "0.996",
+				"release": "1.module_el8.4.0+2532+b8928c02.9",
+				"arch": "x86_64",
+				"filename": "mecab-0.996-1.module_el8.4.0+2532+b8928c02.9.x86_64.rpm",
+				"sum": "70ddb89b5dab7580422739226a6c2a9cfd9ea37d86e658a560bd579d93e7a2f8",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mecab-0.996-1.module_el8.5.0+33+8bc5f36a.9.src.rpm",
+				"name": "mecab",
+				"epoch": "0",
+				"version": "0.996",
+				"release": "1.module_el8.5.0+33+8bc5f36a.9",
+				"arch": "ppc64le",
+				"filename": "mecab-0.996-1.module_el8.5.0+33+8bc5f36a.9.ppc64le.rpm",
+				"sum": "7417c193400b5064079abd43d904f503942d4b83d2bc554be31a74edef94b331",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "mecab-ipadic-2.7.0.20070801-16.module_el8.5.0+33+8bc5f36a.src.rpm",
+				"name": "mecab-ipadic",
+				"epoch": "0",
+				"version": "2.7.0.20070801",
+				"release": "16.module_el8.5.0+33+8bc5f36a",
+				"arch": "ppc64le",
+				"filename": "mecab-ipadic-2.7.0.20070801-16.module_el8.5.0+33+8bc5f36a.ppc64le.rpm",
+				"sum": "c365289b4d85bab76447396b8b136ad3723ff929117815c16b98c65715319d79",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "mecab-ipadic-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.src.rpm",
 				"name": "mecab-ipadic-EUCJP",
@@ -34,30 +82,6 @@
 				"arch": "aarch64",
 				"filename": "mecab-0.996-1.module_el8.4.0+2532+b8928c02.9.aarch64.rpm",
 				"sum": "d23ebe5335af6f163e536f2a9ad26d5256e874df2ff6e7dca5c4d80c855c65f7",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mecab-ipadic-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.src.rpm",
-				"name": "mecab-ipadic",
-				"epoch": "0",
-				"version": "2.7.0.20070801",
-				"release": "16.module_el8.4.0+2532+b8928c02",
-				"arch": "aarch64",
-				"filename": "mecab-ipadic-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.aarch64.rpm",
-				"sum": "f03a74d0a129ec765e5c8b713138f65429c438952ce89753789d00f879948d68",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mecab-0.996-1.module_el8.4.0+2532+b8928c02.9.src.rpm",
-				"name": "mecab",
-				"epoch": "0",
-				"version": "0.996",
-				"release": "1.module_el8.4.0+2532+b8928c02.9",
-				"arch": "x86_64",
-				"filename": "mecab-0.996-1.module_el8.4.0+2532+b8928c02.9.x86_64.rpm",
-				"sum": "70ddb89b5dab7580422739226a6c2a9cfd9ea37d86e658a560bd579d93e7a2f8",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -86,38 +110,14 @@
 				"reboot_suggested": 0
 			},
 			{
-				"src": "mecab-ipadic-2.7.0.20070801-16.module_el8.5.0+33+8bc5f36a.src.rpm",
-				"name": "mecab-ipadic-EUCJP",
-				"epoch": "0",
-				"version": "2.7.0.20070801",
-				"release": "16.module_el8.5.0+33+8bc5f36a",
-				"arch": "ppc64le",
-				"filename": "mecab-ipadic-EUCJP-2.7.0.20070801-16.module_el8.5.0+33+8bc5f36a.ppc64le.rpm",
-				"sum": "6923be24f74a5820b9260de6627b5241ebdb00dd574c8954eda21942b67ff892",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mecab-0.996-1.module_el8.5.0+33+8bc5f36a.9.src.rpm",
-				"name": "mecab",
-				"epoch": "0",
-				"version": "0.996",
-				"release": "1.module_el8.5.0+33+8bc5f36a.9",
-				"arch": "ppc64le",
-				"filename": "mecab-0.996-1.module_el8.5.0+33+8bc5f36a.9.ppc64le.rpm",
-				"sum": "7417c193400b5064079abd43d904f503942d4b83d2bc554be31a74edef94b331",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "mecab-ipadic-2.7.0.20070801-16.module_el8.5.0+33+8bc5f36a.src.rpm",
+				"src": "mecab-ipadic-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.src.rpm",
 				"name": "mecab-ipadic",
 				"epoch": "0",
 				"version": "2.7.0.20070801",
-				"release": "16.module_el8.5.0+33+8bc5f36a",
-				"arch": "ppc64le",
-				"filename": "mecab-ipadic-2.7.0.20070801-16.module_el8.5.0+33+8bc5f36a.ppc64le.rpm",
-				"sum": "c365289b4d85bab76447396b8b136ad3723ff929117815c16b98c65715319d79",
+				"release": "16.module_el8.4.0+2532+b8928c02",
+				"arch": "aarch64",
+				"filename": "mecab-ipadic-2.7.0.20070801-16.module_el8.4.0+2532+b8928c02.aarch64.rpm",
+				"sum": "f03a74d0a129ec765e5c8b713138f65429c438952ce89753789d00f879948d68",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -125,12 +125,6 @@
 	},
 	"description": "MySQL is a multi-user, multi-threaded SQL database server. It consists of the MySQL server daemon (mysqld) and many client programs and libraries.\n\nThe following packages have been upgraded to a later upstream version: mysql (8.0.21).\n\nSecurity Fix(es):\n\n* mysql: Server: Security: Privileges multiple unspecified vulnerabilities (CVE-2020-14663, CVE-2020-14678, CVE-2020-14697, CVE-2020-2761, CVE-2020-2774, CVE-2020-2779, CVE-2020-2853, CVE-2020-14586, CVE-2020-14702)\n\n* mysql: Server: Security: Encryption multiple unspecified vulnerabilities (CVE-2019-2914, CVE-2019-2957)\n\n* mysql: InnoDB multiple unspecified vulnerabilities (CVE-2019-2938, CVE-2019-2963, CVE-2019-2968, CVE-2019-3018, CVE-2020-2577, CVE-2020-2589, CVE-2020-2760, CVE-2020-2762, CVE-2020-2814, CVE-2020-2893, CVE-2020-2895, CVE-2020-14568, CVE-2020-14623, CVE-2020-14633, CVE-2020-14634)\n\n* mysql: Server: PS multiple unspecified vulnerabilities (CVE-2019-2946, CVE-2020-2925)\n\n* mysql: Server: Replication multiple unspecified vulnerabilities (CVE-2019-2960, CVE-2020-2759, CVE-2020-2763, CVE-2020-14567)\n\n* mysql: Server: Optimizer multiple unspecified vulnerabilities (CVE-2019-2966, CVE-2019-2967, CVE-2019-2974, CVE-2019-2982, CVE-2019-2991, CVE-2019-2998, CVE-2020-2579, CVE-2020-2660, CVE-2020-2679, CVE-2020-2686, CVE-2020-2765, CVE-2020-2892, CVE-2020-2897, CVE-2020-2901, CVE-2020-2904, CVE-2020-2923, CVE-2020-2924, CVE-2020-2928, CVE-2020-14539, CVE-2020-14547, CVE-2020-14597, CVE-2020-14614, CVE-2020-14654, CVE-2020-14680, CVE-2020-14725)\n\n* mysql: Server: C API multiple unspecified vulnerabilities (CVE-2019-2993, CVE-2019-3011)\n\n* mysql: Server: DDL multiple unspecified vulnerabilities (CVE-2019-2997, CVE-2020-2580)\n\n* mysql: Server: Parser multiple unspecified vulnerabilities (CVE-2019-3004, CVE-2020-2627, CVE-2020-2930, CVE-2020-14619)\n\n* mysql: Server: Connection unspecified vulnerability (CVE-2019-3009)\n\n* mysql: Server: Options multiple unspecified vulnerabilities (CVE-2020-2584, CVE-2020-14632)\n\n* mysql: Server: DML multiple unspecified vulnerabilities (CVE-2020-2588, CVE-2020-2780, CVE-2020-14540, CVE-2020-14575, CVE-2020-14620)\n\n* mysql: C API multiple unspecified vulnerabilities (CVE-2020-2752, CVE-2020-2922, CVE-2020-14550, CVE-2020-2570, CVE-2020-2573, CVE-2020-2574)\n\n* mysql: Server: Logging unspecified vulnerability (CVE-2020-2770)\n\n* mysql: Server: Memcached unspecified vulnerability (CVE-2020-2804)\n\n* mysql: Server: Stored Procedure unspecified vulnerability (CVE-2020-2812)\n\n* mysql: Server: Information Schema multiple unspecified vulnerabilities (CVE-2020-2896, CVE-2020-14559, CVE-2020-2694)\n\n* mysql: Server: Charsets unspecified vulnerability (CVE-2020-2898)\n\n* mysql: Server: Connection Handling unspecified vulnerability (CVE-2020-2903)\n\n* mysql: Server: Group Replication Plugin unspecified vulnerability (CVE-2020-2921)\n\n* mysql: Server: Group Replication GCS unspecified vulnerability (CVE-2020-2926)\n\n* mysql: Server: Pluggable Auth unspecified vulnerability (CVE-2020-14553)\n\n* mysql: Server: UDF unspecified vulnerability (CVE-2020-14576)\n\n* mysql: Server: JSON unspecified vulnerability (CVE-2020-14624)\n\n* mysql: Server: Security: Audit unspecified vulnerability (CVE-2020-14631)\n\n* mysql: Server: Security: Roles multiple unspecified vulnerabilities (CVE-2020-14641, CVE-2020-14643, CVE-2020-14651)\n\n* mysql: Server: Locking unspecified vulnerability (CVE-2020-14656)\n\n* mysql: Information Schema unspecified vulnerability (CVE-2019-2911)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
-		{
-			"id": "ALSA-2020-3732",
-			"title": "ALSA-2020-3732",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2020-3732.html"
-		},
 		{
 			"id": "CVE-2019-2911",
 			"title": "CVE-2019-2911",
@@ -784,6 +778,12 @@
 			"title": "CVE-2021-2160",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2021-2160"
+		},
+		{
+			"id": "ALSA-2020-3732",
+			"title": "ALSA-2020-3732",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2020-3732.html"
 		}
 	],
 	"issued_date": {

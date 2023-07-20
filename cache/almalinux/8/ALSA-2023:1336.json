@@ -10,9 +10,21 @@
 	"summary": "firefox security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_7_default",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_7_default",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_7_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_7_default",
 		"packages": [
+			{
+				"src": "firefox-102.9.0-3.el8_7.alma.src.rpm",
+				"name": "firefox",
+				"epoch": "0",
+				"version": "102.9.0",
+				"release": "3.el8_7.alma",
+				"arch": "s390x",
+				"filename": "firefox-102.9.0-3.el8_7.alma.s390x.rpm",
+				"sum": "52bafe41b5efff7763f186452c607745a413d5b7bb5b6ad02e0ba2e6cac8825d",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "firefox-102.9.0-3.el8_7.alma.src.rpm",
 				"name": "firefox",
@@ -43,18 +55,6 @@
 				"epoch": "0",
 				"version": "102.9.0",
 				"release": "3.el8_7.alma",
-				"arch": "s390x",
-				"filename": "firefox-102.9.0-3.el8_7.alma.s390x.rpm",
-				"sum": "52bafe41b5efff7763f186452c607745a413d5b7bb5b6ad02e0ba2e6cac8825d",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "firefox-102.9.0-3.el8_7.alma.src.rpm",
-				"name": "firefox",
-				"epoch": "0",
-				"version": "102.9.0",
-				"release": "3.el8_7.alma",
 				"arch": "ppc64le",
 				"filename": "firefox-102.9.0-3.el8_7.alma.ppc64le.rpm",
 				"sum": "d7234ad1d4dfbe251866935a06ce0f1c9269c8e0642dea0bc3ad2229551d28c9",
@@ -66,10 +66,34 @@
 	"description": "Mozilla Firefox is an open-source web browser, designed for standards compliance, performance, and portability.\n\nThis update upgrades Firefox to version 102.9.0 ESR.\n\nSecurity Fix(es):\n\n* Mozilla: Incorrect code generation during JIT compilation (CVE-2023-25751)\n* Mozilla: Memory safety bugs fixed in Firefox 111 and Firefox ESR 102.9 (CVE-2023-28176)\n* Mozilla: Potential out-of-bounds when accessing throttled streams (CVE-2023-25752)\n* Mozilla: Invalid downcast in Worklets (CVE-2023-28162)\n* Mozilla: URL being dragged from a removed cross-origin iframe into the same tab triggered navigation (CVE-2023-28164)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:1336",
-			"title": "RHSA-2023:1336",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:1336"
+			"id": "2178458",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2178458"
+		},
+		{
+			"id": "2178460",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2178460"
+		},
+		{
+			"id": "2178466",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2178466"
+		},
+		{
+			"id": "2178470",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2178470"
+		},
+		{
+			"id": "2178472",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2178472"
 		},
 		{
 			"id": "CVE-2023-25751",
@@ -102,34 +126,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2023-28176"
 		},
 		{
-			"id": "2178458",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2178458"
-		},
-		{
-			"id": "2178460",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2178460"
-		},
-		{
-			"id": "2178466",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2178466"
-		},
-		{
-			"id": "2178470",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2178470"
-		},
-		{
-			"id": "2178472",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2178472"
+			"id": "RHSA-2023:1336",
+			"title": "RHSA-2023:1336",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:1336"
 		},
 		{
 			"id": "ALSA-2023:1336",

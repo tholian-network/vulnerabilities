@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ALAS2-2023-2070</title>
+        <link rel='icon' type='image/x-icon' href='../static/favicon.ico' />
+<link rel="stylesheet" href="../static/bootstrap.min.css" type='text/css' media='print, projection, screen' >
+<link rel='stylesheet' href='../static/blue_style.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/fontawesome.css' type='text/css' media='print, projection, screen' />
+<link rel='stylesheet' href='../static/style.css' type='text/css' media='print, projection, screen' />
+<script type='text/javascript' src='../static/jquery.min.js'></script>
+<script type='text/javascript' src='../static/jquery.tablesorter.min.js'></script>
+<script type="text/javascript" src="../static/index.js"></script>
+
+<!--Add constant cookie banner on this page-->
+<script type = 'text/javascript'>
+    var shortbread = AWSCShortbread();
+    shortbread.checkForCookieConsent();
+    function customize() {
+        shortbread.customizeCookies();
+    }
+</script>
+
+<style>
+    a{text-decoration: none; color: #0073BB}
+    a:visited{color: #0073BB}
+    .Site {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .Site-content {
+        flex: 1;
+    }
+</style>
+    </head>
+    <body class="Site">
+        <main class="Site-content">
+            <div class="container">
+                <nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #000000" id="bs-navbar">
+    <a style="font-size: 20px; color: #FF9900" class="navbar-brand" href="/"><b>Amazon Linux Security Center</b></a>
+    <ul class="nav navbar-nav navbar-right" style="color: #ff9900">
+    <li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/index.html">Amazon Linux</a> </li><li style="background-color: #FF9900;"> <a style="color: #000000" href="/alas2.html">Amazon Linux 2</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/alas2023.html">Amazon Linux 2023</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/announcements.html">Announcements</a> </li><li style="background-color: #333333;"> <a style="color: #FFFFFF" href="/faqs.html">FAQs</a> </li>
+    </ul>
+</nav>
+            </div>
+            <div style='min-height: 523px; margin-top:80px;' class='nine columns content-with-nav' role='main'>
+                <section>
+                    <div class='title'>
+                        <h1 id='ALAS2-2023-2070'>ALAS2-2023-2070</h1>
+                    </div>
+
+                    <div class='text'>
+                        <hr class='mid-pad'>
+                        <span class='alas-info'>
+                            
+                            <b>Amazon Linux 2 Security Advisory:</b> ALAS-2023-2070
+                            
+                        </span><br />
+                        <span class='alas-info'><b>Advisory Release Date:</b> 2023-06-05 16:39 Pacific</span><br />
+                        <span class='alas-info'><b>Advisory Updated Date:</b> 2023-06-07 22:38 Pacific</span><br />
+
+                        <div id='severity' class='alas-info'>
+                            <b>Severity:</b>
+                            <span class='date'>
+                                <span class='bulletin-type'>
+                                    <i class='fas fa-exclamation-triangle'></i>
+                                </span>
+                            </span>
+                            Medium<br />
+                        </div>
+
+                        <div id='references'>
+                            <b>References:</b>
+                            <a href='/cve/html/CVE-2023-27533.html' target='_blank' rel='noopener noreferrer'>CVE-2023-27533&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-27534.html' target='_blank' rel='noopener noreferrer'>CVE-2023-27534&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-27535.html' target='_blank' rel='noopener noreferrer'>CVE-2023-27535&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-27536.html' target='_blank' rel='noopener noreferrer'>CVE-2023-27536&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-27537.html' target='_blank' rel='noopener noreferrer'>CVE-2023-27537&nbsp;</a>
+                            <a href='/cve/html/CVE-2023-27538.html' target='_blank' rel='noopener noreferrer'>CVE-2023-27538&nbsp;</a>
+                            <br />
+                            <a href="../../faqs.html">FAQs regarding Amazon Linux ALAS/CVE Severity</a>
+                        </div>
+
+                        <hr class='mid-pad'>
+                        <div id='issue_overview'>
+                            <b>Issue Overview:</b>
+                            <p>The curl advisory describes this issue as follows:</p><p>curl supports communicating using the TELNET protocol and as a part of this it offers users to pass on user name and &#34;telnet options&#34; for the server negotiation.</p><p>Due to lack of proper input scrubbing and without it being the documented functionality, curl would pass on user name and telnet options to the server as provided. This could allow users to pass in carefully crafted content that pass on content or do option negotiation without the application intending to do so. In particular if an application for example allows users to provide the data or parts of the data. (CVE-2023-27533)</p><p>The curl advisory describes this issue as follows:</p><p>curl supports SFTP transfers. curl&#39;s SFTP implementation offers a special feature in the path component of URLs: a tilde (~) character as the first path element in the path to denotes a path relative to the user&#39;s home directory. This is supported because of wording in the once proposed to-become RFC draft that was to dictate how SFTP URLs work.</p><p>Due to a bug, the handling of the tilde in SFTP path did however not only replace it when it is used stand-alone as the first path element but also wrongly when used as a mere prefix in the first element.</p><p>Using a path like /~2/foo when accessing a server using the user dan (with home directory /home/dan) would then quite surprisingly access the file /home/dan2/foo.</p><p>This can be taken advantage of to circumvent filtering or worse. (CVE-2023-27534)</p><p>The curl advisory describes this issue as follows:</p><p>libcurl would reuse a previously created FTP connection even when one or more options had been changed that could have made the effective user a very different one, thus leading to the doing the second transfer with wrong credentials. (CVE-2023-27535)</p><p>The curl advisory describes this issue as follows:</p><p>libcurl would reuse a previously created connection even when the GSS delegation (CURLOPT_GSSAPI_DELEGATION) option had been changed that could have changed the user&#39;s permissions in a second transfer.</p><p>libcurl keeps previously used connections in a connection pool for subsequent transfers to reuse if one of them matches the setup. However, this GSS delegation setting was left out from the configuration match checks, making them match too easily, affecting krb5/kerberos/negotiate/GSSAPI transfers. (CVE-2023-27536)</p><p>The curl advisory describes this issue as follows:</p><p>libcurl supports sharing HSTS data between separate &#34;handles&#34;. This sharing was introduced without considerations for doing this sharing across separate threads, but there was no indication of this fact in the documentation. Due to missing mutexes or thread locks, two threads sharing the same HSTS data could end up doing a double-free or use-after-free. (CVE-2023-27537)</p><p>The curl advisory describes this issue as follows:</p><p>libcurl would reuse a previously created connection even when an SSH related option had been changed that should have prohibited reuse.</p><p>libcurl keeps previously used connections in a connection pool for subsequent transfers to reuse if one of them matches the setup. However, two SSH settings were left out from the configuration match checks, making them match too easily. (CVE-2023-27538)</p>
+                        </div>
+
+                        <div id='affected_packages' class='alas-info'>
+                            <br />
+                            <b>Affected Packages:</b>
+                            <br />
+                            <p>curl</p>
+                        </div>
+
+                        <div id='issue_correction'>
+                            <br />
+                            <b>Issue Correction:</b>
+                            <br />Run <i>yum update curl</i> to update your system.<br /></div>
+                        <br />
+                        <div id='new_packages'>
+                            <b>New Packages:</b><pre>aarch64:<br />&nbsp;&nbsp;&nbsp; curl-8.0.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; libcurl-8.0.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; libcurl-devel-8.0.1-1.amzn2.0.1.aarch64<br />&nbsp;&nbsp;&nbsp; curl-debuginfo-8.0.1-1.amzn2.0.1.aarch64<br /><br />i686:<br />&nbsp;&nbsp;&nbsp; curl-8.0.1-1.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; libcurl-8.0.1-1.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; libcurl-devel-8.0.1-1.amzn2.0.1.i686<br />&nbsp;&nbsp;&nbsp; curl-debuginfo-8.0.1-1.amzn2.0.1.i686<br /><br />src:<br />&nbsp;&nbsp;&nbsp; curl-8.0.1-1.amzn2.0.1.src<br /><br />x86_64:<br />&nbsp;&nbsp;&nbsp; curl-8.0.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; libcurl-8.0.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; libcurl-devel-8.0.1-1.amzn2.0.1.x86_64<br />&nbsp;&nbsp;&nbsp; curl-debuginfo-8.0.1-1.amzn2.0.1.x86_64<br /><br /></pre></div>
+                    </div>
+                    <div style="flex:1; margin-bottom: 40px;" class="links-container">
+                        <h3 class="section-heading">Additional References</h3>
+                        <p>
+                            Red Hat:&nbsp;<a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-27533" target="_blank" rel="noopener noreferrer">CVE-2023-27533</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-27534" target="_blank" rel="noopener noreferrer">CVE-2023-27534</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-27535" target="_blank" rel="noopener noreferrer">CVE-2023-27535</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-27536" target="_blank" rel="noopener noreferrer">CVE-2023-27536</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-27537" target="_blank" rel="noopener noreferrer">CVE-2023-27537</a>,
+                            <a style="margin-bottom: 40px;" href="https://access.redhat.com/security/cve/CVE-2023-27538" target="_blank" rel="noopener noreferrer">CVE-2023-27538</a></p>
+                        <p>
+                            Mitre:&nbsp;<a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27533" target="_blank" rel="noopener noreferrer">CVE-2023-27533</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27534" target="_blank" rel="noopener noreferrer">CVE-2023-27534</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27535" target="_blank" rel="noopener noreferrer">CVE-2023-27535</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27536" target="_blank" rel="noopener noreferrer">CVE-2023-27536</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27537" target="_blank" rel="noopener noreferrer">CVE-2023-27537</a>,
+                            <a style="margin-bottom: 40px;" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27538" target="_blank" rel="noopener noreferrer">CVE-2023-27538</a></p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p style="color: #687078">
+      CVE description copyright &#169 2023
+      <a href="https://cve.mitre.org/about/termsofuse.html" target="_blank" rel="noopener noreferrer">The MITRE Corporation</a>
+    </p>
+    <p style="color: #687078">
+      CVE description copyright &#169 2023 Red Hat, Inc. Per
+      <a href="https://access.redhat.com/security/data" target="_blank" rel="noopener noreferrer">https://access.redhat.com/security/data</a>,
+      RedHat's CVE report is licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+</footer>
+        <footer style="padding-left: 30px; padding-right: 30px;"><p>
+        <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a> |
+        <a href="https://aws.amazon.com/terms/" target="_blank" rel="noopener noreferrer">Site terms apply, and downloading this site or portions of it is permitted</a> |
+        <a href="#" onclick="customize()">Cookie preferences</a> |
+        <span style="color: #687078">&#169 2023, Amazon Web Services, Inc. or its affiliates. All rights reserved.</span>
+    </p>
+</footer>
+    </body>
+</html>

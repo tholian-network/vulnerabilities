@@ -162,10 +162,28 @@
 	"description": "The kernel-rt packages provide the Real Time Linux Kernel, which enables fine-tuning for systems with extremely high determinism requirements.\nSecurity Fix(es):\n* kernel: Small table perturb size in the TCP source port generation algorithm can lead to information leak (CVE-2022-1012)\n* kernel: race condition in perf_event_open leads to privilege escalation (CVE-2022-1729)\n* kernel: a use-after-free write in the netfilter subsystem can lead to privilege escalation to root (CVE-2022-1966)\n* kernel: buffer overflow in IPsec ESP transformation code (CVE-2022-27666)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nBug Fix(es):\n* kernel-rt: update RT source tree to the latest AlmaLinux-9.0.z1 Batch (BZ#2089492)",
 	"references": [
 		{
-			"id": "RHSA-2022:5267",
+			"id": "2061633",
 			"title": "",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:5267"
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2061633"
+		},
+		{
+			"id": "2064604",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2064604"
+		},
+		{
+			"id": "2086753",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2086753"
+		},
+		{
+			"id": "2092427",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2092427"
 		},
 		{
 			"id": "CVE-2022-1012",
@@ -192,28 +210,40 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-27666"
 		},
 		{
-			"id": "2061633",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2061633"
+			"id": "CVE-2022-1012",
+			"title": "CVE-2022-1012",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-1012"
 		},
 		{
-			"id": "2064604",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2064604"
+			"id": "CVE-2022-1729",
+			"title": "CVE-2022-1729",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-1729"
 		},
 		{
-			"id": "2086753",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2086753"
+			"id": "CVE-2022-1966",
+			"title": "CVE-2022-1966",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-1966"
 		},
 		{
-			"id": "2092427",
+			"id": "CVE-2022-27666",
+			"title": "CVE-2022-27666",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-27666"
+		},
+		{
+			"id": "RHSA-2022:5267",
 			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2092427"
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5267"
+		},
+		{
+			"id": "RHSA-2022:5267",
+			"title": "RHSA-2022:5267",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5267"
 		},
 		{
 			"id": "ALSA-2022:5267",

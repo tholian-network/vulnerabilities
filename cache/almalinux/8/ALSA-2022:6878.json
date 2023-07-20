@@ -10,18 +10,18 @@
 	"summary": "expat security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-baseos-rpms__8_6_default",
-		"shortname": "almalinux-8-for-x86_64-baseos-rpms__8_6_default",
+		"name": "almalinux-8-for-aarch64-baseos-rpms__8_6_default",
+		"shortname": "almalinux-8-for-aarch64-baseos-rpms__8_6_default",
 		"packages": [
 			{
 				"src": "expat-2.2.5-8.el8_6.3.src.rpm",
-				"name": "expat",
+				"name": "expat-devel",
 				"epoch": "0",
 				"version": "2.2.5",
 				"release": "8.el8_6.3",
-				"arch": "x86_64",
-				"filename": "expat-2.2.5-8.el8_6.3.x86_64.rpm",
-				"sum": "94cc0464e9023b9bf5773b79861f382058e50b039ec73c99ad935be71d3cbb5b",
+				"arch": "ppc64le",
+				"filename": "expat-devel-2.2.5-8.el8_6.3.ppc64le.rpm",
+				"sum": "18cc3c56ee024fa1f94828d8884b7f255bd473175cdb6bc32feb79af2947fc0a",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -31,9 +31,9 @@
 				"epoch": "0",
 				"version": "2.2.5",
 				"release": "8.el8_6.3",
-				"arch": "x86_64",
-				"filename": "expat-devel-2.2.5-8.el8_6.3.x86_64.rpm",
-				"sum": "f5d83e26a7a1d69db4588dbad07b197a675d58a3d5af2b477a7d62c2904eb4ed",
+				"arch": "s390x",
+				"filename": "expat-devel-2.2.5-8.el8_6.3.s390x.rpm",
+				"sum": "38a326d9685fafc5476a2ed52138229d0ddd8deee58d616b736ea9e8aeab6dd1",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -55,21 +55,9 @@
 				"epoch": "0",
 				"version": "2.2.5",
 				"release": "8.el8_6.3",
-				"arch": "aarch64",
-				"filename": "expat-2.2.5-8.el8_6.3.aarch64.rpm",
-				"sum": "9b6212ae7a095ed23952d755535b7a9b8d15773fcc6c28b94d9eaf78fe04b5e9",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "expat-2.2.5-8.el8_6.3.src.rpm",
-				"name": "expat-devel",
-				"epoch": "0",
-				"version": "2.2.5",
-				"release": "8.el8_6.3",
-				"arch": "ppc64le",
-				"filename": "expat-devel-2.2.5-8.el8_6.3.ppc64le.rpm",
-				"sum": "18cc3c56ee024fa1f94828d8884b7f255bd473175cdb6bc32feb79af2947fc0a",
+				"arch": "s390x",
+				"filename": "expat-2.2.5-8.el8_6.3.s390x.rpm",
+				"sum": "5622ffa91e167896cc9a6b91248a2010a5b5ba95aa74809521bb8c66189d4396",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -87,13 +75,13 @@
 			},
 			{
 				"src": "expat-2.2.5-8.el8_6.3.src.rpm",
-				"name": "expat-devel",
+				"name": "expat",
 				"epoch": "0",
 				"version": "2.2.5",
 				"release": "8.el8_6.3",
-				"arch": "s390x",
-				"filename": "expat-devel-2.2.5-8.el8_6.3.s390x.rpm",
-				"sum": "38a326d9685fafc5476a2ed52138229d0ddd8deee58d616b736ea9e8aeab6dd1",
+				"arch": "x86_64",
+				"filename": "expat-2.2.5-8.el8_6.3.x86_64.rpm",
+				"sum": "94cc0464e9023b9bf5773b79861f382058e50b039ec73c99ad935be71d3cbb5b",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -103,9 +91,21 @@
 				"epoch": "0",
 				"version": "2.2.5",
 				"release": "8.el8_6.3",
-				"arch": "s390x",
-				"filename": "expat-2.2.5-8.el8_6.3.s390x.rpm",
-				"sum": "5622ffa91e167896cc9a6b91248a2010a5b5ba95aa74809521bb8c66189d4396",
+				"arch": "aarch64",
+				"filename": "expat-2.2.5-8.el8_6.3.aarch64.rpm",
+				"sum": "9b6212ae7a095ed23952d755535b7a9b8d15773fcc6c28b94d9eaf78fe04b5e9",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "expat-2.2.5-8.el8_6.3.src.rpm",
+				"name": "expat-devel",
+				"epoch": "0",
+				"version": "2.2.5",
+				"release": "8.el8_6.3",
+				"arch": "x86_64",
+				"filename": "expat-devel-2.2.5-8.el8_6.3.x86_64.rpm",
+				"sum": "f5d83e26a7a1d69db4588dbad07b197a675d58a3d5af2b477a7d62c2904eb4ed",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -114,10 +114,10 @@
 	"description": "Expat is a C library for parsing XML documents.\n\nSecurity Fix(es):\n\n* expat: a use-after-free in the doContent function in xmlparse.c (CVE-2022-40674)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:6878",
-			"title": "RHSA-2022:6878",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:6878"
+			"id": "2130769",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2130769"
 		},
 		{
 			"id": "CVE-2022-40674",
@@ -126,10 +126,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-40674"
 		},
 		{
-			"id": "2130769",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2130769"
+			"id": "RHSA-2022:6878",
+			"title": "RHSA-2022:6878",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:6878"
 		},
 		{
 			"id": "ALSA-2022:6878",

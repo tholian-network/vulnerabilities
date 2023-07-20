@@ -162,10 +162,22 @@
 	"description": "The kernel-rt packages provide the Real Time Linux Kernel, which enables fine-tuning for systems with extremely high determinism requirements.\n\nSecurity Fix(es):\n\n* Incomplete cleanup of multi-core shared buffers (aka SBDR) (CVE-2022-21123)\n* Incomplete cleanup of microarchitectural fill buffers (aka SBDS) (CVE-2022-21125)\n* Incomplete cleanup in specific special register write operations (aka DRPW) (CVE-2022-21166)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nBug Fix(es):\n\n* The latest AlmaLinux 8.6.z3 kernel changes need to be merged into the RT source tree to keep source parity between the two kernels. (BZ#2111112)",
 	"references": [
 		{
-			"id": "RHSA-2022:6437",
-			"title": "RHSA-2022:6437",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:6437"
+			"id": "2090237",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2090237"
+		},
+		{
+			"id": "2090240",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2090240"
+		},
+		{
+			"id": "2090241",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2090241"
 		},
 		{
 			"id": "CVE-2022-21123",
@@ -186,22 +198,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-21166"
 		},
 		{
-			"id": "2090237",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2090237"
-		},
-		{
-			"id": "2090240",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2090240"
-		},
-		{
-			"id": "2090241",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2090241"
+			"id": "RHSA-2022:6437",
+			"title": "RHSA-2022:6437",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:6437"
 		},
 		{
 			"id": "ALSA-2022:6437",

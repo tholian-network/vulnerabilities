@@ -15,25 +15,13 @@
 		"packages": [
 			{
 				"src": "emacs-26.1-10.el8_8.2.src.rpm",
-				"name": "emacs-filesystem",
+				"name": "emacs-lucid",
 				"epoch": "1",
 				"version": "26.1",
 				"release": "10.el8_8.2",
-				"arch": "noarch",
-				"filename": "emacs-filesystem-26.1-10.el8_8.2.noarch.rpm",
-				"sum": "a28eacb5d1a8dc81bd9da0b56ef52382cf3549bb417933bc69c9e848f3958e03",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "emacs-26.1-10.el8_8.2.src.rpm",
-				"name": "emacs-terminal",
-				"epoch": "1",
-				"version": "26.1",
-				"release": "10.el8_8.2",
-				"arch": "noarch",
-				"filename": "emacs-terminal-26.1-10.el8_8.2.noarch.rpm",
-				"sum": "d9891e4a904f5e9cec43e760aa8c6d24d040383fe26b0886c0620b2953b78620",
+				"arch": "x86_64",
+				"filename": "emacs-lucid-26.1-10.el8_8.2.x86_64.rpm",
+				"sum": "14c513bf1adaba7b0c4c4b12f578c73eb0ab33611c69eac0b5549f53d00f7139",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -46,6 +34,18 @@
 				"arch": "aarch64",
 				"filename": "emacs-common-26.1-10.el8_8.2.aarch64.rpm",
 				"sum": "22b15d6ee6a029b8b210eed2f5763ea002de3dafa8178b4d912f8e8067008c06",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "emacs-26.1-10.el8_8.2.src.rpm",
+				"name": "emacs-nox",
+				"epoch": "1",
+				"version": "26.1",
+				"release": "10.el8_8.2",
+				"arch": "s390x",
+				"filename": "emacs-nox-26.1-10.el8_8.2.s390x.rpm",
+				"sum": "333e1f3100b63dc116038bca066e910236e65225b6577c3559ef3548a26d00a0",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -67,33 +67,9 @@
 				"epoch": "1",
 				"version": "26.1",
 				"release": "10.el8_8.2",
-				"arch": "aarch64",
-				"filename": "emacs-nox-26.1-10.el8_8.2.aarch64.rpm",
-				"sum": "a13b6d68dee206a7fe24bd8aec45b7dbcab4a1c2790c0732f85454903cc34eea",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "emacs-26.1-10.el8_8.2.src.rpm",
-				"name": "emacs",
-				"epoch": "1",
-				"version": "26.1",
-				"release": "10.el8_8.2",
-				"arch": "aarch64",
-				"filename": "emacs-26.1-10.el8_8.2.aarch64.rpm",
-				"sum": "e51105b4d57256d1302b478765de52a06eeb29d6027c6e8300d5e7ec9abec386",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "emacs-26.1-10.el8_8.2.src.rpm",
-				"name": "emacs-lucid",
-				"epoch": "1",
-				"version": "26.1",
-				"release": "10.el8_8.2",
 				"arch": "x86_64",
-				"filename": "emacs-lucid-26.1-10.el8_8.2.x86_64.rpm",
-				"sum": "14c513bf1adaba7b0c4c4b12f578c73eb0ab33611c69eac0b5549f53d00f7139",
+				"filename": "emacs-nox-26.1-10.el8_8.2.x86_64.rpm",
+				"sum": "4c14cc60397e7cd4ae01c97d66e1c40079441cf2f979eeb297794d6b69cbfcda",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -103,9 +79,9 @@
 				"epoch": "1",
 				"version": "26.1",
 				"release": "10.el8_8.2",
-				"arch": "x86_64",
-				"filename": "emacs-nox-26.1-10.el8_8.2.x86_64.rpm",
-				"sum": "4c14cc60397e7cd4ae01c97d66e1c40079441cf2f979eeb297794d6b69cbfcda",
+				"arch": "ppc64le",
+				"filename": "emacs-nox-26.1-10.el8_8.2.ppc64le.rpm",
+				"sum": "570e80a7c02bc5e6062a5ede7e84ea3f57277bace95593deec448cb6c2f92835",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -123,25 +99,13 @@
 			},
 			{
 				"src": "emacs-26.1-10.el8_8.2.src.rpm",
-				"name": "emacs-common",
+				"name": "emacs",
 				"epoch": "1",
 				"version": "26.1",
 				"release": "10.el8_8.2",
-				"arch": "x86_64",
-				"filename": "emacs-common-26.1-10.el8_8.2.x86_64.rpm",
-				"sum": "b5aa80271f73f04386a575bc04c515b03a36b6ea5e3ef78bcab80f06db956734",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "emacs-26.1-10.el8_8.2.src.rpm",
-				"name": "emacs-nox",
-				"epoch": "1",
-				"version": "26.1",
-				"release": "10.el8_8.2",
-				"arch": "s390x",
-				"filename": "emacs-nox-26.1-10.el8_8.2.s390x.rpm",
-				"sum": "333e1f3100b63dc116038bca066e910236e65225b6577c3559ef3548a26d00a0",
+				"arch": "ppc64le",
+				"filename": "emacs-26.1-10.el8_8.2.ppc64le.rpm",
+				"sum": "698ff7c9c5a07e97ca7a9fe6d62b373a70df7b48da67b3f58831897e856efd28",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -154,6 +118,90 @@
 				"arch": "s390x",
 				"filename": "emacs-common-26.1-10.el8_8.2.s390x.rpm",
 				"sum": "9c9798f1ff8561cf3a9100533a05cc4b8a3373fb9eba7697fefae9311ddebee9",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "emacs-26.1-10.el8_8.2.src.rpm",
+				"name": "emacs-nox",
+				"epoch": "1",
+				"version": "26.1",
+				"release": "10.el8_8.2",
+				"arch": "aarch64",
+				"filename": "emacs-nox-26.1-10.el8_8.2.aarch64.rpm",
+				"sum": "a13b6d68dee206a7fe24bd8aec45b7dbcab4a1c2790c0732f85454903cc34eea",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "emacs-26.1-10.el8_8.2.src.rpm",
+				"name": "emacs-filesystem",
+				"epoch": "1",
+				"version": "26.1",
+				"release": "10.el8_8.2",
+				"arch": "noarch",
+				"filename": "emacs-filesystem-26.1-10.el8_8.2.noarch.rpm",
+				"sum": "a28eacb5d1a8dc81bd9da0b56ef52382cf3549bb417933bc69c9e848f3958e03",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "emacs-26.1-10.el8_8.2.src.rpm",
+				"name": "emacs-common",
+				"epoch": "1",
+				"version": "26.1",
+				"release": "10.el8_8.2",
+				"arch": "ppc64le",
+				"filename": "emacs-common-26.1-10.el8_8.2.ppc64le.rpm",
+				"sum": "a7698080b2ffd793c617ad3fba222e8c72b596a655cbc4d3098600f608c19800",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "emacs-26.1-10.el8_8.2.src.rpm",
+				"name": "emacs-common",
+				"epoch": "1",
+				"version": "26.1",
+				"release": "10.el8_8.2",
+				"arch": "x86_64",
+				"filename": "emacs-common-26.1-10.el8_8.2.x86_64.rpm",
+				"sum": "b5aa80271f73f04386a575bc04c515b03a36b6ea5e3ef78bcab80f06db956734",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "emacs-26.1-10.el8_8.2.src.rpm",
+				"name": "emacs-lucid",
+				"epoch": "1",
+				"version": "26.1",
+				"release": "10.el8_8.2",
+				"arch": "ppc64le",
+				"filename": "emacs-lucid-26.1-10.el8_8.2.ppc64le.rpm",
+				"sum": "cab32814da23a7143b18769d8114f9f27080f898579e615a57760c2cfd811a44",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "emacs-26.1-10.el8_8.2.src.rpm",
+				"name": "emacs-terminal",
+				"epoch": "1",
+				"version": "26.1",
+				"release": "10.el8_8.2",
+				"arch": "noarch",
+				"filename": "emacs-terminal-26.1-10.el8_8.2.noarch.rpm",
+				"sum": "d9891e4a904f5e9cec43e760aa8c6d24d040383fe26b0886c0620b2953b78620",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "emacs-26.1-10.el8_8.2.src.rpm",
+				"name": "emacs",
+				"epoch": "1",
+				"version": "26.1",
+				"release": "10.el8_8.2",
+				"arch": "aarch64",
+				"filename": "emacs-26.1-10.el8_8.2.aarch64.rpm",
+				"sum": "e51105b4d57256d1302b478765de52a06eeb29d6027c6e8300d5e7ec9abec386",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -180,64 +228,16 @@
 				"sum": "fedd4b0f4683d3838e8936b4af02227c599f4a94e35c76845c68660363187883",
 				"sum_type": 5,
 				"reboot_suggested": 0
-			},
-			{
-				"src": "emacs-26.1-10.el8_8.2.src.rpm",
-				"name": "emacs-nox",
-				"epoch": "1",
-				"version": "26.1",
-				"release": "10.el8_8.2",
-				"arch": "ppc64le",
-				"filename": "emacs-nox-26.1-10.el8_8.2.ppc64le.rpm",
-				"sum": "570e80a7c02bc5e6062a5ede7e84ea3f57277bace95593deec448cb6c2f92835",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "emacs-26.1-10.el8_8.2.src.rpm",
-				"name": "emacs",
-				"epoch": "1",
-				"version": "26.1",
-				"release": "10.el8_8.2",
-				"arch": "ppc64le",
-				"filename": "emacs-26.1-10.el8_8.2.ppc64le.rpm",
-				"sum": "698ff7c9c5a07e97ca7a9fe6d62b373a70df7b48da67b3f58831897e856efd28",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "emacs-26.1-10.el8_8.2.src.rpm",
-				"name": "emacs-common",
-				"epoch": "1",
-				"version": "26.1",
-				"release": "10.el8_8.2",
-				"arch": "ppc64le",
-				"filename": "emacs-common-26.1-10.el8_8.2.ppc64le.rpm",
-				"sum": "a7698080b2ffd793c617ad3fba222e8c72b596a655cbc4d3098600f608c19800",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "emacs-26.1-10.el8_8.2.src.rpm",
-				"name": "emacs-lucid",
-				"epoch": "1",
-				"version": "26.1",
-				"release": "10.el8_8.2",
-				"arch": "ppc64le",
-				"filename": "emacs-lucid-26.1-10.el8_8.2.ppc64le.rpm",
-				"sum": "cab32814da23a7143b18769d8114f9f27080f898579e615a57760c2cfd811a44",
-				"sum_type": 5,
-				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "GNU Emacs is a powerful, customizable, self-documenting text editor. It provides special code editing features, a scripting language (elisp), and the capability to read e-mail and news.\n\nSecurity Fix(es):\n\n* emacs: Regression of CVE-2023-28617 fixes in the AlmaLinux (CVE-2023-2491)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:3104",
-			"title": "RHSA-2023:3104",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:3104"
+			"id": "2192873",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2192873"
 		},
 		{
 			"id": "CVE-2023-2491",
@@ -246,10 +246,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2023-2491"
 		},
 		{
-			"id": "2192873",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2192873"
+			"id": "RHSA-2023:3104",
+			"title": "RHSA-2023:3104",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:3104"
 		},
 		{
 			"id": "ALSA-2023:3104",
@@ -262,6 +262,6 @@
 		"$date": 1684195200000
 	},
 	"updated_date": {
-		"$date": 1684533940000
+		"$date": 1684533997000
 	}
 }

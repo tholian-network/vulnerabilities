@@ -74,42 +74,6 @@
 				"reboot_suggested": 0
 			},
 			{
-				"src": "nodejs-packaging-25-1.module_el8.5.0+2605+45d748af.src.rpm",
-				"name": "nodejs-packaging",
-				"epoch": "0",
-				"version": "25",
-				"release": "1.module_el8.5.0+2605+45d748af",
-				"arch": "noarch",
-				"filename": "nodejs-packaging-25-1.module_el8.5.0+2605+45d748af.noarch.rpm",
-				"sum": "cb0391aca612f152879a96ea35099dc00cc9685ea52575761848c9e6eb7578bf",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "nodejs-16.14.0-4.module_el8.6.0+2904+f21ad6f4.src.rpm",
-				"name": "nodejs-docs",
-				"epoch": "1",
-				"version": "16.14.0",
-				"release": "4.module_el8.6.0+2904+f21ad6f4",
-				"arch": "noarch",
-				"filename": "nodejs-docs-16.14.0-4.module_el8.6.0+2904+f21ad6f4.noarch.rpm",
-				"sum": "d3e9321e2d2ff82a5588e2d0f946b3b1fea613c2031ffbe68da2cccf8aaf987e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "nodejs-16.14.0-4.module_el8.6.0+2904+f21ad6f4.src.rpm",
-				"name": "nodejs",
-				"epoch": "1",
-				"version": "16.14.0",
-				"release": "4.module_el8.6.0+2904+f21ad6f4",
-				"arch": "x86_64",
-				"filename": "nodejs-16.14.0-4.module_el8.6.0+2904+f21ad6f4.x86_64.rpm",
-				"sum": "da19841c580548a499c50b64abbce61fd4c23736b4f208701025ed53da7f4a1e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
 				"src": "nodejs-16.14.0-4.module_el8.6.0+2904+f21ad6f4.src.rpm",
 				"name": "nodejs",
 				"epoch": "1",
@@ -168,22 +132,58 @@
 				"sum": "c0131ad0bfacc5e767525d555a0734d6a455d647b2eb7fb9cc4eb145d8a45f10",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "nodejs-packaging-25-1.module_el8.5.0+2605+45d748af.src.rpm",
+				"name": "nodejs-packaging",
+				"epoch": "0",
+				"version": "25",
+				"release": "1.module_el8.5.0+2605+45d748af",
+				"arch": "noarch",
+				"filename": "nodejs-packaging-25-1.module_el8.5.0+2605+45d748af.noarch.rpm",
+				"sum": "cb0391aca612f152879a96ea35099dc00cc9685ea52575761848c9e6eb7578bf",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "nodejs-16.14.0-4.module_el8.6.0+2904+f21ad6f4.src.rpm",
+				"name": "nodejs-docs",
+				"epoch": "1",
+				"version": "16.14.0",
+				"release": "4.module_el8.6.0+2904+f21ad6f4",
+				"arch": "noarch",
+				"filename": "nodejs-docs-16.14.0-4.module_el8.6.0+2904+f21ad6f4.noarch.rpm",
+				"sum": "d3e9321e2d2ff82a5588e2d0f946b3b1fea613c2031ffbe68da2cccf8aaf987e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "nodejs-16.14.0-4.module_el8.6.0+2904+f21ad6f4.src.rpm",
+				"name": "nodejs",
+				"epoch": "1",
+				"version": "16.14.0",
+				"release": "4.module_el8.6.0+2904+f21ad6f4",
+				"arch": "x86_64",
+				"filename": "nodejs-16.14.0-4.module_el8.6.0+2904+f21ad6f4.x86_64.rpm",
+				"sum": "da19841c580548a499c50b64abbce61fd4c23736b4f208701025ed53da7f4a1e",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "Node.js is a software development platform for building fast and scalable network applications in the JavaScript programming language. \n\nSecurity Fix(es):\n\n* npm: npm ci succeeds when package-lock.json doesn't match package.json (CVE-2021-43616)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "ALSA-2022-4796",
-			"title": "ALSA-2022-4796",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2022-4796.html"
-		},
-		{
 			"id": "CVE-2021-43616",
 			"title": "CVE-2021-43616",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2021-43616"
+		},
+		{
+			"id": "ALSA-2022-4796",
+			"title": "ALSA-2022-4796",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-4796.html"
 		}
 	],
 	"issued_date": {

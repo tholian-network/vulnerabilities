@@ -27,30 +27,6 @@
 			},
 			{
 				"src": "booth-1.0-199.1.ac1d34c.git.el8_6.1.src.rpm",
-				"name": "booth-site",
-				"epoch": "0",
-				"version": "1.0",
-				"release": "199.1.ac1d34c.git.el8_6.1",
-				"arch": "noarch",
-				"filename": "booth-site-1.0-199.1.ac1d34c.git.el8_6.1.noarch.rpm",
-				"sum": "49521ed948e3e12ec2970897efe740f7dca8ad85091475b4e3edb8c07cacdc45",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "booth-1.0-199.1.ac1d34c.git.el8_6.1.src.rpm",
-				"name": "booth-test",
-				"epoch": "0",
-				"version": "1.0",
-				"release": "199.1.ac1d34c.git.el8_6.1",
-				"arch": "noarch",
-				"filename": "booth-test-1.0-199.1.ac1d34c.git.el8_6.1.noarch.rpm",
-				"sum": "9ba23dd05371c3e52f54f1a8d5ad6d78a1fb9a9aabf50b24d14888b0d7679a41",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "booth-1.0-199.1.ac1d34c.git.el8_6.1.src.rpm",
 				"name": "booth",
 				"epoch": "0",
 				"version": "1.0",
@@ -63,13 +39,13 @@
 			},
 			{
 				"src": "booth-1.0-199.1.ac1d34c.git.el8_6.1.src.rpm",
-				"name": "booth-core",
+				"name": "booth-site",
 				"epoch": "0",
 				"version": "1.0",
 				"release": "199.1.ac1d34c.git.el8_6.1",
-				"arch": "x86_64",
-				"filename": "booth-core-1.0-199.1.ac1d34c.git.el8_6.1.x86_64.rpm",
-				"sum": "6cb463df1514d39c170f01d50201e2d76fdd4d6b9046f244eaf91fa3f489f785",
+				"arch": "noarch",
+				"filename": "booth-site-1.0-199.1.ac1d34c.git.el8_6.1.noarch.rpm",
+				"sum": "49521ed948e3e12ec2970897efe740f7dca8ad85091475b4e3edb8c07cacdc45",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -91,9 +67,21 @@
 				"epoch": "0",
 				"version": "1.0",
 				"release": "199.1.ac1d34c.git.el8_6.1",
-				"arch": "aarch64",
-				"filename": "booth-core-1.0-199.1.ac1d34c.git.el8_6.1.aarch64.rpm",
-				"sum": "ea76cddf44aa6e04d731315393c832fc1069c792a84ee45a02bac468baa10395",
+				"arch": "x86_64",
+				"filename": "booth-core-1.0-199.1.ac1d34c.git.el8_6.1.x86_64.rpm",
+				"sum": "6cb463df1514d39c170f01d50201e2d76fdd4d6b9046f244eaf91fa3f489f785",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "booth-1.0-199.1.ac1d34c.git.el8_6.1.src.rpm",
+				"name": "booth-test",
+				"epoch": "0",
+				"version": "1.0",
+				"release": "199.1.ac1d34c.git.el8_6.1",
+				"arch": "noarch",
+				"filename": "booth-test-1.0-199.1.ac1d34c.git.el8_6.1.noarch.rpm",
+				"sum": "9ba23dd05371c3e52f54f1a8d5ad6d78a1fb9a9aabf50b24d14888b0d7679a41",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -127,6 +115,18 @@
 				"epoch": "0",
 				"version": "1.0",
 				"release": "199.1.ac1d34c.git.el8_6.1",
+				"arch": "aarch64",
+				"filename": "booth-core-1.0-199.1.ac1d34c.git.el8_6.1.aarch64.rpm",
+				"sum": "ea76cddf44aa6e04d731315393c832fc1069c792a84ee45a02bac468baa10395",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "booth-1.0-199.1.ac1d34c.git.el8_6.1.src.rpm",
+				"name": "booth-core",
+				"epoch": "0",
+				"version": "1.0",
+				"release": "199.1.ac1d34c.git.el8_6.1",
 				"arch": "s390x",
 				"filename": "booth-core-1.0-199.1.ac1d34c.git.el8_6.1.s390x.rpm",
 				"sum": "ee6c5196d65b4c57660a299d2c978f100206b827ba9444c2b3c04d608e2a2015",
@@ -150,10 +150,10 @@
 	"description": "The Booth cluster ticket manager is a component to bridge high availability clusters spanning multiple sites, in particular, to provide decision inputs to local Pacemaker cluster resource managers. It operates as a distributed consensus-based service, presumably on a separate physical network. Tickets facilitated by a Booth formation are the units of authorization that can be bound to certain resources. This will ensure that the resources are run at only one (granted) site at a time.\n\nSecurity Fix(es):\n\n* booth: authfile directive in booth config file is completely ignored. (CVE-2022-2553)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:6439",
-			"title": "RHSA-2022:6439",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:6439"
+			"id": "2109251",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2109251"
 		},
 		{
 			"id": "CVE-2022-2553",
@@ -162,10 +162,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-2553"
 		},
 		{
-			"id": "2109251",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2109251"
+			"id": "RHSA-2022:6439",
+			"title": "RHSA-2022:6439",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:6439"
 		},
 		{
 			"id": "ALSA-2022:6439",
@@ -178,6 +178,6 @@
 		"$date": 1663027200000
 	},
 	"updated_date": {
-		"$date": 1665493262000
+		"$date": 1665493265000
 	}
 }

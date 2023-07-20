@@ -10,8 +10,8 @@
 	"summary": "libreswan security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_7_default",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_7_default",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_7_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_7_default",
 		"packages": [
 			{
 				"src": "libreswan-4.5-1.el8_7.1.src.rpm",
@@ -31,9 +31,9 @@
 				"epoch": "0",
 				"version": "4.5",
 				"release": "1.el8_7.1",
-				"arch": "x86_64",
-				"filename": "libreswan-4.5-1.el8_7.1.x86_64.rpm",
-				"sum": "d66a00bfa3897ea79712e280bc20acd7e5a31d8c150e1bb0ac58be05b0f54ef4",
+				"arch": "ppc64le",
+				"filename": "libreswan-4.5-1.el8_7.1.ppc64le.rpm",
+				"sum": "5f5009f54e32ec9a2a3b7b8ed0e6ee35adca1b8946a0ea0bd4b5582eb90a23e6",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -55,9 +55,9 @@
 				"epoch": "0",
 				"version": "4.5",
 				"release": "1.el8_7.1",
-				"arch": "ppc64le",
-				"filename": "libreswan-4.5-1.el8_7.1.ppc64le.rpm",
-				"sum": "5f5009f54e32ec9a2a3b7b8ed0e6ee35adca1b8946a0ea0bd4b5582eb90a23e6",
+				"arch": "x86_64",
+				"filename": "libreswan-4.5-1.el8_7.1.x86_64.rpm",
+				"sum": "d66a00bfa3897ea79712e280bc20acd7e5a31d8c150e1bb0ac58be05b0f54ef4",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -66,10 +66,10 @@
 	"description": "Libreswan is an implementation of IPsec and IKE for Linux. IPsec is the Internet Protocol Security and uses strong cryptography to provide both authentication and encryption services. These services allow you to build secure tunnels through untrusted networks such as virtual private network (VPN).\n\nSecurity Fix(es):\n\n* libreswan: Malicious IKEv1 Aggressive Mode packets can crash libreswan (CVE-2023-30570)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:2122",
-			"title": "RHSA-2023:2122",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:2122"
+			"id": "2187165",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2187165"
 		},
 		{
 			"id": "CVE-2023-30570",
@@ -78,10 +78,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2023-30570"
 		},
 		{
-			"id": "2187165",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2187165"
+			"id": "RHSA-2023:2122",
+			"title": "RHSA-2023:2122",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:2122"
 		},
 		{
 			"id": "ALSA-2023:2122",

@@ -19,21 +19,21 @@
 				"epoch": "0",
 				"version": "0.10.14",
 				"release": "5.el8_7.2.alma",
-				"arch": "x86_64",
-				"filename": "pcs-0.10.14-5.el8_7.2.alma.x86_64.rpm",
-				"sum": "1a3a1d715e16844d2c693baf04fceff707ac5119890ed1b4026caeb71451fddf",
+				"arch": "s390x",
+				"filename": "pcs-0.10.14-5.el8_7.2.alma.s390x.rpm",
+				"sum": "07229c553dddee89b4d6b2e1fb5a848ba0450ea1e9f990157fdacda127f0592f",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
 			{
 				"src": "pcs-0.10.14-5.el8_7.2.alma.src.rpm",
-				"name": "pcs-snmp",
+				"name": "pcs",
 				"epoch": "0",
 				"version": "0.10.14",
 				"release": "5.el8_7.2.alma",
 				"arch": "x86_64",
-				"filename": "pcs-snmp-0.10.14-5.el8_7.2.alma.x86_64.rpm",
-				"sum": "f39895967304f0b8d80894805eb493d30f61284830d94a969e227912b86f65a9",
+				"filename": "pcs-0.10.14-5.el8_7.2.alma.x86_64.rpm",
+				"sum": "1a3a1d715e16844d2c693baf04fceff707ac5119890ed1b4026caeb71451fddf",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -55,9 +55,9 @@
 				"epoch": "0",
 				"version": "0.10.14",
 				"release": "5.el8_7.2.alma",
-				"arch": "aarch64",
-				"filename": "pcs-snmp-0.10.14-5.el8_7.2.alma.aarch64.rpm",
-				"sum": "e88011c88b3947e50b54e6d82d2064c3c98883d35dd3b2a01a471bcd894db4e4",
+				"arch": "s390x",
+				"filename": "pcs-snmp-0.10.14-5.el8_7.2.alma.s390x.rpm",
+				"sum": "4f8679020a6bc724b5339204b23c4fb7c45694da6eb818e5de9f64b2eea10a0b",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -87,13 +87,13 @@
 			},
 			{
 				"src": "pcs-0.10.14-5.el8_7.2.alma.src.rpm",
-				"name": "pcs",
+				"name": "pcs-snmp",
 				"epoch": "0",
 				"version": "0.10.14",
 				"release": "5.el8_7.2.alma",
-				"arch": "s390x",
-				"filename": "pcs-0.10.14-5.el8_7.2.alma.s390x.rpm",
-				"sum": "07229c553dddee89b4d6b2e1fb5a848ba0450ea1e9f990157fdacda127f0592f",
+				"arch": "aarch64",
+				"filename": "pcs-snmp-0.10.14-5.el8_7.2.alma.aarch64.rpm",
+				"sum": "e88011c88b3947e50b54e6d82d2064c3c98883d35dd3b2a01a471bcd894db4e4",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -103,9 +103,9 @@
 				"epoch": "0",
 				"version": "0.10.14",
 				"release": "5.el8_7.2.alma",
-				"arch": "s390x",
-				"filename": "pcs-snmp-0.10.14-5.el8_7.2.alma.s390x.rpm",
-				"sum": "4f8679020a6bc724b5339204b23c4fb7c45694da6eb818e5de9f64b2eea10a0b",
+				"arch": "x86_64",
+				"filename": "pcs-snmp-0.10.14-5.el8_7.2.alma.x86_64.rpm",
+				"sum": "f39895967304f0b8d80894805eb493d30f61284830d94a969e227912b86f65a9",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -114,10 +114,10 @@
 	"description": "The pcs packages provide a command-line configuration system for the Pacemaker and Corosync utilities.\n\nSecurity Fix(es):\n\n* sinatra: Reflected File Download attack (CVE-2022-45442)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:0855",
-			"title": "RHSA-2023:0855",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:0855"
+			"id": "2153363",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2153363"
 		},
 		{
 			"id": "CVE-2022-45442",
@@ -126,10 +126,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-45442"
 		},
 		{
-			"id": "2153363",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2153363"
+			"id": "RHSA-2023:0855",
+			"title": "RHSA-2023:0855",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:0855"
 		},
 		{
 			"id": "ALSA-2023:0855",

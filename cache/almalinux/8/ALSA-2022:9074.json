@@ -10,9 +10,33 @@
 	"summary": "thunderbird security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-plus-rpms__8_7_default",
-		"shortname": "almalinux-8-for-aarch64-plus-rpms__8_7_default",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_7_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_7_default",
 		"packages": [
+			{
+				"src": "thunderbird-102.6.0-2.el8_7.alma.plus.src.rpm",
+				"name": "thunderbird",
+				"epoch": "0",
+				"version": "102.6.0",
+				"release": "2.el8_7.alma.plus",
+				"arch": "ppc64le",
+				"filename": "thunderbird-102.6.0-2.el8_7.alma.plus.ppc64le.rpm",
+				"sum": "3f616cf21a80ea19c321d0366b843d0e932e2c18bb51c5d9c0391785f0137a87",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "thunderbird-102.6.0-2.el8_7.alma.src.rpm",
+				"name": "thunderbird",
+				"epoch": "0",
+				"version": "102.6.0",
+				"release": "2.el8_7.alma",
+				"arch": "aarch64",
+				"filename": "thunderbird-102.6.0-2.el8_7.alma.aarch64.rpm",
+				"sum": "6d5499a309d1577c790c04c964ddec46b7a2f586bc745d7e58f7dfba16e85b2b",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "thunderbird-102.6.0-2.el8_7.alma.plus.src.rpm",
 				"name": "thunderbird",
@@ -31,45 +55,9 @@
 				"epoch": "0",
 				"version": "102.6.0",
 				"release": "2.el8_7.alma.plus",
-				"arch": "ppc64le",
-				"filename": "thunderbird-102.6.0-2.el8_7.alma.plus.ppc64le.rpm",
-				"sum": "3f616cf21a80ea19c321d0366b843d0e932e2c18bb51c5d9c0391785f0137a87",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "thunderbird-102.6.0-2.el8_7.alma.plus.src.rpm",
-				"name": "thunderbird",
-				"epoch": "0",
-				"version": "102.6.0",
-				"release": "2.el8_7.alma.plus",
 				"arch": "x86_64",
 				"filename": "thunderbird-102.6.0-2.el8_7.alma.plus.x86_64.rpm",
 				"sum": "7203c1c82ba9b96251c360754bebdf87b6ff865aa7530695eb5ad9b41a53a95f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "thunderbird-102.6.0-2.el8_7.alma.src.rpm",
-				"name": "thunderbird",
-				"epoch": "0",
-				"version": "102.6.0",
-				"release": "2.el8_7.alma",
-				"arch": "aarch64",
-				"filename": "thunderbird-102.6.0-2.el8_7.alma.aarch64.rpm",
-				"sum": "6d5499a309d1577c790c04c964ddec46b7a2f586bc745d7e58f7dfba16e85b2b",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "thunderbird-102.6.0-2.el8_7.alma.src.rpm",
-				"name": "thunderbird",
-				"epoch": "0",
-				"version": "102.6.0",
-				"release": "2.el8_7.alma",
-				"arch": "x86_64",
-				"filename": "thunderbird-102.6.0-2.el8_7.alma.x86_64.rpm",
-				"sum": "aba857038a677d5a9ecaee47b49033624e41b6d49b8bb6b8804a80b37cb573dc",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -91,9 +79,9 @@
 				"epoch": "0",
 				"version": "102.6.0",
 				"release": "2.el8_7.alma",
-				"arch": "s390x",
-				"filename": "thunderbird-102.6.0-2.el8_7.alma.s390x.rpm",
-				"sum": "b4ec0784a0ef7bd5603c15704004622f0f8ad95454d8efbf22b0c9f9ad338afd",
+				"arch": "ppc64le",
+				"filename": "thunderbird-102.6.0-2.el8_7.alma.ppc64le.rpm",
+				"sum": "8c542baad7e408a1a82ed3a07e39bc791acf5f5e5dc8848f6670ce633b925281",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -103,9 +91,21 @@
 				"epoch": "0",
 				"version": "102.6.0",
 				"release": "2.el8_7.alma",
-				"arch": "ppc64le",
-				"filename": "thunderbird-102.6.0-2.el8_7.alma.ppc64le.rpm",
-				"sum": "8c542baad7e408a1a82ed3a07e39bc791acf5f5e5dc8848f6670ce633b925281",
+				"arch": "x86_64",
+				"filename": "thunderbird-102.6.0-2.el8_7.alma.x86_64.rpm",
+				"sum": "aba857038a677d5a9ecaee47b49033624e41b6d49b8bb6b8804a80b37cb573dc",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "thunderbird-102.6.0-2.el8_7.alma.src.rpm",
+				"name": "thunderbird",
+				"epoch": "0",
+				"version": "102.6.0",
+				"release": "2.el8_7.alma",
+				"arch": "s390x",
+				"filename": "thunderbird-102.6.0-2.el8_7.alma.s390x.rpm",
+				"sum": "b4ec0784a0ef7bd5603c15704004622f0f8ad95454d8efbf22b0c9f9ad338afd",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -114,10 +114,46 @@
 	"description": "Mozilla Thunderbird is a standalone mail and newsgroup client.\n\nThis update upgrades Thunderbird to version 102.6.0.\n\nSecurity Fix(es):\n\n* Mozilla: Arbitrary file read from a compromised content process (CVE-2022-46872)\n* Mozilla: Memory safety bugs fixed in Firefox ESR 102.6 and Thunderbird 102.6 (CVE-2022-46878)\n* Mozilla: Use-after-free in WebGL (CVE-2022-46880)\n* Mozilla: Memory corruption in WebGL (CVE-2022-46881)\n* Mozilla: Quoting from an HTML email with certain tags will trigger network requests and load remote content, regardless of a configuration to block remote content (CVE-2022-45414)\n* Mozilla: Drag and Dropped Filenames could have been truncated to malicious extensions (CVE-2022-46874)\n* Mozilla: Use-after-free in WebGL (CVE-2022-46882)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:9074",
-			"title": "RHSA-2022:9074",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:9074"
+			"id": "2149868",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2149868"
+		},
+		{
+			"id": "2153441",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2153441"
+		},
+		{
+			"id": "2153449",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2153449"
+		},
+		{
+			"id": "2153454",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2153454"
+		},
+		{
+			"id": "2153463",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2153463"
+		},
+		{
+			"id": "2153466",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2153466"
+		},
+		{
+			"id": "2153467",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2153467"
 		},
 		{
 			"id": "CVE-2022-45414",
@@ -162,46 +198,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-46882"
 		},
 		{
-			"id": "2149868",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2149868"
-		},
-		{
-			"id": "2153441",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2153441"
-		},
-		{
-			"id": "2153449",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2153449"
-		},
-		{
-			"id": "2153454",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2153454"
-		},
-		{
-			"id": "2153463",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2153463"
-		},
-		{
-			"id": "2153466",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2153466"
-		},
-		{
-			"id": "2153467",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2153467"
+			"id": "RHSA-2022:9074",
+			"title": "RHSA-2022:9074",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:9074"
 		},
 		{
 			"id": "ALSA-2022:9074",

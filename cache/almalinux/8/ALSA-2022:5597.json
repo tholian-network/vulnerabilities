@@ -15,13 +15,13 @@
 		"packages": [
 			{
 				"src": "pandoc-2.0.6-6.el8_6.src.rpm",
-				"name": "pandoc-common",
+				"name": "pandoc",
 				"epoch": "0",
 				"version": "2.0.6",
 				"release": "6.el8_6",
-				"arch": "noarch",
-				"filename": "pandoc-common-2.0.6-6.el8_6.noarch.rpm",
-				"sum": "a3fb4e68ad8d9bdef8259adffa7bf07b188e8b789da3e57bab0dfaed7ceb583d",
+				"arch": "x86_64",
+				"filename": "pandoc-2.0.6-6.el8_6.x86_64.rpm",
+				"sum": "6287e245278932cfa8cddc5f5fdb0b842ed66c771ae438fab9267eccf78e9808",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -39,13 +39,13 @@
 			},
 			{
 				"src": "pandoc-2.0.6-6.el8_6.src.rpm",
-				"name": "pandoc",
+				"name": "pandoc-common",
 				"epoch": "0",
 				"version": "2.0.6",
 				"release": "6.el8_6",
-				"arch": "x86_64",
-				"filename": "pandoc-2.0.6-6.el8_6.x86_64.rpm",
-				"sum": "6287e245278932cfa8cddc5f5fdb0b842ed66c771ae438fab9267eccf78e9808",
+				"arch": "noarch",
+				"filename": "pandoc-common-2.0.6-6.el8_6.noarch.rpm",
+				"sum": "a3fb4e68ad8d9bdef8259adffa7bf07b188e8b789da3e57bab0dfaed7ceb583d",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -66,10 +66,10 @@
 	"description": "Pandoc is a markdown/markup conversion tool. The version of pandoc in AlmaLinux 8 CRB uses cmark-gfm (GitHub's extended version of the C reference implementation of CommonMark) for parts of its conversion. The update, fixes CVE-2022-24724: an integer overflow in cmark-gfm's table row parsing which may lead to heap memory corruption when parsing tables with more than UINT16_MAX columns.\nSecurity Fix(es):\n* cmark-gfm: possible RCE due to integer overflow (CVE-2022-24724)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:5597",
+			"id": "2060662",
 			"title": "",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:5597"
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2060662"
 		},
 		{
 			"id": "CVE-2022-24724",
@@ -78,10 +78,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-24724"
 		},
 		{
-			"id": "2060662",
+			"id": "RHSA-2022:5597",
 			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2060662"
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5597"
 		},
 		{
 			"id": "ALSA-2022:5597",
@@ -94,6 +94,6 @@
 		"$date": 1658102400000
 	},
 	"updated_date": {
-		"$date": 1658329243000
+		"$date": 1658329291000
 	}
 }

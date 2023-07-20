@@ -10,9 +10,45 @@
 	"summary": "An update for expat is now available for AlmaLinux 8.",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-baseos-rpms__8_6_default",
-		"shortname": "almalinux-8-for-x86_64-baseos-rpms__8_6_default",
+		"name": "almalinux-8-for-aarch64-baseos-rpms__8_6_default",
+		"shortname": "almalinux-8-for-aarch64-baseos-rpms__8_6_default",
 		"packages": [
+			{
+				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
+				"name": "expat",
+				"epoch": "0",
+				"version": "2.2.5",
+				"release": "8.el8_6.2",
+				"arch": "aarch64",
+				"filename": "expat-2.2.5-8.el8_6.2.aarch64.rpm",
+				"sum": "2b382bf2e190a7aa2d695a9e21f8843a03ad457d37e905f1ec1ba97face2f18a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
+				"name": "expat",
+				"epoch": "0",
+				"version": "2.2.5",
+				"release": "8.el8_6.2",
+				"arch": "ppc64le",
+				"filename": "expat-2.2.5-8.el8_6.2.ppc64le.rpm",
+				"sum": "39b1a1acf98c1276500355fb7cbc6e305cdbd29434bb88f1ce0d7c9c94c13cfa",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
+				"name": "expat-devel",
+				"epoch": "0",
+				"version": "2.2.5",
+				"release": "8.el8_6.2",
+				"arch": "aarch64",
+				"filename": "expat-devel-2.2.5-8.el8_6.2.aarch64.rpm",
+				"sum": "48721b6f0033081972e5794a3548a241cd208a04276e483b67bcf3da912b8d14",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
 				"name": "expat-devel",
@@ -39,54 +75,6 @@
 			},
 			{
 				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
-				"name": "expat",
-				"epoch": "0",
-				"version": "2.2.5",
-				"release": "8.el8_6.2",
-				"arch": "i686",
-				"filename": "expat-2.2.5-8.el8_6.2.i686.rpm",
-				"sum": "b9910697fdb4d4541f5b1c176bcece3cb9f9cef0f58cdbe52062aed215c3b619",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
-				"name": "expat",
-				"epoch": "0",
-				"version": "2.2.5",
-				"release": "8.el8_6.2",
-				"arch": "aarch64",
-				"filename": "expat-2.2.5-8.el8_6.2.aarch64.rpm",
-				"sum": "2b382bf2e190a7aa2d695a9e21f8843a03ad457d37e905f1ec1ba97face2f18a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
-				"name": "expat-devel",
-				"epoch": "0",
-				"version": "2.2.5",
-				"release": "8.el8_6.2",
-				"arch": "aarch64",
-				"filename": "expat-devel-2.2.5-8.el8_6.2.aarch64.rpm",
-				"sum": "48721b6f0033081972e5794a3548a241cd208a04276e483b67bcf3da912b8d14",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
-				"name": "expat",
-				"epoch": "0",
-				"version": "2.2.5",
-				"release": "8.el8_6.2",
-				"arch": "ppc64le",
-				"filename": "expat-2.2.5-8.el8_6.2.ppc64le.rpm",
-				"sum": "39b1a1acf98c1276500355fb7cbc6e305cdbd29434bb88f1ce0d7c9c94c13cfa",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
 				"name": "expat-devel",
 				"epoch": "0",
 				"version": "2.2.5",
@@ -96,16 +84,166 @@
 				"sum": "9b1f222be379119232998c2c29da58e49ac7fd4562942edc64e04d0897982dcf",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "expat-2.2.5-8.el8_6.2.src.rpm",
+				"name": "expat",
+				"epoch": "0",
+				"version": "2.2.5",
+				"release": "8.el8_6.2",
+				"arch": "i686",
+				"filename": "expat-2.2.5-8.el8_6.2.i686.rpm",
+				"sum": "b9910697fdb4d4541f5b1c176bcece3cb9f9cef0f58cdbe52062aed215c3b619",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "Expat is a C library for parsing XML documents.\nSecurity Fix(es):\n* expat: Malformed 2- and 3-byte UTF-8 sequences can lead to arbitrary code execution (CVE-2022-25235)\n* expat: Namespace-separator characters in \"xmlns[:prefix]\" attribute values can lead to arbitrary code execution (CVE-2022-25236)\n* expat: Integer overflow in storeRawNames() (CVE-2022-25315)\n* expat: Large number of prefixed XML attributes on a single tag can crash libexpat (CVE-2021-45960)\n* expat: Integer overflow in doProlog in xmlparse.c (CVE-2021-46143)\n* expat: Integer overflow in addBinding in xmlparse.c (CVE-2022-22822)\n* expat: Integer overflow in build_model in xmlparse.c (CVE-2022-22823)\n* expat: Integer overflow in defineAttribute in xmlparse.c (CVE-2022-22824)\n* expat: Integer overflow in lookup in xmlparse.c (CVE-2022-22825)\n* expat: Integer overflow in nextScaffoldPart in xmlparse.c (CVE-2022-22826)\n* expat: Integer overflow in storeAtts in xmlparse.c (CVE-2022-22827)\n* expat: Integer overflow in function XML_GetBuffer (CVE-2022-23852)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:0951",
-			"title": "RHSA-2022:0951",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:0951"
+			"id": "2044451",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2044451"
+		},
+		{
+			"id": "2044455",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2044455"
+		},
+		{
+			"id": "2044457",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2044457"
+		},
+		{
+			"id": "2044464",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2044464"
+		},
+		{
+			"id": "2044467",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2044467"
+		},
+		{
+			"id": "2044479",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2044479"
+		},
+		{
+			"id": "2044484",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2044484"
+		},
+		{
+			"id": "2044488",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2044488"
+		},
+		{
+			"id": "2044613",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2044613"
+		},
+		{
+			"id": "2056363",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2056363"
+		},
+		{
+			"id": "2056366",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2056366"
+		},
+		{
+			"id": "2056370",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2056370"
+		},
+		{
+			"id": "CVE-2021-45960",
+			"title": "",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2021-45960"
+		},
+		{
+			"id": "CVE-2021-46143",
+			"title": "",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2021-46143"
+		},
+		{
+			"id": "CVE-2022-22822",
+			"title": "",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-22822"
+		},
+		{
+			"id": "CVE-2022-22823",
+			"title": "",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-22823"
+		},
+		{
+			"id": "CVE-2022-22824",
+			"title": "",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-22824"
+		},
+		{
+			"id": "CVE-2022-22825",
+			"title": "",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-22825"
+		},
+		{
+			"id": "CVE-2022-22826",
+			"title": "",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-22826"
+		},
+		{
+			"id": "CVE-2022-22827",
+			"title": "",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-22827"
+		},
+		{
+			"id": "CVE-2022-23852",
+			"title": "",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-23852"
+		},
+		{
+			"id": "CVE-2022-25235",
+			"title": "",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-25235"
+		},
+		{
+			"id": "CVE-2022-25236",
+			"title": "",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-25236"
+		},
+		{
+			"id": "CVE-2022-25315",
+			"title": "",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-25315"
 		},
 		{
 			"id": "CVE-2021-45960",
@@ -180,76 +318,16 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-25315"
 		},
 		{
-			"id": "2044451",
+			"id": "RHSA-2022:0951",
 			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2044451"
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:0951"
 		},
 		{
-			"id": "2044455",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2044455"
-		},
-		{
-			"id": "2044457",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2044457"
-		},
-		{
-			"id": "2044464",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2044464"
-		},
-		{
-			"id": "2044467",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2044467"
-		},
-		{
-			"id": "2044479",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2044479"
-		},
-		{
-			"id": "2044484",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2044484"
-		},
-		{
-			"id": "2044488",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2044488"
-		},
-		{
-			"id": "2044613",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2044613"
-		},
-		{
-			"id": "2056363",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2056363"
-		},
-		{
-			"id": "2056366",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2056366"
-		},
-		{
-			"id": "2056370",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2056370"
+			"id": "RHSA-2022:0951",
+			"title": "RHSA-2022:0951",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:0951"
 		},
 		{
 			"id": "ALSA-2022:0951",
@@ -262,6 +340,6 @@
 		"$date": 1647388800000
 	},
 	"updated_date": {
-		"$date": 1656582715000
+		"$date": 1656582729000
 	}
 }

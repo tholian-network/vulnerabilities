@@ -162,10 +162,28 @@
 	"description": "The kernel-rt packages provide the Real Time Linux Kernel, which enables fine-tuning for systems with extremely high determinism requirements.\n\nSecurity Fix(es):\n\n* kernel: stack overflow in do_proc_dointvec and proc_skip_spaces (CVE-2022-4378)\n* ALSA: pcm: Move rwsem lock inside snd_ctl_elem_read to prevent UAF (CVE-2023-0266)\n* kernel: FUSE filesystem low-privileged user privileges escalation (CVE-2023-0386)\n* kernel: net: CPU soft lockup in TC mirred egress-to-ingress action (CVE-2022-4269)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nBug Fix(es):\n\n* Lazy irq_work does not raise softirq on PREEMPT_RT [rhel-8] (BZ#2172163)\n* The latest AlmaLinux 8.7.z3 kernel changes need to be merged into the RT source tree to keep source parity between the two kernels. (BZ#2172278)",
 	"references": [
 		{
-			"id": "RHSA-2023:1584",
-			"title": "RHSA-2023:1584",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:1584"
+			"id": "2150272",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2150272"
+		},
+		{
+			"id": "2152548",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2152548"
+		},
+		{
+			"id": "2159505",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2159505"
+		},
+		{
+			"id": "2163379",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2163379"
 		},
 		{
 			"id": "CVE-2022-4269",
@@ -192,28 +210,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2023-0386"
 		},
 		{
-			"id": "2150272",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2150272"
-		},
-		{
-			"id": "2152548",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2152548"
-		},
-		{
-			"id": "2159505",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2159505"
-		},
-		{
-			"id": "2163379",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2163379"
+			"id": "RHSA-2023:1584",
+			"title": "RHSA-2023:1584",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:1584"
 		},
 		{
 			"id": "ALSA-2023:1584",

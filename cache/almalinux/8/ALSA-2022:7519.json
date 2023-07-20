@@ -10,8 +10,8 @@
 	"summary": "grafana security, bug fix, and enhancement update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_6_default",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_6_default",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_6_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_6_default",
 		"packages": [
 			{
 				"src": "grafana-7.5.15-3.el8.src.rpm",
@@ -43,9 +43,9 @@
 				"epoch": "0",
 				"version": "7.5.15",
 				"release": "3.el8",
-				"arch": "s390x",
-				"filename": "grafana-7.5.15-3.el8.s390x.rpm",
-				"sum": "bdc9b7c7f26a2af7374489f8bfa3195ee2c1f15954bbfb66fd192d1c51e3ae46",
+				"arch": "ppc64le",
+				"filename": "grafana-7.5.15-3.el8.ppc64le.rpm",
+				"sum": "bc7501e47aba03f6f7520c1928fab9299badc0be23b67f4f543ea0676e987a55",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -55,9 +55,9 @@
 				"epoch": "0",
 				"version": "7.5.15",
 				"release": "3.el8",
-				"arch": "ppc64le",
-				"filename": "grafana-7.5.15-3.el8.ppc64le.rpm",
-				"sum": "bc7501e47aba03f6f7520c1928fab9299badc0be23b67f4f543ea0676e987a55",
+				"arch": "s390x",
+				"filename": "grafana-7.5.15-3.el8.s390x.rpm",
+				"sum": "bdc9b7c7f26a2af7374489f8bfa3195ee2c1f15954bbfb66fd192d1c51e3ae46",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -66,10 +66,94 @@
 	"description": "Grafana is an open source, feature rich metrics dashboard and graph editor for Graphite, InfluxDB \u0026 OpenTSDB. \n\nThe following packages have been upgraded to a later upstream version: grafana (7.5.15). (BZ#2055348)\n\nSecurity Fix(es):\n\n* sanitize-url: XSS due to improper sanitization in sanitizeUrl function (CVE-2021-23648)\n* golang: net/http: improper sanitization of Transfer-Encoding header (CVE-2022-1705)\n* golang: go/parser: stack exhaustion in all Parse* functions (CVE-2022-1962)\n* grafana: Forward OAuth Identity Token can allow users to access some data sources (CVE-2022-21673)\n* prometheus/client_golang: Denial of service using InstrumentHandlerCounter (CVE-2022-21698)\n* grafana: XSS vulnerability in data source handling (CVE-2022-21702)\n* grafana: CSRF vulnerability can lead to privilege escalation (CVE-2022-21703)\n* grafana: IDOR vulnerability can lead to information disclosure (CVE-2022-21713)\n* golang: encoding/xml: stack exhaustion in Decoder.Skip (CVE-2022-28131)\n* golang: io/fs: stack exhaustion in Glob (CVE-2022-30630)\n* golang: compress/gzip: stack exhaustion in Reader.Read (CVE-2022-30631)\n* golang: path/filepath: stack exhaustion in Glob (CVE-2022-30632)\n* golang: encoding/xml: stack exhaustion in Unmarshal (CVE-2022-30633)\n* golang: encoding/gob: stack exhaustion in Decoder.Decode (CVE-2022-30635)\n* golang: net/http/httputil: NewSingleHostReverseProxy - omit X-Forwarded-For not working (CVE-2022-32148)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:7519",
-			"title": "RHSA-2022:7519",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:7519"
+			"id": "2044628",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2044628"
+		},
+		{
+			"id": "2045880",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2045880"
+		},
+		{
+			"id": "2050648",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2050648"
+		},
+		{
+			"id": "2050742",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2050742"
+		},
+		{
+			"id": "2050743",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2050743"
+		},
+		{
+			"id": "2065290",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2065290"
+		},
+		{
+			"id": "2107342",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107342"
+		},
+		{
+			"id": "2107371",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107371"
+		},
+		{
+			"id": "2107374",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107374"
+		},
+		{
+			"id": "2107376",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107376"
+		},
+		{
+			"id": "2107383",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107383"
+		},
+		{
+			"id": "2107386",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107386"
+		},
+		{
+			"id": "2107388",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107388"
+		},
+		{
+			"id": "2107390",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107390"
+		},
+		{
+			"id": "2107392",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107392"
 		},
 		{
 			"id": "CVE-2021-23648",
@@ -162,94 +246,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-32148"
 		},
 		{
-			"id": "2044628",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2044628"
-		},
-		{
-			"id": "2045880",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2045880"
-		},
-		{
-			"id": "2050648",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2050648"
-		},
-		{
-			"id": "2050742",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2050742"
-		},
-		{
-			"id": "2050743",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2050743"
-		},
-		{
-			"id": "2065290",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2065290"
-		},
-		{
-			"id": "2107342",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107342"
-		},
-		{
-			"id": "2107371",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107371"
-		},
-		{
-			"id": "2107374",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107374"
-		},
-		{
-			"id": "2107376",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107376"
-		},
-		{
-			"id": "2107383",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107383"
-		},
-		{
-			"id": "2107386",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107386"
-		},
-		{
-			"id": "2107388",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107388"
-		},
-		{
-			"id": "2107390",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107390"
-		},
-		{
-			"id": "2107392",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107392"
+			"id": "RHSA-2022:7519",
+			"title": "RHSA-2022:7519",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:7519"
 		},
 		{
 			"id": "ALSA-2022:7519",

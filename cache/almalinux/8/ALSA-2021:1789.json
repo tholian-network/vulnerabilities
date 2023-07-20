@@ -10,45 +10,9 @@
 	"summary": "An update for gssdp and gupnp is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "3",
 	"pkglist": {
-		"name": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
-		"shortname": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
+		"name": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
+		"shortname": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
 		"packages": [
-			{
-				"src": "gssdp-1.0.5-1.el8.src.rpm",
-				"name": "gssdp-devel",
-				"epoch": "0",
-				"version": "1.0.5",
-				"release": "1.el8",
-				"arch": "aarch64",
-				"filename": "gssdp-devel-1.0.5-1.el8.aarch64.rpm",
-				"sum": "5885c265cd260aab689b5474e87363650cb7c139f865c5d9440edf86fc331370",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gssdp-1.0.5-1.el8.src.rpm",
-				"name": "gssdp-docs",
-				"epoch": "0",
-				"version": "1.0.5",
-				"release": "1.el8",
-				"arch": "noarch",
-				"filename": "gssdp-docs-1.0.5-1.el8.noarch.rpm",
-				"sum": "6c844d13ebf582672013a54345f097d1b093ecfd603f783357e0d1f6d7ba64ea",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gssdp-1.0.5-1.el8.src.rpm",
-				"name": "gssdp",
-				"epoch": "0",
-				"version": "1.0.5",
-				"release": "1.el8",
-				"arch": "aarch64",
-				"filename": "gssdp-1.0.5-1.el8.aarch64.rpm",
-				"sum": "eb86e45b02d0c99c0f494b87aed8283888149ed21da87d2a144a211e610ad9fc",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "gssdp-1.0.5-1.el8.src.rpm",
 				"name": "gssdp",
@@ -67,9 +31,33 @@
 				"epoch": "0",
 				"version": "1.0.5",
 				"release": "1.el8",
+				"arch": "aarch64",
+				"filename": "gssdp-devel-1.0.5-1.el8.aarch64.rpm",
+				"sum": "5885c265cd260aab689b5474e87363650cb7c139f865c5d9440edf86fc331370",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "gssdp-1.0.5-1.el8.src.rpm",
+				"name": "gssdp-devel",
+				"epoch": "0",
+				"version": "1.0.5",
+				"release": "1.el8",
 				"arch": "i686",
 				"filename": "gssdp-devel-1.0.5-1.el8.i686.rpm",
 				"sum": "65de2457c3ed8c0b0b882b5e4bfaa351b02fce4c6b6753033051bd84b5e12cc9",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "gssdp-1.0.5-1.el8.src.rpm",
+				"name": "gssdp-docs",
+				"epoch": "0",
+				"version": "1.0.5",
+				"release": "1.el8",
+				"arch": "noarch",
+				"filename": "gssdp-docs-1.0.5-1.el8.noarch.rpm",
+				"sum": "6c844d13ebf582672013a54345f097d1b093ecfd603f783357e0d1f6d7ba64ea",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -144,28 +132,40 @@
 				"sum": "e7283cbea865a2ba48f7d81454b67bb467834b2384aec994f056e704eb6b269c",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "gssdp-1.0.5-1.el8.src.rpm",
+				"name": "gssdp",
+				"epoch": "0",
+				"version": "1.0.5",
+				"release": "1.el8",
+				"arch": "aarch64",
+				"filename": "gssdp-1.0.5-1.el8.aarch64.rpm",
+				"sum": "eb86e45b02d0c99c0f494b87aed8283888149ed21da87d2a144a211e610ad9fc",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "GUPnP is an object-oriented open source framework for creating UPnP devices and control points, written in C using GObject and libsoup. The GUPnP API is intended to be easy to use, efficient and flexible.\n\nGSSDP implements resource discovery and announcement over SSDP and is part of gUPnP. \n\nThe following packages have been upgraded to a later upstream version: gssdp (1.0.5), gupnp (1.0.6). (BZ#1846589, BZ#1861928)\n\nSecurity Fix(es):\n\n* hostapd: UPnP SUBSCRIBE misbehavior in WPS AP (CVE-2020-12695)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "ALSA-2021-1789",
-			"title": "ALSA-2021-1789",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2021-1789.html"
-		},
-		{
 			"id": "CVE-2020-12695",
 			"title": "CVE-2020-12695",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2020-12695"
+		},
+		{
+			"id": "ALSA-2021-1789",
+			"title": "ALSA-2021-1789",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-1789.html"
 		}
 	],
 	"issued_date": {
 		"$date": 1621317922000
 	},
 	"updated_date": {
-		"$date": 1621317912000
+		"$date": 1636712456000
 	}
 }

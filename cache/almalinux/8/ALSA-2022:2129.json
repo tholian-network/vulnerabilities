@@ -10,8 +10,8 @@
 	"summary": "An update for lynx is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "3",
 	"pkglist": {
-		"name": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
-		"shortname": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
+		"name": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
+		"shortname": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
 		"packages": [
 			{
 				"src": "lynx-2.8.9-4.el8.src.rpm",
@@ -19,9 +19,9 @@
 				"epoch": "0",
 				"version": "2.8.9",
 				"release": "4.el8",
-				"arch": "aarch64",
-				"filename": "lynx-2.8.9-4.el8.aarch64.rpm",
-				"sum": "dd403b8d951d4bfde7d99c13968368acd67a8ef0cd62eec0a509c7298062ba4c",
+				"arch": "ppc64le",
+				"filename": "lynx-2.8.9-4.el8.ppc64le.rpm",
+				"sum": "2b6060d13862a86be2f2fe4d14f260d18dee9a7be177cc87d796cc56d0898196",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -43,9 +43,9 @@
 				"epoch": "0",
 				"version": "2.8.9",
 				"release": "4.el8",
-				"arch": "ppc64le",
-				"filename": "lynx-2.8.9-4.el8.ppc64le.rpm",
-				"sum": "2b6060d13862a86be2f2fe4d14f260d18dee9a7be177cc87d796cc56d0898196",
+				"arch": "aarch64",
+				"filename": "lynx-2.8.9-4.el8.aarch64.rpm",
+				"sum": "dd403b8d951d4bfde7d99c13968368acd67a8ef0cd62eec0a509c7298062ba4c",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -54,16 +54,16 @@
 	"description": "Lynx is a text-based Web browser. Lynx does not display any images, but it does support frames, tables, and most other HTML tags.\n\nSecurity Fix(es):\n\n* lynx: Disclosure of HTTP authentication credentials via SNI data (CVE-2021-38165)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "ALSA-2022-2129",
-			"title": "ALSA-2022-2129",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2022-2129.html"
-		},
-		{
 			"id": "CVE-2021-38165",
 			"title": "CVE-2021-38165",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2021-38165"
+		},
+		{
+			"id": "ALSA-2022-2129",
+			"title": "ALSA-2022-2129",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-2129.html"
 		}
 	],
 	"issued_date": {

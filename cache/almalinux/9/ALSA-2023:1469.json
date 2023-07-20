@@ -162,10 +162,22 @@
 	"description": "The kernel-rt packages provide the Real Time Linux Kernel, which enables fine-tuning for systems with extremely high determinism requirements.\n\nSecurity Fix(es):\n\n* kernel: tun: avoid double free in tun_free_netdev (CVE-2022-4744)\n* ALSA: pcm: Move rwsem lock inside snd_ctl_elem_read to prevent UAF (CVE-2023-0266)\n* kernel: net: CPU soft lockup in TC mirred egress-to-ingress action (CVE-2022-4269)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nBug Fix(es):\n\n* kernel-rt: update RT source tree to the latest AlmaLinux-9.1.z3 Batch (BZ#2170460)",
 	"references": [
 		{
-			"id": "RHSA-2023:1469",
-			"title": "RHSA-2023:1469",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:1469"
+			"id": "2150272",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2150272"
+		},
+		{
+			"id": "2156322",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2156322"
+		},
+		{
+			"id": "2163379",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2163379"
 		},
 		{
 			"id": "CVE-2022-4269",
@@ -186,22 +198,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2023-0266"
 		},
 		{
-			"id": "2150272",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2150272"
-		},
-		{
-			"id": "2156322",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2156322"
-		},
-		{
-			"id": "2163379",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2163379"
+			"id": "RHSA-2023:1469",
+			"title": "RHSA-2023:1469",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:1469"
 		},
 		{
 			"id": "ALSA-2023:1469",

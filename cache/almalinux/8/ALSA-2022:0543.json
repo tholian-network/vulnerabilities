@@ -10,9 +10,45 @@
 	"summary": "An update for the ruby:2.6 module is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "2",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_ruby",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_ruby",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_ruby",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_ruby",
 		"packages": [
+			{
+				"src": "rubygem-bson-4.5.0-1.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-bson",
+				"epoch": "0",
+				"version": "4.5.0",
+				"release": "1.module_el8.5.0+2623+08a8ba32",
+				"arch": "x86_64",
+				"filename": "rubygem-bson-4.5.0-1.module_el8.5.0+2623+08a8ba32.x86_64.rpm",
+				"sum": "03d843fb30170ab3dd177f6cbe3f53db3fd30c50b0db7cb69a5696727c509543",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rubygem-abrt-0.3.0-4.module_el8.5.0+259+8cec6917.src.rpm",
+				"name": "rubygem-abrt-doc",
+				"epoch": "0",
+				"version": "0.3.0",
+				"release": "4.module_el8.5.0+259+8cec6917",
+				"arch": "noarch",
+				"filename": "rubygem-abrt-doc-0.3.0-4.module_el8.5.0+259+8cec6917.noarch.rpm",
+				"sum": "085e4c052f70e2dd1f91aa3776bdd0e33ded15a62b2a29308b537683a52e1d4e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-bigdecimal",
+				"epoch": "0",
+				"version": "1.4.1",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "i686",
+				"filename": "rubygem-bigdecimal-1.4.1-108.module_el8.5.0+2623+08a8ba32.i686.rpm",
+				"sum": "093283edf6ff9ca96d11d49a0f1b601a65524c5ef3a849979bb0d310596457b3",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
 				"name": "rubygem-io-console",
@@ -22,6 +58,18 @@
 				"arch": "aarch64",
 				"filename": "rubygem-io-console-0.4.7-108.module_el8.5.0+2623+08a8ba32.aarch64.rpm",
 				"sum": "096b9ad696ea52b884556ffaf8a68fcfa82ee7795cad4f4c82d006480ff5bb26",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "ruby-devel",
+				"epoch": "0",
+				"version": "2.6.9",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "i686",
+				"filename": "ruby-devel-2.6.9-108.module_el8.5.0+2623+08a8ba32.i686.rpm",
+				"sum": "0bbacf00adaf5b79271e1a541d753485f6b4cb2cc64fa07dca68422009068876",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -87,6 +135,30 @@
 			},
 			{
 				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "ruby-devel",
+				"epoch": "0",
+				"version": "2.6.9",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "x86_64",
+				"filename": "ruby-devel-2.6.9-108.module_el8.5.0+2623+08a8ba32.x86_64.rpm",
+				"sum": "258d2ec50f382df3c4bf14f9f3fea179c5ababd62c232b1222331fc07bd79be6",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+250+ba22dbf7.src.rpm",
+				"name": "rubygem-openssl",
+				"epoch": "0",
+				"version": "2.1.2",
+				"release": "108.module_el8.5.0+250+ba22dbf7",
+				"arch": "ppc64le",
+				"filename": "rubygem-openssl-2.1.2-108.module_el8.5.0+250+ba22dbf7.ppc64le.rpm",
+				"sum": "2937892ef967557cefc0940ecee2158a7a6eae0ea68fd8b4e52a0200934a318b",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
 				"name": "rubygem-openssl",
 				"epoch": "0",
 				"version": "2.1.2",
@@ -94,6 +166,30 @@
 				"arch": "aarch64",
 				"filename": "rubygem-openssl-2.1.2-108.module_el8.5.0+2623+08a8ba32.aarch64.rpm",
 				"sum": "2aed2643876a91197aedd1071162161230d1d556a903d841e34e6f6d43c043b1",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-psych",
+				"epoch": "0",
+				"version": "3.1.0",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "x86_64",
+				"filename": "rubygem-psych-3.1.0-108.module_el8.5.0+2623+08a8ba32.x86_64.rpm",
+				"sum": "2c75958c82c6b9d6bbf83dd4ae9b8c62849800e39b7e4003fa3c99d165d3793c",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+250+ba22dbf7.src.rpm",
+				"name": "rubygems",
+				"epoch": "0",
+				"version": "3.0.3.1",
+				"release": "108.module_el8.5.0+250+ba22dbf7",
+				"arch": "noarch",
+				"filename": "rubygems-3.0.3.1-108.module_el8.5.0+250+ba22dbf7.noarch.rpm",
+				"sum": "314aa2f44e0db4f34255f205ffa6fdd094a49275c56537cea8f8a6d299c744c9",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -130,6 +226,30 @@
 				"arch": "noarch",
 				"filename": "rubygem-net-telnet-0.2.0-108.module_el8.5.0+2623+08a8ba32.noarch.rpm",
 				"sum": "410ba12384a0964cea8c53b4b01102ce7e9b101b351a6b46d690ab96feb9045f",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rubygem-mongo-2.8.0-1.module_el8.5.0+250+ba22dbf7.src.rpm",
+				"name": "rubygem-mongo",
+				"epoch": "0",
+				"version": "2.8.0",
+				"release": "1.module_el8.5.0+250+ba22dbf7",
+				"arch": "noarch",
+				"filename": "rubygem-mongo-2.8.0-1.module_el8.5.0+250+ba22dbf7.noarch.rpm",
+				"sum": "433dd9fda76a345b4eb486de474ffca16e0037f799004008bad4fa1b7dfc332c",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+250+ba22dbf7.src.rpm",
+				"name": "ruby",
+				"epoch": "0",
+				"version": "2.6.9",
+				"release": "108.module_el8.5.0+250+ba22dbf7",
+				"arch": "ppc64le",
+				"filename": "ruby-2.6.9-108.module_el8.5.0+250+ba22dbf7.ppc64le.rpm",
+				"sum": "43ed53e2d21cadf7868acd452a27d3b352663c731c8d929d5c544b8960aae8ce",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -182,6 +302,18 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "rubygem-mysql2-0.5.2-1.module_el8.5.0+250+ba22dbf7.src.rpm",
+				"name": "rubygem-mysql2",
+				"epoch": "0",
+				"version": "0.5.2",
+				"release": "1.module_el8.5.0+250+ba22dbf7",
+				"arch": "ppc64le",
+				"filename": "rubygem-mysql2-0.5.2-1.module_el8.5.0+250+ba22dbf7.ppc64le.rpm",
+				"sum": "55d3adecab07d905c426b31beb3c655e73d532edffb5346d7f0f5625d27a34f1",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
 				"name": "rubygems-devel",
 				"epoch": "0",
@@ -194,278 +326,14 @@
 				"reboot_suggested": 0
 			},
 			{
-				"src": "rubygem-abrt-0.3.0-4.module_el8.5.0+2625+ec418553.src.rpm",
-				"name": "rubygem-abrt-doc",
+				"src": "ruby-2.6.9-108.module_el8.5.0+250+ba22dbf7.src.rpm",
+				"name": "rubygem-net-telnet",
 				"epoch": "0",
-				"version": "0.3.0",
-				"release": "4.module_el8.5.0+2625+ec418553",
+				"version": "0.2.0",
+				"release": "108.module_el8.5.0+250+ba22dbf7",
 				"arch": "noarch",
-				"filename": "rubygem-abrt-doc-0.3.0-4.module_el8.5.0+2625+ec418553.noarch.rpm",
-				"sum": "8604fec34b7f851c63344f64e4510c4923f56bf9d3cdf0aba2aae1608f26c804",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-psych",
-				"epoch": "0",
-				"version": "3.1.0",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "aarch64",
-				"filename": "rubygem-psych-3.1.0-108.module_el8.5.0+2623+08a8ba32.aarch64.rpm",
-				"sum": "98ccc073f663ee830a1edf3a70cfbb4eee36937e8385efcf41a805f889cac241",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rubygem-mongo-2.8.0-1.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-mongo",
-				"epoch": "0",
-				"version": "2.8.0",
-				"release": "1.module_el8.5.0+2623+08a8ba32",
-				"arch": "noarch",
-				"filename": "rubygem-mongo-2.8.0-1.module_el8.5.0+2623+08a8ba32.noarch.rpm",
-				"sum": "9d49b3317759fd5df4e32b1b80406ed2514ba74c05d43095d3959732219c3b4a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygems",
-				"epoch": "0",
-				"version": "3.0.3.1",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "noarch",
-				"filename": "rubygems-3.0.3.1-108.module_el8.5.0+2623+08a8ba32.noarch.rpm",
-				"sum": "a4d27e9aab24ab9750ab62f351a1f0935caa2f9165482121ddadfb1dcf3c35de",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rubygem-pg-1.1.4-1.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-pg",
-				"epoch": "0",
-				"version": "1.1.4",
-				"release": "1.module_el8.5.0+2623+08a8ba32",
-				"arch": "aarch64",
-				"filename": "rubygem-pg-1.1.4-1.module_el8.5.0+2623+08a8ba32.aarch64.rpm",
-				"sum": "bb25c46f97e39acd6603d7b6ec0ef7cca8b67c4c39652254cb1eab584300497e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rubygem-pg-1.1.4-1.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-pg-doc",
-				"epoch": "0",
-				"version": "1.1.4",
-				"release": "1.module_el8.5.0+2623+08a8ba32",
-				"arch": "noarch",
-				"filename": "rubygem-pg-doc-1.1.4-1.module_el8.5.0+2623+08a8ba32.noarch.rpm",
-				"sum": "bda3a25e4281b2ce99d2ecc0e8ad3db88ad3e6a52d6e63747cf24fc6704873d9",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-xmlrpc",
-				"epoch": "0",
-				"version": "0.3.0",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "noarch",
-				"filename": "rubygem-xmlrpc-0.3.0-108.module_el8.5.0+2623+08a8ba32.noarch.rpm",
-				"sum": "caec7adcfa46d76519cafc6a5b6b0815a038af3a899c68c66f09600e1dcb78b4",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rubygem-mysql2-0.5.2-1.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-mysql2-doc",
-				"epoch": "0",
-				"version": "0.5.2",
-				"release": "1.module_el8.5.0+2623+08a8ba32",
-				"arch": "noarch",
-				"filename": "rubygem-mysql2-doc-0.5.2-1.module_el8.5.0+2623+08a8ba32.noarch.rpm",
-				"sum": "ccceba910635f667b0f6eb1de6693ae636aa3c2e1c8f70f0ba2302d3a04042a7",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "ruby",
-				"epoch": "0",
-				"version": "2.6.9",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "aarch64",
-				"filename": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.aarch64.rpm",
-				"sum": "e12964e7a26e4bf2ff70d234fa231f11c91d86e6e50d4103d9641a73951655b2",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rubygem-abrt-0.3.0-4.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-abrt",
-				"epoch": "0",
-				"version": "0.3.0",
-				"release": "4.module_el8.5.0+2623+08a8ba32",
-				"arch": "noarch",
-				"filename": "rubygem-abrt-0.3.0-4.module_el8.5.0+2623+08a8ba32.noarch.rpm",
-				"sum": "e2f75dad83962fbcf5fed5d19cec8da6e0526039475f81f395e239aad0aea460",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rubygem-mysql2-0.5.2-1.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-mysql2",
-				"epoch": "0",
-				"version": "0.5.2",
-				"release": "1.module_el8.5.0+2623+08a8ba32",
-				"arch": "aarch64",
-				"filename": "rubygem-mysql2-0.5.2-1.module_el8.5.0+2623+08a8ba32.aarch64.rpm",
-				"sum": "ed66f8a584bad694bfb6620ee9f8e3c47dc20d25973566970f90434b7310b199",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-rdoc",
-				"epoch": "0",
-				"version": "6.1.2.1",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "noarch",
-				"filename": "rubygem-rdoc-6.1.2.1-108.module_el8.5.0+2623+08a8ba32.noarch.rpm",
-				"sum": "f22a10929589fef4d017e33ffbb80ff372e38957293d5aa6e2a17056408a916e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-minitest",
-				"epoch": "0",
-				"version": "5.11.3",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "noarch",
-				"filename": "rubygem-minitest-5.11.3-108.module_el8.5.0+2623+08a8ba32.noarch.rpm",
-				"sum": "f29d2046f66d9bfeadee6fcd373fe5049b3c22b6e614eab8855c0fcc745ea555",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "ruby-doc",
-				"epoch": "0",
-				"version": "2.6.9",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "noarch",
-				"filename": "ruby-doc-2.6.9-108.module_el8.5.0+2623+08a8ba32.noarch.rpm",
-				"sum": "f2b47c33e2b524a498048699cf9257cb9e857b11f0dbffb76a66a714f132566e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-bigdecimal",
-				"epoch": "0",
-				"version": "1.4.1",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "aarch64",
-				"filename": "rubygem-bigdecimal-1.4.1-108.module_el8.5.0+2623+08a8ba32.aarch64.rpm",
-				"sum": "fa4812c103078b1194cf7dba1aaa2a49bf945c78b765e9d4cb5b533b032c3bb9",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-power_assert",
-				"epoch": "0",
-				"version": "1.1.3",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "noarch",
-				"filename": "rubygem-power_assert-1.1.3-108.module_el8.5.0+2623+08a8ba32.noarch.rpm",
-				"sum": "fb9631c3e89fbdfbb36fdd971a5a5b68b723f917bb83f84e24a88037a3593901",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rubygem-bson-4.5.0-1.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-bson-doc",
-				"epoch": "0",
-				"version": "4.5.0",
-				"release": "1.module_el8.5.0+2623+08a8ba32",
-				"arch": "noarch",
-				"filename": "rubygem-bson-doc-4.5.0-1.module_el8.5.0+2623+08a8ba32.noarch.rpm",
-				"sum": "fc2d9da1582f72acf5422d14d9650399c79a1f78407ff343046e683bbfb6ff82",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rubygem-mongo-2.8.0-1.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-mongo-doc",
-				"epoch": "0",
-				"version": "2.8.0",
-				"release": "1.module_el8.5.0+2623+08a8ba32",
-				"arch": "noarch",
-				"filename": "rubygem-mongo-doc-2.8.0-1.module_el8.5.0+2623+08a8ba32.noarch.rpm",
-				"sum": "fd4ce6a2358fea0d79d483e22d32541ce1c8c3cd0f8d7118ea07b44d21680cbf",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rubygem-bson-4.5.0-1.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-bson",
-				"epoch": "0",
-				"version": "4.5.0",
-				"release": "1.module_el8.5.0+2623+08a8ba32",
-				"arch": "x86_64",
-				"filename": "rubygem-bson-4.5.0-1.module_el8.5.0+2623+08a8ba32.x86_64.rpm",
-				"sum": "03d843fb30170ab3dd177f6cbe3f53db3fd30c50b0db7cb69a5696727c509543",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-bigdecimal",
-				"epoch": "0",
-				"version": "1.4.1",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "i686",
-				"filename": "rubygem-bigdecimal-1.4.1-108.module_el8.5.0+2623+08a8ba32.i686.rpm",
-				"sum": "093283edf6ff9ca96d11d49a0f1b601a65524c5ef3a849979bb0d310596457b3",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "ruby-devel",
-				"epoch": "0",
-				"version": "2.6.9",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "i686",
-				"filename": "ruby-devel-2.6.9-108.module_el8.5.0+2623+08a8ba32.i686.rpm",
-				"sum": "0bbacf00adaf5b79271e1a541d753485f6b4cb2cc64fa07dca68422009068876",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "ruby-devel",
-				"epoch": "0",
-				"version": "2.6.9",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "x86_64",
-				"filename": "ruby-devel-2.6.9-108.module_el8.5.0+2623+08a8ba32.x86_64.rpm",
-				"sum": "258d2ec50f382df3c4bf14f9f3fea179c5ababd62c232b1222331fc07bd79be6",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-psych",
-				"epoch": "0",
-				"version": "3.1.0",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "x86_64",
-				"filename": "rubygem-psych-3.1.0-108.module_el8.5.0+2623+08a8ba32.x86_64.rpm",
-				"sum": "2c75958c82c6b9d6bbf83dd4ae9b8c62849800e39b7e4003fa3c99d165d3793c",
+				"filename": "rubygem-net-telnet-0.2.0-108.module_el8.5.0+250+ba22dbf7.noarch.rpm",
+				"sum": "61a763f3f46105859872b3921d7eb74d12b87f2c77fc6b803246290e079cd165",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -482,6 +350,18 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "rubygem-pg-1.1.4-1.module_el8.5.0+250+ba22dbf7.src.rpm",
+				"name": "rubygem-pg",
+				"epoch": "0",
+				"version": "1.1.4",
+				"release": "1.module_el8.5.0+250+ba22dbf7",
+				"arch": "ppc64le",
+				"filename": "rubygem-pg-1.1.4-1.module_el8.5.0+250+ba22dbf7.ppc64le.rpm",
+				"sum": "6841f462b2f531d5ba69e4dcef020bb0f677ee8ec5ef27b0d1f723af9dcf3375",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
 				"name": "rubygem-bigdecimal",
 				"epoch": "0",
@@ -490,6 +370,18 @@
 				"arch": "x86_64",
 				"filename": "rubygem-bigdecimal-1.4.1-108.module_el8.5.0+2623+08a8ba32.x86_64.rpm",
 				"sum": "693d7f1a75eb535f6053392c16fb991ee3c8eb9e2083545012d92afb57b183e8",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+250+ba22dbf7.src.rpm",
+				"name": "rubygem-rdoc",
+				"epoch": "0",
+				"version": "6.1.2.1",
+				"release": "108.module_el8.5.0+250+ba22dbf7",
+				"arch": "noarch",
+				"filename": "rubygem-rdoc-6.1.2.1-108.module_el8.5.0+250+ba22dbf7.noarch.rpm",
+				"sum": "697f9c7b6f3e8caf536152ccbb2122a3a31c50d6c16834548cc6b38834ffc547",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -514,234 +406,6 @@
 				"arch": "x86_64",
 				"filename": "rubygem-mysql2-0.5.2-1.module_el8.5.0+2623+08a8ba32.x86_64.rpm",
 				"sum": "706abca8ccfb91d12ed7b8cb17e86f66ca5a0f8ac0e06c28ea8448ad80c8f442",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-json",
-				"epoch": "0",
-				"version": "2.1.0",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "i686",
-				"filename": "rubygem-json-2.1.0-108.module_el8.5.0+2623+08a8ba32.i686.rpm",
-				"sum": "8779dff736ead776263b00a59cca43d44f339303418aac6548f29253da794057",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-json",
-				"epoch": "0",
-				"version": "2.1.0",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "x86_64",
-				"filename": "rubygem-json-2.1.0-108.module_el8.5.0+2623+08a8ba32.x86_64.rpm",
-				"sum": "9c5084e88396a94b7b000a3bbcc7cbcbe6299ca2b9a8dcae80a68f524fb22488",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "ruby",
-				"epoch": "0",
-				"version": "2.6.9",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "i686",
-				"filename": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.i686.rpm",
-				"sum": "a609a46cb8e7fdcb337ec091e8b571466ae86edc3afa06459616dac750128db7",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-io-console",
-				"epoch": "0",
-				"version": "0.4.7",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "x86_64",
-				"filename": "rubygem-io-console-0.4.7-108.module_el8.5.0+2623+08a8ba32.x86_64.rpm",
-				"sum": "b5fc706b62b30eef3aaac1d27d19cd3cb65f304a8c243b44aa8011d30475fb60",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-openssl",
-				"epoch": "0",
-				"version": "2.1.2",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "x86_64",
-				"filename": "rubygem-openssl-2.1.2-108.module_el8.5.0+2623+08a8ba32.x86_64.rpm",
-				"sum": "c118f3807c31e5afc3149b35a3e04ef535e083ed5b3d8f19d39fc0e696af55f4",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "ruby",
-				"epoch": "0",
-				"version": "2.6.9",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "x86_64",
-				"filename": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.x86_64.rpm",
-				"sum": "c2e7f36bb1376d7141259604c04ac655a3331436b9862bae488ec2bb62094f2b",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-openssl",
-				"epoch": "0",
-				"version": "2.1.2",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "i686",
-				"filename": "rubygem-openssl-2.1.2-108.module_el8.5.0+2623+08a8ba32.i686.rpm",
-				"sum": "d16b66e350eb6afec08630679f894835858ac8b0f97d457012edbad925bae675",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "rubygem-psych",
-				"epoch": "0",
-				"version": "3.1.0",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "i686",
-				"filename": "rubygem-psych-3.1.0-108.module_el8.5.0+2623+08a8ba32.i686.rpm",
-				"sum": "d3955c69d7863dd2b12d45fb847e14ed093c9bab24594d59262c4852c3cb42e7",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "ruby-libs",
-				"epoch": "0",
-				"version": "2.6.9",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "x86_64",
-				"filename": "ruby-libs-2.6.9-108.module_el8.5.0+2623+08a8ba32.x86_64.rpm",
-				"sum": "edef358c13bf48d68391f920e6744664f3057d87170b42956f646d554703caf5",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
-				"name": "ruby-libs",
-				"epoch": "0",
-				"version": "2.6.9",
-				"release": "108.module_el8.5.0+2623+08a8ba32",
-				"arch": "i686",
-				"filename": "ruby-libs-2.6.9-108.module_el8.5.0+2623+08a8ba32.i686.rpm",
-				"sum": "f2c23cd845198d2fc55a82e9a44fc68556faead45aa39b1aa68fcf94882fb88e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rubygem-abrt-0.3.0-4.module_el8.5.0+259+8cec6917.src.rpm",
-				"name": "rubygem-abrt-doc",
-				"epoch": "0",
-				"version": "0.3.0",
-				"release": "4.module_el8.5.0+259+8cec6917",
-				"arch": "noarch",
-				"filename": "rubygem-abrt-doc-0.3.0-4.module_el8.5.0+259+8cec6917.noarch.rpm",
-				"sum": "085e4c052f70e2dd1f91aa3776bdd0e33ded15a62b2a29308b537683a52e1d4e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+250+ba22dbf7.src.rpm",
-				"name": "rubygem-openssl",
-				"epoch": "0",
-				"version": "2.1.2",
-				"release": "108.module_el8.5.0+250+ba22dbf7",
-				"arch": "ppc64le",
-				"filename": "rubygem-openssl-2.1.2-108.module_el8.5.0+250+ba22dbf7.ppc64le.rpm",
-				"sum": "2937892ef967557cefc0940ecee2158a7a6eae0ea68fd8b4e52a0200934a318b",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+250+ba22dbf7.src.rpm",
-				"name": "rubygems",
-				"epoch": "0",
-				"version": "3.0.3.1",
-				"release": "108.module_el8.5.0+250+ba22dbf7",
-				"arch": "noarch",
-				"filename": "rubygems-3.0.3.1-108.module_el8.5.0+250+ba22dbf7.noarch.rpm",
-				"sum": "314aa2f44e0db4f34255f205ffa6fdd094a49275c56537cea8f8a6d299c744c9",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rubygem-mongo-2.8.0-1.module_el8.5.0+250+ba22dbf7.src.rpm",
-				"name": "rubygem-mongo",
-				"epoch": "0",
-				"version": "2.8.0",
-				"release": "1.module_el8.5.0+250+ba22dbf7",
-				"arch": "noarch",
-				"filename": "rubygem-mongo-2.8.0-1.module_el8.5.0+250+ba22dbf7.noarch.rpm",
-				"sum": "433dd9fda76a345b4eb486de474ffca16e0037f799004008bad4fa1b7dfc332c",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+250+ba22dbf7.src.rpm",
-				"name": "ruby",
-				"epoch": "0",
-				"version": "2.6.9",
-				"release": "108.module_el8.5.0+250+ba22dbf7",
-				"arch": "ppc64le",
-				"filename": "ruby-2.6.9-108.module_el8.5.0+250+ba22dbf7.ppc64le.rpm",
-				"sum": "43ed53e2d21cadf7868acd452a27d3b352663c731c8d929d5c544b8960aae8ce",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rubygem-mysql2-0.5.2-1.module_el8.5.0+250+ba22dbf7.src.rpm",
-				"name": "rubygem-mysql2",
-				"epoch": "0",
-				"version": "0.5.2",
-				"release": "1.module_el8.5.0+250+ba22dbf7",
-				"arch": "ppc64le",
-				"filename": "rubygem-mysql2-0.5.2-1.module_el8.5.0+250+ba22dbf7.ppc64le.rpm",
-				"sum": "55d3adecab07d905c426b31beb3c655e73d532edffb5346d7f0f5625d27a34f1",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+250+ba22dbf7.src.rpm",
-				"name": "rubygem-net-telnet",
-				"epoch": "0",
-				"version": "0.2.0",
-				"release": "108.module_el8.5.0+250+ba22dbf7",
-				"arch": "noarch",
-				"filename": "rubygem-net-telnet-0.2.0-108.module_el8.5.0+250+ba22dbf7.noarch.rpm",
-				"sum": "61a763f3f46105859872b3921d7eb74d12b87f2c77fc6b803246290e079cd165",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "rubygem-pg-1.1.4-1.module_el8.5.0+250+ba22dbf7.src.rpm",
-				"name": "rubygem-pg",
-				"epoch": "0",
-				"version": "1.1.4",
-				"release": "1.module_el8.5.0+250+ba22dbf7",
-				"arch": "ppc64le",
-				"filename": "rubygem-pg-1.1.4-1.module_el8.5.0+250+ba22dbf7.ppc64le.rpm",
-				"sum": "6841f462b2f531d5ba69e4dcef020bb0f677ee8ec5ef27b0d1f723af9dcf3375",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "ruby-2.6.9-108.module_el8.5.0+250+ba22dbf7.src.rpm",
-				"name": "rubygem-rdoc",
-				"epoch": "0",
-				"version": "6.1.2.1",
-				"release": "108.module_el8.5.0+250+ba22dbf7",
-				"arch": "noarch",
-				"filename": "rubygem-rdoc-6.1.2.1-108.module_el8.5.0+250+ba22dbf7.noarch.rpm",
-				"sum": "697f9c7b6f3e8caf536152ccbb2122a3a31c50d6c16834548cc6b38834ffc547",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -818,6 +482,30 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "rubygem-abrt-0.3.0-4.module_el8.5.0+2625+ec418553.src.rpm",
+				"name": "rubygem-abrt-doc",
+				"epoch": "0",
+				"version": "0.3.0",
+				"release": "4.module_el8.5.0+2625+ec418553",
+				"arch": "noarch",
+				"filename": "rubygem-abrt-doc-0.3.0-4.module_el8.5.0+2625+ec418553.noarch.rpm",
+				"sum": "8604fec34b7f851c63344f64e4510c4923f56bf9d3cdf0aba2aae1608f26c804",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-json",
+				"epoch": "0",
+				"version": "2.1.0",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "i686",
+				"filename": "rubygem-json-2.1.0-108.module_el8.5.0+2623+08a8ba32.i686.rpm",
+				"sum": "8779dff736ead776263b00a59cca43d44f339303418aac6548f29253da794057",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "ruby-2.6.9-108.module_el8.5.0+250+ba22dbf7.src.rpm",
 				"name": "rubygems-devel",
 				"epoch": "0",
@@ -826,6 +514,18 @@
 				"arch": "noarch",
 				"filename": "rubygems-devel-3.0.3.1-108.module_el8.5.0+250+ba22dbf7.noarch.rpm",
 				"sum": "95078a4f2633f2e24d06557c6dbc8e5e7e6dbab858acd473113136e942c14abd",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-psych",
+				"epoch": "0",
+				"version": "3.1.0",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "aarch64",
+				"filename": "rubygem-psych-3.1.0-108.module_el8.5.0+2623+08a8ba32.aarch64.rpm",
+				"sum": "98ccc073f663ee830a1edf3a70cfbb4eee36937e8385efcf41a805f889cac241",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -854,6 +554,30 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-json",
+				"epoch": "0",
+				"version": "2.1.0",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "x86_64",
+				"filename": "rubygem-json-2.1.0-108.module_el8.5.0+2623+08a8ba32.x86_64.rpm",
+				"sum": "9c5084e88396a94b7b000a3bbcc7cbcbe6299ca2b9a8dcae80a68f524fb22488",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rubygem-mongo-2.8.0-1.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-mongo",
+				"epoch": "0",
+				"version": "2.8.0",
+				"release": "1.module_el8.5.0+2623+08a8ba32",
+				"arch": "noarch",
+				"filename": "rubygem-mongo-2.8.0-1.module_el8.5.0+2623+08a8ba32.noarch.rpm",
+				"sum": "9d49b3317759fd5df4e32b1b80406ed2514ba74c05d43095d3959732219c3b4a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "rubygem-mongo-2.8.0-1.module_el8.5.0+250+ba22dbf7.src.rpm",
 				"name": "rubygem-mongo-doc",
 				"epoch": "0",
@@ -862,6 +586,30 @@
 				"arch": "noarch",
 				"filename": "rubygem-mongo-doc-2.8.0-1.module_el8.5.0+250+ba22dbf7.noarch.rpm",
 				"sum": "a2e36c09895830c67445dcc3c7688b2dd856e598e1975948f8a93a940f1bd729",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygems",
+				"epoch": "0",
+				"version": "3.0.3.1",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "noarch",
+				"filename": "rubygems-3.0.3.1-108.module_el8.5.0+2623+08a8ba32.noarch.rpm",
+				"sum": "a4d27e9aab24ab9750ab62f351a1f0935caa2f9165482121ddadfb1dcf3c35de",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "ruby",
+				"epoch": "0",
+				"version": "2.6.9",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "i686",
+				"filename": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.i686.rpm",
+				"sum": "a609a46cb8e7fdcb337ec091e8b571466ae86edc3afa06459616dac750128db7",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -914,6 +662,42 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-io-console",
+				"epoch": "0",
+				"version": "0.4.7",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "x86_64",
+				"filename": "rubygem-io-console-0.4.7-108.module_el8.5.0+2623+08a8ba32.x86_64.rpm",
+				"sum": "b5fc706b62b30eef3aaac1d27d19cd3cb65f304a8c243b44aa8011d30475fb60",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rubygem-pg-1.1.4-1.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-pg",
+				"epoch": "0",
+				"version": "1.1.4",
+				"release": "1.module_el8.5.0+2623+08a8ba32",
+				"arch": "aarch64",
+				"filename": "rubygem-pg-1.1.4-1.module_el8.5.0+2623+08a8ba32.aarch64.rpm",
+				"sum": "bb25c46f97e39acd6603d7b6ec0ef7cca8b67c4c39652254cb1eab584300497e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rubygem-pg-1.1.4-1.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-pg-doc",
+				"epoch": "0",
+				"version": "1.1.4",
+				"release": "1.module_el8.5.0+2623+08a8ba32",
+				"arch": "noarch",
+				"filename": "rubygem-pg-doc-1.1.4-1.module_el8.5.0+2623+08a8ba32.noarch.rpm",
+				"sum": "bda3a25e4281b2ce99d2ecc0e8ad3db88ad3e6a52d6e63747cf24fc6704873d9",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "ruby-2.6.9-108.module_el8.5.0+250+ba22dbf7.src.rpm",
 				"name": "rubygem-did_you_mean",
 				"epoch": "0",
@@ -938,6 +722,30 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-openssl",
+				"epoch": "0",
+				"version": "2.1.2",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "x86_64",
+				"filename": "rubygem-openssl-2.1.2-108.module_el8.5.0+2623+08a8ba32.x86_64.rpm",
+				"sum": "c118f3807c31e5afc3149b35a3e04ef535e083ed5b3d8f19d39fc0e696af55f4",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "ruby",
+				"epoch": "0",
+				"version": "2.6.9",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "x86_64",
+				"filename": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.x86_64.rpm",
+				"sum": "c2e7f36bb1376d7141259604c04ac655a3331436b9862bae488ec2bb62094f2b",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "ruby-2.6.9-108.module_el8.5.0+250+ba22dbf7.src.rpm",
 				"name": "ruby-libs",
 				"epoch": "0",
@@ -950,6 +758,30 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-xmlrpc",
+				"epoch": "0",
+				"version": "0.3.0",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "noarch",
+				"filename": "rubygem-xmlrpc-0.3.0-108.module_el8.5.0+2623+08a8ba32.noarch.rpm",
+				"sum": "caec7adcfa46d76519cafc6a5b6b0815a038af3a899c68c66f09600e1dcb78b4",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rubygem-mysql2-0.5.2-1.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-mysql2-doc",
+				"epoch": "0",
+				"version": "0.5.2",
+				"release": "1.module_el8.5.0+2623+08a8ba32",
+				"arch": "noarch",
+				"filename": "rubygem-mysql2-doc-0.5.2-1.module_el8.5.0+2623+08a8ba32.noarch.rpm",
+				"sum": "ccceba910635f667b0f6eb1de6693ae636aa3c2e1c8f70f0ba2302d3a04042a7",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "rubygem-pg-1.1.4-1.module_el8.5.0+250+ba22dbf7.src.rpm",
 				"name": "rubygem-pg-doc",
 				"epoch": "0",
@@ -958,6 +790,30 @@
 				"arch": "noarch",
 				"filename": "rubygem-pg-doc-1.1.4-1.module_el8.5.0+250+ba22dbf7.noarch.rpm",
 				"sum": "d0b07adad2015780bc46a5015b3a26d4cd94f98c023fa932a80aca34c663da56",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-openssl",
+				"epoch": "0",
+				"version": "2.1.2",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "i686",
+				"filename": "rubygem-openssl-2.1.2-108.module_el8.5.0+2623+08a8ba32.i686.rpm",
+				"sum": "d16b66e350eb6afec08630679f894835858ac8b0f97d457012edbad925bae675",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-psych",
+				"epoch": "0",
+				"version": "3.1.0",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "i686",
+				"filename": "rubygem-psych-3.1.0-108.module_el8.5.0+2623+08a8ba32.i686.rpm",
+				"sum": "d3955c69d7863dd2b12d45fb847e14ed093c9bab24594d59262c4852c3cb42e7",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -986,6 +842,30 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "ruby",
+				"epoch": "0",
+				"version": "2.6.9",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "aarch64",
+				"filename": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.aarch64.rpm",
+				"sum": "e12964e7a26e4bf2ff70d234fa231f11c91d86e6e50d4103d9641a73951655b2",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rubygem-abrt-0.3.0-4.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-abrt",
+				"epoch": "0",
+				"version": "0.3.0",
+				"release": "4.module_el8.5.0+2623+08a8ba32",
+				"arch": "noarch",
+				"filename": "rubygem-abrt-0.3.0-4.module_el8.5.0+2623+08a8ba32.noarch.rpm",
+				"sum": "e2f75dad83962fbcf5fed5d19cec8da6e0526039475f81f395e239aad0aea460",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "ruby-2.6.9-108.module_el8.5.0+250+ba22dbf7.src.rpm",
 				"name": "rubygem-minitest",
 				"epoch": "0",
@@ -994,6 +874,30 @@
 				"arch": "noarch",
 				"filename": "rubygem-minitest-5.11.3-108.module_el8.5.0+250+ba22dbf7.noarch.rpm",
 				"sum": "e87920bf78ff942d1cee1f948625085b7464a6f690b89de894a20b926f0ac1b7",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rubygem-mysql2-0.5.2-1.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-mysql2",
+				"epoch": "0",
+				"version": "0.5.2",
+				"release": "1.module_el8.5.0+2623+08a8ba32",
+				"arch": "aarch64",
+				"filename": "rubygem-mysql2-0.5.2-1.module_el8.5.0+2623+08a8ba32.aarch64.rpm",
+				"sum": "ed66f8a584bad694bfb6620ee9f8e3c47dc20d25973566970f90434b7310b199",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "ruby-libs",
+				"epoch": "0",
+				"version": "2.6.9",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "x86_64",
+				"filename": "ruby-libs-2.6.9-108.module_el8.5.0+2623+08a8ba32.x86_64.rpm",
+				"sum": "edef358c13bf48d68391f920e6744664f3057d87170b42956f646d554703caf5",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -1008,17 +912,107 @@
 				"sum": "f0958435ed80778446654ad5878d48351e65e1a393bb09d48dd84f484b733626",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-rdoc",
+				"epoch": "0",
+				"version": "6.1.2.1",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "noarch",
+				"filename": "rubygem-rdoc-6.1.2.1-108.module_el8.5.0+2623+08a8ba32.noarch.rpm",
+				"sum": "f22a10929589fef4d017e33ffbb80ff372e38957293d5aa6e2a17056408a916e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-minitest",
+				"epoch": "0",
+				"version": "5.11.3",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "noarch",
+				"filename": "rubygem-minitest-5.11.3-108.module_el8.5.0+2623+08a8ba32.noarch.rpm",
+				"sum": "f29d2046f66d9bfeadee6fcd373fe5049b3c22b6e614eab8855c0fcc745ea555",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "ruby-doc",
+				"epoch": "0",
+				"version": "2.6.9",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "noarch",
+				"filename": "ruby-doc-2.6.9-108.module_el8.5.0+2623+08a8ba32.noarch.rpm",
+				"sum": "f2b47c33e2b524a498048699cf9257cb9e857b11f0dbffb76a66a714f132566e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "ruby-libs",
+				"epoch": "0",
+				"version": "2.6.9",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "i686",
+				"filename": "ruby-libs-2.6.9-108.module_el8.5.0+2623+08a8ba32.i686.rpm",
+				"sum": "f2c23cd845198d2fc55a82e9a44fc68556faead45aa39b1aa68fcf94882fb88e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-bigdecimal",
+				"epoch": "0",
+				"version": "1.4.1",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "aarch64",
+				"filename": "rubygem-bigdecimal-1.4.1-108.module_el8.5.0+2623+08a8ba32.aarch64.rpm",
+				"sum": "fa4812c103078b1194cf7dba1aaa2a49bf945c78b765e9d4cb5b533b032c3bb9",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ruby-2.6.9-108.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-power_assert",
+				"epoch": "0",
+				"version": "1.1.3",
+				"release": "108.module_el8.5.0+2623+08a8ba32",
+				"arch": "noarch",
+				"filename": "rubygem-power_assert-1.1.3-108.module_el8.5.0+2623+08a8ba32.noarch.rpm",
+				"sum": "fb9631c3e89fbdfbb36fdd971a5a5b68b723f917bb83f84e24a88037a3593901",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rubygem-bson-4.5.0-1.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-bson-doc",
+				"epoch": "0",
+				"version": "4.5.0",
+				"release": "1.module_el8.5.0+2623+08a8ba32",
+				"arch": "noarch",
+				"filename": "rubygem-bson-doc-4.5.0-1.module_el8.5.0+2623+08a8ba32.noarch.rpm",
+				"sum": "fc2d9da1582f72acf5422d14d9650399c79a1f78407ff343046e683bbfb6ff82",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "rubygem-mongo-2.8.0-1.module_el8.5.0+2623+08a8ba32.src.rpm",
+				"name": "rubygem-mongo-doc",
+				"epoch": "0",
+				"version": "2.8.0",
+				"release": "1.module_el8.5.0+2623+08a8ba32",
+				"arch": "noarch",
+				"filename": "rubygem-mongo-doc-2.8.0-1.module_el8.5.0+2623+08a8ba32.noarch.rpm",
+				"sum": "fd4ce6a2358fea0d79d483e22d32541ce1c8c3cd0f8d7118ea07b44d21680cbf",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "Ruby is an extensible, interpreted, object-oriented, scripting language. It has features to process text files and to perform system management tasks.\n\nSecurity Fix(es):\n\n* rubygem-bundler: Dependencies of gems with explicit source may be installed from a different source (CVE-2020-36327)\n\n* rubygem-rdoc: Command injection vulnerability in RDoc (CVE-2021-31799)\n\n* ruby: FTP PASV command response can cause Net::FTP to connect to arbitrary host (CVE-2021-31810)\n\n* ruby: StartTLS stripping vulnerability in Net::IMAP (CVE-2021-32066)\n\n* ruby: Regular expression denial of service vulnerability of Date parsing methods (CVE-2021-41817)\n\n* ruby: Cookie prefix spoofing in CGI::Cookie.parse (CVE-2021-41819)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
-		{
-			"id": "ALSA-2022-0543",
-			"title": "ALSA-2022-0543",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2022-0543.html"
-		},
 		{
 			"id": "CVE-2020-36327",
 			"title": "CVE-2020-36327",
@@ -1054,12 +1048,18 @@
 			"title": "CVE-2021-41819",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2021-41819"
+		},
+		{
+			"id": "ALSA-2022-0543",
+			"title": "ALSA-2022-0543",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-0543.html"
 		}
 	],
 	"issued_date": {
 		"$date": 1644999973000
 	},
 	"updated_date": {
-		"$date": 1644999973000
+		"$date": 1645096241000
 	}
 }

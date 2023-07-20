@@ -14,18 +14,6 @@
 		"shortname": "almalinux-8-for-i686-appstream-rpms__8_6_default",
 		"packages": [
 			{
-				"src": "ldapjdk-4.23.0-1.module_el8.6.0+2764+9fc58d50.src.rpm",
-				"name": "ldapjdk-javadoc",
-				"epoch": "0",
-				"version": "4.23.0",
-				"release": "1.module_el8.6.0+2764+9fc58d50",
-				"arch": "noarch",
-				"filename": "ldapjdk-javadoc-4.23.0-1.module_el8.6.0+2764+9fc58d50.noarch.rpm",
-				"sum": "b4030199c1a4c1938cb4ed30307c7bbdc1e3c31b97d79972d5bf7a9e01f5b8a2",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
 				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
 				"name": "idm-pki-tools",
 				"epoch": "0",
@@ -34,6 +22,18 @@
 				"arch": "aarch64",
 				"filename": "idm-pki-tools-10.12.0-4.module_el8.7.0+3316+50b99934.aarch64.rpm",
 				"sum": "01787cf65ea0a00f45a33fd42b1deefabb37fa211a8f346f33f392a73371523e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
+				"name": "idm-pki-symkey",
+				"epoch": "0",
+				"version": "10.12.0",
+				"release": "4.module_el8.7.0+3316+50b99934",
+				"arch": "x86_64",
+				"filename": "idm-pki-symkey-10.12.0-4.module_el8.7.0+3316+50b99934.x86_64.rpm",
+				"sum": "09a12d5a37384e0ebba4881369ee8d79e0f1c0a1e6bb33518aa2723b1408676f",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -63,102 +63,6 @@
 			},
 			{
 				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
-				"name": "idm-pki-base",
-				"epoch": "0",
-				"version": "10.12.0",
-				"release": "4.module_el8.7.0+3316+50b99934",
-				"arch": "noarch",
-				"filename": "idm-pki-base-10.12.0-4.module_el8.7.0+3316+50b99934.noarch.rpm",
-				"sum": "9e664fa2ed100d4eb3767487a943b6c2918f995a0e1b57058aac336b571390a2",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
-				"name": "idm-pki-acme",
-				"epoch": "0",
-				"version": "10.12.0",
-				"release": "4.module_el8.7.0+3316+50b99934",
-				"arch": "noarch",
-				"filename": "idm-pki-acme-10.12.0-4.module_el8.7.0+3316+50b99934.noarch.rpm",
-				"sum": "a6b98c62b3a56cc5d85d908ac88b2c798978b1420a418ed41dea36ccd46d6ce7",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
-				"name": "idm-pki-symkey",
-				"epoch": "0",
-				"version": "10.12.0",
-				"release": "4.module_el8.7.0+3316+50b99934",
-				"arch": "aarch64",
-				"filename": "idm-pki-symkey-10.12.0-4.module_el8.7.0+3316+50b99934.aarch64.rpm",
-				"sum": "e4794fc0f9e3776168bbd82361c60e53b3465aa8b790ab528d728aed9b0f43a7",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
-				"name": "idm-pki-server",
-				"epoch": "0",
-				"version": "10.12.0",
-				"release": "4.module_el8.7.0+3316+50b99934",
-				"arch": "noarch",
-				"filename": "idm-pki-server-10.12.0-4.module_el8.7.0+3316+50b99934.noarch.rpm",
-				"sum": "e992bc539342b866b92f76af88ccc0f8301747ffe82ea61d6ddbb1923984a168",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
-				"name": "idm-pki-kra",
-				"epoch": "0",
-				"version": "10.12.0",
-				"release": "4.module_el8.7.0+3316+50b99934",
-				"arch": "noarch",
-				"filename": "idm-pki-kra-10.12.0-4.module_el8.7.0+3316+50b99934.noarch.rpm",
-				"sum": "fb7b07dd270c084122bbec35f1af3c87c588e3d66e5fbc4816d13319be441fc6",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
-				"name": "idm-pki-base-java",
-				"epoch": "0",
-				"version": "10.12.0",
-				"release": "4.module_el8.7.0+3316+50b99934",
-				"arch": "noarch",
-				"filename": "idm-pki-base-java-10.12.0-4.module_el8.7.0+3316+50b99934.noarch.rpm",
-				"sum": "fbaa0a93d8800a932e914c797eae53aba3f00fdf088a22b2b0e93fede76d7289",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
-				"name": "idm-pki-symkey",
-				"epoch": "0",
-				"version": "10.12.0",
-				"release": "4.module_el8.7.0+3316+50b99934",
-				"arch": "x86_64",
-				"filename": "idm-pki-symkey-10.12.0-4.module_el8.7.0+3316+50b99934.x86_64.rpm",
-				"sum": "09a12d5a37384e0ebba4881369ee8d79e0f1c0a1e6bb33518aa2723b1408676f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
-				"name": "idm-pki-tools",
-				"epoch": "0",
-				"version": "10.12.0",
-				"release": "4.module_el8.7.0+3316+50b99934",
-				"arch": "x86_64",
-				"filename": "idm-pki-tools-10.12.0-4.module_el8.7.0+3316+50b99934.x86_64.rpm",
-				"sum": "f55a6108567876287c22a5cd38a306c5af14ebc2a9ab84c5e7bf3e8004180742",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
 				"name": "idm-pki-tools",
 				"epoch": "0",
 				"version": "10.12.0",
@@ -166,18 +70,6 @@
 				"arch": "s390x",
 				"filename": "idm-pki-tools-10.12.0-4.module_el8.7.0+3316+50b99934.s390x.rpm",
 				"sum": "473b80ea988a01032df59130848f8c20574988beb2b52504b2b904cc7cee0764",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
-				"name": "idm-pki-symkey",
-				"epoch": "0",
-				"version": "10.12.0",
-				"release": "4.module_el8.7.0+3316+50b99934",
-				"arch": "s390x",
-				"filename": "idm-pki-symkey-10.12.0-4.module_el8.7.0+3316+50b99934.s390x.rpm",
-				"sum": "e57761bca39e33164771515b2c142918907d6f291ac9fb6e9dae88968a7a6159",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -204,16 +96,124 @@
 				"sum": "8b592c582f35eec112c2b069f7e8b8c679b80284c99a211e89aa7a4d82438952",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
+				"name": "idm-pki-base",
+				"epoch": "0",
+				"version": "10.12.0",
+				"release": "4.module_el8.7.0+3316+50b99934",
+				"arch": "noarch",
+				"filename": "idm-pki-base-10.12.0-4.module_el8.7.0+3316+50b99934.noarch.rpm",
+				"sum": "9e664fa2ed100d4eb3767487a943b6c2918f995a0e1b57058aac336b571390a2",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
+				"name": "idm-pki-acme",
+				"epoch": "0",
+				"version": "10.12.0",
+				"release": "4.module_el8.7.0+3316+50b99934",
+				"arch": "noarch",
+				"filename": "idm-pki-acme-10.12.0-4.module_el8.7.0+3316+50b99934.noarch.rpm",
+				"sum": "a6b98c62b3a56cc5d85d908ac88b2c798978b1420a418ed41dea36ccd46d6ce7",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "ldapjdk-4.23.0-1.module_el8.6.0+2764+9fc58d50.src.rpm",
+				"name": "ldapjdk-javadoc",
+				"epoch": "0",
+				"version": "4.23.0",
+				"release": "1.module_el8.6.0+2764+9fc58d50",
+				"arch": "noarch",
+				"filename": "ldapjdk-javadoc-4.23.0-1.module_el8.6.0+2764+9fc58d50.noarch.rpm",
+				"sum": "b4030199c1a4c1938cb4ed30307c7bbdc1e3c31b97d79972d5bf7a9e01f5b8a2",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
+				"name": "idm-pki-symkey",
+				"epoch": "0",
+				"version": "10.12.0",
+				"release": "4.module_el8.7.0+3316+50b99934",
+				"arch": "aarch64",
+				"filename": "idm-pki-symkey-10.12.0-4.module_el8.7.0+3316+50b99934.aarch64.rpm",
+				"sum": "e4794fc0f9e3776168bbd82361c60e53b3465aa8b790ab528d728aed9b0f43a7",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
+				"name": "idm-pki-symkey",
+				"epoch": "0",
+				"version": "10.12.0",
+				"release": "4.module_el8.7.0+3316+50b99934",
+				"arch": "s390x",
+				"filename": "idm-pki-symkey-10.12.0-4.module_el8.7.0+3316+50b99934.s390x.rpm",
+				"sum": "e57761bca39e33164771515b2c142918907d6f291ac9fb6e9dae88968a7a6159",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
+				"name": "idm-pki-server",
+				"epoch": "0",
+				"version": "10.12.0",
+				"release": "4.module_el8.7.0+3316+50b99934",
+				"arch": "noarch",
+				"filename": "idm-pki-server-10.12.0-4.module_el8.7.0+3316+50b99934.noarch.rpm",
+				"sum": "e992bc539342b866b92f76af88ccc0f8301747ffe82ea61d6ddbb1923984a168",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
+				"name": "idm-pki-tools",
+				"epoch": "0",
+				"version": "10.12.0",
+				"release": "4.module_el8.7.0+3316+50b99934",
+				"arch": "x86_64",
+				"filename": "idm-pki-tools-10.12.0-4.module_el8.7.0+3316+50b99934.x86_64.rpm",
+				"sum": "f55a6108567876287c22a5cd38a306c5af14ebc2a9ab84c5e7bf3e8004180742",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
+				"name": "idm-pki-kra",
+				"epoch": "0",
+				"version": "10.12.0",
+				"release": "4.module_el8.7.0+3316+50b99934",
+				"arch": "noarch",
+				"filename": "idm-pki-kra-10.12.0-4.module_el8.7.0+3316+50b99934.noarch.rpm",
+				"sum": "fb7b07dd270c084122bbec35f1af3c87c588e3d66e5fbc4816d13319be441fc6",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pki-core-10.12.0-4.module_el8.7.0+3316+50b99934.src.rpm",
+				"name": "idm-pki-base-java",
+				"epoch": "0",
+				"version": "10.12.0",
+				"release": "4.module_el8.7.0+3316+50b99934",
+				"arch": "noarch",
+				"filename": "idm-pki-base-java-10.12.0-4.module_el8.7.0+3316+50b99934.noarch.rpm",
+				"sum": "fbaa0a93d8800a932e914c797eae53aba3f00fdf088a22b2b0e93fede76d7289",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "The Public Key Infrastructure (PKI) Core contains fundamental packages required by AlmaLinux Certificate System.\n\nSecurity Fix(es):\n\n* pki-core: access to external entities when parsing XML can lead to XXE (CVE-2022-2414)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:7470",
-			"title": "RHSA-2022:7470",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:7470"
+			"id": "2104676",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2104676"
 		},
 		{
 			"id": "CVE-2022-2414",
@@ -222,10 +222,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-2414"
 		},
 		{
-			"id": "2104676",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2104676"
+			"id": "RHSA-2022:7470",
+			"title": "RHSA-2022:7470",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:7470"
 		},
 		{
 			"id": "ALSA-2022:7470",

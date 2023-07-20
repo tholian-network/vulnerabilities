@@ -10,8 +10,8 @@
 	"summary": "An update for the mod_auth_openidc:2.3 module is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "6",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_mod_auth_openidc",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_mod_auth_openidc",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_mod_auth_openidc",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_mod_auth_openidc",
 		"packages": [
 			{
 				"src": "cjose-0.6.1-2.module_el8.6.0+2868+44838709.src.rpm",
@@ -31,33 +31,9 @@
 				"epoch": "0",
 				"version": "0.6.1",
 				"release": "2.module_el8.6.0+2868+44838709",
-				"arch": "aarch64",
-				"filename": "cjose-0.6.1-2.module_el8.6.0+2868+44838709.aarch64.rpm",
-				"sum": "9b45898281812647cf6f74810e7482902428b27da6aa67a8c18643b93066fd18",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "cjose-0.6.1-2.module_el8.6.0+2868+44838709.src.rpm",
-				"name": "cjose",
-				"epoch": "0",
-				"version": "0.6.1",
-				"release": "2.module_el8.6.0+2868+44838709",
 				"arch": "x86_64",
 				"filename": "cjose-0.6.1-2.module_el8.6.0+2868+44838709.x86_64.rpm",
 				"sum": "455d8b76e53798d4f7bffc9a2ac9b1431087d6e9e45c11bcabdca784053809c9",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "cjose-0.6.1-2.module_el8.6.0+2868+44838709.src.rpm",
-				"name": "cjose-devel",
-				"epoch": "0",
-				"version": "0.6.1",
-				"release": "2.module_el8.6.0+2868+44838709",
-				"arch": "x86_64",
-				"filename": "cjose-devel-0.6.1-2.module_el8.6.0+2868+44838709.x86_64.rpm",
-				"sum": "6d5860007d189cf452f0cd7f520154480c2e65ac40ca5333636efb2c68135bea",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -79,9 +55,33 @@
 				"epoch": "0",
 				"version": "0.6.1",
 				"release": "2.module_el8.6.0+2868+44838709",
+				"arch": "x86_64",
+				"filename": "cjose-devel-0.6.1-2.module_el8.6.0+2868+44838709.x86_64.rpm",
+				"sum": "6d5860007d189cf452f0cd7f520154480c2e65ac40ca5333636efb2c68135bea",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "cjose-0.6.1-2.module_el8.6.0+2868+44838709.src.rpm",
+				"name": "cjose-devel",
+				"epoch": "0",
+				"version": "0.6.1",
+				"release": "2.module_el8.6.0+2868+44838709",
 				"arch": "ppc64le",
 				"filename": "cjose-devel-0.6.1-2.module_el8.6.0+2868+44838709.ppc64le.rpm",
 				"sum": "83b16fcde70e30fb06e00e472b418dbc8d18ffbb2d31e590d1193adf7e18ff23",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "cjose-0.6.1-2.module_el8.6.0+2868+44838709.src.rpm",
+				"name": "cjose",
+				"epoch": "0",
+				"version": "0.6.1",
+				"release": "2.module_el8.6.0+2868+44838709",
+				"arch": "aarch64",
+				"filename": "cjose-0.6.1-2.module_el8.6.0+2868+44838709.aarch64.rpm",
+				"sum": "9b45898281812647cf6f74810e7482902428b27da6aa67a8c18643b93066fd18",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -89,12 +89,6 @@
 	},
 	"description": "The mod_auth_openidc is an OpenID Connect authentication module for Apache HTTP Server. It enables an Apache HTTP Server to operate as an OpenID Connect Relying Party and/or OAuth 2.0 Resource Server. \n\nSecurity Fix(es):\n\n* mod_auth_openidc: Open redirect in logout url when using URLs with leading slashes (CVE-2019-14857)\n\n* mod_auth_openidc: Open redirect issue exists in URLs with slash and backslash (CVE-2019-20479)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nBug Fix(es):\n\n* Module stream mod_auth_openidc:2.3 does not have correct module.md file (BZ#1844107)",
 	"references": [
-		{
-			"id": "ALSA-2020-3032",
-			"title": "ALSA-2020-3032",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2020-3032.html"
-		},
 		{
 			"id": "CVE-2019-14857",
 			"title": "CVE-2019-14857",
@@ -106,6 +100,12 @@
 			"title": "CVE-2019-20479",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2019-20479"
+		},
+		{
+			"id": "ALSA-2020-3032",
+			"title": "ALSA-2020-3032",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2020-3032.html"
 		}
 	],
 	"issued_date": {

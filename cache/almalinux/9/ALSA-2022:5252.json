@@ -10,9 +10,57 @@
 	"summary": "An update for bsdtar is now available for AlmaLinux 9.",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_default",
 		"packages": [
+			{
+				"src": "libarchive-3.5.3-2.el9_0.src.rpm",
+				"name": "libarchive-devel",
+				"epoch": "0",
+				"version": "3.5.3",
+				"release": "2.el9_0",
+				"arch": "ppc64le",
+				"filename": "libarchive-devel-3.5.3-2.el9_0.ppc64le.rpm",
+				"sum": "014a2db1037b53c695e7c91b05e3f652a834d9ea545c1ca46bc7e676a67da327",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libarchive-3.5.3-2.el9_0.src.rpm",
+				"name": "libarchive",
+				"epoch": "0",
+				"version": "3.5.3",
+				"release": "2.el9_0",
+				"arch": "x86_64",
+				"filename": "libarchive-3.5.3-2.el9_0.x86_64.rpm",
+				"sum": "035f3b90a81b61d846914a6953804d32e09f0c6c3b2978f783c964c0cfe2c164",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libarchive-3.5.3-2.el9_0.src.rpm",
+				"name": "bsdtar",
+				"epoch": "0",
+				"version": "3.5.3",
+				"release": "2.el9_0",
+				"arch": "x86_64",
+				"filename": "bsdtar-3.5.3-2.el9_0.x86_64.rpm",
+				"sum": "042bd93df93412ecaf7c6b59137e7ab45db3f03987046b74f8da2b5375015a9b",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libarchive-3.5.3-2.el9_0.src.rpm",
+				"name": "libarchive",
+				"epoch": "0",
+				"version": "3.5.3",
+				"release": "2.el9_0",
+				"arch": "i686",
+				"filename": "libarchive-3.5.3-2.el9_0.i686.rpm",
+				"sum": "0e092bde47271bc548721c5f6ee2ac7626ba4c29c460d7281b29b32e4c8b4797",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "libarchive-3.5.3-2.el9_0.src.rpm",
 				"name": "libarchive",
@@ -43,9 +91,33 @@
 				"epoch": "0",
 				"version": "3.5.3",
 				"release": "2.el9_0",
-				"arch": "aarch64",
-				"filename": "libarchive-devel-3.5.3-2.el9_0.aarch64.rpm",
-				"sum": "f1df8b4c8417ba417697bb6b9c4f8a33753d157a95ab2dd613d568bf8c689bb0",
+				"arch": "i686",
+				"filename": "libarchive-devel-3.5.3-2.el9_0.i686.rpm",
+				"sum": "33d1567208bd84d8697507947591691b0ab6ae6761160c181847d1c67e5ea845",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libarchive-3.5.3-2.el9_0.src.rpm",
+				"name": "libarchive-devel",
+				"epoch": "0",
+				"version": "3.5.3",
+				"release": "2.el9_0",
+				"arch": "x86_64",
+				"filename": "libarchive-devel-3.5.3-2.el9_0.x86_64.rpm",
+				"sum": "62d30b0fc078e27e530e051a08cf75a297905e7c495d733de96192fd15dbfb63",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libarchive-3.5.3-2.el9_0.src.rpm",
+				"name": "libarchive",
+				"epoch": "0",
+				"version": "3.5.3",
+				"release": "2.el9_0",
+				"arch": "ppc64le",
+				"filename": "libarchive-3.5.3-2.el9_0.ppc64le.rpm",
+				"sum": "763959ef8d263ab5857c84e5255efdb0f343378f7a39310cf46606963e674184",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -75,6 +147,18 @@
 			},
 			{
 				"src": "libarchive-3.5.3-2.el9_0.src.rpm",
+				"name": "bsdtar",
+				"epoch": "0",
+				"version": "3.5.3",
+				"release": "2.el9_0",
+				"arch": "ppc64le",
+				"filename": "bsdtar-3.5.3-2.el9_0.ppc64le.rpm",
+				"sum": "b36034c64c30f92db3e52e0e38f7171ed6ac0090a0d2e03322c6fd702729dc42",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libarchive-3.5.3-2.el9_0.src.rpm",
 				"name": "libarchive-devel",
 				"epoch": "0",
 				"version": "3.5.3",
@@ -87,97 +171,13 @@
 			},
 			{
 				"src": "libarchive-3.5.3-2.el9_0.src.rpm",
-				"name": "libarchive",
-				"epoch": "0",
-				"version": "3.5.3",
-				"release": "2.el9_0",
-				"arch": "x86_64",
-				"filename": "libarchive-3.5.3-2.el9_0.x86_64.rpm",
-				"sum": "035f3b90a81b61d846914a6953804d32e09f0c6c3b2978f783c964c0cfe2c164",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libarchive-3.5.3-2.el9_0.src.rpm",
-				"name": "bsdtar",
-				"epoch": "0",
-				"version": "3.5.3",
-				"release": "2.el9_0",
-				"arch": "x86_64",
-				"filename": "bsdtar-3.5.3-2.el9_0.x86_64.rpm",
-				"sum": "042bd93df93412ecaf7c6b59137e7ab45db3f03987046b74f8da2b5375015a9b",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libarchive-3.5.3-2.el9_0.src.rpm",
 				"name": "libarchive-devel",
 				"epoch": "0",
 				"version": "3.5.3",
 				"release": "2.el9_0",
-				"arch": "x86_64",
-				"filename": "libarchive-devel-3.5.3-2.el9_0.x86_64.rpm",
-				"sum": "62d30b0fc078e27e530e051a08cf75a297905e7c495d733de96192fd15dbfb63",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libarchive-3.5.3-2.el9_0.src.rpm",
-				"name": "libarchive",
-				"epoch": "0",
-				"version": "3.5.3",
-				"release": "2.el9_0",
-				"arch": "i686",
-				"filename": "libarchive-3.5.3-2.el9_0.i686.rpm",
-				"sum": "0e092bde47271bc548721c5f6ee2ac7626ba4c29c460d7281b29b32e4c8b4797",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libarchive-3.5.3-2.el9_0.src.rpm",
-				"name": "libarchive-devel",
-				"epoch": "0",
-				"version": "3.5.3",
-				"release": "2.el9_0",
-				"arch": "i686",
-				"filename": "libarchive-devel-3.5.3-2.el9_0.i686.rpm",
-				"sum": "33d1567208bd84d8697507947591691b0ab6ae6761160c181847d1c67e5ea845",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libarchive-3.5.3-2.el9_0.src.rpm",
-				"name": "libarchive-devel",
-				"epoch": "0",
-				"version": "3.5.3",
-				"release": "2.el9_0",
-				"arch": "ppc64le",
-				"filename": "libarchive-devel-3.5.3-2.el9_0.ppc64le.rpm",
-				"sum": "014a2db1037b53c695e7c91b05e3f652a834d9ea545c1ca46bc7e676a67da327",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libarchive-3.5.3-2.el9_0.src.rpm",
-				"name": "libarchive",
-				"epoch": "0",
-				"version": "3.5.3",
-				"release": "2.el9_0",
-				"arch": "ppc64le",
-				"filename": "libarchive-3.5.3-2.el9_0.ppc64le.rpm",
-				"sum": "763959ef8d263ab5857c84e5255efdb0f343378f7a39310cf46606963e674184",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libarchive-3.5.3-2.el9_0.src.rpm",
-				"name": "bsdtar",
-				"epoch": "0",
-				"version": "3.5.3",
-				"release": "2.el9_0",
-				"arch": "ppc64le",
-				"filename": "bsdtar-3.5.3-2.el9_0.ppc64le.rpm",
-				"sum": "b36034c64c30f92db3e52e0e38f7171ed6ac0090a0d2e03322c6fd702729dc42",
+				"arch": "aarch64",
+				"filename": "libarchive-devel-3.5.3-2.el9_0.aarch64.rpm",
+				"sum": "f1df8b4c8417ba417697bb6b9c4f8a33753d157a95ab2dd613d568bf8c689bb0",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -186,10 +186,10 @@
 	"description": "The libarchive programming library can create and read several different\nstreaming archive formats, including GNU tar, cpio, and ISO 9660 CD-ROM images.\nLibarchive is used notably in the bsdtar utility, scripting language bindings\nsuch as python-libarchive, and several popular desktop file managers.\nSecurity Fix(es):\n* libarchive: an out-of-bounds read via the component zipx_lzma_alone_init\n(CVE-2022-26280)\nFor more details about the security issue(s), including the impact, a CVSS\nscore, acknowledgments, and other related information, refer to the CVE page(s)\nlisted in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:5252",
-			"title": "RHSA-2022:5252",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:5252"
+			"id": "2071931",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2071931"
 		},
 		{
 			"id": "CVE-2022-26280",
@@ -198,10 +198,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-26280"
 		},
 		{
-			"id": "2071931",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2071931"
+			"id": "RHSA-2022:5252",
+			"title": "RHSA-2022:5252",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5252"
 		},
 		{
 			"id": "ALSA-2022:5252",
@@ -214,6 +214,6 @@
 		"$date": 1656633600000
 	},
 	"updated_date": {
-		"$date": 1658424534000
+		"$date": 1658424594000
 	}
 }

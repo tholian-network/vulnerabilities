@@ -10,42 +10,18 @@
 	"summary": "zlib security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_default",
 		"packages": [
 			{
 				"src": "zlib-1.2.11-32.el9_0.src.rpm",
-				"name": "zlib-devel",
+				"name": "zlib",
 				"epoch": "0",
 				"version": "1.2.11",
 				"release": "32.el9_0",
 				"arch": "aarch64",
-				"filename": "zlib-devel-1.2.11-32.el9_0.aarch64.rpm",
-				"sum": "a79f20e9ce5f982949ef7bc5a0916b6e166c7c8d3893ad0d703f6c96ff9c63d9",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "zlib-1.2.11-32.el9_0.src.rpm",
-				"name": "zlib-devel",
-				"epoch": "0",
-				"version": "1.2.11",
-				"release": "32.el9_0",
-				"arch": "s390x",
-				"filename": "zlib-devel-1.2.11-32.el9_0.s390x.rpm",
-				"sum": "d66b3e3c74e1a0de970e452f2ecf2a25473bd39ec4511cecee4953dbc87f7073",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "zlib-1.2.11-32.el9_0.src.rpm",
-				"name": "zlib-devel",
-				"epoch": "0",
-				"version": "1.2.11",
-				"release": "32.el9_0",
-				"arch": "i686",
-				"filename": "zlib-devel-1.2.11-32.el9_0.i686.rpm",
-				"sum": "7aeb04163853e6c1212f944a2b47749d6fc187c41716c21747df46a2aaa7d0a8",
+				"filename": "zlib-1.2.11-32.el9_0.aarch64.rpm",
+				"sum": "41b196857449e86b42ab793f328efe1af807585073f423a007bbbde102248c9e",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -67,30 +43,6 @@
 				"epoch": "0",
 				"version": "1.2.11",
 				"release": "32.el9_0",
-				"arch": "aarch64",
-				"filename": "zlib-1.2.11-32.el9_0.aarch64.rpm",
-				"sum": "41b196857449e86b42ab793f328efe1af807585073f423a007bbbde102248c9e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "zlib-1.2.11-32.el9_0.src.rpm",
-				"name": "zlib",
-				"epoch": "0",
-				"version": "1.2.11",
-				"release": "32.el9_0",
-				"arch": "x86_64",
-				"filename": "zlib-1.2.11-32.el9_0.x86_64.rpm",
-				"sum": "bd4009fbe4ced90f997b79ebb8733bb6ebfbba530ea731e56a0dccd6b8c33346",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "zlib-1.2.11-32.el9_0.src.rpm",
-				"name": "zlib",
-				"epoch": "0",
-				"version": "1.2.11",
-				"release": "32.el9_0",
 				"arch": "ppc64le",
 				"filename": "zlib-1.2.11-32.el9_0.ppc64le.rpm",
 				"sum": "4fb6c411525723b41c105880730d701bbbd4860e1bcdf7a25f8c9c97f91b4092",
@@ -99,13 +51,13 @@
 			},
 			{
 				"src": "zlib-1.2.11-32.el9_0.src.rpm",
-				"name": "zlib",
+				"name": "zlib-static",
 				"epoch": "0",
 				"version": "1.2.11",
 				"release": "32.el9_0",
-				"arch": "s390x",
-				"filename": "zlib-1.2.11-32.el9_0.s390x.rpm",
-				"sum": "86a49ded33cb36b31f4b962aa62cc70cd174856e9398f3a57e76aade91fc6e90",
+				"arch": "ppc64le",
+				"filename": "zlib-static-1.2.11-32.el9_0.ppc64le.rpm",
+				"sum": "6d9b9a1e911845981a22aeeda8991a19bc98d952a3f9e7105a4bd5fe8f08a4c4",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -123,6 +75,42 @@
 			},
 			{
 				"src": "zlib-1.2.11-32.el9_0.src.rpm",
+				"name": "zlib-devel",
+				"epoch": "0",
+				"version": "1.2.11",
+				"release": "32.el9_0",
+				"arch": "i686",
+				"filename": "zlib-devel-1.2.11-32.el9_0.i686.rpm",
+				"sum": "7aeb04163853e6c1212f944a2b47749d6fc187c41716c21747df46a2aaa7d0a8",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "zlib-1.2.11-32.el9_0.src.rpm",
+				"name": "zlib",
+				"epoch": "0",
+				"version": "1.2.11",
+				"release": "32.el9_0",
+				"arch": "s390x",
+				"filename": "zlib-1.2.11-32.el9_0.s390x.rpm",
+				"sum": "86a49ded33cb36b31f4b962aa62cc70cd174856e9398f3a57e76aade91fc6e90",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "zlib-1.2.11-32.el9_0.src.rpm",
+				"name": "zlib-devel",
+				"epoch": "0",
+				"version": "1.2.11",
+				"release": "32.el9_0",
+				"arch": "aarch64",
+				"filename": "zlib-devel-1.2.11-32.el9_0.aarch64.rpm",
+				"sum": "a79f20e9ce5f982949ef7bc5a0916b6e166c7c8d3893ad0d703f6c96ff9c63d9",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "zlib-1.2.11-32.el9_0.src.rpm",
 				"name": "zlib-static",
 				"epoch": "0",
 				"version": "1.2.11",
@@ -130,6 +118,18 @@
 				"arch": "aarch64",
 				"filename": "zlib-static-1.2.11-32.el9_0.aarch64.rpm",
 				"sum": "bd022652eb8dd26837ac7bc1ea3dd7391c9cbe8029faa26f1d04777d86d379be",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "zlib-1.2.11-32.el9_0.src.rpm",
+				"name": "zlib",
+				"epoch": "0",
+				"version": "1.2.11",
+				"release": "32.el9_0",
+				"arch": "x86_64",
+				"filename": "zlib-1.2.11-32.el9_0.x86_64.rpm",
+				"sum": "bd4009fbe4ced90f997b79ebb8733bb6ebfbba530ea731e56a0dccd6b8c33346",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -147,13 +147,13 @@
 			},
 			{
 				"src": "zlib-1.2.11-32.el9_0.src.rpm",
-				"name": "zlib-static",
+				"name": "zlib-devel",
 				"epoch": "0",
 				"version": "1.2.11",
 				"release": "32.el9_0",
-				"arch": "ppc64le",
-				"filename": "zlib-static-1.2.11-32.el9_0.ppc64le.rpm",
-				"sum": "6d9b9a1e911845981a22aeeda8991a19bc98d952a3f9e7105a4bd5fe8f08a4c4",
+				"arch": "s390x",
+				"filename": "zlib-devel-1.2.11-32.el9_0.s390x.rpm",
+				"sum": "d66b3e3c74e1a0de970e452f2ecf2a25473bd39ec4511cecee4953dbc87f7073",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -162,10 +162,10 @@
 	"description": "The zlib packages provide a general-purpose lossless data compression library that is used by many different programs.\n\nSecurity Fix(es):\n\n* zlib: a heap-based buffer over-read or buffer overflow in inflate in inflate.c via a large gzip header extra field (CVE-2022-37434)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:7314",
-			"title": "RHSA-2022:7314",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:7314"
+			"id": "2116639",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2116639"
 		},
 		{
 			"id": "CVE-2022-37434",
@@ -174,10 +174,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-37434"
 		},
 		{
-			"id": "2116639",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2116639"
+			"id": "RHSA-2022:7314",
+			"title": "RHSA-2022:7314",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:7314"
 		},
 		{
 			"id": "ALSA-2022:7314",
@@ -190,6 +190,6 @@
 		"$date": 1667347200000
 	},
 	"updated_date": {
-		"$date": 1667424336000
+		"$date": 1667424339000
 	}
 }

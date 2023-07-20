@@ -10,9 +10,45 @@
 	"summary": "An update for python3 is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "5",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-baseos-rpms__8_0_default",
-		"shortname": "almalinux-8-for-x86_64-baseos-rpms__8_0_default",
+		"name": "almalinux-8-for-aarch64-baseos-rpms__8_0_default",
+		"shortname": "almalinux-8-for-aarch64-baseos-rpms__8_0_default",
 		"packages": [
+			{
+				"src": "python3-3.6.8-45.el8.alma.src.rpm",
+				"name": "python3-idle",
+				"epoch": "0",
+				"version": "3.6.8",
+				"release": "45.el8.alma",
+				"arch": "ppc64le",
+				"filename": "python3-idle-3.6.8-45.el8.alma.ppc64le.rpm",
+				"sum": "08f0f785afff5832997a827ac2febbb90ef807119f246ed8fd1c0d1ec73f4adb",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python3-3.6.8-45.el8.alma.src.rpm",
+				"name": "platform-python",
+				"epoch": "0",
+				"version": "3.6.8",
+				"release": "45.el8.alma",
+				"arch": "i686",
+				"filename": "platform-python-3.6.8-45.el8.alma.i686.rpm",
+				"sum": "216045bb6ba59a1a828c773638cfa80907443ecd49a308a6de2e7d26507d25ca",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python3-3.6.8-45.el8.alma.src.rpm",
+				"name": "platform-python-devel",
+				"epoch": "0",
+				"version": "3.6.8",
+				"release": "45.el8.alma",
+				"arch": "aarch64",
+				"filename": "platform-python-devel-3.6.8-45.el8.alma.aarch64.rpm",
+				"sum": "29eefb25697489144f8de9a2edaf69bed69e17ddb44de47994e815b41557b167",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "python3-3.6.8-45.el8.alma.src.rpm",
 				"name": "platform-python-devel",
@@ -31,93 +67,21 @@
 				"epoch": "0",
 				"version": "3.6.8",
 				"release": "45.el8.alma",
+				"arch": "i686",
+				"filename": "python3-test-3.6.8-45.el8.alma.i686.rpm",
+				"sum": "37151e7bb58d415c812bcbc958d7997c5106ffd687e3ed2cd870b35191001f92",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python3-3.6.8-45.el8.alma.src.rpm",
+				"name": "python3-test",
+				"epoch": "0",
+				"version": "3.6.8",
+				"release": "45.el8.alma",
 				"arch": "x86_64",
 				"filename": "python3-test-3.6.8-45.el8.alma.x86_64.rpm",
 				"sum": "3b03ed672c0e5af01ba96716742dc23621761e740f9e0101170ec5d55e0b8804",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python3-3.6.8-45.el8.alma.src.rpm",
-				"name": "python3-idle",
-				"epoch": "0",
-				"version": "3.6.8",
-				"release": "45.el8.alma",
-				"arch": "x86_64",
-				"filename": "python3-idle-3.6.8-45.el8.alma.x86_64.rpm",
-				"sum": "8950153e26dc0d31f8aa53a6d687a0819d92a7af29fa15fd88b335ea5126cbf2",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python3-3.6.8-45.el8.alma.src.rpm",
-				"name": "platform-python",
-				"epoch": "0",
-				"version": "3.6.8",
-				"release": "45.el8.alma",
-				"arch": "x86_64",
-				"filename": "platform-python-3.6.8-45.el8.alma.x86_64.rpm",
-				"sum": "abd4a12e0e58b1e0bf080665cc0dc2e45b7caf97d3be21ced59351f42c614ec9",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python3-3.6.8-45.el8.alma.src.rpm",
-				"name": "python3-tkinter",
-				"epoch": "0",
-				"version": "3.6.8",
-				"release": "45.el8.alma",
-				"arch": "x86_64",
-				"filename": "python3-tkinter-3.6.8-45.el8.alma.x86_64.rpm",
-				"sum": "ba01f15bfa977c3f53c9bccb8c1d316ca3b5a28ae4758533ffabe5bead0758f0",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python3-3.6.8-45.el8.alma.src.rpm",
-				"name": "platform-python-debug",
-				"epoch": "0",
-				"version": "3.6.8",
-				"release": "45.el8.alma",
-				"arch": "x86_64",
-				"filename": "platform-python-debug-3.6.8-45.el8.alma.x86_64.rpm",
-				"sum": "bbe6e0f8e14f6b9464b065cd277551e7bebfd1bd4488a0d1c528daf23919cace",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python3-3.6.8-45.el8.alma.src.rpm",
-				"name": "python3-libs",
-				"epoch": "0",
-				"version": "3.6.8",
-				"release": "45.el8.alma",
-				"arch": "x86_64",
-				"filename": "python3-libs-3.6.8-45.el8.alma.x86_64.rpm",
-				"sum": "fa022dbd275c0a8efb4cdbc7379d5d80d9091ba7b1415deeb66adab9debd0c0c",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python3-3.6.8-45.el8.alma.src.rpm",
-				"name": "python3-libs",
-				"epoch": "0",
-				"version": "3.6.8",
-				"release": "45.el8.alma",
-				"arch": "x86_64",
-				"filename": "python3-libs-3.6.8-45.el8.alma.x86_64.rpm",
-				"sum": "fa022dbd275c0a8efb4cdbc7379d5d80d9091ba7b1415deeb66adab9debd0c0c",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python3-3.6.8-45.el8.alma.src.rpm",
-				"name": "platform-python-devel",
-				"epoch": "0",
-				"version": "3.6.8",
-				"release": "45.el8.alma",
-				"arch": "aarch64",
-				"filename": "platform-python-devel-3.6.8-45.el8.alma.aarch64.rpm",
-				"sum": "29eefb25697489144f8de9a2edaf69bed69e17ddb44de47994e815b41557b167",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -147,66 +111,6 @@
 			},
 			{
 				"src": "python3-3.6.8-45.el8.alma.src.rpm",
-				"name": "python3-idle",
-				"epoch": "0",
-				"version": "3.6.8",
-				"release": "45.el8.alma",
-				"arch": "aarch64",
-				"filename": "python3-idle-3.6.8-45.el8.alma.aarch64.rpm",
-				"sum": "93e9584e70bee4d4018b131e1d698355d630eef56a8dae2d911d634fc175ad18",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python3-3.6.8-45.el8.alma.src.rpm",
-				"name": "python3-test",
-				"epoch": "0",
-				"version": "3.6.8",
-				"release": "45.el8.alma",
-				"arch": "aarch64",
-				"filename": "python3-test-3.6.8-45.el8.alma.aarch64.rpm",
-				"sum": "a06e23da2b2aaac8d356bf3c996531681d51b633cc39d0869e806be67a84ada8",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python3-3.6.8-45.el8.alma.src.rpm",
-				"name": "python3-tkinter",
-				"epoch": "0",
-				"version": "3.6.8",
-				"release": "45.el8.alma",
-				"arch": "aarch64",
-				"filename": "python3-tkinter-3.6.8-45.el8.alma.aarch64.rpm",
-				"sum": "d2d8b118da1a2164cc62c8dc1898b2450036771edd64f5802c721eb92a58879f",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python3-3.6.8-45.el8.alma.src.rpm",
-				"name": "python3-libs",
-				"epoch": "0",
-				"version": "3.6.8",
-				"release": "45.el8.alma",
-				"arch": "aarch64",
-				"filename": "python3-libs-3.6.8-45.el8.alma.aarch64.rpm",
-				"sum": "fdc0e30e4095d16d09d8c2bd00bc118159b5b71ed032eb8a203bb195f47be78e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python3-3.6.8-45.el8.alma.src.rpm",
-				"name": "python3-idle",
-				"epoch": "0",
-				"version": "3.6.8",
-				"release": "45.el8.alma",
-				"arch": "ppc64le",
-				"filename": "python3-idle-3.6.8-45.el8.alma.ppc64le.rpm",
-				"sum": "08f0f785afff5832997a827ac2febbb90ef807119f246ed8fd1c0d1ec73f4adb",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "python3-3.6.8-45.el8.alma.src.rpm",
 				"name": "platform-python-devel",
 				"epoch": "0",
 				"version": "3.6.8",
@@ -231,6 +135,54 @@
 			},
 			{
 				"src": "python3-3.6.8-45.el8.alma.src.rpm",
+				"name": "python3-idle",
+				"epoch": "0",
+				"version": "3.6.8",
+				"release": "45.el8.alma",
+				"arch": "x86_64",
+				"filename": "python3-idle-3.6.8-45.el8.alma.x86_64.rpm",
+				"sum": "8950153e26dc0d31f8aa53a6d687a0819d92a7af29fa15fd88b335ea5126cbf2",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python3-3.6.8-45.el8.alma.src.rpm",
+				"name": "python3-idle",
+				"epoch": "0",
+				"version": "3.6.8",
+				"release": "45.el8.alma",
+				"arch": "aarch64",
+				"filename": "python3-idle-3.6.8-45.el8.alma.aarch64.rpm",
+				"sum": "93e9584e70bee4d4018b131e1d698355d630eef56a8dae2d911d634fc175ad18",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python3-3.6.8-45.el8.alma.src.rpm",
+				"name": "python3-test",
+				"epoch": "0",
+				"version": "3.6.8",
+				"release": "45.el8.alma",
+				"arch": "aarch64",
+				"filename": "python3-test-3.6.8-45.el8.alma.aarch64.rpm",
+				"sum": "a06e23da2b2aaac8d356bf3c996531681d51b633cc39d0869e806be67a84ada8",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python3-3.6.8-45.el8.alma.src.rpm",
+				"name": "platform-python",
+				"epoch": "0",
+				"version": "3.6.8",
+				"release": "45.el8.alma",
+				"arch": "x86_64",
+				"filename": "platform-python-3.6.8-45.el8.alma.x86_64.rpm",
+				"sum": "abd4a12e0e58b1e0bf080665cc0dc2e45b7caf97d3be21ced59351f42c614ec9",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python3-3.6.8-45.el8.alma.src.rpm",
 				"name": "python3-libs",
 				"epoch": "0",
 				"version": "3.6.8",
@@ -238,6 +190,42 @@
 				"arch": "ppc64le",
 				"filename": "python3-libs-3.6.8-45.el8.alma.ppc64le.rpm",
 				"sum": "b07fb0c68ce63b49f7d5e0e40170ddd06f9240a3166be6dce91613a1aeada648",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python3-3.6.8-45.el8.alma.src.rpm",
+				"name": "python3-tkinter",
+				"epoch": "0",
+				"version": "3.6.8",
+				"release": "45.el8.alma",
+				"arch": "x86_64",
+				"filename": "python3-tkinter-3.6.8-45.el8.alma.x86_64.rpm",
+				"sum": "ba01f15bfa977c3f53c9bccb8c1d316ca3b5a28ae4758533ffabe5bead0758f0",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python3-3.6.8-45.el8.alma.src.rpm",
+				"name": "platform-python-debug",
+				"epoch": "0",
+				"version": "3.6.8",
+				"release": "45.el8.alma",
+				"arch": "x86_64",
+				"filename": "platform-python-debug-3.6.8-45.el8.alma.x86_64.rpm",
+				"sum": "bbe6e0f8e14f6b9464b065cd277551e7bebfd1bd4488a0d1c528daf23919cace",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "python3-3.6.8-45.el8.alma.src.rpm",
+				"name": "python3-tkinter",
+				"epoch": "0",
+				"version": "3.6.8",
+				"release": "45.el8.alma",
+				"arch": "aarch64",
+				"filename": "python3-tkinter-3.6.8-45.el8.alma.aarch64.rpm",
+				"sum": "d2d8b118da1a2164cc62c8dc1898b2450036771edd64f5802c721eb92a58879f",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -279,25 +267,25 @@
 			},
 			{
 				"src": "python3-3.6.8-45.el8.alma.src.rpm",
-				"name": "platform-python",
+				"name": "python3-libs",
 				"epoch": "0",
 				"version": "3.6.8",
 				"release": "45.el8.alma",
-				"arch": "i686",
-				"filename": "platform-python-3.6.8-45.el8.alma.i686.rpm",
-				"sum": "216045bb6ba59a1a828c773638cfa80907443ecd49a308a6de2e7d26507d25ca",
+				"arch": "x86_64",
+				"filename": "python3-libs-3.6.8-45.el8.alma.x86_64.rpm",
+				"sum": "fa022dbd275c0a8efb4cdbc7379d5d80d9091ba7b1415deeb66adab9debd0c0c",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
 			{
 				"src": "python3-3.6.8-45.el8.alma.src.rpm",
-				"name": "python3-test",
+				"name": "python3-libs",
 				"epoch": "0",
 				"version": "3.6.8",
 				"release": "45.el8.alma",
-				"arch": "i686",
-				"filename": "python3-test-3.6.8-45.el8.alma.i686.rpm",
-				"sum": "37151e7bb58d415c812bcbc958d7997c5106ffd687e3ed2cd870b35191001f92",
+				"arch": "aarch64",
+				"filename": "python3-libs-3.6.8-45.el8.alma.aarch64.rpm",
+				"sum": "fdc0e30e4095d16d09d8c2bd00bc118159b5b71ed032eb8a203bb195f47be78e",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -305,12 +293,6 @@
 	},
 	"description": "Python is an interpreted, interactive, object-oriented programming language, which includes modules, classes, exceptions, very high level dynamic data types and dynamic typing. Python supports interfaces to many system calls and libraries, as well as to various windowing systems. \n\nSecurity Fix(es):\n\n* python: ftplib should not use the host from the PASV response (CVE-2021-4189)\n\n* python: urllib: HTTP client possible infinite loop on a 100 Continue response (CVE-2021-3737)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
-		{
-			"id": "ALSA-2022-1986",
-			"title": "ALSA-2022-1986",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2022-1986.html"
-		},
 		{
 			"id": "CVE-2021-3737",
 			"title": "CVE-2021-3737",
@@ -322,6 +304,12 @@
 			"title": "CVE-2021-4189",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2021-4189"
+		},
+		{
+			"id": "ALSA-2022-1986",
+			"title": "ALSA-2022-1986",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2022-1986.html"
 		}
 	],
 	"issued_date": {

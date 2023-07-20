@@ -10,33 +10,9 @@
 	"summary": "An update for grilo is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "3",
 	"pkglist": {
-		"name": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
-		"shortname": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
+		"name": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
+		"shortname": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
 		"packages": [
-			{
-				"src": "grilo-0.3.6-3.el8.src.rpm",
-				"name": "grilo",
-				"epoch": "0",
-				"version": "0.3.6",
-				"release": "3.el8",
-				"arch": "aarch64",
-				"filename": "grilo-0.3.6-3.el8.aarch64.rpm",
-				"sum": "0ce2ea252c4cd7bff593eed6b00c23a1e578b41f9ab0f470daa885b596124d4c",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "grilo-0.3.6-3.el8.src.rpm",
-				"name": "grilo-devel",
-				"epoch": "0",
-				"version": "0.3.6",
-				"release": "3.el8",
-				"arch": "aarch64",
-				"filename": "grilo-devel-0.3.6-3.el8.aarch64.rpm",
-				"sum": "e024589abe9d3a08ae3f3a8a69d97cd4c725cc719cf87baeee03007c400fab3b",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "grilo-0.3.6-3.el8.src.rpm",
 				"name": "grilo",
@@ -46,6 +22,18 @@
 				"arch": "x86_64",
 				"filename": "grilo-0.3.6-3.el8.x86_64.rpm",
 				"sum": "08e82c1011d6de74f66dac9585dd62524775778d97832459ff6123474594bea5",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "grilo-0.3.6-3.el8.src.rpm",
+				"name": "grilo",
+				"epoch": "0",
+				"version": "0.3.6",
+				"release": "3.el8",
+				"arch": "aarch64",
+				"filename": "grilo-0.3.6-3.el8.aarch64.rpm",
+				"sum": "0ce2ea252c4cd7bff593eed6b00c23a1e578b41f9ab0f470daa885b596124d4c",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -108,28 +96,40 @@
 				"sum": "d00e94e5c7dd958e31dd06f2bc7a5d1a3ea6a3a83755b8c80c1da6644165c8f1",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "grilo-0.3.6-3.el8.src.rpm",
+				"name": "grilo-devel",
+				"epoch": "0",
+				"version": "0.3.6",
+				"release": "3.el8",
+				"arch": "aarch64",
+				"filename": "grilo-devel-0.3.6-3.el8.aarch64.rpm",
+				"sum": "e024589abe9d3a08ae3f3a8a69d97cd4c725cc719cf87baeee03007c400fab3b",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "Grilo is a framework that provides access to different sources of multimedia content, using a pluggable system. The grilo package contains the core library and elements.\n\nSecurity Fix(es):\n\n* grilo: missing TLS certificate verification (CVE-2021-39365)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "ALSA-2021-4339",
-			"title": "ALSA-2021-4339",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2021-4339.html"
-		},
-		{
 			"id": "CVE-2021-39365",
 			"title": "CVE-2021-39365",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2021-39365"
+		},
+		{
+			"id": "ALSA-2021-4339",
+			"title": "ALSA-2021-4339",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-4339.html"
 		}
 	],
 	"issued_date": {
 		"$date": 1636448577000
 	},
 	"updated_date": {
-		"$date": 1636463019000
+		"$date": 1636712461000
 	}
 }

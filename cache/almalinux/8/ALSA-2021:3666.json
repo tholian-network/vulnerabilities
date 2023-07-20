@@ -10,9 +10,21 @@
 	"summary": "An update for the nodejs:14 module is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "2",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_1_nodejs",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_1_nodejs",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_1_nodejs",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_1_nodejs",
 		"packages": [
+			{
+				"src": "nodejs-packaging-23-3.module_el8.5.0+254+b4526b16.src.rpm",
+				"name": "nodejs-packaging",
+				"epoch": "0",
+				"version": "23",
+				"release": "3.module_el8.5.0+254+b4526b16",
+				"arch": "noarch",
+				"filename": "nodejs-packaging-23-3.module_el8.5.0+254+b4526b16.noarch.rpm",
+				"sum": "46efea0b245114ef59fb19785c77620fd338becc1d36c6c3ecf7e67d916cd8ed",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "nodejs-packaging-23-3.module_el8.5.0+2618+8d46dafd.src.rpm",
 				"name": "nodejs-packaging",
@@ -50,18 +62,6 @@
 				"reboot_suggested": 0
 			},
 			{
-				"src": "nodejs-packaging-23-3.module_el8.5.0+254+b4526b16.src.rpm",
-				"name": "nodejs-packaging",
-				"epoch": "0",
-				"version": "23",
-				"release": "3.module_el8.5.0+254+b4526b16",
-				"arch": "noarch",
-				"filename": "nodejs-packaging-23-3.module_el8.5.0+254+b4526b16.noarch.rpm",
-				"sum": "46efea0b245114ef59fb19785c77620fd338becc1d36c6c3ecf7e67d916cd8ed",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
 				"src": "nodejs-nodemon-2.0.3-1.module_el8.5.0+85+79a7b441.src.rpm",
 				"name": "nodejs-nodemon",
 				"epoch": "0",
@@ -77,12 +77,6 @@
 	},
 	"description": "Node.js is a software development platform for building fast and scalable network applications in the JavaScript programming language. \n\nSecurity Fix(es):\n\n* nodejs: Use-after-free on close http2 on stream canceling (CVE-2021-22930)\n\n* nodejs: Use-after-free on close http2 on stream canceling (CVE-2021-22940)\n\n* c-ares: Missing input validation of host names may lead to domain hijacking (CVE-2021-3672)\n\n* nodejs: Improper handling of untypical characters in domain names (CVE-2021-22931)\n\n* nodejs-tar: Insufficient symlink protection allowing arbitrary file creation and overwrite (CVE-2021-32803)\n\n* nodejs-tar: Insufficient absolute path sanitization allowing arbitrary file creation and overwrite (CVE-2021-32804)\n\n* nodejs: Incomplete validation of tls rejectUnauthorized parameter (CVE-2021-22939)\n\n* nodejs-path-parse: ReDoS via splitDeviceRe, splitTailRe and splitPathRe (CVE-2021-23343)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nBug Fix(es):\n\n* nodejs:14/nodejs: Make FIPS options always available (BZ#1993924)",
 	"references": [
-		{
-			"id": "ALSA-2021-3666",
-			"title": "ALSA-2021-3666",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2021-3666.html"
-		},
 		{
 			"id": "CVE-2021-22930",
 			"title": "CVE-2021-22930",
@@ -130,6 +124,12 @@
 			"title": "CVE-2021-3672",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2021-3672"
+		},
+		{
+			"id": "ALSA-2021-3666",
+			"title": "ALSA-2021-3666",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2021-3666.html"
 		}
 	],
 	"issued_date": {

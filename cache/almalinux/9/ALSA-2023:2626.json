@@ -15,13 +15,25 @@
 		"packages": [
 			{
 				"src": "emacs-27.2-8.el9_2.1.src.rpm",
-				"name": "emacs-filesystem",
+				"name": "emacs-lucid",
 				"epoch": "1",
 				"version": "27.2",
 				"release": "8.el9_2.1",
-				"arch": "noarch",
-				"filename": "emacs-filesystem-27.2-8.el9_2.1.noarch.rpm",
-				"sum": "8132dbe410df05ce2933a36657fa82d2e5165d3d9e32b343d6ab41a08a1025bb",
+				"arch": "x86_64",
+				"filename": "emacs-lucid-27.2-8.el9_2.1.x86_64.rpm",
+				"sum": "1794d10e3b75b82d3217281068bbc101e1963e96201c3138a6a51f7bda849e6e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "emacs-27.2-8.el9_2.1.src.rpm",
+				"name": "emacs-common",
+				"epoch": "1",
+				"version": "27.2",
+				"release": "8.el9_2.1",
+				"arch": "s390x",
+				"filename": "emacs-common-27.2-8.el9_2.1.s390x.rpm",
+				"sum": "212d0071afb609893e40f079a6a3b7d128c11dc60cf0bba6a20c9d13e6526e97",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -34,6 +46,18 @@
 				"arch": "aarch64",
 				"filename": "emacs-common-27.2-8.el9_2.1.aarch64.rpm",
 				"sum": "2779234485cee4219097883fe5179c16d6e90536cf1ce02dcfefaba7d8cda22e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "emacs-27.2-8.el9_2.1.src.rpm",
+				"name": "emacs",
+				"epoch": "1",
+				"version": "27.2",
+				"release": "8.el9_2.1",
+				"arch": "s390x",
+				"filename": "emacs-27.2-8.el9_2.1.s390x.rpm",
+				"sum": "364c005d2a58bb63e5a80ee0e49974faedac7744a79487b4acb6e22170be766b",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -63,73 +87,13 @@
 			},
 			{
 				"src": "emacs-27.2-8.el9_2.1.src.rpm",
-				"name": "emacs",
-				"epoch": "1",
-				"version": "27.2",
-				"release": "8.el9_2.1",
-				"arch": "aarch64",
-				"filename": "emacs-27.2-8.el9_2.1.aarch64.rpm",
-				"sum": "956dca486c158e97bc5c8a900acb9abf9d51addf836d967ae604a3af71309e24",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "emacs-27.2-8.el9_2.1.src.rpm",
-				"name": "emacs-common",
-				"epoch": "1",
-				"version": "27.2",
-				"release": "8.el9_2.1",
-				"arch": "s390x",
-				"filename": "emacs-common-27.2-8.el9_2.1.s390x.rpm",
-				"sum": "212d0071afb609893e40f079a6a3b7d128c11dc60cf0bba6a20c9d13e6526e97",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "emacs-27.2-8.el9_2.1.src.rpm",
-				"name": "emacs",
-				"epoch": "1",
-				"version": "27.2",
-				"release": "8.el9_2.1",
-				"arch": "s390x",
-				"filename": "emacs-27.2-8.el9_2.1.s390x.rpm",
-				"sum": "364c005d2a58bb63e5a80ee0e49974faedac7744a79487b4acb6e22170be766b",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "emacs-27.2-8.el9_2.1.src.rpm",
 				"name": "emacs-lucid",
 				"epoch": "1",
 				"version": "27.2",
 				"release": "8.el9_2.1",
-				"arch": "s390x",
-				"filename": "emacs-lucid-27.2-8.el9_2.1.s390x.rpm",
-				"sum": "773dd3b121bfd50e8b3709deff93f461eaf8a1bda7a97154a08970329f5474aa",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "emacs-27.2-8.el9_2.1.src.rpm",
-				"name": "emacs-nox",
-				"epoch": "1",
-				"version": "27.2",
-				"release": "8.el9_2.1",
-				"arch": "s390x",
-				"filename": "emacs-nox-27.2-8.el9_2.1.s390x.rpm",
-				"sum": "80aaac85431d37f1dd8db60de2d97ad0817a3b67eaf3da35f14a018eb468766e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "emacs-27.2-8.el9_2.1.src.rpm",
-				"name": "emacs-lucid",
-				"epoch": "1",
-				"version": "27.2",
-				"release": "8.el9_2.1",
-				"arch": "x86_64",
-				"filename": "emacs-lucid-27.2-8.el9_2.1.x86_64.rpm",
-				"sum": "1794d10e3b75b82d3217281068bbc101e1963e96201c3138a6a51f7bda849e6e",
+				"arch": "ppc64le",
+				"filename": "emacs-lucid-27.2-8.el9_2.1.ppc64le.rpm",
+				"sum": "526ad5bf68b2df8f5618ad6b5b4a56f41ac7cedbedb5cf8b2fd1e02699d08d31",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -159,25 +123,49 @@
 			},
 			{
 				"src": "emacs-27.2-8.el9_2.1.src.rpm",
-				"name": "emacs",
+				"name": "emacs-lucid",
 				"epoch": "1",
 				"version": "27.2",
 				"release": "8.el9_2.1",
-				"arch": "x86_64",
-				"filename": "emacs-27.2-8.el9_2.1.x86_64.rpm",
-				"sum": "dd6ea41d9f1758c15182bcdb3b89cc7927225eb12a2190344a6005b7952fc741",
+				"arch": "s390x",
+				"filename": "emacs-lucid-27.2-8.el9_2.1.s390x.rpm",
+				"sum": "773dd3b121bfd50e8b3709deff93f461eaf8a1bda7a97154a08970329f5474aa",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
 			{
 				"src": "emacs-27.2-8.el9_2.1.src.rpm",
-				"name": "emacs-lucid",
+				"name": "emacs-nox",
 				"epoch": "1",
 				"version": "27.2",
 				"release": "8.el9_2.1",
-				"arch": "ppc64le",
-				"filename": "emacs-lucid-27.2-8.el9_2.1.ppc64le.rpm",
-				"sum": "526ad5bf68b2df8f5618ad6b5b4a56f41ac7cedbedb5cf8b2fd1e02699d08d31",
+				"arch": "s390x",
+				"filename": "emacs-nox-27.2-8.el9_2.1.s390x.rpm",
+				"sum": "80aaac85431d37f1dd8db60de2d97ad0817a3b67eaf3da35f14a018eb468766e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "emacs-27.2-8.el9_2.1.src.rpm",
+				"name": "emacs-filesystem",
+				"epoch": "1",
+				"version": "27.2",
+				"release": "8.el9_2.1",
+				"arch": "noarch",
+				"filename": "emacs-filesystem-27.2-8.el9_2.1.noarch.rpm",
+				"sum": "8132dbe410df05ce2933a36657fa82d2e5165d3d9e32b343d6ab41a08a1025bb",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "emacs-27.2-8.el9_2.1.src.rpm",
+				"name": "emacs",
+				"epoch": "1",
+				"version": "27.2",
+				"release": "8.el9_2.1",
+				"arch": "aarch64",
+				"filename": "emacs-27.2-8.el9_2.1.aarch64.rpm",
+				"sum": "956dca486c158e97bc5c8a900acb9abf9d51addf836d967ae604a3af71309e24",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -216,16 +204,46 @@
 				"sum": "d894c229b6df89c5d7dcae32125791b104d4ffda5fc70ac860754f3710f173bd",
 				"sum_type": 5,
 				"reboot_suggested": 0
+			},
+			{
+				"src": "emacs-27.2-8.el9_2.1.src.rpm",
+				"name": "emacs",
+				"epoch": "1",
+				"version": "27.2",
+				"release": "8.el9_2.1",
+				"arch": "x86_64",
+				"filename": "emacs-27.2-8.el9_2.1.x86_64.rpm",
+				"sum": "dd6ea41d9f1758c15182bcdb3b89cc7927225eb12a2190344a6005b7952fc741",
+				"sum_type": 5,
+				"reboot_suggested": 0
 			}
 		]
 	},
 	"description": "GNU Emacs is a powerful, customizable, self-documenting text editor. It provides special code editing features, a scripting language (elisp), and the capability to read e-mail and news.\n\nSecurity Fix(es):\n\n* emacs: Regression of CVE-2023-28617 fixes in the AlmaLinux (CVE-2023-2491)\n* emacs: command execution via shell metacharacters (CVE-2022-48337)\n* emacs: local command injection in ruby-mode.el (CVE-2022-48338)\n* emacs: command injection vulnerability in htmlfontify.el (CVE-2022-48339)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2023:2626",
-			"title": "RHSA-2023:2626",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2023:2626"
+			"id": "2171987",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2171987"
+		},
+		{
+			"id": "2171988",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2171988"
+		},
+		{
+			"id": "2171989",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2171989"
+		},
+		{
+			"id": "2192873",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2192873"
 		},
 		{
 			"id": "CVE-2022-48337",
@@ -252,28 +270,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2023-2491"
 		},
 		{
-			"id": "2171987",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2171987"
-		},
-		{
-			"id": "2171988",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2171988"
-		},
-		{
-			"id": "2171989",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2171989"
-		},
-		{
-			"id": "2192873",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2192873"
+			"id": "RHSA-2023:2626",
+			"title": "RHSA-2023:2626",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2023:2626"
 		},
 		{
 			"id": "ALSA-2023:2626",
@@ -286,6 +286,6 @@
 		"$date": 1683590400000
 	},
 	"updated_date": {
-		"$date": 1683845726000
+		"$date": 1683845728000
 	}
 }

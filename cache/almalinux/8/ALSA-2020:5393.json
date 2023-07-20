@@ -10,8 +10,8 @@
 	"summary": "An update for libexif is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "2",
 	"pkglist": {
-		"name": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
-		"shortname": "codeready-builder-for-rhel-8-aarch64-rpms__8_0_default",
+		"name": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
+		"shortname": "codeready-builder-for-rhel-8-x86_64-rpms__8_0_default",
 		"packages": [
 			{
 				"src": "libexif-0.6.22-5.el8_3.src.rpm",
@@ -19,21 +19,9 @@
 				"epoch": "0",
 				"version": "0.6.22",
 				"release": "5.el8_3",
-				"arch": "aarch64",
-				"filename": "libexif-0.6.22-5.el8_3.aarch64.rpm",
-				"sum": "a13b4f0c6bcc9080f74d79794ed0313e7d46bab52a4bac9ef8b8d1fd800d0808",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libexif-0.6.22-5.el8_3.src.rpm",
-				"name": "libexif-devel",
-				"epoch": "0",
-				"version": "0.6.22",
-				"release": "5.el8_3",
-				"arch": "aarch64",
-				"filename": "libexif-devel-0.6.22-5.el8_3.aarch64.rpm",
-				"sum": "bc0c32c911431eda09a81a5d8729035b8fd2a802c40dc4819b2c20f7b362e09e",
+				"arch": "ppc64le",
+				"filename": "libexif-0.6.22-5.el8_3.ppc64le.rpm",
+				"sum": "1521b06d80ed8eede51506ef18f989b73a40b504e14c6470a907dade3b41a7b5",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -46,6 +34,18 @@
 				"arch": "x86_64",
 				"filename": "libexif-0.6.22-5.el8_3.x86_64.rpm",
 				"sum": "277a4b2fbbb901527ca30c4416377c3afa22018e340287495332d7241d31db64",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libexif-0.6.22-5.el8_3.src.rpm",
+				"name": "libexif",
+				"epoch": "0",
+				"version": "0.6.22",
+				"release": "5.el8_3",
+				"arch": "i686",
+				"filename": "libexif-0.6.22-5.el8_3.i686.rpm",
+				"sum": "30414f7540901a09839d8b2eb1f802358764b85947b8af84566f80da18c1723a",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -75,18 +75,6 @@
 			},
 			{
 				"src": "libexif-0.6.22-5.el8_3.src.rpm",
-				"name": "libexif",
-				"epoch": "0",
-				"version": "0.6.22",
-				"release": "5.el8_3",
-				"arch": "ppc64le",
-				"filename": "libexif-0.6.22-5.el8_3.ppc64le.rpm",
-				"sum": "1521b06d80ed8eede51506ef18f989b73a40b504e14c6470a907dade3b41a7b5",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "libexif-0.6.22-5.el8_3.src.rpm",
 				"name": "libexif-devel",
 				"epoch": "0",
 				"version": "0.6.22",
@@ -103,9 +91,21 @@
 				"epoch": "0",
 				"version": "0.6.22",
 				"release": "5.el8_3",
-				"arch": "i686",
-				"filename": "libexif-0.6.22-5.el8_3.i686.rpm",
-				"sum": "30414f7540901a09839d8b2eb1f802358764b85947b8af84566f80da18c1723a",
+				"arch": "aarch64",
+				"filename": "libexif-0.6.22-5.el8_3.aarch64.rpm",
+				"sum": "a13b4f0c6bcc9080f74d79794ed0313e7d46bab52a4bac9ef8b8d1fd800d0808",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "libexif-0.6.22-5.el8_3.src.rpm",
+				"name": "libexif-devel",
+				"epoch": "0",
+				"version": "0.6.22",
+				"release": "5.el8_3",
+				"arch": "aarch64",
+				"filename": "libexif-devel-0.6.22-5.el8_3.aarch64.rpm",
+				"sum": "bc0c32c911431eda09a81a5d8729035b8fd2a802c40dc4819b2c20f7b362e09e",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -114,22 +114,22 @@
 	"description": "The libexif packages provide a library for extracting extra information from image files.\n\nSecurity Fix(es):\n\n* libexif: out of bounds write due to an integer overflow in exif-entry.c (CVE-2020-0452)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "ALSA-2020-5393",
-			"title": "ALSA-2020-5393",
-			"type": "self",
-			"href": "https://errata.almalinux.org/8/ALSA-2020-5393.html"
-		},
-		{
 			"id": "CVE-2020-0452",
 			"title": "CVE-2020-0452",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2020-0452"
+		},
+		{
+			"id": "ALSA-2020-5393",
+			"title": "ALSA-2020-5393",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2020-5393.html"
 		}
 	],
 	"issued_date": {
 		"$date": 1607944789000
 	},
 	"updated_date": {
-		"$date": 1607944789000
+		"$date": 1636712456000
 	}
 }

@@ -10,8 +10,8 @@
 	"summary": "An update for GNOME is now available for AlmaLinux\n\nAlmaLinux Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
 	"pushcount": "7",
 	"pkglist": {
-		"name": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
-		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_0_default",
+		"name": "almalinux-8-for-aarch64-baseos-rpms__8_0_default",
+		"shortname": "almalinux-8-for-aarch64-baseos-rpms__8_0_default",
 		"packages": [
 			{
 				"src": "pidgin-2.13.0-5.el8.src.rpm",
@@ -38,6 +38,30 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "pidgin-2.13.0-5.el8.src.rpm",
+				"name": "libpurple-devel",
+				"epoch": "0",
+				"version": "2.13.0",
+				"release": "5.el8",
+				"arch": "aarch64",
+				"filename": "libpurple-devel-2.13.0-5.el8.aarch64.rpm",
+				"sum": "15ad6ab9467991c647344662e6d7f906f48e3bce684f50028692ec0fde23e13e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
+				"name": "gdk-pixbuf2-devel",
+				"epoch": "0",
+				"version": "2.36.12",
+				"release": "5.el8",
+				"arch": "aarch64",
+				"filename": "gdk-pixbuf2-devel-2.36.12-5.el8.aarch64.rpm",
+				"sum": "2265293ef782137c260608aa359ffb82b6e7220929c21b1437fa1f8093c03cdb",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
 				"name": "gdk-pixbuf2-xlib-devel",
 				"epoch": "0",
@@ -51,6 +75,78 @@
 			},
 			{
 				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
+				"name": "gdk-pixbuf2",
+				"epoch": "0",
+				"version": "2.36.12",
+				"release": "5.el8",
+				"arch": "ppc64le",
+				"filename": "gdk-pixbuf2-2.36.12-5.el8.ppc64le.rpm",
+				"sum": "3170608c219faa8995f84cf946b5d526e6c90ada41a5bde1f61218a8589c5437",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
+				"name": "gdk-pixbuf2-xlib-devel",
+				"epoch": "0",
+				"version": "2.36.12",
+				"release": "5.el8",
+				"arch": "aarch64",
+				"filename": "gdk-pixbuf2-xlib-devel-2.36.12-5.el8.aarch64.rpm",
+				"sum": "350dc001dfb0a1de65267d85d8f40c2f707cde19dffc4b163b03cdd527c657d6",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
+				"name": "gdk-pixbuf2-devel",
+				"epoch": "0",
+				"version": "2.36.12",
+				"release": "5.el8",
+				"arch": "ppc64le",
+				"filename": "gdk-pixbuf2-devel-2.36.12-5.el8.ppc64le.rpm",
+				"sum": "37efd9b222d3d13b7ccd65b7f55e5adf5fcf76ad43e05983b64040027a7f6326",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
+				"name": "gdk-pixbuf2-xlib",
+				"epoch": "0",
+				"version": "2.36.12",
+				"release": "5.el8",
+				"arch": "i686",
+				"filename": "gdk-pixbuf2-xlib-2.36.12-5.el8.i686.rpm",
+				"sum": "47a98bb197fd5d61173bdaee8b3124474a8160cd28c9f532e2fea321bf5a2099",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pidgin-2.13.0-5.el8.src.rpm",
+				"name": "pidgin-devel",
+				"epoch": "0",
+				"version": "2.13.0",
+				"release": "5.el8",
+				"arch": "i686",
+				"filename": "pidgin-devel-2.13.0-5.el8.i686.rpm",
+				"sum": "4b57945f99fc9888383bc5d40d279492280bd1a299554787079e0edcb0614f2c",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
+				"name": "gdk-pixbuf2-modules",
+				"epoch": "0",
+				"version": "2.36.12",
+				"release": "5.el8",
+				"arch": "ppc64le",
+				"filename": "gdk-pixbuf2-modules-2.36.12-5.el8.ppc64le.rpm",
+				"sum": "5037cf911d9e19fe9743903dce36014f80c71c7f495ff2cfc69d6f190a0ac297",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
 				"name": "gdk-pixbuf2-modules",
 				"epoch": "0",
 				"version": "2.36.12",
@@ -58,6 +154,30 @@
 				"arch": "x86_64",
 				"filename": "gdk-pixbuf2-modules-2.36.12-5.el8.x86_64.rpm",
 				"sum": "57e425a68758a563902dac910e9ac46f81b3d829a75d3fcbf6a2b87ae947a31a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pidgin-2.13.0-5.el8.src.rpm",
+				"name": "pidgin",
+				"epoch": "0",
+				"version": "2.13.0",
+				"release": "5.el8",
+				"arch": "ppc64le",
+				"filename": "pidgin-2.13.0-5.el8.ppc64le.rpm",
+				"sum": "62f30a98e89bcc2e1d181e1a84de9fa17047b875c8df50220eb11a8188077611",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
+				"name": "gdk-pixbuf2-xlib-devel",
+				"epoch": "0",
+				"version": "2.36.12",
+				"release": "5.el8",
+				"arch": "ppc64le",
+				"filename": "gdk-pixbuf2-xlib-devel-2.36.12-5.el8.ppc64le.rpm",
+				"sum": "63bbbc71f4f7a93a95b77e8b7713292e21d6cd5fab3c7980c2366c991a491cab",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -86,6 +206,18 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "gnome-desktop3-3.32.2-1.el8.src.rpm",
+				"name": "gnome-desktop3",
+				"epoch": "0",
+				"version": "3.32.2",
+				"release": "1.el8",
+				"arch": "ppc64le",
+				"filename": "gnome-desktop3-3.32.2-1.el8.ppc64le.rpm",
+				"sum": "6c32418c73a4e1ddb5c10e6c38141a669e8cac9f83f5b5359154724aab854bd8",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
 				"name": "gdk-pixbuf2-modules",
 				"epoch": "0",
@@ -98,6 +230,18 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
+				"name": "gdk-pixbuf2",
+				"epoch": "0",
+				"version": "2.36.12",
+				"release": "5.el8",
+				"arch": "aarch64",
+				"filename": "gdk-pixbuf2-2.36.12-5.el8.aarch64.rpm",
+				"sum": "70051b0c1b16938a0d907af5d89ae3b9f7451214b26a01669a98e1cfa8ea41cb",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "pidgin-2.13.0-5.el8.src.rpm",
 				"name": "libpurple",
 				"epoch": "0",
@@ -106,6 +250,18 @@
 				"arch": "x86_64",
 				"filename": "libpurple-2.13.0-5.el8.x86_64.rpm",
 				"sum": "794a02e823f7fe2248477e17b8cb67cf3a848ebbeb5080f971244dbb2a320a9e",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pidgin-2.13.0-5.el8.src.rpm",
+				"name": "libpurple-devel",
+				"epoch": "0",
+				"version": "2.13.0",
+				"release": "5.el8",
+				"arch": "i686",
+				"filename": "libpurple-devel-2.13.0-5.el8.i686.rpm",
+				"sum": "80534f6c16a0afe01e3c22159419cb429448583b7b9365a8dc855639bf73329c",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -195,138 +351,6 @@
 			},
 			{
 				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
-				"name": "gdk-pixbuf2",
-				"epoch": "0",
-				"version": "2.36.12",
-				"release": "5.el8",
-				"arch": "x86_64",
-				"filename": "gdk-pixbuf2-2.36.12-5.el8.x86_64.rpm",
-				"sum": "c348e8092e6a5c581ea02d4c523020abc7a40309dc15bcb27220593095139894",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pidgin-2.13.0-5.el8.src.rpm",
-				"name": "libpurple-devel",
-				"epoch": "0",
-				"version": "2.13.0",
-				"release": "5.el8",
-				"arch": "aarch64",
-				"filename": "libpurple-devel-2.13.0-5.el8.aarch64.rpm",
-				"sum": "15ad6ab9467991c647344662e6d7f906f48e3bce684f50028692ec0fde23e13e",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
-				"name": "gdk-pixbuf2-devel",
-				"epoch": "0",
-				"version": "2.36.12",
-				"release": "5.el8",
-				"arch": "aarch64",
-				"filename": "gdk-pixbuf2-devel-2.36.12-5.el8.aarch64.rpm",
-				"sum": "2265293ef782137c260608aa359ffb82b6e7220929c21b1437fa1f8093c03cdb",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
-				"name": "gdk-pixbuf2-xlib-devel",
-				"epoch": "0",
-				"version": "2.36.12",
-				"release": "5.el8",
-				"arch": "aarch64",
-				"filename": "gdk-pixbuf2-xlib-devel-2.36.12-5.el8.aarch64.rpm",
-				"sum": "350dc001dfb0a1de65267d85d8f40c2f707cde19dffc4b163b03cdd527c657d6",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
-				"name": "gdk-pixbuf2",
-				"epoch": "0",
-				"version": "2.36.12",
-				"release": "5.el8",
-				"arch": "aarch64",
-				"filename": "gdk-pixbuf2-2.36.12-5.el8.aarch64.rpm",
-				"sum": "70051b0c1b16938a0d907af5d89ae3b9f7451214b26a01669a98e1cfa8ea41cb",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
-				"name": "gdk-pixbuf2-xlib",
-				"epoch": "0",
-				"version": "2.36.12",
-				"release": "5.el8",
-				"arch": "aarch64",
-				"filename": "gdk-pixbuf2-xlib-2.36.12-5.el8.aarch64.rpm",
-				"sum": "b4a21cf2e1d03e796323f28e14989de8407ec12bd45e974f69f57703fbbdad42",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
-				"name": "gdk-pixbuf2-modules",
-				"epoch": "0",
-				"version": "2.36.12",
-				"release": "5.el8",
-				"arch": "aarch64",
-				"filename": "gdk-pixbuf2-modules-2.36.12-5.el8.aarch64.rpm",
-				"sum": "be9888eae3ad5d48240841bb198f86fed33aa918aef70934da634e330650c284",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pidgin-2.13.0-5.el8.src.rpm",
-				"name": "libpurple",
-				"epoch": "0",
-				"version": "2.13.0",
-				"release": "5.el8",
-				"arch": "aarch64",
-				"filename": "libpurple-2.13.0-5.el8.aarch64.rpm",
-				"sum": "cd55555c662d21cfafc27f64ce5893b2c2c9ef6747975b09e07056a62bb01b07",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
-				"name": "gdk-pixbuf2-xlib",
-				"epoch": "0",
-				"version": "2.36.12",
-				"release": "5.el8",
-				"arch": "i686",
-				"filename": "gdk-pixbuf2-xlib-2.36.12-5.el8.i686.rpm",
-				"sum": "47a98bb197fd5d61173bdaee8b3124474a8160cd28c9f532e2fea321bf5a2099",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pidgin-2.13.0-5.el8.src.rpm",
-				"name": "pidgin-devel",
-				"epoch": "0",
-				"version": "2.13.0",
-				"release": "5.el8",
-				"arch": "i686",
-				"filename": "pidgin-devel-2.13.0-5.el8.i686.rpm",
-				"sum": "4b57945f99fc9888383bc5d40d279492280bd1a299554787079e0edcb0614f2c",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pidgin-2.13.0-5.el8.src.rpm",
-				"name": "libpurple-devel",
-				"epoch": "0",
-				"version": "2.13.0",
-				"release": "5.el8",
-				"arch": "i686",
-				"filename": "libpurple-devel-2.13.0-5.el8.i686.rpm",
-				"sum": "80534f6c16a0afe01e3c22159419cb429448583b7b9365a8dc855639bf73329c",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
 				"name": "gdk-pixbuf2-xlib-devel",
 				"epoch": "0",
 				"version": "2.36.12",
@@ -334,78 +358,6 @@
 				"arch": "i686",
 				"filename": "gdk-pixbuf2-xlib-devel-2.36.12-5.el8.i686.rpm",
 				"sum": "9d668307907456df1e7aadf711824cdfa9755e6bd52cacaa615b0bdec66e036b",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
-				"name": "gdk-pixbuf2",
-				"epoch": "0",
-				"version": "2.36.12",
-				"release": "5.el8",
-				"arch": "ppc64le",
-				"filename": "gdk-pixbuf2-2.36.12-5.el8.ppc64le.rpm",
-				"sum": "3170608c219faa8995f84cf946b5d526e6c90ada41a5bde1f61218a8589c5437",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
-				"name": "gdk-pixbuf2-devel",
-				"epoch": "0",
-				"version": "2.36.12",
-				"release": "5.el8",
-				"arch": "ppc64le",
-				"filename": "gdk-pixbuf2-devel-2.36.12-5.el8.ppc64le.rpm",
-				"sum": "37efd9b222d3d13b7ccd65b7f55e5adf5fcf76ad43e05983b64040027a7f6326",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
-				"name": "gdk-pixbuf2-modules",
-				"epoch": "0",
-				"version": "2.36.12",
-				"release": "5.el8",
-				"arch": "ppc64le",
-				"filename": "gdk-pixbuf2-modules-2.36.12-5.el8.ppc64le.rpm",
-				"sum": "5037cf911d9e19fe9743903dce36014f80c71c7f495ff2cfc69d6f190a0ac297",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "pidgin-2.13.0-5.el8.src.rpm",
-				"name": "pidgin",
-				"epoch": "0",
-				"version": "2.13.0",
-				"release": "5.el8",
-				"arch": "ppc64le",
-				"filename": "pidgin-2.13.0-5.el8.ppc64le.rpm",
-				"sum": "62f30a98e89bcc2e1d181e1a84de9fa17047b875c8df50220eb11a8188077611",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
-				"name": "gdk-pixbuf2-xlib-devel",
-				"epoch": "0",
-				"version": "2.36.12",
-				"release": "5.el8",
-				"arch": "ppc64le",
-				"filename": "gdk-pixbuf2-xlib-devel-2.36.12-5.el8.ppc64le.rpm",
-				"sum": "63bbbc71f4f7a93a95b77e8b7713292e21d6cd5fab3c7980c2366c991a491cab",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "gnome-desktop3-3.32.2-1.el8.src.rpm",
-				"name": "gnome-desktop3",
-				"epoch": "0",
-				"version": "3.32.2",
-				"release": "1.el8",
-				"arch": "ppc64le",
-				"filename": "gnome-desktop3-3.32.2-1.el8.ppc64le.rpm",
-				"sum": "6c32418c73a4e1ddb5c10e6c38141a669e8cac9f83f5b5359154724aab854bd8",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -434,6 +386,18 @@
 				"reboot_suggested": 0
 			},
 			{
+				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
+				"name": "gdk-pixbuf2-xlib",
+				"epoch": "0",
+				"version": "2.36.12",
+				"release": "5.el8",
+				"arch": "aarch64",
+				"filename": "gdk-pixbuf2-xlib-2.36.12-5.el8.aarch64.rpm",
+				"sum": "b4a21cf2e1d03e796323f28e14989de8407ec12bd45e974f69f57703fbbdad42",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
 				"src": "gnome-desktop3-3.32.2-1.el8.src.rpm",
 				"name": "gnome-desktop3-devel",
 				"epoch": "0",
@@ -442,6 +406,42 @@
 				"arch": "ppc64le",
 				"filename": "gnome-desktop3-devel-3.32.2-1.el8.ppc64le.rpm",
 				"sum": "b753cd8860bba66875c367d386b4bfab3d7bc1c2f9e724986fdaa8cf9bbbbac3",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
+				"name": "gdk-pixbuf2-modules",
+				"epoch": "0",
+				"version": "2.36.12",
+				"release": "5.el8",
+				"arch": "aarch64",
+				"filename": "gdk-pixbuf2-modules-2.36.12-5.el8.aarch64.rpm",
+				"sum": "be9888eae3ad5d48240841bb198f86fed33aa918aef70934da634e330650c284",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "gdk-pixbuf2-2.36.12-5.el8.src.rpm",
+				"name": "gdk-pixbuf2",
+				"epoch": "0",
+				"version": "2.36.12",
+				"release": "5.el8",
+				"arch": "x86_64",
+				"filename": "gdk-pixbuf2-2.36.12-5.el8.x86_64.rpm",
+				"sum": "c348e8092e6a5c581ea02d4c523020abc7a40309dc15bcb27220593095139894",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "pidgin-2.13.0-5.el8.src.rpm",
+				"name": "libpurple",
+				"epoch": "0",
+				"version": "2.13.0",
+				"release": "5.el8",
+				"arch": "aarch64",
+				"filename": "libpurple-2.13.0-5.el8.aarch64.rpm",
+				"sum": "cd55555c662d21cfafc27f64ce5893b2c2c9ef6747975b09e07056a62bb01b07",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -778,6 +778,12 @@
 			"title": "CVE-2019-8768",
 			"type": "cve",
 			"href": "https://vulners.com/cve/CVE-2019-8768"
+		},
+		{
+			"id": "ALSA-2019-3553",
+			"title": "ALSA-2019-3553",
+			"type": "self",
+			"href": "https://errata.almalinux.org/8/ALSA-2019-3553.html"
 		}
 	],
 	"issued_date": {

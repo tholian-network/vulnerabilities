@@ -162,10 +162,10 @@
 	"description": "The kernel-rt packages provide the Real Time Linux Kernel, which enables fine-tuning for systems with extremely high determinism requirements.\nSecurity Fix(es):\n* kernel: race condition in perf_event_open leads to privilege escalation (CVE-2022-1729)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\nBug Fix(es):\n* The latest AlmaLinux 8.6.z1 kernel changes need to be merged into the RT source tree to keep source parity between the two kernels. (BZ#2098244)",
 	"references": [
 		{
-			"id": "RHSA-2022:5565",
+			"id": "2086753",
 			"title": "",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:5565"
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2086753"
 		},
 		{
 			"id": "CVE-2022-1729",
@@ -174,10 +174,22 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-1729"
 		},
 		{
-			"id": "2086753",
+			"id": "CVE-2022-1729",
+			"title": "CVE-2022-1729",
+			"type": "cve",
+			"href": "https://access.redhat.com/security/cve/CVE-2022-1729"
+		},
+		{
+			"id": "RHSA-2022:5565",
 			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2086753"
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5565"
+		},
+		{
+			"id": "RHSA-2022:5565",
+			"title": "RHSA-2022:5565",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5565"
 		},
 		{
 			"id": "ALSA-2022:5565",
@@ -190,6 +202,6 @@
 		"$date": 1657670400000
 	},
 	"updated_date": {
-		"$date": 1658422917000
+		"$date": 1658422929000
 	}
 }

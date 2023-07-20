@@ -10,8 +10,8 @@
 	"summary": "firefox security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_6_default",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_6_default",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_6_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_6_default",
 		"packages": [
 			{
 				"src": "firefox-91.12.0-2.el8_6.alma.src.rpm",
@@ -31,9 +31,9 @@
 				"epoch": "0",
 				"version": "91.12.0",
 				"release": "2.el8_6.alma",
-				"arch": "x86_64",
-				"filename": "firefox-91.12.0-2.el8_6.alma.x86_64.rpm",
-				"sum": "d2442510702a5ddf571477830fca94b4c31e96a67d19fd04cec74870e1e244f6",
+				"arch": "ppc64le",
+				"filename": "firefox-91.12.0-2.el8_6.alma.ppc64le.rpm",
+				"sum": "3872ff2fccf77b9dec9d8ecb853dcceb14629b1fd06ac69fea928bec88d1a97c",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -43,9 +43,9 @@
 				"epoch": "0",
 				"version": "91.12.0",
 				"release": "2.el8_6.alma",
-				"arch": "ppc64le",
-				"filename": "firefox-91.12.0-2.el8_6.alma.ppc64le.rpm",
-				"sum": "3872ff2fccf77b9dec9d8ecb853dcceb14629b1fd06ac69fea928bec88d1a97c",
+				"arch": "x86_64",
+				"filename": "firefox-91.12.0-2.el8_6.alma.x86_64.rpm",
+				"sum": "d2442510702a5ddf571477830fca94b4c31e96a67d19fd04cec74870e1e244f6",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			}
@@ -54,10 +54,22 @@
 	"description": "Mozilla Firefox is an open-source web browser, designed for standards compliance, performance, and portability.\nThis update upgrades Firefox to version 91.12.0 ESR.\nSecurity Fix(es):\n* Mozilla: Memory safety bugs fixed in Firefox 103 and 102.1 (CVE-2022-2505)\n* Mozilla: Directory indexes for bundled resources reflected URL parameters (CVE-2022-36318)\n* Mozilla: Mouse Position spoofing with CSS transforms (CVE-2022-36319)\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:5777",
+			"id": "2111907",
 			"title": "",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:5777"
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2111907"
+		},
+		{
+			"id": "2111908",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2111908"
+		},
+		{
+			"id": "2111910",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2111910"
 		},
 		{
 			"id": "CVE-2022-2505",
@@ -78,22 +90,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-36319"
 		},
 		{
-			"id": "2111907",
+			"id": "RHSA-2022:5777",
 			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2111907"
-		},
-		{
-			"id": "2111908",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2111908"
-		},
-		{
-			"id": "2111910",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2111910"
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:5777"
 		},
 		{
 			"id": "ALSA-2022:5777",

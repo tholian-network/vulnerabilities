@@ -10,21 +10,9 @@
 	"summary": "grafana-pcp security update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
-		"shortname": "almalinux-9-for-aarch64-appstream-rpms__9_1_default",
+		"name": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
+		"shortname": "almalinux-9-for-ppc64le-appstream-rpms__9_1_default",
 		"packages": [
-			{
-				"src": "grafana-pcp-3.2.0-3.el9.src.rpm",
-				"name": "grafana-pcp",
-				"epoch": "0",
-				"version": "3.2.0",
-				"release": "3.el9",
-				"arch": "aarch64",
-				"filename": "grafana-pcp-3.2.0-3.el9.aarch64.rpm",
-				"sum": "c2ff690b1887fe0f8ddb73ede3db978addc5f7e8a53d3b9be2d42629e416409a",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
 			{
 				"src": "grafana-pcp-3.2.0-3.el9.src.rpm",
 				"name": "grafana-pcp",
@@ -34,6 +22,18 @@
 				"arch": "s390x",
 				"filename": "grafana-pcp-3.2.0-3.el9.s390x.rpm",
 				"sum": "2923a16af2b40a408f83362bd9652420b172807e92f0a05f3905490d04032f3a",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
+			{
+				"src": "grafana-pcp-3.2.0-3.el9.src.rpm",
+				"name": "grafana-pcp",
+				"epoch": "0",
+				"version": "3.2.0",
+				"release": "3.el9",
+				"arch": "aarch64",
+				"filename": "grafana-pcp-3.2.0-3.el9.aarch64.rpm",
+				"sum": "c2ff690b1887fe0f8ddb73ede3db978addc5f7e8a53d3b9be2d42629e416409a",
 				"sum_type": 5,
 				"reboot_suggested": 0
 			},
@@ -66,10 +66,40 @@
 	"description": "The Grafana plugin for Performance Co-Pilot includes datasources for scalable time series from pmseries and Redis, live PCP metrics and bpftrace scripts from pmdabpftrace, as well as several dashboards.\n\nSecurity Fix(es):\n\n* golang: net/http: improper sanitization of Transfer-Encoding header (CVE-2022-1705)\n* golang: io/fs: stack exhaustion in Glob (CVE-2022-30630)\n* golang: compress/gzip: stack exhaustion in Reader.Read (CVE-2022-30631)\n* golang: path/filepath: stack exhaustion in Glob (CVE-2022-30632)\n* golang: encoding/gob: stack exhaustion in Decoder.Decode (CVE-2022-30635)\n* golang: net/http/httputil: NewSingleHostReverseProxy - omit X-Forwarded-For not working (CVE-2022-32148)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nAdditional Changes:\n\nFor detailed information on changes in this release, see the AlmaLinux Release Notes linked from the References section.",
 	"references": [
 		{
-			"id": "RHSA-2022:8250",
-			"title": "RHSA-2022:8250",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:8250"
+			"id": "2107342",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107342"
+		},
+		{
+			"id": "2107371",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107371"
+		},
+		{
+			"id": "2107374",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107374"
+		},
+		{
+			"id": "2107383",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107383"
+		},
+		{
+			"id": "2107386",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107386"
+		},
+		{
+			"id": "2107388",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107388"
 		},
 		{
 			"id": "CVE-2022-1705",
@@ -108,40 +138,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-32148"
 		},
 		{
-			"id": "2107342",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107342"
-		},
-		{
-			"id": "2107371",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107371"
-		},
-		{
-			"id": "2107374",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107374"
-		},
-		{
-			"id": "2107383",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107383"
-		},
-		{
-			"id": "2107386",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107386"
-		},
-		{
-			"id": "2107388",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107388"
+			"id": "RHSA-2022:8250",
+			"title": "RHSA-2022:8250",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:8250"
 		},
 		{
 			"id": "ALSA-2022:8250",

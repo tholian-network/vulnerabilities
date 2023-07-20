@@ -10,9 +10,21 @@
 	"summary": "git-lfs security and bug fix update",
 	"pushcount": "1",
 	"pkglist": {
-		"name": "almalinux-8-for-aarch64-appstream-rpms__8_6_default",
-		"shortname": "almalinux-8-for-aarch64-appstream-rpms__8_6_default",
+		"name": "almalinux-8-for-x86_64-appstream-rpms__8_6_default",
+		"shortname": "almalinux-8-for-x86_64-appstream-rpms__8_6_default",
 		"packages": [
+			{
+				"src": "git-lfs-2.13.3-3.el8_6.src.rpm",
+				"name": "git-lfs",
+				"epoch": "0",
+				"version": "2.13.3",
+				"release": "3.el8_6",
+				"arch": "s390x",
+				"filename": "git-lfs-2.13.3-3.el8_6.s390x.rpm",
+				"sum": "185e2f9820f03b424874b79ea390ddc542aaa8c36dfb2c4716ec7bc4da76d126",
+				"sum_type": 5,
+				"reboot_suggested": 0
+			},
 			{
 				"src": "git-lfs-2.13.3-3.el8_6.src.rpm",
 				"name": "git-lfs",
@@ -43,18 +55,6 @@
 				"epoch": "0",
 				"version": "2.13.3",
 				"release": "3.el8_6",
-				"arch": "s390x",
-				"filename": "git-lfs-2.13.3-3.el8_6.s390x.rpm",
-				"sum": "185e2f9820f03b424874b79ea390ddc542aaa8c36dfb2c4716ec7bc4da76d126",
-				"sum_type": 5,
-				"reboot_suggested": 0
-			},
-			{
-				"src": "git-lfs-2.13.3-3.el8_6.src.rpm",
-				"name": "git-lfs",
-				"epoch": "0",
-				"version": "2.13.3",
-				"release": "3.el8_6",
 				"arch": "ppc64le",
 				"filename": "git-lfs-2.13.3-3.el8_6.ppc64le.rpm",
 				"sum": "c531aabc40795dd30108a0e1d96aac965580108eac6e684ea4f0d840a1c3c630",
@@ -66,10 +66,58 @@
 	"description": "Git Large File Storage (LFS) replaces large files such as audio samples, videos, datasets, and graphics with text pointers inside Git, while storing the file contents on a remote server.\n\nSecurity Fix(es):\n\n* golang.org/x/text: Panic in language.ParseAcceptLanguage while parsing -u- extension (CVE-2020-28851)\n* golang.org/x/text: Panic in language.ParseAcceptLanguage while processing bcp47 tag (CVE-2020-28852)\n* golang: net/http: improper sanitization of Transfer-Encoding header (CVE-2022-1705)\n* golang: net/http: handle server errors after sending GOAWAY (CVE-2022-27664)\n* golang: io/fs: stack exhaustion in Glob (CVE-2022-30630)\n* golang: path/filepath: stack exhaustion in Glob (CVE-2022-30632)\n* golang: encoding/gob: stack exhaustion in Decoder.Decode (CVE-2022-30635)\n* golang: net/http/httputil: NewSingleHostReverseProxy - omit X-Forwarded-For not working (CVE-2022-32148)\n* golang: math/big: decoding big.Float and big.Rat types can panic if the encoded message is too short, potentially allowing a denial of service (CVE-2022-32189)\n\nFor more details about the security issue(s), including the impact, a CVSS score, acknowledgments, and other related information, refer to the CVE page(s) listed in the References section.\n\nBug Fix(es):\n\n* git-lfs needs to be rebuild with golang 1.17.7-1 or above",
 	"references": [
 		{
-			"id": "RHSA-2022:7129",
-			"title": "RHSA-2022:7129",
-			"type": "rhsa",
-			"href": "https://access.redhat.com/errata/RHSA-2022:7129"
+			"id": "1913333",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/1913333"
+		},
+		{
+			"id": "1913338",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/1913338"
+		},
+		{
+			"id": "2107371",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107371"
+		},
+		{
+			"id": "2107374",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107374"
+		},
+		{
+			"id": "2107383",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107383"
+		},
+		{
+			"id": "2107386",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107386"
+		},
+		{
+			"id": "2107388",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2107388"
+		},
+		{
+			"id": "2113814",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2113814"
+		},
+		{
+			"id": "2124669",
+			"title": "",
+			"type": "bugzilla",
+			"href": "https://bugzilla.redhat.com/2124669"
 		},
 		{
 			"id": "CVE-2020-28851",
@@ -126,58 +174,10 @@
 			"href": "https://access.redhat.com/security/cve/CVE-2022-32189"
 		},
 		{
-			"id": "1913333",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/1913333"
-		},
-		{
-			"id": "1913338",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/1913338"
-		},
-		{
-			"id": "2107371",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107371"
-		},
-		{
-			"id": "2107374",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107374"
-		},
-		{
-			"id": "2107383",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107383"
-		},
-		{
-			"id": "2107386",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107386"
-		},
-		{
-			"id": "2107388",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2107388"
-		},
-		{
-			"id": "2113814",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2113814"
-		},
-		{
-			"id": "2124669",
-			"title": "",
-			"type": "bugzilla",
-			"href": "https://bugzilla.redhat.com/2124669"
+			"id": "RHSA-2022:7129",
+			"title": "RHSA-2022:7129",
+			"type": "rhsa",
+			"href": "https://access.redhat.com/errata/RHSA-2022:7129"
 		},
 		{
 			"id": "ALSA-2022:7129",
